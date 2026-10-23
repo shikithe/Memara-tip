@@ -3,8 +3,8 @@
   "published": "23.10.2026. u 14:03",
   "bank_before": 133.12,
   "daily_stake": 13.31,
-  "bank_after": 119.81,
-  "provisional": true,
+  "bank_after": 129.75,
+  "provisional": false,
   "odds_verified": false,
   "tickets": [
     {
@@ -12,7 +12,7 @@
       "label": "GLAVNI TIKET",
       "odds": 2.39,
       "stake": 9.32,
-      "status": "objavljen",
+      "status": "izgubljen",
       "matches": [
         {
           "home": "Stuttgart",
@@ -35,7 +35,9 @@
                 "https://www.borussia.com/news/match-facts-vfbbmg-bundesliga-2627"
               ]
             ]
-          }
+          },
+          "final_score": "2:3",
+          "result_status": "promašen"
         },
         {
           "home": "Alavés",
@@ -54,16 +56,19 @@
                 "https://sportstatsapi.com/matches/spain/laliga/2026-10-23/alaves-v-malaga/"
               ]
             ]
-          }
+          },
+          "final_score": "1:1",
+          "result_status": "promašen"
         }
-      ]
+      ],
+      "payout": 0
     },
     {
       "id": "B",
       "label": "GOLOVI — VIŠE OD 2,5",
       "odds": 2.49,
       "stake": 3.99,
-      "status": "objavljen",
+      "status": "dobitan",
       "matches": [
         {
           "home": "Go Ahead Eagles",
@@ -82,7 +87,9 @@
                 "https://compactstats.com/match/2026-10-23/go-ahead-eagles-v-telstar/"
               ]
             ]
-          }
+          },
+          "final_score": "3:2",
+          "result_status": "pogođen"
         },
         {
           "home": "Brest",
@@ -105,9 +112,12 @@
                 "https://www.thestatszone.com/brest-vs-nice-preview-team-news-prediction-231440"
               ]
             ]
-          }
+          },
+          "final_score": "1:2",
+          "result_status": "pogođen"
         }
-      ]
+      ],
+      "payout": 9.94
     },
     {
       "id": "C",
@@ -125,5 +135,11 @@
       }
     }
   ],
-  "analysis_status": "Naknadna stručna provjera urađena 23.10.2026. Izvorni razlozi odabira nisu sačuvani. Izdvojeni su i argumenti protiv već zaključanih tipova; tipovi, kvote, ulozi i banka nisu mijenjani."
+  "analysis_status": "Naknadna stručna provjera urađena 23.10.2026. Izvorni razlozi odabira nisu sačuvani. Izdvojeni su i argumenti protiv već zaključanih tipova; tipovi, kvote, ulozi i banka nisu mijenjani.",
+  "bank_after_stakes": 119.81,
+  "total_payout": 9.94,
+  "net_change": -3.37,
+  "settled": true,
+  "settlement_date": "2026-10-23",
+  "settlement_note": "Konačni rezultati potvrđeni iz javnih izvora. Obračun je virtuelan i zasnovan na objavljenim kvotama; kvote nisu nezavisno potvrđene kod kladionice."
 }
