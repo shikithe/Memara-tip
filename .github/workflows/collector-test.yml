@@ -1,0 +1,81 @@
+name: MEMARA Collector - manual source test
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/collector-test.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test-sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run football collector
+        run: |
+          python collector.py --date 2026-10-24 --sport football --output collector-output/football.json || true
+      - name: Run NBA collector
+        run: |
+          python collector.py --date 2026-10-24 --sport basketball --output collector-output/nba.json || true
+      - name: Check EuroLeague games feed
+        run: |
+          python - <<'PY'
+          import json, urllib.request
+          from pathlib import Path
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          url="https://api-live.euroleague.net/v2/competitions/E/seasons/E2026/games"
+          result={"provider":"euroleague-official-public","season":"E2026","url":url}
+          try:
+              req=urllib.request.Request(url,headers={"User-Agent":"MEMARA-Collector-Test/1.0","Accept":"application/json"})
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  raw=response.read(6*1024*1024+1)
+                  result["http_status"]=response.status
+              if len(raw)>6*1024*1024: raise ValueError("response too large")
+              payload=json.loads(raw)
+              games=payload.get("data",[]) if isinstance(payload,dict) else payload
+              if not isinstance(games,list): raise ValueError("games not list")
+              result["status"]="ok"
+              result["season_total"]=len(games)
+              result["sample_keys"]=list(games[0])[:25] if games else []
+              today=[]
+              for game in games:
+                  val=game.get("utcDate") or game.get("date") or game.get("localDate")
+                  if val and str(val)[:10]=="2026-10-24":
+                      today.append({"gameCode":game.get("gameCode"),"date":val,
+                                    "local":str(game.get("local"))[:100],
+                                    "road":str(game.get("road"))[:100]})
+              result["matches_utc_date"]=len(today)
+              result["samples"]=today[:5]
+          except Exception as exc:
+              result["status"]="error";result["error"]=str(exc)
+          Path("collector-output").mkdir(exist_ok=True)
+          Path("collector-output/euroleague.json").write_text(json.dumps(result,indent=2,ensure_ascii=False))
+          print("Euroleague:",json.dumps(result,ensure_ascii=False)[:1500])
+          PY
+      - name: Print summary
+        run: |
+          python - <<'PY'
+          import json
+          for name in ("football","nba","euroleague"):
+              d=json.load(open(f"collector-output/{name}.json"))
+              print(name, "status=", d.get("status"), "matches=", d.get("fixture_count",d.get("matches_utc_date")), "errors=", len(d.get("errors",[])))
+              if "sources" in d:
+                  print("leagues:", [(s.get("league"),s["status"],s["count"]) for s in d["sources"]])
+                  print("samples:",[(f["home"],f["away"],f["start_sarajevo"]) for f in d.get("fixtures",[])[:4]])
+                  print("error_examples:",d.get("errors",[])[:5])
+              else:
+                  print("error:", d.get("error"))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: collector-test-2026-10-24
+          path: collector-output/
