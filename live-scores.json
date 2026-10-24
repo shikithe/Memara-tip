@@ -1,6 +1,6 @@
 {
   "date": "2026-10-24",
-  "updated_at_utc": "2026-10-24T15:41:40.111676+00:00",
+  "updated_at_utc": "2026-10-24T16:15:54.267792+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,20 +9,22 @@
       "index": 0,
       "home": "Arsenal",
       "away": "Everton",
-      "state": "live",
+      "state": "final",
       "score": "2:0",
       "source": "espn-public-unofficial",
-      "event_id": "401878768"
+      "event_id": "401878768",
+      "result_status": "pogođen"
     },
     {
       "ticket": "A",
       "index": 1,
       "home": "Rangers",
       "away": "St Johnstone",
-      "state": "live",
-      "score": "3:0",
+      "state": "final",
+      "score": "4:0",
       "source": "espn-public-unofficial",
-      "event_id": "401878358"
+      "event_id": "401878358",
+      "result_status": "pogođen"
     },
     {
       "ticket": "A",
@@ -52,7 +54,7 @@
       "home": "FC Utrecht",
       "away": "PEC Zwolle",
       "state": "live",
-      "score": "0:0",
+      "score": "0:1",
       "source": "espn-public-unofficial",
       "event_id": "401875573"
     },
@@ -103,7 +105,7 @@
       "index": 4,
       "home": "Napoli",
       "away": "AS Roma",
-      "state": "scheduled",
+      "state": "live",
       "score": "0:0",
       "source": "espn-public-unofficial",
       "event_id": "401874948"
