@@ -1,6 +1,6 @@
 {
   "date": "2026-10-24",
-  "updated_at_utc": "2026-10-24T17:45:46.103097+00:00",
+  "updated_at_utc": "2026-10-24T17:46:18.013432+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -79,7 +79,7 @@
       "source": "espn-public-unofficial",
       "event_id": "401878767",
       "league": "eng.1",
-      "minute": "58"
+      "minute": "59"
     },
     {
       "ticket": "C",
@@ -104,7 +104,7 @@
       "source": "espn-public-unofficial",
       "event_id": "401882827",
       "league": "esp.1",
-      "minute": "53"
+      "minute": "54"
     },
     {
       "ticket": "C",
@@ -129,7 +129,7 @@
       "source": "espn-public-unofficial",
       "event_id": "401874948",
       "league": "ita.1",
-      "minute": "86"
+      "minute": "87"
     }
   ],
   "bank_unchanged": true
