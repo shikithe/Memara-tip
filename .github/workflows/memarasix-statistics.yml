@@ -1,5 +1,5 @@
 name: MemaraSix optional statistical sources
-# Recheck configured API-Football and BALLDONTLIE credentials after setup.
+# Validate BALLDONTLIE surname search following player lookup correction.
 on:
   workflow_dispatch:
   schedule:
