@@ -50,7 +50,7 @@ def check_pick(pick,home,away):
     # Unknown markets must be judged separately; no automatic green/red.
     return None
 
-def extract(events):
+def extract(events, league):
     parsed=[]
     for e in events:
         try:
@@ -84,7 +84,7 @@ def extract(events):
                         minute=str(int(clock_value//60))
             if finished and re.search(r"penalt|extra time|aet",detail,re.I):
                 finished=False
-            parsed.append({"event_id":str(e["id"]),"home":h["team"].get("displayName") or h["team"].get("name"),
+            parsed.append({"event_id":str(e["id"]),"league":league,"home":h["team"].get("displayName") or h["team"].get("name"),
                   "away":a["team"].get("displayName") or a["team"].get("name"),
                   "start":ts,"home_score":sh,"away_score":sa,
                   "state":"final" if finished else "live" if status=="in" else "scheduled" if status=="pre" else "unverified",
@@ -108,7 +108,7 @@ def run(source="data.json",output="live-scores.json"):
     all_events=[];errors=[]
     for day in sorted(dates):
         for league in LEAGUES:
-            try:all_events.extend(extract(fetch(league,day)))
+            try:all_events.extend(extract(fetch(league,day),league))
             except Exception:errors.append(league+":"+day)
     # Never lose a previously verified final on transient ESPN failures.
     previous = {}
@@ -134,7 +134,7 @@ def run(source="data.json",output="live-scores.json"):
             if len(unique)==1:
                 e=next(iter(unique.values()))
                 record.update({"state":e["state"],"score":str(e["home_score"])+":"+str(e["away_score"]),
-                    "source":"espn-public-unofficial","event_id":e["event_id"],"minute":e.get("minute")})
+                    "source":"espn-public-unofficial","event_id":e["event_id"],"league":e["league"],"minute":e.get("minute")})
                 if e["state"]=="final":
                     outcome=check_pick(m.get("pick"),e["home_score"],e["away_score"])
                     record["result_status"]="pogođen" if outcome is True else "promašen" if outcome is False else "nepoznat"
