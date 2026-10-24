@@ -2,11 +2,12 @@ name: MemaraSix free NBA statistics
 on:
   workflow_dispatch:
   schedule:
-    # 10:45 Sarajevo, both DST offsets; skip wrong UTC hour.
-    - cron: '45 8,9 * * *'
+    # 13:10 Sarajevo, AFTER player-points odds collection (~12:35 local).
+    - cron: '10 11,12 * * *'
   push:
     paths:
       - '.github/workflows/memarasix-nba-free.yml'
+      - 'sync_nba_free.py'
 permissions:
   contents: write
 concurrency:
@@ -28,14 +29,14 @@ jobs:
         env:
           EVENT_NAME: ${{ github.event_name }}
         run: |
-          if [ "$EVENT_NAME" = "schedule" ] && [ "$(TZ=Europe/Sarajevo date +%H)" != "10" ]; then
+          if [ "$EVENT_NAME" = "schedule" ] && [ "$(TZ=Europe/Sarajevo date +%H)" != "13" ]; then
             echo "run=false" >> "$GITHUB_OUTPUT"
           else
             echo "run=true" >> "$GITHUB_OUTPUT"
           fi
       - name: Fetch recent free NBA box scores
         if: steps.gate.outputs.run == 'true'
-        run: python sync_nba_free.py --days 5 --max-summaries 24
+        run: python sync_nba_free.py --days 14 --max-summaries 40
       - name: Validate and save research-only file
         if: steps.gate.outputs.run == 'true'
         run: |
@@ -43,6 +44,7 @@ jobs:
           import json
           d=json.load(open('collector-output/nba-free-statistics.json'))
           assert d['no_api_key_required'] and d['provider']=='espn-public-unofficial'
+          assert d['target_source']=='the-odds-api-player-points'
           assert all(p['not_a_projection'] for p in d['players'])
           print('Players with statistics',d['players_with_stats'])
           PY
