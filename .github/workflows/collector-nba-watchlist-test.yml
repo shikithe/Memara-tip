@@ -1,8 +1,5 @@
 name: MEMARA NBA watchlist isolation test
 on:
-  push:
-    paths:
-      - '.github/workflows/collector-nba-watchlist-test.yml'
   workflow_dispatch:
 permissions:
   contents: read
