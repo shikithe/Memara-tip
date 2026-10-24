@@ -141,7 +141,7 @@ async function checkEspnDirectly(){
     if(!final){
      const detail=String(status.shortDetail||status.detail||'');
      const clock=String(event.status?.displayClock||'');
-     const found=detail.match(/(\\d{1,3}(?:\\+\\d{1,2})?)\\s*['′’]/)||clock.match(/^(\\d{1,3})(?::[0-5]\\d)?$/);
+     const found=detail.match(/(\d{1,3}(?:\+\d{1,2})?)\s*['′’]/)||clock.match(/^(\d{1,3})(?::[0-5]\d)?$/);
      next.minute=found?found[1]:null;
     }else{
      const leg=currentData.tickets.find(t=>t.id===m.ticket)?.matches?.[m.index];
