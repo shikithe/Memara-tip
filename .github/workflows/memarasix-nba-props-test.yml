@@ -1,8 +1,5 @@
 name: MemaraSix NBA points feed integration test
 on:
-  push:
-    paths:
-      - '.github/workflows/memarasix-nba-props-test.yml'
   workflow_dispatch:
 permissions:
   contents: read
