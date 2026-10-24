@@ -1,0 +1,33 @@
+name: MEMARA regional free provider test
+on:
+  push:
+    paths:
+      - '.github/workflows/collector-sportsdb-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Probe free TheSportsDB country fixtures
+        run: |
+          python3 - <<'PY'
+          import urllib.request, urllib.parse, json
+          base="https://www.thesportsdb.com/api/v1/json/123/"
+          for country in ("Serbia","Bosnia and Herzegovina","Bosnia-Herzegovina"):
+              url=base+"search_all_leagues.php?"+urllib.parse.urlencode({"c":country,"s":"Soccer"})
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"MEMARA-FixtureCollector/1.0"}),timeout=15) as r: data=json.load(r)
+                  leagues=data.get("countries") or data.get("leagues") or []
+                  print("COUNTRY",country,"COUNT",len(leagues),"SAMPLE",[(x.get("idLeague"),x.get("strLeague")) for x in leagues[:20]],flush=True)
+                  for lg in leagues[:12]:
+                      nm=(lg.get("strLeague") or "").lower()
+                      if any(z in nm for z in ("superliga","premier","premijer","serbian","bosnian","super liga")):
+                          lid=lg.get("idLeague")
+                          u=base+"eventsnextleague.php?id="+str(lid)
+                          with urllib.request.urlopen(urllib.request.Request(u,headers={"User-Agent":"MEMARA-FixtureCollector/1.0"}),timeout=15) as r: events=json.load(r).get("events") or []
+                          print("EVENTS",country,lid,len(events),[(e.get("strEvent"),e.get("dateEvent"),e.get("strTime")) for e in events[:3]],flush=True)
+              except Exception as e: print("ERROR",country,repr(e),flush=True)
+          PY
