@@ -5,8 +5,9 @@ on:
     paths:
       - '.github/workflows/memarasix-live-scores.yml'
       - 'sync_live_scores.py'
+      - 'index.html'
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '2-59/5 * * * *'
 permissions:
   contents: write
 concurrency:
@@ -15,7 +16,7 @@ concurrency:
 jobs:
   live-results:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
