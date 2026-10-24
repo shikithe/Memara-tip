@@ -174,7 +174,7 @@ def main():
         p.error("--offline requires --input")
     result = collect(day, a.sport, a.league, a.offline, a.input)
     if a.regional and not a.offline and a.sport in ("all", "football"):
-        from collector.regional import fetch_regional
+        from memara_regional import fetch_regional
         rows, sources, errors = fetch_regional(day)
         existing = {(f["sport"], f["league"].casefold(), f["home"].casefold(),
                      f["away"].casefold(), f["start_utc"]) for f in result["fixtures"]}
