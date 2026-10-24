@@ -65,13 +65,16 @@ def extract(events):
             finished=status=="post" and bool(state.get("completed"))
             # Only verified full-time result; penalities/extra time need review.
             detail=str(state.get("description") or "")
+            display_clock=str((e.get("status") or {}).get("displayClock") or "").strip()
+            short_detail=str(state.get("shortDetail") or "").strip()
+            minute=display_clock if re.fullmatch(r"\\d{1,3}(?:\\+\\d{1,2})?[\u2032\u0027]?",display_clock) else (short_detail if re.fullmatch(r"\\d{1,3}(?:\\+\\d{1,2})?[\u2032\u0027]?",short_detail) else None)
             if finished and re.search(r"penalt|extra time|aet",detail,re.I):
                 finished=False
             parsed.append({"event_id":str(e["id"]),"home":h["team"].get("displayName") or h["team"].get("name"),
                   "away":a["team"].get("displayName") or a["team"].get("name"),
                   "start":ts,"home_score":sh,"away_score":sa,
                   "state":"final" if finished else "live" if status=="in" else "scheduled" if status=="pre" else "unverified",
-                  "detail":detail})
+                  "detail":detail,"minute":minute if status=="in" else None})
         except (KeyError,TypeError,ValueError,IndexError,StopIteration):
             continue
     return parsed
@@ -117,7 +120,7 @@ def run(source="data.json",output="live-scores.json"):
             if len(unique)==1:
                 e=next(iter(unique.values()))
                 record.update({"state":e["state"],"score":str(e["home_score"])+":"+str(e["away_score"]),
-                    "source":"espn-public-unofficial","event_id":e["event_id"]})
+                    "source":"espn-public-unofficial","event_id":e["event_id"],"minute":e.get("minute")})
                 if e["state"]=="final":
                     outcome=check_pick(m.get("pick"),e["home_score"],e["away_score"])
                     record["result_status"]="pogođen" if outcome is True else "promašen" if outcome is False else "nepoznat"
