@@ -162,6 +162,7 @@ def main():
     p.add_argument("--sport", choices=["all", "football", "basketball"], default="all")
     p.add_argument("--league", action="append", help="Repeat for multiple league IDs")
     p.add_argument("--input", help="JSON file containing local fixtures")
+    p.add_argument("--regional", action="store_true", help="Add limited Serbia/Bosnia fixtures")
     p.add_argument("--offline", action="store_true", help="Use only --input, no internet")
     p.add_argument("--output", default="collector-output/fixtures.json")
     a = p.parse_args()
@@ -172,6 +173,24 @@ def main():
     if a.offline and not a.input:
         p.error("--offline requires --input")
     result = collect(day, a.sport, a.league, a.offline, a.input)
+    if a.regional and not a.offline and a.sport in ("all", "football"):
+        from collector.regional import fetch_regional
+        rows, sources, errors = fetch_regional(day)
+        existing = {(f["sport"], f["league"].casefold(), f["home"].casefold(),
+                     f["away"].casefold(), f["start_utc"]) for f in result["fixtures"]}
+        for fixture in rows:
+            key = (fixture["sport"], fixture["league"].casefold(),
+                   fixture["home"].casefold(), fixture["away"].casefold(),
+                   fixture["start_utc"])
+            if key not in existing:
+                result["fixtures"].append(fixture)
+                existing.add(key)
+        result["fixtures"].sort(key=lambda f: f["start_utc"])
+        result["sources"].extend(sources)
+        result["errors"].extend(errors)
+        result["fixture_count"] = len(result["fixtures"])
+        result["status"] = "partial" if result["errors"] else "ok"
+        result["regional_coverage"] = "INCOMPLETE: TheSportsDB free plan one next fixture per league"
     output = Path(a.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n",
