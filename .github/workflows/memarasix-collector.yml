@@ -62,6 +62,7 @@ jobs:
           print("Validated:",len(doc["fixtures"]),"fixtures; errors:",len(doc.get("errors",[])))
           PY
           python memara_prepare_feed.py --input collector-output/fixtures.json --nba-next collector-output/nba-next.json --output collector-feed.json
+          python memara_math.py --input collector-feed.json --output collector-feed.json
       - name: Commit candidate feed only
         if: steps.localtime.outputs.enabled == 'true'
         run: |
