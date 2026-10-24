@@ -1,4 +1,4 @@
-name: MemaraSix optional statistical sources
+name: MemaraSix football statistics (free tier)
 # Validate BALLDONTLIE surname search following player lookup correction.
 on:
   workflow_dispatch:
@@ -18,7 +18,6 @@ jobs:
     timeout-minutes: 10
     env:
       API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-      BALLDONTLIE_API_KEY: ${{ secrets.BALLDONTLIE_API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
