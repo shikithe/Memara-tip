@@ -1,0 +1,29 @@
+name: MemaraSix math unit tests
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/memarasix-math-tests.yml'
+      - 'memara_math.py'
+      - 'tests/test_memara_math.py'
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test formulas and guardrails
+        run: PYTHONPATH=. python -m unittest discover -s tests -p 'test_memara_math.py' -v
+      - name: Validate production candidate feed without changing tickets
+        run: |
+          python memara_math.py --input collector-feed.json --output /tmp/memara-math-validation.json
+          python - <<'PY'
+          import json
+          data=json.load(open('/tmp/memara-math-validation.json'))
+          assert data['math_layer']['can_publish_tickets'] is False
+          print('Math layer valid, production tickets untouched')
+          PY
