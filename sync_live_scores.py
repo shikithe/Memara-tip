@@ -67,7 +67,21 @@ def extract(events):
             detail=str(state.get("description") or "")
             display_clock=str((e.get("status") or {}).get("displayClock") or "").strip()
             short_detail=str(state.get("shortDetail") or "").strip()
-            minute=display_clock if re.fullmatch(r"\\d{1,3}(?:\\+\\d{1,2})?[\u2032\u0027]?",display_clock) else (short_detail if re.fullmatch(r"\\d{1,3}(?:\\+\\d{1,2})?[\u2032\u0027]?",short_detail) else None)
+            minute=None
+            if status=="in":
+                for candidate in (short_detail,display_clock,str(state.get("detail") or "")):
+                    match=re.search(r"(?<!\\d)(\\d{1,3}(?:\\+\\d{1,2})?)\\s*['′’]?(?!\\d)",candidate)
+                    if match and (candidate==match.group(0) or any(x in candidate.lower() for x in ("minute","min","'","′","’"))):
+                        minute=match.group(1)
+                        break
+                if minute is None:
+                    clock_match=re.fullmatch(r"(\\d{1,3}):[0-5]\\d",display_clock)
+                    if clock_match:
+                        minute=clock_match.group(1)
+                if minute is None:
+                    clock_value=(e.get("status") or {}).get("clock")
+                    if isinstance(clock_value,(int,float)) and 0<=clock_value<=130*60:
+                        minute=str(int(clock_value//60))
             if finished and re.search(r"penalt|extra time|aet",detail,re.I):
                 finished=False
             parsed.append({"event_id":str(e["id"]),"home":h["team"].get("displayName") or h["team"].get("name"),
