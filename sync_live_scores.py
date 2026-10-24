@@ -93,6 +93,17 @@ def run(source="data.json",output="live-scores.json"):
         for league in LEAGUES:
             try:all_events.extend(extract(fetch(league,day)))
             except Exception:errors.append(league+":"+day)
+    # Never lose a previously verified final on transient ESPN failures.
+    previous = {}
+    try:
+        old = json.loads(Path(output).read_text(encoding="utf-8"))
+        if old.get("date") == published.get("date"):
+            for item in old.get("matches", []):
+                if item.get("state") == "final" and item.get("source") == "espn-public-unofficial":
+                    key = (item.get("ticket"),item.get("index"),item.get("home"),item.get("away"))
+                    previous[key] = item
+    except (OSError,ValueError,TypeError):
+        pass
     results=[]
     for ticket,index,m in matches:
         record={"ticket":ticket,"index":index,"home":m.get("home"),
@@ -112,6 +123,9 @@ def run(source="data.json",output="live-scores.json"):
                     record["result_status"]="pogođen" if outcome is True else "promašen" if outcome is False else "nepoznat"
         except (KeyError,ValueError,TypeError):
             pass
+        key = (ticket,index,m.get("home"),m.get("away"))
+        if key in previous and record["state"] != "final":
+            record = dict(previous[key])
         results.append(record)
     payload={"date":published.get("date"),"updated_at_utc":now.isoformat(),
             "source":"espn-public-unofficial","errors_count":len(errors),
