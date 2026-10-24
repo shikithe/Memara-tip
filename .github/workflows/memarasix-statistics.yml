@@ -1,5 +1,5 @@
 name: MemaraSix optional statistical sources
-# Recheck API-Football credential and real fixture statistics after setup.
+# Recheck configured API-Football and BALLDONTLIE credentials after setup.
 on:
   workflow_dispatch:
   schedule:
