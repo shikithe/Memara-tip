@@ -1,0 +1,79 @@
+name: MemaraSix - Collect candidate fixtures
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 09:15 Europe/Sarajevo: 07:15 UTC in summer, 08:15 in winter.
+    - cron: '15 7,8 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: memarasix-candidate-feed
+  cancel-in-progress: false
+
+jobs:
+  collect-candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Check scheduled local time
+        id: localtime
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          local_hour="$(TZ=Europe/Sarajevo date +%H)"
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$local_hour" = "09" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping UTC trigger outside 09:00 Sarajevo"
+          fi
+      - uses: actions/checkout@v4
+        if: steps.localtime.outputs.enabled == 'true'
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        if: steps.localtime.outputs.enabled == 'true'
+        with:
+          python-version: '3.11'
+      - name: Collect football and NBA + regional leagues and player watchlist
+        if: steps.localtime.outputs.enabled == 'true'
+        run: |
+          python collector.py --date "$(TZ=Europe/Sarajevo date +%F)" --sport all --regional --nba-players --output collector-output/fixtures.json || true
+      - name: Validate sources and generate analyst queue
+        if: steps.localtime.outputs.enabled == 'true'
+        run: |
+          python - <<'PY'
+          import json
+          doc=json.load(open("collector-output/fixtures.json",encoding="utf-8"))
+          if not isinstance(doc.get("fixtures"),list) or len(doc["fixtures"])==0:
+              raise SystemExit("Collector returned no valid fixtures. Existing published feed remains unchanged.")
+          if not any(s.get("status")=="ok" for s in doc.get("sources",[])):
+              raise SystemExit("No source succeeded. Existing feed remains unchanged.")
+          print("Validated:",len(doc["fixtures"]),"fixtures; errors:",len(doc.get("errors",[])))
+          PY
+          python memara_prepare_feed.py --input collector-output/fixtures.json --output collector-feed.json
+      - name: Commit candidate feed only
+        if: steps.localtime.outputs.enabled == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp collector-output/fixtures.json collector-raw.json
+          git add collector-feed.json collector-raw.json
+          if git diff --cached --quiet; then
+            echo "No changes in candidate feed"
+            exit 0
+          fi
+          git commit -m "Update MemaraSix candidate fixture feed [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.localtime.outputs.enabled == 'true'
+        with:
+          name: memarasix-candidate-fixtures
+          path: |
+            collector-output/fixtures.json
+            collector-feed.json
+          if-no-files-found: ignore
