@@ -16,13 +16,13 @@ jobs:
         with:
           python-version: '3.11'
       - name: Check syntax
-        run: python -m py_compile collector.py collector/regional.py
+        run: python -m py_compile collector.py memara_regional.py
       - name: Regional test without ESPN
         run: |
           python - <<'PY'
           import json
           from datetime import date
-          from collector.regional import fetch_regional
+          from memara_regional import fetch_regional
           rows, sources, errors = fetch_regional(date(2026,10,24))
           print("REGIONAL_SOURCE",json.dumps({"count":len(rows),"source_counts":[(x["league"],x["count"],x.get("source_events")) for x in sources],"errors":errors,"samples":rows[:3]},ensure_ascii=False))
           PY
