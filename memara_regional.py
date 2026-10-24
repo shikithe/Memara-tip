@@ -48,11 +48,9 @@ def fetch_regional(target):
                 except ValueError:
                     continue
                 if dt.tzinfo is None:
-                    # Preserve original date/time and label uncertainty, but
-                    # cannot safely include it in the timestamped fixture set.
-                    if str(event.get("dateEvent")) == target.isoformat():
-                        errors.append(f"{league}: event {event.get('idEvent')} lacks timezone; excluded")
-                    continue
+                    # TheSportsDB documents strTimestamp as UTC without a
+                    # timezone suffix. Interpret it as UTC, not Sarajevo time.
+                    dt = dt.replace(tzinfo=timezone.utc)
                 local = dt.astimezone(SAR)
                 if local.date() != target:
                     continue
@@ -67,8 +65,9 @@ def fetch_regional(target):
                     "home": home, "away": away,
                     "start_utc": dt.astimezone(timezone.utc).isoformat().replace("+00:00", "Z"),
                     "start_sarajevo": local.isoformat(),
-                    "status": "pre" if not event.get("intHomeScore") else "unknown",
+                    "status": "pre" if event.get("strStatus") == "NS" else "unknown",
                     "coverage": "incomplete: free endpoint returns at most 1 next event per league",
+                    "time_source": "TheSportsDB strTimestamp (naive UTC per provider documentation)",
                 })
                 accepted += 1
             sources.append({"provider": "thesportsdb-free-limited", "league": league,
