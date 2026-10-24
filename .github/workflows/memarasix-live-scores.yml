@@ -1,6 +1,10 @@
 name: MemaraSix live scores (5-minute checks)
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/memarasix-live-scores.yml'
+      - 'sync_live_scores.py'
   schedule:
     - cron: '*/5 * * * *'
 permissions:
