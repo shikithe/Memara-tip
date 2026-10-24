@@ -59,17 +59,25 @@ async function loadScores(){
     const score=await response.json();
     if(!Array.isArray(score.matches)||!score.updated_at_utc)throw Error('invalid score file');
     const stamp=new Date(score.updated_at_utc).getTime();
-    if(!Number.isFinite(stamp)||Date.now()-stamp>12*60*1000){
-      liveScores=null;
+    if(!Number.isFinite(stamp))throw Error('invalid timestamp');
+    const stale=Date.now()-stamp>12*60*1000;
+    // Never hide a confirmed final result just because the feed is late.
+    // Stale in-progress scores must not be represented as currently live.
+    liveScores=stale?{...score,matches:score.matches.filter(x=>x.state==='final')}:score;
+    if(stale){
       if(currentData)render(currentData,false,'out');
-      showRefreshStatus('⚠ Rezultati nisu ažurirani više od 12 minuta — prikaz uživo je pauziran');
+      showRefreshStatus('⚠ Live izvor kasni; završeni i potvrđeni rezultati ostaju prikazani');
       return;
     }
-    liveScores=score;
     if(currentData)render(currentData,false,'out');
     const updated=new Intl.DateTimeFormat('bs-BA',{timeZone:'Europe/Sarajevo',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(score.updated_at_utc));
     showRefreshStatus('Rezultati osvježeni u '+updated+' · naredna provjera približno za 5 min');
-  }catch(e){liveScores=null;if(currentData)render(currentData,false,'out');showRefreshStatus('Live podaci trenutno nisu dostupni; ne prikazujemo stare rezultate kao uživo')}
+  }catch(e){
+    // Retain previously verified final scores even during network failures.
+    if(liveScores)liveScores={...liveScores,matches:liveScores.matches.filter(x=>x.state==='final')};
+    if(currentData)render(currentData,false,'out');
+    showRefreshStatus('⚠ Greška pri osvježavanju; zadržani su prethodno potvrđeni konačni rezultati');
+  }
 }
 setInterval(()=>{if(!document.hidden)loadScores()},300000);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)loadScores()});
