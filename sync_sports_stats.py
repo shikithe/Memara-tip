@@ -67,7 +67,7 @@ def nba_players(names, key, season, limit=4):
     for name in names[:limit]:
         player_result={"requested_name":name,"status":"unavailable"}
         try:
-            response=get(NBA+"/players?"+urlencode({"search":name,"per_page":50}),
+            response=get(NBA+"/players?"+urlencode({"search":name.split()[-1],"per_page":50}),
                          {"Authorization":key}).get("data",[])
             exact=[p for p in response if norm(p.get("first_name","")+" "+p.get("last_name",""))==norm(name)]
             if len(exact)!=1:
@@ -93,7 +93,7 @@ def nba_players(names, key, season, limit=4):
                 "sample_count":len(values),
                 "points_last_10_avg":round(sum(values)/len(values),2) if values else None,
                 "recent_games":rows,
-                "source":"BALLDONTLIE","coverage_note":"First API page only; may not represent latest games unless sorted and paged. No projection."}
+                "source":"BALLDONTLIE","coverage_note":"First API page only; may omit latest games unless paginated. No projection."}
         except HTTPError as exc:
             player_result["reason"]="HTTP "+str(exc.code)+" (check account tier, limits or key)"
         except (URLError,KeyError,ValueError,TypeError):
