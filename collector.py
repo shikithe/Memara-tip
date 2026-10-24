@@ -108,32 +108,35 @@ def collect(target, sport="all", leagues=None, offline=False, input_path=None):
             selected += [("football", "soccer", s) for s in (leagues or FOOTBALL)]
         if sport in ("basketball", "all"):
             selected += [("basketball", "basketball", s) for s in (leagues or BASKETBALL)]
-        start_day = (target - timedelta(days=1)).strftime("%Y%m%d")
-        end_day = (target + timedelta(days=1)).strftime("%Y%m%d")
+        # One calendar day per request: several ESPN leagues reject a date range.
+        # Local Sarajevo date may include events from preceding UTC calendar day.
+        days = [(target - timedelta(days=1)).strftime("%Y%m%d"),
+                target.strftime("%Y%m%d")]
         for kind, api_kind, league in selected:
+          for utc_day in days:
             url = (f"{ROOT}/{api_kind}/{league}/scoreboard?" +
-                   urlencode({"dates": f"{start_day}-{end_day}", "limit": 500}))
-            try:
-                req = Request(url, headers={"User-Agent": "MEMARA-Collector/1.0",
-                                            "Accept": "application/json"})
-                with urlopen(req, timeout=20) as response:
-                    raw = response.read(8 * 1024 * 1024 + 1)
-                if len(raw) > 8 * 1024 * 1024:
-                    raise ValueError("response too large")
-                events = json.loads(raw)["events"]
-                if not isinstance(events, list):
-                    raise ValueError("events must be a list")
-                found = [normalized(e, kind, league, target) for e in events]
-                found = [e for e in found if e]
-                fixtures.extend(found)
-                sources.append({"provider": "espn-public-unofficial",
-                                "sport": kind, "league": league,
-                                "status": "ok", "count": len(found), "url": url})
-            except (OSError, ValueError, KeyError, TypeError) as exc:
-                errors.append(f"ESPN {kind}/{league}: {type(exc).__name__}: {exc}")
-                sources.append({"provider": "espn-public-unofficial",
-                                "sport": kind, "league": league,
-                                "status": "error", "count": 0, "url": url})
+                   urlencode({"dates": utc_day, "limit": 500}))
+              try:
+                  req = Request(url, headers={"User-Agent": "MEMARA-Collector/1.0",
+                                              "Accept": "application/json"})
+                  with urlopen(req, timeout=20) as response:
+                      raw = response.read(8 * 1024 * 1024 + 1)
+                  if len(raw) > 8 * 1024 * 1024:
+                      raise ValueError("response too large")
+                  events = json.loads(raw)["events"]
+                  if not isinstance(events, list):
+                      raise ValueError("events must be a list")
+                  found = [normalized(e, kind, league, target) for e in events]
+                  found = [e for e in found if e]
+                  fixtures.extend(found)
+                  sources.append({"provider": "espn-public-unofficial",
+                                  "sport": kind, "league": league,
+                                  "status": "ok", "count": len(found), "url": url})
+              except (OSError, ValueError, KeyError, TypeError) as exc:
+                  errors.append(f"ESPN {kind}/{league}: {type(exc).__name__}: {exc}")
+                  sources.append({"provider": "espn-public-unofficial",
+                                  "sport": kind, "league": league,
+                                  "status": "error", "count": 0, "url": url})
     unique = {}
     for item in fixtures:
         key = (item["sport"], item["league"].casefold(),
