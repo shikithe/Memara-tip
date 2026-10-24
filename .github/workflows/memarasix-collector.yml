@@ -45,6 +45,10 @@ jobs:
         if: steps.localtime.outputs.enabled == 'true'
         run: |
           python collector.py --date "$(TZ=Europe/Sarajevo date +%F)" --sport all --regional --nba-players --output collector-output/fixtures.json || true
+      - name: Collect next Sarajevo date NBA fixtures
+        if: steps.localtime.outputs.enabled == 'true'
+        run: |
+          python collector.py --date "$(TZ=Europe/Sarajevo date -d tomorrow +%F)" --sport basketball --output collector-output/nba-next.json || true
       - name: Validate sources and generate analyst queue
         if: steps.localtime.outputs.enabled == 'true'
         run: |
@@ -57,7 +61,7 @@ jobs:
               raise SystemExit("No source succeeded. Existing feed remains unchanged.")
           print("Validated:",len(doc["fixtures"]),"fixtures; errors:",len(doc.get("errors",[])))
           PY
-          python memara_prepare_feed.py --input collector-output/fixtures.json --output collector-feed.json
+          python memara_prepare_feed.py --input collector-output/fixtures.json --nba-next collector-output/nba-next.json --output collector-feed.json
       - name: Commit candidate feed only
         if: steps.localtime.outputs.enabled == 'true'
         run: |
