@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "date": "2026-10-24",
-  "generated_at_utc": "2026-10-24T10:36:11.696498+00:00",
+  "generated_at_utc": "2026-10-24T10:37:36.384667+00:00",
   "state": "awaiting_human_or_AI_analysis",
   "not_betting_advice": true,
   "odds_verified": false,
@@ -352,7 +352,118 @@
       "status": "pre"
     }
   ],
-  "nba_games": [],
+  "nba_games": [
+    {
+      "id": "espn:basketball:nba:401909853",
+      "provider": "espn-public-unofficial",
+      "sport": "basketball",
+      "league": "nba",
+      "home": "Charlotte Hornets",
+      "away": "Miami Heat",
+      "start_utc": "2026-10-24T22:00:00Z",
+      "start_sarajevo": "2026-10-25T00:00:00+02:00",
+      "status": "pre"
+    },
+    {
+      "id": "espn:basketball:nba:401909854",
+      "provider": "espn-public-unofficial",
+      "sport": "basketball",
+      "league": "nba",
+      "home": "Cleveland Cavaliers",
+      "away": "Brooklyn Nets",
+      "start_utc": "2026-10-24T23:30:00Z",
+      "start_sarajevo": "2026-10-25T01:30:00+02:00",
+      "status": "pre"
+    },
+    {
+      "id": "espn:basketball:nba:401909855",
+      "provider": "espn-public-unofficial",
+      "sport": "basketball",
+      "league": "nba",
+      "home": "Philadelphia 76ers",
+      "away": "Milwaukee Bucks",
+      "start_utc": "2026-10-24T23:30:00Z",
+      "start_sarajevo": "2026-10-25T01:30:00+02:00",
+      "status": "pre"
+    },
+    {
+      "id": "espn:basketball:nba:401909857",
+      "provider": "espn-public-unofficial",
+      "sport": "basketball",
+      "league": "nba",
+      "home": "Chicago Bulls",
+      "away": "Washington Wizards",
+      "start_utc": "2026-10-25T00:00:00Z",
+      "start_sarajevo": "2026-10-25T02:00:00+02:00",
+      "status": "pre"
+    },
+    {
+      "id": "espn:basketball:nba:401909858",
+      "provider": "espn-public-unofficial",
+      "sport": "basketball",
+      "league": "nba",
+      "home": "Dallas Mavericks",
+      "away": "San Antonio Spurs",
+      "start_utc": "2026-10-25T00:00:00Z",
+      "start_sarajevo": "2026-10-25T02:00:00+02:00",
+      "status": "pre"
+    },
+    {
+      "id": "espn:basketball:nba:401909856",
+      "provider": "espn-public-unofficial",
+      "sport": "basketball",
+      "league": "nba",
+      "home": "Atlanta Hawks",
+      "away": "Houston Rockets",
+      "start_utc": "2026-10-25T00:30:00Z",
+      "start_sarajevo": "2026-10-25T02:30:00+02:00",
+      "status": "pre"
+    },
+    {
+      "id": "espn:basketball:nba:401909859",
+      "provider": "espn-public-unofficial",
+      "sport": "basketball",
+      "league": "nba",
+      "home": "Denver Nuggets",
+      "away": "New Orleans Pelicans",
+      "start_utc": "2026-10-25T01:00:00Z",
+      "start_sarajevo": "2026-10-25T02:00:00+01:00",
+      "status": "pre"
+    },
+    {
+      "id": "espn:basketball:nba:401909860",
+      "provider": "espn-public-unofficial",
+      "sport": "basketball",
+      "league": "nba",
+      "home": "Phoenix Suns",
+      "away": "Golden State Warriors",
+      "start_utc": "2026-10-25T02:00:00Z",
+      "start_sarajevo": "2026-10-25T03:00:00+01:00",
+      "status": "pre"
+    },
+    {
+      "id": "espn:basketball:nba:401909861",
+      "provider": "espn-public-unofficial",
+      "sport": "basketball",
+      "league": "nba",
+      "home": "Utah Jazz",
+      "away": "Los Angeles Lakers",
+      "start_utc": "2026-10-25T21:00:00Z",
+      "start_sarajevo": "2026-10-25T22:00:00+01:00",
+      "status": "pre"
+    },
+    {
+      "id": "espn:basketball:nba:401909862",
+      "provider": "espn-public-unofficial",
+      "sport": "basketball",
+      "league": "nba",
+      "home": "Brooklyn Nets",
+      "away": "Indiana Pacers",
+      "start_utc": "2026-10-25T22:00:00Z",
+      "start_sarajevo": "2026-10-25T23:00:00+01:00",
+      "status": "pre"
+    }
+  ],
   "nba_player_watchlist": [
     {
       "watch_id": "nba-watch-001",
@@ -477,7 +588,7 @@
   ],
   "candidate_counts": {
     "football": 30,
-    "nba_games": 0,
+    "nba_games": 10,
     "players": 12
   }
 }
