@@ -1,6 +1,6 @@
 {
   "date": "2026-10-24",
-  "updated_at_utc": "2026-10-24T16:39:58.074220+00:00",
+  "updated_at_utc": "2026-10-24T16:54:01.333968+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -13,6 +13,7 @@
       "score": "2:0",
       "source": "espn-public-unofficial",
       "event_id": "401878768",
+      "minute": null,
       "result_status": "pogođen"
     },
     {
@@ -24,6 +25,7 @@
       "score": "4:0",
       "source": "espn-public-unofficial",
       "event_id": "401878358",
+      "minute": null,
       "result_status": "pogođen"
     },
     {
@@ -35,6 +37,7 @@
       "score": "4:0",
       "source": "espn-public-unofficial",
       "event_id": "401884762",
+      "minute": null,
       "result_status": "pogođen"
     },
     {
@@ -46,6 +49,7 @@
       "score": "2:3",
       "source": "espn-public-unofficial",
       "event_id": "401884757",
+      "minute": null,
       "result_status": "pogođen"
     },
     {
@@ -57,6 +61,7 @@
       "score": "1:1",
       "source": "espn-public-unofficial",
       "event_id": "401875573",
+      "minute": null,
       "result_status": "promašen"
     },
     {
@@ -67,7 +72,8 @@
       "state": "live",
       "score": "0:0",
       "source": "espn-public-unofficial",
-      "event_id": "401878767"
+      "event_id": "401878767",
+      "minute": null
     },
     {
       "ticket": "C",
@@ -78,6 +84,7 @@
       "score": "2:0",
       "source": "espn-public-unofficial",
       "event_id": "401874961",
+      "minute": null,
       "result_status": "pogođen"
     },
     {
@@ -88,7 +95,8 @@
       "state": "live",
       "score": "0:0",
       "source": "espn-public-unofficial",
-      "event_id": "401882827"
+      "event_id": "401882827",
+      "minute": null
     },
     {
       "ticket": "C",
@@ -99,6 +107,7 @@
       "score": "0:2",
       "source": "espn-public-unofficial",
       "event_id": "401874958",
+      "minute": null,
       "result_status": "pogođen"
     },
     {
@@ -109,7 +118,8 @@
       "state": "live",
       "score": "1:0",
       "source": "espn-public-unofficial",
-      "event_id": "401874948"
+      "event_id": "401874948",
+      "minute": null
     }
   ],
   "bank_unchanged": true
