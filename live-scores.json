@@ -1,6 +1,6 @@
 {
   "date": "2026-10-24",
-  "updated_at_utc": "2026-10-24T16:16:34.215657+00:00",
+  "updated_at_utc": "2026-10-24T16:38:56.249747+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -53,17 +53,18 @@
       "index": 1,
       "home": "FC Utrecht",
       "away": "PEC Zwolle",
-      "state": "live",
-      "score": "0:1",
+      "state": "final",
+      "score": "1:1",
       "source": "espn-public-unofficial",
-      "event_id": "401875573"
+      "event_id": "401875573",
+      "result_status": "promašen"
     },
     {
       "ticket": "C",
       "index": 0,
       "home": "Chelsea",
       "away": "Tottenham Hotspur",
-      "state": "scheduled",
+      "state": "live",
       "score": "0:0",
       "source": "espn-public-unofficial",
       "event_id": "401878767"
@@ -84,7 +85,7 @@
       "index": 2,
       "home": "Valencia",
       "away": "Villarreal",
-      "state": "scheduled",
+      "state": "live",
       "score": "0:0",
       "source": "espn-public-unofficial",
       "event_id": "401882827"
@@ -106,7 +107,7 @@
       "home": "Napoli",
       "away": "AS Roma",
       "state": "live",
-      "score": "0:0",
+      "score": "1:0",
       "source": "espn-public-unofficial",
       "event_id": "401874948"
     }
