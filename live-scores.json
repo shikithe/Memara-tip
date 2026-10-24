@@ -1,6 +1,6 @@
 {
   "date": "2026-10-24",
-  "updated_at_utc": "2026-10-24T17:46:18.013432+00:00",
+  "updated_at_utc": "2026-10-24T18:51:28.130003+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -74,12 +74,13 @@
       "index": 0,
       "home": "Chelsea",
       "away": "Tottenham Hotspur",
-      "state": "live",
-      "score": "0:0",
+      "state": "final",
+      "score": "0:2",
       "source": "espn-public-unofficial",
       "event_id": "401878767",
       "league": "eng.1",
-      "minute": "59"
+      "minute": null,
+      "result_status": "promašen"
     },
     {
       "ticket": "C",
@@ -99,12 +100,13 @@
       "index": 2,
       "home": "Valencia",
       "away": "Villarreal",
-      "state": "live",
-      "score": "1:0",
+      "state": "final",
+      "score": "1:2",
       "source": "espn-public-unofficial",
       "event_id": "401882827",
       "league": "esp.1",
-      "minute": "54"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "C",
@@ -124,12 +126,13 @@
       "index": 4,
       "home": "Napoli",
       "away": "AS Roma",
-      "state": "live",
-      "score": "3:2",
+      "state": "final",
+      "score": "3:3",
       "source": "espn-public-unofficial",
       "event_id": "401874948",
       "league": "ita.1",
-      "minute": "87"
+      "minute": null,
+      "result_status": "pogođen"
     }
   ],
   "bank_unchanged": true

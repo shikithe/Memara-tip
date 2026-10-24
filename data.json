@@ -5,7 +5,7 @@
   "daily_stake": 12.98,
   "bank_after": 136.86,
   "bank_after_stakes": 116.77,
-  "provisional": true,
+  "provisional": false,
   "odds_verified": false,
   "odds_verification_note": "Kvote preuzete iz javnih prematch prikaza PokerStars, Pinnacle i Ladbrokes 24.10.2026. Nisu potvrđene kao izvršive u bet365/Mozzart BiH niti se garantuje njihova nepromjenjivost.",
   "tickets": [
@@ -145,7 +145,7 @@
       "id": "C",
       "label": "KEŠ KOLICA",
       "stake": 1.3,
-      "status": "objavljen",
+      "status": "izgubljen",
       "matches": [
         {
           "home": "Chelsea",
@@ -165,7 +165,9 @@
                 "https://www.pokerstars.fr/en/sports/soccer/1/english-premier-league/10932509/chelsea-v-tottenham/36177320/"
               ]
             ]
-          }
+          },
+          "result_status": "promašen",
+          "final_score": "0:2"
         },
         {
           "home": "Como",
@@ -185,7 +187,9 @@
                 "https://www.pinnacle.com/en/soccer/italy-serie-a/sassuolo-como/1638145376/"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "2:0"
         },
         {
           "home": "Valencia",
@@ -205,7 +209,9 @@
                 "https://www.ladbrokes.com/en/sports/event/football/spanish/spanish-la-liga/valencia-cf-v-villarreal-cf/259264880/scores"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "1:2"
         },
         {
           "home": "Cagliari",
@@ -225,7 +231,9 @@
                 "https://www.pokerstars.fr/en/sports/soccer/1/italian-serie-a/81/cagliari-v-bologna/36209511/"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "0:2"
         },
         {
           "home": "Napoli",
@@ -245,16 +253,20 @@
                 "https://www.pokerstars.es/en/sports/soccer/1/italian-serie-a/81/napoli-v-roma/36209505/"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "3:3"
         }
       ],
-      "odds": 10.24
+      "odds": 10.24,
+      "settled_at_utc": "2026-10-24T18:51:28.130003+00:00",
+      "payout": 0.0
     }
   ],
   "analysis_status": "Collector 24.10.2026: 30 fudbalskih kandidata, 10 NBA utakmica, 12 neprovjerenih igrača; source_errors=0. Nezavisno provjereni odabrani fudbalski mečevi uz dostupnu formu, povrede i javne tržišne prikaze. NBA igrači nisu izabrani jer nemaju potvrđene granice poena ni kvote. Nisu potvrđeni konačni sastavi; kvote referentne. Tiket C je obavezan i sastavljen sa 5 različitih događaja, ukupna kvota >10. Ovo su virtuelni ulozi.",
   "selection_method": "collector → nezavisna provjera → selekcija; nikad automatska objava iz Collectora",
-  "settled": false,
+  "settled": true,
   "source_fixture_feed": "collector-feed.json",
   "total_payout": 20.09,
-  "net_change": null
+  "net_change": 7.11
 }
