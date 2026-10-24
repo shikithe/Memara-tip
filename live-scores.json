@@ -1,6 +1,6 @@
 {
   "date": "2026-10-24",
-  "updated_at_utc": "2026-10-24T16:56:44.096495+00:00",
+  "updated_at_utc": "2026-10-24T17:16:05.565256+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -73,7 +73,7 @@
       "score": "0:0",
       "source": "espn-public-unofficial",
       "event_id": "401878767",
-      "minute": "26"
+      "minute": "45"
     },
     {
       "ticket": "C",
@@ -93,10 +93,10 @@
       "home": "Valencia",
       "away": "Villarreal",
       "state": "live",
-      "score": "0:0",
+      "score": "1:0",
       "source": "espn-public-unofficial",
       "event_id": "401882827",
-      "minute": "24"
+      "minute": "44"
     },
     {
       "ticket": "C",
@@ -116,10 +116,10 @@
       "home": "Napoli",
       "away": "AS Roma",
       "state": "live",
-      "score": "1:0",
+      "score": "2:0",
       "source": "espn-public-unofficial",
       "event_id": "401874948",
-      "minute": "45"
+      "minute": "57"
     }
   ],
   "bank_unchanged": true
