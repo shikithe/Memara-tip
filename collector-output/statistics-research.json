@@ -1,6 +1,6 @@
 {
   "date": "2026-10-24",
-  "generated_at_utc": "2026-10-24T13:29:49.468463+00:00",
+  "generated_at_utc": "2026-10-24T13:36:45.364013+00:00",
   "analysis_status": "data_only_not_predictions",
   "football": {
     "status": "ok",
@@ -87,32 +87,7 @@
     "is_model_prediction": false
   },
   "nba": {
-    "status": "ok",
-    "season": 2026,
-    "players": [
-      {
-        "requested_name": "Nikola Jokic",
-        "status": "unavailable",
-        "reason": "HTTP 401 (check account tier, limits or key)"
-      },
-      {
-        "requested_name": "Luka Doncic",
-        "status": "unavailable",
-        "reason": "HTTP 429 (check account tier, limits or key)"
-      },
-      {
-        "requested_name": "Shai Gilgeous-Alexander",
-        "status": "unavailable",
-        "reason": "HTTP 429 (check account tier, limits or key)"
-      },
-      {
-        "requested_name": "Giannis Antetokounmpo",
-        "status": "unavailable",
-        "reason": "HTTP 429 (check account tier, limits or key)"
-      }
-    ],
-    "source": "BALLDONTLIE",
-    "is_model_prediction": false
+    "status": "not_configured"
   },
   "ticket_publication_allowed": false
 }
