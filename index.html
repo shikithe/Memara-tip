@@ -80,6 +80,86 @@ async function loadScores(){
     showRefreshStatus('⚠ Greška pri osvježavanju; zadržani su prethodno potvrđeni konačni rezultati');
   }
 }
+// Best-effort browser-side ESPN backup when scheduled GitHub workflows are delayed.
+// Restricted to the event IDs and leagues already verified by our collector.
+// Some browsers/providers may block cross-origin requests; never invent results.
+function decideLivePick(pick,home,away){
+ const c=String(pick||'').trim().toUpperCase(),n=home+away;
+ if(c==='1')return home>away;
+ if(c==='2')return away>home;
+ if(c==='X')return home===away;
+ if(c==='1X'||c==='X1')return home>=away;
+ if(c==='X2'||c==='2X')return away>=home;
+ if(c==='12')return home!==away;
+ if(c==='3+'||c==='OVER 2.5'||c==='O2.5')return n>=3;
+ if(c==='2+'||c==='OVER 1.5'||c==='O1.5')return n>=2;
+ if(c==='GG')return home>0&&away>0;
+ if(c==='NG')return home===0||away===0;
+ return null;
+}
+function scoreDate(value){
+ const d=new Date(value);
+ if(!Number.isFinite(d.getTime()))return null;
+ return new Intl.DateTimeFormat('en-CA',{year:'numeric',month:'2-digit',day:'2-digit',timeZone:'Europe/Sarajevo'}).format(d).replaceAll('-','');
+}
+async function checkEspnDirectly(){
+ if(!currentData||!liveScores||liveScores.date!==currentData.date||document.hidden)return;
+ const pending=liveScores.matches.filter(m=>m.event_id&&m.league&&m.state!=='final'&&m.state!=='unverified');
+ if(!pending.length)return;
+ const groups=new Map();
+ for(const m of pending){
+  const leg=currentData.tickets.find(t=>t.id===m.ticket)?.matches?.[m.index];
+  const day=leg?scoreDate(leg.start_sarajevo||leg.start_utc):null;
+  if(!day||!/^[a-z0-9.]+$/i.test(m.league))continue;
+  const key=m.league+'|'+day;
+  if(!groups.has(key))groups.set(key,[]);
+  groups.get(key).push(m);
+ }
+ let changed=false,success=0;
+ await Promise.all([...groups].slice(0,8).map(async ([key,tracked])=>{
+  const [league,day]=key.split('|');
+  try{
+   const url='https://site.api.espn.com/apis/site/v2/sports/soccer/'+encodeURIComponent(league)+'/scoreboard?dates='+day+'&limit=500';
+   const resp=await fetch(url,{cache:'no-store'});
+   if(!resp.ok)return;
+   const result=await resp.json();success++;
+   for(const m of tracked){
+    const event=(result.events||[]).find(e=>String(e.id)===String(m.event_id));
+    if(!event)continue;
+    const competition=event.competitions?.[0];
+    const home=competition?.competitors?.find(x=>x.homeAway==='home');
+    const away=competition?.competitors?.find(x=>x.homeAway==='away');
+    const hs=Number(home?.score),as=Number(away?.score);
+    if(!Number.isInteger(hs)||!Number.isInteger(as)||hs<0||as<0)continue;
+    const status=event.status?.type||{},state=status.state;
+    const extraTime=/penalt|extra time|aet/i.test(status.description||'');
+    const final=state==='post'&&status.completed===true&&!extraTime;
+    if(state!=='in'&&!final)continue;
+    const old=liveScores.matches.find(x=>x.ticket===m.ticket&&x.index===m.index);
+    if(!old||old.state==='final')continue;
+    const next={...old,score:hs+':'+as,state:final?'final':'live',minute:null};
+    if(!final){
+     const detail=String(status.shortDetail||status.detail||'');
+     const clock=String(event.status?.displayClock||'');
+     const found=detail.match(/(\\d{1,3}(?:\\+\\d{1,2})?)\\s*['′’]/)||clock.match(/^(\\d{1,3})(?::[0-5]\\d)?$/);
+     next.minute=found?found[1]:null;
+    }else{
+     const leg=currentData.tickets.find(t=>t.id===m.ticket)?.matches?.[m.index];
+     const pick=leg?decideLivePick(leg.pick,hs,as):null;
+     if(pick!==null)next.result_status=pick?'pogođen':'promašen';
+    }
+    Object.assign(old,next);
+    changed=true;
+   }
+  }catch(e){/* CORS or ESPN unavailable: keep published results */ }
+ }));
+ if(changed){
+  if(currentData)render(currentData,false,'out');
+  showRefreshStatus('ESPN direktna provjera · '+refreshClock()+' · banku potvrđuje GitHub');
+ }else if(!success){
+  showRefreshStatus('⚠ ESPN direktna provjera nedostupna; čekamo GitHub osvježavanje');
+ }
+}
 async function refreshPublishedData(){
   try{
     const response=await fetch('./data.json?v='+Date.now(),{cache:'no-store'});
@@ -103,6 +183,7 @@ async function pollPublishedScores(force=false){
   try{
     await refreshPublishedData();
     await loadScores();
+    await checkEspnDirectly();
   }finally{pollBusy=false}
 }
 setInterval(()=>{pollPublishedScores()},30000);
@@ -122,5 +203,5 @@ function refreshClock(){return new Intl.DateTimeFormat("bs-BA",{timeZone:"Europe
   window.location.replace(next.toString());
 }
 function switchTab(which){const archive=which==='archive';document.getElementById('currentPanel').hidden=archive;document.getElementById('archivePanel').hidden=!archive;for(const [id,selected] of [['currentTab',!archive],['archiveTab',archive]]){const b=document.getElementById(id);b.classList.toggle('active',selected);b.setAttribute('aria-selected',String(selected))}if(archive)loadArchive()}document.getElementById('currentTab').addEventListener('click',()=>switchTab('current'));document.getElementById('archiveTab').addEventListener('click',()=>switchTab('archive'));function showArchive(){const date=document.getElementById('archiveDate').value;const d=archiveData.find(x=>x.date===date);if(d)render(d,false,'archiveOut');else document.getElementById('archiveOut').innerHTML='<div class="notice">Nema sačuvane ponude za taj datum.</div>'}document.getElementById('archiveDate').addEventListener('change',showArchive);async function loadArchive(){document.getElementById('archiveLoading').textContent='Učitavanje arhive…';try{const r=await fetch('./archive.json?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('Arhiva nedostupna');const list=await r.json();archiveData=(Array.isArray(list)?list:[]).filter(x=>x&&x.date).sort((a,b)=>b.date.localeCompare(a.date));const sel=document.getElementById('archiveDate');const prior=sel.value;sel.innerHTML=archiveData.map(x=>'<option value="'+esc(x.date)+'">'+esc(x.date.split('-').reverse().join('.'))+'</option>').join('');if(archiveData.some(x=>x.date===prior))sel.value=prior;document.getElementById('archiveLoading').textContent=archiveData.length?'':'Arhiva je trenutno prazna.';if(archiveData.length)showArchive();else document.getElementById('archiveOut').innerHTML='';return true}catch(e){document.getElementById('archiveLoading').textContent='Arhiva trenutno nije dostupna. Pokušaj osvježiti stranicu.';return false}}
-fetch('./data.json?v='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json()}).then(d=>{currentData=d;render(d);return loadScores()}).catch(()=>{currentData=fallback;render(fallback,true);loadScores()});
+fetch('./data.json?v='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json()}).then(d=>{currentData=d;render(d);return loadScores().then(checkEspnDirectly)}).catch(()=>{currentData=fallback;render(fallback,true);loadScores()});
 </script></body></html>
