@@ -1,0 +1,52 @@
+name: MEMARA Serbia Bosnia source probe
+on:
+  push:
+    paths:
+      - '.github/workflows/collector-regional-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Probe Serbian and Bosnian ESPN league slugs
+        run: |
+          python - <<'PY'
+          import json, urllib.request, urllib.error
+          from urllib.parse import urlencode
+          from datetime import datetime
+          codes=["srb.1","ser.1","bih.1","bos.1","bih.2","srb.2"]
+          for league in codes:
+              url=f"https://site.api.espn.com/apis/site/v2/sports/soccer/{league}/scoreboard?"+urlencode({"dates":"20261024","limit":100})
+              try:
+                  req=urllib.request.Request(url,headers={"User-Agent":"MEMARA-Collector/1.0","Accept":"application/json"})
+                  with urllib.request.urlopen(req,timeout=15) as resp:
+                      obj=json.load(resp)
+                  events=obj.get("events",[])
+                  print("PROBE",league,"HTTP200", "events",len(events),"sample",[(e.get("name"),e.get("date")) for e in events[:3]],flush=True)
+              except Exception as e:
+                  print("PROBE",league,"ERROR",str(e),flush=True)
+          PY
+      - name: Probe leagues for a full week
+        run: |
+          python - <<'PY'
+          import urllib.request,json
+          for league in ("srb.1","bih.1","bos.1","ser.1"):
+              count=0; sample=[]
+              for d in ("20261024","20261025","20261026","20261027","20261028","20261029","20261030"):
+                  url=f"https://site.api.espn.com/apis/site/v2/sports/soccer/{league}/scoreboard?dates={d}&limit=100"
+                  try:
+                      with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"MEMARA-Collector/1.0"}),timeout=15) as r:
+                          es=json.load(r).get("events",[])
+                      count+=len(es)
+                      sample.extend([e.get("name") for e in es[:1]])
+                  except Exception as e:
+                      print("WEEK_ERROR",league,d,str(e))
+              print("WEEK",league,count,sample[:4],flush=True)
+          PY
