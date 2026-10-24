@@ -70,12 +70,12 @@ def extract(events):
             minute=None
             if status=="in":
                 for candidate in (short_detail,display_clock,str(state.get("detail") or "")):
-                    match=re.search(r"(?<!\\d)(\\d{1,3}(?:\\+\\d{1,2})?)\\s*['′’]?(?!\\d)",candidate)
+                    match=re.search(r"(?<!\d)(\d{1,3}(?:\+\d{1,2})?)\s*['′’]?(?!\d)",candidate)
                     if match and (candidate==match.group(0) or any(x in candidate.lower() for x in ("minute","min","'","′","’"))):
                         minute=match.group(1)
                         break
                 if minute is None:
-                    clock_match=re.fullmatch(r"(\\d{1,3}):[0-5]\\d",display_clock)
+                    clock_match=re.fullmatch(r"(\d{1,3}):[0-5]\d",display_clock)
                     if clock_match:
                         minute=clock_match.group(1)
                 if minute is None:
