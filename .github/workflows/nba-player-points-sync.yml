@@ -55,6 +55,7 @@ jobs:
           python -m py_compile memara_enrich_nba_props.py
           if [ -f collector-feed.json ]; then
             python memara_enrich_nba_props.py --feed collector-feed.json --props collector-output/nba-player-points.json --output collector-feed.json
+            python memara_math.py --input collector-feed.json --output collector-feed.json
           else
             echo "Collector feed missing; leave ticket files unchanged"
           fi
