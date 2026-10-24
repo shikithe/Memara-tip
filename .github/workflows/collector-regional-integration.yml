@@ -1,0 +1,41 @@
+name: MEMARA regional collector integration test
+on:
+  push:
+    paths:
+      - '.github/workflows/collector-regional-integration.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check syntax
+        run: python -m py_compile collector.py collector/regional.py
+      - name: Regional test without ESPN
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import date
+          from collector.regional import fetch_regional
+          rows, sources, errors = fetch_regional(date(2026,10,24))
+          print("REGIONAL_SOURCE",json.dumps({"count":len(rows),"source_counts":[(x["league"],x["count"],x.get("source_events")) for x in sources],"errors":errors,"samples":rows[:3]},ensure_ascii=False))
+          PY
+      - name: Combined collector test
+        run: |
+          python collector.py --date 2026-10-24 --sport football --regional --output collector-output/regional.json || true
+          python - <<'PY'
+          import json
+          d=json.load(open("collector-output/regional.json"))
+          print("COMBINED",json.dumps({"count":d["fixture_count"],"regional_count":sum(s["count"] for s in d["sources"] if s["provider"]=="thesportsdb-free-limited"),"regional_coverage":d.get("regional_coverage"),"errors":d["errors"][:7]},ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: memara-regional-test
+          path: collector-output/regional.json
