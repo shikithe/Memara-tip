@@ -116,27 +116,27 @@ def collect(target, sport="all", leagues=None, offline=False, input_path=None):
           for utc_day in days:
             url = (f"{ROOT}/{api_kind}/{league}/scoreboard?" +
                    urlencode({"dates": utc_day, "limit": 500}))
-              try:
-                  req = Request(url, headers={"User-Agent": "MEMARA-Collector/1.0",
-                                              "Accept": "application/json"})
-                  with urlopen(req, timeout=20) as response:
-                      raw = response.read(8 * 1024 * 1024 + 1)
-                  if len(raw) > 8 * 1024 * 1024:
-                      raise ValueError("response too large")
-                  events = json.loads(raw)["events"]
-                  if not isinstance(events, list):
-                      raise ValueError("events must be a list")
-                  found = [normalized(e, kind, league, target) for e in events]
-                  found = [e for e in found if e]
-                  fixtures.extend(found)
-                  sources.append({"provider": "espn-public-unofficial",
-                                  "sport": kind, "league": league,
-                                  "status": "ok", "count": len(found), "url": url})
-              except (OSError, ValueError, KeyError, TypeError) as exc:
-                  errors.append(f"ESPN {kind}/{league}: {type(exc).__name__}: {exc}")
-                  sources.append({"provider": "espn-public-unofficial",
-                                  "sport": kind, "league": league,
-                                  "status": "error", "count": 0, "url": url})
+            try:
+                req = Request(url, headers={"User-Agent": "MEMARA-Collector/1.0",
+                                            "Accept": "application/json"})
+                with urlopen(req, timeout=20) as response:
+                    raw = response.read(8 * 1024 * 1024 + 1)
+                if len(raw) > 8 * 1024 * 1024:
+                    raise ValueError("response too large")
+                events = json.loads(raw)["events"]
+                if not isinstance(events, list):
+                    raise ValueError("events must be a list")
+                found = [normalized(e, kind, league, target) for e in events]
+                found = [e for e in found if e]
+                fixtures.extend(found)
+                sources.append({"provider": "espn-public-unofficial",
+                                "sport": kind, "league": league,
+                                "status": "ok", "count": len(found), "url": url})
+            except (OSError, ValueError, KeyError, TypeError) as exc:
+                errors.append(f"ESPN {kind}/{league}: {type(exc).__name__}: {exc}")
+                sources.append({"provider": "espn-public-unofficial",
+                                "sport": kind, "league": league,
+                                "status": "error", "count": 0, "url": url})
     unique = {}
     for item in fixtures:
         key = (item["sport"], item["league"].casefold(),
