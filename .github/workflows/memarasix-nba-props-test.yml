@@ -1,0 +1,45 @@
+name: MemaraSix NBA points feed integration test
+on:
+  push:
+    paths:
+      - '.github/workflows/memarasix-nba-props-test.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate and test NBA prop enrichment
+        run: |
+          python -m py_compile memara_enrich_nba_props.py
+          python - <<'PY'
+          import json
+          from datetime import datetime,timedelta
+          from zoneinfo import ZoneInfo
+          from memara_enrich_nba_props import enrich,parse_time
+          f=json.load(open("collector-feed.json"))
+          p=json.load(open("collector-output/nba-player-points.json"))
+          now=parse_time(p["generated_at_utc"])+timedelta(minutes=4)
+          assert f["date"]==now.astimezone(ZoneInfo("Europe/Sarajevo")).date().isoformat()
+          result=enrich(f,p,now=now)
+          print("MATCHED_OFFERS",result["nba_prop_count"],"STATUS",result["nba_prop_status"])
+          print("SAMPLE",[(x["player"],x["points_line"],x["over_odds"],x["under_odds"]) for x in result["nba_player_points_offers"][:4]])
+          assert result["nba_prop_count"]>0, "Existing NBA snapshot should match game IDs"
+          assert result["football_candidates"]==f["football_candidates"]
+          assert result["nba_games"]==f["nba_games"]
+          assert result["bank_modified"] is False
+          assert result["tickets_published"] is False
+          assert all(not x["mozart_bih_verified"] for x in result["nba_player_points_offers"])
+          stale=enrich(f,p,now=now+timedelta(hours=4))
+          assert stale["nba_prop_status"]=="unavailable"
+          assert len(stale["nba_player_points_offers"])==0
+          wrong=dict(f,date="2026-10-23")
+          assert len(enrich(wrong,p,now=now)["nba_player_points_offers"])==0
+          print("INTEGRATION_TEST_SUCCESS")
+          PY
