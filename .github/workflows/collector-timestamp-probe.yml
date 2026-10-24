@@ -1,0 +1,24 @@
+name: MEMARA regional timestamp inspection
+on:
+  push:
+    paths:
+      - '.github/workflows/collector-timestamp-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Show non-sensitive kickoff timestamp fields
+        run: |
+          python3 - <<'PY'
+          import json,urllib.request
+          for lid in ("4671","4624"):
+              u="https://www.thesportsdb.com/api/v1/json/123/eventsnextleague.php?id="+lid
+              with urllib.request.urlopen(urllib.request.Request(u,headers={"User-Agent":"MEMARA/1.0"}),timeout=12) as r:
+                  d=json.load(r)
+              for e in (d.get("events") or [])[:1]:
+                  print("TIMESTAMP",lid,json.dumps({k:e.get(k) for k in ["idEvent","strEvent","dateEvent","strTime","strTimestamp","strPostponed","strStatus","strVenue","strCountry"]},ensure_ascii=False))
+          PY
