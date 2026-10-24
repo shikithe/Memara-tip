@@ -4,6 +4,7 @@ on:
     paths:
       - '.github/workflows/collector-regional-integration.yml'
   workflow_dispatch:
+  # One-off regression rerun after timestamp correction
 permissions:
   contents: read
 jobs:
