@@ -1,0 +1,61 @@
+name: MEMARA NBA player-points odds sync
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 10,11 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: memara-nba-props
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check schedule and credentials
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python - <<'PY'
+          import os
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          hour = datetime.now(ZoneInfo("Europe/Sarajevo")).hour
+          active = os.environ['EVENT_NAME'] == 'workflow_dispatch' or hour == 12
+          if not os.environ.get("THE_ODDS_API_KEY"):
+              print("No API key configured; skipping without updating existing data")
+              active = False
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              print("run="+str(active).lower(), file=f)
+          PY
+      - name: Verify syntax
+        if: steps.gate.outputs.run == 'true'
+        run: python -m py_compile sync_nba_points.py
+      - name: Get player props
+        if: steps.gate.outputs.run == 'true'
+        run: python sync_nba_points.py --region us
+      - uses: actions/upload-artifact@v4
+        if: steps.gate.outputs.run == 'true' && always()
+        with:
+          name: nba-player-points
+          path: collector-output/nba-player-points.json
+          if-no-files-found: warn
+          retention-days: 7
+      - name: Save unanalysed odds snapshot
+        if: steps.gate.outputs.run == 'true' && success() && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add collector-output/nba-player-points.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh NBA player-points odds snapshot"
+            git push
+          fi
