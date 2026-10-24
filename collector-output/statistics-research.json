@@ -1,9 +1,90 @@
 {
   "date": "2026-10-24",
-  "generated_at_utc": "2026-10-24T13:14:16.610373+00:00",
+  "generated_at_utc": "2026-10-24T13:23:39.828405+00:00",
   "analysis_status": "data_only_not_predictions",
   "football": {
-    "status": "not_configured"
+    "status": "ok",
+    "scope": "small sample of upcoming fixtures, not the full programme",
+    "fixture_count": 3,
+    "fixtures": [
+      {
+        "fixture_id": 1632108,
+        "league_id": 190,
+        "league_name": "A-League Women",
+        "season": 2026,
+        "start_utc": "2026-10-24T03:15:00+00:00",
+        "home_team_id": 1974,
+        "away_team_id": 1973,
+        "home": "Western Sydney Wanderers W",
+        "away": "Brisbane Roar FC W",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1632109,
+        "league_id": 190,
+        "league_name": "A-League Women",
+        "season": 2026,
+        "start_utc": "2026-10-24T04:00:00+00:00",
+        "home_team_id": 22292,
+        "away_team_id": 1970,
+        "home": "Central Coast Mariners W",
+        "away": "Canberra United W",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1632110,
+        "league_id": 190,
+        "league_name": "A-League Women",
+        "season": 2026,
+        "start_utc": "2026-10-24T06:00:00+00:00",
+        "home_team_id": 1972,
+        "away_team_id": 1969,
+        "home": "Adelaide United W",
+        "away": "Perth Glory FC W",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      }
+    ],
+    "source": "API-Football",
+    "is_model_prediction": false
   },
   "nba": {
     "status": "not_configured"
