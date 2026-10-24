@@ -163,6 +163,7 @@ def main():
     p.add_argument("--league", action="append", help="Repeat for multiple league IDs")
     p.add_argument("--input", help="JSON file containing local fixtures")
     p.add_argument("--regional", action="store_true", help="Add limited Serbia/Bosnia fixtures")
+    p.add_argument("--nba-players", action="store_true", help="Include separate manually curated NBA watchlist (no odds)")
     p.add_argument("--offline", action="store_true", help="Use only --input, no internet")
     p.add_argument("--output", default="collector-output/fixtures.json")
     a = p.parse_args()
@@ -191,6 +192,17 @@ def main():
         result["fixture_count"] = len(result["fixtures"])
         result["status"] = "partial" if result["errors"] else "ok"
         result["regional_coverage"] = "INCOMPLETE: TheSportsDB free plan one next fixture per league"
+    if a.nba_players and a.sport in ("all", "basketball"):
+        try:
+            from memara_nba_players import load_nba_players
+            result["nba_players"] = load_nba_players()
+            result["nba_player_count"] = len(result["nba_players"])
+            result["nba_player_note"] = "Manual candidate watchlist only; game availability, player status, points lines and odds are unverified"
+        except (OSError, ValueError, TypeError) as exc:
+            result["nba_players"] = []
+            result["nba_player_count"] = 0
+            result["errors"].append(f"NBA watchlist: {exc}")
+            result["status"] = "partial"
     output = Path(a.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n",
