@@ -2,10 +2,6 @@ name: MEMARA Collector - manual source test
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - '.github/workflows/collector-test.yml'
-      - 'collector.py'
 
 permissions:
   contents: read
