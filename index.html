@@ -39,6 +39,7 @@ function scoreLine(m,live){
   if(m.final_score)return '<div class="finalscore">Konačno: '+esc(m.final_score)+'</div>';
   if(!live||!live.score)return '';
   if(live.state==="live")return '<div class="live-result">🔴 U TOKU · '+esc(live.score)+'</div>';
+  if(live.state==="stale")return '<div class="finalscore">⏸ Posljednji zabilježeni rezultat: '+esc(live.score)+' · čeka novo očitavanje</div>';
   if(live.state==="final"){
     const label=live.result_status==="pogođen"?"✓ POGOĐEN":live.result_status==="promašen"?"✕ PROMAŠEN":"KONAČNO";
     const cls=live.result_status==="pogođen"?"result-final-hit":live.result_status==="promašen"?"result-final-miss":"result-final-unknown";
@@ -62,8 +63,8 @@ async function loadScores(){
     if(!Number.isFinite(stamp))throw Error('invalid timestamp');
     const stale=Date.now()-stamp>12*60*1000;
     // Never hide a confirmed final result just because the feed is late.
-    // Stale in-progress scores must not be represented as currently live.
-    liveScores=stale?{...score,matches:score.matches.filter(x=>x.state==='final')}:score;
+    // Stale in-progress scores must be labeled as snapshots, not live.
+    liveScores=stale?{...score,matches:score.matches.map(x=>x.state==='live'?{...x,state:'stale'}:x)}:score;
     if(stale){
       if(currentData)render(currentData,false,'out');
       showRefreshStatus('⚠ Live izvor kasni; završeni i potvrđeni rezultati ostaju prikazani');
