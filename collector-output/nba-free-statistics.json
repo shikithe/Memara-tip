@@ -1,0 +1,274 @@
+{
+  "date_utc": "2026-10-24",
+  "generated_at_utc": "2026-10-24T13:36:30.969608+00:00",
+  "provider": "espn-public-unofficial",
+  "no_api_key_required": true,
+  "limitations": "Unofficial, incomplete and not guaranteed. Historical boxscores only, no injuries or future projections.",
+  "status": "ok",
+  "requested_summaries": 24,
+  "errors": [],
+  "players": [
+    {
+      "player": "Nikola Jokic",
+      "recent_games": [
+        {
+          "player_id": "3112335",
+          "player": "Nikola Jokic",
+          "team": "Denver Nuggets",
+          "points": 13,
+          "minutes": "35",
+          "game_id": "401909094",
+          "game_date": "20261022"
+        }
+      ],
+      "games_found": 1,
+      "average_points": 13.0,
+      "status": "historical_sample",
+      "not_a_projection": true
+    },
+    {
+      "player": "Luka Doncic",
+      "recent_games": [
+        {
+          "player_id": "3945274",
+          "player": "Luka Doncic",
+          "team": "Los Angeles Lakers",
+          "points": 23,
+          "minutes": "37",
+          "game_id": "401909851",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "3945274",
+          "player": "Luka Doncic",
+          "team": "Los Angeles Lakers",
+          "points": 28,
+          "minutes": "30",
+          "game_id": "401909092",
+          "game_date": "20261021"
+        }
+      ],
+      "games_found": 2,
+      "average_points": 25.5,
+      "status": "historical_sample",
+      "not_a_projection": true
+    },
+    {
+      "player": "Shai Gilgeous-Alexander",
+      "recent_games": [
+        {
+          "player_id": "4278073",
+          "player": "Shai Gilgeous-Alexander",
+          "team": "Oklahoma City Thunder",
+          "points": 17,
+          "minutes": "35",
+          "game_id": "401909094",
+          "game_date": "20261022"
+        }
+      ],
+      "games_found": 1,
+      "average_points": 17.0,
+      "status": "historical_sample",
+      "not_a_projection": true
+    },
+    {
+      "player": "Giannis Antetokounmpo",
+      "recent_games": [
+        {
+          "player_id": "3032977",
+          "player": "Giannis Antetokounmpo",
+          "team": "Miami Heat",
+          "points": 36,
+          "minutes": "33",
+          "game_id": "401909847",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "3032977",
+          "player": "Giannis Antetokounmpo",
+          "team": "Miami Heat",
+          "points": 35,
+          "minutes": "30",
+          "game_id": "401909091",
+          "game_date": "20261021"
+        }
+      ],
+      "games_found": 2,
+      "average_points": 35.5,
+      "status": "historical_sample",
+      "not_a_projection": true
+    },
+    {
+      "player": "Jayson Tatum",
+      "recent_games": [
+        {
+          "player_id": "4065648",
+          "player": "Jayson Tatum",
+          "team": "Boston Celtics",
+          "points": 36,
+          "minutes": "37",
+          "game_id": "401909095",
+          "game_date": "20261023"
+        }
+      ],
+      "games_found": 1,
+      "average_points": 36.0,
+      "status": "historical_sample",
+      "not_a_projection": true
+    },
+    {
+      "player": "Victor Wembanyama",
+      "recent_games": [
+        {
+          "player_id": "5104157",
+          "player": "Victor Wembanyama",
+          "team": "San Antonio Spurs",
+          "points": 25,
+          "minutes": "32",
+          "game_id": "401909096",
+          "game_date": "20261023"
+        }
+      ],
+      "games_found": 1,
+      "average_points": 25.0,
+      "status": "historical_sample",
+      "not_a_projection": true
+    },
+    {
+      "player": "Stephen Curry",
+      "recent_games": [
+        {
+          "player_id": "3975",
+          "player": "Stephen Curry",
+          "team": "Golden State Warriors",
+          "points": 24,
+          "minutes": "30",
+          "game_id": "401909850",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "3975",
+          "player": "Stephen Curry",
+          "team": "Golden State Warriors",
+          "points": 23,
+          "minutes": "21",
+          "game_id": "401909092",
+          "game_date": "20261021"
+        }
+      ],
+      "games_found": 2,
+      "average_points": 23.5,
+      "status": "historical_sample",
+      "not_a_projection": true
+    },
+    {
+      "player": "Anthony Edwards",
+      "recent_games": [
+        {
+          "player_id": "4594268",
+          "player": "Anthony Edwards",
+          "team": "Minnesota Timberwolves",
+          "points": 15,
+          "minutes": "33",
+          "game_id": "401909845",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "4594268",
+          "player": "Anthony Edwards",
+          "team": "Minnesota Timberwolves",
+          "points": 45,
+          "minutes": "33",
+          "game_id": "401909091",
+          "game_date": "20261021"
+        }
+      ],
+      "games_found": 2,
+      "average_points": 30.0,
+      "status": "historical_sample",
+      "not_a_projection": true
+    },
+    {
+      "player": "Jalen Brunson",
+      "recent_games": [
+        {
+          "player_id": "3934672",
+          "player": "Jalen Brunson",
+          "team": "New York Knicks",
+          "points": 19,
+          "minutes": "37",
+          "game_id": "401909095",
+          "game_date": "20261023"
+        }
+      ],
+      "games_found": 1,
+      "average_points": 19.0,
+      "status": "historical_sample",
+      "not_a_projection": true
+    },
+    {
+      "player": "Devin Booker",
+      "recent_games": [
+        {
+          "player_id": "3136193",
+          "player": "Devin Booker",
+          "team": "Phoenix Suns",
+          "points": 23,
+          "minutes": "29",
+          "game_id": "401909841",
+          "game_date": "20261021"
+        }
+      ],
+      "games_found": 1,
+      "average_points": 23.0,
+      "status": "historical_sample",
+      "not_a_projection": true
+    },
+    {
+      "player": "Donovan Mitchell",
+      "recent_games": [
+        {
+          "player_id": "3908809",
+          "player": "Donovan Mitchell",
+          "team": "Cleveland Cavaliers",
+          "points": 32,
+          "minutes": "35",
+          "game_id": "401909093",
+          "game_date": "20261022"
+        }
+      ],
+      "games_found": 1,
+      "average_points": 32.0,
+      "status": "historical_sample",
+      "not_a_projection": true
+    },
+    {
+      "player": "Kevin Durant",
+      "recent_games": [
+        {
+          "player_id": "3202",
+          "player": "Kevin Durant",
+          "team": "Houston Rockets",
+          "points": 20,
+          "minutes": "37",
+          "game_id": "401909096",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "3202",
+          "player": "Kevin Durant",
+          "team": "Houston Rockets",
+          "points": 30,
+          "minutes": "37",
+          "game_id": "401909840",
+          "game_date": "20261021"
+        }
+      ],
+      "games_found": 2,
+      "average_points": 25.0,
+      "status": "historical_sample",
+      "not_a_projection": true
+    }
+  ],
+  "players_with_stats": 12
+}
