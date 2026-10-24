@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-24",
+  "generated_at_utc": "2026-10-24T13:14:16.610373+00:00",
+  "analysis_status": "data_only_not_predictions",
+  "football": {
+    "status": "not_configured"
+  },
+  "nba": {
+    "status": "not_configured"
+  },
+  "ticket_publication_allowed": false
+}
