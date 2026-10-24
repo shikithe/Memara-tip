@@ -1,0 +1,46 @@
+name: MEMARA NBA watchlist isolation test
+on:
+  push:
+    paths:
+      - '.github/workflows/collector-nba-watchlist-test.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate syntax
+        run: python -m py_compile collector.py memara_nba_players.py memara_regional.py
+      - name: Check same fixtures with and without player watchlist
+        run: |
+          python collector.py --date 2026-10-24 --offline --input collector-sample.json --output collector-output/baseline.json
+          python collector.py --date 2026-10-24 --offline --input collector-sample.json --nba-players --output collector-output/with-players.json
+          python - <<'PY'
+          import json
+          a=json.load(open("collector-output/baseline.json"))
+          b=json.load(open("collector-output/with-players.json"))
+          assert a["fixtures"]==b["fixtures"], "Watchlist changed fixtures"
+          assert a["fixture_count"]==b["fixture_count"], "Watchlist changed fixture count"
+          assert len(b["nba_players"])==12
+          assert b["nba_player_count"]==12
+          assert "nba_players" not in a
+          assert all(p["points_line"] is None and p["over_odds"] is None and p["under_odds"] is None for p in b["nba_players"])
+          assert len({p["name"].casefold() for p in b["nba_players"]})==12
+          print("WATCHLIST_TEST_SUCCESS", "fixtures",a["fixture_count"],"players",b["nba_player_count"])
+          PY
+      - name: Check football-only mode
+        run: |
+          python collector.py --date 2026-10-24 --offline --input collector-sample.json --sport football --nba-players --output collector-output/football-only.json
+          python - <<'PY'
+          import json
+          d=json.load(open("collector-output/football-only.json"))
+          assert all(x["sport"]=="football" for x in d["fixtures"])
+          assert "nba_players" not in d
+          print("FOOTBALL_ISOLATION_SUCCESS", d["fixture_count"])
+          PY
