@@ -2,6 +2,9 @@ name: MemaraSix - Collect candidate fixtures
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/memarasix-collector.yml'
   schedule:
     # 09:15 Europe/Sarajevo: 07:15 UTC in summer, 08:15 in winter.
     - cron: '15 7,8 * * *'
@@ -24,7 +27,7 @@ jobs:
           EVENT_NAME: ${{ github.event_name }}
         run: |
           local_hour="$(TZ=Europe/Sarajevo date +%H)"
-          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$local_hour" = "09" ]; then
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$EVENT_NAME" = "push" ] || [ "$local_hour" = "09" ]; then
             echo "enabled=true" >> "$GITHUB_OUTPUT"
           else
             echo "enabled=false" >> "$GITHUB_OUTPUT"
