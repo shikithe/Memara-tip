@@ -1,0 +1,147 @@
+[
+  {
+    "date": "2026-10-23",
+    "published": "23.10.2026. u 14:03",
+    "bank_before": 133.12,
+    "daily_stake": 13.31,
+    "bank_after": 129.75,
+    "provisional": false,
+    "odds_verified": false,
+    "tickets": [
+      {
+        "id": "A",
+        "label": "GLAVNI TIKET",
+        "odds": 2.39,
+        "stake": 9.32,
+        "status": "izgubljen",
+        "matches": [
+          {
+            "home": "Stuttgart",
+            "away": "M'gladbach",
+            "pick": "1",
+            "odd": 1.38,
+            "research": {
+              "summary": "Gladbach je izgubio prvih šest ligaških utakmica. Stuttgart je dobio oba prošlosezonska međusobna susreta (1:0 i 3:0), ali je i sam izgubio četiri od šest prvenstvenih mečeva.",
+              "pros": "Gladbachov niz 0/6; Stuttgartov pozitivan međusobni skor; Stuttgart bez poraza u prva tri meča Lige šampiona.",
+              "risks": "Stuttgart ima loš prvenstveni početak i više izostanaka. Obje ekipe su kadrovski oslabljene.",
+              "injuries": "Prema Bundesligi: Stuttgart bez Diehla, Malange, Narteya, Tomása, Vagnomana i Zagadoua; Gladbach bez Castroppa, Honorata, Itakure, Kleindiensta, Leopolda, Leszczyńskog i Lidberga.",
+              "conclusion": "Postoje argumenti za 1, ali kvota 1,38 zahtijeva približno 72,5% vjerovatnoće. Ta vjerovatnoća nije nezavisno modelovana.",
+              "sources": [
+                [
+                  "Bundesliga – sastavi i izostanci",
+                  "https://www.bundesliga.com/en/bundesliga/news/team-news-line-ups-2026-27-bayern-dortmund-fantasy-20707"
+                ],
+                [
+                  "Borussia – zvanični pregled",
+                  "https://www.borussia.com/news/match-facts-vfbbmg-bundesliga-2627"
+                ]
+              ]
+            },
+            "final_score": "2:3",
+            "result_status": "promašen"
+          },
+          {
+            "home": "Alavés",
+            "away": "Málaga",
+            "pick": "1",
+            "odd": 1.73,
+            "research": {
+              "summary": "Prema prikazu utakmice Alavés – Málaga, Alavés je poslije devet kola bio sedmi sa 11 bodova i gol-razlikom +3, a Málaga posljednja sa četiri boda i gol-razlikom −12.",
+              "pros": "Velika razlika u bodovima i gol-razlici; Málaga u donjem dijelu tabele.",
+              "risks": "Podaci o posljednjih pet utakmica i potvrđenim sastavima nisu dovoljno pouzdano provjereni. Nema osnova da se kvota 1,73 nazove sigurnom.",
+              "injuries": "U pregledu su navedeni: Alavés – Garcés (suspenzija), M. Rodríguez (povreda); Málaga – Ochoa i Lobete (povrede), Murillo i Cruz (upitni). Potvrdu neposredno prije meča treba dodatno provjeriti.",
+              "conclusion": "Tabela i gol-razlika podržavaju prednost domaćina, ali kvota 1,73 implicira približno 57,8% i bez modela ne možemo potvrditi vrijednost.",
+              "sources": [
+                [
+                  "Alavés – Málaga, tabela i izostanci",
+                  "https://sportstatsapi.com/matches/spain/laliga/2026-10-23/alaves-v-malaga/"
+                ]
+              ]
+            },
+            "final_score": "1:1",
+            "result_status": "promašen"
+          }
+        ],
+        "payout": 0
+      },
+      {
+        "id": "B",
+        "label": "GOLOVI — VIŠE OD 2,5",
+        "odds": 2.49,
+        "stake": 3.99,
+        "status": "dobitan",
+        "matches": [
+          {
+            "home": "Go Ahead Eagles",
+            "away": "Telstar",
+            "pick": "3+",
+            "odd": 1.44,
+            "research": {
+              "summary": "Model CompactStats procjenjuje 59% šanse za više od 2,5 gola. Go Ahead Eagles ima 6/8 utakmica s 3+ golova (3/4 kod kuće), Telstar 5/8 (1/4 u gostima).",
+              "pros": "Ukupna sezonska učestalost 3+ kod oba tima; ligaški prosjek u izvoru 63%.",
+              "risks": "Telstar ima samo 1/4 gostovanja sa 3+; modelskih 59% je ispod približno 69,4% koliko implicira kvota 1,44.",
+              "injuries": "Pouzdan izvještaj o povredama i sastavima za ovu utakmicu nije potvrđen.",
+              "conclusion": "Statistika golova podržava mogućnost 3+, ali prema navedenom modelu kvota 1,44 NE izgleda vrijednosno povoljno. Tip ostaje zaključan; ovo je naknadna kritička provjera.",
+              "sources": [
+                [
+                  "CompactStats – statistika golova i model",
+                  "https://compactstats.com/match/2026-10-23/go-ahead-eagles-v-telstar/"
+                ]
+              ]
+            },
+            "final_score": "3:2",
+            "result_status": "pogođen"
+          },
+          {
+            "home": "Brest",
+            "away": "Nice",
+            "pick": "3+",
+            "odd": 1.73,
+            "research": {
+              "summary": "Brest ima xG 14,4 nakon sedam ligaških kola i primio je gol na sedam uzastopnih domaćih ligaških utakmica. Nice ima nizak xG (8,3) i oko 0,9 postignutih golova po meču.",
+              "pros": "Brest stvara prilike i često prima golove kod kuće.",
+              "risks": "Nizak napadački učinak Nicea; drugi pregled sugeriše utakmicu s manje golova. Izbor 3+ nije jednoznačno potkrijepljen.",
+              "injuries": "Brest: Le Guen van tima, Chardonnet upitan, Versini mogući izostanak. Nice: Mendy i Abergel povrijeđeni, Bombito upitan; različiti izvori različito procjenjuju još neke izostanke.",
+              "conclusion": "Miješani signali: Brestova odbrana podržava golove, ali napad Nicea i opreznije prognoze predstavljaju ozbiljan rizik za 3+. Kvota 1,73 implicira oko 57,8%.",
+              "sources": [
+                [
+                  "Sports Mole – forma, xG i sastavi",
+                  "https://www.sportsmole.co.uk/football/brest/preview/brest-vs-nice-prediction-team-news-lineups_607322.html"
+                ],
+                [
+                  "The Stats Zone – suprotni argumenti",
+                  "https://www.thestatszone.com/brest-vs-nice-preview-team-news-prediction-231440"
+                ]
+              ]
+            },
+            "final_score": "1:2",
+            "result_status": "pogođen"
+          }
+        ],
+        "payout": 9.94
+      },
+      {
+        "id": "C",
+        "label": "AKUMULATOR",
+        "odds": null,
+        "stake": 0,
+        "status": "preskočen",
+        "matches": [],
+        "analysis": {
+          "summary": "Tiket C je preskočen, bez dodatnog uloga.",
+          "reasons": [
+            "Opcionalni tiket se ne mora objaviti ako izbori nisu dovoljno opravdani."
+          ],
+          "limits": "Tačan razlog prvobitnog preskakanja nije dokumentovan."
+        }
+      }
+    ],
+    "analysis_status": "Naknadna stručna provjera urađena 23.10.2026. Izvorni razlozi odabira nisu sačuvani. Izdvojeni su i argumenti protiv već zaključanih tipova; tipovi, kvote, ulozi i banka nisu mijenjani.",
+    "bank_after_stakes": 119.81,
+    "total_payout": 9.94,
+    "net_change": -3.37,
+    "settled": true,
+    "settlement_date": "2026-10-23",
+    "settlement_note": "Konačni rezultati potvrđeni iz javnih izvora. Obračun je virtuelan i zasnovan na objavljenim kvotama; kvote nisu nezavisno potvrđene kod kladionice."
+  }
+]
