@@ -1,0 +1,31 @@
+{
+  "fixtures": [
+    {
+      "id": "sample-1",
+      "sport": "football",
+      "league": "example-league",
+      "home": "Example Home",
+      "away": "Example Away",
+      "start_utc": "2026-10-24T16:00:00Z",
+      "status": "pre"
+    },
+    {
+      "id": "sample-1",
+      "sport": "football",
+      "league": "example-league",
+      "home": "Example Home",
+      "away": "Example Away",
+      "start_utc": "2026-10-24T16:00:00Z",
+      "status": "pre"
+    },
+    {
+      "id": "sample-2",
+      "sport": "basketball",
+      "league": "example-basketball",
+      "home": "Team One",
+      "away": "Team Two",
+      "start_utc": "2026-10-24T20:00:00Z",
+      "status": "pre"
+    }
+  ]
+}
