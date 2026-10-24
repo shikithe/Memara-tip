@@ -1,0 +1,65 @@
+name: MemaraSix optional statistical sources
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 8,9 * * *'
+  push:
+    paths:
+      - '.github/workflows/memarasix-statistics.yml'
+permissions:
+  contents: write
+concurrency:
+  group: memarasix-statistics
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+      BALLDONTLIE_API_KEY: ${{ secrets.BALLDONTLIE_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify source adapter
+        run: python -m py_compile sync_sports_stats.py
+      - name: Check scheduled time
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_NAME" = "schedule" ] && [ "$(TZ=Europe/Sarajevo date +%H)" != "10" ]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Fetch small statistical sample
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          python sync_sports_stats.py --date "$(TZ=Europe/Sarajevo date +%F)" --football-limit 3 --nba-limit 4
+      - name: Save statistics without touching tickets
+        if: steps.gate.outputs.run == 'true' && success() && github.ref == 'refs/heads/main'
+        run: |
+          python - <<'PY'
+          import json
+          p='collector-output/statistics-research.json'
+          d=json.load(open(p))
+          assert d["ticket_publication_allowed"] is False
+          print("STATISTICS:",d["football"]["status"],d["nba"]["status"])
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add collector-output/statistics-research.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update statistics research snapshot [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: steps.gate.outputs.run == 'true' && always()
+        with:
+          name: memarasix-statistics-research
+          path: collector-output/statistics-research.json
+          if-no-files-found: ignore
