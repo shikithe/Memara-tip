@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-24",
+  "updated_at_utc": "2026-10-24T15:41:40.111676+00:00",
+  "source": "espn-public-unofficial",
+  "errors_count": 0,
+  "matches": [
+    {
+      "ticket": "A",
+      "index": 0,
+      "home": "Arsenal",
+      "away": "Everton",
+      "state": "live",
+      "score": "2:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401878768"
+    },
+    {
+      "ticket": "A",
+      "index": 1,
+      "home": "Rangers",
+      "away": "St Johnstone",
+      "state": "live",
+      "score": "3:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401878358"
+    },
+    {
+      "ticket": "A",
+      "index": 2,
+      "home": "RB Leipzig",
+      "away": "SV Elversberg",
+      "state": "final",
+      "score": "4:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401884762",
+      "result_status": "pogođen"
+    },
+    {
+      "ticket": "B",
+      "index": 0,
+      "home": "Mainz",
+      "away": "Werder Bremen",
+      "state": "final",
+      "score": "2:3",
+      "source": "espn-public-unofficial",
+      "event_id": "401884757",
+      "result_status": "pogođen"
+    },
+    {
+      "ticket": "B",
+      "index": 1,
+      "home": "FC Utrecht",
+      "away": "PEC Zwolle",
+      "state": "live",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401875573"
+    },
+    {
+      "ticket": "C",
+      "index": 0,
+      "home": "Chelsea",
+      "away": "Tottenham Hotspur",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401878767"
+    },
+    {
+      "ticket": "C",
+      "index": 1,
+      "home": "Como",
+      "away": "Sassuolo",
+      "state": "final",
+      "score": "2:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401874961",
+      "result_status": "pogođen"
+    },
+    {
+      "ticket": "C",
+      "index": 2,
+      "home": "Valencia",
+      "away": "Villarreal",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401882827"
+    },
+    {
+      "ticket": "C",
+      "index": 3,
+      "home": "Cagliari",
+      "away": "Bologna",
+      "state": "final",
+      "score": "0:2",
+      "source": "espn-public-unofficial",
+      "event_id": "401874958",
+      "result_status": "pogođen"
+    },
+    {
+      "ticket": "C",
+      "index": 4,
+      "home": "Napoli",
+      "away": "AS Roma",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401874948"
+    }
+  ],
+  "bank_unchanged": true
+}
