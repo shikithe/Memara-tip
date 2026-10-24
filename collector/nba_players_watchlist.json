@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "description": "Manually curated NBA players for future research. Not confirmed for any specific game/date. No betting lines or odds.",
+  "updated_on": "2026-10-24",
+  "players": [
+    {
+      "watch_id": "nba-watch-001",
+      "name": "Nikola Jokic",
+      "source": "manual-watchlist",
+      "availability": "unverified"
+    },
+    {
+      "watch_id": "nba-watch-002",
+      "name": "Luka Doncic",
+      "source": "manual-watchlist",
+      "availability": "unverified"
+    },
+    {
+      "watch_id": "nba-watch-003",
+      "name": "Shai Gilgeous-Alexander",
+      "source": "manual-watchlist",
+      "availability": "unverified"
+    },
+    {
+      "watch_id": "nba-watch-004",
+      "name": "Giannis Antetokounmpo",
+      "source": "manual-watchlist",
+      "availability": "unverified"
+    },
+    {
+      "watch_id": "nba-watch-005",
+      "name": "Jayson Tatum",
+      "source": "manual-watchlist",
+      "availability": "unverified"
+    },
+    {
+      "watch_id": "nba-watch-006",
+      "name": "Victor Wembanyama",
+      "source": "manual-watchlist",
+      "availability": "unverified"
+    },
+    {
+      "watch_id": "nba-watch-007",
+      "name": "Stephen Curry",
+      "source": "manual-watchlist",
+      "availability": "unverified"
+    },
+    {
+      "watch_id": "nba-watch-008",
+      "name": "Anthony Edwards",
+      "source": "manual-watchlist",
+      "availability": "unverified"
+    },
+    {
+      "watch_id": "nba-watch-009",
+      "name": "Jalen Brunson",
+      "source": "manual-watchlist",
+      "availability": "unverified"
+    },
+    {
+      "watch_id": "nba-watch-010",
+      "name": "Devin Booker",
+      "source": "manual-watchlist",
+      "availability": "unverified"
+    },
+    {
+      "watch_id": "nba-watch-011",
+      "name": "Donovan Mitchell",
+      "source": "manual-watchlist",
+      "availability": "unverified"
+    },
+    {
+      "watch_id": "nba-watch-012",
+      "name": "Kevin Durant",
+      "source": "manual-watchlist",
+      "availability": "unverified"
+    }
+  ]
+}
