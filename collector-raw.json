@@ -2,11 +2,11 @@
   "schema_version": "1.0",
   "date": "2026-10-24",
   "timezone": "Europe/Sarajevo",
-  "collected_at_utc": "2026-10-24T10:37:35.259857+00:00",
+  "collected_at_utc": "2026-10-24T13:06:15.395310+00:00",
   "scope": "configured leagues only, not all global fixtures",
   "publication_allowed": false,
   "status": "ok",
-  "fixture_count": 64,
+  "fixture_count": 62,
   "duplicate_count": 0,
   "sources": [
     {
@@ -312,7 +312,7 @@
       "provider": "thesportsdb-free-limited",
       "league": "Bosnian First League",
       "status": "ok",
-      "count": 1,
+      "count": 0,
       "coverage": "incomplete (one next event maximum)",
       "source_events": 1,
       "url": "https://www.thesportsdb.com/api/v1/json/123/eventsnextleague.php?id=4911"
@@ -321,7 +321,7 @@
       "provider": "thesportsdb-free-limited",
       "league": "Bosnian First League of Srpska",
       "status": "ok",
-      "count": 1,
+      "count": 0,
       "coverage": "incomplete (one next event maximum)",
       "source_events": 1,
       "url": "https://www.thesportsdb.com/api/v1/json/123/eventsnextleague.php?id=4912"
@@ -481,7 +481,7 @@
       "away": "Kasimpasa",
       "start_utc": "2026-10-24T10:30:00Z",
       "start_sarajevo": "2026-10-24T12:30:00+02:00",
-      "status": "in"
+      "status": "post"
     },
     {
       "id": "espn:football:eng.1:401879256",
@@ -492,7 +492,7 @@
       "away": "Manchester City",
       "start_utc": "2026-10-24T11:30:00Z",
       "start_sarajevo": "2026-10-24T13:30:00+02:00",
-      "status": "pre"
+      "status": "in"
     },
     {
       "id": "espn:football:esp.1:401882830",
@@ -503,46 +503,7 @@
       "away": "Elche",
       "start_utc": "2026-10-24T12:00:00Z",
       "start_sarajevo": "2026-10-24T14:00:00+02:00",
-      "status": "pre"
-    },
-    {
-      "id": "sportsdb:football:5074:2491488",
-      "provider": "thesportsdb-free-limited",
-      "sport": "football",
-      "league": "Serbian Prva Liga",
-      "home": "Metalac Gornji Milanovac",
-      "away": "Javor-Matis Ivanjica",
-      "start_utc": "2026-10-24T12:00:00Z",
-      "start_sarajevo": "2026-10-24T14:00:00+02:00",
-      "status": "pre",
-      "coverage": "incomplete: free endpoint returns at most 1 next event per league",
-      "time_source": "TheSportsDB strTimestamp (naive UTC per provider documentation)"
-    },
-    {
-      "id": "sportsdb:football:4912:2557259",
-      "provider": "thesportsdb-free-limited",
-      "sport": "football",
-      "league": "Bosnian First League of Srpska",
-      "home": "Kozara Gradiška",
-      "away": "Zvijezda 09",
-      "start_utc": "2026-10-24T12:00:00Z",
-      "start_sarajevo": "2026-10-24T14:00:00+02:00",
-      "status": "pre",
-      "coverage": "incomplete: free endpoint returns at most 1 next event per league",
-      "time_source": "TheSportsDB strTimestamp (naive UTC per provider documentation)"
-    },
-    {
-      "id": "sportsdb:football:4911:2558461",
-      "provider": "thesportsdb-free-limited",
-      "sport": "football",
-      "league": "Bosnian First League",
-      "home": "Sloboda Tuzla",
-      "away": "Stupčanica Olovo",
-      "start_utc": "2026-10-24T12:30:00Z",
-      "start_sarajevo": "2026-10-24T14:30:00+02:00",
-      "status": "pre",
-      "coverage": "incomplete: free endpoint returns at most 1 next event per league",
-      "time_source": "TheSportsDB strTimestamp (naive UTC per provider documentation)"
+      "status": "in"
     },
     {
       "id": "espn:football:ita.1:401874958",
@@ -553,7 +514,7 @@
       "away": "Bologna",
       "start_utc": "2026-10-24T13:00:00Z",
       "start_sarajevo": "2026-10-24T15:00:00+02:00",
-      "status": "pre"
+      "status": "in"
     },
     {
       "id": "espn:football:ita.1:401874961",
@@ -564,7 +525,7 @@
       "away": "Sassuolo",
       "start_utc": "2026-10-24T13:00:00Z",
       "start_sarajevo": "2026-10-24T15:00:00+02:00",
-      "status": "pre"
+      "status": "in"
     },
     {
       "id": "espn:football:tur.1:401888270",
@@ -575,7 +536,7 @@
       "away": "Erzurum BB",
       "start_utc": "2026-10-24T13:00:00Z",
       "start_sarajevo": "2026-10-24T15:00:00+02:00",
-      "status": "pre"
+      "status": "in"
     },
     {
       "id": "espn:football:ger.1:401884758",
@@ -716,6 +677,19 @@
       "league": "Serbian Super Liga",
       "home": "Partizan Belgrade",
       "away": "Čukarički",
+      "start_utc": "2026-10-24T14:00:00Z",
+      "start_sarajevo": "2026-10-24T16:00:00+02:00",
+      "status": "pre",
+      "coverage": "incomplete: free endpoint returns at most 1 next event per league",
+      "time_source": "TheSportsDB strTimestamp (naive UTC per provider documentation)"
+    },
+    {
+      "id": "sportsdb:football:5074:2491489",
+      "provider": "thesportsdb-free-limited",
+      "sport": "football",
+      "league": "Serbian Prva Liga",
+      "home": "Borac 1926 Čačak",
+      "away": "Napredak Kruševac",
       "start_utc": "2026-10-24T14:00:00Z",
       "start_sarajevo": "2026-10-24T16:00:00+02:00",
       "status": "pre",
