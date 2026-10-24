@@ -1,0 +1,71 @@
+name: MEMARA NBA next 24 hours
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7 10,11 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: memara-nba-24h
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check Sarajevo scheduling hour
+        id: clock
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python - <<'PY'
+          import os
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          local_hour = datetime.now(ZoneInfo('Europe/Sarajevo')).hour
+          ok = os.environ['EVENT_NAME'] == 'workflow_dispatch' or local_hour == 12
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              print('run=' + str(ok).lower(), file=f)
+          print('Sarajevo local hour:', local_hour, 'Run:', ok)
+          PY
+      - name: Verify Python syntax
+        if: steps.clock.outputs.run == 'true'
+        run: python -m py_compile collector_nba_24h.py
+      - name: Fetch NBA games and team rosters
+        if: steps.clock.outputs.run == 'true'
+        run: python collector_nba_24h.py --hours 24 --output collector-output/nba-next-24h.json
+      - name: Validate output and print summary
+        if: steps.clock.outputs.run == 'true'
+        run: |
+          python - <<'PY'
+          import json
+          with open('collector-output/nba-next-24h.json', encoding='utf-8') as f:
+              data = json.load(f)
+          assert data['publication_allowed'] is False
+          assert data['window_start_utc'] < data['window_end_utc']
+          assert all(p['points_line'] is None and p['over_odds'] is None and p['under_odds'] is None for p in data['players'])
+          print('NBA:', data['game_count'], 'games,', data['player_candidate_count'], 'roster candidates')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.clock.outputs.run == 'true'
+        with:
+          name: nba-next-24h
+          path: collector-output/nba-next-24h.json
+          if-no-files-found: warn
+          retention-days: 7
+      - name: Commit JSON snapshot without altering tickets
+        if: steps.clock.outputs.run == 'true' && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add collector-output/nba-next-24h.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh NBA next-24h candidate snapshot"
+            git push
+          fi
