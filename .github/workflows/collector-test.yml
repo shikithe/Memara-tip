@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - '.github/workflows/collector-test.yml'
+      - 'collector.py'
 
 permissions:
   contents: read
