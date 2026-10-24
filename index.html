@@ -75,7 +75,7 @@ async function loadScores(){
     showRefreshStatus('Rezultati osvježeni u '+updated+' · naredna provjera približno za 5 min');
   }catch(e){
     // Retain previously verified final scores even during network failures.
-    if(liveScores)liveScores={...liveScores,matches:liveScores.matches.filter(x=>x.state==='final')};
+    if(liveScores)liveScores={...liveScores,matches:liveScores.matches.map(x=>x.state==='live'?{...x,state:'stale'}:x)};
     if(currentData)render(currentData,false,'out');
     showRefreshStatus('⚠ Greška pri osvježavanju; zadržani su prethodno potvrđeni konačni rezultati');
   }
@@ -90,8 +90,26 @@ async function refreshPublishedData(){
     render(currentData,false,'out');
   }catch(e){showRefreshStatus('⚠ Podaci banke nisu dostupni; posljednje potvrđeno stanje ostaje prikazano')}
 }
-setInterval(()=>{if(!document.hidden)refreshPublishedData().then(loadScores)},300000);
-document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshPublishedData().then(loadScores)});
+// Use a heartbeat rather than trusting one long iOS timer: suspended Home Screen
+// apps may miss intervals. Poll immediately on return to foreground.
+let lastPollStarted=0;
+let pollBusy=false;
+async function pollPublishedScores(force=false){
+  if(document.hidden||pollBusy)return;
+  const now=Date.now();
+  if(!force&&now-lastPollStarted<300000)return;
+  pollBusy=true;
+  lastPollStarted=now;
+  try{
+    await refreshPublishedData();
+    await loadScores();
+  }finally{pollBusy=false}
+}
+setInterval(()=>{pollPublishedScores()},30000);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)pollPublishedScores(true)});
+window.addEventListener('pageshow',()=>pollPublishedScores(true));
+window.addEventListener('focus',()=>pollPublishedScores());
+window.addEventListener('online',()=>pollPublishedScores(true));
 function refreshClock(){return new Intl.DateTimeFormat("bs-BA",{timeZone:"Europe/Berlin",day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false}).format(new Date())}function showRefreshStatus(message){document.getElementById("refreshStatus").textContent=message+" · "+refreshClock()+" (Njemačka / BiH)"}function goToPageTop(){document.documentElement.scrollTop=0;document.body.scrollTop=0;window.scrollTo(0,0);requestAnimationFrame(()=>{document.documentElement.scrollTop=0;document.body.scrollTop=0;window.scrollTo(0,0)})}async function refreshActiveTab(){showRefreshStatus("Osvježavanje u toku");const archive=!document.getElementById("archivePanel").hidden;if(archive){const ok=await loadArchive();showRefreshStatus(ok?"Arhiva osvježena":"Greška pri osvježavanju arhive");goToPageTop();return}document.getElementById("loading").textContent="Osvježavanje ponude…";try{const r=await fetch("./data.json?v="+Date.now(),{cache:"no-store"});if(!r.ok)throw Error();const d=await r.json();currentData=d;render(d);await loadScores();showRefreshStatus("Ponuda i rezultati osvježeni");goToPageTop()}catch(e){document.getElementById("loading").textContent="Nije uspjelo osvježavanje. Prikazani su prethodni podaci.";if(!currentData)render(fallback,true);showRefreshStatus("Greška pri osvježavanju ponude");goToPageTop()}}function refreshSiteVersion(){
   // On iOS Home Screen, replacing the same-origin document reloads updated
   // HTML/CSS/JS, whereas refreshing JSON alone leaves old JavaScript running.
