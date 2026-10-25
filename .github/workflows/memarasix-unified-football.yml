@@ -1,9 +1,6 @@
 name: MemaraSix unified football pipeline
 on:
   workflow_dispatch:
-  schedule:
-    # 09:30 Sarajevo; two UTC hours with local-time gate for DST.
-    - cron: '30 7,8 * * *'
 permissions:
   contents: write
 concurrency:
