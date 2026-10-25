@@ -25,7 +25,7 @@ def get(url, headers):
 def norm(s):
     return " ".join(unicodedata.normalize("NFKD", str(s)).encode("ascii","ignore").decode().lower().split())
 
-def football(date, key, limit=40):
+def football(date, key, limit=40, fixtures_only=False):
     """One date fixtures query; optionally up to 2 team stats queries per match."""
     doc = get(FOOTBALL+"/fixtures?"+urlencode({"date":date}), {"x-apisports-key":key})
     matches=[]
@@ -52,7 +52,11 @@ def football(date, key, limit=40):
                 x.get("start_utc") or ""))
     except (OSError,ValueError,TypeError):
         pass
-    matches=matches[:limit]
+    matches=matches if fixtures_only else matches[:limit]
+    if fixtures_only:
+        return {"status":"ok","scope":"all available pre-match fixtures for date",
+                "fixture_count":len(matches),"fixtures":matches,"source":"API-Football",
+                "is_model_prediction":False,"team_statistics_requested":False}
     diagnostics={"api_errors":[],"empty_team_responses":0,"valid_team_responses":0,"requests_skipped_for_quota":0}
     # /status is documented as quota-free. Keep a safety margin for other workflows.
     try:
@@ -146,6 +150,7 @@ def main():
     p.add_argument("--date",required=True)
     p.add_argument("--output",default="collector-output/statistics-research.json")
     p.add_argument("--football-limit",type=int,default=40)
+    p.add_argument("--fixtures-only",action="store_true",help="Fetch fixture schedule without team statistics")
     p.add_argument("--nba-limit",type=int,default=4)
     a=p.parse_args()
     result={"date":a.date,"generated_at_utc":datetime.now(timezone.utc).isoformat(),
@@ -154,7 +159,7 @@ def main():
     football_key=os.environ.get("API_FOOTBALL_KEY")
     nba_key=os.environ.get("BALLDONTLIE_API_KEY")
     if football_key:
-        try:result["football"]=football(a.date,football_key,max(0,min(a.football_limit,40)))
+        try:result["football"]=football(a.date,football_key,max(0,min(a.football_limit,40)),a.fixtures_only)
         except HTTPError as exc:result["football"]={"status":"http_error","code":exc.code}
         except (URLError,ValueError,TypeError,KeyError):result["football"]={"status":"source_error"}
     if nba_key:
