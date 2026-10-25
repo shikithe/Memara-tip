@@ -34,6 +34,16 @@ jobs:
           for row in p['fixtures']:
             if row['point3']=='covered':
               print('COVERED FIXTURE',json.dumps({'fixture_id':row['fixture_id'],'home':row['home'],'away':row['away'],'league':row['league']}))
+          from collections import defaultdict
+          leagues=defaultdict(lambda:{'matches':0,'country':None})
+          for row in p['fixtures']:
+            if row['reason']=='competition_not_supported':
+              key=(row.get('league_id'),row.get('league'))
+              leagues[key]['matches']+=1
+              leagues[key]['country']=row.get('country') or leagues[key]['country']
+          print('UNSUPPORTED LEAGUES BY ID AND COUNTRY')
+          for (league_id,name),v in sorted(leagues.items(),key=lambda kv:(-kv[1]['matches'],str(kv[0][1]))):
+            print(json.dumps({'league_id':league_id,'league':name,'country':v['country'] or 'unknown','matches':v['matches']},ensure_ascii=False))
           PY
       - name: Upload synchronization evidence
         if: always()
