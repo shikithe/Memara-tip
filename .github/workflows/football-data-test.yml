@@ -1,0 +1,51 @@
+name: MemaraSix football-data.org API test
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test-football-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+    steps:
+      - name: Verify token is configured
+        run: |
+          if [ -z "$FOOTBALL_DATA_TOKEN" ]; then
+            echo "::error::Missing FOOTBALL_DATA_TOKEN GitHub Actions secret"
+            exit 1
+          fi
+      - name: Test 2026 Premier League match and standings data
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, os, urllib.request, urllib.error
+          base = "https://api.football-data.org/v4"
+          headers = {"X-Auth-Token": os.environ["FOOTBALL_DATA_TOKEN"]}
+          for label, endpoint in [
+              ("2026 Premier League matches", "/competitions/PL/matches?season=2026"),
+              ("Premier League standings", "/competitions/PL/standings?season=2026"),
+          ]:
+              req = urllib.request.Request(base + endpoint, headers=headers)
+              try:
+                  with urllib.request.urlopen(req, timeout=25) as response:
+                      data = json.load(response)
+                  if "matches" in data:
+                      matches = data["matches"]
+                      finished = [m for m in matches if m.get("status") == "FINISHED"]
+                      print(f"{label}: total={len(matches)} finished={len(finished)}")
+                      for m in finished[-3:]:
+                          print("  ", m.get("utcDate"), m.get("homeTeam", {}).get("name"), "vs", m.get("awayTeam", {}).get("name"), m.get("score", {}).get("fullTime"))
+                  else:
+                      standings = data.get("standings", [])
+                      print(f"{label}: groups={len(standings)} types={[s.get('type') for s in standings]}")
+                      for s in standings:
+                          print("  ", s.get("type"), "teams=", len(s.get("table", [])))
+              except urllib.error.HTTPError as e:
+                  print(f"::error::{label}: HTTP {e.code} (check plan, token, and season access)")
+                  raise SystemExit(1)
+              except Exception as e:
+                  print(f"::error::{label}: {type(e).__name__}: {e}")
+                  raise SystemExit(1)
+          PY
