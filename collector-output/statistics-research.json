@@ -1,22 +1,22 @@
 {
-  "date": "2026-10-24",
-  "generated_at_utc": "2026-10-24T13:36:45.364013+00:00",
+  "date": "2026-10-25",
+  "generated_at_utc": "2026-10-25T13:07:08.890715+00:00",
   "analysis_status": "data_only_not_predictions",
   "football": {
     "status": "ok",
-    "scope": "small sample of upcoming fixtures, not the full programme",
-    "fixture_count": 3,
+    "scope": "bounded free-tier research; collector candidates prioritized",
+    "fixture_count": 40,
     "fixtures": [
       {
-        "fixture_id": 1632108,
-        "league_id": 190,
-        "league_name": "A-League Women",
+        "fixture_id": 1611104,
+        "league_id": 316,
+        "league_name": "1st League - FBiH",
         "season": 2026,
-        "start_utc": "2026-10-24T03:15:00+00:00",
-        "home_team_id": 1974,
-        "away_team_id": 1973,
-        "home": "Western Sydney Wanderers W",
-        "away": "Brisbane Roar FC W",
+        "start_utc": "2026-10-25T13:30:00+00:00",
+        "home_team_id": 3356,
+        "away_team_id": 4278,
+        "home": "GOŠK Gabela",
+        "away": "Bratstvo Gračanica",
         "home_stats": {
           "played": null,
           "goals_for_avg": null,
@@ -33,15 +33,15 @@
         }
       },
       {
-        "fixture_id": 1632109,
-        "league_id": 190,
-        "league_name": "A-League Women",
+        "fixture_id": 1550157,
+        "league_id": 135,
+        "league_name": "Serie A",
         "season": 2026,
-        "start_utc": "2026-10-24T04:00:00+00:00",
-        "home_team_id": 22292,
-        "away_team_id": 1970,
-        "home": "Central Coast Mariners W",
-        "away": "Canberra United W",
+        "start_utc": "2026-10-25T14:00:00+00:00",
+        "home_team_id": 499,
+        "away_team_id": 512,
+        "home": "Atalanta",
+        "away": "Frosinone",
         "home_stats": {
           "played": null,
           "goals_for_avg": null,
@@ -58,15 +58,940 @@
         }
       },
       {
-        "fixture_id": 1632110,
+        "fixture_id": 1550160,
+        "league_id": 135,
+        "league_name": "Serie A",
+        "season": 2026,
+        "start_utc": "2026-10-25T14:00:00+00:00",
+        "home_team_id": 495,
+        "away_team_id": 517,
+        "home": "Genoa",
+        "away": "Venezia",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1556685,
+        "league_id": 179,
+        "league_name": "Premiership",
+        "season": 2026,
+        "start_utc": "2026-10-25T14:00:00+00:00",
+        "home_team_id": 256,
+        "away_team_id": 254,
+        "home": "Motherwell",
+        "away": "Heart Of Midlothian",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1557442,
+        "league_id": 39,
+        "league_name": "Premier League",
+        "season": 2026,
+        "start_utc": "2026-10-25T14:00:00+00:00",
+        "home_team_id": 64,
+        "away_team_id": 55,
+        "home": "Hull City",
+        "away": "Brentford",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1570427,
+        "league_id": 140,
+        "league_name": "La Liga",
+        "season": 2026,
+        "start_utc": "2026-10-25T15:15:00+00:00",
+        "home_team_id": 538,
+        "away_team_id": 543,
+        "home": "Celta Vigo",
+        "away": "Real Betis",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1575519,
+        "league_id": 94,
+        "league_name": "Primeira Liga",
+        "season": 2026,
+        "start_utc": "2026-10-25T15:30:00+00:00",
+        "home_team_id": 230,
+        "away_team_id": 215,
+        "home": "Estoril",
+        "away": "Moreirense",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1584444,
+        "league_id": 203,
+        "league_name": "Süper Lig",
+        "season": 2026,
+        "start_utc": "2026-10-25T16:00:00+00:00",
+        "home_team_id": 994,
+        "away_team_id": 6343,
+        "home": "Göztepe",
+        "away": "Çorum FK",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1552792,
+        "league_id": 61,
+        "league_name": "Ligue 1",
+        "season": 2026,
+        "start_utc": "2026-10-25T16:15:00+00:00",
+        "home_team_id": 77,
+        "away_team_id": 97,
+        "home": "Angers",
+        "away": "Lorient",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1635088,
+        "league_id": 315,
+        "league_name": "Premijer Liga",
+        "season": 2026,
+        "start_utc": "2026-10-25T16:30:00+00:00",
+        "home_team_id": 3364,
+        "away_team_id": 8504,
+        "home": "Borac Banja Luka",
+        "away": "Sloga Doboj",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1550163,
+        "league_id": 135,
+        "league_name": "Serie A",
+        "season": 2026,
+        "start_utc": "2026-10-25T17:00:00+00:00",
+        "home_team_id": 867,
+        "away_team_id": 496,
+        "home": "Lecce",
+        "away": "Juventus",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1647068,
+        "league_id": 949,
+        "league_name": "CONMEBOL Libertadores Femenina",
+        "season": 2026,
+        "start_utc": "2026-10-25T00:00:00+00:00",
+        "home_team_id": 1798,
+        "away_team_id": 20515,
+        "home": "Corinthians W",
+        "away": "Dragonas IDV W",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1632112,
         "league_id": 190,
         "league_name": "A-League Women",
         "season": 2026,
-        "start_utc": "2026-10-24T06:00:00+00:00",
-        "home_team_id": 1972,
-        "away_team_id": 1969,
-        "home": "Adelaide United W",
-        "away": "Perth Glory FC W",
+        "start_utc": "2026-10-25T06:45:00+00:00",
+        "home_team_id": 1968,
+        "away_team_id": 1971,
+        "home": "Sydney FC W",
+        "away": "Melbourne City W",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1647250,
+        "league_id": 1217,
+        "league_name": "FIFA Women Champions Cup",
+        "season": 2027,
+        "start_utc": "2026-10-25T07:00:00+00:00",
+        "home_team_id": 26464,
+        "away_team_id": 27430,
+        "home": "Naegohyang W",
+        "away": "Auckland United W",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1639382,
+        "league_id": 589,
+        "league_name": "Taiwan Football Premier League",
+        "season": 2026,
+        "start_utc": "2026-10-25T08:00:00+00:00",
+        "home_team_id": 18841,
+        "away_team_id": 8028,
+        "home": "AC Taipei",
+        "away": "Hang Yuen",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1620522,
+        "league_id": 581,
+        "league_name": "Gamma Ethniki - Group 6",
+        "season": 2026,
+        "start_utc": "2026-10-25T09:00:00+00:00",
+        "home_team_id": 5060,
+        "away_team_id": 5066,
+        "home": "Pallixouriakos",
+        "away": "Tilikratis",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1623511,
+        "league_id": 728,
+        "league_name": "Liga 1 Feminin",
+        "season": 2026,
+        "start_utc": "2026-10-25T09:00:00+00:00",
+        "home_team_id": 28171,
+        "away_team_id": 19903,
+        "home": "Univ. Craiova W",
+        "away": "Csikszereda MC W",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1623512,
+        "league_id": 728,
+        "league_name": "Liga 1 Feminin",
+        "season": 2026,
+        "start_utc": "2026-10-25T09:00:00+00:00",
+        "home_team_id": 15970,
+        "away_team_id": 22192,
+        "home": "Vasas Femina W",
+        "away": "Farul Constanţa W",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1634851,
+        "league_id": 588,
+        "league_name": "National League",
+        "season": 2026,
+        "start_utc": "2026-10-25T09:00:00+00:00",
+        "home_team_id": 12525,
+        "away_team_id": 8013,
+        "home": "Hantharwady United",
+        "away": "Yangon United",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1642628,
+        "league_id": 693,
+        "league_name": "Gamma Ethniki - Group 9",
+        "season": 2026,
+        "start_utc": "2026-10-25T09:00:00+00:00",
+        "home_team_id": 18057,
+        "away_team_id": 24860,
+        "home": "AE Mykonos",
+        "away": "Saronikos Anavyssou",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1565756,
+        "league_id": 646,
+        "league_name": "3. liga - Center",
+        "season": 2026,
+        "start_utc": "2026-10-25T09:30:00+00:00",
+        "home_team_id": 26242,
+        "away_team_id": 14956,
+        "home": "Banská Byst II",
+        "away": "Dolný Kubín",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1566134,
+        "league_id": 644,
+        "league_name": "3. liga - West",
+        "season": 2026,
+        "start_utc": "2026-10-25T09:30:00+00:00",
+        "home_team_id": 26247,
+        "away_team_id": 14044,
+        "home": "Trenčín II",
+        "away": "MŠK Senec",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1593054,
+        "league_id": 336,
+        "league_name": "Druha Liga",
+        "season": 2026,
+        "start_utc": "2026-10-25T09:45:00+00:00",
+        "home_team_id": 26190,
+        "away_team_id": 28008,
+        "home": "Rebel",
+        "away": "SC Poltava 2",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1565940,
+        "league_id": 645,
+        "league_name": "3. liga - East",
+        "season": 2026,
+        "start_utc": "2026-10-25T10:00:00+00:00",
+        "home_team_id": 14074,
+        "away_team_id": 14079,
+        "home": "Slávia TU Košice",
+        "away": "Vranov nad Topľou",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1595719,
+        "league_id": 488,
+        "league_name": "U19 Bundesliga",
+        "season": 2026,
+        "start_utc": "2026-10-25T10:00:00+00:00",
+        "home_team_id": 10247,
+        "away_team_id": 10263,
+        "home": "Augsburg U19",
+        "away": "Karlsruher SC U19",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1595741,
+        "league_id": 488,
+        "league_name": "U19 Bundesliga",
+        "season": 2026,
+        "start_utc": "2026-10-25T10:00:00+00:00",
+        "home_team_id": 7967,
+        "away_team_id": 7890,
+        "home": "Schalke 04 U19",
+        "away": "Borussia Dortmund U19",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1620408,
+        "league_id": 580,
+        "league_name": "Gamma Ethniki - Group 5",
+        "season": 2026,
+        "start_utc": "2026-10-25T10:00:00+00:00",
+        "home_team_id": 13912,
+        "away_team_id": 28160,
+        "home": "Fokikos",
+        "away": "Diagoras Agias",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1620520,
+        "league_id": 581,
+        "league_name": "Gamma Ethniki - Group 6",
+        "season": 2026,
+        "start_utc": "2026-10-25T10:00:00+00:00",
+        "home_team_id": 24872,
+        "away_team_id": 28408,
+        "home": "Aris Filiates",
+        "away": "Levante",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1623509,
+        "league_id": 728,
+        "league_name": "Liga 1 Feminin",
+        "season": 2026,
+        "start_utc": "2026-10-25T10:00:00+00:00",
+        "home_team_id": 22191,
+        "away_team_id": 17659,
+        "home": "Gloria Bistrița-Năsăud W",
+        "away": "SSU Poli Timişoara W",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1646783,
+        "league_id": 277,
+        "league_name": "Super League",
+        "season": 2026,
+        "start_utc": "2026-10-25T10:00:00+00:00",
+        "home_team_id": 23407,
+        "away_team_id": 2482,
+        "home": "MOFA",
+        "away": "Nairobi City Stars",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1646785,
+        "league_id": 277,
+        "league_name": "Super League",
+        "season": 2026,
+        "start_utc": "2026-10-25T10:00:00+00:00",
+        "home_team_id": 26876,
+        "away_team_id": 2470,
+        "home": "Gucha Stars",
+        "away": "Sofapaka",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1593053,
+        "league_id": 336,
+        "league_name": "Druha Liga",
+        "season": 2026,
+        "start_utc": "2026-10-25T10:15:00+00:00",
+        "home_team_id": 26189,
+        "away_team_id": 5627,
+        "home": "Penuel",
+        "away": "Metalurh Zaporizhya",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1593052,
+        "league_id": 336,
+        "league_name": "Druha Liga",
+        "season": 2026,
+        "start_utc": "2026-10-25T10:45:00+00:00",
+        "home_team_id": 24588,
+        "away_team_id": 26758,
+        "home": "Oleksandria II",
+        "away": "Lozova",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1595743,
+        "league_id": 488,
+        "league_name": "U19 Bundesliga",
+        "season": 2026,
+        "start_utc": "2026-10-25T11:00:00+00:00",
+        "home_team_id": 10275,
+        "away_team_id": 10253,
+        "home": "Union Berlin U19",
+        "away": "Energie Cottbus U19",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1615834,
+        "league_id": 449,
+        "league_name": "Tercera División RFEF - Group 11",
+        "season": 2026,
+        "start_utc": "2026-10-25T11:00:00+00:00",
+        "home_team_id": 28112,
+        "away_team_id": 15311,
+        "home": "Sineu",
+        "away": "Cardassar",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1639383,
+        "league_id": 589,
+        "league_name": "Taiwan Football Premier League",
+        "season": 2026,
+        "start_utc": "2026-10-25T11:00:00+00:00",
+        "home_team_id": 28419,
+        "away_team_id": 12543,
+        "home": "Kaohsiung",
+        "away": "Tainan City",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1647058,
+        "league_id": 962,
+        "league_name": "Premier League",
+        "season": 2026,
+        "start_utc": "2026-10-25T11:00:00+00:00",
+        "home_team_id": 12457,
+        "away_team_id": 20980,
+        "home": "SC Villa",
+        "away": "Lijabatho",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1575087,
+        "league_id": 91,
+        "league_name": "Eredivisie Women",
+        "season": 2026,
+        "start_utc": "2026-10-25T11:15:00+00:00",
+        "home_team_id": 1897,
+        "away_team_id": 21939,
+        "home": "Heerenveen W",
+        "away": "AZ W",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1593055,
+        "league_id": 336,
+        "league_name": "Druha Liga",
+        "season": 2026,
+        "start_utc": "2026-10-25T11:15:00+00:00",
+        "home_team_id": 3632,
+        "away_team_id": 6487,
+        "home": "Ruh Lviv",
+        "away": "Dinaz Vyshhorod",
+        "home_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        },
+        "away_stats": {
+          "played": null,
+          "goals_for_avg": null,
+          "goals_against_avg": null,
+          "form": null,
+          "source": "API-Football"
+        }
+      },
+      {
+        "fixture_id": 1612772,
+        "league_id": 439,
+        "league_name": "Tercera División RFEF - Group 1",
+        "season": 2026,
+        "start_utc": "2026-10-25T11:30:00+00:00",
+        "home_team_id": 26534,
+        "away_team_id": 9604,
+        "home": "Coruña",
+        "away": "Arenteiro",
         "home_stats": {
           "played": null,
           "goals_for_avg": null,
