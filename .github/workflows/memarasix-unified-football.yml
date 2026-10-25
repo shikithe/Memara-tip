@@ -1,0 +1,68 @@
+name: MemaraSix unified football pipeline
+on:
+  workflow_dispatch:
+  schedule:
+    # 09:30 Sarajevo; two UTC hours with local-time gate for DST.
+    - cron: '30 7,8 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: memarasix-unified-football
+  cancel-in-progress: false
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+      FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+    steps:
+      - name: Local time gate
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$(TZ=Europe/Sarajevo date +%H)" = "09" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.enabled == 'true'
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.enabled == 'true'
+        with:
+          python-version: '3.11'
+      - name: Validate scripts and credentials
+        if: steps.gate.outputs.enabled == 'true'
+        run: |
+          test -n "$API_FOOTBALL_KEY" || { echo "API_FOOTBALL_KEY missing"; exit 1; }
+          test -n "$FOOTBALL_DATA_TOKEN" || { echo "FOOTBALL_DATA_TOKEN missing"; exit 1; }
+          python -m py_compile sync_sports_stats.py fixture_prefilter.py football_data_last5_rounds.py statistics_filter.py memarasix_unified_pipeline.py
+      - name: Fetch fresh today's fixtures
+        if: steps.gate.outputs.enabled == 'true'
+        run: python sync_sports_stats.py --date "$(TZ=Europe/Sarajevo date +%F)" --fixtures-only --nba-limit 0
+      - name: Prefilter before kickoff
+        if: steps.gate.outputs.enabled == 'true'
+        run: python fixture_prefilter.py --buffer-minutes 10
+      - name: Fetch full free-tier season history
+        if: steps.gate.outputs.enabled == 'true'
+        run: python football_data_last5_rounds.py
+      - name: Run statistics filter offline from shared history
+        if: steps.gate.outputs.enabled == 'true'
+        run: python statistics_filter.py --offline
+      - name: Prepare auditable shortlist for deeper analysis
+        if: steps.gate.outputs.enabled == 'true'
+        run: python memarasix_unified_pipeline.py
+      - name: Save research artifacts without publishing
+        if: always() && steps.gate.outputs.enabled == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: memarasix-unified-analysis
+          path: |
+            collector-output/statistics-research.json
+            collector-output/fixture-prefilter.json
+            collector-output/football-data-last5-rounds.json
+            collector-output/statistics-filter.json
+            collector-output/unified-analysis-queue.json
+          if-no-files-found: warn
