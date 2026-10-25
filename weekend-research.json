@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-25",
+  "generated_at_utc": "2026-10-25T08:00:51.744Z",
+  "project": "MAIN MemaraSix",
+  "repository": "shikithe/Memara-tip",
+  "status": "NACRT_NEKOMPLETAN",
+  "publication_allowed": false,
+  "phase": "09:00 weekend research",
+  "timezone": "Europe/Sarajevo",
+  "input_audit": {
+    "collector_feed": {
+      "path": "collector-feed.json",
+      "date": "2026-10-24",
+      "generated_at_utc": "2026-10-24T13:06:16.857419+00:00",
+      "fresh_for_today": false,
+      "football_candidates": 30,
+      "nba_games": 10,
+      "nba_player_watchlist": 12,
+      "reason": "Yesterday's feed cannot be used as a current 25 Oct candidate feed. Collector workflow is configured for 09:15 Sarajevo, later than this 09:00 preparation."
+    },
+    "nba_player_points": {
+      "path": "collector-output/nba-player-points.json",
+      "generated_at_utc": "2026-10-24T10:27:36.955578+00:00",
+      "fresh_for_today": false,
+      "offer_count_in_stale_file": 325,
+      "valid_today_offers": 0,
+      "market_validation": "NOT_CONFIRMED_FOR_2026-10-25",
+      "bookmaker_mozzart_bih_verified": false,
+      "quality_warning": "At least one stale record incorrectly associates Giannis Antetokounmpo with Miami Heat vs Charlotte; player-team and fixture association must be cross-validated before considering any props."
+    },
+    "afternoon_nba_sync": "12:00 Sarajevo refresh may alter player_points lines, odds and availability. Morning values must not be published as final."
+  },
+  "publication_rules": {
+    "earliest_publication_local": "2026-10-25T13:00:00+01:00",
+    "kickoff_after_publication_required": true,
+    "football_a": {
+      "odds_range": [
+        2,
+        3
+      ],
+      "sports": [
+        "football"
+      ],
+      "status": "not_ready"
+    },
+    "football_b": {
+      "odds_range": [
+        2,
+        3
+      ],
+      "distinct_events_from_a": true,
+      "sports": [
+        "football"
+      ],
+      "status": "not_ready"
+    },
+    "cash_cart_c": {
+      "name": "Keš kolica",
+      "min_legs": 4,
+      "max_legs": 6,
+      "min_combined_decimal_odds": 10,
+      "target_combined_odds": [
+        10,
+        13
+      ],
+      "sports": [
+        "football",
+        "basketball"
+      ],
+      "distinct_events": true,
+      "overlap_with_a_b": false,
+      "status": "NEDOSTUPAN_BREZ_DOKAZIVIH_KVOTA"
+    },
+    "never_invent_odds": true
+  },
+  "independent_fixture_sources": [
+    {
+      "url": "https://www.rezultati.com/nogomet/engleska/premier-league/raspored/",
+      "checked_date": "2026-10-25"
+    },
+    {
+      "url": "https://www.rezultati.com/nogomet/spanjolska/laliga/raspored/",
+      "checked_date": "2026-10-25"
+    },
+    {
+      "url": "https://www.skysports.com/football-scores-fixtures/2026-10-25",
+      "checked_date": "2026-10-25"
+    },
+    {
+      "url": "https://www.nba.com/lakers/game/0022600112-lakers-vs-jazz-salt-lake-city-ut-10-25-2026/event-details",
+      "checked_date": "2026-10-25"
+    }
+  ],
+  "football_watchlist": [
+    {
+      "fixture": "Liverpool - Brighton",
+      "kickoff_utc": "2026-10-25T14:00:00Z",
+      "market_to_verify": "Over 2.5 goals",
+      "analysis": "Brighton: 23 scored and 5 conceded in 7 league games; Liverpool 3 successive wins in all competitions but 0.7 scored and 1.7 conceded per home league match (small 3-match sample). Last 5 league Brighton: 4 wins, 1 draw. Both have European midweek load. Liverpool has multiple absences including Frimpong, Ekitike, Szoboszlai; Brighton missing Mitoma/Minteh. Goals angle has attacking rationale, but Brighton's clean-sheet streak makes both-teams-to-score less robust.",
+      "risk": "MEDIUM_HIGH",
+      "odds_verified": false,
+      "probability": null,
+      "sources": [
+        "https://www.pitchlabstats.com/match/2026-10-25-liverpool-brighton",
+        "https://news.bet365.nl/nl-nl/article/liverpool-brighton-wedtips-mogelijke-opstellingen-en-waar-te-kijken/2026102305554634778",
+        "https://www.rezultati.com/nogomet/engleska/premier-league/raspored/"
+      ],
+      "note": "Bet365 preview 23 Oct mentions Liverpool 1X2 2.15, not a verified current Mozzart BiH market and not the proposed totals market."
+    },
+    {
+      "fixture": "Manchester United - Bournemouth",
+      "kickoff_utc": "2026-10-25T14:00:00Z",
+      "market_to_verify": "X2 or goals market after lineup check",
+      "analysis": "United winless in last five league matches, no league clean sheets; Bournemouth scored in seven consecutive league away matches but are winless in four away. United winless in six H2H vs Bournemouth. Bournemouth have potential absences; Kroupi uncertain. Recent European matches create rest/rotation risk.",
+      "risk": "HIGH",
+      "odds_verified": false,
+      "probability": null,
+      "sources": [
+        "https://www.thestatszone.com/man-utd-vs-bournemouth-preview-team-news-prediction-2026-27-english-premier-league-231632",
+        "https://www.rezultati.com/nogomet/engleska/premier-league/raspored/"
+      ]
+    },
+    {
+      "fixture": "Hoffenheim - Bayer Leverkusen",
+      "kickoff_utc": "2026-10-25T14:30:00Z",
+      "market_to_verify": "Over 1.5 / Over 2.5 goals, depending on bookmaker line",
+      "analysis": "Leverkusen has positive recent scoring/form and higher xG table position in available previews; Hoffenheim had European match and several absences. Both played midweek, potential rotation; expected starters not yet confirmed.",
+      "risk": "MEDIUM_HIGH",
+      "odds_verified": false,
+      "probability": null,
+      "sources": [
+        "https://www.victorypicks.com/en/previews/1899-hoffenheim-vs-bayer-leverkusen-october-25-2026-2487/",
+        "https://www.welt.de/article6add6a4b247c1fa201305d45"
+      ]
+    },
+    {
+      "fixture": "Freiburg - Bayern Munich",
+      "kickoff_utc": "2026-10-25T16:30:00Z",
+      "market_to_verify": "No market recommended until confirmed XI",
+      "analysis": "Top-of-table meeting. Bayern reported multiple absences (Kimmich, Díaz, Kim, Musiala, Neuer, Pavlović) and assistant coach on sideline; Freiburg comes off European defeat. Avoid treating Bayern as automatic short-price favourite.",
+      "risk": "HIGH",
+      "odds_verified": false,
+      "probability": null,
+      "sources": [
+        "https://www.welt.de/regionales/bayern/article6add6a0e247c1fa201305d41/fc-bayern-ohne-chefcoach-kompany-in-freiburg-gefordert.html",
+        "https://www.bavarianfootballworks.com/bayern-munich-bundesliga/272376/aleksandar-pavlovic-bayern-munichs-clash-sc-freiburg-calf-problems-joshua-kimmich-michael-olise-arsenal-fc-champions-league-bundesliga-luis-diaz-kim-min-jae"
+      ]
+    },
+    {
+      "fixture": "Barcelona - Real Madrid",
+      "kickoff_utc": "2026-10-25T20:00:00Z",
+      "market_to_verify": "Both teams score / over goals, if verified price",
+      "analysis": "Barcelona 9 league wins in 9 and high goals output in recent matches per preview; Real 4 wins in last 5. Barcelona defensive injuries; Real missing Vinícius (suspended), Rodrygo and defenders. High variance Clasico; final XIs crucial.",
+      "risk": "HIGH",
+      "odds_verified": false,
+      "probability": null,
+      "sources": [
+        "https://www.rezultati.com/utakmica/nogomet/barcelona-SKbpVP5K/real-madrid-W8mj7MDD/",
+        "https://as.com/futbol/primera/las-bajas-del-clasico-sancionados-lesionados-y-quien-se-pierde-el-real-madrid-barcelona-f202610-n/",
+        "https://previaxi.com/en/barcelona-vs-real-madrid-preview-2026-10-25/"
+      ]
+    }
+  ],
+  "nba_watchlist": [
+    {
+      "fixture": "Los Angeles Lakers @ Utah Jazz",
+      "kickoff_utc": "2026-10-25T21:00:00Z",
+      "player": "Luka Doncic",
+      "market": "player_points",
+      "line": null,
+      "decimal_odds": null,
+      "bookmaker": null,
+      "quote_timestamp": null,
+      "moz_bih_available": null,
+      "expected_minutes_estimate": "roughly 30-38 only if healthy and starting; NOT VERIFIED",
+      "analysis": "Lakers 2-0 and Jazz 1-1; Luka scored 28 in 29 minutes and 23 in 37 minutes in first two games according to secondary stats; last-season opponent averages not reliable for small-sample props. Utah missing Nurkic. Verify injury, rotation, exact line and Mozzart market after noon.",
+      "risk": "HIGH_PENDING_LINE",
+      "sources": [
+        "https://www.nba.com/lakers/game/0022600112-lakers-vs-jazz-salt-lake-city-ut-10-25-2026/event-details",
+        "https://www.foxsports.com/articles/nba/los-angeles-plays-utah-for-conference-showdown",
+        "https://blog.statsbench.com/lakers-vs-jazz-prediction-props-2026-10-25/"
+      ],
+      "note": "PokerStars lists alternate points ladders, not a timestamped standard over/under player_points line in the collector: https://www.pokerstars.fr/en/sports/basketball/7522/nba/10547864/los-angeles-lakers-utah-jazz/36229335/"
+    },
+    {
+      "fixture": "Brooklyn Nets - Indiana Pacers",
+      "kickoff_utc": "2026-10-25T22:00:00Z",
+      "player": "Michael Porter Jr.",
+      "market": "player_points",
+      "line": null,
+      "decimal_odds": null,
+      "bookmaker": null,
+      "quote_timestamp": null,
+      "moz_bih_available": null,
+      "expected_minutes_estimate": null,
+      "analysis": "Brooklyn 0-2 on second night of back-to-back; Michael Porter Jr. reportedly scored 28 vs Cleveland. Rotation/fatigue and player availability need pregame validation; do not use yesterday's prop odds.",
+      "risk": "HIGH_PENDING_LINE",
+      "sources": [
+        "https://whynba.com/nba-schedule-today-sunday-october-25-2026/"
+      ]
+    }
+  ],
+  "missing_evidence": [
+    "2026-10-25 collector-feed.json not yet generated (collector scheduled 09:15 Sarajevo)",
+    "2026-10-25 timestamped collector-output/nba-player-points.json absent",
+    "No independently confirmed current Mozzartbet BiH A/B football prices",
+    "No current Mozzartbet BiH player_points line/price/bookmaker verification",
+    "Starting lineups and NBA expected minutes not confirmed",
+    "No validated probabilities or edge; no mathematically justified A/B/C odds targets"
+  ],
+  "tickets": {
+    "A": {
+      "status": "NACRT_NEDOVOLJNO_PODATAKA",
+      "legs": [],
+      "total_odds": null
+    },
+    "B": {
+      "status": "NACRT_NEDOVOLJNO_PODATAKA",
+      "legs": [],
+      "total_odds": null
+    },
+    "C": {
+      "name": "Keš kolica",
+      "status": "NEDOSTUPAN",
+      "legs": [],
+      "total_odds": null,
+      "reason": "Cannot build 4-6 distinct events at total decimal odds >=10 without current verified event-specific odds and no overlaps."
+    }
+  },
+  "safety": {
+    "modified_files": [
+      "weekend-research.json"
+    ],
+    "untouched": [
+      "data.json",
+      "archive.json",
+      "bank",
+      "DEMO",
+      "previous_locked_tickets"
+    ],
+    "not_published": true,
+    "not_betting_advice": true
+  }
+}
