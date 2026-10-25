@@ -57,6 +57,7 @@ def build(doc, now, buffer_minutes=60):
                 seen.add(key)
         rows.append({
             "fixture_id": key, "league": f.get("league_name"), "league_id": f.get("league_id"),
+            "country": f.get("country") or f.get("league_country"),
             "home": f.get("home"), "away": f.get("away"),
             "start_utc": f.get("start_utc"),
             "decision": state, "reasons": reasons,
