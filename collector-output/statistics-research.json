@@ -1,9 +1,17 @@
 {
   "date": "2026-10-25",
-  "generated_at_utc": "2026-10-25T13:07:08.890715+00:00",
+  "generated_at_utc": "2026-10-25T13:14:00.937998+00:00",
   "analysis_status": "data_only_not_predictions",
   "football": {
-    "status": "ok",
+    "status": "no_usable_team_statistics",
+    "diagnostics": {
+      "api_errors": [],
+      "empty_team_responses": 80,
+      "valid_team_responses": 0,
+      "requests_skipped_for_quota": 0,
+      "remaining_at_start": 99,
+      "team_requests_attempted": 80
+    },
     "scope": "bounded free-tier research; collector candidates prioritized",
     "fixture_count": 40,
     "fixtures": [
@@ -18,18 +26,12 @@
         "home": "GOŠK Gabela",
         "away": "Bratstvo Gračanica",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -43,18 +45,12 @@
         "home": "Atalanta",
         "away": "Frosinone",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -68,18 +64,12 @@
         "home": "Genoa",
         "away": "Venezia",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -93,18 +83,12 @@
         "home": "Motherwell",
         "away": "Heart Of Midlothian",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -118,18 +102,12 @@
         "home": "Hull City",
         "away": "Brentford",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -143,18 +121,12 @@
         "home": "Celta Vigo",
         "away": "Real Betis",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -168,18 +140,12 @@
         "home": "Estoril",
         "away": "Moreirense",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -193,18 +159,12 @@
         "home": "Göztepe",
         "away": "Çorum FK",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -218,18 +178,12 @@
         "home": "Angers",
         "away": "Lorient",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -243,18 +197,12 @@
         "home": "Borac Banja Luka",
         "away": "Sloga Doboj",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -268,18 +216,12 @@
         "home": "Lecce",
         "away": "Juventus",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -293,18 +235,12 @@
         "home": "Corinthians W",
         "away": "Dragonas IDV W",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -318,18 +254,12 @@
         "home": "Sydney FC W",
         "away": "Melbourne City W",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -343,18 +273,12 @@
         "home": "Naegohyang W",
         "away": "Auckland United W",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -368,18 +292,12 @@
         "home": "AC Taipei",
         "away": "Hang Yuen",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -393,18 +311,12 @@
         "home": "Pallixouriakos",
         "away": "Tilikratis",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -418,18 +330,12 @@
         "home": "Univ. Craiova W",
         "away": "Csikszereda MC W",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -443,18 +349,12 @@
         "home": "Vasas Femina W",
         "away": "Farul Constanţa W",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -468,18 +368,12 @@
         "home": "Hantharwady United",
         "away": "Yangon United",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -493,18 +387,12 @@
         "home": "AE Mykonos",
         "away": "Saronikos Anavyssou",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -518,18 +406,12 @@
         "home": "Banská Byst II",
         "away": "Dolný Kubín",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -543,18 +425,12 @@
         "home": "Trenčín II",
         "away": "MŠK Senec",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -568,18 +444,12 @@
         "home": "Rebel",
         "away": "SC Poltava 2",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -593,18 +463,12 @@
         "home": "Slávia TU Košice",
         "away": "Vranov nad Topľou",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -618,18 +482,12 @@
         "home": "Augsburg U19",
         "away": "Karlsruher SC U19",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -643,18 +501,12 @@
         "home": "Schalke 04 U19",
         "away": "Borussia Dortmund U19",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -668,18 +520,12 @@
         "home": "Fokikos",
         "away": "Diagoras Agias",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -693,18 +539,12 @@
         "home": "Aris Filiates",
         "away": "Levante",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -718,68 +558,12 @@
         "home": "Gloria Bistrița-Năsăud W",
         "away": "SSU Poli Timişoara W",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
-        }
-      },
-      {
-        "fixture_id": 1646783,
-        "league_id": 277,
-        "league_name": "Super League",
-        "season": 2026,
-        "start_utc": "2026-10-25T10:00:00+00:00",
-        "home_team_id": 23407,
-        "away_team_id": 2482,
-        "home": "MOFA",
-        "away": "Nairobi City Stars",
-        "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
-        },
-        "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
-        }
-      },
-      {
-        "fixture_id": 1646785,
-        "league_id": 277,
-        "league_name": "Super League",
-        "season": 2026,
-        "start_utc": "2026-10-25T10:00:00+00:00",
-        "home_team_id": 26876,
-        "away_team_id": 2470,
-        "home": "Gucha Stars",
-        "away": "Sofapaka",
-        "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
-        },
-        "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -793,18 +577,12 @@
         "home": "Penuel",
         "away": "Metalurh Zaporizhya",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -818,43 +596,12 @@
         "home": "Oleksandria II",
         "away": "Lozova",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
-        }
-      },
-      {
-        "fixture_id": 1595743,
-        "league_id": 488,
-        "league_name": "U19 Bundesliga",
-        "season": 2026,
-        "start_utc": "2026-10-25T11:00:00+00:00",
-        "home_team_id": 10275,
-        "away_team_id": 10253,
-        "home": "Union Berlin U19",
-        "away": "Energie Cottbus U19",
-        "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
-        },
-        "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -868,18 +615,12 @@
         "home": "Sineu",
         "away": "Cardassar",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -893,18 +634,12 @@
         "home": "Kaohsiung",
         "away": "Tainan City",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -918,18 +653,12 @@
         "home": "SC Villa",
         "away": "Lijabatho",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -943,18 +672,12 @@
         "home": "Heerenveen W",
         "away": "AZ W",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -968,18 +691,12 @@
         "home": "Ruh Lviv",
         "away": "Dinaz Vyshhorod",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       },
       {
@@ -993,18 +710,69 @@
         "home": "Coruña",
         "away": "Arenteiro",
         "home_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         },
         "away_stats": {
-          "played": null,
-          "goals_for_avg": null,
-          "goals_against_avg": null,
-          "form": null,
-          "source": "API-Football"
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
+        }
+      },
+      {
+        "fixture_id": 1647011,
+        "league_id": 847,
+        "league_name": "Premier League",
+        "season": 2026,
+        "start_utc": "2026-10-25T11:30:00+00:00",
+        "home_team_id": 28439,
+        "away_team_id": 16826,
+        "home": "PPK Professionals",
+        "away": "Highlanders",
+        "home_stats": {
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
+        },
+        "away_stats": {
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
+        }
+      },
+      {
+        "fixture_id": 1496188,
+        "league_id": 473,
+        "league_name": "2. Division - Group 1",
+        "season": 2026,
+        "start_utc": "2026-10-25T12:00:00+00:00",
+        "home_team_id": 7040,
+        "away_team_id": 2155,
+        "home": "Træff",
+        "away": "Arendal",
+        "home_stats": {
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
+        },
+        "away_stats": {
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
+        }
+      },
+      {
+        "fixture_id": 1496369,
+        "league_id": 474,
+        "league_name": "2. Division - Group 2",
+        "season": 2026,
+        "start_utc": "2026-10-25T12:00:00+00:00",
+        "home_team_id": 16229,
+        "away_team_id": 2158,
+        "home": "Rana",
+        "away": "Tromsdalen Uil",
+        "home_stats": {
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
+        },
+        "away_stats": {
+          "status": "empty_response",
+          "reason": "No statistics returned for this league/season/team or plan"
         }
       }
     ],
