@@ -48,7 +48,9 @@ def rank(source,candidate,country):
     return round(score,3)
 def main():
     results=json.loads((ROOT/"statistics-filter.json").read_text())["fixtures"]
-    source_path=ROOT/"fallback-fixtures-country.json"\n    if not source_path.exists():source_path=ROOT/"statistics-research.json"\n    original=json.loads(source_path.read_text())["football"]["fixtures"]
+    source_path=ROOT/"fallback-fixtures-country.json"
+    if not source_path.exists():source_path=ROOT/"statistics-research.json"
+    original=json.loads(source_path.read_text())["football"]["fixtures"]
     lookup={x.get("fixture_id"):x for x in original}
     pending=[r for r in results if r.get("reason")=="competition_not_supported"]
     groups=defaultdict(list)
