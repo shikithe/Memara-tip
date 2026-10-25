@@ -53,22 +53,50 @@ def football(date, key, limit=40):
     except (OSError,ValueError,TypeError):
         pass
     matches=matches[:limit]
+    diagnostics={"api_errors":[],"empty_team_responses":0,"valid_team_responses":0,"requests_skipped_for_quota":0}
+    # /status is documented as quota-free. Keep a safety margin for other workflows.
+    try:
+        status=get(FOOTBALL+"/status", {"x-apisports-key":key})
+        usage=(status.get("response") or {}).get("requests") or {}
+        remaining=int(usage.get("limit_day",100))-int(usage.get("current",0))
+        diagnostics["remaining_at_start"]=remaining
+        max_calls=max(0,remaining-10)
+    except (HTTPError,URLError,ValueError,TypeError,KeyError):
+        max_calls=0
+        diagnostics["api_errors"].append("Cannot verify remaining quota; no team requests attempted")
+    calls=0
     for item in matches:
         for side in ("home","away"):
+            if calls >= max_calls:
+                item[side+"_stats"]={"status":"skipped_quota"}
+                diagnostics["requests_skipped_for_quota"]+=1
+                continue
+            calls+=1
             try:
                 stats=get(FOOTBALL+"/teams/statistics?"+urlencode({
                     "league":item["league_id"],"season":item["season"],
                     "team":item[side+"_team_id"],"date":date}),
                     {"x-apisports-key":key}).get("response") or {}
+                if not stats:
+                    diagnostics["empty_team_responses"]+=1
+                    item[side+"_stats"]={"status":"empty_response","reason":"No statistics returned for this league/season/team or plan"}
+                    continue
+                diagnostics["valid_team_responses"]+=1
                 goals=stats.get("goals") or {}
                 fixtures=stats.get("fixtures") or {}
                 item[side+"_stats"]={"played":((fixtures.get("played") or {}).get("total")),
                     "goals_for_avg":((goals.get("for") or {}).get("average") or {}).get("total"),
                     "goals_against_avg":((goals.get("against") or {}).get("average") or {}).get("total"),
                     "form":stats.get("form"),"source":"API-Football"}
-            except (HTTPError,URLError,ValueError,KeyError,TypeError):
+            except HTTPError as exc:
+                item[side+"_stats"]={"status":"http_error","code":exc.code}
+                diagnostics["api_errors"].append("HTTP "+str(exc.code))
+            except (URLError,ValueError,KeyError,TypeError):
                 item[side+"_stats"]={"status":"unavailable"}
-    return {"status":"ok","scope":"bounded free-tier research; collector candidates prioritized",
+                diagnostics["api_errors"].append("Request or parsing error")
+    diagnostics["team_requests_attempted"]=calls
+    return {"status":"ok" if diagnostics["valid_team_responses"] else "no_usable_team_statistics",
+            "diagnostics":diagnostics,"scope":"bounded free-tier research; collector candidates prioritized",
             "fixture_count":len(matches),"fixtures":matches,"source":"API-Football",
             "is_model_prediction":False}
 
