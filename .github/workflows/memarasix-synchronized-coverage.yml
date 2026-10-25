@@ -21,6 +21,8 @@ jobs:
         run: python fixture_prefilter.py --buffer-minutes 5
       - name: Fetch shared season data at safe request rate
         run: python football_data_last5_rounds.py
+      - name: Audit tomorrow's free-league fixtures and team history
+        run: python tomorrow_coverage_audit.py
       - name: Match today's fixtures against the same downloaded data without API requests
         run: python statistics_filter.py --offline
       - name: Audit supported fixtures lost to kickoff timing
@@ -57,4 +59,5 @@ jobs:
             collector-output/fixture-prefilter.json
             collector-output/statistics-filter.json
             collector-output/coverage-timing-audit.json
+            collector-output/tomorrow-coverage-audit.json
           if-no-files-found: warn
