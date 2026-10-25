@@ -1,0 +1,29 @@
+name: MemaraSix point 3 review audit
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Recreate prefilter at current time
+        run: python fixture_prefilter.py
+      - name: Re-evaluate statistical coverage
+        run: python statistics_filter.py
+      - name: Diagnose all review fixtures
+        run: python point3_review_audit.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: memarasix-point3-review-audit
+          path: |
+            collector-output/statistics-filter.json
+            collector-output/point3-review-audit.json
+          if-no-files-found: error
