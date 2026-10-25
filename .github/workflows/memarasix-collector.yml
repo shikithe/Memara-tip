@@ -45,11 +45,11 @@ jobs:
       - name: Collect football and NBA + regional leagues and player watchlist
         if: steps.localtime.outputs.enabled == 'true'
         run: |
-          python collector.py --date "$(TZ=Europe/Sarajevo date +%F)" --sport all --regional --nba-players --output collector-output/fixtures.json || true
+          python collector.py --date "$(TZ=Europe/Sarajevo date +%F)" --sport all --regional --nba-players --output collector-output/fixtures.json
       - name: Collect next Sarajevo date NBA fixtures
         if: steps.localtime.outputs.enabled == 'true'
         run: |
-          python collector.py --date "$(TZ=Europe/Sarajevo date -d tomorrow +%F)" --sport basketball --output collector-output/nba-next.json || true
+          python collector.py --date "$(TZ=Europe/Sarajevo date -d tomorrow +%F)" --sport basketball --output collector-output/nba-next.json
       - name: Validate sources and generate analyst queue
         if: steps.localtime.outputs.enabled == 'true'
         run: |
