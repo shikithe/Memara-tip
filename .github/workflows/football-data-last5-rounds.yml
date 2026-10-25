@@ -1,0 +1,30 @@
+name: MemaraSix football-data last five rounds
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: memarasix-football-data-last5
+  cancel-in-progress: false
+jobs:
+  collect-last5:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate collector
+        run: python -m py_compile football_data_last5_rounds.py
+      - name: Collect last five matchdays across free competitions
+        run: python football_data_last5_rounds.py
+      - name: Upload league round results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: football-data-last5-rounds
+          path: collector-output/football-data-last5-rounds.json
+          if-no-files-found: warn
