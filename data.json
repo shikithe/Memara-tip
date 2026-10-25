@@ -1,272 +1,77 @@
 {
-  "date": "2026-10-24",
-  "published": "2026-10-24 12:59",
-  "bank_before": 129.75,
-  "daily_stake": 12.98,
+  "date": "2026-10-25",
+  "published": "25.10.2026. u 13:07 · status bez potvrđenih tiketa",
+  "publication_type": "status_only_no_verified_bets",
+  "bank_before": 136.86,
+  "daily_stake": 0,
   "bank_after": 136.86,
-  "bank_after_stakes": 116.77,
+  "bank_after_stakes": 136.86,
   "provisional": false,
   "odds_verified": false,
-  "odds_verification_note": "Kvote preuzete iz javnih prematch prikaza PokerStars, Pinnacle i Ladbrokes 24.10.2026. Nisu potvrđene kao izvršive u bet365/Mozzart BiH niti se garantuje njihova nepromjenjivost.",
+  "odds_verification_note": "Nisu potvrđene aktuelne Mozzartbet BiH kvote za potrebne tipove. Strane kvote nisu potvrda Mozzart BiH. NBA player-points 24.10. nije svjež za 25.10.",
   "tickets": [
     {
       "id": "A",
-      "label": "GLAVNI TIKET",
-      "stake": 8.44,
-      "status": "dobitan",
-      "matches": [
-        {
-          "home": "Arsenal",
-          "away": "Everton",
-          "pick": "1",
-          "odd": 1.4,
-          "start_sarajevo": "2026-10-24T16:00:00+02:00",
-          "research": {
-            "summary": "Arsenal 6 pobjeda u prvih 7 kola, Everton 2/7; Arsenal dobio prethodna dva međusobna meča bez primljenog gola.",
-            "pros": "Arsenal snažan domaći skor i čvrsta odbrana; Everton slabiji napadački učinak.",
-            "risks": "Arsenal ima gust raspored i mogući izostanak Sake; kvota implicira oko 71%.",
-            "injuries": "Bukayo Saka upitan/izostanak prema jutarnjim izvještajima; konačan sastav nije potvrđen.",
-            "conclusion": "Odabir je zasnovan na javnoj formi i tržištu, bez tvrdnje da je siguran ili matematički +EV.",
-            "sources": [
-              [
-                "PokerStars javni prematch prikaz",
-                "https://www.pokerstars.fr/en/sports/soccer/1/english-premier-league/10932509/arsenal-v-everton/36177339/"
-              ]
-            ]
-          },
-          "result_status": "pogođen",
-          "final_score": "2:0"
-        },
-        {
-          "home": "Rangers",
-          "away": "St Johnstone",
-          "pick": "1",
-          "odd": 1.25,
-          "start_sarajevo": "2026-10-24T16:00:00+02:00",
-          "research": {
-            "summary": "Rangers pet pobjeda i remi u posljednjih šest, pet vezanih pobjeda protiv St Johnstone.",
-            "pros": "Jaka domaća forma, pozitivni H2H, nizak broj primljenih golova.",
-            "risks": "Brojni izostanci Rangersa, niska kvota i rizik neočekivanog remija.",
-            "injuries": "Rangers: Shankland, Chermiti, Cifuentes i drugi prijavljeni odsutni; početni sastav nije potvrđen.",
-            "conclusion": "Odabir je zasnovan na javnoj formi i tržištu, bez tvrdnje da je siguran ili matematički +EV.",
-            "sources": [
-              [
-                "PokerStars javni prematch prikaz",
-                "https://www.pokerstars.fr/en/sports/soccer/1/scottish-premiership/105/rangers-v-st-johnstone/36212974/"
-              ]
-            ]
-          },
-          "result_status": "pogođen",
-          "final_score": "4:0"
-        },
-        {
-          "home": "RB Leipzig",
-          "away": "SV Elversberg",
-          "pick": "1",
-          "odd": 1.36,
-          "start_sarajevo": "2026-10-24T15:30:00+02:00",
-          "research": {
-            "summary": "Leipzig je kod kuće pobijedio Frankfurt 6:0, ali izgubio posljednje dvije teške utakmice od Bayerna i Reala; Elversberg je dobio Augsburg 4:3.",
-            "pros": "Domaći teren i tržišna prednost Leipziga.",
-            "risks": "Elversberg pobjeđuje favorite; Leipzig umoran nakon evropskog meča, 1.36 zahtijeva oko 73.5%.",
-            "injuries": "Kod Elversberga nekoliko upitnih igrača; potvrđene postave nisu dostupne.",
-            "conclusion": "Odabir je zasnovan na javnoj formi i tržištu, bez tvrdnje da je siguran ili matematički +EV.",
-            "sources": [
-              [
-                "PokerStars javni prematch prikaz",
-                "https://www.pokerstars.es/en/sports/soccer/1/german-bundesliga/59/rb-leipzig-v-elversberg/36209523/"
-              ]
-            ]
-          },
-          "result_status": "pogođen",
-          "final_score": "4:0"
-        }
-      ],
-      "odds": 2.38,
-      "settled_at_utc": "2026-10-24T16:55:26.832232+00:00",
-      "payout": 20.09
+      "label": "GLAVNI TIKET — NIJE OBJAVLJEN",
+      "odds": null,
+      "stake": 0,
+      "status": "preskočen",
+      "payout": 0,
+      "matches": [],
+      "analysis": {
+        "summary": "Danas nema validiranog fudbalskog tiketa A. Izbor se ne objavljuje bez stvarne provjere termina, sastava, forme i tržišnih kvota.",
+        "reasons": [
+          "Collector od 25.10. u 13:05 (Sarajevo): 30 fudbalskih kandidata; source_errors=0.",
+          "Pregledani Liverpool – Brighton, Manchester United – Bournemouth i Freiburg – Bayern; rizici izostanaka i rotacije ostaju.",
+          "Nije potvrđena izvršiva kvota Mozzartbet BiH; cilj ukupne kvote 2–3 nije dokaziv."
+        ],
+        "limits": "Nema potvrđenih kvota ni završne provjere sastava. Ulog 0,00 €."
+      }
     },
     {
       "id": "B",
-      "label": "GOLOVI — VIŠE OD 2,5",
-      "stake": 3.24,
-      "status": "izgubljen",
-      "matches": [
-        {
-          "home": "Mainz",
-          "away": "Werder Bremen",
-          "pick": "3+",
-          "odd": 1.45,
-          "start_sarajevo": "2026-10-24T15:30:00+02:00",
-          "research": {
-            "summary": "Mainz 14 postignutih i 10 primljenih u šest kola; Bremen pet utakmica bez poraza, po dva gola u posljednja tri meča.",
-            "pros": "Mainz doma 3:4 Leverkusen, Bremen često i daje i prima golove.",
-            "risks": "Mainz je u posljednjem gostovanju slavio 1:0; mogući oprezniji ritam.",
-            "injuries": "Mainz bez Zentnera i Ruoppija prema izvještajima; sastavi nisu potvrđeni.",
-            "conclusion": "Odabir je zasnovan na javnoj formi i tržištu, bez tvrdnje da je siguran ili matematički +EV.",
-            "sources": [
-              [
-                "PokerStars javni prematch prikaz",
-                "https://www.pokerstars.fr/en/sports/soccer/1/german-bundesliga/59/mainz-v-werder-bremen/36209521/"
-              ]
-            ]
-          },
-          "result_status": "pogođen",
-          "final_score": "2:3"
-        },
-        {
-          "home": "FC Utrecht",
-          "away": "PEC Zwolle",
-          "pick": "3+",
-          "odd": 1.5,
-          "start_sarajevo": "2026-10-24T16:30:00+02:00",
-          "research": {
-            "summary": "Utrecht prema modelu kreira oko 2.11 xG, Zwolle 1.22; tržište očekuje više golova.",
-            "pros": "Slabija odbrana Utrechta, izražena mogućnost golova oba tima.",
-            "risks": "Zwolle ima slab napad (xG 1.08), međusobni dueli često ostaju na dva gola ili manje.",
-            "injuries": "Utrecht bez Stepanova; Zwolle bez Floranusa prema predmečnim podacima.",
-            "conclusion": "Odabir je zasnovan na javnoj formi i tržištu, bez tvrdnje da je siguran ili matematički +EV.",
-            "sources": [
-              [
-                "PokerStars javni prematch prikaz",
-                "https://www.pokerstars.fr/en/sports/soccer/1/dutch-eredivisie/9404054/fc-utrecht-v-pec-zwolle/36180550/"
-              ]
-            ]
-          },
-          "result_status": "promašen",
-          "final_score": "1:1"
-        }
-      ],
-      "odds": 2.18,
-      "settled_at_utc": "2026-10-24T16:55:26.832232+00:00",
-      "payout": 0.0
+      "label": "GOLOVI 3+ — NIJE OBJAVLJEN",
+      "odds": null,
+      "stake": 0,
+      "status": "preskočen",
+      "payout": 0,
+      "matches": [],
+      "analysis": {
+        "summary": "Tiket B over 2.5 nije objavljen. Bez potvrđenih cijena i nezavisno opravdane procjene rizika nema validne kombinacije.",
+        "reasons": [
+          "Razmotreni Liverpool – Brighton i Hoffenheim – Bayer Leverkusen, ali bez trenutnih Mozzart BiH kvota.",
+          "Dostupne javne strane kvote nisu predstavljene kao Mozzart BiH.",
+          "Potvrda početnih sastava i rotacije ostaje nepotpuna."
+        ],
+        "limits": "Nema validnog tiketa B. Ulog 0,00 €."
+      }
     },
     {
       "id": "C",
-      "label": "KEŠ KOLICA",
-      "stake": 1.3,
-      "status": "izgubljen",
-      "matches": [
-        {
-          "home": "Chelsea",
-          "away": "Tottenham Hotspur",
-          "pick": "1",
-          "odd": 1.91,
-          "start_sarajevo": "2026-10-24T18:30:00+02:00",
-          "research": {
-            "summary": "Chelsea četvrti, Tottenham 16. sa 6 bodova; Spurs imaju samo jednu pobjedu u posljednjih 36 gostovanja Chelseaju u ligi.",
-            "pros": "Chelsea ima jači napad i povoljan domaći H2H.",
-            "risks": "Londonski derbi; Chelsea ima svoje izostanke, Spurs dobili nazad Porra i Robertsona.",
-            "injuries": "Spurs bez Bergvalla i Udogieja, Maddison upitan; Chelsea bez golmana Martineza.",
-            "conclusion": "Odabir je zasnovan na javnoj formi i tržištu, bez tvrdnje da je siguran ili matematički +EV.",
-            "sources": [
-              [
-                "PokerStars javni prematch prikaz",
-                "https://www.pokerstars.fr/en/sports/soccer/1/english-premier-league/10932509/chelsea-v-tottenham/36177320/"
-              ]
-            ]
-          },
-          "result_status": "promašen",
-          "final_score": "0:2"
-        },
-        {
-          "home": "Como",
-          "away": "Sassuolo",
-          "pick": "1",
-          "odd": 1.44,
-          "start_sarajevo": "2026-10-24T15:00:00+02:00",
-          "research": {
-            "summary": "Como 6 pobjeda u 10 posljednjih, Sassuolo 3; Como postiže oko 2.2 gola po utakmici prema predmečnom pregledu.",
-            "pros": "Bolji učinak Coma, domaći teren.",
-            "risks": "Sassuolo postiže oko 1.8 golova po meču, pa ima realnu šansu za iznenađenje.",
-            "injuries": "Konačni sastavi nisu potvrđeni.",
-            "conclusion": "Odabir je zasnovan na javnoj formi i tržištu, bez tvrdnje da je siguran ili matematički +EV.",
-            "sources": [
-              [
-                "Pinnacle javni pregled",
-                "https://www.pinnacle.com/en/soccer/italy-serie-a/sassuolo-como/1638145376/"
-              ]
-            ]
-          },
-          "result_status": "pogođen",
-          "final_score": "2:0"
-        },
-        {
-          "home": "Valencia",
-          "away": "Villarreal",
-          "pick": "GG",
-          "odd": 1.6,
-          "start_sarajevo": "2026-10-24T18:30:00+02:00",
-          "research": {
-            "summary": "Villarreal ima 13 ligaških golova i pobijedio je Napoli 3:1 u Evropi; Valencia ima problema u odbrani.",
-            "pros": "Villarreal može pogoditi, Valencia kod kuće može do gola iz prekida.",
-            "risks": "Valencia je postigla samo 6 golova u prvih devet kola; GG je osjetljiv na njen napad.",
-            "injuries": "Konačni sastavi nisu potvrđeni.",
-            "conclusion": "Odabir je zasnovan na javnoj formi i tržištu, bez tvrdnje da je siguran ili matematički +EV.",
-            "sources": [
-              [
-                "Ladbrokes javni prematch prikaz",
-                "https://www.ladbrokes.com/en/sports/event/football/spanish/spanish-la-liga/valencia-cf-v-villarreal-cf/259264880/scores"
-              ]
-            ]
-          },
-          "result_status": "pogođen",
-          "final_score": "1:2"
-        },
-        {
-          "home": "Cagliari",
-          "away": "Bologna",
-          "pick": "2+",
-          "odd": 1.33,
-          "start_sarajevo": "2026-10-24T15:00:00+02:00",
-          "research": {
-            "summary": "Bologna u posljednjih pet ligaških utakmica 6 postignutih i 8 primljenih; pet od šest skorijih H2H ima najmanje dva gola.",
-            "pros": "Relativno nizak prag dva gola.",
-            "risks": "Cagliari ima skromnu realizaciju, prethodni H2H završio 0:0.",
-            "injuries": "Konačni sastavi nisu potvrđeni.",
-            "conclusion": "Odabir je zasnovan na javnoj formi i tržištu, bez tvrdnje da je siguran ili matematički +EV.",
-            "sources": [
-              [
-                "PokerStars javni prematch prikaz",
-                "https://www.pokerstars.fr/en/sports/soccer/1/italian-serie-a/81/cagliari-v-bologna/36209511/"
-              ]
-            ]
-          },
-          "result_status": "pogođen",
-          "final_score": "0:2"
-        },
-        {
-          "home": "Napoli",
-          "away": "AS Roma",
-          "pick": "3+",
-          "odd": 1.75,
-          "start_sarajevo": "2026-10-24T18:00:00+02:00",
-          "research": {
-            "summary": "Roma i Napoli imaju značajnu napadačku xG produkciju (Roma oko 15.83, Napoli 13 u sedam kola).",
-            "pros": "Dva tima sposobna kreirati šanse; Napoli ranjiv nakon evropskog rasporeda.",
-            "risks": "Roma bez Dybale, Pellegrinija i Svilarа; over 2.5 nije siguran ni kad oba tima stvaraju prilike.",
-            "injuries": "Roma bez Dybale, Pellegrinija, Konéa i Svilara prema predmečnim izvještajima; Malen se vraća.",
-            "conclusion": "Odabir je zasnovan na javnoj formi i tržištu, bez tvrdnje da je siguran ili matematički +EV.",
-            "sources": [
-              [
-                "PokerStars javni prematch prikaz",
-                "https://www.pokerstars.es/en/sports/soccer/1/italian-serie-a/81/napoli-v-roma/36209505/"
-              ]
-            ]
-          },
-          "result_status": "pogođen",
-          "final_score": "3:3"
-        }
-      ],
-      "odds": 10.24,
-      "settled_at_utc": "2026-10-24T18:51:28.130003+00:00",
-      "payout": 0.0
+      "label": "KEŠ KOLICA — NEDOSTUPAN",
+      "odds": null,
+      "stake": 0,
+      "status": "preskočen",
+      "payout": 0,
+      "matches": [],
+      "analysis": {
+        "summary": "Keš kolica su obavezno razmotrena, ali nisu objavljena: nije moguće dokazati 4–6 nezavisnih kvalitetnih tipova s potvrđenom ukupnom kvotom najmanje 10.",
+        "reasons": [
+          "Liverpool – Brighton: razmotren golovski market, ali kvota Mozzart BiH nije potvrđena.",
+          "Manchester United – Bournemouth: forma i H2H daju konfliktne signale; kvota nije potvrđena.",
+          "Hoffenheim – Leverkusen: rotacija nakon evropskih utakmica; kvota nije potvrđena.",
+          "Freiburg – Bayern: važni izostanci i sastavi nisu dovoljno potvrđeni.",
+          "Utah Jazz – Lakers: Luka Dončić player points bez svježe linije, kvote i dovoljno pouzdanog uzorka.",
+          "Brooklyn Nets – Indiana Pacers: Michael Porter Jr. player points bez svježe linije i potvrđenih minuta."
+        ],
+        "limits": "NBA The Odds API snapshot je od 24.10.; besplatni ESPN uzorci su nepotpuni i nisu prognoza. Nema potvrđene kombinovane kvote ≥10; ulog C ostaje u banci."
+      }
     }
   ],
-  "analysis_status": "Collector 24.10.2026: 30 fudbalskih kandidata, 10 NBA utakmica, 12 neprovjerenih igrača; source_errors=0. Nezavisno provjereni odabrani fudbalski mečevi uz dostupnu formu, povrede i javne tržišne prikaze. NBA igrači nisu izabrani jer nemaju potvrđene granice poena ni kvote. Nisu potvrđeni konačni sastavi; kvote referentne. Tiket C je obavezan i sastavljen sa 5 različitih događaja, ukupna kvota >10. Ovo su virtuelni ulozi.",
-  "selection_method": "collector → nezavisna provjera → selekcija; nikad automatska objava iz Collectora",
+  "analysis_status": "25.10.2026: OBJAVLJEN SAMO STATUS. Svjež Collector 13:05 (30 fudbal, 7 NBA, 12 watchlist; bez source_errors), ali nema potrebnih potvrđenih Mozzart BiH kvota, svježih NBA points linija i pouzdanih sastava. A/B nisu objavljeni, C 'Keš kolica' nedostupan. Nijedan ulog nije knjižen.",
+  "selection_method": "Independent 13:00 review; weekend-research.json; current collector; no valid odds; no player-points from stale files; no market de-vig treated as model.",
   "settled": true,
-  "source_fixture_feed": "collector-feed.json",
-  "total_payout": 20.09,
-  "net_change": 7.11
+  "source_fixture_feed": "collector-feed.json (2026-10-25; generated 12:05:16Z)",
+  "total_payout": 0,
+  "net_change": 0
 }
