@@ -16,7 +16,9 @@ ALIASES = {"manchester united": "man united", "manchester city": "man city",
            "tottenham hotspur": "tottenham", "internazionale": "inter",
            "paris saint germain": "psg", "bayern munich": "bayern",
            "bayern munchen": "bayern",
-           "az alkmaar": "az", "twente 65": "twente"}
+           "az alkmaar": "az", "twente 65": "twente",
+           "cd nacional": "nacional", "nacional da madeira": "nacional",
+           "sporting clube braga": "braga", "sporting braga": "braga"}
 def norm(s):
     s = re.sub(r"[^a-z0-9 ]", " ", __import__("unicodedata").normalize("NFKD", str(s)).encode("ascii", "ignore").decode().lower())
     s = re.sub(r"\b(fc|cf|afc|sc|ac|club|football|calcio|de|the)\b", " ", s)
