@@ -1,23 +1,26 @@
 {
   "schema_version": "1.0",
   "date": "2026-10-25",
-  "generated_at_utc": "2026-10-25T08:00:51.744Z",
+  "generated_at_utc": "2026-10-25T12:06:46.002Z",
   "project": "MAIN MemaraSix",
   "repository": "shikithe/Memara-tip",
-  "status": "NACRT_NEKOMPLETAN",
+  "status": "ZAVRSENA_PROVJERA_NEMA_VALIDNIH_TIKETA",
   "publication_allowed": false,
-  "phase": "09:00 weekend research",
+  "phase": "13:00 weekend final review",
   "timezone": "Europe/Sarajevo",
   "input_audit": {
     "collector_feed": {
       "path": "collector-feed.json",
-      "date": "2026-10-24",
-      "generated_at_utc": "2026-10-24T13:06:16.857419+00:00",
-      "fresh_for_today": false,
+      "date": "2026-10-25",
+      "generated_at_utc": "2026-10-25T12:05:16.827822+00:00",
+      "fresh_for_today": true,
+      "source_status": "ok",
+      "source_errors": 0,
       "football_candidates": 30,
-      "nba_games": 10,
+      "nba_games": 7,
       "nba_player_watchlist": 12,
-      "reason": "Yesterday's feed cannot be used as a current 25 Oct candidate feed. Collector workflow is configured for 09:15 Sarajevo, later than this 09:00 preparation."
+      "odds_verified": false,
+      "reason": "Manually recovered main collector; candidate list is current but contains no bookmaker-verified odds."
     },
     "nba_player_points": {
       "path": "collector-output/nba-player-points.json",
@@ -27,9 +30,16 @@
       "valid_today_offers": 0,
       "market_validation": "NOT_CONFIRMED_FOR_2026-10-25",
       "bookmaker_mozzart_bih_verified": false,
-      "quality_warning": "At least one stale record incorrectly associates Giannis Antetokounmpo with Miami Heat vs Charlotte; player-team and fixture association must be cross-validated before considering any props."
+      "quality_warning": "Stale offers cannot be used; previous player-team mismatch observed."
     },
-    "afternoon_nba_sync": "12:00 Sarajevo refresh may alter player_points lines, odds and availability. Morning values must not be published as final."
+    "afternoon_nba_sync": "12:00 Sarajevo refresh may alter player_points lines, odds and availability. Morning values must not be published as final.",
+    "nba_free_statistics": {
+      "path": "collector-output/nba-free-statistics.json",
+      "date_utc": "2026-10-24",
+      "fresh_for_today": false,
+      "players_with_stats": 68,
+      "note": "Incomplete unofficial historical ESPN samples; no reliable projection or verified current points line."
+    }
   },
   "publication_rules": {
     "earliest_publication_local": "2026-10-25T13:00:00+01:00",
@@ -202,21 +212,20 @@
     }
   ],
   "missing_evidence": [
-    "2026-10-25 collector-feed.json not yet generated (collector scheduled 09:15 Sarajevo)",
-    "2026-10-25 timestamped collector-output/nba-player-points.json absent",
-    "No independently confirmed current Mozzartbet BiH A/B football prices",
-    "No current Mozzartbet BiH player_points line/price/bookmaker verification",
-    "Starting lineups and NBA expected minutes not confirmed",
-    "No validated probabilities or edge; no mathematically justified A/B/C odds targets"
+    "Current Mozzartbet BiH event-specific prices for A/B/C",
+    "2026-10-25 timestamped The Odds API player-points offers",
+    "Current 2026-10-25 ESPN historical boxscore sample and adequate sample sizes",
+    "Verified player-team-game linkage and starting lineups/injuries",
+    "Defensible probability/edge; de-vig market implied probability is not independent model"
   ],
   "tickets": {
     "A": {
-      "status": "NACRT_NEDOVOLJNO_PODATAKA",
+      "status": "NIJE_OBJAVLJEN_NEMA_POTVRDJENIH_KVOTA",
       "legs": [],
       "total_odds": null
     },
     "B": {
-      "status": "NACRT_NEDOVOLJNO_PODATAKA",
+      "status": "NIJE_OBJAVLJEN_NEMA_POTVRDJENIH_KVOTA",
       "legs": [],
       "total_odds": null
     },
@@ -225,7 +234,7 @@
       "status": "NEDOSTUPAN",
       "legs": [],
       "total_odds": null,
-      "reason": "Cannot build 4-6 distinct events at total decimal odds >=10 without current verified event-specific odds and no overlaps."
+      "reason": "Reviewed six distinct football/NBA events, but no current verified Mozzart BiH odds and no fresh NBA points lines; cannot verify combined decimal odds >=10."
     }
   },
   "safety": {
@@ -233,13 +242,49 @@
       "weekend-research.json"
     ],
     "untouched": [
-      "data.json",
-      "archive.json",
-      "bank",
       "DEMO",
-      "previous_locked_tickets"
+      "previous locked tickets",
+      "original 2026-10-24 selections and payouts"
     ],
     "not_published": true,
     "not_betting_advice": true
-  }
+  },
+  "candidate_review_C": [
+    {
+      "event": "Liverpool - Brighton",
+      "sport": "football",
+      "market_considered": "Over 2.5",
+      "reason": "Goals rationale exists but opposing defensive form and injury/lineup uncertainty; no current Mozzart BiH price."
+    },
+    {
+      "event": "Manchester United - Bournemouth",
+      "sport": "football",
+      "market_considered": "X2 or totals",
+      "reason": "United poor form, Bournemouth away goals, but away winless and lineup uncertain; no current Mozzart BiH price."
+    },
+    {
+      "event": "Hoffenheim - Bayer Leverkusen",
+      "sport": "football",
+      "market_considered": "Over 2.5",
+      "reason": "Midweek load, possible rotation and injuries; no verified current market price."
+    },
+    {
+      "event": "Freiburg - Bayern Munich",
+      "sport": "football",
+      "market_considered": "Goals or Bayern",
+      "reason": "Bayern major reported absences; high lineup uncertainty and no verified current Mozzart price."
+    },
+    {
+      "event": "Utah Jazz - Los Angeles Lakers",
+      "sport": "nba",
+      "market_considered": "Luka Doncic player points",
+      "reason": "No 25 Oct timestamped The Odds API points line; free ESPN historical samples insufficient; minutes and injuries not confirmed."
+    },
+    {
+      "event": "Brooklyn Nets - Indiana Pacers",
+      "sport": "nba",
+      "market_considered": "Michael Porter Jr. player points",
+      "reason": "No 25 Oct timestamped line; Nets back-to-back, minutes and injuries not confirmed."
+    }
+  ]
 }
