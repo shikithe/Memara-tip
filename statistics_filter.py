@@ -104,6 +104,7 @@ def analyze(prefilter, datasets, as_of, min_total=5, min_split=2):
     for f in prefilter.get("fixtures",[]):
         row = {"fixture_id":f.get("fixture_id"),"league":f.get("league"),
                "home":f.get("home"),"away":f.get("away"),
+               "league_id":f.get("league_id"),"country":f.get("country"),
                "point3":"review","reason":"competition_or_team_unmatched","coverage":None}
         if f.get("decision") == "rejected":
             row.update(point3="skipped",reason="prefilter_rejected")
