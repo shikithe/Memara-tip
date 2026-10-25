@@ -1,6 +1,9 @@
 name: MemaraSix point 3 review audit
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/point3-review-audit.yml'
 permissions:
   contents: read
 jobs:
@@ -18,6 +21,14 @@ jobs:
         run: python fixture_prefilter.py
       - name: Re-evaluate statistical coverage
         run: python statistics_filter.py
+      - name: Compare coverage with previous nine
+        run: |
+          python - <<'PY'
+          import json
+          p=json.load(open('collector-output/statistics-filter.json'))
+          count=p['counts']['covered']
+          print('POINT3 COMPARISON:',json.dumps({'previous_covered':9,'current_covered':count,'difference':count-9,'counts':p['counts'],'competitions_loaded':p.get('competitions_loaded',[])}))
+          PY
       - name: Diagnose all review fixtures
         run: python point3_review_audit.py
       - name: Independently audit every condition
