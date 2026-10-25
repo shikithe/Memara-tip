@@ -1,0 +1,30 @@
+name: MemaraSix fallback statistics source research
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fallback-research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Recreate first-stage filtering
+        run: python fixture_prefilter.py
+      - name: Re-evaluate supported leagues
+        run: python statistics_filter.py
+      - name: Probe fallback provider coverage
+        run: python fallback_source_probe.py
+      - name: Upload read-only coverage audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: memarasix-fallback-source-audit
+          path: |
+            collector-output/statistics-filter.json
+            collector-output/fallback-source-audit.json
+          if-no-files-found: error
