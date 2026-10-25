@@ -48,6 +48,7 @@ def enrich(feed, props, now=None):
         if start > now and start < now + timedelta(hours=42):
             events[event_id] = start
     seen = set()
+    rejected_players = 0
     for offer in props.get("offers", []):
         if not isinstance(offer, dict):
             continue
@@ -74,6 +75,10 @@ def enrich(feed, props, now=None):
         player_id = str(offer.get("player_id", "")).strip()
         if not all((player, bookmaker, player_id)):
             continue
+        expected = props.get('verified_player_teams', {}).get(player_id)
+        if expected and str(expected).casefold() != str(offer.get('team', '')).casefold():
+            rejected_players += 1
+            continue
         key = (event_id, player_id, bookmaker.casefold(), line)
         if key in seen:
             continue
@@ -96,6 +101,7 @@ def enrich(feed, props, now=None):
             "mozart_bih_verified": False
         })
     result["nba_player_points_offers"].sort(key=lambda x: (x["start_utc"], x["player"], x["bookmaker"], x["points_line"]))
+    result["nba_prop_rejected_team_mismatch"] = rejected_players
     result["nba_prop_count"] = len(result["nba_player_points_offers"])
     result["nba_prop_status"] = "available_for_analysis" if result["nba_prop_count"] else "no_verified_matches"
     return result
