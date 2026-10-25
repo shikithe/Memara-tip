@@ -1,8 +1,30 @@
 {
   "date": "2026-10-25",
-  "updated_at_utc": "2026-10-25T16:21:17.074578+00:00",
+  "updated_at_utc": "2026-10-25T19:09:47.226793+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
-  "matches": [],
+  "matches": [
+    {
+      "ticket": "C",
+      "index": 0,
+      "home": "Barcelona",
+      "away": "Real Madrid",
+      "state": "unverified"
+    },
+    {
+      "ticket": "C",
+      "index": 1,
+      "home": "Udinese",
+      "away": "AC Milan",
+      "state": "unverified"
+    },
+    {
+      "ticket": "C",
+      "index": 2,
+      "home": "Sporting CP",
+      "away": "Académico Viseu",
+      "state": "unverified"
+    }
+  ],
   "bank_unchanged": true
 }

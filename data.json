@@ -88,8 +88,8 @@
   "selection_method": "Independent 13:00 review; weekend-research.json; current collector; no valid odds; no player-points from stale files; no market de-vig treated as model.",
   "settled": false,
   "source_fixture_feed": "collector-feed.json (2026-10-25; generated 12:05:16Z)",
-  "total_payout": 0,
-  "net_change": -1.37,
+  "total_payout": 0.0,
+  "net_change": null,
   "next_day_announcement": {
     "date": "2026-10-26",
     "title": "Standardna automatizacija — 26.10.2026",
