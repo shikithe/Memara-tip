@@ -15,7 +15,8 @@ CODES = ("PL", "ELC", "BL1", "PD", "SA", "FL1", "PPL", "DED", "BSA", "CL")
 ALIASES = {"manchester united": "man united", "manchester city": "man city",
            "tottenham hotspur": "tottenham", "internazionale": "inter",
            "paris saint germain": "psg", "bayern munich": "bayern",
-           "bayern munchen": "bayern"}
+           "bayern munchen": "bayern",
+           "az alkmaar": "az", "twente 65": "twente"}
 def norm(s):
     s = re.sub(r"[^a-z0-9 ]", " ", __import__("unicodedata").normalize("NFKD", str(s)).encode("ascii", "ignore").decode().lower())
     s = re.sub(r"\b(fc|cf|afc|sc|ac|club|football|calcio|de|the)\b", " ", s)
