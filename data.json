@@ -1,14 +1,14 @@
 {
   "date": "2026-10-25",
-  "published": "25.10.2026. u 13:07 · status bez potvrđenih tiketa",
-  "publication_type": "status_only_no_verified_bets",
+  "published": "25.10.2026. · korisnički zatražena javna testna objava C",
+  "publication_type": "published_unverified_historical_odds_test",
   "bank_before": 136.86,
-  "daily_stake": 0,
-  "bank_after": 136.86,
-  "bank_after_stakes": 136.86,
-  "provisional": false,
+  "daily_stake": 1.37,
+  "bank_after": 135.49,
+  "bank_after_stakes": 135.49,
+  "provisional": true,
   "odds_verified": false,
-  "odds_verification_note": "Nisu potvrđene aktuelne Mozzartbet BiH kvote za potrebne tipove. Strane kvote nisu potvrda Mozzart BiH. NBA player-points 24.10. nije svjež za 25.10.",
+  "odds_verification_note": "C javno objavljen isključivo kao test sa istorijskim Bet365 kvotama od 19.10.; aktuelne kvote, početak mečeva i stvarna uplata nisu potvrđeni.",
   "tickets": [
     {
       "id": "A",
@@ -48,32 +48,48 @@
     },
     {
       "id": "C",
-      "label": "KEŠ KOLICA — NEDOSTUPAN",
-      "odds": null,
-      "stake": 0,
-      "status": "preskočen",
+      "label": "KEŠ KOLICA — JAVNO OBJAVLJEN TEST",
+      "odds": 10.048,
+      "stake": 1.37,
+      "status": "objavljen — test, istorijske kvote",
       "payout": 0,
-      "matches": [],
+      "matches": [
+        {
+          "home": "Barcelona",
+          "away": "Real Madrid",
+          "pick": "Više od 3,5 golova",
+          "odd": 1.57
+        },
+        {
+          "home": "Udinese",
+          "away": "AC Milan",
+          "pick": "Više od 3,5 golova",
+          "odd": 3.2
+        },
+        {
+          "home": "Sporting CP",
+          "away": "Académico Viseu",
+          "pick": "Više od 3,5 golova",
+          "odd": 2
+        }
+      ],
       "analysis": {
-        "summary": "Keš kolica su obavezno razmotrena, ali nisu objavljena: nije moguće dokazati 4–6 nezavisnih kvalitetnih tipova s potvrđenom ukupnom kvotom najmanje 10.",
+        "summary": "Korisnički zatražena javna objava testnog tiketa C. Kvote su istorijski prikaz Bet365 od 19.10.2026, NISU potvrđene kao aktuelne niti je potvrđeno da su mečevi bili dostupni prije početka. Nije potvrđena stvarna uplata.",
         "reasons": [
-          "Liverpool – Brighton: razmotren golovski market, ali kvota Mozzart BiH nije potvrđena.",
-          "Manchester United – Bournemouth: forma i H2H daju konfliktne signale; kvota nije potvrđena.",
-          "Hoffenheim – Leverkusen: rotacija nakon evropskih utakmica; kvota nije potvrđena.",
-          "Freiburg – Bayern: važni izostanci i sastavi nisu dovoljno potvrđeni.",
-          "Utah Jazz – Lakers: Luka Dončić player points bez svježe linije, kvote i dovoljno pouzdanog uzorka.",
-          "Brooklyn Nets – Indiana Pacers: Michael Porter Jr. player points bez svježe linije i potvrđenih minuta."
+          "Ukupna istorijska kvota 10,048, prag C ≥10.",
+          "Ulog je 1% početne banke, 1,37 €. Ovo je samo evidencija sajta.",
+          "Sva tri tipa su više od 3,5 golova, vrlo visok rizik."
         ],
-        "limits": "NBA The Odds API snapshot je od 24.10.; besplatni ESPN uzorci su nepotpuni i nisu prognoza. Nema potvrđene kombinovane kvote ≥10; ulog C ostaje u banci."
+        "limits": "Ne koristiti kao dokaz izvršive ponude kladionice. Nema verifikacije kvota, termina ni stvarne uplate."
       }
     }
   ],
-  "analysis_status": "25.10.2026: OBJAVLJEN SAMO STATUS. Svjež Collector 13:05 (30 fudbal, 7 NBA, 12 watchlist; bez source_errors), ali nema potrebnih potvrđenih Mozzart BiH kvota, svježih NBA points linija i pouzdanih sastava. A/B nisu objavljeni, C 'Keš kolica' nedostupan. Nijedan ulog nije knjižen. Najava za 26.10.: standardna automatizacija, analiza i eventualna objava do 13:00 uz verifikaciju.",
+  "analysis_status": "25.10.2026: Na zahtjev korisnika javno objavljen TESTNI tiket C (neprovjerene istorijske kvote), evidencioni ulog 1,37 €, banka 135,49 €. Tiketi A/B nisu objavljeni. Stvarna uplata nije potvrđena.",
   "selection_method": "Independent 13:00 review; weekend-research.json; current collector; no valid odds; no player-points from stale files; no market de-vig treated as model.",
-  "settled": true,
+  "settled": false,
   "source_fixture_feed": "collector-feed.json (2026-10-25; generated 12:05:16Z)",
   "total_payout": 0,
-  "net_change": 0,
+  "net_change": -1.37,
   "next_day_announcement": {
     "date": "2026-10-26",
     "title": "Standardna automatizacija — 26.10.2026",
