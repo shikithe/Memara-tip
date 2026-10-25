@@ -1,0 +1,28 @@
+name: MemaraSix point 3 statistical coverage test
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build fixture prefilter snapshot
+        run: python fixture_prefilter.py
+      - name: Evaluate point 3 using 10 current competitions
+        run: python statistics_filter.py
+      - name: Upload audit results (no publication)
+        uses: actions/upload-artifact@v4
+        with:
+          name: memarasix-point3-coverage
+          path: |
+            collector-output/fixture-prefilter.json
+            collector-output/statistics-filter.json
+          if-no-files-found: error
