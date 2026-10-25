@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Recreate today's fixture prefilter
-        run: python fixture_prefilter.py
+        run: python fixture_prefilter.py --buffer-minutes 5
       - name: Fetch shared season data at safe request rate
         run: python football_data_last5_rounds.py
       - name: Match today's fixtures against the same downloaded data without API requests
