@@ -37,7 +37,7 @@ def football(date, key, limit=40, fixtures_only=False):
         teams = game.get("teams") or {}
         home, away = teams.get("home") or {}, teams.get("away") or {}
         if not all((league.get("id"),league.get("season"),home.get("id"),away.get("id"))):continue
-        matches.append({"fixture_id":game["fixture"]["id"],"league_id":league["id"],"league_name":league.get("name"),
+        matches.append({"fixture_id":game["fixture"]["id"],"league_id":league["id"],"league_name":league.get("name"),"league_country":league.get("country"),"league_round":league.get("round"),
                         "season":league["season"],"start_utc":game["fixture"].get("date"),
                         "home_team_id":home["id"],"away_team_id":away["id"],
                         "home":home.get("name"),"away":away.get("name")})
