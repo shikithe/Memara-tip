@@ -20,10 +20,10 @@ jobs:
         run: python statistics_filter.py
       - name: Diagnose all review fixtures
         run: python point3_review_audit.py
-      - uses: actions/upload-artifact@v4
+      - name: Independently audit every condition\n        run: python point3_condition_matrix.py\n      - uses: actions/upload-artifact@v4
         with:
           name: memarasix-point3-review-audit
           path: |
             collector-output/statistics-filter.json
-            collector-output/point3-review-audit.json
+            collector-output/point3-review-audit.json\n            collector-output/point3-condition-matrix.json
           if-no-files-found: error
