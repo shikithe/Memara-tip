@@ -1,0 +1,35 @@
+name: MemaraSix safe TheSportsDB statistics research
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: memarasix-thesportsdb-safe-research
+  cancel-in-progress: false
+jobs:
+  safe-statistics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+      THESPORTSDB_API_KEY: ${{ secrets.THESPORTSDB_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate collector
+        run: python -m py_compile thesportsdb_safe_stats.py
+      - name: Refresh fixtures and countries
+        run: |
+          DAY=$(python -c "import json;print(json.load(open('collector-output/statistics-research.json'))['date'])")
+          python sync_sports_stats.py --date "$DAY" --fixtures-only --output collector-output/safe-fixtures.json
+      - name: Pull season results with safe request rate
+        run: python thesportsdb_safe_stats.py --input collector-output/safe-fixtures.json --interval 5 --max-calls 20 --max-countries 8 --max-seasons 4
+      - name: Upload read-only statistics audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: memarasix-safe-statistics
+          path: collector-output/thesportsdb-safe-stats.json
+          if-no-files-found: warn
