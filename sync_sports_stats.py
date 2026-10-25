@@ -25,7 +25,7 @@ def get(url, headers):
 def norm(s):
     return " ".join(unicodedata.normalize("NFKD", str(s)).encode("ascii","ignore").decode().lower().split())
 
-def football(date, key, limit=3):
+def football(date, key, limit=40):
     """One date fixtures query; optionally up to 2 team stats queries per match."""
     doc = get(FOOTBALL+"/fixtures?"+urlencode({"date":date}), {"x-apisports-key":key})
     matches=[]
@@ -41,6 +41,17 @@ def football(date, key, limit=3):
                         "season":league["season"],"start_utc":game["fixture"].get("date"),
                         "home_team_id":home["id"],"away_team_id":away["id"],
                         "home":home.get("name"),"away":away.get("name")})
+    # Prefer fixtures already discovered by the collector, if IDs/names align.
+    try:
+        feed=json.loads(Path("collector-feed.json").read_text(encoding="utf-8"))
+        if feed.get("date")==date:
+            wanted_ids={str(x.get("id")) for x in feed.get("football_candidates",[]) if x.get("id")}
+            wanted_names={(norm(x.get("home")),norm(x.get("away"))) for x in feed.get("football_candidates",[])}
+            matches.sort(key=lambda x:(
+                not (str(x["fixture_id"]) in wanted_ids or (norm(x["home"]),norm(x["away"])) in wanted_names),
+                x.get("start_utc") or ""))
+    except (OSError,ValueError,TypeError):
+        pass
     matches=matches[:limit]
     for item in matches:
         for side in ("home","away"):
@@ -57,7 +68,7 @@ def football(date, key, limit=3):
                     "form":stats.get("form"),"source":"API-Football"}
             except (HTTPError,URLError,ValueError,KeyError,TypeError):
                 item[side+"_stats"]={"status":"unavailable"}
-    return {"status":"ok","scope":"small sample of upcoming fixtures, not the full programme",
+    return {"status":"ok","scope":"bounded free-tier research; collector candidates prioritized",
             "fixture_count":len(matches),"fixtures":matches,"source":"API-Football",
             "is_model_prediction":False}
 
@@ -106,7 +117,7 @@ def main():
     p=argparse.ArgumentParser()
     p.add_argument("--date",required=True)
     p.add_argument("--output",default="collector-output/statistics-research.json")
-    p.add_argument("--football-limit",type=int,default=3)
+    p.add_argument("--football-limit",type=int,default=40)
     p.add_argument("--nba-limit",type=int,default=4)
     a=p.parse_args()
     result={"date":a.date,"generated_at_utc":datetime.now(timezone.utc).isoformat(),
@@ -115,7 +126,7 @@ def main():
     football_key=os.environ.get("API_FOOTBALL_KEY")
     nba_key=os.environ.get("BALLDONTLIE_API_KEY")
     if football_key:
-        try:result["football"]=football(a.date,football_key,max(0,min(a.football_limit,5)))
+        try:result["football"]=football(a.date,football_key,max(0,min(a.football_limit,40)))
         except HTTPError as exc:result["football"]={"status":"http_error","code":exc.code}
         except (URLError,ValueError,TypeError,KeyError):result["football"]={"status":"source_error"}
     if nba_key:
