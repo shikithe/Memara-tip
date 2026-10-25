@@ -1,0 +1,47 @@
+name: MemaraSix synchronized fixture statistics
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: memarasix-football-data-synchronized
+  cancel-in-progress: false
+jobs:
+  synchronize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Recreate today's fixture prefilter
+        run: python fixture_prefilter.py
+      - name: Fetch shared season data at safe request rate
+        run: python football_data_last5_rounds.py
+      - name: Match today's fixtures against the same downloaded data without API requests
+        run: python statistics_filter.py --offline
+      - name: Print synchronized coverage and reasons
+        run: |
+          python - <<'PY'
+          import json,collections
+          p=json.load(open('collector-output/statistics-filter.json'))
+          counts=p['counts']
+          reasons=dict(collections.Counter(x['reason'] for x in p['fixtures']))
+          print('SYNCHRONIZED SUMMARY',json.dumps({'previous_covered':4,'current_covered':counts['covered'],'change':counts['covered']-4,'counts':counts,'competitions_loaded':p['competitions_loaded'],'reasons':reasons}))
+          for row in p['fixtures']:
+            if row['point3']=='covered':
+              print('COVERED FIXTURE',json.dumps({'fixture_id':row['fixture_id'],'home':row['home'],'away':row['away'],'league':row['league']}))
+          PY
+      - name: Upload synchronization evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: memarasix-synchronized-coverage
+          path: |
+            collector-output/football-data-last5-rounds.json
+            collector-output/fixture-prefilter.json
+            collector-output/statistics-filter.json
+          if-no-files-found: warn
