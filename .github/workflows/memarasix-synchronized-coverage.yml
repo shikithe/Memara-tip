@@ -23,6 +23,8 @@ jobs:
         run: python football_data_last5_rounds.py
       - name: Match today's fixtures against the same downloaded data without API requests
         run: python statistics_filter.py --offline
+      - name: Audit supported fixtures lost to kickoff timing
+        run: python coverage_timing_audit.py
       - name: Print synchronized coverage and reasons
         run: |
           python - <<'PY'
@@ -54,4 +56,5 @@ jobs:
             collector-output/football-data-last5-rounds.json
             collector-output/fixture-prefilter.json
             collector-output/statistics-filter.json
+            collector-output/coverage-timing-audit.json
           if-no-files-found: warn
