@@ -1,0 +1,47 @@
+name: MemaraSix test all 12 football-data.org competitions
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test-coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+    steps:
+      - name: Test all 12 competitions (no publishing)
+        run: |
+          python - <<'PY'
+          import json, os, time, urllib.request, urllib.error
+          token = os.environ.get("FOOTBALL_DATA_TOKEN", "")
+          if not token:
+              raise SystemExit("Missing FOOTBALL_DATA_TOKEN secret")
+          codes = ["PL", "ELC", "BL1", "PD", "SA", "FL1", "PPL", "DED", "BSA", "CL", "EC", "WC"]
+          base = "https://api.football-data.org/v4"
+          def fetch(path):
+              req = urllib.request.Request(base + path, headers={"X-Auth-Token": token})
+              try:
+                  with urllib.request.urlopen(req, timeout=35) as response:
+                      return json.load(response), 200
+              except urllib.error.HTTPError as e:
+                  return None, e.code
+          print("Competition | HTTP | Season | Matches | Finished | Notes", flush=True)
+          print("---|---|---|---|---|---", flush=True)
+          ok = 0
+          for i, code in enumerate(codes):
+              if i: time.sleep(7)
+              data, status = fetch("/competitions/" + code + "/matches")
+              if status == 200:
+                  matches = data.get("matches", [])
+                  finished = sum(m.get("status") == "FINISHED" for m in matches)
+                  season = (data.get("resultSet") or {}).get("first") or "-"
+                  years = sorted({str((m.get("season") or {}).get("startDate", ""))[:4] for m in matches if m.get("season")})
+                  print(f"{code} | {status} | {','.join(years) or '-'} | {len(matches)} | {finished} | {'no fixtures yet' if not matches else 'available'}", flush=True)
+                  ok += 1
+              else:
+                  print(f"{code} | {status} | - | - | - | access unavailable or API error", flush=True)
+          print(f"SUMMARY: {ok}/{len(codes)} competitions accessible", flush=True)
+          if not ok:
+              raise SystemExit("No competition accessible")
+          PY
