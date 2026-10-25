@@ -18,6 +18,8 @@ for code,name in CODES.items():
   with urllib.request.urlopen(req,timeout=40) as resp:
    data=json.load(resp)
    remaining=resp.headers.get("X-Requests-Available-Minute")
+  cache=Path("collector-output/football-data-cache");cache.mkdir(parents=True,exist_ok=True)
+  (cache/(code+"-current.json")).write_text(json.dumps(data,ensure_ascii=False),encoding="utf-8")
   finished=[m for m in data.get("matches",[]) if m.get("status")=="FINISHED" and (m.get("score") or {}).get("fullTime",{}).get("home") is not None]
   rounds=sorted({m["matchday"] for m in finished if isinstance(m.get("matchday"),int)})
   if rounds:
