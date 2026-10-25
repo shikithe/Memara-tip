@@ -1,0 +1,60 @@
+name: MemaraSix independent candidate analysis
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - MemaraSix - Collect candidate fixtures
+    types:
+      - completed
+  schedule:
+    # Safety retry after morning collection, DST-aware via local gate.
+    - cron: '45 7,8 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: memarasix-independent-analysis
+  cancel-in-progress: false
+jobs:
+  analyze:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Check local scheduled hour
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_NAME" = "schedule" ] && [ "$(TZ=Europe/Sarajevo date +%H)" != "09" ]; then
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.enabled == 'true'
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.enabled == 'true'
+        with:
+          python-version: '3.11'
+      - name: Independently audit each collector candidate
+        if: steps.gate.outputs.enabled == 'true'
+        run: python memara_independent_analysis.py --feed collector-feed.json --output collector-output/independent-analysis.json
+      - name: Commit research report, never publish tickets
+        if: steps.gate.outputs.enabled == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add collector-output/independent-analysis.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh independent candidate analysis [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.gate.outputs.enabled == 'true'
+        with:
+          name: memarasix-independent-analysis
+          path: collector-output/independent-analysis.json
+          if-no-files-found: ignore
