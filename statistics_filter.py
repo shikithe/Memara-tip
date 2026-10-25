@@ -8,7 +8,7 @@ import re
 import time
 import urllib.error
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 CODES = ("PL", "ELC", "BL1", "PD", "SA", "FL1", "PPL", "DED", "BSA", "CL")
@@ -21,6 +21,33 @@ def norm(s):
     s = re.sub(r"\b(fc|cf|afc|sc|ac|club|football|calcio|de|the)\b", " ", s)
     s = " ".join(s.split())
     return ALIASES.get(s, s)
+# Names alone are never sufficient to identify a competition across countries.
+# Explicit mapping uses API-Football league IDs, not ambiguous league labels.
+LEAGUE_IDS = {39:"PL",40:"ELC",78:"BL1",140:"PD",135:"SA",
+              61:"FL1",94:"PPL",88:"DED",71:"BSA",2:"CL"}
+def similarity(a,b):
+    return difflib.SequenceMatcher(None,norm(a),norm(b)).ratio()
+def resolve_pair(f, code, teams, raw_matches):
+    """Require both names and a unique scheduled fixture with matching kickoff."""
+    kickoff=f.get("start_utc")
+    if not kickoff: return None
+    try: target=datetime.fromisoformat(kickoff.replace("Z","+00:00"))
+    except ValueError: return None
+    options=[]
+    for m in raw_matches:
+        h,a=m.get("homeTeam") or {},m.get("awayTeam") or {}
+        if not h.get("id") or not a.get("id") or h["id"]==a["id"]: continue
+        try: when=datetime.fromisoformat(m["utcDate"].replace("Z","+00:00"))
+        except (ValueError,KeyError,TypeError): continue
+        if abs((when-target).total_seconds())>3*3600: continue
+        hn=[h.get("name"),h.get("shortName")]
+        an=[a.get("name"),a.get("shortName")]
+        hs=max((similarity(f["home"],n) for n in hn if n),default=0)
+        aws=max((similarity(f["away"],n) for n in an if n),default=0)
+        if min(hs,aws)>=0.86 and (hs+aws)/2>=0.91:
+            options.append((h["id"],a["id"],round(hs,3),round(aws,3),m.get("id")))
+    return options[0] if len(options)==1 else None
+
 def match_team(name, teams):
     key = norm(name)
     exact = [tid for tid, names in teams.items() if key in names]
@@ -54,7 +81,7 @@ def build_index(data, as_of):
         if not h or not a or score.get("home") is None or score.get("away") is None: continue
         finished.append((played, h, a, score["home"], score["away"]))
     finished.sort()
-    return teams, finished
+    return teams, finished, matches
 def stats(team, matches, side=None):
     rows = []
     for _, h, a, hg, ag in matches:
@@ -80,23 +107,57 @@ def analyze(prefilter, datasets, as_of, min_total=5, min_split=2):
         elif "women_competition_separate_track" in f.get("reasons",[]):
             row.update(reason="women_competition_separate_track")
         else:
-            candidates=[]
-            for code, (teams, matches) in datasets.items():
-                home, hs = match_team(f.get("home"),teams)
-                away, aw = match_team(f.get("away"),teams)
-                if home is not None and away is not None and home != away:
-                    candidates.append((code,home,away,matches))
-            if len(candidates)==1:
-                code,home,away,matches=candidates[0]
-                h, a = stats(home,matches), stats(away,matches)
-                hh, aa = stats(home,matches,"home"), stats(away,matches,"away")
-                enough = min(h["played"],a["played"])>=min_total and hh["played"]>=min_split and aa["played"]>=min_split
-                row.update(point3="covered" if enough else "review",
-                           reason="sufficient_history" if enough else "insufficient_history",
-                           coverage={"competition":code,"home_all":h,"away_all":a,
-                                     "home_at_home":hh,"away_away":aa})
-            elif len(candidates)>1:
-                row["reason"]="ambiguous_competition_match"
+            league_id=f.get("league_id")
+            code=LEAGUE_IDS.get(league_id)
+            if code is None:
+                row["reason"]="competition_not_supported"
+            elif code not in datasets:
+                row["reason"]="competition_data_unavailable"
+            else:
+                teams,matches,raw_matches=datasets[code]
+                home,hs=match_team(f.get("home"),teams)
+                away,aw=match_team(f.get("away"),teams)
+                method="exact_names"
+                evidence=None
+                if home is None or away is None or home==away:
+                    paired=resolve_pair(f,code,teams,raw_matches)
+                    if paired:
+                        home,away,home_similarity,away_similarity,match_id=paired
+                        method="unique_fixture_kickoff_and_names"
+                        evidence={"football_data_match_id":match_id,
+                                  "home_similarity":home_similarity,
+                                  "away_similarity":away_similarity}
+                if home is None or away is None or home==away:
+                    row["reason"]="team_identity_unverified"
+                else:
+                    # Validate even exact names against an actual fixture whenever possible.
+                    pair_confirmed=False
+                    for m in raw_matches:
+                        if (m.get("homeTeam") or {}).get("id")!=home or (m.get("awayTeam") or {}).get("id")!=away:
+                            continue
+                        try:
+                            mt=datetime.fromisoformat(m["utcDate"].replace("Z","+00:00"))
+                            ft=datetime.fromisoformat(f["start_utc"].replace("Z","+00:00"))
+                            if abs((mt-ft).total_seconds())<=3*3600:
+                                pair_confirmed=True
+                                break
+                        except (ValueError,KeyError,TypeError): pass
+                    if not pair_confirmed:
+                        row["reason"]="fixture_identity_unverified"
+                    else:
+                        # Cut off history at the fixture kickoff, never use post-kickoff results.
+                        kickoff=datetime.fromisoformat(f["start_utc"].replace("Z","+00:00"))
+                        history=[m for m in matches if m[0]<min(as_of,kickoff)]
+                        h,a=stats(home,history),stats(away,history)
+                        hh,aa=stats(home,history,"home"),stats(away,history,"away")
+                        enough=min(h["played"],a["played"])>=min_total and hh["played"]>=min_split and aa["played"]>=min_split
+                        row.update(point3="covered" if enough else "review",
+                                   reason="sufficient_history" if enough else "insufficient_history",
+                                   coverage={"competition":code,"match_method":method,
+                                             "identity_evidence":evidence,
+                                             "home_provider_id":home,"away_provider_id":away,
+                                             "home_all":h,"away_all":a,
+                                             "home_at_home":hh,"away_away":aa})
         result.append(row)
     counts={k:sum(r["point3"]==k for r in result) for k in ("covered","review","skipped")}
     return {"evaluated_at_utc":as_of.isoformat(),"counts":counts,"publication_allowed":False,
