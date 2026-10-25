@@ -65,20 +65,31 @@ def main():
     # Never interpret missing entries from a capped response as nonexistence.
     catalog=[]
     country_cache={}
+    pending_ids={r.get("fixture_id") for r in pending}
     countries={norm(f.get("league_country")):f.get("league_country")
-               for f in original if f.get("league_country")}
-    for country in sorted(countries.values()):
+               for f in original if f.get("fixture_id") in pending_ids and f.get("league_country")}
+    errors=[]
+    for country in sorted(countries.values())[:12]:
         try:
             response=get("search_all_leagues.php",{"c":country,"s":"Soccer"})
             entries=response.get("countries") or []
             if not isinstance(entries,list):entries=[]
             country_cache[norm(country)]=entries
             catalog.extend(entries)
-            time.sleep(0.4)
+            time.sleep(2.2)
         except (urllib.error.URLError,ValueError,TypeError) as e:
             country_cache[norm(country)]=[]
-            print("COUNTRY CATALOG ERROR:",country,type(e).__name__,flush=True)
-    print("COUNTRY CATALOGS:",len(country_cache),"ENTRIES:",len(catalog),flush=True)
+            code=getattr(e,"code",None)
+            errors.append({"country":country,"http_status":code,"type":type(e).__name__})
+            print("COUNTRY CATALOG ERROR:",country,"HTTP",code,flush=True)
+            if code in (401,403,429):
+                print("PROVIDER ACCESS BLOCKED; stopping requests",flush=True)
+                break
+    report["provider_errors"]=errors
+    report["provider_access_status"]="blocked" if errors and not catalog else ("partial" if errors else "ok")
+    report["countries_queued"]=len(countries)
+    report["countries_queried"]=len(country_cache)
+    print("COUNTRY CATALOGS:",len(country_cache),"ENTRIES:",len(catalog),"ACCESS:",report["provider_access_status"],flush=True)
     for (league_id,name),fixtures in sorted(groups.items(),key=lambda x:-len(x[1])):
         # Do not infer country from ambiguous league names.
         # Some API-Football league IDs have independently established countries.
@@ -103,6 +114,6 @@ def main():
         print("LEAGUE:",json.dumps(item,ensure_ascii=False),flush=True)
     (ROOT/"fallback-source-audit.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n")
     print("FALLBACK SUMMARY:",json.dumps({"unsupported":len(pending),"league_groups":len(groups),
-          "catalog_entries":len(catalog),"country_missing_groups":sum(not x["country_verified"] for x in report["leagues"]),"candidate_groups":sum(bool(x["candidates"]) for x in report["leagues"]),
+          "catalog_entries":len(catalog),"provider_access_status":report["provider_access_status"],"provider_errors":errors[:3],"country_missing_groups":sum(not x["country_verified"] for x in report["leagues"]),"candidate_groups":sum(bool(x["candidates"]) for x in report["leagues"]),
           "newly_covered":0}),flush=True)
 if __name__=="__main__":main()
