@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "date": "2026-10-25",
   "timezone": "Europe/Sarajevo",
-  "collected_at_utc": "2026-10-25T12:05:15.324367+00:00",
+  "collected_at_utc": "2026-10-25T12:42:52.639154+00:00",
   "scope": "configured leagues only, not all global fixtures",
   "publication_allowed": false,
   "status": "ok",
@@ -624,20 +624,7 @@
       "away": "Standard Liege",
       "start_utc": "2026-10-25T12:30:00Z",
       "start_sarajevo": "2026-10-25T13:30:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "sportsdb:football:4911:2558462",
-      "provider": "thesportsdb-free-limited",
-      "sport": "football",
-      "league": "Bosnian First League",
-      "home": "TOŠK Tešanj",
-      "away": "Rudar Kakanj",
-      "start_utc": "2026-10-25T12:30:00Z",
-      "start_sarajevo": "2026-10-25T13:30:00+01:00",
-      "status": "pre",
-      "coverage": "incomplete: free endpoint returns at most 1 next event per league",
-      "time_source": "TheSportsDB strTimestamp (naive UTC per provider documentation)"
+      "status": "in"
     },
     {
       "id": "espn:football:esp.1:401882835",
@@ -695,6 +682,19 @@
       "start_utc": "2026-10-25T13:30:00Z",
       "start_sarajevo": "2026-10-25T14:30:00+01:00",
       "status": "pre"
+    },
+    {
+      "id": "sportsdb:football:4911:2558460",
+      "provider": "thesportsdb-free-limited",
+      "sport": "football",
+      "league": "Bosnian First League",
+      "home": "GOŠK Gabela",
+      "away": "Bratstvo Gračanica",
+      "start_utc": "2026-10-25T13:30:00Z",
+      "start_sarajevo": "2026-10-25T14:30:00+01:00",
+      "status": "pre",
+      "coverage": "incomplete: free endpoint returns at most 1 next event per league",
+      "time_source": "TheSportsDB strTimestamp (naive UTC per provider documentation)"
     },
     {
       "id": "espn:football:eng.1:401879254",
