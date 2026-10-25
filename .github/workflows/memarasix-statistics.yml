@@ -1,4 +1,4 @@
-name: MemaraSix football statistics (free tier)
+name: MemaraSix football fixtures (free tier)
 # Validate BALLDONTLIE surname search following player lookup correction.
 on:
   workflow_dispatch:
@@ -35,11 +35,11 @@ jobs:
           else
             echo "run=true" >> "$GITHUB_OUTPUT"
           fi
-      - name: Fetch bounded football research (up to 81 requests)
+      - name: Fetch fixture schedule only (no team statistics)
         if: steps.gate.outputs.run == 'true'
         run: |
-          python sync_sports_stats.py --date "$(TZ=Europe/Sarajevo date +%F)" --football-limit 40 --nba-limit 4
-      - name: Save statistics without touching tickets
+          python sync_sports_stats.py --date "$(TZ=Europe/Sarajevo date +%F)" --fixtures-only --nba-limit 0
+      - name: Save fixtures without touching tickets
         if: steps.gate.outputs.run == 'true' && success() && github.ref == 'refs/heads/main'
         run: |
           python - <<'PY'
