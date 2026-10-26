@@ -50,7 +50,6 @@ def settle(published, snapshot):
         raise ValueError("Bank-after-stakes does not reconcile")
     newly_settled = []
     # Provisional credit only for verified live goal thresholds; recalculated on every run.
-    provisional_credits = {}
     def early_goals_hit(match, rec):
         if not rec or rec.get("state") not in ("live", "final"):
             return False
@@ -66,65 +65,61 @@ def settle(published, snapshot):
         return len(parts)==2 and all(x.isdigit() for x in parts) and sum(map(int,parts))>=threshold
 
     for ticket in original.get("tickets",[]):
-        if ticket.get("status") in ("preskočen",):
-            continue
         if ticket.get("status") not in ("objavljen","dobitan","izgubljen"):
             continue
-        observations=[]
+        legs=[]
         for index,match in enumerate(ticket.get("matches",[])):
-            rec = outcomes.get((str(ticket["id"]),index))
+            rec=outcomes.get((str(ticket["id"]),index))
             if not rec or rec.get("home")!=match.get("home") or rec.get("away")!=match.get("away"):
-                observations.append(None)
+                legs.append(None)
                 continue
-            if rec.get("state")!="final" or rec.get("source")!="espn-public-unofficial":
-                observations.append(None)
+            if rec.get("source")!="espn-public-unofficial":
+                legs.append(None)
                 continue
-            if rec.get("result_status") not in ("pogođen","promašen"):
-                observations.append(None)
+            score=str(rec.get("score",""))
+            parts=score.split(":")
+            if len(parts)!=2 or any(not x.isdigit() for x in parts):
+                legs.append(None)
                 continue
-            score = str(rec.get("score",""))
-            parts = score.split(":")
-            if len(parts)!=2 or any(not p.isdigit() for p in parts):
-                observations.append(None)
-                continue
-            observations.append(rec)
-        if not observations or any(o is None for o in observations):
-            if ticket["status"] == "objavljen" and ticket.get("matches") and all(
-                (observations[i] is not None and observations[i]["result_status"] == "pogođen")
-                or early_goals_hit(match, outcomes.get((str(ticket["id"]), i)))
-                for i, match in enumerate(ticket["matches"])
-            ):
-                provisional_credits[str(ticket["id"])] = cents(amount(ticket["stake"])*amount(ticket["odds"]))
+            if rec.get("state")=="final" and rec.get("result_status") in ("pogođen","promašen"):
+                legs.append(rec["result_status"])
+                if match.get("result_status") in ("pogođen","promašen") and match["result_status"]!=rec["result_status"]:
+                    raise ValueError("Locked match result conflict")
+                if match.get("final_score") and match["final_score"]!=score:
+                    raise ValueError("Locked score conflict")
+                match["result_status"]=rec["result_status"]
+                match["final_score"]=score
+            elif early_goals_hit(match,rec):
+                legs.append("pogođen")
+            else:
+                legs.append(None)
+        if not legs:
             continue
-        was_locked = ticket["status"] in ("dobitan","izgubljen")
-        expected = "dobitan" if all(x["result_status"]=="pogođen" for x in observations) else "izgubljen"
-        if ticket["status"] in ("dobitan","izgubljen") and ticket["status"]!=expected:
-            raise ValueError("Locked ticket conflicts with verified scores")
-        if ticket["status"]=="objavljen":
-            ticket["status"]=expected
-            ticket["settled_at_utc"]=updated.isoformat()
-            newly_settled.append(str(ticket["id"]))
-        for index,record in enumerate(observations):
-            match=ticket["matches"][index]
-            if match.get("result_status") in ("pogođen","promašen") and match["result_status"]!=record["result_status"]:
-                raise ValueError("Locked match result conflict")
-            if match.get("final_score") and match["final_score"]!=record["score"]:
-                raise ValueError("Locked score conflict")
-            match["result_status"]=record["result_status"]
-            match["final_score"]=record["score"]
-        expected_payout = cents(amount(ticket["stake"])*amount(ticket["odds"])) if expected=="dobitan" else Decimal(0)
-        if was_locked and "payout" in ticket and cents(amount(ticket["payout"]))!=expected_payout:
-            raise ValueError("Existing payout mismatch")
-        ticket["payout"]=float(expected_payout)
+        # A single final loss makes the ticket irreversibly lost.
+        if "promašen" in legs:
+            expected="izgubljen"
+        elif all(x=="pogođen" for x in legs):
+            expected="dobitan"
+        else:
+            expected=None
+        if ticket["status"] in ("dobitan","izgubljen"):
+            if expected and expected!=ticket["status"]:
+                raise ValueError("Locked ticket conflicts with verified scores")
+            continue
+        if expected is None:
+            continue
+        ticket["status"]=expected
+        ticket["settled_at_utc"]=updated.isoformat()
+        ticket["payout"]=float(cents(amount(ticket["stake"])*amount(ticket["odds"]))) if expected=="dobitan" else 0.0
+        newly_settled.append(str(ticket["id"]))
     payouts=sum((cents(amount(t.get("payout",0))) for t in original.get("tickets",[])
                  if t.get("status")=="dobitan"),Decimal(0))
-    provisional_total=sum(provisional_credits.values(),Decimal(0))
-    available=cents(base+payouts+provisional_total)
+    available=cents(base+payouts)
     original["bank_after_stakes"]=float(cents(base))
     original["bank_after"]=float(available)
-    original["total_payout"]=float(cents(payouts+provisional_total))
-    original["provisional_payout"]=float(cents(provisional_total))
-    original["provisional_ticket_ids"]=sorted(provisional_credits)
+    original["total_payout"]=float(cents(payouts))
+    original.pop("provisional_payout",None)
+    original.pop("provisional_ticket_ids",None)
     complete=all(t.get("status") in ("dobitan","izgubljen","preskočen")
                  for t in original.get("tickets",[]))
     original["settled"]=bool(complete)
