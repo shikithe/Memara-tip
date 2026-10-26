@@ -96,6 +96,7 @@ def settle(published, snapshot):
             ):
                 provisional_credits[str(ticket["id"])] = cents(amount(ticket["stake"])*amount(ticket["odds"]))
             continue
+        was_locked = ticket["status"] in ("dobitan","izgubljen")
         expected = "dobitan" if all(x["result_status"]=="pogođen" for x in observations) else "izgubljen"
         if ticket["status"] in ("dobitan","izgubljen") and ticket["status"]!=expected:
             raise ValueError("Locked ticket conflicts with verified scores")
@@ -112,7 +113,7 @@ def settle(published, snapshot):
             match["result_status"]=record["result_status"]
             match["final_score"]=record["score"]
         expected_payout = cents(amount(ticket["stake"])*amount(ticket["odds"])) if expected=="dobitan" else Decimal(0)
-        if "payout" in ticket and cents(amount(ticket["payout"]))!=expected_payout:
+        if was_locked and "payout" in ticket and cents(amount(ticket["payout"]))!=expected_payout:
             raise ValueError("Existing payout mismatch")
         ticket["payout"]=float(expected_payout)
     payouts=sum((cents(amount(t.get("payout",0))) for t in original.get("tickets",[])
