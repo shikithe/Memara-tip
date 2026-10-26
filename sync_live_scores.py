@@ -138,6 +138,12 @@ def run(source="data.json",output="live-scores.json"):
                 if e["state"]=="final":
                     outcome=check_pick(m.get("pick"),e["home_score"],e["away_score"])
                     record["result_status"]="pogođen" if outcome is True else "promašen" if outcome is False else "nepoznat"
+                elif e["state"]=="live":
+                    pick=str(m.get("pick","")).strip().upper()
+                    threshold={"3+":3,"OVER 2.5":3,"O2.5":3,
+                               "2+":2,"OVER 1.5":2,"O1.5":2}.get(pick)
+                    if threshold is not None and e["home_score"]+e["away_score"]>=threshold:
+                        record["result_status"]="pogođen"
         except (KeyError,ValueError,TypeError):
             pass
         key = (ticket,index,m.get("home"),m.get("away"))
