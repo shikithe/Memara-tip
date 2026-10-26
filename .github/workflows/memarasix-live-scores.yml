@@ -28,15 +28,15 @@ jobs:
         run: python -m unittest discover -s tests -p test_virtual_settlement.py -v
       - name: Collect score states safely
         run: python sync_live_scores.py
-      - name: Settle finished virtual tickets
+      - name: Settle winning tickets at irreversible hit or final score
         run: python settle_virtual_tickets.py
-      - name: Save display-only results (never tickets or bank)
+      - name: Save live results and one-time bank settlement
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add live-scores.json data.json
           if ! git diff --cached --quiet; then
-            git commit -m "data: refresh live scores and settle finished virtual tickets [skip ci]"
+            git commit -m "data: refresh scores and settle irreversibly won or finished tickets [skip ci]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
