@@ -1,4 +1,4 @@
-# Recovery trigger: 2026-10-25 daily candidate feed was stale at 13:00 Sarajevo.
+# Scheduled collector with retry windows for GitHub Actions delayed cron jobs.
 name: MemaraSix - Collect candidate fixtures
 
 on:
@@ -7,8 +7,9 @@ on:
     paths:
       - '.github/workflows/memarasix-collector.yml'
   schedule:
-    # 09:15 Europe/Sarajevo: 07:15 UTC in summer, 08:15 in winter.
-    - cron: '15 7,8 * * *'
+    # 09:15 Europe/Sarajevo primary (07:15 UTC summer, 08:15 UTC winter).
+    # Extra hourly recovery attempts protect against delayed or dropped GitHub cron runs.
+    - cron: '15 7-13 * * *'
 
 permissions:
   contents: write
@@ -28,30 +29,51 @@ jobs:
           EVENT_NAME: ${{ github.event_name }}
         run: |
           local_hour="$(TZ=Europe/Sarajevo date +%H)"
-          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$EVENT_NAME" = "push" ] || [ "$local_hour" = "09" ]; then
+          local_date="$(TZ=Europe/Sarajevo date +%F)"
+          # GitHub scheduled workflows can start hours late. Never reject a late
+          # morning trigger just because it missed the 09:00 hour.
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$EVENT_NAME" = "push" ] || { [ "$local_hour" -ge 9 ] && [ "$local_hour" -le 14 ]; }; then
             echo "enabled=true" >> "$GITHUB_OUTPUT"
+            echo "Local Sarajevo date: $local_date"
           else
             echo "enabled=false" >> "$GITHUB_OUTPUT"
-            echo "Skipping UTC trigger outside 09:00 Sarajevo"
+            echo "Outside collector recovery window"
           fi
       - uses: actions/checkout@v4
         if: steps.localtime.outputs.enabled == 'true'
         with:
           persist-credentials: true
-      - uses: actions/setup-python@v5
+      - name: Skip already refreshed local day
+        id: freshness
         if: steps.localtime.outputs.enabled == 'true'
+        run: |
+          python - <<'PY'
+          import json,os
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          today=datetime.now(ZoneInfo("Europe/Sarajevo")).date().isoformat()
+          try:
+              with open("collector-feed.json",encoding="utf-8") as f: doc=json.load(f)
+              done=doc.get("date")==today and len(doc.get("football_candidates") or [])>0
+          except (OSError,ValueError): done=False
+          with open(os.environ["GITHUB_OUTPUT"],"a") as f:
+              f.write("needed="+str(not done).lower()+"\n")
+          print("Today:",today,"collector needed:",not done)
+          PY
+      - uses: actions/setup-python@v5
+        if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         with:
           python-version: '3.11'
       - name: Collect football and NBA + regional leagues and player watchlist
-        if: steps.localtime.outputs.enabled == 'true'
+        if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
           python collector.py --date "$(TZ=Europe/Sarajevo date +%F)" --sport all --regional --nba-players --output collector-output/fixtures.json
       - name: Collect next Sarajevo date NBA fixtures
-        if: steps.localtime.outputs.enabled == 'true'
+        if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
           python collector.py --date "$(TZ=Europe/Sarajevo date -d tomorrow +%F)" --sport basketball --output collector-output/nba-next.json
       - name: Validate sources and generate analyst queue
-        if: steps.localtime.outputs.enabled == 'true'
+        if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
           python - <<'PY'
           import json
@@ -65,7 +87,7 @@ jobs:
           python memara_prepare_feed.py --input collector-output/fixtures.json --nba-next collector-output/nba-next.json --output collector-feed.json
           python memara_math.py --input collector-feed.json --output collector-feed.json
       - name: Commit candidate feed only
-        if: steps.localtime.outputs.enabled == 'true'
+        if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
