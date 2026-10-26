@@ -1,8 +1,69 @@
 {
   "date": "2026-10-26",
-  "updated_at_utc": "2026-10-26T11:26:50.466575+00:00",
+  "updated_at_utc": "2026-10-26T14:11:28.902404+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
-  "matches": [],
+  "matches": [
+    {
+      "ticket": "A",
+      "index": 0,
+      "home": "Besiktas",
+      "away": "Istanbul Basaksehir",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401888264",
+      "league": "tur.1",
+      "minute": null
+    },
+    {
+      "ticket": "A",
+      "index": 1,
+      "home": "Santa Clara",
+      "away": "Benfica",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401885414",
+      "league": "por.1",
+      "minute": null
+    },
+    {
+      "ticket": "A",
+      "index": 2,
+      "home": "Paris Saint-Germain",
+      "away": "Lyon",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401876422",
+      "league": "fra.1",
+      "minute": null
+    },
+    {
+      "ticket": "B",
+      "index": 0,
+      "home": "Galatasaray",
+      "away": "Fenerbahce",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401888265",
+      "league": "tur.1",
+      "minute": null
+    },
+    {
+      "ticket": "B",
+      "index": 1,
+      "home": "Caykur Rizespor",
+      "away": "Trabzonspor",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401888267",
+      "league": "tur.1",
+      "minute": null
+    }
+  ],
   "bank_unchanged": true
 }
