@@ -12,26 +12,36 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Run ESPN collector in temporary workspace
+      - name: Run ESPN collector with synthetic fresh targets in temporary workspace
         run: |
+          set -eu
           python -m py_compile sync_nba_free.py
           mkdir -p /tmp/memarasix-nba-test/collector-output
           cp sync_nba_free.py /tmp/memarasix-nba-test/
-          cp collector-output/nba-player-points.json /tmp/memarasix-nba-test/collector-output/
           cd /tmp/memarasix-nba-test
-          python sync_nba_free.py --days 14 --max-summaries 40
           python - <<'PY'
-          import json, pathlib
-          p=pathlib.Path("collector-output/nba-free-statistics.json")
-          d=json.loads(p.read_text())
-          assert d["provider"]=="espn-public-unofficial"
-          assert d["no_api_key_required"] is True
-          print("Generated:",d.get("generated_at_utc"))
-          print("Players with stats:",d.get("players_with_stats"))
-          print("Status:",d.get("status"))
-          print("Errors:",d.get("errors"))
+          import json
+          from datetime import datetime,timezone
+          from pathlib import Path
+          # TEST FIXTURE ONLY: valid athlete ID; not a live betting offer.
+          payload={"generated_at_utc":datetime.now(timezone.utc).isoformat(),
+                   "offers":[{"player_id":"4066261","player":"Bam Adebayo","points_line":0.0}]}
+          Path("collector-output/nba-player-points.json").write_text(json.dumps(payload))
           PY
-      - name: Upload test-only artifact
+          python sync_nba_free.py --days 7 --max-summaries 15
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path("collector-output/nba-free-statistics.json").read_text())
+          assert d["provider"]=="espn-public-unofficial"
+          assert d["target_status"]=="ok"
+          assert d["target_player_count"]==1
+          assert d["requested_summaries"]>0, "ESPN boxscore collection did not run"
+          assert d["players_with_stats"]>0, "No player historical samples retrieved"
+          print("TEST_OK",{"date":d["date_utc"],"boxscores":d["requested_summaries"],
+                "players_with_stats":d["players_with_stats"],"errors":len(d["errors"])})
+          PY
+      - name: Upload isolated test artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
