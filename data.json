@@ -1,110 +1,17 @@
 {
-  "date": "2026-10-25",
-  "published": "25.10.2026. · korisnički zatražena javna testna objava C",
-  "publication_type": "published_unverified_historical_odds_test",
-  "bank_before": 136.86,
-  "daily_stake": 1.37,
+  "date": "2026-10-26",
+  "published": "Čeka objavu: 13:00 vikendom / 15:30 radnim danima",
+  "publication_type": "awaiting_daily_publication",
+  "bank_before": 135.49,
+  "daily_stake": 0,
   "bank_after": 135.49,
   "bank_after_stakes": 135.49,
-  "provisional": true,
-  "odds_verified": false,
-  "odds_verification_note": "C javno objavljen isključivo kao test sa istorijskim Bet365 kvotama od 19.10.; aktuelne kvote, početak mečeva i stvarna uplata nisu potvrđeni.",
-  "tickets": [
-    {
-      "id": "A",
-      "label": "GLAVNI TIKET — NIJE OBJAVLJEN",
-      "odds": null,
-      "stake": 0,
-      "status": "preskočen",
-      "payout": 0,
-      "matches": [],
-      "analysis": {
-        "summary": "Danas nema validiranog fudbalskog tiketa A. Izbor se ne objavljuje bez stvarne provjere termina, sastava, forme i tržišnih kvota.",
-        "reasons": [
-          "Collector od 25.10. u 13:05 (Sarajevo): 30 fudbalskih kandidata; source_errors=0.",
-          "Pregledani Liverpool – Brighton, Manchester United – Bournemouth i Freiburg – Bayern; rizici izostanaka i rotacije ostaju.",
-          "Nije potvrđena izvršiva kvota Mozzartbet BiH; cilj ukupne kvote 2–3 nije dokaziv."
-        ],
-        "limits": "Nema potvrđenih kvota ni završne provjere sastava. Ulog 0,00 €."
-      }
-    },
-    {
-      "id": "B",
-      "label": "GOLOVI 3+ — NIJE OBJAVLJEN",
-      "odds": null,
-      "stake": 0,
-      "status": "preskočen",
-      "payout": 0,
-      "matches": [],
-      "analysis": {
-        "summary": "Tiket B over 2.5 nije objavljen. Bez potvrđenih cijena i nezavisno opravdane procjene rizika nema validne kombinacije.",
-        "reasons": [
-          "Razmotreni Liverpool – Brighton i Hoffenheim – Bayer Leverkusen, ali bez trenutnih Mozzart BiH kvota.",
-          "Dostupne javne strane kvote nisu predstavljene kao Mozzart BiH.",
-          "Potvrda početnih sastava i rotacije ostaje nepotpuna."
-        ],
-        "limits": "Nema validnog tiketa B. Ulog 0,00 €."
-      }
-    },
-    {
-      "id": "C",
-      "label": "KEŠ KOLICA — JAVNO OBJAVLJEN TEST",
-      "odds": 10.048,
-      "stake": 1.37,
-      "status": "izgubljen",
-      "payout": 0,
-      "matches": [
-        {
-          "home": "Barcelona",
-          "away": "Real Madrid",
-          "pick": "Više od 3,5 golova",
-          "odd": 1.57,
-          "final_score": "1:2",
-          "result_status": "promašen"
-        },
-        {
-          "home": "Udinese",
-          "away": "AC Milan",
-          "pick": "Više od 3,5 golova",
-          "odd": 3.2,
-          "final_score": "0:2",
-          "result_status": "promašen"
-        },
-        {
-          "home": "Sporting CP",
-          "away": "Académico Viseu",
-          "pick": "Više od 3,5 golova",
-          "odd": 2,
-          "final_score": "1:2",
-          "result_status": "promašen"
-        }
-      ],
-      "analysis": {
-        "summary": "Korisnički zatražena javna objava testnog tiketa C. Kvote su istorijski prikaz Bet365 od 19.10.2026, NISU potvrđene kao aktuelne niti je potvrđeno da su mečevi bili dostupni prije početka. Nije potvrđena stvarna uplata.",
-        "reasons": [
-          "Ukupna istorijska kvota 10,048, prag C ≥10.",
-          "Ulog je 1% početne banke, 1,37 €. Ovo je samo evidencija sajta.",
-          "Sva tri tipa su više od 3,5 golova, vrlo visok rizik."
-        ],
-        "limits": "Ne koristiti kao dokaz izvršive ponude kladionice. Nema verifikacije kvota, termina ni stvarne uplate."
-      },
-      "settled_at_utc": "2026-10-26T08:58:26+00:00"
-    }
-  ],
-  "analysis_status": "25.10.2026: Na zahtjev korisnika javno objavljen TESTNI tiket C (neprovjerene istorijske kvote), evidencioni ulog 1,37 €, banka 135,49 €. Tiketi A/B nisu objavljeni. Stvarna uplata nije potvrđena.",
-  "selection_method": "Independent 13:00 review; weekend-research.json; current collector; no valid odds; no player-points from stale files; no market de-vig treated as model.",
+  "provisional": false,
   "settled": true,
-  "source_fixture_feed": "collector-feed.json (2026-10-25; generated 12:05:16Z)",
+  "odds_verified": false,
+  "tickets": [],
   "total_payout": 0,
-  "net_change": -1.37,
-  "next_day_announcement": {
-    "date": "2026-10-26",
-    "title": "Standardna automatizacija — 26.10.2026",
-    "message": "Jutarnje prikupljanje i statističko filtriranje; završna analiza i eventualna objava tiketa A, B i C do 13:00, samo uz potvrđene podatke i kvote.",
-    "status": "planned",
-    "publication_time": "13:00 Europe/Sarajevo",
-    "note": "Objava tiketa nije garantovana ako verifikacija ne prođe."
-  },
-  "settlement_date": "2026-10-26",
-  "settlement_note": "Nezavisno provjereni konačni rezultati 25.10.2026: Barcelona–Real Madrid 1:2 (LaLiga), Udinese–AC Milan 0:2 (Reuters), Sporting–Académico Viseu 1:2 (AS/FWP). Sva tri tipa preko 3,5 gola promašena. Samo javno objavljen virtuelni TEST sa istorijskim neprovjerenim kvotama; nije dokaz stvarne uplate. Banka = 136,86 - 1,37 + 0 = 135,49 €. Provjera jednom; izvorni tipovi, kvote i ulozi nepromijenjeni."
+  "net_change": 0,
+  "analysis_status": "Prethodni tiket je u arhivi. Današnji tiketi još nisu objavljeni.",
+  "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter"
 }
