@@ -21,12 +21,13 @@ def rollover(live, archive, today):
         print("PENDING_SETTLEMENT: keep prior publication intact until results are settled")
         return live,archive,False
     records=deepcopy(archive)
-    found=next((i for i,x in enumerate(records) if x.get("date")==day),None)
-    if found is None:
-        records.append(deepcopy(live))
-    else:
-        # Refresh the existing archival record with final settled results.
-        records[found]=deepcopy(live)
+    # Empty waiting days are carried forward, not added to ticket history.
+    if live.get("tickets"):
+        found=next((i for i,x in enumerate(records) if x.get("date")==day),None)
+        if found is None:
+            records.append(deepcopy(live))
+        else:
+            records[found]=deepcopy(live)
     records.sort(key=lambda x:x.get("date",""))
     bank=live.get("bank_after")
     if not isinstance(bank,(int,float)) or isinstance(bank,bool) or bank < 0:
