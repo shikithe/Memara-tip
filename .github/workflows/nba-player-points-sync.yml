@@ -36,6 +36,25 @@ jobs:
       - name: Verify syntax
         if: steps.gate.outputs.run == 'true'
         run: python -m py_compile sync_nba_points.py
+      - name: Refresh NBA fixtures and player candidates
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          python -m py_compile collector_nba_24h.py
+          python collector_nba_24h.py --hours 24 --output collector-output/nba-next-24h.json
+      - name: Verify fresh NBA fixture snapshot
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          with open('collector-output/nba-next-24h.json', encoding='utf-8') as f:
+              data = json.load(f)
+          stamp = datetime.fromisoformat(data['collected_at_utc'].replace('Z', '+00:00'))
+          age = (datetime.now(timezone.utc) - stamp).total_seconds()
+          assert data.get('status') == 'ok', 'NBA fixture collection failed'
+          assert 0 <= age <= 900, f'NBA fixture snapshot is stale ({age:.0f}s)'
+          print('Fresh NBA fixtures:', data.get('game_count'), 'games;', data.get('player_candidate_count'), 'players')
+          PY
       - name: Get player props
         if: steps.gate.outputs.run == 'true'
         run: python sync_nba_points.py --region us
@@ -61,7 +80,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add collector-output/nba-player-points.json collector-feed.json
+          git add collector-output/nba-next-24h.json collector-output/nba-player-points.json collector-feed.json
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh NBA player-points odds snapshot"
             git pull --rebase origin main
