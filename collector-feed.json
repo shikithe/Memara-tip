@@ -331,11 +331,15 @@
   "nba_player_points_offers": [],
   "math_layer": {
     "version": "1.0",
-    "generated_at_utc": "2026-10-26T11:16:28.403432+00:00",
+    "generated_at_utc": "2026-10-26T21:42:06.024474+00:00",
     "nba_offers_with_market_math": 0,
     "football_probability_status": "requires_external_validated_expected_goals",
     "nba_edge_status": "requires_independent_player_points_probability_model",
     "can_publish_tickets": false,
     "notes": "No estimated probability or positive edge generated from odds alone. Football Poisson requires independently validated expected-goals inputs. These results do not overwrite A/B/C or bank."
-  }
+  },
+  "nba_prop_status": "no_verified_matches",
+  "nba_prop_note": "Source bookmaker odds only; not necessarily available at Mozzartbet BiH. Independent AI assessment needed.",
+  "nba_prop_rejected_team_mismatch": 0,
+  "nba_prop_count": 0
 }
