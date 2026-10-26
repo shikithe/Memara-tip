@@ -26,10 +26,7 @@ jobs:
         run: |
           python - <<'PY'
           import os
-          from datetime import datetime
-          from zoneinfo import ZoneInfo
-          hour = datetime.now(ZoneInfo("Europe/Sarajevo")).hour
-          active = os.environ['EVENT_NAME'] == 'workflow_dispatch' or hour == 12
+          active = True
           if not os.environ.get("THE_ODDS_API_KEY"):
               print("No API key configured; skipping without updating existing data")
               active = False
