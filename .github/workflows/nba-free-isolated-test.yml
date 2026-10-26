@@ -1,0 +1,41 @@
+name: TEST ONLY - NBA ESPN statistics (no push)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  isolated-nba-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run ESPN collector in temporary workspace
+        run: |
+          python -m py_compile sync_nba_free.py
+          mkdir -p /tmp/memarasix-nba-test/collector-output
+          cp sync_nba_free.py /tmp/memarasix-nba-test/
+          cp collector-output/nba-player-points.json /tmp/memarasix-nba-test/collector-output/
+          cd /tmp/memarasix-nba-test
+          python sync_nba_free.py --days 14 --max-summaries 40
+          python - <<'PY'
+          import json, pathlib
+          p=pathlib.Path("collector-output/nba-free-statistics.json")
+          d=json.loads(p.read_text())
+          assert d["provider"]=="espn-public-unofficial"
+          assert d["no_api_key_required"] is True
+          print("Generated:",d.get("generated_at_utc"))
+          print("Players with stats:",d.get("players_with_stats"))
+          print("Status:",d.get("status"))
+          print("Errors:",d.get("errors"))
+          PY
+      - name: Upload test-only artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nba-free-isolated-test
+          path: /tmp/memarasix-nba-test/collector-output/nba-free-statistics.json
+          if-no-files-found: warn
+          retention-days: 3
