@@ -2,8 +2,8 @@ name: MemaraSix archive and clear landing
 on:
   workflow_dispatch:
   schedule:
-    # 08:30 and 11:30 Sarajevo (both DST offsets); fallback for delayed cron.
-    - cron: '30 6,7,9,10 * * *'
+    # Retry every 15 min during 08:30-12:30 Sarajevo (both DST offsets).
+    - cron: '*/15 6-11 * * *'
 permissions:
   contents: write
 concurrency:
@@ -20,7 +20,7 @@ jobs:
           EVENT_NAME: ${{ github.event_name }}
         run: |
           hm="$(TZ=Europe/Sarajevo date +%H%M)"
-          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$hm" = "0830" ] || [ "$hm" = "1130" ]; then
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || { [ "$hm" -ge 0830 ] && [ "$hm" -le 1230 ]; }; then
             echo "enabled=true" >> "$GITHUB_OUTPUT"
           else
             echo "enabled=false" >> "$GITHUB_OUTPUT"
