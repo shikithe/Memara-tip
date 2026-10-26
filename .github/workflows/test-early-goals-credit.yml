@@ -1,5 +1,8 @@
 name: Test early goals credit (isolated)
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - fix/early-goals-credit-20261026
