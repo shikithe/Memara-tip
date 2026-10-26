@@ -69,17 +69,17 @@ class TestSettlement(unittest.TestCase):
         r["state"]="live"
         r["event_id"]="123456"
         a,settled=settle(p,scores([r]))
-        self.assertEqual(settled,[])
-        self.assertEqual(a["tickets"][1]["status"],"objavljen")
+        self.assertEqual(settled,["B"])
+        self.assertEqual(a["tickets"][1]["status"],"dobitan")
         self.assertEqual(a["total_payout"],8.0)
-        self.assertEqual(a["provisional_payout"],8.0)
+        self.assertEqual(a["tickets"][1]["payout"],8.0)
         self.assertEqual(a["bank_after"],98.0)
         b,_=settle(a,scores([r]))
         self.assertEqual(a,b)
         r["state"]="final"
         c,done=settle(b,scores([r]))
-        self.assertEqual(done,["B"])
-        self.assertEqual(c["provisional_payout"],0)
+        self.assertEqual(done,[])
+        self.assertEqual(c["tickets"][1]["status"],"dobitan")
         self.assertEqual(c["total_payout"],8.0)
         self.assertEqual(c["bank_after"],98.0)
 
@@ -91,8 +91,8 @@ class TestSettlement(unittest.TestCase):
         a,_=settle(p,scores([r]))
         r["score"]="1:1"
         b,_=settle(a,scores([r]))
-        self.assertEqual(b["provisional_payout"],0)
-        self.assertEqual(b["bank_after"],90)
+        self.assertEqual(b["tickets"][1]["status"],"dobitan")
+        self.assertEqual(b["bank_after"],98)
 
     def test_no_early_credit_for_non_goal_markets(self):
         r=rec("B",0,"H3","A3","pogođen","2:1")
