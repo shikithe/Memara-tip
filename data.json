@@ -51,26 +51,32 @@
       "label": "KEŠ KOLICA — JAVNO OBJAVLJEN TEST",
       "odds": 10.048,
       "stake": 1.37,
-      "status": "objavljen — test, istorijske kvote",
+      "status": "izgubljen",
       "payout": 0,
       "matches": [
         {
           "home": "Barcelona",
           "away": "Real Madrid",
           "pick": "Više od 3,5 golova",
-          "odd": 1.57
+          "odd": 1.57,
+          "final_score": "1:2",
+          "result_status": "promašen"
         },
         {
           "home": "Udinese",
           "away": "AC Milan",
           "pick": "Više od 3,5 golova",
-          "odd": 3.2
+          "odd": 3.2,
+          "final_score": "0:2",
+          "result_status": "promašen"
         },
         {
           "home": "Sporting CP",
           "away": "Académico Viseu",
           "pick": "Više od 3,5 golova",
-          "odd": 2
+          "odd": 2,
+          "final_score": "1:2",
+          "result_status": "promašen"
         }
       ],
       "analysis": {
@@ -81,15 +87,16 @@
           "Sva tri tipa su više od 3,5 golova, vrlo visok rizik."
         ],
         "limits": "Ne koristiti kao dokaz izvršive ponude kladionice. Nema verifikacije kvota, termina ni stvarne uplate."
-      }
+      },
+      "settled_at_utc": "2026-10-26T08:58:26+00:00"
     }
   ],
   "analysis_status": "25.10.2026: Na zahtjev korisnika javno objavljen TESTNI tiket C (neprovjerene istorijske kvote), evidencioni ulog 1,37 €, banka 135,49 €. Tiketi A/B nisu objavljeni. Stvarna uplata nije potvrđena.",
   "selection_method": "Independent 13:00 review; weekend-research.json; current collector; no valid odds; no player-points from stale files; no market de-vig treated as model.",
-  "settled": false,
+  "settled": true,
   "source_fixture_feed": "collector-feed.json (2026-10-25; generated 12:05:16Z)",
-  "total_payout": 0.0,
-  "net_change": null,
+  "total_payout": 0,
+  "net_change": -1.37,
   "next_day_announcement": {
     "date": "2026-10-26",
     "title": "Standardna automatizacija — 26.10.2026",
@@ -97,5 +104,7 @@
     "status": "planned",
     "publication_time": "13:00 Europe/Sarajevo",
     "note": "Objava tiketa nije garantovana ako verifikacija ne prođe."
-  }
+  },
+  "settlement_date": "2026-10-26",
+  "settlement_note": "Nezavisno provjereni konačni rezultati 25.10.2026: Barcelona–Real Madrid 1:2 (LaLiga), Udinese–AC Milan 0:2 (Reuters), Sporting–Académico Viseu 1:2 (AS/FWP). Sva tri tipa preko 3,5 gola promašena. Samo javno objavljen virtuelni TEST sa istorijskim neprovjerenim kvotama; nije dokaz stvarne uplate. Banka = 136,86 - 1,37 + 0 = 135,49 €. Provjera jednom; izvorni tipovi, kvote i ulozi nepromijenjeni."
 }
