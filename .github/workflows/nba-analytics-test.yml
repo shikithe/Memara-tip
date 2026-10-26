@@ -1,0 +1,36 @@
+name: MEMARA NBA analytics experimental
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Syntax check
+        run: python -m py_compile nba_analytics_test.py
+      - name: Run exploratory analysis
+        run: python nba_analytics_test.py
+      - name: Verify output cannot publish
+        run: |
+          python - <<'PY'
+          import json
+          with open('collector-output/nba-analysis-test.json',encoding='utf-8') as f:
+              data=json.load(f)
+          assert data['mode']=='test_only'
+          assert data['publication_allowed'] is False
+          assert len(data['candidates']) <= 12
+          print('Candidates:',len(data['candidates']))
+          print('Rejected:',data['rejections'])
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: nba-analysis-test
+          path: collector-output/nba-analysis-test.json
+          if-no-files-found: warn
+          retention-days: 7
