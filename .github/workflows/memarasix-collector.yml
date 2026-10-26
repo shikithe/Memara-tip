@@ -1,4 +1,4 @@
-# Five-minute retry window for daily fixture collection (Sarajevo local time).
+# Two five-minute retry windows for daily fixture collection (Sarajevo local time).
 name: MemaraSix - Collect candidate fixtures
 
 on:
@@ -7,9 +7,9 @@ on:
     paths:
       - '.github/workflows/memarasix-collector.yml'
   schedule:
-    # UTC summer: 07:15-08:15; UTC winter: 08:15-09:15.
-    # Run every 5 min; local-time gate below allows only 09:15-10:15 Sarajevo.
-    - cron: '*/5 7-9 * * *'
+    # Morning window 09:15-10:15 and recovery window 12:30-13:30 Sarajevo.
+    # Cover both summer/winter UTC offsets; local-time gate filters actual runs.
+    - cron: '*/5 7-12 * * *'
 
 permissions:
   contents: write
@@ -30,13 +30,14 @@ jobs:
         run: |
           local_hm="$(TZ=Europe/Sarajevo date +%H%M)"
           local_date="$(TZ=Europe/Sarajevo date +%F)"
-          # Evaluate actual start time in Sarajevo; reject late runs after 10:15.
-          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$EVENT_NAME" = "push" ] || { [ "$local_hm" -ge 0915 ] && [ "$local_hm" -le 1015 ]; }; then
+          # Two local retry windows, both inclusive. Delayed cron runs outside
+          # these windows are ignored, but a manual dispatch is always allowed.
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$EVENT_NAME" = "push" ] || { [ "$local_hm" -ge 0915 ] && [ "$local_hm" -le 1015 ]; } || { [ "$local_hm" -ge 1230 ] && [ "$local_hm" -le 1330 ]; }; then
             echo "enabled=true" >> "$GITHUB_OUTPUT"
             echo "Local Sarajevo date: $local_date"
           else
             echo "enabled=false" >> "$GITHUB_OUTPUT"
-            echo "Outside 09:15-10:15 Sarajevo collection window"
+            echo "Outside 09:15-10:15 and 12:30-13:30 Sarajevo collection windows"
           fi
       - uses: actions/checkout@v4
         if: steps.localtime.outputs.enabled == 'true'
