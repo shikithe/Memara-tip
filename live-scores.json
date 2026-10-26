@@ -1,6 +1,6 @@
 {
   "date": "2026-10-26",
-  "updated_at_utc": "2026-10-26T19:58:15.836954+00:00",
+  "updated_at_utc": "2026-10-26T21:13:07.549891+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -22,12 +22,13 @@
       "index": 1,
       "home": "Santa Clara",
       "away": "Benfica",
-      "state": "live",
-      "score": "1:0",
+      "state": "final",
+      "score": "1:2",
       "source": "espn-public-unofficial",
       "event_id": "401885414",
       "league": "por.1",
-      "minute": "52"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "A",
@@ -35,23 +36,24 @@
       "home": "Paris Saint-Germain",
       "away": "Lyon",
       "state": "live",
-      "score": "0:0",
+      "score": "2:0",
       "source": "espn-public-unofficial",
       "event_id": "401876422",
       "league": "fra.1",
-      "minute": "28"
+      "minute": "86"
     },
     {
       "ticket": "B",
       "index": 0,
       "home": "Galatasaray",
       "away": "Fenerbahce",
-      "state": "live",
+      "state": "final",
       "score": "2:1",
       "source": "espn-public-unofficial",
       "event_id": "401888265",
       "league": "tur.1",
-      "minute": "69"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "B",

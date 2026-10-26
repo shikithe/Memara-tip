@@ -4,7 +4,7 @@
   "publication_type": "main_validated_daily_publication",
   "bank_before": 135.49,
   "daily_stake": 13.54,
-  "bank_after": 121.95,
+  "bank_after": 130.72,
   "bank_after_stakes": 121.95,
   "provisional": true,
   "settled": false,
@@ -52,7 +52,9 @@
                 "https://kadario.com/football/matches/2611631/besiktas-vs-basaksehir"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "2:0"
         },
         {
           "home": "Santa Clara",
@@ -87,7 +89,9 @@
                 "https://betora.app/es/prediccion/portugal-primeira-liga/benfica-vs-santa-clara"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "1:2"
         },
         {
           "home": "Paris Saint-Germain",
@@ -138,9 +142,9 @@
       "id": "B",
       "label": "GOLOVI — VIŠE OD 2,5",
       "stake": 4.06,
-      "status": "objavljen",
+      "status": "dobitan",
       "odds": 2.16,
-      "payout": 0,
+      "payout": 8.77,
       "matches": [
         {
           "home": "Galatasaray",
@@ -175,7 +179,9 @@
                 "https://www.sportsgambler.com/betting-tips/football/galatasaray-vs-fenerbahce-prediction-lineups-odds-2026-10-26/"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "2:1"
         },
         {
           "home": "Caykur Rizespor",
@@ -210,7 +216,9 @@
                 "https://last5games.com/matches/rizespor-vs-trabzonspor-19746579/"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "3:4"
         }
       ],
       "analysis": {
@@ -220,7 +228,8 @@
           "Rizespor–Trabzonspor nosi značajan rizik zbog kadrovskih izostanaka i manje učestalosti 3+ kod gosta."
         ],
         "limits": "Bez nezavisnog prematch xG para nema Poisson vjerovatnoće ni EV."
-      }
+      },
+      "settled_at_utc": "2026-10-26T21:13:07.549891+00:00"
     },
     {
       "id": "C",
@@ -242,7 +251,7 @@
       }
     }
   ],
-  "total_payout": 0,
+  "total_payout": 8.77,
   "net_change": null,
   "analysis_status": "GLAVNI MemaraSix: objavljeni A i B s javnim stranim referentnim kvotama i dokumentovanim rizicima. C nedostupan zbog zastarjelih NBA i research feedova. Banka virtuelna; rezultati i isplate čekaju potvrdu.",
   "selection_method": "Manual ChatGPT research and source verification from today's collector; market de-vig benchmark only; no unsupported Poisson, independent probabilities or EV.",
