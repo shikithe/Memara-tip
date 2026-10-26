@@ -49,6 +49,22 @@ def settle(published, snapshot):
     if abs(cents(before - total_stakes)-cents(base)) > CENT:
         raise ValueError("Bank-after-stakes does not reconcile")
     newly_settled = []
+    # Provisional credit only for verified live goal thresholds; recalculated on every run.
+    provisional_credits = {}
+    def early_goals_hit(match, rec):
+        if not rec or rec.get("state") not in ("live", "final"):
+            return False
+        if rec.get("source") != "espn-public-unofficial" or not str(rec.get("event_id", "")).isdigit():
+            return False
+        if rec.get("home") != match.get("home") or rec.get("away") != match.get("away"):
+            return False
+        threshold = {"3+":3, "OVER 2.5":3, "O2.5":3,
+                     "2+":2, "OVER 1.5":2, "O1.5":2}.get(str(match.get("pick","")).strip().upper())
+        if threshold is None:
+            return False
+        parts = str(rec.get("score","")).split(":")
+        return len(parts)==2 and all(x.isdigit() for x in parts) and sum(map(int,parts))>=threshold
+
     for ticket in original.get("tickets",[]):
         if ticket.get("status") in ("preskočen",):
             continue
@@ -73,6 +89,12 @@ def settle(published, snapshot):
                 continue
             observations.append(rec)
         if not observations or any(o is None for o in observations):
+            if ticket["status"] == "objavljen" and ticket.get("matches") and all(
+                (observations[i] is not None and observations[i]["result_status"] == "pogođen")
+                or early_goals_hit(match, outcomes.get((str(ticket["id"]), i)))
+                for i, match in enumerate(ticket["matches"])
+            ):
+                provisional_credits[str(ticket["id"])] = cents(amount(ticket["stake"])*amount(ticket["odds"]))
             continue
         expected = "dobitan" if all(x["result_status"]=="pogođen" for x in observations) else "izgubljen"
         if ticket["status"] in ("dobitan","izgubljen") and ticket["status"]!=expected:
@@ -95,10 +117,13 @@ def settle(published, snapshot):
         ticket["payout"]=float(expected_payout)
     payouts=sum((cents(amount(t.get("payout",0))) for t in original.get("tickets",[])
                  if t.get("status")=="dobitan"),Decimal(0))
-    available=cents(base+payouts)
+    provisional_total=sum(provisional_credits.values(),Decimal(0))
+    available=cents(base+payouts+provisional_total)
     original["bank_after_stakes"]=float(cents(base))
     original["bank_after"]=float(available)
-    original["total_payout"]=float(cents(payouts))
+    original["total_payout"]=float(cents(payouts+provisional_total))
+    original["provisional_payout"]=float(cents(provisional_total))
+    original["provisional_ticket_ids"]=sorted(provisional_credits)
     complete=all(t.get("status") in ("dobitan","izgubljen","preskočen")
                  for t in original.get("tickets",[]))
     original["settled"]=bool(complete)
