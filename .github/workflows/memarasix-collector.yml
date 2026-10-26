@@ -1,4 +1,4 @@
-# Scheduled collector with retry windows for GitHub Actions delayed cron jobs.
+# Five-minute retry window for daily fixture collection (Sarajevo local time).
 name: MemaraSix - Collect candidate fixtures
 
 on:
@@ -7,9 +7,9 @@ on:
     paths:
       - '.github/workflows/memarasix-collector.yml'
   schedule:
-    # 09:15 Europe/Sarajevo primary (07:15 UTC summer, 08:15 UTC winter).
-    # Extra hourly recovery attempts protect against delayed or dropped GitHub cron runs.
-    - cron: '15 7-13 * * *'
+    # UTC summer: 07:15-08:15; UTC winter: 08:15-09:15.
+    # Run every 5 min; local-time gate below allows only 09:15-10:15 Sarajevo.
+    - cron: '*/5 7-9 * * *'
 
 permissions:
   contents: write
@@ -28,16 +28,15 @@ jobs:
         env:
           EVENT_NAME: ${{ github.event_name }}
         run: |
-          local_hour="$(TZ=Europe/Sarajevo date +%H)"
+          local_hm="$(TZ=Europe/Sarajevo date +%H%M)"
           local_date="$(TZ=Europe/Sarajevo date +%F)"
-          # GitHub scheduled workflows can start hours late. Never reject a late
-          # morning trigger just because it missed the 09:00 hour.
-          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$EVENT_NAME" = "push" ] || { [ "$local_hour" -ge 9 ] && [ "$local_hour" -le 14 ]; }; then
+          # Evaluate actual start time in Sarajevo; reject late runs after 10:15.
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$EVENT_NAME" = "push" ] || { [ "$local_hm" -ge 0915 ] && [ "$local_hm" -le 1015 ]; }; then
             echo "enabled=true" >> "$GITHUB_OUTPUT"
             echo "Local Sarajevo date: $local_date"
           else
             echo "enabled=false" >> "$GITHUB_OUTPUT"
-            echo "Outside collector recovery window"
+            echo "Outside 09:15-10:15 Sarajevo collection window"
           fi
       - uses: actions/checkout@v4
         if: steps.localtime.outputs.enabled == 'true'
