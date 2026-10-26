@@ -1,6 +1,6 @@
 {
   "date": "2026-10-26",
-  "updated_at_utc": "2026-10-26T14:11:28.902404+00:00",
+  "updated_at_utc": "2026-10-26T19:58:15.836954+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,60 +9,62 @@
       "index": 0,
       "home": "Besiktas",
       "away": "Istanbul Basaksehir",
-      "state": "scheduled",
-      "score": "0:0",
+      "state": "final",
+      "score": "2:0",
       "source": "espn-public-unofficial",
       "event_id": "401888264",
       "league": "tur.1",
-      "minute": null
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "A",
       "index": 1,
       "home": "Santa Clara",
       "away": "Benfica",
-      "state": "scheduled",
-      "score": "0:0",
+      "state": "live",
+      "score": "1:0",
       "source": "espn-public-unofficial",
       "event_id": "401885414",
       "league": "por.1",
-      "minute": null
+      "minute": "52"
     },
     {
       "ticket": "A",
       "index": 2,
       "home": "Paris Saint-Germain",
       "away": "Lyon",
-      "state": "scheduled",
+      "state": "live",
       "score": "0:0",
       "source": "espn-public-unofficial",
       "event_id": "401876422",
       "league": "fra.1",
-      "minute": null
+      "minute": "28"
     },
     {
       "ticket": "B",
       "index": 0,
       "home": "Galatasaray",
       "away": "Fenerbahce",
-      "state": "scheduled",
-      "score": "0:0",
+      "state": "live",
+      "score": "2:1",
       "source": "espn-public-unofficial",
       "event_id": "401888265",
       "league": "tur.1",
-      "minute": null
+      "minute": "69"
     },
     {
       "ticket": "B",
       "index": 1,
       "home": "Caykur Rizespor",
       "away": "Trabzonspor",
-      "state": "scheduled",
-      "score": "0:0",
+      "state": "final",
+      "score": "3:4",
       "source": "espn-public-unofficial",
       "event_id": "401888267",
       "league": "tur.1",
-      "minute": null
+      "minute": null,
+      "result_status": "pogođen"
     }
   ],
   "bank_unchanged": true
