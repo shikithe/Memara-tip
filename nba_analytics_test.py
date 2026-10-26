@@ -10,7 +10,7 @@ from statistics import mean, stdev
 def utc(s):
     return datetime.fromisoformat(s.replace("Z", "+00:00")).astimezone(timezone.utc)
 
-def evaluate(props, stats, now=None, min_games=5):
+def evaluate(props, stats, now=None, min_games=4):
     now = now or datetime.now(timezone.utc)
     ts = utc(props["generated_at_utc"])
     if not -300 <= (now-ts).total_seconds() <= 10800:
