@@ -61,5 +61,44 @@ class TestSettlement(unittest.TestCase):
         a,_=settle(sample(),scores(rows))
         self.assertEqual(a["tickets"][0]["status"],"objavljen")
 
+
+    def test_early_goals_credit_and_finalization(self):
+        p=sample()
+        p["tickets"][1]["matches"]=[{"home":"H3","away":"A3","pick":"3+"}]
+        r=rec("B",0,"H3","A3","pogođen","2:1")
+        r["state"]="live"
+        r["event_id"]="123456"
+        a,settled=settle(p,scores([r]))
+        self.assertEqual(settled,["B"])
+        self.assertEqual(a["tickets"][1]["status"],"dobitan")
+        self.assertEqual(a["total_payout"],8.0)
+        self.assertEqual(a["tickets"][1]["payout"],8.0)
+        self.assertEqual(a["bank_after"],98.0)
+        b,_=settle(a,scores([r]))
+        self.assertEqual(a,b)
+        r["state"]="final"
+        c,done=settle(b,scores([r]))
+        self.assertEqual(done,[])
+        self.assertEqual(c["tickets"][1]["status"],"dobitan")
+        self.assertEqual(c["total_payout"],8.0)
+        self.assertEqual(c["bank_after"],98.0)
+
+    def test_early_credit_reversed_on_score_correction(self):
+        p=sample()
+        p["tickets"][1]["matches"]=[{"home":"H3","away":"A3","pick":"3+"}]
+        r=rec("B",0,"H3","A3","pogođen","2:1")
+        r.update(state="live",event_id="123456")
+        a,_=settle(p,scores([r]))
+        r["score"]="1:1"
+        b,_=settle(a,scores([r]))
+        self.assertEqual(b["tickets"][1]["status"],"dobitan")
+        self.assertEqual(b["bank_after"],98)
+
+    def test_no_early_credit_for_non_goal_markets(self):
+        r=rec("B",0,"H3","A3","pogođen","2:1")
+        r.update(state="live",event_id="123456")
+        a,_=settle(sample(),scores([r]))
+        self.assertEqual(a["total_payout"],0)
+
 if __name__=="__main__":
     unittest.main()
