@@ -1,6 +1,7 @@
 """MEMARA NBA last-five collector. ESPN unofficial gamelog; regular season first, then preseason."""
 import argparse,datetime as dt,json,time,urllib.request
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 def fetch(url):
     req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0","Accept":"application/json"})
@@ -47,7 +48,17 @@ def select(rows):
     return dict(recent_games=selected,regular_count=len(reg),preseason_count=len(pre),complete_five=len(selected)==5,avg_points=mean("points"),avg_minutes=mean("minutes"),weighted_avg_points=round((sum(r["points"] for r in reg)+.5*sum(r["points"] for r in pre))/weight,2) if weight else None)
 
 def run(offers_path,output_path,season=2027,limit=0,delay=1.1,fetcher=fetch):
-    offers=json.loads(Path(offers_path).read_text(encoding="utf-8"))["offers"]
+    snapshot=json.loads(Path(offers_path).read_text(encoding="utf-8"))
+    generated=snapshot.get("generated_at_utc")
+    if not generated:
+        raise ValueError("Missing offer snapshot timestamp; refusing unknown data")
+    generated_dt=dt.datetime.fromisoformat(generated.replace("Z","+00:00"))
+    if generated_dt.tzinfo is None:
+        raise ValueError("Offer timestamp requires timezone")
+    today=dt.datetime.now(ZoneInfo("Europe/Sarajevo")).date()
+    if generated_dt.astimezone(ZoneInfo("Europe/Sarajevo")).date()!=today:
+        raise ValueError(f"Offer snapshot not from today ({today}); refusing stale data")
+    offers=snapshot["offers"]
     ids={}
     for o in offers:
         if o.get("player_id"):ids.setdefault(str(o["player_id"]),o.get("player") or str(o["player_id"]))
@@ -60,7 +71,7 @@ def run(offers_path,output_path,season=2027,limit=0,delay=1.1,fetcher=fetch):
             players.append(record)
             if not record["complete_five"]:errors.append(dict(player_id=pid,reason="fewer_than_five",count=len(record["recent_games"])))
         except Exception as e:errors.append(dict(player_id=pid,reason="fetch_or_parse_failed",detail=str(e)[:180]))
-    data=dict(generated_at_utc=dt.datetime.now(dt.timezone.utc).isoformat(),season=season,source="ESPN unofficial",method="regular then preseason; preseason weight 0.5",players=players,errors=errors)
+    data=dict(offer_snapshot_utc=generated,offer_count=len(offers),candidate_count=len(ids),generated_at_utc=dt.datetime.now(dt.timezone.utc).isoformat(),season=season,source="ESPN unofficial",method="regular then preseason; preseason weight 0.5",players=players,errors=errors)
     Path(output_path).parent.mkdir(parents=True,exist_ok=True)
     Path(output_path).write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
     return data
