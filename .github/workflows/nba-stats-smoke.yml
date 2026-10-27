@@ -1,4 +1,4 @@
-name: NBA stats ESPN smoke test
+name: NBA stats ESPN all candidates
 on:
   push:
     branches: [test/nba-stats-preseason-20261027]
@@ -15,8 +15,15 @@ jobs:
           python-version: '3.11'
       - name: Unit tests
         run: python -m unittest -v test_nba_stats_collector.py
-      - name: ESPN two-player live fetch
-        run: python nba_stats_collector.py --limit 2 --output /tmp/nba-stats-smoke.json
+      - name: ESPN all-candidates live fetch
+        run: python nba_stats_collector.py --output /tmp/nba-stats-smoke.json
+      - name: Upload complete stats report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nba-stats-all-candidates
+          path: /tmp/nba-stats-smoke.json
+          if-no-files-found: warn
       - name: Print results
         if: always()
         run: |
