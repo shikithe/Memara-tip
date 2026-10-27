@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-label="MEMARA Six poster 27.10.2026, tiket A 2.75, tiket B 2.99, tiket C nedostupan">
+<defs>
+ <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#061427"/><stop offset="1" stop-color="#102c42"/></linearGradient>
+ <linearGradient id="accent" x1="0" x2="1"><stop stop-color="#20edaa"/><stop offset="1" stop-color="#39bdf5"/></linearGradient>
+</defs>
+<rect width="1080" height="1350" fill="url(#bg)"/>
+<rect x="40" y="36" width="1000" height="1276" rx="34" fill="#0a2035" stroke="#27506b" stroke-width="3"/>
+<text x="84" y="110" fill="#20edaa" font-family="Arial,sans-serif" font-size="46" font-weight="bold" letter-spacing="4">MEMARA SIX</text>
+<text x="85" y="155" fill="#d6e6f4" font-family="Arial,sans-serif" font-size="26">GLAVNI TIKETI  ·  27.10.2026.</text>
+<rect x="84" y="187" width="912" height="4" rx="2" fill="url(#accent)"/>
+<rect x="84" y="224" width="912" height="370" rx="24" fill="#102d42" stroke="#2a6581" stroke-width="2"/>
+<text x="115" y="276" fill="#20edaa" font-family="Arial,sans-serif" font-size="34" font-weight="bold">TIKET A</text>
+<text x="952" y="278" text-anchor="end" fill="#ffffff" font-family="Arial,sans-serif" font-size="46" font-weight="bold">2,75</text>
+<text x="115" y="316" fill="#9dc5d7" font-family="Arial,sans-serif" font-size="20">GLAVNI TIKET · 1X2</text>
+<line x1="114" y1="337" x2="965" y2="337" stroke="#27506b"/>
+<text x="115" y="385" fill="#ffffff" font-family="Arial,sans-serif" font-size="28">AS Roma – Cagliari</text>
+<text x="950" y="385" text-anchor="end" fill="#20edaa" font-family="Arial,sans-serif" font-size="28" font-weight="bold">1 · 1,34</text>
+<text x="115" y="420" fill="#a5bdce" font-family="Arial,sans-serif" font-size="20">20:45 · Serie A</text>
+<line x1="114" y1="445" x2="965" y2="445" stroke="#27506b"/>
+<text x="115" y="495" fill="#ffffff" font-family="Arial,sans-serif" font-size="27">Argentinos Juniors – Independiente Rivadavia</text>
+<text x="950" y="533" text-anchor="end" fill="#20edaa" font-family="Arial,sans-serif" font-size="28" font-weight="bold">1 · 2,05</text>
+<text x="115" y="533" fill="#a5bdce" font-family="Arial,sans-serif" font-size="20">23:00 · Argentina</text>
+<text x="115" y="570" fill="#d6e6f4" font-family="Arial,sans-serif" font-size="23">VIRTUELNI ULOG  10,71 €</text>
+<rect x="84" y="620" width="912" height="335" rx="24" fill="#102d42" stroke="#2a6581" stroke-width="2"/>
+<text x="115" y="673" fill="#39bdf5" font-family="Arial,sans-serif" font-size="34" font-weight="bold">TIKET B</text>
+<text x="952" y="675" text-anchor="end" fill="#ffffff" font-family="Arial,sans-serif" font-size="46" font-weight="bold">2,99</text>
+<text x="115" y="712" fill="#9dc5d7" font-family="Arial,sans-serif" font-size="20">GOLOVI · VIŠE OD 2,5</text>
+<line x1="114" y1="732" x2="965" y2="732" stroke="#27506b"/>
+<text x="115" y="785" fill="#ffffff" font-family="Arial,sans-serif" font-size="28">Sassuolo – Lazio</text>
+<text x="950" y="785" text-anchor="end" fill="#39bdf5" font-family="Arial,sans-serif" font-size="28" font-weight="bold">3+ · 1,73</text>
+<text x="115" y="817" fill="#a5bdce" font-family="Arial,sans-serif" font-size="20">18:30 · Serie A</text>
+<line x1="114" y1="839" x2="965" y2="839" stroke="#27506b"/>
+<text x="115" y="890" fill="#ffffff" font-family="Arial,sans-serif" font-size="28">Torino – Como</text>
+<text x="950" y="890" text-anchor="end" fill="#39bdf5" font-family="Arial,sans-serif" font-size="28" font-weight="bold">3+ · 1,73</text>
+<text x="115" y="924" fill="#a5bdce" font-family="Arial,sans-serif" font-size="20">20:45 · Serie A</text>
+<text x="660" y="924" fill="#d6e6f4" font-family="Arial,sans-serif" font-size="23">ULOG  4,59 €</text>
+<rect x="84" y="980" width="912" height="105" rx="24" fill="#1b2b3a" stroke="#496076"/>
+<text x="115" y="1023" fill="#d5e3ec" font-family="Arial,sans-serif" font-size="30" font-weight="bold">TIKET C · KEŠ KOLICA</text>
+<text x="115" y="1059" fill="#ffcf83" font-family="Arial,sans-serif" font-size="22">NEDOSTUPAN · nema svježih NBA linija i 4–6 novih izbora</text>
+<rect x="84" y="1110" width="912" height="96" rx="22" fill="#092a33" stroke="#1e806c"/>
+<text x="115" y="1150" fill="#d6e6f4" font-family="Arial,sans-serif" font-size="24">BANKA PRIJE ULOGA</text>
+<text x="953" y="1150" text-anchor="end" fill="#20edaa" font-family="Arial,sans-serif" font-size="31" font-weight="bold">153,00 €</text>
+<text x="115" y="1188" fill="#d6e6f4" font-family="Arial,sans-serif" font-size="24">UKUPAN DNEVNI ULOG</text>
+<text x="953" y="1188" text-anchor="end" fill="#ffffff" font-family="Arial,sans-serif" font-size="31" font-weight="bold">15,30 €</text>
+<text x="84" y="1250" fill="#b5cbd9" font-family="Arial,sans-serif" font-size="19">REFERENTNE KVOTE: Stake / PokerStars France · nisu Mozzartbet BiH</text>
+<text x="84" y="1280" fill="#91a8b9" font-family="Arial,sans-serif" font-size="18">Virtuelni tiketi · sastavi nepotvrđeni · kvote promjenjive · bez garancije</text>
+</svg>
