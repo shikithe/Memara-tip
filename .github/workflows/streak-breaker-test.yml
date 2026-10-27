@@ -1,0 +1,23 @@
+name: Streak Breaker isolated test
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  streak-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate prototype
+        run: python -m py_compile streak_collector.py
+      - name: Run synthetic test (no production updates)
+        run: |
+          python streak_collector.py --input tests/streak-fixtures.json --output streak-test-output.json
+          python -c "import json; d=json.load(open('streak-test-output.json')); assert d['mode']=='test_only'; assert d['publication_allowed'] is False; assert len(d['candidates'])==1; assert d['candidates'][0]['streak_length']==6"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: streak-breaker-test
+          path: streak-test-output.json
