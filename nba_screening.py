@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 
-MIN_ODDS=1.80
+MIN_ODDS=1.75
 MAX_ODDS=1.90
 
 def analyze(offers,stats):
@@ -39,7 +39,7 @@ def analyze(offers,stats):
     unique={}
     for row in results:unique.setdefault(row["player_id"],row)
     selected=list(unique.values())[:12]
-    return {"generated_at_utc":stats["generated_at_utc"],"source_offer_snapshot_utc":offers["generated_at_utc"],"candidate_count":len(by_id),"eligible_market_offers":len(results),"review_count":len(selected),"review_candidates":selected,"odds_range_each_side":[MIN_ODDS,MAX_ODDS],"publication_allowed":False,"method":"Both over and under odds 1.80-1.90; five-game weighted comparison; no calibrated probabilities","warning":"Research only. Missing injuries, confirmed lineups, opponent defense and odds movement. Fewer than 12 candidates are allowed."}
+    return {"generated_at_utc":stats["generated_at_utc"],"source_offer_snapshot_utc":offers["generated_at_utc"],"candidate_count":len(by_id),"eligible_market_offers":len(results),"review_count":len(selected),"review_candidates":selected,"odds_range_each_side":[MIN_ODDS,MAX_ODDS],"publication_allowed":False,"method":"Both over and under odds 1.75-1.90; five-game weighted comparison; no calibrated probabilities","warning":"Research only. Missing injuries, confirmed lineups, opponent defense and odds movement. Fewer than 12 candidates are allowed."}
 
 def main():
     offers=json.loads(Path("collector-output/nba-player-points.json").read_text())
