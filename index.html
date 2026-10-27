@@ -38,7 +38,7 @@ function derivedTicketStatus(ticket,data){
 function scoreLine(m,live){
   if(m.final_score)return '<div class="finalscore">Konačno: '+esc(m.final_score)+'</div>';
   if(!live||!live.score)return '';
-  if(live.state==="live")return '<div class="live-result">🔴 U TOKU'+(live.minute?' · '+esc(live.minute)+(String(live.minute).includes("'")?'':"'"):'')+' · '+esc(live.score)+'</div>';
+  if(live.state==="live"){const hit=effectiveResult(m,live)==="pogođen";return '<div class="live-result '+(hit?'result-final-hit':'')+'">🔴 U TOKU'+(live.minute?' · '+esc(live.minute)+(String(live.minute).includes("'")?'':"'"):'')+' · '+esc(live.score)+(hit?' · ✓ POGOĐEN':'')+'</div>'; }
   if(live.state==="stale")return '<div class="finalscore">⏸ Posljednji zabilježeni rezultat'+(live.minute?' ('+esc(live.minute)+"')":'')+': '+esc(live.score)+' · čeka novo očitavanje</div>';
   if(live.state==="final"){
     const label=live.result_status==="pogođen"?"✓ POGOĐEN":live.result_status==="promašen"?"✕ PROMAŠEN":"KONAČNO";
