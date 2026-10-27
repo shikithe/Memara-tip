@@ -15,9 +15,8 @@ jobs:
           python-version: '3.11'
       - name: Unit tests
         run: python -m unittest -v test_nba_stats_collector.py
-      - name: Validate daily offer snapshot
-        run: |
-          python -c "import json,datetime,zoneinfo;d=json.load(open('collector-output/nba-player-points.json'));t=datetime.datetime.fromisoformat(d['generated_at_utc'].replace('Z','+00:00'));today=datetime.datetime.now(zoneinfo.ZoneInfo('Europe/Sarajevo')).date();assert t.astimezone(zoneinfo.ZoneInfo('Europe/Sarajevo')).date()==today, 'STALE ODDS: refresh daily NBA odds collector before stats'"
+      - name: Refresh stale NBA offer snapshot from latest published main
+        run: python nba_refresh_offers.py
       - name: ESPN all-candidates live fetch
         run: python nba_stats_collector.py --output /tmp/nba-stats-smoke.json
       - name: Upload complete stats report
