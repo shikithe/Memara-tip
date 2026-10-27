@@ -25,7 +25,7 @@ function scoreFor(t,m,i,data){
 }
 function effectiveResult(m,live){
   if(m.result_status==="pogođen"||m.result_status==="promašen")return m.result_status;
-  return live&&live.state==="final"&&(live.result_status==="pogođen"||live.result_status==="promašen")?live.result_status:null;
+  if(live&&(live.state==="live"||live.state==="final")&&live.source==="espn-public-unofficial"){const pick=String(m.pick||"").trim().toUpperCase();const threshold={"3+":3,"OVER 2.5":3,"O2.5":3,"2+":2,"OVER 1.5":2,"O1.5":2}[pick];const parts=String(live.score||"").split(":");if(threshold&&parts.length===2&&parts.every(x=>/^\d+$/.test(x))&&Number(parts[0])+Number(parts[1])>=threshold)return "pogođen";}return live&&live.state==="final"&&(live.result_status==="pogođen"||live.result_status==="promašen")?live.result_status:null;
 }
 function derivedTicketStatus(ticket,data){
   if(ticket.status==="dobitan"||ticket.status==="izgubljen")return ticket.status;
