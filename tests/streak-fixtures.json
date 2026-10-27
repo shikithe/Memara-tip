@@ -1,0 +1,63 @@
+[
+  {
+    "home": "Test FC",
+    "away": "Rival 0",
+    "home_goals": 0,
+    "away_goals": 1,
+    "kickoff": "2026-10-10T18:00:00Z",
+    "status": "finished",
+    "league": "TEST"
+  },
+  {
+    "home": "Test FC",
+    "away": "Rival 1",
+    "home_goals": 1,
+    "away_goals": 1,
+    "kickoff": "2026-10-11T18:00:00Z",
+    "status": "finished",
+    "league": "TEST"
+  },
+  {
+    "home": "Test FC",
+    "away": "Rival 2",
+    "home_goals": 0,
+    "away_goals": 1,
+    "kickoff": "2026-10-12T18:00:00Z",
+    "status": "finished",
+    "league": "TEST"
+  },
+  {
+    "home": "Test FC",
+    "away": "Rival 3",
+    "home_goals": 1,
+    "away_goals": 1,
+    "kickoff": "2026-10-13T18:00:00Z",
+    "status": "finished",
+    "league": "TEST"
+  },
+  {
+    "home": "Test FC",
+    "away": "Rival 4",
+    "home_goals": 0,
+    "away_goals": 1,
+    "kickoff": "2026-10-14T18:00:00Z",
+    "status": "finished",
+    "league": "TEST"
+  },
+  {
+    "home": "Test FC",
+    "away": "Rival 5",
+    "home_goals": 1,
+    "away_goals": 1,
+    "kickoff": "2026-10-15T18:00:00Z",
+    "status": "finished",
+    "league": "TEST"
+  },
+  {
+    "home": "Test FC",
+    "away": "Next Rival",
+    "kickoff": "2026-10-28T18:00:00Z",
+    "status": "scheduled",
+    "league": "TEST"
+  }
+]
