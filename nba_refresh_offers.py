@@ -29,8 +29,12 @@ def ensure():
         except (ValueError,OSError):pass
     print("Local odds snapshot stale; fetching latest published snapshot from main")
     request=urllib.request.Request(URL,headers={"User-Agent":"MEMARA-NBA-Stats/1.0"})
-    with urllib.request.urlopen(request,timeout=25) as response:
-        latest=json.load(response)
+    try:
+        with urllib.request.urlopen(request,timeout=25) as response:
+            latest=json.load(response)
+    except (OSError,ValueError) as exc:
+        print(f"Published snapshot unavailable: {exc}")
+        latest={}
     if not fresh(latest):
         print("Published odds also stale; fetching live NBA player-points markets")
         from nba_live_odds_collector import run
