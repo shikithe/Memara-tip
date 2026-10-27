@@ -28,7 +28,7 @@ def run(fetch=get,now=None):
                     try:
                         roster=fetch(f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/{tid}/roster?season={today.year+1 if today.month>=7 else today.year}")
                         for group in roster.get("athletes",[]):
-                            athletes=group.get("items",[]) if isinstance(group,dict) else []
+                            athletes=group.get("items",[group]) if isinstance(group,dict) else []
                             for athlete in athletes:
                                 if athlete.get("id") and athlete.get("displayName"):
                                     espn[athlete["displayName"].casefold()]=str(athlete["id"])
