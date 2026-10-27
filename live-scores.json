@@ -1,6 +1,6 @@
 {
   "date": "2026-10-27",
-  "updated_at_utc": "2026-10-27T18:58:39.728062+00:00",
+  "updated_at_utc": "2026-10-27T19:41:14.036995+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -28,12 +28,12 @@
       "index": 0,
       "home": "Sassuolo",
       "away": "Lazio",
-      "state": "live",
-      "score": "2:5",
+      "state": "final",
+      "score": "2:6",
       "source": "espn-public-unofficial",
       "event_id": "401874980",
       "league": "ita.1",
-      "minute": "65",
+      "minute": null,
       "result_status": "pogođen"
     },
     {

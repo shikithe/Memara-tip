@@ -145,7 +145,9 @@
                 "https://www.thestatszone.com/sassuolo-vs-lazio-preview-team-news-prediction-232826"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "2:6"
         },
         {
           "home": "Torino",
@@ -212,7 +214,7 @@
       }
     }
   ],
-  "total_payout": 0,
+  "total_payout": 0.0,
   "net_change": null,
   "analysis_status": "Objavljeno 27.10.2026 na osnovu današnjeg ESPN collector-feeda i nezavisnih javnih prematch izvora. ESPN je neslužben i pokrivenost djelimična (4 fudbalske utakmice). Referentne strane kvote nisu Mozzartbet BiH niti garantovane izvršive cijene. Za NBA nema svježih poena/kvota i dovoljnog uzorka. Sastavi nisu potvrđeni. Nema izmišljenog EV ili Poisson procjene.",
   "selection_method": "A: dva fudbalska 1X2; B: dva druga fudbalska over 2.5; C: preskočen; ulog ukupno 10% banke, raspodjela A/B 70/30.",
