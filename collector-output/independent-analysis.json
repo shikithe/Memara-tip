@@ -1,27 +1,11 @@
 {
   "date": "2026-10-27",
-  "generated_at_utc": "2026-10-27T13:06:48.066854+00:00",
+  "generated_at_utc": "2026-10-27T18:30:44.569110+00:00",
   "source_generated_at_utc": "2026-10-27T13:06:34.062370+00:00",
   "state": "analysis_completed_data_gaps_remain",
   "publication_allowed": false,
   "odds_verified": false,
   "football": [
-    {
-      "id": "espn:football:ita.1:401874980",
-      "home": "Sassuolo",
-      "away": "Lazio",
-      "start_utc": "2026-10-27T17:30:00Z",
-      "league": "ita.1",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
     {
       "id": "espn:football:ita.1:401874780",
       "home": "AS Roma",
@@ -62,6 +46,23 @@
       "league": "arg.1",
       "eligible_for_further_research": true,
       "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:football:ita.1:401874980",
+      "home": "Sassuolo",
+      "away": "Lazio",
+      "start_utc": "2026-10-27T17:30:00Z",
+      "league": "ita.1",
+      "eligible_for_further_research": false,
+      "data_gaps": [
+        "started_or_too_close_to_kickoff",
         "missing_verified_recent_form",
         "missing_verified_lineups_or_absences",
         "missing_verified_market_odds"
@@ -140,7 +141,7 @@
   "summary": {
     "football": {
       "total": 4,
-      "researchable": 4
+      "researchable": 3
     },
     "nba": {
       "total": 4,
