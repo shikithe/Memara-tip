@@ -7,7 +7,7 @@ on:
     paths:
       - '.github/workflows/memarasix-collector.yml'
   schedule:
-    # Morning window 09:15-10:15 and recovery window 12:30-13:30 Sarajevo.
+    # Morning window 09:15-10:15 and recovery window 12:30-14:45 Sarajevo.
     # Cover both summer/winter UTC offsets; local-time gate filters actual runs.
     - cron: '*/5 7-12 * * *'
 
@@ -32,12 +32,12 @@ jobs:
           local_date="$(TZ=Europe/Sarajevo date +%F)"
           # Two local retry windows, both inclusive. Delayed cron runs outside
           # these windows are ignored, but a manual dispatch is always allowed.
-          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$EVENT_NAME" = "push" ] || { [ "$local_hm" -ge 0915 ] && [ "$local_hm" -le 1015 ]; } || { [ "$local_hm" -ge 1230 ] && [ "$local_hm" -le 1330 ]; }; then
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$EVENT_NAME" = "push" ] || { [ "$local_hm" -ge 0915 ] && [ "$local_hm" -le 1015 ]; } || { [ "$local_hm" -ge 1230 ] && [ "$local_hm" -le 1445 ]; }; then
             echo "enabled=true" >> "$GITHUB_OUTPUT"
             echo "Local Sarajevo date: $local_date"
           else
             echo "enabled=false" >> "$GITHUB_OUTPUT"
-            echo "Outside 09:15-10:15 and 12:30-13:30 Sarajevo collection windows"
+            echo "Outside 09:15-10:15 and 12:30-14:45 Sarajevo collection windows"
           fi
       - uses: actions/checkout@v4
         if: steps.localtime.outputs.enabled == 'true'
