@@ -52,7 +52,9 @@
                 "https://www.poznavach.com/en/football-predictions/as-roma-cagliari-prediction-27-10-2026"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "4:2"
         },
         {
           "home": "Argentinos Juniors",
@@ -184,7 +186,8 @@
             ]
           },
           "result_status": "pogođen",
-          "verified_live_score": "1:3"
+          "verified_live_score": "1:3",
+          "final_score": "1:3"
         }
       ],
       "analysis": {
