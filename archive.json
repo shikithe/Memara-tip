@@ -527,5 +527,272 @@
     },
     "settlement_date": "2026-10-26",
     "settlement_note": "Nezavisno provjereni konačni rezultati 25.10.2026: Barcelona–Real Madrid 1:2 (LaLiga), Udinese–AC Milan 0:2 (Reuters), Sporting–Académico Viseu 1:2 (AS/FWP). Sva tri tipa preko 3,5 gola promašena. Samo javno objavljen virtuelni TEST sa istorijskim neprovjerenim kvotama; nije dokaz stvarne uplate. Banka = 136,86 - 1,37 + 0 = 135,49 €. Provjera jednom; izvorni tipovi, kvote i ulozi nepromijenjeni."
+  },
+  {
+    "date": "2026-10-26",
+    "published": "26.10.2026. u 14:00–15:00 (Europe/Sarajevo)",
+    "publication_type": "main_validated_daily_publication",
+    "bank_before": 135.49,
+    "daily_stake": 13.54,
+    "bank_after": 153,
+    "bank_after_stakes": 121.95,
+    "provisional": false,
+    "settled": true,
+    "odds_verified": true,
+    "odds_verification_note": "Referentne javno prikazane strane prematch kvote 26.10.2026: Bet365 preko OddsRun, PokerStars France i Stake France. NISU Mozzartbet BiH kvote, nije potvrđena izvršiva uplata, a kvote se mogu mijenjati. De-vig samo tržišni benchmark, ne procjena ishoda.",
+    "tickets": [
+      {
+        "id": "A",
+        "label": "GLAVNI TIKET",
+        "stake": 9.48,
+        "status": "dobitan",
+        "odds": 2.35,
+        "payout": 22.28,
+        "matches": [
+          {
+            "home": "Besiktas",
+            "away": "Istanbul Basaksehir",
+            "pick": "1",
+            "odd": 1.36,
+            "start_utc": "2026-10-26T16:00:00Z",
+            "start_sarajevo": "2026-10-26T17:00:00+01:00",
+            "fixture_id": "espn:football:tur.1:401888264",
+            "market_source": "Bet365, OddsRun javni prikaz",
+            "market_name": "1X2",
+            "market_snapshot_date": "2026-10-26",
+            "market_de_vig_pct": 68.81,
+            "market_de_vig_method": "Normalized reciprocal bookmaker prices; benchmark only, not independent probability or EV.",
+            "research": {
+              "summary": "Beşiktaş je u posljednjih pet svih takmičenja 2-1-2 (golovi 9:10), Başakşehir 2-1-2 (8:9). Domaćin je favorit tržišta, ali trenutna forma nije dominantna.",
+              "pros": "Domaći teren; Beşiktaş dobio oba posljednja H2H (3:2 i 2:1); tržišni favorit.",
+              "risks": "Povrede i upitni vezni igrači (Kökçü, Rashica, Miretti); raspored uključuje evropski meč 22.10.; bez potvrđenog sastava. Tržišni de-vig 68,81% je benchmark, ne nezavisna prognoza.",
+              "injuries": "Prema dostupnim pregledima Kökçü upitan, Miretti odsutan, Rashica upitan; moguće razlike u statusu po izvoru.",
+              "conclusion": "Tip 1, referentna kvota 1,36 Bet365 (strana kladionica, nije Mozzart BiH). Nema validiranog prematch xG para ni izračunatog EV.",
+              "sources": [
+                [
+                  "Tržište Bet365 na OddsRun",
+                  "https://oddsrun.com/match/football/tr/39111/12205870/turkiye-super-lig/besiktas-vs-istanbul-basaksehir/"
+                ],
+                [
+                  "Forma Sky Sports",
+                  "https://www.skysports.com/football/besiktas-vs-istanbul-basaksehir/5229099737556717232"
+                ],
+                [
+                  "Izostanci i termini",
+                  "https://kadario.com/football/matches/2611631/besiktas-vs-basaksehir"
+                ]
+              ]
+            },
+            "result_status": "pogođen",
+            "final_score": "2:0"
+          },
+          {
+            "home": "Santa Clara",
+            "away": "Benfica",
+            "pick": "2",
+            "odd": 1.29,
+            "start_utc": "2026-10-26T18:45:00Z",
+            "start_sarajevo": "2026-10-26T19:45:00+01:00",
+            "fixture_id": "espn:football:por.1:401885414",
+            "market_source": "PokerStars France javni prikaz",
+            "market_name": "1X2",
+            "market_snapshot_date": "2026-10-26",
+            "market_de_vig_pct": 72.97,
+            "market_de_vig_method": "Normalized reciprocal bookmaker prices; benchmark only, not independent probability or EV.",
+            "research": {
+              "summary": "Benfica posljednjih pet svih takmičenja 4-0-1, Santa Clara u zadnjih pet ligaških utakmica 3-2-0 (bez poraza). Benfica 19 bodova u osam kola, Santa Clara 18, dakle gostovanje nije lako.",
+              "pros": "Benfica bolji ukupni kvalitet i napad (24 gola u 8 ligaških kola); pozitivan međusobni skor; četiri pobjede u posljednjih pet svih takmičenja.",
+              "risks": "Santa Clara neporažena u ligi i ima samo četiri primljena gola u osam kola; Benfica igrala u Evropi 22.10. i putuje na Azore. De-vig 72,97% je tržišni benchmark, ne procjena modela.",
+              "injuries": "Pregledi navode moguće izostanke Bah, Banjaqui, Barrenechea i Kaminski; sastavi nisu zvanično potvrđeni.",
+              "conclusion": "Tip 2, referentna kvota 1,29 PokerStars France; nema tvrdnje o pozitivnom EV.",
+              "sources": [
+                [
+                  "PokerStars France 1X2",
+                  "https://www.pokerstars.fr/en/sports/soccer/1/portuguese-primeira-liga/99/santa-clara-v-benfica/36184120/"
+                ],
+                [
+                  "Sky Sports forma",
+                  "https://www.skysports.com/football/santa-clara-vs-benfica/stats/564240"
+                ],
+                [
+                  "Tabela i povrede",
+                  "https://betora.app/es/prediccion/portugal-primeira-liga/benfica-vs-santa-clara"
+                ]
+              ]
+            },
+            "result_status": "pogođen",
+            "final_score": "1:2"
+          },
+          {
+            "home": "Paris Saint-Germain",
+            "away": "Lyon",
+            "pick": "1",
+            "odd": 1.34,
+            "start_utc": "2026-10-26T19:30:00Z",
+            "start_sarajevo": "2026-10-26T20:30:00+01:00",
+            "fixture_id": "espn:football:fra.1:401876422",
+            "market_source": "Stake France javni prikaz",
+            "market_name": "1X2",
+            "market_snapshot_date": "2026-10-26",
+            "market_de_vig_pct": 70.82,
+            "market_de_vig_method": "Normalized reciprocal bookmaker prices; benchmark only, not independent probability or EV.",
+            "research": {
+              "summary": "PSG dobio pet posljednjih utakmica svih takmičenja (golovi 16:7), Lyon 3 pobjede i 2 poraza (11:9). Utakmica je pomjerena sa 25. na 26.10., početak 20:30 Sarajevo.",
+              "pros": "Pet uzastopnih pobjeda PSG; domaći teren; Lyon izgubio 0:3 od Hoffenheima 22.10.",
+              "risks": "PSG bez Dembéléa, Kvaratskhelije, Marquinhosa i Nuno Mendesa; Lyon bez važnih igrača napada; sastavi nepotvrđeni, a oba tima su blizu vrha tabele. De-vig 70,82% je tržišni benchmark.",
+              "injuries": "Dembélé, Kvaratskhelia, Marquinhos, Nuno Mendes (PSG); Openda, Tagliafico i vjerovatno Šulc (Lyon), prema pregledima 25.10.",
+              "conclusion": "Tip 1, referentna kvota 1,34 Stake France; promjena termina potvrđena iz nezavisnog izvora. Nema nezavisne Poisson vjerovatnoće ni EV.",
+              "sources": [
+                [
+                  "Stake France tržište",
+                  "https://stake.com/fr/sports/soccer/france/ligue-1/46985351-paris-saint-germain-olympique-lyonnais"
+                ],
+                [
+                  "Forma i vrijeme OddsRun",
+                  "https://oddsrun.com/match/football/fr/99/12031620/france-ligue-1/psg-vs-lyon/"
+                ],
+                [
+                  "Povrede i izmjena termina",
+                  "https://parisunited.fr/articles/psg-ol-compositions-probables-8e-journee-26-octobre/"
+                ]
+              ]
+            },
+            "result_status": "pogođen",
+            "final_score": "2:0"
+          }
+        ],
+        "analysis": {
+          "summary": "Tri fudbalska 1X2 tipa iz različitih liga; ukupna referentna kvota 2,35. Rizik je kumulativan.",
+          "reasons": [
+            "Izbor isključivo iz današnjeg collector-feed.json; nezavisna provjera termina, tržišta, forme i izostanaka.",
+            "Nema pouzdano validiranog prematch xG za oba tima u svakom meču, zato nezavisni Poisson nije korišten."
+          ],
+          "limits": "Referentne strane kvote, sastavi nepotvrđeni, nije garantovan dobitak."
+        },
+        "settled_at_utc": "2026-10-26T21:36:16.769440+00:00"
+      },
+      {
+        "id": "B",
+        "label": "GOLOVI — VIŠE OD 2,5",
+        "stake": 4.06,
+        "status": "dobitan",
+        "odds": 2.16,
+        "payout": 8.77,
+        "matches": [
+          {
+            "home": "Galatasaray",
+            "away": "Fenerbahce",
+            "pick": "3+",
+            "odd": 1.44,
+            "start_utc": "2026-10-26T18:30:00Z",
+            "start_sarajevo": "2026-10-26T19:30:00+01:00",
+            "fixture_id": "espn:football:tur.1:401888265",
+            "market_source": "PokerStars France javni prikaz",
+            "market_name": "Over 2.5 / Under 2.5",
+            "market_snapshot_date": "2026-10-26",
+            "market_de_vig_pct": 64.36,
+            "market_de_vig_method": "Normalized reciprocal bookmaker prices; benchmark only, not independent probability or EV.",
+            "research": {
+              "summary": "U posljednjih pet svih takmičenja Galatasaray je imao 4/5 utakmica s 3+ gola, Fenerbahçe 4/5. Oba tima imaju ofanzivni kvalitet, ali derbi povećava neizvjesnost.",
+              "pros": "Oba tima imaju četiri od posljednjih pet utakmica sa 3+; Fenerbahçe 3:0 Alanyasporu, Galatasaray 4:2 Lilleu.",
+              "risks": "Veliki derbi može donijeti oprez i kartone; raspored evropskih utakmica i rotacija; zvanični sastavi još nisu poznati. De-vig 64,36% je samo tržišni benchmark.",
+              "injuries": "Različiti izvori daju različite očekivane postave i kadrovski status; izostanci nisu dovoljno čvrsto potvrđeni za jači zaključak.",
+              "conclusion": "Tip više od 2,5 gola, referentna kvota 1,44 PokerStars France; bez modeliranog EV.",
+              "sources": [
+                [
+                  "PokerStars France golovi",
+                  "https://www.pokerstars.fr/en/sports/soccer/1/turkish-super-league/194215/galatasaray-v-fenerbahce/36214074/"
+                ],
+                [
+                  "FotMob posljednjih pet utakmica",
+                  "https://www.fotmob.com/matches/galatasaray-vs-fenerbahce/2hfnrt"
+                ],
+                [
+                  "Pregled sastava i termin",
+                  "https://www.sportsgambler.com/betting-tips/football/galatasaray-vs-fenerbahce-prediction-lineups-odds-2026-10-26/"
+                ]
+              ]
+            },
+            "result_status": "pogođen",
+            "final_score": "2:1"
+          },
+          {
+            "home": "Caykur Rizespor",
+            "away": "Trabzonspor",
+            "pick": "3+",
+            "odd": 1.5,
+            "start_utc": "2026-10-26T16:00:00Z",
+            "start_sarajevo": "2026-10-26T17:00:00+01:00",
+            "fixture_id": "espn:football:tur.1:401888267",
+            "market_source": "PokerStars France javni prikaz",
+            "market_name": "Over 2.5 / Under 2.5",
+            "market_snapshot_date": "2026-10-26",
+            "market_de_vig_pct": 61.54,
+            "market_de_vig_method": "Normalized reciprocal bookmaker prices; benchmark only, not independent probability or EV.",
+            "research": {
+              "summary": "Rizespor je u posljednjih pet ligaških utakmica imao 3/5 mečeva sa 3+ gola; Trabzonspor u pet posljednjih zvaničnih mečeva samo 2/5. Tip je rizičniji od prvog para B.",
+              "pros": "Rizespor prima golove (0:3 Fenerbahçe, 1:2 Çorum, 2:2 Göztepe); Trabzonspor 11 postignutih u posljednjih pet zvaničnih mečeva.",
+              "risks": "Trabzonspor ima 3/5 utakmica sa 0–2 gola; moguće odsustvo Onuachua i više drugih igrača; utakmica može ostati ispod granice. De-vig 61,54% nije nezavisna projekcija.",
+              "injuries": "Prema javnim pregledima Trabzonspor bez Batagova, Malinovskog, Yokuşlua; Onuachu upitan/odsutan. Potvrda sastava prije početka nije dostupna.",
+              "conclusion": "Tip više od 2,5 gola, referentna kvota 1,50 PokerStars France. Srednje-visok rizik, bez validiranog prematch xG za Poisson i bez EV.",
+              "sources": [
+                [
+                  "PokerStars France golovi",
+                  "https://www.pokerstars.fr/en/sports/soccer/1/turkish-super-league/194215/rizespor-v-trabzonspor/36214079/"
+                ],
+                [
+                  "Sky Sports posljednje utakmice",
+                  "https://www.skysports.com/football/rizespor-vs-trabzonspor/565471"
+                ],
+                [
+                  "Povrede i forma",
+                  "https://last5games.com/matches/rizespor-vs-trabzonspor-19746579/"
+                ]
+              ]
+            },
+            "result_status": "pogođen",
+            "final_score": "3:4"
+          }
+        ],
+        "analysis": {
+          "summary": "Dva druga fudbalska meča na više od 2,5 gola, ukupna referentna kvota 2,16.",
+          "reasons": [
+            "Posljednjih pet utakmica i tržišne linije pregledane odvojeno.",
+            "Rizespor–Trabzonspor nosi značajan rizik zbog kadrovskih izostanaka i manje učestalosti 3+ kod gosta."
+          ],
+          "limits": "Bez nezavisnog prematch xG para nema Poisson vjerovatnoće ni EV."
+        },
+        "settled_at_utc": "2026-10-26T21:13:07.549891+00:00"
+      },
+      {
+        "id": "C",
+        "label": "KEŠ KOLICA — NEDOSTUPNO",
+        "stake": 0,
+        "status": "preskočen",
+        "odds": null,
+        "payout": 0,
+        "matches": [],
+        "analysis": {
+          "summary": "C nije objavljen i nema uloga.",
+          "reasons": [
+            "NBA player-points ponuda The Odds API je od 24.10.2026, nije svježa za današnje NBA mečeve.",
+            "ESPN besplatni historijski NBA statistički uzorak od 24.10. je zastario i često sadrži 1–3 utakmice, nedovoljno za formu.",
+            "API-Football research je od 25.10. i nije svjež za današnji dan.",
+            "Nema 4–6 kvalitetnih zasebnih događaja s potvrđenim granicama/kvotama i ukupnom kvotom 10–13."
+          ],
+          "limits": "Nema izmišljenih NBA linija, vjerovatnoća ni EV. Ulog C prebačen u A/B po pravilu 70/30."
+        }
+      }
+    ],
+    "total_payout": 31.05,
+    "net_change": 17.51,
+    "analysis_status": "GLAVNI MemaraSix: objavljeni A i B s javnim stranim referentnim kvotama i dokumentovanim rizicima. C nedostupan zbog zastarjelih NBA i research feedova. Banka virtuelna; rezultati i isplate čekaju potvrdu.",
+    "selection_method": "Manual ChatGPT research and source verification from today's collector; market de-vig benchmark only; no unsupported Poisson, independent probabilities or EV.",
+    "source_fixture_feed": "collector-feed.json 2026-10-26T11:16:28.373811Z",
+    "source_nba_player_points": "collector-output/nba-player-points.json (stale 2026-10-24; excluded)",
+    "source_nba_free_statistics": "collector-output/nba-free-statistics.json (stale 2026-10-24; excluded)",
+    "source_statistics_research": "collector-output/statistics-research.json (stale 2026-10-25; excluded)",
+    "settlement_date": "2026-10-26",
+    "settlement_note": "Nezavisno provjereno 27.10.2026: Beşiktaş–Başakşehir 2:0 (Sporx/BetExplorer), Santa Clara–Benfica 1:2 (Sky Sports), PSG–Lyon 2:0 (Reuters), Galatasaray–Fenerbahçe 2:1 (Anadolu Ajansı), Rizespor–Trabzonspor 3:4 (DHA). Svi tipovi A/B pogođeni; C preskočen. Isplata 31,05 €, virtuelna banka 153,00 €. Originalni tipovi, kvote i ulozi nepromijenjeni."
   }
 ]
