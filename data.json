@@ -4,7 +4,7 @@
   "publication_type": "main_validated_daily_publication",
   "bank_before": 153,
   "daily_stake": 15.3,
-  "bank_after": 137.7,
+  "bank_after": 151.42,
   "bank_after_stakes": 137.7,
   "provisional": true,
   "settled": false,
@@ -108,9 +108,9 @@
       "id": "B",
       "label": "GOLOVI — VIŠE OD 2,5",
       "stake": 4.59,
-      "status": "objavljen",
+      "status": "dobitan",
       "odds": 2.99,
-      "payout": 0,
+      "payout": 13.72,
       "matches": [
         {
           "home": "Sassuolo",
@@ -182,7 +182,9 @@
                 "https://xg.football/matches/torino-como-2026-10-27"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "verified_live_score": "1:3"
         }
       ],
       "analysis": {
@@ -193,7 +195,8 @@
           "De-vig oko 53,62% za svaku nogu predstavlja samo tržišni benchmark."
         ],
         "limits": "Como i Lazio imaju čvrste odbrane; Torino–Como over nema potvrđenu pozitivnu vrijednost, očekivani sastavi nisu konačni."
-      }
+      },
+      "settled_at_utc": "2026-10-27T21:43:58+00:00"
     },
     {
       "id": "C",
@@ -214,7 +217,7 @@
       }
     }
   ],
-  "total_payout": 0.0,
+  "total_payout": 13.72,
   "net_change": null,
   "analysis_status": "Objavljeno 27.10.2026 na osnovu današnjeg ESPN collector-feeda i nezavisnih javnih prematch izvora. ESPN je neslužben i pokrivenost djelimična (4 fudbalske utakmice). Referentne strane kvote nisu Mozzartbet BiH niti garantovane izvršive cijene. Za NBA nema svježih poena/kvota i dovoljnog uzorka. Sastavi nisu potvrđeni. Nema izmišljenog EV ili Poisson procjene.",
   "selection_method": "A: dva fudbalska 1X2; B: dva druga fudbalska over 2.5; C: preskočen; ulog ukupno 10% banke, raspodjela A/B 70/30.",
