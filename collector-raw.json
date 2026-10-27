@@ -1,22 +1,14 @@
 {
   "schema_version": "1.0",
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "timezone": "Europe/Sarajevo",
-  "collected_at_utc": "2026-10-26T11:16:27.050530+00:00",
+  "collected_at_utc": "2026-10-27T13:06:32.105671+00:00",
   "scope": "configured leagues only, not all global fixtures",
   "publication_allowed": false,
   "status": "ok",
-  "fixture_count": 16,
+  "fixture_count": 15,
   "duplicate_count": 0,
   "sources": [
-    {
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "eng.1",
-      "status": "ok",
-      "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261025&limit=500"
-    },
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
@@ -28,26 +20,26 @@
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "esp.1",
+      "league": "eng.1",
       "status": "ok",
       "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261025&limit=500"
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261027&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
       "league": "esp.1",
       "status": "ok",
-      "count": 1,
+      "count": 0,
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261026&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "ger.1",
+      "league": "esp.1",
       "status": "ok",
       "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261025&limit=500"
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261027&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
@@ -60,10 +52,10 @@
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "ita.1",
+      "league": "ger.1",
       "status": "ok",
       "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261025&limit=500"
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=20261027&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
@@ -76,26 +68,26 @@
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "fra.1",
+      "league": "ita.1",
       "status": "ok",
-      "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261025&limit=500"
+      "count": 3,
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=20261027&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
       "league": "fra.1",
       "status": "ok",
-      "count": 1,
+      "count": 0,
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261026&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "ned.1",
+      "league": "fra.1",
       "status": "ok",
       "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ned.1/scoreboard?dates=20261025&limit=500"
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=20261027&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
@@ -108,26 +100,26 @@
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "por.1",
+      "league": "ned.1",
       "status": "ok",
       "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/por.1/scoreboard?dates=20261025&limit=500"
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ned.1/scoreboard?dates=20261027&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
       "league": "por.1",
       "status": "ok",
-      "count": 1,
+      "count": 0,
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/por.1/scoreboard?dates=20261026&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "bel.1",
+      "league": "por.1",
       "status": "ok",
       "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/bel.1/scoreboard?dates=20261025&limit=500"
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/por.1/scoreboard?dates=20261027&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
@@ -140,26 +132,26 @@
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "tur.1",
+      "league": "bel.1",
       "status": "ok",
       "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/tur.1/scoreboard?dates=20261025&limit=500"
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/bel.1/scoreboard?dates=20261027&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
       "league": "tur.1",
       "status": "ok",
-      "count": 3,
+      "count": 0,
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/tur.1/scoreboard?dates=20261026&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "sco.1",
+      "league": "tur.1",
       "status": "ok",
       "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/sco.1/scoreboard?dates=20261025&limit=500"
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/tur.1/scoreboard?dates=20261027&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
@@ -172,10 +164,10 @@
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "uefa.champions",
+      "league": "sco.1",
       "status": "ok",
       "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261025&limit=500"
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/sco.1/scoreboard?dates=20261027&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
@@ -188,10 +180,10 @@
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "uefa.europa",
+      "league": "uefa.champions",
       "status": "ok",
       "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261025&limit=500"
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=20261027&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
@@ -204,10 +196,10 @@
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "uefa.europa.conf",
+      "league": "uefa.europa",
       "status": "ok",
       "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/scoreboard?dates=20261025&limit=500"
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=20261027&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
@@ -220,10 +212,10 @@
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "usa.1",
+      "league": "uefa.europa.conf",
       "status": "ok",
-      "count": 1,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261025&limit=500"
+      "count": 0,
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/scoreboard?dates=20261027&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
@@ -236,10 +228,10 @@
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "bra.1",
+      "league": "usa.1",
       "status": "ok",
       "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=20261025&limit=500"
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261027&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
@@ -252,10 +244,10 @@
     {
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "arg.1",
+      "league": "bra.1",
       "status": "ok",
-      "count": 2,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/arg.1/scoreboard?dates=20261025&limit=500"
+      "count": 0,
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/bra.1/scoreboard?dates=20261027&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
@@ -267,11 +259,19 @@
     },
     {
       "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "arg.1",
+      "status": "ok",
+      "count": 1,
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/arg.1/scoreboard?dates=20261027&limit=500"
+    },
+    {
+      "provider": "espn-public-unofficial",
       "sport": "basketball",
       "league": "nba",
       "status": "ok",
-      "count": 5,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261025&limit=500"
+      "count": 9,
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261026&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
@@ -279,7 +279,7 @@
       "league": "nba",
       "status": "ok",
       "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261026&limit=500"
+      "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=20261027&limit=500"
     },
     {
       "provider": "thesportsdb-free-limited",
@@ -330,179 +330,168 @@
   "errors": [],
   "fixtures": [
     {
-      "id": "espn:basketball:nba:401909863",
+      "id": "espn:basketball:nba:401909868",
       "provider": "espn-public-unofficial",
       "sport": "basketball",
       "league": "nba",
-      "home": "New York Knicks",
-      "away": "Orlando Magic",
-      "start_utc": "2026-10-25T23:00:00Z",
-      "start_sarajevo": "2026-10-26T00:00:00+01:00",
+      "home": "Charlotte Hornets",
+      "away": "Washington Wizards",
+      "start_utc": "2026-10-26T23:00:00Z",
+      "start_sarajevo": "2026-10-27T00:00:00+01:00",
       "status": "post"
     },
     {
-      "id": "espn:basketball:nba:401909864",
+      "id": "espn:basketball:nba:401909869",
       "provider": "espn-public-unofficial",
       "sport": "basketball",
       "league": "nba",
-      "home": "Minnesota Timberwolves",
-      "away": "Toronto Raptors",
-      "start_utc": "2026-10-25T23:00:00Z",
-      "start_sarajevo": "2026-10-26T00:00:00+01:00",
+      "home": "Cleveland Cavaliers",
+      "away": "Minnesota Timberwolves",
+      "start_utc": "2026-10-26T23:00:00Z",
+      "start_sarajevo": "2026-10-27T00:00:00+01:00",
       "status": "post"
     },
     {
-      "id": "espn:basketball:nba:401909865",
+      "id": "espn:football:bra.1:401841286",
+      "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "bra.1",
+      "home": "Flamengo",
+      "away": "Atlético-MG",
+      "start_utc": "2026-10-26T23:00:00Z",
+      "start_sarajevo": "2026-10-27T00:00:00+01:00",
+      "status": "post"
+    },
+    {
+      "id": "espn:basketball:nba:401909870",
+      "provider": "espn-public-unofficial",
+      "sport": "basketball",
+      "league": "nba",
+      "home": "Boston Celtics",
+      "away": "Chicago Bulls",
+      "start_utc": "2026-10-26T23:30:00Z",
+      "start_sarajevo": "2026-10-27T00:30:00+01:00",
+      "status": "post"
+    },
+    {
+      "id": "espn:basketball:nba:401909871",
+      "provider": "espn-public-unofficial",
+      "sport": "basketball",
+      "league": "nba",
+      "home": "Miami Heat",
+      "away": "Dallas Mavericks",
+      "start_utc": "2026-10-26T23:30:00Z",
+      "start_sarajevo": "2026-10-27T00:30:00+01:00",
+      "status": "post"
+    },
+    {
+      "id": "espn:basketball:nba:401909872",
+      "provider": "espn-public-unofficial",
+      "sport": "basketball",
+      "league": "nba",
+      "home": "Milwaukee Bucks",
+      "away": "Indiana Pacers",
+      "start_utc": "2026-10-27T00:00:00Z",
+      "start_sarajevo": "2026-10-27T01:00:00+01:00",
+      "status": "post"
+    },
+    {
+      "id": "espn:basketball:nba:401909873",
       "provider": "espn-public-unofficial",
       "sport": "basketball",
       "league": "nba",
       "home": "Oklahoma City Thunder",
-      "away": "LA Clippers",
-      "start_utc": "2026-10-25T23:00:00Z",
-      "start_sarajevo": "2026-10-26T00:00:00+01:00",
+      "away": "Phoenix Suns",
+      "start_utc": "2026-10-27T00:00:00Z",
+      "start_sarajevo": "2026-10-27T01:00:00+01:00",
       "status": "post"
     },
     {
-      "id": "espn:basketball:nba:401909866",
-      "provider": "espn-public-unofficial",
-      "sport": "basketball",
-      "league": "nba",
-      "home": "Philadelphia 76ers",
-      "away": "Detroit Pistons",
-      "start_utc": "2026-10-25T23:30:00Z",
-      "start_sarajevo": "2026-10-26T00:30:00+01:00",
-      "status": "post"
-    },
-    {
-      "id": "espn:football:arg.1:401841640",
+      "id": "espn:football:arg.1:401841635",
       "provider": "espn-public-unofficial",
       "sport": "football",
       "league": "arg.1",
-      "home": "Barracas Central",
-      "away": "Estudiantes de Río Cuarto",
-      "start_utc": "2026-10-26T00:30:00Z",
-      "start_sarajevo": "2026-10-26T01:30:00+01:00",
+      "home": "Instituto (Córdoba)",
+      "away": "Deportivo Riestra",
+      "start_utc": "2026-10-27T00:15:00Z",
+      "start_sarajevo": "2026-10-27T01:15:00+01:00",
       "status": "post"
     },
     {
-      "id": "espn:football:arg.1:401841639",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "arg.1",
-      "home": "Central Córdoba (Santiago del Estero)",
-      "away": "Vélez Sarsfield",
-      "start_utc": "2026-10-26T00:30:00Z",
-      "start_sarajevo": "2026-10-26T01:30:00+01:00",
-      "status": "post"
-    },
-    {
-      "id": "espn:basketball:nba:401909867",
+      "id": "espn:basketball:nba:401909874",
       "provider": "espn-public-unofficial",
       "sport": "basketball",
       "league": "nba",
-      "home": "Sacramento Kings",
+      "home": "Houston Rockets",
+      "away": "Atlanta Hawks",
+      "start_utc": "2026-10-27T00:30:00Z",
+      "start_sarajevo": "2026-10-27T01:30:00+01:00",
+      "status": "post"
+    },
+    {
+      "id": "espn:basketball:nba:401909875",
+      "provider": "espn-public-unofficial",
+      "sport": "basketball",
+      "league": "nba",
+      "home": "Utah Jazz",
       "away": "Memphis Grizzlies",
-      "start_utc": "2026-10-26T01:00:00Z",
-      "start_sarajevo": "2026-10-26T02:00:00+01:00",
+      "start_utc": "2026-10-27T01:00:00Z",
+      "start_sarajevo": "2026-10-27T02:00:00+01:00",
       "status": "post"
     },
     {
-      "id": "espn:football:usa.1:761904",
+      "id": "espn:basketball:nba:401909876",
       "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "usa.1",
-      "home": "LAFC",
-      "away": "LA Galaxy",
-      "start_utc": "2026-10-26T01:00:00Z",
-      "start_sarajevo": "2026-10-26T02:00:00+01:00",
+      "sport": "basketball",
+      "league": "nba",
+      "home": "Denver Nuggets",
+      "away": "Golden State Warriors",
+      "start_utc": "2026-10-27T02:00:00Z",
+      "start_sarajevo": "2026-10-27T03:00:00+01:00",
       "status": "post"
     },
     {
-      "id": "espn:football:tur.1:401888264",
+      "id": "espn:football:ita.1:401874980",
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "tur.1",
-      "home": "Besiktas",
-      "away": "Istanbul Basaksehir",
-      "start_utc": "2026-10-26T16:00:00Z",
-      "start_sarajevo": "2026-10-26T17:00:00+01:00",
+      "league": "ita.1",
+      "home": "Sassuolo",
+      "away": "Lazio",
+      "start_utc": "2026-10-27T17:30:00Z",
+      "start_sarajevo": "2026-10-27T18:30:00+01:00",
       "status": "pre"
     },
     {
-      "id": "espn:football:tur.1:401888267",
+      "id": "espn:football:ita.1:401874780",
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "tur.1",
-      "home": "Caykur Rizespor",
-      "away": "Trabzonspor",
-      "start_utc": "2026-10-26T16:00:00Z",
-      "start_sarajevo": "2026-10-26T17:00:00+01:00",
+      "league": "ita.1",
+      "home": "AS Roma",
+      "away": "Cagliari",
+      "start_utc": "2026-10-27T19:45:00Z",
+      "start_sarajevo": "2026-10-27T20:45:00+01:00",
       "status": "pre"
     },
     {
-      "id": "espn:football:tur.1:401888265",
+      "id": "espn:football:ita.1:401874786",
       "provider": "espn-public-unofficial",
       "sport": "football",
-      "league": "tur.1",
-      "home": "Galatasaray",
-      "away": "Fenerbahce",
-      "start_utc": "2026-10-26T18:30:00Z",
-      "start_sarajevo": "2026-10-26T19:30:00+01:00",
+      "league": "ita.1",
+      "home": "Torino",
+      "away": "Como",
+      "start_utc": "2026-10-27T19:45:00Z",
+      "start_sarajevo": "2026-10-27T20:45:00+01:00",
       "status": "pre"
     },
     {
-      "id": "espn:football:por.1:401885414",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "por.1",
-      "home": "Santa Clara",
-      "away": "Benfica",
-      "start_utc": "2026-10-26T18:45:00Z",
-      "start_sarajevo": "2026-10-26T19:45:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:fra.1:401876422",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "fra.1",
-      "home": "Paris Saint-Germain",
-      "away": "Lyon",
-      "start_utc": "2026-10-26T19:30:00Z",
-      "start_sarajevo": "2026-10-26T20:30:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:esp.1:401882828",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "esp.1",
-      "home": "Sevilla",
-      "away": "Osasuna",
-      "start_utc": "2026-10-26T20:00:00Z",
-      "start_sarajevo": "2026-10-26T21:00:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:arg.1:401841630",
+      "id": "espn:football:arg.1:401841642",
       "provider": "espn-public-unofficial",
       "sport": "football",
       "league": "arg.1",
-      "home": "Unión (Santa Fe)",
-      "away": "Estudiantes de La Plata",
-      "start_utc": "2026-10-26T22:00:00Z",
-      "start_sarajevo": "2026-10-26T23:00:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:bra.1:401841279",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "bra.1",
-      "home": "Coritiba",
-      "away": "Grêmio",
-      "start_utc": "2026-10-26T22:30:00Z",
-      "start_sarajevo": "2026-10-26T23:30:00+01:00",
+      "home": "Argentinos Juniors",
+      "away": "Independiente Rivadavia",
+      "start_utc": "2026-10-27T22:00:00Z",
+      "start_sarajevo": "2026-10-27T23:00:00+01:00",
       "status": "pre"
     }
   ],
