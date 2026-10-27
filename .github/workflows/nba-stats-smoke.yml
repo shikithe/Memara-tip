@@ -1,0 +1,23 @@
+name: NBA stats ESPN smoke test
+on:
+  push:
+    branches: [test/nba-stats-preseason-20261027]
+  workflow_dispatch:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Unit tests
+        run: python -m unittest -v test_nba_stats_collector.py
+      - name: ESPN two-player live fetch
+        run: python nba_stats_collector.py --limit 2 --output /tmp/nba-stats-smoke.json
+      - name: Print results
+        if: always()
+        run: |
+          if [ -f /tmp/nba-stats-smoke.json ]; then python -c "import json;d=json.load(open('/tmp/nba-stats-smoke.json'));print(json.dumps({'players':[{'name':p['player'],'regular':p['regular_count'],'preseason':p['preseason_count'],'games':p['recent_games']} for p in d['players']],'errors':d['errors']},indent=2))"; fi
