@@ -32,7 +32,10 @@ def ensure():
     with urllib.request.urlopen(request,timeout=25) as response:
         latest=json.load(response)
     if not fresh(latest):
-        raise RuntimeError("Latest published odds are also stale; upstream odds collector must run before stats. Refusing stale offers.")
+        print("Published odds also stale; fetching live NBA player-points markets")
+        from nba_live_odds_collector import run
+        run()
+        return
     PATH.parent.mkdir(parents=True,exist_ok=True)
     PATH.write_text(json.dumps(latest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Refreshed today's odds: {len(latest['offers'])} offers")
