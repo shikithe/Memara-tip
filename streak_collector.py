@@ -17,7 +17,7 @@ def analyze(fixtures, min_streak=5, limit=10):
 
     '1' and 'tim1_2plus' use home fixtures only; 0–2 and 3+ use
     the team's fixtures at either venue. The next fixture must be at home
-    for home-only markets. Streaks describe history, not betting signals.
+    for home-only markets. Home-team 2+ requires only two consecutive\n    home appearances; away games do not interrupt that home-only sequence.\n    Streaks describe history, not betting signals.
     """
     history = defaultdict(list)
     upcoming = defaultdict(list)
@@ -56,7 +56,8 @@ def analyze(fixtures, min_streak=5, limit=10):
                     streak += 1
                 else:
                     break
-            if streak < min_streak:
+            required_streak = 2 if key == "tim1_2plus" else min_streak
+            if streak < required_streak:
                 continue
             result.append({
                 "team": team, "league": nxt.get("league", "—"),
@@ -71,7 +72,7 @@ def analyze(fixtures, min_streak=5, limit=10):
     return {"schema_version": 2, "updated_at": datetime.now(timezone.utc).isoformat(),
             "mode": "test_only", "publication_allowed": False,
             "rules": ["0-2", "3plus", "1", "tim1_2plus"],
-            "min_streak": min_streak, "max_candidates": limit,
+            "min_streak": min_streak, "min_streak_by_type": {"tim1_2plus": 2}, "max_candidates": limit,
             "candidates": result[:limit]}
 
 
