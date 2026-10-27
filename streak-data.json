@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "updated_at": null,
+  "mode": "streak_research_only",
+  "rule": "5+ consecutive matches with 0-2 total goals",
+  "max_candidates": 10,
+  "candidates": []
+}
