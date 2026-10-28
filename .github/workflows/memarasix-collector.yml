@@ -108,3 +108,5 @@ jobs:
             collector-output/fixtures.json
             collector-feed.json
           if-no-files-found: ignore
+
+# 2026-10-28 collector recovery trigger: refresh today's candidate feed before publication.
