@@ -1,368 +1,286 @@
 {
-  "date_utc": "2026-10-24",
-  "generated_at_utc": "2026-10-24T13:52:48.218425+00:00",
+  "date_utc": "2026-10-28",
+  "generated_at_utc": "2026-10-28T14:06:45.408139+00:00",
   "provider": "espn-public-unofficial",
   "no_api_key_required": true,
   "target_source": "the-odds-api-player-points",
   "target_status": "ok",
-  "target_player_count": 68,
+  "target_player_count": 50,
   "statistics_not_predictions": true,
   "limitations": "Unofficial incomplete past boxscores. No independent player projection, injury check or odds-value claim.",
   "status": "ok",
-  "requested_summaries": 40,
+  "requested_summaries": 60,
   "errors": [],
   "players": [
     {
-      "player_id": "3064290",
-      "player": "Aaron Gordon",
+      "player_id": "4684742",
+      "player": "Ausar Thompson",
       "recent_games": [
         {
-          "player_id": "3064290",
-          "player": "Aaron Gordon",
-          "team": "Denver Nuggets",
-          "points": 20,
-          "minutes": "29",
-          "game_id": "401909094",
-          "game_date": "20261022"
-        }
-      ],
-      "games_found": 1,
-      "average_points": 20.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "5160992",
-      "player": "Alex Sarr",
-      "recent_games": [
-        {
-          "player_id": "5160992",
-          "player": "Alex Sarr",
-          "team": "Washington Wizards",
-          "points": 7,
+          "player_id": "4684742",
+          "player": "Ausar Thompson",
+          "team": "Detroit Pistons",
+          "points": 11,
           "minutes": "25",
-          "game_id": "401909846",
-          "game_date": "20261023"
+          "game_id": "401909878",
+          "game_date": "20261027"
         },
         {
-          "player_id": "5160992",
-          "player": "Alex Sarr",
-          "team": "Washington Wizards",
-          "points": 6,
-          "minutes": "24",
-          "game_id": "401909835",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "5160992",
-          "player": "Alex Sarr",
-          "team": "Washington Wizards",
-          "points": 12,
-          "minutes": "26",
-          "game_id": "401906509",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 8.33,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4871144",
-      "player": "Alperen Sengun",
-      "recent_games": [
-        {
-          "player_id": "4871144",
-          "player": "Alperen Sengun",
-          "team": "Houston Rockets",
-          "points": 29,
-          "minutes": "36",
-          "game_id": "401909096",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "4871144",
-          "player": "Alperen Sengun",
-          "team": "Houston Rockets",
-          "points": 23,
-          "minutes": "30",
-          "game_id": "401909840",
-          "game_date": "20261021"
-        }
-      ],
-      "games_found": 2,
-      "average_points": 26.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4684740",
-      "player": "Amen Thompson",
-      "recent_games": [
-        {
-          "player_id": "4684740",
-          "player": "Amen Thompson",
-          "team": "Houston Rockets",
-          "points": 20,
-          "minutes": "36",
-          "game_id": "401909096",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "4684740",
-          "player": "Amen Thompson",
-          "team": "Houston Rockets",
-          "points": 16,
-          "minutes": "33",
-          "game_id": "401909840",
-          "game_date": "20261021"
-        }
-      ],
-      "games_found": 2,
-      "average_points": 18.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "6583",
-      "player": "Anthony Davis",
-      "recent_games": [
-        {
-          "player_id": "6583",
-          "player": "Anthony Davis",
-          "team": "Washington Wizards",
-          "points": 9,
-          "minutes": "32",
-          "game_id": "401909846",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "6583",
-          "player": "Anthony Davis",
-          "team": "Washington Wizards",
-          "points": 34,
-          "minutes": "34",
-          "game_id": "401909835",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "6583",
-          "player": "Anthony Davis",
-          "team": "Washington Wizards",
-          "points": 14,
-          "minutes": "27",
-          "game_id": "401906509",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 19.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4066261",
-      "player": "Bam Adebayo",
-      "recent_games": [
-        {
-          "player_id": "4066261",
-          "player": "Bam Adebayo",
-          "team": "Miami Heat",
+          "player_id": "4684742",
+          "player": "Ausar Thompson",
+          "team": "Detroit Pistons",
           "points": 4,
-          "minutes": "23",
+          "minutes": "19",
           "game_id": "401909847",
           "game_date": "20261023"
         },
         {
-          "player_id": "4066261",
-          "player": "Bam Adebayo",
-          "team": "Miami Heat",
-          "points": 15,
-          "minutes": "31",
-          "game_id": "401909091",
-          "game_date": "20261021"
+          "player_id": "4684742",
+          "player": "Ausar Thompson",
+          "team": "Detroit Pistons",
+          "points": 11,
+          "minutes": "33",
+          "game_id": "401909088",
+          "game_date": "20261020"
+        },
+        {
+          "player_id": "4684742",
+          "player": "Ausar Thompson",
+          "team": "Detroit Pistons",
+          "points": 12,
+          "minutes": "19",
+          "game_id": "401908946",
+          "game_date": "20261016"
         }
       ],
-      "games_found": 2,
+      "games_found": 4,
       "average_points": 9.5,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
     },
     {
-      "player_id": "4433287",
-      "player": "Brandon Miller",
+      "player_id": "4066457",
+      "player": "Austin Reaves",
       "recent_games": [
         {
-          "player_id": "4433287",
-          "player": "Brandon Miller",
-          "team": "Charlotte Hornets",
-          "points": 6,
-          "minutes": "23",
-          "game_id": "401909843",
-          "game_date": "20261023"
+          "player_id": "4066457",
+          "player": "Austin Reaves",
+          "team": "Los Angeles Lakers",
+          "points": 26,
+          "minutes": "39",
+          "game_id": "401909880",
+          "game_date": "20261027"
         },
         {
-          "player_id": "4433287",
-          "player": "Brandon Miller",
-          "team": "Charlotte Hornets",
-          "points": 18,
+          "player_id": "4066457",
+          "player": "Austin Reaves",
+          "team": "Los Angeles Lakers",
+          "points": 29,
           "minutes": "36",
-          "game_id": "401909836",
-          "game_date": "20261021"
+          "game_id": "401909861",
+          "game_date": "20261025"
         },
         {
-          "player_id": "4433287",
-          "player": "Brandon Miller",
-          "team": "Charlotte Hornets",
-          "points": 15,
-          "minutes": "25",
-          "game_id": "401901822",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 13.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "2490149",
-      "player": "CJ McCollum",
-      "recent_games": [
-        {
-          "player_id": "2490149",
-          "player": "CJ McCollum",
-          "team": "Atlanta Hawks",
-          "points": 13,
-          "minutes": "22",
-          "game_id": "401909843",
+          "player_id": "4066457",
+          "player": "Austin Reaves",
+          "team": "Los Angeles Lakers",
+          "points": 28,
+          "minutes": "38",
+          "game_id": "401909851",
           "game_date": "20261023"
         },
         {
-          "player_id": "2490149",
-          "player": "CJ McCollum",
-          "team": "Atlanta Hawks",
-          "points": 19,
-          "minutes": "25",
-          "game_id": "401909834",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "2490149",
-          "player": "CJ McCollum",
-          "team": "Atlanta Hawks",
-          "points": 7,
-          "minutes": "22",
-          "game_id": "401898408",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 13.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "5095151",
-      "player": "Caleb Wilson",
-      "recent_games": [
-        {
-          "player_id": "5095151",
-          "player": "Caleb Wilson",
-          "team": "Chicago Bulls",
-          "points": 21,
-          "minutes": "33",
-          "game_id": "401909848",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "5095151",
-          "player": "Caleb Wilson",
-          "team": "Chicago Bulls",
-          "points": 16,
+          "player_id": "4066457",
+          "player": "Austin Reaves",
+          "team": "Los Angeles Lakers",
+          "points": 23,
           "minutes": "32",
-          "game_id": "401909837",
+          "game_id": "401909092",
           "game_date": "20261021"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 26.5,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "4432166",
+      "player": "Cade Cunningham",
+      "recent_games": [
+        {
+          "player_id": "4432166",
+          "player": "Cade Cunningham",
+          "team": "Detroit Pistons",
+          "points": 19,
+          "minutes": "36",
+          "game_id": "401909878",
+          "game_date": "20261027"
         },
         {
-          "player_id": "5095151",
-          "player": "Caleb Wilson",
-          "team": "Chicago Bulls",
+          "player_id": "4432166",
+          "player": "Cade Cunningham",
+          "team": "Detroit Pistons",
+          "points": 26,
+          "minutes": "33",
+          "game_id": "401909866",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "4432166",
+          "player": "Cade Cunningham",
+          "team": "Detroit Pistons",
           "points": 16,
-          "minutes": "23",
-          "game_id": "401908943",
+          "minutes": "30",
+          "game_id": "401909847",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "4432166",
+          "player": "Cade Cunningham",
+          "team": "Detroit Pistons",
+          "points": 22,
+          "minutes": "35",
+          "game_id": "401909088",
+          "game_date": "20261020"
+        },
+        {
+          "player_id": "4432166",
+          "player": "Cade Cunningham",
+          "team": "Detroit Pistons",
+          "points": 18,
+          "minutes": "26",
+          "game_id": "401908946",
           "game_date": "20261016"
+        }
+      ],
+      "games_found": 5,
+      "average_points": 20.2,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "4277811",
+      "player": "Collin Sexton",
+      "recent_games": [
+        {
+          "player_id": "4277811",
+          "player": "Collin Sexton",
+          "team": "Los Angeles Lakers",
+          "points": 9,
+          "minutes": "14",
+          "game_id": "401909880",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4277811",
+          "player": "Collin Sexton",
+          "team": "Los Angeles Lakers",
+          "points": 13,
+          "minutes": "20",
+          "game_id": "401909861",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "4277811",
+          "player": "Collin Sexton",
+          "team": "Los Angeles Lakers",
+          "points": 5,
+          "minutes": "16",
+          "game_id": "401909851",
+          "game_date": "20261023"
         }
       ],
       "games_found": 3,
-      "average_points": 17.67,
+      "average_points": 9.0,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
     },
     {
-      "player_id": "4431767",
-      "player": "Christian Braun",
+      "player_id": "6606",
+      "player": "Damian Lillard",
       "recent_games": [
         {
-          "player_id": "4431767",
-          "player": "Christian Braun",
-          "team": "Denver Nuggets",
-          "points": 7,
-          "minutes": "33",
-          "game_id": "401909094",
-          "game_date": "20261022"
+          "player_id": "6606",
+          "player": "Damian Lillard",
+          "team": "Portland Trail Blazers",
+          "points": 21,
+          "minutes": "31",
+          "game_id": "401909880",
+          "game_date": "20261027"
         },
         {
-          "player_id": "4431767",
-          "player": "Christian Braun",
-          "team": "Denver Nuggets",
-          "points": 16,
-          "minutes": "28",
-          "game_id": "401898719",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 2,
-      "average_points": 11.5,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4278585",
-      "player": "Collin Gillespie",
-      "recent_games": [
+          "player_id": "6606",
+          "player": "Damian Lillard",
+          "team": "Portland Trail Blazers",
+          "points": 19,
+          "minutes": "33",
+          "game_id": "401909852",
+          "game_date": "20261023"
+        },
         {
-          "player_id": "4278585",
-          "player": "Collin Gillespie",
-          "team": "Phoenix Suns",
-          "points": 0,
-          "minutes": "21",
+          "player_id": "6606",
+          "player": "Damian Lillard",
+          "team": "Portland Trail Blazers",
+          "points": 25,
+          "minutes": "24",
           "game_id": "401909841",
           "game_date": "20261021"
-        },
-        {
-          "player_id": "4278585",
-          "player": "Collin Gillespie",
-          "team": "Phoenix Suns",
-          "points": 6,
-          "minutes": "20",
-          "game_id": "401908948",
-          "game_date": "20261016"
         }
       ],
-      "games_found": 2,
-      "average_points": 3.0,
+      "games_found": 3,
+      "average_points": 21.67,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "5142620",
+      "player": "Darius Acuff Jr.",
+      "recent_games": [
+        {
+          "player_id": "5142620",
+          "player": "Darius Acuff Jr.",
+          "team": "Sacramento Kings",
+          "points": 19,
+          "minutes": "33",
+          "game_id": "401909879",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "5142620",
+          "player": "Darius Acuff Jr.",
+          "team": "Sacramento Kings",
+          "points": 22,
+          "minutes": "36",
+          "game_id": "401909867",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "5142620",
+          "player": "Darius Acuff Jr.",
+          "team": "Sacramento Kings",
+          "points": 33,
+          "minutes": "37",
+          "game_id": "401909852",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "5142620",
+          "player": "Darius Acuff Jr.",
+          "team": "Sacramento Kings",
+          "points": 12,
+          "minutes": "35",
+          "game_id": "401909842",
+          "game_date": "20261021"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 21.5,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
@@ -375,14 +293,41 @@
           "player_id": "4432194",
           "player": "Day'Ron Sharpe",
           "team": "Brooklyn Nets",
+          "points": 4,
+          "minutes": "17",
+          "game_id": "401909877",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4432194",
+          "player": "Day'Ron Sharpe",
+          "team": "Brooklyn Nets",
+          "points": 11,
+          "minutes": "16",
+          "game_id": "401909862",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "4432194",
+          "player": "Day'Ron Sharpe",
+          "team": "Brooklyn Nets",
+          "points": 7,
+          "minutes": "23",
+          "game_id": "401909854",
+          "game_date": "20261024"
+        },
+        {
+          "player_id": "4432194",
+          "player": "Day'Ron Sharpe",
+          "team": "Brooklyn Nets",
           "points": 8,
           "minutes": "30",
           "game_id": "401909836",
           "game_date": "20261021"
         }
       ],
-      "games_found": 1,
-      "average_points": 8.0,
+      "games_found": 4,
+      "average_points": 7.5,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
@@ -395,8 +340,26 @@
           "player_id": "4066259",
           "player": "De'Aaron Fox",
           "team": "San Antonio Spurs",
+          "points": 11,
+          "minutes": "26",
+          "game_id": "401909879",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4066259",
+          "player": "De'Aaron Fox",
+          "team": "San Antonio Spurs",
           "points": 19,
-          "minutes": "34",
+          "minutes": "28",
+          "game_id": "401909858",
+          "game_date": "20261024"
+        },
+        {
+          "player_id": "4066259",
+          "player": "De'Aaron Fox",
+          "team": "San Antonio Spurs",
+          "points": 19,
+          "minutes": "32",
           "game_id": "401909096",
           "game_date": "20261023"
         },
@@ -419,95 +382,140 @@
           "game_date": "20261016"
         }
       ],
-      "games_found": 3,
-      "average_points": 16.33,
+      "games_found": 5,
+      "average_points": 15.8,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
     },
     {
-      "player_id": "3978",
-      "player": "DeMar DeRozan",
+      "player_id": "4065732",
+      "player": "De'Andre Hunter",
       "recent_games": [
         {
-          "player_id": "3978",
-          "player": "DeMar DeRozan",
-          "team": "Denver Nuggets",
-          "points": 13,
-          "minutes": "28",
-          "game_id": "401909094",
-          "game_date": "20261022"
+          "player_id": "4065732",
+          "player": "De'Andre Hunter",
+          "team": "Sacramento Kings",
+          "points": 24,
+          "minutes": "33",
+          "game_id": "401909879",
+          "game_date": "20261027"
         },
         {
-          "player_id": "3978",
-          "player": "DeMar DeRozan",
-          "team": "Denver Nuggets",
-          "points": 14,
-          "minutes": "27",
-          "game_id": "401898719",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 2,
-      "average_points": 13.5,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "3907497",
-      "player": "Dejounte Murray",
-      "recent_games": [
+          "player_id": "4065732",
+          "player": "De'Andre Hunter",
+          "team": "Sacramento Kings",
+          "points": 7,
+          "minutes": "29",
+          "game_id": "401909867",
+          "game_date": "20261025"
+        },
         {
-          "player_id": "3907497",
-          "player": "Dejounte Murray",
-          "team": "New Orleans Pelicans",
-          "points": 16,
-          "minutes": "30",
-          "game_id": "401909849",
+          "player_id": "4065732",
+          "player": "De'Andre Hunter",
+          "team": "Sacramento Kings",
+          "points": 4,
+          "minutes": "25",
+          "game_id": "401909852",
           "game_date": "20261023"
         },
         {
-          "player_id": "3907497",
-          "player": "Dejounte Murray",
-          "team": "New Orleans Pelicans",
-          "points": 23,
-          "minutes": "34",
-          "game_id": "401909839",
+          "player_id": "4065732",
+          "player": "De'Andre Hunter",
+          "team": "Sacramento Kings",
+          "points": 6,
+          "minutes": "20",
+          "game_id": "401909842",
           "game_date": "20261021"
         }
       ],
-      "games_found": 2,
-      "average_points": 19.5,
+      "games_found": 4,
+      "average_points": 10.25,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
     },
     {
-      "player_id": "3136193",
-      "player": "Devin Booker",
+      "player_id": "4683021",
+      "player": "Deni Avdija",
       "recent_games": [
         {
-          "player_id": "3136193",
-          "player": "Devin Booker",
-          "team": "Phoenix Suns",
+          "player_id": "4683021",
+          "player": "Deni Avdija",
+          "team": "Portland Trail Blazers",
           "points": 23,
-          "minutes": "29",
-          "game_id": "401909841",
-          "game_date": "20261021"
+          "minutes": "33",
+          "game_id": "401909880",
+          "game_date": "20261027"
         },
         {
-          "player_id": "3136193",
-          "player": "Devin Booker",
-          "team": "Phoenix Suns",
-          "points": 16,
-          "minutes": "26",
-          "game_id": "401908948",
-          "game_date": "20261016"
+          "player_id": "4683021",
+          "player": "Deni Avdija",
+          "team": "Portland Trail Blazers",
+          "points": 26,
+          "minutes": "38",
+          "game_id": "401909852",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "4683021",
+          "player": "Deni Avdija",
+          "team": "Portland Trail Blazers",
+          "points": 18,
+          "minutes": "23",
+          "game_id": "401909841",
+          "game_date": "20261021"
         }
       ],
-      "games_found": 2,
-      "average_points": 19.5,
+      "games_found": 3,
+      "average_points": 22.33,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "3078576",
+      "player": "Derrick White",
+      "recent_games": [
+        {
+          "player_id": "3078576",
+          "player": "Derrick White",
+          "team": "Boston Celtics",
+          "points": 16,
+          "minutes": "33",
+          "game_id": "401909877",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "3078576",
+          "player": "Derrick White",
+          "team": "Boston Celtics",
+          "points": 5,
+          "minutes": "18",
+          "game_id": "401909870",
+          "game_date": "20261026"
+        },
+        {
+          "player_id": "3078576",
+          "player": "Derrick White",
+          "team": "Boston Celtics",
+          "points": 12,
+          "minutes": "33",
+          "game_id": "401909095",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "3078576",
+          "player": "Derrick White",
+          "team": "Boston Celtics",
+          "points": 17,
+          "minutes": "36",
+          "game_id": "401909088",
+          "game_date": "20261020"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 12.5,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
@@ -520,8 +528,26 @@
           "player_id": "4395630",
           "player": "Devin Vassell",
           "team": "San Antonio Spurs",
+          "points": 14,
+          "minutes": "24",
+          "game_id": "401909879",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4395630",
+          "player": "Devin Vassell",
+          "team": "San Antonio Spurs",
+          "points": 11,
+          "minutes": "32",
+          "game_id": "401909858",
+          "game_date": "20261024"
+        },
+        {
+          "player_id": "4395630",
+          "player": "Devin Vassell",
+          "team": "San Antonio Spurs",
           "points": 10,
-          "minutes": "36",
+          "minutes": "34",
           "game_id": "401909096",
           "game_date": "20261023"
         },
@@ -544,57 +570,149 @@
           "game_date": "20261016"
         }
       ],
-      "games_found": 3,
-      "average_points": 9.67,
+      "games_found": 5,
+      "average_points": 10.8,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
     },
     {
-      "player_id": "3155526",
-      "player": "Dillon Brooks",
+      "player_id": "3155942",
+      "player": "Domantas Sabonis",
       "recent_games": [
         {
-          "player_id": "3155526",
-          "player": "Dillon Brooks",
-          "team": "Phoenix Suns",
-          "points": 10,
-          "minutes": "27",
-          "game_id": "401909841",
-          "game_date": "20261021"
+          "player_id": "3155942",
+          "player": "Domantas Sabonis",
+          "team": "Sacramento Kings",
+          "points": 20,
+          "minutes": "37",
+          "game_id": "401909879",
+          "game_date": "20261027"
         },
         {
-          "player_id": "3155526",
-          "player": "Dillon Brooks",
-          "team": "Phoenix Suns",
-          "points": 18,
-          "minutes": "23",
-          "game_id": "401908948",
+          "player_id": "3155942",
+          "player": "Domantas Sabonis",
+          "team": "Sacramento Kings",
+          "points": 15,
+          "minutes": "35",
+          "game_id": "401909867",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "3155942",
+          "player": "Domantas Sabonis",
+          "team": "Sacramento Kings",
+          "points": 27,
+          "minutes": "39",
+          "game_id": "401909852",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "3155942",
+          "player": "Domantas Sabonis",
+          "team": "Sacramento Kings",
+          "points": 14,
+          "minutes": "34",
+          "game_id": "401909842",
+          "game_date": "20261021"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 19.0,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "5105565",
+      "player": "Donovan Clingan",
+      "recent_games": [
+        {
+          "player_id": "5105565",
+          "player": "Donovan Clingan",
+          "team": "Portland Trail Blazers",
+          "points": 9,
+          "minutes": "26",
+          "game_id": "401909880",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "5105565",
+          "player": "Donovan Clingan",
+          "team": "Portland Trail Blazers",
+          "points": 8,
+          "minutes": "21",
+          "game_id": "401909852",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "5105565",
+          "player": "Donovan Clingan",
+          "team": "Portland Trail Blazers",
+          "points": 11,
+          "minutes": "21",
+          "game_id": "401909841",
+          "game_date": "20261021"
+        }
+      ],
+      "games_found": 3,
+      "average_points": 9.33,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "3157465",
+      "player": "Duncan Robinson",
+      "recent_games": [
+        {
+          "player_id": "3157465",
+          "player": "Duncan Robinson",
+          "team": "Detroit Pistons",
+          "points": 12,
+          "minutes": "33",
+          "game_id": "401909878",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "3157465",
+          "player": "Duncan Robinson",
+          "team": "Detroit Pistons",
+          "points": 21,
+          "minutes": "32",
+          "game_id": "401909866",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "3157465",
+          "player": "Duncan Robinson",
+          "team": "Detroit Pistons",
+          "points": 17,
+          "minutes": "28",
+          "game_id": "401909847",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "3157465",
+          "player": "Duncan Robinson",
+          "team": "Detroit Pistons",
+          "points": 21,
+          "minutes": "28",
+          "game_id": "401909088",
+          "game_date": "20261020"
+        },
+        {
+          "player_id": "3157465",
+          "player": "Duncan Robinson",
+          "team": "Detroit Pistons",
+          "points": 9,
+          "minutes": "20",
+          "game_id": "401908946",
           "game_date": "20261016"
         }
       ],
-      "games_found": 2,
-      "average_points": 14.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "3908809",
-      "player": "Donovan Mitchell",
-      "recent_games": [
-        {
-          "player_id": "3908809",
-          "player": "Donovan Mitchell",
-          "team": "Cleveland Cavaliers",
-          "points": 32,
-          "minutes": "35",
-          "game_id": "401909093",
-          "game_date": "20261022"
-        }
-      ],
-      "games_found": 1,
-      "average_points": 32.0,
+      "games_found": 5,
+      "average_points": 16.0,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
@@ -607,8 +725,26 @@
           "player_id": "5037871",
           "player": "Dylan Harper",
           "team": "San Antonio Spurs",
+          "points": 13,
+          "minutes": "30",
+          "game_id": "401909879",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "5037871",
+          "player": "Dylan Harper",
+          "team": "San Antonio Spurs",
+          "points": 22,
+          "minutes": "28",
+          "game_id": "401909858",
+          "game_date": "20261024"
+        },
+        {
+          "player_id": "5037871",
+          "player": "Dylan Harper",
+          "team": "San Antonio Spurs",
           "points": 20,
-          "minutes": "36",
+          "minutes": "34",
           "game_id": "401909096",
           "game_date": "20261023"
         },
@@ -631,46 +767,8 @@
           "game_date": "20261016"
         }
       ],
-      "games_found": 3,
-      "average_points": 19.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4869342",
-      "player": "Dyson Daniels",
-      "recent_games": [
-        {
-          "player_id": "4869342",
-          "player": "Dyson Daniels",
-          "team": "Atlanta Hawks",
-          "points": 11,
-          "minutes": "23",
-          "game_id": "401909843",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "4869342",
-          "player": "Dyson Daniels",
-          "team": "Atlanta Hawks",
-          "points": 20,
-          "minutes": "35",
-          "game_id": "401909834",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "4869342",
-          "player": "Dyson Daniels",
-          "team": "Atlanta Hawks",
-          "points": 8,
-          "minutes": "25",
-          "game_id": "401898408",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 13.0,
+      "games_found": 5,
+      "average_points": 18.4,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
@@ -683,505 +781,417 @@
           "player_id": "5175643",
           "player": "Egor Demin",
           "team": "Brooklyn Nets",
+          "points": 2,
+          "minutes": "10",
+          "game_id": "401909877",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "5175643",
+          "player": "Egor Demin",
+          "team": "Brooklyn Nets",
+          "points": 3,
+          "minutes": "19",
+          "game_id": "401909862",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "5175643",
+          "player": "Egor Demin",
+          "team": "Brooklyn Nets",
+          "points": 22,
+          "minutes": "31",
+          "game_id": "401909854",
+          "game_date": "20261024"
+        },
+        {
+          "player_id": "5175643",
+          "player": "Egor Demin",
+          "team": "Brooklyn Nets",
           "points": 4,
           "minutes": "27",
           "game_id": "401909836",
           "game_date": "20261021"
         }
       ],
-      "games_found": 1,
-      "average_points": 4.0,
+      "games_found": 4,
+      "average_points": 7.75,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
     },
     {
-      "player_id": "4432158",
-      "player": "Evan Mobley",
+      "player_id": "4279888",
+      "player": "Ja Morant",
       "recent_games": [
         {
-          "player_id": "4432158",
-          "player": "Evan Mobley",
-          "team": "Cleveland Cavaliers",
-          "points": 18,
-          "minutes": "34",
-          "game_id": "401909093",
-          "game_date": "20261022"
-        }
-      ],
-      "games_found": 1,
-      "average_points": 18.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "2991230",
-      "player": "Fred VanVleet",
-      "recent_games": [
+          "player_id": "4279888",
+          "player": "Ja Morant",
+          "team": "Portland Trail Blazers",
+          "points": 23,
+          "minutes": "31",
+          "game_id": "401909880",
+          "game_date": "20261027"
+        },
         {
-          "player_id": "2991230",
-          "player": "Fred VanVleet",
-          "team": "Houston Rockets",
-          "points": 14,
-          "minutes": "32",
-          "game_id": "401909096",
+          "player_id": "4279888",
+          "player": "Ja Morant",
+          "team": "Portland Trail Blazers",
+          "points": 12,
+          "minutes": "27",
+          "game_id": "401909852",
           "game_date": "20261023"
         },
         {
-          "player_id": "2991230",
-          "player": "Fred VanVleet",
-          "team": "Houston Rockets",
-          "points": 6,
-          "minutes": "30",
-          "game_id": "401909840",
+          "player_id": "4279888",
+          "player": "Ja Morant",
+          "team": "Portland Trail Blazers",
+          "points": 14,
+          "minutes": "23",
+          "game_id": "401909841",
           "game_date": "20261021"
         }
       ],
-      "games_found": 2,
-      "average_points": 10.0,
+      "games_found": 3,
+      "average_points": 16.33,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
     },
     {
-      "player_id": "3032977",
-      "player": "Giannis Antetokounmpo",
+      "player_id": "3934672",
+      "player": "Jalen Brunson",
       "recent_games": [
         {
-          "player_id": "3032977",
-          "player": "Giannis Antetokounmpo",
-          "team": "Miami Heat",
+          "player_id": "3934672",
+          "player": "Jalen Brunson",
+          "team": "New York Knicks",
+          "points": 23,
+          "minutes": "36",
+          "game_id": "401909878",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "3934672",
+          "player": "Jalen Brunson",
+          "team": "New York Knicks",
+          "points": 28,
+          "minutes": "32",
+          "game_id": "401909863",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "3934672",
+          "player": "Jalen Brunson",
+          "team": "New York Knicks",
+          "points": 19,
+          "minutes": "37",
+          "game_id": "401909095",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "3934672",
+          "player": "Jalen Brunson",
+          "team": "New York Knicks",
+          "points": 21,
+          "minutes": "34",
+          "game_id": "401909089",
+          "game_date": "20261020"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 22.75,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "4065648",
+      "player": "Jayson Tatum",
+      "recent_games": [
+        {
+          "player_id": "4065648",
+          "player": "Jayson Tatum",
+          "team": "Boston Celtics",
+          "points": 40,
+          "minutes": "42",
+          "game_id": "401909877",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4065648",
+          "player": "Jayson Tatum",
+          "team": "Boston Celtics",
+          "points": 23,
+          "minutes": "28",
+          "game_id": "401909870",
+          "game_date": "20261026"
+        },
+        {
+          "player_id": "4065648",
+          "player": "Jayson Tatum",
+          "team": "Boston Celtics",
           "points": 36,
-          "minutes": "33",
+          "minutes": "37",
+          "game_id": "401909095",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "4065648",
+          "player": "Jayson Tatum",
+          "team": "Boston Celtics",
+          "points": 13,
+          "minutes": "38",
+          "game_id": "401909088",
+          "game_date": "20261020"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 28.0,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "3908845",
+      "player": "John Collins",
+      "recent_games": [
+        {
+          "player_id": "3908845",
+          "player": "John Collins",
+          "team": "Detroit Pistons",
+          "points": 2,
+          "minutes": "27",
+          "game_id": "401909878",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "3908845",
+          "player": "John Collins",
+          "team": "Detroit Pistons",
+          "points": 16,
+          "minutes": "34",
+          "game_id": "401909866",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "3908845",
+          "player": "John Collins",
+          "team": "Detroit Pistons",
+          "points": 23,
+          "minutes": "29",
           "game_id": "401909847",
           "game_date": "20261023"
         },
         {
-          "player_id": "3032977",
-          "player": "Giannis Antetokounmpo",
-          "team": "Miami Heat",
-          "points": 35,
-          "minutes": "30",
-          "game_id": "401909091",
-          "game_date": "20261021"
+          "player_id": "3908845",
+          "player": "John Collins",
+          "team": "Detroit Pistons",
+          "points": 6,
+          "minutes": "25",
+          "game_id": "401909088",
+          "game_date": "20261020"
+        },
+        {
+          "player_id": "3908845",
+          "player": "John Collins",
+          "team": "Detroit Pistons",
+          "points": 12,
+          "minutes": "22",
+          "game_id": "401908946",
+          "game_date": "20261016"
         }
       ],
-      "games_found": 2,
-      "average_points": 35.5,
+      "games_found": 5,
+      "average_points": 11.8,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
     },
     {
-      "player_id": "4432639",
-      "player": "Jabari Smith Jr.",
+      "player_id": "4683689",
+      "player": "Jordan Walsh",
       "recent_games": [
         {
-          "player_id": "4432639",
-          "player": "Jabari Smith Jr.",
-          "team": "Houston Rockets",
-          "points": 7,
-          "minutes": "34",
+          "player_id": "4683689",
+          "player": "Jordan Walsh",
+          "team": "Boston Celtics",
+          "points": 15,
+          "minutes": "24",
+          "game_id": "401909877",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4683689",
+          "player": "Jordan Walsh",
+          "team": "Boston Celtics",
+          "points": 4,
+          "minutes": "18",
+          "game_id": "401909870",
+          "game_date": "20261026"
+        },
+        {
+          "player_id": "4683689",
+          "player": "Jordan Walsh",
+          "team": "Boston Celtics",
+          "points": 5,
+          "minutes": "20",
+          "game_id": "401909095",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "4683689",
+          "player": "Jordan Walsh",
+          "team": "Boston Celtics",
+          "points": 0,
+          "minutes": "13",
+          "game_id": "401909088",
+          "game_date": "20261020"
+        },
+        {
+          "player_id": "4683689",
+          "player": "Jordan Walsh",
+          "team": "Boston Celtics",
+          "points": 9,
+          "minutes": "18",
+          "game_id": "401898407",
+          "game_date": "20261016"
+        }
+      ],
+      "games_found": 5,
+      "average_points": 6.6,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "3062679",
+      "player": "Josh Hart",
+      "recent_games": [
+        {
+          "player_id": "3062679",
+          "player": "Josh Hart",
+          "team": "New York Knicks",
+          "points": 6,
+          "minutes": "27",
+          "game_id": "401909878",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "3062679",
+          "player": "Josh Hart",
+          "team": "New York Knicks",
+          "points": 13,
+          "minutes": "35",
+          "game_id": "401909863",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "3062679",
+          "player": "Josh Hart",
+          "team": "New York Knicks",
+          "points": 10,
+          "minutes": "36",
+          "game_id": "401909095",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "3062679",
+          "player": "Josh Hart",
+          "team": "New York Knicks",
+          "points": 14,
+          "minutes": "30",
+          "game_id": "401909089",
+          "game_date": "20261020"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 10.75,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "3995",
+      "player": "Jrue Holiday",
+      "recent_games": [
+        {
+          "player_id": "3995",
+          "player": "Jrue Holiday",
+          "team": "Portland Trail Blazers",
+          "points": 22,
+          "minutes": "30",
+          "game_id": "401909880",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "3995",
+          "player": "Jrue Holiday",
+          "team": "Portland Trail Blazers",
+          "points": 12,
+          "minutes": "26",
+          "game_id": "401909852",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "3995",
+          "player": "Jrue Holiday",
+          "team": "Portland Trail Blazers",
+          "points": 8,
+          "minutes": "21",
+          "game_id": "401909841",
+          "game_date": "20261021"
+        }
+      ],
+      "games_found": 3,
+      "average_points": 14.0,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "4592479",
+      "player": "Julian Champagnie",
+      "recent_games": [
+        {
+          "player_id": "4592479",
+          "player": "Julian Champagnie",
+          "team": "San Antonio Spurs",
+          "points": 26,
+          "minutes": "25",
+          "game_id": "401909879",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4592479",
+          "player": "Julian Champagnie",
+          "team": "San Antonio Spurs",
+          "points": 12,
+          "minutes": "28",
+          "game_id": "401909858",
+          "game_date": "20261024"
+        },
+        {
+          "player_id": "4592479",
+          "player": "Julian Champagnie",
+          "team": "San Antonio Spurs",
+          "points": 6,
+          "minutes": "28",
           "game_id": "401909096",
           "game_date": "20261023"
         },
         {
-          "player_id": "4432639",
-          "player": "Jabari Smith Jr.",
-          "team": "Houston Rockets",
-          "points": 30,
-          "minutes": "36",
-          "game_id": "401909840",
-          "game_date": "20261021"
-        }
-      ],
-      "games_found": 2,
-      "average_points": 18.5,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4432848",
-      "player": "Jaime Jaquez Jr.",
-      "recent_games": [
-        {
-          "player_id": "4432848",
-          "player": "Jaime Jaquez Jr.",
-          "team": "Milwaukee Bucks",
-          "points": 19,
-          "minutes": "35",
-          "game_id": "401909848",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "4432848",
-          "player": "Jaime Jaquez Jr.",
-          "team": "Milwaukee Bucks",
-          "points": 22,
-          "minutes": "31",
-          "game_id": "401909835",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "4432848",
-          "player": "Jaime Jaquez Jr.",
-          "team": "Milwaukee Bucks",
-          "points": 9,
-          "minutes": "22",
-          "game_id": "401914126",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 16.67,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4437244",
-      "player": "Jalen Green",
-      "recent_games": [
-        {
-          "player_id": "4437244",
-          "player": "Jalen Green",
-          "team": "Phoenix Suns",
-          "points": 10,
-          "minutes": "25",
-          "game_id": "401909841",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "4437244",
-          "player": "Jalen Green",
-          "team": "Phoenix Suns",
-          "points": 18,
-          "minutes": "23",
-          "game_id": "401908948",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 2,
-      "average_points": 14.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4701230",
-      "player": "Jalen Johnson",
-      "recent_games": [
-        {
-          "player_id": "4701230",
-          "player": "Jalen Johnson",
-          "team": "Atlanta Hawks",
-          "points": 19,
-          "minutes": "29",
-          "game_id": "401909843",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "4701230",
-          "player": "Jalen Johnson",
-          "team": "Atlanta Hawks",
-          "points": 20,
-          "minutes": "28",
-          "game_id": "401909834",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "4701230",
-          "player": "Jalen Johnson",
-          "team": "Atlanta Hawks",
-          "points": 20,
-          "minutes": "25",
-          "game_id": "401898408",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 19.67,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4397189",
-      "player": "Jalen Smith",
-      "recent_games": [
-        {
-          "player_id": "4397189",
-          "player": "Jalen Smith",
-          "team": "Chicago Bulls",
-          "points": 14,
-          "minutes": "24",
-          "game_id": "401909848",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "4397189",
-          "player": "Jalen Smith",
-          "team": "Chicago Bulls",
-          "points": 15,
-          "minutes": "19",
-          "game_id": "401909837",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "4397189",
-          "player": "Jalen Smith",
-          "team": "Chicago Bulls",
-          "points": 5,
-          "minutes": "13",
-          "game_id": "401908943",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 11.33,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "3936299",
-      "player": "Jamal Murray",
-      "recent_games": [
-        {
-          "player_id": "3936299",
-          "player": "Jamal Murray",
-          "team": "Denver Nuggets",
-          "points": 6,
-          "minutes": "37",
-          "game_id": "401909094",
-          "game_date": "20261022"
-        },
-        {
-          "player_id": "3936299",
-          "player": "Jamal Murray",
-          "team": "Denver Nuggets",
-          "points": 21,
-          "minutes": "31",
-          "game_id": "401898719",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 2,
-      "average_points": 13.5,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "3992",
-      "player": "James Harden",
-      "recent_games": [
-        {
-          "player_id": "3992",
-          "player": "James Harden",
-          "team": "Cleveland Cavaliers",
-          "points": 16,
-          "minutes": "33",
-          "game_id": "401909093",
-          "game_date": "20261022"
-        }
-      ],
-      "games_found": 1,
-      "average_points": 16.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4066328",
-      "player": "Jarrett Allen",
-      "recent_games": [
-        {
-          "player_id": "4066328",
-          "player": "Jarrett Allen",
-          "team": "Cleveland Cavaliers",
-          "points": 14,
-          "minutes": "28",
-          "game_id": "401909093",
-          "game_date": "20261022"
-        }
-      ],
-      "games_found": 1,
-      "average_points": 14.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "3917376",
-      "player": "Jaylen Brown",
-      "recent_games": [
-        {
-          "player_id": "3917376",
-          "player": "Jaylen Brown",
-          "team": "Philadelphia 76ers",
-          "points": 21,
-          "minutes": "38",
-          "game_id": "401909093",
-          "game_date": "20261022"
-        },
-        {
-          "player_id": "3917376",
-          "player": "Jaylen Brown",
-          "team": "Philadelphia 76ers",
-          "points": 19,
-          "minutes": "35",
-          "game_id": "401909089",
-          "game_date": "20261020"
-        },
-        {
-          "player_id": "3917376",
-          "player": "Jaylen Brown",
-          "team": "Philadelphia 76ers",
-          "points": 20,
-          "minutes": "31",
-          "game_id": "401898407",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 20.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4683747",
-      "player": "Jaylon Tyson",
-      "recent_games": [
-        {
-          "player_id": "4683747",
-          "player": "Jaylon Tyson",
-          "team": "Cleveland Cavaliers",
-          "points": 3,
-          "minutes": "24",
-          "game_id": "401909093",
-          "game_date": "20261022"
-        }
-      ],
-      "games_found": 1,
-      "average_points": 3.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "5144091",
-      "player": "Jeremiah Fears",
-      "recent_games": [
-        {
-          "player_id": "5144091",
-          "player": "Jeremiah Fears",
-          "team": "New Orleans Pelicans",
-          "points": 7,
-          "minutes": "24",
-          "game_id": "401909849",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "5144091",
-          "player": "Jeremiah Fears",
-          "team": "New Orleans Pelicans",
+          "player_id": "4592479",
+          "player": "Julian Champagnie",
+          "team": "San Antonio Spurs",
           "points": 8,
-          "minutes": "21",
-          "game_id": "401909839",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "5144091",
-          "player": "Jeremiah Fears",
-          "team": "New Orleans Pelicans",
-          "points": 14,
-          "minutes": "22",
-          "game_id": "401906509",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 9.67,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "3059318",
-      "player": "Joel Embiid",
-      "recent_games": [
-        {
-          "player_id": "3059318",
-          "player": "Joel Embiid",
-          "team": "Philadelphia 76ers",
-          "points": 24,
-          "minutes": "34",
-          "game_id": "401909093",
-          "game_date": "20261022"
-        },
-        {
-          "player_id": "3059318",
-          "player": "Joel Embiid",
-          "team": "Philadelphia 76ers",
-          "points": 13,
-          "minutes": "33",
-          "game_id": "401909089",
+          "minutes": "30",
+          "game_id": "401909090",
           "game_date": "20261020"
-        },
-        {
-          "player_id": "3059318",
-          "player": "Joel Embiid",
-          "team": "Philadelphia 76ers",
-          "points": 27,
-          "minutes": "29",
-          "game_id": "401898407",
-          "game_date": "20261016"
         }
       ],
-      "games_found": 3,
-      "average_points": 21.33,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4871145",
-      "player": "Josh Giddey",
-      "recent_games": [
-        {
-          "player_id": "4871145",
-          "player": "Josh Giddey",
-          "team": "Chicago Bulls",
-          "points": 6,
-          "minutes": "25",
-          "game_id": "401909848",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "4871145",
-          "player": "Josh Giddey",
-          "team": "Chicago Bulls",
-          "points": 2,
-          "minutes": "24",
-          "game_id": "401909837",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "4871145",
-          "player": "Josh Giddey",
-          "team": "Chicago Bulls",
-          "points": 12,
-          "minutes": "19",
-          "game_id": "401908943",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 6.67,
+      "games_found": 4,
+      "average_points": 13.0,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
@@ -1194,14 +1204,135 @@
           "player_id": "3064514",
           "player": "Julius Randle",
           "team": "Brooklyn Nets",
+          "points": 24,
+          "minutes": "44",
+          "game_id": "401909877",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "3064514",
+          "player": "Julius Randle",
+          "team": "Brooklyn Nets",
+          "points": 10,
+          "minutes": "24",
+          "game_id": "401909862",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "3064514",
+          "player": "Julius Randle",
+          "team": "Brooklyn Nets",
+          "points": 23,
+          "minutes": "35",
+          "game_id": "401909854",
+          "game_date": "20261024"
+        },
+        {
+          "player_id": "3064514",
+          "player": "Julius Randle",
+          "team": "Brooklyn Nets",
           "points": 33,
           "minutes": "38",
           "game_id": "401909836",
           "game_date": "20261021"
         }
       ],
-      "games_found": 1,
-      "average_points": 33.0,
+      "games_found": 4,
+      "average_points": 22.5,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "3136195",
+      "player": "Karl-Anthony Towns",
+      "recent_games": [
+        {
+          "player_id": "3136195",
+          "player": "Karl-Anthony Towns",
+          "team": "New York Knicks",
+          "points": 27,
+          "minutes": "33",
+          "game_id": "401909878",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "3136195",
+          "player": "Karl-Anthony Towns",
+          "team": "New York Knicks",
+          "points": 22,
+          "minutes": "33",
+          "game_id": "401909863",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "3136195",
+          "player": "Karl-Anthony Towns",
+          "team": "New York Knicks",
+          "points": 22,
+          "minutes": "37",
+          "game_id": "401909095",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "3136195",
+          "player": "Karl-Anthony Towns",
+          "team": "New York Knicks",
+          "points": 19,
+          "minutes": "24",
+          "game_id": "401909089",
+          "game_date": "20261020"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 22.5,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "4395723",
+      "player": "Keldon Johnson",
+      "recent_games": [
+        {
+          "player_id": "4395723",
+          "player": "Keldon Johnson",
+          "team": "San Antonio Spurs",
+          "points": 14,
+          "minutes": "22",
+          "game_id": "401909879",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4395723",
+          "player": "Keldon Johnson",
+          "team": "San Antonio Spurs",
+          "points": 7,
+          "minutes": "26",
+          "game_id": "401909858",
+          "game_date": "20261024"
+        },
+        {
+          "player_id": "4395723",
+          "player": "Keldon Johnson",
+          "team": "San Antonio Spurs",
+          "points": 8,
+          "minutes": "19",
+          "game_id": "401909096",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "4395723",
+          "player": "Keldon Johnson",
+          "team": "San Antonio Spurs",
+          "points": 10,
+          "minutes": "20",
+          "game_id": "401909090",
+          "game_date": "20261020"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 9.75,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
@@ -1214,262 +1345,182 @@
           "player_id": "4702177",
           "player": "Keon Ellis",
           "team": "Brooklyn Nets",
+          "points": 2,
+          "minutes": "25",
+          "game_id": "401909877",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4702177",
+          "player": "Keon Ellis",
+          "team": "Brooklyn Nets",
+          "points": 9,
+          "minutes": "23",
+          "game_id": "401909862",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "4702177",
+          "player": "Keon Ellis",
+          "team": "Brooklyn Nets",
+          "points": 6,
+          "minutes": "22",
+          "game_id": "401909854",
+          "game_date": "20261024"
+        },
+        {
+          "player_id": "4702177",
+          "player": "Keon Ellis",
+          "team": "Brooklyn Nets",
           "points": 7,
           "minutes": "34",
           "game_id": "401909836",
           "game_date": "20261021"
         }
       ],
-      "games_found": 1,
-      "average_points": 7.0,
+      "games_found": 4,
+      "average_points": 6.0,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
     },
     {
-      "player_id": "3202",
-      "player": "Kevin Durant",
+      "player_id": "3914044",
+      "player": "Landry Shamet",
       "recent_games": [
         {
-          "player_id": "3202",
-          "player": "Kevin Durant",
-          "team": "Houston Rockets",
-          "points": 20,
-          "minutes": "37",
-          "game_id": "401909096",
+          "player_id": "3914044",
+          "player": "Landry Shamet",
+          "team": "New York Knicks",
+          "points": 13,
+          "minutes": "28",
+          "game_id": "401909878",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "3914044",
+          "player": "Landry Shamet",
+          "team": "New York Knicks",
+          "points": 6,
+          "minutes": "22",
+          "game_id": "401909863",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "3914044",
+          "player": "Landry Shamet",
+          "team": "New York Knicks",
+          "points": 8,
+          "minutes": "21",
+          "game_id": "401909095",
           "game_date": "20261023"
         },
         {
-          "player_id": "3202",
-          "player": "Kevin Durant",
-          "team": "Houston Rockets",
-          "points": 30,
-          "minutes": "37",
-          "game_id": "401909840",
-          "game_date": "20261021"
-        }
-      ],
-      "games_found": 2,
-      "average_points": 25.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "5203685",
-      "player": "Khaman Maluach",
-      "recent_games": [
-        {
-          "player_id": "5203685",
-          "player": "Khaman Maluach",
-          "team": "Phoenix Suns",
-          "points": 2,
-          "minutes": "17",
-          "game_id": "401909841",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "5203685",
-          "player": "Khaman Maluach",
-          "team": "Phoenix Suns",
-          "points": 7,
-          "minutes": "24",
-          "game_id": "401908948",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 2,
-      "average_points": 4.5,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "3134907",
-      "player": "Kyle Kuzma",
-      "recent_games": [
-        {
-          "player_id": "3134907",
-          "player": "Kyle Kuzma",
-          "team": "Milwaukee Bucks",
-          "points": 14,
-          "minutes": "30",
-          "game_id": "401909848",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "3134907",
-          "player": "Kyle Kuzma",
-          "team": "Milwaukee Bucks",
+          "player_id": "3914044",
+          "player": "Landry Shamet",
+          "team": "New York Knicks",
           "points": 5,
-          "minutes": "27",
-          "game_id": "401909835",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "3134907",
-          "player": "Kyle Kuzma",
-          "team": "Milwaukee Bucks",
-          "points": 11,
-          "minutes": "18",
-          "game_id": "401914126",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 10.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "6442",
-      "player": "Kyrie Irving",
-      "recent_games": [
-        {
-          "player_id": "6442",
-          "player": "Kyrie Irving",
-          "team": "Dallas Mavericks",
-          "points": 24,
           "minutes": "25",
-          "game_id": "401909844",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "6442",
-          "player": "Kyrie Irving",
-          "team": "Dallas Mavericks",
-          "points": 15,
-          "minutes": "24",
-          "game_id": "401909840",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "6442",
-          "player": "Kyrie Irving",
-          "team": "Dallas Mavericks",
-          "points": 18,
-          "minutes": "25",
-          "game_id": "401898408",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 19.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "5174563",
-      "player": "Kyshawn George",
-      "recent_games": [
-        {
-          "player_id": "5174563",
-          "player": "Kyshawn George",
-          "team": "Washington Wizards",
-          "points": 11,
-          "minutes": "26",
-          "game_id": "401909846",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "5174563",
-          "player": "Kyshawn George",
-          "team": "Washington Wizards",
-          "points": 18,
-          "minutes": "29",
-          "game_id": "401909835",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "5174563",
-          "player": "Kyshawn George",
-          "team": "Washington Wizards",
-          "points": 14,
-          "minutes": "27",
-          "game_id": "401906509",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 14.33,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "1966",
-      "player": "LeBron James",
-      "recent_games": [
-        {
-          "player_id": "1966",
-          "player": "LeBron James",
-          "team": "Philadelphia 76ers",
-          "points": 17,
-          "minutes": "33",
-          "game_id": "401909093",
-          "game_date": "20261022"
-        },
-        {
-          "player_id": "1966",
-          "player": "LeBron James",
-          "team": "Philadelphia 76ers",
-          "points": 14,
-          "minutes": "34",
           "game_id": "401909089",
           "game_date": "20261020"
-        },
-        {
-          "player_id": "1966",
-          "player": "LeBron James",
-          "team": "Philadelphia 76ers",
-          "points": 8,
-          "minutes": "25",
-          "game_id": "401898407",
-          "game_date": "20261016"
         }
       ],
-      "games_found": 3,
-      "average_points": 13.0,
+      "games_found": 4,
+      "average_points": 8.0,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
     },
     {
-      "player_id": "4711294",
-      "player": "Matas Buzelis",
+      "player_id": "3945274",
+      "player": "Luka Doncic",
       "recent_games": [
         {
-          "player_id": "4711294",
-          "player": "Matas Buzelis",
-          "team": "Chicago Bulls",
-          "points": 7,
-          "minutes": "17",
-          "game_id": "401909848",
+          "player_id": "3945274",
+          "player": "Luka Doncic",
+          "team": "Los Angeles Lakers",
+          "points": 41,
+          "minutes": "37",
+          "game_id": "401909880",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "3945274",
+          "player": "Luka Doncic",
+          "team": "Los Angeles Lakers",
+          "points": 52,
+          "minutes": "38",
+          "game_id": "401909861",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "3945274",
+          "player": "Luka Doncic",
+          "team": "Los Angeles Lakers",
+          "points": 23,
+          "minutes": "37",
+          "game_id": "401909851",
           "game_date": "20261023"
         },
         {
-          "player_id": "4711294",
-          "player": "Matas Buzelis",
-          "team": "Chicago Bulls",
-          "points": 17,
-          "minutes": "25",
-          "game_id": "401909837",
+          "player_id": "3945274",
+          "player": "Luka Doncic",
+          "team": "Los Angeles Lakers",
+          "points": 28,
+          "minutes": "30",
+          "game_id": "401909092",
           "game_date": "20261021"
-        },
-        {
-          "player_id": "4711294",
-          "player": "Matas Buzelis",
-          "team": "Chicago Bulls",
-          "points": 14,
-          "minutes": "19",
-          "game_id": "401908943",
-          "game_date": "20261016"
         }
       ],
-      "games_found": 3,
-      "average_points": 12.67,
+      "games_found": 4,
+      "average_points": 36.0,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "3907498",
+      "player": "Matisse Thybulle",
+      "recent_games": [
+        {
+          "player_id": "3907498",
+          "player": "Matisse Thybulle",
+          "team": "Los Angeles Lakers",
+          "points": 5,
+          "minutes": "22",
+          "game_id": "401909880",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "3907498",
+          "player": "Matisse Thybulle",
+          "team": "Los Angeles Lakers",
+          "points": 11,
+          "minutes": "26",
+          "game_id": "401909861",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "3907498",
+          "player": "Matisse Thybulle",
+          "team": "Los Angeles Lakers",
+          "points": 13,
+          "minutes": "24",
+          "game_id": "401909851",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "3907498",
+          "player": "Matisse Thybulle",
+          "team": "Los Angeles Lakers",
+          "points": 3,
+          "minutes": "23",
+          "game_id": "401909092",
+          "game_date": "20261021"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 8.0,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
@@ -1482,340 +1533,549 @@
           "player_id": "4278104",
           "player": "Michael Porter Jr.",
           "team": "Brooklyn Nets",
+          "points": 27,
+          "minutes": "40",
+          "game_id": "401909877",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4278104",
+          "player": "Michael Porter Jr.",
+          "team": "Brooklyn Nets",
+          "points": 10,
+          "minutes": "21",
+          "game_id": "401909862",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "4278104",
+          "player": "Michael Porter Jr.",
+          "team": "Brooklyn Nets",
+          "points": 28,
+          "minutes": "33",
+          "game_id": "401909854",
+          "game_date": "20261024"
+        },
+        {
+          "player_id": "4278104",
+          "player": "Michael Porter Jr.",
+          "team": "Brooklyn Nets",
           "points": 26,
           "minutes": "34",
           "game_id": "401909836",
           "game_date": "20261021"
         }
       ],
-      "games_found": 1,
-      "average_points": 26.0,
+      "games_found": 4,
+      "average_points": 22.75,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
     },
     {
-      "player_id": "4066383",
-      "player": "Miles Bridges",
+      "player_id": "3147657",
+      "player": "Mikal Bridges",
       "recent_games": [
         {
-          "player_id": "4066383",
-          "player": "Miles Bridges",
-          "team": "Phoenix Suns",
-          "points": 8,
+          "player_id": "3147657",
+          "player": "Mikal Bridges",
+          "team": "New York Knicks",
+          "points": 12,
+          "minutes": "32",
+          "game_id": "401909878",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "3147657",
+          "player": "Mikal Bridges",
+          "team": "New York Knicks",
+          "points": 6,
+          "minutes": "35",
+          "game_id": "401909863",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "3147657",
+          "player": "Mikal Bridges",
+          "team": "New York Knicks",
+          "points": 0,
+          "minutes": "22",
+          "game_id": "401909095",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "3147657",
+          "player": "Mikal Bridges",
+          "team": "New York Knicks",
+          "points": 4,
+          "minutes": "33",
+          "game_id": "401909089",
+          "game_date": "20261020"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 5.5,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "4431823",
+      "player": "Miles McBride",
+      "recent_games": [
+        {
+          "player_id": "4431823",
+          "player": "Miles McBride",
+          "team": "New York Knicks",
+          "points": 5,
+          "minutes": "17",
+          "game_id": "401909878",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4431823",
+          "player": "Miles McBride",
+          "team": "New York Knicks",
+          "points": 1,
+          "minutes": "13",
+          "game_id": "401909863",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "4431823",
+          "player": "Miles McBride",
+          "team": "New York Knicks",
+          "points": 20,
+          "minutes": "30",
+          "game_id": "401909095",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "4431823",
+          "player": "Miles McBride",
+          "team": "New York Knicks",
+          "points": 3,
+          "minutes": "14",
+          "game_id": "401909089",
+          "game_date": "20261020"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 7.25,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "4351852",
+      "player": "Mitchell Robinson",
+      "recent_games": [
+        {
+          "player_id": "4351852",
+          "player": "Mitchell Robinson",
+          "team": "Boston Celtics",
+          "points": 7,
+          "minutes": "25",
+          "game_id": "401909877",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4351852",
+          "player": "Mitchell Robinson",
+          "team": "Boston Celtics",
+          "points": 7,
+          "minutes": "16",
+          "game_id": "401909870",
+          "game_date": "20261026"
+        },
+        {
+          "player_id": "4351852",
+          "player": "Mitchell Robinson",
+          "team": "Boston Celtics",
+          "points": 4,
+          "minutes": "22",
+          "game_id": "401909095",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "4351852",
+          "player": "Mitchell Robinson",
+          "team": "Boston Celtics",
+          "points": 4,
+          "minutes": "18",
+          "game_id": "401909088",
+          "game_date": "20261020"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 5.5,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "4712896",
+      "player": "Noah Clowney",
+      "recent_games": [
+        {
+          "player_id": "4712896",
+          "player": "Noah Clowney",
+          "team": "Brooklyn Nets",
+          "points": 3,
+          "minutes": "24",
+          "game_id": "401909877",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4712896",
+          "player": "Noah Clowney",
+          "team": "Brooklyn Nets",
+          "points": 9,
+          "minutes": "20",
+          "game_id": "401909862",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "4712896",
+          "player": "Noah Clowney",
+          "team": "Brooklyn Nets",
+          "points": 4,
+          "minutes": "20",
+          "game_id": "401909854",
+          "game_date": "20261024"
+        },
+        {
+          "player_id": "4712896",
+          "player": "Noah Clowney",
+          "team": "Brooklyn Nets",
+          "points": 9,
+          "minutes": "22",
+          "game_id": "401909836",
+          "game_date": "20261021"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 6.25,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "3934719",
+      "player": "OG Anunoby",
+      "recent_games": [
+        {
+          "player_id": "3934719",
+          "player": "OG Anunoby",
+          "team": "New York Knicks",
+          "points": 13,
+          "minutes": "36",
+          "game_id": "401909878",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "3934719",
+          "player": "OG Anunoby",
+          "team": "New York Knicks",
+          "points": 22,
+          "minutes": "35",
+          "game_id": "401909863",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "3934719",
+          "player": "OG Anunoby",
+          "team": "New York Knicks",
+          "points": 20,
+          "minutes": "34",
+          "game_id": "401909095",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "3934719",
+          "player": "OG Anunoby",
+          "team": "New York Knicks",
+          "points": 10,
+          "minutes": "32",
+          "game_id": "401909089",
+          "game_date": "20261020"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 16.25,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "4251",
+      "player": "Paul George",
+      "recent_games": [
+        {
+          "player_id": "4251",
+          "player": "Paul George",
+          "team": "Boston Celtics",
+          "points": 20,
+          "minutes": "36",
+          "game_id": "401909877",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4251",
+          "player": "Paul George",
+          "team": "Boston Celtics",
+          "points": 16,
+          "minutes": "25",
+          "game_id": "401909870",
+          "game_date": "20261026"
+        },
+        {
+          "player_id": "4251",
+          "player": "Paul George",
+          "team": "Boston Celtics",
+          "points": 15,
+          "minutes": "34",
+          "game_id": "401909095",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "4251",
+          "player": "Paul George",
+          "team": "Boston Celtics",
+          "points": 38,
+          "minutes": "31",
+          "game_id": "401909088",
+          "game_date": "20261020"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 22.25,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "4066354",
+      "player": "Payton Pritchard",
+      "recent_games": [
+        {
+          "player_id": "4066354",
+          "player": "Payton Pritchard",
+          "team": "Boston Celtics",
+          "points": 4,
+          "minutes": "24",
+          "game_id": "401909877",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4066354",
+          "player": "Payton Pritchard",
+          "team": "Boston Celtics",
+          "points": 28,
+          "minutes": "22",
+          "game_id": "401909870",
+          "game_date": "20261026"
+        },
+        {
+          "player_id": "4066354",
+          "player": "Payton Pritchard",
+          "team": "Boston Celtics",
+          "points": 4,
+          "minutes": "30",
+          "game_id": "401909095",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "4066354",
+          "player": "Payton Pritchard",
+          "team": "Boston Celtics",
+          "points": 17,
+          "minutes": "28",
+          "game_id": "401909088",
+          "game_date": "20261020"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 13.25,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "4431679",
+      "player": "Precious Achiuwa",
+      "recent_games": [
+        {
+          "player_id": "4431679",
+          "player": "Precious Achiuwa",
+          "team": "Sacramento Kings",
+          "points": 4,
+          "minutes": "14",
+          "game_id": "401909879",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4431679",
+          "player": "Precious Achiuwa",
+          "team": "Sacramento Kings",
+          "points": 12,
+          "minutes": "39",
+          "game_id": "401909867",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "4431679",
+          "player": "Precious Achiuwa",
+          "team": "Sacramento Kings",
+          "points": 14,
+          "minutes": "26",
+          "game_id": "401909852",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "4431679",
+          "player": "Precious Achiuwa",
+          "team": "Sacramento Kings",
+          "points": 15,
           "minutes": "29",
+          "game_id": "401909842",
+          "game_date": "20261021"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 11.25,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "4397014",
+      "player": "Quentin Grimes",
+      "recent_games": [
+        {
+          "player_id": "4397014",
+          "player": "Quentin Grimes",
+          "team": "Los Angeles Lakers",
+          "points": 2,
+          "minutes": "19",
+          "game_id": "401909880",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4397014",
+          "player": "Quentin Grimes",
+          "team": "Los Angeles Lakers",
+          "points": 3,
+          "minutes": "20",
+          "game_id": "401909861",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "4397014",
+          "player": "Quentin Grimes",
+          "team": "Los Angeles Lakers",
+          "points": 13,
+          "minutes": "31",
+          "game_id": "401909851",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "4397014",
+          "player": "Quentin Grimes",
+          "team": "Los Angeles Lakers",
+          "points": 10,
+          "minutes": "27",
+          "game_id": "401909092",
+          "game_date": "20261021"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 7.0,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "4278580",
+      "player": "Sandro Mamukelashvili",
+      "recent_games": [
+        {
+          "player_id": "4278580",
+          "player": "Sandro Mamukelashvili",
+          "team": "Los Angeles Lakers",
+          "points": 17,
+          "minutes": "24",
+          "game_id": "401909880",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4278580",
+          "player": "Sandro Mamukelashvili",
+          "team": "Los Angeles Lakers",
+          "points": 9,
+          "minutes": "21",
+          "game_id": "401909861",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "4278580",
+          "player": "Sandro Mamukelashvili",
+          "team": "Los Angeles Lakers",
+          "points": 7,
+          "minutes": "24",
+          "game_id": "401909851",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "4278580",
+          "player": "Sandro Mamukelashvili",
+          "team": "Los Angeles Lakers",
+          "points": 5,
+          "minutes": "22",
+          "game_id": "401909092",
+          "game_date": "20261021"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 9.5,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "4683678",
+      "player": "Scoot Henderson",
+      "recent_games": [
+        {
+          "player_id": "4683678",
+          "player": "Scoot Henderson",
+          "team": "Portland Trail Blazers",
+          "points": 2,
+          "minutes": "17",
+          "game_id": "401909880",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4683678",
+          "player": "Scoot Henderson",
+          "team": "Portland Trail Blazers",
+          "points": 4,
+          "minutes": "21",
+          "game_id": "401909852",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "4683678",
+          "player": "Scoot Henderson",
+          "team": "Portland Trail Blazers",
+          "points": 15,
+          "minutes": "19",
           "game_id": "401909841",
           "game_date": "20261021"
-        },
-        {
-          "player_id": "4066383",
-          "player": "Miles Bridges",
-          "team": "Phoenix Suns",
-          "points": 8,
-          "minutes": "21",
-          "game_id": "401908948",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 2,
-      "average_points": 8.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "3133628",
-      "player": "Myles Turner",
-      "recent_games": [
-        {
-          "player_id": "3133628",
-          "player": "Myles Turner",
-          "team": "Milwaukee Bucks",
-          "points": 12,
-          "minutes": "30",
-          "game_id": "401909848",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "3133628",
-          "player": "Myles Turner",
-          "team": "Milwaukee Bucks",
-          "points": 11,
-          "minutes": "32",
-          "game_id": "401909835",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "3133628",
-          "player": "Myles Turner",
-          "team": "Milwaukee Bucks",
-          "points": 7,
-          "minutes": "23",
-          "game_id": "401914126",
-          "game_date": "20261016"
         }
       ],
       "games_found": 3,
-      "average_points": 10.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4278594",
-      "player": "Naji Marshall",
-      "recent_games": [
-        {
-          "player_id": "4278594",
-          "player": "Naji Marshall",
-          "team": "Dallas Mavericks",
-          "points": 15,
-          "minutes": "33",
-          "game_id": "401909844",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "4278594",
-          "player": "Naji Marshall",
-          "team": "Dallas Mavericks",
-          "points": 16,
-          "minutes": "29",
-          "game_id": "401909840",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "4278594",
-          "player": "Naji Marshall",
-          "team": "Dallas Mavericks",
-          "points": 6,
-          "minutes": "20",
-          "game_id": "401898408",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 12.33,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4278039",
-      "player": "Nickeil Alexander-Walker",
-      "recent_games": [
-        {
-          "player_id": "4278039",
-          "player": "Nickeil Alexander-Walker",
-          "team": "Atlanta Hawks",
-          "points": 14,
-          "minutes": "27",
-          "game_id": "401909843",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "4278039",
-          "player": "Nickeil Alexander-Walker",
-          "team": "Atlanta Hawks",
-          "points": 31,
-          "minutes": "30",
-          "game_id": "401909834",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "4278039",
-          "player": "Nickeil Alexander-Walker",
-          "team": "Atlanta Hawks",
-          "points": 25,
-          "minutes": "27",
-          "game_id": "401898408",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 23.33,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "3112335",
-      "player": "Nikola Jokic",
-      "recent_games": [
-        {
-          "player_id": "3112335",
-          "player": "Nikola Jokic",
-          "team": "Denver Nuggets",
-          "points": 13,
-          "minutes": "35",
-          "game_id": "401909094",
-          "game_date": "20261022"
-        },
-        {
-          "player_id": "3112335",
-          "player": "Nikola Jokic",
-          "team": "Denver Nuggets",
-          "points": 17,
-          "minutes": "31",
-          "game_id": "401898719",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 2,
-      "average_points": 15.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "2595516",
-      "player": "Norman Powell",
-      "recent_games": [
-        {
-          "player_id": "2595516",
-          "player": "Norman Powell",
-          "team": "Chicago Bulls",
-          "points": 25,
-          "minutes": "33",
-          "game_id": "401909848",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "2595516",
-          "player": "Norman Powell",
-          "team": "Chicago Bulls",
-          "points": 15,
-          "minutes": "22",
-          "game_id": "401909837",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "2595516",
-          "player": "Norman Powell",
-          "team": "Chicago Bulls",
-          "points": 9,
-          "minutes": "15",
-          "game_id": "401908943",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 16.33,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4431680",
-      "player": "Onyeka Okongwu",
-      "recent_games": [
-        {
-          "player_id": "4431680",
-          "player": "Onyeka Okongwu",
-          "team": "Atlanta Hawks",
-          "points": 10,
-          "minutes": "22",
-          "game_id": "401909843",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "4431680",
-          "player": "Onyeka Okongwu",
-          "team": "Atlanta Hawks",
-          "points": 8,
-          "minutes": "29",
-          "game_id": "401909834",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "4431680",
-          "player": "Onyeka Okongwu",
-          "team": "Atlanta Hawks",
-          "points": 6,
-          "minutes": "20",
-          "game_id": "401898408",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 8.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4576087",
-      "player": "Peyton Watson",
-      "recent_games": [
-        {
-          "player_id": "4576087",
-          "player": "Peyton Watson",
-          "team": "Cleveland Cavaliers",
-          "points": 8,
-          "minutes": "30",
-          "game_id": "401909093",
-          "game_date": "20261022"
-        }
-      ],
-      "games_found": 1,
-      "average_points": 8.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4591725",
-      "player": "Ryan Rollins",
-      "recent_games": [
-        {
-          "player_id": "4591725",
-          "player": "Ryan Rollins",
-          "team": "Milwaukee Bucks",
-          "points": 11,
-          "minutes": "34",
-          "game_id": "401909848",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "4591725",
-          "player": "Ryan Rollins",
-          "team": "Milwaukee Bucks",
-          "points": 9,
-          "minutes": "24",
-          "game_id": "401909835",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "4591725",
-          "player": "Ryan Rollins",
-          "team": "Milwaukee Bucks",
-          "points": 8,
-          "minutes": "16",
-          "game_id": "401914126",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 9.33,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4066757",
-      "player": "Sam Merrill",
-      "recent_games": [
-        {
-          "player_id": "4066757",
-          "player": "Sam Merrill",
-          "team": "Cleveland Cavaliers",
-          "points": 5,
-          "minutes": "24",
-          "game_id": "401909093",
-          "game_date": "20261022"
-        }
-      ],
-      "games_found": 1,
-      "average_points": 5.0,
+      "average_points": 7.0,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
@@ -1829,6 +2089,24 @@
           "player": "Stephon Castle",
           "team": "San Antonio Spurs",
           "points": 15,
+          "minutes": "27",
+          "game_id": "401909879",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4845367",
+          "player": "Stephon Castle",
+          "team": "San Antonio Spurs",
+          "points": 19,
+          "minutes": "28",
+          "game_id": "401909858",
+          "game_date": "20261024"
+        },
+        {
+          "player_id": "4845367",
+          "player": "Stephon Castle",
+          "team": "San Antonio Spurs",
+          "points": 15,
           "minutes": "33",
           "game_id": "401909096",
           "game_date": "20261023"
@@ -1852,71 +2130,42 @@
           "game_date": "20261016"
         }
       ],
-      "games_found": 3,
-      "average_points": 17.33,
+      "games_found": 5,
+      "average_points": 17.2,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
     },
     {
-      "player_id": "4433192",
-      "player": "Tari Eason",
+      "player_id": "4431736",
+      "player": "Toumani Camara",
       "recent_games": [
         {
-          "player_id": "4433192",
-          "player": "Tari Eason",
-          "team": "Houston Rockets",
+          "player_id": "4431736",
+          "player": "Toumani Camara",
+          "team": "Portland Trail Blazers",
           "points": 12,
+          "minutes": "24",
+          "game_id": "401909880",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4431736",
+          "player": "Toumani Camara",
+          "team": "Portland Trail Blazers",
+          "points": 19,
           "minutes": "27",
-          "game_id": "401909096",
+          "game_id": "401909852",
           "game_date": "20261023"
         },
         {
-          "player_id": "4433192",
-          "player": "Tari Eason",
-          "team": "Houston Rockets",
-          "points": 2,
-          "minutes": "3",
-          "game_id": "401909840",
+          "player_id": "4431736",
+          "player": "Toumani Camara",
+          "team": "Portland Trail Blazers",
+          "points": 18,
+          "minutes": "23",
+          "game_id": "401909841",
           "game_date": "20261021"
-        }
-      ],
-      "games_found": 2,
-      "average_points": 7.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4277905",
-      "player": "Trae Young",
-      "recent_games": [
-        {
-          "player_id": "4277905",
-          "player": "Trae Young",
-          "team": "Washington Wizards",
-          "points": 22,
-          "minutes": "37",
-          "game_id": "401909846",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "4277905",
-          "player": "Trae Young",
-          "team": "Washington Wizards",
-          "points": 20,
-          "minutes": "38",
-          "game_id": "401909835",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "4277905",
-          "player": "Trae Young",
-          "team": "Washington Wizards",
-          "points": 7,
-          "minutes": "28",
-          "game_id": "401906509",
-          "game_date": "20261016"
         }
       ],
       "games_found": 3,
@@ -1926,152 +2175,27 @@
       "not_a_projection": true
     },
     {
-      "player_id": "4397688",
-      "player": "Trey Murphy III",
-      "recent_games": [
-        {
-          "player_id": "4397688",
-          "player": "Trey Murphy III",
-          "team": "New Orleans Pelicans",
-          "points": 9,
-          "minutes": "31",
-          "game_id": "401909849",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "4397688",
-          "player": "Trey Murphy III",
-          "team": "New Orleans Pelicans",
-          "points": 11,
-          "minutes": "32",
-          "game_id": "401909839",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "4397688",
-          "player": "Trey Murphy III",
-          "team": "New Orleans Pelicans",
-          "points": 11,
-          "minutes": "21",
-          "game_id": "401906509",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 10.33,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4395725",
-      "player": "Tyler Herro",
-      "recent_games": [
-        {
-          "player_id": "4395725",
-          "player": "Tyler Herro",
-          "team": "Milwaukee Bucks",
-          "points": 34,
-          "minutes": "32",
-          "game_id": "401909848",
-          "game_date": "20261023"
-        },
-        {
-          "player_id": "4395725",
-          "player": "Tyler Herro",
-          "team": "Milwaukee Bucks",
-          "points": 24,
-          "minutes": "32",
-          "game_id": "401909835",
-          "game_date": "20261021"
-        },
-        {
-          "player_id": "4395725",
-          "player": "Tyler Herro",
-          "team": "Milwaukee Bucks",
-          "points": 25,
-          "minutes": "24",
-          "game_id": "401914126",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 27.67,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "4431678",
-      "player": "Tyrese Maxey",
-      "recent_games": [
-        {
-          "player_id": "4431678",
-          "player": "Tyrese Maxey",
-          "team": "Philadelphia 76ers",
-          "points": 32,
-          "minutes": "42",
-          "game_id": "401909093",
-          "game_date": "20261022"
-        },
-        {
-          "player_id": "4431678",
-          "player": "Tyrese Maxey",
-          "team": "Philadelphia 76ers",
-          "points": 28,
-          "minutes": "40",
-          "game_id": "401909089",
-          "game_date": "20261020"
-        },
-        {
-          "player_id": "4431678",
-          "player": "Tyrese Maxey",
-          "team": "Philadelphia 76ers",
-          "points": 22,
-          "minutes": "30",
-          "game_id": "401898407",
-          "game_date": "20261016"
-        }
-      ],
-      "games_found": 3,
-      "average_points": 27.33,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
-      "player_id": "5124612",
-      "player": "VJ Edgecombe",
-      "recent_games": [
-        {
-          "player_id": "5124612",
-          "player": "VJ Edgecombe",
-          "team": "Philadelphia 76ers",
-          "points": 11,
-          "minutes": "33",
-          "game_id": "401909093",
-          "game_date": "20261022"
-        },
-        {
-          "player_id": "5124612",
-          "player": "VJ Edgecombe",
-          "team": "Philadelphia 76ers",
-          "points": 9,
-          "minutes": "35",
-          "game_id": "401909089",
-          "game_date": "20261020"
-        }
-      ],
-      "games_found": 2,
-      "average_points": 10.0,
-      "status": "historical_sample",
-      "sample_sufficient_for_model": false,
-      "not_a_projection": true
-    },
-    {
       "player_id": "5104157",
       "player": "Victor Wembanyama",
       "recent_games": [
+        {
+          "player_id": "5104157",
+          "player": "Victor Wembanyama",
+          "team": "San Antonio Spurs",
+          "points": 29,
+          "minutes": "27",
+          "game_id": "401909879",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "5104157",
+          "player": "Victor Wembanyama",
+          "team": "San Antonio Spurs",
+          "points": 23,
+          "minutes": "29",
+          "game_id": "401909858",
+          "game_date": "20261024"
+        },
         {
           "player_id": "5104157",
           "player": "Victor Wembanyama",
@@ -2100,88 +2224,153 @@
           "game_date": "20261016"
         }
       ],
-      "games_found": 3,
-      "average_points": 17.0,
+      "games_found": 5,
+      "average_points": 20.6,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
     },
     {
-      "player_id": "5175737",
-      "player": "Yaxel Lendeborg",
+      "player_id": "4433136",
+      "player": "Walker Kessler",
       "recent_games": [
         {
-          "player_id": "5175737",
-          "player": "Yaxel Lendeborg",
-          "team": "Golden State Warriors",
-          "points": 18,
-          "minutes": "37",
-          "game_id": "401909850",
+          "player_id": "4433136",
+          "player": "Walker Kessler",
+          "team": "Los Angeles Lakers",
+          "points": 13,
+          "minutes": "33",
+          "game_id": "401909880",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4433136",
+          "player": "Walker Kessler",
+          "team": "Los Angeles Lakers",
+          "points": 2,
+          "minutes": "28",
+          "game_id": "401909861",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "4433136",
+          "player": "Walker Kessler",
+          "team": "Los Angeles Lakers",
+          "points": 22,
+          "minutes": "35",
+          "game_id": "401909851",
           "game_date": "20261023"
         },
         {
-          "player_id": "5175737",
-          "player": "Yaxel Lendeborg",
-          "team": "Golden State Warriors",
-          "points": 12,
-          "minutes": "29",
+          "player_id": "4433136",
+          "player": "Walker Kessler",
+          "team": "Los Angeles Lakers",
+          "points": 26,
+          "minutes": "30",
           "game_id": "401909092",
           "game_date": "20261021"
-        },
-        {
-          "player_id": "5175737",
-          "player": "Yaxel Lendeborg",
-          "team": "Golden State Warriors",
-          "points": 17,
-          "minutes": "26",
-          "game_id": "401898409",
-          "game_date": "20261016"
         }
       ],
-      "games_found": 3,
-      "average_points": 15.67,
+      "games_found": 4,
+      "average_points": 15.75,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
     },
     {
-      "player_id": "4395628",
-      "player": "Zion Williamson",
+      "player_id": "3064440",
+      "player": "Zach LaVine",
       "recent_games": [
         {
-          "player_id": "4395628",
-          "player": "Zion Williamson",
-          "team": "New Orleans Pelicans",
-          "points": 23,
-          "minutes": "33",
-          "game_id": "401909849",
+          "player_id": "3064440",
+          "player": "Zach LaVine",
+          "team": "Sacramento Kings",
+          "points": 22,
+          "minutes": "31",
+          "game_id": "401909879",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "3064440",
+          "player": "Zach LaVine",
+          "team": "Sacramento Kings",
+          "points": 37,
+          "minutes": "40",
+          "game_id": "401909867",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "3064440",
+          "player": "Zach LaVine",
+          "team": "Sacramento Kings",
+          "points": 22,
+          "minutes": "39",
+          "game_id": "401909852",
           "game_date": "20261023"
         },
         {
-          "player_id": "4395628",
-          "player": "Zion Williamson",
-          "team": "New Orleans Pelicans",
-          "points": 22,
-          "minutes": "32",
-          "game_id": "401909839",
+          "player_id": "3064440",
+          "player": "Zach LaVine",
+          "team": "Sacramento Kings",
+          "points": 28,
+          "minutes": "34",
+          "game_id": "401909842",
           "game_date": "20261021"
-        },
-        {
-          "player_id": "4395628",
-          "player": "Zion Williamson",
-          "team": "New Orleans Pelicans",
-          "points": 11,
-          "minutes": "22",
-          "game_id": "401906509",
-          "game_date": "20261016"
         }
       ],
-      "games_found": 3,
-      "average_points": 18.67,
+      "games_found": 4,
+      "average_points": 27.25,
+      "status": "historical_sample",
+      "sample_sufficient_for_model": false,
+      "not_a_projection": true
+    },
+    {
+      "player_id": "4433137",
+      "player": "Ziaire Williams",
+      "recent_games": [
+        {
+          "player_id": "4433137",
+          "player": "Ziaire Williams",
+          "team": "Los Angeles Lakers",
+          "points": 11,
+          "minutes": "29",
+          "game_id": "401909880",
+          "game_date": "20261027"
+        },
+        {
+          "player_id": "4433137",
+          "player": "Ziaire Williams",
+          "team": "Los Angeles Lakers",
+          "points": 11,
+          "minutes": "30",
+          "game_id": "401909861",
+          "game_date": "20261025"
+        },
+        {
+          "player_id": "4433137",
+          "player": "Ziaire Williams",
+          "team": "Los Angeles Lakers",
+          "points": 14,
+          "minutes": "31",
+          "game_id": "401909851",
+          "game_date": "20261023"
+        },
+        {
+          "player_id": "4433137",
+          "player": "Ziaire Williams",
+          "team": "Los Angeles Lakers",
+          "points": 9,
+          "minutes": "24",
+          "game_id": "401909092",
+          "game_date": "20261021"
+        }
+      ],
+      "games_found": 4,
+      "average_points": 11.25,
       "status": "historical_sample",
       "sample_sufficient_for_model": false,
       "not_a_projection": true
     }
   ],
-  "players_with_stats": 68
+  "players_with_stats": 50
 }
