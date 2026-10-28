@@ -16,9 +16,9 @@
       "id": "A",
       "label": "GLAVNI TIKET",
       "stake": 12.66,
-      "status": "objavljen",
+      "status": "izgubljen",
       "odds": 2.26,
-      "payout": 0,
+      "payout": 0.0,
       "matches": [
         {
           "home": "AC Milan",
@@ -54,7 +54,9 @@
                 "https://last5games.com/matches/ac-milan-vs-bologna-19713534/"
               ]
             ]
-          }
+          },
+          "result_status": "promašen",
+          "final_score": "2:4"
         },
         {
           "home": "Venezia",
@@ -90,7 +92,9 @@
                 "https://onextwo.pro/football/matches/venezia-vs-inter-28-10-2026"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "0:2"
         }
       ],
       "analysis": {
@@ -101,7 +105,8 @@
           "Tržišni de-vig 55,18% i 71,02% samo benchmark."
         ],
         "limits": "Oba kluba imaju izostanke i međusobni derbi za tri dana; nema potvrđenih XI ni nezavisnog Poisson/EV."
-      }
+      },
+      "settled_at_utc": "2026-10-28T20:35:25.764003+00:00"
     },
     {
       "id": "B",
@@ -213,7 +218,7 @@
       }
     }
   ],
-  "total_payout": 0,
+  "total_payout": 0.0,
   "net_change": null,
   "analysis_status": "Objavljeno 28.10.2026 iz svježeg collector-feed.json (15 fudbalskih kandidata, 12 NBA utakmica) i današnjeg independent-analysis.json. ESPN je neslužben; pokrivenost djelimična. Referentne strane kvote nisu Mozzartbet BiH. NBA player-points 27.10, ESPN NBA statistika 24.10, API-Football 25.10 — zastarjelo, C preskočen. Uzorci 5 i 8/10 mečeva navedeni gdje postoje. Nema validiranog prematch xG para za nezavisni Poisson ni izmišljenog EV. Konačni sastavi nisu potvrđeni.",
   "selection_method": "A: dva 1X2 fudbalska meča; B: dva druga over 2.5; C: preskočen. Maksimalni ulog 10% banke (18,08 od 180,87), A/B 70/30.",
