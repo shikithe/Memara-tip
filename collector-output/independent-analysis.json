@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-27",
-  "generated_at_utc": "2026-10-27T18:30:44.569110+00:00",
-  "source_generated_at_utc": "2026-10-27T13:06:34.062370+00:00",
+  "date": "2026-10-28",
+  "generated_at_utc": "2026-10-28T12:57:04.463344+00:00",
+  "source_generated_at_utc": "2026-10-28T12:56:51.383960+00:00",
   "state": "analysis_completed_data_gaps_remain",
   "publication_allowed": false,
   "odds_verified": false,
   "football": [
     {
-      "id": "espn:football:ita.1:401874780",
-      "home": "AS Roma",
-      "away": "Cagliari",
-      "start_utc": "2026-10-27T19:45:00Z",
+      "id": "espn:football:ita.1:401874993",
+      "home": "AC Milan",
+      "away": "Bologna",
+      "start_utc": "2026-10-28T17:30:00Z",
       "league": "ita.1",
       "eligible_for_further_research": true,
       "data_gaps": [
@@ -23,10 +23,10 @@
       "analysis_status": "needs_independent_evidence"
     },
     {
-      "id": "espn:football:ita.1:401874786",
-      "home": "Torino",
-      "away": "Como",
-      "start_utc": "2026-10-27T19:45:00Z",
+      "id": "espn:football:ita.1:401874965",
+      "home": "Parma",
+      "away": "Udinese",
+      "start_utc": "2026-10-28T17:30:00Z",
       "league": "ita.1",
       "eligible_for_further_research": true,
       "data_gaps": [
@@ -39,11 +39,11 @@
       "analysis_status": "needs_independent_evidence"
     },
     {
-      "id": "espn:football:arg.1:401841642",
-      "home": "Argentinos Juniors",
-      "away": "Independiente Rivadavia",
-      "start_utc": "2026-10-27T22:00:00Z",
-      "league": "arg.1",
+      "id": "espn:football:ita.1:401874773",
+      "home": "Venezia",
+      "away": "Internazionale",
+      "start_utc": "2026-10-28T17:30:00Z",
+      "league": "ita.1",
       "eligible_for_further_research": true,
       "data_gaps": [
         "missing_verified_recent_form",
@@ -55,14 +55,190 @@
       "analysis_status": "needs_independent_evidence"
     },
     {
-      "id": "espn:football:ita.1:401874980",
-      "home": "Sassuolo",
-      "away": "Lazio",
-      "start_utc": "2026-10-27T17:30:00Z",
+      "id": "espn:football:ita.1:401874988",
+      "home": "Genoa",
+      "away": "Juventus",
+      "start_utc": "2026-10-28T19:45:00Z",
       "league": "ita.1",
-      "eligible_for_further_research": false,
+      "eligible_for_further_research": true,
       "data_gaps": [
-        "started_or_too_close_to_kickoff",
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:football:ita.1:401874799",
+      "home": "Monza",
+      "away": "Napoli",
+      "start_utc": "2026-10-28T19:45:00Z",
+      "league": "ita.1",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:football:sco.1:401878356",
+      "home": "Aberdeen",
+      "away": "Falkirk",
+      "start_utc": "2026-10-28T19:45:00Z",
+      "league": "sco.1",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:football:sco.1:401878355",
+      "home": "Celtic",
+      "away": "Dundee United",
+      "start_utc": "2026-10-28T19:45:00Z",
+      "league": "sco.1",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:football:sco.1:401878354",
+      "home": "Dundee",
+      "away": "Kilmarnock",
+      "start_utc": "2026-10-28T19:45:00Z",
+      "league": "sco.1",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:football:sco.1:401878352",
+      "home": "St Johnstone",
+      "away": "Motherwell",
+      "start_utc": "2026-10-28T19:45:00Z",
+      "league": "sco.1",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:football:sco.1:401878351",
+      "home": "St Mirren",
+      "away": "Hibernian",
+      "start_utc": "2026-10-28T19:45:00Z",
+      "league": "sco.1",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:football:sco.1:401878353",
+      "home": "Heart of Midlothian",
+      "away": "Rangers",
+      "start_utc": "2026-10-28T20:00:00Z",
+      "league": "sco.1",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:football:bra.1:401841289",
+      "home": "Fluminense",
+      "away": "Internacional",
+      "start_utc": "2026-10-28T22:30:00Z",
+      "league": "bra.1",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:football:bra.1:401841291",
+      "home": "Red Bull Bragantino",
+      "away": "Chapecoense",
+      "start_utc": "2026-10-28T22:30:00Z",
+      "league": "bra.1",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:football:bra.1:401841293",
+      "home": "Santos",
+      "away": "Palmeiras",
+      "start_utc": "2026-10-28T22:30:00Z",
+      "league": "bra.1",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "sportsdb:football:4671:2491205",
+      "home": "Radnički 1923",
+      "away": "Železničar Pančevo",
+      "start_utc": "2026-10-28T14:00:00Z",
+      "league": "Serbian Super Liga",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "incomplete_provider_coverage",
         "missing_verified_recent_form",
         "missing_verified_lineups_or_absences",
         "missing_verified_market_odds"
@@ -74,10 +250,10 @@
   ],
   "nba": [
     {
-      "id": "espn:basketball:nba:401909877",
-      "home": "Boston Celtics",
-      "away": "Brooklyn Nets",
-      "start_utc": "2026-10-27T23:30:00Z",
+      "id": "espn:basketball:nba:401909881",
+      "home": "Atlanta Hawks",
+      "away": "Miami Heat",
+      "start_utc": "2026-10-28T23:00:00Z",
       "league": "nba",
       "eligible_for_further_research": true,
       "data_gaps": [
@@ -90,10 +266,10 @@
       "analysis_status": "needs_independent_evidence"
     },
     {
-      "id": "espn:basketball:nba:401909878",
-      "home": "New York Knicks",
-      "away": "Detroit Pistons",
-      "start_utc": "2026-10-28T00:00:00Z",
+      "id": "espn:basketball:nba:401909882",
+      "home": "Cleveland Cavaliers",
+      "away": "Washington Wizards",
+      "start_utc": "2026-10-28T23:00:00Z",
       "league": "nba",
       "eligible_for_further_research": true,
       "data_gaps": [
@@ -106,10 +282,10 @@
       "analysis_status": "needs_independent_evidence"
     },
     {
-      "id": "espn:basketball:nba:401909879",
-      "home": "San Antonio Spurs",
-      "away": "Sacramento Kings",
-      "start_utc": "2026-10-28T00:00:00Z",
+      "id": "espn:basketball:nba:401909883",
+      "home": "Detroit Pistons",
+      "away": "Charlotte Hornets",
+      "start_utc": "2026-10-28T23:00:00Z",
       "league": "nba",
       "eligible_for_further_research": true,
       "data_gaps": [
@@ -122,10 +298,138 @@
       "analysis_status": "needs_independent_evidence"
     },
     {
-      "id": "espn:basketball:nba:401909880",
-      "home": "Los Angeles Lakers",
-      "away": "Portland Trail Blazers",
-      "start_utc": "2026-10-28T03:00:00Z",
+      "id": "espn:basketball:nba:401909884",
+      "home": "Indiana Pacers",
+      "away": "Philadelphia 76ers",
+      "start_utc": "2026-10-28T23:00:00Z",
+      "league": "nba",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:basketball:nba:401909885",
+      "home": "Toronto Raptors",
+      "away": "Orlando Magic",
+      "start_utc": "2026-10-28T23:30:00Z",
+      "league": "nba",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:basketball:nba:401909886",
+      "home": "Chicago Bulls",
+      "away": "New York Knicks",
+      "start_utc": "2026-10-29T00:00:00Z",
+      "league": "nba",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:basketball:nba:401909887",
+      "home": "Milwaukee Bucks",
+      "away": "Houston Rockets",
+      "start_utc": "2026-10-29T00:00:00Z",
+      "league": "nba",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:basketball:nba:401909888",
+      "home": "Minnesota Timberwolves",
+      "away": "Golden State Warriors",
+      "start_utc": "2026-10-29T00:00:00Z",
+      "league": "nba",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:basketball:nba:401909889",
+      "home": "New Orleans Pelicans",
+      "away": "Denver Nuggets",
+      "start_utc": "2026-10-29T00:00:00Z",
+      "league": "nba",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:basketball:nba:401909890",
+      "home": "Utah Jazz",
+      "away": "San Antonio Spurs",
+      "start_utc": "2026-10-29T01:00:00Z",
+      "league": "nba",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:basketball:nba:401909891",
+      "home": "Dallas Mavericks",
+      "away": "Oklahoma City Thunder",
+      "start_utc": "2026-10-29T01:30:00Z",
+      "league": "nba",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:basketball:nba:401909892",
+      "home": "LA Clippers",
+      "away": "Los Angeles Lakers",
+      "start_utc": "2026-10-29T02:30:00Z",
       "league": "nba",
       "eligible_for_further_research": true,
       "data_gaps": [
@@ -140,12 +444,12 @@
   ],
   "summary": {
     "football": {
-      "total": 4,
-      "researchable": 3
+      "total": 15,
+      "researchable": 15
     },
     "nba": {
-      "total": 4,
-      "researchable": 4
+      "total": 12,
+      "researchable": 12
     }
   }
 }
