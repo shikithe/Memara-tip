@@ -1,6 +1,6 @@
 {
   "date": "2026-10-27",
-  "updated_at_utc": "2026-10-28T02:23:14.612654+00:00",
+  "updated_at_utc": "2026-10-28T05:00:58.964Z",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -22,7 +22,13 @@
       "index": 1,
       "home": "Argentinos Juniors",
       "away": "Independiente Rivadavia",
-      "state": "unverified"
+      "state": "final",
+      "score": "1:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401841642",
+      "league": "arg.1",
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "B",
