@@ -38,7 +38,7 @@ jobs:
       - name: Fetch fixture schedule only (no team statistics)
         if: steps.gate.outputs.run == 'true'
         run: |
-          python sync_sports_stats.py --date "$(TZ=Europe/Sarajevo date +%F)" --fixtures-only --nba-limit 0
+          python sync_sports_stats.py --date "$(TZ=Europe/Sarajevo date +%F)" --football-limit 20 --nba-limit 0
       - name: Save fixtures without touching tickets
         if: steps.gate.outputs.run == 'true' && success() && github.ref == 'refs/heads/main'
         run: |
