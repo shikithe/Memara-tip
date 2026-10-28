@@ -36,7 +36,7 @@ jobs:
           fi
       - name: Fetch recent free NBA box scores
         if: steps.gate.outputs.run == 'true'
-        run: python sync_nba_free.py --days 14 --max-summaries 40
+        run: python sync_nba_free.py --days 14 --max-summaries 60
       - name: Validate and save research-only file
         if: steps.gate.outputs.run == 'true'
         run: |
