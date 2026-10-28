@@ -1,61 +1,8 @@
 {
-  "date": "2026-10-27",
-  "updated_at_utc": "2026-10-28T05:00:58.964Z",
+  "date": "2026-10-28",
+  "updated_at_utc": "2026-10-28T08:51:33.360951+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
-  "matches": [
-    {
-      "ticket": "A",
-      "index": 0,
-      "home": "AS Roma",
-      "away": "Cagliari",
-      "state": "final",
-      "score": "4:2",
-      "source": "espn-public-unofficial",
-      "event_id": "401874780",
-      "league": "ita.1",
-      "minute": null,
-      "result_status": "pogođen"
-    },
-    {
-      "ticket": "A",
-      "index": 1,
-      "home": "Argentinos Juniors",
-      "away": "Independiente Rivadavia",
-      "state": "final",
-      "score": "1:0",
-      "source": "espn-public-unofficial",
-      "event_id": "401841642",
-      "league": "arg.1",
-      "minute": null,
-      "result_status": "pogođen"
-    },
-    {
-      "ticket": "B",
-      "index": 0,
-      "home": "Sassuolo",
-      "away": "Lazio",
-      "state": "final",
-      "score": "2:6",
-      "source": "espn-public-unofficial",
-      "event_id": "401874980",
-      "league": "ita.1",
-      "minute": null,
-      "result_status": "pogođen"
-    },
-    {
-      "ticket": "B",
-      "index": 1,
-      "home": "Torino",
-      "away": "Como",
-      "state": "final",
-      "score": "1:3",
-      "source": "espn-public-unofficial",
-      "event_id": "401874786",
-      "league": "ita.1",
-      "minute": null,
-      "result_status": "pogođen"
-    }
-  ],
+  "matches": [],
   "bank_unchanged": true
 }
