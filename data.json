@@ -4,10 +4,10 @@
   "publication_type": "main_validated_daily_publication",
   "bank_before": 153,
   "daily_stake": 15.3,
-  "bank_after": 151.42,
+  "bank_after": 180.87,
   "bank_after_stakes": 137.7,
-  "provisional": true,
-  "settled": false,
+  "provisional": false,
+  "settled": true,
   "odds_verified": true,
   "odds_verification_note": "Referentne javno prikazane prematch kvote za 27.10.2026: Stake (Roma, Argentinos Juniors) i PokerStars France (Sassuolo–Lazio, Torino–Como). NISU Mozzartbet BiH kvote; izvršiva uplata i identična kvota nisu potvrđene. Tržišni de-vig je samo benchmark, ne nezavisna vjerovatnoća niti EV.",
   "tickets": [
@@ -15,9 +15,9 @@
       "id": "A",
       "label": "GLAVNI TIKET",
       "stake": 10.71,
-      "status": "objavljen",
+      "status": "dobitan",
       "odds": 2.75,
-      "payout": 0,
+      "payout": 29.45,
       "matches": [
         {
           "home": "AS Roma",
@@ -93,7 +93,9 @@
                 "https://www.oddalerts.com/livescores/argentinos-juniors-vs-independiente-rivadavia/14764-15665"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "1:0"
         }
       ],
       "analysis": {
@@ -104,7 +106,8 @@
           "Nema potvrđenih službenih sastava niti validiranog prematch xG para za samostalan Poisson."
         ],
         "limits": "Argentinos je blizu izjednačenog tržišta i nema pobjedu u zadnjih pet H2H; Roma ima više izostanaka. Ovo nisu sigurni tipovi."
-      }
+      },
+      "settled_at_utc": "2026-10-28T05:01:11.484Z"
     },
     {
       "id": "B",
@@ -220,8 +223,8 @@
       }
     }
   ],
-  "total_payout": 13.72,
-  "net_change": null,
+  "total_payout": 43.17,
+  "net_change": 27.87,
   "analysis_status": "Objavljeno 27.10.2026 na osnovu današnjeg ESPN collector-feeda i nezavisnih javnih prematch izvora. ESPN je neslužben i pokrivenost djelimična (4 fudbalske utakmice). Referentne strane kvote nisu Mozzartbet BiH niti garantovane izvršive cijene. Za NBA nema svježih poena/kvota i dovoljnog uzorka. Sastavi nisu potvrđeni. Nema izmišljenog EV ili Poisson procjene.",
   "selection_method": "A: dva fudbalska 1X2; B: dva druga fudbalska over 2.5; C: preskočen; ulog ukupno 10% banke, raspodjela A/B 70/30.",
   "source_fixture_feed": "collector-feed.json, 2026-10-27T13:06:34Z",
