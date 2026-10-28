@@ -1,8 +1,57 @@
 {
   "date": "2026-10-28",
-  "updated_at_utc": "2026-10-28T08:51:33.360951+00:00",
+  "updated_at_utc": "2026-10-28T15:40:37.383250+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
-  "matches": [],
+  "matches": [
+    {
+      "ticket": "A",
+      "index": 0,
+      "home": "AC Milan",
+      "away": "Bologna",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401874993",
+      "league": "ita.1",
+      "minute": null
+    },
+    {
+      "ticket": "A",
+      "index": 1,
+      "home": "Venezia",
+      "away": "Internazionale",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401874773",
+      "league": "ita.1",
+      "minute": null
+    },
+    {
+      "ticket": "B",
+      "index": 0,
+      "home": "Monza",
+      "away": "Napoli",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401874799",
+      "league": "ita.1",
+      "minute": null
+    },
+    {
+      "ticket": "B",
+      "index": 1,
+      "home": "Dundee",
+      "away": "Kilmarnock",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401878354",
+      "league": "sco.1",
+      "minute": null
+    }
+  ],
   "bank_unchanged": true
 }
