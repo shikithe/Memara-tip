@@ -1,16 +1,225 @@
 {
   "date": "2026-10-28",
-  "published": "Čeka se današnja ponuda",
-  "publication_type": "awaiting_daily_publication",
+  "published": "2026-10-28 13:58 (Europe/Sarajevo)",
+  "published_at_utc": "2026-10-28T12:58:37.428Z",
+  "publication_type": "main_validated_daily_publication",
   "bank_before": 180.87,
-  "daily_stake": 0,
-  "bank_after": 180.87,
-  "bank_after_stakes": 180.87,
-  "provisional": false,
-  "settled": true,
-  "odds_verified": false,
-  "tickets": [],
+  "daily_stake": 18.08,
+  "bank_after": 162.79,
+  "bank_after_stakes": 162.79,
+  "provisional": true,
+  "settled": false,
+  "odds_verified": true,
+  "odds_verification_note": "Referentne javne prematch kvote: PokerStars Spain (Milan, Inter, Dundee) i PokerStars France (Monza). NISU Mozzartbet BiH kvote; identične cijene i mogućnost uplate nisu potvrđene. Tržišni de-vig je benchmark, ne nezavisna vjerovatnoća ni EV.",
+  "tickets": [
+    {
+      "id": "A",
+      "label": "GLAVNI TIKET",
+      "stake": 12.66,
+      "status": "objavljen",
+      "odds": 2.26,
+      "payout": 0,
+      "matches": [
+        {
+          "home": "AC Milan",
+          "away": "Bologna",
+          "pick": "1",
+          "odd": 1.7,
+          "start_utc": "2026-10-28T17:30:00Z",
+          "start_sarajevo": "2026-10-28T18:30:00+01:00",
+          "fixture_id": "espn:football:ita.1:401874993",
+          "market_source": "PokerStars Spain javni 1X2 prematch prikaz",
+          "market_name": "1X2",
+          "market_snapshot_date": "2026-10-28",
+          "market_url": "https://www.pokerstars.es/en/sports/soccer/1/matches/",
+          "market_de_vig_pct": 55.18,
+          "market_de_vig_method": "Normalized reciprocal bookmaker prices; market benchmark only, not independent forecast or EV.",
+          "research": {
+            "summary": "Milan posljednjih pet svih takmičenja 3-1-1 (10 postignutih i 6 primljenih); Bologna 2-1-2 (6:6). Uzorak 5 mečeva po timu; ligaški uzorak 8 utakmica po timu, ne garantuje ishod.",
+            "pros": "Milan je domaćin, 3/5 pobjeda u formi i 3/3 ligaške pobjede kod kuće u dostupnom uzorku. Bologna bez važnih napadačkih opcija Orsolinija i Piccolija.",
+            "risks": "Milan ima povrede Rabiota, Gabbije i Saelemaekersa, nekoliko drugih upitnih. Derbi s Interom 31.10. stvara rizik rotacije; očekivani sastavi nisu potvrđeni.",
+            "injuries": "Milan: Gabbia, Saelemaekers, Chukwueze, Rabiot, Gila prijavljeni odsutni/upitni; Bologna: Orsolini, Piccoli, Holm odsutni. Potvrda konačnih XI pred meč nije dostupna.",
+            "conclusion": "Referentna kvota 1,70 PokerStars Spain; de-vig tržišni benchmark 55,18%. Nema validiranog nezavisnog prematch Poisson modela ni dokazanog EV.",
+            "sources": [
+              [
+                "Javne 1X2 kvote, 28.10.",
+                "https://www.pokerstars.es/en/sports/soccer/1/matches/"
+              ],
+              [
+                "Forma 5 i izostanci",
+                "https://www.oddalerts.com/livescores/ac-milan-vs-bologna/9346-10204"
+              ],
+              [
+                "Sastavi i opterećenje",
+                "https://last5games.com/matches/ac-milan-vs-bologna-19713534/"
+              ]
+            ]
+          }
+        },
+        {
+          "home": "Venezia",
+          "away": "Internazionale",
+          "pick": "2",
+          "odd": 1.33,
+          "start_utc": "2026-10-28T17:30:00Z",
+          "start_sarajevo": "2026-10-28T18:30:00+01:00",
+          "fixture_id": "espn:football:ita.1:401874773",
+          "market_source": "PokerStars Spain javni 1X2 prematch prikaz",
+          "market_name": "1X2",
+          "market_snapshot_date": "2026-10-28",
+          "market_url": "https://www.pokerstars.es/en/sports/soccer/1/matches/",
+          "market_de_vig_pct": 71.02,
+          "market_de_vig_method": "Normalized reciprocal bookmaker prices; market benchmark only, not independent forecast or EV.",
+          "research": {
+            "summary": "Inter dobio 4 od posljednjih 5 mečeva i postigao 12 golova (12:6); Venezia dobila 1 od posljednjih 5 i ima gol-razliku 4:10. Uzorak 5 utakmica po timu.",
+            "pros": "Inter je izrazit gostujući favorit na 1X2 tržištu; Venezia je u lošoj formi i prima oko dva gola po meču u posljednjih pet.",
+            "risks": "Lautaro Martínez je prijavljen povrijeđen, uz više izostanaka u odbrani/vezi; Inter igra derbi s Milanom 31.10. i moguća je rotacija. Nema potvrđenog startnog XI.",
+            "injuries": "Inter: Lautaro Martínez, Pavard, Stones, Curtis Jones i Luis Henrique prijavljeni odsutni/upitni. Venezia: Franjic, Sverko, Adorante, Correia prijavljeni odsutni/upitni.",
+            "conclusion": "Referentna kvota 1,33 PokerStars Spain; de-vig tržišni benchmark 71,02%. Nema validiranog prematch xG para za nezavisni Poisson.",
+            "sources": [
+              [
+                "Javne 1X2 kvote, 28.10.",
+                "https://www.pokerstars.es/en/sports/soccer/1/matches/"
+              ],
+              [
+                "Forma i raspored",
+                "https://last5games.com/matches/inter-vs-venezia-19713528/"
+              ],
+              [
+                "Povrede i očekivani sastavi",
+                "https://onextwo.pro/football/matches/venezia-vs-inter-28-10-2026"
+              ]
+            ]
+          }
+        }
+      ],
+      "analysis": {
+        "summary": "Dva fudbalska 1X2 izbora, referentna kombinovana kvota 1,70 × 1,33 = 2,261 (prikaz 2,26).",
+        "reasons": [
+          "Izbor isključivo iz današnjeg collector-feed.json, 15 fudbalskih kandidata.",
+          "Milan domaći favorit uz Bolognine izostanke; Inter gostujući favorit uz Venezia lošu formu.",
+          "Tržišni de-vig 55,18% i 71,02% samo benchmark."
+        ],
+        "limits": "Oba kluba imaju izostanke i međusobni derbi za tri dana; nema potvrđenih XI ni nezavisnog Poisson/EV."
+      }
+    },
+    {
+      "id": "B",
+      "label": "GOLOVI — VIŠE OD 2,5",
+      "stake": 5.42,
+      "status": "objavljen",
+      "odds": 2.72,
+      "payout": 0,
+      "matches": [
+        {
+          "home": "Monza",
+          "away": "Napoli",
+          "pick": "3+",
+          "odd": 1.73,
+          "start_utc": "2026-10-28T19:45:00Z",
+          "start_sarajevo": "2026-10-28T20:45:00+01:00",
+          "fixture_id": "espn:football:ita.1:401874799",
+          "market_source": "PokerStars France javni prematch prikaz",
+          "market_name": "Over 2.5 / Under 2.5",
+          "market_snapshot_date": "2026-10-28",
+          "market_url": "https://www.pokerstars.fr/en/sports/soccer/1/italian-serie-a/81/ac-monza-v-napoli/36221221/",
+          "market_de_vig_pct": 53.62,
+          "market_de_vig_method": "Normalized reciprocal bookmaker prices; market benchmark only, not independent forecast or EV.",
+          "research": {
+            "summary": "Monza posljednjih 5 svih takmičenja 5/5 sa 3+ gola; Napoli 2/5. U 8 ligaških mečeva Monza 7/8 over 2,5, Napoli 4/8. Uzorci 5 i 8, ne predviđanje.",
+            "pros": "Monza je u 5/5 posljednjih domaćih utakmica prešla 2,5 gola, a prima prosječno 2,25 po ligaškoj utakmici. Napoli ima ofanzivni potencijal.",
+            "risks": "Napoli u posljednjih 5 gostovanja ima samo 2/5 over 2,5; nekoliko povreda i gust raspored. H2H mali uzorak nije presudan. Ne postoji dokaz pozitivnog EV.",
+            "injuries": "Napoli: Buongiorno, Neres, Alisson Santos, Badiashile prijavljeni odsutni, Rrahmani upitan prema nekim izvorima; Monza: Pessina, Ziolkowski, Maye odsutni/upitni.",
+            "conclusion": "Over 2,5, referentna kvota 1,73 PokerStars France; de-vig benchmark 53,62%. Očekivani sastavi nisu konačni.",
+            "sources": [
+              [
+                "Javna over/under kvota",
+                "https://www.pokerstars.fr/en/sports/soccer/1/italian-serie-a/81/ac-monza-v-napoli/36221221/"
+              ],
+              [
+                "Uzorci posljednjih 5 i 8 mečeva",
+                "https://www.oddalerts.com/livescores/monza-vs-napoli/9875-9566"
+              ],
+              [
+                "Povrede i opterećenje",
+                "https://www.victorypicks.com/en/previews/monza-vs-napoli-october-28-2026-2640/"
+              ]
+            ]
+          }
+        },
+        {
+          "home": "Dundee",
+          "away": "Kilmarnock",
+          "pick": "3+",
+          "odd": 1.57,
+          "start_utc": "2026-10-28T19:45:00Z",
+          "start_sarajevo": "2026-10-28T20:45:00+01:00",
+          "fixture_id": "espn:football:sco.1:401878354",
+          "market_source": "PokerStars Spain javni prematch prikaz",
+          "market_name": "Over 2.5 / Under 2.5",
+          "market_snapshot_date": "2026-10-28",
+          "market_url": "https://www.pokerstars.es/en/sports/soccer/1/scottish-premiership/105/dundee-v-kilmarnock/36212990/",
+          "market_de_vig_pct": 58.9,
+          "market_de_vig_method": "Normalized reciprocal bookmaker prices; market benchmark only, not independent forecast or EV.",
+          "research": {
+            "summary": "Dundee posljednjih 5 ligaških utakmica: 1:2, 2:2, 2:1, 2:1, 1:2 (5/5 sa 3+). Kilmarnock posljednjih 5: 0:3, 3:2, 1:3, 1:1, 1:0 (3/5 sa 3+). Uzorak 5 po timu.",
+            "pros": "Dundee u pet posljednjih ligaških mečeva redovno učestvuje u utakmicama sa 3+ gola; Kilmarnock je primio 23 gola u 10 ligaških utakmica prema dostupnom pregledu.",
+            "risks": "Kilmarnock je ostao bez gola u dvije od posljednjih pet, pa 3+ može zavisiti od domaćina; uzorak pet mečeva je ograničen. Prijavljena povreda golmana Stryjeka, bez potvrđenih XI.",
+            "injuries": "Kilmarnock: Maksymilian Stryjek (koljeno) odsutan u pregledu; Dundee: Joe Westley upitan. Nisu potvrđeni konačni sastavi.",
+            "conclusion": "Over 2,5, referentna kvota 1,57 PokerStars Spain; de-vig benchmark 58,90%. Nema nezavisnog prematch Poisson modela.",
+            "sources": [
+              [
+                "Javna over/under kvota",
+                "https://www.pokerstars.es/en/sports/soccer/1/scottish-premiership/105/dundee-v-kilmarnock/36212990/"
+              ],
+              [
+                "Posljednjih pet i H2H",
+                "https://www.pitchlabstats.com/match/2026-10-28-dundee-kilmarnock"
+              ],
+              [
+                "Povrede i bookmaker benchmark",
+                "https://www.footballbetbuilder.co.uk/match/dundee-vs-kilmarnock-2026-10-28"
+              ]
+            ]
+          }
+        }
+      ],
+      "analysis": {
+        "summary": "Dva druga fudbalska meča over 2,5, referentna kombinovana kvota 1,73 × 1,57 = 2,7161 (prikaz 2,72).",
+        "reasons": [
+          "Monza 5/5 posljednjih mečeva 3+ i 7/8 ligaških; Napoli 2/5 posljednjih 3+.",
+          "Dundee 5/5 posljednjih ligaških 3+, Kilmarnock 3/5; odvojeni mečevi od tiketa A.",
+          "De-vig tržišni benchmark 53,62% i 58,90%."
+        ],
+        "limits": "Napoli 2/5 posljednjih gostovanja 3+, Kilmarnock može ostati bez gola; bez potvrđenih XI, bez pozitivnog EV."
+      }
+    },
+    {
+      "id": "C",
+      "label": "KEŠ KOLICA",
+      "stake": 0,
+      "status": "preskočen",
+      "odds": null,
+      "payout": 0,
+      "matches": [],
+      "analysis": {
+        "summary": "Nedostupan: nema četiri do šest dodatnih kvalitetno potvrđenih izbora sa ukupnom kvotom najmanje 10.",
+        "reasons": [
+          "NBA player-points The Odds API snapshot je od 27.10.2026 i nije svjež za današnju ponudu.",
+          "Besplatna ESPN istorijska NBA statistika je od 24.10.2026, često uz samo 1–3 meča po igraču; nije validna za procjenu današnje forme i minutaže.",
+          "API-Football statistički izvještaj je od 25.10.2026, zastario. Preostali fudbalski kandidati nemaju dovoljno provjerenih kvota i sastava za C."
+        ],
+        "limits": "Bez izmišljenih NBA granica, minutaže, kvota, modelskih vjerovatnoća i EV."
+      }
+    }
+  ],
   "total_payout": 0,
-  "net_change": 0,
-  "analysis_status": "Prethodni dan je u arhivi; čeka se nova objava."
+  "net_change": null,
+  "analysis_status": "Objavljeno 28.10.2026 iz svježeg collector-feed.json (15 fudbalskih kandidata, 12 NBA utakmica) i današnjeg independent-analysis.json. ESPN je neslužben; pokrivenost djelimična. Referentne strane kvote nisu Mozzartbet BiH. NBA player-points 27.10, ESPN NBA statistika 24.10, API-Football 25.10 — zastarjelo, C preskočen. Uzorci 5 i 8/10 mečeva navedeni gdje postoje. Nema validiranog prematch xG para za nezavisni Poisson ni izmišljenog EV. Konačni sastavi nisu potvrđeni.",
+  "selection_method": "A: dva 1X2 fudbalska meča; B: dva druga over 2.5; C: preskočen. Maksimalni ulog 10% banke (18,08 od 180,87), A/B 70/30.",
+  "source_fixture_feed": "collector-feed.json, 2026-10-28T12:56:51.383960+00:00",
+  "source_independent_analysis": "collector-output/independent-analysis.json, 2026-10-28T12:57:04Z",
+  "source_nba_player_points": "collector-output/nba-player-points.json, 2026-10-27T15:58:41Z (stale, not used)",
+  "source_nba_free_statistics": "collector-output/nba-free-statistics.json, 2026-10-24T13:52:48Z (stale, not used)",
+  "source_statistics_research": "collector-output/statistics-research.json, 2026-10-25T13:48:25Z (stale, not used)"
 }
