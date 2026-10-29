@@ -1,0 +1,40 @@
+name: MemaraSix A/B independent readiness
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12,13 * * 1-5'
+permissions:
+  contents: write
+concurrency:
+  group: memarasix-ab-readiness
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check Sarajevo 14:00
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_NAME" = "schedule" ] && [ "$(TZ=Europe/Sarajevo date +%H)" != "14" ]; then echo "run=false" >> "$GITHUB_OUTPUT"; else echo "run=true" >> "$GITHUB_OUTPUT"; fi
+      - name: Validate A/B feed without NBA
+        if: steps.gate.outputs.run == 'true'
+        run: python memara_ab_readiness.py
+      - name: Save readiness without changing tickets or bank
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add collector-output/ab-readiness.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Audit A/B readiness separately from NBA [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
