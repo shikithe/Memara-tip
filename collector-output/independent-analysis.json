@@ -1,17 +1,17 @@
 {
   "date": "2026-10-29",
-  "generated_at_utc": "2026-10-29T15:03:25.398714+00:00",
-  "source_generated_at_utc": "2026-10-29T14:40:06.005729+00:00",
+  "generated_at_utc": "2026-10-29T15:11:41.336427+00:00",
+  "source_generated_at_utc": "2026-10-29T15:11:24.890952+00:00",
   "state": "analysis_completed_data_gaps_remain",
   "publication_allowed": false,
   "odds_verified": false,
   "football": [
     {
-      "id": "rezultati:105:2026-10-29",
-      "home": "Al Quwa Al Jawiya",
-      "away": "Al Minaa",
-      "start_utc": "2026-10-29T15:30:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
+      "id": "espn:football:ita.1:401874976",
+      "home": "Frosinone",
+      "away": "Lecce",
+      "start_utc": "2026-10-29T17:30:00Z",
+      "league": "ita.1",
       "eligible_for_further_research": true,
       "data_gaps": [
         "missing_verified_recent_form",
@@ -23,11 +23,11 @@
       "analysis_status": "needs_independent_evidence"
     },
     {
-      "id": "rezultati:161:2026-10-29",
-      "home": "Bouake",
-      "away": "Korhogo",
-      "start_utc": "2026-10-29T15:30:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
+      "id": "espn:football:ita.1:401874969",
+      "home": "Fiorentina",
+      "away": "Atalanta",
+      "start_utc": "2026-10-29T19:45:00Z",
+      "league": "ita.1",
       "eligible_for_further_research": true,
       "data_gaps": [
         "missing_verified_recent_form",
@@ -39,453 +39,13 @@
       "analysis_status": "needs_independent_evidence"
     },
     {
-      "id": "rezultati:163:2026-10-29",
-      "home": "Stella Adjame",
-      "away": "Academie de FAD",
-      "start_utc": "2026-10-29T15:30:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
+      "id": "espn:football:bra.1:401841288",
+      "home": "Atlético-MG",
+      "away": "Cruzeiro",
+      "start_utc": "2026-10-29T22:30:00Z",
+      "league": "bra.1",
       "eligible_for_further_research": true,
       "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:167:2026-10-29",
-      "home": "Al Samail",
-      "away": "Bidiyah Club",
-      "start_utc": "2026-10-29T15:45:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:65:2026-10-29",
-      "home": "Yantra Gabrovo",
-      "away": "Hebar",
-      "start_utc": "2026-10-29T16:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:67:2026-10-29",
-      "home": "Dečić",
-      "away": "Otrant",
-      "start_utc": "2026-10-29T16:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:77:2026-10-29",
-      "home": "Maardu",
-      "away": "Elva",
-      "start_utc": "2026-10-29T16:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:95:2026-10-29",
-      "home": "Inter Turku",
-      "away": "HJK",
-      "start_utc": "2026-10-29T16:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:101:2026-10-29",
-      "home": "Volos",
-      "away": "Atromitos",
-      "start_utc": "2026-10-29T16:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:125:2026-10-29",
-      "home": "NPA Anchors",
-      "away": "Borough",
-      "start_utc": "2026-10-29T16:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:256:2026-10-29",
-      "home": "Namungo",
-      "away": "Polisi Tanzania",
-      "start_utc": "2026-10-29T16:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:262:2026-10-29",
-      "home": "Karpaty Lviv",
-      "away": "Oleksandriya",
-      "start_utc": "2026-10-29T16:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:5:2026-10-29",
-      "home": "Grosuplje",
-      "away": "Bravo",
-      "start_utc": "2026-10-29T16:30:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:117:2026-10-29",
-      "home": "Umm-Salal",
-      "away": "Al Bidda",
-      "start_utc": "2026-10-29T16:30:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:127:2026-10-29",
-      "home": "Al Ahly Benghazi",
-      "away": "Darnes",
-      "start_utc": "2026-10-29T16:30:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:129:2026-10-29",
-      "home": "Al Jadida",
-      "away": "Al Sharara",
-      "start_utc": "2026-10-29T16:30:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:174:2026-10-29",
-      "home": "Chrobry Glogow",
-      "away": "Polonia B.",
-      "start_utc": "2026-10-29T16:30:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:176:2026-10-29",
-      "home": "Polonia W.",
-      "away": "Korona",
-      "start_utc": "2026-10-29T16:30:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:192:2026-10-29",
-      "home": "CSKA Moskva",
-      "away": "Lok. Moskva",
-      "start_utc": "2026-10-29T16:30:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:200:2026-10-29",
-      "home": "Al Rawdah",
-      "away": "Al Loa",
-      "start_utc": "2026-10-29T16:30:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:204:2026-10-29",
-      "home": "Al Ula Ž",
-      "away": "Al Ahli SC Ž",
-      "start_utc": "2026-10-29T16:45:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:32:2026-10-29",
-      "home": "A. Lustenau",
-      "away": "Sturm Graz",
-      "start_utc": "2026-10-29T17:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:7:2026-10-29",
-      "home": "Kina U17 Ž",
-      "away": "Francuska U17 Ž",
-      "start_utc": "2026-10-29T15:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": false,
-      "data_gaps": [
-        "started_or_too_close_to_kickoff",
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:9:2026-10-29",
-      "home": "Nigerija U17 Ž",
-      "away": "Meksiko U17 Ž",
-      "start_utc": "2026-10-29T15:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": false,
-      "data_gaps": [
-        "started_or_too_close_to_kickoff",
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:30:2026-10-29",
-      "home": "Noah",
-      "away": "Syunik",
-      "start_utc": "2026-10-29T15:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": false,
-      "data_gaps": [
-        "started_or_too_close_to_kickoff",
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:34:2026-10-29",
-      "home": "Din. Minsk 2",
-      "away": "Molodechno",
-      "start_utc": "2026-10-29T15:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": false,
-      "data_gaps": [
-        "started_or_too_close_to_kickoff",
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:115:2026-10-29",
-      "home": "Al Salt",
-      "away": "Al Jazeera Amman",
-      "start_utc": "2026-10-29T15:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": false,
-      "data_gaps": [
-        "started_or_too_close_to_kickoff",
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:157:2026-10-29",
-      "home": "Lilleström U19",
-      "away": "Brann U19",
-      "start_utc": "2026-10-29T15:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": false,
-      "data_gaps": [
-        "started_or_too_close_to_kickoff",
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:186:2026-10-29",
-      "home": "Concordia",
-      "away": "Sepsi Sf. Gheorghe",
-      "start_utc": "2026-10-29T15:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": false,
-      "data_gaps": [
-        "started_or_too_close_to_kickoff",
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "rezultati:258:2026-10-29",
-      "home": "Kasimpasa",
-      "away": "Corluspor",
-      "start_utc": "2026-10-29T15:00:00Z",
-      "league": "ZIMBABVE: Premier Soccer League",
-      "eligible_for_further_research": false,
-      "data_gaps": [
-        "started_or_too_close_to_kickoff",
         "missing_verified_recent_form",
         "missing_verified_lineups_or_absences",
         "missing_verified_market_odds"
@@ -547,8 +107,8 @@
   ],
   "summary": {
     "football": {
-      "total": 30,
-      "researchable": 22
+      "total": 3,
+      "researchable": 3
     },
     "nba": {
       "total": 3,
