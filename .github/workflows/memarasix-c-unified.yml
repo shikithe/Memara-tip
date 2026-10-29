@@ -40,7 +40,7 @@ jobs:
           PY
       - name: Check scripts
         if: steps.gate.outputs.run == 'true'
-        run: python -m py_compile collector_nba_24h.py sync_nba_free.py sync_nba_points.py memara_enrich_nba_props.py ticket_c_screening.py memara_nba_analyst.py prepare_ticket_c_match_markets.py
+        run: python -m py_compile collector_nba_24h.py sync_nba_free.py sync_nba_points.py memara_enrich_nba_props.py ticket_c_screening.py memara_nba_analyst.py prepare_ticket_c_match_markets.py sync_ticket_c_match_odds.py
       - name: Fetch upcoming NBA fixtures
         if: steps.gate.outputs.run == 'true'
         run: python collector_nba_24h.py --hours 24 --output collector-output/nba-next-24h.json
@@ -58,8 +58,11 @@ jobs:
             python memara_math.py --input collector-feed.json --output collector-feed.json
           fi
       - name: Run NBA points analyst (research only)
-        if: steps.gate.outputs.run == 'true'
+        if: steps.gate.outputs.run == 'true' && env.THE_ODDS_API_KEY != ''
         run: python memara_nba_analyst.py
+      - name: Fetch football and basketball match odds
+        if: steps.gate.outputs.run == 'true' && env.THE_ODDS_API_KEY != ''
+        run: python sync_ticket_c_match_odds.py --region eu --max-soccer 12
       - name: Normalize optional football and basketball match odds snapshot
         if: steps.gate.outputs.run == 'true'
         run: python prepare_ticket_c_match_markets.py
