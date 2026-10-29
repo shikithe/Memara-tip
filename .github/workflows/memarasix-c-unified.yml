@@ -40,7 +40,7 @@ jobs:
           PY
       - name: Check scripts
         if: steps.gate.outputs.run == 'true'
-        run: python -m py_compile collector_nba_24h.py sync_nba_free.py sync_nba_points.py memara_enrich_nba_props.py ticket_c_screening.py memara_nba_analyst.py
+        run: python -m py_compile collector_nba_24h.py sync_nba_free.py sync_nba_points.py memara_enrich_nba_props.py ticket_c_screening.py memara_nba_analyst.py prepare_ticket_c_match_markets.py
       - name: Fetch upcoming NBA fixtures
         if: steps.gate.outputs.run == 'true'
         run: python collector_nba_24h.py --hours 24 --output collector-output/nba-next-24h.json
@@ -60,6 +60,9 @@ jobs:
       - name: Run NBA points analyst (research only)
         if: steps.gate.outputs.run == 'true'
         run: python memara_nba_analyst.py
+      - name: Normalize optional football and basketball match odds snapshot
+        if: steps.gate.outputs.run == 'true'
+        run: python prepare_ticket_c_match_markets.py
       - name: Screen C candidates for research
         if: steps.gate.outputs.run == 'true'
         run: python ticket_c_screening.py
@@ -89,4 +92,5 @@ jobs:
             collector-output/nba-analyst-research.json
             collector-output/ticket-c-research.json
             collector-output/ticket-c-match-markets.json
+            collector-output/match-odds-snapshot.json
           if-no-files-found: warn
