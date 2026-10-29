@@ -63,7 +63,19 @@ def scrape(day):
             fixtures.append({"id":"rezultati:"+str(len(fixtures)+1)+":"+day,"provider":"rezultati.com-mobile-public","sport":"football","league":league,"league_verified":False,"home":home,"away":away,"start_utc":start.astimezone(timezone.utc).isoformat().replace("+00:00","Z"),"start_sarajevo":start.isoformat(),"status":"pre","fixture_source_url":URL})
             break
     print("REZULTATI_HTML_DIAGNOSTIC",json.dumps({"html_bytes":len(raw),"lines":len(lines),"headings":headings,"time_rows":attempted,"parsed":len(fixtures),"samples":lines[:25]},ensure_ascii=False))
-    if not fixtures:raise ValueError("No parseable future football fixtures; inspect REZULTATI_HTML_DIAGNOSTIC in job logs")
+    if not fixtures:
+        # Last-resort parser for pages whose match row is split across >4 nodes.
+        # Only accept rows with an explicit unplayed '-' score placeholder.
+        flat=re.sub(r"\\s+"," ",soup.get_text(" ",strip=True))
+        pat=re.compile(r"(?<!\\d)([01]?\\d|2[0-3]):([0-5]\\d)\\s+([^|]{2,85}?)\\s+-\\s+([^|]{2,85}?)\\s+-\\s+(?=(?:[01]?\\d|2[0-3]):[0-5]\\d|[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ ]+:|$)")
+        for m in pat.finditer(flat):
+            home,away=m.group(3).strip(),m.group(4).strip()
+            if not home or not away or home==away:continue
+            start=datetime.fromisoformat(day+"T"+m.group(1).zfill(2)+":"+m.group(2)).replace(tzinfo=ZONE)
+            if start<=now+timedelta(minutes=10):continue
+            fixtures.append({"id":"rezultati:flat:"+str(len(fixtures)+1)+":"+day,"provider":"rezultati.com-mobile-public","sport":"football","league":"unverified_competition","league_verified":False,"home":home,"away":away,"start_utc":start.astimezone(timezone.utc).isoformat().replace("+00:00","Z"),"start_sarajevo":start.isoformat(),"status":"pre","fixture_source_url":URL})
+        print("REZULTATI_FALLBACK_DIAGNOSTIC",json.dumps({"flat_length":len(flat),"flat_sample":flat[:1600],"flat_matches":len(fixtures)},ensure_ascii=False))
+    if not fixtures:raise ValueError("No parseable future football fixtures; inspect diagnostics in job logs")
     return fixtures
 
 def main():
