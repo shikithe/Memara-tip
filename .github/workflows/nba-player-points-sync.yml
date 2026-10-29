@@ -1,8 +1,6 @@
 name: MEMARA NBA player-points odds sync
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '35 10,11 * * *'
 permissions:
   contents: write
 concurrency:
