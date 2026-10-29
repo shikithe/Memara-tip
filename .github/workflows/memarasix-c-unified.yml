@@ -62,7 +62,7 @@ jobs:
         run: python memara_nba_analyst.py
       - name: Fetch football and basketball match odds
         if: steps.gate.outputs.run == 'true' && env.THE_ODDS_API_KEY != ''
-        run: python sync_ticket_c_match_odds.py --region eu --max-soccer 12
+        run: python sync_ticket_c_match_odds.py --region eu
       - name: Normalize optional football and basketball match odds snapshot
         if: steps.gate.outputs.run == 'true'
         run: python prepare_ticket_c_match_markets.py
