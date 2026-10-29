@@ -40,7 +40,7 @@ jobs:
           PY
       - name: Check scripts
         if: steps.gate.outputs.run == 'true'
-        run: python -m py_compile collector_nba_24h.py sync_nba_free.py sync_nba_points.py memara_enrich_nba_props.py ticket_c_screening.py
+        run: python -m py_compile collector_nba_24h.py sync_nba_free.py sync_nba_points.py memara_enrich_nba_props.py ticket_c_screening.py memara_nba_analyst.py
       - name: Fetch upcoming NBA fixtures
         if: steps.gate.outputs.run == 'true'
         run: python collector_nba_24h.py --hours 24 --output collector-output/nba-next-24h.json
@@ -57,6 +57,9 @@ jobs:
             python memara_enrich_nba_props.py --feed collector-feed.json --props collector-output/nba-player-points.json --output collector-feed.json
             python memara_math.py --input collector-feed.json --output collector-feed.json
           fi
+      - name: Run NBA points analyst (research only)
+        if: steps.gate.outputs.run == 'true'
+        run: python memara_nba_analyst.py
       - name: Screen C candidates for research
         if: steps.gate.outputs.run == 'true'
         run: python ticket_c_screening.py
@@ -75,7 +78,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add collector-output/nba-next-24h.json collector-output/nba-free-statistics.json collector-output/ticket-c-research.json
+          git add collector-output/nba-next-24h.json collector-output/nba-free-statistics.json collector-output/ticket-c-research.json collector-output/nba-analyst-research.json
           if [ -n "$THE_ODDS_API_KEY" ]; then
             git add collector-output/nba-player-points.json collector-feed.json
           fi
