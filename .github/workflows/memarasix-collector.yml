@@ -6,6 +6,8 @@ on:
   push:
     paths:
       - '.github/workflows/memarasix-collector.yml'
+      - 'collector.py'
+      - 'memara_prepare_feed.py'
   schedule:
     # Morning window 09:15-10:15 and recovery window 12:30-14:45 Sarajevo.
     # Cover both summer/winter UTC offsets; local-time gate filters actual runs.
@@ -71,7 +73,7 @@ jobs:
       - name: Collect next Sarajevo date NBA fixtures
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
-          python collector.py --date "$(TZ=Europe/Sarajevo date -d tomorrow +%F)" --sport basketball --output collector-output/nba-next.json
+          python collector.py --date "$(TZ=Europe/Sarajevo date -d tomorrow +%F)" --sport basketball --output collector-output/nba-next.json || echo "WARNING: next-day NBA unavailable; today football collection continues"
       - name: Validate sources and generate analyst queue
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
@@ -86,6 +88,18 @@ jobs:
           PY
           python memara_prepare_feed.py --input collector-output/fixtures.json --nba-next collector-output/nba-next.json --output collector-feed.json
           python memara_math.py --input collector-feed.json --output collector-feed.json
+          python - <<'PY'
+          import json
+          from datetime import datetime,timezone,timedelta
+          from zoneinfo import ZoneInfo
+          d=json.load(open("collector-feed.json",encoding="utf-8"))
+          today=datetime.now(ZoneInfo("Europe/Sarajevo")).date().isoformat()
+          ts=datetime.fromisoformat(d["generated_at_utc"].replace("Z","+00:00"))
+          assert d["date"]==today, "Wrong Sarajevo date"
+          assert datetime.now(timezone.utc)-timedelta(minutes=5)<=ts<=datetime.now(timezone.utc)+timedelta(minutes=5), "Invalid generation timestamp"
+          assert isinstance(d.get("football_candidates"),list) and len(d["football_candidates"])>0, "No football candidates"
+          print("VALIDATED FEED",today,len(d["football_candidates"]))
+          PY
       - name: Commit candidate feed only
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
