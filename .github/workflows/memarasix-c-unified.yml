@@ -1,0 +1,86 @@
+name: MemaraSix unified NBA C preparation
+on:
+  workflow_dispatch:
+  schedule:
+    # 09:15 and 12:30 Sarajevo, both DST offsets; local-time gate below
+    - cron: '15 7,8 * * *'
+    - cron: '30 10,11 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: memarasix-unified-c-preparation
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Gate Sarajevo local schedule
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python - <<'PY'
+          import os
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          local=datetime.now(ZoneInfo("Europe/Sarajevo")).strftime("%H:%M")
+          run=os.environ["EVENT_NAME"]!="schedule" or local in ("09:15","12:30")
+          print("Local time:",local,"enabled:",run)
+          with open(os.environ["GITHUB_OUTPUT"],"a") as f:
+              print("run="+str(run).lower(),file=f)
+          PY
+      - name: Check scripts
+        if: steps.gate.outputs.run == 'true'
+        run: python -m py_compile collector_nba_24h.py sync_nba_free.py sync_nba_points.py memara_enrich_nba_props.py ticket_c_screening.py
+      - name: Fetch upcoming NBA fixtures
+        if: steps.gate.outputs.run == 'true'
+        run: python collector_nba_24h.py --hours 24 --output collector-output/nba-next-24h.json
+      - name: Fetch recent ESPN player statistics
+        if: steps.gate.outputs.run == 'true'
+        run: python sync_nba_free.py --days 14 --max-summaries 60
+      - name: Fetch player points bookmaker odds
+        if: steps.gate.outputs.run == 'true' && env.THE_ODDS_API_KEY != ''
+        run: python sync_nba_points.py --region us
+      - name: Merge eligible offers into analyst feed
+        if: steps.gate.outputs.run == 'true' && env.THE_ODDS_API_KEY != ''
+        run: |
+          if [ -f collector-feed.json ]; then
+            python memara_enrich_nba_props.py --feed collector-feed.json --props collector-output/nba-player-points.json --output collector-feed.json
+            python memara_math.py --input collector-feed.json --output collector-feed.json
+          fi
+      - name: Screen C candidates for research
+        if: steps.gate.outputs.run == 'true'
+        run: python ticket_c_screening.py
+      - name: Validate research-only output
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open("collector-output/ticket-c-research.json"))
+          assert d["publication_allowed"] is False
+          assert d["state"]=="research_only"
+          print("C research candidates:",d["count"])
+          PY
+      - name: Save research and offers without publishing
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add collector-output/nba-next-24h.json collector-output/nba-free-statistics.json collector-output/ticket-c-research.json
+          if [ -n "$THE_ODDS_API_KEY" ]; then
+            git add collector-output/nba-player-points.json collector-feed.json
+          fi
+          if ! git diff --cached --quiet; then
+            git commit -m "data: unified NBA C preparation [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
