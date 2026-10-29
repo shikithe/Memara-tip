@@ -9,6 +9,7 @@ ESPN public endpoints are unofficial and may change. No predictions generated.
 import argparse
 import json
 import time
+import unicodedata
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -71,16 +72,49 @@ def parse_game(summary, event, day):
     return rows
 
 
+def normalize_name(value):
+    text = unicodedata.normalize("NFKD", str(value or ""))
+    return " ".join("".join(c for c in text if not unicodedata.combining(c)).lower().replace(".", "").replace("-", " ").split())
+
+
+def extract_teams(offers):
+    teams = {}
+    for offer in offers.get("offers", []):
+        pid = str(offer.get("player_id") or "")
+        team = normalize_name(offer.get("team"))
+        if pid.isdigit() and team:
+            teams.setdefault(pid, set()).add(team)
+    return teams
+
+
+def team_names(event):
+    names = set()
+    for competition in event.get("competitions", []):
+        for entry in competition.get("competitors", []):
+            team = entry.get("team") or {}
+            for field in ("displayName", "name"):
+                if team.get(field):
+                    names.add(normalize_name(team[field]))
+    return names
+
+
 def run(days, max_summaries, offers_path, history_path, now=None):
     now = now or datetime.now(timezone.utc)
     targets, source_status = targets_from_offers(offers_path, now)
+    try:
+        offer_payload = json.loads(Path(offers_path).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        offer_payload = {}
+    target_teams = extract_teams(offer_payload)
     result = {"date_utc": now.date().isoformat(), "generated_at_utc": now.isoformat(),
         "provider": "espn-public-unofficial", "no_api_key_required": True,
         "target_source": "the-odds-api-player-points", "target_status": source_status,
         "target_player_count": len(targets), "statistics_not_predictions": True,
         "limitations": "Unofficial incomplete past boxscores. No independent player projection, injury check or odds-value claim.",
         "status": "ok" if targets else "no_fresh_target_offers",
-        "requested_summaries": 0, "errors": [], "players": []}
+        "requested_summaries": 0, "errors": [], "players": [],
+        "coverage": {"unknown_id": [], "insufficient_games": [], "source_unavailable": [],
+                     "team_mismatch": [], "ready_four_games": []}}
     # Preserve prior genuinely observed games, but never treat previous daily average as raw history.
     cached = {}
     try:
@@ -101,6 +135,7 @@ def run(days, max_summaries, offers_path, history_path, now=None):
         result["players_with_stats"] = 0
         return result
     events = []
+    scoreboard_errors = 0
     for age in range(1, days + 1):
         day = (now - timedelta(days=age)).strftime("%Y%m%d")
         try:
@@ -108,18 +143,22 @@ def run(days, max_summaries, offers_path, history_path, now=None):
             for event in doc.get("events", []):
                 status = ((event.get("status") or {}).get("type") or {}).get("state")
                 if status == "post" and str(event.get("id", "")).isdigit():
-                    events.append((str(event["id"]), day))
+                    events.append((str(event["id"]), day, team_names(event)))
         except (HTTPError, URLError, ValueError, TypeError):
             result["errors"].append("Scoreboard unavailable for " + day)
+            scoreboard_errors += 1
     seen_events = set()
     unique_events = []
-    for eid, day in events:
+    for eid, day, teams in events:
         if eid not in seen_events:
             seen_events.add(eid)
-            unique_events.append((eid, day))
-    # Missing players preferentially gain older history; all results include all athletes per boxscore.
+            unique_events.append((eid, day, teams))
+    # Prioritize games involving teams of the offered players. Do not waste
+    # limited summary calls on unrelated fixtures.
+    desired_teams = set().union(*target_teams.values()) if target_teams else set()
+    unique_events.sort(key=lambda e: (not bool(e[2] & desired_teams), -int(e[1]), e[0]))
     unique_events = unique_events[:max_summaries]
-    for eid, day in unique_events:
+    for eid, day, teams in unique_events:
         # Skip event if its relevant athletes already have this event; there is no way to
         # know the participants pre-fetch, so cache deduplication happens after response.
         try:
@@ -128,17 +167,30 @@ def run(days, max_summaries, offers_path, history_path, now=None):
             for row in parse_game(summary, eid, day):
                 pid = row["player_id"]
                 if pid in targets:
+                    expected = target_teams.get(pid, set())
+                    observed = normalize_name(row.get("team"))
+                    if expected and observed and observed not in expected:
+                        result["coverage"]["team_mismatch"].append({"player_id": pid, "observed_team": row.get("team")})
+                        continue
                     cached.setdefault(pid, {})[eid] = row
         except (HTTPError, URLError, ValueError, TypeError):
             result["errors"].append("Boxscore unavailable for event " + eid)
         time.sleep(.15)
     for pid, name in sorted(targets.items(), key=lambda kv: kv[1]):
         games = sorted(cached.get(pid, {}).values(), key=lambda row: (row.get("game_date", ""), row["game_id"]), reverse=True)[:20]
+        if len(games) >= 4:
+            result["coverage"]["ready_four_games"].append(pid)
+        elif scoreboard_errors or result["errors"]:
+            result["coverage"]["source_unavailable"].append(pid)
+        elif not games:
+            result["coverage"]["unknown_id"].append(pid)
+        else:
+            result["coverage"]["insufficient_games"].append(pid)
         result["players"].append({"player_id": pid, "player": name, "recent_games": games,
             "games_found": len(games),
             "average_points": round(sum(g["points"] for g in games) / len(games), 2) if games else None,
             "status": "historical_sample" if games else "insufficient_coverage",
-            "sample_sufficient_for_model": False, "not_a_projection": True})
+            "sample_sufficient_for_model": len(games) >= 4, "not_a_projection": True})
     result["players_with_stats"] = sum(p["games_found"] > 0 for p in result["players"])
     if result["errors"] and not result["requested_summaries"]:
         result["status"] = "source_unavailable"
