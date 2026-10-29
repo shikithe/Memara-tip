@@ -47,7 +47,7 @@ def valid_match(row, now):
             return False, "invalid_odds"
         if not now < start <= now + timedelta(hours=24):
             return False, "not_upcoming_24h"
-        if not updated <= now + timedelta(minutes=5) and updated >= now - timedelta(hours=3):
+        if not (now - timedelta(hours=3) <= updated <= now + timedelta(minutes=5)):
             return False, "stale_or_future_odds"
         if not all(row.get(k) is True for k in ("verified", "analysis_verified", "independent_event_check")):
             return False, "unverified_match_analysis"
