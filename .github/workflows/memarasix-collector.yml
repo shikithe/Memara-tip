@@ -57,7 +57,7 @@ jobs:
           today=datetime.now(ZoneInfo("Europe/Sarajevo")).date().isoformat()
           try:
               with open("collector-feed.json",encoding="utf-8") as f: doc=json.load(f)
-              done=doc.get("date")==today and len(doc.get("football_candidates") or [])>=4
+              done=doc.get("date")==today and len(doc.get("football_candidates") or [])>=4 and any(x.get("provider")=="rezultati.com-mobile-public" for x in doc.get("football_candidates",[]))
           except (OSError,ValueError): done=False
           with open(os.environ["GITHUB_OUTPUT"],"a") as f:
               f.write("needed="+str(not done).lower()+"\n")
@@ -78,7 +78,7 @@ jobs:
       - name: Install HTML parser for Rezultati.com fallback
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: python -m pip install beautifulsoup4
-      - name: Add Rezultati.com football only when ESPN is insufficient
+      - name: Collect Rezultati.com football as primary source (ESPN fallback)
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
           python memara_rezultati_fallback.py --date "$(TZ=Europe/Sarajevo date +%F)" --input collector-output/fixtures.json --output collector-output/fixtures.json --minimum 4
