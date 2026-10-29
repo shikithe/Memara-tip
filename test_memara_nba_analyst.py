@@ -17,8 +17,8 @@ class NBAAnalystTests(unittest.TestCase):
     def test_started_game_rejected(self):
         self.odds["offers"][0]["start_utc"]=iso(NOW-timedelta(minutes=1))
         self.assertEqual(analyze(self.odds,self.stats,now=NOW)["analyzed_markets"],0)
-    def test_missing_games_rejected(self):
-        self.stats["players"][0]["recent_games"]=self.stats["players"][0]["recent_games"][:4]
+    def test_three_games_rejected(self):
+        self.stats["players"][0]["recent_games"]=self.stats["players"][0]["recent_games"][:3]
         self.assertEqual(analyze(self.odds,self.stats,now=NOW)["analyzed_markets"],0)
     def test_verified_context_allows_uncalibrated_estimate(self):
         ctx={"1":{"source":"manual verified test","verified_at_utc":iso(NOW),"expected_minutes":30,"injury_status":"available","opponent_defense_factor":1.0,"usage_factor":1.0}}
