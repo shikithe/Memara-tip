@@ -65,6 +65,8 @@ def screen(now=None):
     match_data = load("ticket-c-match-markets.json")
     analyst = load("nba-analyst-research.json")
     rows = match_data.get("candidates", [])
+    if not isinstance(rows, list):
+        rows = []
     eligible, rejected = [], {}
     def reject(reason):
         rejected[reason] = rejected.get(reason, 0) + 1
@@ -128,6 +130,9 @@ def screen(now=None):
         "unlimited_legs": True, "target_reached": reached,
         "combined_odds": round(combined, 4) if selected else 0,
         "candidate_count": len(eligible), "selected_count": len(selected),
+        "match_market_input_count": len(rows),
+        "nba_analyst_input_count": len(analyst.get("candidates", [])),
+        "missing_inputs": [name for name in ("ticket-c-match-markets.json", "nba-analyst-research.json") if not (ROOT / name).exists()],
         "selected": selected if reached else [],
         "provisional_selection": selected,
         "rejected": rejected,
