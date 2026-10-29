@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "updated_at_utc": "2026-10-29T18:05:04.102805+00:00",
+  "updated_at_utc": "2026-10-29T18:09:04.671305+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -14,7 +14,7 @@
       "source": "espn-public-unofficial",
       "event_id": "401874976",
       "league": "ita.1",
-      "minute": "31"
+      "minute": "35"
     },
     {
       "ticket": "B",
