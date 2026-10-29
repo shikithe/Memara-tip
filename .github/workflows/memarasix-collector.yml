@@ -73,7 +73,7 @@ jobs:
       - name: Collect next Sarajevo date football and NBA fixtures
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
-          python collector.py --date "$(TZ=Europe/Sarajevo date -d tomorrow +%F)" --sport all --output collector-output/nba-next.json || { echo "WARNING: next-day football/NBA unavailable; today collection continues"; mkdir -p collector-output; printf '{"fixtures":[]}\\n' > collector-output/nba-next.json; }
+          python collector.py --date "$(TZ=Europe/Sarajevo date -d tomorrow +%F)" --sport all --output collector-output/nba-next.json || { echo "WARNING: next-day football/NBA unavailable; today collection continues"; mkdir -p collector-output; echo '{"fixtures":[]}' > collector-output/nba-next.json; }
       - name: Validate sources and generate analyst queue
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
