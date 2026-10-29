@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "date": "2026-10-29",
   "timezone": "Europe/Sarajevo",
-  "collected_at_utc": "2026-10-29T14:09:51.656141+00:00",
+  "collected_at_utc": "2026-10-29T14:14:50.200662+00:00",
   "scope": "configured leagues only, not all global fixtures",
   "publication_allowed": false,
   "status": "ok",
@@ -325,6 +325,11 @@
       "coverage": "incomplete (one next event maximum)",
       "source_events": 1,
       "url": "https://www.thesportsdb.com/api/v1/json/123/eventsnextleague.php?id=4912"
+    },
+    {
+      "provider": "rezultati.com-public-page",
+      "status": "unavailable_or_empty",
+      "count": 0
     }
   ],
   "errors": [],
