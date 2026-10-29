@@ -1,7 +1,7 @@
 {
   "date": "2026-10-29",
-  "generated_at_utc": "2026-10-29T16:07:40.051849+00:00",
-  "source_generated_at_utc": "2026-10-29T16:00:35.373682+00:00",
+  "generated_at_utc": "2026-10-29T16:09:50.496595+00:00",
+  "source_generated_at_utc": "2026-10-29T16:09:34.298407+00:00",
   "state": "analysis_completed_data_gaps_remain",
   "publication_allowed": false,
   "odds_verified": false,
@@ -43,6 +43,38 @@
       "home": "Atlético-MG",
       "away": "Cruzeiro",
       "start_utc": "2026-10-29T22:30:00Z",
+      "league": "bra.1",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:football:bra.1:401841292",
+      "home": "Vasco da Gama",
+      "away": "Flamengo",
+      "start_utc": "2026-10-29T23:00:00Z",
+      "league": "bra.1",
+      "eligible_for_further_research": true,
+      "data_gaps": [
+        "missing_verified_recent_form",
+        "missing_verified_lineups_or_absences",
+        "missing_verified_market_odds"
+      ],
+      "model_probability": null,
+      "recommended_market": null,
+      "analysis_status": "needs_independent_evidence"
+    },
+    {
+      "id": "espn:football:bra.1:401841290",
+      "home": "Grêmio",
+      "away": "Athletico-PR",
+      "start_utc": "2026-10-30T00:30:00Z",
       "league": "bra.1",
       "eligible_for_further_research": true,
       "data_gaps": [
@@ -107,8 +139,8 @@
   ],
   "summary": {
     "football": {
-      "total": 3,
-      "researchable": 3
+      "total": 5,
+      "researchable": 5
     },
     "nba": {
       "total": 3,
