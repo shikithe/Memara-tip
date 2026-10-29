@@ -8,7 +8,7 @@
   "daily_stake": 4.44,
   "bank_after": 173.09,
   "bank_after_stakes": 173.09,
-  "provisional": false,
+  "provisional": true,
   "settled": false,
   "odds_verified": true,
   "odds_verification_note": "Direktno provjerene javne prematch kvote PokerStars France 29.10.2026 za oba Over 2.5 tržišta: 1,36 i 1,57. NISU potvrđene Mozzartbet BiH kvote niti mogućnost stvarne uplate. Tržišne kvote nisu dokaz pozitivnog EV.",
@@ -137,8 +137,8 @@
       }
     }
   ],
-  "total_payout": 0,
-  "net_change": -4.44,
+  "total_payout": 0.0,
+  "net_change": null,
   "analysis_status": "Djelimična objava B: A/C nisu prošli nezavisnu provjeru. Rezultati.com kolektor i dalje vraća nula utakmica, ali dva B događaja iz današnjeg ESPN feeda nezavisno su potvrđena iz javnih izvora. Direktne PokerStars France referentne kvote provjerene 29.10.2026. Bez tvrdnje o pozitivnom EV. NBA izvještaji zastarjeli.",
   "selection_method": "Pojedinačna validacija po prioritetu A→B→C; objavljen samo B. Dnevni budžet 10% banke, B zadržava 25% dnevnog budžeta, ostatak nije uložen.",
   "source_fixture_feed": "collector-feed.json 2026-10-29T15:20:03.832582+00:00",
