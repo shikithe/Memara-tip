@@ -11,8 +11,8 @@ from bs4 import BeautifulSoup
 
 ZONE=ZoneInfo("Europe/Sarajevo")
 URL="https://m.rezultati.com/"
-TIME=re.compile(r"^([01]?\\d|2[0-3]):([0-5]\\d)\\s+(.+?)\\s+-\\s+(.+?)(?:\\s+[-–]\\s*)?$")
-HEADER=re.compile(r"^[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\\s&./'-]+:\\s+.+")
+TIME=re.compile(r"^([01]?\d|2[0-3]):([0-5]\d)\s+(.+?)\s+-\s+(.+?)(?:\s+[-–]\s*)?$")
+HEADER=re.compile(r"^[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s&./'-]+:\s+.+")
 def scrape(day):
     if day!=datetime.now(ZONE).date().isoformat():
         raise ValueError("Mobile homepage only supports the current Sarajevo day")
@@ -25,12 +25,12 @@ def scrape(day):
     text=soup.get_text("\n",strip=True)
     if "Nogomet" not in text and "nogomet" not in text:
         raise ValueError("Page does not identify football schedule")
-    lines=[re.sub(r"\\s+"," ",s).strip() for s in text.splitlines() if s.strip()]
+    lines=[re.sub(r"\s+"," ",s).strip() for s in text.splitlines() if s.strip()]
     # Mobile HTML frequently splits kickoff, home and away into separate nodes.
     # Reconstruct short adjacent lines without crossing section headings.
     candidates=[]
     for i,line in enumerate(lines):
-        if re.match(r"^([01]?\\d|2[0-3]):[0-5]\\d(?:\\s|$)",line):
+        if re.match(r"^([01]?\d|2[0-3]):[0-5]\d(?:\s|$)",line):
             candidates.append(line)
             for n in (2,3,4):
                 chunk=" ".join(lines[i:i+n])
@@ -50,7 +50,7 @@ def scrape(day):
         home,away=m.group(3).strip(),m.group(4).strip()
         if not home or not away or home==away:continue
         # Exclude completed scores and live status; reject ambiguous lines.
-        if re.search(r"\\b\\d+\\s*[-:]\\s*\\d+\\b",away):continue
+        if re.search(r"\b\d+\s*[-:]\s*\d+\b",away):continue
         if "Odgođeno" in line or "Postponed" in line:continue
         start=datetime.fromisoformat(day+"T"+m.group(1).zfill(2)+":"+m.group(2)).replace(tzinfo=ZONE)
         if start<=now+timedelta(minutes=10):continue
@@ -63,8 +63,7 @@ def main():
     p.add_argument("--date",required=True);p.add_argument("--input",required=True);p.add_argument("--output",required=True);p.add_argument("--minimum",type=int,default=4)
     a=p.parse_args();doc=json.loads(Path(a.input).read_text(encoding="utf-8"))
     existing=[f for f in doc.get("fixtures",[]) if f.get("sport")=="football" and f.get("status")=="pre"]
-    if len(existing)>=a.minimum:
-        print("ESPN already sufficient:",len(existing));return
+    # Rezultati.com is primary: always attempt its daily schedule first.
     try:extra=scrape(a.date)
     except Exception as e:
         doc.setdefault("errors",[]).append("Rezultati mobile fallback failed: "+str(e)[:200]);extra=[]
