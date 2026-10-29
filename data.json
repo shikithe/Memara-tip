@@ -5,10 +5,10 @@
   "publication_type": "main_validated_daily_publication",
   "bank_before": 180.87,
   "daily_stake": 18.08,
-  "bank_after": 162.79,
+  "bank_after": 177.53,
   "bank_after_stakes": 162.79,
-  "provisional": true,
-  "settled": false,
+  "provisional": false,
+  "settled": true,
   "odds_verified": true,
   "odds_verification_note": "Referentne javne prematch kvote: PokerStars Spain (Milan, Inter, Dundee) i PokerStars France (Monza). NISU Mozzartbet BiH kvote; identične cijene i mogućnost uplate nisu potvrđene. Tržišni de-vig je benchmark, ne nezavisna vjerovatnoća ni EV.",
   "tickets": [
@@ -112,9 +112,9 @@
       "id": "B",
       "label": "GOLOVI — VIŠE OD 2,5",
       "stake": 5.42,
-      "status": "objavljen",
+      "status": "dobitan",
       "odds": 2.72,
-      "payout": 0,
+      "payout": 14.74,
       "matches": [
         {
           "home": "Monza",
@@ -150,7 +150,9 @@
                 "https://www.victorypicks.com/en/previews/monza-vs-napoli-october-28-2026-2640/"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "1:4"
         },
         {
           "home": "Dundee",
@@ -186,7 +188,9 @@
                 "https://www.footballbetbuilder.co.uk/match/dundee-vs-kilmarnock-2026-10-28"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "3:1"
         }
       ],
       "analysis": {
@@ -197,7 +201,8 @@
           "De-vig tržišni benchmark 53,62% i 58,90%."
         ],
         "limits": "Napoli 2/5 posljednjih gostovanja 3+, Kilmarnock može ostati bez gola; bez potvrđenih XI, bez pozitivnog EV."
-      }
+      },
+      "settled_at_utc": "2026-10-29T00:24:16.285277+00:00"
     },
     {
       "id": "C",
@@ -218,8 +223,8 @@
       }
     }
   ],
-  "total_payout": 0.0,
-  "net_change": null,
+  "total_payout": 14.74,
+  "net_change": -3.34,
   "analysis_status": "Objavljeno 28.10.2026 iz svježeg collector-feed.json (15 fudbalskih kandidata, 12 NBA utakmica) i današnjeg independent-analysis.json. ESPN je neslužben; pokrivenost djelimična. Referentne strane kvote nisu Mozzartbet BiH. NBA player-points 27.10, ESPN NBA statistika 24.10, API-Football 25.10 — zastarjelo, C preskočen. Uzorci 5 i 8/10 mečeva navedeni gdje postoje. Nema validiranog prematch xG para za nezavisni Poisson ni izmišljenog EV. Konačni sastavi nisu potvrđeni.",
   "selection_method": "A: dva 1X2 fudbalska meča; B: dva druga over 2.5; C: preskočen. Maksimalni ulog 10% banke (18,08 od 180,87), A/B 70/30.",
   "source_fixture_feed": "collector-feed.json, 2026-10-28T12:56:51.383960+00:00",

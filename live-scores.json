@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "updated_at_utc": "2026-10-28T20:35:25.764003+00:00",
+  "updated_at_utc": "2026-10-29T00:24:16.285277+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -35,24 +35,26 @@
       "index": 0,
       "home": "Monza",
       "away": "Napoli",
-      "state": "live",
-      "score": "1:1",
+      "state": "final",
+      "score": "1:4",
       "source": "espn-public-unofficial",
       "event_id": "401874799",
       "league": "ita.1",
-      "minute": "45"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "B",
       "index": 1,
       "home": "Dundee",
       "away": "Kilmarnock",
-      "state": "live",
-      "score": "1:0",
+      "state": "final",
+      "score": "3:1",
       "source": "espn-public-unofficial",
       "event_id": "401878354",
       "league": "sco.1",
-      "minute": "45"
+      "minute": null,
+      "result_status": "pogođen"
     }
   ],
   "bank_unchanged": true
