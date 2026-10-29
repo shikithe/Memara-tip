@@ -26,35 +26,44 @@ def scrape(day):
     if "Nogomet" not in text and "nogomet" not in text:
         raise ValueError("Page does not identify football schedule")
     lines=[re.sub(r"\s+"," ",s).strip() for s in text.splitlines() if s.strip()]
-    # Mobile HTML frequently splits kickoff, home and away into separate nodes.
-    # Reconstruct short adjacent lines without crossing section headings.
-    candidates=[]
-    for i,line in enumerate(lines):
-        if re.match(r"^([01]?\d|2[0-3]):[0-5]\d(?:\s|$)",line):
-            candidates.append(line)
-            for n in (2,3,4):
-                chunk=" ".join(lines[i:i+n])
-                if any(HEADER.match(x) for x in lines[i+1:i+n]):break
-                candidates.append(chunk)
-    lines=list(dict.fromkeys(lines+candidates))
-    print("REZULTATI_HTML_DIAGNOSTIC",json.dumps({"html_bytes":len(raw),"text_lines":len(lines),"time_candidates":len(candidates),"samples":candidates[:5]},ensure_ascii=False))
-    league="unknown"
+    # Keep source order. Previously appended reconstructed rows after every
+    # heading, causing all matches to inherit the final league (Zimbabwe).
     fixtures=[]
     now=datetime.now(ZONE)
-    for line in lines:
+    league="unverified_competition"
+    heading_count=0
+    parsed_count=0
+    for i,line in enumerate(lines):
         if HEADER.match(line):
             league=line.split(" Tablica")[0]
+            heading_count+=1
             continue
-        m=TIME.match(line)
-        if not m:continue
-        home,away=m.group(3).strip(),m.group(4).strip()
-        if not home or not away or home==away:continue
-        # Exclude completed scores and live status; reject ambiguous lines.
-        if re.search(r"\b\d+\s*[-:]\s*\d+\b",away):continue
-        if "Odgođeno" in line or "Postponed" in line:continue
-        start=datetime.fromisoformat(day+"T"+m.group(1).zfill(2)+":"+m.group(2)).replace(tzinfo=ZONE)
-        if start<=now+timedelta(minutes=10):continue
-        fixtures.append({"id":"rezultati:"+str(len(fixtures)+1)+":"+day,"provider":"rezultati.com-mobile-public","sport":"football","league":league,"home":home,"away":away,"start_utc":start.astimezone(timezone.utc).isoformat().replace("+00:00","Z"),"start_sarajevo":start.isoformat(),"status":"pre","fixture_source_url":URL})
+        if not re.match(r"^([01]?\\d|2[0-3]):[0-5]\\d(?:\\s|$)",line):
+            continue
+        match=None
+        for n in (1,2,3,4):
+            segment=lines[i:i+n]
+            if len(segment)<n or any(HEADER.match(x) for x in segment[1:]):
+                break
+            candidate=" ".join(segment)
+            match=TIME.match(candidate)
+            if match:
+                break
+        if not match:
+            continue
+        home,away=match.group(3).strip(),match.group(4).strip()
+        if not home or not away or home==away:
+            continue
+        if re.search(r"\\b\\d+\\s*[-:]\\s*\\d+\\b",away):
+            continue
+        if "Odgođeno" in candidate or "Postponed" in candidate:
+            continue
+        start=datetime.fromisoformat(day+"T"+match.group(1).zfill(2)+":"+match.group(2)).replace(tzinfo=ZONE)
+        if start<=now+timedelta(minutes=10):
+            continue
+        parsed_count+=1
+        fixtures.append({"id":"rezultati:"+str(parsed_count)+":"+day,"provider":"rezultati.com-mobile-public","sport":"football","league":league,"league_verified":False,"home":home,"away":away,"start_utc":start.astimezone(timezone.utc).isoformat().replace("+00:00","Z"),"start_sarajevo":start.isoformat(),"status":"pre","fixture_source_url":URL})
+    print("REZULTATI_HTML_DIAGNOSTIC",json.dumps({"html_bytes":len(raw),"text_lines":len(lines),"headings":heading_count,"fixtures":len(fixtures),"sample_leagues":list(dict.fromkeys(f["league"] for f in fixtures))[:12]},ensure_ascii=False))
     if not fixtures:raise ValueError("No parseable future football fixtures")
     return fixtures
 
