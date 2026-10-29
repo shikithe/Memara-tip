@@ -33,7 +33,7 @@ jobs:
           from datetime import datetime
           from zoneinfo import ZoneInfo
           local=datetime.now(ZoneInfo("Europe/Sarajevo")).strftime("%H:%M")
-          run=os.environ["EVENT_NAME"]!="schedule" or local in ("09:15","12:30")
+          run=os.environ["EVENT_NAME"]!="schedule" or ("09:15"<=local<"10:00") or ("12:30"<=local<"13:00")
           print("Local time:",local,"enabled:",run)
           with open(os.environ["GITHUB_OUTPUT"],"a") as f:
               print("run="+str(run).lower(),file=f)
