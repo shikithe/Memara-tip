@@ -208,7 +208,12 @@ def main():
     output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n",
                       encoding="utf-8")
     print(f"Saved {result['fixture_count']} fixtures and {len(result['errors'])} errors to {output}")
-    return 2 if result["errors"] else 0
+    # Partial provider failures are expected: keep valid fixtures available for analysis.
+    # Fail only if no fixture was collected or every source failed.
+    usable = result["fixture_count"] > 0 and any(s.get("status") == "ok" and s.get("count", 0) > 0 for s in result["sources"])
+    if result["errors"]:
+        print(f"WARNING: {len(result['errors'])} provider errors; valid fixtures: {result['fixture_count']}", file=sys.stderr)
+    return 0 if usable else 2
 
 
 if __name__ == "__main__":
