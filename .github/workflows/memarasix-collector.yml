@@ -56,7 +56,7 @@ jobs:
           today=datetime.now(ZoneInfo("Europe/Sarajevo")).date().isoformat()
           try:
               with open("collector-feed.json",encoding="utf-8") as f: doc=json.load(f)
-              done=doc.get("date")==today and bool(doc.get("football_candidates") or doc.get("nba_games"))
+              done=(os.environ.get("GITHUB_EVENT_NAME")=="schedule" and doc.get("date")==today and bool(doc.get("football_candidates") or doc.get("nba_games")) and bool(doc.get("window_sarajevo")) and not any("Rezultati" in str(e) for e in doc.get("source_errors",[])))
           except (OSError,ValueError): done=False
           with open(os.environ["GITHUB_OUTPUT"],"a") as f:
               f.write("needed="+str(not done).lower()+"\n")
@@ -73,7 +73,7 @@ jobs:
       - name: Collect next Sarajevo date football and NBA fixtures
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
-          python collector.py --date "$(TZ=Europe/Sarajevo date -d tomorrow +%F)" --sport all --output collector-output/nba-next.json || echo "WARNING: next-day football/NBA unavailable; today collection continues"
+          python collector.py --date "$(TZ=Europe/Sarajevo date -d tomorrow +%F)" --sport all --output collector-output/nba-next.json || { echo "WARNING: next-day football/NBA unavailable; today collection continues"; mkdir -p collector-output; printf '{"fixtures":[]}\\n' > collector-output/nba-next.json; }
       - name: Validate sources and generate analyst queue
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
@@ -97,7 +97,8 @@ jobs:
           ts=datetime.fromisoformat(d["generated_at_utc"].replace("Z","+00:00"))
           assert d["date"]==today, "Wrong Sarajevo date"
           assert datetime.now(timezone.utc)-timedelta(minutes=5)<=ts<=datetime.now(timezone.utc)+timedelta(minutes=5), "Invalid generation timestamp"
-          assert isinstance(d.get("football_candidates"),list) and len(d["football_candidates"])>0, "No football candidates"
+          assert isinstance(d.get("football_candidates"),list) and isinstance(d.get("nba_games"),list), "Missing candidate arrays"
+          assert len(d["football_candidates"])+len(d["nba_games"])>0, "No future football or NBA candidates"
           print("VALIDATED FEED",today,len(d["football_candidates"]))
           PY
       - name: Commit candidate feed only
