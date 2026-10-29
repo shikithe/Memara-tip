@@ -1,56 +1,70 @@
 #!/usr/bin/env python3
-"""Best-effort public Rezultati.com football schedule fallback; never publishes bets."""
+"""Supplement ESPN with today's public mobile Rezultati.com schedule.
+Read-only fixture discovery; no odds, prediction, publication or bank changes.
+"""
 import argparse,json,re
 from datetime import datetime,timezone,timedelta
 from pathlib import Path
+from urllib.request import Request,urlopen
 from zoneinfo import ZoneInfo
-from playwright.sync_api import sync_playwright
+from bs4 import BeautifulSoup
+
 ZONE=ZoneInfo("Europe/Sarajevo")
+URL="https://m.rezultati.com/"
+TIME=re.compile(r"^([01]?\\d|2[0-3]):([0-5]\\d)\\s+(.+?)\\s+-\\s+(.+?)(?:\\s+[-–]\\s*)?$")
+HEADER=re.compile(r"^[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\\s&./'-]+:\\s+.+")
 def scrape(day):
+    if day!=datetime.now(ZONE).date().isoformat():
+        raise ValueError("Mobile homepage only supports the current Sarajevo day")
+    req=Request(URL,headers={"User-Agent":"Mozilla/5.0 (compatible; MemaraFixtureResearch/1.0)","Accept-Language":"hr-HR,hr;q=0.9"})
+    with urlopen(req,timeout=25) as resp:
+        raw=resp.read(3_000_001)
+    if len(raw)>3_000_000:raise ValueError("Page too large")
+    soup=BeautifulSoup(raw,"html.parser")
+    for tag in soup(["script","style","noscript"]):tag.decompose()
+    text=soup.get_text("\n",strip=True)
+    if "Nogomet" not in text and "nogomet" not in text:
+        raise ValueError("Page does not identify football schedule")
+    lines=[re.sub(r"\\s+"," ",s).strip() for s in text.splitlines() if s.strip()]
+    league="unknown"
     fixtures=[]
-    with sync_playwright() as p:
-        browser=p.chromium.launch(headless=True)
-        page=browser.new_page(locale="hr-HR",timezone_id="Europe/Sarajevo")
-        page.goto("https://www.rezultati.com/nogomet/",wait_until="domcontentloaded",timeout=35000)
-        page.wait_for_timeout(4500)
-        # Date navigation is deliberately not guessed: accept only the actual Sarajevo day.
-        if day!=datetime.now(ZONE).date().isoformat():
-            raise ValueError("Only today's live schedule is supported")
-        for row in page.locator(".event__match").all():
-            try:
-                cls=row.get_attribute("class") or ""
-                if "event__match--scheduled" not in cls and "event__match--live" in cls:continue
-                home=row.locator(".event__participant--home").first.inner_text(timeout=500).strip()
-                away=row.locator(".event__participant--away").first.inner_text(timeout=500).strip()
-                clock=row.locator(".event__time").first.inner_text(timeout=500).strip()
-                m=re.search(r"(?<!\\d)([01]?\\d|2[0-3]):([0-5]\\d)(?!\\d)",clock)
-                if not m or not home or not away or home==away:continue
-                start=datetime.fromisoformat(day+"T"+m.group(1).zfill(2)+":"+m.group(2)).replace(tzinfo=ZONE)
-                if start<=datetime.now(ZONE)+timedelta(minutes=10):continue
-                ident=row.get_attribute("id") or ""
-                if not ident:continue
-                fixtures.append({"id":"rezultati:"+ident,"provider":"rezultati.com-public-page","sport":"football","league":"unverified_competition","home":home,"away":away,"start_utc":start.astimezone(timezone.utc).isoformat().replace("+00:00","Z"),"start_sarajevo":start.isoformat(),"status":"pre","coverage":"fallback_public_page","fixture_source_url":"https://www.rezultati.com/nogomet/"})
-            except Exception:continue
-        browser.close()
+    now=datetime.now(ZONE)
+    for line in lines:
+        if HEADER.match(line):
+            league=line.split(" Tablica")[0]
+            continue
+        m=TIME.match(line)
+        if not m:continue
+        home,away=m.group(3).strip(),m.group(4).strip()
+        if not home or not away or home==away:continue
+        # Exclude completed scores and live status; reject ambiguous lines.
+        if re.search(r"\\b\\d+\\s*[-:]\\s*\\d+\\b",away):continue
+        if "Odgođeno" in line or "Postponed" in line:continue
+        start=datetime.fromisoformat(day+"T"+m.group(1).zfill(2)+":"+m.group(2)).replace(tzinfo=ZONE)
+        if start<=now+timedelta(minutes=10):continue
+        fixtures.append({"id":"rezultati:"+str(len(fixtures)+1)+":"+day,"provider":"rezultati.com-mobile-public","sport":"football","league":league,"home":home,"away":away,"start_utc":start.astimezone(timezone.utc).isoformat().replace("+00:00","Z"),"start_sarajevo":start.isoformat(),"status":"pre","fixture_source_url":URL})
+    if not fixtures:raise ValueError("No parseable future football fixtures")
     return fixtures
+
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument("--date",required=True);ap.add_argument("--input",required=True);ap.add_argument("--output",required=True);ap.add_argument("--minimum",type=int,default=4)
-    a=ap.parse_args();doc=json.loads(Path(a.input).read_text())
-    existing=[x for x in doc.get("fixtures",[]) if x.get("sport")=="football" and x.get("status")=="pre"]
+    p=argparse.ArgumentParser()
+    p.add_argument("--date",required=True);p.add_argument("--input",required=True);p.add_argument("--output",required=True);p.add_argument("--minimum",type=int,default=4)
+    a=p.parse_args();doc=json.loads(Path(a.input).read_text(encoding="utf-8"))
+    existing=[f for f in doc.get("fixtures",[]) if f.get("sport")=="football" and f.get("status")=="pre"]
     if len(existing)>=a.minimum:
-        print("ESPN sufficient:",len(existing));return
+        print("ESPN already sufficient:",len(existing));return
     try:extra=scrape(a.date)
     except Exception as e:
-        doc.setdefault("errors",[]).append("Rezultati.com fallback unavailable: "+str(e)[:200])
-        extra=[]
-    seen={(x.get("home","").casefold(),x.get("away","").casefold(),x.get("start_sarajevo","")[:16]) for x in doc["fixtures"]}
+        doc.setdefault("errors",[]).append("Rezultati mobile fallback failed: "+str(e)[:200]);extra=[]
+    seen={(f.get("home","").casefold(),f.get("away","").casefold()) for f in doc["fixtures"]}
     added=0
-    for x in extra:
-        key=(x["home"].casefold(),x["away"].casefold(),x["start_sarajevo"][:16])
+    for f in extra:
+        key=(f["home"].casefold(),f["away"].casefold())
         if key not in seen:
-            doc["fixtures"].append(x);seen.add(key);added+=1
+            doc["fixtures"].append(f);seen.add(key);added+=1
+    doc["fixtures"].sort(key=lambda f:f["start_utc"])
     doc["fixture_count"]=len(doc["fixtures"])
-    doc.setdefault("sources",[]).append({"provider":"rezultati.com-public-page","status":"ok" if extra else "unavailable_or_empty","count":added})
-    Path(a.output).write_text(json.dumps(doc,ensure_ascii=False,indent=2)+"\n")
-    print("Rezultati fallback added:",added)
+    doc.setdefault("sources",[]).append({"provider":"rezultati.com-mobile-public","status":"ok" if added else "unavailable_or_empty","count":added,"url":URL})
+    Path(a.output).write_text(json.dumps(doc,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print("Rezultati mobile fallback: parsed",len(extra),"added",added,"total",len(doc["fixtures"]))
 if __name__=="__main__":main()
