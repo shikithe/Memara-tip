@@ -75,7 +75,10 @@ def scrape(day):
             if start<=now+timedelta(minutes=10):continue
             fixtures.append({"id":"rezultati:flat:"+str(len(fixtures)+1)+":"+day,"provider":"rezultati.com-mobile-public","sport":"football","league":"unverified_competition","league_verified":False,"home":home,"away":away,"start_utc":start.astimezone(timezone.utc).isoformat().replace("+00:00","Z"),"start_sarajevo":start.isoformat(),"status":"pre","fixture_source_url":URL})
         print("REZULTATI_FALLBACK_DIAGNOSTIC",json.dumps({"flat_length":len(flat),"flat_sample":flat[:1600],"flat_matches":len(fixtures)},ensure_ascii=False))
-    if not fixtures:raise ValueError("No parseable future football fixtures; inspect diagnostics in job logs")
+    if not fixtures:
+        diagnostic={"url":URL,"html_bytes":len(raw),"page_title":soup.title.get_text(" ",strip=True) if soup.title else None,"text_sample":text[:2200],"body_sample":str(soup.body)[:1200] if soup.body else None}
+        print("REZULTATI_FAILURE_DIAGNOSTIC",json.dumps(diagnostic,ensure_ascii=False))
+        raise ValueError("No parseable future football fixtures; inspect REZULTATI_FAILURE_DIAGNOSTIC in job logs")
     return fixtures
 
 def main():
