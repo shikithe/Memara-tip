@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "date": "2026-10-29",
-  "generated_at_utc": "2026-10-29T14:24:33.181179+00:00",
+  "generated_at_utc": "2026-10-29T14:28:06.840184+00:00",
   "state": "awaiting_human_or_AI_analysis",
   "not_betting_advice": true,
   "odds_verified": false,
@@ -212,7 +212,7 @@
   "nba_player_points_offers": [],
   "math_layer": {
     "version": "1.0",
-    "generated_at_utc": "2026-10-29T14:24:33.211476+00:00",
+    "generated_at_utc": "2026-10-29T14:28:06.873217+00:00",
     "nba_offers_with_market_math": 0,
     "football_probability_status": "requires_external_validated_expected_goals",
     "nba_edge_status": "requires_independent_player_points_probability_model",
