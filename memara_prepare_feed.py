@@ -42,11 +42,11 @@ def build(data, max_football=None, max_nba=12, next_nba=None):
     unique = {}
     for f in upcoming:
         key = (f["sport"], f.get("league", ""), f.get("home", ""), f.get("away", ""), f["start_utc"])
-        if key not in unique or (f.get("provider") == "rezultati.com-mobile-public" and unique[key].get("provider") != "rezultati.com-mobile-public"):
+        if key not in unique:
             unique[key] = f
     football = [f for f in unique.values() if f["sport"] == "football"]
     nba = [f for f in unique.values() if f["sport"] == "basketball" and f.get("league") == "nba"]
-    football.sort(key=lambda f: (0 if f.get("provider") == "rezultati.com-mobile-public" else 1, f.get("start_utc", "")))
+    football.sort(key=lambda f: f.get("start_utc", ""))
     selected_football = football if max_football is None else football[:max_football]
     nba.sort(key=lambda f: f["start_utc"])
     players = data.get("nba_players", [])
