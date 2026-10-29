@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "date": "2026-10-29",
-  "generated_at_utc": "2026-10-29T15:14:45.997804+00:00",
+  "generated_at_utc": "2026-10-29T15:17:27.441202+00:00",
   "state": "awaiting_human_or_AI_analysis",
   "not_betting_advice": true,
   "odds_verified": false,
@@ -9,7 +9,7 @@
   "tickets_published": false,
   "source_status": "ok",
   "source_errors": [
-    "Rezultati mobile fallback failed: No parseable future football fixtures; inspect REZULTATI_HTML_DIAGNOSTIC in job logs"
+    "Rezultati mobile fallback failed: No parseable future football fixtures; inspect diagnostics in job logs"
   ],
   "scope_warning": "Partial coverage, especially TheSportsDB regional free league endpoints.",
   "football_candidates": [
@@ -212,7 +212,7 @@
   "nba_player_points_offers": [],
   "math_layer": {
     "version": "1.0",
-    "generated_at_utc": "2026-10-29T15:14:46.019121+00:00",
+    "generated_at_utc": "2026-10-29T15:17:27.474660+00:00",
     "nba_offers_with_market_math": 0,
     "football_probability_status": "requires_external_validated_expected_goals",
     "nba_edge_status": "requires_independent_player_points_probability_model",
