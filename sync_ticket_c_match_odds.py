@@ -18,7 +18,7 @@ def stamp(s):
 def get(path,params,key):
     req=Request(BASE+path+"?"+urlencode(params),headers={"x-api-key":key,"Accept":"application/json"})
     with urlopen(req,timeout=30) as r:return json.load(r)
-def collect(feed,key,region="eu",max_soccer=12,now=None):
+def collect(feed,key,region="eu",max_soccer=None,now=None):
     now=now or datetime.now(timezone.utc)
     fixtures=[]
     for sport,rows in (("football",feed.get("football_candidates",[])),("basketball",feed.get("nba_games",[]))):
@@ -29,7 +29,7 @@ def collect(feed,key,region="eu",max_soccer=12,now=None):
             except (ValueError,KeyError,TypeError):pass
     sports=get("/sports",{},key)
     soccer=[s["key"] for s in sports if s.get("active") and s.get("key","").startswith("soccer_")]
-    keys=(soccer[:max_soccer] if any(s=="football" for s,_ in fixtures) else [])
+    keys=((soccer if max_soccer is None else soccer[:max_soccer]) if any(s=="football" for s,_ in fixtures) else [])
     if any(s=="basketball" for s,_ in fixtures):keys+=["basketball_nba"]
     offers=[];errors=[];matched=set()
     for sport_key in keys:
@@ -70,7 +70,7 @@ def main():
     p.add_argument("--feed",default="collector-feed.json")
     p.add_argument("--output",default="collector-output/match-odds-snapshot.json")
     p.add_argument("--region",choices=["eu","us","uk","au"],default="eu")
-    p.add_argument("--max-soccer",type=int,default=12)
+    p.add_argument("--max-soccer",type=int,default=None,help="Optional API budget cap; default checks every active soccer league")
     a=p.parse_args()
     key=os.environ.get("THE_ODDS_API_KEY")
     if not key:p.error("THE_ODDS_API_KEY secret missing")
