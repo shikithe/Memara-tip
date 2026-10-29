@@ -8,6 +8,7 @@ on:
       - '.github/workflows/memarasix-collector.yml'
       - 'collector.py'
       - 'memara_prepare_feed.py'
+      - 'memara_rezultati_fallback.py'
   schedule:
     # Morning window 09:15-10:15 and recovery window 12:30-14:45 Sarajevo.
     # Cover both summer/winter UTC offsets; local-time gate filters actual runs.
@@ -74,6 +75,15 @@ jobs:
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
           python collector.py --date "$(TZ=Europe/Sarajevo date -d tomorrow +%F)" --sport basketball --output collector-output/nba-next.json || echo "WARNING: next-day NBA unavailable; today football collection continues"
+      - name: Install browser for Rezultati.com fallback
+        if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Add Rezultati.com football only when ESPN is insufficient
+        if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
+        run: |
+          python memara_rezultati_fallback.py --date "$(TZ=Europe/Sarajevo date +%F)" --input collector-output/fixtures.json --output collector-output/fixtures.json --minimum 4
       - name: Validate sources and generate analyst queue
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
