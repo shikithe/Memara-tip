@@ -26,6 +26,18 @@ def scrape(day):
     if "Nogomet" not in text and "nogomet" not in text:
         raise ValueError("Page does not identify football schedule")
     lines=[re.sub(r"\\s+"," ",s).strip() for s in text.splitlines() if s.strip()]
+    # Mobile HTML frequently splits kickoff, home and away into separate nodes.
+    # Reconstruct short adjacent lines without crossing section headings.
+    candidates=[]
+    for i,line in enumerate(lines):
+        if re.match(r"^([01]?\\d|2[0-3]):[0-5]\\d(?:\\s|$)",line):
+            candidates.append(line)
+            for n in (2,3,4):
+                chunk=" ".join(lines[i:i+n])
+                if any(HEADER.match(x) for x in lines[i+1:i+n]):break
+                candidates.append(chunk)
+    lines=list(dict.fromkeys(lines+candidates))
+    print("REZULTATI_HTML_DIAGNOSTIC",json.dumps({"html_bytes":len(raw),"text_lines":len(lines),"time_candidates":len(candidates),"samples":candidates[:5]},ensure_ascii=False))
     league="unknown"
     fixtures=[]
     now=datetime.now(ZONE)
