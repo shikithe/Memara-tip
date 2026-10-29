@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "date": "2026-10-29",
   "timezone": "Europe/Sarajevo",
-  "collected_at_utc": "2026-10-29T16:00:30.509368+00:00",
+  "collected_at_utc": "2026-10-29T16:09:31.041095+00:00",
   "scope": "configured leagues only, not all global fixtures",
   "publication_allowed": false,
   "status": "ok",
@@ -325,17 +325,9 @@
       "coverage": "incomplete (one next event maximum)",
       "source_events": 1,
       "url": "https://www.thesportsdb.com/api/v1/json/123/eventsnextleague.php?id=4912"
-    },
-    {
-      "provider": "rezultati.com-mobile-public",
-      "status": "unavailable_or_empty",
-      "count": 0,
-      "url": "https://m.rezultati.com/"
     }
   ],
-  "errors": [
-    "Rezultati mobile fallback failed: No parseable future football fixtures; inspect REZULTATI_FAILURE_DIAGNOSTIC in job logs"
-  ],
+  "errors": [],
   "fixtures": [
     {
       "id": "espn:basketball:nba:401909881",
