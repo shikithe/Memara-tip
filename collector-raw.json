@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "date": "2026-10-29",
   "timezone": "Europe/Sarajevo",
-  "collected_at_utc": "2026-10-29T16:09:31.041095+00:00",
+  "collected_at_utc": "2026-10-29T18:12:17.830135+00:00",
   "scope": "configured leagues only, not all global fixtures",
   "publication_allowed": false,
   "status": "ok",
@@ -104,6 +104,70 @@
       "status": "ok",
       "count": 0,
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ned.1/scoreboard?dates=20261029&limit=500"
+    },
+    {
+      "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "eng.2",
+      "status": "ok",
+      "count": 0,
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.2/scoreboard?dates=20261028&limit=500"
+    },
+    {
+      "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "eng.2",
+      "status": "ok",
+      "count": 0,
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.2/scoreboard?dates=20261029&limit=500"
+    },
+    {
+      "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "ger.2",
+      "status": "ok",
+      "count": 0,
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.2/scoreboard?dates=20261028&limit=500"
+    },
+    {
+      "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "ger.2",
+      "status": "ok",
+      "count": 0,
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.2/scoreboard?dates=20261029&limit=500"
+    },
+    {
+      "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "ita.2",
+      "status": "ok",
+      "count": 0,
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.2/scoreboard?dates=20261028&limit=500"
+    },
+    {
+      "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "ita.2",
+      "status": "ok",
+      "count": 0,
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.2/scoreboard?dates=20261029&limit=500"
+    },
+    {
+      "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "fra.2",
+      "status": "ok",
+      "count": 0,
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.2/scoreboard?dates=20261028&limit=500"
+    },
+    {
+      "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "fra.2",
+      "status": "ok",
+      "count": 0,
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.2/scoreboard?dates=20261029&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
@@ -646,7 +710,7 @@
       "away": "Lecce",
       "start_utc": "2026-10-29T17:30:00Z",
       "start_sarajevo": "2026-10-29T18:30:00+01:00",
-      "status": "pre"
+      "status": "in"
     },
     {
       "id": "espn:football:ita.1:401874969",
