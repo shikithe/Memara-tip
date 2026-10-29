@@ -1,8 +1,6 @@
 name: MemaraSix C research screening
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '20 12,13 * * *'
 permissions:
   contents: write
 concurrency:
