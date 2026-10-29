@@ -17,6 +17,7 @@ from zoneinfo import ZoneInfo
 ZONE = ZoneInfo("Europe/Sarajevo")
 ROOT = "https://site.api.espn.com/apis/site/v2/sports"
 FOOTBALL = ("eng.1", "esp.1", "ger.1", "ita.1", "fra.1", "ned.1",
+            "eng.2", "ger.2", "ita.2", "fra.2",
             "por.1", "bel.1", "tur.1", "sco.1", "uefa.champions",
             "uefa.europa", "uefa.europa.conf", "usa.1", "bra.1", "arg.1")
 BASKETBALL = ("nba",)
