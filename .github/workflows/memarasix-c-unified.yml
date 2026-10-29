@@ -1,4 +1,4 @@
-name: MemaraSix unified NBA C preparation
+name: MemaraSix mixed-sport C research preparation
 on:
   workflow_dispatch:
   schedule:
@@ -71,17 +71,22 @@ jobs:
           d=json.load(open("collector-output/ticket-c-research.json"))
           assert d["publication_allowed"] is False
           assert d["state"]=="research_only"
-          print("C research candidates:",d["count"])
+          assert d["target_odds"] == 10.0
+          assert d["minimum_legs"] == 3
+          assert d["unlimited_legs"] is True
+          assert not d["target_reached"] or d["combined_odds"] >= 10.0
+          print("C research eligible:",d["candidate_count"],"selected:",d["selected_count"],"odds:",d["combined_odds"])
           PY
       - name: Upload research files (no commits or site updates)
         if: always() && steps.gate.outputs.run == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: memarasix-unified-nba-research
+          name: memarasix-unified-mixed-c-research
           path: |
             collector-output/nba-next-24h.json
             collector-output/nba-free-statistics.json
             collector-output/nba-player-points.json
             collector-output/nba-analyst-research.json
             collector-output/ticket-c-research.json
+            collector-output/ticket-c-match-markets.json
           if-no-files-found: warn
