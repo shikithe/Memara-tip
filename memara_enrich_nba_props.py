@@ -25,16 +25,13 @@ def enrich(feed, props, now=None):
     result["nba_player_points_offers"] = []
     result["nba_prop_status"] = "unavailable"
     result["nba_prop_note"] = "Source bookmaker odds only; not necessarily available at Mozzartbet BiH. Independent AI assessment needed."
-    if feed.get("date") != now.astimezone(SAR).date().isoformat():
-        result["nba_prop_note"] = "Collector feed date is not today; no odds merged."
-        return result
     try:
         snapshot = parse_time(props["generated_at_utc"])
     except (KeyError, ValueError, TypeError):
         result["nba_prop_note"] = "Invalid odds snapshot timestamp."
         return result
-    if snapshot > now + timedelta(minutes=5) or now - snapshot > timedelta(hours=3):
-        result["nba_prop_note"] = "Odds snapshot too old or from the future; no odds merged."
+    if snapshot > now + timedelta(minutes=5):
+        result["nba_prop_note"] = "Odds snapshot is from the future; no odds merged."
         return result
     events = {}
     for game in feed.get("nba_games", []):
@@ -45,8 +42,10 @@ def enrich(feed, props, now=None):
             start = parse_time(game["start_utc"])
         except (ValueError, TypeError, KeyError):
             continue
-        if start > now and start < now + timedelta(hours=42):
+        if start > now:
             events[event_id] = start
+    # The fixture list expires only after its last fixture has started.
+    # Do not reject the whole list because its snapshot is older than 3h.
     seen = set()
     rejected_players = 0
     for offer in props.get("offers", []):
@@ -66,8 +65,9 @@ def enrich(feed, props, now=None):
             continue
         if abs((odds_start-start).total_seconds()) > 300:
             continue
-        if updated > now + timedelta(minutes=5) or now-updated > timedelta(hours=3):
+        if updated > now + timedelta(minutes=5):
             continue
+        odds_fresh = now - updated <= timedelta(hours=3)
         if line < 0 or over <= 1 or under <= 1:
             continue
         player = str(offer.get("player", "")).strip()
@@ -97,13 +97,15 @@ def enrich(feed, props, now=None):
             "bookmaker_key": offer.get("bookmaker_key"),
             "last_update": updated.isoformat().replace("+00:00", "Z"),
             "source": "the-odds-api.com",
-            "analysis_status": "unanalysed",
+            "analysis_status": "unanalysed" if odds_fresh else "needs_odds_revalidation",
+            "odds_fresh": odds_fresh,
             "mozart_bih_verified": False
         })
     result["nba_player_points_offers"].sort(key=lambda x: (x["start_utc"], x["player"], x["bookmaker"], x["points_line"]))
     result["nba_prop_rejected_team_mismatch"] = rejected_players
     result["nba_prop_count"] = len(result["nba_player_points_offers"])
-    result["nba_prop_status"] = "available_for_analysis" if result["nba_prop_count"] else "no_verified_matches"
+    result["nba_prop_status"] = "available_for_analysis" if result["nba_prop_count"] else "no_upcoming_matches"
+    result["nba_prop_note"] = "Fixture offers remain until the last scheduled match starts; old bookmaker odds must be revalidated before publication."
     return result
 
 def main():
