@@ -171,7 +171,7 @@ def run(days, max_summaries, offers_path, history_path, now=None):
                     observed = normalize_name(row.get("team"))
                     if expected and observed and observed not in expected:
                         result["coverage"]["team_mismatch"].append({"player_id": pid, "observed_team": row.get("team")})
-                        continue
+                        # Historical team changes are legitimate: preserve verified ESPN athlete-ID history.
                     cached.setdefault(pid, {})[eid] = row
         except (HTTPError, URLError, ValueError, TypeError):
             result["errors"].append("Boxscore unavailable for event " + eid)
