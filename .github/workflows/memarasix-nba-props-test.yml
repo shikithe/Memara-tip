@@ -34,9 +34,9 @@ jobs:
           assert result["tickets_published"] is False
           assert all(not x["mozart_bih_verified"] for x in result["nba_player_points_offers"])
           stale=enrich(f,p,now=now+timedelta(hours=4))
-          assert stale["nba_prop_status"]=="unavailable"
-          assert len(stale["nba_player_points_offers"])==0
-          wrong=dict(f,date="2026-10-23")
-          assert len(enrich(wrong,p,now=now)["nba_player_points_offers"])==0
+          assert stale["nba_prop_count"]>0, "Upcoming fixtures must survive an old snapshot"
+          assert all(x["analysis_status"]=="needs_odds_revalidation" for x in stale["nba_player_points_offers"])
+          expired=dict(f,nba_games=[dict(g,start_utc="2026-10-01T00:00:00Z") for g in f["nba_games"]])
+          assert len(enrich(expired,p,now=now)["nba_player_points_offers"])==0
           print("INTEGRATION_TEST_SUCCESS")
           PY
