@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "date": "2026-10-29",
-  "generated_at_utc": "2026-10-29T15:57:20.388232+00:00",
+  "generated_at_utc": "2026-10-29T16:00:35.373682+00:00",
   "state": "awaiting_human_or_AI_analysis",
   "not_betting_advice": true,
   "odds_verified": false,
@@ -82,6 +82,10 @@
       "status": "pre"
     }
   ],
+  "window_sarajevo": {
+    "start": "2026-10-29T10:00:00+01:00",
+    "end_exclusive": "2026-10-30T09:00:00+01:00"
+  },
   "nba_window_sarajevo": {
     "start": "2026-10-29T10:00:00+01:00",
     "end_exclusive": "2026-10-30T09:00:00+01:00"
@@ -216,7 +220,7 @@
   "nba_player_points_offers": [],
   "math_layer": {
     "version": "1.0",
-    "generated_at_utc": "2026-10-29T15:57:20.410176+00:00",
+    "generated_at_utc": "2026-10-29T16:00:35.407795+00:00",
     "nba_offers_with_market_math": 0,
     "football_probability_status": "requires_external_validated_expected_goals",
     "nba_edge_status": "requires_independent_player_points_probability_model",
