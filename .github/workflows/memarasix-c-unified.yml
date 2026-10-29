@@ -6,7 +6,7 @@ on:
     - cron: '15 7,8 * * *'
     - cron: '30 10,11 * * *'
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: memarasix-unified-c-preparation
   cancel-in-progress: false
@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -73,17 +73,15 @@ jobs:
           assert d["state"]=="research_only"
           print("C research candidates:",d["count"])
           PY
-      - name: Save research and offers without publishing
-        if: steps.gate.outputs.run == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add collector-output/nba-next-24h.json collector-output/nba-free-statistics.json collector-output/ticket-c-research.json collector-output/nba-analyst-research.json
-          if [ -n "$THE_ODDS_API_KEY" ]; then
-            git add collector-output/nba-player-points.json collector-feed.json
-          fi
-          if ! git diff --cached --quiet; then
-            git commit -m "data: unified NBA C preparation [skip ci]"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+      - name: Upload research files (no commits or site updates)
+        if: always() && steps.gate.outputs.run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: memarasix-unified-nba-research
+          path: |
+            collector-output/nba-next-24h.json
+            collector-output/nba-free-statistics.json
+            collector-output/nba-player-points.json
+            collector-output/nba-analyst-research.json
+            collector-output/ticket-c-research.json
+          if-no-files-found: warn
