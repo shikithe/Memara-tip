@@ -1,6 +1,6 @@
 {
   "date": "2026-10-29",
-  "updated_at_utc": "2026-10-29T18:09:04.671305+00:00",
+  "updated_at_utc": "2026-10-29T22:42:36.297915+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,24 +9,26 @@
       "index": 0,
       "home": "Frosinone",
       "away": "Lecce",
-      "state": "live",
-      "score": "1:0",
+      "state": "final",
+      "score": "5:1",
       "source": "espn-public-unofficial",
       "event_id": "401874976",
       "league": "ita.1",
-      "minute": "35"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "B",
       "index": 1,
       "home": "Fiorentina",
       "away": "Atalanta",
-      "state": "scheduled",
-      "score": "0:0",
+      "state": "final",
+      "score": "2:2",
       "source": "espn-public-unofficial",
       "event_id": "401874969",
       "league": "ita.1",
-      "minute": null
+      "minute": null,
+      "result_status": "pogođen"
     }
   ],
   "bank_unchanged": true
