@@ -57,7 +57,7 @@ jobs:
           today=datetime.now(ZoneInfo("Europe/Sarajevo")).date().isoformat()
           try:
               with open("collector-feed.json",encoding="utf-8") as f: doc=json.load(f)
-              done=doc.get("date")==today and len(doc.get("football_candidates") or [])>0
+              done=doc.get("date")==today and len(doc.get("football_candidates") or [])>=4
           except (OSError,ValueError): done=False
           with open(os.environ["GITHUB_OUTPUT"],"a") as f:
               f.write("needed="+str(not done).lower()+"\n")
