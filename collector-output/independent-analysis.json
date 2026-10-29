@@ -1,27 +1,11 @@
 {
   "date": "2026-10-29",
-  "generated_at_utc": "2026-10-29T16:09:50.496595+00:00",
-  "source_generated_at_utc": "2026-10-29T16:09:34.298407+00:00",
+  "generated_at_utc": "2026-10-29T18:12:41.834407+00:00",
+  "source_generated_at_utc": "2026-10-29T18:12:25.592239+00:00",
   "state": "analysis_completed_data_gaps_remain",
   "publication_allowed": false,
   "odds_verified": false,
   "football": [
-    {
-      "id": "espn:football:ita.1:401874976",
-      "home": "Frosinone",
-      "away": "Lecce",
-      "start_utc": "2026-10-29T17:30:00Z",
-      "league": "ita.1",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
     {
       "id": "espn:football:ita.1:401874969",
       "home": "Fiorentina",
@@ -139,8 +123,8 @@
   ],
   "summary": {
     "football": {
-      "total": 5,
-      "researchable": 5
+      "total": 4,
+      "researchable": 4
     },
     "nba": {
       "total": 3,
