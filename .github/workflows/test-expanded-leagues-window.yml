@@ -1,0 +1,39 @@
+name: Test expanded leagues window (isolated)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test-fixtures:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Collect both Sarajevo dates without publishing
+        run: |
+          python collector.py --date 2026-10-29 --sport football --output /tmp/today.json || true
+          python collector.py --date 2026-10-30 --sport football --output /tmp/tomorrow.json || true
+      - name: Verify 10:00 today to 09:00 tomorrow
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          z=ZoneInfo('Europe/Sarajevo')
+          a=json.load(open('/tmp/today.json'))
+          b=json.load(open('/tmp/tomorrow.json'))
+          rows={x['id']:x for x in a['fixtures']+b['fixtures']}
+          start=datetime(2026,10,29,10,tzinfo=z)
+          end=datetime(2026,10,30,9,tzinfo=z)
+          chosen=[x for x in rows.values() if start<=datetime.fromisoformat(x['start_utc'].replace('Z','+00:00'))<end and x['status']=='pre']
+          leagues=['eng.2','ger.2','ita.2','fra.2']
+          print('WINDOW:',start.isoformat(),'to',end.isoformat())
+          print('ALL CANDIDATES:',len(chosen))
+          for code in leagues:
+              subset=[x for x in chosen if x['league']==code]
+              print(code, len(subset), [(x['home'],x['away'],x['start_sarajevo']) for x in subset])
+          print('ALL LEAGUES:',{c:sum(x['league']==c for x in chosen) for c in sorted(set(x['league'] for x in chosen))})
+          print('SOURCE ERRORS:',a['errors']+b['errors'])
+          PY
