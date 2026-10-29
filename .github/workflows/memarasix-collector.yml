@@ -8,7 +8,6 @@ on:
       - '.github/workflows/memarasix-collector.yml'
       - 'collector.py'
       - 'memara_prepare_feed.py'
-      - 'memara_rezultati_fallback.py'
   schedule:
     # Morning window 09:15-10:15 and recovery window 12:30-14:45 Sarajevo.
     # Cover both summer/winter UTC offsets; local-time gate filters actual runs.
@@ -57,7 +56,7 @@ jobs:
           today=datetime.now(ZoneInfo("Europe/Sarajevo")).date().isoformat()
           try:
               with open("collector-feed.json",encoding="utf-8") as f: doc=json.load(f)
-              done=doc.get("date")==today and len(doc.get("football_candidates") or [])>=4 and any(x.get("provider")=="rezultati.com-mobile-public" and "league_verified" in x for x in doc.get("football_candidates",[]))
+              done=doc.get("date")==today and bool(doc.get("football_candidates") or doc.get("nba_games"))
           except (OSError,ValueError): done=False
           with open(os.environ["GITHUB_OUTPUT"],"a") as f:
               f.write("needed="+str(not done).lower()+"\n")
@@ -75,13 +74,6 @@ jobs:
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
           python collector.py --date "$(TZ=Europe/Sarajevo date -d tomorrow +%F)" --sport all --output collector-output/nba-next.json || echo "WARNING: next-day football/NBA unavailable; today collection continues"
-      - name: Install HTML parser for Rezultati.com fallback
-        if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
-        run: python -m pip install beautifulsoup4
-      - name: Collect Rezultati.com football as primary source (ESPN fallback)
-        if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
-        run: |
-          python memara_rezultati_fallback.py --date "$(TZ=Europe/Sarajevo date +%F)" --input collector-output/fixtures.json --output collector-output/fixtures.json --minimum 4
       - name: Validate sources and generate analyst queue
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
