@@ -17,7 +17,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path("collector-output")
-MIN_GAMES = 5
+MIN_GAMES = 4
 ODDS_MIN, ODDS_MAX = 1.75, 1.90
 
 def timestamp(value):
@@ -78,11 +78,11 @@ def analyze(odds, stats, context=None, now=None):
         if len(valid) < MIN_GAMES:
             reject("insufficient_recent_games")
             continue
-        recent = valid[:5]
+        recent = valid[:4]
         avg_points = statistics.mean(x[0] for x in valid)
         avg_minutes = statistics.mean(x[1] for x in valid)
-        last5_points = statistics.mean(x[0] for x in recent)
-        last5_minutes = statistics.mean(x[1] for x in recent)
+        last4_points = statistics.mean(x[0] for x in recent)
+        last4_minutes = statistics.mean(x[1] for x in recent)
         variability = statistics.stdev(x[0] for x in valid)
         ctx = context.get(pid) or {}
         verified = False
@@ -98,7 +98,7 @@ def analyze(odds, stats, context=None, now=None):
                             0.5 <= expected_minutes <= 48 and defense is not None and
                             0.75 <= defense <= 1.25 and usage is not None and
                             0.75 <= usage <= 1.25 and injury in ("available", "out", "questionable"))
-        baseline = 0.65 * last5_points + 0.35 * avg_points
+        baseline = 0.65 * last4_points + 0.35 * avg_points
         if context_complete:
             projected = baseline * (expected_minutes / max(avg_minutes, 1)) * defense * usage
         else:
@@ -126,10 +126,10 @@ def analyze(odds, stats, context=None, now=None):
                 "opponent": offer.get("opponent"), "espn_event_id": offer.get("espn_event_id"),
                 "start_utc": start.isoformat(), "bookmaker": offer.get("bookmaker"),
                 "line": line, "side": side, "odds": price,
-                "sample_games": len(valid), "last5_average_points": round(last5_points, 2),
+                "sample_games": len(valid), "last4_average_points": round(last4_points, 2),
                 "historical_average_points": round(avg_points, 2),
                 "historical_average_minutes": round(avg_minutes, 2),
-                "last5_average_minutes": round(last5_minutes, 2),
+                "last4_average_minutes": round(last4_minutes, 2),
                 "historical_points_stddev": round(variability, 2),
                 "expected_minutes": expected_minutes if context_complete else None,
                 "projected_points": round(projected, 2) if projected is not None else None,
