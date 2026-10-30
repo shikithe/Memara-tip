@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="bs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MEMARASIX — Test kolektora</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#071323;color:#e8f3ff;font:15px system-ui,Arial}main{max-width:1100px;margin:auto;padding:24px 16px}h1{margin:0;font-size:27px}small,.muted{color:#9bb2ca}.tag{display:inline-block;padding:5px 10px;background:#17324e;color:#7ce4ff;border-radius:20px;font-weight:700;font-size:12px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:20px 0}.card{border:1px solid #2b4763;background:#10243a;border-radius:13px;padding:16px}.num{font-size:30px;font-weight:800;margin:6px 0}.controls{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}button,select{background:#1b4563;border:1px solid #3a7394;border-radius:9px;color:white;padding:10px 14px;font:inherit}button{cursor:pointer}table{width:100%;border-collapse:collapse}th,td{padding:10px;text-align:left;border-bottom:1px solid #28445c}th{color:#9dbcd2;font-size:12px}section{overflow:auto}.ok{color:#57edb1}.warn{color:#ffcb77}.bad{color:#ff8f8f}code{color:#9cdaff}footer{margin:30px 0;color:#9bb2ca;font-size:13px}
+</style></head><body><main>
+<span class="tag">TESTNA GRANA · SAMO ČITANJE</span><h1>MEMARASIX · Kontrolna tabla kolektora</h1>
+<p class="muted">Nezavisni pregled ESPN ponude. Nema objave tiketa, upisa banke ili promjena na glavnom sajtu.</p>
+<div class="grid">
+<div class="card"><small>Datum feeda</small><div class="num" id="date">—</div></div>
+<div class="card"><small>Fudbalski kandidati</small><div class="num" id="football">—</div></div>
+<div class="card"><small>NBA utakmice</small><div class="num" id="nba">—</div></div>
+<div class="card"><small>Ukupno sirovih utakmica</small><div class="num" id="raw">—</div></div>
+</div>
+<div class="card"><b>Redoslijed obrade</b><p>09:15 → <code>collector.py</code> → <code>collector-raw.json</code> → <code>memara_prepare_feed.py</code> + <code>memara_math.py</code> → <code>collector-feed.json</code></p><p id="status" class="warn">Čekanje na učitavanje…</p><p class="muted" id="updated"></p></div>
+<div class="controls"><button id="refresh">Osvježi prikaz</button><select id="sport"><option value="all">Svi sportovi</option><option value="football">Fudbal</option><option value="basketball">NBA</option></select><input id="search" placeholder="Pretraži tim ili ligu" style="background:#10243a;color:white;border:1px solid #3a7394;border-radius:9px;padding:10px"></div>
+<section class="card"><table><thead><tr><th>Početak (Sarajevo)</th><th>Liga</th><th>Utakmica</th><th>Status</th></tr></thead><tbody id="matches"><tr><td colspan="4">Učitavanje…</td></tr></tbody></table></section>
+<footer>Izvor: JSON datoteke isključivo iz grane <code>collector-isolated-test-20261030</code>. GitHub raw sadržaj može kasniti zbog keširanja. Ovo nije prikaz kvota niti predikcija.</footer>
+</main><script>
+const branch='collector-isolated-test-20261030', base='https://raw.githubusercontent.com/shikithe/Memara-tip/'+branch+'/';
+let rows=[];
+const el=id=>document.getElementById(id);
+function render(){const q=el('search').value.toLocaleLowerCase(),s=el('sport').value;const filtered=rows.filter(x=>(s==='all'||x.sport===s)&&[x.home,x.away,x.league].join(' ').toLocaleLowerCase().includes(q));el('matches').innerHTML='';for(const x of filtered.slice(0,500)){const tr=document.createElement('tr');const values=[x.start_sarajevo?new Date(x.start_sarajevo).toLocaleString('bs-BA',{timeZone:'Europe/Sarajevo',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}):'—',x.league||'—',(x.home||'?')+' – '+(x.away||'?'),x.status||'—'];for(const v of values){const td=document.createElement('td');td.textContent=v;tr.appendChild(td)}el('matches').appendChild(tr)}if(!filtered.length){const tr=document.createElement('tr');const td=document.createElement('td');td.colSpan=4;td.textContent='Nema utakmica za izabrani filter.';tr.appendChild(td);el('matches').appendChild(tr)}}
+async function load(){el('status').textContent='Učitavam testne podatke…';try{const [a,b]=await Promise.all([fetch(base+'collector-feed.json?ts='+Date.now()),fetch(base+'collector-raw.json?ts='+Date.now())]);if(!a.ok||!b.ok)throw Error('JSON nije dostupan ('+a.status+'/'+b.status+')');const feed=await a.json(),raw=await b.json();rows=[...(feed.football_candidates||[]),...(feed.nba_games||[])];el('date').textContent=feed.date||'—';el('football').textContent=(feed.football_candidates||[]).length;el('nba').textContent=(feed.nba_games||[]).length;el('raw').textContent=raw.fixture_count??(raw.fixtures||[]).length;el('updated').textContent='Zadnje preuzimanje: '+(raw.collected_at_utc||feed.generated_at_utc||'nepoznato');el('status').textContent='Podaci učitani. '+(raw.errors||[]).length+' prijavljenih grešaka izvora.';el('status').className=(raw.errors||[]).length?'warn':'ok';render()}catch(e){el('status').textContent='Greška učitavanja: '+e.message;el('status').className='bad';el('matches').textContent='Provjeri dostupnost JSON datoteka u testnoj grani.'}}
+el('refresh').addEventListener('click',load);el('sport').addEventListener('change',render);el('search').addEventListener('input',render);load();
+</script></body></html>
