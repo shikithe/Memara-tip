@@ -64,7 +64,7 @@ def build(feed, offers, source="import"):
             if valid:
                 found.append({"bookmaker":offer.get("bookmaker"),"markets":valid,
                               "updated_at_utc":offer.get("updated_at_utc"),"source_event_id":offer.get("event_id")})
-        result.append({"fixture_id":fixture.get("id"),"league":fixture.get("league"),
+        result.append({"fixture_id":fixture.get("fixture_id") or fixture.get("id"),"league":fixture.get("league"),
                        "home":fixture.get("home"),"away":fixture.get("away"),
                        "start_utc":fixture.get("start_utc"),"start_sarajevo":fixture.get("start_sarajevo"),
                        "status":"matched" if found else "unavailable",
