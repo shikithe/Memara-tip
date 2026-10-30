@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Collect rolling 23h59m ESPN fixtures to temporary directory
+      - name: Verify no-truncation unit tests\n        run: python -m unittest -v test_collector_no_truncation.py\n      - name: Collect rolling 23h59m ESPN fixtures to temporary directory
         run: |
           mkdir -p /tmp/memara-collector-test
           python collector/collector_24h.py --output /tmp/memara-collector-test/collector-raw.json
@@ -37,6 +37,13 @@ jobs:
           assert raw.get('fixture_count',0)>0, 'No fixtures returned'
           assert feed.get('date')==raw.get('date'), 'Feed date mismatch'
           assert all(start<=datetime.fromisoformat(f['start_utc'].replace('Z','+00:00'))<end for f in raw['fixtures']), 'Out-of-window fixture'
+          raw_ids={f['id'] for f in raw['fixtures'] if f.get('status')=='pre' and (f.get('sport')=='football' or (f.get('sport')=='basketball' and f.get('league')=='nba'))}
+          feed_ids={f['id'] for f in feed.get('football_candidates',[])+feed.get('nba_games',[])}
+          missing=raw_ids-feed_ids
+          extra=feed_ids-raw_ids
+          print('Raw eligible:',len(raw_ids),'Feed:',len(feed_ids),'Missing:',len(missing),'Extra:',len(extra))
+          assert not missing, f'Missing eligible fixtures: {sorted(missing)[:20]}'
+          assert not extra, f'Unexpected fixtures: {sorted(extra)[:20]}'
           print('Raw fixtures:',raw['fixture_count'])
           print('Candidate counts:',feed.get('candidate_counts'))
           print('Source errors:',len(raw.get('errors',[])))
