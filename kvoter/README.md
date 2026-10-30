@@ -13,3 +13,6 @@ Normalized provider input: `{"offers":[{"event_id":"provider-123","league":"ger.
 Matching requires exact normalized home/away names, league and kickoff within 90 minutes. Unmatched aliases are intentionally excluded rather than silently assigned incorrect prices. A provider adapter, alias map, stale-odds checks and live coverage audit are still required before production.
 
 Supported canonical markets: `1X2` (home/draw/away), `2+` (over 1.5), `3+` (over 2.5), `BTTS` (yes/no). Direct bet365.com scraping is not implemented: a licensed provider adapter or verified export is required. No prices are guessed.
+
+## Live API integration
+Run `THE_ODDS_API_KEY=... docker compose -f kvoter/compose.yml up --build`. The adapter `the_odds_api.py` queries the official The Odds API v4 `h2h,totals` by mapped league and `alternate_totals,btts` for strictly matched events, and writes `/shared/kvoter/odds.json`. API calls cost credits, and additional markets are not guaranteed. No key: report records `missing_api_key`, zero matched odds. `bet365` is prioritized if present, not guaranteed. Never commit an API key. Current test pipeline on main remains separate until explicitly wired.
