@@ -15,7 +15,7 @@ jobs:
       - name: Test ESPN collection in isolated temp directory
         run: |
           mkdir -p /tmp/memara-collector-test
-          python collector.py --date "$(TZ=Europe/Sarajevo date +%F)" --sport football --output /tmp/memara-collector-test/collector-raw.json
+          python collector/collector_24h.py --output /tmp/memara-collector-test/collector-raw.json
           python memara_prepare_feed.py --input /tmp/memara-collector-test/collector-raw.json --output /tmp/memara-collector-test/collector-feed.json
           python memara_math.py --input /tmp/memara-collector-test/collector-feed.json --output /tmp/memara-collector-test/collector-feed.json
           python - <<'PY'
@@ -28,7 +28,7 @@ jobs:
           print('feed_counts',feed.get('candidate_counts'))
           print('source_errors',len(raw.get('errors',[])))
           assert raw.get('fixture_count',0)>0, 'No fixtures returned'
-          assert feed.get('date')==raw.get('date'), 'Feed date mismatch'
+          assert feed.get('date')==raw.get('date'), 'Feed date mismatch'\n          from datetime import datetime, timedelta\n          start=datetime.fromisoformat(raw['window_start_utc'])\n          end=datetime.fromisoformat(raw['window_end_utc'])\n          assert end-start==timedelta(hours=23,minutes=59)\n          assert all(start<=datetime.fromisoformat(f['start_utc'].replace('Z','+00:00'))<end for f in raw['fixtures'])
           PY
       - uses: actions/upload-artifact@v4
         if: always()
