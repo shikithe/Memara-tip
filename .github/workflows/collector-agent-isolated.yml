@@ -1,0 +1,57 @@
+name: MEMARASIX isolated Collector to Agent pipeline
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: memarasix-isolated-collector-agent
+  cancel-in-progress: false
+jobs:
+  collector-agent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: collector-isolated-test-20261030
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Create isolated shared workspace
+        run: mkdir -p /tmp/memara-shared/agent
+      - name: Run ESPN collector
+        run: python collector/collector_24h.py --output /tmp/memara-shared/collector-raw.json
+      - name: Prepare collector feed in shared workspace
+        run: python collector/memara_prepare_feed.py --input /tmp/memara-shared/collector-raw.json --output /tmp/memara-shared/collector-feed.json
+      - name: Validate feed and trigger agent
+        run: |
+          python agent/shared_volume_trigger.py --once \
+            --feed /tmp/memara-shared/collector-feed.json \
+            --output /tmp/memara-shared/agent/history-h2h.json \
+            --state /tmp/memara-shared/agent/.last-processed-sha256
+          test -s /tmp/memara-shared/agent/history-h2h.json || { echo "Agent output missing"; exit 1; }
+      - name: Verify end-to-end result
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('/tmp/memara-shared')
+          feed=json.loads((root/'collector-feed.json').read_text())
+          result=json.loads((root/'agent/history-h2h.json').read_text())
+          assert len(feed['football_candidates'])>0, 'Empty collector feed'
+          assert len(result['fixtures'])==len(feed['football_candidates']), 'Agent fixture count mismatch'
+          assert result['publication_allowed'] is False
+          assert result['bank_modified'] is False
+          print('PIPELINE_OK', 'fixtures',len(result['fixtures']),'ESPN_errors',len(result['errors']))
+          PY
+      - name: Upload isolated pipeline artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: memarasix-isolated-collector-agent
+          path: |
+            /tmp/memara-shared/collector-raw.json
+            /tmp/memara-shared/collector-feed.json
+            /tmp/memara-shared/agent/history-h2h.json
+          if-no-files-found: ignore
