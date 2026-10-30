@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "updated_at_utc": "2026-10-30T15:22:26.147869+00:00",
+  "updated_at_utc": "2026-10-30T17:34:15.960223+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,12 +9,12 @@
       "index": 0,
       "home": "Konyaspor",
       "away": "Galatasaray",
-      "state": "scheduled",
-      "score": "0:0",
+      "state": "live",
+      "score": "0:2",
       "source": "espn-public-unofficial",
       "event_id": "401888259",
       "league": "tur.1",
-      "minute": null
+      "minute": "34"
     },
     {
       "ticket": "A",
