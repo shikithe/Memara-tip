@@ -36,6 +36,33 @@ def final_score(event):
             "display": f"{hs}:{aw}" if available else None,
             "available": available}
 
+def standings_rows(doc):
+    """Normalize ESPN standings, including leagues with nested group tables."""
+    rows = []
+    def walk(node):
+        if isinstance(node, dict):
+            standings = node.get("standings")
+            if isinstance(standings, dict) and isinstance(standings.get("entries"), list):
+                for entry in standings["entries"]:
+                    team = entry.get("team") or {}
+                    stats = {}
+                    for stat in entry.get("stats") or []:
+                        key = stat.get("name") or stat.get("abbreviation")
+                        if key:
+                            stats[key] = stat.get("value", stat.get("displayValue"))
+                    rows.append({"team_id":str(team.get("id") or ""),
+                                 "team":team.get("displayName") or team.get("name"),
+                                 "abbreviation":team.get("abbreviation"),
+                                 "statistics":stats})
+            for key,value in node.items():
+                if key != "standings":
+                    walk(value)
+        elif isinstance(node, list):
+            for item in node:
+                walk(item)
+    walk(doc)
+    return rows
+
 def select(feed,request=fetch,days=30,limit=5,leagues=LEAGUES,now=None,h2h_years=3):
     now=now or datetime.now(timezone.utc)
     pairs=[f for f in feed.get("football_candidates",[]) if f.get("status")=="pre" and f.get("sport")=="football" and f.get("home") and f.get("away")]
@@ -89,6 +116,18 @@ def select(feed,request=fetch,days=30,limit=5,leagues=LEAGUES,now=None,h2h_years
                         h2h_events.setdefault(event_id,{"event":e,"league":league})
             except Exception as exc:
                 errors.append({"league":league,"season":year,"error":str(exc)})
+    # Fetch standings once per league, independently of historical match requests.
+    league_standings={}
+    for league in sorted({f.get("league") for f in pairs if f.get("league")}):
+        url=f"https://site.api.espn.com/apis/v2/sports/soccer/{league}/standings"
+        try:
+            league_standings[league]=standings_rows(request(url))
+        except Exception as exc:
+            league_standings[league]=[]
+            errors.append({"league":league,"source":"standings","error":str(exc)})
+    def team_standing(league,name):
+        return next((entry for entry in league_standings.get(league,[])
+                     if norm(entry.get("team"))==norm(name)),None)
     summaries={}
     def row(item):
         e=item["event"];event_id=str(e["id"])
@@ -112,11 +151,15 @@ def select(feed,request=fetch,days=30,limit=5,leagues=LEAGUES,now=None,h2h_years
                        "home_history":[row(x) for x in involving(home)],
                        "away_history":[row(x) for x in involving(away)],
                        "h2h":[row(x) for x in h2h],
-                       "target_per_group":limit})
+                       "target_per_group":limit,
+                       "start_utc":f.get("start_utc"),"start_sarajevo":f.get("start_sarajevo"),
+                       "league":f.get("league"),
+                       "home_standing":team_standing(f.get("league"),f["home"]),
+                       "away_standing":team_standing(f.get("league"),f["away"])})
     return {"schema_version":"agent-cross-competition-v1","generated_at_utc":now.isoformat(),
             "scan_days":days,"h2h_years":h2h_years,"h2h_lookup":"ESPN season scoreboard best-effort; may be incomplete","scanned_leagues":sorted(source_leagues),
             "scope_note":"ESPN-recorded matches in configured competitions only; cups outside these endpoints may be absent.",
-            "fixtures":result,"errors":errors,"publication_allowed":False,"bank_modified":False}
+            "league_standings":league_standings,"fixtures":result,"errors":errors,"publication_allowed":False,"bank_modified":False}
 
 def main():
     p=argparse.ArgumentParser()
