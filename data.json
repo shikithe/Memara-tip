@@ -165,8 +165,8 @@
       }
     }
   ],
-  "total_payout": 0,
-  "net_change": -18.26,
+  "total_payout": 0.0,
+  "net_change": null,
   "analysis_status": "A i B objavljeni; B dodan na zahtjev korisnika",
   "selection_method": "Ručna nezavisna AI analiza javnih izvora i ESPN feeda, 30.10.2026.",
   "source_fixture_feed": "collector-feed.json 2026-10-30T15:02:37.821274+00:00",

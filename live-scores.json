@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "updated_at_utc": "2026-10-30T15:15:54.523005+00:00",
+  "updated_at_utc": "2026-10-30T15:22:26.147869+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -26,6 +26,42 @@
       "source": "espn-public-unofficial",
       "event_id": "401882817",
       "league": "esp.1",
+      "minute": null
+    },
+    {
+      "ticket": "B",
+      "index": 0,
+      "home": "Nice",
+      "away": "Stade Rennais",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401876416",
+      "league": "fra.1",
+      "minute": null
+    },
+    {
+      "ticket": "B",
+      "index": 1,
+      "home": "Le Havre AC",
+      "away": "Paris Saint-Germain",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401876421",
+      "league": "fra.1",
+      "minute": null
+    },
+    {
+      "ticket": "B",
+      "index": 2,
+      "home": "SV Elversberg",
+      "away": "Mainz",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401884746",
+      "league": "ger.1",
       "minute": null
     }
   ],
