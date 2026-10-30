@@ -2,8 +2,32 @@ import sys,unittest
 from pathlib import Path
 from datetime import datetime,timezone,timedelta
 sys.path.insert(0,str(Path(__file__).resolve().parent))
-from cross_competition_history import select
+from cross_competition_history import select,standings_rows
 class CrossCompetitionTests(unittest.TestCase):
+    def test_standings_normalization(self):
+        doc={"children":[{"standings":{"entries":[
+            {"team":{"id":"12","displayName":"Bayer Leverkusen"},
+             "stats":[{"name":"rank","value":2},{"name":"points","value":24}]}]}}]}
+        rows=standings_rows(doc)
+        self.assertEqual(len(rows),1)
+        self.assertEqual(rows[0]["team"],"Bayer Leverkusen")
+        self.assertEqual(rows[0]["statistics"]["points"],24)
+    def test_kickoff_and_standings_in_fixture(self):
+        now=datetime(2026,10,30,tzinfo=timezone.utc)
+        def request(url):
+            if "/standings" in url:
+                return {"standings":{"entries":[
+                    {"team":{"id":"1","displayName":"Arsenal"},"stats":[{"name":"rank","value":1}]},
+                    {"team":{"id":"2","displayName":"Chelsea"},"stats":[{"name":"rank","value":2}]}]}}
+            return {"events":[]}
+        feed={"football_candidates":[{"id":"fixture","sport":"football","status":"pre",
+            "league":"eng.1","home":"Arsenal","away":"Chelsea",
+            "start_utc":"2026-10-31T15:00:00Z","start_sarajevo":"2026-10-31T16:00:00+01:00"}]}
+        result=select(feed,request=request,days=1,leagues=("eng.1",),now=now)
+        fixture=result["fixtures"][0]
+        self.assertEqual(fixture["start_utc"],"2026-10-31T15:00:00Z")
+        self.assertEqual(fixture["home_standing"]["statistics"]["rank"],1)
+        self.assertEqual(len(result["league_standings"]["eng.1"]),2)
     def test_cross_league_and_h2h(self):
         now=datetime(2026,10,30,tzinfo=timezone.utc)
         def request(url):
