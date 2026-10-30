@@ -11,4 +11,4 @@ services:
       - ALL
     volumes:
       - ../shared:/shared
-    command: ["--feed","/shared/collector-feed.json","--offers","/shared/kvoter/provider-offers.json","--output","/shared/kvoter/odds.json"]
+    command: ["--feed","/shared/agent/history-h2h.json","--offers","/shared/kvoter/provider-offers.json","--output","/shared/kvoter/odds.json"]
