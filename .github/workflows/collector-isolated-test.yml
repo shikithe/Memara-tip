@@ -1,6 +1,8 @@
 name: Collector isolated test (no publishing)
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 7,8 * * *'
 permissions:
   contents: read
 jobs:
@@ -8,23 +10,41 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
+      - name: Sarajevo 09:00 schedule gate
+        id: time_gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          local_time="$(TZ=Europe/Sarajevo date +%H:%M)"
+          echo "Sarajevo time: $local_time"
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$local_time" = "09:00" ]; then
+            echo "run_test=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run_test=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping duplicate UTC cron or delayed scheduled run."
+          fi
       - name: Checkout isolated test branch (never main code)
+        if: steps.time_gate.outputs.run_test == 'true'
         uses: actions/checkout@v4
         with:
           ref: collector-isolated-test-20261030
           persist-credentials: false
       - uses: actions/setup-python@v5
+        if: steps.time_gate.outputs.run_test == 'true'
         with:
           python-version: '3.11'
       - name: Verify no-truncation unit tests
+        if: steps.time_gate.outputs.run_test == 'true'
         run: python -m unittest -v test_collector_no_truncation.py
       - name: Collect rolling 23h59m ESPN fixtures to temporary directory
+        if: steps.time_gate.outputs.run_test == 'true'
         run: |
           mkdir -p /tmp/memara-collector-test
           python collector/collector_24h.py --output /tmp/memara-collector-test/collector-raw.json
           python collector/memara_prepare_feed.py --input /tmp/memara-collector-test/collector-raw.json --output /tmp/memara-collector-test/collector-feed.json
           python memara_math.py --input /tmp/memara-collector-test/collector-feed.json --output /tmp/memara-collector-test/collector-feed.json
       - name: Validate time window and candidate output
+        if: steps.time_gate.outputs.run_test == 'true'
         run: |
           python - <<'PY'
           import json
@@ -51,7 +71,7 @@ jobs:
           print('Source errors:',len(raw.get('errors',[])))
           PY
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: always() && steps.time_gate.outputs.run_test == 'true'
         with:
           name: isolated-collector-test
           path: /tmp/memara-collector-test/
