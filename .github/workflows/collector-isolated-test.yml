@@ -1,0 +1,38 @@
+name: Collector isolated test (no publishing)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test ESPN collection in isolated temp directory
+        run: |
+          mkdir -p /tmp/memara-collector-test
+          python collector.py --date "$(TZ=Europe/Sarajevo date +%F)" --sport football --output /tmp/memara-collector-test/collector-raw.json
+          python memara_prepare_feed.py --input /tmp/memara-collector-test/collector-raw.json --output /tmp/memara-collector-test/collector-feed.json
+          python memara_math.py --input /tmp/memara-collector-test/collector-feed.json --output /tmp/memara-collector-test/collector-feed.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('/tmp/memara-collector-test')
+          raw=json.loads((root/'collector-raw.json').read_text())
+          feed=json.loads((root/'collector-feed.json').read_text())
+          print('raw_count',raw.get('fixture_count'))
+          print('feed_counts',feed.get('candidate_counts'))
+          print('source_errors',len(raw.get('errors',[])))
+          assert raw.get('fixture_count',0)>0, 'No fixtures returned'
+          assert feed.get('date')==raw.get('date'), 'Feed date mismatch'
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: isolated-collector-test
+          path: /tmp/memara-collector-test/
+          if-no-files-found: ignore
