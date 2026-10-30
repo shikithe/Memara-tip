@@ -22,7 +22,7 @@ jobs:
         run: |
           mkdir -p /tmp/memara-collector-test
           python collector/collector_24h.py --output /tmp/memara-collector-test/collector-raw.json
-          python memara_prepare_feed.py --input /tmp/memara-collector-test/collector-raw.json --output /tmp/memara-collector-test/collector-feed.json
+          python collector/memara_prepare_feed.py --input /tmp/memara-collector-test/collector-raw.json --output /tmp/memara-collector-test/collector-feed.json
           python memara_math.py --input /tmp/memara-collector-test/collector-feed.json --output /tmp/memara-collector-test/collector-feed.json
       - name: Validate time window and candidate output
         run: |
