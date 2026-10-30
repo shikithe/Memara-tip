@@ -100,10 +100,12 @@ def select(feed,request=fetch,days=30,limit=5,leagues=LEAGUES,now=None,h2h_years
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--input",required=True);p.add_argument("--output",required=True)
-    p.add_argument("--days",type=int,default=30)\n    p.add_argument("--h2h-years",type=int,default=3)
+    p.add_argument("--days",type=int,default=30)
+    p.add_argument("--h2h-years",type=int,default=3)
     args=p.parse_args()
     if not 1<=args.days<=365: p.error("days must be 1..365")
-    if not 1<=args.h2h_years<=10: p.error("h2h-years must be 1..10")\n    result=select(json.loads(Path(args.input).read_text(encoding="utf-8")),days=args.days,h2h_years=args.h2h_years)
+    if not 1<=args.h2h_years<=10: p.error("h2h-years must be 1..10")
+    result=select(json.loads(Path(args.input).read_text(encoding="utf-8")),days=args.days,h2h_years=args.h2h_years)
     out=Path(args.output);out.parent.mkdir(parents=True,exist_ok=True)
     out.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     for x in result["fixtures"]:
