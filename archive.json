@@ -1277,5 +1277,160 @@
       "https://www.legaseriea.it/serie-a/news/monza-napoli-2026-2027-1-4-cronaca-risultato-gol",
       "https://www.skysports.com/football/dundee-vs-kilmarnock/report/558395"
     ]
+  },
+  {
+    "date": "2026-10-29",
+    "published": "2026-10-29 16:24 (Europe/Sarajevo)",
+    "published_at_utc": "2026-10-29T15:24:40.786Z",
+    "publication_type": "main_validated_partial_publication",
+    "bank_before": 177.53,
+    "daily_budget": 17.75,
+    "daily_stake": 4.44,
+    "bank_after": 182.59,
+    "bank_after_stakes": 173.09,
+    "provisional": false,
+    "settled": true,
+    "odds_verified": true,
+    "odds_verification_note": "Direktno provjerene javne prematch kvote PokerStars France 29.10.2026 za oba Over 2.5 tržišta: 1,36 i 1,57. NISU potvrđene Mozzartbet BiH kvote niti mogućnost stvarne uplate. Tržišne kvote nisu dokaz pozitivnog EV.",
+    "tickets": [
+      {
+        "id": "A",
+        "label": "GLAVNI TIKET — ČEKA SE OBJAVA",
+        "stake": 0,
+        "status": "preskočen",
+        "odds": null,
+        "payout": 0,
+        "matches": [],
+        "analysis": {
+          "summary": "A nema dovoljno kvalitetan i potvrđen 1X2 izbor ukupne kvote 2–3; Frosinone 1,70 sam ne dostiže cilj, Fiorentina i Atlético-MG imaju visok rizik za samostalni 1X2.",
+          "reasons": [
+            "A nema dovoljno kvalitetan i potvrđen 1X2 izbor ukupne kvote 2–3; Frosinone 1,70 sam ne dostiže cilj, Fiorentina i Atlético-MG imaju visok rizik za samostalni 1X2."
+          ],
+          "limits": "Bez validiranog tiketa nema uloga; preostali budžet ostaje u banci."
+        }
+      },
+      {
+        "id": "B",
+        "label": "GOLOVI — VIŠE OD 2,5",
+        "stake": 4.44,
+        "status": "dobitan",
+        "odds": 2.14,
+        "payout": 9.5,
+        "matches": [
+          {
+            "home": "Frosinone",
+            "away": "Lecce",
+            "pick": "3+",
+            "odd": 1.36,
+            "start_utc": "2026-10-29T17:30:00Z",
+            "start_sarajevo": "2026-10-29T18:30:00+01:00",
+            "fixture_id": "espn:football:ita.1:401874976",
+            "market_source": "PokerStars France — javni prematch prikaz (referentna kvota, nije Mozzartbet BiH)",
+            "market_name": "Over 2.5 / Under 2.5",
+            "market_snapshot_date": "2026-10-29",
+            "market_url": "https://www.pokerstars.fr/en/sports/soccer/1/italian-serie-a/81/frosinone-v-lecce/36221223/",
+            "research": {
+              "summary": "Frosinone u zadnjih pet: 4:4, 4:2, 0:3, 2:0, 1:1 (3/5 over 2,5); Lecce 0:2, 3:0, 1:2, 0:3, 3:2 (4/5). Uzorak 5 po timu.",
+              "pros": "Frosinone ima 4/5 zadnjih domaćih mečeva sa najmanje 3 gola; Lecce je primio golove u više posljednjih ligaških mečeva.",
+              "risks": "Referentna kvota 1,36 zahtijeva oko 73,5% prolaza prije margine; istorijski uzorak ne dokazuje tu vjerovatnoću, a H2H je samo 3/6 over. Nema potvrđenih XI.",
+              "injuries": "Frosinone: Grillitsch prijavljen odsutan. Lecce: Ilic, Coulibaly, Berisha, Pierotti, Tiago Gabriel povrede, Gaspar suspenzija (nepotvrđeni konačni sastavi).",
+              "conclusion": "PokerStars France javni Over 2.5 1,36; nema validiranog nezavisnog prematch xG/Poisson niti dokazanog pozitivnog EV.",
+              "sources": [
+                [
+                  "Javna kvota 29.10.",
+                  "https://www.pokerstars.fr/en/sports/soccer/1/italian-serie-a/81/frosinone-v-lecce/36221223/"
+                ],
+                [
+                  "Posljednjih 5 i izostanci",
+                  "https://sports.bzzoiro.com/matches/210140/"
+                ],
+                [
+                  "H2H i domaća forma",
+                  "https://betgolazo.net/match/frosinone-vs-lecce-1550170"
+                ]
+              ]
+            },
+            "result_status": "pogođen",
+            "final_score": "5:1"
+          },
+          {
+            "home": "Fiorentina",
+            "away": "Atalanta",
+            "pick": "3+",
+            "odd": 1.57,
+            "start_utc": "2026-10-29T19:45:00Z",
+            "start_sarajevo": "2026-10-29T20:45:00+01:00",
+            "fixture_id": "espn:football:ita.1:401874969",
+            "market_source": "PokerStars France — javni prematch prikaz (referentna kvota, nije Mozzartbet BiH)",
+            "market_name": "Over 2.5 / Under 2.5",
+            "market_snapshot_date": "2026-10-29",
+            "market_url": "https://www.pokerstars.fr/en/sports/soccer/1/italian-serie-a/81/fiorentina-v-atalanta/36221226/",
+            "research": {
+              "summary": "Fiorentina posljednjih 5: 1:2, 1:3, 1:2, 1:1, 3:0 (4/5 over 2,5); Atalanta: 4:4, 0:2, 2:3, 3:1, 3:1 (4/5). Uzorak 5 po timu.",
+              "pros": "Fiorentina je primila gol u devet uzastopnih ligaških mečeva; Atalantini mečevi ove sezone imaju visok prosjek golova. Oba tima imaju probleme u odbrani.",
+              "risks": "Atalanta u posljednjih pet gostovanja ima samo 2/5 over 2,5. Referentna kvota 1,57 traži oko 63,7% prolaza prije margine, a nezavisni izvori nisu saglasni; nema potvrđenih XI.",
+              "injuries": "Fiorentina: Parisi povrijeđen, Ranieri i Pongracic upitni; Atalanta: Kolasinac, Bellanova, Scalvini, Hien, Kossounou i drugi prijavljeni odsutni. Statusi podložni promjeni.",
+              "conclusion": "PokerStars France javni Over 2.5 1,57; nema validiranog nezavisnog prematch xG/Poisson niti dokazanog pozitivnog EV.",
+              "sources": [
+                [
+                  "Javna kvota 29.10.",
+                  "https://www.pokerstars.fr/en/sports/soccer/1/italian-serie-a/81/fiorentina-v-atalanta/36221226/"
+                ],
+                [
+                  "Forma pet mečeva i javne kvote",
+                  "https://www.singlebet.net/odds/fiorentina-vs-atalanta-2026-10-29-3860122/"
+                ],
+                [
+                  "Povrede i sastavi",
+                  "https://www.oddschecker.com/es/pronosticos/futbol/2026/octubre/cng301-pronostico-fiorentina-vs-atalanta-29-10-26"
+                ],
+                [
+                  "Ligaška forma i rizici",
+                  "https://www.thestatszone.com/fiorentina-vs-atalanta-preview-team-news-prediction-233011"
+                ]
+              ]
+            },
+            "result_status": "pogođen",
+            "final_score": "2:2"
+          }
+        ],
+        "analysis": {
+          "summary": "Dva različita fudbalska Over 2.5 događaja, direktno prikazane referentne PokerStars France kvote 1,36 × 1,57 = 2,1352, prikaz 2,14.",
+          "reasons": [
+            "Oba meča prisutna u današnjem ESPN collector-feed.json i dodatno potvrđena na nezavisnim javnim stranicama.",
+            "Provjerene referentne prematch cijene i tržište Over 2.5 za oba događaja direktno na PokerStars France.",
+            "Uzorak posljednjih pet mečeva po timu i javni izvještaji o povredama navedeni za svaki događaj."
+          ],
+          "limits": "Nema potvrđenih startnih XI, niti nezavisne +EV procjene; tržišna vjerovatnoća nije prognoza. PokerStars France nije Mozzartbet BiH. Virtuelni ulog."
+        },
+        "settled_at_utc": "2026-10-30T08:32:50.622934+00:00"
+      },
+      {
+        "id": "C",
+        "label": "KEŠ KOLICA — ČEKA SE OBJAVA",
+        "stake": 0,
+        "status": "preskočen",
+        "odds": null,
+        "payout": 0,
+        "matches": [],
+        "analysis": {
+          "summary": "C nema 4–6 drugih kvalitetno provjerenih događaja sa ukupnom kvotom najmanje 10. NBA player-points i ESPN NBA statistika od 28.10. su zastarjeli, API-Football izvještaj od 28.10. ne sadrži korisne timske statistike.",
+          "reasons": [
+            "C nema 4–6 drugih kvalitetno provjerenih događaja sa ukupnom kvotom najmanje 10. NBA player-points i ESPN NBA statistika od 28.10. su zastarjeli, API-Football izvještaj od 28.10. ne sadrži korisne timske statistike."
+          ],
+          "limits": "Bez validiranog tiketa nema uloga; preostali budžet ostaje u banci."
+        }
+      }
+    ],
+    "total_payout": 9.5,
+    "net_change": 5.06,
+    "analysis_status": "Djelimična objava B: A/C nisu prošli nezavisnu provjeru. Rezultati.com kolektor i dalje vraća nula utakmica, ali dva B događaja iz današnjeg ESPN feeda nezavisno su potvrđena iz javnih izvora. Direktne PokerStars France referentne kvote provjerene 29.10.2026. Bez tvrdnje o pozitivnom EV. NBA izvještaji zastarjeli.",
+    "selection_method": "Pojedinačna validacija po prioritetu A→B→C; objavljen samo B. Dnevni budžet 10% banke, B zadržava 25% dnevnog budžeta, ostatak nije uložen.",
+    "source_fixture_feed": "collector-feed.json 2026-10-29T15:20:03.832582+00:00",
+    "source_independent_analysis": "collector-output/independent-analysis.json 2026-10-29 15:20Z (data gaps; dopunjeno ručnom nezavisnom provjerom)",
+    "source_nba_player_points": "collector-output/nba-player-points.json 2026-10-28 (stale; not used)",
+    "source_nba_free_statistics": "collector-output/nba-free-statistics.json 2026-10-28 (stale; not used)",
+    "source_statistics_research": "collector-output/statistics-research.json 2026-10-28 (stale; not used)",
+    "all_tickets_closed_at_utc": "2026-10-30T08:32:50.622934+00:00"
   }
 ]
