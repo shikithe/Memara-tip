@@ -15,7 +15,7 @@ def participants(e):
         return [c["team"].get("displayName","") for c in e["competitions"][0]["competitors"]]
     except (KeyError,IndexError,TypeError):
         return []
-def select(feed,request=fetch,days=30,limit=5,leagues=LEAGUES,now=None):
+def select(feed,request=fetch,days=30,limit=5,leagues=LEAGUES,now=None,h2h_years=3):
     now=now or datetime.now(timezone.utc)
     pairs=[f for f in feed.get("football_candidates",[]) if f.get("status")=="pre" and f.get("sport")=="football" and f.get("home") and f.get("away")]
     names={norm(n) for f in pairs for n in (f["home"],f["away"])}
@@ -39,6 +39,35 @@ def select(feed,request=fetch,days=30,limit=5,leagues=LEAGUES,now=None):
                         events.setdefault(event_id,{"event":e,"league":league})
             except Exception as exc:
                 errors.append({"league":league,"date":date,"error":str(exc)})
+    # H2H is independent of the 30-day team-form window.
+    # ESPN scoreboard supports league-specific season requests, but completeness
+    # varies; inspect the returned events and never invent missing meetings.
+    h2h_events=dict(events)
+    active_leagues={f.get("league") for f in pairs if f.get("league")}
+    active_leagues.update(l for l in source_leagues if l.startswith("uefa."))
+    oldest=now-timedelta(days=365*h2h_years+1)
+    for league in sorted(active_leagues):
+        for year in range(oldest.year,now.year+1):
+            url=f"{ROOT}/{league}/scoreboard?"+urlencode({"dates":str(year),"limit":500})
+            try:
+                doc=request(url)
+                for e in doc.get("events",[]):
+                    if (e.get("status") or {}).get("type",{}).get("state")!="post":
+                        continue
+                    try:
+                        when=datetime.fromisoformat(e["date"].replace("Z","+00:00"))
+                    except (ValueError,KeyError,TypeError):
+                        continue
+                    if not oldest<=when<=now:
+                        continue
+                    teams={norm(n) for n in participants(e)}
+                    if not any({norm(f["home"]),norm(f["away"])}.issubset(teams) for f in pairs):
+                        continue
+                    event_id=str(e.get("id") or "")
+                    if event_id:
+                        h2h_events.setdefault(event_id,{"event":e,"league":league})
+            except Exception as exc:
+                errors.append({"league":league,"season":year,"error":str(exc)})
     summaries={}
     def row(item):
         e=item["event"];event_id=str(e["id"])
@@ -57,24 +86,24 @@ def select(feed,request=fetch,days=30,limit=5,leagues=LEAGUES,now=None):
         ranked=sorted(events.values(),key=lambda v:v["event"].get("date",""),reverse=True)
         def involving(team):
             return [x for x in ranked if team in {norm(n) for n in participants(x["event"])}][:limit]
-        h2h=[x for x in ranked if {home,away}.issubset({norm(n) for n in participants(x["event"])})][:limit]
+        h2h=[x for x in sorted(h2h_events.values(),key=lambda v:v["event"].get("date",""),reverse=True) if {home,away}.issubset({norm(n) for n in participants(x["event"])})][:limit]
         result.append({"fixture_id":f.get("id"),"home":f["home"],"away":f["away"],
                        "home_history":[row(x) for x in involving(home)],
                        "away_history":[row(x) for x in involving(away)],
                        "h2h":[row(x) for x in h2h],
                        "target_per_group":limit})
     return {"schema_version":"agent-cross-competition-v1","generated_at_utc":now.isoformat(),
-            "scan_days":days,"scanned_leagues":sorted(source_leagues),
+            "scan_days":days,"h2h_years":h2h_years,"h2h_lookup":"ESPN season scoreboard best-effort; may be incomplete","scanned_leagues":sorted(source_leagues),
             "scope_note":"ESPN-recorded matches in configured competitions only; cups outside these endpoints may be absent.",
             "fixtures":result,"errors":errors,"publication_allowed":False,"bank_modified":False}
 
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--input",required=True);p.add_argument("--output",required=True)
-    p.add_argument("--days",type=int,default=30)
+    p.add_argument("--days",type=int,default=30)\n    p.add_argument("--h2h-years",type=int,default=3)
     args=p.parse_args()
     if not 1<=args.days<=365: p.error("days must be 1..365")
-    result=select(json.loads(Path(args.input).read_text(encoding="utf-8")),days=args.days)
+    if not 1<=args.h2h_years<=10: p.error("h2h-years must be 1..10")\n    result=select(json.loads(Path(args.input).read_text(encoding="utf-8")),days=args.days,h2h_years=args.h2h_years)
     out=Path(args.output);out.parent.mkdir(parents=True,exist_ok=True)
     out.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     for x in result["fixtures"]:
