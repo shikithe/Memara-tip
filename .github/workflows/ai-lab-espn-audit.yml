@@ -1,0 +1,31 @@
+name: AI Lab ESPN statistics audit
+on:
+  push:
+    branches:
+      - feature/nba-analyst-v1-20261029
+    paths:
+      - 'ai-lab/**'
+      - '.github/workflows/ai-lab-espn-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  espn-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Unit tests
+        run: python -m unittest discover -s ai-lab -p 'test_espn_audit.py'
+      - name: Live ESPN coverage audit
+        run: python ai-lab/espn_audit.py --sample 3 --output ai-lab/output/espn-audit.json
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: espn-coverage-audit
+          path: ai-lab/output/espn-audit.json
+          if-no-files-found: warn
