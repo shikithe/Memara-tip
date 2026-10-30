@@ -6,7 +6,7 @@ Kvoter reads the ESPN Collector's `collector-feed.json` and an independently sup
 
 Run tests: `cd kvoter && python -m unittest -v test_kvoter.py`
 
-Run container: `docker compose -f kvoter/compose.yml up --build` after creating `shared/kvoter/` and placing `shared/collector-feed.json`. A read-only container filesystem and no network prevent unapproved data access.
+Run container: `docker compose -f kvoter/compose.yml up --build` after creating a writable output directory for container UID 65532 (for example `mkdir -p shared/kvoter && chmod 777 shared/kvoter` in the isolated test workspace) and placing `shared/collector-feed.json`. A read-only container filesystem and no network prevent unapproved data access.
 
 Normalized provider input: `{"offers":[{"event_id":"provider-123","league":"ger.1","home":"Bayer Leverkusen","away":"VfB Stuttgart","start_utc":"2026-11-01T16:00:00Z","bookmaker":"bet365","updated_at_utc":"2026-10-31T12:00:00Z","markets":{"h2h":{"home":1.85,"draw":3.4,"away":4.2}}}]}`. Example values are illustrative only.
 
