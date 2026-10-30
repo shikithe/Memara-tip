@@ -31,6 +31,12 @@ jobs:
             --output /tmp/memara-shared/agent/history-h2h.json \
             --state /tmp/memara-shared/agent/.last-processed-sha256
           test -s /tmp/memara-shared/agent/history-h2h.json || { echo "Agent output missing"; exit 1; }
+      - name: Fetch odds for Agent fixtures into shared volume
+        env:
+          THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+        run: |
+          python kvoter/the_odds_api.py --feed /tmp/memara-shared/agent/history-h2h.json --output /tmp/memara-shared/kvoter/odds.json
+          test -s /tmp/memara-shared/kvoter/odds.json
       - name: Verify end-to-end result
         run: |
           python - <<'PY'
@@ -41,6 +47,11 @@ jobs:
           result=json.loads((root/'agent/history-h2h.json').read_text())
           assert len(feed['football_candidates'])>0, 'Empty collector feed'
           assert len(result['fixtures'])==len(feed['football_candidates']), 'Agent fixture count mismatch'
+          odds=json.loads((root/'kvoter/odds.json').read_text())
+          assert len(odds['fixtures'])==len(result['fixtures']), 'Kvoter fixture count mismatch'
+          assert odds['publication_allowed'] is False
+          assert odds['bank_modified'] is False
+          print('KVOTER',odds['provider_status'],'matched',odds['matched'])
           assert result['publication_allowed'] is False
           assert result['bank_modified'] is False
           print('PIPELINE_OK', 'fixtures',len(result['fixtures']),'ESPN_errors',len(result['errors']))
@@ -54,4 +65,5 @@ jobs:
             /tmp/memara-shared/collector-raw.json
             /tmp/memara-shared/collector-feed.json
             /tmp/memara-shared/agent/history-h2h.json
+            /tmp/memara-shared/kvoter/odds.json
           if-no-files-found: ignore
