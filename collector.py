@@ -17,7 +17,6 @@ from zoneinfo import ZoneInfo
 ZONE = ZoneInfo("Europe/Sarajevo")
 ROOT = "https://site.api.espn.com/apis/site/v2/sports"
 FOOTBALL = ("eng.1", "esp.1", "ger.1", "ita.1", "fra.1", "ned.1",
-            "eng.2", "ger.2", "ita.2", "fra.2",
             "por.1", "bel.1", "tur.1", "sco.1", "uefa.champions",
             "uefa.europa", "uefa.europa.conf", "usa.1", "bra.1", "arg.1")
 BASKETBALL = ("nba",)
@@ -209,12 +208,7 @@ def main():
     output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n",
                       encoding="utf-8")
     print(f"Saved {result['fixture_count']} fixtures and {len(result['errors'])} errors to {output}")
-    # Partial provider failures are expected: keep valid fixtures available for analysis.
-    # Fail only if no fixture was collected or every source failed.
-    usable = result["fixture_count"] > 0 and any(s.get("status") == "ok" and s.get("count", 0) > 0 for s in result["sources"])
-    if result["errors"]:
-        print(f"WARNING: {len(result['errors'])} provider errors; valid fixtures: {result['fixture_count']}", file=sys.stderr)
-    return 0 if usable else 2
+    return 2 if result["errors"] else 0
 
 
 if __name__ == "__main__":
