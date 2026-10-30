@@ -8,13 +8,13 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-def build(data, max_football=30, max_nba=12, next_nba=None):
+def build(data, max_football=None, max_nba=None, next_nba=None):
     fixtures = data.get("fixtures", [])
     if not isinstance(fixtures, list):
         raise ValueError("fixtures must be an array")
     football = [f for f in fixtures if f.get("sport") == "football" and f.get("status") == "pre"]
     nba = [f for f in fixtures if f.get("sport") == "basketball" and f.get("league") == "nba" and f.get("status") == "pre"]
-    football.sort(key=lambda f: (0 if f.get("provider") == "thesportsdb-free-limited" else 1, f.get("start_utc", "")))
+    football.sort(key=lambda f: f.get("start_utc", ""))
     if next_nba:
         nba.extend(f for f in next_nba.get("fixtures", [])
                    if f.get("sport") == "basketball" and f.get("league") == "nba"
@@ -34,8 +34,8 @@ def build(data, max_football=30, max_nba=12, next_nba=None):
         "source_status": data.get("status"),
         "source_errors": data.get("errors", []),
         "scope_warning": "Partial coverage, especially TheSportsDB regional free league endpoints.",
-        "football_candidates": football[:max_football],
-        "nba_games": nba[:max_nba],
+        "football_candidates": football,
+        "nba_games": nba,
         "nba_player_watchlist": players,
         "candidate_counts": {
             "football": len(football[:max_football]),
