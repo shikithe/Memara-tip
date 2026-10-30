@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "date": "2026-10-30",
-  "generated_at_utc": "2026-10-30T13:45:39.858999+00:00",
+  "generated_at_utc": "2026-10-30T15:02:37.821274+00:00",
   "state": "awaiting_human_or_AI_analysis",
   "not_betting_advice": true,
   "odds_verified": false,
@@ -20,28 +20,6 @@
       "away": "Galatasaray",
       "start_utc": "2026-10-30T17:00:00Z",
       "start_sarajevo": "2026-10-30T18:00:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:ger.2:401885068",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "ger.2",
-      "home": "Arminia Bielefeld",
-      "away": "TSV Eintracht Braunschweig",
-      "start_utc": "2026-10-30T17:30:00Z",
-      "start_sarajevo": "2026-10-30T18:30:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:ger.2:401885066",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "ger.2",
-      "home": "Energie Cottbus",
-      "away": "VfL Bochum",
-      "start_utc": "2026-10-30T17:30:00Z",
-      "start_sarajevo": "2026-10-30T18:30:00+01:00",
       "status": "pre"
     },
     {
@@ -67,61 +45,6 @@
       "status": "pre"
     },
     {
-      "id": "espn:football:fra.2:401876708",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "fra.2",
-      "home": "Grenoble",
-      "away": "Dijon FCO",
-      "start_utc": "2026-10-30T19:00:00Z",
-      "start_sarajevo": "2026-10-30T20:00:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:fra.2:401876705",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "fra.2",
-      "home": "Metz",
-      "away": "Pau",
-      "start_utc": "2026-10-30T19:00:00Z",
-      "start_sarajevo": "2026-10-30T20:00:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:fra.2:401876704",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "fra.2",
-      "home": "Nantes",
-      "away": "Clermont Foot",
-      "start_utc": "2026-10-30T19:00:00Z",
-      "start_sarajevo": "2026-10-30T20:00:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:fra.2:401876701",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "fra.2",
-      "home": "Rodez Aveyron",
-      "away": "Dunkerque",
-      "start_utc": "2026-10-30T19:00:00Z",
-      "start_sarajevo": "2026-10-30T20:00:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:fra.2:401876706",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "fra.2",
-      "home": "Stade Laval",
-      "away": "Boulogne",
-      "start_utc": "2026-10-30T19:00:00Z",
-      "start_sarajevo": "2026-10-30T20:00:00+01:00",
-      "status": "pre"
-    },
-    {
       "id": "espn:football:ger.1:401884746",
       "provider": "espn-public-unofficial",
       "sport": "football",
@@ -141,17 +64,6 @@
       "away": "Club Brugge",
       "start_utc": "2026-10-30T19:45:00Z",
       "start_sarajevo": "2026-10-30T20:45:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:eng.2:401880190",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "eng.2",
-      "home": "Sheffield United",
-      "away": "Wrexham",
-      "start_utc": "2026-10-30T20:00:00Z",
-      "start_sarajevo": "2026-10-30T21:00:00+01:00",
       "status": "pre"
     },
     {
@@ -486,14 +398,14 @@
     }
   ],
   "candidate_counts": {
-    "football": 21,
+    "football": 13,
     "nba_games": 10,
     "players": 12
   },
   "nba_player_points_offers": [],
   "math_layer": {
     "version": "1.0",
-    "generated_at_utc": "2026-10-30T13:45:39.895734+00:00",
+    "generated_at_utc": "2026-10-30T15:02:37.850228+00:00",
     "nba_offers_with_market_math": 0,
     "football_probability_status": "requires_external_validated_expected_goals",
     "nba_edge_status": "requires_independent_player_points_probability_model",

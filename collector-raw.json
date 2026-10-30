@@ -2,11 +2,11 @@
   "schema_version": "1.0",
   "date": "2026-10-30",
   "timezone": "Europe/Sarajevo",
-  "collected_at_utc": "2026-10-30T13:45:30.211109+00:00",
+  "collected_at_utc": "2026-10-30T15:02:33.826420+00:00",
   "scope": "configured leagues only, not all global fixtures",
   "publication_allowed": false,
   "status": "ok",
-  "fixture_count": 23,
+  "fixture_count": 15,
   "duplicate_count": 0,
   "sources": [
     {
@@ -104,70 +104,6 @@
       "status": "ok",
       "count": 0,
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ned.1/scoreboard?dates=20261030&limit=500"
-    },
-    {
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "eng.2",
-      "status": "ok",
-      "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.2/scoreboard?dates=20261029&limit=500"
-    },
-    {
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "eng.2",
-      "status": "ok",
-      "count": 1,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.2/scoreboard?dates=20261030&limit=500"
-    },
-    {
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "ger.2",
-      "status": "ok",
-      "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.2/scoreboard?dates=20261029&limit=500"
-    },
-    {
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "ger.2",
-      "status": "ok",
-      "count": 2,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.2/scoreboard?dates=20261030&limit=500"
-    },
-    {
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "ita.2",
-      "status": "ok",
-      "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.2/scoreboard?dates=20261029&limit=500"
-    },
-    {
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "ita.2",
-      "status": "ok",
-      "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.2/scoreboard?dates=20261030&limit=500"
-    },
-    {
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "fra.2",
-      "status": "ok",
-      "count": 0,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.2/scoreboard?dates=20261029&limit=500"
-    },
-    {
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "fra.2",
-      "status": "ok",
-      "count": 5,
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.2/scoreboard?dates=20261030&limit=500"
     },
     {
       "provider": "espn-public-unofficial",
@@ -460,28 +396,6 @@
       "status": "pre"
     },
     {
-      "id": "espn:football:ger.2:401885068",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "ger.2",
-      "home": "Arminia Bielefeld",
-      "away": "TSV Eintracht Braunschweig",
-      "start_utc": "2026-10-30T17:30:00Z",
-      "start_sarajevo": "2026-10-30T18:30:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:ger.2:401885066",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "ger.2",
-      "home": "Energie Cottbus",
-      "away": "VfL Bochum",
-      "start_utc": "2026-10-30T17:30:00Z",
-      "start_sarajevo": "2026-10-30T18:30:00+01:00",
-      "status": "pre"
-    },
-    {
       "id": "espn:football:fra.1:401876421",
       "provider": "espn-public-unofficial",
       "sport": "football",
@@ -504,61 +418,6 @@
       "status": "pre"
     },
     {
-      "id": "espn:football:fra.2:401876708",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "fra.2",
-      "home": "Grenoble",
-      "away": "Dijon FCO",
-      "start_utc": "2026-10-30T19:00:00Z",
-      "start_sarajevo": "2026-10-30T20:00:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:fra.2:401876705",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "fra.2",
-      "home": "Metz",
-      "away": "Pau",
-      "start_utc": "2026-10-30T19:00:00Z",
-      "start_sarajevo": "2026-10-30T20:00:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:fra.2:401876704",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "fra.2",
-      "home": "Nantes",
-      "away": "Clermont Foot",
-      "start_utc": "2026-10-30T19:00:00Z",
-      "start_sarajevo": "2026-10-30T20:00:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:fra.2:401876701",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "fra.2",
-      "home": "Rodez Aveyron",
-      "away": "Dunkerque",
-      "start_utc": "2026-10-30T19:00:00Z",
-      "start_sarajevo": "2026-10-30T20:00:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:fra.2:401876706",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "fra.2",
-      "home": "Stade Laval",
-      "away": "Boulogne",
-      "start_utc": "2026-10-30T19:00:00Z",
-      "start_sarajevo": "2026-10-30T20:00:00+01:00",
-      "status": "pre"
-    },
-    {
       "id": "espn:football:ger.1:401884746",
       "provider": "espn-public-unofficial",
       "sport": "football",
@@ -578,17 +437,6 @@
       "away": "Club Brugge",
       "start_utc": "2026-10-30T19:45:00Z",
       "start_sarajevo": "2026-10-30T20:45:00+01:00",
-      "status": "pre"
-    },
-    {
-      "id": "espn:football:eng.2:401880190",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "eng.2",
-      "home": "Sheffield United",
-      "away": "Wrexham",
-      "start_utc": "2026-10-30T20:00:00Z",
-      "start_sarajevo": "2026-10-30T21:00:00+01:00",
       "status": "pre"
     },
     {
