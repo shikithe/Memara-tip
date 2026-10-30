@@ -15,6 +15,27 @@ def participants(e):
         return [c["team"].get("displayName","") for c in e["competitions"][0]["competitors"]]
     except (KeyError,IndexError,TypeError):
         return []
+def final_score(event):
+    """Preserve ESPN's home/away final score; never guess unavailable scores."""
+    try:
+        competitors = event["competitions"][0]["competitors"]
+        home = next(c for c in competitors if c.get("homeAway") == "home")
+        away = next(c for c in competitors if c.get("homeAway") == "away")
+    except (KeyError, IndexError, TypeError, StopIteration):
+        return {"home": None, "away": None, "display": None, "available": False}
+    def value(c):
+        score = c.get("score")
+        if isinstance(score, dict):
+            score = score.get("displayValue", score.get("value"))
+        if score is None or str(score).strip() == "":
+            return None
+        return str(score)
+    hs, aw = value(home), value(away)
+    available = hs is not None and aw is not None
+    return {"home": hs, "away": aw,
+            "display": f"{hs}:{aw}" if available else None,
+            "available": available}
+
 def select(feed,request=fetch,days=30,limit=5,leagues=LEAGUES,now=None,h2h_years=3):
     now=now or datetime.now(timezone.utc)
     pairs=[f for f in feed.get("football_candidates",[]) if f.get("status")=="pre" and f.get("sport")=="football" and f.get("home") and f.get("away")]
@@ -79,7 +100,7 @@ def select(feed,request=fetch,days=30,limit=5,leagues=LEAGUES,now=None,h2h_years
                 errors.append({"league":item["league"],"event_id":event_id,"error":str(exc)})
                 summaries[event_id]={"available":False,"team_statistics":[]}
         return {"event_id":event_id,"date":e.get("date"),"competition":item["league"],
-                "participants":participants(e),"statistics":summaries[event_id]}
+                "participants":participants(e),"final_score":final_score(e),"statistics":summaries[event_id]}
     result=[]
     for f in pairs:
         home,away=norm(f["home"]),norm(f["away"])
