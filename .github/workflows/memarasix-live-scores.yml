@@ -8,6 +8,7 @@ on:
       - 'index.html'
       - 'data.json'
       - 'settle_virtual_tickets.py'
+      - 'ticket_lifecycle.py'
       - 'tests/test_virtual_settlement.py'
   schedule:
     - cron: '*/5 * * * *'
@@ -30,12 +31,12 @@ jobs:
       - name: Collect score states safely
         run: python sync_live_scores.py
       - name: Settle winning tickets at irreversible hit or final score
-        run: python settle_virtual_tickets.py
+        run: python ticket_lifecycle.py
       - name: Save live results and one-time bank settlement
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add live-scores.json data.json
+          git add live-scores.json data.json archive.json
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh scores and settle irreversibly won or finished tickets [skip ci]"
             git pull --rebase origin main
