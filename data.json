@@ -5,13 +5,13 @@
   "publication_type": "main_validated_partial_publication",
   "bank_before": 182.59,
   "daily_budget": 18.26,
-  "daily_stake": 12.78,
-  "bank_after": 169.81,
-  "bank_after_stakes": 169.81,
+  "daily_stake": 18.26,
+  "bank_after": 164.33,
+  "bank_after_stakes": 164.33,
   "provisional": true,
   "settled": false,
   "odds_verified": true,
-  "odds_verification_note": "Direktno provjerene javne Stake.com prematch 1X2 kvote 30.10.2026: Galatasaray 1,55, Villarreal 1,40. Nisu potvrđene Mozzartbet BiH/bet365 kvote, dostupnost u regiji ni mogućnost uplate. Nije dokazan pozitivan EV.",
+  "odds_verification_note": "A javne kvote; B javni agregator, ne direktno potvrđene u kladionici",
   "tickets": [
     {
       "id": "A",
@@ -100,18 +100,52 @@
     },
     {
       "id": "B",
-      "label": "GOLOVI 3+ — ČEKA SE PONUDA",
-      "stake": 0,
-      "status": "preskočen",
-      "odds": null,
+      "label": "GOLOVI 3+ — TIKET B",
+      "stake": 5.48,
+      "status": "objavljen",
+      "odds": 3.2,
       "payout": 0,
-      "matches": [],
+      "matches": [
+        {
+          "home": "Nice",
+          "away": "Stade Rennais",
+          "pick": "3+",
+          "odd": 1.65,
+          "fixture_id": "espn:football:fra.1:401876416",
+          "start_utc": "2026-10-30T18:00:00Z",
+          "market_name": "Over 2.5 Goals",
+          "market_source": "Betensured javni agregirani prikaz; operater nije potvrđen",
+          "market_url": "https://betensured.fr/cotes24245?euros=1&game=soccernew&match_date=30.10.2026"
+        },
+        {
+          "home": "Le Havre AC",
+          "away": "Paris Saint-Germain",
+          "pick": "3+",
+          "odd": 1.32,
+          "fixture_id": "espn:football:fra.1:401876421",
+          "start_utc": "2026-10-30T18:00:00Z",
+          "market_name": "Over 2.5 Goals",
+          "market_source": "Betensured javni agregirani prikaz; operater nije potvrđen",
+          "market_url": "https://betensured.fr/cotes24245?euros=1&game=soccernew&match_date=30.10.2026"
+        },
+        {
+          "home": "SV Elversberg",
+          "away": "Mainz",
+          "pick": "3+",
+          "odd": 1.47,
+          "fixture_id": "espn:football:ger.1:401884746",
+          "start_utc": "2026-10-30T19:30:00Z",
+          "market_name": "Over 2.5 Goals",
+          "market_source": "Betensured javni agregirani prikaz; operater nije potvrđen",
+          "market_url": "https://betensured.fr/cotes24245?euros=1&game=soccernew&match_date=30.10.2026"
+        }
+      ],
       "analysis": {
-        "summary": "Nema dovoljno nezavisno potvrđene kombinacije 3+ golova s ukupnom kvotom najmanje 3 i prihvatljivim rizikom.",
-        "reasons": [
-          "Nema dovoljno nezavisno potvrđene kombinacije 3+ golova s ukupnom kvotom najmanje 3 i prihvatljivim rizikom."
-        ],
-        "limits": "Bez validiranog tiketa nema uloga."
+        "summary": "Analiza 3+ golova; kvote javnog agregatora nisu direktno potvrđene kod operatera.",
+        "sources": [
+          "https://footballedgeuk.co.uk/board/2026-10-30/",
+          "https://betensured.fr/cotes24245?euros=1&game=soccernew&match_date=30.10.2026"
+        ]
       }
     },
     {
@@ -131,9 +165,9 @@
       }
     }
   ],
-  "total_payout": 0.0,
-  "net_change": null,
-  "analysis_status": "A objavljen, B i C preskočeni zbog nepotpunih provjera.",
+  "total_payout": 0,
+  "net_change": -18.26,
+  "analysis_status": "A i B objavljeni; B dodan na zahtjev korisnika",
   "selection_method": "Ručna nezavisna AI analiza javnih izvora i ESPN feeda, 30.10.2026.",
   "source_fixture_feed": "collector-feed.json 2026-10-30T15:02:37.821274+00:00",
   "source_independent_analysis": "collector-output/independent-analysis.json (današnji podaci; prijavljene rupe u statistici)",
