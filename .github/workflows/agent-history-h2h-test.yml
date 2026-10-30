@@ -22,8 +22,8 @@ jobs:
           mkdir -p /tmp/memara-agent-test
           python collector/collector_24h.py --output /tmp/memara-agent-test/collector-raw.json
           python collector/memara_prepare_feed.py --input /tmp/memara-agent-test/collector-raw.json --output /tmp/memara-agent-test/collector-feed.json
-      - name: ESPN live history and H2H smoke audit (30 days)
-        run: python agent/cross_competition_history.py --input /tmp/memara-agent-test/collector-feed.json --output /tmp/memara-agent-test/history-h2h.json --days 30
+      - name: ESPN live form (30 days) and H2H (3 years) audit
+        run: python agent/cross_competition_history.py --input /tmp/memara-agent-test/collector-feed.json --output /tmp/memara-agent-test/history-h2h.json --days 30 --h2h-years 3
       - name: Validate output
         run: |
           python - <<'PY'
