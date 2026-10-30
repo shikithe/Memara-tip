@@ -1,0 +1,39 @@
+name: Agent ESPN statistics audit (isolated)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: collector-isolated-test-20261030
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch historical ESPN statistics for all 16 leagues
+        run: python agent/espn_statistics.py --days 7 --per-league 2 --output /tmp/memara-agent-test/espn-statistics.json
+      - name: Validate league coverage
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('/tmp/memara-agent-test/espn-statistics.json')
+          d=json.loads(p.read_text())
+          assert d['league_count']==16
+          assert len(d['leagues'])==16
+          print('League coverage:')
+          for league, result in d['leagues'].items():
+              print(league, 'samples=',result['sample_count'],'standings=',result['standings_available'],'errors=',len(result['errors']))
+          print('Total source errors:',len(d['errors']))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: agent-espn-statistics-audit
+          path: /tmp/memara-agent-test/
+          if-no-files-found: ignore
