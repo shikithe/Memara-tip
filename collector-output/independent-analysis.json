@@ -1,7 +1,7 @@
 {
   "date": "2026-10-30",
-  "generated_at_utc": "2026-10-30T13:45:55.537355+00:00",
-  "source_generated_at_utc": "2026-10-30T13:45:39.858999+00:00",
+  "generated_at_utc": "2026-10-30T15:02:55.587681+00:00",
+  "source_generated_at_utc": "2026-10-30T15:02:37.821274+00:00",
   "state": "analysis_completed_data_gaps_remain",
   "publication_allowed": false,
   "odds_verified": false,
@@ -12,38 +12,6 @@
       "away": "Galatasaray",
       "start_utc": "2026-10-30T17:00:00Z",
       "league": "tur.1",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "espn:football:ger.2:401885068",
-      "home": "Arminia Bielefeld",
-      "away": "TSV Eintracht Braunschweig",
-      "start_utc": "2026-10-30T17:30:00Z",
-      "league": "ger.2",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "espn:football:ger.2:401885066",
-      "home": "Energie Cottbus",
-      "away": "VfL Bochum",
-      "start_utc": "2026-10-30T17:30:00Z",
-      "league": "ger.2",
       "eligible_for_further_research": true,
       "data_gaps": [
         "missing_verified_recent_form",
@@ -87,86 +55,6 @@
       "analysis_status": "needs_independent_evidence"
     },
     {
-      "id": "espn:football:fra.2:401876708",
-      "home": "Grenoble",
-      "away": "Dijon FCO",
-      "start_utc": "2026-10-30T19:00:00Z",
-      "league": "fra.2",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "espn:football:fra.2:401876705",
-      "home": "Metz",
-      "away": "Pau",
-      "start_utc": "2026-10-30T19:00:00Z",
-      "league": "fra.2",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "espn:football:fra.2:401876704",
-      "home": "Nantes",
-      "away": "Clermont Foot",
-      "start_utc": "2026-10-30T19:00:00Z",
-      "league": "fra.2",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "espn:football:fra.2:401876701",
-      "home": "Rodez Aveyron",
-      "away": "Dunkerque",
-      "start_utc": "2026-10-30T19:00:00Z",
-      "league": "fra.2",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "espn:football:fra.2:401876706",
-      "home": "Stade Laval",
-      "away": "Boulogne",
-      "start_utc": "2026-10-30T19:00:00Z",
-      "league": "fra.2",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
       "id": "espn:football:ger.1:401884746",
       "home": "SV Elversberg",
       "away": "Mainz",
@@ -188,22 +76,6 @@
       "away": "Club Brugge",
       "start_utc": "2026-10-30T19:45:00Z",
       "league": "bel.1",
-      "eligible_for_further_research": true,
-      "data_gaps": [
-        "missing_verified_recent_form",
-        "missing_verified_lineups_or_absences",
-        "missing_verified_market_odds"
-      ],
-      "model_probability": null,
-      "recommended_market": null,
-      "analysis_status": "needs_independent_evidence"
-    },
-    {
-      "id": "espn:football:eng.2:401880190",
-      "home": "Sheffield United",
-      "away": "Wrexham",
-      "start_utc": "2026-10-30T20:00:00Z",
-      "league": "eng.2",
       "eligible_for_further_research": true,
       "data_gaps": [
         "missing_verified_recent_form",
@@ -507,8 +379,8 @@
   ],
   "summary": {
     "football": {
-      "total": 21,
-      "researchable": 21
+      "total": 13,
+      "researchable": 13
     },
     "nba": {
       "total": 10,
