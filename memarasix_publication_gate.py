@@ -19,7 +19,7 @@ def main():
     if old.get("date") == today and any(t.get("status","").startswith("objavljen") for t in old.get("tickets",[])):
         print("Existing published tickets are immutable; skipping.")
         return
-    bank = float(old.get("bank_after_stakes",old.get("bank_after",old.get("bank_before",0))))
+    # Fail closed: this script has no verified bookmaker quote ingestion or analyst selection.\n    # Never overwrite real tickets, archive, or bankroll with a status-only placeholder.\n    print("PUBLICATION_BLOCKED: no verified A/B/C selection pipeline; data.json unchanged.")\n    return\n    bank = float(old.get("bank_after_stakes",old.get("bank_after",old.get("bank_before",0))))
     queue = read("collector-output/unified-analysis-queue.json")
     independent = read("collector-output/independent-analysis.json")
     fresh_queue = queue.get("date") == today
