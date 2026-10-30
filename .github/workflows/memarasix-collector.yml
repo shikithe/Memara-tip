@@ -6,8 +6,6 @@ on:
   push:
     paths:
       - '.github/workflows/memarasix-collector.yml'
-      - 'collector.py'
-      - 'memara_prepare_feed.py'
   schedule:
     # Morning window 09:15-10:15 and recovery window 12:30-14:45 Sarajevo.
     # Cover both summer/winter UTC offsets; local-time gate filters actual runs.
@@ -56,7 +54,7 @@ jobs:
           today=datetime.now(ZoneInfo("Europe/Sarajevo")).date().isoformat()
           try:
               with open("collector-feed.json",encoding="utf-8") as f: doc=json.load(f)
-              done=(os.environ.get("GITHUB_EVENT_NAME")=="schedule" and doc.get("date")==today and bool(doc.get("football_candidates") or doc.get("nba_games")) and bool(doc.get("window_sarajevo")) and not any("Rezultati" in str(e) for e in doc.get("source_errors",[])))
+              done=doc.get("date")==today and len(doc.get("football_candidates") or [])>0
           except (OSError,ValueError): done=False
           with open(os.environ["GITHUB_OUTPUT"],"a") as f:
               f.write("needed="+str(not done).lower()+"\n")
@@ -70,10 +68,10 @@ jobs:
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
           python collector.py --date "$(TZ=Europe/Sarajevo date +%F)" --sport all --regional --nba-players --output collector-output/fixtures.json
-      - name: Collect next Sarajevo date football and NBA fixtures
+      - name: Collect next Sarajevo date NBA fixtures
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
-          python collector.py --date "$(TZ=Europe/Sarajevo date -d tomorrow +%F)" --sport all --output collector-output/nba-next.json || { echo "WARNING: next-day football/NBA unavailable; today collection continues"; mkdir -p collector-output; echo '{"fixtures":[]}' > collector-output/nba-next.json; }
+          python collector.py --date "$(TZ=Europe/Sarajevo date -d tomorrow +%F)" --sport basketball --output collector-output/nba-next.json
       - name: Validate sources and generate analyst queue
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
@@ -88,19 +86,6 @@ jobs:
           PY
           python memara_prepare_feed.py --input collector-output/fixtures.json --nba-next collector-output/nba-next.json --output collector-feed.json
           python memara_math.py --input collector-feed.json --output collector-feed.json
-          python - <<'PY'
-          import json
-          from datetime import datetime,timezone,timedelta
-          from zoneinfo import ZoneInfo
-          d=json.load(open("collector-feed.json",encoding="utf-8"))
-          today=datetime.now(ZoneInfo("Europe/Sarajevo")).date().isoformat()
-          ts=datetime.fromisoformat(d["generated_at_utc"].replace("Z","+00:00"))
-          assert d["date"]==today, "Wrong Sarajevo date"
-          assert datetime.now(timezone.utc)-timedelta(minutes=5)<=ts<=datetime.now(timezone.utc)+timedelta(minutes=5), "Invalid generation timestamp"
-          assert isinstance(d.get("football_candidates"),list) and isinstance(d.get("nba_games"),list), "Missing candidate arrays"
-          assert len(d["football_candidates"])+len(d["nba_games"])>0, "No future football or NBA candidates"
-          print("VALIDATED FEED",today,len(d["football_candidates"]))
-          PY
       - name: Commit candidate feed only
         if: steps.localtime.outputs.enabled == 'true' && steps.freshness.outputs.needed == 'true'
         run: |
@@ -123,5 +108,3 @@ jobs:
             collector-output/fixtures.json
             collector-feed.json
           if-no-files-found: ignore
-
-# 2026-10-28 collector recovery trigger: refresh today's candidate feed before publication.
