@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "updated_at_utc": "2026-10-30T17:34:15.960223+00:00",
+  "updated_at_utc": "2026-10-30T21:41:13.882465+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,60 +9,64 @@
       "index": 0,
       "home": "Konyaspor",
       "away": "Galatasaray",
-      "state": "live",
-      "score": "0:2",
+      "state": "final",
+      "score": "0:4",
       "source": "espn-public-unofficial",
       "event_id": "401888259",
       "league": "tur.1",
-      "minute": "34"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "A",
       "index": 1,
       "home": "Villarreal",
       "away": "Espanyol",
-      "state": "scheduled",
-      "score": "0:0",
+      "state": "live",
+      "score": "0:1",
       "source": "espn-public-unofficial",
       "event_id": "401882817",
       "league": "esp.1",
-      "minute": null
+      "minute": "84"
     },
     {
       "ticket": "B",
       "index": 0,
       "home": "Nice",
       "away": "Stade Rennais",
-      "state": "scheduled",
-      "score": "0:0",
+      "state": "final",
+      "score": "5:2",
       "source": "espn-public-unofficial",
       "event_id": "401876416",
       "league": "fra.1",
-      "minute": null
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "B",
       "index": 1,
       "home": "Le Havre AC",
       "away": "Paris Saint-Germain",
-      "state": "scheduled",
-      "score": "0:0",
+      "state": "final",
+      "score": "1:5",
       "source": "espn-public-unofficial",
       "event_id": "401876421",
       "league": "fra.1",
-      "minute": null
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "B",
       "index": 2,
       "home": "SV Elversberg",
       "away": "Mainz",
-      "state": "scheduled",
-      "score": "0:0",
+      "state": "final",
+      "score": "4:1",
       "source": "espn-public-unofficial",
       "event_id": "401884746",
       "league": "ger.1",
-      "minute": null
+      "minute": null,
+      "result_status": "pogođen"
     }
   ],
   "bank_unchanged": true

@@ -6,7 +6,7 @@
   "bank_before": 182.59,
   "daily_budget": 18.26,
   "daily_stake": 18.26,
-  "bank_after": 164.33,
+  "bank_after": 181.87,
   "bank_after_stakes": 164.33,
   "provisional": true,
   "settled": false,
@@ -47,7 +47,9 @@
                 "https://deeppreviews.com/previews/konyaspor-vs-galatasaray-2026-10-30"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "0:4"
         },
         {
           "home": "Villarreal",
@@ -102,9 +104,9 @@
       "id": "B",
       "label": "GOLOVI 3+ — TIKET B",
       "stake": 5.48,
-      "status": "objavljen",
+      "status": "dobitan",
       "odds": 3.2,
-      "payout": 0,
+      "payout": 17.54,
       "matches": [
         {
           "home": "Nice",
@@ -115,7 +117,9 @@
           "start_utc": "2026-10-30T18:00:00Z",
           "market_name": "Over 2.5 Goals",
           "market_source": "Betensured javni agregirani prikaz; operater nije potvrđen",
-          "market_url": "https://betensured.fr/cotes24245?euros=1&game=soccernew&match_date=30.10.2026"
+          "market_url": "https://betensured.fr/cotes24245?euros=1&game=soccernew&match_date=30.10.2026",
+          "result_status": "pogođen",
+          "final_score": "5:2"
         },
         {
           "home": "Le Havre AC",
@@ -126,7 +130,9 @@
           "start_utc": "2026-10-30T18:00:00Z",
           "market_name": "Over 2.5 Goals",
           "market_source": "Betensured javni agregirani prikaz; operater nije potvrđen",
-          "market_url": "https://betensured.fr/cotes24245?euros=1&game=soccernew&match_date=30.10.2026"
+          "market_url": "https://betensured.fr/cotes24245?euros=1&game=soccernew&match_date=30.10.2026",
+          "result_status": "pogođen",
+          "final_score": "1:5"
         },
         {
           "home": "SV Elversberg",
@@ -137,7 +143,9 @@
           "start_utc": "2026-10-30T19:30:00Z",
           "market_name": "Over 2.5 Goals",
           "market_source": "Betensured javni agregirani prikaz; operater nije potvrđen",
-          "market_url": "https://betensured.fr/cotes24245?euros=1&game=soccernew&match_date=30.10.2026"
+          "market_url": "https://betensured.fr/cotes24245?euros=1&game=soccernew&match_date=30.10.2026",
+          "result_status": "pogođen",
+          "final_score": "4:1"
         }
       ],
       "analysis": {
@@ -146,7 +154,8 @@
           "https://footballedgeuk.co.uk/board/2026-10-30/",
           "https://betensured.fr/cotes24245?euros=1&game=soccernew&match_date=30.10.2026"
         ]
-      }
+      },
+      "settled_at_utc": "2026-10-30T21:41:13.882465+00:00"
     },
     {
       "id": "C",
@@ -165,7 +174,7 @@
       }
     }
   ],
-  "total_payout": 0.0,
+  "total_payout": 17.54,
   "net_change": null,
   "analysis_status": "A i B objavljeni; B dodan na zahtjev korisnika",
   "selection_method": "Ručna nezavisna AI analiza javnih izvora i ESPN feeda, 30.10.2026.",
