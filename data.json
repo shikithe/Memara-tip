@@ -1,41 +1,142 @@
 {
   "date": "2026-10-30",
-  "published": null,
+  "published": "30.10.2026. u 16:15 (Europe/Sarajevo)",
+  "published_at_utc": "2026-10-30T15:15:43.718Z",
+  "publication_type": "main_validated_partial_publication",
   "bank_before": 182.59,
-  "bank_after": 182.59,
-  "bank_after_stakes": 182.59,
-  "daily_stake": 0,
-  "total_payout": 0,
+  "daily_budget": 18.26,
+  "daily_stake": 12.78,
+  "bank_after": 169.81,
+  "bank_after_stakes": 169.81,
+  "provisional": true,
   "settled": false,
-  "provisional": false,
+  "odds_verified": true,
+  "odds_verification_note": "Direktno provjerene javne Stake.com prematch 1X2 kvote 30.10.2026: Galatasaray 1,55, Villarreal 1,40. Nisu potvrđene Mozzartbet BiH/bet365 kvote, dostupnost u regiji ni mogućnost uplate. Nije dokazan pozitivan EV.",
   "tickets": [
     {
       "id": "A",
-      "label": "GLAVNI TIKET — ČEKA SE PONUDA",
-      "status": "preskočen",
-      "stake": 0,
-      "odds": null,
+      "label": "GLAVNI TIKET — 1X2",
+      "stake": 12.78,
+      "status": "objavljen",
+      "odds": 2.17,
       "payout": 0,
-      "matches": []
+      "matches": [
+        {
+          "home": "Konyaspor",
+          "away": "Galatasaray",
+          "pick": "2",
+          "odd": 1.55,
+          "start_utc": "2026-10-30T17:00:00Z",
+          "start_sarajevo": "2026-10-30T18:00:00+01:00",
+          "fixture_id": "espn:football:tur.1:401888259",
+          "market_source": "Stake.com — javni prematch prikaz, referentna kvota (nije Mozzartbet BiH)",
+          "market_name": "1X2",
+          "market_url": "https://stake.games/sports/soccer/turkiye/super-lig/46797339-konyaspor-galatasaray-istanbul",
+          "market_snapshot_date": "2026-10-30",
+          "odds_verified_at_utc": "2026-10-30T15:12:35Z",
+          "research": {
+            "summary": "Galatasaray 7 pobjeda u 9 ligaških mečeva; Konyaspor 2 pobjede, ali 3 domaća clean sheeta. Galatasaray bez suspendovanog Bardakcıja.",
+            "risks": "Nema potvrđenih početnih sastava i nezavisno dokazanog pozitivnog EV.",
+            "sources": [
+              [
+                "Forma i H2H",
+                "https://www.forebet.com/en/football-match-previews/31805-galatasaray-set-to-test-konyaspors-resilience-in-konya"
+              ],
+              [
+                "Izostanci",
+                "https://deeppreviews.com/previews/konyaspor-vs-galatasaray-2026-10-30"
+              ]
+            ]
+          }
+        },
+        {
+          "home": "Villarreal",
+          "away": "Espanyol",
+          "pick": "1",
+          "odd": 1.4,
+          "start_utc": "2026-10-30T20:00:00Z",
+          "start_sarajevo": "2026-10-30T21:00:00+01:00",
+          "fixture_id": "espn:football:esp.1:401882817",
+          "market_source": "Stake.com — javni prematch prikaz, referentna kvota (nije Mozzartbet BiH)",
+          "market_name": "1X2",
+          "market_url": "https://stake.games/sports/soccer/spain/la-liga/46797897-villareal-espanyol",
+          "market_snapshot_date": "2026-10-30",
+          "odds_verified_at_utc": "2026-10-30T15:12:35Z",
+          "research": {
+            "summary": "Villarreal 3 pobjede, remi i poraz u zadnjih 5; Espanyol 4 poraza i remi. Villarreal bez Gueyea, umor poslije Lige šampiona.",
+            "risks": "Nema potvrđenih početnih sastava i nezavisno dokazanog pozitivnog EV.",
+            "sources": [
+              [
+                "Forma i izostanci",
+                "https://www.victorypicks.com/en/previews/villarreal-vs-espanyol-october-30-2026-2752/"
+              ],
+              [
+                "Forma",
+                "https://www.fotmob.com/matches/espanyol-vs-villarreal/2wt7o0"
+              ]
+            ]
+          }
+        }
+      ],
+      "analysis": {
+        "summary": "Dva favorita iz današnjeg ESPN feeda, uz provjeru forme i javno prikazanih kvota istog operatera.",
+        "reasons": [
+          "Galatasaray lider turske lige, Konyaspor 14.",
+          "Villarreal u boljoj formi od Espanyola."
+        ],
+        "risks": "Konyaspor 3 domaće utakmice bez primljenog gola; Galatasaray bez Bardakcıja; Villarreal bez Gueyea i nakon evropskih obaveza.",
+        "limits": "Nema potvrđenih XI ni dokazanog pozitivnog EV; kvote mogu varirati po vremenu i regiji.",
+        "sources": [
+          [
+            "Stake Konyaspor–Galatasaray",
+            "https://stake.games/sports/soccer/turkiye/super-lig/46797339-konyaspor-galatasaray-istanbul"
+          ],
+          [
+            "Stake Villarreal–Espanyol",
+            "https://stake.games/sports/soccer/spain/la-liga/46797897-villareal-espanyol"
+          ]
+        ]
+      }
     },
     {
       "id": "B",
-      "label": "GOLOVI — ČEKA SE PONUDA",
-      "status": "preskočen",
+      "label": "GOLOVI 3+ — ČEKA SE PONUDA",
       "stake": 0,
+      "status": "preskočen",
       "odds": null,
       "payout": 0,
-      "matches": []
+      "matches": [],
+      "analysis": {
+        "summary": "Nema dovoljno nezavisno potvrđene kombinacije 3+ golova s ukupnom kvotom najmanje 3 i prihvatljivim rizikom.",
+        "reasons": [
+          "Nema dovoljno nezavisno potvrđene kombinacije 3+ golova s ukupnom kvotom najmanje 3 i prihvatljivim rizikom."
+        ],
+        "limits": "Bez validiranog tiketa nema uloga."
+      }
     },
     {
       "id": "C",
       "label": "KEŠ KOLICA — ČEKA SE PONUDA",
-      "status": "preskočen",
       "stake": 0,
+      "status": "preskočen",
       "odds": null,
       "payout": 0,
-      "matches": []
+      "matches": [],
+      "analysis": {
+        "summary": "Dnevni feed ima 0 potvrđenih NBA player-points kvota; nema validiranog tiketa ukupne kvote najmanje 10.",
+        "reasons": [
+          "Dnevni feed ima 0 potvrđenih NBA player-points kvota; nema validiranog tiketa ukupne kvote najmanje 10."
+        ],
+        "limits": "Bez validiranog tiketa nema uloga."
+      }
     }
   ],
-  "analysis_status": "Čeka se ponuda"
+  "total_payout": 0,
+  "net_change": -12.78,
+  "analysis_status": "A objavljen, B i C preskočeni zbog nepotpunih provjera.",
+  "selection_method": "Ručna nezavisna AI analiza javnih izvora i ESPN feeda, 30.10.2026.",
+  "source_fixture_feed": "collector-feed.json 2026-10-30T15:02:37.821274+00:00",
+  "source_independent_analysis": "collector-output/independent-analysis.json (današnji podaci; prijavljene rupe u statistici)",
+  "source_nba_player_points": "collector-feed.json: 0 potvrđenih NBA player-points kvota",
+  "source_statistics_research": "30.10.2026; izvori navedeni uz parove"
 }
