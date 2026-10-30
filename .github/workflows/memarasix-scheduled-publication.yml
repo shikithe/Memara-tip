@@ -1,59 +1,42 @@
-name: MemaraSix scheduled publication gate
+name: MemaraSix publication readiness (read-only)
 on:
   workflow_dispatch:
+  schedule:
+    # Sarajevo 12:00 is 10:00 UTC in summer and 11:00 UTC in winter.
+    - cron: '0 10,11 * * *'
 permissions:
-  contents: write
+  contents: read
 concurrency:
-  group: memarasix-daily-publication
+  group: memarasix-publication-readiness
   cancel-in-progress: false
 jobs:
-  publish:
+  readiness:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 10
     env:
       TZ: Europe/Sarajevo
     steps:
-      - name: Verify Sarajevo publication window
+      - name: Check local time
         id: gate
         env:
           EVENT_NAME: ${{ github.event_name }}
         run: |
-          day="$(TZ=Europe/Sarajevo date +%u)"
           clock="$(TZ=Europe/Sarajevo date +%H:%M)"
-          enabled=false
-          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
-            enabled=true
-          elif [ "$day" -le 5 ] && [ "$clock" = "15:30" ]; then
-            enabled=true
-          elif [ "$day" -ge 6 ] && [ "$clock" = "13:00" ]; then
-            enabled=true
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$clock" = "12:00" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
           fi
-          echo "enabled=$enabled" >> "$GITHUB_OUTPUT"
-          echo "Local date/time: $(TZ=Europe/Sarajevo date)"
+          echo "Sarajevo time: $(TZ=Europe/Sarajevo date)"
       - uses: actions/checkout@v4
         if: steps.gate.outputs.enabled == 'true'
-        with:
-          persist-credentials: true
       - uses: actions/setup-python@v5
         if: steps.gate.outputs.enabled == 'true'
         with:
           python-version: '3.11'
-      - name: Publish verified tickets or transparent no-picks status
+      - name: Run publication readiness tests
+        if: steps.gate.outputs.enabled == 'true'
+        run: python -m unittest -v test_memarasix_publication_gate.py
+      - name: Check publication readiness without modifying tickets or bank
         if: steps.gate.outputs.enabled == 'true'
         run: python memarasix_publication_gate.py
-      - name: Commit public daily report
-        if: steps.gate.outputs.enabled == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Publish scheduled MemaraSix daily status [skip ci]"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
-      - uses: actions/upload-artifact@v4
-        if: always() && steps.gate.outputs.enabled == 'true'
-        with:
-          name: memarasix-publication-gate
-          path: data.json
