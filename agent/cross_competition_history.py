@@ -15,7 +15,7 @@ def participants(e):
         return [c["team"].get("displayName","") for c in e["competitions"][0]["competitors"]]
     except (KeyError,IndexError,TypeError):
         return []
-def select(feed,request=fetch,days=35,limit=5,leagues=LEAGUES,now=None):
+def select(feed,request=fetch,days=30,limit=5,leagues=LEAGUES,now=None):
     now=now or datetime.now(timezone.utc)
     pairs=[f for f in feed.get("football_candidates",[]) if f.get("status")=="pre" and f.get("sport")=="football" and f.get("home") and f.get("away")]
     names={norm(n) for f in pairs for n in (f["home"],f["away"])}
@@ -71,7 +71,7 @@ def select(feed,request=fetch,days=35,limit=5,leagues=LEAGUES,now=None):
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("--input",required=True);p.add_argument("--output",required=True)
-    p.add_argument("--days",type=int,default=35)
+    p.add_argument("--days",type=int,default=30)
     args=p.parse_args()
     if not 1<=args.days<=365: p.error("days must be 1..365")
     result=select(json.loads(Path(args.input).read_text(encoding="utf-8")),days=args.days)
