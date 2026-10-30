@@ -1,0 +1,49 @@
+name: Collector isolated test (no publishing)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout isolated test branch (never main code)
+        uses: actions/checkout@v4
+        with:
+          ref: collector-isolated-test-20261030
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Collect rolling 23h59m ESPN fixtures to temporary directory
+        run: |
+          mkdir -p /tmp/memara-collector-test
+          python collector/collector_24h.py --output /tmp/memara-collector-test/collector-raw.json
+          python memara_prepare_feed.py --input /tmp/memara-collector-test/collector-raw.json --output /tmp/memara-collector-test/collector-feed.json
+          python memara_math.py --input /tmp/memara-collector-test/collector-feed.json --output /tmp/memara-collector-test/collector-feed.json
+      - name: Validate time window and candidate output
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timedelta
+          from pathlib import Path
+          root=Path('/tmp/memara-collector-test')
+          raw=json.loads((root/'collector-raw.json').read_text())
+          feed=json.loads((root/'collector-feed.json').read_text())
+          start=datetime.fromisoformat(raw['window_start_utc'])
+          end=datetime.fromisoformat(raw['window_end_utc'])
+          assert end-start==timedelta(hours=23,minutes=59), 'Wrong collection window'
+          assert raw.get('fixture_count',0)>0, 'No fixtures returned'
+          assert feed.get('date')==raw.get('date'), 'Feed date mismatch'
+          assert all(start<=datetime.fromisoformat(f['start_utc'].replace('Z','+00:00'))<end for f in raw['fixtures']), 'Out-of-window fixture'
+          print('Raw fixtures:',raw['fixture_count'])
+          print('Candidate counts:',feed.get('candidate_counts'))
+          print('Source errors:',len(raw.get('errors',[])))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: isolated-collector-test
+          path: /tmp/memara-collector-test/
+          if-no-files-found: ignore
