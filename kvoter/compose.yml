@@ -1,0 +1,14 @@
+services:
+  kvoter:
+    build:
+      context: ..
+      dockerfile: kvoter/Dockerfile
+    network_mode: none
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    volumes:
+      - ../shared:/shared
+    command: ["--feed","/shared/collector-feed.json","--offers","/shared/kvoter/provider-offers.json","--output","/shared/kvoter/odds.json"]
