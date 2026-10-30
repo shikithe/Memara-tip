@@ -14,7 +14,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = "https://site.api.espn.com/apis/site/v2/sports/soccer/"
 LEAGUES = ("eng.1","esp.1","ger.1","ita.1","fra.1","ned.1","por.1","sco.1","bel.1","tur.1",
-           "uefa.champions","uefa.europa","uefa.europa.conf","eng.2","ger.2","ita.2","arg.1")
+           "uefa.champions","uefa.europa","uefa.europa.conf","eng.2","ger.2","ita.2")
 SAR = ZoneInfo("Europe/Sarajevo")
 ALIASES = {"as roma":"roma","tottenham hotspur":"tottenham","sv elversberg":"elversberg",
            "fc utrecht":"utrecht","pec zwolle":"zwolle","rb leipzig":"leipzig",
