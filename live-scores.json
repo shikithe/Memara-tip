@@ -1,34 +1,32 @@
 {
-  "date": "2026-10-29",
-  "updated_at_utc": "2026-10-30T15:15:13.168512+00:00",
+  "date": "2026-10-30",
+  "updated_at_utc": "2026-10-30T15:15:54.523005+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
     {
-      "ticket": "B",
+      "ticket": "A",
       "index": 0,
-      "home": "Frosinone",
-      "away": "Lecce",
-      "state": "final",
-      "score": "5:1",
+      "home": "Konyaspor",
+      "away": "Galatasaray",
+      "state": "scheduled",
+      "score": "0:0",
       "source": "espn-public-unofficial",
-      "event_id": "401874976",
-      "league": "ita.1",
-      "minute": null,
-      "result_status": "pogođen"
+      "event_id": "401888259",
+      "league": "tur.1",
+      "minute": null
     },
     {
-      "ticket": "B",
+      "ticket": "A",
       "index": 1,
-      "home": "Fiorentina",
-      "away": "Atalanta",
-      "state": "final",
-      "score": "2:2",
+      "home": "Villarreal",
+      "away": "Espanyol",
+      "state": "scheduled",
+      "score": "0:0",
       "source": "espn-public-unofficial",
-      "event_id": "401874969",
-      "league": "ita.1",
-      "minute": null,
-      "result_status": "pogođen"
+      "event_id": "401882817",
+      "league": "esp.1",
+      "minute": null
     }
   ],
   "bank_unchanged": true

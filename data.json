@@ -131,8 +131,8 @@
       }
     }
   ],
-  "total_payout": 0,
-  "net_change": -12.78,
+  "total_payout": 0.0,
+  "net_change": null,
   "analysis_status": "A objavljen, B i C preskočeni zbog nepotpunih provjera.",
   "selection_method": "Ručna nezavisna AI analiza javnih izvora i ESPN feeda, 30.10.2026.",
   "source_fixture_feed": "collector-feed.json 2026-10-30T15:02:37.821274+00:00",
