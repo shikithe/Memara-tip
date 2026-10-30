@@ -1,0 +1,44 @@
+name: Agent 5 matches and H2H isolated smoke test
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: collector-isolated-test-20261030
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify cross-competition and H2H logic offline
+        run: python -m unittest discover -s agent -p 'test_cross_competition_history.py' -v
+      - name: Prepare fresh isolated collector feed
+        run: |
+          mkdir -p /tmp/memara-agent-test
+          python collector/collector_24h.py --output /tmp/memara-agent-test/collector-raw.json
+          python collector/memara_prepare_feed.py --input /tmp/memara-agent-test/collector-raw.json --output /tmp/memara-agent-test/collector-feed.json
+      - name: ESPN live history and H2H smoke audit (7 days)
+        run: python agent/cross_competition_history.py --input /tmp/memara-agent-test/collector-feed.json --output /tmp/memara-agent-test/history-h2h.json --days 7
+      - name: Validate output
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('/tmp/memara-agent-test/history-h2h.json')
+          d=json.loads(p.read_text())
+          assert d['schema_version']=='agent-cross-competition-v1'
+          assert d['publication_allowed'] is False
+          assert all(len(f[k])<=5 for f in d['fixtures'] for k in ('home_history','away_history','h2h'))
+          print('Fixtures:',len(d['fixtures']),'ESPN errors:',len(d['errors']))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: agent-history-h2h-smoke
+          path: /tmp/memara-agent-test/
+          if-no-files-found: ignore
