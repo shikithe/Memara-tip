@@ -6,10 +6,10 @@
   "bank_before": 177.53,
   "daily_budget": 17.75,
   "daily_stake": 4.44,
-  "bank_after": 173.09,
+  "bank_after": 182.59,
   "bank_after_stakes": 173.09,
-  "provisional": true,
-  "settled": false,
+  "provisional": false,
+  "settled": true,
   "odds_verified": true,
   "odds_verification_note": "Direktno provjerene javne prematch kvote PokerStars France 29.10.2026 za oba Over 2.5 tržišta: 1,36 i 1,57. NISU potvrđene Mozzartbet BiH kvote niti mogućnost stvarne uplate. Tržišne kvote nisu dokaz pozitivnog EV.",
   "tickets": [
@@ -33,9 +33,9 @@
       "id": "B",
       "label": "GOLOVI — VIŠE OD 2,5",
       "stake": 4.44,
-      "status": "aktivan",
+      "status": "dobitan",
       "odds": 2.14,
-      "payout": 0,
+      "payout": 9.5,
       "matches": [
         {
           "home": "Frosinone",
@@ -69,7 +69,9 @@
                 "https://betgolazo.net/match/frosinone-vs-lecce-1550170"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "5:1"
         },
         {
           "home": "Fiorentina",
@@ -107,7 +109,9 @@
                 "https://www.thestatszone.com/fiorentina-vs-atalanta-preview-team-news-prediction-233011"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "2:2"
         }
       ],
       "analysis": {
@@ -118,7 +122,8 @@
           "Uzorak posljednjih pet mečeva po timu i javni izvještaji o povredama navedeni za svaki događaj."
         ],
         "limits": "Nema potvrđenih startnih XI, niti nezavisne +EV procjene; tržišna vjerovatnoća nije prognoza. PokerStars France nije Mozzartbet BiH. Virtuelni ulog."
-      }
+      },
+      "settled_at_utc": "2026-10-30T08:32:50.622934+00:00"
     },
     {
       "id": "C",
@@ -137,13 +142,14 @@
       }
     }
   ],
-  "total_payout": 0.0,
-  "net_change": null,
+  "total_payout": 9.5,
+  "net_change": 5.06,
   "analysis_status": "Djelimična objava B: A/C nisu prošli nezavisnu provjeru. Rezultati.com kolektor i dalje vraća nula utakmica, ali dva B događaja iz današnjeg ESPN feeda nezavisno su potvrđena iz javnih izvora. Direktne PokerStars France referentne kvote provjerene 29.10.2026. Bez tvrdnje o pozitivnom EV. NBA izvještaji zastarjeli.",
   "selection_method": "Pojedinačna validacija po prioritetu A→B→C; objavljen samo B. Dnevni budžet 10% banke, B zadržava 25% dnevnog budžeta, ostatak nije uložen.",
   "source_fixture_feed": "collector-feed.json 2026-10-29T15:20:03.832582+00:00",
   "source_independent_analysis": "collector-output/independent-analysis.json 2026-10-29 15:20Z (data gaps; dopunjeno ručnom nezavisnom provjerom)",
   "source_nba_player_points": "collector-output/nba-player-points.json 2026-10-28 (stale; not used)",
   "source_nba_free_statistics": "collector-output/nba-free-statistics.json 2026-10-28 (stale; not used)",
-  "source_statistics_research": "collector-output/statistics-research.json 2026-10-28 (stale; not used)"
+  "source_statistics_research": "collector-output/statistics-research.json 2026-10-28 (stale; not used)",
+  "all_tickets_closed_at_utc": "2026-10-30T08:32:50.622934+00:00"
 }
