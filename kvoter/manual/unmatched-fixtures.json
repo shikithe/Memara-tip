@@ -1,6 +1,195 @@
 {
-  "generated_at_utc": "2026-10-31T13:53:00.933Z",
-  "total": 0,
-  "fixtures": [],
-  "note": "All four manual candidates confirmed in GitHub issue #13. Await next fresh collector and odds cycle."
+  "generated_at_utc": "2026-10-31T14:29:38.707808+00:00",
+  "total": 27,
+  "fixtures": [
+    {
+      "fixture_id": "espn:football:sco.1:401878347",
+      "league": "sco.1",
+      "home": "Kilmarnock",
+      "away": "St Johnstone",
+      "start_utc": "2026-10-31T15:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:sco.1:401878346",
+      "league": "sco.1",
+      "home": "Motherwell",
+      "away": "St Mirren",
+      "start_utc": "2026-10-31T15:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:ned.1:401875565",
+      "league": "ned.1",
+      "home": "Feyenoord Rotterdam",
+      "away": "Fortuna Sittard",
+      "start_utc": "2026-10-31T15:30:00Z"
+    },
+    {
+      "fixture_id": "espn:football:por.1:401885405",
+      "league": "por.1",
+      "home": "Moreirense",
+      "away": "Estrela",
+      "start_utc": "2026-10-31T15:30:00Z"
+    },
+    {
+      "fixture_id": "espn:football:tur.1:401888258",
+      "league": "tur.1",
+      "home": "Fenerbahce",
+      "away": "Goztepe",
+      "start_utc": "2026-10-31T16:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:usa.1:761922",
+      "league": "usa.1",
+      "home": "Charlotte FC",
+      "away": "Orlando City SC",
+      "start_utc": "2026-10-31T17:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:ned.1:401875563",
+      "league": "ned.1",
+      "home": "Heerenveen",
+      "away": "NEC Nijmegen",
+      "start_utc": "2026-10-31T17:45:00Z"
+    },
+    {
+      "fixture_id": "espn:football:ned.1:401875564",
+      "league": "ned.1",
+      "home": "PSV Eindhoven",
+      "away": "Willem II",
+      "start_utc": "2026-10-31T17:45:00Z"
+    },
+    {
+      "fixture_id": "espn:football:usa.1:761924",
+      "league": "usa.1",
+      "home": "Columbus Crew",
+      "away": "D.C. United",
+      "start_utc": "2026-10-31T18:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:usa.1:761919",
+      "league": "usa.1",
+      "home": "FC Cincinnati",
+      "away": "Philadelphia Union",
+      "start_utc": "2026-10-31T18:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:usa.1:761930",
+      "league": "usa.1",
+      "home": "New York City FC",
+      "away": "CF Montréal",
+      "start_utc": "2026-10-31T18:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:usa.1:761928",
+      "league": "usa.1",
+      "home": "Sporting Kansas City",
+      "away": "FC Dallas",
+      "start_utc": "2026-10-31T19:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:usa.1:761926",
+      "league": "usa.1",
+      "home": "St. Louis CITY SC",
+      "away": "San Diego FC",
+      "start_utc": "2026-10-31T19:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:ned.1:401875562",
+      "league": "ned.1",
+      "home": "Ajax Amsterdam",
+      "away": "AZ Alkmaar",
+      "start_utc": "2026-10-31T20:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:ned.1:401875561",
+      "league": "ned.1",
+      "home": "SC Cambuur",
+      "away": "Go Ahead Eagles",
+      "start_utc": "2026-10-31T20:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:por.1:401885404",
+      "league": "por.1",
+      "home": "FC Porto",
+      "away": "Estoril",
+      "start_utc": "2026-10-31T20:30:00Z"
+    },
+    {
+      "fixture_id": "espn:football:usa.1:761925",
+      "league": "usa.1",
+      "home": "LA Galaxy",
+      "away": "Austin FC",
+      "start_utc": "2026-10-31T21:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:usa.1:761929",
+      "league": "usa.1",
+      "home": "San Jose Earthquakes",
+      "away": "Real Salt Lake",
+      "start_utc": "2026-10-31T21:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:usa.1:761923",
+      "league": "usa.1",
+      "home": "Colorado Rapids",
+      "away": "Chicago Fire FC",
+      "start_utc": "2026-11-01T01:30:00Z"
+    },
+    {
+      "fixture_id": "espn:football:tur.1:401888374",
+      "league": "tur.1",
+      "home": "Amed SFK",
+      "away": "Eyupspor",
+      "start_utc": "2026-11-01T10:30:00Z"
+    },
+    {
+      "fixture_id": "espn:football:ned.1:401875560",
+      "league": "ned.1",
+      "home": "PEC Zwolle",
+      "away": "ADO Den Haag",
+      "start_utc": "2026-11-01T11:15:00Z"
+    },
+    {
+      "fixture_id": "espn:football:tur.1:401888261",
+      "league": "tur.1",
+      "home": "Istanbul Basaksehir",
+      "away": "Samsunspor",
+      "start_utc": "2026-11-01T13:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:tur.1:401888263",
+      "league": "tur.1",
+      "home": "Trabzonspor",
+      "away": "Gaziantep FK",
+      "start_utc": "2026-11-01T13:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:sco.1:401878349",
+      "league": "sco.1",
+      "home": "Falkirk",
+      "away": "Celtic",
+      "start_utc": "2026-11-01T13:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:ned.1:401875559",
+      "league": "ned.1",
+      "home": "Excelsior",
+      "away": "FC Twente",
+      "start_utc": "2026-11-01T13:30:00Z"
+    },
+    {
+      "fixture_id": "espn:football:ned.1:401875558",
+      "league": "ned.1",
+      "home": "Telstar",
+      "away": "FC Utrecht",
+      "start_utc": "2026-11-01T13:30:00Z"
+    },
+    {
+      "fixture_id": "espn:football:fra.1:401876414",
+      "league": "fra.1",
+      "home": "Strasbourg",
+      "away": "AJ Auxerre",
+      "start_utc": "2026-11-01T14:00:00Z"
+    }
+  ]
 }

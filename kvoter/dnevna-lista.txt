@@ -1,4 +1,69 @@
-KVOTER - DNEVNA PONUDA
-Ceka se naredni uspjesan Collector + Odds API + Kvoter ciklus.
-Kladionicarska tabela sa stvarnim kvotama objavljuje se automatski nakon ciklusa.
-Ovaj tekst nije aktuelna ponuda.
+KVOTER - KLADIONICARSKA PONUDA (TXT)
+Preuzeto: 2026-10-31T14:24:42.234771+00:00 UTC | vrijeme: Europe/Sarajevo
+Ukupno: 59 | automatski upareno: 32
+Kvote iz posljednjeg API preuzimanja; nisu uzivo. Crtica = nema kvote.
+
+BR  DATUM SAT    UTAKMICA                                    1      X      2     3+  IZVOR
+--------------------------------------------------------------------------------------------------------------
+01  31.10. 15:30  Bayer Leverkusen - VfB Stuttgart               1.69   4.51   4.64      -  pinnacle
+02  31.10. 15:30  Borussia Mönchengladbach - SC Paderborn 07     2.17   3.82   3.31      -  pinnacle
+03  31.10. 15:30  FC Augsburg - SC Freiburg                      2.70   3.81   2.55      -  pinnacle
+04  31.10. 15:30  Schalke 04 - RB Leipzig                        4.26   3.90   1.87      -  pinnacle
+05  31.10. 15:30  Werder Bremen - TSG Hoffenheim                 2.34   3.93   2.91      -  pinnacle
+06  31.10. 16:00  AFC Bournemouth - Leeds United                 2.07   3.45   3.95   1.91  pinnacle
+07  31.10. 16:00  Brentford - Nottingham Forest                  2.12   3.65   3.58      -  pinnacle
+08  31.10. 16:00  Coventry City - Sunderland                     3.04   3.38   2.50   1.91  pinnacle
+09  31.10. 16:00  Hull City - Ipswich Town                       3.05   3.53   2.40   1.95  pinnacle
+10  31.10. 16:00  Manchester City - Brighton & Hove Albion       1.79   4.16   4.29      -  pinnacle
+11  31.10. 16:00  KV Mechelen - Racing Genk                      3.90   3.86   1.93      -  pinnacle
+12  31.10. 16:00  Kilmarnock - St Johnstone                         -      -      -      -  N/P
+13  31.10. 16:00  Motherwell - St Mirren                            -      -      -      -  N/P
+14  31.10. 16:15  Rayo Vallecano - Celta Vigo                    2.45   3.26   3.23      -  pinnacle
+15  31.10. 16:30  Feyenoord Rotterdam - Fortuna Sittard             -      -      -      -  N/P
+16  31.10. 16:30  Moreirense - Estrela                              -      -      -      -  N/P
+17  31.10. 17:00  Fenerbahce - Goztepe                              -      -      -      -  N/P
+18  31.10. 18:00  Udinese - AS Roma                              5.51   4.43   1.60      -  pinnacle
+19  31.10. 18:00  Charlotte FC - Orlando City SC                    -      -      -      -  N/P
+20  31.10. 18:15  Standard Liege - KV Kortrijk                   1.61   4.29   5.55      -  pinnacle
+21  31.10. 18:30  Tottenham Hotspur - Crystal Palace             1.68   4.16   5.08      -  pinnacle
+22  31.10. 18:30  Real Betis - Málaga                            1.31   5.95   9.77      -  pinnacle
+23  31.10. 18:30  Bayern Munich - Borussia Dortmund              1.32   6.17   8.78      -  pinnacle
+24  31.10. 18:45  Heerenveen - NEC Nijmegen                         -      -      -      -  N/P
+25  31.10. 18:45  PSV Eindhoven - Willem II                         -      -      -      -  N/P
+26  31.10. 19:00  Columbus Crew - D.C. United                       -      -      -      -  N/P
+27  31.10. 19:00  FC Cincinnati - Philadelphia Union                -      -      -      -  N/P
+28  31.10. 19:00  New York City FC - CF Montréal                    -      -      -      -  N/P
+29  31.10. 20:00  Sporting Kansas City - FC Dallas                  -      -      -      -  N/P
+30  31.10. 20:00  St. Louis CITY SC - San Diego FC                  -      -      -      -  N/P
+31  31.10. 20:00  Coritiba - Vitória                             2.23   3.56   3.32   2.00  pinnacle
+32  31.10. 20:45  AC Milan - Internazionale                      3.71   3.69   2.06      -  pinnacle
+33  31.10. 20:45  Troyes - Le Mans                               2.21   3.44   3.56   1.98  pinnacle
+34  31.10. 20:45  Anderlecht - KVC Westerlo                      1.65   4.44   4.95      -  pinnacle
+35  31.10. 20:45  Waasland-Beveren - Union St.-Gilloise          6.32   5.06   1.47      -  pinnacle
+36  31.10. 21:00  Aston Villa - Fulham                           2.17   3.59   3.50      -  pinnacle
+37  31.10. 21:00  Barcelona - Alavés                             1.11  10.92  21.15      -  pinnacle
+38  31.10. 21:00  Ajax Amsterdam - AZ Alkmaar                       -      -      -      -  N/P
+39  31.10. 21:00  SC Cambuur - Go Ahead Eagles                      -      -      -      -  N/P
+40  31.10. 21:00  Deportivo Riestra - Talleres (Córdoba)         2.49   3.05   3.31      -  pinnacle
+41  31.10. 21:30  FC Porto - Estoril                                -      -      -      -  N/P
+42  31.10. 22:00  LA Galaxy - Austin FC                             -      -      -      -  N/P
+43  31.10. 22:00  San Jose Earthquakes - Real Salt Lake             -      -      -      -  N/P
+44  31.10. 23:15  Vélez Sarsfield - San Lorenzo                  2.02   3.30   4.29      -  pinnacle
+45  01.11. 01:30  Estudiantes de La Plata - Instituto (Córdoba   1.93   3.29   4.77      -  pinnacle
+46  01.11. 02:30  Colorado Rapids - Chicago Fire FC                 -      -      -      -  N/P
+47  01.11. 11:30  Amed SFK - Eyupspor                               -      -      -      -  N/P
+48  01.11. 12:15  PEC Zwolle - ADO Den Haag                         -      -      -      -  N/P
+49  01.11. 12:30  Como - Venezia                                 1.30   6.32   9.20      -  pinnacle
+50  01.11. 13:30  Cercle Brugge KSV - Antwerp                    2.05   4.06   3.31      -  pinnacle
+51  01.11. 14:00  Getafe - Sevilla                               3.29   3.03   2.51      -  pinnacle
+52  01.11. 14:00  Istanbul Basaksehir - Samsunspor                  -      -      -      -  N/P
+53  01.11. 14:00  Trabzonspor - Gaziantep FK                        -      -      -      -  N/P
+54  01.11. 14:00  Falkirk - Celtic                                  -      -      -      -  N/P
+55  01.11. 14:30  Excelsior - FC Twente                             -      -      -      -  N/P
+56  01.11. 14:30  Telstar - FC Utrecht                              -      -      -      -  N/P
+57  01.11. 15:00  Frosinone - Torino                             2.18   3.96   3.13      -  pinnacle
+58  01.11. 15:00  Lazio - Cagliari                               1.46   4.71   7.28   1.82  pinnacle
+59  01.11. 15:00  Strasbourg - AJ Auxerre                           -      -      -      -  N/P
+
+1=domacin | X=nerijeseno | 2=gost | 3+=vise od 2.5 golova
+N/P = bez potvrdenih kvota u ovom ciklusu.
