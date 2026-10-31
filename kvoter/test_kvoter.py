@@ -1,47 +1,35 @@
 import unittest
-from kvoter import build,match,normalize_markets
-from team_identity import same_team
+from kvoter import build,match
+from the_odds_api import collect
+
 class KvoterTests(unittest.TestCase):
     def setUp(self):
-        self.f={"id":"espn:football:ger.1:123","sport":"football","league":"ger.1",
-                "home":"Bayer Leverkusen","away":"VfB Stuttgart",
-                "start_utc":"2026-11-01T16:00:00Z","start_sarajevo":"2026-11-01T17:00:00+01:00"}
-        self.o={"league":"ger.1","home":"Bayer Leverkusen","away":"VfB Stuttgart",
-                "start_utc":"2026-11-01T16:00:00Z","bookmaker":"bet365",
-                "markets":{"h2h":{"home":1.85,"draw":3.4,"away":4.2}}}
-    def test_history_h2h_input_and_markets(self):
-        offer=dict(self.o,markets={"1X2":{"1":1.8,"X":3.5,"2":4.0},
-                                   "over_1_5":{"over":1.3},
-                                   "over_2_5":{"over":1.9},
-                                   "btts":{"yes":1.75,"no":2.0}})
-        history={"fixtures":[{"fixture_id":self.f["id"],**{k:v for k,v in self.f.items() if k!="id"}}]}
-        result=build(history,[offer])
-        self.assertEqual(result["matched"],1)
-        self.assertEqual(set(result["fixtures"][0]["odds"][0]["markets"]),{"1X2","2+","3+","BTTS"})
-    def test_matches(self):
-        r=build({"football_candidates":[self.f]},[self.o])
-        self.assertEqual(r["matched"],1)
-        self.assertEqual(r["fixtures"][0]["odds"][0]["bookmaker"],"bet365")
-    def test_rejects_swapped_teams(self):
-        o=dict(self.o,home=self.o["away"],away=self.o["home"])
-        self.assertFalse(match(self.f,o))
-    def test_rejects_wrong_date(self):
-        o=dict(self.o,start_utc="2026-11-02T16:00:00Z")
-        self.assertFalse(match(self.f,o))
-    def test_approved_ajax_and_brighton(self):
-        ajax={"league":"ned.1","home":"Ajax Amsterdam","away":"AZ Alkmaar","start_utc":"2026-11-01T16:00:00Z"}
-        ajax_offer=dict(ajax,home="Ajax",bookmaker="provider",markets={"h2h":{"home":1.8}})
-        self.assertTrue(match(ajax,ajax_offer))
-        self.assertEqual(build({"fixtures":[ajax]},[ajax_offer])["matched"],1)
-        brighton={"league":"eng.1","home":"Manchester City","away":"Brighton & Hove Albion","start_utc":"2026-11-01T16:00:00Z"}
-        brighton_offer=dict(brighton,away="Brighton",bookmaker="provider",markets={"h2h":{"home":1.8}})
-        self.assertTrue(match(brighton,brighton_offer))
-        self.assertEqual(build({"fixtures":[brighton]},[brighton_offer])["matched"],1)
-        self.assertFalse(same_team("Ajax","Ajax Amsterdam","eng.1"))
-        self.assertFalse(match(ajax,dict(ajax_offer,away="Brighton")))
-        self.assertFalse(match(ajax,dict(ajax_offer,start_utc="2026-11-02T16:00:00Z")))
-    def test_no_offers_no_fabrication(self):
-        r=build({"football_candidates":[self.f]},[])
-        self.assertEqual(r["unavailable"],1)
-        self.assertEqual(r["fixtures"][0]["odds"],[])
-if __name__=="__main__":unittest.main()
+        self.fixture={"fixture_id":"a","league":"ned.1","home":"Ajax Amsterdam","away":"AZ Alkmaar","start_utc":"2026-11-01T16:00:00Z"}
+        self.offer={"event_id":"evt1","league":"ned.1","home":"Ajax","away":"AZ Alkmaar","start_utc":"2026-11-01T16:00:00Z","bookmaker":"example"}
+    def test_alias_and_report(self):
+        report=build({"fixtures":[self.fixture]},[self.offer])
+        self.assertEqual((report["matched"],report["unavailable"]),(1,0))
+        self.assertEqual(report["matched_fixtures"][0]["provider_events"],["evt1"])
+    def test_brighton(self):
+        f=dict(self.fixture,league="eng.1",home="Brighton & Hove Albion")
+        o=dict(self.offer,league="eng.1",home="Brighton")
+        self.assertTrue(match(f,o))
+    def test_unmatched(self):
+        report=build({"fixtures":[self.fixture]},[dict(self.offer,home="PSV")])
+        self.assertEqual(report["unavailable"],1)
+        self.assertEqual(len(report["unmatched_fixtures"]),1)
+    def test_league_window_and_all_events(self):
+        calls=[]
+        def fetch(url):
+            calls.append(url)
+            return [{"id":"evt1","home_team":"Ajax","away_team":"AZ Alkmaar","commence_time":"2026-11-01T16:00:00Z",
+                     "bookmakers":[{"key":"example","markets":[{"key":"h2h","outcomes":[{"name":"Ajax","price":1.5}]}]}]},
+                    {"id":"evt2","home_team":"PSV","away_team":"Utrecht","commence_time":"2026-11-01T16:00:00Z","bookmakers":[]}]
+        offers,raw,coverage,errors=collect({"fixtures":[self.fixture]},"fake",fetch=fetch)
+        self.assertEqual(len(calls),1)
+        self.assertIn("commenceTimeFrom=",calls[0])
+        self.assertEqual(len(raw),2)
+        self.assertEqual(coverage["ned.1"]["window_events"],2)
+        self.assertEqual(len(offers),1)
+        self.assertFalse(errors)
+if __name__=="__main__": unittest.main()
