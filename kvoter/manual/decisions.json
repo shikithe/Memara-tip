@@ -89,17 +89,6 @@
       "issue_number": 8
     },
     {
-      "fixture_id": "espn:football:ned.1:401875564",
-      "event_id": "49a7de86105dbc67bec3e1390c7bcbb3",
-      "collector_home": "PSV Eindhoven",
-      "collector_away": "Willem II",
-      "odds_home": "PSV Eindhoven",
-      "odds_away": "Willem II",
-      "league": "ned.1",
-      "decision": "matched",
-      "issue_number": 8
-    },
-    {
       "fixture_id": "espn:football:usa.1:761924",
       "event_id": "b9b85ea9c4f291bde6e54aadf8569303",
       "collector_home": "Columbus Crew",
@@ -219,6 +208,17 @@
       "league": "ned.1",
       "decision": "matched",
       "issue_number": 8
+    },
+    {
+      "fixture_id": "espn:football:ned.1:401875564",
+      "event_id": "49a7de86105dbc67bec3e1390c7bcbb3",
+      "collector_home": "PSV Eindhoven",
+      "collector_away": "Willem II",
+      "odds_home": "PSV Eindhoven",
+      "odds_away": "Willem II",
+      "league": "ned.1",
+      "decision": "matched",
+      "issue_number": 10
     }
   ]
 }
