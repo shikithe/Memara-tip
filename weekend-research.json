@@ -1,290 +1,347 @@
 {
-  "schema_version": "1.0",
-  "date": "2026-10-25",
-  "generated_at_utc": "2026-10-25T12:06:46.002Z",
+  "schema_version": "1.1",
+  "date": "2026-10-31",
+  "generated_at_utc": "2026-10-31T07:58:05Z",
   "project": "MAIN MemaraSix",
   "repository": "shikithe/Memara-tip",
-  "status": "ZAVRSENA_PROVJERA_NEMA_VALIDNIH_TIKETA",
-  "publication_allowed": false,
-  "phase": "13:00 weekend final review",
   "timezone": "Europe/Sarajevo",
+  "status": "NACRT_NEKOMPLETAN_CEKA_SVJEZI_COLLECTOR_I_KVOTE",
+  "phase": "09:00 weekend research",
+  "publication_allowed": false,
   "input_audit": {
     "collector_feed": {
       "path": "collector-feed.json",
-      "date": "2026-10-25",
-      "generated_at_utc": "2026-10-25T12:05:16.827822+00:00",
-      "fresh_for_today": true,
+      "date": "2026-10-30",
+      "generated_at_utc": "2026-10-30T15:02:37.821274+00:00",
+      "fresh_for_today": false,
+      "football_candidates": 13,
+      "nba_games": 10,
+      "nba_player_watchlist": 12,
       "source_status": "ok",
       "source_errors": 0,
-      "football_candidates": 30,
-      "nba_games": 7,
-      "nba_player_watchlist": 12,
       "odds_verified": false,
-      "reason": "Manually recovered main collector; candidate list is current but contains no bookmaker-verified odds."
+      "reason": "Yesterday's collection window 2026-10-30 10:00 through 2026-10-31 09:00 Europe/Sarajevo. It is not the 31 Oct post-13:00 candidate pool; none may be carried into today's tickets without independent current revalidation."
     },
     "nba_player_points": {
       "path": "collector-output/nba-player-points.json",
-      "generated_at_utc": "2026-10-24T10:27:36.955578+00:00",
+      "generated_at_utc": "2026-10-29T17:02:52.719739+00:00",
       "fresh_for_today": false,
-      "offer_count_in_stale_file": 325,
+      "stale_offer_count": 371,
       "valid_today_offers": 0,
-      "market_validation": "NOT_CONFIRMED_FOR_2026-10-25",
+      "region": "us",
+      "sample_bookmaker": "DraftKings",
+      "market_validation": "NOT_CONFIRMED_FOR_2026-10-31",
+      "player_points_line_verified_today": false,
+      "decimal_odds_verified_today": false,
       "bookmaker_mozzart_bih_verified": false,
-      "quality_warning": "Stale offers cannot be used; previous player-team mismatch observed."
+      "offer_timestamp_verified_today": false,
+      "warning": "Old US bookmaker prices are not today's Mozzartbet BiH offers. Do not reuse them."
     },
-    "afternoon_nba_sync": "12:00 Sarajevo refresh may alter player_points lines, odds and availability. Morning values must not be published as final.",
-    "nba_free_statistics": {
-      "path": "collector-output/nba-free-statistics.json",
-      "date_utc": "2026-10-24",
-      "fresh_for_today": false,
-      "players_with_stats": 68,
-      "note": "Incomplete unofficial historical ESPN samples; no reliable projection or verified current points line."
-    }
+    "collector_raw": {
+      "path": "collector-raw.json",
+      "date": "2026-10-30",
+      "fresh_for_today": false
+    },
+    "collector_workflow": {
+      "path": ".github/workflows/memarasix-collector.yml",
+      "first_morning_window": "09:15-10:15 Europe/Sarajevo",
+      "second_window": "12:30-14:45",
+      "reason": "09:00 research precedes normal morning collector refresh; new feed was not yet available."
+    },
+    "noon_nba_sync": "May change offers around 12:00; morning odds are not final."
   },
-  "publication_rules": {
-    "earliest_publication_local": "2026-10-25T13:00:00+01:00",
-    "kickoff_after_publication_required": true,
-    "football_a": {
-      "odds_range": [
-        2,
-        3
-      ],
-      "sports": [
-        "football"
-      ],
-      "status": "not_ready"
+  "rules": {
+    "earliest_publication_local": "2026-10-31T13:00:00+01:00",
+    "all_events_start_after_publication": true,
+    "A": {
+      "sport": "football",
+      "total_decimal_odds_target": "2.00-3.00"
     },
-    "football_b": {
-      "odds_range": [
-        2,
-        3
-      ],
-      "distinct_events_from_a": true,
-      "sports": [
-        "football"
-      ],
-      "status": "not_ready"
+    "B": {
+      "sport": "football",
+      "different_events_from_A": true,
+      "total_decimal_odds": "3.00+",
+      "preferred": "3.00+; if later user instruction 2-3 conflicts, enforce no shared event and await verified markets"
     },
-    "cash_cart_c": {
+    "C": {
       "name": "Keš kolica",
-      "min_legs": 4,
-      "max_legs": 6,
-      "min_combined_decimal_odds": 10,
-      "target_combined_odds": [
-        10,
-        13
-      ],
       "sports": [
         "football",
-        "basketball"
+        "NBA"
       ],
-      "distinct_events": true,
-      "overlap_with_a_b": false,
-      "status": "NEDOSTUPAN_BREZ_DOKAZIVIH_KVOTA"
+      "min_distinct_events": 4,
+      "max_distinct_events": 6,
+      "min_total_decimal_odds": 10,
+      "target": "10-13",
+      "no_overlap_with_A_B": true,
+      "nba_only_here": true
     },
+    "bookmaker_verification": "Event-specific live odds and market/line, bookmaker and snapshot time; do not infer Mozzartbet BiH from US/international markets",
     "never_invent_odds": true
   },
-  "independent_fixture_sources": [
+  "independent_fixtures": [
     {
-      "url": "https://www.rezultati.com/nogomet/engleska/premier-league/raspored/",
-      "checked_date": "2026-10-25"
+      "sport": "football",
+      "event": "Chelsea - Manchester United",
+      "kickoff_sarajevo": "2026-10-31T13:30:00+01:00",
+      "start_after_13": true,
+      "source": "https://www.theguardian.com/football/fixtures/2026/Oct/31",
+      "verification": "Early kickoff; narrow 30-minute buffer after publication; 13:00 lineup confirmation required."
     },
     {
-      "url": "https://www.rezultati.com/nogomet/spanjolska/laliga/raspored/",
-      "checked_date": "2026-10-25"
+      "sport": "football",
+      "event": "Bayer Leverkusen - Stuttgart",
+      "kickoff_sarajevo": "2026-10-31T15:30:00+01:00",
+      "start_after_13": true,
+      "source": "https://www.theguardian.com/football/fixtures/2026/Oct/31"
     },
     {
-      "url": "https://www.skysports.com/football-scores-fixtures/2026-10-25",
-      "checked_date": "2026-10-25"
+      "sport": "football",
+      "event": "Bournemouth - Leeds",
+      "kickoff_sarajevo": "2026-10-31T16:00:00+01:00",
+      "start_after_13": true,
+      "source": "https://www.theguardian.com/football/fixtures/2026/Oct/31"
     },
     {
-      "url": "https://www.nba.com/lakers/game/0022600112-lakers-vs-jazz-salt-lake-city-ut-10-25-2026/event-details",
-      "checked_date": "2026-10-25"
+      "sport": "football",
+      "event": "Manchester City - Brighton",
+      "kickoff_sarajevo": "2026-10-31T16:00:00+01:00",
+      "start_after_13": true,
+      "source": "https://www.theguardian.com/football/fixtures/2026/Oct/31"
+    },
+    {
+      "sport": "football",
+      "event": "Bayern Munich - Borussia Dortmund",
+      "kickoff_sarajevo": "2026-10-31T18:30:00+01:00",
+      "start_after_13": true,
+      "source": "https://www.theguardian.com/football/fixtures/2026/Oct/31"
+    },
+    {
+      "sport": "football",
+      "event": "Barcelona - Alaves",
+      "kickoff_sarajevo": "2026-10-31T21:00:00+01:00",
+      "start_after_13": true,
+      "source": "https://www.theguardian.com/football/fixtures/2026/Oct/31"
+    },
+    {
+      "sport": "NBA",
+      "event": "Portland Trail Blazers @ Utah Jazz",
+      "kickoff_sarajevo": "2026-10-31T20:00:00+01:00",
+      "start_after_13": true,
+      "source": "https://www.cbssports.com/nba/schedule/20261031/"
+    },
+    {
+      "sport": "NBA",
+      "event": "Sacramento Kings @ Memphis Grizzlies",
+      "kickoff_sarajevo": "2026-11-01T01:00:00+01:00",
+      "start_after_13": true,
+      "source": "https://www.cbssports.com/nba/schedule/20261031/"
+    },
+    {
+      "sport": "NBA",
+      "event": "Cleveland Cavaliers @ Milwaukee Bucks",
+      "kickoff_sarajevo": "2026-11-01T01:00:00+01:00",
+      "start_after_13": true,
+      "source": "https://www.cbssports.com/nba/schedule/20261031/"
     }
   ],
   "football_watchlist": [
     {
-      "fixture": "Liverpool - Brighton",
-      "kickoff_utc": "2026-10-25T14:00:00Z",
-      "market_to_verify": "Over 2.5 goals",
-      "analysis": "Brighton: 23 scored and 5 conceded in 7 league games; Liverpool 3 successive wins in all competitions but 0.7 scored and 1.7 conceded per home league match (small 3-match sample). Last 5 league Brighton: 4 wins, 1 draw. Both have European midweek load. Liverpool has multiple absences including Frimpong, Ekitike, Szoboszlai; Brighton missing Mitoma/Minteh. Goals angle has attacking rationale, but Brighton's clean-sheet streak makes both-teams-to-score less robust.",
+      "fixture": "Bournemouth - Leeds",
+      "market_to_verify": "1X or Bournemouth to win; compare to verified prices",
+      "form": "Bournemouth five straight wins across competitions, 14 goals and 0 conceded; Leeds winless in four league games and draws often.",
+      "team_news": "Bournemouth missing Alex Scott, Alex Toth, Julian Araujo; Kroupi not ready to start; Leeds Anton Stach uncertain.",
+      "lineups_confirmed": false,
+      "home_away": "Bournemouth home momentum, Leeds draws and defensive resilience",
+      "motivation": "Bournemouth push for third straight league win; Leeds trying to end winless streak",
       "risk": "MEDIUM_HIGH",
       "odds_verified": false,
-      "probability": null,
       "sources": [
-        "https://www.pitchlabstats.com/match/2026-10-25-liverpool-brighton",
-        "https://news.bet365.nl/nl-nl/article/liverpool-brighton-wedtips-mogelijke-opstellingen-en-waar-te-kijken/2026102305554634778",
-        "https://www.rezultati.com/nogomet/engleska/premier-league/raspored/"
-      ],
-      "note": "Bet365 preview 23 Oct mentions Liverpool 1X2 2.15, not a verified current Mozzart BiH market and not the proposed totals market."
-    },
-    {
-      "fixture": "Manchester United - Bournemouth",
-      "kickoff_utc": "2026-10-25T14:00:00Z",
-      "market_to_verify": "X2 or goals market after lineup check",
-      "analysis": "United winless in last five league matches, no league clean sheets; Bournemouth scored in seven consecutive league away matches but are winless in four away. United winless in six H2H vs Bournemouth. Bournemouth have potential absences; Kroupi uncertain. Recent European matches create rest/rotation risk.",
-      "risk": "HIGH",
-      "odds_verified": false,
-      "probability": null,
-      "sources": [
-        "https://www.thestatszone.com/man-utd-vs-bournemouth-preview-team-news-prediction-2026-27-english-premier-league-231632",
-        "https://www.rezultati.com/nogomet/engleska/premier-league/raspored/"
+        "https://www.vavel.com/en/football/2026/10/30/premier-league/1277293-bournemouth-vs-leeds-united-preview-cherries-eye-six-on-the-bounce.html",
+        "https://dave.sport/news/bournemouth-vs-leeds-preview-stach-kroupi/"
       ]
     },
     {
-      "fixture": "Hoffenheim - Bayer Leverkusen",
-      "kickoff_utc": "2026-10-25T14:30:00Z",
-      "market_to_verify": "Over 1.5 / Over 2.5 goals, depending on bookmaker line",
-      "analysis": "Leverkusen has positive recent scoring/form and higher xG table position in available previews; Hoffenheim had European match and several absences. Both played midweek, potential rotation; expected starters not yet confirmed.",
-      "risk": "MEDIUM_HIGH",
+      "fixture": "Manchester City - Brighton",
+      "market_to_verify": "Goals total / both teams to score, depending on market",
+      "form": "Man City 7 wins in 8 league matches (20 scored, 9 conceded); Brighton 23 goals in 8 league matches, 7 conceded, according to preview. Both attacks productive.",
+      "team_news": "City Semenyo out; Brighton Mitoma, Ferguson and Tzimas absent; some other doubts. Expected XI only, not confirmed.",
+      "lineups_confirmed": false,
+      "home_away": "City strong home record, Brighton capable away",
+      "motivation": "Top-of-table matchup",
+      "risk": "HIGH; Brighton attack can upset favorite, injury and rotation uncertainties",
       "odds_verified": false,
-      "probability": null,
       "sources": [
-        "https://www.victorypicks.com/en/previews/1899-hoffenheim-vs-bayer-leverkusen-october-25-2026-2487/",
-        "https://www.welt.de/article6add6a4b247c1fa201305d45"
+        "https://www.forebet.com/en/football-match-previews/31667-city-seek-response-as-brighton-visit-etihad-stats-suggest-tight-battle",
+        "https://www.oddschecker.com/es/pronosticos/futbol/2026/octubre/cng301-pronostico-manchester-city-vs-brighton-31-10-26"
       ]
     },
     {
-      "fixture": "Freiburg - Bayern Munich",
-      "kickoff_utc": "2026-10-25T16:30:00Z",
-      "market_to_verify": "No market recommended until confirmed XI",
-      "analysis": "Top-of-table meeting. Bayern reported multiple absences (Kimmich, Díaz, Kim, Musiala, Neuer, Pavlović) and assistant coach on sideline; Freiburg comes off European defeat. Avoid treating Bayern as automatic short-price favourite.",
-      "risk": "HIGH",
+      "fixture": "Bayer Leverkusen - Stuttgart",
+      "market_to_verify": "Over 1.5 or Over 2.5 after team news",
+      "form": "Recent preview available but model-grade xG/shot sample not independently verified for this run.",
+      "team_news": "Stuttgart Vagnoman and Nartey unavailable, Tiago Tomas doubtful; Champions League and cup rotation risk.",
+      "lineups_confirmed": false,
+      "motivation": "Bundesliga points and upcoming European fixtures",
+      "risk": "MEDIUM_HIGH; rotation and unverified current odds",
       "odds_verified": false,
-      "probability": null,
       "sources": [
-        "https://www.welt.de/regionales/bayern/article6add6a0e247c1fa201305d41/fc-bayern-ohne-chefcoach-kompany-in-freiburg-gefordert.html",
-        "https://www.bavarianfootballworks.com/bayern-munich-bundesliga/272376/aleksandar-pavlovic-bayern-munichs-clash-sc-freiburg-calf-problems-joshua-kimmich-michael-olise-arsenal-fc-champions-league-bundesliga-luis-diaz-kim-min-jae"
+        "https://www.victorypicks.com/en/previews/bayer-leverkusen-vs-vfb-stuttgart-october-31-2026-2726/"
       ]
     },
     {
-      "fixture": "Barcelona - Real Madrid",
-      "kickoff_utc": "2026-10-25T20:00:00Z",
-      "market_to_verify": "Both teams score / over goals, if verified price",
-      "analysis": "Barcelona 9 league wins in 9 and high goals output in recent matches per preview; Real 4 wins in last 5. Barcelona defensive injuries; Real missing Vinícius (suspended), Rodrygo and defenders. High variance Clasico; final XIs crucial.",
-      "risk": "HIGH",
+      "fixture": "Bayern Munich - Borussia Dortmund",
+      "market_to_verify": "Goals / BTTS after starting XI and current odds",
+      "form": "Both unbeaten on 17 points after 7 league games; Bayern 25 goals vs Dortmund 12.",
+      "team_news": "Kompany absent through illness, assistant Aaron Danks leads Bayern; Dortmund Karetsas doubtful/possible return; do not assume starting XI.",
+      "lineups_confirmed": false,
+      "motivation": "Top-of-table Klassiker",
+      "risk": "HIGH; derby variance, coaching and selection uncertainties",
       "odds_verified": false,
-      "probability": null,
       "sources": [
-        "https://www.rezultati.com/utakmica/nogomet/barcelona-SKbpVP5K/real-madrid-W8mj7MDD/",
-        "https://as.com/futbol/primera/las-bajas-del-clasico-sancionados-lesionados-y-quien-se-pierde-el-real-madrid-barcelona-f202610-n/",
-        "https://previaxi.com/en/barcelona-vs-real-madrid-preview-2026-10-25/"
+        "https://www.reuters.com/sports/soccer/no-big-bayern-changes-ahead-of-klassiker-despite-coach-kompany-absence-danks-2026-10-30/",
+        "https://www.reuters.com/sports/soccer/dortmunds-karetsas-could-be-fit-face-bayern-says-coach-kovac-2026-10-29/"
+      ]
+    },
+    {
+      "fixture": "Barcelona - Alaves",
+      "market_to_verify": "Barcelona win or goals, only if price and XI justify",
+      "form": "Alaves winless in last five league matches in preview; Barça injury-hit defense.",
+      "team_news": "Barcelona Kounde among multiple defensive absences, possible De Jong at centre-back; predicted attack Yamal/Raphinha; not confirmed.",
+      "lineups_confirmed": false,
+      "home_away": "Barcelona home fixture",
+      "risk": "MEDIUM_HIGH; improvised defense, price likely short",
+      "odds_verified": false,
+      "sources": [
+        "https://as.com/futbol/posible-alineacion-del-barca-ante-el-alaves-flick-obligado-a-inventar-una-defensa-f202610-n/",
+        "https://www.ligaura.com/match_preview/barcelona-vs-alaves-31-oct-2026/"
+      ]
+    },
+    {
+      "fixture": "Chelsea - Manchester United",
+      "market_to_verify": "BTTS or totals only after lineup; no default pick",
+      "form": "Chelsea one clean sheet in last eight PL games; United winless in eight matches per Guardian.",
+      "team_news": "Chelsea Joao Pedro and Maxence Lacroix out, Reece James out; United form poor. Short pre-publication window.",
+      "lineups_confirmed": false,
+      "risk": "HIGH; starts 13:30, only 30 min after 13:00 publication",
+      "odds_verified": false,
+      "sources": [
+        "https://www.theguardian.com/football/2026/oct/31/how-to-watch-premier-league-chelsea-manchester-united",
+        "https://talksport.com/football/4678917/maxence-lacroix-hamstring-tear-chelsea-injury-news/"
       ]
     }
   ],
-  "nba_watchlist": [
+  "nba_watchlist_C_only": [
     {
-      "fixture": "Los Angeles Lakers @ Utah Jazz",
-      "kickoff_utc": "2026-10-25T21:00:00Z",
-      "player": "Luka Doncic",
+      "fixture": "Portland Trail Blazers @ Utah Jazz",
+      "player": "Deni Avdija",
       "market": "player_points",
-      "line": null,
-      "decimal_odds": null,
+      "points_line": null,
+      "over_odds": null,
+      "under_odds": null,
       "bookmaker": null,
       "quote_timestamp": null,
       "moz_bih_available": null,
-      "expected_minutes_estimate": "roughly 30-38 only if healthy and starting; NOT VERIFIED",
-      "analysis": "Lakers 2-0 and Jazz 1-1; Luka scored 28 in 29 minutes and 23 in 37 minutes in first two games according to secondary stats; last-season opponent averages not reliable for small-sample props. Utah missing Nurkic. Verify injury, rotation, exact line and Mozzart market after noon.",
-      "risk": "HIGH_PENDING_LINE",
+      "season_sample": "4 games, 22.8 PPG and 31.5 minutes average in secondary preview",
+      "minutes_expected": "not independently verified; projected role may increase after Morant injury",
+      "injuries": "Ja Morant confirmed out ~4 weeks; Utah Nurkic/Jaren Jackson Jr. out, Markkanen questionable",
+      "risk": "HIGH: 4-game sample, role change, no exact market or quote",
       "sources": [
-        "https://www.nba.com/lakers/game/0022600112-lakers-vs-jazz-salt-lake-city-ut-10-25-2026/event-details",
-        "https://www.foxsports.com/articles/nba/los-angeles-plays-utah-for-conference-showdown",
-        "https://blog.statsbench.com/lakers-vs-jazz-prediction-props-2026-10-25/"
-      ],
-      "note": "PokerStars lists alternate points ladders, not a timestamped standard over/under player_points line in the collector: https://www.pokerstars.fr/en/sports/basketball/7522/nba/10547864/los-angeles-lakers-utah-jazz/36229335/"
+        "https://www.reuters.com/sports/trail-blazers-pg-ja-morant-hamstring-out-four-plus-weeks--flm-2026-10-30/",
+        "https://www.nbahouse.net/game/2026-10-31/por-at-uta",
+        "https://www.covers.com/sport/basketball/nba/injuries"
+      ]
     },
     {
-      "fixture": "Brooklyn Nets - Indiana Pacers",
-      "kickoff_utc": "2026-10-25T22:00:00Z",
-      "player": "Michael Porter Jr.",
+      "fixture": "Sacramento Kings @ Memphis Grizzlies",
+      "player": "Cameron Boozer",
       "market": "player_points",
-      "line": null,
-      "decimal_odds": null,
+      "points_line": null,
+      "over_odds": null,
+      "under_odds": null,
       "bookmaker": null,
       "quote_timestamp": null,
       "moz_bih_available": null,
-      "expected_minutes_estimate": null,
-      "analysis": "Brooklyn 0-2 on second night of back-to-back; Michael Porter Jr. reportedly scored 28 vs Cleveland. Rotation/fatigue and player availability need pregame validation; do not use yesterday's prop odds.",
-      "risk": "HIGH_PENDING_LINE",
+      "season_sample": "5 games; 15.8 PPG, 32.1 minutes per game in preview; recent triple-double 18/12/12",
+      "minutes_expected": "unverified; around season average only if active and rotation stable",
+      "injuries": "Memphis Ty Jerome and Scotty Pippen Jr. questionable in detailed injury reports; conflicting summaries exist",
+      "risk": "HIGH: rookie variance, injury report conflict, no market",
       "sources": [
-        "https://whynba.com/nba-schedule-today-sunday-october-25-2026/"
+        "https://www.reuters.com/sports/basketball/unbeaten-grizzlies-host-winless-kings-rookie-showcase--flm-2026-10-31/",
+        "https://keelstats.com/games/442",
+        "https://www.covers.com/sport/basketball/nba/matchup/388637"
+      ]
+    },
+    {
+      "fixture": "Sacramento Kings @ Memphis Grizzlies",
+      "player": "Darius Acuff Jr.",
+      "market": "player_points",
+      "points_line": null,
+      "over_odds": null,
+      "under_odds": null,
+      "bookmaker": null,
+      "quote_timestamp": null,
+      "moz_bih_available": null,
+      "season_sample": "5 games; 24 PPG and 36.3 minutes in preview; 34 points/14 assists most recent game",
+      "minutes_expected": "not confirmed; 36-minute recent average is not a guarantee",
+      "injuries": "Kings Murray, Simmons, Raynaud, Cardwell out; Memphis defense reported 106.2 points allowed per game",
+      "risk": "HIGH: rookie variance and difficult defensive matchup; no market",
+      "sources": [
+        "https://www.reuters.com/sports/basketball/unbeaten-grizzlies-host-winless-kings-rookie-showcase--flm-2026-10-31/",
+        "https://keelstats.com/games/442"
       ]
     }
   ],
   "missing_evidence": [
-    "Current Mozzartbet BiH event-specific prices for A/B/C",
-    "2026-10-25 timestamped The Odds API player-points offers",
-    "Current 2026-10-25 ESPN historical boxscore sample and adequate sample sizes",
-    "Verified player-team-game linkage and starting lineups/injuries",
-    "Defensible probability/edge; de-vig market implied probability is not independent model"
+    "Current 2026-10-31 collector-feed.json with fixtures after 13:00",
+    "Current dated player_points odds with exact line, decimal over/under, bookmaker and capture time",
+    "Mozzartbet BiH offer confirmation; foreign bookmaker quotes do not transfer",
+    "Verified match-specific football prices and fresh starting lineups",
+    "NBA final injury report and projected/confirmed minutes close to tipoff",
+    "Model-grade last-5/10 football home-away xG, shots, H2H for each selection; not inferred from previews",
+    "No overlap validation against final A/B/C selections"
   ],
   "tickets": {
     "A": {
-      "status": "NIJE_OBJAVLJEN_NEMA_POTVRDJENIH_KVOTA",
+      "status": "NEDOSTUPAN_ZA_OBJAVU_NEMA_DANASNJEG_FEEDA_I_POTVRDJENIH_KVOTA",
       "legs": [],
-      "total_odds": null
+      "total_odds": null,
+      "candidate_fixtures": [
+        "Bournemouth - Leeds",
+        "Manchester City - Brighton",
+        "Bayer Leverkusen - Stuttgart"
+      ]
     },
     "B": {
-      "status": "NIJE_OBJAVLJEN_NEMA_POTVRDJENIH_KVOTA",
+      "status": "NEDOSTUPAN_ZA_OBJAVU_NEMA_DANASNJEG_FEEDA_I_POTVRDJENIH_KVOTA",
       "legs": [],
-      "total_odds": null
+      "total_odds": null,
+      "candidate_fixtures": [
+        "Bayern Munich - Borussia Dortmund",
+        "Barcelona - Alaves",
+        "Chelsea - Manchester United"
+      ]
     },
     "C": {
       "name": "Keš kolica",
-      "status": "NEDOSTUPAN",
+      "status": "NEDOSTUPAN_NEMA_4_6_POTVRDJENIH_RAZLICITIH_DOGADJAJA_SA_KVOTOM_10_PLUS",
       "legs": [],
       "total_odds": null,
-      "reason": "Reviewed six distinct football/NBA events, but no current verified Mozzart BiH odds and no fresh NBA points lines; cannot verify combined decimal odds >=10."
+      "nba_candidates_only": true
     }
   },
   "safety": {
+    "draft_only": true,
     "modified_files": [
       "weekend-research.json"
     ],
     "untouched": [
+      "data.json",
+      "archive.json",
+      "virtual bank",
       "DEMO",
-      "previous locked tickets",
-      "original 2026-10-24 selections and payouts"
+      "locked tickets"
     ],
-    "not_published": true,
-    "not_betting_advice": true
-  },
-  "candidate_review_C": [
-    {
-      "event": "Liverpool - Brighton",
-      "sport": "football",
-      "market_considered": "Over 2.5",
-      "reason": "Goals rationale exists but opposing defensive form and injury/lineup uncertainty; no current Mozzart BiH price."
-    },
-    {
-      "event": "Manchester United - Bournemouth",
-      "sport": "football",
-      "market_considered": "X2 or totals",
-      "reason": "United poor form, Bournemouth away goals, but away winless and lineup uncertain; no current Mozzart BiH price."
-    },
-    {
-      "event": "Hoffenheim - Bayer Leverkusen",
-      "sport": "football",
-      "market_considered": "Over 2.5",
-      "reason": "Midweek load, possible rotation and injuries; no verified current market price."
-    },
-    {
-      "event": "Freiburg - Bayern Munich",
-      "sport": "football",
-      "market_considered": "Goals or Bayern",
-      "reason": "Bayern major reported absences; high lineup uncertainty and no verified current Mozzart price."
-    },
-    {
-      "event": "Utah Jazz - Los Angeles Lakers",
-      "sport": "nba",
-      "market_considered": "Luka Doncic player points",
-      "reason": "No 25 Oct timestamped The Odds API points line; free ESPN historical samples insufficient; minutes and injuries not confirmed."
-    },
-    {
-      "event": "Brooklyn Nets - Indiana Pacers",
-      "sport": "nba",
-      "market_considered": "Michael Porter Jr. player points",
-      "reason": "No 25 Oct timestamped line; Nets back-to-back, minutes and injuries not confirmed."
-    }
-  ]
+    "no_bets_published": true
+  }
 }
