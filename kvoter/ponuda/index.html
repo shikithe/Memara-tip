@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="bs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kvoter | Dnevna ponuda</title>
+<style>
+:root{color-scheme:dark}body{margin:0;background:#101722;color:#eaf1f8;font:15px system-ui,-apple-system,sans-serif}
+header{position:sticky;top:0;background:#172235;padding:15px 16px;border-bottom:1px solid #334154;z-index:1}
+h1{font-size:19px;margin:0 0 6px}small{color:#b4c4d6}.status{padding:12px 16px;color:#b4c4d6}
+.scroll{overflow-x:auto;padding:0 8px 30px}table{border-collapse:collapse;width:100%;min-width:690px;font-variant-numeric:tabular-nums}
+th{background:#243249;position:sticky;top:81px;text-align:left;color:#b9d2ef;font-size:12px}
+td,th{padding:11px 8px;border-bottom:1px solid #2c3a4c;white-space:nowrap}
+td:nth-child(n+4),th:nth-child(n+4){text-align:right}td:nth-child(n+4){color:#a6e4b3;font-weight:600}
+tr:nth-child(even){background:#172131}a{color:#9dc8ff}button{background:#2d5c91;color:white;border:0;border-radius:8px;padding:9px 13px;font-weight:600}
+</style></head><body>
+<header><h1>KVOTER · Dnevna kladioničarska ponuda</h1><small>1 · X · 2 · 3+ golova | Stvarne preuzete kvote, nisu uživo</small><div style="margin-top:10px"><button onclick="load()">Osvježi</button> &nbsp; <a href="../dnevna-lista.txt">TXT lista</a></div></header>
+<div id="status" class="status">Učitavanje ponude…</div><div class="scroll"><table><thead><tr><th>Br.</th><th>Datum / sat</th><th>Utakmica</th><th>1</th><th>X</th><th>2</th><th>3+</th><th>Kladionica</th></tr></thead><tbody id="rows"></tbody></table></div>
+<script>
+async function load(){
+ const status=document.getElementById('status'),body=document.getElementById('rows');status.textContent='Učitavanje…';body.replaceChildren();
+ try{
+ const res=await fetch('../dnevna-lista.txt?t='+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('Dnevna lista nije objavljena ili je istekla.');
+ const lines=(await res.text()).split(/\r?\n/),rows=lines.filter(x=>/^\d{2}\s+\d{2}\.\d{2}\.\s+\d{2}:\d{2}/.test(x));
+ for(const line of rows){
+ const m=line.match(/^(\d{2})\s+(\d{2}\.\d{2}\.\s+\d{2}:\d{2})\s+(.+?)\s{2,}(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s*$/);
+ if(!m)continue;const tr=document.createElement('tr');for(const val of m.slice(1)){const td=document.createElement('td');td.textContent=val;tr.append(td)}body.append(tr);
+ }
+ status.textContent=rows.length?('Prikazano '+body.children.length+' utakmica · '+(lines[1]||'')+' · Kvote nisu uživo.'):'Nema objavljene aktuelne ponude.';
+ }catch(e){status.textContent='Ponuda trenutno nije dostupna. '+e.message;}
+}
+load();
+</script></body></html>
