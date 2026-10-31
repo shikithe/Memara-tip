@@ -1,5 +1,6 @@
 import unittest
 from kvoter import build,match,normalize_markets
+from team_identity import same_team
 class KvoterTests(unittest.TestCase):
     def setUp(self):
         self.f={"id":"espn:football:ger.1:123","sport":"football","league":"ger.1",
@@ -27,6 +28,18 @@ class KvoterTests(unittest.TestCase):
     def test_rejects_wrong_date(self):
         o=dict(self.o,start_utc="2026-11-02T16:00:00Z")
         self.assertFalse(match(self.f,o))
+    def test_approved_ajax_and_brighton(self):
+        ajax={"league":"ned.1","home":"Ajax Amsterdam","away":"AZ Alkmaar","start_utc":"2026-11-01T16:00:00Z"}
+        ajax_offer=dict(ajax,home="Ajax",bookmaker="provider",markets={"h2h":{"home":1.8}})
+        self.assertTrue(match(ajax,ajax_offer))
+        self.assertEqual(build({"fixtures":[ajax]},[ajax_offer])["matched"],1)
+        brighton={"league":"eng.1","home":"Manchester City","away":"Brighton & Hove Albion","start_utc":"2026-11-01T16:00:00Z"}
+        brighton_offer=dict(brighton,away="Brighton",bookmaker="provider",markets={"h2h":{"home":1.8}})
+        self.assertTrue(match(brighton,brighton_offer))
+        self.assertEqual(build({"fixtures":[brighton]},[brighton_offer])["matched"],1)
+        self.assertFalse(same_team("Ajax","Ajax Amsterdam","eng.1"))
+        self.assertFalse(match(ajax,dict(ajax_offer,away="Brighton")))
+        self.assertFalse(match(ajax,dict(ajax_offer,start_utc="2026-11-02T16:00:00Z")))
     def test_no_offers_no_fabrication(self):
         r=build({"football_candidates":[self.f]},[])
         self.assertEqual(r["unavailable"],1)
