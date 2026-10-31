@@ -1,24 +1,7 @@
 {
-  "generated_at_utc": "2026-10-31T12:44:13.241043+00:00",
-  "total": 20,
+  "generated_at_utc": "2026-10-31T13:00:47.108981+00:00",
+  "total": 19,
   "fixtures": [
-    {
-      "fixture_id": "espn:football:ger.1:401884749",
-      "league": "ger.1",
-      "home": "Borussia Mönchengladbach",
-      "away": "SC Paderborn 07",
-      "start_utc": "2026-10-31T14:30:00Z",
-      "candidates": [
-        {
-          "event_id": "aecb9d8c01176616c87d893bee4bc0de",
-          "home": "Borussia Monchengladbach",
-          "away": "SC Paderborn",
-          "start_utc": "2026-10-31T14:30:00Z",
-          "league": "ger.1",
-          "similarity": 0.944
-        }
-      ]
-    },
     {
       "fixture_id": "espn:football:ger.1:401884751",
       "league": "ger.1",
