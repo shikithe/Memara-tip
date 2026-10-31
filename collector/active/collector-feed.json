@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "date": "2026-10-31",
-  "generated_at_utc": "2026-10-31T10:58:58.673710+00:00",
+  "generated_at_utc": "2026-10-31T11:16:10.542972+00:00",
   "state": "awaiting_human_or_AI_analysis",
   "not_betting_advice": true,
   "odds_verified": false,
@@ -571,6 +571,17 @@
       "start_utc": "2026-11-01T10:30:00Z",
       "start_sarajevo": "2026-11-01T11:30:00+01:00",
       "status": "pre"
+    },
+    {
+      "id": "espn:football:ned.1:401875560",
+      "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "ned.1",
+      "home": "PEC Zwolle",
+      "away": "ADO Den Haag",
+      "start_utc": "2026-11-01T11:15:00Z",
+      "start_sarajevo": "2026-11-01T12:15:00+01:00",
+      "status": "pre"
     }
   ],
   "nba_games": [
@@ -654,7 +665,7 @@
   ],
   "nba_player_watchlist": [],
   "candidate_counts": {
-    "football": 51,
+    "football": 52,
     "nba_games": 7,
     "players": 0
   }

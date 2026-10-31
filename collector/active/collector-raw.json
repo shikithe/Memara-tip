@@ -1,9 +1,9 @@
 {
   "schema_version": "rolling-24h-test-v1",
   "date": "2026-10-31",
-  "window_start_utc": "2026-10-31T10:58:52.517381+00:00",
-  "window_end_utc": "2026-11-01T10:57:52.517381+00:00",
-  "fixture_count": 58,
+  "window_start_utc": "2026-10-31T11:16:06.944676+00:00",
+  "window_end_utc": "2026-11-01T11:15:06.944676+00:00",
+  "fixture_count": 59,
   "fixtures": [
     {
       "id": "espn:football:eng.1:401879248",
@@ -642,6 +642,17 @@
       "start_utc": "2026-11-01T10:30:00Z",
       "start_sarajevo": "2026-11-01T11:30:00+01:00",
       "status": "pre"
+    },
+    {
+      "id": "espn:football:ned.1:401875560",
+      "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "ned.1",
+      "home": "PEC Zwolle",
+      "away": "ADO Den Haag",
+      "start_utc": "2026-11-01T11:15:00Z",
+      "start_sarajevo": "2026-11-01T12:15:00+01:00",
+      "status": "pre"
     }
   ],
   "sources": [
@@ -715,7 +726,7 @@
       "league": "ned.1",
       "date": "20261101",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "league": "por.1",
