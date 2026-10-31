@@ -1,5 +1,6 @@
 """User-approved, league-scoped team identities. No fuzzy auto-approval."""
 import json
+import os
 import unicodedata
 from pathlib import Path
 
@@ -28,5 +29,5 @@ def same_team(left,right,league,aliases=None):
     a,b=normalize(left),normalize(right)
     if not a or not b: return False
     if a==b: return True
-    groups=load_aliases() if aliases is None else aliases
+    groups=load_aliases(os.getenv('KVOTER_ALIASES_PATH',str(ALIASES_PATH))) if aliases is None else aliases
     return bool(groups.get((league,a)) and groups.get((league,a))==groups.get((league,b)))
