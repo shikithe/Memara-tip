@@ -47,6 +47,15 @@ jobs:
             --raw-output /tmp/memara-shared/kvoter/league-odds-raw.json \
             --offers-output /tmp/memara-shared/kvoter/provider-offers.json
           test -s /tmp/memara-shared/kvoter/odds.json
+      - name: Export primary-only matches and actual odds to PDF
+        run: |
+          python -m pip install reportlab==4.2.5
+          python kvoter/primary_matches_pdf.py \
+            --history /tmp/memara-shared/agent/history-h2h.json \
+            --offers /tmp/memara-shared/kvoter/provider-offers.json \
+            --output /tmp/memara-shared/kvoter/primary-matches-odds.pdf \
+            --json-output /tmp/memara-shared/kvoter/primary-matches-odds.json
+          test -s /tmp/memara-shared/kvoter/primary-matches-odds.pdf
       - name: Kvoter database, manual matching, and research queue
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -176,6 +185,8 @@ jobs:
             /tmp/memara-shared/collector-feed.json
             /tmp/memara-shared/agent/history-h2h.json
             /tmp/memara-shared/kvoter/odds.json
+            /tmp/memara-shared/kvoter/primary-matches-odds.pdf
+            /tmp/memara-shared/kvoter/primary-matches-odds.json
             /tmp/memara-shared/kvoter/league-odds-raw.json
             /tmp/memara-shared/kvoter/provider-offers.json
             /tmp/memara-shared/kvoter/match-report.json
