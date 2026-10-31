@@ -36,8 +36,8 @@ def main():
     doc['decisions']=[x for x in doc['decisions'] if (x['fixture_id'],x['event_id']) not in keys]
     doc['decisions'].extend(validated)
     path.parent.mkdir(parents=True,exist_ok=True)
-    path.write_text(json.dumps(doc,ensure_ascii=False,indent=2)+'\\n')
-    dbpath.write_text(json.dumps(db,ensure_ascii=False,indent=2)+'\\n')
+    path.write_text(json.dumps(doc,ensure_ascii=False,indent=2)+'\n')
+    dbpath.write_text(json.dumps(db,ensure_ascii=False,indent=2)+'\n')
     print('KVOTER_DECISIONS_SAVED',len(validated))
 
 if __name__=='__main__':main()
