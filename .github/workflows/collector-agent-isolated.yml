@@ -37,6 +37,9 @@ jobs:
         run: |
           python kvoter/the_odds_api.py --feed /tmp/memara-shared/agent/history-h2h.json --output /tmp/memara-shared/kvoter/odds.json
           test -s /tmp/memara-shared/kvoter/odds.json
+      - name: Build unknown-team research queue and replay confirmed identities
+        run: |
+          python kvoter/alias_research.py --history /tmp/memara-shared/agent/history-h2h.json --offers /tmp/memara-shared/kvoter/provider-offers.json --database /tmp/memara-shared/kvoter/team-aliases-approved.json --queue /tmp/memara-shared/kvoter/team-research-queue.json --report /tmp/memara-shared/kvoter/match-report.json
       - name: Verify end-to-end result
         run: |
           python - <<'PY'
@@ -68,4 +71,7 @@ jobs:
             /tmp/memara-shared/kvoter/odds.json
             /tmp/memara-shared/kvoter/league-odds-raw.json
             /tmp/memara-shared/kvoter/provider-offers.json
+            /tmp/memara-shared/kvoter/team-research-queue.json
+            /tmp/memara-shared/kvoter/team-aliases-approved.json
+            /tmp/memara-shared/kvoter/match-report.json
           if-no-files-found: ignore
