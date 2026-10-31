@@ -1,0 +1,4 @@
+{
+  "aliases": [],
+  "instructions": "Add entries with league, collector_name (exactly as collector-feed), provider_name (exactly as Odds API). Example: {league: eng.1, collector_name: Manchester United, provider_name: Man United}. Never map different teams."
+}
