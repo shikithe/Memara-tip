@@ -36,7 +36,10 @@ if __name__=='__main__':
     data['fixtures']=[f for f in data['fixtures'] if f['fixture_id'] not in approved_ids]
     for fixture in data['fixtures']:
         fixture['candidates']=[x for x in fixture['candidates'] if (fixture['fixture_id'],x['event_id']) not in rejected]
+    no_offer=sum(not f['candidates'] for f in data['fixtures'])
+    data['fixtures']=[f for f in data['fixtures'] if f['candidates']]
     data['total']=len(data['fixtures'])
+    print('MANUAL_NO_ODDS_CANDIDATE_EXCLUDED',no_offer)
     print('MANUAL_APPROVED_HIDDEN',len(approved_ids))
     Path(a.output).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     print('MANUAL_CANDIDATES',data['total'],sum(len(f['candidates']) for f in data['fixtures']))
