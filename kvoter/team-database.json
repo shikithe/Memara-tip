@@ -284,7 +284,8 @@
         "Royal Antwerp"
       ],
       "sources": [
-        "github-issue-11"
+        "github-issue-11",
+        "github-issue-12"
       ],
       "verified": true
     },
@@ -296,7 +297,8 @@
         "Basaksehir"
       ],
       "sources": [
-        "github-issue-11"
+        "github-issue-11",
+        "github-issue-12"
       ],
       "verified": true
     },
@@ -308,7 +310,8 @@
         "Gazişehir Gaziantep"
       ],
       "sources": [
-        "github-issue-11"
+        "github-issue-11",
+        "github-issue-12"
       ],
       "verified": true
     },
@@ -320,7 +323,8 @@
         "Falkirk F.C."
       ],
       "sources": [
-        "github-issue-11"
+        "github-issue-11",
+        "github-issue-12"
       ],
       "verified": true
     }
