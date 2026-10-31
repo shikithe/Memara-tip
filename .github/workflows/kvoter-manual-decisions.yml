@@ -36,6 +36,47 @@ jobs:
             git pull --rebase origin collector-isolated-test-20261030
             git push origin HEAD:collector-isolated-test-20261030
           fi
+      - name: Remove processed decisions from public Manual queue
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          git worktree add /tmp/kvoter-manual-after-approval origin/main
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          decisions=json.loads(Path('kvoter/manual/decisions.json').read_text()).get('decisions',[])
+          approved={(d['fixture_id'],d['event_id']) for d in decisions if d.get('decision')=='matched'}
+          rejected={(d['fixture_id'],d['event_id']) for d in decisions if d.get('decision')=='rejected'}
+          base=Path('/tmp/kvoter-manual-after-approval/kvoter/manual')
+          p=base/'manual-candidates.json'
+          data=json.loads(p.read_text())
+          new=[]
+          for f in data.get('fixtures',[]):
+              fid=f['fixture_id']
+              if any((fid,c['event_id']) in approved for c in f.get('candidates',[])):
+                  continue
+              f['candidates']=[c for c in f.get('candidates',[]) if (fid,c['event_id']) not in rejected]
+              new.append(f)
+          data['fixtures']=new
+          data['total']=len(new)
+          p.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\\n')
+          u=base/'unmatched-fixtures.json'
+          old=json.loads(u.read_text())
+          visible={f['fixture_id'] for f in new}
+          old['fixtures']=[f for f in old.get('fixtures',[]) if f['fixture_id'] in visible]
+          old['total']=len(old['fixtures'])
+          u.write_text(json.dumps(old,ensure_ascii=False,indent=2)+'\\n')
+          print('KVOTER_MANUAL_REMAINING',len(new))
+          PY
+          cd /tmp/kvoter-manual-after-approval
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- kvoter/manual/manual-candidates.json kvoter/manual/unmatched-fixtures.json
+          if ! git diff --cached --quiet; then
+            git commit -m "kvoter manual: remove processed owner decisions [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
       - name: Refresh offline Kvoter partitions
         if: github.event.issue.title != 'KVOTER REJECT'
         env:
