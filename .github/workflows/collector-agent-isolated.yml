@@ -2,7 +2,7 @@ name: MEMARASIX isolated Collector to Agent pipeline
 on:
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 concurrency:
   group: memarasix-isolated-collector-agent
   cancel-in-progress: false
@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: collector-isolated-test-20261030
-          persist-credentials: false
+          persist-credentials: true
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -31,16 +31,6 @@ jobs:
             --output /tmp/memara-shared/agent/history-h2h.json \
             --state /tmp/memara-shared/agent/.last-processed-sha256
           test -s /tmp/memara-shared/agent/history-h2h.json || { echo "Agent output missing"; exit 1; }
-      - name: Restore Kvoter learned aliases from prior isolated runs
-        uses: actions/cache/restore@v4
-        with:
-          path: /tmp/kvoter-private/team-database.json
-          key: kvoter-team-database-${{ github.run_id }}
-          restore-keys: |
-            kvoter-team-database-
-      - name: Initialize Kvoter database
-        run: |
-          test -s /tmp/kvoter-private/team-database.json || cp kvoter/team-database.json /tmp/kvoter-private/team-database.json
       - name: Fetch odds for Agent fixtures into shared volume
         env:
           THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
@@ -54,17 +44,12 @@ jobs:
           python kvoter/workflow.py \
             --history /tmp/memara-shared/agent/history-h2h.json \
             --offers /tmp/memara-shared/kvoter/provider-offers.json \
-            --database /tmp/kvoter-private/team-database.json \
+            --database kvoter/team-database.json \
             --manual "kvoter/unesi rucno/aliases.json" \
             --matched-output /tmp/memara-shared/kvoter/matched-fixtures.json \
-            --unmatched-output kvoter/unesi rucno/unmatched-fixtures.json \
+            --unmatched-output "kvoter/unesi rucno/unmatched-fixtures.json" \
             --research-output /tmp/kvoter-private/research-review.json \
             --report /tmp/memara-shared/kvoter/match-report.json
-      - name: Save Kvoter learned aliases for future runs
-        uses: actions/cache/save@v4
-        with:
-          path: /tmp/kvoter-private/team-database.json
-          key: kvoter-team-database-${{ github.run_id }}
       - name: Verify end-to-end result
         run: |
           python - <<'PY'
@@ -88,6 +73,20 @@ jobs:
           assert result['bank_modified'] is False
           print('PIPELINE_OK', 'fixtures',len(result['fixtures']),'ESPN_errors',len(result['errors']))
           PY
+      - name: Persist approved Kvoter aliases to isolated GitHub branch
+        if: success()
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- kvoter/team-database.json
+          if git diff --cached --quiet; then
+            echo "KVOTER_DB_UNCHANGED"
+          else
+            git commit -m "kvoter: persist verified team aliases [skip ci]"
+            git push origin HEAD:collector-isolated-test-20261030
+            echo "KVOTER_DB_PERSISTED"
+          fi
       - name: Upload isolated pipeline artifacts
         if: always()
         uses: actions/upload-artifact@v4
@@ -104,5 +103,5 @@ jobs:
             /tmp/memara-shared/kvoter/matched-fixtures.json
             kvoter/unesi rucno/unmatched-fixtures.json
             /tmp/kvoter-private/research-review.json
-            /tmp/kvoter-private/team-database.json
+            kvoter/team-database.json
           if-no-files-found: ignore
