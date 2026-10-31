@@ -1,0 +1,34 @@
+name: Isolated Agent feed refresh every 10 minutes
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/10 * * * *'
+permissions:
+  contents: read
+concurrency:
+  group: isolated-agent-feed-refresh
+  cancel-in-progress: true
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: collector-isolated-test-20261030
+          persist-credentials: false
+      - name: Copy stored active Collector feed to isolated shared workspace
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/memara-shared/agent
+          python collector/active_feed_store.py validate --feed collector/active/collector-feed.json --raw collector/active/collector-raw.json
+          cp collector/active/collector-feed.json /tmp/memara-shared/collector-feed.json
+          cp collector/active/collector-raw.json /tmp/memara-shared/collector-raw.json
+          python collector/active_feed_store.py validate --feed /tmp/memara-shared/collector-feed.json --raw /tmp/memara-shared/collector-raw.json
+          echo "ACTIVE_FEED_AVAILABLE_IN_THIS_RUN_SHARED_VOLUME"
+      - name: Export read-only snapshot for tests
+        uses: actions/upload-artifact@v4
+        with:
+          name: isolated-agent-feed-snapshot
+          path: /tmp/memara-shared/collector-feed.json
+          retention-days: 2
