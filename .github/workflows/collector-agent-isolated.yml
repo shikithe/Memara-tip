@@ -95,6 +95,25 @@ jobs:
             git push origin HEAD:collector-isolated-test-20261030
             echo "KVOTER_DB_PERSISTED"
           fi
+      - name: Persist active collector feed (23h59m TTL) on isolated branch
+        if: success()
+        run: |
+          set -euo pipefail
+          python collector/active_feed_store.py validate --feed /tmp/memara-shared/collector-feed.json --raw /tmp/memara-shared/collector-raw.json
+          mkdir -p collector/active
+          cp /tmp/memara-shared/collector-feed.json collector/active/collector-feed.json
+          cp /tmp/memara-shared/collector-raw.json collector/active/collector-raw.json
+          python collector/active_feed_store.py validate --feed collector/active/collector-feed.json --raw collector/active/collector-raw.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- collector/active/collector-feed.json collector/active/collector-raw.json
+          if git diff --cached --quiet; then
+            echo "ACTIVE_FEED_UNCHANGED"
+          else
+            git commit -m "collector: replace isolated active feed [skip ci]"
+            git push origin HEAD:collector-isolated-test-20261030
+            echo "ACTIVE_FEED_PERSISTED"
+          fi
       - name: Publish unmatched fixtures to Kvoter Manual Pages
         if: success()
         run: |
