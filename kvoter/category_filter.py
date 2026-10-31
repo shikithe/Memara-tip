@@ -18,5 +18,10 @@ def category(name):
         return "reserve"
     return None
 
-def excluded(home, away):
-    return category(home) or category(away)
+def excluded(home, away, league=None):
+    # Verified senior club Willem II in Dutch league: not a reserve/youth/women team.
+    def classification(name):
+        if league == "ned.1" and str(name or "").strip().casefold() == "willem ii":
+            return None
+        return category(name)
+    return classification(home) or classification(away)
