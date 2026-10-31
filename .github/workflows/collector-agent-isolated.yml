@@ -48,7 +48,7 @@ jobs:
           assert len(feed['football_candidates'])>0, 'Empty collector feed'
           assert len(result['fixtures'])==len(feed['football_candidates']), 'Agent fixture count mismatch'
           odds=json.loads((root/'kvoter/odds.json').read_text())
-          assert len(odds['fixtures'])==len(result['fixtures']), 'Kvoter fixture count mismatch'
+          assert odds['matched']+odds['unavailable']==len(result['fixtures']), 'Kvoter fixture count mismatch'
           assert odds['publication_allowed'] is False
           assert odds['bank_modified'] is False
           print('KVOTER',odds['provider_status'],'matched',odds['matched'])
