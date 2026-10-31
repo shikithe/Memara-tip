@@ -48,7 +48,9 @@
                 "https://alineacioneshoy.es/laliga/levante-atletico-madrid-31-10-2026"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "0:2"
         },
         {
           "home": "Udinese",
@@ -108,9 +110,9 @@
       "id": "B",
       "label": "GOLOVI 3+ — TIKET B",
       "stake": 5.46,
-      "status": "objavljen",
+      "status": "izgubljen",
       "odds": 2.69,
-      "payout": 0,
+      "payout": 0.0,
       "matches": [
         {
           "home": "Chelsea",
@@ -139,7 +141,9 @@
                 "https://legalbet.com/game-center/chelsea-manchester-united-31-10-2026/"
               ]
             ]
-          }
+          },
+          "result_status": "promašen",
+          "final_score": "2:0"
         },
         {
           "home": "Tottenham Hotspur",
@@ -193,7 +197,8 @@
             "https://github.com/shikithe/Memara-tip/actions/runs/41189421950"
           ]
         ]
-      }
+      },
+      "settled_at_utc": "2026-10-31T17:49:54.752186+00:00"
     },
     {
       "id": "C",
@@ -214,7 +219,7 @@
       }
     }
   ],
-  "total_payout": 0,
+  "total_payout": 0.0,
   "net_change": null,
   "analysis_status": "A i B objavljeni iz svježeg izolovanog kolektora (51 fudbalski kandidat, 33 kvotno uparena). C nedostupan zbog nedostatka svježih NBA player-points ponuda i nedovoljne sigurnosti 4–6 dodatnih parova. Glavni collector-feed.json i dalje ima 30.10; korišten je današnji provjeren GitHub Actions artefakt.",
   "selection_method": "Ručni AI izbor uz nezavisnu provjeru forme, sastava/izostanaka, termina i kvota; bez Python predfiltera.",
