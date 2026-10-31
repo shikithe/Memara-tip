@@ -66,4 +66,6 @@ jobs:
             /tmp/memara-shared/collector-feed.json
             /tmp/memara-shared/agent/history-h2h.json
             /tmp/memara-shared/kvoter/odds.json
+            /tmp/memara-shared/kvoter/league-odds-raw.json
+            /tmp/memara-shared/kvoter/provider-offers.json
           if-no-files-found: ignore
