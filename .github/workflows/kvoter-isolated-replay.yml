@@ -50,6 +50,7 @@ jobs:
             --unmatched-output /tmp/kvoter-replay/unmatched-fixtures.json \
             --research-output /tmp/kvoter-replay/research-review.json \
             --report /tmp/kvoter-replay/match-report.json
+          python kvoter/manual_candidates.py --history agent/active/history-h2h.json --offers /tmp/kvoter-replay/provider-offers.json --unmatched /tmp/kvoter-replay/unmatched-fixtures.json --output /tmp/kvoter-replay/manual-candidates.json
         shell: bash
       - name: Validate replay and original database isolation
         run: |
@@ -90,8 +91,9 @@ jobs:
           git worktree add /tmp/kvoter-manual-publish origin/main
           mkdir -p /tmp/kvoter-manual-publish/kvoter/manual
           cp /tmp/kvoter-replay/unmatched-fixtures.json /tmp/kvoter-manual-publish/kvoter/manual/unmatched-fixtures.json
+          cp /tmp/kvoter-replay/manual-candidates.json /tmp/kvoter-manual-publish/kvoter/manual/manual-candidates.json
           cd /tmp/kvoter-manual-publish
-          git add -- kvoter/manual/unmatched-fixtures.json
+          git add -- kvoter/manual/unmatched-fixtures.json kvoter/manual/manual-candidates.json
           if git diff --cached --quiet; then
             echo "KVOTER_MANUAL_QUEUE_UNCHANGED"
           else
