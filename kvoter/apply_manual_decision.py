@@ -15,6 +15,8 @@ def main():
     items=payload.get('decisions',[]) if title=='KVOTER BATCH' else [dict(payload,decision='matched' if title=='KVOTER MATCH' else 'rejected')]
     if not isinstance(items,list) or not 1<=len(items)<=100:raise SystemExit('Invalid batch')
     if len({(x.get('fixture_id'),x.get('event_id')) for x in items})!=len(items):raise SystemExit('Duplicates')
+    matched=[x for x in items if x['decision']=='matched']
+    if len({x['fixture_id'] for x in matched})!=len(matched) or len({x['event_id'] for x in matched})!=len(matched):raise SystemExit('Conflicting one-to-one matched decisions')
     queue=json.loads(Path(sys.argv[2]).read_text())
     path=Path('kvoter/manual/decisions.json')
     doc=json.loads(path.read_text()) if path.exists() else {'decisions':[]}
