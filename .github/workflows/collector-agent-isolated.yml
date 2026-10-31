@@ -18,6 +18,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Run Kvoter regression tests
+        run: |
+          python -m compileall -q kvoter
+          python -m unittest discover -s kvoter -p 'test_*.py' -v
       - name: Create isolated shared workspace
         run: mkdir -p /tmp/memara-shared/agent /tmp/kvoter-private
       - name: Run ESPN collector
