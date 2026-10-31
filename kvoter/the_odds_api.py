@@ -58,52 +58,32 @@ def parse_bookmaker(event,bookmaker,league):
             "updated_at_utc":max(updates) if updates else None,"markets":markets}
 
 def collect(history,key,regions="uk,eu",fetch=None,delay=0):
-    """Fetch complete league offers once; do not filter by team identity at fetch time."""
+    """Fetch featured odds for every supported league in the collector's exact window."""
     fixtures=history.get("fixtures",[])
     leagues=sorted({f.get("league") for f in fixtures if f.get("league") in LEAGUES})
-    offers=[]; errors=[]; coverage={}; raw_events=[]
-    starts=[utc(f.get("start_utc")) for f in fixtures if utc(f.get("start_utc"))]
-    if not starts: return offers,coverage,[{"stage":"window","error":"No valid fixture start times"}],raw_events
-    # Collector's latest selected kickoff defines the end of the requested window.
-    window_start=min(starts)
-    window_end=max(starts)
+    starts=[utc(f.get("start_utc")) for f in fixtures]
+    starts=[x for x in starts if x]
+    if not starts: raise ValueError("No fixture kickoff times")
+    window_start,window_end=min(starts),max(starts)
+    offers=[]; raw_events=[]; coverage={}; errors=[]
     for league in leagues:
-        sport=LEAGUES[league]
         try:
-            events=request("/sports/"+sport+"/odds",key,
-                           {"regions":regions,"markets":"h2h,totals","oddsFormat":"decimal",
-                            "commenceTimeFrom":window_start.strftime("%Y-%m-%dT%H:%M:%SZ"),
-                            "commenceTimeTo":window_end.strftime("%Y-%m-%dT%H:%M:%SZ")},fetch)
+            events=request("/sports/"+LEAGUES[league]+"/odds",key,{
+                "regions":regions,"markets":"h2h,totals","oddsFormat":"decimal",
+                "commenceTimeFrom":window_start.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "commenceTimeTo":window_end.strftime("%Y-%m-%dT%H:%M:%SZ")},fetch)
             if not isinstance(events,list): raise ValueError("Invalid API response")
-            eligible=[e for e in events if utc(e.get("commence_time")) and window_start<=utc(e.get("commence_time"))<=window_end]
-            raw_events.extend({"league":league,"event":e} for e in eligible)
-            coverage[league]={"api_events":len(events),"window_events":len(eligible),
-                              "matched_events":sum(any(match(f,{"league":league,"home":e.get("home_team"),"away":e.get("away_team"),"start_utc":e.get("commence_time")}) for f in fixtures if f.get("league")==league) for e in eligible)}
-            # Detail markets only for identified fixtures to protect API credits.
-            for event in eligible:
-                if not any(match(f,{"league":league,"home":event.get("home_team"),"away":event.get("away_team"),"start_utc":event.get("commence_time")}) for f in fixtures if f.get("league")==league):
-                    continue
-                detail=None
-                try:
-                    detail=request("/sports/"+sport+"/events/"+str(event["id"])+"/odds",key,
-                                   {"regions":regions,"markets":"alternate_totals,btts","oddsFormat":"decimal"},fetch)
-                except Exception as exc:
-                    errors.append({"league":league,"event_id":event.get("id"),"stage":"additional_markets","error":str(exc)[:200]})
-                combined={}
-                for source in (event,detail):
-                    if not isinstance(source,dict): continue
-                    for book in source.get("bookmakers",[]):
-                        bookkey=book.get("key")
-                        if not bookkey: continue
-                        combined.setdefault(bookkey,{"key":bookkey,"markets":[]})["markets"].extend(book.get("markets",[]))
-                for book in combined.values():
+            selected=[e for e in events if utc(e.get("commence_time")) and window_start<=utc(e.get("commence_time"))<=window_end]
+            coverage[league]={"api_events":len(events),"window_events":len(selected)}
+            for event in selected:
+                raw_events.append({"league":league,"event":event})
+                for book in event.get("bookmakers",[]):
                     offer=parse_bookmaker(event,book,league)
                     if offer["markets"]: offers.append(offer)
-                if delay: time.sleep(delay)
         except Exception as exc:
-            errors.append({"league":league,"stage":"featured_markets","error":str(exc)[:200]})
+            errors.append({"league":league,"error":str(exc)[:200]})
         if delay: time.sleep(delay)
-    return offers,coverage,errors,raw_events
+    return offers,raw_events,coverage,errors
 
 def main():
     p=argparse.ArgumentParser()
@@ -116,10 +96,10 @@ def main():
     history=json.loads(Path(a.feed).read_text(encoding="utf-8"))
     key=os.getenv("THE_ODDS_API_KEY","").strip()
     if key:
-        offers,coverage,errors,raw_events=collect(history,key,a.regions,delay=0.2)
+        offers,raw_events,coverage,errors=collect(history,key,a.regions,delay=0.2)
         status="api_fetched"
     else:
-        offers,coverage,errors,raw_events=[],{},[{"stage":"configuration","error":"THE_ODDS_API_KEY not configured"}],[]
+        offers,raw_events,coverage,errors=[],[],{},[{"stage":"configuration","error":"THE_ODDS_API_KEY not configured"}]
         status="missing_api_key"
     for path,payload in [(a.raw_output,{"source":"the-odds-api-v4","events":raw_events}),(a.offers_output,{"offers":offers})]:
         dest=Path(path);dest.parent.mkdir(parents=True,exist_ok=True)
