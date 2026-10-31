@@ -30,8 +30,13 @@ if __name__=='__main__':
     a=p.parse_args()
     data=build(json.loads(Path(a.history).read_text()),json.loads(Path(a.offers).read_text()),json.loads(Path(a.unmatched).read_text()))
     decisions=Path('kvoter/manual/decisions.json')
-    rejected={(d['fixture_id'],d['event_id']) for d in json.loads(decisions.read_text()).get('decisions',[]) if d.get('decision')=='rejected'} if decisions.exists() else set()
+    recorded=json.loads(decisions.read_text()).get('decisions',[]) if decisions.exists() else []
+    approved_ids={d['fixture_id'] for d in recorded if d.get('decision')=='matched'}
+    rejected={(d['fixture_id'],d['event_id']) for d in recorded if d.get('decision')=='rejected'}
+    data['fixtures']=[f for f in data['fixtures'] if f['fixture_id'] not in approved_ids]
     for fixture in data['fixtures']:
         fixture['candidates']=[x for x in fixture['candidates'] if (fixture['fixture_id'],x['event_id']) not in rejected]
+    data['total']=len(data['fixtures'])
+    print('MANUAL_APPROVED_HIDDEN',len(approved_ids))
     Path(a.output).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     print('MANUAL_CANDIDATES',data['total'],sum(len(f['candidates']) for f in data['fixtures']))
