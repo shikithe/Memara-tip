@@ -5,6 +5,7 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: write
 jobs:
   apply:
     if: github.event.issue.user.login == 'shikithe' && (github.event.issue.title == 'KVOTER MATCH' || github.event.issue.title == 'KVOTER REJECT' || github.event.issue.title == 'KVOTER BATCH')
