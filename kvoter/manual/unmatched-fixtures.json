@@ -1,13 +1,34 @@
 {
-  "generated_at_utc": "2026-10-31T13:10:09.430727+00:00",
-  "total": 1,
+  "generated_at_utc": "2026-10-31T13:23:20.338058+00:00",
+  "total": 4,
   "fixtures": [
     {
-      "fixture_id": "espn:football:ned.1:401875564",
-      "league": "ned.1",
-      "home": "PSV Eindhoven",
-      "away": "Willem II",
-      "start_utc": "2026-10-31T17:45:00Z"
+      "fixture_id": "espn:football:bel.1:401878959",
+      "league": "bel.1",
+      "home": "Cercle Brugge KSV",
+      "away": "Antwerp",
+      "start_utc": "2026-11-01T12:30:00Z"
+    },
+    {
+      "fixture_id": "espn:football:tur.1:401888261",
+      "league": "tur.1",
+      "home": "Istanbul Basaksehir",
+      "away": "Samsunspor",
+      "start_utc": "2026-11-01T13:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:tur.1:401888263",
+      "league": "tur.1",
+      "home": "Trabzonspor",
+      "away": "Gaziantep FK",
+      "start_utc": "2026-11-01T13:00:00Z"
+    },
+    {
+      "fixture_id": "espn:football:sco.1:401878349",
+      "league": "sco.1",
+      "home": "Falkirk",
+      "away": "Celtic",
+      "start_utc": "2026-11-01T13:00:00Z"
     }
   ]
 }
