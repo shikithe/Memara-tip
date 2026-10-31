@@ -76,6 +76,13 @@ jobs:
             --offers /tmp/memara-shared/kvoter/provider-offers.json \
             --unmatched "kvoter/unesi rucno/unmatched-fixtures.json" \
             --output /tmp/memara-shared/kvoter/manual-candidates.json
+      - name: Generate daily public text list from this collector and odds run
+        run: |
+          python kvoter/daily_text.py \
+            --history /tmp/memara-shared/agent/history-h2h.json \
+            --matched /tmp/memara-shared/kvoter/matched-fixtures.json \
+            --output /tmp/memara-shared/kvoter/dnevna-lista.txt
+          test -s /tmp/memara-shared/kvoter/dnevna-lista.txt
       - name: Verify end-to-end result
         run: |
           python - <<'PY'
@@ -163,10 +170,11 @@ jobs:
           mkdir -p /tmp/kvoter-manual-pages/kvoter/manual
           cp "kvoter/unesi rucno/unmatched-fixtures.json" /tmp/kvoter-manual-pages/kvoter/manual/unmatched-fixtures.json
           cp /tmp/memara-shared/kvoter/manual-candidates.json /tmp/kvoter-manual-pages/kvoter/manual/manual-candidates.json
+          cp /tmp/memara-shared/kvoter/dnevna-lista.txt /tmp/kvoter-manual-pages/kvoter/dnevna-lista.txt
           cd /tmp/kvoter-manual-pages
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- kvoter/manual/unmatched-fixtures.json kvoter/manual/manual-candidates.json
+          git add -- kvoter/manual/unmatched-fixtures.json kvoter/manual/manual-candidates.json kvoter/dnevna-lista.txt
           if git diff --cached --quiet; then
             echo "KVOTER_MANUAL_QUEUE_UNCHANGED"
           else
