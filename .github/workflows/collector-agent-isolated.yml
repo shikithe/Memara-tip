@@ -57,7 +57,7 @@ jobs:
             --database /tmp/kvoter-private/team-database.json \
             --manual "kvoter/unesi rucno/aliases.json" \
             --matched-output /tmp/memara-shared/kvoter/matched-fixtures.json \
-            --unmatched-output /tmp/kvoter-private/unmatched-fixtures.json \
+            --unmatched-output kvoter/unesi rucno/unmatched-fixtures.json \
             --research-output /tmp/kvoter-private/research-review.json \
             --report /tmp/memara-shared/kvoter/match-report.json
       - name: Save Kvoter learned aliases for future runs
@@ -78,7 +78,7 @@ jobs:
           odds=json.loads((root/'kvoter/odds.json').read_text())
           assert odds['matched']+odds['unavailable']==len(result['fixtures']), 'Kvoter fixture count mismatch'
           matched=json.loads((root/'kvoter/matched-fixtures.json').read_text())['fixtures']
-          unmatched=json.loads(Path('/tmp/kvoter-private/unmatched-fixtures.json').read_text())['fixtures']
+          unmatched=json.loads(Path('kvoter/unesi rucno/unmatched-fixtures.json').read_text())['fixtures']
           assert len(matched)+len(unmatched)==len(result['fixtures']), 'Final partition count mismatch'
           assert not ({x['fixture_id'] for x in matched} & {x['fixture_id'] for x in unmatched}), 'Fixture present in both lists'
           assert odds['publication_allowed'] is False
@@ -100,11 +100,9 @@ jobs:
             /tmp/memara-shared/kvoter/odds.json
             /tmp/memara-shared/kvoter/league-odds-raw.json
             /tmp/memara-shared/kvoter/provider-offers.json
-            /tmp/memara-shared/kvoter/team-research-queue.json
-            /tmp/memara-shared/kvoter/team-aliases-approved.json
             /tmp/memara-shared/kvoter/match-report.json
             /tmp/memara-shared/kvoter/matched-fixtures.json
-            /tmp/kvoter-private/unmatched-fixtures.json
+            kvoter/unesi rucno/unmatched-fixtures.json
             /tmp/kvoter-private/research-review.json
             /tmp/kvoter-private/team-database.json
           if-no-files-found: ignore
