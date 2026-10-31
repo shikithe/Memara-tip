@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "date": "2026-10-31",
-  "generated_at_utc": "2026-10-31T13:20:48.859232+00:00",
+  "generated_at_utc": "2026-10-31T14:24:40.150192+00:00",
   "state": "awaiting_human_or_AI_analysis",
   "not_betting_advice": true,
   "odds_verified": false,
@@ -11,17 +11,6 @@
   "source_errors": [],
   "scope_warning": "Partial coverage, especially TheSportsDB regional free league endpoints.",
   "football_candidates": [
-    {
-      "id": "espn:football:ita.1:401874798",
-      "provider": "espn-public-unofficial",
-      "sport": "football",
-      "league": "ita.1",
-      "home": "Bologna",
-      "away": "Monza",
-      "start_utc": "2026-10-31T14:00:00Z",
-      "start_sarajevo": "2026-10-31T15:00:00+01:00",
-      "status": "pre"
-    },
     {
       "id": "espn:football:ger.1:401884753",
       "provider": "espn-public-unofficial",
@@ -615,6 +604,61 @@
       "start_utc": "2026-11-01T13:00:00Z",
       "start_sarajevo": "2026-11-01T14:00:00+01:00",
       "status": "pre"
+    },
+    {
+      "id": "espn:football:ned.1:401875559",
+      "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "ned.1",
+      "home": "Excelsior",
+      "away": "FC Twente",
+      "start_utc": "2026-11-01T13:30:00Z",
+      "start_sarajevo": "2026-11-01T14:30:00+01:00",
+      "status": "pre"
+    },
+    {
+      "id": "espn:football:ned.1:401875558",
+      "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "ned.1",
+      "home": "Telstar",
+      "away": "FC Utrecht",
+      "start_utc": "2026-11-01T13:30:00Z",
+      "start_sarajevo": "2026-11-01T14:30:00+01:00",
+      "status": "pre"
+    },
+    {
+      "id": "espn:football:ita.1:401874782",
+      "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "ita.1",
+      "home": "Frosinone",
+      "away": "Torino",
+      "start_utc": "2026-11-01T14:00:00Z",
+      "start_sarajevo": "2026-11-01T15:00:00+01:00",
+      "status": "pre"
+    },
+    {
+      "id": "espn:football:ita.1:401874983",
+      "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "ita.1",
+      "home": "Lazio",
+      "away": "Cagliari",
+      "start_utc": "2026-11-01T14:00:00Z",
+      "start_sarajevo": "2026-11-01T15:00:00+01:00",
+      "status": "pre"
+    },
+    {
+      "id": "espn:football:fra.1:401876414",
+      "provider": "espn-public-unofficial",
+      "sport": "football",
+      "league": "fra.1",
+      "home": "Strasbourg",
+      "away": "AJ Auxerre",
+      "start_utc": "2026-11-01T14:00:00Z",
+      "start_sarajevo": "2026-11-01T15:00:00+01:00",
+      "status": "pre"
     }
   ],
   "nba_games": [
@@ -698,7 +742,7 @@
   ],
   "nba_player_watchlist": [],
   "candidate_counts": {
-    "football": 55,
+    "football": 59,
     "nba_games": 7,
     "players": 0
   }
