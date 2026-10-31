@@ -275,6 +275,54 @@
         "github-issue-8"
       ],
       "verified": true
+    },
+    {
+      "id": "bel.1-antwerp",
+      "league": "bel.1",
+      "names": [
+        "Antwerp",
+        "Royal Antwerp"
+      ],
+      "sources": [
+        "github-issue-11"
+      ],
+      "verified": true
+    },
+    {
+      "id": "tur.1-istanbul-basaksehir",
+      "league": "tur.1",
+      "names": [
+        "Istanbul Basaksehir",
+        "Basaksehir"
+      ],
+      "sources": [
+        "github-issue-11"
+      ],
+      "verified": true
+    },
+    {
+      "id": "tur.1-gaziantep-fk",
+      "league": "tur.1",
+      "names": [
+        "Gaziantep FK",
+        "Gazişehir Gaziantep"
+      ],
+      "sources": [
+        "github-issue-11"
+      ],
+      "verified": true
+    },
+    {
+      "id": "sco.1-falkirk",
+      "league": "sco.1",
+      "names": [
+        "Falkirk",
+        "Falkirk F.C."
+      ],
+      "sources": [
+        "github-issue-11"
+      ],
+      "verified": true
     }
   ]
 }
