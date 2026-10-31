@@ -1,6 +1,6 @@
 {
   "generated_at_utc": "2026-10-31T14:29:38.707808+00:00",
-  "total": 27,
+  "total": 17,
   "fixtures": [
     {
       "fixture_id": "espn:football:sco.1:401878347",
@@ -15,20 +15,6 @@
       "home": "Motherwell",
       "away": "St Mirren",
       "start_utc": "2026-10-31T15:00:00Z"
-    },
-    {
-      "fixture_id": "espn:football:ned.1:401875565",
-      "league": "ned.1",
-      "home": "Feyenoord Rotterdam",
-      "away": "Fortuna Sittard",
-      "start_utc": "2026-10-31T15:30:00Z"
-    },
-    {
-      "fixture_id": "espn:football:por.1:401885405",
-      "league": "por.1",
-      "home": "Moreirense",
-      "away": "Estrela",
-      "start_utc": "2026-10-31T15:30:00Z"
     },
     {
       "fixture_id": "espn:football:tur.1:401888258",
@@ -50,20 +36,6 @@
       "home": "Heerenveen",
       "away": "NEC Nijmegen",
       "start_utc": "2026-10-31T17:45:00Z"
-    },
-    {
-      "fixture_id": "espn:football:ned.1:401875564",
-      "league": "ned.1",
-      "home": "PSV Eindhoven",
-      "away": "Willem II",
-      "start_utc": "2026-10-31T17:45:00Z"
-    },
-    {
-      "fixture_id": "espn:football:usa.1:761924",
-      "league": "usa.1",
-      "home": "Columbus Crew",
-      "away": "D.C. United",
-      "start_utc": "2026-10-31T18:00:00Z"
     },
     {
       "fixture_id": "espn:football:usa.1:761919",
@@ -127,48 +99,6 @@
       "home": "San Jose Earthquakes",
       "away": "Real Salt Lake",
       "start_utc": "2026-10-31T21:00:00Z"
-    },
-    {
-      "fixture_id": "espn:football:usa.1:761923",
-      "league": "usa.1",
-      "home": "Colorado Rapids",
-      "away": "Chicago Fire FC",
-      "start_utc": "2026-11-01T01:30:00Z"
-    },
-    {
-      "fixture_id": "espn:football:tur.1:401888374",
-      "league": "tur.1",
-      "home": "Amed SFK",
-      "away": "Eyupspor",
-      "start_utc": "2026-11-01T10:30:00Z"
-    },
-    {
-      "fixture_id": "espn:football:ned.1:401875560",
-      "league": "ned.1",
-      "home": "PEC Zwolle",
-      "away": "ADO Den Haag",
-      "start_utc": "2026-11-01T11:15:00Z"
-    },
-    {
-      "fixture_id": "espn:football:tur.1:401888261",
-      "league": "tur.1",
-      "home": "Istanbul Basaksehir",
-      "away": "Samsunspor",
-      "start_utc": "2026-11-01T13:00:00Z"
-    },
-    {
-      "fixture_id": "espn:football:tur.1:401888263",
-      "league": "tur.1",
-      "home": "Trabzonspor",
-      "away": "Gaziantep FK",
-      "start_utc": "2026-11-01T13:00:00Z"
-    },
-    {
-      "fixture_id": "espn:football:sco.1:401878349",
-      "league": "sco.1",
-      "home": "Falkirk",
-      "away": "Celtic",
-      "start_utc": "2026-11-01T13:00:00Z"
     },
     {
       "fixture_id": "espn:football:ned.1:401875559",
