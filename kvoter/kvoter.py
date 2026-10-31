@@ -30,6 +30,7 @@ def build(history,offers,source="the-odds-api-v4"):
         if hits:
             record["provider_events"]=sorted({str(h.get("event_id")) for h in hits if h.get("event_id")})
             record["bookmakers"]=sorted({str(h.get("bookmaker")) for h in hits if h.get("bookmaker")})
+            record["odds_offers"]=[{"event_id":h.get("event_id"),"bookmaker":h.get("bookmaker"),"updated_at_utc":h.get("updated_at_utc"),"markets":h.get("markets",{})} for h in hits if h.get("markets")]
             matched.append(record)
         else: unmatched.append(record)
     return {"generated_at_utc":datetime.now(timezone.utc).isoformat(),
