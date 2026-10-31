@@ -1,6 +1,7 @@
 import unittest
 from kvoter import build,match
 from the_odds_api import collect
+from category_filter import category
 
 class KvoterTests(unittest.TestCase):
     def setUp(self):
@@ -25,6 +26,20 @@ class KvoterTests(unittest.TestCase):
         report=build({"fixtures":[self.fixture]},[dict(self.offer,home="PSV")])
         self.assertEqual(report["unavailable"],1)
         self.assertEqual(len(report["unmatched_fixtures"]),1)
+    def test_reject_non_senior_offers(self):
+        for team in ("Ajax U21", "Ajax Women", "Ajax B", "Ajax II", "Ajax U19", "Ajax Frauen"):
+            with self.subTest(team=team):
+                offer=dict(self.offer, home=team)
+                self.assertFalse(match(self.fixture, offer))
+    def test_reject_non_senior_agent_fixtures(self):
+        for team in ("Ajax U21", "Ajax Women", "Ajax B", "Ajax II"):
+            with self.subTest(team=team):
+                fixture=dict(self.fixture, home=team)
+                self.assertFalse(match(fixture, self.offer))
+    def test_senior_name_not_rejected(self):
+        for team in ("Ajax Amsterdam", "Brighton & Hove Albion", "Manchester United", "Real Madrid"):
+            with self.subTest(team=team):
+                self.assertIsNone(category(team))
     def test_league_window_and_all_events(self):
         calls=[]
         def fetch(url):
