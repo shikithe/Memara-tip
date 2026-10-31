@@ -4,6 +4,7 @@ import json,sys
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from workflow import safe_identity
+from team_identity import normalize
 def main():
     event=json.loads(Path(sys.argv[1]).read_text())
     issue=event['issue']
@@ -29,7 +30,7 @@ def main():
         decision={'fixture_id':fixture['fixture_id'],'event_id':candidate['event_id'],'collector_home':fixture['home'],'collector_away':fixture['away'],'odds_home':candidate['home'],'odds_away':candidate['away'],'league':fixture['league'],'decision':item['decision'],'issue_number':issue['number']}
         if item['decision']=='matched':
             for a,b in [(fixture['home'],candidate['home']),(fixture['away'],candidate['away'])]:
-                if a!=b and not safe_identity(db,fixture['league'],[a,b],sources=['github-issue-'+str(issue['number'])]):
+                if normalize(a)!=normalize(b) and not safe_identity(db,fixture['league'],[a,b],sources=['github-issue-'+str(issue['number'])]):
                     raise SystemExit('Unsafe identity')
         validated.append(decision)
     keys={(x['fixture_id'],x['event_id']) for x in validated}
