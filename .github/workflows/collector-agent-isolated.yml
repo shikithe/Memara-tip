@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Create isolated shared workspace
-        run: mkdir -p /tmp/memara-shared/agent
+        run: mkdir -p /tmp/memara-shared/agent /tmp/kvoter-private
       - name: Run ESPN collector
         run: python collector/collector_24h.py --output /tmp/memara-shared/collector-raw.json
       - name: Prepare collector feed in shared workspace
@@ -39,7 +39,7 @@ jobs:
           test -s /tmp/memara-shared/kvoter/odds.json
       - name: Build unknown-team research queue and replay confirmed identities
         run: |
-          python kvoter/alias_research.py --history /tmp/memara-shared/agent/history-h2h.json --offers /tmp/memara-shared/kvoter/provider-offers.json --database /tmp/memara-shared/kvoter/team-aliases-approved.json --queue /tmp/memara-shared/kvoter/team-research-queue.json --report /tmp/memara-shared/kvoter/match-report.json
+          python kvoter/alias_research.py --history /tmp/memara-shared/agent/history-h2h.json --offers /tmp/memara-shared/kvoter/provider-offers.json --database /tmp/memara-shared/kvoter/team-aliases-approved.json --queue /tmp/memara-shared/kvoter/team-research-queue.json --report /tmp/memara-shared/kvoter/match-report.json --matched-output /tmp/memara-shared/kvoter/matched-fixtures.json --unmatched-output /tmp/kvoter-private/unmatched-fixtures.json
       - name: Verify end-to-end result
         run: |
           python - <<'PY'
@@ -52,6 +52,10 @@ jobs:
           assert len(result['fixtures'])==len(feed['football_candidates']), 'Agent fixture count mismatch'
           odds=json.loads((root/'kvoter/odds.json').read_text())
           assert odds['matched']+odds['unavailable']==len(result['fixtures']), 'Kvoter fixture count mismatch'
+          matched=json.loads((root/'kvoter/matched-fixtures.json').read_text())['fixtures']
+          unmatched=json.loads(Path('/tmp/kvoter-private/unmatched-fixtures.json').read_text())['fixtures']
+          assert len(matched)+len(unmatched)==len(result['fixtures']), 'Final partition count mismatch'
+          assert not ({x['fixture_id'] for x in matched} & {x['fixture_id'] for x in unmatched}), 'Fixture present in both lists'
           assert odds['publication_allowed'] is False
           assert odds['bank_modified'] is False
           print('KVOTER',odds['provider_status'],'matched',odds['matched'])
@@ -74,4 +78,6 @@ jobs:
             /tmp/memara-shared/kvoter/team-research-queue.json
             /tmp/memara-shared/kvoter/team-aliases-approved.json
             /tmp/memara-shared/kvoter/match-report.json
+            /tmp/memara-shared/kvoter/matched-fixtures.json
+            /tmp/kvoter-private/unmatched-fixtures.json
           if-no-files-found: ignore
