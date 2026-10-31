@@ -116,6 +116,28 @@ jobs:
             git push origin HEAD:collector-isolated-test-20261030
             echo "ACTIVE_FEED_PERSISTED"
           fi
+      - name: Persist daily ESPN history H2H database on isolated branch
+        if: success()
+        run: |
+          set -euo pipefail
+          mkdir -p agent/active
+          cp /tmp/memara-shared/agent/history-h2h.json agent/active/history-h2h.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('agent/active/history-h2h.json').read_text())
+          assert data['fixtures'] and data['publication_allowed'] is False and data['bank_modified'] is False
+          print('AGENT_HISTORY_PERSISTED',len(data['fixtures']),'errors',len(data['errors']))
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- agent/active/history-h2h.json
+          if git diff --cached --quiet; then
+            echo "AGENT_HISTORY_UNCHANGED"
+          else
+            git commit -m "agent: store daily ESPN history and H2H [skip ci]"
+            git push origin HEAD:collector-isolated-test-20261030
+          fi
       - name: Publish unmatched fixtures to Kvoter Manual Pages
         if: success()
         run: |
