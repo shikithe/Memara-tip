@@ -12,7 +12,7 @@ def utc(value):
     except (ValueError,TypeError): return None
 
 def match(fixture,offer,tolerance_minutes=90):
-    if excluded(fixture.get('home'), fixture.get('away')) or excluded(offer.get('home'), offer.get('away')): return False
+    if excluded(fixture.get('home'), fixture.get('away'), fixture.get('league')) or excluded(offer.get('home'), offer.get('away'), offer.get('league')): return False
     if fixture.get("league")!=offer.get("league"): return False
     a,b=utc(fixture.get("start_utc")),utc(offer.get("start_utc"))
     if not a or not b or abs((a-b).total_seconds())>tolerance_minutes*60: return False
