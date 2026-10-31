@@ -10,6 +10,7 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 from kvoter import build, utc
 from team_identity import normalize
+from category_filter import excluded, category
 
 ROOT = Path(__file__).resolve().parent
 
@@ -26,6 +27,8 @@ def write(path, data):
 
 def safe_identity(db, league, names, sources=None, verified=True):
     names = list(dict.fromkeys(n.strip() for n in names if isinstance(n, str) and n.strip()))
+    if any(category(n) for n in names):
+        return False
     if len({normalize(n) for n in names}) < 2:
         return False
     entries = db["teams"]
@@ -48,7 +51,11 @@ def unresolved(history, offers, report):
     for f in history["fixtures"]:
         if (f.get("fixture_id") or f.get("id")) not in ids:
             continue
+        if excluded(f.get('home'), f.get('away')):
+            continue
         for offer in offers:
+            if excluded(offer.get('home'), offer.get('away')):
+                continue
             if offer.get("league") != f.get("league"):
                 continue
             a, b = utc(f.get("start_utc")), utc(offer.get("start_utc"))
