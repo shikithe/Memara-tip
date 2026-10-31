@@ -1,3 +1,14 @@
+
+## Mandatory execution order: history first, odds second
+
+1. **FIRST:** Read Agent's `/shared/agent/history-h2h.json`. Extract only the leagues represented in its fixtures and their kickoff time window. Do not fetch Odds API data before this file is ready.
+2. **SECOND:** Fetch The Odds API odds **only for those recognized, supported leagues** and the fixture time window. Save the original API payload to `league-odds-raw.json`, and normalize it into `provider-offers.json`.
+3. **THIRD:** Match Agent fixtures against the previously fetched offers using the Kvoter team identity database; then check `unesi rucno/aliases.json` and rematch.
+4. **FOURTH:** For still-unknown teams, optionally research aliases online. Research findings require verification before adding to the approved identity database. Rematch using the SAME saved provider offers, not a second Odds API request.
+5. **FIFTH:** Write matched fixtures together with their own bookmaker odds to Shared Volume and leave remaining unmatched fixtures in Kvoter's `unesi rucno` output.
+
+The league codes in history-h2h.json are the sole input for deciding which leagues to request; unsupported leagues must be reported, never silently replaced with other leagues.
+
 # MEMARASIX Kvoter — isolated test branch
 
 ## Confirmed scope (31 October 2026)
