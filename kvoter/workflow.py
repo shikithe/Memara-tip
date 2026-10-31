@@ -51,10 +51,10 @@ def unresolved(history, offers, report):
     for f in history["fixtures"]:
         if (f.get("fixture_id") or f.get("id")) not in ids:
             continue
-        if excluded(f.get('home'), f.get('away')):
+        if excluded(f.get('home'), f.get('away'), f.get('league')):
             continue
         for offer in offers:
-            if excluded(offer.get('home'), offer.get('away')):
+            if excluded(offer.get('home'), offer.get('away'), offer.get('league')):
                 continue
             if offer.get("league") != f.get("league"):
                 continue
