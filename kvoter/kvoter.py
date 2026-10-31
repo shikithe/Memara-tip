@@ -5,12 +5,14 @@ import json
 from datetime import datetime,timezone
 from pathlib import Path
 from team_identity import same_team
+from category_filter import excluded
 
 def utc(value):
     try: return datetime.fromisoformat(str(value).replace("Z","+00:00")).astimezone(timezone.utc)
     except (ValueError,TypeError): return None
 
 def match(fixture,offer,tolerance_minutes=90):
+    if excluded(fixture.get('home'), fixture.get('away')) or excluded(offer.get('home'), offer.get('away')): return False
     if fixture.get("league")!=offer.get("league"): return False
     a,b=utc(fixture.get("start_utc")),utc(offer.get("start_utc"))
     if not a or not b or abs((a-b).total_seconds())>tolerance_minutes*60: return False
