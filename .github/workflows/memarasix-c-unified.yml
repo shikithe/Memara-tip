@@ -1,4 +1,4 @@
-name: MemaraSix unified NBA C preparation
+name: MemaraSix mixed-sport C research preparation
 on:
   workflow_dispatch:
   schedule:
@@ -6,7 +6,7 @@ on:
     - cron: '15 7,8 * * *'
     - cron: '30 10,11 * * *'
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: memarasix-unified-c-preparation
   cancel-in-progress: false
@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.ref_name }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -40,16 +40,16 @@ jobs:
           PY
       - name: Check scripts
         if: steps.gate.outputs.run == 'true'
-        run: python -m py_compile collector_nba_24h.py sync_nba_free.py sync_nba_points.py memara_enrich_nba_props.py ticket_c_screening.py
+        run: python -m py_compile collector_nba_24h.py sync_nba_free.py sync_nba_points.py memara_enrich_nba_props.py ticket_c_screening.py memara_nba_analyst.py prepare_ticket_c_match_markets.py sync_ticket_c_match_odds.py
       - name: Fetch upcoming NBA fixtures
         if: steps.gate.outputs.run == 'true'
         run: python collector_nba_24h.py --hours 24 --output collector-output/nba-next-24h.json
-      - name: Fetch recent ESPN player statistics
-        if: steps.gate.outputs.run == 'true'
-        run: python sync_nba_free.py --days 14 --max-summaries 60
       - name: Fetch player points bookmaker odds
         if: steps.gate.outputs.run == 'true' && env.THE_ODDS_API_KEY != ''
         run: python sync_nba_points.py --region us
+      - name: Fetch recent ESPN player statistics
+        if: steps.gate.outputs.run == 'true'
+        run: python sync_nba_free.py --days 14 --max-summaries 60
       - name: Merge eligible offers into analyst feed
         if: steps.gate.outputs.run == 'true' && env.THE_ODDS_API_KEY != ''
         run: |
@@ -57,6 +57,15 @@ jobs:
             python memara_enrich_nba_props.py --feed collector-feed.json --props collector-output/nba-player-points.json --output collector-feed.json
             python memara_math.py --input collector-feed.json --output collector-feed.json
           fi
+      - name: Run NBA points analyst (research only)
+        if: steps.gate.outputs.run == 'true' && env.THE_ODDS_API_KEY != ''
+        run: python memara_nba_analyst.py
+      - name: Fetch football and basketball match odds
+        if: steps.gate.outputs.run == 'true' && env.THE_ODDS_API_KEY != ''
+        run: python sync_ticket_c_match_odds.py --region eu
+      - name: Normalize optional football and basketball match odds snapshot
+        if: steps.gate.outputs.run == 'true'
+        run: python prepare_ticket_c_match_markets.py
       - name: Screen C candidates for research
         if: steps.gate.outputs.run == 'true'
         run: python ticket_c_screening.py
@@ -68,19 +77,23 @@ jobs:
           d=json.load(open("collector-output/ticket-c-research.json"))
           assert d["publication_allowed"] is False
           assert d["state"]=="research_only"
-          print("C research candidates:",d["count"])
+          assert d["target_odds"] == 10.0
+          assert d["minimum_legs"] == 3
+          assert d["unlimited_legs"] is True
+          assert not d["target_reached"] or d["combined_odds"] >= 10.0
+          print("C research eligible:",d["candidate_count"],"selected:",d["selected_count"],"odds:",d["combined_odds"])
           PY
-      - name: Save research and offers without publishing
-        if: steps.gate.outputs.run == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add collector-output/nba-next-24h.json collector-output/nba-free-statistics.json collector-output/ticket-c-research.json
-          if [ -n "$THE_ODDS_API_KEY" ]; then
-            git add collector-output/nba-player-points.json collector-feed.json
-          fi
-          if ! git diff --cached --quiet; then
-            git commit -m "data: unified NBA C preparation [skip ci]"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+      - name: Upload research files (no commits or site updates)
+        if: always() && steps.gate.outputs.run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: memarasix-unified-mixed-c-research
+          path: |
+            collector-output/nba-next-24h.json
+            collector-output/nba-free-statistics.json
+            collector-output/nba-player-points.json
+            collector-output/nba-analyst-research.json
+            collector-output/ticket-c-research.json
+            collector-output/ticket-c-match-markets.json
+            collector-output/match-odds-snapshot.json
+          if-no-files-found: warn
