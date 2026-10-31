@@ -10,6 +10,13 @@ class KvoterTests(unittest.TestCase):
         report=build({"fixtures":[self.fixture]},[self.offer])
         self.assertEqual((report["matched"],report["unavailable"]),(1,0))
         self.assertEqual(report["matched_fixtures"][0]["provider_events"],["evt1"])
+    def test_matched_fixture_contains_correct_bookmaker_odds(self):
+        offer=dict(self.offer,markets={"1X2":{"home":2.1,"draw":3.4,"away":3.2},"2+":{"over":1.35},"3+":{"over":1.95},"BTTS":{"yes":1.8,"no":2.0}})
+        other=dict(offer,event_id="evt2",home="PSV",markets={"1X2":{"home":9.9}})
+        report=build({"fixtures":[self.fixture]},[offer,other])
+        self.assertEqual(report["matched"],1)
+        self.assertEqual(report["matched_fixtures"][0]["odds_offers"],[{"event_id":"evt1","bookmaker":"example","updated_at_utc":None,"markets":offer["markets"]}])
+        self.assertEqual(report["unmatched_fixtures"],[])
     def test_brighton(self):
         f=dict(self.fixture,league="eng.1",home="Brighton & Hove Albion")
         o=dict(self.offer,league="eng.1",home="Brighton")
