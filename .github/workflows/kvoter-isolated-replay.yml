@@ -64,44 +64,6 @@ jobs:
           assert matched['total']+unmatched['total']==len(history['fixtures'])
           print('KVOTER_REPLAY_OK', 'matched',matched['total'],'unmatched',unmatched['total'])
           PY
-      - name: Publish nonempty unmatched queue to Kvoter Manual
-        if: success()
-        run: |
-          set -euo pipefail
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          p=Path('/tmp/kvoter-replay/unmatched-fixtures.json')
-          data=json.loads(p.read_text(encoding='utf-8'))
-          fixtures=data.get('fixtures')
-          if not isinstance(fixtures,list) or data.get('total') != len(fixtures):
-              raise SystemExit('Invalid Kvoter unmatched JSON')
-          with open('/tmp/kvoter-publish.env','w') as out:
-              out.write('PUBLISH_QUEUE='+('yes' if fixtures else 'no')+'\n')
-          print('KVOTER_MANUAL_QUEUE_SIZE',len(fixtures))
-          PY
-          source /tmp/kvoter-publish.env
-          if [ "$PUBLISH_QUEUE" != "yes" ]; then
-            echo "KVOTER_MANUAL_QUEUE_EMPTY_NOT_PUBLISHED"
-            exit 0
-          fi
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git worktree add /tmp/kvoter-manual-publish origin/main
-          mkdir -p /tmp/kvoter-manual-publish/kvoter/manual
-          cp /tmp/kvoter-replay/unmatched-fixtures.json /tmp/kvoter-manual-publish/kvoter/manual/unmatched-fixtures.json
-          cp /tmp/kvoter-replay/manual-candidates.json /tmp/kvoter-manual-publish/kvoter/manual/manual-candidates.json
-          cd /tmp/kvoter-manual-publish
-          git add -- kvoter/manual/unmatched-fixtures.json kvoter/manual/manual-candidates.json
-          if git diff --cached --quiet; then
-            echo "KVOTER_MANUAL_QUEUE_UNCHANGED"
-          else
-            git commit -m "kvoter manual: sync nonempty replay queue [skip ci]"
-            git pull --rebase origin main
-            git push origin HEAD:main
-            echo "KVOTER_MANUAL_QUEUE_PUBLISHED"
-          fi
       - name: Upload test results only
         if: always()
         uses: actions/upload-artifact@v4
