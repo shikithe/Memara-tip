@@ -1432,5 +1432,202 @@
     "source_nba_free_statistics": "collector-output/nba-free-statistics.json 2026-10-28 (stale; not used)",
     "source_statistics_research": "collector-output/statistics-research.json 2026-10-28 (stale; not used)",
     "all_tickets_closed_at_utc": "2026-10-30T08:32:50.622934+00:00"
+  },
+  {
+    "date": "2026-10-30",
+    "published": "30.10.2026. u 16:15 (Europe/Sarajevo)",
+    "published_at_utc": "2026-10-30T15:15:43.718Z",
+    "publication_type": "main_validated_partial_publication",
+    "bank_before": 182.59,
+    "daily_budget": 18.26,
+    "daily_stake": 18.26,
+    "bank_after": 181.87,
+    "bank_after_stakes": 164.33,
+    "provisional": false,
+    "settled": true,
+    "odds_verified": true,
+    "odds_verification_note": "A javne kvote; B javni agregator, ne direktno potvrđene u kladionici",
+    "tickets": [
+      {
+        "id": "A",
+        "label": "GLAVNI TIKET — 1X2",
+        "stake": 12.78,
+        "status": "izgubljen",
+        "odds": 2.17,
+        "payout": 0,
+        "matches": [
+          {
+            "home": "Konyaspor",
+            "away": "Galatasaray",
+            "pick": "2",
+            "odd": 1.55,
+            "start_utc": "2026-10-30T17:00:00Z",
+            "start_sarajevo": "2026-10-30T18:00:00+01:00",
+            "fixture_id": "espn:football:tur.1:401888259",
+            "market_source": "Stake.com — javni prematch prikaz, referentna kvota (nije Mozzartbet BiH)",
+            "market_name": "1X2",
+            "market_url": "https://stake.games/sports/soccer/turkiye/super-lig/46797339-konyaspor-galatasaray-istanbul",
+            "market_snapshot_date": "2026-10-30",
+            "odds_verified_at_utc": "2026-10-30T15:12:35Z",
+            "research": {
+              "summary": "Galatasaray 7 pobjeda u 9 ligaških mečeva; Konyaspor 2 pobjede, ali 3 domaća clean sheeta. Galatasaray bez suspendovanog Bardakcıja.",
+              "risks": "Nema potvrđenih početnih sastava i nezavisno dokazanog pozitivnog EV.",
+              "sources": [
+                [
+                  "Forma i H2H",
+                  "https://www.forebet.com/en/football-match-previews/31805-galatasaray-set-to-test-konyaspors-resilience-in-konya"
+                ],
+                [
+                  "Izostanci",
+                  "https://deeppreviews.com/previews/konyaspor-vs-galatasaray-2026-10-30"
+                ]
+              ]
+            },
+            "result_status": "pogođen",
+            "final_score": "0:4"
+          },
+          {
+            "home": "Villarreal",
+            "away": "Espanyol",
+            "pick": "1",
+            "odd": 1.4,
+            "start_utc": "2026-10-30T20:00:00Z",
+            "start_sarajevo": "2026-10-30T21:00:00+01:00",
+            "fixture_id": "espn:football:esp.1:401882817",
+            "market_source": "Stake.com — javni prematch prikaz, referentna kvota (nije Mozzartbet BiH)",
+            "market_name": "1X2",
+            "market_url": "https://stake.games/sports/soccer/spain/la-liga/46797897-villareal-espanyol",
+            "market_snapshot_date": "2026-10-30",
+            "odds_verified_at_utc": "2026-10-30T15:12:35Z",
+            "research": {
+              "summary": "Villarreal 3 pobjede, remi i poraz u zadnjih 5; Espanyol 4 poraza i remi. Villarreal bez Gueyea, umor poslije Lige šampiona.",
+              "risks": "Nema potvrđenih početnih sastava i nezavisno dokazanog pozitivnog EV.",
+              "sources": [
+                [
+                  "Forma i izostanci",
+                  "https://www.victorypicks.com/en/previews/villarreal-vs-espanyol-october-30-2026-2752/"
+                ],
+                [
+                  "Forma",
+                  "https://www.fotmob.com/matches/espanyol-vs-villarreal/2wt7o0"
+                ]
+              ]
+            },
+            "result_status": "promašen",
+            "final_score": "0:1"
+          }
+        ],
+        "analysis": {
+          "summary": "Dva favorita iz današnjeg ESPN feeda, uz provjeru forme i javno prikazanih kvota istog operatera.",
+          "reasons": [
+            "Galatasaray lider turske lige, Konyaspor 14.",
+            "Villarreal u boljoj formi od Espanyola."
+          ],
+          "risks": "Konyaspor 3 domaće utakmice bez primljenog gola; Galatasaray bez Bardakcıja; Villarreal bez Gueyea i nakon evropskih obaveza.",
+          "limits": "Nema potvrđenih XI ni dokazanog pozitivnog EV; kvote mogu varirati po vremenu i regiji.",
+          "sources": [
+            [
+              "Stake Konyaspor–Galatasaray",
+              "https://stake.games/sports/soccer/turkiye/super-lig/46797339-konyaspor-galatasaray-istanbul"
+            ],
+            [
+              "Stake Villarreal–Espanyol",
+              "https://stake.games/sports/soccer/spain/la-liga/46797897-villareal-espanyol"
+            ]
+          ]
+        },
+        "settled_at_utc": "2026-10-31T01:04:44.903719+00:00"
+      },
+      {
+        "id": "B",
+        "label": "GOLOVI 3+ — TIKET B",
+        "stake": 5.48,
+        "status": "dobitan",
+        "odds": 3.2,
+        "payout": 17.54,
+        "matches": [
+          {
+            "home": "Nice",
+            "away": "Stade Rennais",
+            "pick": "3+",
+            "odd": 1.65,
+            "fixture_id": "espn:football:fra.1:401876416",
+            "start_utc": "2026-10-30T18:00:00Z",
+            "market_name": "Over 2.5 Goals",
+            "market_source": "Betensured javni agregirani prikaz; operater nije potvrđen",
+            "market_url": "https://betensured.fr/cotes24245?euros=1&game=soccernew&match_date=30.10.2026",
+            "result_status": "pogođen",
+            "final_score": "5:2"
+          },
+          {
+            "home": "Le Havre AC",
+            "away": "Paris Saint-Germain",
+            "pick": "3+",
+            "odd": 1.32,
+            "fixture_id": "espn:football:fra.1:401876421",
+            "start_utc": "2026-10-30T18:00:00Z",
+            "market_name": "Over 2.5 Goals",
+            "market_source": "Betensured javni agregirani prikaz; operater nije potvrđen",
+            "market_url": "https://betensured.fr/cotes24245?euros=1&game=soccernew&match_date=30.10.2026",
+            "result_status": "pogođen",
+            "final_score": "1:5"
+          },
+          {
+            "home": "SV Elversberg",
+            "away": "Mainz",
+            "pick": "3+",
+            "odd": 1.47,
+            "fixture_id": "espn:football:ger.1:401884746",
+            "start_utc": "2026-10-30T19:30:00Z",
+            "market_name": "Over 2.5 Goals",
+            "market_source": "Betensured javni agregirani prikaz; operater nije potvrđen",
+            "market_url": "https://betensured.fr/cotes24245?euros=1&game=soccernew&match_date=30.10.2026",
+            "result_status": "pogođen",
+            "final_score": "4:1"
+          }
+        ],
+        "analysis": {
+          "summary": "Analiza 3+ golova; kvote javnog agregatora nisu direktno potvrđene kod operatera.",
+          "sources": [
+            "https://footballedgeuk.co.uk/board/2026-10-30/",
+            "https://betensured.fr/cotes24245?euros=1&game=soccernew&match_date=30.10.2026"
+          ]
+        },
+        "settled_at_utc": "2026-10-30T21:41:13.882465+00:00"
+      },
+      {
+        "id": "C",
+        "label": "KEŠ KOLICA — ČEKA SE PONUDA",
+        "stake": 0,
+        "status": "preskočen",
+        "odds": null,
+        "payout": 0,
+        "matches": [],
+        "analysis": {
+          "summary": "Dnevni feed ima 0 potvrđenih NBA player-points kvota; nema validiranog tiketa ukupne kvote najmanje 10.",
+          "reasons": [
+            "Dnevni feed ima 0 potvrđenih NBA player-points kvota; nema validiranog tiketa ukupne kvote najmanje 10."
+          ],
+          "limits": "Bez validiranog tiketa nema uloga."
+        }
+      }
+    ],
+    "total_payout": 17.54,
+    "net_change": -0.72,
+    "analysis_status": "A i B objavljeni; B dodan na zahtjev korisnika",
+    "selection_method": "Ručna nezavisna AI analiza javnih izvora i ESPN feeda, 30.10.2026.",
+    "source_fixture_feed": "collector-feed.json 2026-10-30T15:02:37.821274+00:00",
+    "source_independent_analysis": "collector-output/independent-analysis.json (današnji podaci; prijavljene rupe u statistici)",
+    "source_nba_player_points": "collector-feed.json: 0 potvrđenih NBA player-points kvota",
+    "source_statistics_research": "30.10.2026; izvori navedeni uz parove",
+    "settlement_date": "2026-10-30",
+    "settlement_note": "Nezavisno provjereno 31.10.2026: Konyaspor–Galatasaray 0:4 (Futbol24); Villarreal–Espanyol 0:1 (LaLiga); Nice–Rennes 5:2 (Stade Rennais); Le Havre–PSG 1:5 (Reuters/Sky Sports); Elversberg–Mainz 4:1 (Bundesliga). A izgubljen, B dobitan, C preskočen. Već zaključana isplata 17,54 € i banka 181,87 € nisu ponovo obračunate niti duplirane. Izvorni tipovi, kvote i ulozi nepromijenjeni.",
+    "settlement_sources": [
+      "https://www.futbol24.com/match/2026/10/30/national/Turkiye/Super-Lig/2026-2027/Konyaspor/vs/Galatasaray",
+      "https://www.laliga.com/es-NL/partido/temporada-2026-2027-laliga-ea-sports-villarreal-cf-rcd-espanyol-de-barcelona-11",
+      "https://www.staderennais.com/actualites/ligue-1-mcdonalds/soiree-sans-a-nice-5-2",
+      "https://www.reuters.com/sports/soccer/hakimi-hat-trick-leads-psg-5-1-win-le-havre-2026-10-30/",
+      "https://www.bundesliga.com/en/bundesliga/news/elversberg-mainz-match-report-highlights-matchday-8-campbell-keidel-39785"
+    ]
   }
 ]
