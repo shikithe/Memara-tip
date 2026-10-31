@@ -2,3 +2,5 @@ KVOTER — PONUDA SA KVOTAMA
 BR  VRIJEME  UTAKMICA                       1     X     2     3+
 01  15:00    Bologna - Monza                1.70  3.85  5.47  1.91
 02  15:30    Bayer Leverkusen - Stuttgart   1.65  4.63  4.89  -
+03  15:30    Gladbach - Paderborn            2.20  3.86  3.21  -
+04  15:30    Augsburg - Freiburg            2.88  3.77  2.42  -
