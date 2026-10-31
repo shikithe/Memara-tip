@@ -95,6 +95,26 @@ jobs:
             git push origin HEAD:collector-isolated-test-20261030
             echo "KVOTER_DB_PERSISTED"
           fi
+      - name: Publish unmatched fixtures to Kvoter Manual Pages
+        if: success()
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          git worktree add /tmp/kvoter-manual-pages origin/main
+          mkdir -p /tmp/kvoter-manual-pages/kvoter/manual
+          cp "kvoter/unesi rucno/unmatched-fixtures.json" /tmp/kvoter-manual-pages/kvoter/manual/unmatched-fixtures.json
+          cd /tmp/kvoter-manual-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- kvoter/manual/unmatched-fixtures.json
+          if git diff --cached --quiet; then
+            echo "KVOTER_MANUAL_QUEUE_UNCHANGED"
+          else
+            git commit -m "kvoter manual: publish latest unmatched queue [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+            echo "KVOTER_MANUAL_QUEUE_PUBLISHED"
+          fi
       - name: Upload isolated pipeline artifacts
         if: always()
         uses: actions/upload-artifact@v4
