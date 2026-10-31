@@ -103,13 +103,11 @@ def main():
         status="missing_api_key"
     for path,payload in [(a.raw_output,{"source":"the-odds-api-v4","events":raw_events}),(a.offers_output,{"offers":offers})]:
         dest=Path(path);dest.parent.mkdir(parents=True,exist_ok=True)
-        tmp=dest.with_suffix(".tmp");tmp.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8");os.replace(tmp,dest)
+        tmp=dest.with_suffix(".tmp");tmp.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8");os.replace(tmp,dest)
     result=build(history,offers,source="the-odds-api-v4")
     result["provider_status"]=status
     result["provider_coverage"]=coverage
     result["provider_errors"]=errors
-    result["requested_markets"]=["1X2","2+","3+","BTTS"]
-    result["supported_leagues"]=LEAGUES
     out=Path(a.output);out.parent.mkdir(parents=True,exist_ok=True)
     temp=out.with_suffix(".tmp")
     temp.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
