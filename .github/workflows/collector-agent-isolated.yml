@@ -31,15 +31,40 @@ jobs:
             --output /tmp/memara-shared/agent/history-h2h.json \
             --state /tmp/memara-shared/agent/.last-processed-sha256
           test -s /tmp/memara-shared/agent/history-h2h.json || { echo "Agent output missing"; exit 1; }
+      - name: Restore Kvoter learned aliases from prior isolated runs
+        uses: actions/cache/restore@v4
+        with:
+          path: /tmp/kvoter-private/team-database.json
+          key: kvoter-team-database-${{ github.run_id }}
+          restore-keys: |
+            kvoter-team-database-
+      - name: Initialize Kvoter database
+        run: |
+          test -s /tmp/kvoter-private/team-database.json || cp kvoter/team-database.json /tmp/kvoter-private/team-database.json
       - name: Fetch odds for Agent fixtures into shared volume
         env:
           THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
         run: |
           python kvoter/the_odds_api.py --feed /tmp/memara-shared/agent/history-h2h.json --output /tmp/memara-shared/kvoter/odds.json
           test -s /tmp/memara-shared/kvoter/odds.json
-      - name: Build unknown-team research queue and replay confirmed identities
+      - name: Kvoter database, manual matching, and research queue
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          python kvoter/alias_research.py --history /tmp/memara-shared/agent/history-h2h.json --offers /tmp/memara-shared/kvoter/provider-offers.json --database /tmp/memara-shared/kvoter/team-aliases-approved.json --queue /tmp/memara-shared/kvoter/team-research-queue.json --report /tmp/memara-shared/kvoter/match-report.json --matched-output /tmp/memara-shared/kvoter/matched-fixtures.json --unmatched-output /tmp/kvoter-private/unmatched-fixtures.json
+          python kvoter/workflow.py \
+            --history /tmp/memara-shared/agent/history-h2h.json \
+            --offers /tmp/memara-shared/kvoter/provider-offers.json \
+            --database /tmp/kvoter-private/team-database.json \
+            --manual "kvoter/unesi rucno/aliases.json" \
+            --matched-output /tmp/memara-shared/kvoter/matched-fixtures.json \
+            --unmatched-output /tmp/kvoter-private/unmatched-fixtures.json \
+            --research-output /tmp/kvoter-private/research-review.json \
+            --report /tmp/memara-shared/kvoter/match-report.json
+      - name: Save Kvoter learned aliases for future runs
+        uses: actions/cache/save@v4
+        with:
+          path: /tmp/kvoter-private/team-database.json
+          key: kvoter-team-database-${{ github.run_id }}
       - name: Verify end-to-end result
         run: |
           python - <<'PY'
@@ -80,4 +105,6 @@ jobs:
             /tmp/memara-shared/kvoter/match-report.json
             /tmp/memara-shared/kvoter/matched-fixtures.json
             /tmp/kvoter-private/unmatched-fixtures.json
+            /tmp/kvoter-private/research-review.json
+            /tmp/kvoter-private/team-database.json
           if-no-files-found: ignore
