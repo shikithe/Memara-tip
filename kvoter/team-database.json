@@ -331,6 +331,18 @@
         "github-issue-13"
       ],
       "verified": true
+    },
+    {
+      "id": "fra.1-aj-auxerre",
+      "league": "fra.1",
+      "names": [
+        "AJ Auxerre",
+        "Auxerre"
+      ],
+      "sources": [
+        "github-issue-14"
+      ],
+      "verified": true
     }
   ]
 }

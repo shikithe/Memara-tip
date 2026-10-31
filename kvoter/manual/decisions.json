@@ -263,6 +263,17 @@
       "league": "sco.1",
       "decision": "matched",
       "issue_number": 13
+    },
+    {
+      "fixture_id": "espn:football:fra.1:401876414",
+      "event_id": "448a1083448ea9dff55bfebf15ff20b4",
+      "collector_home": "Strasbourg",
+      "collector_away": "AJ Auxerre",
+      "odds_home": "Strasbourg",
+      "odds_away": "Auxerre",
+      "league": "fra.1",
+      "decision": "matched",
+      "issue_number": 14
     }
   ]
 }
