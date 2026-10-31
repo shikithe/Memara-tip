@@ -10,7 +10,8 @@ from datetime import datetime,timezone
 from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request,urlopen
-from kvoter import utc,build\nfrom team_identity import normalize as norm
+from kvoter import utc,build
+from team_identity import normalize as norm
 
 LEAGUES={
 "eng.1":"soccer_epl","ger.1":"soccer_germany_bundesliga",
