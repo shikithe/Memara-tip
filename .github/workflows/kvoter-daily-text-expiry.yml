@@ -1,0 +1,26 @@
+name: Kvoter daily list expiration
+on:
+  schedule:
+    - cron: '59 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  expire:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Expire daily list at local 23:59
+        run: |
+          if [ "$(TZ=Europe/Sarajevo date +%H)" != "23" ]; then exit 0; fi
+          git fetch origin main
+          git checkout main
+          git pull --ff-only origin main
+          if [ ! -f kvoter/dnevna-lista.txt ]; then exit 0; fi
+          git rm kvoter/dnevna-lista.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Expire daily Kvoter list"
+          git push origin main
