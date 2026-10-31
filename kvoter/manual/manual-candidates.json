@@ -1,30 +1,23 @@
 {
-  "generated_at_utc": "2026-10-31T13:32:00.588683+00:00",
-  "total": 6,
+  "generated_at_utc": "2026-10-31T13:23:20.513030+00:00",
+  "total": 4,
   "fixtures": [
-    {
-      "fixture_id": "espn:football:ita.1:401875002",
-      "league": "ita.1",
-      "home": "Como",
-      "away": "Venezia",
-      "start_utc": "2026-11-01T11:30:00Z",
-      "candidates": []
-    },
     {
       "fixture_id": "espn:football:bel.1:401878959",
       "league": "bel.1",
       "home": "Cercle Brugge KSV",
       "away": "Antwerp",
       "start_utc": "2026-11-01T12:30:00Z",
-      "candidates": []
-    },
-    {
-      "fixture_id": "espn:football:esp.1:401882821",
-      "league": "esp.1",
-      "home": "Getafe",
-      "away": "Sevilla",
-      "start_utc": "2026-11-01T13:00:00Z",
-      "candidates": []
+      "candidates": [
+        {
+          "event_id": "bd4ba46dc8bfef216d15545226910409",
+          "home": "Cercle Brugge KSV",
+          "away": "Royal Antwerp",
+          "start_utc": "2026-11-01T12:30:00Z",
+          "league": "bel.1",
+          "similarity": 0.85
+        }
+      ]
     },
     {
       "fixture_id": "espn:football:tur.1:401888261",
@@ -32,7 +25,16 @@
       "home": "Istanbul Basaksehir",
       "away": "Samsunspor",
       "start_utc": "2026-11-01T13:00:00Z",
-      "candidates": []
+      "candidates": [
+        {
+          "event_id": "f4e049de3ce6858d46dd45ab5cfa0e8c",
+          "home": "Basaksehir",
+          "away": "Samsunspor",
+          "start_utc": "2026-11-01T13:00:00Z",
+          "league": "tur.1",
+          "similarity": 0.845
+        }
+      ]
     },
     {
       "fixture_id": "espn:football:tur.1:401888263",
@@ -40,7 +42,16 @@
       "home": "Trabzonspor",
       "away": "Gaziantep FK",
       "start_utc": "2026-11-01T13:00:00Z",
-      "candidates": []
+      "candidates": [
+        {
+          "event_id": "cd2960ff2b4d605144a83562b0085400",
+          "home": "Trabzonspor",
+          "away": "Gazişehir Gaziantep",
+          "start_utc": "2026-11-01T13:00:00Z",
+          "league": "tur.1",
+          "similarity": 0.79
+        }
+      ]
     },
     {
       "fixture_id": "espn:football:sco.1:401878349",
@@ -48,7 +59,16 @@
       "home": "Falkirk",
       "away": "Celtic",
       "start_utc": "2026-11-01T13:00:00Z",
-      "candidates": []
+      "candidates": [
+        {
+          "event_id": "7d7c62351dea96670f8dd3b7bdc3ff12",
+          "home": "Falkirk F.C.",
+          "away": "Celtic",
+          "start_utc": "2026-11-01T13:00:00Z",
+          "league": "sco.1",
+          "similarity": 0.889
+        }
+      ]
     }
   ]
 }
