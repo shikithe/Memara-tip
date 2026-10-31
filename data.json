@@ -8,8 +8,8 @@
   "daily_stake": 18.26,
   "bank_after": 181.87,
   "bank_after_stakes": 164.33,
-  "provisional": true,
-  "settled": false,
+  "provisional": false,
+  "settled": true,
   "odds_verified": true,
   "odds_verification_note": "A javne kvote; B javni agregator, ne direktno potvrđene u kladionici",
   "tickets": [
@@ -17,9 +17,9 @@
       "id": "A",
       "label": "GLAVNI TIKET — 1X2",
       "stake": 12.78,
-      "status": "objavljen",
+      "status": "izgubljen",
       "odds": 2.17,
-      "payout": 0,
+      "payout": 0.0,
       "matches": [
         {
           "home": "Konyaspor",
@@ -77,7 +77,9 @@
                 "https://www.fotmob.com/matches/espanyol-vs-villarreal/2wt7o0"
               ]
             ]
-          }
+          },
+          "result_status": "promašen",
+          "final_score": "0:1"
         }
       ],
       "analysis": {
@@ -98,7 +100,8 @@
             "https://stake.games/sports/soccer/spain/la-liga/46797897-villareal-espanyol"
           ]
         ]
-      }
+      },
+      "settled_at_utc": "2026-10-31T01:04:44.903719+00:00"
     },
     {
       "id": "B",
@@ -175,7 +178,7 @@
     }
   ],
   "total_payout": 17.54,
-  "net_change": null,
+  "net_change": -0.72,
   "analysis_status": "A i B objavljeni; B dodan na zahtjev korisnika",
   "selection_method": "Ručna nezavisna AI analiza javnih izvora i ESPN feeda, 30.10.2026.",
   "source_fixture_feed": "collector-feed.json 2026-10-30T15:02:37.821274+00:00",

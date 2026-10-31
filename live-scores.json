@@ -1,6 +1,6 @@
 {
   "date": "2026-10-30",
-  "updated_at_utc": "2026-10-30T21:41:13.882465+00:00",
+  "updated_at_utc": "2026-10-31T01:04:44.903719+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -22,12 +22,13 @@
       "index": 1,
       "home": "Villarreal",
       "away": "Espanyol",
-      "state": "live",
+      "state": "final",
       "score": "0:1",
       "source": "espn-public-unofficial",
       "event_id": "401882817",
       "league": "esp.1",
-      "minute": "84"
+      "minute": null,
+      "result_status": "promašen"
     },
     {
       "ticket": "B",
