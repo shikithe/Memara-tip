@@ -6,10 +6,10 @@
   "bank_before": 181.87,
   "daily_budget": 18.19,
   "daily_stake": 18.19,
-  "bank_after": 163.68,
+  "bank_after": 193.85,
   "bank_after_stakes": 163.68,
-  "provisional": true,
-  "settled": false,
+  "provisional": false,
+  "settled": true,
   "odds_verified": true,
   "odds_verification_note": "Provjeren Betsson API snimak od 31.10.2026. 09:39 UTC putem The Odds API; nije direktna Mozzartbet BiH ponuda niti garancija nepromijenjenih kvota.",
   "tickets": [
@@ -17,9 +17,9 @@
       "id": "A",
       "label": "GLAVNI TIKET — 1X2",
       "stake": 12.73,
-      "status": "objavljen",
+      "status": "dobitan",
       "odds": 2.37,
-      "payout": 0,
+      "payout": 30.17,
       "matches": [
         {
           "home": "Levante",
@@ -79,7 +79,9 @@
                 "https://www.gazzetta.it/en/football/teams/roma/news/30-10-2026/roma-squad-to-face-udinese-dybala-does-not-recover_amp.shtml"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "2:5"
         }
       ],
       "analysis": {
@@ -104,7 +106,8 @@
             "https://github.com/shikithe/Memara-tip/actions/runs/41189421950"
           ]
         ]
-      }
+      },
+      "settled_at_utc": "2026-10-31T20:41:58.955915+00:00"
     },
     {
       "id": "B",
@@ -172,7 +175,9 @@
                 "https://www.freetips.com/football/english-premier-league/tottenham-vs-crystal-palace-betting-tips-20261030-0009/"
               ]
             ]
-          }
+          },
+          "result_status": "promašen",
+          "final_score": "2:0"
         }
       ],
       "analysis": {
@@ -219,8 +224,8 @@
       }
     }
   ],
-  "total_payout": 0.0,
-  "net_change": null,
+  "total_payout": 30.17,
+  "net_change": 11.98,
   "analysis_status": "A i B objavljeni iz svježeg izolovanog kolektora (51 fudbalski kandidat, 33 kvotno uparena). C nedostupan zbog nedostatka svježih NBA player-points ponuda i nedovoljne sigurnosti 4–6 dodatnih parova. Glavni collector-feed.json i dalje ima 30.10; korišten je današnji provjeren GitHub Actions artefakt.",
   "selection_method": "Ručni AI izbor uz nezavisnu provjeru forme, sastava/izostanaka, termina i kvota; bez Python predfiltera.",
   "source_fixture_feed": "GitHub Actions run 41189421950, isolated collector-feed.json, 2026-10-31T09:37:12Z",

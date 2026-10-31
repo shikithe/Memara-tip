@@ -1,6 +1,6 @@
 {
   "date": "2026-10-31",
-  "updated_at_utc": "2026-10-31T17:49:54.752186+00:00",
+  "updated_at_utc": "2026-10-31T20:41:58.955915+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -22,12 +22,13 @@
       "index": 1,
       "home": "Udinese",
       "away": "AS Roma",
-      "state": "live",
-      "score": "0:4",
+      "state": "final",
+      "score": "2:5",
       "source": "espn-public-unofficial",
       "event_id": "401874990",
       "league": "ita.1",
-      "minute": "45"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "B",
@@ -47,12 +48,13 @@
       "index": 1,
       "home": "Tottenham Hotspur",
       "away": "Crystal Palace",
-      "state": "live",
-      "score": "0:0",
+      "state": "final",
+      "score": "2:0",
       "source": "espn-public-unofficial",
       "event_id": "401878761",
       "league": "eng.1",
-      "minute": "19"
+      "minute": null,
+      "result_status": "promašen"
     }
   ],
   "bank_unchanged": true
