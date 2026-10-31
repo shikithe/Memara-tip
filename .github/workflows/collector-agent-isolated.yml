@@ -39,7 +39,11 @@ jobs:
         env:
           THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
         run: |
-          python kvoter/the_odds_api.py --feed /tmp/memara-shared/agent/history-h2h.json --output /tmp/memara-shared/kvoter/odds.json
+          python kvoter/the_odds_api.py \
+            --feed /tmp/memara-shared/agent/history-h2h.json \
+            --output /tmp/memara-shared/kvoter/odds.json \
+            --raw-output /tmp/memara-shared/kvoter/league-odds-raw.json \
+            --offers-output /tmp/memara-shared/kvoter/provider-offers.json
           test -s /tmp/memara-shared/kvoter/odds.json
       - name: Kvoter database, manual matching, and research queue
         env:
