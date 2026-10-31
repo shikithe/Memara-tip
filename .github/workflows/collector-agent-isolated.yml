@@ -168,7 +168,17 @@ jobs:
           git fetch origin main
           git worktree add /tmp/kvoter-manual-pages origin/main
           mkdir -p /tmp/kvoter-manual-pages/kvoter/manual
-          cp "kvoter/unesi rucno/unmatched-fixtures.json" /tmp/kvoter-manual-pages/kvoter/manual/unmatched-fixtures.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          src=Path('/tmp/memara-shared/kvoter/manual-candidates.json')
+          candidates=json.loads(src.read_text())
+          unmatched={'generated_at_utc':candidates.get('generated_at_utc'),
+                     'total':len(candidates['fixtures']),
+                     'fixtures':[{k:v for k,v in f.items() if k!='candidates'} for f in candidates['fixtures']]}
+          Path('/tmp/kvoter-manual-pages/kvoter/manual/unmatched-fixtures.json').write_text(
+              json.dumps(unmatched,ensure_ascii=False,indent=2)+'\\n')
+          PY
           cp /tmp/memara-shared/kvoter/manual-candidates.json /tmp/kvoter-manual-pages/kvoter/manual/manual-candidates.json
           cp /tmp/memara-shared/kvoter/dnevna-lista.txt /tmp/kvoter-manual-pages/kvoter/dnevna-lista.txt
           cd /tmp/kvoter-manual-pages
