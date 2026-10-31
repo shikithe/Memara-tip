@@ -5,6 +5,7 @@ import json
 import os
 from datetime import datetime, timezone
 from pathlib import Path
+from team_identity import same_team
 
 def norm(s):
     return " ".join("".join(c if c.isalnum() else " " for c in str(s or "").casefold()).split())
@@ -21,7 +22,7 @@ def match(fixture, offer, tolerance_minutes=90):
     if not t1 or not t2 or abs((t1-t2).total_seconds())>tolerance_minutes*60:
         return False
     # Strict team matching; do not accept fuzzy matches without manual review.
-    return norm(fixture.get("home"))==norm(offer.get("home")) and norm(fixture.get("away"))==norm(offer.get("away"))
+    return same_team(fixture.get("home"),offer.get("home"),fixture.get("league")) and same_team(fixture.get("away"),offer.get("away"),fixture.get("league"))
 
 def normalize_markets(markets):
     aliases={"h2h":"1X2","1x2":"1X2","match_winner":"1X2",
