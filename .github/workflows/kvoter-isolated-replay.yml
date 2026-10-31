@@ -1,0 +1,71 @@
+name: Kvoter isolated replay from stored databases (NO API)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  kvoter-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: collector-isolated-test-20261030
+          persist-credentials: false
+      - name: Download cached Odds API offers from successful isolated run 8
+        uses: actions/download-artifact@v4
+        with:
+          name: memarasix-isolated-collector-agent
+          run-id: 41196135075
+          github-token: ${{ github.token }}
+          path: /tmp/kvoter-cache
+      - name: Replay Kvoter from persisted Agent history and cached bookmaker offers
+        env:
+          OPENAI_API_KEY: ''
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/kvoter-replay
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          root=Path('/tmp/kvoter-cache')
+          candidates=list(root.rglob('provider-offers.json'))
+          assert len(candidates)==1, f'Expected exactly one cached provider offers file, got {candidates}'
+          offers=json.loads(candidates[0].read_text())
+          assert isinstance(offers.get('offers'),list), 'Invalid cached odds'
+          history=json.loads(Path('agent/active/history-h2h.json').read_text())
+          assert history['fixtures'], 'Agent history database empty'
+          print('REPLAY_INPUT', 'fixtures',len(history['fixtures']), 'cached_offers',len(offers['offers']))
+          Path('/tmp/kvoter-replay/provider-offers.json').write_text(json.dumps(offers))
+          PY
+          python -m unittest discover -s kvoter -p 'test_*.py' -v
+          python kvoter/workflow.py \
+            --history agent/active/history-h2h.json \
+            --offers /tmp/kvoter-replay/provider-offers.json \
+            --database /tmp/kvoter-replay/team-database.json \
+            --manual "kvoter/unesi rucno/aliases.json" \
+            --matched-output /tmp/kvoter-replay/matched-fixtures.json \
+            --unmatched-output /tmp/kvoter-replay/unmatched-fixtures.json \
+            --research-output /tmp/kvoter-replay/research-review.json \
+            --report /tmp/kvoter-replay/match-report.json
+        shell: bash
+      - name: Validate replay and original database isolation
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('/tmp/kvoter-replay')
+          matched=json.loads((p/'matched-fixtures.json').read_text())
+          unmatched=json.loads((p/'unmatched-fixtures.json').read_text())
+          history=json.loads(Path('agent/active/history-h2h.json').read_text())
+          assert matched['total']+unmatched['total']==len(history['fixtures'])
+          print('KVOTER_REPLAY_OK', 'matched',matched['total'],'unmatched',unmatched['total'])
+          PY
+      - name: Upload test results only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kvoter-isolated-replay-no-api
+          path: /tmp/kvoter-replay/
+          if-no-files-found: ignore
