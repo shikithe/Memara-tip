@@ -1,0 +1,15 @@
+{
+  "decisions": [
+    {
+      "fixture_id": "espn:football:ger.1:401884749",
+      "event_id": "aecb9d8c01176616c87d893bee4bc0de",
+      "collector_home": "Borussia Mönchengladbach",
+      "collector_away": "SC Paderborn 07",
+      "odds_home": "Borussia Monchengladbach",
+      "odds_away": "SC Paderborn",
+      "league": "ger.1",
+      "decision": "matched",
+      "issue_number": 6
+    }
+  ]
+}

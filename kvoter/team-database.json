@@ -20,6 +20,18 @@
       ],
       "sources": [],
       "verified": true
+    },
+    {
+      "id": "ger.1-sc-paderborn-07",
+      "league": "ger.1",
+      "names": [
+        "SC Paderborn 07",
+        "SC Paderborn"
+      ],
+      "sources": [
+        "github-issue-6"
+      ],
+      "verified": true
     }
   ]
 }
