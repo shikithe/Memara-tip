@@ -109,7 +109,9 @@ def main():
     p=argparse.ArgumentParser()
     p.add_argument("--feed",default="/shared/agent/history-h2h.json")
     p.add_argument("--output",default="/shared/kvoter/odds.json")
-    p.add_argument("--regions",default="uk,eu")\n    p.add_argument("--raw-output",default="/shared/kvoter/league-odds-raw.json")\n    p.add_argument("--offers-output",default="/shared/kvoter/provider-offers.json")
+    p.add_argument("--regions",default="uk,eu")
+    p.add_argument("--raw-output",default="/shared/kvoter/league-odds-raw.json")
+    p.add_argument("--offers-output",default="/shared/kvoter/provider-offers.json")
     a=p.parse_args()
     history=json.loads(Path(a.feed).read_text(encoding="utf-8"))
     key=os.getenv("THE_ODDS_API_KEY","").strip()
@@ -119,7 +121,10 @@ def main():
     else:
         offers,coverage,errors,raw_events=[],{},[{"stage":"configuration","error":"THE_ODDS_API_KEY not configured"}],[]
         status="missing_api_key"
-    for path,payload in [(a.raw_output,{"source":"the-odds-api-v4","events":raw_events}),(a.offers_output,{"offers":offers})]:\n        dest=Path(path);dest.parent.mkdir(parents=True,exist_ok=True)\n        tmp=dest.with_suffix(".tmp");tmp.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8");os.replace(tmp,dest)\n    result=build(history,offers,source="the-odds-api-v4")
+    for path,payload in [(a.raw_output,{"source":"the-odds-api-v4","events":raw_events}),(a.offers_output,{"offers":offers})]:
+        dest=Path(path);dest.parent.mkdir(parents=True,exist_ok=True)
+        tmp=dest.with_suffix(".tmp");tmp.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8");os.replace(tmp,dest)
+    result=build(history,offers,source="the-odds-api-v4")
     result["provider_status"]=status
     result["provider_coverage"]=coverage
     result["provider_errors"]=errors
