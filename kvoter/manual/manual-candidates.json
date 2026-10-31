@@ -1,23 +1,5 @@
 {
   "generated_at_utc": "2026-10-31T14:29:38.816503+00:00",
-  "total": 1,
-  "fixtures": [
-    {
-      "fixture_id": "espn:football:fra.1:401876414",
-      "league": "fra.1",
-      "home": "Strasbourg",
-      "away": "AJ Auxerre",
-      "start_utc": "2026-11-01T14:00:00Z",
-      "candidates": [
-        {
-          "event_id": "448a1083448ea9dff55bfebf15ff20b4",
-          "home": "Strasbourg",
-          "away": "Auxerre",
-          "start_utc": "2026-11-01T14:00:00Z",
-          "league": "fra.1",
-          "similarity": 0.912
-        }
-      ]
-    }
-  ]
-}
+  "total": 0,
+  "fixtures": []
+}\n
