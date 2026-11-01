@@ -8,7 +8,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const num=n=>Number(n).toLocaleString('bs-BA',{minimumFractionDigits:2,maximumFractionDigits:2});
 const money=n=>num(n)+' €';
 function kickoffLabel(m){
-  const raw=m.start_sarajevo||m.start_utc||m.kickoff;
+  const raw=m.start_sarajevo||m.start_utc||m.datetime||m.kickoff;
   if(!raw)return '🕒 Termin nije dostupan';
   const parsed=new Date(raw);
   if(Number.isNaN(parsed.getTime()))return '🕒 Termin nije potvrđen';
