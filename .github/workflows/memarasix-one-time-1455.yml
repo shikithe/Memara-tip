@@ -29,7 +29,7 @@ jobs:
           import json
           now=datetime.now(ZoneInfo("Europe/Sarajevo"))
           assert now.date().isoformat()=="2026-11-01", "One-time test date passed"
-          assert now.hour==14 and now.minute>=55, "Too early for 14:55 test"
+          assert "14:55" <= now.strftime("%H:%M") <= "15:20", "Outside 14:55–15:20 execution window"
           active=json.loads(Path("listasix-data/active-list.json").read_text())
           assert active.get("date")=="2026-11-01" and active.get("fixtures"), "Missing current ListaSix fixtures"
           print("LISTASIX_ACTIVE",len(active["fixtures"]))
@@ -47,7 +47,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- memarasix-1455-audit.json
+          git add -- memarasix-1455-audit.json data.json
           if ! git diff --cached --quiet; then
             git commit -m 'memarasix: record 14:55 publication validation'
             git pull --rebase origin main
