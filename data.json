@@ -1,32 +1,81 @@
 {
   "date": "2026-11-01",
-  "published": "01.11.2026. u 12:00 (Europe/Sarajevo) — nema dovoljno validiranih tipova za objavu",
-  "publication_type": "awaiting_daily_publication",
+  "published": "01.11.2026. u 15:06 (Europe/Sarajevo) — GitHub objava Tiket A, tržišna analiza",
+  "publication_type": "manual_ai_market_review",
   "bank_before": 193.85,
   "daily_budget": 19.39,
-  "daily_stake": 0,
-  "bank_after": 193.85,
-  "bank_after_stakes": 193.85,
-  "provisional": false,
-  "settled": true,
+  "daily_stake": 12.6,
+  "bank_after": 181.25,
+  "bank_after_stakes": 181.25,
+  "provisional": true,
+  "settled": false,
   "odds_verified": false,
-  "odds_verification_note": "U javnim izvorima postoje indikativne kvote, ali su vrijednosti za iste 1X2 parove bile međusobno neusaglašene i bez potvrđenog jedinstvenog trenutnog bookmaker snimka. Ne objavljuj referentne vrijednosti kao verificirane.",
-  "tickets": [],
+  "odds_verification_note": "Kvotama je potvrđen istorijski bookmaker snapshot (Pinnacle), ali nije potvrđeno da su iste kvote i dalje dostupne pri uplati.",
+  "tickets": [
+    {
+      "id": "A",
+      "label": "GLAVNI TIKET",
+      "odds": 2.22,
+      "stake": 12.6,
+      "status": "objavljen",
+      "matches": [
+        {
+          "home": "Lyon",
+          "away": "Angers",
+          "pick": "1",
+          "odd": 1.43,
+          "datetime": "2026-11-01T16:15:00Z",
+          "research": {
+            "summary": "Lyon je tržišni favorit: Pinnacle 1.43, uz više nezavisnih bookmaker ponuda oko 1.37–1.43.",
+            "pros": "Snažan konsenzus kvota u korist domaćina.",
+            "risks": "Statistika posljednjih pet utakmica, sastavi i povrede nisu nezavisno potvrđeni; kvota je snimak od približno 12:10 po Sarajevu i može se promijeniti.",
+            "conclusion": "Odabir zasnovan na poređenju tržišnih kvota, ne na potvrđenoj prednosti modela.",
+            "sources": [
+              [
+                "ListaSix provider offers",
+                "https://github.com/shikithe/Slavojka/blob/main/shared/kvoter/provider-offers.json"
+              ]
+            ]
+          }
+        },
+        {
+          "home": "Eintracht Frankfurt",
+          "away": "Hamburg SV",
+          "pick": "1",
+          "odd": 1.55,
+          "datetime": "2026-11-01T16:30:00Z",
+          "research": {
+            "summary": "Frankfurt je favorit prema Pinnacle kvoti 1.55, uz više drugih ponuđača približno 1.46–1.55.",
+            "pros": "Široka tržišna saglasnost o statusu favorita domaćina.",
+            "risks": "Nisu nezavisno potvrđeni posljednja forma, izostanci ni očekivani sastavi; snimljene kvote ne garantuju aktuelnu dostupnost.",
+            "conclusion": "Odabir zasnovan na tržišnom konsenzusu, ne na validiranoj statističkoj predikciji.",
+            "sources": [
+              [
+                "ListaSix provider offers",
+                "https://github.com/shikithe/Slavojka/blob/main/shared/kvoter/provider-offers.json"
+              ]
+            ]
+          }
+        }
+      ],
+      "payout": 0
+    }
+  ],
   "pending_ticket_statuses": {
-    "A": "nedostupan",
+    "A": "objavljen",
     "B": "nedostupan",
     "C": "nedostupan"
   },
   "pending_ticket_reasons": {
-    "A": "30 svježih fudbalskih kandidata, ali upoređeni javni prikazi kladioničarskih kvota za Lazio i Frankfurt nisu konzistentni; nije potvrđen jedinstven aktuelni snimak i kompletna validacija.",
-    "B": "Nema dva nezavisno potvrđena kvalitetna para za više od 2,5 gola sa usklađenim aktuelnim kvotama i rizicima.",
-    "C": "Nema 4–6 dodatnih validiranih događaja sa ukupnom kvotom najmanje 10; NBA player-points ponuda je od 29.10. i zastarjela."
+    "A": "",
+    "B": "Nema dovoljno nezavisno provjerenih golova 3+.",
+    "C": "Nema validiranih parova za kombinovanu kvotu najmanje 10."
   },
   "total_payout": 0,
   "net_change": 0,
-  "analysis_status": "01.11.2026. u 12:00 Europe/Sarajevo: glavni kolektor uspješno osvježen u 11:58 sa 30 fudbalskih kandidata i 4 NBA utakmice. A nezavisno razmotren (Lazio–Cagliari i Frankfurt–Hamburg), ali kvote iz javnih prikaza nisu konzistentne između učitanih verzija; B nema dovoljno validiranih gol-tržišta, C nema svježih NBA player-points granica. Nije objavljen nijedan tiket, dnevni ulog 0 €, banka nepromijenjena. Arhiva 31.10. je sačuvana.",
-  "selection_method": "Ručni AI pregled po hijerarhiji A/B/C; bez Python predfiltera. Bez potvrđenih današnjih kvota nema objave.",
-  "source_fixture_feed": "collector-feed.json, 2026-11-01T10:58:21.032871+00:00, 30 football candidates and 4 NBA games",
+  "analysis_status": "01.11.2026: A objavljen na osnovu tržišnog konsenzusa bookmaker kvota i potvrđenog budućeg termina. Nije izvršena potpuna provjera forme, povreda i sastava. B i C nisu objavljeni.",
+  "selection_method": "AI izbor na osnovu ListaSix active-list i poređenja Pinnacle i ostalih bookmaker ponuda; istorijska statistika nije dostupna za nezavisnu provjeru.",
+  "source_fixture_feed": "ListaSix shared/active-list.json 2026-11-01",
   "source_nba_player_points": "collector-output/nba-player-points.json (29.10.2026, stale)",
   "source_statistics_research": "collector-output/statistics-research.json (30.10.2026, stale)"
 }
