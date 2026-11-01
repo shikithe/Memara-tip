@@ -26,7 +26,7 @@ jobs:
           from datetime import datetime
           from zoneinfo import ZoneInfo
           from pathlib import Path
-          import json
+          import json, os
           now=datetime.now(ZoneInfo("Europe/Sarajevo"))
           assert now.date().isoformat()=="2026-11-01", "One-time test date passed"
           assert "14:55" <= now.strftime("%H:%M") <= "15:20", "Outside 14:55–15:20 execution window"
