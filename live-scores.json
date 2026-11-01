@@ -1,6 +1,6 @@
 {
   "date": "2026-11-01",
-  "updated_at_utc": "2026-11-01T16:27:07.404589+00:00",
+  "updated_at_utc": "2026-11-01T16:39:07.681580+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -14,19 +14,19 @@
       "source": "espn-public-unofficial",
       "event_id": "401876418",
       "league": "fra.1",
-      "minute": "12"
+      "minute": "24"
     },
     {
       "ticket": "A",
       "index": 1,
       "home": "Eintracht Frankfurt",
       "away": "Hamburg SV",
-      "state": "scheduled",
+      "state": "live",
       "score": "0:0",
       "source": "espn-public-unofficial",
       "event_id": "401884752",
       "league": "ger.1",
-      "minute": null
+      "minute": "8"
     }
   ],
   "bank_unchanged": true
