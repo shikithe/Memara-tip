@@ -1,0 +1,6 @@
+{
+  "timestamp_utc": "2026-11-01T13:55:49.812285+00:00",
+  "status": "blocked",
+  "reason": "All bookmaker snapshots are older than 60 minutes",
+  "offers_seen": 1499
+}
