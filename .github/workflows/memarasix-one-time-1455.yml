@@ -41,13 +41,15 @@ jobs:
               except (ValueError,UnicodeError):
                   print("HISTORY_NOT_READABLE")
           PY
-      - name: Evaluate safe publication gate
+      - name: Run one-time validated publisher and save audit
+        run: python3 memarasix_1455_publish.py
+      - name: Commit publication audit if changed
         run: |
-          python3 memarasix_publication_gate.py
-          python3 - <<'PY'
-          from memarasix_publication_gate import assess
-          result=assess()
-          if result.startswith("BLOCKED:"):
-              raise SystemExit("Publication blocked safely: "+result)
-          print(result)
-          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- memarasix-1455-audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'memarasix: record 14:55 publication validation'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
