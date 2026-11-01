@@ -1,61 +1,8 @@
 {
-  "date": "2026-10-31",
-  "updated_at_utc": "2026-11-01T10:57:41.115311+00:00",
+  "date": "2026-11-01",
+  "updated_at_utc": "2026-11-01T10:59:39.081887+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
-  "matches": [
-    {
-      "ticket": "A",
-      "index": 0,
-      "home": "Levante",
-      "away": "Atlético Madrid",
-      "state": "final",
-      "score": "0:2",
-      "source": "espn-public-unofficial",
-      "event_id": "401882820",
-      "league": "esp.1",
-      "minute": null,
-      "result_status": "pogođen"
-    },
-    {
-      "ticket": "A",
-      "index": 1,
-      "home": "Udinese",
-      "away": "AS Roma",
-      "state": "final",
-      "score": "2:5",
-      "source": "espn-public-unofficial",
-      "event_id": "401874990",
-      "league": "ita.1",
-      "minute": null,
-      "result_status": "pogođen"
-    },
-    {
-      "ticket": "B",
-      "index": 0,
-      "home": "Chelsea",
-      "away": "Manchester United",
-      "state": "final",
-      "score": "2:0",
-      "source": "espn-public-unofficial",
-      "event_id": "401879248",
-      "league": "eng.1",
-      "minute": null,
-      "result_status": "promašen"
-    },
-    {
-      "ticket": "B",
-      "index": 1,
-      "home": "Tottenham Hotspur",
-      "away": "Crystal Palace",
-      "state": "final",
-      "score": "2:0",
-      "source": "espn-public-unofficial",
-      "event_id": "401878761",
-      "league": "eng.1",
-      "minute": null,
-      "result_status": "promašen"
-    }
-  ],
+  "matches": [],
   "bank_unchanged": true
 }
