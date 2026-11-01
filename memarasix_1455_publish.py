@@ -24,8 +24,8 @@ def remote(path):
 def main():
     now=datetime.now(UTC)
     local=now.astimezone(ZoneInfo("Europe/Sarajevo"))
-    if local.date().isoformat()!="2026-11-01" or not ("14:55"<=local.strftime("%H:%M")<="15:20"):
-        return audit("Outside authorized one-time 2026-11-01 14:55–15:20 Sarajevo window")
+    if not ("15:25"<=local.strftime("%H:%M")<="16:00"):
+        return audit("Outside daily 15:25–16:00 Sarajevo publication window")
     data=load(ROOT/"data.json")
     if data.get("date")!=local.date().isoformat():
         return audit("data.json date does not match today")
