@@ -21,9 +21,9 @@ jobs:
           mkdir -p listasix-data
           python3 - <<'PY'
           import json, urllib.request, pathlib, datetime
-          base="https://raw.githubusercontent.com/shikithe/Slavojka/HEAD/"
+          base="https://raw.githubusercontent.com/shikithe/Slavojka/main/"
           files={"shared/active-list.json":"listasix-data/active-list.json","shared/agent/history-h2h.json":"listasix-data/history-h2h.json"}
-          today=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=1))).date().isoformat()
+          today=datetime.datetime.now(__import__("zoneinfo").ZoneInfo("Europe/Sarajevo")).date().isoformat()
           for source,target in files.items():
               try:
                   with urllib.request.urlopen(base+source, timeout=25) as r:
@@ -35,7 +35,7 @@ jobs:
                       if obj.get("date")!=today or not isinstance(obj.get("fixtures"),list) or not obj["fixtures"]:
                           raise ValueError("active list missing current date or fixtures")
                   else:
-                      if not isinstance(obj,(dict,list)):
+                      if not isinstance(obj,dict) or obj.get("date")!=today or not obj.get("leagues") or not obj.get("fixtures"):
                           raise ValueError("unexpected history format")
                   pathlib.Path(target).write_text(json.dumps(obj,ensure_ascii=False,indent=2)+"\n")
                   print("VALID",source,"->",target)
