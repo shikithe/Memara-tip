@@ -9,7 +9,10 @@ on:
       - 'settle_virtual_tickets.py'
       - 'tests/test_virtual_settlement.py'
   schedule:
-    - cron: '2-59/5 * * * *'
+    # Primary periodic check, UTC (same five-minute frequency in Sarajevo)
+    - cron: '*/5 * * * *'
+    # Offset fallback if GitHub queues or drops primary scheduled checks
+    - cron: '2-59/15 * * * *'
 permissions:
   contents: write
 concurrency:
