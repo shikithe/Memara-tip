@@ -132,7 +132,7 @@ async function checkEspnDirectly(){
  const groups=new Map();
  for(const m of pending){
   const leg=currentData.tickets.find(t=>t.id===m.ticket)?.matches?.[m.index];
-  const day=leg?scoreDate(leg.start_sarajevo||leg.start_utc):null;
+  const day=leg?scoreDate(leg.start_sarajevo||leg.start_utc||leg.datetime):null;
   if(!day||!/^[a-z0-9.]+$/i.test(m.league))continue;
   const key=m.league+'|'+day;
   if(!groups.has(key))groups.set(key,[]);
@@ -200,7 +200,7 @@ let pollBusy=false;
 async function pollPublishedScores(force=false){
   if(document.hidden||pollBusy)return;
   const now=Date.now();
-  if(!force&&now-lastPollStarted<300000)return;
+  if(!force&&now-lastPollStarted<60000)return;
   pollBusy=true;
   lastPollStarted=now;
   try{
@@ -209,7 +209,7 @@ async function pollPublishedScores(force=false){
     await checkEspnDirectly();
   }finally{pollBusy=false}
 }
-setInterval(()=>{pollPublishedScores()},30000);
+setInterval(()=>{pollPublishedScores()},15000);
 // Re-render at local calendar rollover even if the published JSON has not changed.
 let lastOfferDay=localOfferDate();
 setInterval(()=>{const day=localOfferDate();if(day!==lastOfferDay){lastOfferDay=day;if(currentData)render(currentData,false,'out')}},30000);
