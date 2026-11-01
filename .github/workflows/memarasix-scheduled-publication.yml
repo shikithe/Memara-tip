@@ -1,13 +1,13 @@
-name: MemaraSix publication readiness (read-only)
+name: MemaraSix daily 15:25 publication validation
 on:
   workflow_dispatch:
   schedule:
     # Sarajevo 15:25 is 13:25 UTC in summer and 14:25 UTC in winter.
     - cron: '25 13,14 * * *'
 permissions:
-  contents: read
+  contents: write
 concurrency:
-  group: memarasix-publication-readiness
+  group: memarasix-publication-daily
   cancel-in-progress: false
 jobs:
   readiness:
@@ -37,6 +37,17 @@ jobs:
       - name: Run publication readiness tests
         if: steps.gate.outputs.enabled == 'true'
         run: python -m unittest -v test_memarasix_publication_gate.py
-      - name: Check publication readiness without modifying tickets or bank
+      - name: Validate and attempt publication from ListaSix
         if: steps.gate.outputs.enabled == 'true'
-        run: python memarasix_publication_gate.py
+        run: python memarasix_1455_publish.py
+      - name: Commit publication audit
+        if: steps.gate.outputs.enabled == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- memarasix-1455-audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'memarasix: daily publication validation audit'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
