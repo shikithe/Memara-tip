@@ -34,7 +34,7 @@ def rollover(live, archive, today):
         raise ValueError("Invalid settled bank")
     empty={
       "date":today,
-      "published":"Čeka objavu: 13:00 vikendom / 15:30 radnim danima",
+      "published":"Čeka validnu objavu: 12:00 Europe/Sarajevo",
       "publication_type":"awaiting_daily_publication",
       "bank_before":bank,
       "daily_stake":0,
