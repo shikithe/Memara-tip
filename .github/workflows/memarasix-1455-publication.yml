@@ -1,0 +1,38 @@
+name: MemaraSix one-time GitHub 14:55 publisher
+on:
+  workflow_dispatch:
+  schedule:
+    # 2026-11-01 14:55 Europe/Sarajevo = 13:55 UTC. Date checked in Python.
+    - cron: '55 13 1 11 *'
+permissions:
+  contents: write
+concurrency:
+  group: memarasix-main-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Attempt ListaSix-backed publication at 14:55 Sarajevo
+        run: python3 memarasix_1455_publish.py
+      - name: Persist audit and any independently verified publication
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- memarasix-1455-audit.json data.json
+          if ! git diff --cached --quiet; then
+            git commit -m "memarasix: 14:55 publication attempt and audit [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: memarasix-1455-publication-audit
+          path: memarasix-1455-audit.json
+          if-no-files-found: warn
