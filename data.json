@@ -5,10 +5,10 @@
   "bank_before": 193.85,
   "daily_budget": 19.39,
   "daily_stake": 12.6,
-  "bank_after": 181.25,
+  "bank_after": 209.22,
   "bank_after_stakes": 181.25,
-  "provisional": true,
-  "settled": false,
+  "provisional": false,
+  "settled": true,
   "odds_verified": false,
   "odds_verification_note": "Kvotama je potvrđen istorijski bookmaker snapshot (Pinnacle), ali nije potvrđeno da su iste kvote i dalje dostupne pri uplati.",
   "tickets": [
@@ -17,7 +17,7 @@
       "label": "GLAVNI TIKET",
       "odds": 2.22,
       "stake": 12.6,
-      "status": "objavljen",
+      "status": "dobitan",
       "matches": [
         {
           "home": "Lyon",
@@ -36,7 +36,9 @@
                 "https://github.com/shikithe/Slavojka/blob/main/shared/kvoter/provider-offers.json"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "2:0"
         },
         {
           "home": "Eintracht Frankfurt",
@@ -55,10 +57,13 @@
                 "https://github.com/shikithe/Slavojka/blob/main/shared/kvoter/provider-offers.json"
               ]
             ]
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "3:1"
         }
       ],
-      "payout": 0
+      "payout": 27.97,
+      "settled_at_utc": "2026-11-01T18:43:18.181807+00:00"
     }
   ],
   "pending_ticket_statuses": {
@@ -71,8 +76,8 @@
     "B": "Nema dovoljno nezavisno provjerenih golova 3+.",
     "C": "Nema validiranih parova za kombinovanu kvotu najmanje 10."
   },
-  "total_payout": 0.0,
-  "net_change": null,
+  "total_payout": 27.97,
+  "net_change": 15.37,
   "analysis_status": "01.11.2026: A objavljen na osnovu tržišnog konsenzusa bookmaker kvota i potvrđenog budućeg termina. Nije izvršena potpuna provjera forme, povreda i sastava. B i C nisu objavljeni.",
   "selection_method": "AI izbor na osnovu ListaSix active-list i poređenja Pinnacle i ostalih bookmaker ponuda; istorijska statistika nije dostupna za nezavisnu provjeru.",
   "source_fixture_feed": "ListaSix shared/active-list.json 2026-11-01",
