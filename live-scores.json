@@ -1,6 +1,6 @@
 {
   "date": "2026-11-01",
-  "updated_at_utc": "2026-11-01T16:25:29.204707+00:00",
+  "updated_at_utc": "2026-11-01T16:26:00.036475+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -14,7 +14,7 @@
       "source": "espn-public-unofficial",
       "event_id": "401876418",
       "league": "fra.1",
-      "minute": "10"
+      "minute": "11"
     },
     {
       "ticket": "A",
