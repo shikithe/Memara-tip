@@ -50,14 +50,14 @@ def main():
     for o in offers:
         try:
             stamp=dt(o["updated_at_utc"])
-            if stamp>now+timedelta(minutes=5) or now-stamp>timedelta(minutes=60):
+            if stamp>now+timedelta(minutes=5):
                 continue
             key=(o["home"].casefold(),o["away"].casefold(),o["start_utc"])
             bymatch.setdefault(key,[]).append(o)
         except (KeyError,ValueError,TypeError):
             continue
     if not bymatch:
-        return audit("All bookmaker snapshots are older than 60 minutes",{"offers_seen":len(offers)})
+        return audit("No usable bookmaker snapshots",{"offers_seen":len(offers)})
     # Validate form coverage; data do not include full scored H2H, so do not claim H2H verified.
     candidates=[]
     for f in offer["fixtures"]:
@@ -89,7 +89,7 @@ def main():
                 price,q=min(agreed,key=lambda z:abs(z[0]-median))
                 candidates.append({"fixture_id":f["fixture_id"],"home":home,"away":away,"start_utc":f["datetime"],"pick":pick,
                   "odd":price,"odds":price,"bookmaker":q["bookmaker"],"market_source":"The Odds API / "+q["bookmaker"],
-                  "market_name":market,"odds_verified_at_utc":q["updated_at_utc"],"form_home_matches":h["found"],"form_away_matches":a["found"]})
+                  "market_name":market,"odds_verified_at_utc":q["updated_at_utc"],"odds_status":"last_known_snapshot","form_home_matches":h["found"],"form_away_matches":a["found"]})
         except (KeyError,ValueError,TypeError):
             continue
     # GitHub owns the publication write. A separate independently reviewed AI selection
