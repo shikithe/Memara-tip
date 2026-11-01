@@ -5,23 +5,20 @@
   "project": "MAIN MemaraSix",
   "repository": "shikithe/Memara-tip",
   "timezone": "Europe/Sarajevo",
-  "phase": "09:00 weekend research",
-  "status": "NACRT_NEKOMPLETAN_CEKA_DANASNJI_COLLECTOR_I_POTVRDJENE_KVOTE",
+  "phase": "12:00 weekend validation",
+  "status": "BEZ_OBJAVE_NEDOVOLJNO_VERIFIKOVANIH_KVOTA",
   "publication_allowed": false,
   "not_betting_advice": true,
   "input_audit": {
     "collector_feed": {
       "path": "collector-feed.json",
-      "date": "2026-10-31",
-      "generated_at_utc": "2026-10-31T13:14:35.835607+00:00",
-      "fresh_for_today": false,
+      "date": "2026-11-01",
+      "generated_at_utc": "2026-11-01T10:58:21.032871+00:00",
+      "fresh_for_today": true,
       "football_candidates": 30,
-      "nba_games": 9,
-      "nba_player_watchlist": 12,
-      "football_candidates_after_2026_11_01_13_from_feed": 0,
-      "nba_games_after_2026_11_01_13_from_feed": 2,
+      "nba_games": 4,
       "odds_verified": false,
-      "reason": "31 Oct football fixtures have already passed. Only two NBA fixtures for Nov 1 evening appear in yesterday's feed; revalidated externally but not today's fresh feed."
+      "reason": "Glavni kolektor uspješno osvježen u 11:58 Sarajevo; ne sadrži potvrđene kladioničarske kvote."
     },
     "nba_player_points": {
       "path": "collector-output/nba-player-points.json",
@@ -43,14 +40,14 @@
     },
     "collector_workflow": {
       "path": ".github/workflows/memarasix-collector.yml",
-      "morning_window": "09:15-10:15 Europe/Sarajevo",
+      "morning_window": "09:00-11:55 Europe/Sarajevo",
       "recovery_window": "12:30-14:45 Europe/Sarajevo",
       "note": "09:00 research precedes the scheduled 09:15 refresh; a later feed is not guaranteed by this research."
     },
     "noon_nba_sync": "NBA prices may change around 12:00; any morning data is provisional, not final."
   },
   "rules": {
-    "earliest_publication_local": "2026-11-01T13:00:00+01:00",
+    "earliest_publication_local": "2026-11-01T12:00:00+01:00",
     "all_events_must_start_after_publication": true,
     "A": {
       "sport": "football",
@@ -60,8 +57,9 @@
     "B": {
       "sport": "football",
       "different_events_from_A": true,
-      "min_total_decimal_odds": 3,
-      "status": "unavailable_without_verified_markets"
+      "min_total_decimal_odds": 2,
+      "status": "unavailable_without_verified_markets",
+      "target_total_decimal_odds": "2.00-3.00"
     },
     "C": {
       "name": "Keš kolica",
@@ -210,26 +208,25 @@
     }
   ],
   "analysis_gaps": [
-    "Today 2026-11-01 collector-feed.json not yet generated",
-    "Today 2026-11-01 NBA player_points offers with bookmaker and timestamp absent",
-    "No independently validated live odds for A/B/C",
-    "No confirmed starting XIs for football fixtures",
-    "No player-points line, player minute projection or Mozzartbet BiH confirmation for NBA",
-    "No independent xG/shots dataset validated in this run"
+    "Danas je potvrđeno 30 fudbalskih kandidata, ali ne i usklađen snimak aktuelnih kladioničarskih kvota",
+    "Javni prikazi za Lazio–Cagliari i Frankfurt–Hamburg sadrže različite cijene između pretrage i otvorene stranice; ne zaključavati proizvoljnu kvotu",
+    "Nema dovoljno potvrđenih gol-tržišta za B",
+    "NBA player-points snapshot 29.10 nije današnji",
+    "Nisu zvanično potvrđeni svi sastavi niti dokazana prematch xG baza"
   ],
   "ticket_drafts": {
     "A": {
-      "status": "NEDOSTUPAN",
+      "status": "NEDOSTUPAN_NIJE_OBJAVLJEN",
       "events": [],
       "verified_total_odds": null
     },
     "B": {
-      "status": "NEDOSTUPAN",
+      "status": "NEDOSTUPAN_NIJE_OBJAVLJEN",
       "events": [],
       "verified_total_odds": null
     },
     "C": {
-      "status": "NEDOSTUPAN",
+      "status": "NEDOSTUPAN_NIJE_OBJAVLJEN",
       "events": [],
       "verified_total_odds": null
     }
@@ -239,7 +236,10 @@
     "Verified today and post-13:00 fixture times from independent sources",
     "Reviewed team news and injuries for selected football fixtures and NBA candidate",
     "Recorded candidates only, no ticket publication or bank changes",
-    "Saved only weekend-research.json draft"
+    "Saved only weekend-research.json draft",
+    "01.11.2026. glavni collector-feed.json osvježen sa 30 fudbalskih kandidata i 4 NBA utakmice",
+    "Provjerene javne kvote i rizici za Lazio–Cagliari i Frankfurt–Hamburg; neusaglašeni snimci ne dozvoljavaju zaključavanje jedinstvene potvrđene kvote",
+    "U 12:00 GitHub data.json prikazuje sve tri nedostupne divizije, bez uloga; banka ostala 193,85 €, archive.json netaknut"
   ],
   "protected_files_unchanged": [
     "data.json",
@@ -249,8 +249,7 @@
     "previously settled tickets"
   ],
   "next_required_checks": [
-    "After 09:15 verify new collector-feed.json for 2026-11-01",
-    "At or after noon check refreshed NBA player_points market, line, bookmaker, odds, capture time and Mozzartbet BiH availability",
-    "Before 13:00 verify lineups, independently checked market prices and distinct event combinations; otherwise do not publish"
+    "Sutrašnji kolektor od 09:00; svježina kvota i potvrda tačnog tržišta prije 12:00",
+    "Samo nakon stvarne potvrđene objave smiju se knjižiti ulog i isplata"
   ]
 }
