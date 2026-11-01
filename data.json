@@ -1,235 +1,32 @@
 {
-  "date": "2026-10-31",
-  "published": "31.10.2026. u 12:00 (Europe/Sarajevo)",
-  "published_at_utc": "2026-10-31T11:00:33.550Z",
-  "publication_type": "main_validated_partial_publication",
-  "bank_before": 181.87,
-  "daily_budget": 18.19,
-  "daily_stake": 18.19,
+  "date": "2026-11-01",
+  "published": "Čeka validnu objavu za 01.11.2026. u 12:00 (Europe/Sarajevo)",
+  "publication_type": "awaiting_daily_publication",
+  "bank_before": 193.85,
+  "daily_budget": 19.39,
+  "daily_stake": 0,
   "bank_after": 193.85,
-  "bank_after_stakes": 163.68,
+  "bank_after_stakes": 193.85,
   "provisional": false,
   "settled": true,
-  "odds_verified": true,
-  "odds_verification_note": "Provjeren Betsson API snimak od 31.10.2026. 09:39 UTC putem The Odds API; nije direktna Mozzartbet BiH ponuda niti garancija nepromijenjenih kvota.",
-  "tickets": [
-    {
-      "id": "A",
-      "label": "GLAVNI TIKET — 1X2",
-      "stake": 12.73,
-      "status": "dobitan",
-      "odds": 2.37,
-      "payout": 30.17,
-      "matches": [
-        {
-          "home": "Levante",
-          "away": "Atlético Madrid",
-          "pick": "2",
-          "odd": 1.5,
-          "start_utc": "2026-10-31T13:00:00Z",
-          "start_sarajevo": "2026-10-31T13:00:00+00:00",
-          "fixture_id": "espn:football:esp.1:401882820",
-          "market_source": "Betsson via The Odds API v4 — javni API snapshot; NIJE potvrđena Mozzartbet BiH kvota",
-          "market_name": "1X2",
-          "market_snapshot_date": "2026-10-31",
-          "odds_verified_at_utc": "2026-10-31T09:39:27Z",
-          "odds_snapshot_artifact_url": "https://github.com/shikithe/Memara-tip/actions/runs/41189421950",
-          "research": {
-            "summary": "Atlético drugi u LaLigi sa 25 bodova iz 10 utakmica; pet uzastopnih ligaških pobjeda. Levante 15. sa 10 bodova, primio oko 1,9 golova po utakmici.",
-            "pros": "Atlético ima stabilniju odbranu i bolje rezultate na gostovanjima; Levante oslabljen u veznom redu.",
-            "risks": "Le Normand suspendovan, gostujuća utakmica; Levante je dao gol na šest uzastopnih mečeva, a početnih XI nema do pred početak.",
-            "sources": [
-              [
-                "Pregled i forma",
-                "https://pitchlabstats.com/match/2026-10-31-levante-ath-madrid"
-              ],
-              [
-                "Izostanci i sastavi",
-                "https://alineacioneshoy.es/laliga/levante-atletico-madrid-31-10-2026"
-              ]
-            ]
-          },
-          "result_status": "pogođen",
-          "final_score": "0:2"
-        },
-        {
-          "home": "Udinese",
-          "away": "AS Roma",
-          "pick": "2",
-          "odd": 1.58,
-          "start_utc": "2026-10-31T17:00:00Z",
-          "start_sarajevo": "2026-10-31T17:00:00+00:00",
-          "fixture_id": "espn:football:ita.1:401874990",
-          "market_source": "Betsson via The Odds API v4 — javni API snapshot; NIJE potvrđena Mozzartbet BiH kvota",
-          "market_name": "1X2",
-          "market_snapshot_date": "2026-10-31",
-          "odds_verified_at_utc": "2026-10-31T09:39:49Z",
-          "odds_snapshot_artifact_url": "https://github.com/shikithe/Memara-tip/actions/runs/41189421950",
-          "research": {
-            "summary": "Roma bez poraza u devet ligaških utakmica (6-3-0), Udinese sedam bez pobjede i četiri uzastopna domaća poraza. Udinese 317 minuta bez pogotka.",
-            "pros": "Roma ima snažniji napad i odbranu; potvrđeno iz službenog pregleda Serie A i ESPN istorije.",
-            "risks": "Roma bez Dybale, Svilara, Konéa i Pellegrinija; Udinese je dobio prethodni domaći H2H protiv Rome, a Roma je često remizirala u gostima.",
-            "sources": [
-              [
-                "Lega Serie A, 30.10.",
-                "https://en.legaseriea.it/serie-a/news/roma-visit-udinese-seeking-to-close-top-two-gap"
-              ],
-              [
-                "Roma spisak i izostanci",
-                "https://www.gazzetta.it/en/football/teams/roma/news/30-10-2026/roma-squad-to-face-udinese-dybala-does-not-recover_amp.shtml"
-              ]
-            ]
-          },
-          "result_status": "pogođen",
-          "final_score": "2:5"
-        }
-      ],
-      "analysis": {
-        "summary": "Ručna analiza dva favorita iz današnjeg izolovanog ESPN kolektora (51 fudbalski kandidat) i provjerenih Betsson tržišnih API snimaka.",
-        "reasons": [
-          "Atlético: bolja ligaška forma i defanziva od Levantea.",
-          "Roma: neporažena u ligi; Udinese bez pobjede sedam mečeva."
-        ],
-        "risks": "Oba tipa su gostujuće pobjede. Atlético ima suspendovanog štopera, Roma više ključnih izostanaka.",
-        "limits": "Kvote 1,50 i 1,58 su Betsson preko The Odds API, ne Mozzartbet BiH; očekivani sastavi nisu potvrđeni. Nema nezavisno potvrđenog pozitivnog EV.",
-        "sources": [
-          [
-            "Atletico/Levante",
-            "https://pitchlabstats.com/match/2026-10-31-levante-ath-madrid"
-          ],
-          [
-            "Lega Serie A",
-            "https://en.legaseriea.it/serie-a/news/roma-visit-udinese-seeking-to-close-top-two-gap"
-          ],
-          [
-            "GitHub Kvoter snimak",
-            "https://github.com/shikithe/Memara-tip/actions/runs/41189421950"
-          ]
-        ]
-      },
-      "settled_at_utc": "2026-10-31T20:41:58.955915+00:00"
-    },
-    {
-      "id": "B",
-      "label": "GOLOVI 3+ — TIKET B",
-      "stake": 5.46,
-      "status": "izgubljen",
-      "odds": 2.69,
-      "payout": 0.0,
-      "matches": [
-        {
-          "home": "Chelsea",
-          "away": "Manchester United",
-          "pick": "3+",
-          "odd": 1.61,
-          "start_utc": "2026-10-31T12:30:00Z",
-          "start_sarajevo": "2026-10-31T12:30:00+00:00",
-          "fixture_id": "espn:football:eng.1:401879248",
-          "market_source": "Betsson via The Odds API v4 — javni API snapshot; NIJE potvrđena Mozzartbet BiH kvota",
-          "market_name": "3+",
-          "market_snapshot_date": "2026-10-31",
-          "odds_verified_at_utc": "2026-10-31T09:39:41Z",
-          "odds_snapshot_artifact_url": "https://github.com/shikithe/Memara-tip/actions/runs/41189421950",
-          "research": {
-            "summary": "Chelsea postiže 2,13 i prima 1,88 golova po prvenstvenoj utakmici; United postiže 1,25 i prima 1,63. Oba tima imaju probleme u odbrani.",
-            "pros": "Chelsea ima samo jedan clean sheet u posljednjih osam ligaških mečeva; United osam utakmica bez pobjede i ranjivu odbranu.",
-            "risks": "João Pedro i prvi golman Martínez odsutni; United može igrati oprezno, a očekivani sastavi nisu zvanični.",
-            "sources": [
-              [
-                "Aktuelna analiza",
-                "https://www.theguardian.com/football/2026/oct/31/how-to-watch-premier-league-chelsea-manchester-united"
-              ],
-              [
-                "Forma i izostanci",
-                "https://legalbet.com/game-center/chelsea-manchester-united-31-10-2026/"
-              ]
-            ]
-          },
-          "result_status": "promašen",
-          "final_score": "2:0"
-        },
-        {
-          "home": "Tottenham Hotspur",
-          "away": "Crystal Palace",
-          "pick": "3+",
-          "odd": 1.67,
-          "start_utc": "2026-10-31T17:30:00Z",
-          "start_sarajevo": "2026-10-31T17:30:00+00:00",
-          "fixture_id": "espn:football:eng.1:401878761",
-          "market_source": "Betsson via The Odds API v4 — javni API snapshot; NIJE potvrđena Mozzartbet BiH kvota",
-          "market_name": "3+",
-          "market_snapshot_date": "2026-10-31",
-          "odds_verified_at_utc": "2026-10-31T09:39:42Z",
-          "odds_snapshot_artifact_url": "https://github.com/shikithe/Memara-tip/actions/runs/41189421950",
-          "research": {
-            "summary": "Crystal Palace primio 19 golova u osam ligaških mečeva, a pet od posljednjih sedam ligaških utakmica imalo je četiri ili više golova. Tottenham je pobijedio Chelsea 2:0.",
-            "pros": "Palace ima probleme u zadnjoj liniji, Tottenham ima ofanzivni kvalitet kod kuće; predviđanja javnih analiza naginju tržištu 3+.",
-            "risks": "Tottenham bez Maddisona, Simonsa i drugih važnih igrača; Tottenham je ove sezone imao i utakmice bez postignutog gola. Nema potvrđenih XI.",
-            "sources": [
-              [
-                "Forma i golovi",
-                "https://www.forebet.com/en/football-match-previews/31672-tottenham-set-for-capital-clash-with-crystal-palace-after-chelsea-boost"
-              ],
-              [
-                "Izostanci i tržište",
-                "https://www.freetips.com/football/english-premier-league/tottenham-vs-crystal-palace-betting-tips-20261030-0009/"
-              ]
-            ]
-          },
-          "result_status": "promašen",
-          "final_score": "2:0"
-        }
-      ],
-      "analysis": {
-        "summary": "Dva odvojena engleska prematch susreta sa provjerenim Betsson kvotama za više od 2,5 golova.",
-        "reasons": [
-          "Chelsea–United: odbrambeni problemi i visoki prosjeci primljenih golova.",
-          "Tottenham–Palace: Palace primio 19 golova u osam ligaških mečeva."
-        ],
-        "risks": "Rizik sporog ritma i slabije realizacije; oba domaćina imaju ofanzivne izostanke.",
-        "limits": "Kvote 1,61 i 1,67 su The Odds API / Betsson, ne Mozzartbet BiH; zbirna kvota 2,6887 prikazana kao 2,69; bez potvrđenih XI i bez garancije.",
-        "sources": [
-          [
-            "Chelsea–United",
-            "https://legalbet.com/game-center/chelsea-manchester-united-31-10-2026/"
-          ],
-          [
-            "Tottenham–Palace",
-            "https://www.forebet.com/en/football-match-previews/31672-tottenham-set-for-capital-clash-with-crystal-palace-after-chelsea-boost"
-          ],
-          [
-            "GitHub Kvoter snimak",
-            "https://github.com/shikithe/Memara-tip/actions/runs/41189421950"
-          ]
-        ]
-      },
-      "settled_at_utc": "2026-10-31T17:49:54.752186+00:00"
-    },
-    {
-      "id": "C",
-      "label": "KEŠ KOLICA — NEDOSTUPAN",
-      "stake": 0,
-      "status": "preskočen",
-      "odds": null,
-      "payout": 0,
-      "matches": [],
-      "analysis": {
-        "summary": "Nije validirano 4–6 nezavisnih kvalitetnih dodatnih događaja za ukupnu kvotu najmanje 10. Nema svježih NBA player-points granica i kvota za 31.10.",
-        "reasons": [
-          "Posljednji NBA player-points snimak u glavnoj grani je od 29.10, nije današnji.",
-          "Izolovani kolektor 31.10 sadrži sedam NBA utakmica, ali nema validiranih NBA player-points ponuda.",
-          "Razmotreni dodatni fudbalski favoriti Bayer, Ajax, Heerenveen i Aston Villa imaju znatne kadrovske, H2H ili taktičke rizike; ne forsirati C."
-        ],
-        "limits": "Nema virtuelnog uloga; preskočen tiket ne mijenja banku."
-      }
-    }
-  ],
-  "total_payout": 30.17,
-  "net_change": 11.98,
-  "analysis_status": "A i B objavljeni iz svježeg izolovanog kolektora (51 fudbalski kandidat, 33 kvotno uparena). C nedostupan zbog nedostatka svježih NBA player-points ponuda i nedovoljne sigurnosti 4–6 dodatnih parova. Glavni collector-feed.json i dalje ima 30.10; korišten je današnji provjeren GitHub Actions artefakt.",
-  "selection_method": "Ručni AI izbor uz nezavisnu provjeru forme, sastava/izostanaka, termina i kvota; bez Python predfiltera.",
-  "source_fixture_feed": "GitHub Actions run 41189421950, isolated collector-feed.json, 2026-10-31T09:37:12Z",
-  "source_independent_analysis": "Agent history-h2h.json, izolovani artefakt 31.10; nepotpuni ESPN istorijski podaci.",
-  "source_nba_player_points": "29.10.2026. zastarjelo; nijedan današnji validiran NBA player-points market.",
-  "source_statistics_research": "ESPN agent + Lega Serie A, Guardian, Forebet i drugi izvori navedeni uz svaki par."
+  "odds_verified": false,
+  "odds_verification_note": "Nisu pronađene svježe potvrđene kladioničarske kvote iz današnje kolektorske ponude; ne koristiti stare Betsson ili NBA kvote.",
+  "tickets": [],
+  "pending_ticket_statuses": {
+    "A": "nedostupan",
+    "B": "nedostupan",
+    "C": "nedostupan"
+  },
+  "pending_ticket_reasons": {
+    "A": "Nema svježe današnje kolektorske liste sa validiranim 1X2 kvotama i terminima.",
+    "B": "Nema svježe današnje kolektorske liste sa validiranim tržištem 3+ i kvotama.",
+    "C": "Nema 4–6 dodatnih provjerenih događaja ni današnjih NBA player-points granica i kvota za ukupnu kvotu najmanje 10."
+  },
+  "total_payout": 0,
+  "net_change": 0,
+  "analysis_status": "01.11.2026: prethodni dan je već arhiviran. Danas nije objavljen nijedan tiket jer glavni collector-feed.json i izolovani aktivni feed nose datum 31.10, NBA player-points i statistika su zastarjeli, a tržišta/kvote za današnji dan nisu nezavisno potvrđeni. Provjera je obavljena prije planiranog termina 12:00; nijedan neprovjeren tiket se ne objavljuje.",
+  "selection_method": "Ručni AI pregled po hijerarhiji A/B/C; bez Python predfiltera. Bez potvrđenih današnjih kvota nema objave.",
+  "source_fixture_feed": "collector-feed.json (31.10.2026, stale); collector/active/collector-feed.json (31.10.2026, stale)",
+  "source_nba_player_points": "collector-output/nba-player-points.json (29.10.2026, stale)",
+  "source_statistics_research": "collector-output/statistics-research.json (30.10.2026, stale)"
 }
