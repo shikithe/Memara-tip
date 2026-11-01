@@ -1,6 +1,9 @@
 name: MemaraSix one-time 14:55 publication attempt
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'memarasix-1455-trigger.txt'
   schedule:
     - cron: '55 13 1 11 *'
 permissions:
@@ -10,7 +13,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publish-attempt:
-    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '55 13 1 11 *'
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'push' || github.event.schedule == '55 13 1 11 *'
     runs-on: ubuntu-latest
     timeout-minutes: 12
     steps:
