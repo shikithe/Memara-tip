@@ -100,7 +100,7 @@ def run(source="data.json",output="live-scores.json"):
     dates=set()
     for _,_,m in matches:
         try:
-            start=dt(m.get("start_sarajevo") or m["start_utc"])
+            start=dt(m.get("start_sarajevo") or m.get("start_utc") or m["datetime"])
             if abs((now-start).total_seconds())<=36*3600:
                 dates.add(start.astimezone(SAR).strftime("%Y%m%d"))
         except (KeyError,ValueError,TypeError):
@@ -126,7 +126,7 @@ def run(source="data.json",output="live-scores.json"):
         record={"ticket":ticket,"index":index,"home":m.get("home"),
                 "away":m.get("away"),"state":"unverified"}
         try:
-            kickoff=dt(m.get("start_sarajevo") or m["start_utc"])
+            kickoff=dt(m.get("start_sarajevo") or m.get("start_utc") or m["datetime"])
             candidates=[e for e in all_events
                 if norm(e["home"])==norm(m.get("home")) and norm(e["away"])==norm(m.get("away"))
                 and abs((e["start"]-kickoff).total_seconds())<=5400]
