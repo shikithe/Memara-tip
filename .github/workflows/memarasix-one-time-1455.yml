@@ -1,0 +1,53 @@
+name: MemaraSix one-time 14:55 publication attempt
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '55 13 1 11 *'
+permissions:
+  contents: write
+concurrency:
+  group: memarasix-one-time-publication-2026-11-01
+  cancel-in-progress: false
+jobs:
+  publish-attempt:
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '55 13 1 11 *'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify exact local date and available ListaSix data
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python3 - <<'PY'
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          from pathlib import Path
+          import json
+          now=datetime.now(ZoneInfo("Europe/Sarajevo"))
+          assert now.date().isoformat()=="2026-11-01", "One-time test date passed"
+          assert now.hour==14 and now.minute>=55, "Too early for 14:55 test"
+          active=json.loads(Path("listasix-data/active-list.json").read_text())
+          assert active.get("date")=="2026-11-01" and active.get("fixtures"), "Missing current ListaSix fixtures"
+          print("LISTASIX_ACTIVE",len(active["fixtures"]))
+          history=Path("listasix-data/history-h2h.json")
+          if history.exists():
+              try:
+                  h=json.loads(history.read_text())
+                  print("HISTORY_AVAILABLE",bool(h.get("leagues")))
+              except (ValueError,UnicodeError):
+                  print("HISTORY_NOT_READABLE")
+          PY
+      - name: Evaluate safe publication gate
+        run: |
+          python3 memarasix_publication_gate.py
+          python3 - <<'PY'
+          from memarasix_publication_gate import assess
+          result=assess()
+          if result.startswith("BLOCKED:"):
+              raise SystemExit("Publication blocked safely: "+result)
+          print(result)
+          PY
