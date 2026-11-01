@@ -71,8 +71,8 @@
     "B": "Nema dovoljno nezavisno provjerenih golova 3+.",
     "C": "Nema validiranih parova za kombinovanu kvotu najmanje 10."
   },
-  "total_payout": 0,
-  "net_change": 0,
+  "total_payout": 0.0,
+  "net_change": null,
   "analysis_status": "01.11.2026: A objavljen na osnovu tržišnog konsenzusa bookmaker kvota i potvrđenog budućeg termina. Nije izvršena potpuna provjera forme, povreda i sastava. B i C nisu objavljeni.",
   "selection_method": "AI izbor na osnovu ListaSix active-list i poređenja Pinnacle i ostalih bookmaker ponuda; istorijska statistika nije dostupna za nezavisnu provjeru.",
   "source_fixture_feed": "ListaSix shared/active-list.json 2026-11-01",
