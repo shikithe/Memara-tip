@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: '20,40 8 * * *'
     - cron: '0 9,10 * * *'
+    # Refresh before 15:25 publication (14:55 Sarajevo)
+    - cron: '55 12,13 * * *'
 permissions:
   contents: write
 concurrency:
