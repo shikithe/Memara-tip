@@ -1,6 +1,6 @@
 {
   "date": "2026-11-01",
-  "published": "Čeka validnu objavu za 01.11.2026. u 12:00 (Europe/Sarajevo)",
+  "published": "01.11.2026. u 12:00 (Europe/Sarajevo) — nema dovoljno validiranih tipova za objavu",
   "publication_type": "awaiting_daily_publication",
   "bank_before": 193.85,
   "daily_budget": 19.39,
@@ -10,7 +10,7 @@
   "provisional": false,
   "settled": true,
   "odds_verified": false,
-  "odds_verification_note": "Nisu pronađene svježe potvrđene kladioničarske kvote iz današnje kolektorske ponude; ne koristiti stare Betsson ili NBA kvote.",
+  "odds_verification_note": "U javnim izvorima postoje indikativne kvote, ali su vrijednosti za iste 1X2 parove bile međusobno neusaglašene i bez potvrđenog jedinstvenog trenutnog bookmaker snimka. Ne objavljuj referentne vrijednosti kao verificirane.",
   "tickets": [],
   "pending_ticket_statuses": {
     "A": "nedostupan",
@@ -18,15 +18,15 @@
     "C": "nedostupan"
   },
   "pending_ticket_reasons": {
-    "A": "Nema svježe današnje kolektorske liste sa validiranim 1X2 kvotama i terminima.",
-    "B": "Nema svježe današnje kolektorske liste sa validiranim tržištem 3+ i kvotama.",
-    "C": "Nema 4–6 dodatnih provjerenih događaja ni današnjih NBA player-points granica i kvota za ukupnu kvotu najmanje 10."
+    "A": "30 svježih fudbalskih kandidata, ali upoređeni javni prikazi kladioničarskih kvota za Lazio i Frankfurt nisu konzistentni; nije potvrđen jedinstven aktuelni snimak i kompletna validacija.",
+    "B": "Nema dva nezavisno potvrđena kvalitetna para za više od 2,5 gola sa usklađenim aktuelnim kvotama i rizicima.",
+    "C": "Nema 4–6 dodatnih validiranih događaja sa ukupnom kvotom najmanje 10; NBA player-points ponuda je od 29.10. i zastarjela."
   },
   "total_payout": 0,
   "net_change": 0,
-  "analysis_status": "01.11.2026: prethodni dan je već arhiviran. Danas nije objavljen nijedan tiket jer glavni collector-feed.json i izolovani aktivni feed nose datum 31.10, NBA player-points i statistika su zastarjeli, a tržišta/kvote za današnji dan nisu nezavisno potvrđeni. Provjera je obavljena prije planiranog termina 12:00; nijedan neprovjeren tiket se ne objavljuje.",
+  "analysis_status": "01.11.2026. u 12:00 Europe/Sarajevo: glavni kolektor uspješno osvježen u 11:58 sa 30 fudbalskih kandidata i 4 NBA utakmice. A nezavisno razmotren (Lazio–Cagliari i Frankfurt–Hamburg), ali kvote iz javnih prikaza nisu konzistentne između učitanih verzija; B nema dovoljno validiranih gol-tržišta, C nema svježih NBA player-points granica. Nije objavljen nijedan tiket, dnevni ulog 0 €, banka nepromijenjena. Arhiva 31.10. je sačuvana.",
   "selection_method": "Ručni AI pregled po hijerarhiji A/B/C; bez Python predfiltera. Bez potvrđenih današnjih kvota nema objave.",
-  "source_fixture_feed": "collector-feed.json (31.10.2026, stale); collector/active/collector-feed.json (31.10.2026, stale)",
+  "source_fixture_feed": "collector-feed.json, 2026-11-01T10:58:21.032871+00:00, 30 football candidates and 4 NBA games",
   "source_nba_player_points": "collector-output/nba-player-points.json (29.10.2026, stale)",
   "source_statistics_research": "collector-output/statistics-research.json (30.10.2026, stale)"
 }
