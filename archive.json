@@ -1866,5 +1866,99 @@
     "source_statistics_research": "ESPN agent + Lega Serie A, Guardian, Forebet i drugi izvori navedeni uz svaki par.",
     "settlement_date": "2026-10-31",
     "settlement_note": "Rezultati nezavisno potvrđeni 01.11.2026: Levante–Atlético 0:2 (LaLiga), Udinese–Roma 2:5 (Reuters), Chelsea–Manchester United 2:0 i Tottenham–Crystal Palace 2:0 (Guardian). A dobitan 30,17 €, B izgubljen, C preskočen. Već zaključani data.json nije ponovo obračunavan. Izvorni tipovi, kvote i ulozi nepromijenjeni."
+  },
+  {
+    "date": "2026-11-01",
+    "published": "01.11.2026. u 15:06 (Europe/Sarajevo) — GitHub objava Tiket A, tržišna analiza",
+    "publication_type": "manual_ai_market_review",
+    "bank_before": 193.85,
+    "daily_budget": 19.39,
+    "daily_stake": 12.6,
+    "bank_after": 209.22,
+    "bank_after_stakes": 181.25,
+    "provisional": false,
+    "settled": true,
+    "odds_verified": false,
+    "odds_verification_note": "Kvotama je potvrđen istorijski bookmaker snapshot (Pinnacle), ali nije potvrđeno da su iste kvote i dalje dostupne pri uplati.",
+    "tickets": [
+      {
+        "id": "A",
+        "label": "GLAVNI TIKET",
+        "odds": 2.22,
+        "stake": 12.6,
+        "status": "dobitan",
+        "matches": [
+          {
+            "home": "Lyon",
+            "away": "Angers",
+            "pick": "1",
+            "odd": 1.43,
+            "datetime": "2026-11-01T16:15:00Z",
+            "research": {
+              "summary": "Lyon je tržišni favorit: Pinnacle 1.43, uz više nezavisnih bookmaker ponuda oko 1.37–1.43.",
+              "pros": "Snažan konsenzus kvota u korist domaćina.",
+              "risks": "Statistika posljednjih pet utakmica, sastavi i povrede nisu nezavisno potvrđeni; kvota je snimak od približno 12:10 po Sarajevu i može se promijeniti.",
+              "conclusion": "Odabir zasnovan na poređenju tržišnih kvota, ne na potvrđenoj prednosti modela.",
+              "sources": [
+                [
+                  "ListaSix provider offers",
+                  "https://github.com/shikithe/Slavojka/blob/main/shared/kvoter/provider-offers.json"
+                ]
+              ]
+            },
+            "result_status": "pogođen",
+            "final_score": "2:0"
+          },
+          {
+            "home": "Eintracht Frankfurt",
+            "away": "Hamburg SV",
+            "pick": "1",
+            "odd": 1.55,
+            "datetime": "2026-11-01T16:30:00Z",
+            "research": {
+              "summary": "Frankfurt je favorit prema Pinnacle kvoti 1.55, uz više drugih ponuđača približno 1.46–1.55.",
+              "pros": "Široka tržišna saglasnost o statusu favorita domaćina.",
+              "risks": "Nisu nezavisno potvrđeni posljednja forma, izostanci ni očekivani sastavi; snimljene kvote ne garantuju aktuelnu dostupnost.",
+              "conclusion": "Odabir zasnovan na tržišnom konsenzusu, ne na validiranoj statističkoj predikciji.",
+              "sources": [
+                [
+                  "ListaSix provider offers",
+                  "https://github.com/shikithe/Slavojka/blob/main/shared/kvoter/provider-offers.json"
+                ]
+              ]
+            },
+            "result_status": "pogođen",
+            "final_score": "3:1"
+          }
+        ],
+        "payout": 27.97,
+        "settled_at_utc": "2026-11-01T18:43:18.181807+00:00"
+      }
+    ],
+    "pending_ticket_statuses": {
+      "A": "objavljen",
+      "B": "nedostupan",
+      "C": "nedostupan"
+    },
+    "pending_ticket_reasons": {
+      "A": "",
+      "B": "Nema dovoljno nezavisno provjerenih golova 3+.",
+      "C": "Nema validiranih parova za kombinovanu kvotu najmanje 10."
+    },
+    "total_payout": 27.97,
+    "net_change": 15.37,
+    "analysis_status": "01.11.2026: A objavljen na osnovu tržišnog konsenzusa bookmaker kvota i potvrđenog budućeg termina. Nije izvršena potpuna provjera forme, povreda i sastava. B i C nisu objavljeni.",
+    "selection_method": "AI izbor na osnovu ListaSix active-list i poređenja Pinnacle i ostalih bookmaker ponuda; istorijska statistika nije dostupna za nezavisnu provjeru.",
+    "source_fixture_feed": "ListaSix shared/active-list.json 2026-11-01",
+    "source_nba_player_points": "collector-output/nba-player-points.json (29.10.2026, stale)",
+    "source_statistics_research": "collector-output/statistics-research.json (30.10.2026, stale)",
+    "settlement_date": "2026-11-02",
+    "settlement_note": "Nezavisno provjereno 02.11.2026: Lyon–Angers 2:0 (Reuters/Sofascore), Eintracht Frankfurt–Hamburger SV 3:1 (službeni Eintracht/Reuters). Tiket A već je zaključen kao dobitan 01.11.2026; isplata 27,97 EUR i banka 209,22 EUR nisu ponovo knjižene. Ulog 12,60 EUR; 193,85 - 12,60 + 27,97 = 209,22 EUR. Izvorni tipovi, kvote i ulozi nepromijenjeni.",
+    "settlement_sources": [
+      "https://www.reuters.com/sports/soccer/lyon-paris-fc-win-while-marseille-continue-improve-2026-11-01/",
+      "https://www.sofascore.com/football/match/angers-olympique-lyonnais/ZHsJI",
+      "https://profis.eintracht.de/news/heimsieg-gegen-hamburg-180166/",
+      "https://www.reuters.com/sports/soccer/frankfurt-cruise-3-1-home-win-over-hamburg-2026-11-01/"
+    ]
   }
 ]
