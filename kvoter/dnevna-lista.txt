@@ -1,39 +1,21 @@
 KVOTER - KLADIONICARSKA PONUDA (TXT)
-Preuzeto: 2026-11-01T14:36:06.323184+00:00 UTC | vrijeme: Europe/Sarajevo
-Ukupno: 29 | automatski upareno: 10
+Preuzeto: 2026-11-02T17:32:52.793118+00:00 UTC | vrijeme: Europe/Sarajevo
+Ukupno: 11 | automatski upareno: 6
 Kvote iz posljednjeg API preuzimanja; nisu uzivo. Crtica = nema kvote.
 
 BR  DATUM SAT    UTAKMICA                                    1      X      2     3+  IZVOR
 --------------------------------------------------------------------------------------------------------------
-01  01.11. 16:00  Sint-Truidense - OH Leuven                        -      -      -      -  N/P
-02  01.11. 16:15  Racing Santander - Real Madrid                    -      -      -      -  N/P
-03  01.11. 16:30  Arouca - C.D. Nacional                            -      -      -      -  N/P
-04  01.11. 16:45  FC Groningen - Sparta Rotterdam                   -      -      -      -  N/P
-05  01.11. 17:00  Kasimpasa - Besiktas                              -      -      -      -  N/P
-06  01.11. 17:15  Lyon - Angers                                  1.40   5.20   7.86      -  pinnacle
-07  01.11. 17:15  Paris FC - AS Monaco                           2.60   3.56   2.79      -  pinnacle
-08  01.11. 17:30  Liverpool - Arsenal                            2.91   3.50   2.53      -  pinnacle
-09  01.11. 17:30  Eintracht Frankfurt - Hamburg SV                  -      -      -      -  N/P
-10  01.11. 18:00  Lecce - Genoa                                  3.34   2.99   2.56      -  pinnacle
-11  01.11. 18:30  Elche - Valencia                                  -      -      -      -  N/P
-12  01.11. 18:30  Lommel SK - KAA Gent                              -      -      -      -  N/P
-13  01.11. 19:00  Académico de Viseu - Rio Ave                      -      -      -      -  N/P
-14  01.11. 19:00  Maritimo - Santa Clara                            -      -      -      -  N/P
-15  01.11. 19:00  Boca Juniors - River Plate                     2.25   3.16   3.70      -  pinnacle
-16  01.11. 19:15  Royal Charleroi SC - RAAL La Louvière             -      -      -      -  N/P
-17  01.11. 20:45  Juventus - Napoli                              2.24   3.35   3.57   2.01  pinnacle
-18  01.11. 20:45  Marseille - Toulouse                           1.94   4.05   3.77      -  pinnacle
-19  01.11. 21:00  Athletic Club - Real Sociedad                     -      -      -      -  N/P
-20  01.11. 21:30  Braga - FC Famalicao                              -      -      -      -  N/P
-21  01.11. 21:30  Vancouver Whitecaps - Seattle Sounders FC         -      -      -      -  N/P
-22  01.11. 22:30  Atlanta United FC - Toronto FC                 2.15   4.23   2.99      -  pinnacle
-23  01.11. 22:30  Nashville SC - Red Bull New York                  -      -      -      -  N/P
-24  01.11. 22:30  Belgrano (Córdoba) - Barracas Central             -      -      -      -  N/P
-25  01.11. 22:30  Newell's Old Boys - Unión (Santa Fe)              -      -      -      -  N/P
-26  02.11. 00:45  Lanús - Gimnasia (Mendoza)                     1.51   4.42   6.76   1.88  pinnacle
-27  02.11. 01:00  New England Revolution - Inter Miami CF        3.00   4.11   2.17      -  pinnacle
-28  02.11. 02:30  LAFC - Minnesota United FC                        -      -      -      -  N/P
-29  02.11. 03:45  Portland Timbers - Houston Dynamo FC              -      -      -      -  N/P
+01  02.11. 20:45  Atalanta - Parma                                  -      -      -      -  N/P
+02  02.11. 20:45  Lorient - Brest                                2.59   3.19   3.08      -  pinnacle
+03  02.11. 21:00  Newcastle United - Everton                     2.23   3.64   3.31      -  pinnacle
+04  02.11. 21:00  Deportivo - Osasuna                               -      -      -      -  N/P
+05  02.11. 21:15  Benfica - Alverca                              1.14   9.64  17.20      -  pinnacle
+06  02.11. 21:15  Gil Vicente - Vitória de Guimaraes                -      -      -      -  N/P
+07  02.11. 23:00  Defensa y Justicia - Independiente             2.23   3.27   3.62      -  pinnacle
+08  02.11. 23:00  Platense - Central Córdoba (Santiago del Est      -      -      -      -  N/P
+09  03.11. 00:00  Red Bull Bragantino - Santos                      -      -      -      -  N/P
+10  03.11. 01:15  Atlético Tucumán - Argentinos Juniors          2.95   3.09   2.73      -  pinnacle
+11  03.11. 01:15  Independiente Rivadavia - Banfield             1.60   4.17   5.95   1.94  pinnacle
 
 1=domacin | X=nerijeseno | 2=gost | 3+=vise od 2.5 golova
 N/P = bez potvrdenih kvota u ovom ciklusu.
