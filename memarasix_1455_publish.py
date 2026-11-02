@@ -24,11 +24,13 @@ def remote(path):
 def main():
     now=datetime.now(UTC)
     local=now.astimezone(ZoneInfo("Europe/Sarajevo"))
-    if not ("15:25"<=local.strftime("%H:%M")<="16:00"):
-        return audit("Outside daily 15:25–16:00 Sarajevo publication window")
+    if not ("12:00"<=local.strftime("%H:%M")<="12:30"):
+        return audit("Outside daily 12:00–12:30 Sarajevo publication window")
     data=load(ROOT/"data.json")
     if data.get("date")!=local.date().isoformat():
-        return audit("data.json date does not match today")
+        # Prior settled day remains the bank source until the first daily publication.
+        if data.get("date", "")>local.date().isoformat() or not data.get("settled",False):
+            return audit("Previous day not settled or data.json date is in the future")
     if any(t.get("status") in ("objavljen","aktivan","dobitan","izgubljen") for t in data.get("tickets",[])):
         return audit("Today's published ticket exists; never overwrite")
     offer=load(ROOT/"listasix-data/active-list.json")
@@ -107,8 +109,8 @@ def main():
     approved_ids=[t.get("id") for t in approved["tickets"]]
     if len(approved_ids)!=len(set(approved_ids)):
         return audit("Duplicate approved ticket IDs")
-    if ("A" in approved_ids) != ("B" in approved_ids):
-        return audit("Atomic A/B publication requires both tickets approved together",
+    if not {"A","B"}.issubset(set(approved_ids)):
+        return audit("Daily publication requires both A and B approved together",
                      {"approved_ids":approved_ids})
     selected=[]
     used=set()
@@ -144,7 +146,7 @@ def main():
         selected.append({"id":tid,"matches":verified,"odds":round(total,2),
                          "analysis":ticket.get("analysis","Independently reviewed ListaSix selection"),
                          "label":{"A":"GLAVNI TIKET","B":"GOLOVI","C":"KEŠ KOLICA"}[tid]})
-    bank=float(data.get("bank_before",data.get("bank_after",0)))
+    bank=float(data.get("bank_after",0) if data.get("date")!=local.date().isoformat() else data.get("bank_before",data.get("bank_after",0)))
     if bank<=0: return audit("Invalid bank")
     budget=round(bank*.1,2)
     shares={"A":.65,"B":.25,"C":.10}
@@ -160,7 +162,7 @@ def main():
     if spent>budget: return audit("Allocation exceeds daily budget")
     data.update({"date":local.date().isoformat(),"published":local.strftime("%d.%m.%Y. u %H:%M (Europe/Sarajevo)"),
       "published_at_utc":now.isoformat(),"publication_type":"verified_github_1455",
-      "daily_budget":budget,"daily_stake":spent,"bank_after_stakes":round(bank-spent,2),
+      "bank_before":bank,"daily_budget":budget,"daily_stake":spent,"bank_after_stakes":round(bank-spent,2),
       "bank_after":round(bank-spent,2),"tickets":selected,"settled":False,"provisional":False,
       "odds_verified":True,"analysis_status":"GitHub published independently reviewed and quote-validated ListaSix picks",
       "selection_method":"Independently reviewed selections with verified bookmaker quotes"})
