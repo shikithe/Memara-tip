@@ -1,69 +1,87 @@
 {
-  "date": "2026-11-01",
-  "published": "01.11.2026. u 15:06 (Europe/Sarajevo) — GitHub objava Tiket A, tržišna analiza",
-  "publication_type": "manual_ai_market_review",
-  "bank_before": 193.85,
-  "daily_budget": 19.39,
-  "daily_stake": 12.6,
-  "bank_after": 209.22,
-  "bank_after_stakes": 181.25,
+  "date": "2026-11-02",
+  "published": "2026-11-02 12:10 (Europe/Sarajevo) — djelimična GitHub objava A",
+  "publication_type": "manual_ai_partial_publication",
+  "bank_before": 209.22,
+  "daily_budget": 20.92,
+  "daily_stake": 13.6,
+  "bank_after": 195.62,
+  "bank_after_stakes": 195.62,
   "provisional": false,
-  "settled": true,
+  "settled": false,
   "odds_verified": false,
-  "odds_verification_note": "Kvotama je potvrđen istorijski bookmaker snapshot (Pinnacle), ali nije potvrđeno da su iste kvote i dalje dostupne pri uplati.",
+  "odds_verification_note": "Pinnacle kvote iz The Odds API, ListaSix provider-offers.json 02.11.2026. u 09:32 UTC (10:32 Sarajevo). Nezavisni javni izvori potvrđuju tržišni raspon; kvote nisu direktno potvrđene kao izvršive u trenutku objave i nisu Mozzartbet BiH kvote.",
   "tickets": [
     {
       "id": "A",
       "label": "GLAVNI TIKET",
-      "odds": 2.22,
-      "stake": 12.6,
-      "status": "dobitan",
+      "odds": 2.39,
+      "stake": 13.6,
+      "status": "objavljen",
       "matches": [
         {
-          "home": "Lyon",
-          "away": "Angers",
+          "home": "Atalanta",
+          "away": "Parma",
           "pick": "1",
-          "odd": 1.43,
-          "datetime": "2026-11-01T16:15:00Z",
+          "odd": 1.54,
+          "datetime": "2026-11-02T19:45:00Z",
+          "start_utc": "2026-11-02T19:45:00Z",
+          "league": "ita.1",
+          "event_id": "401874971",
           "research": {
-            "summary": "Lyon je tržišni favorit: Pinnacle 1.43, uz više nezavisnih bookmaker ponuda oko 1.37–1.43.",
-            "pros": "Snažan konsenzus kvota u korist domaćina.",
-            "risks": "Statistika posljednjih pet utakmica, sastavi i povrede nisu nezavisno potvrđeni; kvota je snimak od približno 12:10 po Sarajevu i može se promijeniti.",
-            "conclusion": "Odabir zasnovan na poređenju tržišnih kvota, ne na potvrđenoj prednosti modela.",
+            "summary": "Atalanta je favorit, Pinnacle 1.54. U posljednjih 5 ligaških utakmica Atalanta 1 pobjeda, 2 remija i 2 poraza; Parma 1 pobjeda, 1 remi, 3 poraza. Atalanta 3/5 pobjeda kod kuće, Parma 0/4 u gostima.",
+            "pros": "Parma ima samo 5 postignutih golova u 9 kola; domaći teren i veći napadački učinak Atalante.",
+            "risks": "Atalanta ima veliki broj povreda i kratak odmor nakon utakmice 29.10. Modeli izvora se razilaze. Sastavi nisu potvrđeni; kvota je jutarnji snapshot.",
+            "injuries": "Atalanta bez Scamacce, Raspadorija, Kessiéa, Bellanove, Hiena, Kolašinca i Kossounoua prema dostupnim pregledima; Parma bez Bernabéa i Valentija prema jednom izvoru.",
             "sources": [
               [
-                "ListaSix provider offers",
+                "Pinnacle, ListaSix 02.11.",
                 "https://github.com/shikithe/Slavojka/blob/main/shared/kvoter/provider-offers.json"
+              ],
+              [
+                "Forma, povrede i tržište",
+                "https://www.betandsured.com/football/matches/atalanta-vs-parma-10979/"
+              ],
+              [
+                "Nezavisna potvrda kvota",
+                "https://statsbet.es/futbol/partidos/atalanta-vs-parma-2026-11-02"
               ]
-            ]
-          },
-          "result_status": "pogođen",
-          "final_score": "2:0"
+            ],
+            "conclusion": "Tržišni de-vig benchmark domaćina 63.1%; nije nezavisna procjena vjerovatnoće niti dokaz pozitivnog EV. Uzorak forme 5 utakmica po timu. Poisson nije korišten bez validiranog prematch xG."
+          }
         },
         {
-          "home": "Eintracht Frankfurt",
-          "away": "Hamburg SV",
+          "home": "Platense",
+          "away": "Central Córdoba",
           "pick": "1",
           "odd": 1.55,
-          "datetime": "2026-11-01T16:30:00Z",
+          "datetime": "2026-11-02T22:00:00Z",
+          "start_utc": "2026-11-02T22:00:00Z",
+          "league": "arg.1",
+          "event_id": "401841649",
           "research": {
-            "summary": "Frankfurt je favorit prema Pinnacle kvoti 1.55, uz više drugih ponuđača približno 1.46–1.55.",
-            "pros": "Široka tržišna saglasnost o statusu favorita domaćina.",
-            "risks": "Nisu nezavisno potvrđeni posljednja forma, izostanci ni očekivani sastavi; snimljene kvote ne garantuju aktuelnu dostupnost.",
-            "conclusion": "Odabir zasnovan na tržišnom konsenzusu, ne na validiranoj statističkoj predikciji.",
+            "summary": "Platense favorit po Pinnacle 1.55. Posljednjih 5 utakmica Platense 1 pobjeda, 2 remija i 2 poraza; Central Córdoba 0 pobjeda, 3 remija, 2 poraza, uključujući 0:5 od Véleza.",
+            "pros": "Central Córdoba bez pobjede u pet susreta; defanzivni izostanci i suspenzija Maciela.",
+            "risks": "Platense ima samo jednu pobjedu u posljednjih 5, više povreda i nepouzdanu napadačku formu. Potvrđeni početni sastavi nisu dostupni.",
+            "injuries": "Platense: Goñi, Bobadilla, Giménez, Sumavil, López, Ferreira i Quirós; Central Córdoba: Maciel suspendovan, Aguilar i Juárez povrijeđeni prema dostupnom pregledu.",
             "sources": [
               [
-                "ListaSix provider offers",
+                "Pinnacle, ListaSix 02.11.",
                 "https://github.com/shikithe/Slavojka/blob/main/shared/kvoter/provider-offers.json"
+              ],
+              [
+                "Forma i izostanci",
+                "https://sports.bzzoiro.com/matches/223877/"
+              ],
+              [
+                "Nezavisna 1X2 ponuda",
+                "https://stake.com/pt/sports/soccer/argentina/superliga/46797914-platense-central-cordoba"
               ]
-            ]
-          },
-          "result_status": "pogođen",
-          "final_score": "3:1"
+            ],
+            "conclusion": "Tržišni de-vig benchmark domaćina 62.0%; nije nezavisna procjena vjerovatnoće niti dokaz pozitivnog EV. Uzorak forme 5 utakmica po timu. Poisson nije korišten bez validiranog prematch xG."
+          }
         }
-      ],
-      "payout": 27.97,
-      "settled_at_utc": "2026-11-01T18:43:18.181807+00:00"
+      ]
     }
   ],
   "pending_ticket_statuses": {
@@ -73,14 +91,14 @@
   },
   "pending_ticket_reasons": {
     "A": "",
-    "B": "Nema dovoljno nezavisno provjerenih golova 3+.",
-    "C": "Nema validiranih parova za kombinovanu kvotu najmanje 10."
+    "B": "Nema dovoljno nezavisno potvrđenih kvalitetnih drugih mečeva za 3+ s ukupnom kvotom 2–3. Newcastle–Everton i Bragantino–Santos imaju kontradiktorne gol-trendove i neuvjerljiv odnos tržišta i forme; A parovi se ne ponavljaju.",
+    "C": "Nema 4–6 validiranih nezavisnih drugih događaja za kvotu >=10; NBA ponuda prazna, NBA player-points i ESPN NBA statistika iz 29.10. su zastarjele."
   },
-  "total_payout": 27.97,
-  "net_change": 15.37,
-  "analysis_status": "01.11.2026: A objavljen na osnovu tržišnog konsenzusa bookmaker kvota i potvrđenog budućeg termina. Nije izvršena potpuna provjera forme, povreda i sastava. B i C nisu objavljeni.",
-  "selection_method": "AI izbor na osnovu ListaSix active-list i poređenja Pinnacle i ostalih bookmaker ponuda; istorijska statistika nije dostupna za nezavisnu provjeru.",
-  "source_fixture_feed": "ListaSix shared/active-list.json 2026-11-01",
-  "source_nba_player_points": "collector-output/nba-player-points.json (29.10.2026, stale)",
-  "source_statistics_research": "collector-output/statistics-research.json (30.10.2026, stale)"
+  "total_payout": 0,
+  "net_change": -13.6,
+  "analysis_status": "02.11.2026: ručna AI validacija A, B i C odvojeno, objavljen samo A. Uzorak 5 utakmica po timu; ESPN history-h2h.json u ListaSix je prazan, NBA podaci zastarjeli. Kvote su jutarnji Pinnacle snapshot, nisu izvršive potvrđene kvote. Nema izmišljenog EV ili Poissona.",
+  "selection_method": "Ručni AI izbor iz svježeg ListaSix active-list i provider-offers 02.11.2026, nezavisna provjera forme, termina, izostanaka i tržišta. Python filter nije uslov.",
+  "source_fixture_feed": "ListaSix shared/active-list.json i shared/collector-feed.json 2026-11-02",
+  "source_nba_player_points": "Memara-tip collector-output/nba-player-points.json 29.10.2026 (stale)",
+  "source_statistics_research": "Memara-tip collector-output/statistics-research.json 30.10.2026 (stale)"
 }
