@@ -102,6 +102,14 @@ def main():
     approved=load(approval)
     if approved.get("date")!=local.date().isoformat() or not approved.get("tickets"):
         return audit("Approval file has wrong date or no tickets")
+    # Publication invariant: approved A and B are an atomic daily pair.
+    # Never silently publish only one when both are approved.
+    approved_ids=[t.get("id") for t in approved["tickets"]]
+    if len(approved_ids)!=len(set(approved_ids)):
+        return audit("Duplicate approved ticket IDs")
+    if ("A" in approved_ids) != ("B" in approved_ids):
+        return audit("Atomic A/B publication requires both tickets approved together",
+                     {"approved_ids":approved_ids})
     selected=[]
     used=set()
     for ticket in approved["tickets"]:
