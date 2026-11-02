@@ -1,9 +1,9 @@
-name: MemaraSix daily 15:25 publication validation
+name: MemaraSix daily 12:00 atomic A/B publication
 on:
   workflow_dispatch:
   schedule:
-    # Sarajevo 15:25 is 13:25 UTC in summer and 14:25 UTC in winter.
-    - cron: '25 13,14 * * *'
+    # Sarajevo noon is 10:00 UTC in summer, 11:00 UTC in winter.
+    - cron: '0 10,11 * * *'
 permissions:
   contents: write
 concurrency:
@@ -22,7 +22,7 @@ jobs:
           EVENT_NAME: ${{ github.event_name }}
         run: |
           clock="$(TZ=Europe/Sarajevo date +%H:%M)"
-          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$clock" = "15:25" ]; then
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$clock" = "12:00" ]; then
             echo "enabled=true" >> "$GITHUB_OUTPUT"
           else
             echo "enabled=false" >> "$GITHUB_OUTPUT"
