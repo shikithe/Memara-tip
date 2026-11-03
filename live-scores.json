@@ -1,28 +1,32 @@
 {
-  "date": "2026-11-02",
-  "updated_at_utc": "2026-11-03T08:15:56.398747+00:00",
+  "date": "2026-11-03",
+  "updated_at_utc": "2026-11-03T15:32:27.916854+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
     {
       "ticket": "A",
       "index": 0,
-      "home": "Atalanta",
-      "away": "Parma",
-      "state": "final",
-      "score": "0:3",
+      "home": "Barcelona",
+      "away": "Aston Villa",
+      "state": "scheduled",
+      "score": "0:0",
       "source": "espn-public-unofficial",
-      "event_id": "401874971",
-      "league": "ita.1",
-      "minute": null,
-      "result_status": "promašen"
+      "event_id": "401915387",
+      "league": "uefa.champions",
+      "minute": null
     },
     {
       "ticket": "A",
       "index": 1,
-      "home": "Platense",
-      "away": "Central Córdoba",
-      "state": "unverified"
+      "home": "Villarreal",
+      "away": "Paris Saint-Germain",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401915309",
+      "league": "uefa.champions",
+      "minute": null
     }
   ],
   "bank_unchanged": true
