@@ -1,6 +1,6 @@
 {
   "date": "2026-11-03",
-  "updated_at_utc": "2026-11-03T21:14:16.864045+00:00",
+  "updated_at_utc": "2026-11-03T21:53:45.831024+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -10,23 +10,24 @@
       "home": "Barcelona",
       "away": "Aston Villa",
       "state": "live",
-      "score": "2:0",
+      "score": "3:0",
       "source": "espn-public-unofficial",
       "event_id": "401915387",
       "league": "uefa.champions",
-      "minute": "54"
+      "minute": "90"
     },
     {
       "ticket": "A",
       "index": 1,
       "home": "Villarreal",
       "away": "Paris Saint-Germain",
-      "state": "live",
-      "score": "0:5",
+      "state": "final",
+      "score": "0:6",
       "source": "espn-public-unofficial",
       "event_id": "401915309",
       "league": "uefa.champions",
-      "minute": "54"
+      "minute": null,
+      "result_status": "pogođen"
     }
   ],
   "bank_unchanged": true
