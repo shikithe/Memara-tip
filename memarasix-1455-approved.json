@@ -1,23 +1,4 @@
 {
-  "date": "2026-11-02",
-  "tickets": [
-    {
-      "id": "B",
-      "analysis": "Tiket B — 3+ gola na oba meča, kombinovana kvota 2.7004 (obje kvote kod marathonbet, snimak OddsAPI/ListaSix od 02.11.2026. oko 09:32 UTC; kvote nisu garantovano dostupne pri uplati). Sassuolo–Fiorentina: ESPN/ListaSix zadnjih 5: Sassuolo 12.0 šuteva, 3.8 u okvir, prima 7.2 u okvir po meču; Fiorentina 16.4 šuteva, 4.0 u okvir, prima 6.6 u okvir. Izostanci (izvještaj 01.11.2026): Fiorentina bez Luce Ranierija (stopalo), Marina Pongračića (zadnja loža) i Arthura Atte (abdomen); Sassuolo Kristian Thorstvedt suspendovan, Fedde Leysen povrijeđen, Ismaël Koné upitan. Oslabljene odbrane podržavaju golove, ali odsustva i rotacije povećavaju rizik. Izvori: https://www.sassuolonews.net/news/sassuolo-fiorentina-convocati-dubbi-aquilani-out-ranieri-atta-pongracic-66872 ; https://www.fotmob.com/en-GB/matches/sassuolo-vs-fiorentina/28u7rc . Newcastle–Everton: ESPN/ListaSix zadnjih 5: Newcastle 12.8 šuteva, 3.8 u okvir, prima 4.6 u okvir; Everton 12.4 šuteva, 4.0 u okvir, prima 4.4 u okvir. Izostanci (Sports Mole 01.11.2026 20:00): Newcastle Tino Livramento (koljeno) i Ewen Jaouen (butina) odsutni, Lewis Miley (mišić), Will Osula (gležanj), Matias Fernandez-Pardo (bolest) upitni; Everton Jack Grealish (disciplinski status) i Jarrad Branthwaite (potres glave) upitni. Everton je pobijedio Newcastle 3:1 u kupu 29.10, ali taj rezultat nije garancija za prvenstvo. Izvor: https://www.sportsmole.co.uk/football/newcastle-united/injury-news/team-news/newcastle-vs-everton-injury-suspension-list-predicted-xis_608138.html . H2H ListaSix nije dostupan (0 zapisa); ListaSix istorija sadrži šuteve, ali ne i potvrđene konačne rezultate zadnjih pet. Zvanični početni sastavi još nisu potvrđeni; izostanci su predmeč izvještaji, ne konačne liste. Rizik: srednje-visok, ukupna implicirana vjerovatnoća oko 37%, bez validirane modelne prednosti. A i C nisu odobreni zbog nedovoljne pouzdanosti dostupnih parova.",
-      "matches": [
-        {
-          "fixture_id": "espn:football:ita.1:401874963",
-          "pick": "3+",
-          "bookmaker": "marathonbet",
-          "odd": 1.57
-        },
-        {
-          "fixture_id": "espn:football:eng.1:401878762",
-          "pick": "3+",
-          "bookmaker": "marathonbet",
-          "odd": 1.72
-        }
-      ]
-    }
-  ]
+  "date": "2026-11-03",
+  "tickets": []
 }
