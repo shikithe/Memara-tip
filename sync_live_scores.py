@@ -97,17 +97,23 @@ def run(source="data.json",output="live-scores.json"):
     published=json.loads(Path(source).read_text(encoding="utf-8"))
     now=datetime.now(timezone.utc)
     matches=[(t["id"],i,m) for t in published.get("tickets",[]) for i,m in enumerate(t.get("matches",[]))]
-    dates=set()
+    leagues_by_day={}
     for _,_,m in matches:
         try:
             start=dt(m.get("start_sarajevo") or m.get("start_utc") or m["datetime"])
             if abs((now-start).total_seconds())<=36*3600:
-                dates.add(start.astimezone(SAR).strftime("%Y%m%d"))
+                day=start.astimezone(SAR).strftime("%Y%m%d")
+                league=m.get("league")
+                leagues=leagues_by_day.setdefault(day,set())
+                if isinstance(league,str) and re.fullmatch(r"[a-z0-9.]+",league):
+                    leagues.add(league)
+                else:
+                    leagues.update(LEAGUES)
         except (KeyError,ValueError,TypeError):
             pass
     all_events=[];errors=[]
-    for day in sorted(dates):
-        for league in LEAGUES:
+    for day,leagues in sorted(leagues_by_day.items()):
+        for league in sorted(leagues):
             try:all_events.extend(extract(fetch(league,day),league))
             except Exception:errors.append(league+":"+day)
     # Never lose a previously verified final on transient ESPN failures.
@@ -127,9 +133,14 @@ def run(source="data.json",output="live-scores.json"):
                 "away":m.get("away"),"state":"unverified"}
         try:
             kickoff=dt(m.get("start_sarajevo") or m.get("start_utc") or m["datetime"])
-            candidates=[e for e in all_events
-                if norm(e["home"])==norm(m.get("home")) and norm(e["away"])==norm(m.get("away"))
-                and abs((e["start"]-kickoff).total_seconds())<=5400]
+            candidates=[e for e in all_events if abs((e["start"]-kickoff).total_seconds())<=5400]
+            event_id=str(m.get("event_id") or "")
+            if event_id.isdigit():
+                candidates=[e for e in candidates if e["event_id"]==event_id
+                            and (not m.get("league") or e["league"]==m["league"])]
+            else:
+                candidates=[e for e in candidates if norm(e["home"])==norm(m.get("home"))
+                            and norm(e["away"])==norm(m.get("away"))]
             unique={e["event_id"]:e for e in candidates}
             if len(unique)==1:
                 e=next(iter(unique.values()))
