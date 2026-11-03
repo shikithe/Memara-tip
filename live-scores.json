@@ -1,6 +1,6 @@
 {
   "date": "2026-11-02",
-  "updated_at_utc": "2026-11-02T18:39:51.537665+00:00",
+  "updated_at_utc": "2026-11-03T01:11:12.799510+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,12 +9,13 @@
       "index": 0,
       "home": "Atalanta",
       "away": "Parma",
-      "state": "scheduled",
-      "score": "0:0",
+      "state": "final",
+      "score": "0:3",
       "source": "espn-public-unofficial",
       "event_id": "401874971",
       "league": "ita.1",
-      "minute": null
+      "minute": null,
+      "result_status": "promašen"
     },
     {
       "ticket": "A",

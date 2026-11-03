@@ -7,8 +7,8 @@
   "daily_stake": 13.6,
   "bank_after": 195.62,
   "bank_after_stakes": 195.62,
-  "provisional": true,
-  "settled": false,
+  "provisional": false,
+  "settled": true,
   "odds_verified": false,
   "odds_verification_note": "Pinnacle kvote iz The Odds API, ListaSix provider-offers.json 02.11.2026. u 09:32 UTC (10:32 Sarajevo). Nezavisni javni izvori potvrđuju tržišni raspon; kvote nisu direktno potvrđene kao izvršive u trenutku objave i nisu Mozzartbet BiH kvote.",
   "tickets": [
@@ -17,7 +17,7 @@
       "label": "GLAVNI TIKET",
       "odds": 2.39,
       "stake": 13.6,
-      "status": "objavljen",
+      "status": "izgubljen",
       "matches": [
         {
           "home": "Atalanta",
@@ -48,7 +48,9 @@
               ]
             ],
             "conclusion": "Tržišni de-vig benchmark domaćina 63.1%; nije nezavisna procjena vjerovatnoće niti dokaz pozitivnog EV. Uzorak forme 5 utakmica po timu. Poisson nije korišten bez validiranog prematch xG."
-          }
+          },
+          "result_status": "promašen",
+          "final_score": "0:3"
         },
         {
           "home": "Platense",
@@ -81,7 +83,9 @@
             "conclusion": "Tržišni de-vig benchmark domaćina 62.0%; nije nezavisna procjena vjerovatnoće niti dokaz pozitivnog EV. Uzorak forme 5 utakmica po timu. Poisson nije korišten bez validiranog prematch xG."
           }
         }
-      ]
+      ],
+      "settled_at_utc": "2026-11-03T01:11:12.799510+00:00",
+      "payout": 0.0
     }
   ],
   "pending_ticket_statuses": {
@@ -95,7 +99,7 @@
     "C": "Nema 4–6 validiranih nezavisnih drugih događaja za kvotu >=10; NBA ponuda prazna, NBA player-points i ESPN NBA statistika iz 29.10. su zastarjele."
   },
   "total_payout": 0.0,
-  "net_change": null,
+  "net_change": -13.6,
   "analysis_status": "02.11.2026: ručna AI validacija A, B i C odvojeno, objavljen samo A. Uzorak 5 utakmica po timu; ESPN history-h2h.json u ListaSix je prazan, NBA podaci zastarjeli. Kvote su jutarnji Pinnacle snapshot, nisu izvršive potvrđene kvote. Nema izmišljenog EV ili Poissona.",
   "selection_method": "Ručni AI izbor iz svježeg ListaSix active-list i provider-offers 02.11.2026, nezavisna provjera forme, termina, izostanaka i tržišta. Python filter nije uslov.",
   "source_fixture_feed": "ListaSix shared/active-list.json i shared/collector-feed.json 2026-11-02",
