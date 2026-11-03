@@ -1960,5 +1960,113 @@
       "https://profis.eintracht.de/news/heimsieg-gegen-hamburg-180166/",
       "https://www.reuters.com/sports/soccer/frankfurt-cruise-3-1-home-win-over-hamburg-2026-11-01/"
     ]
+  },
+  {
+    "date": "2026-11-02",
+    "published": "2026-11-02 12:10 (Europe/Sarajevo) — djelimična GitHub objava A",
+    "publication_type": "manual_ai_partial_publication",
+    "bank_before": 209.22,
+    "daily_budget": 20.92,
+    "daily_stake": 13.6,
+    "bank_after": 195.62,
+    "bank_after_stakes": 195.62,
+    "provisional": false,
+    "settled": true,
+    "odds_verified": false,
+    "odds_verification_note": "Pinnacle kvote iz The Odds API, ListaSix provider-offers.json 02.11.2026. u 09:32 UTC (10:32 Sarajevo). Nezavisni javni izvori potvrđuju tržišni raspon; kvote nisu direktno potvrđene kao izvršive u trenutku objave i nisu Mozzartbet BiH kvote.",
+    "tickets": [
+      {
+        "id": "A",
+        "label": "GLAVNI TIKET",
+        "odds": 2.39,
+        "stake": 13.6,
+        "status": "izgubljen",
+        "matches": [
+          {
+            "home": "Atalanta",
+            "away": "Parma",
+            "pick": "1",
+            "odd": 1.54,
+            "datetime": "2026-11-02T19:45:00Z",
+            "start_utc": "2026-11-02T19:45:00Z",
+            "league": "ita.1",
+            "event_id": "401874971",
+            "research": {
+              "summary": "Atalanta je favorit, Pinnacle 1.54. U posljednjih 5 ligaških utakmica Atalanta 1 pobjeda, 2 remija i 2 poraza; Parma 1 pobjeda, 1 remi, 3 poraza. Atalanta 3/5 pobjeda kod kuće, Parma 0/4 u gostima.",
+              "pros": "Parma ima samo 5 postignutih golova u 9 kola; domaći teren i veći napadački učinak Atalante.",
+              "risks": "Atalanta ima veliki broj povreda i kratak odmor nakon utakmice 29.10. Modeli izvora se razilaze. Sastavi nisu potvrđeni; kvota je jutarnji snapshot.",
+              "injuries": "Atalanta bez Scamacce, Raspadorija, Kessiéa, Bellanove, Hiena, Kolašinca i Kossounoua prema dostupnim pregledima; Parma bez Bernabéa i Valentija prema jednom izvoru.",
+              "sources": [
+                [
+                  "Pinnacle, ListaSix 02.11.",
+                  "https://github.com/shikithe/Slavojka/blob/main/shared/kvoter/provider-offers.json"
+                ],
+                [
+                  "Forma, povrede i tržište",
+                  "https://www.betandsured.com/football/matches/atalanta-vs-parma-10979/"
+                ],
+                [
+                  "Nezavisna potvrda kvota",
+                  "https://statsbet.es/futbol/partidos/atalanta-vs-parma-2026-11-02"
+                ]
+              ],
+              "conclusion": "Tržišni de-vig benchmark domaćina 63.1%; nije nezavisna procjena vjerovatnoće niti dokaz pozitivnog EV. Uzorak forme 5 utakmica po timu. Poisson nije korišten bez validiranog prematch xG."
+            },
+            "result_status": "promašen",
+            "final_score": "0:3"
+          },
+          {
+            "home": "Platense",
+            "away": "Central Córdoba",
+            "pick": "1",
+            "odd": 1.55,
+            "datetime": "2026-11-02T22:00:00Z",
+            "start_utc": "2026-11-02T22:00:00Z",
+            "league": "arg.1",
+            "event_id": "401841649",
+            "research": {
+              "summary": "Platense favorit po Pinnacle 1.55. Posljednjih 5 utakmica Platense 1 pobjeda, 2 remija i 2 poraza; Central Córdoba 0 pobjeda, 3 remija, 2 poraza, uključujući 0:5 od Véleza.",
+              "pros": "Central Córdoba bez pobjede u pet susreta; defanzivni izostanci i suspenzija Maciela.",
+              "risks": "Platense ima samo jednu pobjedu u posljednjih 5, više povreda i nepouzdanu napadačku formu. Potvrđeni početni sastavi nisu dostupni.",
+              "injuries": "Platense: Goñi, Bobadilla, Giménez, Sumavil, López, Ferreira i Quirós; Central Córdoba: Maciel suspendovan, Aguilar i Juárez povrijeđeni prema dostupnom pregledu.",
+              "sources": [
+                [
+                  "Pinnacle, ListaSix 02.11.",
+                  "https://github.com/shikithe/Slavojka/blob/main/shared/kvoter/provider-offers.json"
+                ],
+                [
+                  "Forma i izostanci",
+                  "https://sports.bzzoiro.com/matches/223877/"
+                ],
+                [
+                  "Nezavisna 1X2 ponuda",
+                  "https://stake.com/pt/sports/soccer/argentina/superliga/46797914-platense-central-cordoba"
+                ]
+              ],
+              "conclusion": "Tržišni de-vig benchmark domaćina 62.0%; nije nezavisna procjena vjerovatnoće niti dokaz pozitivnog EV. Uzorak forme 5 utakmica po timu. Poisson nije korišten bez validiranog prematch xG."
+            }
+          }
+        ],
+        "settled_at_utc": "2026-11-03T01:11:12.799510+00:00",
+        "payout": 0
+      }
+    ],
+    "pending_ticket_statuses": {
+      "A": "objavljen",
+      "B": "nedostupan",
+      "C": "nedostupan"
+    },
+    "pending_ticket_reasons": {
+      "A": "",
+      "B": "Nema dovoljno nezavisno potvrđenih kvalitetnih drugih mečeva za 3+ s ukupnom kvotom 2–3. Newcastle–Everton i Bragantino–Santos imaju kontradiktorne gol-trendove i neuvjerljiv odnos tržišta i forme; A parovi se ne ponavljaju.",
+      "C": "Nema 4–6 validiranih nezavisnih drugih događaja za kvotu >=10; NBA ponuda prazna, NBA player-points i ESPN NBA statistika iz 29.10. su zastarjele."
+    },
+    "total_payout": 0,
+    "net_change": -13.6,
+    "analysis_status": "02.11.2026: ručna AI validacija A, B i C odvojeno, objavljen samo A. Uzorak 5 utakmica po timu; ESPN history-h2h.json u ListaSix je prazan, NBA podaci zastarjeli. Kvote su jutarnji Pinnacle snapshot, nisu izvršive potvrđene kvote. Nema izmišljenog EV ili Poissona.",
+    "selection_method": "Ručni AI izbor iz svježeg ListaSix active-list i provider-offers 02.11.2026, nezavisna provjera forme, termina, izostanaka i tržišta. Python filter nije uslov.",
+    "source_fixture_feed": "ListaSix shared/active-list.json i shared/collector-feed.json 2026-11-02",
+    "source_nba_player_points": "Memara-tip collector-output/nba-player-points.json 29.10.2026 (stale)",
+    "source_statistics_research": "Memara-tip collector-output/statistics-research.json 30.10.2026 (stale)"
   }
 ]
