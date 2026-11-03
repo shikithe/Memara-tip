@@ -1,91 +1,88 @@
 {
-  "date": "2026-11-02",
-  "published": "2026-11-02 12:10 (Europe/Sarajevo) — djelimična GitHub objava A",
+  "date": "2026-11-03",
+  "published": "2026-11-03 12:03 (Europe/Sarajevo) — djelimična GitHub objava A",
   "publication_type": "manual_ai_partial_publication",
-  "bank_before": 209.22,
-  "daily_budget": 20.92,
-  "daily_stake": 13.6,
-  "bank_after": 195.62,
-  "bank_after_stakes": 195.62,
+  "bank_before": 195.62,
+  "daily_budget": 19.56,
+  "daily_stake": 12.71,
+  "bank_after": 182.91,
+  "bank_after_stakes": 182.91,
   "provisional": false,
-  "settled": true,
+  "settled": false,
   "odds_verified": false,
-  "odds_verification_note": "Pinnacle kvote iz The Odds API, ListaSix provider-offers.json 02.11.2026. u 09:32 UTC (10:32 Sarajevo). Nezavisni javni izvori potvrđuju tržišni raspon; kvote nisu direktno potvrđene kao izvršive u trenutku objave i nisu Mozzartbet BiH kvote.",
+  "odds_verification_note": "ListaSix active-list.json 03.11.2026, provider offers snapshot 10:14 UTC. Kvote 1.28 Ladbrokes UK i 1.73 Betfred UK, nisu Mozzartbet BiH niti garantovano izvršive u trenutku objave.",
   "tickets": [
     {
       "id": "A",
       "label": "GLAVNI TIKET",
-      "odds": 2.39,
-      "stake": 13.6,
-      "status": "izgubljen",
+      "odds": 2.21,
+      "stake": 12.71,
+      "status": "aktivan",
       "matches": [
         {
-          "home": "Atalanta",
-          "away": "Parma",
+          "home": "Barcelona",
+          "away": "Aston Villa",
           "pick": "1",
-          "odd": 1.54,
-          "datetime": "2026-11-02T19:45:00Z",
-          "start_utc": "2026-11-02T19:45:00Z",
-          "league": "ita.1",
-          "event_id": "401874971",
+          "odd": 1.28,
+          "datetime": "2026-11-03T20:00:00Z",
+          "start_utc": "2026-11-03T20:00:00Z",
+          "league": "uefa.champions",
+          "event_id": "401915387",
           "research": {
-            "summary": "Atalanta je favorit, Pinnacle 1.54. U posljednjih 5 ligaških utakmica Atalanta 1 pobjeda, 2 remija i 2 poraza; Parma 1 pobjeda, 1 remi, 3 poraza. Atalanta 3/5 pobjeda kod kuće, Parma 0/4 u gostima.",
-            "pros": "Parma ima samo 5 postignutih golova u 9 kola; domaći teren i veći napadački učinak Atalante.",
-            "risks": "Atalanta ima veliki broj povreda i kratak odmor nakon utakmice 29.10. Modeli izvora se razilaze. Sastavi nisu potvrđeni; kvota je jutarnji snapshot.",
-            "injuries": "Atalanta bez Scamacce, Raspadorija, Kessiéa, Bellanove, Hiena, Kolašinca i Kossounoua prema dostupnim pregledima; Parma bez Bernabéa i Valentija prema jednom izvoru.",
+            "summary": "Barcelona domaćin i tržišni favorit; javni pregled navodi posljednjih 5 W-L-L-W-W, Aston Villa D-L-W-W-W. Uzorak 5 utakmica; Villa dobila sva 3 prethodna evropska meča.",
+            "pros": "Domaći teren, izražena napadačka forma; tržište oko 1.25-1.28.",
+            "risks": "Villa je neporažena u ovogodišnjoj Ligi šampiona; Barcelona ima kadrovske izostanke i odbrambene slabosti; početni sastavi nisu potvrđeni.",
+            "injuries": "Villa bez Amadou Onane; dostupni izvori navode više odsutnih igrača Barcelone bez potpune potvrde sastava.",
             "sources": [
               [
-                "Pinnacle, ListaSix 02.11.",
-                "https://github.com/shikithe/Slavojka/blob/main/shared/kvoter/provider-offers.json"
+                "ListaSix kvote 03.11.",
+                "https://github.com/shikithe/Slavojka/blob/main/shared/active-list.json"
               ],
               [
-                "Forma, povrede i tržište",
-                "https://www.betandsured.com/football/matches/atalanta-vs-parma-10979/"
+                "Football365 preview",
+                "https://www.football365.com/match-preview/barcelona-v-aston-villa-prediction-preview"
               ],
               [
-                "Nezavisna potvrda kvota",
-                "https://statsbet.es/futbol/partidos/atalanta-vs-parma-2026-11-02"
+                "Oddschecker 03.11.",
+                "https://www.oddschecker.com/football/champions-league/barcelona-v-aston-villa/winner?selectionName=barcelona"
               ]
             ],
-            "conclusion": "Tržišni de-vig benchmark domaćina 63.1%; nije nezavisna procjena vjerovatnoće niti dokaz pozitivnog EV. Uzorak forme 5 utakmica po timu. Poisson nije korišten bez validiranog prematch xG."
-          },
-          "result_status": "promašen",
-          "final_score": "0:3"
+            "conclusion": "Tržišni benchmark, ne nezavisna vjerovatnoća; bez validiranog prematch xG nije korišten Poisson."
+          }
         },
         {
-          "home": "Platense",
-          "away": "Central Córdoba",
-          "pick": "1",
-          "odd": 1.55,
-          "datetime": "2026-11-02T22:00:00Z",
-          "start_utc": "2026-11-02T22:00:00Z",
-          "league": "arg.1",
-          "event_id": "401841649",
+          "home": "Villarreal",
+          "away": "Paris Saint-Germain",
+          "pick": "2",
+          "odd": 1.73,
+          "datetime": "2026-11-03T20:00:00Z",
+          "start_utc": "2026-11-03T20:00:00Z",
+          "league": "uefa.champions",
+          "event_id": "401915309",
           "research": {
-            "summary": "Platense favorit po Pinnacle 1.55. Posljednjih 5 utakmica Platense 1 pobjeda, 2 remija i 2 poraza; Central Córdoba 0 pobjeda, 3 remija, 2 poraza, uključujući 0:5 od Véleza.",
-            "pros": "Central Córdoba bez pobjede u pet susreta; defanzivni izostanci i suspenzija Maciela.",
-            "risks": "Platense ima samo jednu pobjedu u posljednjih 5, više povreda i nepouzdanu napadačku formu. Potvrđeni početni sastavi nisu dostupni.",
-            "injuries": "Platense: Goñi, Bobadilla, Giménez, Sumavil, López, Ferreira i Quirós; Central Córdoba: Maciel suspendovan, Aguilar i Juárez povrijeđeni prema dostupnom pregledu.",
+            "summary": "PSG 5 pobjeda u posljednjih 5 u dostupnom pregledu, Villarreal mješovita forma; PSG tri pobjede u Ligi šampiona.",
+            "pros": "Napadačka forma PSG-a i pozitivna evropska serija.",
+            "risks": "Gostovanje; PSG bez Dembéléa, Kvaratskhelije i Marquinhosa prema aktuelnim pregledima, a Villarreal je postizao golove protiv jakih rivala.",
+            "injuries": "PSG: Dembélé, Kvaratskhelia, Marquinhos van prema Goal/Eurosport; Villarreal: Moreno i Akhomach upitni.",
             "sources": [
               [
-                "Pinnacle, ListaSix 02.11.",
-                "https://github.com/shikithe/Slavojka/blob/main/shared/kvoter/provider-offers.json"
+                "ListaSix kvote 03.11.",
+                "https://github.com/shikithe/Slavojka/blob/main/shared/active-list.json"
               ],
               [
-                "Forma i izostanci",
-                "https://sports.bzzoiro.com/matches/223877/"
+                "Goal preview 02.11.",
+                "https://www.goal.com/en/news/villarreal-paris-saint-germain-champions-league-preview/blt3ddf060fa14970e4"
               ],
               [
-                "Nezavisna 1X2 ponuda",
-                "https://stake.com/pt/sports/soccer/argentina/superliga/46797914-platense-central-cordoba"
+                "Eurosport preview 02.11.",
+                "https://www.eurosport.es/futbol/champions-league/2026-2027/villarreal-psg-fase-liga-jornada-4-alineaciones-probables-previa-estadisticas-horario-como-ver-tv-online-streaming-enlace_sto23351446/story.shtml"
               ]
             ],
-            "conclusion": "Tržišni de-vig benchmark domaćina 62.0%; nije nezavisna procjena vjerovatnoće niti dokaz pozitivnog EV. Uzorak forme 5 utakmica po timu. Poisson nije korišten bez validiranog prematch xG."
+            "conclusion": "Kvote predstavljaju tržište, ne nezavisnu procjenu niti EV; Poisson nije korišten."
           }
         }
       ],
-      "settled_at_utc": "2026-11-03T01:11:12.799510+00:00",
-      "payout": 0.0
+      "payout": 0
     }
   ],
   "pending_ticket_statuses": {
@@ -95,14 +92,14 @@
   },
   "pending_ticket_reasons": {
     "A": "",
-    "B": "Nema dovoljno nezavisno potvrđenih kvalitetnih drugih mečeva za 3+ s ukupnom kvotom 2–3. Newcastle–Everton i Bragantino–Santos imaju kontradiktorne gol-trendove i neuvjerljiv odnos tržišta i forme; A parovi se ne ponavljaju.",
-    "C": "Nema 4–6 validiranih nezavisnih drugih događaja za kvotu >=10; NBA ponuda prazna, NBA player-points i ESPN NBA statistika iz 29.10. su zastarjele."
+    "B": "Za dostupne druge mečeve nema dovoljno nezavisno potvrđenih over 2.5 kvota i pouzdane statistike; active-list ima over25 samo za Internacional–Coritiba, nedovoljno za ciljanu ukupnu kvotu 2–3.",
+    "C": "Nema 4–6 nezavisno provjerenih drugih događaja sa svježim kvotama; današnji NBA feed prazan, NBA player-points i ESPN statistika zastarjeli."
   },
-  "total_payout": 0.0,
-  "net_change": -13.6,
-  "analysis_status": "02.11.2026: ručna AI validacija A, B i C odvojeno, objavljen samo A. Uzorak 5 utakmica po timu; ESPN history-h2h.json u ListaSix je prazan, NBA podaci zastarjeli. Kvote su jutarnji Pinnacle snapshot, nisu izvršive potvrđene kvote. Nema izmišljenog EV ili Poissona.",
-  "selection_method": "Ručni AI izbor iz svježeg ListaSix active-list i provider-offers 02.11.2026, nezavisna provjera forme, termina, izostanaka i tržišta. Python filter nije uslov.",
-  "source_fixture_feed": "ListaSix shared/active-list.json i shared/collector-feed.json 2026-11-02",
+  "total_payout": 0,
+  "net_change": -12.71,
+  "analysis_status": "03.11.2026: ručni AI izbor iz svježeg ListaSix, nezavisna provjera termina, forme, kadra i tržišta. Izostanci mogu biti nepotpuni; H2H prazan. Bez nezavisnog xG Poissona i bez izmišljenog EV.",
+  "selection_method": "Ručni AI izbor iz ListaSix 03.11, bez obaveznog Python filtera; A/B/C nezavisno validirani.",
+  "source_fixture_feed": "ListaSix shared/collector-feed.json 2026-11-03 10:15 UTC",
   "source_nba_player_points": "Memara-tip collector-output/nba-player-points.json 29.10.2026 (stale)",
   "source_statistics_research": "Memara-tip collector-output/statistics-research.json 30.10.2026 (stale)"
 }
