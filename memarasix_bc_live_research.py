@@ -35,7 +35,7 @@ def prepare(now=None, fetch=remote):
             quotes=[x for x in offers if x.get("home","").casefold()==home.casefold()
                      and x.get("away","").casefold()==away.casefold()
                      and abs((dt(x["start_utc"])-start).total_seconds())<=300
-                     and dt(x["updated_at_utc"])<=now+timedelta(minutes=5)]
+                     and now-timedelta(hours=3)<=dt(x["updated_at_utc"])<=now+timedelta(minutes=5)]
             markets=[("3+","over","3+","B"),("3+","over","3+","C"),
                      ("2+","over","2+","C"),("BTTS","yes","BTTS","C"),
                      ("1X2","home","1","C"),("1X2","away","2","C")]
