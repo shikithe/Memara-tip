@@ -1,22 +1,24 @@
 KVOTER - KLADIONICARSKA PONUDA (TXT)
-Preuzeto: 2026-11-03T15:35:20.126315+00:00 UTC | vrijeme: Europe/Sarajevo
-Ukupno: 12 | automatski upareno: 2
+Preuzeto: 2026-11-04T15:50:43.221454+00:00 UTC | vrijeme: Europe/Sarajevo
+Ukupno: 14 | automatski upareno: 3
 Kvote iz posljednjeg API preuzimanja; nisu uzivo. Crtica = nema kvote.
 
 BR  DATUM SAT    UTAKMICA                                    1      X      2     3+  IZVOR
 --------------------------------------------------------------------------------------------------------------
-01  03.11. 18:45  Galatasaray - VfB Stuttgart                       -      -      -      -  N/P
-02  03.11. 18:45  Shakhtar Donetsk - Sporting CP                    -      -      -      -  N/P
-03  03.11. 21:00  Atlético Madrid - Bayern Munich                   -      -      -      -  N/P
-04  03.11. 21:00  Barcelona - Aston Villa                           -      -      -      -  N/P
-05  03.11. 21:00  Bodo/Glimt - Lille                                -      -      -      -  N/P
-06  03.11. 21:00  Feyenoord Rotterdam - Internazionale              -      -      -      -  N/P
-07  03.11. 21:00  LASK Linz - Slovan Bratislava                     -      -      -      -  N/P
-08  03.11. 21:00  Manchester United - AS Roma                       -      -      -      -  N/P
-09  03.11. 21:00  Villarreal - Paris Saint-Germain                  -      -      -      -  N/P
-10  03.11. 23:30  Chapecoense - Mirassol                         3.68   3.64   2.06      -  pinnacle
-11  04.11. 01:30  Internacional - Coritiba                       1.57   4.27   6.13      -  pinnacle
-12  04.11. 16:30  Stade Rennais - Olympiacos                        -      -      -      -  N/P
+01  04.11. 18:45  AEK Athens - Real Madrid                          -      -      -      -  N/P
+02  04.11. 18:45  Fenerbahce - Liverpool                            -      -      -      -  N/P
+03  04.11. 20:30  KV Kortrijk - KV Mechelen                      2.31   3.57   3.15      -  pinnacle
+04  04.11. 21:00  Borussia Dortmund - Real Betis                    -      -      -      -  N/P
+05  04.11. 21:00  FC Porto - Napoli                                 -      -      -      -  N/P
+06  04.11. 21:00  Lens - Como                                       -      -      -      -  N/P
+07  04.11. 21:00  PSV Eindhoven - Club Brugge                       -      -      -      -  N/P
+08  04.11. 21:00  RB Leipzig - Manchester City                      -      -      -      -  N/P
+09  04.11. 21:00  Slavia Prague - Arsenal                           -      -      -      -  N/P
+10  04.11. 21:00  Viking FK - Sabah FK                              -      -      -      -  N/P
+11  04.11. 23:30  Athletico-PR - Vasco da Gama                      -      -      -      -  N/P
+12  04.11. 23:30  Flamengo - Grêmio                              1.14   9.37  17.28      -  pinnacle
+13  05.11. 01:30  Botafogo - Atlético-MG                            -      -      -      -  N/P
+14  05.11. 01:30  São Paulo - Corinthians                        2.62   3.15   3.01      -  pinnacle
 
 1=domacin | X=nerijeseno | 2=gost | 3+=vise od 2.5 golova
 N/P = bez potvrdenih kvota u ovom ciklusu.
