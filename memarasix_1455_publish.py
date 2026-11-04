@@ -35,14 +35,21 @@ def main():
     same_day=data.get("date")==local.date().isoformat()
     existing=list(data.get("tickets",[])) if same_day else []
     existing_ids={t.get("id") for t in existing}
-    offer=load(ROOT/"listasix-data/active-list.json")
-    history=load(ROOT/"listasix-data/history-h2h.json")
+    # Use current ListaSix data directly; never trust a stale imported local copy.
+    try:
+        offer=remote("shared/active-list.json")
+        history=remote("shared/agent/history-h2h.json")
+    except Exception as exc:
+        return audit("Current ListaSix data unavailable; stale local copies are forbidden",
+                     {"detail":str(exc)[:200]})
     if offer.get("date")!=local.date().isoformat() or history.get("date")!=offer.get("date"):
         return audit("Offer and history dates mismatch or stale")
     if not offer.get("publication_allowed") or dt(offer["expires_at"])<=now:
         return audit("Offer not publication-allowed or expired")
     if not history.get("leagues") or not history.get("fixtures"):
         return audit("History lacks populated leagues/fixtures")
+    if not offer.get("fixtures"):
+        return audit("Current ListaSix has no valid fixtures")
     try:
         provider=remote("shared/kvoter/provider-offers.json")
     except Exception as exc:
@@ -210,7 +217,7 @@ def main():
     result={"timestamp_utc":now.isoformat(),"status":"published",
             "tickets":[t["id"] for t in accepted],"rejected":rejected,
             "daily_stake_added":spent,"bank_after_stakes":balance}
-    Path("memarasix-1455-audit.json").write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    Path("memarasix-1455-audit.json").write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps(result,ensure_ascii=False))
     tmp=ROOT/"data.json.tmp"
     tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
