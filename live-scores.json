@@ -1,6 +1,6 @@
 {
   "date": "2026-11-03",
-  "updated_at_utc": "2026-11-03T21:53:45.831024+00:00",
+  "updated_at_utc": "2026-11-04T01:22:14.490660+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,12 +9,13 @@
       "index": 0,
       "home": "Barcelona",
       "away": "Aston Villa",
-      "state": "live",
+      "state": "final",
       "score": "3:0",
       "source": "espn-public-unofficial",
       "event_id": "401915387",
       "league": "uefa.champions",
-      "minute": "90"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "A",
