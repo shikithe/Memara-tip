@@ -1,34 +1,32 @@
 {
-  "date": "2026-11-03",
-  "updated_at_utc": "2026-11-04T08:33:27.086319+00:00",
+  "date": "2026-11-04",
+  "updated_at_utc": "2026-11-04T15:43:33.645067+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
     {
       "ticket": "A",
       "index": 0,
-      "home": "Barcelona",
-      "away": "Aston Villa",
-      "state": "final",
-      "score": "3:0",
+      "home": "AEK Athens",
+      "away": "Real Madrid",
+      "state": "scheduled",
+      "score": "0:0",
       "source": "espn-public-unofficial",
-      "event_id": "401915387",
+      "event_id": "401915383",
       "league": "uefa.champions",
-      "minute": null,
-      "result_status": "pogođen"
+      "minute": null
     },
     {
       "ticket": "A",
       "index": 1,
-      "home": "Villarreal",
-      "away": "Paris Saint-Germain",
-      "state": "final",
-      "score": "0:6",
+      "home": "Borussia Dortmund",
+      "away": "Real Betis",
+      "state": "scheduled",
+      "score": "0:0",
       "source": "espn-public-unofficial",
-      "event_id": "401915309",
+      "event_id": "401915304",
       "league": "uefa.champions",
-      "minute": null,
-      "result_status": "pogođen"
+      "minute": null
     }
   ],
   "bank_unchanged": true
