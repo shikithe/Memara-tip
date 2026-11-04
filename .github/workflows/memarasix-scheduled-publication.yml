@@ -1,4 +1,4 @@
-name: MemaraSix daily 12:00 atomic A/B publication
+name: MemaraSix daily 12:00 independent A/B/C publication
 on:
   workflow_dispatch:
   schedule:
