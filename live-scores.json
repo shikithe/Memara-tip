@@ -1,6 +1,6 @@
 {
   "date": "2026-11-04",
-  "updated_at_utc": "2026-11-04T21:30:11.067367+00:00",
+  "updated_at_utc": "2026-11-04T22:13:05.572430+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -22,12 +22,13 @@
       "index": 1,
       "home": "Borussia Dortmund",
       "away": "Real Betis",
-      "state": "live",
-      "score": "1:0",
+      "state": "final",
+      "score": "2:1",
       "source": "espn-public-unofficial",
       "event_id": "401915304",
       "league": "uefa.champions",
-      "minute": "67"
+      "minute": null,
+      "result_status": "pogođen"
     }
   ],
   "bank_unchanged": true

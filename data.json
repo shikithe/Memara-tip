@@ -5,10 +5,10 @@
   "bank_before": 211,
   "daily_budget": 21.1,
   "daily_stake": 13.72,
-  "bank_after": 197.28,
+  "bank_after": 226.78,
   "bank_after_stakes": 197.28,
-  "provisional": true,
-  "settled": false,
+  "provisional": false,
+  "settled": true,
   "odds_verified": false,
   "odds_verification_note": "ListaSix shared/active-list.json 04.11.2026. Real Madrid 1.23 Smarkets; Borussia Dortmund 1.75 Unibet UK. Snapshot kvote nisu garantovano izvršive u trenutku objave i nisu Mozzartbet BiH.",
   "tickets": [
@@ -17,7 +17,7 @@
       "label": "GLAVNI TIKET",
       "odds": 2.15,
       "stake": 13.72,
-      "status": "aktivan",
+      "status": "dobitan",
       "matches": [
         {
           "home": "AEK Athens",
@@ -77,9 +77,13 @@
               ]
             ],
             "conclusion": "Tržišni benchmark; nema validiranog prematch xG za nezavisni Poisson niti izračunatog EV."
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "2:1"
         }
-      ]
+      ],
+      "settled_at_utc": "2026-11-04T22:13:05.572430+00:00",
+      "payout": 29.5
     }
   ],
   "pending_ticket_statuses": {
@@ -92,8 +96,8 @@
     "B": "Dostupne over 2.5 kvote postoje, ali nezavisna provjera za kombinaciju ukupne kvote 2–3 nije dala dovoljno pouzdanu prednost uz rizik i izostanke; nijedan B tiket nije prošao strogu validaciju.",
     "C": "NBA feed danas prazan, player-points kvote od 29.10. i ESPN istorijski uzorci zastarjeli; nema 4–6 drugih kvalitetnih događaja s validnim kvotama za minimum 10."
   },
-  "total_payout": 0.0,
-  "net_change": null,
+  "total_payout": 29.5,
+  "net_change": 15.78,
   "analysis_status": "04.11.2026: ručni izbor iz svježeg ListaSix 09:45 UTC, nezavisna provjera izvora i termina. Statistički H2H prazan; ESPN NBA feed prazan; bez Poissona ili EV.",
   "selection_method": "Ručni AI izbor; nezavisna validacija A/B/C bez Python filtera.",
   "source_fixture_feed": "ListaSix shared/collector-feed.json 2026-11-04 08:45 UTC (publication_allowed=false; active-list publication_allowed=true)",
