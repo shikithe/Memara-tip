@@ -65,7 +65,7 @@ def settle(published, snapshot):
         return len(parts)==2 and all(x.isdigit() for x in parts) and sum(map(int,parts))>=threshold
 
     for ticket in original.get("tickets",[]):
-        if ticket.get("status") not in ("objavljen","dobitan","izgubljen"):
+        if ticket.get("status") not in ("objavljen","aktivan","dobitan","izgubljen"):
             continue
         legs=[]
         for index,match in enumerate(ticket.get("matches",[])):
