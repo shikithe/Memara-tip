@@ -5,10 +5,10 @@
   "bank_before": 195.62,
   "daily_budget": 19.56,
   "daily_stake": 12.71,
-  "bank_after": 182.91,
+  "bank_after": 211.0,
   "bank_after_stakes": 182.91,
-  "provisional": true,
-  "settled": false,
+  "provisional": false,
+  "settled": true,
   "odds_verified": false,
   "odds_verification_note": "ListaSix active-list.json 03.11.2026, provider offers snapshot 10:14 UTC. Kvote 1.28 Ladbrokes UK i 1.73 Betfred UK, nisu Mozzartbet BiH niti garantovano izvršive u trenutku objave.",
   "tickets": [
@@ -17,7 +17,7 @@
       "label": "GLAVNI TIKET",
       "odds": 2.21,
       "stake": 12.71,
-      "status": "aktivan",
+      "status": "dobitan",
       "matches": [
         {
           "home": "Barcelona",
@@ -48,7 +48,9 @@
               ]
             ],
             "conclusion": "Tržišni benchmark, ne nezavisna vjerovatnoća; bez validiranog prematch xG nije korišten Poisson."
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "3:0"
         },
         {
           "home": "Villarreal",
@@ -79,10 +81,13 @@
               ]
             ],
             "conclusion": "Kvote predstavljaju tržište, ne nezavisnu procjenu niti EV; Poisson nije korišten."
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "0:6"
         }
       ],
-      "payout": 0
+      "payout": 28.09,
+      "settled_at_utc": "2026-11-04T07:35:49.691669+00:00"
     }
   ],
   "pending_ticket_statuses": {
@@ -95,8 +100,8 @@
     "B": "Za dostupne druge mečeve nema dovoljno nezavisno potvrđenih over 2.5 kvota i pouzdane statistike; active-list ima over25 samo za Internacional–Coritiba, nedovoljno za ciljanu ukupnu kvotu 2–3.",
     "C": "Nema 4–6 nezavisno provjerenih drugih događaja sa svježim kvotama; današnji NBA feed prazan, NBA player-points i ESPN statistika zastarjeli."
   },
-  "total_payout": 0.0,
-  "net_change": null,
+  "total_payout": 28.09,
+  "net_change": 15.38,
   "analysis_status": "03.11.2026: ručni AI izbor iz svježeg ListaSix, nezavisna provjera termina, forme, kadra i tržišta. Izostanci mogu biti nepotpuni; H2H prazan. Bez nezavisnog xG Poissona i bez izmišljenog EV.",
   "selection_method": "Ručni AI izbor iz ListaSix 03.11, bez obaveznog Python filtera; A/B/C nezavisno validirani.",
   "source_fixture_feed": "ListaSix shared/collector-feed.json 2026-11-03 10:15 UTC",
