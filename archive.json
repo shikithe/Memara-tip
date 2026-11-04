@@ -2070,5 +2070,115 @@
     "source_fixture_feed": "ListaSix shared/active-list.json i shared/collector-feed.json 2026-11-02",
     "source_nba_player_points": "Memara-tip collector-output/nba-player-points.json 29.10.2026 (stale)",
     "source_statistics_research": "Memara-tip collector-output/statistics-research.json 30.10.2026 (stale)"
+  },
+  {
+    "date": "2026-11-03",
+    "published": "2026-11-03 12:03 (Europe/Sarajevo) — djelimična GitHub objava A",
+    "publication_type": "manual_ai_partial_publication",
+    "bank_before": 195.62,
+    "daily_budget": 19.56,
+    "daily_stake": 12.71,
+    "bank_after": 211,
+    "bank_after_stakes": 182.91,
+    "provisional": false,
+    "settled": true,
+    "odds_verified": false,
+    "odds_verification_note": "ListaSix active-list.json 03.11.2026, provider offers snapshot 10:14 UTC. Kvote 1.28 Ladbrokes UK i 1.73 Betfred UK, nisu Mozzartbet BiH niti garantovano izvršive u trenutku objave.",
+    "tickets": [
+      {
+        "id": "A",
+        "label": "GLAVNI TIKET",
+        "odds": 2.21,
+        "stake": 12.71,
+        "status": "dobitan",
+        "matches": [
+          {
+            "home": "Barcelona",
+            "away": "Aston Villa",
+            "pick": "1",
+            "odd": 1.28,
+            "datetime": "2026-11-03T20:00:00Z",
+            "start_utc": "2026-11-03T20:00:00Z",
+            "league": "uefa.champions",
+            "event_id": "401915387",
+            "research": {
+              "summary": "Barcelona domaćin i tržišni favorit; javni pregled navodi posljednjih 5 W-L-L-W-W, Aston Villa D-L-W-W-W. Uzorak 5 utakmica; Villa dobila sva 3 prethodna evropska meča.",
+              "pros": "Domaći teren, izražena napadačka forma; tržište oko 1.25-1.28.",
+              "risks": "Villa je neporažena u ovogodišnjoj Ligi šampiona; Barcelona ima kadrovske izostanke i odbrambene slabosti; početni sastavi nisu potvrđeni.",
+              "injuries": "Villa bez Amadou Onane; dostupni izvori navode više odsutnih igrača Barcelone bez potpune potvrde sastava.",
+              "sources": [
+                [
+                  "ListaSix kvote 03.11.",
+                  "https://github.com/shikithe/Slavojka/blob/main/shared/active-list.json"
+                ],
+                [
+                  "Football365 preview",
+                  "https://www.football365.com/match-preview/barcelona-v-aston-villa-prediction-preview"
+                ],
+                [
+                  "Oddschecker 03.11.",
+                  "https://www.oddschecker.com/football/champions-league/barcelona-v-aston-villa/winner?selectionName=barcelona"
+                ]
+              ],
+              "conclusion": "Tržišni benchmark, ne nezavisna vjerovatnoća; bez validiranog prematch xG nije korišten Poisson."
+            },
+            "result_status": "pogođen",
+            "final_score": "3:0"
+          },
+          {
+            "home": "Villarreal",
+            "away": "Paris Saint-Germain",
+            "pick": "2",
+            "odd": 1.73,
+            "datetime": "2026-11-03T20:00:00Z",
+            "start_utc": "2026-11-03T20:00:00Z",
+            "league": "uefa.champions",
+            "event_id": "401915309",
+            "research": {
+              "summary": "PSG 5 pobjeda u posljednjih 5 u dostupnom pregledu, Villarreal mješovita forma; PSG tri pobjede u Ligi šampiona.",
+              "pros": "Napadačka forma PSG-a i pozitivna evropska serija.",
+              "risks": "Gostovanje; PSG bez Dembéléa, Kvaratskhelije i Marquinhosa prema aktuelnim pregledima, a Villarreal je postizao golove protiv jakih rivala.",
+              "injuries": "PSG: Dembélé, Kvaratskhelia, Marquinhos van prema Goal/Eurosport; Villarreal: Moreno i Akhomach upitni.",
+              "sources": [
+                [
+                  "ListaSix kvote 03.11.",
+                  "https://github.com/shikithe/Slavojka/blob/main/shared/active-list.json"
+                ],
+                [
+                  "Goal preview 02.11.",
+                  "https://www.goal.com/en/news/villarreal-paris-saint-germain-champions-league-preview/blt3ddf060fa14970e4"
+                ],
+                [
+                  "Eurosport preview 02.11.",
+                  "https://www.eurosport.es/futbol/champions-league/2026-2027/villarreal-psg-fase-liga-jornada-4-alineaciones-probables-previa-estadisticas-horario-como-ver-tv-online-streaming-enlace_sto23351446/story.shtml"
+                ]
+              ],
+              "conclusion": "Kvote predstavljaju tržište, ne nezavisnu procjenu niti EV; Poisson nije korišten."
+            },
+            "result_status": "pogođen",
+            "final_score": "0:6"
+          }
+        ],
+        "payout": 28.09,
+        "settled_at_utc": "2026-11-04T07:35:49.691669+00:00"
+      }
+    ],
+    "pending_ticket_statuses": {
+      "A": "objavljen",
+      "B": "nedostupan",
+      "C": "nedostupan"
+    },
+    "pending_ticket_reasons": {
+      "A": "",
+      "B": "Za dostupne druge mečeve nema dovoljno nezavisno potvrđenih over 2.5 kvota i pouzdane statistike; active-list ima over25 samo za Internacional–Coritiba, nedovoljno za ciljanu ukupnu kvotu 2–3.",
+      "C": "Nema 4–6 nezavisno provjerenih drugih događaja sa svježim kvotama; današnji NBA feed prazan, NBA player-points i ESPN statistika zastarjeli."
+    },
+    "total_payout": 28.09,
+    "net_change": 15.38,
+    "analysis_status": "03.11.2026: ručni AI izbor iz svježeg ListaSix, nezavisna provjera termina, forme, kadra i tržišta. Izostanci mogu biti nepotpuni; H2H prazan. Bez nezavisnog xG Poissona i bez izmišljenog EV.",
+    "selection_method": "Ručni AI izbor iz ListaSix 03.11, bez obaveznog Python filtera; A/B/C nezavisno validirani.",
+    "source_fixture_feed": "ListaSix shared/collector-feed.json 2026-11-03 10:15 UTC",
+    "source_nba_player_points": "Memara-tip collector-output/nba-player-points.json 29.10.2026 (stale)",
+    "source_statistics_research": "Memara-tip collector-output/statistics-research.json 30.10.2026 (stale)"
   }
 ]
