@@ -22,7 +22,7 @@ jobs:
           EVENT_NAME: ${{ github.event_name }}
         run: |
           clock="$(TZ=Europe/Sarajevo date +%H:%M)"
-          if [ "$EVENT_NAME" = "workflow_dispatch" ] || [ "$clock" = "12:00" ]; then
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] || { [ "$clock" != "" ] && [[ "$clock" > "11:59" && "$clock" < "12:31" ]]; }; then
             echo "enabled=true" >> "$GITHUB_OUTPUT"
           else
             echo "enabled=false" >> "$GITHUB_OUTPUT"
