@@ -48,7 +48,9 @@
               ]
             ],
             "conclusion": "Tržišni benchmark bez nezavisnog Poisson xG ili EV."
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "2:3"
         },
         {
           "home": "Borussia Dortmund",

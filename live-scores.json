@@ -1,6 +1,6 @@
 {
   "date": "2026-11-04",
-  "updated_at_utc": "2026-11-04T16:35:38.689794+00:00",
+  "updated_at_utc": "2026-11-04T21:30:11.067367+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,24 +9,25 @@
       "index": 0,
       "home": "AEK Athens",
       "away": "Real Madrid",
-      "state": "scheduled",
-      "score": "0:0",
+      "state": "final",
+      "score": "2:3",
       "source": "espn-public-unofficial",
       "event_id": "401915383",
       "league": "uefa.champions",
-      "minute": null
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "A",
       "index": 1,
       "home": "Borussia Dortmund",
       "away": "Real Betis",
-      "state": "scheduled",
-      "score": "0:0",
+      "state": "live",
+      "score": "1:0",
       "source": "espn-public-unofficial",
       "event_id": "401915304",
       "league": "uefa.champions",
-      "minute": null
+      "minute": "67"
     }
   ],
   "bank_unchanged": true
