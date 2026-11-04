@@ -31,8 +31,10 @@ def main():
         # Prior settled day remains the bank source until the first daily publication.
         if data.get("date", "")>local.date().isoformat() or not data.get("settled",False):
             return audit("Previous day not settled or data.json date is in the future")
-    if any(t.get("status") in ("objavljen","aktivan","dobitan","izgubljen") for t in data.get("tickets",[])):
-        return audit("Today's published ticket exists; never overwrite")
+    # Preserve previously published tickets; allow another approved ID the same day.
+    same_day=data.get("date")==local.date().isoformat()
+    existing=list(data.get("tickets",[])) if same_day else []
+    existing_ids={t.get("id") for t in existing}
     offer=load(ROOT/"listasix-data/active-list.json")
     history=load(ROOT/"listasix-data/history-h2h.json")
     if offer.get("date")!=local.date().isoformat() or history.get("date")!=offer.get("date"):
@@ -104,75 +106,115 @@ def main():
     approved=load(approval)
     if approved.get("date")!=local.date().isoformat() or not approved.get("tickets"):
         return audit("Approval file has wrong date or no tickets")
-    # Publication invariant: approved A and B are an atomic daily pair.
-    # Never silently publish only one when both are approved.
+    # A, B and C are independent; reject only the ticket that fails validation.
     approved_ids=[t.get("id") for t in approved["tickets"]]
     if len(approved_ids)!=len(set(approved_ids)):
         return audit("Duplicate approved ticket IDs")
-    if not {"A","B"}.issubset(set(approved_ids)):
-        return audit("Daily publication requires both A and B approved together",
-                     {"approved_ids":approved_ids})
     selected=[]
-    used=set()
+    rejected={}
+    used={leg.get("fixture_id") for t in existing for leg in t.get("matches",[]) if leg.get("fixture_id")}
+    used.update((leg.get("home"),leg.get("away"),leg.get("start_utc",leg.get("datetime")))
+                for t in existing for leg in t.get("matches",[]) if leg.get("home") and leg.get("away"))
     for ticket in approved["tickets"]:
         tid=ticket.get("id")
-        if tid not in ("A","B","C") or tid in {t["id"] for t in selected}:
-            return audit("Unknown or repeated ticket ID")
+        if tid in existing_ids:
+            rejected[tid]="Already published today"
+            continue
+        if tid not in ("A","B","C"):
+            rejected[str(tid)]="Unknown ticket ID"
+            continue
         legs=ticket.get("matches",[])
         if not legs:
-            return audit("Approved ticket has no matches")
+            rejected[tid]="No approved matches"
+            continue
         verified=[]
+        problem=None
         for leg in legs:
             fid=leg.get("fixture_id")
-            if fid in used:
-                return audit("Repeated fixture across tickets")
             possible=[c for c in candidates if c["fixture_id"]==fid and c["pick"]==leg.get("pick")
                       and c["bookmaker"]==leg.get("bookmaker")]
             if not possible:
-                return audit("Approved leg not supported by fresh verified bookmaker quotes",{"fixture_id":fid})
+                problem="No verified matching bookmaker quote"
+                break
             c=possible[0]
+            signature=(c["home"],c["away"],c["start_utc"])
+            if fid in used or signature in used or any(v["fixture_id"]==fid for v in verified):
+                problem="Repeated fixture across tickets"
+                break
             if abs(float(leg.get("odd",0))-c["odd"])>0.01:
-                return audit("Approved odds differ from verified bookmaker quote",{"fixture_id":fid})
+                problem="Approved odds differ from verified quote"
+                break
             if tid=="B" and c["pick"]!="3+":
-                return audit("Ticket B requires Over 2.5")
-            used.add(fid)
+                problem="Ticket B requires Over 2.5"
+                break
             verified.append(c)
+        if problem:
+            rejected[tid]=problem
+            continue
         total=1.0
         for c in verified: total*=c["odd"]
         if tid in ("A","B") and not 2.0<=total<=3.0:
-            return audit("A/B combined odds outside 2–3",{"ticket":tid,"odds":total})
+            rejected[tid]="A/B combined odds outside 2–3"
+            continue
         if tid=="C" and total<10.0:
-            return audit("C combined odds below 10",{"odds":total})
+            rejected[tid]="C combined odds below 10"
+            continue
         selected.append({"id":tid,"matches":verified,"odds":round(total,2),
                          "analysis":ticket.get("analysis","Independently reviewed ListaSix selection"),
                          "label":{"A":"GLAVNI TIKET","B":"GOLOVI","C":"KEŠ KOLICA"}[tid]})
-    bank=float(data.get("bank_after",0) if data.get("date")!=local.date().isoformat() else data.get("bank_before",data.get("bank_after",0)))
+        for c in verified:
+            used.add(c["fixture_id"])
+            used.add((c["home"],c["away"],c["start_utc"]))
+    if not selected:
+        return audit("No new eligible approved tickets",{"rejected":rejected})
+    bank=float(data.get("bank_before",data.get("bank_after",0)) if same_day else data.get("bank_after",0))
     if bank<=0: return audit("Invalid bank")
     budget=round(bank*.1,2)
     shares={"A":.65,"B":.25,"C":.10}
-    ids={t["id"] for t in selected}
-    if ids=={"A","B"}: shares={"A":.70,"B":.30}
-    stakes={}
+    already_spent=round(sum(float(t.get("stake",0)) for t in existing),2)
+    remaining=round(budget-already_spent,2)
+    if remaining<0: return audit("Existing stakes exceed daily budget")
+    accepted=[]
+    spent=0.0
     for t in selected:
-        stakes[t["id"]]=round(budget*shares[t["id"]],2)
-        t["stake"]=stakes[t["id"]]
-        t["status"]="objavljen"
-        t["payout"]=0
-    spent=round(sum(stakes.values()),2)
-    if spent>budget: return audit("Allocation exceeds daily budget")
-    data.update({"date":local.date().isoformat(),"published":local.strftime("%d.%m.%Y. u %H:%M (Europe/Sarajevo)"),
-      "published_at_utc":now.isoformat(),"publication_type":"verified_github_1455",
-      "bank_before":bank,"daily_budget":budget,"daily_stake":spent,"bank_after_stakes":round(bank-spent,2),
-      "bank_after":round(bank-spent,2),"tickets":selected,"settled":False,"provisional":False,
-      "odds_verified":True,"analysis_status":"GitHub published independently reviewed and quote-validated ListaSix picks",
-      "selection_method":"Independently reviewed selections with verified bookmaker quotes"})
+        stake=round(budget*shares[t["id"]],2)
+        if stake<=0 or round(spent+stake,2)>remaining:
+            rejected[t["id"]]="Insufficient remaining daily stake budget"
+            continue
+        t.update({"stake":stake,"status":"objavljen","payout":0})
+        spent=round(spent+stake,2)
+        accepted.append(t)
+    if not accepted:
+        return audit("No approved ticket fits remaining daily budget",{"rejected":rejected})
+    balance=round((float(data.get("bank_after",0)) if same_day else bank)-spent,2)
+    if balance<0: return audit("Insufficient balance")
+    statuses=dict(data.get("pending_ticket_statuses",{})) if same_day else {}
+    reasons=dict(data.get("pending_ticket_reasons",{})) if same_day else {}
+    for t in accepted:
+        statuses[t["id"]]="objavljen"
+        reasons[t["id"]]=""
+    for tid,reason in rejected.items():
+        if tid not in existing_ids:
+            statuses[tid]="nije odobren"
+            reasons[tid]=reason
+    data.update({"date":local.date().isoformat(),
+      "published":data.get("published") if existing else local.strftime("%d.%m.%Y. u %H:%M (Europe/Sarajevo)"),
+      "published_at_utc":data.get("published_at_utc") if existing else now.isoformat(),
+      "publication_type":"independent_verified_github",
+      "bank_before":bank,"daily_budget":budget,
+      "daily_stake":round(already_spent+spent,2),"bank_after_stakes":balance,
+      "bank_after":balance,"tickets":existing+accepted,"settled":False,"provisional":False,
+      "pending_ticket_statuses":statuses,"pending_ticket_reasons":reasons,
+      "odds_verified":True,"analysis_status":"Independent verified ticket publication",
+      "selection_method":"Each approved ticket independently checked"})
+    result={"timestamp_utc":now.isoformat(),"status":"published",
+            "tickets":[t["id"] for t in accepted],"rejected":rejected,
+            "daily_stake_added":spent,"bank_after_stakes":balance}
+    Path("memarasix-1455-audit.json").write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    print(json.dumps(result,ensure_ascii=False))
     tmp=ROOT/"data.json.tmp"
     tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     tmp.replace(ROOT/"data.json")
-    result={"timestamp_utc":now.isoformat(),"status":"published","tickets":[t["id"] for t in selected],
-            "daily_stake":spent,"bank_after_stakes":data["bank_after_stakes"]}
-    Path("memarasix-1455-audit.json").write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(json.dumps(result,ensure_ascii=False))
     return 0
 if __name__=="__main__":
     sys.exit(main())
