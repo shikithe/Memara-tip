@@ -1,16 +1,16 @@
 {
   "date": "2026-11-05",
-  "published": "2026-11-05 12:00 (Europe/Sarajevo) — djelimična AI objava A",
-  "publication_type": "manual_ai_partial_publication",
+  "published": "2026-11-05 12:00 (Europe/Sarajevo) — A; B i C dopuna 12:23",
+  "publication_type": "independent_ai_supplement_B_C_reference_odds",
   "bank_before": 226.78,
   "daily_budget": 22.68,
-  "daily_stake": 14.74,
-  "bank_after": 212.04,
-  "bank_after_stakes": 212.04,
+  "daily_stake": 22.68,
+  "bank_after": 204.1,
+  "bank_after_stakes": 204.1,
   "provisional": false,
   "settled": false,
   "odds_verified": false,
-  "odds_verification_note": "ListaSix shared/active-list.json 05.11.2026, snapshot stranih kladionica; nisu Mozzartbet BiH kvote i nisu garantovano izvršive u trenutku objave.",
+  "odds_verification_note": "Sačuvane OddsAPI kotacije od oko 10:59 Sarajevo 05.11.2026; posljednje tržišne cijene, ne garantovana aktualna ponuda jer OddsAPI vraća HTTP 401.",
   "tickets": [
     {
       "id": "A",
@@ -97,21 +97,312 @@
           }
         }
       ]
+    },
+    {
+      "id": "B",
+      "label": "GOLOVI — VIŠE OD 2,5",
+      "odds": 2.52,
+      "stake": 5.67,
+      "status": "aktivan",
+      "analysis": {
+        "summary": "AI analiza 05.11.2026: Torreense je u tri UEFA nastupa izgubio 1:2 od Lillestrøma, 1:2 od Sunderlanda i 1:4 od Ferencvárosa; Ararat-Armenia izgubila je 1:4 od Sparte, 1:3 od Jagiellonije i 0:4 od AZ-a. Svih šest evropskih utakmica završeno je sa najmanje tri gola. Atalanta je igrala 3:1 protiv Pafosa i 0:2 kod Ajaxa; Kairat 1:1 protiv Rige i 1:5 protiv Panathinaikosa. Kod Atalante su prijavljeni brojni izostanci, zato je drugi par značajno rizičniji. Puna forma pet mečeva, početne postave, xG i EV nisu potpuno potvrđeni. Kvote su posljednji sačuvani OddsAPI snapshot, nisu aktuelno obnovljene zbog HTTP 401.",
+        "risks": "Kvotama je potvrđeno porijeklo, ali provider trenutno vraća HTTP 401, pa su prikazane kao posljednji poznati snapshot; ovo su virtuelni ulozi i izbori mogu izgubiti.",
+        "sources": [
+          [
+            "UEFA Europa League",
+            "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+          ],
+          [
+            "UEFA Conference League",
+            "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/"
+          ]
+        ]
+      },
+      "matches": [
+        {
+          "fixture_id": "espn:football:uefa.europa.conf:401915830",
+          "home": "Atalanta",
+          "away": "Kairat Almaty",
+          "league": "uefa.europa.conf",
+          "pick": "3+",
+          "odd": 1.29,
+          "datetime": "2026-11-05T17:45:00Z",
+          "start_utc": "2026-11-05T17:45:00Z",
+          "event_id": "401915830",
+          "provider_event_id": "dce9bc68a02a1588bbcf869175c77289",
+          "bookmaker": "betsson",
+          "market_name": "3+",
+          "odds_verified_at_utc": "2026-11-05T09:59:30Z",
+          "odds_status": "last_known_snapshot",
+          "research": {
+            "summary": "Atalanta 3:1 protiv Pafosa i 0:2 protiv Ajaxa; Kairat 1:1 s Rigom i 1:5 protiv Panathinaikosa u UEFA Konferencijskoj ligi.",
+            "pros": "Kairat ima ranjivu evropsku odbranu, a Atalanta je kod kuće već postigla tri gola.",
+            "risks": "Atalanta ima niz izostanaka i slabiji noviji rezultat; i 2:0 bi oborilo tip 3+.",
+            "injuries": "Prijavljeni izostanci Atalante uključuju Hiena, Kossounoua, Kolasinca i Bellanovu; konačne postave nisu potvrđene.",
+            "conclusion": "Rizičan drugi par B, bez nezavisno potvrđene prednosti nad tržištem.",
+            "sources": [
+              [
+                "UEFA Konferencijska liga rezultati",
+                "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/"
+              ],
+              [
+                "Sports Mole timske vijesti",
+                "https://www.sportsmole.co.uk/football/atalanta-bc/europa-conference-league/preview/atalanta-vs-kairat-prediction-team-news-lineups_608346.html"
+              ]
+            ]
+          }
+        },
+        {
+          "fixture_id": "espn:football:uefa.europa:401915530",
+          "home": "Torreense",
+          "away": "Ararat-Armenia",
+          "league": "uefa.europa",
+          "pick": "3+",
+          "odd": 1.95,
+          "datetime": "2026-11-05T20:00:00Z",
+          "start_utc": "2026-11-05T20:00:00Z",
+          "event_id": "401915530",
+          "provider_event_id": "402e102fa845ed84ab7e59b3b17f8c29",
+          "bookmaker": "williamhill",
+          "market_name": "3+",
+          "odds_verified_at_utc": "2026-11-05T09:59:17Z",
+          "odds_status": "last_known_snapshot",
+          "research": {
+            "summary": "Prethodna tri evropska rezultata Torreensea (1:2, 1:2, 1:4) i Ararat-Armenije (1:4, 1:3, 0:4) svi su imali najmanje tri gola.",
+            "pros": "6 od 6 UEFA utakmica s 3+ golova u posmatranom evropskom uzorku; oba tima često primaju više golova.",
+            "risks": "Uzorak je samo po tri evropska meča; nije potvrđen kompletan učinak kroz domaća takmičenja, postave i xG.",
+            "injuries": "Nisu nezavisno provjereni današnji potvrđeni sastavi i svi izostanci.",
+            "conclusion": "3+ je statistički podržan evropskim uzorkom, ali nema dokazanog očekivanog prinosa.",
+            "sources": [
+              [
+                "UEFA Europa League prethodni rezultati",
+                "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "label": "KEŠ KOLICA",
+      "odds": 13.28,
+      "stake": 2.27,
+      "status": "aktivan",
+      "analysis": {
+        "summary": "AI analiza 05.11.2026: Brighton u Evropi 4:0 Kauno Žalgiris i 0:0 Jablonec, Getafe 1:1 Craiova i 2:5 Lugano; zato razmatramo pobjedu Brightona u gostima, uz rizik gostovanja i povreda. Gent je 1:0 dobio Aarhus i 0:2 izgubio kod Brage, a KuPS gubio 2:4 od Trabzonspora i 0:2 od Borca; gostovanje Genta ipak rizično. Panathinaikos 2:1 Borac i 5:1 Kairat, CSKA Sofia 1:2 Monaco i 2:2 Nordsjælland; domaći favorit. Crystal Palace zabio je u sva tri evropska nastupa, a Hoffenheim ima ranjivu odbranu uz izostanke; GG je rizik. Celtic je postigao gol u sva tri evropska susreta, Beşiktaş dao 4, 3, 2 u tri; GG je rizik uz Celticovu formu. Celta i Union SG imaju po dva od tri evropska meča sa 3+ golova; ali Celta ima napadačke izostanke. Ovo je namjerno visokorizična kombinacija, bez nezavisno dokazanog očekivanog prinosa. Kvotama je potvrđeno porijeklo u sačuvanim OddsAPI snapshotima, ali nisu osvježene zbog HTTP 401. Početni sastavi i sve povrede nisu konačno potvrđeni.",
+        "risks": "Kvotama je potvrđeno porijeklo, ali provider trenutno vraća HTTP 401, pa su prikazane kao posljednji poznati snapshot; ovo su virtuelni ulozi i izbori mogu izgubiti.",
+        "sources": [
+          [
+            "UEFA Europa League",
+            "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+          ],
+          [
+            "UEFA Conference League",
+            "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/"
+          ]
+        ]
+      },
+      "matches": [
+        {
+          "fixture_id": "espn:football:uefa.europa:401915526",
+          "home": "Crystal Palace",
+          "away": "TSG Hoffenheim",
+          "league": "uefa.europa",
+          "pick": "GG",
+          "odd": 1.44,
+          "datetime": "2026-11-05T17:45:00Z",
+          "start_utc": "2026-11-05T17:45:00Z",
+          "event_id": "401915526",
+          "provider_event_id": "2347e0e7725940f6a14d5a80601390a5",
+          "bookmaker": "leovegas",
+          "market_name": "BTTS",
+          "odds_verified_at_utc": "2026-11-05T09:59:41Z",
+          "odds_status": "last_known_snapshot",
+          "research": {
+            "summary": "Palace je postigao gol u sva tri evropska kola (4:0, 2:3, 2:2), Hoffenheim je postizao u dva od tri meča (0:2, 2:3, 3:0).",
+            "pros": "Oba imaju napadačke mogućnosti, Hoffenheimu nedostaje više defanzivaca.",
+            "risks": "GG pada ako bilo koja ekipa ne postigne gol; Palace je jednom sačuvao mrežu.",
+            "injuries": "Hoffenheim odbrambeni izostanci (Hranac, Hajdari, Gendrey); Palace bez Tomiyasua i Riada prema pregledima.",
+            "conclusion": "GG je moguć, ali nije garantovan; prognoza zasnovana na dostupnim evropskim rezultatima i izvještajima.",
+            "sources": [
+              [
+                "UEFA Europa results",
+                "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+              ],
+              [
+                "TNT Sports team news",
+                "https://www.tntsports.co.uk/betting/tips/crystal-palace-vs-hoffenheim-prediction-tips-and-odds-europa-league-05-11-26/"
+              ]
+            ]
+          }
+        },
+        {
+          "fixture_id": "espn:football:uefa.europa.conf:401915826",
+          "home": "KuPS Kuopio",
+          "away": "KAA Gent",
+          "league": "uefa.europa.conf",
+          "pick": "2",
+          "odd": 1.62,
+          "datetime": "2026-11-05T17:45:00Z",
+          "start_utc": "2026-11-05T17:45:00Z",
+          "event_id": "401915826",
+          "provider_event_id": "b92f06bcd9b50df5151c4f94196e856f",
+          "bookmaker": "betonlineag",
+          "market_name": "1X2",
+          "odds_verified_at_utc": "2026-11-05T09:59:47Z",
+          "odds_status": "last_known_snapshot",
+          "research": {
+            "summary": "KuPS je izgubio 2:4 od Trabzonspora i 0:2 od Borca; Gent je dobio Aarhus 1:0, potom izgubio od Brage 0:2.",
+            "pros": "KuPS je primio šest golova u dva evropska nastupa, Gent je gost favorit po kvotama.",
+            "risks": "Gent je izgubio prethodnu evropsku utakmicu i igra u gostima; nema verifikovanog punog modela kvaliteta.",
+            "injuries": "Potpuni današnji izostanci nisu nezavisno potvrđeni.",
+            "conclusion": "Igra se 2 uz izraženu neizvjesnost; ne tvrdi se da je siguran tip.",
+            "sources": [
+              [
+                "UEFA Conference results",
+                "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/"
+              ]
+            ]
+          }
+        },
+        {
+          "fixture_id": "espn:football:uefa.europa:401915531",
+          "home": "Celta Vigo",
+          "away": "Union St.-Gilloise",
+          "league": "uefa.europa",
+          "pick": "3+",
+          "odd": 1.91,
+          "datetime": "2026-11-05T20:00:00Z",
+          "start_utc": "2026-11-05T20:00:00Z",
+          "event_id": "401915531",
+          "provider_event_id": "b828d43ba5fa1c8cdd2e34aabea9d0ce",
+          "bookmaker": "pinnacle",
+          "market_name": "3+",
+          "odds_verified_at_utc": "2026-11-05T09:59:41Z",
+          "odds_status": "last_known_snapshot",
+          "research": {
+            "summary": "Celta: 0:1 Omonia, 1:2 Juventus, 2:1 Celtic; Union SG: 3:0 Viktoria Plzeň, 1:1 Sociedad, 4:0 Hapoel. Po dva meča sa 3+ gola kod svakog.",
+            "pros": "Union SG je postigao golove u svakoj utakmici, obje ekipe imaju potencijal za otvoren meč.",
+            "risks": "Za Celta nedostaje napadač Borja Iglesias, kao i nekoliko drugih igrača; 3+ je osjetljiv na realizaciju.",
+            "injuries": "Prema službenoj listi Celta odsutni su Borja Iglesias, Starfelt, Miguel Román, Álvaro Núñez i Jones El-Abdellaoui.",
+            "conclusion": "3+ nosi povećani rizik zbog kadrovskih izostanaka i male statističke serije.",
+            "sources": [
+              [
+                "UEFA Europa results",
+                "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+              ],
+              [
+                "Celta official squad and absences",
+                "https://rccelta.es/en/equipo/actualidad/celta-squad-list-for-the-uel-match-against-union-saint-gilloise/"
+              ]
+            ]
+          }
+        },
+        {
+          "fixture_id": "espn:football:uefa.europa:401915522",
+          "home": "Celtic",
+          "away": "Besiktas",
+          "league": "uefa.europa",
+          "pick": "GG",
+          "odd": 1.44,
+          "datetime": "2026-11-05T20:00:00Z",
+          "start_utc": "2026-11-05T20:00:00Z",
+          "event_id": "401915522",
+          "provider_event_id": "5ecf6578ba030a1e99abaa3200319e37",
+          "bookmaker": "williamhill",
+          "market_name": "BTTS",
+          "odds_verified_at_utc": "2026-11-05T09:59:17Z",
+          "odds_status": "last_known_snapshot",
+          "research": {
+            "summary": "Celtic je postigao po jedan gol u sva tri dosadašnja evropska meča, dok je Beşiktaş postigao četiri, tri i dva gola u svoja tri meča.",
+            "pros": "Celtic kod kuće često može zaprijetiti; napad Beşiktaşa dosad vrlo efikasan u Evropi.",
+            "risks": "Celtic ima tri poraza; GG zahtijeva gol obje ekipe, a konačne postave nisu potvrđene.",
+            "injuries": "Današnji izostanci nisu nezavisno u potpunosti potvrđeni.",
+            "conclusion": "GG je logičan kao visokorizični dio C, bez garantovane vrijednosti kvote.",
+            "sources": [
+              [
+                "UEFA Europa results",
+                "https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures-and-re/"
+              ]
+            ]
+          }
+        },
+        {
+          "fixture_id": "espn:football:uefa.europa.conf:401915821",
+          "home": "Getafe",
+          "away": "Brighton & Hove Albion",
+          "league": "uefa.europa.conf",
+          "pick": "2",
+          "odd": 1.5,
+          "datetime": "2026-11-05T20:00:00Z",
+          "start_utc": "2026-11-05T20:00:00Z",
+          "event_id": "401915821",
+          "provider_event_id": "5f12be0b4bcb21b30f6f0cd3326c14ba",
+          "bookmaker": "betsson",
+          "market_name": "1X2",
+          "odds_verified_at_utc": "2026-11-05T09:59:30Z",
+          "odds_status": "last_known_snapshot",
+          "research": {
+            "summary": "Brighton je u Evropi dobio Kauno Žalgiris 4:0 i remizirao s Jablonecom 0:0. Getafe je igrao 1:1 s Craiovom i izgubio 2:5 od Lugana.",
+            "pros": "Brighton je kvalitetan gost, Getafe je primio pet golova u prethodnom evropskom kolu.",
+            "risks": "Gostovanje i moguće rotacije, kao i prijavljeni izostanci Brightona, povećavaju rizik pobjede u gostima.",
+            "injuries": "Za Brighton su na prijavama povreda navedeni Mitoma i Ferguson; potvrđene postave tek pred utakmicu.",
+            "conclusion": "Gost je tržišni favorit, ali pobjeda u gostima ostaje neizvjesna.",
+            "sources": [
+              [
+                "UEFA Conference results",
+                "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/"
+              ]
+            ]
+          }
+        },
+        {
+          "fixture_id": "espn:football:uefa.europa.conf:401915819",
+          "home": "Panathinaikos",
+          "away": "CSKA Sofia",
+          "league": "uefa.europa.conf",
+          "pick": "1",
+          "odd": 1.38,
+          "datetime": "2026-11-05T20:00:00Z",
+          "start_utc": "2026-11-05T20:00:00Z",
+          "event_id": "401915819",
+          "provider_event_id": "8a2c155e7fe5e67981b44e12c0c6eba6",
+          "bookmaker": "virginbet",
+          "market_name": "1X2",
+          "odds_verified_at_utc": "2026-11-05T09:59:28Z",
+          "odds_status": "last_known_snapshot",
+          "research": {
+            "summary": "Panathinaikos je dobio Borac 2:1 i Kairat 5:1; CSKA Sofia izgubio 1:2 od Monaca i remizirao 2:2 s Nordsjællandom.",
+            "pros": "Domaćin dvije evropske pobjede i sedam postignutih golova u dva meča.",
+            "risks": "Samo dvije evropske utakmice potvrđene; domaći favoriti mogu imati rotacije.",
+            "injuries": "Današnje početne postave i svi izostanci nisu potvrđeni.",
+            "conclusion": "Pobjeda domaćina ima potporu u dosadašnjim evropskim rezultatima, bez nezavisno dokazanog EV.",
+            "sources": [
+              [
+                "UEFA Conference results",
+                "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures-a/"
+              ]
+            ]
+          }
+        }
+      ]
     }
   ],
   "pending_ticket_statuses": {
     "A": "objavljen",
-    "B": "nedostupan",
-    "C": "nedostupan"
+    "B": "objavljen",
+    "C": "objavljen"
   },
   "pending_ticket_reasons": {
     "A": "",
-    "B": "Nema dovoljno nezavisno provjerenih drugih događaja za over 2.5 uz potpunu formu, izostanke i validirane kvote; ne blokira A.",
-    "C": "NBA današnji feed prazan, player points kvote i ESPN istorija od 29.10. zastarjeli; nema 4–6 drugih validiranih događaja ukupne kvote >=10."
+    "B": "",
+    "C": ""
   },
-  "analysis_status": "05.11.2026: ručni AI izbor iz ListaSix 39 parova; provjera nezavisnih izvora; H2H fajl prazan, nema validiranog xG/EV. ESPN uzorak 3 evropske utakmice nije dovoljan za nezavisan model.",
-  "selection_method": "Ručni AI izbor A; B/C nezavisno procijenjeni.",
-  "source_fixture_feed": "ListaSix shared/collector-feed.json 2026-11-05 10:31 UTC; active-list.json 2026-11-05",
+  "analysis_status": "05.11.2026: A ostao nepromijenjen. B i C AI istraženi iz aktuelne UEFA forme, objavljeni nezavisno. ListaSix kvote potvrđene prema zadnjem poznatom provider snapshotu; nije moguće potvrditi današnju obnovu zbog OddsAPI HTTP 401. Puna forma 5 utakmica i xG/EV nisu dostupni za sve klubove.",
+  "selection_method": "A postojeća objava; B/C nezavisna AI analiza UEFA i provjera kvota iz Kvoter odobrenih event-ID poveznica.",
+  "source_fixture_feed": "ListaSix active-list.json 2026-11-05, 39/39 approved aliases and Kvoter matches",
   "source_nba_player_points": "Memara-tip 2026-10-29 stale",
-  "source_statistics_research": "Memara-tip 2026-10-30 stale"
+  "source_statistics_research": "Memara-tip 2026-10-30 stale",
+  "additional_publication_at_utc": "2026-11-05T11:23:42.566Z"
 }
