@@ -4,6 +4,7 @@ import json, os, sys, urllib.request
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
+from memarasix_verified_quotes import verified_candidates
 
 ROOT=Path(__file__).resolve().parent
 UTC=timezone.utc
@@ -52,63 +53,24 @@ def main():
         return audit("Current ListaSix has no valid fixtures")
     try:
         provider=remote("shared/kvoter/provider-offers.json")
+        reconciled=remote("shared/kvoter/matched_fixtures.json")
     except Exception as exc:
         return audit("Cannot independently verify bookmaker offers",{"detail":str(exc)[:200]})
     offers=provider.get("offers",[])
     if not offers:
         return audit("No bookmaker offers")
-    bymatch={}
-    for o in offers:
-        try:
-            stamp=dt(o["updated_at_utc"])
-            if stamp>now+timedelta(minutes=5):
-                continue
-            key=(o["home"].casefold(),o["away"].casefold(),o["start_utc"])
-            bymatch.setdefault(key,[]).append(o)
-        except (KeyError,ValueError,TypeError):
-            continue
-    if not bymatch:
-        return audit("No usable bookmaker snapshots",{"offers_seen":len(offers)})
-    # Validate form coverage; data do not include full scored H2H, so do not claim H2H verified.
-    candidates=[]
-    for f in offer["fixtures"]:
-        try:
-            start=dt(f["datetime"])
-            if start<=now+timedelta(minutes=20) or start>now+timedelta(hours=18):
-                continue
-            home,away=[x.strip() for x in f["match"].split(" - ",1)]
-            league=f["fixture_id"].split(":")[2]
-            teams=history["leagues"].get(league,{}).get("teams",{})
-            h,a=teams.get(home,{}),teams.get(away,{})
-            if min(h.get("found",0),a.get("found",0))<4:
-                continue
-            quotes=bymatch.get((home.casefold(),away.casefold(),f["datetime"]),[])
-            for market,pick,field in [("1X2","1","home"),("1X2","2","away"),("3+","3+","over")]:
-                valid=[]
-                for q in quotes:
-                    value=q.get("markets",{}).get(market,{}).get(field)
-                    if isinstance(value,(int,float)) and 1.25<=value<=3.0:
-                        valid.append((float(value),q))
-                if len({q["bookmaker"] for _,q in valid})<2:
-                    continue
-                valid.sort(key=lambda x:x[0])
-                median=valid[len(valid)//2][0]
-                agreed=[(v,q) for v,q in valid if abs(v-median)/median<=0.08]
-                if len({q["bookmaker"] for _,q in agreed})<2:
-                    continue
-                # Use the first bookmaker quote close to the median, never a synthetic price.
-                price,q=min(agreed,key=lambda z:abs(z[0]-median))
-                candidates.append({"fixture_id":f["fixture_id"],"home":home,"away":away,"start_utc":f["datetime"],"pick":pick,
-                  "odd":price,"odds":price,"bookmaker":q["bookmaker"],"market_source":"The Odds API / "+q["bookmaker"],
-                  "market_name":market,"odds_verified_at_utc":q["updated_at_utc"],"odds_status":"last_known_snapshot","form_home_matches":h["found"],"form_away_matches":a["found"]})
-        except (KeyError,ValueError,TypeError):
-            continue
+    if not reconciled.get("fixtures"):
+        return audit("Kvoter has no verified provider/ESPN match records")
+    candidates=verified_candidates(offer,history,reconciled,provider,now,dt)
+    print(json.dumps({"VERIFIED_ALIAS_CANDIDATES":len(candidates),
+                      "matched_fixtures":len(reconciled["fixtures"]),
+                      "provider_offers":len(offers)},ensure_ascii=False))
     # GitHub owns the publication write. A separate independently reviewed AI selection
     # is required; raw bookmaker consensus is not itself a reliable prediction.
     approval=ROOT/"memarasix-1455-approved.json"
     if not approval.exists():
         return audit("No independently reviewed A/B/C selection file; never auto-bet from market odds alone",
-                     {"fresh_bookmaker_matches":len(bymatch),"eligible_market_quotes":len(candidates),
+                     {"verified_fixture_matches":len(reconciled["fixtures"]),"eligible_market_quotes":len(candidates),
                       "required_file":approval.name})
     approved=load(approval)
     if approved.get("date")!=local.date().isoformat() or not approved.get("tickets"):
@@ -143,13 +105,14 @@ def main():
             if not possible:
                 problem="No verified matching bookmaker quote"
                 break
-            c=possible[0]
+            compatible=[c for c in possible if abs(float(leg.get("odd",0))-c["odd"])<=0.01]
+            if not compatible:
+                problem="Approved odds differ from verified quote"
+                break
+            c=compatible[0]
             signature=(c["home"],c["away"],c["start_utc"])
             if fid in used or signature in used or any(v["fixture_id"]==fid for v in verified):
                 problem="Repeated fixture across tickets"
-                break
-            if abs(float(leg.get("odd",0))-c["odd"])>0.01:
-                problem="Approved odds differ from verified quote"
                 break
             if tid=="B" and c["pick"]!="3+":
                 problem="Ticket B requires Over 2.5"
