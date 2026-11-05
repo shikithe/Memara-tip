@@ -36,7 +36,7 @@ jobs:
           python-version: '3.11'
       - name: Run publication readiness tests
         if: steps.gate.outputs.enabled == 'true'
-        run: python -m unittest -v test_memarasix_publication_gate.py
+        run: python -m unittest -v test_memarasix_publication_gate.py test_memarasix_verified_quotes.py
       - name: Prepare B and C candidates from live ListaSix
         if: steps.gate.outputs.enabled == 'true'
         run: python memarasix_bc_live_research.py
