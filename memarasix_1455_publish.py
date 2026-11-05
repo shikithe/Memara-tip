@@ -61,7 +61,11 @@ def main():
         return audit("No bookmaker offers")
     if not reconciled.get("fixtures"):
         return audit("Kvoter has no verified provider/ESPN match records")
-    candidates=verified_candidates(offer,history,reconciled,provider,now,dt)
+    # Incomplete ESPN team form must not mechanically veto a separately
+    # researched and explicitly approved ticket.  Kvoter still verifies each
+    # exact ESPN fixture, real provider event, bookmaker, market and price.
+    # The independent AI approval process owns form/injury/context assessment.
+    candidates=verified_candidates(offer,history,reconciled,provider,now,dt,min_form=0)
     print(json.dumps({"VERIFIED_ALIAS_CANDIDATES":len(candidates),
                       "matched_fixtures":len(reconciled["fixtures"]),
                       "provider_offers":len(offers)},ensure_ascii=False))
@@ -95,6 +99,9 @@ def main():
         legs=ticket.get("matches",[])
         if not legs:
             rejected[tid]="No approved matches"
+            continue
+        if not isinstance(ticket.get("analysis"),str) or len(ticket["analysis"].strip())<40:
+            rejected[tid]="No substantive independent AI analysis on approved ticket"
             continue
         verified=[]
         problem=None
