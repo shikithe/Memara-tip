@@ -2180,5 +2180,111 @@
     "source_fixture_feed": "ListaSix shared/collector-feed.json 2026-11-03 10:15 UTC",
     "source_nba_player_points": "Memara-tip collector-output/nba-player-points.json 29.10.2026 (stale)",
     "source_statistics_research": "Memara-tip collector-output/statistics-research.json 30.10.2026 (stale)"
+  },
+  {
+    "date": "2026-11-04",
+    "published": "2026-11-04 12:00 (Europe/Sarajevo) — djelimična GitHub objava A",
+    "publication_type": "manual_ai_partial_publication",
+    "bank_before": 211,
+    "daily_budget": 21.1,
+    "daily_stake": 13.72,
+    "bank_after": 226.78,
+    "bank_after_stakes": 197.28,
+    "provisional": false,
+    "settled": true,
+    "odds_verified": false,
+    "odds_verification_note": "ListaSix shared/active-list.json 04.11.2026. Real Madrid 1.23 Smarkets; Borussia Dortmund 1.75 Unibet UK. Snapshot kvote nisu garantovano izvršive u trenutku objave i nisu Mozzartbet BiH.",
+    "tickets": [
+      {
+        "id": "A",
+        "label": "GLAVNI TIKET",
+        "odds": 2.15,
+        "stake": 13.72,
+        "status": "dobitan",
+        "matches": [
+          {
+            "home": "AEK Athens",
+            "away": "Real Madrid",
+            "pick": "2",
+            "odd": 1.23,
+            "datetime": "2026-11-04T17:45:00Z",
+            "start_utc": "2026-11-04T17:45:00Z",
+            "league": "uefa.champions",
+            "event_id": "401915383",
+            "research": {
+              "summary": "Real Madrid tri pobjede u prva tri kola Lige šampiona; AEK jedna pobjeda i dva poraza u tom takmičenju. Uzorak 3 evropske utakmice, nedovoljan za pouzdan samostalni model forme.",
+              "pros": "Snažniji sastav i pozitivan evropski niz; AEK bez prvog golmana Strakoshe.",
+              "risks": "Gostovanje; Real bez Gülera i Tchouaménija (odmor), Rodryga i Asensija; moguće rotacije.",
+              "injuries": "AEK: Strakosha van, Rota i João Mario upitni. Real: Rodrygo i Asensio povrijeđeni, Güler i Tchouaméni odmaraju; Valverde se vratio.",
+              "sources": [
+                [
+                  "ListaSix 04.11",
+                  "https://github.com/shikithe/Slavojka/blob/main/shared/active-list.json"
+                ],
+                [
+                  "Yahoo preview 04.11",
+                  "https://sports.yahoo.com/articles/aek-athens-vs-real-madrid-044800429.html"
+                ],
+                [
+                  "Real squad 03.11",
+                  "https://www.fullbet.gr/eidiseis/41552/real-madritis-me-dyo-apoleies-enopsei-aek-fot/"
+                ]
+              ],
+              "conclusion": "Tržišni benchmark bez nezavisnog Poisson xG ili EV."
+            },
+            "result_status": "pogođen",
+            "final_score": "2:3"
+          },
+          {
+            "home": "Borussia Dortmund",
+            "away": "Real Betis",
+            "pick": "1",
+            "odd": 1.75,
+            "datetime": "2026-11-04T20:00:00Z",
+            "start_utc": "2026-11-04T20:00:00Z",
+            "league": "uefa.champions",
+            "event_id": "401915304",
+            "research": {
+              "summary": "Dortmund jedan poraz u posljednjih 13 utakmica prema pregledu 04.11; evropski uzorak 3 utakmice, 2 pobjede i poraz. Betis takođe kvalitetan protivnik.",
+              "pros": "Domaći teren i solidna forma u domaćem prvenstvu.",
+              "risks": "Dortmund ima više povreda; Betis je konkurentan i iznenađenje je moguće.",
+              "injuries": "Dortmund bez Emre Cana, Konstanteliasa, Lerme i Pratesa; Karetsas se vratio. Potvrđeni početni sastavi još nisu objavljeni.",
+              "sources": [
+                [
+                  "ListaSix 04.11",
+                  "https://github.com/shikithe/Slavojka/blob/main/shared/active-list.json"
+                ],
+                [
+                  "Yahoo team news 04.11",
+                  "https://sports.yahoo.com/articles/borussia-dortmund-vs-real-betis-044600400.html"
+                ]
+              ],
+              "conclusion": "Tržišni benchmark; nema validiranog prematch xG za nezavisni Poisson niti izračunatog EV."
+            },
+            "result_status": "pogođen",
+            "final_score": "2:1"
+          }
+        ],
+        "settled_at_utc": "2026-11-04T22:13:05.572430+00:00",
+        "payout": 29.5
+      }
+    ],
+    "pending_ticket_statuses": {
+      "A": "objavljen",
+      "B": "nedostupan",
+      "C": "nedostupan"
+    },
+    "pending_ticket_reasons": {
+      "A": "",
+      "B": "Dostupne over 2.5 kvote postoje, ali nezavisna provjera za kombinaciju ukupne kvote 2–3 nije dala dovoljno pouzdanu prednost uz rizik i izostanke; nijedan B tiket nije prošao strogu validaciju.",
+      "C": "NBA feed danas prazan, player-points kvote od 29.10. i ESPN istorijski uzorci zastarjeli; nema 4–6 drugih kvalitetnih događaja s validnim kvotama za minimum 10."
+    },
+    "total_payout": 29.5,
+    "net_change": 15.78,
+    "analysis_status": "04.11.2026: ručni izbor iz svježeg ListaSix 09:45 UTC, nezavisna provjera izvora i termina. Statistički H2H prazan; ESPN NBA feed prazan; bez Poissona ili EV.",
+    "selection_method": "Ručni AI izbor; nezavisna validacija A/B/C bez Python filtera.",
+    "source_fixture_feed": "ListaSix shared/collector-feed.json 2026-11-04 08:45 UTC (publication_allowed=false; active-list publication_allowed=true)",
+    "source_nba_player_points": "Memara-tip collector-output/nba-player-points.json 29.10.2026 (stale)",
+    "source_statistics_research": "Memara-tip collector-output/statistics-research.json 30.10.2026 (stale)"
   }
 ]
