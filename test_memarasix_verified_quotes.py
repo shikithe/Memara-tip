@@ -54,6 +54,16 @@ class AliasPublicationTests(unittest.TestCase):
         a,h,m,p=inputs()
         m["fixtures"][0]["away"]="Wrong Club"
         self.assertEqual(verified_candidates(a,h,m,p,NOW,dt),[])
+    def test_independent_analysis_can_use_verified_quotes_even_if_espn_form_incomplete(self):
+        a,h,m,p=inputs()
+        h["leagues"]["uefa.europa"]["teams"]["AC Milan"]["found"]=0
+        h["leagues"]["uefa.europa"]["teams"]["Ferencvaros"]["found"]=0
+        # Low ESPN coverage is information for the analyst, not automatic
+        # disqualification of real matched bookmaker odds.
+        rows=verified_candidates(a,h,m,p,NOW,dt,min_form=0)
+        self.assertEqual({x["pick"] for x in rows},{"1","3+"})
+        self.assertTrue(all(x["form_home_matches"]==0 for x in rows))
+
     def test_discontinued_fixture_not_in_active_list(self):
         a,h,m,p=inputs()
         a["fixtures"]=[]
