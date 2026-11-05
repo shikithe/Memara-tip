@@ -1,20 +1,5 @@
 {
-  "generated_at_utc": "2026-11-04T15:52:32.539232+00:00",
-  "total": 2,
-  "fixtures": [
-    {
-      "fixture_id": "espn:football:bra.1:401841306",
-      "league": "bra.1",
-      "home": "Athletico-PR",
-      "away": "Vasco da Gama",
-      "start_utc": "2026-11-04T22:30:00Z"
-    },
-    {
-      "fixture_id": "espn:football:bra.1:401841305",
-      "league": "bra.1",
-      "home": "Botafogo",
-      "away": "Atlético-MG",
-      "start_utc": "2026-11-05T00:30:00Z"
-    }
-  ]
+  "generated_at_utc": "2026-11-05T15:55:11.282105+00:00",
+  "total": 0,
+  "fixtures": []
 }\n
