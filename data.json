@@ -7,7 +7,7 @@
   "daily_stake": 22.68,
   "bank_after": 204.1,
   "bank_after_stakes": 204.1,
-  "provisional": false,
+  "provisional": true,
   "settled": false,
   "odds_verified": false,
   "odds_verification_note": "Sačuvane OddsAPI kotacije od oko 10:59 Sarajevo 05.11.2026; posljednje tržišne cijene, ne garantovana aktualna ponuda jer OddsAPI vraća HTTP 401.",
@@ -404,5 +404,7 @@
   "source_fixture_feed": "ListaSix active-list.json 2026-11-05, 39/39 approved aliases and Kvoter matches",
   "source_nba_player_points": "Memara-tip 2026-10-29 stale",
   "source_statistics_research": "Memara-tip 2026-10-30 stale",
-  "additional_publication_at_utc": "2026-11-05T11:23:42.566Z"
+  "additional_publication_at_utc": "2026-11-05T11:23:42.566Z",
+  "total_payout": 0.0,
+  "net_change": null
 }
