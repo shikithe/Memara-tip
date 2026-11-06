@@ -1,49 +1,42 @@
 KVOTER - KLADIONICARSKA PONUDA (TXT)
-Preuzeto: 2026-11-05T15:53:58.618760+00:00 UTC | vrijeme: Europe/Sarajevo
-Ukupno: 39 | automatski upareno: 0
+Preuzeto: 2026-11-06T15:27:40.824493+00:00 UTC | vrijeme: Europe/Sarajevo
+Ukupno: 32 | automatski upareno: 0
 Kvote iz posljednjeg API preuzimanja; nisu uzivo. Crtica = nema kvote.
 
 BR  DATUM SAT    UTAKMICA                                    1      X      2     3+  IZVOR
 --------------------------------------------------------------------------------------------------------------
-01  05.11. 18:45  AC Milan - Ferencvaros                            -      -      -      -  N/P
-02  05.11. 18:45  Anderlecht - RB Salzburg                          -      -      -      -  N/P
-03  05.11. 18:45  Crystal Palace - TSG Hoffenheim                   -      -      -      -  N/P
-04  05.11. 18:45  Levski Sofia - Jagiellonia Bialystok              -      -      -      -  N/P
-05  05.11. 18:45  Lillestrom - Viktoria Plzen                       -      -      -      -  N/P
-06  05.11. 18:45  NEC Nijmegen - Omonia Nicosia                     -      -      -      -  N/P
-07  05.11. 18:45  Real Sociedad - Lyon                              -      -      -      -  N/P
-08  05.11. 18:45  Sparta Prague - AFC Bournemouth                   -      -      -      -  N/P
-09  05.11. 18:45  AGF - Braga                                       -      -      -      -  N/P
-10  05.11. 18:45  Atalanta - Kairat Almaty                          -      -      -      -  N/P
-11  05.11. 18:45  FC Midtjylland - Ajax Amsterdam                   -      -      -      -  N/P
-12  05.11. 18:45  FC Thun - Heart of Midlothian                     -      -      -      -  N/P
-13  05.11. 18:45  KuPS Kuopio - KAA Gent                            -      -      -      -  N/P
-14  05.11. 18:45  Lincoln Red Imps - Hajduk Split                   -      -      -      -  N/P
-15  05.11. 18:45  Mjällby AIF - Borac Banja Luka                    -      -      -      -  N/P
-16  05.11. 18:45  Red Star Belgrade - Inter D'Escaldes              -      -      -      -  N/P
-17  05.11. 18:45  Trabzonspor - SC Freiburg                         -      -      -      -  N/P
-18  05.11. 19:00  Aldosivi - River Plate                            -      -      -      -  N/P
-19  05.11. 21:00  AZ Alkmaar - Juventus                             -      -      -      -  N/P
-20  05.11. 21:00  Bayer Leverkusen - Marseille                      -      -      -      -  N/P
-21  05.11. 21:00  Benfica - Lech Poznan                             -      -      -      -  N/P
-22  05.11. 21:00  Celta Vigo - Union St.-Gilloise                   -      -      -      -  N/P
-23  05.11. 21:00  Celtic - Besiktas                                 -      -      -      -  N/P
-24  05.11. 21:00  Hapoel Be'er - OFI Crete                          -      -      -      -  N/P
-25  05.11. 21:00  SK Sturm Graz - NK Celje                          -      -      -      -  N/P
-26  05.11. 21:00  Sunderland - Dinamo Zagreb                        -      -      -      -  N/P
-27  05.11. 21:00  Torreense - Ararat-Armenia                        -      -      -      -  N/P
-28  05.11. 21:00  AS Monaco - FC Nordsjælland                       -      -      -      -  N/P
-29  05.11. 21:00  CSU Craiova - Egnatia                             -      -      -      -  N/P
-30  05.11. 21:00  F.C. København - Iberia 1999                      -      -      -      -  N/P
-31  05.11. 21:00  FC Lugano - Kauno Zalgiris                        -      -      -      -  N/P
-32  05.11. 21:00  FC Twente - Pafos                                 -      -      -      -  N/P
-33  05.11. 21:00  Getafe - Brighton & Hove Albion                   -      -      -      -  N/P
-34  05.11. 21:00  Panathinaikos - CSKA Sofia                        -      -      -      -  N/P
-35  05.11. 21:00  Riga FC - Jablonec                                -      -      -      -  N/P
-36  05.11. 21:00  Sint-Truidense - SK Brann                         -      -      -      -  N/P
-37  05.11. 23:15  Gimnasia La Plata - Belgrano (Córdoba)            -      -      -      -  N/P
-38  05.11. 23:30  Palmeiras - Remo                                  -      -      -      -  N/P
-39  06.11. 01:30  Cruzeiro - Bahia                                  -      -      -      -  N/P
+01  06.11. 18:00  Gaziantep FK - Kasimpasa                          -      -      -      -  N/P
+02  06.11. 19:00  Barracas Central - Racing Club                    -      -      -      -  N/P
+03  06.11. 20:00  Willem II - PEC Zwolle                            -      -      -      -  N/P
+04  06.11. 20:30  Hamburg SV - Borussia Mönchengladbach             -      -      -      -  N/P
+05  06.11. 20:45  Venezia - Udinese                                 -      -      -      -  N/P
+06  06.11. 20:45  Toulouse - Strasbourg                             -      -      -      -  N/P
+07  06.11. 20:45  Standard Liege - Waasland-Beveren                 -      -      -      -  N/P
+08  06.11. 21:00  Everton - Coventry City                           -      -      -      -  N/P
+09  06.11. 21:00  Sevilla - Alavés                                  -      -      -      -  N/P
+10  06.11. 21:45  FC Famalicao - Arouca                             -      -      -      -  N/P
+11  06.11. 23:15  Independiente - Deportivo Riestra                 -      -      -      -  N/P
+12  06.11. 23:15  San Lorenzo - Platense                            -      -      -      -  N/P
+13  06.11. 23:15  Unión (Santa Fe) - Vélez Sarsfield                -      -      -      -  N/P
+14  07.11. 00:00  Vitória - Fluminense                              -      -      -      -  N/P
+15  07.11. 02:00  Banfield - Atlético Tucumán                       -      -      -      -  N/P
+16  07.11. 02:00  Tigre - Sarmiento (Junín)                         -      -      -      -  N/P
+17  07.11. 11:30  Eyupspor - Kocaelispor                            -      -      -      -  N/P
+18  07.11. 13:30  Leeds United - Tottenham Hotspur                  -      -      -      -  N/P
+19  07.11. 14:00  Málaga - Racing Santander                         -      -      -      -  N/P
+20  07.11. 14:00  Samsunspor - Konyaspor                            -      -      -      -  N/P
+21  07.11. 15:00  Cagliari - Frosinone                              -      -      -      -  N/P
+22  07.11. 15:00  Torino - Lecce                                    -      -      -      -  N/P
+23  07.11. 15:30  Borussia Dortmund - SV Elversberg                 -      -      -      -  N/P
+24  07.11. 15:30  Mainz - Bayern Munich                             -      -      -      -  N/P
+25  07.11. 15:30  RB Leipzig - FC Augsburg                          -      -      -      -  N/P
+26  07.11. 15:30  SC Paderborn 07 - Eintracht Frankfurt             -      -      -      -  N/P
+27  07.11. 16:00  Arsenal - Hull City                               -      -      -      -  N/P
+28  07.11. 16:00  Fulham - Newcastle United                         -      -      -      -  N/P
+29  07.11. 16:00  KVC Westerlo - Royal Charleroi SC                 -      -      -      -  N/P
+30  07.11. 16:00  Dundee United - Motherwell                        -      -      -      -  N/P
+31  07.11. 16:00  St Johnstone - Dundee                             -      -      -      -  N/P
+32  07.11. 16:15  Espanyol - Deportivo                              -      -      -      -  N/P
 
 1=domacin | X=nerijeseno | 2=gost | 3+=vise od 2.5 golova
 N/P = bez potvrdenih kvota u ovom ciklusu.
