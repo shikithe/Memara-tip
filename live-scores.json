@@ -1,6 +1,6 @@
 {
   "date": "2026-11-07",
-  "updated_at_utc": "2026-11-07T15:36:12.304722+00:00",
+  "updated_at_utc": "2026-11-07T18:46:24.745141+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -21,48 +21,51 @@
       "index": 1,
       "home": "Mainz",
       "away": "Bayern Munich",
-      "state": "live",
-      "score": "0:1",
+      "state": "final",
+      "score": "1:2",
       "source": "espn-public-unofficial",
       "event_id": "401884740",
       "league": "ger.1",
-      "minute": "45"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "A",
       "index": 2,
       "home": "Borussia Dortmund",
       "away": "SV Elversberg",
-      "state": "live",
-      "score": "0:0",
+      "state": "final",
+      "score": "2:1",
       "source": "espn-public-unofficial",
       "event_id": "401884745",
       "league": "ger.1",
-      "minute": "46"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "B",
       "index": 0,
       "home": "Fortuna Sittard",
       "away": "Telstar",
-      "state": "live",
-      "score": "0:0",
+      "state": "final",
+      "score": "2:2",
       "source": "espn-public-unofficial",
       "event_id": "401875555",
       "league": "ned.1",
-      "minute": "4"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "B",
       "index": 1,
       "home": "Osasuna",
       "away": "Athletic Club",
-      "state": "scheduled",
+      "state": "live",
       "score": "0:0",
       "source": "espn-public-unofficial",
       "event_id": "401882811",
       "league": "esp.1",
-      "minute": null
+      "minute": "56"
     }
   ],
   "bank_unchanged": true

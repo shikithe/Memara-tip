@@ -82,7 +82,9 @@
               ]
             ],
             "conclusion": "Favorit uz značajne izostanke; kvota 1,30 implicira oko 76,9% i nema dokaza vrijednosti."
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "1:2"
         },
         {
           "fixture_id": "espn:football:ger.1:401884745",
@@ -112,7 +114,9 @@
               ]
             ],
             "conclusion": "Tip 1 je moguć, no nije bez rizika i nema nezavisno dokazan EV."
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "2:1"
         }
       ],
       "analysis": {
@@ -155,7 +159,9 @@
               ]
             ],
             "conclusion": "Tijesna vrijednosna procjena; visoka osjetljivost na jedan gol."
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "2:2"
         },
         {
           "fixture_id": "espn:football:esp.1:401882811",
