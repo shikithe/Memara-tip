@@ -1,6 +1,6 @@
 {
   "date": "2026-11-07",
-  "updated_at_utc": "2026-11-07T19:37:57.530182+00:00",
+  "updated_at_utc": "2026-11-07T22:20:51.122245+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,12 +9,13 @@
       "index": 0,
       "home": "AS Roma",
       "away": "Sassuolo",
-      "state": "scheduled",
-      "score": "0:0",
+      "state": "final",
+      "score": "3:0",
       "source": "espn-public-unofficial",
       "event_id": "401874803",
       "league": "ita.1",
-      "minute": null
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "A",

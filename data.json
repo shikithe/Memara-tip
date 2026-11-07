@@ -5,10 +5,10 @@
   "bank_before": 204.1,
   "daily_budget": 20.41,
   "daily_stake": 20.41,
-  "bank_after": 183.69,
+  "bank_after": 214.56,
   "bank_after_stakes": 183.69,
-  "provisional": true,
-  "settled": false,
+  "provisional": false,
+  "settled": true,
   "odds_verified": false,
   "odds_verification_note": "Kvoter ListaSix shared/active-list.json za 07.11.2026; dnevni snapshot nije ponovo potvrđen direktnim live OddsAPI pozivom. Provjeriti ponuđene cijene kod operatora prije stvarnog uloga. Ovdje se prati virtuelna banka.",
   "bank_basis_note": "Posljednji potvrđeni završni saldo iz MemaraSix data.json je za 05.11.2026. (204,10 EUR). Evidencija za 06.11.2026. nedostaje; račun za 07.11. je zato PROVIZORAN i ne predstavlja rekonstruisani saldo za 06.11.",
@@ -18,7 +18,7 @@
       "label": "GLAVNI TIKET",
       "odds": 2.16,
       "stake": 14.29,
-      "status": "objavljen",
+      "status": "dobitan",
       "matches": [
         {
           "fixture_id": "espn:football:ita.1:401874803",
@@ -52,7 +52,9 @@
               ]
             ],
             "conclusion": "Favorit, ali nije potvrđen pozitivan očekivani prinos na kvoti 1,29."
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "3:0"
         },
         {
           "fixture_id": "espn:football:ger.1:401884740",
@@ -122,7 +124,9 @@
       "analysis": {
         "summary": "Trojka favorita zasnovana na službenoj formi i vijestima o izostancima. Roma, Bayern i Dortmund imaju prednost ali su sve kvote niske i nema nezavisno potvrđenog pozitivnog EV.",
         "risks": "Roma i Dortmund imaju kadrovske probleme, Bayern zasićen rasporedom. Bez pouzdanog modela da je zbirno klađenje povoljno."
-      }
+      },
+      "settled_at_utc": "2026-11-07T22:20:51.122245+00:00",
+      "payout": 30.87
     },
     {
       "id": "B",
@@ -225,8 +229,8 @@
     "B": "",
     "C": "Nije odabran, minimum 10 nije statistički i kvotno verifikovan."
   },
-  "total_payout": 0.0,
-  "net_change": null,
+  "total_payout": 30.87,
+  "net_change": 10.46,
   "analysis_status": "07.11.2026: Ručna AI provjera uz aktuelne sportske preglede, statističke modele, H2H i izostanke; kvote su iz današnjeg ListaSix snimka, ne direktno re-verifikovane. Podaci za 06.11. i puni ESPN history-h2h nedostaju; banka je PROVIZORNA. Odabiri nisu garancije niti dokazano pozitivnog EV.",
   "selection_method": "Ručni izbor A/B sa provjerom nezavisnih izvora; bez slijepog preuzimanja starog independent-analysis.json.",
   "source_fixture_feed": "shikithe/Slavojka/shared/active-list.json 2026-11-07 (45 mečeva)",
