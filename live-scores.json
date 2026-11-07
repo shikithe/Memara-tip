@@ -1,6 +1,6 @@
 {
   "date": "2026-11-07",
-  "updated_at_utc": "2026-11-07T14:12:17.255573+00:00",
+  "updated_at_utc": "2026-11-07T15:36:12.304722+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -21,36 +21,36 @@
       "index": 1,
       "home": "Mainz",
       "away": "Bayern Munich",
-      "state": "scheduled",
-      "score": "0:0",
+      "state": "live",
+      "score": "0:1",
       "source": "espn-public-unofficial",
       "event_id": "401884740",
       "league": "ger.1",
-      "minute": null
+      "minute": "45"
     },
     {
       "ticket": "A",
       "index": 2,
       "home": "Borussia Dortmund",
       "away": "SV Elversberg",
-      "state": "scheduled",
+      "state": "live",
       "score": "0:0",
       "source": "espn-public-unofficial",
       "event_id": "401884745",
       "league": "ger.1",
-      "minute": null
+      "minute": "46"
     },
     {
       "ticket": "B",
       "index": 0,
       "home": "Fortuna Sittard",
       "away": "Telstar",
-      "state": "scheduled",
+      "state": "live",
       "score": "0:0",
       "source": "espn-public-unofficial",
       "event_id": "401875555",
       "league": "ned.1",
-      "minute": null
+      "minute": "4"
     },
     {
       "ticket": "B",
