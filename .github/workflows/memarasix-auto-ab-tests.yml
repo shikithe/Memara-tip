@@ -1,0 +1,27 @@
+name: MemaraSix automatic A B safety tests
+on:
+  pull_request:
+    paths:
+      - 'memarasix_auto_approval.py'
+      - 'memarasix_1455_publish.py'
+      - 'tests/test_auto_ab_approval.py'
+      - '.github/workflows/memarasix-scheduled-publication.yml'
+      - '.github/workflows/memarasix-auto-ab-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  automatic-ab-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: New automatic approval unit tests
+        run: python -m unittest discover -s tests -p 'test_auto_ab_approval.py' -v
+      - name: Existing publication and quote validation tests
+        run: |
+          python -m unittest -v test_memarasix_publication_gate.py test_memarasix_verified_quotes.py test_publication_guard.py
+          python -m unittest discover -s tests -p 'test_virtual_settlement.py' -v
