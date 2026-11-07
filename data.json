@@ -215,8 +215,8 @@
     "B": "",
     "C": "Nije odabran, minimum 10 nije statistički i kvotno verifikovan."
   },
-  "total_payout": 0,
-  "net_change": -20.41,
+  "total_payout": 0.0,
+  "net_change": null,
   "analysis_status": "07.11.2026: Ručna AI provjera uz aktuelne sportske preglede, statističke modele, H2H i izostanke; kvote su iz današnjeg ListaSix snimka, ne direktno re-verifikovane. Podaci za 06.11. i puni ESPN history-h2h nedostaju; banka je PROVIZORNA. Odabiri nisu garancije niti dokazano pozitivnog EV.",
   "selection_method": "Ručni izbor A/B sa provjerom nezavisnih izvora; bez slijepog preuzimanja starog independent-analysis.json.",
   "source_fixture_feed": "shikithe/Slavojka/shared/active-list.json 2026-11-07 (45 mečeva)",
