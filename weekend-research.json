@@ -1,246 +1,123 @@
 {
-  "schema_version": "1.2",
-  "date": "2026-11-01",
-  "generated_at_utc": "2026-11-01T07:58:07.629Z",
+  "schema_version": "1.3",
+  "date": "2026-11-07",
+  "generated_at_utc": "2026-11-07T08:00:52Z",
   "project": "MAIN MemaraSix",
   "repository": "shikithe/Memara-tip",
-  "timezone": "Europe/Sarajevo",
-  "phase": "12:00 weekend validation",
-  "status": "BEZ_OBJAVE_NEDOVOLJNO_VERIFIKOVANIH_KVOTA",
+  "phase": "09:00 weekend research draft",
+  "status": "BLOCKED_STALE_COLLECTOR_AND_UNVERIFIED_ODDS",
   "publication_allowed": false,
-  "not_betting_advice": true,
-  "input_audit": {
+  "inputs": {
     "collector_feed": {
       "path": "collector-feed.json",
       "date": "2026-11-01",
       "generated_at_utc": "2026-11-01T10:58:21.032871+00:00",
-      "fresh_for_today": true,
+      "fresh": false,
       "football_candidates": 30,
       "nba_games": 4,
-      "odds_verified": false,
-      "reason": "Glavni kolektor uspješno osvježen u 11:58 Sarajevo; ne sadrži potvrđene kladioničarske kvote."
+      "nba_player_watchlist": 12,
+      "note": "All entries are for Nov 1, not Nov 7. None usable as today's verified candidates."
     },
     "nba_player_points": {
       "path": "collector-output/nba-player-points.json",
       "generated_at_utc": "2026-10-29T17:02:52.719739+00:00",
-      "fresh_for_today": false,
-      "stale_offers": 371,
-      "valid_today_offers": 0,
+      "offers": 371,
       "region": "us",
-      "source": "the-odds-api.com",
-      "sample_bookmaker": "DraftKings",
+      "fresh": false,
+      "valid_today": 0,
       "market": "player_points",
-      "market_verified_today": false,
       "points_line_verified_today": false,
       "decimal_odds_verified_today": false,
       "bookmaker_verified_today": false,
       "snapshot_verified_today": false,
-      "mozzart_bih_available_verified": false,
-      "warning": "Oct 29 US bookmaker prices are not Nov 1 or Mozzartbet BiH prices; do not reuse."
-    },
-    "collector_workflow": {
-      "path": ".github/workflows/memarasix-collector.yml",
-      "morning_window": "09:00-11:55 Europe/Sarajevo",
-      "recovery_window": "12:30-14:45 Europe/Sarajevo",
-      "note": "09:00 research precedes the scheduled 09:15 refresh; a later feed is not guaranteed by this research."
-    },
-    "noon_nba_sync": "NBA prices may change around 12:00; any morning data is provisional, not final."
+      "mozzart_bih_verified": false
+    }
+  },
+  "external_research": {
+    "date": "2026-11-07",
+    "scope": "Independently verified fixture calendar and limited contextual previews only. Full 5–10-match all-competition form, verified xG/xGA, lineup/absence audit, and implied-probability-vs-model comparison are not complete; no approved picks.",
+    "fixtures": [
+      {
+        "event": "Borussia Dortmund - SV Elversberg",
+        "kickoff_sarajevo": "15:30",
+        "source": "https://www.bundesliga.com/en/bundesliga/matchday/schedule",
+        "market_verified": false,
+        "analysis_status": "fixture_only"
+      },
+      {
+        "event": "Mainz - Bayern Munich",
+        "kickoff_sarajevo": "15:30",
+        "source": "https://www.bundesliga.com/en/bundesliga/matchday/schedule",
+        "secondary_source": "https://www.bavarianfootballworks.com/bayern-munich-bundesliga/278369/bundesliga-matchday-preview-mainz-05-vs-bayern-munich",
+        "notes": "Preview describes Bayern undefeated, Mainz poor home form, possible Bayern rotations and injuries. Predicted XI not confirmed; no independently verified five-to-ten-match xG or bookmaker price.",
+        "market_verified": false
+      },
+      {
+        "event": "RB Leipzig - Augsburg",
+        "kickoff_sarajevo": "15:30",
+        "source": "https://www.bundesliga.com/en/bundesliga/matchday/schedule",
+        "market_verified": false
+      },
+      {
+        "event": "Stuttgart - Werder Bremen",
+        "kickoff_sarajevo": "18:30",
+        "source": "https://www.bundesliga.com/en/bundesliga/matchday/schedule",
+        "market_verified": false
+      },
+      {
+        "event": "Arsenal - Hull City",
+        "kickoff_sarajevo": "16:00",
+        "source": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+        "notes": "External preview notes Hull scored in five of last six and Arsenal squad depth; no confirmed lineup or market snapshot.",
+        "secondary_source": "https://talksport.com/football/4691701/talksport-tips-best-football-bets-sunday-november-7/",
+        "market_verified": false
+      },
+      {
+        "event": "Fulham - Newcastle",
+        "kickoff_sarajevo": "16:00",
+        "source": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+        "notes": "Preview favors Fulham on recent defense and Newcastle's poor run, but published promotional odds are not a timestamped verified source offer.",
+        "secondary_source": "https://talksport.com/football/4691701/talksport-tips-best-football-bets-sunday-november-7/",
+        "market_verified": false
+      },
+      {
+        "event": "Nottingham Forest - Manchester City",
+        "kickoff_sarajevo": "18:30",
+        "source": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
+        "market_verified": false
+      }
+    ],
+    "nba": {
+      "source": "https://official.nba.com/nba-injury-report-2026-27-season/",
+      "notes": "NBA injury report updates throughout day; without same-day collector fixtures, matched player_points lines and verified sportsbook prices, NBA candidates not approved.",
+      "approved_candidates": 0
+    }
   },
   "rules": {
-    "earliest_publication_local": "2026-11-01T12:00:00+01:00",
-    "all_events_must_start_after_publication": true,
+    "publication_time": "12:00 Europe/Sarajevo",
+    "preferred_kickoff_after": "12:20",
+    "A": "football only, target total odds 2–3",
+    "B": "distinct football matches, 3+ market, target total odds 2–3",
+    "C": "4–6 distinct football/NBA events, total odds >=10 target 10–13, no overlap, NBA only here",
+    "never_invent_odds": true
+  },
+  "tickets": {
     "A": {
-      "sport": "football",
-      "target_total_decimal_odds": "2.00-3.00",
-      "status": "unavailable_without_verified_markets"
+      "status": "UNAVAILABLE_UNVERIFIED_PRICES",
+      "events": [],
+      "verified_odds": null
     },
     "B": {
-      "sport": "football",
-      "different_events_from_A": true,
-      "min_total_decimal_odds": 2,
-      "status": "unavailable_without_verified_markets",
-      "target_total_decimal_odds": "2.00-3.00"
+      "status": "UNAVAILABLE_UNVERIFIED_3PLUS_PRICES_AND_FORM",
+      "events": [],
+      "verified_odds": null
     },
     "C": {
-      "name": "Keš kolica",
-      "sports": [
-        "football",
-        "NBA"
-      ],
-      "min_distinct_events": 4,
-      "max_distinct_events": 6,
-      "min_total_decimal_odds": 10,
-      "target": "10-13",
-      "no_overlap_with_A_B": true,
-      "nba_only_here": true,
-      "status": "NEDOSTUPAN_BEZ_KVOTA"
-    },
-    "never_invent_odds": true,
-    "bookmaker_validation": "Must confirm event, market, line (NBA), decimal odds, bookmaker and snapshot time; foreign US markets are not automatically Mozzartbet BiH"
-  },
-  "independently_verified_fixture_candidates": [
-    {
-      "sport": "football",
-      "event": "Getafe - Sevilla",
-      "start_sarajevo": "2026-11-01T14:00:00+01:00",
-      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/01",
-      "risk": "HIGH: early start leaves only 60 minutes after publication; lineups and market not checked",
-      "market_to_verify": "1X2 or goals only after prices and confirmed XI",
-      "odds_verified": false
-    },
-    {
-      "sport": "football",
-      "event": "Union Berlin - FC Köln",
-      "start_sarajevo": "2026-11-01T15:30:00+01:00",
-      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/01",
-      "analysis": "Union are 16th and scored the joint-second fewest goals in the league; Köln won 5-0 in midweek cup but are without away points in Bundesliga. Union missing Skov, Ilić, Nsoki, Markgraf, suspended Udokhai. Both revenge and cup-to-league rotation create uncertainty.",
-      "source_analysis": "https://bulinews.com/union-berlin-1-koln-hosts-looking-for-immediate-revenge-after-midweek-thrashing",
-      "risk": "HIGH: rematch five days after 5-0 cup result; unstable form",
-      "market_to_verify": "Goals or double chance; no selection without prices",
-      "odds_verified": false
-    },
-    {
-      "sport": "football",
-      "event": "Racing Santander - Real Madrid",
-      "start_sarajevo": "2026-11-01T16:15:00+01:00",
-      "source": "https://www.managingmadrid.com/114903/racing-santander-vs-real-madrid-2026-la-liga-lineups",
-      "analysis": "Real Madrid motivated to sustain title pursuit after El Clásico victory; Fede Valverde unavailable and Vinicius suspended. Predicted lineups only; Racing home resilience is a meaningful upset risk.",
-      "risk": "MEDIUM_HIGH: key absences and away venue",
-      "market_to_verify": "Real Madrid result or goals after verified lineups and market",
-      "odds_verified": false
-    },
-    {
-      "sport": "football",
-      "event": "Liverpool - Arsenal",
-      "start_sarajevo": "2026-11-01T17:30:00+01:00",
-      "source": "https://www.liverpoolfc.com/news/liverpool-v-arsenal-team-news-premier-league",
-      "analysis": "Liverpool seek sixth straight all-competition win but have a congested 9-match/28-day period. Frimpong, Bradley, Ekitike, Leoni absent; Szoboszlai and Muñoz uncertain. Arsenal won seven of eight league games; Saka absent, Madueke uncertain, Dowman suspended; Rice/Calafiori training. Arsenal defense 5 goals conceded in eight league matches per independent preview. Predicted, not confirmed, starting XI.",
-      "source_analysis": "https://www.si.com/soccer/liverpool-vs-arsenal-preview-predictions-lineups-11-1-26",
-      "risk": "HIGH: top-of-table match, absences, congestion and uncertain lineup",
-      "market_to_verify": "Double chance or total goals only after market comparison",
-      "odds_verified": false
-    },
-    {
-      "sport": "football",
-      "event": "Eintracht Frankfurt - Hamburg SV",
-      "start_sarajevo": "2026-11-01T17:30:00+01:00",
-      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/01",
-      "analysis": "Frankfurt 14th with 2W 2D 3L and defeated Hamburg 3-1 in midweek cup; Hamburg 11th, lost two consecutive including cup, rematch revenge and rotation risk. Frankfurt Ngankam injured; Brassier expected back.",
-      "source_analysis": "https://bulinews.com/eintracht-frankfurt-hamburger-preview-visitors-looking-for-revenge",
-      "risk": "HIGH: recent cup rematch and inconsistent league form",
-      "market_to_verify": "1X / goals after confirmed XI",
-      "odds_verified": false
-    },
-    {
-      "sport": "football",
-      "event": "Paris FC - Monaco",
-      "start_sarajevo": "2026-11-01T17:15:00+01:00",
-      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/01",
-      "analysis": "Paris FC strong recent home results (five wins in last six home Ligue 1); Monaco winless in last three league matches, but 11/12 unbeaten across competitions; Fati hamstring absence reported. Contradictory form signals, so no automatic home selection.",
-      "source_analysis": "https://footballwhispers.com/blog/paris-fc-vs-monaco-prediction-01-11-2026/",
-      "risk": "HIGH: Monaco resilience despite winless run",
-      "market_to_verify": "1X2/BTTS after prices and XI",
-      "odds_verified": false
-    },
-    {
-      "sport": "football",
-      "event": "Juventus - Napoli",
-      "start_sarajevo": "2026-11-01T20:45:00+01:00",
-      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/01",
-      "analysis": "Juventus two wins in last seven league games, 11 goals in nine and 7/9 under 2.5. Napoli one loss in six; multiple absences on both teams including Juventus Yildiz/Locatelli and Napoli Lobotka reported. Preview cites Betfred article prices, not live validated offer; not eligible for ticket.",
-      "source_analysis": "https://insights.betfred.com/football/serie-a/juventus-vs-napoli-prediction-betting-tips-sunday-1-november-2026/",
-      "risk": "HIGH: many absences and derby-style volatility",
-      "market_to_verify": "Under 2.5 after verifying live odds and XI",
-      "odds_verified": false
-    },
-    {
-      "sport": "football",
-      "event": "Athletic Bilbao - Real Sociedad",
-      "start_sarajevo": "2026-11-01T21:00:00+01:00",
-      "source": "https://www.theguardian.com/football/fixtures/2026/Nov/01",
-      "analysis": "Basque derby; no verified form/xG/lineups in this research.",
-      "risk": "HIGH: derby and insufficient current team data",
-      "market_to_verify": "None until further verification",
-      "odds_verified": false
-    }
-  ],
-  "nba_C_only_candidates": [
-    {
-      "sport": "NBA",
-      "event": "Boston Celtics @ Orlando Magic",
-      "start_sarajevo": "2026-11-01T21:30:00+01:00",
-      "feed_id": "espn:basketball:nba:401909903",
-      "source": "https://www.covers.com/sport/basketball/nba/matchup/388640",
-      "watchlist_player": "Jayson Tatum",
-      "player_points": {
-        "market": "player_points",
-        "line": null,
-        "over_decimal_odds": null,
-        "under_decimal_odds": null,
-        "bookmaker": null,
-        "snapshot_at_utc": null,
-        "verified_today": false,
-        "mozzart_bih_verified": false
-      },
-      "analysis": "Celtics 4-1, Magic 2-3. Tatum averages 27.6 points through five games. Orlando missing Paolo Banchero, Jalen Suggs, Jonathan Isaac; expected Tatum minutes and opponent matchup not independently quantified; verify starting status, minute restriction and line.",
-      "injury_source": "https://957wdae.iheart.com/content/2026-11-01-celtics-vs-magic-injury-report-nov-1/",
-      "risk": "HIGH: no confirmed player_points line, bookmaker or expected minutes"
-    },
-    {
-      "sport": "NBA",
-      "event": "Brooklyn Nets @ Indiana Pacers",
-      "start_sarajevo": "2026-11-01T23:00:00+01:00",
-      "feed_id": "espn:basketball:nba:401909904",
-      "source": "https://www.covers.com/sport/basketball/nba/matchup/388641",
-      "watchlist_player": null,
-      "player_points": {
-        "market": "player_points",
-        "line": null,
-        "over_decimal_odds": null,
-        "under_decimal_odds": null,
-        "bookmaker": null,
-        "snapshot_at_utc": null,
-        "verified_today": false,
-        "mozzart_bih_verified": false
-      },
-      "analysis": "Pacers 2-4, Nets 0-5 in published preview; no linked player from the manual 12-player watchlist and no verified player-points market. Player minutes, injuries and matchup details require a new data pull.",
-      "risk": "HIGH: no matched watchlist player or verified market"
-    }
-  ],
-  "analysis_gaps": [
-    "Danas je potvrđeno 30 fudbalskih kandidata, ali ne i usklađen snimak aktuelnih kladioničarskih kvota",
-    "Javni prikazi za Lazio–Cagliari i Frankfurt–Hamburg sadrže različite cijene između pretrage i otvorene stranice; ne zaključavati proizvoljnu kvotu",
-    "Nema dovoljno potvrđenih gol-tržišta za B",
-    "NBA player-points snapshot 29.10 nije današnji",
-    "Nisu zvanično potvrđeni svi sastavi niti dokazana prematch xG baza"
-  ],
-  "ticket_drafts": {
-    "A": {
-      "status": "NEDOSTUPAN_NIJE_OBJAVLJEN",
+      "status": "NEDOSTUPAN",
       "events": [],
-      "verified_total_odds": null
-    },
-    "B": {
-      "status": "NEDOSTUPAN_NIJE_OBJAVLJEN",
-      "events": [],
-      "verified_total_odds": null
-    },
-    "C": {
-      "status": "NEDOSTUPAN_NIJE_OBJAVLJEN",
-      "events": [],
-      "verified_total_odds": null
+      "verified_odds": null
     }
   },
-  "actions_taken": [
-    "Read main collector-feed.json and NBA player points snapshot",
-    "Verified today and post-13:00 fixture times from independent sources",
-    "Reviewed team news and injuries for selected football fixtures and NBA candidate",
-    "Recorded candidates only, no ticket publication or bank changes",
-    "Saved only weekend-research.json draft",
-    "01.11.2026. glavni collector-feed.json osvježen sa 30 fudbalskih kandidata i 4 NBA utakmice",
-    "Provjerene javne kvote i rizici za Lazio–Cagliari i Frankfurt–Hamburg; neusaglašeni snimci ne dozvoljavaju zaključavanje jedinstvene potvrđene kvote",
-    "U 12:00 GitHub data.json prikazuje sve tri nedostupne divizije, bez uloga; banka ostala 193,85 €, archive.json netaknut"
-  ],
   "protected_files_unchanged": [
     "data.json",
     "archive.json",
@@ -248,8 +125,17 @@
     "DEMO",
     "previously settled tickets"
   ],
+  "actions_taken": [
+    "Read collector-feed.json and NBA player points file from main repository",
+    "Checked independently published Nov 7 fixtures and limited team news",
+    "Recorded limitations and no approved bets",
+    "Updated only weekend-research.json draft"
+  ],
   "next_required_checks": [
-    "Sutrašnji kolektor od 09:00; svježina kvota i potvrda tačnog tržišta prije 12:00",
-    "Samo nakon stvarne potvrđene objave smiju se knjižiti ulog i isplata"
+    "Successful Nov 7 collector run",
+    "5–10 all-competition finished games and validated xG/xGA for each considered side",
+    "Official lineup/injury/suspension updates",
+    "Timestamped bookmaker markets and decimal prices; NBA availability in Mozzart BiH",
+    "Complete verification before 11:45; do not publish on unverified data"
   ]
 }
