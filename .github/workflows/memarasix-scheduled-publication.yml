@@ -2,8 +2,9 @@ name: MemaraSix daily 12:00 independent A/B/C publication
 on:
   workflow_dispatch:
   schedule:
-    # Sarajevo noon is 10:00 UTC in summer, 11:00 UTC in winter.
-    - cron: '0 10,11 * * *'
+    # Retry GitHub Actions scheduling around Sarajevo noon; runner timing can drift.
+    # Only the local 12:00–12:30 gate permits publication (DST-safe).
+    - cron: '0,5,10,15,20,25,30 10,11 * * *'
 permissions:
   contents: write
 concurrency:
