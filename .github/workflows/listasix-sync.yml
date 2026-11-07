@@ -24,7 +24,7 @@ jobs:
           python3 - <<'PY'
           import json, urllib.request, pathlib, datetime
           base="https://raw.githubusercontent.com/shikithe/Slavojka/main/"
-          files={"shared/active-list.json":"listasix-data/active-list.json","shared/agent/history-h2h.json":"listasix-data/history-h2h.json"}
+          files={"shared/active-list.json":"listasix-data/active-list.json","shared/agent/history-h2h.json":"listasix-data/history-h2h.json","shared/agent/analysis-brief.json":"listasix-data/analysis-brief.json"}
           today=datetime.datetime.now(__import__("zoneinfo").ZoneInfo("Europe/Sarajevo")).date().isoformat()
           for source,target in files.items():
               try:
@@ -36,6 +36,9 @@ jobs:
                   if source.endswith("active-list.json"):
                       if obj.get("date")!=today or not isinstance(obj.get("fixtures"),list) or not obj["fixtures"]:
                           raise ValueError("active list missing current date or fixtures")
+                  elif source.endswith("analysis-brief.json"):
+                      if not isinstance(obj,dict) or obj.get("date")!=today or not isinstance(obj.get("fixtures"),list) or not obj["fixtures"]:
+                          raise ValueError("invalid or stale compact ESPN brief")
                   else:
                       if not isinstance(obj,dict) or obj.get("date")!=today or not obj.get("leagues") or not obj.get("fixtures"):
                           raise ValueError("unexpected history format")
