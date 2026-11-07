@@ -1,0 +1,80 @@
+name: MemaraSix PreScout then Advanced Scout (research only)
+on:
+  pull_request:
+    paths:
+      - 'scout_pipeline.py'
+      - 'tests/test_scout_pipeline.py'
+      - '.github/workflows/memarasix-scout-pipeline.yml'
+      - '.github/workflows/listasix-sync.yml'
+  workflow_dispatch:
+  workflow_run:
+    workflows: ['Sync ListaSix data']
+    types: [completed]
+  schedule:
+    # Retry around Sarajevo morning; do not assume GitHub cron is exact.
+    - cron: '50 7,8 * * *'
+    - cron: '10 8,9 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: memarasix-scout-research
+  cancel-in-progress: false
+
+jobs:
+  scout:
+    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test mathematical probabilities and publication safeguards
+        run: python -m unittest discover -s tests -p 'test_scout_pipeline.py' -v
+      - name: Check source freshness gate
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python - <<'PY'
+          import os
+          from datetime import datetime,time
+          from zoneinfo import ZoneInfo
+          local=datetime.now(ZoneInfo('Europe/Sarajevo'))
+          event=os.environ['EVENT_NAME']
+          enabled=(event!='pull_request') and (event!='workflow_dispatch' or os.environ.get('GITHUB_REF')=='refs/heads/main')
+          if event=='schedule':
+              enabled=enabled and time(9,45)<=local.time()<=time(12,30)
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:
+              f.write('enabled='+str(enabled).lower()+'\n')
+          print('SCOUT_GATE',local.isoformat(),'enabled',enabled)
+          PY
+      - name: Run PreScout and Advanced Scout on copied validated ListaSix data
+        if: steps.gate.outputs.enabled == 'true'
+        run: |
+          python scout_pipeline.py \
+            --offer listasix-data/active-list.json \
+            --brief listasix-data/analysis-brief.json \
+            --output collector-output/scout-report.json
+          python - <<'PY'
+          import json
+          data=json.load(open('collector-output/scout-report.json',encoding='utf-8'))
+          assert data['publication_allowed'] is False
+          assert data['bank_modified'] is False
+          assert data['tickets_modified'] is False
+          assert data['archive_modified'] is False
+          assert all(x['approved_for_ticket'] is False for x in data['scout_candidates'])
+          print('SCOUT_OUTPUT_SAFE',data['summary'])
+          PY
+      - name: Save research report only (never tickets or bank)
+        if: steps.gate.outputs.enabled == 'true' && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- collector-output/scout-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'scout: refresh independent candidate report [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
