@@ -129,7 +129,7 @@
       "label": "GOLOVI — VIŠE OD 2,5",
       "odds": 3.4,
       "stake": 6.12,
-      "status": "objavljen",
+      "status": "izgubljen",
       "matches": [
         {
           "fixture_id": "espn:football:ned.1:401875555",
@@ -191,13 +191,17 @@
               ]
             ],
             "conclusion": "Rizičniji izbor s miješanim statističkim signalima; bez dokazanog EV."
-          }
+          },
+          "result_status": "promašen",
+          "final_score": "1:1"
         }
       ],
       "analysis": {
         "summary": "Golovi odabrani nakon uporedne provjere 2 modela za svaki par. Fortuna–Telstar procjene ~61–65%; Osasuna–Athletic ~45–54%.",
         "risks": "Kod Osasune je neslaganje procjena veliko, a za Fortunu prednost na datoj kvoti nije jasna; B je visokorizičan."
-      }
+      },
+      "settled_at_utc": "2026-11-07T19:37:57.530182+00:00",
+      "payout": 0.0
     },
     {
       "id": "C",

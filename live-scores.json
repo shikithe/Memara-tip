@@ -1,6 +1,6 @@
 {
   "date": "2026-11-07",
-  "updated_at_utc": "2026-11-07T18:46:24.745141+00:00",
+  "updated_at_utc": "2026-11-07T19:37:57.530182+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -60,12 +60,13 @@
       "index": 1,
       "home": "Osasuna",
       "away": "Athletic Club",
-      "state": "live",
-      "score": "0:0",
+      "state": "final",
+      "score": "1:1",
       "source": "espn-public-unofficial",
       "event_id": "401882811",
       "league": "esp.1",
-      "minute": "56"
+      "minute": null,
+      "result_status": "promašen"
     }
   ],
   "bank_unchanged": true
