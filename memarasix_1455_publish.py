@@ -148,6 +148,11 @@ def main():
     if bank<=0: return audit("Invalid bank")
     budget=round(bank*.1,2)
     shares={"A":.65,"B":.25,"C":.10}
+    # When today's only publishable football tickets are A and B (without C),
+    # assign the agreed 70/30 split of the 10% daily bank budget.
+    ids_today={t.get("id") for t in existing+selected}
+    if "A" in ids_today and "B" in ids_today and "C" not in ids_today:
+        shares["A"],shares["B"]=.70,.30
     already_spent=round(sum(float(t.get("stake",0)) for t in existing),2)
     remaining=round(budget-already_spent,2)
     if remaining<0: return audit("Existing stakes exceed daily budget")
