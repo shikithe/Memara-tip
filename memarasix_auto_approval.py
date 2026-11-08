@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Automatically prepare A/B approval ONLY from verified fixtures, odds and scores.
+"""Produce a research-only statistical A/B report from verified fixtures, odds and scores.
 
-Never touches bank, tickets or archive. Published A/B remain immutable.
+Never touches approval file, bank, published tickets or archive. Published A/B remain immutable.
 A/B each need true combined odds in [2,3]; B is strictly 3+ goals.
 Recent scores are fetched from official ESPN finished-event scoreboards if the
 ListaSix history contains score=null. Absent evidence => no approval, no guessing.
@@ -326,17 +326,9 @@ def build(offer, history, matched, provider, now, official_lookup=None):
 
 
 def main():
+    """Legacy statistics-only research. NEVER approve or publish tickets."""
     now = datetime.now(timezone.utc)
     today = now.astimezone(SAR).date().isoformat()
-    output = Path("memarasix-1455-approved.json")
-    if output.exists():
-        try:
-            existing = json.loads(output.read_text(encoding="utf-8"))
-        except ValueError:
-            existing = {}
-        if existing.get("date") == today and existing.get("tickets"):
-            print("AUTO_AB_PRESERVE_EXISTING_INDEPENDENT_APPROVAL",len(existing["tickets"]))
-            return 0
     try:
         offer = source_file("shared/active-list.json")
         history = source_file("shared/agent/history-h2h.json")
@@ -346,14 +338,19 @@ def main():
     except Exception as exc:
         result = {"date":today,"tickets":[],"publication_allowed":False,
                   "state":"blocked_source_or_validation_error","reason":str(exc)[:300]}
-    output.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    Path("collector-output").mkdir(parents=True,exist_ok=True)
-    Path("collector-output/automatic-ab-analysis.json").write_text(
-        json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print("AUTO_AB",json.dumps({k:result.get(k) for k in (
+    # This output is just a score-based research draft. The independent AI
+    # analyst alone is authorized to write memarasix-1455-approved.json.
+    # Neither this script nor its workflows may change that approval file.
+    result["publication_allowed"] = False
+    result["approval_authority"] = "independent_chatgpt_ai_only"
+    result["state"] = "research_only_not_approved"
+    output = Path("collector-output/automatic-ab-analysis.json")
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n", encoding="utf-8")
+    print("GITHUB_RESEARCH_ONLY",json.dumps({k:result.get(k) for k in (
         "date","state","eligible_fixture_count","quote_count","modelled_market_count","scoreboard_recovery")},
         ensure_ascii=False))
-    return 0  # fail-safe: publisher independently validates the approval
+    return 0
 
 
 if __name__ == "__main__":
