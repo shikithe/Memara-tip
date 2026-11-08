@@ -1,76 +1,40 @@
 KVOTER - KLADIONICARSKA PONUDA (TXT)
-Preuzeto: 2026-11-07T14:29:38.967659+00:00 UTC | vrijeme: Europe/Sarajevo
-Ukupno: 66 | automatski upareno: 0
+Preuzeto: 2026-11-08T14:37:34.278867+00:00 UTC | vrijeme: Europe/Sarajevo
+Ukupno: 30 | automatski upareno: 0
 Kvote iz posljednjeg API preuzimanja; nisu uzivo. Crtica = nema kvote.
 
 BR  DATUM SAT    UTAKMICA                                    1      X      2     3+  IZVOR
 --------------------------------------------------------------------------------------------------------------
-01  07.11. 15:30  Borussia Dortmund - SV Elversberg                 -      -      -      -  N/P
-02  07.11. 15:30  Mainz - Bayern Munich                             -      -      -      -  N/P
-03  07.11. 15:30  RB Leipzig - FC Augsburg                          -      -      -      -  N/P
-04  07.11. 15:30  SC Paderborn 07 - Eintracht Frankfurt             -      -      -      -  N/P
-05  07.11. 16:00  Arsenal - Hull City                               -      -      -      -  N/P
-06  07.11. 16:00  Fulham - Newcastle United                         -      -      -      -  N/P
-07  07.11. 16:00  KVC Westerlo - Royal Charleroi SC                 -      -      -      -  N/P
-08  07.11. 16:00  Dundee United - Motherwell                        -      -      -      -  N/P
-09  07.11. 16:00  St Johnstone - Dundee                             -      -      -      -  N/P
-10  07.11. 16:15  Espanyol - Deportivo                              -      -      -      -  N/P
-11  07.11. 16:30  Fortuna Sittard - Telstar                         -      -      -      -  N/P
-12  07.11. 16:30  C.D. Nacional - Académico de Viseu                -      -      -      -  N/P
-13  07.11. 17:00  Galatasaray - Amed SFK                            -      -      -      -  N/P
-14  07.11. 17:00  Goztepe - Istanbul Basaksehir                     -      -      -      -  N/P
-15  07.11. 18:00  Parma - Bologna                                   -      -      -      -  N/P
-16  07.11. 18:15  OH Leuven - KV Mechelen                           -      -      -      -  N/P
-17  07.11. 18:30  Nottingham Forest - Manchester City               -      -      -      -  N/P
-18  07.11. 18:30  Osasuna - Athletic Club                           -      -      -      -  N/P
-19  07.11. 18:30  VfB Stuttgart - Werder Bremen                     -      -      -      -  N/P
-20  07.11. 18:45  ADO Den Haag - Sparta Rotterdam                   -      -      -      -  N/P
-21  07.11. 18:45  Aberdeen - Hibernian                              -      -      -      -  N/P
-22  07.11. 19:00  AJ Auxerre - Paris FC                             -      -      -      -  N/P
-23  07.11. 19:00  Alverca - Casa Pia                                -      -      -      -  N/P
-24  07.11. 19:00  Gimnasia (Mendoza) - Independiente Rivadavia      -      -      -      -  N/P
-25  07.11. 19:00  Talleres (Córdoba) - Estudiantes de La Plata      -      -      -      -  N/P
-26  07.11. 20:45  AS Roma - Sassuolo                                -      -      -      -  N/P
-27  07.11. 20:45  Antwerp - Lommel SK                               -      -      -      -  N/P
-28  07.11. 20:45  RAAL La Louvière - Cercle Brugge KSV              -      -      -      -  N/P
-29  07.11. 21:00  Valencia - Real Madrid                            -      -      -      -  N/P
-30  07.11. 21:00  Excelsior - Go Ahead Eagles                       -      -      -      -  N/P
-31  07.11. 21:00  St Mirren - Rangers                               -      -      -      -  N/P
-32  07.11. 21:05  Paris Saint-Germain - Troyes                      -      -      -      -  N/P
-33  07.11. 21:30  Sporting CP - Moreirense                          -      -      -      -  N/P
-34  07.11. 21:30  Argentinos Juniors - Huracán                      -      -      -      -  N/P
-35  07.11. 21:30  Boca Juniors - Defensa y Justicia                 -      -      -      -  N/P
-36  07.11. 21:30  Rosario Central - Estudiantes de Río Cuarto       -      -      -      -  N/P
-37  07.11. 22:00  CF Montréal - Vancouver Whitecaps                 -      -      -      -  N/P
-38  07.11. 22:00  Chicago Fire FC - Columbus Crew                   -      -      -      -  N/P
-39  07.11. 22:00  D.C. United - New York City FC                    -      -      -      -  N/P
-40  07.11. 22:00  FC Cincinnati - Nashville SC                      -      -      -      -  N/P
-41  07.11. 22:00  Inter Miami CF - Charlotte FC                     -      -      -      -  N/P
-42  07.11. 22:00  Orlando City SC - New England Revolution          -      -      -      -  N/P
-43  07.11. 22:00  Philadelphia Union - Toronto FC                   -      -      -      -  N/P
-44  07.11. 22:00  Red Bull New York - Atlanta United FC             -      -      -      -  N/P
-45  08.11. 01:00  Austin FC - Portland Timbers                      -      -      -      -  N/P
-46  08.11. 01:00  FC Dallas - Colorado Rapids                       -      -      -      -  N/P
-47  08.11. 01:00  Houston Dynamo FC - St. Louis CITY SC             -      -      -      -  N/P
-48  08.11. 01:00  Minnesota United FC - San Jose Earthquakes        -      -      -      -  N/P
-49  08.11. 01:00  Real Salt Lake - LA Galaxy                        -      -      -      -  N/P
-50  08.11. 01:00  San Diego FC - Sporting Kansas City               -      -      -      -  N/P
-51  08.11. 01:00  Seattle Sounders FC - LAFC                        -      -      -      -  N/P
-52  08.11. 02:00  Instituto (Córdoba) - Newell's Old Boys           -      -      -      -  N/P
-53  08.11. 11:30  Caykur Rizespor - Erzurum BB                      -      -      -      -  N/P
-54  08.11. 12:15  Heerenveen - Feyenoord Rotterdam                  -      -      -      -  N/P
-55  08.11. 12:30  Napoli - Lazio                                    -      -      -      -  N/P
-56  08.11. 13:30  Club Brugge - Anderlecht                          -      -      -      -  N/P
-57  08.11. 14:00  Elche - Real Betis                                -      -      -      -  N/P
-58  08.11. 14:00  Çorum FK - Fenerbahce                             -      -      -      -  N/P
-59  08.11. 14:30  FC Twente - Ajax Amsterdam                        -      -      -      -  N/P
-60  08.11. 15:00  Brighton & Hove Albion - Brentford                -      -      -      -  N/P
-61  08.11. 15:00  Crystal Palace - Liverpool                        -      -      -      -  N/P
-62  08.11. 15:00  Ipswich Town - AFC Bournemouth                    -      -      -      -  N/P
-63  08.11. 15:00  Sunderland - Chelsea                              -      -      -      -  N/P
-64  08.11. 15:00  Genoa - AC Milan                                  -      -      -      -  N/P
-65  08.11. 15:00  Monza - Atalanta                                  -      -      -      -  N/P
-66  08.11. 15:00  Stade Rennais - Lille                             -      -      -      -  N/P
+01  08.11. 16:00  KAA Gent - KV Kortrijk                            -      -      -      -  N/P
+02  08.11. 16:00  Heart of Midlothian - Falkirk                     -      -      -      -  N/P
+03  08.11. 16:15  Real Sociedad - Rayo Vallecano                    -      -      -      -  N/P
+04  08.11. 16:30  C.D. Nacional - Académico de Viseu                -      -      -      -  N/P
+05  08.11. 16:30  Santa Clara - Gil Vicente                         -      -      -      -  N/P
+06  08.11. 16:30  Alanyaspor - Trabzonspor                          -      -      -      -  N/P
+07  08.11. 16:45  AZ Alkmaar - FC Groningen                         -      -      -      -  N/P
+08  08.11. 16:45  SC Cambuur - PSV Eindhoven                        -      -      -      -  N/P
+09  08.11. 17:00  Celtic - Kilmarnock                               -      -      -      -  N/P
+10  08.11. 17:15  Angers - Nice                                     -      -      -      -  N/P
+11  08.11. 17:15  Brest - Lyon                                      -      -      -      -  N/P
+12  08.11. 17:15  Le Havre AC - Lorient                             -      -      -      -  N/P
+13  08.11. 17:15  Le Mans - AS Monaco                               -      -      -      -  N/P
+14  08.11. 17:30  Manchester United - Aston Villa                   -      -      -      -  N/P
+15  08.11. 17:30  SC Freiburg - 1. FC Union Berlin                  -      -      -      -  N/P
+16  08.11. 18:00  Internazionale - Como                             -      -      -      -  N/P
+17  08.11. 18:30  Celta Vigo - Levante                              -      -      -      -  N/P
+18  08.11. 18:30  Villarreal - Getafe                               -      -      -      -  N/P
+19  08.11. 18:30  Union St.-Gilloise - Racing Genk                  -      -      -      -  N/P
+20  08.11. 19:00  Vitória de Guimaraes - FC Porto                   -      -      -      -  N/P
+21  08.11. 19:00  Besiktas - Genclerbirligi                         -      -      -      -  N/P
+22  08.11. 19:15  Sint-Truidense - Zulte-Waregem                    -      -      -      -  N/P
+23  08.11. 19:30  TSG Hoffenheim - Schalke 04                       -      -      -      -  N/P
+24  08.11. 20:00  FC Utrecht - NEC Nijmegen                         -      -      -      -  N/P
+25  08.11. 20:45  Fiorentina - Juventus                             -      -      -      -  N/P
+26  08.11. 20:45  Lens - Marseille                                  -      -      -      -  N/P
+27  08.11. 21:00  Atlético Madrid - Barcelona                       -      -      -      -  N/P
+28  08.11. 21:30  Estrela - Benfica                                 -      -      -      -  N/P
+29  08.11. 21:30  Rio Ave - Braga                                   -      -      -      -  N/P
+30  08.11. 23:30  Central Córdoba (Santiago del Estero) - Lanú      -      -      -      -  N/P
 
 1=domacin | X=nerijeseno | 2=gost | 3+=vise od 2.5 golova
 N/P = bez potvrdenih kvota u ovom ciklusu.
