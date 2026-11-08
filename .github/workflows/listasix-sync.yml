@@ -53,40 +53,11 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
             echo "LISTASIX_SYNC_COMMITTED_AND_RECEIPT_PUBLISHED"
           fi
-      - name: Decide if new data needs ticket analysis
-        id: analysis_gate
-        env:
-          LIST_CHANGED: ${{ steps.synchronized.outputs.changed }}
+      - name: Announce completed sync for independent AI review
         run: |
-          python3 - <<'PY'
-          import json, os
-          from datetime import datetime
-          from pathlib import Path
-          from zoneinfo import ZoneInfo
-          day=datetime.now(ZoneInfo("Europe/Sarajevo")).date().isoformat()
-          previous={}
-          try:
-              previous=json.loads(Path("memarasix-1455-approved.json").read_text())
-          except (OSError,ValueError):
-              pass
-          analyze=(os.environ["LIST_CHANGED"]=="true" or
-                   previous.get("date")!=day or not previous.get("tickets"))
-          with open(os.environ["GITHUB_OUTPUT"],"a") as out:
-              out.write("analyze="+("true" if analyze else "false")+"\n")
-          print("LISTASIX_RECEIPT_READY_ANALYZE", analyze)
-          PY
-      - name: Prepare A and B from synced ListaSix evidence
-        if: steps.analysis_gate.outputs.analyze == 'true'
-        run: |
-          set -euo pipefail
-          python3 -m unittest -q test_memarasix_verified_quotes.py
-          python3 memarasix_auto_approval.py
-          git add -- memarasix-1455-approved.json collector-output/automatic-ab-analysis.json
-          if ! git diff --cached --quiet; then
-            git commit -m "MemaraSix: prepare A/B after ListaSix receipt [skip ci]"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+          echo "LISTASIX_SYNC_READY_FOR_AI_REVIEW"
+          echo "The independent AI analyst is the SOLE writer of memarasix-1455-approved.json."
+          echo "GitHub may sync fixtures and publish independently AI-approved tickets only."
       - name: Publish only when it is noon or later and every match passes checks
         env:
           MEMARASIX_READY_SYNC_LATE: "1"
