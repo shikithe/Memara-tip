@@ -7,9 +7,9 @@
   "daily_budget": 21.46,
   "daily_stake": 21.46,
   "bank_after_stakes": 193.1,
-  "bank_after": 193.1,
-  "provisional": true,
-  "settled": false,
+  "bank_after": 230.8,
+  "provisional": false,
+  "settled": true,
   "odds_verified": false,
   "odds_verification_note": "Oba tiketa koriste stvarne API-Football/ListaSix kvote koje se poklapaju kroz Kvoter alias i provider event u jutarnjem snimku 08.11.2026. (observed 08:51 UTC; provider updated 06:01 UTC). Nisu uživo obnovljene pri popodnevnoj objavi, nisu garantovano dostupne za uplatu.",
   "bank_basis_note": "Današnji budžet polazi od zaključenog stanja 07.11.2026. od 214,56 EUR; zbog nedostajuće evidencije za 06.11.2026. virtuelni saldo je označen kao provizoran.",
@@ -19,8 +19,8 @@
       "label": "GLAVNI TIKET",
       "odds": 2.51,
       "stake": 15.02,
-      "status": "objavljen",
-      "payout": 0,
+      "status": "dobitan",
+      "payout": 37.7,
       "matches": [
         {
           "fixture_id": "espn:football:bel.1:401878943",
@@ -54,7 +54,9 @@
               ]
             ],
             "conclusion": "Ručno analiziran prijedlog; nema dokaza pozitivne očekivane vrijednosti; kvota nije live ponovo verifikovana."
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "1:0"
         },
         {
           "fixture_id": "espn:football:por.1:401885394",
@@ -84,13 +86,16 @@
               ]
             ],
             "conclusion": "Ručno analiziran prijedlog; nema dokaza pozitivne očekivane vrijednosti; kvota nije live ponovo verifikovana."
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "1:2"
         }
       ],
       "analysis": {
         "summary": "Ručni izbor iz potvrđene ListaSix liste: Union favorit kod kuće, Porto u nizu pet pobjeda. Oba izbora imaju rizike, uključujući izostanke Uniona.",
         "risks": "Nijedan tip nije siguran. Provjera kvota jutrošnjeg snimka, ne živi API. Forma pet utakmica je mali uzorak. Izostanci i rasporedi mogu promijeniti ishod."
-      }
+      },
+      "settled_at_utc": "2026-11-08T20:09:21.052568+00:00"
     },
     {
       "id": "B",
@@ -184,8 +189,8 @@
     "B": "",
     "C": "Nije pripremljen nezavisan tiket C sa odgovarajućim kvotama i analizom."
   },
-  "total_payout": 0.0,
-  "net_change": null,
+  "total_payout": 37.7,
+  "net_change": 16.24,
   "analysis_status": "08.11.2026: ručna AI analiza iz 45 ESPN formiranih mečeva; sva 4 para provjerena u svježoj ListaSix listi za datum 08.11. Kvoterske kvote jesu jutarnji snimak i NISU live revalidirane. Konačni sastavi nisu u potpunosti poznati. Danas objavljen A i B, svaki ukupne kvote 2–3.",
   "selection_method": "Ručni izbor A/B; verifikacija ESPN fixture ID, Kvoter uparivanja i tačnih jutarnjih kladioničarskih kvota.",
   "source_fixture_feed": "shikithe/Slavojka/shared/active-list.json 2026-11-08",

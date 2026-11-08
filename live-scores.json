@@ -1,6 +1,6 @@
 {
   "date": "2026-11-08",
-  "updated_at_utc": "2026-11-08T19:01:57.067141+00:00",
+  "updated_at_utc": "2026-11-08T20:09:21.052568+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,24 +9,26 @@
       "index": 0,
       "home": "Union St.-Gilloise",
       "away": "Racing Genk",
-      "state": "live",
-      "score": "0:0",
+      "state": "final",
+      "score": "1:0",
       "source": "espn-public-unofficial",
       "event_id": "401878943",
       "league": "bel.1",
-      "minute": "71"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "A",
       "index": 1,
       "home": "Vitória de Guimaraes",
       "away": "FC Porto",
-      "state": "live",
-      "score": "0:1",
+      "state": "final",
+      "score": "1:2",
       "source": "espn-public-unofficial",
       "event_id": "401885394",
       "league": "por.1",
-      "minute": "45"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "B",
@@ -46,12 +48,12 @@
       "index": 1,
       "home": "Lens",
       "away": "Marseille",
-      "state": "scheduled",
-      "score": "0:0",
+      "state": "live",
+      "score": "1:1",
       "source": "espn-public-unofficial",
       "event_id": "401876404",
       "league": "fra.1",
-      "minute": null
+      "minute": "24"
     }
   ],
   "bank_unchanged": true
