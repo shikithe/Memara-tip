@@ -1,11 +1,16 @@
-name: Sync ListaSix data
+name: Sync ListaSix data on verified ready event
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [listasix-active-list-ready]
   schedule:
+    # Temporary failover ONLY until the cross-repo dispatch token is verified.
+    # Normal primary path is instant repository_dispatch after ListaSix commit.
     - cron: '20,40 8 * * *'
     - cron: '0 9,10 * * *'
-    # Refresh before 15:25 publication (14:55 Sarajevo)
     - cron: '55 12,13 * * *'
+# Event is primary. Existing schedule is temporarily kept as failover to avoid
+# interrupting MemaraSix before the cross-repository credential is configured.
 permissions:
   contents: write
 concurrency:
@@ -14,46 +19,34 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch and validate ListaSix data
-        shell: bash
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download and validate same-day ListaSix snapshot and event digest
+        env:
+          SOURCE_DATE: ${{ github.event.client_payload.date }}
+          SOURCE_SHA256: ${{ github.event.client_payload.active_sha256 }}
         run: |
           set -euo pipefail
-          mkdir -p listasix-data
-          python3 - <<'PY'
-          import json, urllib.request, pathlib, datetime
-          base="https://raw.githubusercontent.com/shikithe/Slavojka/main/"
-          files={"shared/active-list.json":"listasix-data/active-list.json","shared/agent/history-h2h.json":"listasix-data/history-h2h.json"}
-          today=datetime.datetime.now(__import__("zoneinfo").ZoneInfo("Europe/Sarajevo")).date().isoformat()
-          for source,target in files.items():
-              try:
-                  with urllib.request.urlopen(base+source, timeout=25) as r:
-                      content=r.read().decode("utf-8")
-                  obj=json.loads(content)
-                  if not obj:
-                      raise ValueError("empty JSON data")
-                  if source.endswith("active-list.json"):
-                      if obj.get("date")!=today or not isinstance(obj.get("fixtures"),list) or not obj["fixtures"]:
-                          raise ValueError("active list missing current date or fixtures")
-                  else:
-                      if not isinstance(obj,dict) or obj.get("date")!=today or not obj.get("leagues") or not obj.get("fixtures"):
-                          raise ValueError("unexpected history format")
-                  pathlib.Path(target).write_text(json.dumps(obj,ensure_ascii=False,indent=2)+"\n")
-                  print("VALID",source,"->",target)
-              except Exception as e:
-                  print("UNAVAILABLE",source,repr(e))
-                  if source.endswith("active-list.json"):
-                      raise
-                  # Never overwrite a previous valid history with empty or invalid content.
-          PY
-      - name: Commit validated changes
-        shell: bash
+          python3 memarasix_sync_listasix.py \
+            --expected-date "$SOURCE_DATE" \
+            --expected-sha256 "$SOURCE_SHA256"
+      - name: Commit synchronized active list, history and receipt together
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add listasix-data/
-          if ! git diff --cached --quiet; then
-            git commit -m "Sync validated ListaSix daily feed"
-            git push
+          git add -- listasix-data/active-list.json listasix-data/history-h2h.json listasix-data/sync-receipt.json
+          if git diff --cached --quiet; then
+            echo "LISTASIX_ALREADY_SYNCED"
+            exit 0
           fi
+          git commit -m "Sync confirmed ListaSix ready list [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "LISTASIX_SYNC_COMMITTED_AND_RECEIPT_PUBLISHED"
