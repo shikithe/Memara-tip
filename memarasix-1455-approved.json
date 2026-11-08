@@ -1,11 +1,7 @@
 {
   "date": "2026-11-08",
   "tickets": [],
-  "analysis_status": "blocked_insufficient_independent_verification",
+  "state": "no_verified_market_quotes",
   "publication_allowed": false,
-  "reason": "ListaSix active-list, analysis-brief, matched fixtures and bookmaker offers are available for 2026-11-08. ESPN brief contains five finished games for many candidates, but independent current online research did not establish sufficient verified team-news, all-competition form, and defensible market edge for any complete A (strict 2.00-3.00), B (3+ only, strict 2.00-3.00), or C (>=10) ticket. Examples: Brighton-Brentford missing Mitoma/Ferguson and Brentford Henry/Dasilva; Crystal Palace-Liverpool missing Mateta/Sarr and Liverpool Ekitike/Bradley/Frimpong; provisional lineups not confirmed. Do not force selections.",
-  "sources": [
-    "https://www.squawka.com/us/news/premier-league/match-preview-brighton-vs-brentford-08-11-26-premier-league/",
-    "https://www.sportsmole.co.uk/football/crystal-palace/injury-news/team-news/palace-vs-liverpool-injury-suspension-list-predicted-xis_608663.html"
-  ]
+  "quote_count": 0
 }
