@@ -8,7 +8,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: memarasix-publication-daily
+  group: memarasix-daily-publication
   cancel-in-progress: false
 jobs:
   readiness:
@@ -40,7 +40,11 @@ jobs:
         run: python -m unittest -v test_memarasix_publication_gate.py test_memarasix_verified_quotes.py
       - name: Prepare B and C candidates from live ListaSix
         if: steps.gate.outputs.enabled == 'true'
+        continue-on-error: true
         run: python memarasix_bc_live_research.py
+      - name: Fallback prepare evidence-based A/B if sync did not provide approval
+        if: steps.gate.outputs.enabled == 'true'
+        run: python memarasix_auto_approval.py
       - name: Validate and attempt independently approved A B C publication
         if: steps.gate.outputs.enabled == 'true'
         run: python memarasix_1455_publish.py
@@ -49,7 +53,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- memarasix-1455-audit.json data.json collector-output/bc-live-research.json
+          git add -- memarasix-1455-audit.json data.json memarasix-1455-approved.json collector-output/bc-live-research.json collector-output/automatic-ab-analysis.json
           if ! git diff --cached --quiet; then
             git commit -m 'memarasix: daily publication validation audit'
             git pull --rebase origin main

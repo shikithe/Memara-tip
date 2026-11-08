@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """One-time GitHub publisher. Fail closed: no invented odds, no stale matches, no overwrites."""
-import json, os, sys, urllib.request
+import hashlib, json, os, sys, urllib.request
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -22,11 +22,36 @@ def remote(path):
     req=urllib.request.Request(url,headers={"User-Agent":"MemaraSix-1455-GitHub-Publisher","Cache-Control":"no-cache"})
     with urllib.request.urlopen(req,timeout=35) as r:
         return json.loads(r.read())
+def publication_clock_allowed(local, ready_sync_late=False):
+    clock=local.strftime("%H:%M")
+    return ("12:00"<=clock<="12:30" or
+            (ready_sync_late and "12:30"<clock<"23:00"))
+
+
+def digest_active(obj):
+    return hashlib.sha256(json.dumps(obj,ensure_ascii=False,sort_keys=True,
+                                     separators=(",",":")).encode("utf-8")).hexdigest()
+
+
+def valid_ready_receipt(root, day, offer):
+    # Never use the extended publication window without a real, matching
+    # source snapshot that MemaraSix previously synchronized successfully.
+    try:
+        receipt=load(root/"listasix-data/sync-receipt.json")
+        active=load(root/"listasix-data/active-list.json")
+        return (receipt.get("date")==day and
+                receipt.get("active_sha256")==digest_active(active) and
+                receipt.get("active_sha256")==digest_active(offer))
+    except (OSError,ValueError,TypeError,KeyError):
+        return False
+
+
 def main():
     now=datetime.now(UTC)
     local=now.astimezone(ZoneInfo("Europe/Sarajevo"))
-    if not ("12:00"<=local.strftime("%H:%M")<="12:30"):
-        return audit("Outside daily 12:00–12:30 Sarajevo publication window")
+    allow_late=os.environ.get("MEMARASIX_READY_SYNC_LATE")=="1"
+    if not publication_clock_allowed(local,allow_late):
+        return audit("Outside allowed Sarajevo publication window")
     data=load(ROOT/"data.json")
     if data.get("date")!=local.date().isoformat():
         # Prior settled day remains the bank source until the first daily publication.
@@ -45,6 +70,8 @@ def main():
                      {"detail":str(exc)[:200]})
     if offer.get("date")!=local.date().isoformat() or history.get("date")!=offer.get("date"):
         return audit("Offer and history dates mismatch or stale")
+    if local.strftime("%H:%M")>"12:30" and not valid_ready_receipt(ROOT,local.date().isoformat(),offer):
+        return audit("Late ready-sync publication requires exact committed source ACK")
     if not offer.get("publication_allowed") or dt(offer["expires_at"])<=now:
         return audit("Offer not publication-allowed or expired")
     if not history.get("leagues") or not history.get("fixtures"):
@@ -148,6 +175,10 @@ def main():
     if bank<=0: return audit("Invalid bank")
     budget=round(bank*.1,2)
     shares={"A":.65,"B":.25,"C":.10}
+    # The two approved A/B tickets may share the whole 10% budget only
+    # when published together, with no C and no earlier tickets.
+    if not existing and {x["id"] for x in selected}=={"A","B"}:
+        shares={"A":.70,"B":.30,"C":.10}
     already_spent=round(sum(float(t.get("stake",0)) for t in existing),2)
     remaining=round(budget-already_spent,2)
     if remaining<0: return audit("Existing stakes exceed daily budget")
