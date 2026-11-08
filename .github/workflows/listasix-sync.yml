@@ -58,23 +58,8 @@ jobs:
           echo "LISTASIX_SYNC_READY_FOR_AI_REVIEW"
           echo "The independent AI analyst is the SOLE writer of memarasix-1455-approved.json."
           echo "GitHub may sync fixtures and publish independently AI-approved tickets only."
-      - name: Publish only when it is noon or later and every match passes checks
-        env:
-          MEMARASIX_READY_SYNC_LATE: "1"
+      - name: Mark verified ListaSix snapshot ready for AI analyst
         run: |
-          set -euo pipefail
-          now="$(TZ=Europe/Sarajevo date +%H%M)"
-          if [ "$now" -lt 1200 ]; then
-            echo "LISTASIX_SYNC_ANALYSIS_DONE_PUBLICATION_AT_12"
-            exit 0
-          fi
-          # The publisher owns the ONLY data.json write. After 12:30 it can
-          # publish solely for a confirmed ready-sync event, with fresh odds,
-          # unstarted fixtures and all usual verified ticket/10% bank gates.
-          python3 memarasix_1455_publish.py
-          git add -- data.json memarasix-1455-audit.json
-          if ! git diff --cached --quiet; then
-            git commit -m "MemaraSix: late verified publication after ready data [skip ci]"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+          echo "AI_REVIEW_CAN_BEGIN_AFTER_CONFIRMED_SYNC"
+          echo "Waiting for the independent ChatGPT AI task to analyze and commit memarasix-1455-approved.json."
+          echo "Sync NEVER publishes tickets: approval commit triggers the publisher."
