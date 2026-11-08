@@ -1,59 +1,46 @@
-name: MemaraSix daily 12:00 independent A/B/C publication
+name: MemaraSix publish exclusively after independent AI approval
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'memarasix-1455-approved.json'
   workflow_dispatch:
-  schedule:
-    # Retry GitHub Actions scheduling around Sarajevo noon; runner timing can drift.
-    # Only the local 12:00–12:30 gate permits publication (DST-safe).
-    - cron: '0,5,10,15,20,25,30 10,11 * * *'
+# No cron. Publishing starts when the analyst commits an approved ticket.
+# A manual dispatch is a recovery option, but the same approval guards apply.
 permissions:
   contents: write
 concurrency:
   group: memarasix-daily-publication
   cancel-in-progress: false
 jobs:
-  readiness:
+  publish-after-approval:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-    env:
-      TZ: Europe/Sarajevo
+    timeout-minutes: 12
     steps:
-      - name: Check local time
-        id: gate
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-        run: |
-          clock="$(TZ=Europe/Sarajevo date +%H:%M)"
-          if [ "$EVENT_NAME" = "workflow_dispatch" ] || { [ "$clock" != "" ] && [[ "$clock" > "11:59" && "$clock" < "12:31" ]]; }; then
-            echo "enabled=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "enabled=false" >> "$GITHUB_OUTPUT"
-          fi
-          echo "Sarajevo time: $(TZ=Europe/Sarajevo date)"
       - uses: actions/checkout@v4
-        if: steps.gate.outputs.enabled == 'true'
+        with:
+          persist-credentials: true
       - uses: actions/setup-python@v5
-        if: steps.gate.outputs.enabled == 'true'
         with:
           python-version: '3.11'
-      - name: Run publication readiness tests
-        if: steps.gate.outputs.enabled == 'true'
-        run: python -m unittest -v test_memarasix_publication_gate.py test_memarasix_verified_quotes.py
-      - name: Prepare B and C candidates from live ListaSix
-        if: steps.gate.outputs.enabled == 'true'
-        continue-on-error: true
-        run: python memarasix_bc_live_research.py
-      # Only AI-signed approval input; no GitHub-generated fallback ticket selection.
-      - name: Validate and attempt independently approved A B C publication
-        if: steps.gate.outputs.enabled == 'true'
-        run: python memarasix_1455_publish.py
-      - name: Commit publication audit
-        if: steps.gate.outputs.enabled == 'true'
+      - name: Validate approved file and completed ListaSix receipt
         run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- memarasix-1455-audit.json data.json collector-output/bc-live-research.json
+          set -euo pipefail
+          python3 memarasix_approval_gate.py --require-publishable
+      - name: Run technical publication regression tests
+        run: |
+          python3 -m unittest -v test_memarasix_publication_gate.py test_memarasix_verified_quotes.py
+          python3 -m unittest discover -s tests -p 'test_ai_event_approval_gate.py' -v
+      - name: Validate and publish independently AI-approved A/B/C
+        run: python3 memarasix_1455_publish.py
+      - name: Commit only publisher-owned audit and tickets
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data.json memarasix-1455-audit.json
           if ! git diff --cached --quiet; then
-            git commit -m 'memarasix: daily publication validation audit'
+            git commit -m "MemaraSix: publish after AI approval [skip ci]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
