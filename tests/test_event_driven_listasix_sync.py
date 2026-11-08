@@ -59,6 +59,20 @@ class EventSyncTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             validate(a,h,NOW)
 
+    def test_retry_no_change_keeps_existing_receipt(self):
+        a,h=inputs()
+        receipt=validate(a,h,NOW)
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            self.assertTrue(write_snapshot(root,a,h,receipt))
+            receipt_path=root/"listasix-data/sync-receipt.json"
+            original=receipt_path.read_text()
+            another=dict(receipt,synced_at_utc="2026-11-08T12:00:00+00:00")
+            self.assertFalse(write_snapshot(root,a,h,another))
+            self.assertEqual(receipt_path.read_text(),original)
+            h["leagues"]["eng.1"]["teams"]["Arsenal"]={"found":5}
+            self.assertTrue(write_snapshot(root,a,h,another))
+
     def test_save_three_artifacts_with_receipt_atomically(self):
         a,h=inputs()
         receipt=validate(a,h,NOW)
