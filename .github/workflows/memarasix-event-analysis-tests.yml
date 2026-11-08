@@ -1,0 +1,28 @@
+name: MemaraSix event-triggered analyst and late-publication safety
+on:
+  pull_request:
+    paths:
+      - 'memarasix_auto_approval.py'
+      - 'memarasix_1455_publish.py'
+      - '.github/workflows/listasix-sync.yml'
+      - '.github/workflows/memarasix-scheduled-publication.yml'
+      - 'tests/test_auto_ab_approval.py'
+      - 'tests/test_analysis_after_receipt.py'
+      - '.github/workflows/memarasix-event-analysis-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify event-triggered analysis and publishing invariants
+        run: |
+          python3 -m unittest discover -s tests -p 'test_auto_ab_approval.py' -v
+          python3 -m unittest discover -s tests -p 'test_analysis_after_receipt.py' -v
+          python3 -m unittest -v test_memarasix_publication_gate.py test_memarasix_verified_quotes.py
