@@ -181,8 +181,8 @@
     "B": "",
     "C": "Nije pripremljen nezavisan tiket C sa odgovarajućim kvotama i analizom."
   },
-  "total_payout": 0,
-  "net_change": 0,
+  "total_payout": 0.0,
+  "net_change": null,
   "analysis_status": "08.11.2026: ručna AI analiza iz 45 ESPN formiranih mečeva; sva 4 para provjerena u svježoj ListaSix listi za datum 08.11. Kvoterske kvote jesu jutarnji snimak i NISU live revalidirane. Konačni sastavi nisu u potpunosti poznati. Danas objavljen A i B, svaki ukupne kvote 2–3.",
   "selection_method": "Ručni izbor A/B; verifikacija ESPN fixture ID, Kvoter uparivanja i tačnih jutarnjih kladioničarskih kvota.",
   "source_fixture_feed": "shikithe/Slavojka/shared/active-list.json 2026-11-08",
