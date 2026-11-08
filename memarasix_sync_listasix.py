@@ -72,6 +72,20 @@ def validate(active, history, now, expected_date=None, expected_sha256=None):
 def write_snapshot(root, active, history, receipt):
     path = root / "listasix-data"
     path.mkdir(parents=True, exist_ok=True)
+    # Idempotent event retry or schedule fallback: keep the existing receipt
+    # unchanged if both committed data files already match the source.
+    try:
+        old_active = json.loads((path / "active-list.json").read_text(encoding="utf-8"))
+        old_history = json.loads((path / "history-h2h.json").read_text(encoding="utf-8"))
+        old_receipt = json.loads((path / "sync-receipt.json").read_text(encoding="utf-8"))
+        if (canonical_hash(old_active) == canonical_hash(active)
+                and canonical_hash(old_history) == canonical_hash(history)
+                and old_receipt.get("date") == receipt["date"]
+                and old_receipt.get("active_sha256") == receipt["active_sha256"]):
+            print("LISTASIX_ALREADY_SYNCED_WITH_RECEIPT")
+            return False
+    except (OSError, ValueError, TypeError):
+        pass
     for name, value in (("active-list.json", active),
                         ("history-h2h.json", history),
                         ("sync-receipt.json", receipt)):
@@ -79,6 +93,7 @@ def write_snapshot(root, active, history, receipt):
         tmp.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n",
                        encoding="utf-8")
         tmp.replace(path / name)
+    return True
 
 
 def main():
