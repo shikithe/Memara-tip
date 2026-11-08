@@ -1,6 +1,5 @@
 {
-  "timestamp_utc": "2026-11-01T13:55:49.812285+00:00",
+  "timestamp_utc": "2026-11-08T15:22:16.548448+00:00",
   "status": "blocked",
-  "reason": "All bookmaker snapshots are older than 60 minutes",
-  "offers_seen": 1499
+  "reason": "Approval file has wrong date or no tickets"
 }
