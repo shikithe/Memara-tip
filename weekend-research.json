@@ -1,121 +1,100 @@
 {
-  "schema_version": "1.3",
-  "date": "2026-11-07",
-  "generated_at_utc": "2026-11-07T08:00:52Z",
+  "schema_version": "1.4",
+  "date": "2026-11-08",
+  "generated_at_utc": "2026-11-08T08:00:00Z",
   "project": "MAIN MemaraSix",
   "repository": "shikithe/Memara-tip",
   "phase": "09:00 weekend research draft",
-  "status": "BLOCKED_STALE_COLLECTOR_AND_UNVERIFIED_ODDS",
+  "status": "BLOCKED_COLLECTOR_NOT_YET_TODAY_AND_ODDS_UNVERIFIED",
   "publication_allowed": false,
   "inputs": {
     "collector_feed": {
       "path": "collector-feed.json",
-      "date": "2026-11-01",
-      "generated_at_utc": "2026-11-01T10:58:21.032871+00:00",
+      "date": "2026-11-07",
+      "generated_at_utc": "2026-11-07T13:42:29.381759+00:00",
       "fresh": false,
-      "football_candidates": 30,
-      "nba_games": 4,
-      "nba_player_watchlist": 12,
-      "note": "All entries are for Nov 1, not Nov 7. None usable as today's verified candidates."
+      "note": "Yesterday's candidate list, not usable for today's ticket approval. Await today's collector."
     },
     "nba_player_points": {
       "path": "collector-output/nba-player-points.json",
       "generated_at_utc": "2026-10-29T17:02:52.719739+00:00",
-      "offers": 371,
+      "offer_count": 371,
       "region": "us",
       "fresh": false,
-      "valid_today": 0,
       "market": "player_points",
-      "points_line_verified_today": false,
-      "decimal_odds_verified_today": false,
-      "bookmaker_verified_today": false,
-      "snapshot_verified_today": false,
-      "mozzart_bih_verified": false
+      "today_verified_lines": 0,
+      "today_verified_decimal_odds": 0,
+      "today_verified_bookmakers": 0,
+      "mozzart_bih_availability": false
     }
   },
   "external_research": {
-    "date": "2026-11-07",
-    "scope": "Independently verified fixture calendar and limited contextual previews only. Full 5–10-match all-competition form, verified xG/xGA, lineup/absence audit, and implied-probability-vs-model comparison are not complete; no approved picks.",
+    "date": "2026-11-08",
+    "scope": "Independent schedule cross-check only. No full five-to-ten all-competition form/xG/absence and price validation; all picks unapproved.",
     "fixtures": [
       {
-        "event": "Borussia Dortmund - SV Elversberg",
+        "event": "Brighton - Brentford",
+        "kickoff_sarajevo": "15:00",
+        "source": "https://www.theguardian.com/football/fixtures/2026/Nov/08"
+      },
+      {
+        "event": "Crystal Palace - Liverpool",
+        "kickoff_sarajevo": "15:00",
+        "source": "https://www.theguardian.com/football/fixtures/2026/Nov/08"
+      },
+      {
+        "event": "Sunderland - Chelsea",
+        "kickoff_sarajevo": "15:00",
+        "source": "https://www.theguardian.com/football/fixtures/2026/Nov/08"
+      },
+      {
+        "event": "Köln - Bayer Leverkusen",
         "kickoff_sarajevo": "15:30",
-        "source": "https://www.bundesliga.com/en/bundesliga/matchday/schedule",
-        "market_verified": false,
-        "analysis_status": "fixture_only"
+        "source": "https://sport.sky.de/fussball/spielplan-ergebnisse/2026-11-08"
       },
       {
-        "event": "Mainz - Bayern Munich",
-        "kickoff_sarajevo": "15:30",
-        "source": "https://www.bundesliga.com/en/bundesliga/matchday/schedule",
-        "secondary_source": "https://www.bavarianfootballworks.com/bayern-munich-bundesliga/278369/bundesliga-matchday-preview-mainz-05-vs-bayern-munich",
-        "notes": "Preview describes Bayern undefeated, Mainz poor home form, possible Bayern rotations and injuries. Predicted XI not confirmed; no independently verified five-to-ten-match xG or bookmaker price.",
-        "market_verified": false
+        "event": "Freiburg - Union Berlin",
+        "kickoff_sarajevo": "17:30",
+        "source": "https://sport.sky.de/fussball/spielplan-ergebnisse/2026-11-08"
       },
       {
-        "event": "RB Leipzig - Augsburg",
-        "kickoff_sarajevo": "15:30",
-        "source": "https://www.bundesliga.com/en/bundesliga/matchday/schedule",
-        "market_verified": false
+        "event": "Inter - Como",
+        "kickoff_sarajevo": "18:00",
+        "source": "https://www.theguardian.com/football/fixtures/2026/Nov/08"
       },
       {
-        "event": "Stuttgart - Werder Bremen",
-        "kickoff_sarajevo": "18:30",
-        "source": "https://www.bundesliga.com/en/bundesliga/matchday/schedule",
-        "market_verified": false
-      },
-      {
-        "event": "Arsenal - Hull City",
-        "kickoff_sarajevo": "16:00",
-        "source": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
-        "notes": "External preview notes Hull scored in five of last six and Arsenal squad depth; no confirmed lineup or market snapshot.",
-        "secondary_source": "https://talksport.com/football/4691701/talksport-tips-best-football-bets-sunday-november-7/",
-        "market_verified": false
-      },
-      {
-        "event": "Fulham - Newcastle",
-        "kickoff_sarajevo": "16:00",
-        "source": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
-        "notes": "Preview favors Fulham on recent defense and Newcastle's poor run, but published promotional odds are not a timestamped verified source offer.",
-        "secondary_source": "https://talksport.com/football/4691701/talksport-tips-best-football-bets-sunday-november-7/",
-        "market_verified": false
-      },
-      {
-        "event": "Nottingham Forest - Manchester City",
-        "kickoff_sarajevo": "18:30",
-        "source": "https://www.theguardian.com/football/fixtures/2026/Nov/07",
-        "market_verified": false
+        "event": "Atlético Madrid - Barcelona",
+        "kickoff_sarajevo": "21:00",
+        "source": "https://www.theguardian.com/football/fixtures/2026/Nov/08"
       }
     ],
-    "nba": {
-      "source": "https://official.nba.com/nba-injury-report-2026-27-season/",
-      "notes": "NBA injury report updates throughout day; without same-day collector fixtures, matched player_points lines and verified sportsbook prices, NBA candidates not approved.",
-      "approved_candidates": 0
-    }
+    "notes": "Guardian times are US Eastern and converted to Sarajevo +6h on 2026-11-08. Some independent fixture sites disagree by an hour; verify against league official match page before selection. No confirmed XI, injuries, xG/xGA or five-match over-2.5 model audit available yet.",
+    "nba_injury_source": "https://official.nba.com/nba-injury-report-2026-27-season/"
   },
   "rules": {
     "publication_time": "12:00 Europe/Sarajevo",
-    "preferred_kickoff_after": "12:20",
-    "A": "football only, target total odds 2–3",
-    "B": "distinct football matches, 3+ market, target total odds 2–3",
-    "C": "4–6 distinct football/NBA events, total odds >=10 target 10–13, no overlap, NBA only here",
+    "prefer_after": "12:20",
+    "A": "Football only; STRICT inclusive total odds 2.00-3.00",
+    "B": "Different football matches; only 3+ (over 2.5); STRICT inclusive total odds 2.00-3.00",
+    "C": "4-6 non-overlapping football/NBA events; total odds >=10, target 10-13",
+    "nba_only_C": true,
     "never_invent_odds": true
   },
   "tickets": {
     "A": {
-      "status": "UNAVAILABLE_UNVERIFIED_PRICES",
+      "status": "UNAVAILABLE_NO_VERIFIED_ODDS",
       "events": [],
-      "verified_odds": null
+      "verified_total_odds": null
     },
     "B": {
-      "status": "UNAVAILABLE_UNVERIFIED_3PLUS_PRICES_AND_FORM",
+      "status": "UNAVAILABLE_NO_VERIFIED_3PLUS_ODDS_OR_FORM",
       "events": [],
-      "verified_odds": null
+      "verified_total_odds": null
     },
     "C": {
       "status": "NEDOSTUPAN",
       "events": [],
-      "verified_odds": null
+      "verified_total_odds": null
     }
   },
   "protected_files_unchanged": [
@@ -126,16 +105,17 @@
     "previously settled tickets"
   ],
   "actions_taken": [
-    "Read collector-feed.json and NBA player points file from main repository",
-    "Checked independently published Nov 7 fixtures and limited team news",
-    "Recorded limitations and no approved bets",
+    "Read main GitHub collector-feed and NBA player points files",
+    "Checked independent Nov 8 fixture schedules",
+    "Recorded strict 2.00-3.00 A/B thresholds and all data gaps",
     "Updated only weekend-research.json draft"
   ],
   "next_required_checks": [
-    "Successful Nov 7 collector run",
-    "5–10 all-competition finished games and validated xG/xGA for each considered side",
-    "Official lineup/injury/suspension updates",
-    "Timestamped bookmaker markets and decimal prices; NBA availability in Mozzart BiH",
-    "Complete verification before 11:45; do not publish on unverified data"
+    "Wait for successful Nov 8 collector run before analysis approval",
+    "Verify 5-10 completed all-competition matches and genuine xG/xGA for each candidate",
+    "Confirm absences and official lineups when available",
+    "Capture timestamped sportsbook 1X2 and 3+ prices and compare implicit probabilities",
+    "Verify NBA market/line/bookmaker/time and Mozzart BiH independently",
+    "Finish review by 11:45; no automatic approval based on this draft"
   ]
 }
