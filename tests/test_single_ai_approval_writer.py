@@ -10,13 +10,16 @@ class SingleApprovalWriterTests(unittest.TestCase):
         text=(ROOT/".github/workflows/listasix-sync.yml").read_text()
         self.assertNotIn("python3 memarasix_auto_approval.py", text)
         self.assertNotIn("git add -- memarasix-1455-approved.json", text)
-        self.assertIn("memarasix_1455_publish.py", text)
+        self.assertNotIn("run: python3 memarasix_1455_publish.py", text)
+        self.assertIn("AI_REVIEW_CAN_BEGIN_AFTER_CONFIRMED_SYNC", text)
 
-    def test_noon_publisher_cannot_auto_select(self):
+    def test_approval_event_publisher_cannot_auto_select(self):
         text=(ROOT/".github/workflows/memarasix-scheduled-publication.yml").read_text()
         self.assertNotIn("python memarasix_auto_approval.py", text)
         self.assertNotIn("git add -- memarasix-1455-audit.json data.json memarasix-1455-approved.json", text)
-        self.assertIn("python memarasix_1455_publish.py", text)
+        self.assertIn("python3 memarasix_1455_publish.py", text)
+        self.assertIn("memarasix-1455-approved.json", text)
+        self.assertNotIn("  schedule:", text)
 
     def test_stats_script_is_research_only(self):
         path=ROOT/"memarasix_auto_approval.py"
