@@ -97,8 +97,8 @@
       "label": "GOLOVI — VIŠE OD 2,5",
       "odds": 2.87,
       "stake": 6.44,
-      "status": "objavljen",
-      "payout": 0,
+      "status": "izgubljen",
+      "payout": 0.0,
       "matches": [
         {
           "fixture_id": "espn:football:fra.1:401876410",
@@ -132,7 +132,9 @@
               ]
             ],
             "conclusion": "Ručno analiziran prijedlog; nema dokaza pozitivne očekivane vrijednosti; kvota nije live ponovo verifikovana."
-          }
+          },
+          "result_status": "promašen",
+          "final_score": "2:0"
         },
         {
           "fixture_id": "espn:football:fra.1:401876404",
@@ -168,7 +170,8 @@
       "analysis": {
         "summary": "Ručni izbor dva tržišta 3+: Brest–Lyon (po tri Over 2.5 u zadnjih pet) i Lens–Marseille (četiri i tri Over 2.5 u zadnjih pet).",
         "risks": "Nijedan tip nije siguran. Provjera kvota jutrošnjeg snimka, ne živi API. Forma pet utakmica je mali uzorak. Izostanci i rasporedi mogu promijeniti ishod."
-      }
+      },
+      "settled_at_utc": "2026-11-08T19:01:57.067141+00:00"
     }
   ],
   "pending_ticket_statuses": {
