@@ -5,6 +5,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 from memarasix_verified_quotes import verified_candidates
+from memarasix_approval_gate import check_files
 
 ROOT=Path(__file__).resolve().parent
 UTC=timezone.utc
@@ -49,9 +50,13 @@ def valid_ready_receipt(root, day, offer):
 def main():
     now=datetime.now(UTC)
     local=now.astimezone(ZoneInfo("Europe/Sarajevo"))
-    allow_late=os.environ.get("MEMARASIX_READY_SYNC_LATE")=="1"
-    if not publication_clock_allowed(local,allow_late):
-        return audit("Outside allowed Sarajevo publication window")
+    # Event-driven: no publication clock. The independent AI approval commit
+    # triggers GitHub, and the receipt / kickoffs / odds decide eligibility.
+    try:
+        checked=check_files(ROOT,now)
+    except ValueError as exc:
+        return audit("Independent AI approval or confirmed ListaSix sync missing",
+                     {"detail":str(exc)[:240]})
     data=load(ROOT/"data.json")
     if data.get("date")!=local.date().isoformat():
         # Prior settled day remains the bank source until the first daily publication.
@@ -70,8 +75,10 @@ def main():
                      {"detail":str(exc)[:200]})
     if offer.get("date")!=local.date().isoformat() or history.get("date")!=offer.get("date"):
         return audit("Offer and history dates mismatch or stale")
-    if local.strftime("%H:%M")>"12:30" and not valid_ready_receipt(ROOT,local.date().isoformat(),offer):
-        return audit("Late ready-sync publication requires exact committed source ACK")
+    if not valid_ready_receipt(ROOT,local.date().isoformat(),offer):
+        return audit("Publisher source differs from synchronized and AI-approved ListaSix snapshot")
+    if checked["source_active_sha256"]!=digest_active(offer):
+        return audit("AI approval snapshot differs from current ListaSix snapshot")
     if not offer.get("publication_allowed") or dt(offer["expires_at"])<=now:
         return audit("Offer not publication-allowed or expired")
     if not history.get("leagues") or not history.get("fixtures"):
@@ -104,8 +111,10 @@ def main():
                      {"verified_fixture_matches":len(reconciled["fixtures"]),"eligible_market_quotes":len(candidates),
                       "required_file":approval.name})
     approved=load(approval)
-    if approved.get("date")!=local.date().isoformat() or not approved.get("tickets"):
-        return audit("Approval file has wrong date or no tickets")
+    if (approved.get("date")!=local.date().isoformat() or not approved.get("tickets")
+            or approved.get("approval_source")!="chatgpt_ai_analyst"
+            or not approved.get("publication_allowed")):
+        return audit("AI approval has wrong date, missing tickets, or is not authorized")
     # A, B and C are independent; reject only the ticket that fails validation.
     approved_ids=[t.get("id") for t in approved["tickets"]]
     if len(approved_ids)!=len(set(approved_ids)):
