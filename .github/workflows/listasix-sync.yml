@@ -13,6 +13,8 @@ on:
 # interrupting MemaraSix before the cross-repository credential is configured.
 permissions:
   contents: write
+  pull-requests: write
+  issues: write
 concurrency:
   group: memarasix-daily-publication
   cancel-in-progress: false
@@ -63,3 +65,20 @@ jobs:
           echo "AI_REVIEW_CAN_BEGIN_AFTER_CONFIRMED_SYNC"
           echo "Waiting for the independent ChatGPT AI task to analyze and commit memarasix-1455-approved.json."
           echo "Sync NEVER publishes tickets: approval commit triggers the publisher."
+      - name: Create exactly one PR labelled listasix-ready per confirmed snapshot
+        id: handoff
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          python3 memarasix_ready_pr.py
+      - name: Report whether the ChatGPT Work PR handoff was created
+        if: always()
+        run: |
+          if [ "${{ steps.handoff.outcome }}" = "success" ]; then
+            echo "LISTASIX_READY_PR_HANDOFF_PUBLISHED"
+          else
+            echo "::warning::READY_PR_CREATION_FAILED: Check GitHub Actions permission to create PRs. ChatGPT Work event task is configured separately."
+          fi
