@@ -2724,5 +2724,243 @@
     "additional_publication_at_utc": "2026-11-05T11:23:42.566Z",
     "total_payout": 0,
     "net_change": -22.68
+  },
+  {
+    "date": "2026-11-07",
+    "published": "07.11.2026. — ručna AI objava A i B",
+    "publication_type": "manual_independent_research_A_B",
+    "bank_before": 204.1,
+    "daily_budget": 20.41,
+    "daily_stake": 20.41,
+    "bank_after": 214.56,
+    "bank_after_stakes": 183.69,
+    "provisional": false,
+    "settled": true,
+    "odds_verified": false,
+    "odds_verification_note": "Kvoter ListaSix shared/active-list.json za 07.11.2026; dnevni snapshot nije ponovo potvrđen direktnim live OddsAPI pozivom. Provjeriti ponuđene cijene kod operatora prije stvarnog uloga. Ovdje se prati virtuelna banka.",
+    "bank_basis_note": "Posljednji potvrđeni završni saldo iz MemaraSix data.json je za 05.11.2026. (204,10 EUR). Evidencija za 06.11.2026. nedostaje; račun za 07.11. je zato PROVIZORAN i ne predstavlja rekonstruisani saldo za 06.11.",
+    "tickets": [
+      {
+        "id": "A",
+        "label": "GLAVNI TIKET",
+        "odds": 2.16,
+        "stake": 14.29,
+        "status": "dobitan",
+        "matches": [
+          {
+            "fixture_id": "espn:football:ita.1:401874803",
+            "home": "AS Roma",
+            "away": "Sassuolo",
+            "pick": "1",
+            "odd": 1.29,
+            "datetime": "2026-11-07T19:45:00Z",
+            "start_utc": "2026-11-07T19:45:00Z",
+            "league": "ita.1",
+            "event_id": "401874803",
+            "market_name": "1",
+            "odds_status": "listasix_2026-11-07_snapshot_not_live_reverified",
+            "research": {
+              "summary": "Roma neporažena nakon prvih deset kola Serie A, 24 boda; Sassuolo sa slabom formom i posljednjom odbranom. Model Sports Mole za Romu 71,17% naspram 77,52% implicitno u kvoti 1,29.",
+              "pros": "Roma je dobila prethodna četiri ligaška duela sa Sassuolom; jači domaći napad.",
+              "risks": "Kvote sugerišu veću vjerovatnoću od nezavisnog modela; moguć remi i posljedice poraza u Evropi.",
+              "injuries": "Roma: Svilar, Pellegrini i Rensch izvan sastava; Koné i Dybala neizvjesni. Izvori se razlikuju.",
+              "sources": [
+                [
+                  "Sports Mole Roma preview",
+                  "https://www.sportsmole.co.uk/football/roma/preview/roma-vs-sassuolo-prediction-team-news-lineups_608516.html"
+                ],
+                [
+                  "Sports Mole model",
+                  "https://www.sportsmole.co.uk/football/serie-a/roma-vs-sassuolo_game_261799.html"
+                ],
+                [
+                  "The Stats Zone H2H",
+                  "https://www.thestatszone.com/roma-vs-sassuolo-preview-prediction-235150"
+                ]
+              ],
+              "conclusion": "Favorit, ali nije potvrđen pozitivan očekivani prinos na kvoti 1,29."
+            },
+            "result_status": "pogođen",
+            "final_score": "3:0"
+          },
+          {
+            "fixture_id": "espn:football:ger.1:401884740",
+            "home": "Mainz",
+            "away": "Bayern Munich",
+            "pick": "2",
+            "odd": 1.3,
+            "datetime": "2026-11-07T14:30:00Z",
+            "start_utc": "2026-11-07T14:30:00Z",
+            "league": "ger.1",
+            "event_id": "401884740",
+            "market_name": "2",
+            "odds_status": "listasix_2026-11-07_snapshot_not_live_reverified",
+            "research": {
+              "summary": "Bayern prvi nakon 8 kola sa 18 bodova, 30 ligaških gostovanja bez poraza; Mainz na 10 bodova i sedam domaćih ligaških utakmica bez pobjede.",
+              "pros": "Bayern pobijedio Atletico 2:0 u LŠ, kvalitetniji kadar, Mainz slab domaćin.",
+              "risks": "Mainz dobio četiri od prethodnih šest domaćih ligaških susreta protiv Bayerna; Bayern iscrpljen devetim susretom u mjesec dana.",
+              "injuries": "Musiala neće igrati, Gnabry, Luis Díaz, Saibari i Ndiaye odsutni.",
+              "sources": [
+                [
+                  "FC Bayern službena najava",
+                  "https://fcbayern.com/en/news/matchpreviews/2026/11/preview-mainz-bayern-bundesliga-matchday-9"
+                ],
+                [
+                  "The Stats Zone Mainz",
+                  "https://www.thestatszone.com/mainz-vs-bayern-munich-preview-team-news-prediction-237111"
+                ]
+              ],
+              "conclusion": "Favorit uz značajne izostanke; kvota 1,30 implicira oko 76,9% i nema dokaza vrijednosti."
+            },
+            "result_status": "pogođen",
+            "final_score": "1:2"
+          },
+          {
+            "fixture_id": "espn:football:ger.1:401884745",
+            "home": "Borussia Dortmund",
+            "away": "SV Elversberg",
+            "pick": "1",
+            "odd": 1.29,
+            "datetime": "2026-11-07T14:30:00Z",
+            "start_utc": "2026-11-07T14:30:00Z",
+            "league": "ger.1",
+            "event_id": "401884745",
+            "market_name": "1",
+            "odds_status": "listasix_2026-11-07_snapshot_not_live_reverified",
+            "research": {
+              "summary": "Dortmund na 18 bodova nakon osam bundesligaških kola, bez poraza; Elversberg ima 13 bodova kao novajlija.",
+              "pros": "Domaći teren i bolja individualna kvaliteta; BVB pobijedio Betis u LŠ.",
+              "risks": "Dortmund tri remija u posljednja četiri ligaška meča, Elversberg iznad očekivanja; Guirassy ne igra.",
+              "injuries": "Dortmund: Serhou Guirassy povreda butine; Emre Can i Konstantelias odsutni.",
+              "sources": [
+                [
+                  "Bundesliga službeni pregled",
+                  "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/9/borussia-dortmund-vs-sv-elversberg/liveticker"
+                ],
+                [
+                  "Sports Mole preview",
+                  "https://www.sportsmole.co.uk/football/borussia-dortmund/bundesliga-title-race/preview/dortmund-vs-elversberg-prediction-team-news-lineups_608500.html"
+                ]
+              ],
+              "conclusion": "Tip 1 je moguć, no nije bez rizika i nema nezavisno dokazan EV."
+            },
+            "result_status": "pogođen",
+            "final_score": "2:1"
+          }
+        ],
+        "analysis": {
+          "summary": "Trojka favorita zasnovana na službenoj formi i vijestima o izostancima. Roma, Bayern i Dortmund imaju prednost ali su sve kvote niske i nema nezavisno potvrđenog pozitivnog EV.",
+          "risks": "Roma i Dortmund imaju kadrovske probleme, Bayern zasićen rasporedom. Bez pouzdanog modela da je zbirno klađenje povoljno."
+        },
+        "settled_at_utc": "2026-11-07T22:20:51.122245+00:00",
+        "payout": 30.87
+      },
+      {
+        "id": "B",
+        "label": "GOLOVI — VIŠE OD 2,5",
+        "odds": 3.4,
+        "stake": 6.12,
+        "status": "izgubljen",
+        "matches": [
+          {
+            "fixture_id": "espn:football:ned.1:401875555",
+            "home": "Fortuna Sittard",
+            "away": "Telstar",
+            "pick": "3+",
+            "odd": 1.62,
+            "datetime": "2026-11-07T15:30:00Z",
+            "start_utc": "2026-11-07T15:30:00Z",
+            "league": "ned.1",
+            "event_id": "401875555",
+            "market_name": "3+",
+            "odds_status": "listasix_2026-11-07_snapshot_not_live_reverified",
+            "research": {
+              "summary": "Dva nezavisna modela procjenjuju 3+ na oko 61,1% (Road2Sushi) i 65% (MBet AI). Kvote 1,62 impliciraju 61,7%.",
+              "pros": "MBet xG procjene približno 2,22 + 1,35, očekivanje otvorenijeg meča.",
+              "risks": "Donji raspon procjene ispod praga kvote, modeli se razlikuju i nisu garancija. Izostanci nisu potpuno potvrđeni.",
+              "injuries": "Kompletne potvrđene postave nisu bile dostupne za ovu ručnu procjenu.",
+              "sources": [
+                [
+                  "Road2Sushi model",
+                  "https://road2sushi.com/match/for-sittard-vs-telstar-2026-11-07/over-2-5/"
+                ],
+                [
+                  "MBet AI model",
+                  "https://www.mbetai.com/en/partido/401875555/fortuna-sittard-vs-telstar"
+                ]
+              ],
+              "conclusion": "Tijesna vrijednosna procjena; visoka osjetljivost na jedan gol."
+            },
+            "result_status": "pogođen",
+            "final_score": "2:2"
+          },
+          {
+            "fixture_id": "espn:football:esp.1:401882811",
+            "home": "Osasuna",
+            "away": "Athletic Club",
+            "pick": "3+",
+            "odd": 2.1,
+            "datetime": "2026-11-07T17:30:00Z",
+            "start_utc": "2026-11-07T17:30:00Z",
+            "league": "esp.1",
+            "event_id": "401882811",
+            "market_name": "3+",
+            "odds_status": "listasix_2026-11-07_snapshot_not_live_reverified",
+            "research": {
+              "summary": "Model LOAD90 procjenjuje 3+ na 54%, dok drugi model tržišno zasnovan računa 45,3%. Kvota 2,10 implicira 47,6%.",
+              "pros": "LOAD90 daje 54% za 3+, obostrani napadački doprinos moguć.",
+              "risks": "Modeli se razilaze; može biti zatvoren regionalni duel.",
+              "injuries": "Konačni izostanci i početni sastavi nisu nezavisno potvrđeni.",
+              "sources": [
+                [
+                  "LOAD90 model",
+                  "https://load90.com/match/osasuna-vs-athletic-club-2026-11-07-245056/forecast/"
+                ],
+                [
+                  "Soccerstats market model",
+                  "https://www.soccerstats.ie/match/osasuna-athletic-club-2026-11-07/"
+                ]
+              ],
+              "conclusion": "Rizičniji izbor s miješanim statističkim signalima; bez dokazanog EV."
+            },
+            "result_status": "promašen",
+            "final_score": "1:1"
+          }
+        ],
+        "analysis": {
+          "summary": "Golovi odabrani nakon uporedne provjere 2 modela za svaki par. Fortuna–Telstar procjene ~61–65%; Osasuna–Athletic ~45–54%.",
+          "risks": "Kod Osasune je neslaganje procjena veliko, a za Fortunu prednost na datoj kvoti nije jasna; B je visokorizičan."
+        },
+        "settled_at_utc": "2026-11-07T19:37:57.530182+00:00",
+        "payout": 0
+      },
+      {
+        "id": "C",
+        "label": "KEŠ KOLICA",
+        "odds": null,
+        "stake": 0,
+        "status": "preskočen",
+        "matches": [],
+        "analysis": {
+          "summary": "C nije zatražen za ručnu objavu; bez kvalitetnih verifikovanih ponuda nema virtuelnog uloga."
+        }
+      }
+    ],
+    "pending_ticket_statuses": {
+      "A": "objavljen",
+      "B": "objavljen",
+      "C": "preskočen"
+    },
+    "pending_ticket_reasons": {
+      "A": "",
+      "B": "",
+      "C": "Nije odabran, minimum 10 nije statistički i kvotno verifikovan."
+    },
+    "total_payout": 30.87,
+    "net_change": 10.46,
+    "analysis_status": "07.11.2026: Ručna AI provjera uz aktuelne sportske preglede, statističke modele, H2H i izostanke; kvote su iz današnjeg ListaSix snimka, ne direktno re-verifikovane. Podaci za 06.11. i puni ESPN history-h2h nedostaju; banka je PROVIZORNA. Odabiri nisu garancije niti dokazano pozitivnog EV.",
+    "selection_method": "Ručni izbor A/B sa provjerom nezavisnih izvora; bez slijepog preuzimanja starog independent-analysis.json.",
+    "source_fixture_feed": "shikithe/Slavojka/shared/active-list.json 2026-11-07 (45 mečeva)",
+    "source_statistics_research": "Službene najave Bayern/Bundesliga + Sports Mole, The Stats Zone, MBet AI, Road2Sushi, LOAD90 i Soccerstats; 7.11.2026."
   }
 ]
