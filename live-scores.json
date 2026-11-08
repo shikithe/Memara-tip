@@ -1,6 +1,6 @@
 {
   "date": "2026-11-08",
-  "updated_at_utc": "2026-11-08T20:09:21.052568+00:00",
+  "updated_at_utc": "2026-11-08T22:45:26.559792+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -48,12 +48,13 @@
       "index": 1,
       "home": "Lens",
       "away": "Marseille",
-      "state": "live",
-      "score": "1:1",
+      "state": "final",
+      "score": "1:2",
       "source": "espn-public-unofficial",
       "event_id": "401876404",
       "league": "fra.1",
-      "minute": "24"
+      "minute": null,
+      "result_status": "pogođen"
     }
   ],
   "bank_unchanged": true

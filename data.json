@@ -169,7 +169,9 @@
               ]
             ],
             "conclusion": "Ručno analiziran prijedlog; nema dokaza pozitivne očekivane vrijednosti; kvota nije live ponovo verifikovana."
-          }
+          },
+          "result_status": "pogođen",
+          "final_score": "1:2"
         }
       ],
       "analysis": {
