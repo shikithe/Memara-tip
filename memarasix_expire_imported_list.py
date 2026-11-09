@@ -83,7 +83,7 @@ def run(root, when, requested_day):
     if target.exists():
         try:
             previous = json.loads(target.read_text(encoding="utf-8"))
-            if previous.get("date") == today and previous.get("status") == state:
+            if previous.get("date") == today:
                 print("MEMARASIX_EXPIRY_ALREADY_CONFIRMED", today, state)
                 return False
         except (OSError, ValueError, TypeError):
