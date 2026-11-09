@@ -1,0 +1,24 @@
+name: MemaraSix 08:55 imported list expiry tests
+on:
+  pull_request:
+    paths:
+      - 'memarasix_expire_imported_list.py'
+      - 'tests/test_expire_imported_list.py'
+      - '.github/workflows/memarasix-expire-import.yml'
+      - '.github/workflows/memarasix-expire-import-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  expiry-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Protect today's list, posted tickets and bankroll
+        run: |
+          python3 -m unittest discover -s tests -p 'test_expire_imported_list.py' -v
+          python3 -m unittest discover -s tests -p 'test_single_ai_approval_writer.py' -v

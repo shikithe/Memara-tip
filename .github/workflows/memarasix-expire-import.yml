@@ -1,0 +1,46 @@
+name: MemaraSix expire imported ListaSix list after upstream 08:55 cron
+on:
+  repository_dispatch:
+    types: [listasix-expire-import]
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Sarajevo date YYYY-MM-DD, cleanup only at/after 08:55"
+        required: true
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: memarasix-daily-publication
+  cancel-in-progress: false
+jobs:
+  expire-old-import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      EVENT_DATE: ${{ github.event.client_payload.date || inputs.date }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify Sarajevo 08:55 gate and remove old imported ListaSix snapshot
+        run: |
+          set -euo pipefail
+          python3 memarasix_expire_imported_list.py --expected-date "$EVENT_DATE"
+      - name: Commit only imported-list deletion and expiry receipt
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- listasix-data
+          if git diff --cached --quiet; then
+            echo "MEMARASIX_EXPIRY_NO_CHANGES"
+          else
+            git commit -m "MemaraSix: expire previous-day ListaSix imported data [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+            echo "MEMARASIX_EXPIRY_COMMITTED"
+          fi
