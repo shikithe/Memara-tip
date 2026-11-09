@@ -35,7 +35,7 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A -- listasix-data/active-list.json listasix-data/history-h2h.json listasix-data/sync-receipt.json listasix-data/expiry-receipt.json
+          git add -A -- listasix-data
           if git diff --cached --quiet; then
             echo "MEMARASIX_EXPIRY_NO_CHANGES"
           else
