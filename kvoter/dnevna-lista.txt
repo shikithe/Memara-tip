@@ -1,40 +1,12 @@
 KVOTER - KLADIONICARSKA PONUDA (TXT)
-Preuzeto: 2026-11-08T14:37:34.278867+00:00 UTC | vrijeme: Europe/Sarajevo
-Ukupno: 30 | automatski upareno: 0
+Preuzeto: 2026-11-14T14:36:48.849113+00:00 UTC | vrijeme: Europe/Sarajevo
+Ukupno: 2 | automatski upareno: 0
 Kvote iz posljednjeg API preuzimanja; nisu uzivo. Crtica = nema kvote.
 
 BR  DATUM SAT    UTAKMICA                                    1      X      2     3+  IZVOR
 --------------------------------------------------------------------------------------------------------------
-01  08.11. 16:00  KAA Gent - KV Kortrijk                            -      -      -      -  N/P
-02  08.11. 16:00  Heart of Midlothian - Falkirk                     -      -      -      -  N/P
-03  08.11. 16:15  Real Sociedad - Rayo Vallecano                    -      -      -      -  N/P
-04  08.11. 16:30  C.D. Nacional - Académico de Viseu                -      -      -      -  N/P
-05  08.11. 16:30  Santa Clara - Gil Vicente                         -      -      -      -  N/P
-06  08.11. 16:30  Alanyaspor - Trabzonspor                          -      -      -      -  N/P
-07  08.11. 16:45  AZ Alkmaar - FC Groningen                         -      -      -      -  N/P
-08  08.11. 16:45  SC Cambuur - PSV Eindhoven                        -      -      -      -  N/P
-09  08.11. 17:00  Celtic - Kilmarnock                               -      -      -      -  N/P
-10  08.11. 17:15  Angers - Nice                                     -      -      -      -  N/P
-11  08.11. 17:15  Brest - Lyon                                      -      -      -      -  N/P
-12  08.11. 17:15  Le Havre AC - Lorient                             -      -      -      -  N/P
-13  08.11. 17:15  Le Mans - AS Monaco                               -      -      -      -  N/P
-14  08.11. 17:30  Manchester United - Aston Villa                   -      -      -      -  N/P
-15  08.11. 17:30  SC Freiburg - 1. FC Union Berlin                  -      -      -      -  N/P
-16  08.11. 18:00  Internazionale - Como                             -      -      -      -  N/P
-17  08.11. 18:30  Celta Vigo - Levante                              -      -      -      -  N/P
-18  08.11. 18:30  Villarreal - Getafe                               -      -      -      -  N/P
-19  08.11. 18:30  Union St.-Gilloise - Racing Genk                  -      -      -      -  N/P
-20  08.11. 19:00  Vitória de Guimaraes - FC Porto                   -      -      -      -  N/P
-21  08.11. 19:00  Besiktas - Genclerbirligi                         -      -      -      -  N/P
-22  08.11. 19:15  Sint-Truidense - Zulte-Waregem                    -      -      -      -  N/P
-23  08.11. 19:30  TSG Hoffenheim - Schalke 04                       -      -      -      -  N/P
-24  08.11. 20:00  FC Utrecht - NEC Nijmegen                         -      -      -      -  N/P
-25  08.11. 20:45  Fiorentina - Juventus                             -      -      -      -  N/P
-26  08.11. 20:45  Lens - Marseille                                  -      -      -      -  N/P
-27  08.11. 21:00  Atlético Madrid - Barcelona                       -      -      -      -  N/P
-28  08.11. 21:30  Estrela - Benfica                                 -      -      -      -  N/P
-29  08.11. 21:30  Rio Ave - Braga                                   -      -      -      -  N/P
-30  08.11. 23:30  Central Córdoba (Santiago del Estero) - Lanú      -      -      -      -  N/P
+01  14.11. 22:30  Mirassol - Atlético-MG                            -      -      -      -  N/P
+02  15.11. 00:30  Chapecoense - Vasco da Gama                       -      -      -      -  N/P
 
 1=domacin | X=nerijeseno | 2=gost | 3+=vise od 2.5 golova
 N/P = bez potvrdenih kvota u ovom ciklusu.
