@@ -1,19 +1,25 @@
 {
-  "schema_version": "1.4",
-  "date": "2026-11-08",
-  "generated_at_utc": "2026-11-08T08:00:00Z",
+  "schema_version": "1.5",
+  "date": "2026-11-14",
+  "generated_at_utc": "2026-11-14T08:02:45Z",
   "project": "MAIN MemaraSix",
   "repository": "shikithe/Memara-tip",
   "phase": "09:00 weekend research draft",
-  "status": "BLOCKED_COLLECTOR_NOT_YET_TODAY_AND_ODDS_UNVERIFIED",
+  "status": "BLOCKED_STALE_COLLECTOR_AND_UNVERIFIED_ODDS",
   "publication_allowed": false,
+  "approval_author": "MemaraSix AI analiza + online istraživanje do 11:45 ONLY",
   "inputs": {
     "collector_feed": {
       "path": "collector-feed.json",
       "date": "2026-11-07",
       "generated_at_utc": "2026-11-07T13:42:29.381759+00:00",
       "fresh": false,
-      "note": "Yesterday's candidate list, not usable for today's ticket approval. Await today's collector."
+      "sections_checked": [
+        "football_candidates",
+        "nba_games",
+        "nba_player_watchlist"
+      ],
+      "reason": "Seven-day-old fixtures, not today's candidates"
     },
     "nba_player_points": {
       "path": "collector-output/nba-player-points.json",
@@ -21,73 +27,96 @@
       "offer_count": 371,
       "region": "us",
       "fresh": false,
-      "market": "player_points",
-      "today_verified_lines": 0,
-      "today_verified_decimal_odds": 0,
-      "today_verified_bookmakers": 0,
-      "mozzart_bih_availability": false
+      "today_verified_player_points_offers": 0,
+      "mozzart_bih_verified": false,
+      "reason": "October 29 US player lines/odds/bookmakers and timestamps cannot authorize November 14 selections"
     }
   },
   "external_research": {
-    "date": "2026-11-08",
-    "scope": "Independent schedule cross-check only. No full five-to-ten all-competition form/xG/absence and price validation; all picks unapproved.",
+    "date": "2026-11-14",
+    "context": "UEFA Nations League international break; domestic-league assumptions are unsafe",
     "fixtures": [
       {
-        "event": "Brighton - Brentford",
-        "kickoff_sarajevo": "15:00",
-        "source": "https://www.theguardian.com/football/fixtures/2026/Nov/08"
+        "event": "Kosovo – Israel",
+        "kickoff_sarajevo": "15:00"
       },
       {
-        "event": "Crystal Palace - Liverpool",
-        "kickoff_sarajevo": "15:00",
-        "source": "https://www.theguardian.com/football/fixtures/2026/Nov/08"
+        "event": "Georgia – Hungary",
+        "kickoff_sarajevo": "18:00"
       },
       {
-        "event": "Sunderland - Chelsea",
-        "kickoff_sarajevo": "15:00",
-        "source": "https://www.theguardian.com/football/fixtures/2026/Nov/08"
+        "event": "Norway – Wales",
+        "kickoff_sarajevo": "18:00"
       },
       {
-        "event": "Köln - Bayer Leverkusen",
-        "kickoff_sarajevo": "15:30",
-        "source": "https://sport.sky.de/fussball/spielplan-ergebnisse/2026-11-08"
+        "event": "Northern Ireland – Ukraine",
+        "kickoff_sarajevo": "20:45"
       },
       {
-        "event": "Freiburg - Union Berlin",
-        "kickoff_sarajevo": "17:30",
-        "source": "https://sport.sky.de/fussball/spielplan-ergebnisse/2026-11-08"
+        "event": "Portugal – Denmark",
+        "kickoff_sarajevo": "20:45"
       },
       {
-        "event": "Inter - Como",
-        "kickoff_sarajevo": "18:00",
-        "source": "https://www.theguardian.com/football/fixtures/2026/Nov/08"
+        "event": "Romania – Poland",
+        "kickoff_sarajevo": "20:45"
       },
       {
-        "event": "Atlético Madrid - Barcelona",
-        "kickoff_sarajevo": "21:00",
-        "source": "https://www.theguardian.com/football/fixtures/2026/Nov/08"
+        "event": "Sweden – Bosnia and Herzegovina",
+        "kickoff_sarajevo": "20:45"
+      },
+      {
+        "event": "Austria – Republic of Ireland",
+        "kickoff_sarajevo": "20:45"
       }
     ],
-    "notes": "Guardian times are US Eastern and converted to Sarajevo +6h on 2026-11-08. Some independent fixture sites disagree by an hour; verify against league official match page before selection. No confirmed XI, injuries, xG/xGA or five-match over-2.5 model audit available yet.",
-    "nba_injury_source": "https://official.nba.com/nba-injury-report-2026-27-season/"
+    "schedule_sources": [
+      "https://sport.sky.de/uefa-nations-league-spielplan-ergebnisse",
+      "https://www.bbc.co.uk/sport/football/nations-league/scores-fixtures/2026-11",
+      "https://de.uefa.com/uefanationsleague/fixtures-results/"
+    ],
+    "notes": [
+      {
+        "event": "Portugal – Denmark",
+        "finding": "Portugal reportedly won all four group matches and won reverse fixture 4-2; reported Cancelo and Conceicao suspensions and Nuno Mendes injury; bookmaker commercial article not independent validation",
+        "source": "https://talksport.com/betting/4706484/portugal-vs-denmark-bet-builder-tips/",
+        "verification": "INCOMPLETE; 5-10 all-competition match sample, verified lineup, xG and current market absent"
+      },
+      {
+        "event": "Northern Ireland – Ukraine",
+        "finding": "Reports NI undefeated with no goals conceded in first four group games and reverse 3-0; ten of last twelve NI games under 2.5, warning against over 2.5",
+        "source": "https://talksport.com/betting/4694676/northern-ireland-vs-ukraine-ladbrokes-free-bets/",
+        "verification": "INCOMPLETE; promotional article, lineup and current odds not confirmed"
+      },
+      {
+        "event": "Austria – Ireland",
+        "finding": "Reported no new Ireland injury concerns; Seamus Coleman outside 24-player squad; five Irish players one booking from suspension; news report not official squad confirmation",
+        "source": "https://www.thesun.ie/sport/17912002/austria-ireland-tv-channel-kick-off-time-odds/",
+        "verification": "INCOMPLETE; article odds are not verified approved-bookmaker market"
+      }
+    ],
+    "analysis_gaps": [
+      "No fresh collector feed for 2026-11-14",
+      "No timestamped verified bookmaker market odds",
+      "No verified five-to-ten completed all-competition matches for each team",
+      "No verified xG/xGA, expected versus confirmed XI, rest and minutes",
+      "No independent probabilistic over-2.5 comparison with bookmaker implied probability"
+    ]
   },
   "rules": {
-    "publication_time": "12:00 Europe/Sarajevo",
-    "prefer_after": "12:20",
-    "A": "Football only; STRICT inclusive total odds 2.00-3.00",
-    "B": "Different football matches; only 3+ (over 2.5); STRICT inclusive total odds 2.00-3.00",
-    "C": "4-6 non-overlapping football/NBA events; total odds >=10, target 10-13",
-    "nba_only_C": true,
-    "never_invent_odds": true
+    "A": "Football only, STRICT 2.00<=combined_decimal_odds<=3.00",
+    "B": "Different football matches, exclusively over 2.5 goals, STRICT 2.00<=combined_decimal_odds<=3.00",
+    "C": "4-6 distinct nonoverlapping football/NBA events; combined odds >=10.00; NBA only C",
+    "publication": "12:00 Europe/Sarajevo, prefer kickoff after 12:20",
+    "no_unverified_odds": true
   },
   "tickets": {
     "A": {
-      "status": "UNAVAILABLE_NO_VERIFIED_ODDS",
+      "status": "UNAVAILABLE_UNVERIFIED",
       "events": [],
       "verified_total_odds": null
     },
     "B": {
-      "status": "UNAVAILABLE_NO_VERIFIED_3PLUS_ODDS_OR_FORM",
+      "status": "UNAVAILABLE_UNVERIFIED_OVER25",
       "events": [],
       "verified_total_odds": null
     },
@@ -98,24 +127,23 @@
     }
   },
   "protected_files_unchanged": [
+    "memarasix-1455-approved.json",
     "data.json",
     "archive.json",
     "bank",
     "DEMO",
-    "previously settled tickets"
+    "previously published tickets"
   ],
   "actions_taken": [
-    "Read main GitHub collector-feed and NBA player points files",
-    "Checked independent Nov 8 fixture schedules",
-    "Recorded strict 2.00-3.00 A/B thresholds and all data gaps",
-    "Updated only weekend-research.json draft"
+    "Read main GitHub collector and NBA points files",
+    "Checked independent November 14 Nations League schedules and selected reporting",
+    "Recorded incomplete evidence and strict approval rules",
+    "Updated ONLY weekend-research.json research draft"
   ],
   "next_required_checks": [
-    "Wait for successful Nov 8 collector run before analysis approval",
-    "Verify 5-10 completed all-competition matches and genuine xG/xGA for each candidate",
-    "Confirm absences and official lineups when available",
-    "Capture timestamped sportsbook 1X2 and 3+ prices and compare implicit probabilities",
-    "Verify NBA market/line/bookmaker/time and Mozzart BiH independently",
-    "Finish review by 11:45; no automatic approval based on this draft"
+    "Collector must publish a genuinely November 14 feed before approval",
+    "11:00 sole approver must independently verify prices, team form, injuries, lineup, xG and start times by 11:45",
+    "Reject any A/B outside 2.00-3.00 and any C below 10",
+    "Do not use post-approval NBA sync quotes"
   ]
 }
