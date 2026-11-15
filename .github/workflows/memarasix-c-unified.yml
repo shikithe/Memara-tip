@@ -56,9 +56,11 @@ jobs:
           with open(os.environ["GITHUB_OUTPUT"],"a") as out:
               print("run="+str(allowed).lower(),file=out)
           PY
-      - name: Check scripts
+      - name: Check scripts and NBA quota guard regression
         if: steps.gate.outputs.run == 'true'
-        run: python -m py_compile collector_nba_24h.py sync_nba_free.py sync_nba_points.py memara_enrich_nba_props.py ticket_c_screening.py
+        run: |
+          python -m py_compile collector_nba_24h.py sync_nba_free.py sync_nba_points.py memara_enrich_nba_props.py ticket_c_screening.py
+          python -m unittest -v test_nba_odds_quota.py
       - name: Fetch upcoming NBA fixtures
         if: steps.gate.outputs.run == 'true'
         run: python collector_nba_24h.py --hours 24 --output collector-output/nba-next-24h.json
