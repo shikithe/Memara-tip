@@ -29,7 +29,7 @@ jobs:
           python3 memarasix_approval_gate.py --require-publishable
       - name: Run technical publication regression tests
         run: |
-          python3 -m unittest -v test_memarasix_publication_gate.py test_memarasix_verified_quotes.py
+          python3 -m unittest -v test_memarasix_publication_gate.py test_memarasix_verified_quotes.py test_memarasix_nba_c_rule.py
           python3 -m unittest discover -s tests -p 'test_ai_event_approval_gate.py' -v
       - name: Validate and publish independently AI-approved A/B/C
         run: python3 memarasix_1455_publish.py
