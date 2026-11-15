@@ -1,5 +1,10 @@
 {
-  "timestamp_utc": "2026-11-08T15:52:34.240432+00:00",
-  "status": "blocked",
-  "reason": "Approval file has wrong date or no tickets"
+  "timestamp_utc": "2026-11-15T17:59:06.777680+00:00",
+  "status": "published",
+  "tickets": [
+    "C"
+  ],
+  "nba_player_count": 2,
+  "combined_odds": 3.59,
+  "daily_stake_added": 2.31
 }
