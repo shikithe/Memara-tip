@@ -49,7 +49,7 @@ jobs:
                   'limitations': [], 'status': 'awaiting_daily_refresh', 'errors': [],
                   'publication_allowed': False, 'cleared_at_utc': stamp
               },
-              'collector-output/nba-player-points.json': {
+              'collector-output/nba-analysis-ready.json': {\n                  'schema_version': '1.0', 'generated_at_utc': stamp,\n                  'game_count': 0, 'player_candidate_count': 0,\n                  'matched_offer_count': 0, 'offers': [],\n                  'odds_status': 'awaiting_daily_refresh', 'analysis_status': 'awaiting_valid_odds',\n                  'publication_allowed': False\n              },\n              'collector-output/nba-player-points.json': {
                   'generated_at_utc': None, 'fixture_snapshot_utc': None, 'region': 'us',
                   'offer_count': 0, 'offers': [], 'status': 'awaiting_daily_refresh',
                   'cleared_at_utc': stamp
@@ -66,7 +66,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add collector-output/nba-next-24h.json collector-output/nba-player-points.json
+          git add collector-output/nba-next-24h.json collector-output/nba-player-points.json collector-output/nba-analysis-ready.json
           if ! git diff --cached --quiet; then
             git commit -m "data: clear yesterday NBA offers before noon refresh"
             git pull --rebase origin main

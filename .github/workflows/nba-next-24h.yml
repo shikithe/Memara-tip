@@ -37,7 +37,7 @@ jobs:
           PY
       - name: Verify Python syntax
         if: steps.clock.outputs.run == 'true'
-        run: python -m py_compile collector_nba_24h.py
+        run: python -m py_compile collector_nba_24h.py nba_analysis_merge.py
       - name: Fetch NBA games and team rosters
         if: steps.clock.outputs.run == 'true'
         run: python collector_nba_24h.py --hours 24 --output collector-output/nba-next-24h.json
@@ -53,11 +53,22 @@ jobs:
           assert all(p['points_line'] is None and p['over_odds'] is None and p['under_odds'] is None for p in data['players'])
           print('NBA:', data['game_count'], 'games,', data['player_candidate_count'], 'roster candidates')
           PY
+      - name: Initialize separate analyst queue (odds pending)
+        if: steps.clock.outputs.run == 'true'
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('collector-output/nba-player-points.json')
+          p.parent.mkdir(parents=True, exist_ok=True)
+          p.write_text(json.dumps({'generated_at_utc': None, 'offers': [], 'offer_count': 0}) + '\\n')
+          PY
+          python nba_analysis_merge.py
       - uses: actions/upload-artifact@v4
         if: always() && steps.clock.outputs.run == 'true'
         with:
           name: nba-next-24h
-          path: collector-output/nba-next-24h.json
+          path: |\n            collector-output/nba-next-24h.json\n            collector-output/nba-analysis-ready.json
           if-no-files-found: warn
           retention-days: 7
       - name: Commit JSON snapshot without altering tickets
@@ -65,7 +76,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add collector-output/nba-next-24h.json
+          git add collector-output/nba-next-24h.json collector-output/nba-analysis-ready.json
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh NBA next-24h candidate snapshot"
             git push

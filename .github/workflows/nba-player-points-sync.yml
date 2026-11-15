@@ -1,5 +1,8 @@
 name: MEMARA NBA player-points odds sync
 on:
+  schedule:
+    # 12:15 Europe/Sarajevo (summer/winter UTC)
+    - cron: '15 10,11 * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -24,7 +27,7 @@ jobs:
         run: |
           python - <<'PY'
           import os
-          active = True
+          from datetime import datetime\n          from zoneinfo import ZoneInfo\n          local = datetime.now(ZoneInfo("Europe/Sarajevo"))\n          active = os.environ["EVENT_NAME"] == "workflow_dispatch" or (local.hour == 12 and local.minute >= 15)
           if not os.environ.get("THE_ODDS_API_KEY"):
               print("No API key configured; skipping without updating existing data")
               active = False
@@ -33,12 +36,7 @@ jobs:
           PY
       - name: Verify syntax
         if: steps.gate.outputs.run == 'true'
-        run: python -m py_compile sync_nba_points.py
-      - name: Refresh NBA fixtures and player candidates
-        if: steps.gate.outputs.run == 'true'
-        run: |
-          python -m py_compile collector_nba_24h.py
-          python collector_nba_24h.py --hours 24 --output collector-output/nba-next-24h.json
+        run: python -m py_compile sync_nba_points.py nba_analysis_merge.py
       - name: Verify fresh NBA fixture snapshot
         if: steps.gate.outputs.run == 'true'
         run: |
@@ -50,17 +48,20 @@ jobs:
           stamp = datetime.fromisoformat(data['collected_at_utc'].replace('Z', '+00:00'))
           age = (datetime.now(timezone.utc) - stamp).total_seconds()
           assert data.get('status') == 'ok', 'NBA fixture collection failed'
-          assert 0 <= age <= 900, f'NBA fixture snapshot is stale ({age:.0f}s)'
+          assert 0 <= age <= 5400, f'NBA fixture snapshot is stale ({age:.0f}s)'
           print('Fresh NBA fixtures:', data.get('game_count'), 'games;', data.get('player_candidate_count'), 'players')
           PY
       - name: Get player props
         if: steps.gate.outputs.run == 'true'
         run: python sync_nba_points.py --region us
+      - name: Build separate matched NBA analyst queue
+        if: steps.gate.outputs.run == 'true' && success()
+        run: python nba_analysis_merge.py
       - uses: actions/upload-artifact@v4
         if: steps.gate.outputs.run == 'true' && always()
         with:
           name: nba-player-points
-          path: collector-output/nba-player-points.json
+          path: |\n            collector-output/nba-player-points.json\n            collector-output/nba-analysis-ready.json
           if-no-files-found: warn
           retention-days: 7
       - name: Attach fresh verified-source points lines to analyst queue
@@ -78,7 +79,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add collector-output/nba-next-24h.json collector-output/nba-player-points.json collector-feed.json
+          git add collector-output/nba-player-points.json collector-output/nba-analysis-ready.json collector-feed.json
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh NBA player-points odds snapshot"
             git pull --rebase origin main
