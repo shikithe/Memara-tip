@@ -47,6 +47,51 @@ def valid_ready_receipt(root, day, offer):
         return False
 
 
+
+def publish_nba_c(checked, now, local):
+    """GitHub remains technical publisher; AI chooses exactly two verified NBA players."""
+    data=load(ROOT/"data.json")
+    current=local.date().isoformat()
+    if data.get("date")!=current and not data.get("settled",False):
+        return audit("Bank from prior day is unsettled; no NBA C stake permitted")
+    same_day=data.get("date")==current
+    existing=list(data.get("tickets",[])) if same_day else []
+    if any(t.get("id")=="C" for t in existing):
+        return audit("NBA ticket C already published today")
+    bank=float(data.get("bank_before",data.get("bank_after",0)) if same_day else data.get("bank_after",0))
+    if bank<=0: return audit("Invalid bank for NBA C")
+    budget=round(bank*.1,2)
+    spent_before=round(sum(float(t.get("stake",0)) for t in existing),2)
+    stake=round(budget*.10,2)
+    if stake<=0 or spent_before+stake>budget+0.001:
+        return audit("NBA C exceeds remaining daily stake budget")
+    matches=checked["verified_matches"]
+    item={"id":"C","label":"NBA · DVA IGRAČA","matches":matches,
+          "odds":round(checked["combined_odds"],2),"stake":stake,
+          "status":"objavljen","payout":0,
+          "analysis":load(ROOT/"memarasix-1455-approved.json")["tickets"][0]["analysis"]}
+    balance=round(float(data.get("bank_after",0))-stake,2)
+    if balance<0: return audit("Insufficient bank balance")
+    statuses=dict(data.get("pending_ticket_statuses",{})) if same_day else {}
+    statuses["C"]="objavljen"
+    data.update({"date":current,"published":data.get("published") if existing else local.strftime("%d.%m.%Y. u %H:%M (Europe/Sarajevo)"),
+          "published_at_utc":data.get("published_at_utc") if existing else now.isoformat(),
+          "publication_type":"independent_verified_github_nba_c",
+          "bank_before":bank,"daily_budget":budget,
+          "daily_stake":round(spent_before+stake,2),
+          "bank_after_stakes":balance,"bank_after":balance,
+          "tickets":existing+[item],"settled":False,"provisional":False,
+          "pending_ticket_statuses":statuses,"odds_verified":True,
+          "analysis_status":"Two independently approved and bookmaker-verified NBA players"})
+    tmp=ROOT/"data.json.tmp"
+    tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    tmp.replace(ROOT/"data.json")
+    audit_result={"timestamp_utc":now.isoformat(),"status":"published","tickets":["C"],
+                  "nba_player_count":2,"combined_odds":item["odds"],"daily_stake_added":stake}
+    Path("memarasix-1455-audit.json").write_text(json.dumps(audit_result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps(audit_result,ensure_ascii=False))
+    return 0
+
 def main():
     now=datetime.now(UTC)
     local=now.astimezone(ZoneInfo("Europe/Sarajevo"))
@@ -57,6 +102,8 @@ def main():
     except ValueError as exc:
         return audit("Independent AI approval or confirmed ListaSix sync missing",
                      {"detail":str(exc)[:240]})
+    if checked.get("nba_c"):
+        return publish_nba_c(checked,now,local)
     data=load(ROOT/"data.json")
     if data.get("date")!=local.date().isoformat():
         # Prior settled day remains the bank source until the first daily publication.
@@ -169,8 +216,8 @@ def main():
         if tid in ("A","B") and not 2.0<=total<=3.0:
             rejected[tid]="A/B combined odds outside 2–3"
             continue
-        if tid=="C" and total<10.0:
-            rejected[tid]="C combined odds below 10"
+        if tid=="C":
+            rejected[tid]="C must use NBA player-points approval path"
             continue
         selected.append({"id":tid,"matches":verified,"odds":round(total,2),
                          "analysis":ticket.get("analysis","Independently reviewed ListaSix selection"),

@@ -12,6 +12,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from memarasix_sync_listasix import canonical_hash
+from memarasix_nba_c import validate_nba_c
 
 SAR = ZoneInfo("Europe/Sarajevo")
 
@@ -95,8 +96,8 @@ def valid_approval(active, history, receipt, approved, now):
             odd_product *= odd
         if tid in {"A", "B"} and not 2.0 <= odd_product <= 3.0:
             raise ValueError("A/B must each total 2.00–3.00")
-        if tid == "C" and odd_product < 10:
-            raise ValueError("C must total at least 10")
+        if tid == "C":
+            raise ValueError("Ticket C is NBA-only and must use its separate NBA validation")
     return {"date": today, "source_active_sha256": source_hash,
             "approved_at_utc": approved_at.isoformat(), "tickets": sorted(ids)}
 
@@ -105,6 +106,10 @@ def check_files(root, now):
     try:
         def read(name):
             return json.loads((root / name).read_text(encoding="utf-8"))
+        approved=read("memarasix-1455-approved.json")
+        entries=approved.get("tickets",[])
+        if isinstance(entries,list) and len(entries)==1 and isinstance(entries[0],dict) and entries[0].get("id")=="C":
+            return validate_nba_c(root,approved,now)
         return valid_approval(
             read("listasix-data/active-list.json"),
             read("listasix-data/history-h2h.json"),
