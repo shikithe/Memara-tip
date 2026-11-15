@@ -1,13 +1,10 @@
-name: MemaraSix unified NBA C preparation
+name: MemaraSix NBA daily 12:00 collection and optional C research
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/memarasix-c-unified.yml']
   schedule:
-    # Target 09:15 and 12:30 Sarajevo (DST-aware UTC hours). Delays are accepted during daytime.
-    - cron: '15 7,8 * * *'
-    - cron: '30 10,11 * * *'
+    # Noon Sarajevo: 10:00 UTC in summer, 11:00 UTC in winter.
+    # One of the two UTC checks skips; GitHub cron may run late.
+    - cron: '0 10,11 * * *'
 permissions:
   contents: write
 concurrency:
@@ -26,35 +23,36 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Check NBA collection readiness (tolerate delayed GitHub cron)
+      - name: Daily 12:00 Sarajevo gate (one list per local day)
         id: gate
         env:
           EVENT_NAME: ${{ github.event_name }}
         run: |
           python - <<'PY'
-          import json, os
-          from datetime import datetime, timedelta, timezone, time
+          import json,os
+          from datetime import datetime,time,timezone
           from pathlib import Path
           from zoneinfo import ZoneInfo
-          local=datetime.now(ZoneInfo("Europe/Sarajevo"))
-          event=os.environ["EVENT_NAME"]
-          # A delayed scheduled run must still collect during the day.
-          allowed=event!="schedule" or time(9,0)<=local.time()<time(23,0)
-          reason="allowed" if allowed else "outside_daytime_window"
-          # Protect paid API quota against multiple scheduled refreshes.
-          if allowed and event=="schedule":
+          sar=ZoneInfo("Europe/Sarajevo")
+          local=datetime.now(sar)
+          reason="ready"
+          allowed=os.environ["EVENT_NAME"]=="workflow_dispatch" or local.time()>=time(12,0)
+          if not allowed:
+              reason="before_noon_sarajevo"
+          # Daily date deduplication, NOT a 3-hour freshness rule.
+          # Do not collect a second scheduled list on the same Sarajevo day.
+          if allowed and os.environ["EVENT_NAME"]=="schedule":
               try:
-                  data=json.loads(Path("collector-output/nba-player-points.json").read_text(encoding="utf-8"))
-                  stamp=datetime.fromisoformat(data["generated_at_utc"].replace("Z","+00:00"))
-                  age=datetime.now(timezone.utc)-stamp
-                  if 0<=age.total_seconds()<3*3600 and data.get("offer_count",0)>0:
+                  existing=json.loads(Path("collector-output/nba-next-24h.json").read_text(encoding="utf-8"))
+                  stamp=datetime.fromisoformat(existing["collected_at_utc"].replace("Z","+00:00"))
+                  if stamp.astimezone(sar).date()==local.date() and existing.get("status")=="ok":
                       allowed=False
-                      reason="existing_fresh_offers"
-              except (OSError,ValueError,TypeError,KeyError):
+                      reason="already_collected_today"
+              except (ValueError,KeyError,OSError,TypeError):
                   pass
-          print("NBA_C_GATE",json.dumps({"event":event,"local":local.isoformat(),"enabled":allowed,"reason":reason}))
-          with open(os.environ["GITHUB_OUTPUT"],"a") as out:
-              print("run="+str(allowed).lower(),file=out)
+          print("NBA_DAILY_GATE",json.dumps({"date":local.date().isoformat(),"local":local.isoformat(),"allowed":allowed,"reason":reason}))
+          with open(os.environ["GITHUB_OUTPUT"],"a") as output:
+              print("run="+str(allowed).lower(),file=output)
           PY
       - name: Check scripts and NBA quota guard regression
         if: steps.gate.outputs.run == 'true'
@@ -64,34 +62,56 @@ jobs:
       - name: Fetch upcoming NBA fixtures
         if: steps.gate.outputs.run == 'true'
         run: python collector_nba_24h.py --hours 24 --output collector-output/nba-next-24h.json
-      - name: Verify bookmaker API credential
-        if: steps.gate.outputs.run == 'true'
-        run: |
-          if [ -z "$THE_ODDS_API_KEY" ]; then
-            echo "::error::THE_ODDS_API_KEY missing; no fresh NBA player odds can be collected"
-            exit 1
-          fi
-      - name: Fetch player points bookmaker odds
-        if: steps.gate.outputs.run == 'true'
-        run: python sync_nba_points.py --region us
-      - name: Verify fresh player-points market snapshot
+      - name: Validate the upcoming 24-hour player list
         if: steps.gate.outputs.run == 'true'
         run: |
           python - <<'PY'
           import json
-          from datetime import datetime, timezone
+          from datetime import datetime,timezone
+          data=json.load(open("collector-output/nba-next-24h.json",encoding="utf-8"))
+          start=datetime.fromisoformat(data["window_start_utc"])
+          end=datetime.fromisoformat(data["window_end_utc"])
+          assert 23.99<=(end-start).total_seconds()/3600<=24.01
+          assert data["status"]=="ok" and data["publication_allowed"] is False
+          assert data["game_count"]==len(data["games"])
+          assert data["player_candidate_count"]==len(data["players"])
+          assert all(start<=datetime.fromisoformat(g["start_utc"])<end for g in data["games"])
+          assert all(p["participation"]=="unverified" and p["points_line"] is None for p in data["players"])
+          print("NBA_24H_LIST",json.dumps({"games":data["game_count"],"roster_players":data["player_candidate_count"],"window_start_utc":data["window_start_utc"],"window_end_utc":data["window_end_utc"]}))
+          PY
+      - name: Save daily NBA games and rosters independently of bookmaker odds
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- collector-output/nba-next-24h.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: NBA next 24h noon roster snapshot [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Fetch bookmaker player points (optional; never blocks NBA list)
+        id: odds
+        if: steps.gate.outputs.run == 'true' && env.THE_ODDS_API_KEY != ''
+        continue-on-error: true
+        run: python sync_nba_points.py --region us
+      - name: Check optional bookmaker offer count (no age check)
+        id: odds_state
+        if: steps.odds.outcome == 'success'
+        run: |
+          python - <<'PY'
+          import json,os
           data=json.load(open("collector-output/nba-player-points.json",encoding="utf-8"))
-          age=(datetime.now(timezone.utc)-datetime.fromisoformat(data["generated_at_utc"].replace("Z","+00:00"))).total_seconds()
-          offers=data.get("offers",[])
-          print("NBA_PLAYER_MARKET_SNAPSHOT",json.dumps({"offers":len(offers),"unmatched_games":len(data.get("unmatched_games",[])),"errors":data.get("errors",[]),"age_seconds":round(age)}))
-          if not 0<=age<=900 or not offers or data.get("offer_count")!=len(offers):
-              raise SystemExit("No fresh player-points bookmaker offers: refusing to report success")
+          has_offers=bool(data.get("offers")) and data.get("offer_count")==len(data["offers"])
+          print("NBA_BOOKMAKER_OFFERS",json.dumps({"has_offers":has_offers,"offers":len(data.get("offers",[]))}))
+          with open(os.environ["GITHUB_OUTPUT"],"a") as out:
+              print("has_offers="+str(has_offers).lower(),file=out)
           PY
       - name: Fetch recent ESPN player statistics for current odds players
-        if: steps.gate.outputs.run == 'true'
+        if: steps.odds_state.outputs.has_offers == 'true'
         run: python sync_nba_free.py --days 14 --max-summaries 60
       - name: Merge eligible offers into current-day analyst feed
-        if: steps.gate.outputs.run == 'true'
+        if: steps.odds_state.outputs.has_offers == 'true'
         run: |
           python - <<'PY'
           import json
@@ -108,10 +128,10 @@ jobs:
               subprocess.run(["python","memara_math.py","--input",str(feed),"--output",str(feed)],check=True)
           PY
       - name: Screen C candidates for research
-        if: steps.gate.outputs.run == 'true'
+        if: steps.odds_state.outputs.has_offers == 'true'
         run: python ticket_c_screening.py
       - name: Validate research-only output
-        if: steps.gate.outputs.run == 'true'
+        if: steps.odds_state.outputs.has_offers == 'true'
         run: |
           python - <<'PY'
           import json
@@ -120,30 +140,19 @@ jobs:
           assert d["state"]=="research_only"
           print("C research candidates:",d["count"])
           PY
-      - name: Save valid NBA fixtures even when paid bookmaker data is unavailable
-        if: failure() && steps.gate.outputs.run == 'true'
-        run: |
-          if [ -f collector-output/nba-next-24h.json ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add -- collector-output/nba-next-24h.json
-            if ! git diff --cached --quiet; then
-              git commit -m "data: save current NBA fixtures; paid odds still unavailable [skip ci]"
-              git pull --rebase origin main
-              git push origin HEAD:main
-            fi
-          fi
-      - name: Save research and offers without publishing
-        if: steps.gate.outputs.run == 'true'
+      - name: Save optional NBA player odds and analysis research
+        if: steps.odds_state.outputs.has_offers == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add collector-output/nba-next-24h.json collector-output/nba-free-statistics.json collector-output/ticket-c-research.json
-          if [ -n "$THE_ODDS_API_KEY" ]; then
-            git add collector-output/nba-player-points.json collector-feed.json
-          fi
+          git add -- collector-output/nba-free-statistics.json collector-output/ticket-c-research.json collector-output/nba-player-points.json
+          if [ -f collector-feed.json ]; then git add -- collector-feed.json; fi
           if ! git diff --cached --quiet; then
-            git commit -m "data: unified NBA C preparation [skip ci]"
+            git commit -m "data: optional NBA C bookmaker and research snapshot [skip ci]"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
+      - name: Report bookmaker quota separately from NBA fixture collection
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          echo "NBA fixtures/rosters saved. Optional bookmaker step outcome: ${{ steps.odds.outcome }}"
