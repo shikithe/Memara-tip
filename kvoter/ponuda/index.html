@@ -3,17 +3,17 @@
 <title>Kvoter | Dnevna ponuda</title>
 <style>
 :root{color-scheme:dark}body{margin:0;background:#101722;color:#eaf1f8;font:15px system-ui,-apple-system,sans-serif}
-header{position:sticky;top:0;background:#172235;padding:15px 16px;border-bottom:1px solid #334154;z-index:1}
+header{position:static;background:#172235;padding:15px 16px;border-bottom:1px solid #334154;z-index:1}
 h1{font-size:19px;margin:0 0 6px}small{color:#b4c4d6}.status{padding:12px 16px;color:#b4c4d6}
-.scroll{overflow-x:auto;padding:0 8px 6px}table{border-collapse:collapse;width:100%;min-width:690px;font-variant-numeric:tabular-nums}
-th{background:#243249;text-align:left;color:#b9d2ef;font-size:12px}
+.scroll{overflow-x:auto;padding:0 8px 0}table{border-collapse:collapse;width:100%;min-width:690px;font-variant-numeric:tabular-nums}
+thead{display:table-header-group}tbody{display:table-row-group}th{background:#243249;text-align:left;color:#b9d2ef;font-size:12px;position:static}
 td,th{padding:11px 8px;border-bottom:1px solid #2c3a4c;white-space:nowrap}
 td:nth-child(n+4),th:nth-child(n+4){text-align:right}td:nth-child(n+4){color:#a6e4b3;font-weight:600}
-tr:nth-child(even){background:#172131}.nba-heading{margin:14px 16px 8px;font-size:17px}.nba-scroll{overflow-x:auto;padding:0 8px 34px}.nba-table{min-width:750px}.nba-table td:nth-child(n+4),.nba-table th:nth-child(n+4){text-align:right}.nba-table td:nth-child(n+4){color:#a6e4b3;font-weight:600}.pending{color:#c4cbd5;font-size:12px}a{color:#9dc8ff}button{background:#2d5c91;color:white;border:0;border-radius:8px;padding:9px 13px;font-weight:600}
+tr:nth-child(even){background:#172131}.nba-heading{margin:6px 16px 4px;font-size:16px}.nba-scroll{overflow-x:auto;padding:0 8px 24px}.nba-table{min-width:750px}.nba-table td:nth-child(n+4),.nba-table th:nth-child(n+4){text-align:right}.nba-table td:nth-child(n+4){color:#a6e4b3;font-weight:600}.pending{color:#c4cbd5;font-size:12px}a{color:#9dc8ff}button{background:#2d5c91;color:white;border:0;border-radius:8px;padding:9px 13px;font-weight:600}
 </style></head><body>
 <header><h1>KVOTER · Dnevna kladioničarska ponuda</h1><small>1 · X · 2 · 3+ golova | Stvarne preuzete kvote, nisu uživo</small><div style="margin-top:10px"><button onclick="load();loadNBA()">Osvježi</button> &nbsp; <a href="../dnevna-lista.txt">TXT lista</a></div></header>
-<div id="status" class="status">Učitavanje ponude…</div><div class="scroll"><table><thead><tr><th>Br.</th><th>Datum / sat</th><th>Utakmica</th><th>1</th><th>X</th><th>2</th><th>3+</th><th>Izvor</th></tr></thead><tbody id="rows"></tbody></table></div>
-<h2 class="nba-heading">NBA · Igrači i kvote</h2><div id="nba-status" class="status">Učitavanje NBA ponude…</div><div class="nba-scroll"><table class="nba-table"><thead><tr><th>Br.</th><th>Datum / sat</th><th>Utakmica</th><th>Igrač</th><th>Igra</th><th>Granica</th><th>Više</th><th>Manje</th></tr></thead><tbody id="nba-rows"></tbody></table></div>
+<div id="status" class="status">Učitavanje ponude…</div><div id="football-panel" class="scroll"><table><thead><tr><th>Br.</th><th>Datum / sat</th><th>Utakmica</th><th>1</th><th>X</th><th>2</th><th>3+</th><th>Izvor</th></tr></thead><tbody id="rows"></tbody></table></div>
+<h2 class="nba-heading">NBA · Igrači i kvote</h2><div class="nba-scroll"><table class="nba-table"><thead><tr><th>Br.</th><th>Datum / sat</th><th>Utakmica</th><th>Igrač</th><th>Igra</th><th>Granica</th><th>Više</th><th>Manje</th></tr></thead><tbody id="nba-rows"></tbody></table></div><div id="nba-status" class="status">Učitavanje NBA ponude…</div>
 <script>
 async function load(){
  const status=document.getElementById('status'),body=document.getElementById('rows');status.textContent='Učitavanje…';body.replaceChildren();
@@ -30,8 +30,10 @@ async function load(){
  if(!stamp||parts.year+'-'+stamp[2]+'-'+stamp[1]+' '+stamp[3]<current)continue;
  const tr=document.createElement('tr');for(const val of m.slice(1)){const td=document.createElement('td');td.textContent=val;tr.append(td)}body.append(tr);
  }
- status.textContent=body.children.length?('Prikazano '+body.children.length+' budućih fudbalskih utakmica · Kvote nisu uživo.'):'Trenutno nema aktuelnih fudbalskih utakmica u ponudi.';
- }catch(e){status.textContent='Ponuda trenutno nije dostupna. '+e.message;}
+ document.getElementById('football-panel').hidden=body.children.length===0;
+ status.textContent=body.children.length?'Fudbal · '+body.children.length+' aktuelnih utakmica':'';
+ status.hidden=body.children.length===0;
+ }catch(e){document.getElementById('football-panel').hidden=true;status.hidden=true;}
 }
 function localTime(value){const d=new Date(value);return Number.isNaN(d.getTime())?'—':new Intl.DateTimeFormat('bs-BA',{timeZone:'Europe/Sarajevo',day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(d)}
 function odds(value){const n=Number(value);return Number.isFinite(n)&&n>1?n.toFixed(2).replace('.',','):'—'}
@@ -50,7 +52,7 @@ async function loadNBA(){
    values.forEach(v=>{const td=document.createElement('td');td.textContent=v;tr.append(td)});body.append(tr);
   });
   const date=data.source_date||((data.generated_at_utc||'').slice(0,10))||'nepoznat datum';
-  status.textContent=offers.length?'Prikazano '+offers.length+' NBA linija · '+date+' · Kvote nisu uživo, provjeriti prije uplate.':'NBA ponuda trenutno nema potvrđenih kvota.';
+  status.textContent=offers.length?'Ukupno '+offers.length+' NBA linija · izvor '+date+' · kvote nisu uživo.':'Trenutno nema NBA kvota.';
  }catch(e){status.textContent='NBA ponuda nije dostupna. '+e.message;}
 }
 load();loadNBA();
