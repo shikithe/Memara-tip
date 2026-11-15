@@ -1,5 +1,8 @@
 name: MEMARA NBA next 24 hours
 on:
+  schedule:
+    # Europe/Sarajevo noon: 11:00 UTC in winter, 10:00 UTC in summer
+    - cron: '0 10,11 * * *'
   workflow_dispatch:
 permissions:
   contents: write

@@ -1,0 +1,74 @@
+name: MEMARA NBA daily list cleanup 11:45
+on:
+  schedule:
+    # Europe/Sarajevo: 11:45 CET / CEST
+    - cron: '45 9,10 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: memara-nba-24h
+  cancel-in-progress: false
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Allow only 11:45 Sarajevo scheduled cleanup
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python - <<'PY'
+          import os
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          local = datetime.now(ZoneInfo('Europe/Sarajevo'))
+          allowed = os.environ['EVENT_NAME'] == 'workflow_dispatch' or (local.hour == 11 and local.minute >= 45)
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              print('run=' + str(allowed).lower(), file=f)
+          print('Local time:', local.isoformat(), 'cleanup:', allowed)
+          PY
+      - name: Clear NBA snapshots only (keep football and tickets)
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+          stamp = datetime.now(timezone.utc).isoformat()
+          paths = {
+              'collector-output/nba-next-24h.json': {
+                  'schema_version': '1.0', 'source': 'espn-public-unofficial',
+                  'collected_at_utc': None, 'window_start_utc': None, 'window_end_utc': None,
+                  'timezone_display': 'Europe/Sarajevo', 'games': [], 'players': [],
+                  'game_count': 0, 'player_candidate_count': 0,
+                  'limitations': [], 'status': 'awaiting_daily_refresh', 'errors': [],
+                  'publication_allowed': False, 'cleared_at_utc': stamp
+              },
+              'collector-output/nba-player-points.json': {
+                  'generated_at_utc': None, 'fixture_snapshot_utc': None, 'region': 'us',
+                  'offer_count': 0, 'offers': [], 'status': 'awaiting_daily_refresh',
+                  'cleared_at_utc': stamp
+              }
+          }
+          for filename, data in paths.items():
+              path = Path(filename)
+              path.parent.mkdir(parents=True, exist_ok=True)
+              path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+              print('Cleared', filename)
+          PY
+      - name: Commit cleared NBA lists
+        if: steps.gate.outputs.run == 'true' && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add collector-output/nba-next-24h.json collector-output/nba-player-points.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: clear yesterday NBA offers before noon refresh"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
