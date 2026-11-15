@@ -61,14 +61,16 @@ jobs:
           from pathlib import Path
           p = Path('collector-output/nba-player-points.json')
           p.parent.mkdir(parents=True, exist_ok=True)
-          p.write_text(json.dumps({'generated_at_utc': None, 'offers': [], 'offer_count': 0}) + '\\n')
+          p.write_text(json.dumps({'generated_at_utc': None, 'offers': [], 'offer_count': 0}) + '\n')
           PY
           python nba_analysis_merge.py
       - uses: actions/upload-artifact@v4
         if: always() && steps.clock.outputs.run == 'true'
         with:
           name: nba-next-24h
-          path: |\n            collector-output/nba-next-24h.json\n            collector-output/nba-analysis-ready.json
+          path: |
+            collector-output/nba-next-24h.json
+            collector-output/nba-analysis-ready.json
           if-no-files-found: warn
           retention-days: 7
       - name: Commit JSON snapshot without altering tickets

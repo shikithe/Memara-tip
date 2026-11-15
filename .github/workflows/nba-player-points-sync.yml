@@ -27,7 +27,10 @@ jobs:
         run: |
           python - <<'PY'
           import os
-          from datetime import datetime\n          from zoneinfo import ZoneInfo\n          local = datetime.now(ZoneInfo("Europe/Sarajevo"))\n          active = os.environ["EVENT_NAME"] == "workflow_dispatch" or (local.hour == 12 and local.minute >= 15)
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          local = datetime.now(ZoneInfo("Europe/Sarajevo"))
+          active = os.environ["EVENT_NAME"] == "workflow_dispatch" or (local.hour == 12 and local.minute >= 15)
           if not os.environ.get("THE_ODDS_API_KEY"):
               print("No API key configured; skipping without updating existing data")
               active = False
@@ -61,7 +64,9 @@ jobs:
         if: steps.gate.outputs.run == 'true' && always()
         with:
           name: nba-player-points
-          path: |\n            collector-output/nba-player-points.json\n            collector-output/nba-analysis-ready.json
+          path: |
+            collector-output/nba-player-points.json
+            collector-output/nba-analysis-ready.json
           if-no-files-found: warn
           retention-days: 7
       - name: Attach fresh verified-source points lines to analyst queue
