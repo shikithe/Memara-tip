@@ -20,6 +20,11 @@ def fetch(url, key):
     req = Request(url, headers={"x-api-key": key, "Accept": "application/json",
                                 "User-Agent": "MEMARA-NBA-Props/1.0"})
     with urlopen(req, timeout=25) as r:
+        # The event listing is free, but its quota headers report whether
+        # paid player-prop endpoints can be called. Avoid repeated 401s.
+        remaining = r.headers.get("x-requests-remaining")
+        if "/events?" in url and remaining is not None and remaining.strip() == "0":
+            raise RuntimeError("ODDS_API_QUOTA_EXHAUSTED: no bookmaker request credits remain")
         return json.load(r)
 
 def run(source, key, region):
@@ -97,7 +102,10 @@ def main():
     try:
         result = run(a.input, secret, a.region)
     except (OSError, ValueError, RuntimeError, HTTPError, URLError) as e:
-        print(f"SYNC FAILED: {type(e).__name__} (check source and API access)", file=sys.stderr)
+        if isinstance(e, RuntimeError) and str(e).startswith("ODDS_API_QUOTA_EXHAUSTED"):
+            print(str(e), file=sys.stderr)
+        else:
+            print(f"SYNC FAILED: {type(e).__name__} (check source and API access)", file=sys.stderr)
         return 1
     output = Path(a.output)
     output.parent.mkdir(parents=True, exist_ok=True)
