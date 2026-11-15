@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-15",
+  "ticket_id": "C",
+  "state": "manual_selection_pending_publication_checks",
+  "publication_allowed": false,
+  "selection_method": "independent_ai_analysis_public_quoted_source",
+  "legs": [
+    {
+      "player": "Jalen Brunson",
+      "player_id": "3934672",
+      "espn_event_id": "401909990",
+      "match": "New York Knicks - Toronto Raptors",
+      "market": "player_points",
+      "pick": "over",
+      "points_line": 25.5,
+      "odd": 1.92,
+      "bookmaker": "Unibet",
+      "source": "https://www.haterpicks.app/us/odds/nba/new-york-knicks-vs-toronto-raptors",
+      "quote_observation": "public_page_rechecked_2026-11-15",
+      "individual_bookmaker_quote_timestamp_verified": false,
+      "team": "New York Knicks",
+      "opponent": "Toronto Raptors",
+      "start_utc": "2026-11-15T23:00:00+00:00"
+    },
+    {
+      "player": "Darryn Peterson",
+      "player_id": "5041955",
+      "espn_event_id": "401909988",
+      "match": "Utah Jazz - San Antonio Spurs",
+      "market": "player_points",
+      "pick": "over",
+      "points_line": 18.5,
+      "odd": 1.87,
+      "bookmaker": "Ladbrokes",
+      "source": "https://www.haterpicks.app/us/odds/nba/san-antonio-spurs-vs-utah-jazz",
+      "quote_observation": "public_page_rechecked_2026-11-15",
+      "individual_bookmaker_quote_timestamp_verified": false,
+      "team": "Utah Jazz",
+      "opponent": "San Antonio Spurs",
+      "start_utc": "2026-11-15T22:00:00+00:00"
+    }
+  ],
+  "combined_odds": 3.59,
+  "notes": [
+    "Quotes were independently observed on publicly accessible sportsbook-comparison pages and are not fabricated.",
+    "Source quotes are best publicly displayed prices, which may not be available to the user or unchanged at the bookmaker.",
+    "This file is a research draft only and does not trigger publication. Exact per-bookmaker quote update timestamps and participation confirmation missing."
+  ]
+}
