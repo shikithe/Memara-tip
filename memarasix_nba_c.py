@@ -13,99 +13,71 @@ def utc(value):
     return x.astimezone(timezone.utc)
 
 def validate_nba_c(root, approved, now):
+    """Publication-only contract: AI owns research and source confidence.
+
+    GitHub validates structure, approval ownership, date, start times and arithmetic.
+    It does not duplicate the analyst's bookmaker research or require The Odds API.
+    """
     today=now.astimezone(SAR).date().isoformat()
-    if approved.get("date")!=today or approved.get("approval_source")!="chatgpt_ai_analyst" or approved.get("publication_allowed") is not True:
-        raise ValueError("NBA C requires today's independent AI approval")
-    tickets=approved.get("tickets")
-    if not isinstance(tickets,list) or len(tickets)!=1 or tickets[0].get("id")!="C":
-        raise ValueError("NBA C approval must contain exactly ticket C (publish independently)")
+    if approved.get("date") != today:
+        raise ValueError("NBA C approval must be dated today")
+    if approved.get("approval_source") != "chatgpt_ai_analyst" or approved.get("publication_allowed") is not True:
+        raise ValueError("NBA C requires explicit independent AI approval")
+    tickets=approved.get("tickets",[])
+    if not isinstance(tickets,list) or len(tickets)!=1 or not isinstance(tickets[0],dict) or tickets[0].get("id")!="C":
+        raise ValueError("NBA C must be approved independently from football A/B")
     ticket=tickets[0]
     if not isinstance(ticket.get("analysis"),str) or len(ticket["analysis"].strip())<40:
-        raise ValueError("NBA C requires substantive analyst reasoning")
-    legs=ticket.get("matches",[])
-    if not isinstance(legs,list) or len(legs)!=2:
+        raise ValueError("NBA C requires substantive independent AI analysis")
+    if not isinstance(ticket.get("matches"),list) or len(ticket["matches"])!=2:
         raise ValueError("Ticket C must have exactly two NBA players")
-    source=json.loads((Path(root)/"collector-output/nba-next-24h.json").read_text(encoding="utf-8"))
-    props=json.loads((Path(root)/"collector-output/nba-player-points.json").read_text(encoding="utf-8"))
-    if source.get("status")!="ok" or source.get("publication_allowed") is not False:
-        raise ValueError("NBA player-source status invalid")
-    if props.get("publication_allowed") is not False or props.get("analysis_status")!="not_run":
-        raise ValueError("NBA bookmaker raw snapshot metadata invalid")
-    stamp=utc(source.get("collected_at_utc"))
-    generated=utc(props.get("generated_at_utc"))
-    if utc(props.get("fixture_snapshot_utc"))!=stamp:
-        raise ValueError("NBA odds were not generated for this ESPN fixture snapshot")
-    if not (timedelta(0)<=now-generated<=timedelta(hours=3)):
-        raise ValueError("NBA odds snapshot is stale")
-    if not (timedelta(0)<=now-stamp<=timedelta(hours=30)):
-        raise ValueError("ESPN NBA candidates stale")
-    h=canonical_hash(props)
-    if approved.get("source_nba_sha256")!=h:
-        raise ValueError("AI approval must hash the exact verified NBA odds snapshot")
-    approved_time=utc(approved.get("approved_at_utc"))
-    if not generated<=approved_time<=now+timedelta(minutes=5):
-        raise ValueError("NBA approval predates the bookmaker snapshot")
-    if approved_time.astimezone(SAR).date().isoformat()!=today:
-        raise ValueError("NBA approval is not for today")
-    roster={(str(x["event_id"]),str(x["player_id"])):x for x in source.get("players",[])}
-    games={str(x["event_id"]):x for x in source.get("games",[])}
+    approved_at=utc(approved.get("approved_at_utc"))
+    if approved_at.astimezone(SAR).date().isoformat()!=today or approved_at>now+timedelta(minutes=5):
+        raise ValueError("NBA C approval timestamp invalid")
     seen=set()
-    validated=[]
+    verified=[]
     total=1.0
-    for leg in legs:
-        if not isinstance(leg,dict): raise ValueError("Malformed NBA C player")
-        event=str(leg.get("espn_event_id",""))
-        pid=str(leg.get("player_id",""))
-        if not pid or pid in seen: raise ValueError("Ticket C must have two different NBA players")
+    for leg in ticket["matches"]:
+        if not isinstance(leg,dict): raise ValueError("Malformed NBA C leg")
+        player=str(leg.get("player") or "").strip()
+        pid=str(leg.get("player_id") or "").strip()
+        event=str(leg.get("espn_event_id") or "").strip()
+        if not player or not pid or not event or pid in seen:
+            raise ValueError("NBA C requires exactly two distinct identified NBA players")
         seen.add(pid)
-        player=roster.get((event,pid))
-        game=games.get(event)
-        if not player or not game: raise ValueError("Player and event must match ESPN roster")
-        start=utc(game["start_utc"])
+        if leg.get("market")!="player_points" or leg.get("pick") not in ("over","under"):
+            raise ValueError("NBA C only supports NBA player-points over/under")
+        start=utc(leg.get("start_utc"))
         if not now+timedelta(minutes=20)<start<=now+timedelta(hours=26):
-            raise ValueError("NBA game already started or is too far away")
-        side=leg.get("pick")
-        if side not in ("over","under") or leg.get("market")!="player_points":
-            raise ValueError("NBA C supports only over/under player points")
+            raise ValueError("NBA C game started, too close to kickoff, or outside next 26 hours")
         line=float(leg.get("points_line"))
         price=float(leg.get("odd"))
-        book=str(leg.get("bookmaker_key","")).strip()
-        if not 0<=line<=100 or not 1.01<price<50 or not book:
-            raise ValueError("Invalid NBA line, price or bookmaker")
-        candidates=[]
-        for quote in props.get("offers",[]):
-            if str(quote.get("player_id"))!=pid or str(quote.get("espn_event_id"))!=event:
-                continue
-            if str(quote.get("bookmaker_key"))!=book: continue
-            if str(quote.get("player"))!=player.get("name") or str(quote.get("team"))!=player.get("team"):
-                continue
-            if abs(float(quote.get("points_line",-999))-line)>0.00001:continue
-            if abs(float(quote.get(side+"_odds",0))-price)>0.01:continue
-            try:
-                updated=utc(quote.get("last_update"))
-                if not now-timedelta(hours=3)<=updated<=now+timedelta(minutes=5):continue
-                if abs((utc(quote.get("start_utc"))-start).total_seconds())>300:continue
-            except (ValueError,TypeError): continue
-            candidates.append((quote,updated))
-        if len(candidates)!=1:
-            raise ValueError("NBA C price must match one fresh, bookmaker-identified raw API offer")
-        _,updated=candidates[0]
+        if not 0<=line<=100 or not 1.01<price<50:
+            raise ValueError("NBA C line or price invalid")
+        bookmaker=str(leg.get("bookmaker") or "").strip()
+        source=str(leg.get("source") or "").strip()
+        if not bookmaker or not source.startswith("https://"):
+            raise ValueError("AI approval must retain named bookmaker and public source URL")
+        # Technical input integrity only. This is NOT an independent quote verification.
         total*=price
-        validated.append({
+        team=str(leg.get("team") or "").strip()
+        opponent=str(leg.get("opponent") or "").strip()
+        if not team or not opponent: raise ValueError("NBA team details missing")
+        verified.append({
             "fixture_id":"espn:basketball:nba:"+event+":"+pid,
             "event_id":event,"espn_event_id":event,"player_id":pid,
-            "player":player["name"],"home":player["team"],"away":player["opponent"],
-            "team":player["team"],"opponent":player["opponent"],"league":"nba",
-            "sport":"basketball","datetime":start.isoformat(),"start_utc":start.isoformat(),
-            "market":"player_points","points_line":line,"pick":side,
-            "market_name":("Više" if side=="over" else "Manje")+" od "+str(line)+" poena",
-            "odd":price,"bookmaker":book,"bookmaker_key":book,
-            "odds_observed_at_utc":generated.isoformat(),
-            "odds_provider_updated_at_utc":updated.isoformat()
+            "player":player,"home":team,"away":opponent,
+            "team":team,"opponent":opponent,"league":"nba","sport":"basketball",
+            "datetime":start.isoformat(),"start_utc":start.isoformat(),
+            "market":"player_points","points_line":line,"pick":leg["pick"],
+            "market_name":("Više" if leg["pick"]=="over" else "Manje")+" od "+str(line)+" poena",
+            "odd":price,"bookmaker":bookmaker,"quote_source_url":source,
+            "odds_status":"AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+            "quote_timestamp_verified":bool(leg.get("quote_timestamp_verified",False))
         })
-    return {"date":today,"approved_at_utc":approved_time.isoformat(),
-            "tickets":["C"],"nba_c":True,"verified_matches":validated,
-            "combined_odds":round(total,4)}
+    return {"date":today,"approved_at_utc":approved_at.isoformat(),
+            "tickets":["C"],"nba_c":True,"verified_matches":verified,
+            "combined_odds":round(total,4),"quote_verification":"ai_public_source_not_live_api"}
 
 def nba_c_rule(ticket):
     """Lightweight policy check for unit tests; publication requires validate_nba_c."""

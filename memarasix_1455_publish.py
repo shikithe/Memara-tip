@@ -49,7 +49,7 @@ def valid_ready_receipt(root, day, offer):
 
 
 def publish_nba_c(checked, now, local):
-    """GitHub remains technical publisher; AI chooses exactly two verified NBA players."""
+    """Technical publisher only: AI separately approves two NBA players and their source quotes."""
     data=load(ROOT/"data.json")
     current=local.date().isoformat()
     if data.get("date")!=current and not data.get("settled",False):
@@ -76,13 +76,14 @@ def publish_nba_c(checked, now, local):
     statuses["C"]="objavljen"
     data.update({"date":current,"published":data.get("published") if existing else local.strftime("%d.%m.%Y. u %H:%M (Europe/Sarajevo)"),
           "published_at_utc":data.get("published_at_utc") if existing else now.isoformat(),
-          "publication_type":"independent_verified_github_nba_c",
+          "publication_type":"independent_ai_approved_github_nba_c",
           "bank_before":bank,"daily_budget":budget,
           "daily_stake":round(spent_before+stake,2),
           "bank_after_stakes":balance,"bank_after":balance,
           "tickets":existing+[item],"settled":False,"provisional":False,
-          "pending_ticket_statuses":statuses,"odds_verified":True,
-          "analysis_status":"Two independently approved and bookmaker-verified NBA players"})
+          "pending_ticket_statuses":statuses,"odds_verified":False,
+          "odds_verification_note":"AI selected publicly displayed bookmaker comparison quotes; not independently refreshed by GitHub or confirmed in individual bookmaker accounts.",
+          "analysis_status":"Two AI-approved NBA player-point selections; quote validity is AI responsibility"})
     tmp=ROOT/"data.json.tmp"
     tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     tmp.replace(ROOT/"data.json")
