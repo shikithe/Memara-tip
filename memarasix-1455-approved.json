@@ -1,7 +1,43 @@
 {
-  "date": "2026-11-08",
-  "tickets": [],
-  "state": "no_verified_market_quotes",
+  "date": "2026-11-15",
+  "tickets": [
+    {
+      "id": "C",
+      "matches": [
+        {
+          "player_id": "3934672",
+          "player": "Jalen Brunson",
+          "espn_event_id": "401909990",
+          "market": "player_points",
+          "pick": "over",
+          "points_line": 25.5,
+          "odd": 1.92,
+          "bookmaker": "Unibet",
+          "bookmaker_key": null,
+          "source": "https://www.haterpicks.app/us/odds/nba/new-york-knicks-vs-toronto-raptors",
+          "quote_timestamp_verified": false
+        },
+        {
+          "player_id": "5041955",
+          "player": "Darryn Peterson",
+          "espn_event_id": "401909988",
+          "market": "player_points",
+          "pick": "over",
+          "points_line": 18.5,
+          "odd": 1.87,
+          "bookmaker": "Ladbrokes",
+          "bookmaker_key": null,
+          "source": "https://www.haterpicks.app/us/odds/nba/san-antonio-spurs-vs-utah-jazz",
+          "quote_timestamp_verified": false
+        }
+      ],
+      "analysis": "Independent researcher selected two NBA player-point over offers from publicly visible sportsbook comparison pages. Quotes are real reported prices but per-bookmaker timestamps and exact raw API matches have not been verified, so publication is blocked pending strict validator requirements."
+    }
+  ],
+  "state": "manual_publication_requested_awaiting_verified_api_quotes",
+  "approval_source": "chatgpt_ai_analyst",
   "publication_allowed": false,
-  "quote_count": 0
+  "source_nba_sha256": null,
+  "approved_at_utc": null,
+  "trigger_reason": "User requested initialization; no misrepresentation of quote freshness; fail-closed workflow must not publish if inputs missing."
 }
