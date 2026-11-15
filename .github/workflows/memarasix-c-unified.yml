@@ -1,8 +1,11 @@
 name: MemaraSix unified NBA C preparation
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/memarasix-c-unified.yml']
   schedule:
-    # 09:15 and 12:30 Sarajevo, both DST offsets; local-time gate below
+    # Target 09:15 and 12:30 Sarajevo (DST-aware UTC hours). Delays are accepted during daytime.
     - cron: '15 7,8 * * *'
     - cron: '30 10,11 * * *'
 permissions:
@@ -23,20 +26,35 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Gate Sarajevo local schedule
+      - name: Check NBA collection readiness (tolerate delayed GitHub cron)
         id: gate
         env:
           EVENT_NAME: ${{ github.event_name }}
         run: |
           python - <<'PY'
-          import os
-          from datetime import datetime
+          import json, os
+          from datetime import datetime, timedelta, timezone, time
+          from pathlib import Path
           from zoneinfo import ZoneInfo
-          local=datetime.now(ZoneInfo("Europe/Sarajevo")).strftime("%H:%M")
-          run=os.environ["EVENT_NAME"]!="schedule" or ("09:15"<=local<"10:00") or ("12:30"<=local<"13:00")
-          print("Local time:",local,"enabled:",run)
-          with open(os.environ["GITHUB_OUTPUT"],"a") as f:
-              print("run="+str(run).lower(),file=f)
+          local=datetime.now(ZoneInfo("Europe/Sarajevo"))
+          event=os.environ["EVENT_NAME"]
+          # A delayed scheduled run must still collect during the day.
+          allowed=event!="schedule" or time(9,0)<=local.time()<time(23,0)
+          reason="allowed" if allowed else "outside_daytime_window"
+          # Protect paid API quota against multiple scheduled refreshes.
+          if allowed and event=="schedule":
+              try:
+                  data=json.loads(Path("collector-output/nba-player-points.json").read_text(encoding="utf-8"))
+                  stamp=datetime.fromisoformat(data["generated_at_utc"].replace("Z","+00:00"))
+                  age=datetime.now(timezone.utc)-stamp
+                  if 0<=age.total_seconds()<3*3600 and data.get("offer_count",0)>0:
+                      allowed=False
+                      reason="existing_fresh_offers"
+              except (OSError,ValueError,TypeError,KeyError):
+                  pass
+          print("NBA_C_GATE",json.dumps({"event":event,"local":local.isoformat(),"enabled":allowed,"reason":reason}))
+          with open(os.environ["GITHUB_OUTPUT"],"a") as out:
+              print("run="+str(allowed).lower(),file=out)
           PY
       - name: Check scripts
         if: steps.gate.outputs.run == 'true'
@@ -44,19 +62,49 @@ jobs:
       - name: Fetch upcoming NBA fixtures
         if: steps.gate.outputs.run == 'true'
         run: python collector_nba_24h.py --hours 24 --output collector-output/nba-next-24h.json
-      - name: Fetch recent ESPN player statistics
+      - name: Verify bookmaker API credential
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          if [ -z "$THE_ODDS_API_KEY" ]; then
+            echo "::error::THE_ODDS_API_KEY missing; no fresh NBA player odds can be collected"
+            exit 1
+          fi
+      - name: Fetch player points bookmaker odds
+        if: steps.gate.outputs.run == 'true'
+        run: python sync_nba_points.py --region us
+      - name: Verify fresh player-points market snapshot
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          data=json.load(open("collector-output/nba-player-points.json",encoding="utf-8"))
+          age=(datetime.now(timezone.utc)-datetime.fromisoformat(data["generated_at_utc"].replace("Z","+00:00"))).total_seconds()
+          offers=data.get("offers",[])
+          print("NBA_PLAYER_MARKET_SNAPSHOT",json.dumps({"offers":len(offers),"unmatched_games":len(data.get("unmatched_games",[])),"errors":data.get("errors",[]),"age_seconds":round(age)}))
+          if not 0<=age<=900 or not offers or data.get("offer_count")!=len(offers):
+              raise SystemExit("No fresh player-points bookmaker offers: refusing to report success")
+          PY
+      - name: Fetch recent ESPN player statistics for current odds players
         if: steps.gate.outputs.run == 'true'
         run: python sync_nba_free.py --days 14 --max-summaries 60
-      - name: Fetch player points bookmaker odds
-        if: steps.gate.outputs.run == 'true' && env.THE_ODDS_API_KEY != ''
-        run: python sync_nba_points.py --region us
-      - name: Merge eligible offers into analyst feed
-        if: steps.gate.outputs.run == 'true' && env.THE_ODDS_API_KEY != ''
+      - name: Merge eligible offers into current-day analyst feed
+        if: steps.gate.outputs.run == 'true'
         run: |
-          if [ -f collector-feed.json ]; then
-            python memara_enrich_nba_props.py --feed collector-feed.json --props collector-output/nba-player-points.json --output collector-feed.json
-            python memara_math.py --input collector-feed.json --output collector-feed.json
-          fi
+          python - <<'PY'
+          import json
+          from datetime import datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          feed=Path("collector-feed.json")
+          today=datetime.now(ZoneInfo("Europe/Sarajevo")).date().isoformat()
+          if not feed.exists() or json.loads(feed.read_text(encoding="utf-8")).get("date")!=today:
+              print("NBA_C_FEED_SKIPPED no_current_day_feed; independent NBA odds snapshot still saved")
+          else:
+              import subprocess
+              subprocess.run(["python","memara_enrich_nba_props.py","--feed",str(feed),"--props","collector-output/nba-player-points.json","--output",str(feed)],check=True)
+              subprocess.run(["python","memara_math.py","--input",str(feed),"--output",str(feed)],check=True)
+          PY
       - name: Screen C candidates for research
         if: steps.gate.outputs.run == 'true'
         run: python ticket_c_screening.py
