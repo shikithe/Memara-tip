@@ -1,12 +1,2 @@
-KVOTER - KLADIONICARSKA PONUDA (TXT)
-Preuzeto: 2026-11-14T14:36:48.849113+00:00 UTC | vrijeme: Europe/Sarajevo
-Ukupno: 2 | automatski upareno: 0
-Kvote iz posljednjeg API preuzimanja; nisu uzivo. Crtica = nema kvote.
-
-BR  DATUM SAT    UTAKMICA                                    1      X      2     3+  IZVOR
---------------------------------------------------------------------------------------------------------------
-01  14.11. 22:30  Mirassol - Atlético-MG                            -      -      -      -  N/P
-02  15.11. 00:30  Chapecoense - Vasco da Gama                       -      -      -      -  N/P
-
-1=domacin | X=nerijeseno | 2=gost | 3+=vise od 2.5 golova
-N/P = bez potvrdenih kvota u ovom ciklusu.
+KVOTER - DNEVNA KLADIONICARSKA PONUDA
+Status: prethodna dnevna lista je istekla; ceka se novo preuzimanje.
