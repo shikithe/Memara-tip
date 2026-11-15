@@ -1,4 +1,4 @@
-name: MemaraSix NBA daily 12:00 collection and optional C research
+name: MemaraSix unified NBA C preparation
 on:
   workflow_dispatch:
   schedule:
