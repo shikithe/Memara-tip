@@ -11,6 +11,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
+from nba_live_points import enrich as enrich_nba_points
 
 ROOT = "https://site.api.espn.com/apis/site/v2/sports/soccer/"
 LEAGUES = ("eng.1","esp.1","ger.1","ita.1","fra.1","ned.1","por.1","sco.1","bel.1","tur.1",
@@ -99,6 +100,7 @@ def run(source="data.json",output="live-scores.json"):
     matches=[(t["id"],i,m) for t in published.get("tickets",[]) for i,m in enumerate(t.get("matches",[]))]
     leagues_by_day={}
     for _,_,m in matches:
+        if m.get('sport')=='basketball':continue
         try:
             start=dt(m.get("start_sarajevo") or m.get("start_utc") or m["datetime"])
             if abs((now-start).total_seconds())<=36*3600:
@@ -161,6 +163,7 @@ def run(source="data.json",output="live-scores.json"):
         if key in previous and record["state"] != "final":
             record = dict(previous[key])
         results.append(record)
+    results=enrich_nba_points(published,results,previous,now)
     payload={"date":published.get("date"),"updated_at_utc":now.isoformat(),
             "source":"espn-public-unofficial","errors_count":len(errors),
             "matches":results,"bank_unchanged":True}

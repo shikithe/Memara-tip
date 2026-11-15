@@ -76,6 +76,24 @@ def settle(published, snapshot):
             if rec.get("source")!="espn-public-unofficial":
                 legs.append(None)
                 continue
+            if match.get("sport")=="basketball" and match.get("market")=="player_points":
+                if rec.get("sport")!="basketball" or str(rec.get("event_id"))!=str(match.get("espn_event_id")) or str(rec.get("player_id"))!=str(match.get("player_id")):
+                    legs.append(None)
+                    continue
+                if rec.get("state") not in ("live","final") or not isinstance(rec.get("player_points"),int):
+                    legs.append(None)
+                    continue
+                points=rec["player_points"]
+                line=float(match["points_line"])
+                side=match.get("pick")
+                outcome=("pogođen" if points>line else "promašen" if rec["state"]=="final" else None) if side=="over" else ("pogođen" if rec["state"]=="final" and points<line else "promašen" if points>=line else None)
+                legs.append(outcome)
+                if rec["state"]=="final" and outcome is not None:
+                    if match.get("result_status") in ("pogođen","promašen") and match["result_status"]!=outcome:
+                        raise ValueError("Locked NBA player result conflict")
+                    match["result_status"]=outcome
+                    match["final_points"]=points
+                continue
             score=str(rec.get("score",""))
             parts=score.split(":")
             if len(parts)!=2 or any(not x.isdigit() for x in parts):
