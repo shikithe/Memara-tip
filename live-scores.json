@@ -1,6 +1,6 @@
 {
   "date": "2026-11-15",
-  "updated_at_utc": "2026-11-15T21:21:47.992637+00:00",
+  "updated_at_utc": "2026-11-16T00:23:11.360692+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,14 +9,33 @@
       "index": 0,
       "home": "New York Knicks",
       "away": "Toronto Raptors",
-      "state": "unverified"
+      "state": "live",
+      "score": "8",
+      "player_points": 8,
+      "points_line": 25.5,
+      "period": 2,
+      "game_clock": "0.0",
+      "source": "espn-public-unofficial",
+      "event_id": "401909990",
+      "player_id": "3934672",
+      "sport": "basketball"
     },
     {
       "ticket": "C",
       "index": 1,
       "home": "Utah Jazz",
       "away": "San Antonio Spurs",
-      "state": "unverified"
+      "state": "final",
+      "score": "17",
+      "player_points": 17,
+      "points_line": 18.5,
+      "period": null,
+      "game_clock": "",
+      "source": "espn-public-unofficial",
+      "event_id": "401909988",
+      "player_id": "5041955",
+      "sport": "basketball",
+      "result_status": "promašen"
     }
   ],
   "bank_unchanged": true
