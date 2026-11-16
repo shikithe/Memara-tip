@@ -1,6 +1,9 @@
 name: MemaraSix unified NBA C preparation
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'collector-output/nba-manual-trigger.txt'
   schedule:
     # Every ten minutes; local 12:00-14:59 Sarajevo gate controls execution.
     # Delayed/dropped GitHub schedule checks have further retry opportunities.
@@ -37,6 +40,10 @@ jobs:
           local=datetime.now(sar)
           reason="ready"
           allowed=os.environ["EVENT_NAME"]=="workflow_dispatch" or (12<=local.hour<=14)
+          # One-off push trigger only for the requested Sarajevo date.
+          if os.environ["EVENT_NAME"]=="push":
+              marker=Path("collector-output/nba-manual-trigger.txt")
+              allowed=marker.exists() and marker.read_text(encoding="utf-8").strip()=="2026-11-16" and local.date().isoformat()=="2026-11-16"
           if not allowed:
               reason="before_noon_sarajevo"
           # Daily date deduplication, NOT a 3-hour freshness rule.
