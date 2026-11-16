@@ -1,8 +1,5 @@
-name: MEMARA NBA daily list cleanup 11:45
+name: MEMARA NBA emergency manual cleanup
 on:
-  schedule:
-    # Europe/Sarajevo: 11:45 CET / CEST
-    - cron: '45 9,10 * * *'
   workflow_dispatch:
 permissions:
   contents: write

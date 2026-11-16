@@ -8,7 +8,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: memarasix-unified-c-preparation
+  group: memara-nba-24h
   cancel-in-progress: false
 jobs:
   prepare:
@@ -59,6 +59,18 @@ jobs:
         run: |
           python -m py_compile collector_nba_24h.py sync_nba_free.py sync_nba_points.py memara_enrich_nba_props.py ticket_c_screening.py
           python -m unittest -v test_nba_odds_quota.py
+      - name: Clear all previous NBA offers BEFORE collecting
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -p test_nba_clear_before_collect.py -v
+          python nba_clear_before_collect.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- collector-output/nba-next-24h.json collector-output/nba-player-points.json collector-output/nba-analysis-ready.json collector-output/ticket-c-research.json collector-output/nba-free-statistics.json
+          git commit -m "data: clear existing NBA offers before collection [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
       - name: Fetch upcoming NBA fixtures
         if: steps.gate.outputs.run == 'true'
         run: python collector_nba_24h.py --hours 24 --output collector-output/nba-next-24h.json

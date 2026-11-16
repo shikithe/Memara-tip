@@ -7,7 +7,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: memara-nba-props
+  group: memara-nba-24h
   cancel-in-progress: false
 jobs:
   sync:

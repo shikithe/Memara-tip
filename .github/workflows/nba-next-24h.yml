@@ -29,8 +29,19 @@ jobs:
           import os
           from datetime import datetime
           from zoneinfo import ZoneInfo
-          local_hour = datetime.now(ZoneInfo('Europe/Sarajevo')).hour
-          ok = os.environ['EVENT_NAME'] == 'workflow_dispatch' or local_hour == 12
+          import json
+          from pathlib import Path
+          local = datetime.now(ZoneInfo('Europe/Sarajevo'))
+          ok = os.environ['EVENT_NAME'] == 'workflow_dispatch' or local.hour == 12
+          if ok and os.environ['EVENT_NAME'] == 'schedule':
+              try:
+                  last = json.loads(Path('collector-output/nba-next-24h.json').read_text())
+                  stamp = datetime.fromisoformat(last['collected_at_utc'].replace('Z','+00:00'))
+                  if stamp.astimezone(ZoneInfo('Europe/Sarajevo')).date() == local.date() and last.get('status') == 'ok':
+                      ok = False
+                      print('NBA_PRECOLLECT_SKIP already collected successfully today')
+              except (OSError,KeyError,ValueError,TypeError):
+                  pass
           with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
               print('run=' + str(ok).lower(), file=f)
           print('Sarajevo local hour:', local_hour, 'Run:', ok)
@@ -38,6 +49,18 @@ jobs:
       - name: Verify Python syntax
         if: steps.clock.outputs.run == 'true'
         run: python -m py_compile collector_nba_24h.py nba_analysis_merge.py
+      - name: Clear all previous NBA offers BEFORE collecting
+        if: steps.clock.outputs.run == 'true'
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -p test_nba_clear_before_collect.py -v
+          python nba_clear_before_collect.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- collector-output/nba-next-24h.json collector-output/nba-player-points.json collector-output/nba-analysis-ready.json collector-output/ticket-c-research.json collector-output/nba-free-statistics.json
+          git commit -m "data: clear existing NBA offers before collection [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
       - name: Fetch NBA games and team rosters
         if: steps.clock.outputs.run == 'true'
         run: python collector_nba_24h.py --hours 24 --output collector-output/nba-next-24h.json
@@ -81,5 +104,6 @@ jobs:
           git add collector-output/nba-next-24h.json collector-output/nba-analysis-ready.json
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh NBA next-24h candidate snapshot"
-            git push
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
