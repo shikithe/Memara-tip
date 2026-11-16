@@ -1,0 +1,85 @@
+name: Expire yesterday's public NBA player-point offers
+on:
+  workflow_dispatch:
+  schedule:
+    # 08:59 Europe/Sarajevo on both CET and CEST. Recovery checks absorb
+    # delayed GitHub cron delivery; never erase a same-day Scout publication.
+    - cron: '59 6,7 * * *'
+    - cron: '15,45 7,8 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: nba-public-points-expiry
+  cancel-in-progress: false
+jobs:
+  expire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Clear prior-day public NBA points quote list, not tickets
+        id: expiry
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          now = datetime.now(ZoneInfo("Europe/Sarajevo"))
+          hm = now.hour * 100 + now.minute
+          if os.environ.get("EVENT_NAME") == "schedule" and not (859 <= hm <= 1159):
+              print("NBA_POINTS_EXPIRY_SKIP_OUTSIDE_LOCAL_WINDOW", now.isoformat())
+              with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                  f.write("changed=false\n")
+              raise SystemExit(0)
+          path = Path("collector-output/nba-public-points-offers.json")
+          if not path.exists():
+              print("NBA_POINTS_EXPIRY_SKIP_MISSING")
+              with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                  f.write("changed=false\n")
+              raise SystemExit(0)
+          data = json.loads(path.read_text(encoding="utf-8"))
+          today = now.date().isoformat()
+          if str(data.get("source_date", "")) >= today:
+              print("NBA_POINTS_EXPIRY_SKIP_ALREADY_TODAY", data.get("source_date"))
+              with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                  f.write("changed=false\n")
+              raise SystemExit(0)
+          expired = {
+              "schema_version": "1.0",
+              "source_date": today,
+              "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+              "status": "awaiting_daily_scout_refresh",
+              "game_count": 0,
+              "player_offer_count": 0,
+              "publication_allowed": False,
+              "coverage_note": "Previous public NBA point props expired. Awaiting the independent AI Scout analysis.",
+              "offers": []
+          }
+          path.write_text(json.dumps(expired, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write("changed=true\n")
+          print("NBA_POINTS_EXPIRED", today, "previous=", data.get("source_date"))
+          PY
+      - name: Publish expiry so Kvoter shows no stale NBA quotes
+        if: steps.expiry.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- collector-output/nba-public-points-offers.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: expire previous NBA public odds before daily collection [skip ci]'
+            for attempt in 1 2 3 4 5; do
+              if git pull --rebase origin main && git push origin HEAD:main; then
+                exit 0
+              fi
+              sleep 5
+            done
+            exit 1
+          fi
