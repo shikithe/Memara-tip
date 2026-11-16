@@ -1,8 +1,8 @@
 {
   "date": "2026-11-16",
   "ticket_id": "C",
-  "state": "scout_selection_prepared_pending_direct_bookmaker_quotes_and_final_availability",
-  "publication_allowed": false,
+  "state": "approved_by_ai_for_technical_publication_on_user_instruction",
+  "publication_allowed": true,
   "selection_method": "all_106_points_candidates_screened_then_injury_h2h_minutes_opponent_cross-check",
   "legs": [
     {
@@ -15,9 +15,9 @@
       "market": "player_points",
       "pick": "over",
       "points_line": 13.5,
-      "odd": 1.87,
-      "quote_american": "-115",
-      "reference_bookmaker": "BetMGM / Hard Rock Bet",
+      "odd": 1.88,
+      "quote_american": "-114",
+      "reference_bookmaker": "FanDuel",
       "source": "https://betsharp.com/nba/player/davion-mitchell",
       "other_source": "https://linesmart.app/nba/props/davion-mitchell/",
       "quote_timestamp_verified": false,
@@ -42,15 +42,15 @@
       "review": "L5 4/5, L10 7/10, last5 minutes38.2, Banchero out; risk vs BOS only1/5; price not directly confirmed with sportsbook"
     }
   ],
-  "combined_odds": 3.5,
-  "price_precision": "indicative_decimals rounded to 1.87 each from American -115; real multiplication 3.4963; not directly executable/book-verified",
+  "combined_odds": 3.52,
+  "price_precision": "Public comparison quotes rechecked Nov16: FanDuel -114 =1.877... (display 1.88), Hard Rock Bet -115 =1.869... (display 1.87); 1.88 *1.87=3.5156 rounds 3.52; no bookmaker-session verification.",
   "analysis_file": "collector-output/ticket-c-scout-audit-2026-11-16.json",
   "notes": [
     "All 106 quote+line candidates screened, 2 best selected after extra verification; available comparison lines may change",
     "Franz H2H caution: only 1 of last 5 above line against Boston",
     "Davion H2H 1/2 vs Houston; 37.4 mins recent, 5/5 recent form",
     "Both start around 01:00-01:30 Sarajevo Nov 17; confirm lineup and quotes directly before approval",
-    "Do not alter memarasix-1455-approved.json, data.json or bank until explicitly approved and market reverified"
+    "User explicitly approved immediate technical-only GitHub publication Nov16; no direct bookmaker account odds verification."
   ],
   "sources": [
     "https://www.shoulditaketheover.com/nba/player-props-today/",
