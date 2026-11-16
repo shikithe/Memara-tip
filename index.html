@@ -70,6 +70,8 @@ function localOfferDate(){return new Intl.DateTimeFormat('en-CA',{timeZone:'Euro
 function dailyDisplayData(data,target){
   // Display-only rollover: never alter persisted tickets, bank or settlement.
   if(target==="archiveOut"||!data||!data.settled||data.date>=localOfferDate())return data;
+  // Never hide a previously settled ticket before atomic rollover archives it.
+  if(Array.isArray(data.tickets)&&data.tickets.length)return data;
   return {...data,date:localOfferDate(),published:"Čeka se današnja ponuda",publication_type:"awaiting_daily_publication",tickets:[],bank_before:data.bank_after,daily_stake:0,total_payout:0,analysis_status:"Jučerašnja ponuda je završena i dostupna u arhivi. Čeka se nova objava."};
 }
 // Reconcile browser-confirmed WINN with the displayed virtual balance immediately.

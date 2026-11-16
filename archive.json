@@ -3162,5 +3162,99 @@
     "selection_method": "Ručni izbor A/B; verifikacija ESPN fixture ID, Kvoter uparivanja i tačnih jutarnjih kladioničarskih kvota.",
     "source_fixture_feed": "shikithe/Slavojka/shared/active-list.json 2026-11-08",
     "source_statistics_research": "shikithe/Slavojka/shared/agent/analysis-brief.json 2026-11-08 (ESPN last-five, 45 fixtures); FotMob izostanci Union/Genk i Brest/Lyon"
+  },
+  {
+    "date": "2026-11-15",
+    "published": "15.11.2026. u 18:59 (Europe/Sarajevo)",
+    "published_at_utc": "2026-11-15T17:59:06.777680+00:00",
+    "publication_type": "independent_ai_approved_github_nba_c",
+    "bank_before": 230.8,
+    "daily_budget": 23.08,
+    "daily_stake": 2.31,
+    "bank_after_stakes": 228.49,
+    "bank_after": 228.49,
+    "provisional": false,
+    "settled": true,
+    "odds_verified": false,
+    "odds_verification_note": "AI selected publicly displayed bookmaker comparison quotes; not independently refreshed by GitHub or confirmed in individual bookmaker accounts.",
+    "bank_basis_note": "Današnji budžet polazi od zaključenog stanja 07.11.2026. od 214,56 EUR; zbog nedostajuće evidencije za 06.11.2026. virtuelni saldo je označen kao provizoran.",
+    "tickets": [
+      {
+        "id": "C",
+        "label": "NBA · DVA IGRAČA",
+        "matches": [
+          {
+            "fixture_id": "espn:basketball:nba:401909990:3934672",
+            "event_id": "401909990",
+            "espn_event_id": "401909990",
+            "player_id": "3934672",
+            "player": "Jalen Brunson",
+            "home": "New York Knicks",
+            "away": "Toronto Raptors",
+            "team": "New York Knicks",
+            "opponent": "Toronto Raptors",
+            "league": "nba",
+            "sport": "basketball",
+            "datetime": "2026-11-15T23:00:00+00:00",
+            "start_utc": "2026-11-15T23:00:00+00:00",
+            "market": "player_points",
+            "points_line": 25.5,
+            "pick": "over",
+            "market_name": "Više od 25.5 poena",
+            "odd": 1.92,
+            "bookmaker": "Unibet",
+            "quote_source_url": "https://www.haterpicks.app/us/odds/nba/new-york-knicks-vs-toronto-raptors",
+            "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+            "quote_timestamp_verified": false
+          },
+          {
+            "fixture_id": "espn:basketball:nba:401909988:5041955",
+            "event_id": "401909988",
+            "espn_event_id": "401909988",
+            "player_id": "5041955",
+            "player": "Darryn Peterson",
+            "home": "Utah Jazz",
+            "away": "San Antonio Spurs",
+            "team": "Utah Jazz",
+            "opponent": "San Antonio Spurs",
+            "league": "nba",
+            "sport": "basketball",
+            "datetime": "2026-11-15T22:00:00+00:00",
+            "start_utc": "2026-11-15T22:00:00+00:00",
+            "market": "player_points",
+            "points_line": 18.5,
+            "pick": "over",
+            "market_name": "Više od 18.5 poena",
+            "odd": 1.87,
+            "bookmaker": "Ladbrokes",
+            "quote_source_url": "https://www.haterpicks.app/us/odds/nba/san-antonio-spurs-vs-utah-jazz",
+            "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+            "quote_timestamp_verified": false,
+            "result_status": "promašen",
+            "final_points": 17
+          }
+        ],
+        "odds": 3.59,
+        "stake": 2.31,
+        "status": "izgubljen",
+        "payout": 0,
+        "analysis": "Odabrana su dva NBA igraca na osnovu javnih kladionicarskih kvota i pregledane forme te odbrane protivnika. Jalen Brunson ima povoljan odnos zadnjih pet utakmica i granice 25.5; Darryn Peterson ima pet uzastopnih prelazaka granice 18.5 uz rizik povrede. Kvote su zabiljezene na javnom poredjenju i mogu se promijeniti; nisu direktno potvrdene kod kladionice. Ovo nije siguran ishod.",
+        "settled_at_utc": "2026-11-16T00:23:11.360692+00:00"
+      }
+    ],
+    "pending_ticket_statuses": {
+      "C": "objavljen"
+    },
+    "pending_ticket_reasons": {
+      "A": "",
+      "B": "",
+      "C": "Nije pripremljen nezavisan tiket C sa odgovarajućim kvotama i analizom."
+    },
+    "total_payout": 0,
+    "net_change": -2.31,
+    "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
+    "selection_method": "Ručni izbor A/B; verifikacija ESPN fixture ID, Kvoter uparivanja i tačnih jutarnjih kladioničarskih kvota.",
+    "source_fixture_feed": "shikithe/Slavojka/shared/active-list.json 2026-11-08",
+    "source_statistics_research": "shikithe/Slavojka/shared/agent/analysis-brief.json 2026-11-08 (ESPN last-five, 45 fixtures); FotMob izostanci Union/Genk i Brest/Lyon"
   }
 ]
