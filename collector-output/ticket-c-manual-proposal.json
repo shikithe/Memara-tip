@@ -1,10 +1,28 @@
 {
   "date": "2026-11-16",
   "ticket_id": "C",
-  "state": "independent_ai_researched_draft_pending_final_market_check",
+  "state": "scout_selection_prepared_pending_direct_bookmaker_quotes_and_final_availability",
   "publication_allowed": false,
-  "selection_method": "NBA next24h ESPN roster + November 16 public lines + last games, injuries and matchup review",
+  "selection_method": "all_106_points_candidates_screened_then_injury_h2h_minutes_opponent_cross-check",
   "legs": [
+    {
+      "player": "Davion Mitchell",
+      "player_id": "4278053",
+      "espn_event_id": "401909998",
+      "team": "Miami Heat",
+      "opponent": "Houston Rockets",
+      "start_utc": "2026-11-17T00:30:00+00:00",
+      "market": "player_points",
+      "pick": "over",
+      "points_line": 13.5,
+      "odd": 1.87,
+      "quote_american": "-115",
+      "reference_bookmaker": "BetMGM / Hard Rock Bet",
+      "source": "https://betsharp.com/nba/player/davion-mitchell",
+      "other_source": "https://linesmart.app/nba/props/davion-mitchell/",
+      "quote_timestamp_verified": false,
+      "review": "L5 5/5, L10 8/10, last5 minutes37.4; opponent 9th softest vs guards, H2H1/2; source price based on public comparison not book verification"
+    },
     {
       "player": "Franz Wagner",
       "player_id": "4566434",
@@ -14,97 +32,33 @@
       "start_utc": "2026-11-17T00:00:00+00:00",
       "market": "player_points",
       "pick": "over",
-      "points_line": 20.5,
-      "odd": 1.813,
-      "american_quote": "-123",
-      "bookmaker": "DraftKings",
-      "source": "https://www.shoulditaketheover.com/nba/players/franz-wagner/",
-      "quote_timestamp_verified": false,
-      "recent_four_points": [
-        35,
-        38,
-        33,
-        30
-      ],
-      "recent_four_over": 4,
-      "recent_ten_over": 7,
-      "recent_ten_sample": 10,
-      "avg_last_five": 30.2,
-      "season_avg": 24.4,
-      "last_five_minutes": 38.2,
-      "opponent_notes": "Boston was described as 6th-softest points defense vs forwards in one position-based model; previous Nov 1 meeting resulted in only 14 points.",
-      "injury_context": "Paolo Banchero out with ankle injury, Franz not listed out on verified team injury overview.",
-      "risks": [
-        "Boston defensive matchup and blowout risk",
-        "Player availability and official starting lineup require game-time confirmation",
-        "Market quote not verified directly with sportsbook"
-      ]
-    },
-    {
-      "player": "Zion Williamson",
-      "player_id": "4395628",
-      "espn_event_id": "401910000",
-      "team": "New Orleans Pelicans",
-      "opponent": "Golden State Warriors",
-      "start_utc": "2026-11-17T01:00:00+00:00",
-      "market": "player_points",
-      "pick": "over",
       "points_line": 21.5,
-      "odd": 1.82,
-      "american_quote": "-122",
-      "bookmaker": "DraftKings",
-      "source": "https://betsharp.com/nba/player/zion-williamson",
+      "odd": 1.87,
+      "quote_american": "-115",
+      "reference_bookmaker": "Hard Rock Bet",
+      "source": "https://linesmart.app/nba/props/franz-wagner/",
+      "other_source": "https://oddsloft.com/nba/players/franz-wagner/props",
       "quote_timestamp_verified": false,
-      "recent_four_points": [
-        24,
-        22,
-        29,
-        25
-      ],
-      "recent_four_over": 4,
-      "recent_ten_over": 8,
-      "recent_ten_sample": 10,
-      "avg_last_ten": 22.3,
-      "last_five_minutes": 32.2,
-      "head_to_head_over_recent": "2/2 at 21.5 line per Oddsloft",
-      "injury_context": "Pelicans' team injury preview lists Trey Murphy III, Dejounte Murray and Bennedict Mathurin out; Zion not listed out.",
-      "risks": [
-        "Historical 8/10 rate not a probability forecast",
-        "Bookmaker quote can move before tipoff",
-        "Final active list and market need checking"
-      ]
+      "review": "L5 4/5, L10 7/10, last5 minutes38.2, Banchero out; risk vs BOS only1/5; price not directly confirmed with sportsbook"
     }
   ],
-  "combined_odds": 3.3,
-  "price_precision": "indicative_public_comparison_not_live_bookmaker_verified",
-  "research_summary": "Research shortlist of 278 ESPN roster candidates across 8 NBA fixtures, narrowed using public points markets and verifiable trends. Franz Wagner over 20.5: 35/38/33/30 in most recent four games and Banchero absent; risk last Boston meeting 14 points. Zion Williamson over 21.5: 24/22/29/25 in latest four, 8 of 10 over threshold; several NOP scoring teammates absent. Two picks selected as research draft only because our NBA quote collector remains empty; neither an exchange quote nor archived comparison quote proves current executable odds.",
-  "alternatives": [
-    {
-      "player": "Tyrese Maxey",
-      "market": "player_points",
-      "points_line": 25.5,
-      "reason": "Last four games 27,27,24,27, but the 76ers are on a back-to-back and Nets matchup history is 1/3 at threshold; odds near 1.9 may not justify risk."
-    },
-    {
-      "player": "Dillon Brooks",
-      "market": "player_points",
-      "points_line": 15.5,
-      "pick": "under",
-      "reason": "Last five average 8.4, but high volatility and changes in lineup make it a secondary candidate."
-    }
+  "combined_odds": 3.5,
+  "price_precision": "indicative_decimals rounded to 1.87 each from American -115; real multiplication 3.4963; not directly executable/book-verified",
+  "analysis_file": "collector-output/ticket-c-scout-audit-2026-11-16.json",
+  "notes": [
+    "All 106 quote+line candidates screened, 2 best selected after extra verification; available comparison lines may change",
+    "Franz H2H caution: only 1 of last 5 above line against Boston",
+    "Davion H2H 1/2 vs Houston; 37.4 mins recent, 5/5 recent form",
+    "Both start around 01:00-01:30 Sarajevo Nov 17; confirm lineup and quotes directly before approval",
+    "Do not alter memarasix-1455-approved.json, data.json or bank until explicitly approved and market reverified"
   ],
   "sources": [
-    "https://www.shoulditaketheover.com/nba/players/franz-wagner/",
     "https://www.shoulditaketheover.com/nba/player-props-today/",
-    "https://betsharp.com/nba/player/zion-williamson",
-    "https://oddsloft.com/nba/players/zion-williamson/props",
-    "https://www.nba.com/pelicans/news/pelicans-vs-warriors-injury-report-game-preview-11-16-2026",
-    "https://foxsports979.iheart.com/content/2026-11-16-magic-vs-celtics-injury-report-nov-16/"
-  ],
-  "caveats": [
-    "No live odds verified at the sportsbook",
-    "Actual playing status must be checked immediately before kickoff",
-    "Draft does not publish a ticket or alter bank",
-    "Published tickets and approval JSON must remain unchanged"
+    "https://www.haterpicks.app/us/nba/player-props",
+    "https://oddsloft.com/nba/players/davion-mitchell/props",
+    "https://oddsloft.com/nba/players/franz-wagner/props",
+    "https://linesmart.app/nba/props/franz-wagner/",
+    "https://betsharp.com/nba/player/davion-mitchell",
+    "https://official.nba.com/nba-injury-report-2026-27-season"
   ]
 }
