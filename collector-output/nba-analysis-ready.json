@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at_utc": "2026-11-16T16:19:00+00:00",
+  "generated_at_utc": "2026-11-16T19:06:33.886509+00:00",
   "fixture_snapshot_utc": null,
   "odds_snapshot_utc": null,
   "game_count": 0,
@@ -10,5 +10,5 @@
   "odds_status": "awaiting_daily_refresh",
   "analysis_status": "awaiting_valid_odds",
   "publication_allowed": false,
-  "cleared_at_utc": "2026-11-16T16:19:00+00:00"
+  "cleared_at_utc": "2026-11-16T19:06:33.886509+00:00"
 }
