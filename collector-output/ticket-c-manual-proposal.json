@@ -1,49 +1,110 @@
 {
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "ticket_id": "C",
-  "state": "manual_selection_pending_publication_checks",
+  "state": "independent_ai_researched_draft_pending_final_market_check",
   "publication_allowed": false,
-  "selection_method": "independent_ai_analysis_public_quoted_source",
+  "selection_method": "NBA next24h ESPN roster + November 16 public lines + last games, injuries and matchup review",
   "legs": [
     {
-      "player": "Jalen Brunson",
-      "player_id": "3934672",
-      "espn_event_id": "401909990",
-      "match": "New York Knicks - Toronto Raptors",
+      "player": "Franz Wagner",
+      "player_id": "4566434",
+      "espn_event_id": "401909994",
+      "team": "Orlando Magic",
+      "opponent": "Boston Celtics",
+      "start_utc": "2026-11-17T00:00:00+00:00",
       "market": "player_points",
       "pick": "over",
-      "points_line": 25.5,
-      "odd": 1.92,
-      "bookmaker": "Unibet",
-      "source": "https://www.haterpicks.app/us/odds/nba/new-york-knicks-vs-toronto-raptors",
-      "quote_observation": "public_page_rechecked_2026-11-15",
-      "individual_bookmaker_quote_timestamp_verified": false,
-      "team": "New York Knicks",
-      "opponent": "Toronto Raptors",
-      "start_utc": "2026-11-15T23:00:00+00:00"
+      "points_line": 20.5,
+      "odd": 1.813,
+      "american_quote": "-123",
+      "bookmaker": "DraftKings",
+      "source": "https://www.shoulditaketheover.com/nba/players/franz-wagner/",
+      "quote_timestamp_verified": false,
+      "recent_four_points": [
+        35,
+        38,
+        33,
+        30
+      ],
+      "recent_four_over": 4,
+      "recent_ten_over": 7,
+      "recent_ten_sample": 10,
+      "avg_last_five": 30.2,
+      "season_avg": 24.4,
+      "last_five_minutes": 38.2,
+      "opponent_notes": "Boston was described as 6th-softest points defense vs forwards in one position-based model; previous Nov 1 meeting resulted in only 14 points.",
+      "injury_context": "Paolo Banchero out with ankle injury, Franz not listed out on verified team injury overview.",
+      "risks": [
+        "Boston defensive matchup and blowout risk",
+        "Player availability and official starting lineup require game-time confirmation",
+        "Market quote not verified directly with sportsbook"
+      ]
     },
     {
-      "player": "Darryn Peterson",
-      "player_id": "5041955",
-      "espn_event_id": "401909988",
-      "match": "Utah Jazz - San Antonio Spurs",
+      "player": "Zion Williamson",
+      "player_id": "4395628",
+      "espn_event_id": "401910000",
+      "team": "New Orleans Pelicans",
+      "opponent": "Golden State Warriors",
+      "start_utc": "2026-11-17T01:00:00+00:00",
       "market": "player_points",
       "pick": "over",
-      "points_line": 18.5,
-      "odd": 1.87,
-      "bookmaker": "Ladbrokes",
-      "source": "https://www.haterpicks.app/us/odds/nba/san-antonio-spurs-vs-utah-jazz",
-      "quote_observation": "public_page_rechecked_2026-11-15",
-      "individual_bookmaker_quote_timestamp_verified": false,
-      "team": "Utah Jazz",
-      "opponent": "San Antonio Spurs",
-      "start_utc": "2026-11-15T22:00:00+00:00"
+      "points_line": 21.5,
+      "odd": 1.82,
+      "american_quote": "-122",
+      "bookmaker": "DraftKings",
+      "source": "https://betsharp.com/nba/player/zion-williamson",
+      "quote_timestamp_verified": false,
+      "recent_four_points": [
+        24,
+        22,
+        29,
+        25
+      ],
+      "recent_four_over": 4,
+      "recent_ten_over": 8,
+      "recent_ten_sample": 10,
+      "avg_last_ten": 22.3,
+      "last_five_minutes": 32.2,
+      "head_to_head_over_recent": "2/2 at 21.5 line per Oddsloft",
+      "injury_context": "Pelicans' team injury preview lists Trey Murphy III, Dejounte Murray and Bennedict Mathurin out; Zion not listed out.",
+      "risks": [
+        "Historical 8/10 rate not a probability forecast",
+        "Bookmaker quote can move before tipoff",
+        "Final active list and market need checking"
+      ]
     }
   ],
-  "combined_odds": 3.59,
-  "notes": [
-    "Quotes were independently observed on publicly accessible sportsbook-comparison pages and are not fabricated.",
-    "Source quotes are best publicly displayed prices, which may not be available to the user or unchanged at the bookmaker.",
-    "This file is a research draft only and does not trigger publication. Exact per-bookmaker quote update timestamps and participation confirmation missing."
+  "combined_odds": 3.3,
+  "price_precision": "indicative_public_comparison_not_live_bookmaker_verified",
+  "research_summary": "Research shortlist of 278 ESPN roster candidates across 8 NBA fixtures, narrowed using public points markets and verifiable trends. Franz Wagner over 20.5: 35/38/33/30 in most recent four games and Banchero absent; risk last Boston meeting 14 points. Zion Williamson over 21.5: 24/22/29/25 in latest four, 8 of 10 over threshold; several NOP scoring teammates absent. Two picks selected as research draft only because our NBA quote collector remains empty; neither an exchange quote nor archived comparison quote proves current executable odds.",
+  "alternatives": [
+    {
+      "player": "Tyrese Maxey",
+      "market": "player_points",
+      "points_line": 25.5,
+      "reason": "Last four games 27,27,24,27, but the 76ers are on a back-to-back and Nets matchup history is 1/3 at threshold; odds near 1.9 may not justify risk."
+    },
+    {
+      "player": "Dillon Brooks",
+      "market": "player_points",
+      "points_line": 15.5,
+      "pick": "under",
+      "reason": "Last five average 8.4, but high volatility and changes in lineup make it a secondary candidate."
+    }
+  ],
+  "sources": [
+    "https://www.shoulditaketheover.com/nba/players/franz-wagner/",
+    "https://www.shoulditaketheover.com/nba/player-props-today/",
+    "https://betsharp.com/nba/player/zion-williamson",
+    "https://oddsloft.com/nba/players/zion-williamson/props",
+    "https://www.nba.com/pelicans/news/pelicans-vs-warriors-injury-report-game-preview-11-16-2026",
+    "https://foxsports979.iheart.com/content/2026-11-16-magic-vs-celtics-injury-report-nov-16/"
+  ],
+  "caveats": [
+    "No live odds verified at the sportsbook",
+    "Actual playing status must be checked immediately before kickoff",
+    "Draft does not publish a ticket or alter bank",
+    "Published tickets and approval JSON must remain unchanged"
   ]
 }
