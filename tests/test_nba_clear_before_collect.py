@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from datetime import datetime,timezone
-from nba_clear_before_collect import clear,ACTIVE_SNAPSHOTS
+from nba_clear_before_collect import clear,verify,ACTIVE_SNAPSHOTS
 
 class NbaPrecollectionResetTests(unittest.TestCase):
     def test_clear_only_nba_active_offers(self):
@@ -25,7 +25,22 @@ class NbaPrecollectionResetTests(unittest.TestCase):
                 self.assertEqual(state.get("offers",[]),[])
                 self.assertFalse(state["publication_allowed"])
                 self.assertEqual(state["cleared_at_utc"],"2026-11-16T11:00:00+00:00")
+            self.assertEqual(verify(root,now=datetime(2026,11,16,11,0,tzinfo=timezone.utc)),"2026-11-16T11:00:00+00:00")
             self.assertEqual((root/"data.json").read_text(),'{"tickets":[{"id":"C"}]}')
             self.assertEqual((root/"archive.json").read_text(),'[{"date":"2026-11-15"}]')
             self.assertEqual((root/"collector-feed.json").read_text(),'{"football_candidates":[1]}')
+    def test_reject_partial_or_stale_clear(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)
+            clear(root,datetime(2026,11,15,11,0,tzinfo=timezone.utc))
+            with self.assertRaises(ValueError):
+                verify(root,now=datetime(2026,11,16,11,0,tzinfo=timezone.utc))
+            clear(root,datetime(2026,11,16,11,0,tzinfo=timezone.utc))
+            target=root/"collector-output/nba-player-points.json"
+            row=json.loads(target.read_text())
+            row["offers"]=[{"old":True}]
+            target.write_text(json.dumps(row))
+            with self.assertRaises(ValueError):
+                verify(root,now=datetime(2026,11,16,11,0,tzinfo=timezone.utc))
 if __name__=="__main__":unittest.main()
+

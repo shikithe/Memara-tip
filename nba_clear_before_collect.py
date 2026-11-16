@@ -7,6 +7,9 @@ Commit this cleared state BEFORE the network collector runs: a failed fetch
 must never leave yesterday's NBA offers looking usable.
 """
 import json
+import argparse
+import subprocess
+from zoneinfo import ZoneInfo
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -65,5 +68,54 @@ def clear(root=Path("."), now=None):
         target.write_text(json.dumps(states[name],ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     return [str(NBA_DIR/name) for name in ACTIVE_SNAPSHOTS]
 
-if __name__=="__main__":
-    for path in clear():print("NBA_PRECOLLECT_CLEAR",path)
+def verify(root=Path("."), ref=None, stamp=None, now=None):
+    """Require ALL five NBA source files to be empty on the same run stamp.
+
+    When ref is provided, read from the fetched Git ref, not the working tree:
+    the collector cannot begin until GitHub main has acknowledged the wipe.
+    """
+    now=now or datetime.now(timezone.utc)
+    expected_date=now.astimezone(ZoneInfo("Europe/Sarajevo")).date()
+    stamps=set()
+    for name in ACTIVE_SNAPSHOTS:
+        path=str(NBA_DIR/name)
+        if ref:
+            content=subprocess.check_output(["git","show",ref+":"+path],text=True)
+        else:
+            content=(Path(root)/path).read_text(encoding="utf-8")
+        data=json.loads(content)
+        if data.get("publication_allowed") is not False:
+            raise ValueError(path+" is publishable")
+        for key in ("games","players","offers","nba_player_candidates"):
+            if data.get(key):
+                raise ValueError(path+" still contains "+key)
+        if data.get("status") not in (None,"awaiting_daily_refresh"):
+            raise ValueError(path+" status is not cleared")
+        if data.get("analysis_status") not in (None,"awaiting_daily_refresh","awaiting_valid_odds","not_run"):
+            raise ValueError(path+" analysis not cleared")
+        mark=str(data.get("cleared_at_utc") or "")
+        if not mark: raise ValueError(path+" lacks cleared_at_utc")
+        parsed=datetime.fromisoformat(mark.replace("Z","+00:00"))
+        if parsed.tzinfo is None or parsed.astimezone(ZoneInfo("Europe/Sarajevo")).date()!=expected_date:
+            raise ValueError(path+" cleanup timestamp is not today")
+        stamps.add(mark)
+    if len(stamps)!=1:
+        raise ValueError("NBA files were not cleared in a single cleanup transaction")
+    found=next(iter(stamps))
+    if stamp and stamp!=found:
+        raise ValueError("GitHub cleanup differs from this run's cleanup")
+    return found
+
+def main():
+    p=argparse.ArgumentParser()
+    p.add_argument("--verify",action="store_true")
+    p.add_argument("--ref",default=None)
+    p.add_argument("--stamp",default=None)
+    args=p.parse_args()
+    if args.verify:
+        print("NBA_CLEANUP_CONFIRMED",verify(ref=args.ref,stamp=args.stamp))
+    else:
+        for path in clear():print("NBA_PRECOLLECT_CLEAR",path)
+
+if __name__=="__main__": main()
+

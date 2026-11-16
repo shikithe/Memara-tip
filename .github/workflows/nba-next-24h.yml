@@ -1,8 +1,5 @@
 name: MEMARA NBA next 24 hours
 on:
-  schedule:
-    # Europe/Sarajevo noon: 11:00 UTC in winter, 10:00 UTC in summer
-    - cron: '0 10,11 * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -44,23 +41,43 @@ jobs:
                   pass
           with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
               print('run=' + str(ok).lower(), file=f)
-          print('Sarajevo local hour:', local_hour, 'Run:', ok)
+          print('Sarajevo local hour:', local.hour, 'Run:', ok)
           PY
       - name: Verify Python syntax
         if: steps.clock.outputs.run == 'true'
         run: python -m py_compile collector_nba_24h.py nba_analysis_merge.py
-      - name: Clear all previous NBA offers BEFORE collecting
+      - name: Clear and COMMIT old NBA offers, retry branch conflicts
         if: steps.clock.outputs.run == 'true'
         run: |
           set -euo pipefail
           python -m unittest discover -s tests -p test_nba_clear_before_collect.py -v
           python nba_clear_before_collect.py
+          stamp="$(python nba_clear_before_collect.py --verify | awk '{print $2}')"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -- collector-output/nba-next-24h.json collector-output/nba-player-points.json collector-output/nba-analysis-ready.json collector-output/ticket-c-research.json collector-output/nba-free-statistics.json
-          git commit -m "data: clear existing NBA offers before collection [skip ci]"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          git commit -m "data: clear NBA before collecting [skip ci]"
+          published=false
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              published=true
+              break
+            fi
+            echo "NBA cleanup push conflict, attempt $attempt"
+            sleep 5
+          done
+          if [ "$published" != true ]; then
+            echo "::error::NBA cleanup could not be committed, collector blocked"
+            exit 1
+          fi
+          git fetch origin main
+          python nba_clear_before_collect.py --verify --ref origin/main --stamp "$stamp"
+          echo "NBA_CLEARANCE_CONFIRMED=true"
+      - name: Verify clearance before ESPN fetch
+        if: steps.clock.outputs.run == 'true'
+        run: |
+          git fetch origin main
+          python nba_clear_before_collect.py --verify --ref origin/main
       - name: Fetch NBA games and team rosters
         if: steps.clock.outputs.run == 'true'
         run: python collector_nba_24h.py --hours 24 --output collector-output/nba-next-24h.json
