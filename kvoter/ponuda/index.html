@@ -9,11 +9,11 @@ h1{font-size:19px;margin:0 0 6px}small{color:#b4c4d6}.status{padding:12px 16px;c
 thead{display:table-header-group}tbody{display:table-row-group}th{background:#243249;text-align:left;color:#b9d2ef;font-size:12px;position:static}
 td,th{padding:11px 8px;border-bottom:1px solid #2c3a4c;white-space:nowrap}
 td:nth-child(n+4),th:nth-child(n+4){text-align:right}td:nth-child(n+4){color:#a6e4b3;font-weight:600}
-tr:nth-child(even){background:#172131}.nba-heading{margin:6px 16px 4px;font-size:16px}.nba-scroll{overflow-x:auto;padding:0 8px 24px}.nba-table{min-width:750px}.nba-table td:nth-child(n+4),.nba-table th:nth-child(n+4){text-align:right}.nba-table td:nth-child(n+4){color:#a6e4b3;font-weight:600}.pending{color:#c4cbd5;font-size:12px}a{color:#9dc8ff}button{background:#2d5c91;color:white;border:0;border-radius:8px;padding:9px 13px;font-weight:600}
+tr:nth-child(even){background:#172131}.nba-heading{margin:6px 16px 4px;font-size:16px}.nba-scroll{overflow-x:auto;padding:0 8px 24px}.nba-table{min-width:750px}.nba-table td:nth-child(n+4),.nba-table th:nth-child(n+4){text-align:right}.nba-table td:nth-child(n+4){color:#a6e4b3;font-weight:600}.nba-filter{padding:5px 16px 12px;display:flex;align-items:center;flex-wrap:wrap;gap:10px}.nba-filter label{font-size:13px;color:#b4c4d6}.nba-filter input{background:#172235;color:#fff;border:1px solid #3b526c;border-radius:8px;padding:10px;max-width:260px;width:100%}.pending{color:#c4cbd5;font-size:12px}a{color:#9dc8ff}button{background:#2d5c91;color:white;border:0;border-radius:8px;padding:9px 13px;font-weight:600}
 </style></head><body>
-<header><h1>KVOTER · Dnevna kladioničarska ponuda</h1><small>1 · X · 2 · 3+ golova | Stvarne preuzete kvote, nisu uživo</small><div style="margin-top:10px"><button onclick="load();loadNBA()">Osvježi</button> &nbsp; <a href="../dnevna-lista.txt">TXT lista</a></div></header>
+<header><h1>KVOTER · Dnevna kladioničarska ponuda</h1><small>Fudbal · 1 / X / 2 / 3+ | NBA · javne referentne kvote za poene, nisu uživo</small><div style="margin-top:10px"><button onclick="load();loadNBA()">Osvježi</button> &nbsp; <a href="../dnevna-lista.txt">TXT lista</a></div></header>
 <div id="status" class="status">Učitavanje ponude…</div><div id="football-panel" class="scroll"><table><thead><tr><th>Br.</th><th>Datum / sat</th><th>Utakmica</th><th>1</th><th>X</th><th>2</th><th>3+</th><th>Izvor</th></tr></thead><tbody id="rows"></tbody></table></div>
-<h2 class="nba-heading">NBA · Igrači i kvote</h2><div class="nba-scroll"><table class="nba-table"><thead><tr><th>Br.</th><th>Datum / sat</th><th>Utakmica</th><th>Igrač</th><th>Igra</th><th>Granica</th><th>Više</th><th>Manje</th></tr></thead><tbody id="nba-rows"></tbody></table></div><div id="nba-status" class="status">Učitavanje NBA ponude…</div>
+<h2 class="nba-heading">NBA · Poeni igrača i kvote</h2><div class="nba-filter"><label for="nba-search">Pretraži igrača ili tim:</label> <input id="nba-search" type="search" placeholder="Ime igrača / tim" autocomplete="off"></div><div class="nba-scroll"><table class="nba-table"><thead><tr><th>Br.</th><th>Datum / sat</th><th>Utakmica</th><th>Igrač</th><th>Igra</th><th>Granica</th><th>Više</th><th>Manje</th></tr></thead><tbody id="nba-rows"></tbody></table></div><div id="nba-status" class="status">Učitavanje NBA ponude…</div>
 <script>
 async function load(){
  const status=document.getElementById('status'),body=document.getElementById('rows');status.textContent='Učitavanje…';body.replaceChildren();
@@ -39,20 +39,40 @@ function localTime(value){const d=new Date(value);return Number.isNaN(d.getTime(
 function odds(value){const n=Number(value);return Number.isFinite(n)&&n>1?n.toFixed(2).replace('.',','):'—'}
 async function loadNBA(){
  const status=document.getElementById('nba-status'),body=document.getElementById('nba-rows');
+ const search=document.getElementById('nba-search');
  status.textContent='Učitavanje NBA ponude…';body.replaceChildren();
  try{
-  const res=await fetch('../../collector-output/nba-analysis-ready.json?t='+Date.now(),{cache:'no-store'});
-  if(!res.ok)throw Error('NBA analitička lista nije dostupna.');
-  const data=await res.json();
-  const offers=Array.isArray(data.offers)?data.offers.filter(o=>o&&['points','rebounds'].includes(o.market)&&o.player&&o.start_utc):[];
+  // The ChatGPT Scout analyst publishes the public-market snapshot independently
+  // of the Odds API collector. Do not confuse it with verified executable quotes.
+  let res=await fetch('../../collector-output/nba-public-points-offers.json?t='+Date.now(),{cache:'no-store'});
+  let data;
+  if(res.ok){data=await res.json();}
+  else{
+   res=await fetch('../../collector-output/nba-analysis-ready.json?t='+Date.now(),{cache:'no-store'});
+   if(!res.ok)throw Error('Nema objavljene NBA ponude.');
+   data=await res.json();
+  }
+  let offers=Array.isArray(data.offers)?data.offers.filter(o=>o&&['points','rebounds'].includes(o.market)&&o.player&&o.start_utc&&Number(o.over_odds)>1&&Number(o.under_odds)>1):[];
+  // Keep only offers for a recently collected slate with a future tipoff.
+  const now=Date.now(), captured=Date.parse(data.generated_at_utc||'');
+  if(!Number.isFinite(captured)||captured>now+5*60*1000||now-captured>26*60*60*1000)offers=[];
+  offers=offers.filter(o=>Date.parse(o.start_utc)>now);
   offers.sort((a,b)=>String(a.start_utc).localeCompare(String(b.start_utc))||String(a.player).localeCompare(String(b.player))||String(a.market).localeCompare(String(b.market)));
-  offers.forEach((o,i)=>{
-   const tr=document.createElement('tr');
-   const values=[String(i+1).padStart(2,'0'),localTime(o.start_utc),o.team+' – '+o.opponent,o.player,o.market==='points'?'Poeni':'Skokovi',String(o.line??o.points_line??o.rebounds_line??'—').replace('.',','),odds(o.over_odds),odds(o.under_odds)];
-   values.forEach(v=>{const td=document.createElement('td');td.textContent=v;tr.append(td)});body.append(tr);
-  });
-  const date=data.source_date||((data.generated_at_utc||'').slice(0,10))||'nepoznat datum';
-  status.textContent=offers.length?'Ukupno '+offers.length+' NBA linija · izvor '+date+' · kvote nisu uživo.':'Trenutno nema NBA kvota.';
+  const render=()=>{
+   body.replaceChildren();
+   const query=(search.value||'').trim().toLocaleLowerCase('bs');
+   const visible=offers.filter(o=>!query||[o.player,o.team,o.opponent].some(v=>String(v||'').toLocaleLowerCase('bs').includes(query)));
+   visible.forEach((o,i)=>{
+    const tr=document.createElement('tr');
+    const values=[String(i+1).padStart(2,'0'),localTime(o.start_utc),o.team+' – '+o.opponent,o.player,o.market==='points'?'Poeni':'Skokovi',String(o.line??o.points_line??o.rebounds_line??'—').replace('.',','),odds(o.over_odds),odds(o.under_odds)];
+    values.forEach(v=>{const td=document.createElement('td');td.textContent=v;tr.append(td)});
+    if(o.selected_for_ticket_c)tr.title='Izabran za tiket C';
+    body.append(tr);
+   });
+   const date=data.source_date||((data.generated_at_utc||'').slice(0,10))||'nepoznat datum';
+   status.textContent=offers.length?'NBA · '+offers.length+' igrača sa granicom i obje kvote · ponuda '+date+' · '+visible.length+' prikazano. Javne uporedne kvote, nisu uživo niti direktno potvrđene u kladionici.':'Trenutno nema važeće NBA ponude sa obje kvote.';
+  };
+  search.oninput=render;render();
  }catch(e){status.textContent='NBA ponuda nije dostupna. '+e.message;}
 }
 load();loadNBA();
