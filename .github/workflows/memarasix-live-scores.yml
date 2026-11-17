@@ -15,6 +15,10 @@ on:
     - cron: '*/5 * * * *'
     # Offset fallback if GitHub queues or drops primary scheduled checks
     - cron: '2-59/15 * * * *'
+    # Low-frequency after-game finalization backups (GitHub may drop burst schedules).
+    # 03:17-07:17 UTC covers completed US-night NBA games and guarantees a
+    # separate independent opportunity to settle before Sarajevo morning review.
+    - cron: '17 3-7 * * *'
 permissions:
   contents: write
 concurrency:
