@@ -6,7 +6,7 @@
   "daily_stake": 2.29,
   "bank_after": 226.2,
   "bank_after_stakes": 226.2,
-  "provisional": false,
+  "provisional": true,
   "settled": false,
   "odds_verified": false,
   "tickets": [
@@ -70,8 +70,8 @@
       "analysis": "Scout: pregledano 106 NBA igraca sa javnim linijama i Over/Under kvotama, ESPN uparivanje i filter posljednjih 5 i 10 utakmica, minutaze, povreda, H2H i protivnicke odbrane. Davion Mitchell 13.5 vise: 5/5 i 8/10, prosjecno 37.4 minuta, Houston povoljniji za bekove, H2H 1/2. Franz Wagner 21.5 vise: 4/5 i 7/10, 38.2 minuta, Paolo Banchero odsutan, ali Boston H2H samo 1/5. Referentne kvote su javne poredbene cijene FanDuel i Hard Rock, ne direktno potvrdjene u kladionicarskoj sesiji; moguce promjene prije utakmica, nema garancije prolaska. GitHub vrsi samo tehnicku objavu."
     }
   ],
-  "total_payout": 0,
-  "net_change": 0,
+  "total_payout": 0.0,
+  "net_change": null,
   "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
   "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",
   "published_at_utc": "2026-11-16T20:12:09.233745+00:00",
