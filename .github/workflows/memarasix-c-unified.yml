@@ -72,10 +72,35 @@ jobs:
           set -euo pipefail
           python -m unittest discover -s tests -p test_nba_clear_before_collect.py -v
           python nba_clear_before_collect.py
+          # Fail-safe: clear the separately published public Scout/Kvoter quote board
+          # even if its earlier 08:59 scheduled expiry was delayed or dropped.
+          python3 - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          path = Path("collector-output/nba-public-points-offers.json")
+          today = datetime.now(ZoneInfo("Europe/Sarajevo")).date().isoformat()
+          old = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+          if str(old.get("source_date","")) < today:
+              new = {
+                  "schema_version":"1.0", "source_date":today,
+                  "generated_at_utc":datetime.now(timezone.utc).isoformat(),
+                  "status":"awaiting_daily_scout_refresh",
+                  "game_count":0,"player_offer_count":0,"publication_allowed":False,
+                  "coverage_note":"The previous public NBA market was expired before ESPN collection.",
+                  "offers":[]
+              }
+              path.parent.mkdir(parents=True,exist_ok=True)
+              path.write_text(json.dumps(new,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+              print("NBA_PUBLIC_QUOTES_CLEARED",today)
+          else:
+              print("NBA_PUBLIC_QUOTES_ALREADY_CURRENT",old.get("source_date"))
+          PY
           stamp="$(python nba_clear_before_collect.py --verify | awk '{print $2}')"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- collector-output/nba-next-24h.json collector-output/nba-player-points.json collector-output/nba-analysis-ready.json collector-output/ticket-c-research.json collector-output/nba-free-statistics.json
+          git add -- collector-output/nba-next-24h.json collector-output/nba-player-points.json collector-output/nba-analysis-ready.json collector-output/ticket-c-research.json collector-output/nba-free-statistics.json collector-output/nba-public-points-offers.json
           git commit -m "data: clear NBA before collecting [skip ci]"
           published=false
           for attempt in 1 2 3 4 5; do
