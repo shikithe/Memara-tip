@@ -1,42 +1,22 @@
 {
-  "date": "2026-11-16",
-  "updated_at_utc": "2026-11-17T16:04:38.877623+00:00",
+  "date": "2026-11-17",
+  "updated_at_utc": "2026-11-17T17:48:10.760299+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
     {
       "ticket": "C",
       "index": 0,
-      "home": "Miami Heat",
-      "away": "Houston Rockets",
-      "state": "final",
-      "score": "16",
-      "player_points": 16,
-      "points_line": 13.5,
-      "period": null,
-      "game_clock": "",
-      "source": "espn-public-unofficial",
-      "event_id": "401909998",
-      "player_id": "4278053",
-      "sport": "basketball",
-      "result_status": "pogođen"
+      "home": "Toronto Raptors",
+      "away": "New York Knicks",
+      "state": "unverified"
     },
     {
       "ticket": "C",
       "index": 1,
-      "home": "Orlando Magic",
-      "away": "Boston Celtics",
-      "state": "final",
-      "score": "21",
-      "player_points": 21,
-      "points_line": 21.5,
-      "period": null,
-      "game_clock": "",
-      "source": "espn-public-unofficial",
-      "event_id": "401909994",
-      "player_id": "4566434",
-      "sport": "basketball",
-      "result_status": "promašen"
+      "home": "Portland Trail Blazers",
+      "away": "Minnesota Timberwolves",
+      "state": "unverified"
     }
   ],
   "bank_unchanged": true
