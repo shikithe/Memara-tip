@@ -1,17 +1,25 @@
-# MEMARASIX — stalni Scout postupak za tiket C
+# MEMARASIX — NBA tiket C: autonomni AI Scout
 
-Usvojeno 2026-11-16 na izričit zahtjev korisnika. **Analitičar ChatGPT jedini istražuje, rangira i odobrava tiket; GitHub je isključivo tehnički objavljivač.**
+**Aktuelni način rada od 17.11.2026.** Zamjenjuje prethodnu zavisnost od GitHubovog ESPN kolektora i međulista. Korisnik je izričito odobrio svakodnevni autonomni izbor i objavu bez potrebe da je online.
 
-## Ulaz i obuhvat
-- ESPN `collector-output/nba-next-24h.json` koristi se samo za naredna 24h utakmice, igrače, ID i termine, **ne** za kvote.
-- Pronađi svježe javno vidljive kladioničarske/player-prop ponude sa obje strane tržišta: tačan igrač, tačna granica poena i kvota Over/Under, izvor i vrijeme provjere kad su dostupni. Prioritet direktno vidljivoj kladionici (bet365, bet-at-home, Mozzart), a ako to nije čitljivo, uporedni javni izvori uz jasno imenovanog bookmakera.
-- Upari **sve** javno pronađene NBA igrače s ESPN listom; ukloni duplikate. Ne pretpostavljaj da svaki ESPN roster igrač ima kladioničarsku ponudu. Ne izmišljaj kvote niti tretiraj statističku granicu kao ponudu bez kvota.
-- Za svakog uparenog kandidata zabilježi oba smjera, cijenu i granicu. Predfilter svih kandidata koristi posljednjih 5–10 rezultata, njihov odnos prema granici i sezonu, tako da se prepoznaju i Over i Under kandidati. Označi nedostajuće statistike i rizike.
-- Najboljim kandidatima dodatno provjeri minutažu, status nastupa/povreda i očekivanu ulogu, odbranu protivnika po pozicijama, home/away, međusobne susrete, promjene kvote, raspored i moguće ograničenje minutaže.
-- Razlikuj učestalost prelaska granice od procijenjene vjerovatnoće: 5/5 ili 8/10 nisu garancija, a kvota implicira prag rentabilnosti. Provjeri odnos rizika i cijene, prioritizuj okvirno 1.70–1.90 kada postoji odgovarajuća vrijednost.
-- Izaberi **tačno 2** igrača za tiket C; sačuvaj potpunu selekciju i razloge isključenja drugih finalista u `collector-output/ticket-c-scout-audit-YYYY-MM-DD.json`; pripremi nacrt `collector-output/ticket-c-manual-proposal.json`. Prije odobrenja potvrdi tačne datume/termine i raspoloživost. Cijene bez direktne bookmaker verifikacije označi kao indikativne.
-- **Samo ChatGPT analitičar** (nakon korisničkog naloga/odobrenja) upisuje `memarasix-1455-approved.json` sa datiranim odobrenjem i dva igrača. GitHub publisher na push validira samo tehnički ugovor, datume, identitete, početak meča i računicu, pa automatski upisuje `data.json` i objavljuje na landing page. Ne bira, ne dopunjava i ne prepisuje AI odobrenje.
-- Nema obaveze čekati Odds API ili automatski kolektor kvota. Fudbal A/B i arhiva se ne mijenjaju kroz ovaj postupak. Sačuvaj banku i dnevne uloge prema postojećim pravilima; samo objavljivanje na sajtu nije uplata tiketa u kladionici.
+## Nadležnosti i raspored
 
-## Primjer 2026-11-16
-Iz 278 ESPN igrača u 8 NBA utakmica, pronađeno 106 jedinstvenih tržišta poena sa javnim kvotama; nakon univerzalnog filtera izabrani Davion Mitchell više 13.5 i Franz Wagner više 21.5. Obje kvote su javne poredbene cijene, ne potvrđena direktna bookmaker ponuda. Detaljan audit: `collector-output/ticket-c-scout-audit-2026-11-16.json`.
+- **ChatGPT automatizacija** `MEMARA C — autonomni NBA Scout`, 17:00 `Europe/Sarajevo`, jeste **jedini istraživač i autor odobrenja**.
+- ChatGPT pri izvršenju direktno pretražuje trenutni ESPN raspored, identitete igrača, javne kladioničarske ponude i statistiku. **Ne zavisi** od GitHub fajlova `collector-output/nba-next-24h.json`, `nba-analysis-ready.json`, `nba-player-points.json`, `nba-public-points-offers.json` niti od njihovog vremena osvježavanja.
+- **Rolling prozor 24h:** prihvatljive su samo NBA utakmice čiji je provjereni početak **nakon trenutka analize i najkasnije 24 sata poslije**; neposredno prije odobrenja provjeri da utakmice tek počinju, najmanje 20 minuta u budućnosti, i da su unutar naredna 24 sata. Lokalni kalendarski dan nije zamjena za rolling prozor.
+- Za tiket C se u GitHub **ne spremaju sirovi rosteri, prikupljene kvote, shortlist, Scout audit niti međufajlovi**. Jedini ulaz u GitHub je završni `memarasix-1455-approved.json` sa tačno dva odobrena igrača.
+- `.github/workflows/memarasix-scheduled-publication.yml` prima `push` tog fajla i izvršava `memarasix_approval_gate.py` / `memarasix_1455_publish.py` **isključivo kao tehnički izdavač**: kontrola strukture, datuma, početka utakmica, duplikata, kvota, budžeta; objava u `data.json` i status u `memarasix-1455-audit.json`. GitHub **nikada ne bira igrače i ne ispravlja AI analizu**.
+- Stari `memarasix-c-unified.yml` ESPN kolektor ostaje dostupan samo za **ručno dijagnostičko pokretanje**, bez rasporeda ili automatskog okidanja. Drugi workflowi koji služe različitim funkcijama MemaraSix ne predstavljaju uslov za tiket C.
+
+## Scout provjera u samom AI izvršenju
+
+1. Utvrdi provjerene buduće NBA mečeve i ESPN event/player ID-eve za naredna 24h; filtriraj neaktivne i već započete mečeve.
+2. Pretraži svježa tržišta **poeni igrača**, oba smjera `over`/`under`, sa **tačnom granicom** i odgovarajućom **pojedinačnom kvotom**; preferiraj izvor kladionice, a kod uporednog sajta naznači da je referentna cijena. Ne izmišljaj drugu stranu tržišta, datume ili svježinu kvota. Upari s provjerenim igračima i mečevima.
+3. Procijeni provjereno dostupne kandidate posljednjih 5–10 nastupa, minutažu, trend u odnosu na stvarnu granicu, sezonu i rizike; za najbolje dodatno provjeri povrede/izostanke, protivničku odbranu i tempo, domaće/gostujuće i H2H kada podaci postoje. Oba smjera su dozvoljena, kvota preferirano oko 1,70–1,90.
+4. Izaberi **tačno dva različita igrača** samo ako postoje valjane linije, izvori, identitet i dovoljno dobar obrazloženi izbor. Ako nema odgovarajuća dva, preskoči tiket umjesto izmišljanja podataka. Nema garancije ishoda.
+5. Provjeri da C nije već odobren/objavljen isti lokalni dan i da bankovni obračun od prethodnog dana dopušta novi tiket. Zatim upiši **samo** `memarasix-1455-approved.json`, sadržaja `date`, `approval_source=chatgpt_ai_analyst`, `approved_at_utc`, `publication_allowed=true`, `tickets=[{id:C,analysis,matches:[...2]}]`. Svaka stavka ima `player_id`, `espn_event_id`, `player`, `team`, `opponent`, `start_utc`, `market=player_points`, `pick`, `points_line`, `odd`, `bookmaker`, `source` (URL).
+6. Provjeri stvarnu tehničku objavu u `data.json`, `memarasix-1455-audit.json` i GitHub Actions. Ako publisher zakaže, prijavi tačan kvar; nemoj duplirati tiket.
+
+## Granice
+
+Automatizacija u 17:00 nije garancija početka izvršavanja u tačnoj sekundi; online izvori mogu biti nedostupni. Rezultat je virtuelni tiket prikazan na MemaraTip sajtu, bez ikakve stvarne uplate u kladionici. Ne mijenjati nezavisne tikete A/B i druge dijelove projekta.

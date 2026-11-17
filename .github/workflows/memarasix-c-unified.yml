@@ -1,13 +1,9 @@
-name: MemaraSix unified NBA C preparation
+name: MemaraSix legacy NBA ESPN collector (manual diagnostic only)
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - 'collector-output/nba-manual-trigger.txt'
-  schedule:
-    # Every ten minutes; local 12:00-14:59 Sarajevo gate controls execution.
-    # Delayed/dropped GitHub schedule checks have further retry opportunities.
-    - cron: '0,10,20,30,40,50 10-13 * * *'
+# Retired as an automatic NBA C prerequisite on 2026-11-17.
+# ChatGPT scheduled Scout now fetches upcoming NBA fixtures directly.
+# Keep workflow_dispatch for explicit diagnostic use; no cron or push trigger.
 permissions:
   contents: write
 concurrency:

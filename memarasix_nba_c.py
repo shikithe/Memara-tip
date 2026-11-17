@@ -48,8 +48,8 @@ def validate_nba_c(root, approved, now):
         if leg.get("market")!="player_points" or leg.get("pick") not in ("over","under"):
             raise ValueError("NBA C only supports NBA player-points over/under")
         start=utc(leg.get("start_utc"))
-        if not now+timedelta(minutes=20)<start<=now+timedelta(hours=26):
-            raise ValueError("NBA C game started, too close to kickoff, or outside next 26 hours")
+        if not now+timedelta(minutes=20)<start<=now+timedelta(hours=24):
+            raise ValueError("NBA C game started, too close to kickoff, or outside next 24 hours")
         line=float(leg.get("points_line"))
         price=float(leg.get("odd"))
         if not 0<=line<=100 or not 1.01<price<50:
