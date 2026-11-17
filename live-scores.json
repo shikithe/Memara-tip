@@ -1,6 +1,6 @@
 {
   "date": "2026-11-16",
-  "updated_at_utc": "2026-11-17T00:38:47.045760+00:00",
+  "updated_at_utc": "2026-11-17T01:04:19.539669+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,7 +9,16 @@
       "index": 0,
       "home": "Miami Heat",
       "away": "Houston Rockets",
-      "state": "unverified"
+      "state": "live",
+      "score": "0",
+      "player_points": 0,
+      "points_line": 13.5,
+      "period": 1,
+      "game_clock": "2:14",
+      "source": "espn-public-unofficial",
+      "event_id": "401909998",
+      "player_id": "4278053",
+      "sport": "basketball"
     },
     {
       "ticket": "C",
@@ -17,11 +26,11 @@
       "home": "Orlando Magic",
       "away": "Boston Celtics",
       "state": "live",
-      "score": "4",
-      "player_points": 4,
+      "score": "8",
+      "player_points": 8,
       "points_line": 21.5,
-      "period": 1,
-      "game_clock": "0.0",
+      "period": 2,
+      "game_clock": "1:49",
       "source": "espn-public-unofficial",
       "event_id": "401909994",
       "player_id": "4566434",
