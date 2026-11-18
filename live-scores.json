@@ -1,46 +1,22 @@
 {
-  "date": "2026-11-17",
-  "updated_at_utc": "2026-11-18T13:57:44.846289+00:00",
+  "date": "2026-11-18",
+  "updated_at_utc": "2026-11-18T16:54:36.822848+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
     {
       "ticket": "C",
       "index": 0,
-      "home": "Toronto Raptors",
-      "away": "New York Knicks",
-      "state": "final",
-      "score": "20",
-      "player_points": 20,
-      "points_line": 21.5,
-      "period": null,
-      "game_clock": "",
-      "source": "espn-public-unofficial",
-      "event_id": "401910002",
-      "player_id": "4433134",
-      "sport": "basketball",
-      "result_status": "promašen"
+      "home": "Orlando Magic",
+      "away": "Philadelphia 76ers",
+      "state": "unverified"
     },
     {
       "ticket": "C",
       "index": 1,
-      "home": "Portland Trail Blazers",
-      "away": "Minnesota Timberwolves",
-      "state": "final",
-      "score": "DNP",
-      "sport": "basketball",
-      "source": "espn-public-unofficial",
-      "event_id": "401910003",
-      "player_id": "4683021",
-      "points_line": 23.5,
-      "player_points": null,
-      "void": true,
-      "void_reason": "did_not_play",
-      "effective_odd": 1.0,
-      "result_status": "pogođen",
-      "verification_source_url": "https://statsdmz.nba.com/pdfs/20261117/20261117_PORMIN_book.pdf",
-      "period": null,
-      "game_clock": ""
+      "home": "Los Angeles Lakers",
+      "away": "Utah Jazz",
+      "state": "unverified"
     }
   ],
   "bank_unchanged": true
