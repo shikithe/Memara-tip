@@ -1,6 +1,6 @@
 {
   "date": "2026-11-17",
-  "updated_at_utc": "2026-11-18T11:47:28.910355+00:00",
+  "updated_at_utc": "2026-11-18T13:57:44.846289+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -29,16 +29,18 @@
       "state": "final",
       "score": "DNP",
       "sport": "basketball",
-      "source": "nba-official-scorers-report",
+      "source": "espn-public-unofficial",
       "event_id": "401910003",
       "player_id": "4683021",
       "points_line": 23.5,
       "player_points": null,
       "void": true,
       "void_reason": "did_not_play",
-      "effective_odd": 1,
+      "effective_odd": 1.0,
       "result_status": "pogođen",
-      "verification_source_url": "https://statsdmz.nba.com/pdfs/20261117/20261117_PORMIN_book.pdf"
+      "verification_source_url": "https://statsdmz.nba.com/pdfs/20261117/20261117_PORMIN_book.pdf",
+      "period": null,
+      "game_clock": ""
     }
   ],
   "bank_unchanged": true
