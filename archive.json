@@ -3205,7 +3205,11 @@
             "bookmaker": "Unibet",
             "quote_source_url": "https://www.haterpicks.app/us/odds/nba/new-york-knicks-vs-toronto-raptors",
             "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
-            "quote_timestamp_verified": false
+            "quote_timestamp_verified": false,
+            "final_points": 28,
+            "result_status": "pogođen",
+            "result_source": "NBA official box score, NYK at TOR, 2026-11-15",
+            "result_verification_url": "https://www.nba.com/game/0022600241/box-score"
           },
           {
             "fixture_id": "espn:basketball:nba:401909988:5041955",
@@ -3317,7 +3321,7 @@
             "points_line": 23.5,
             "pick": "over",
             "market_name": "Više od 23.5 poena",
-            "odd": 1.0,
+            "odd": 1,
             "bookmaker": "Megapari",
             "quote_source_url": "https://basketballsphere.com/en/nba-player-props-nov-17-2026/",
             "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
@@ -3331,13 +3335,13 @@
         "odds": 1.87,
         "stake": 2.26,
         "status": "izgubljen",
-        "payout": 0.0,
+        "payout": 0,
         "analysis": "Samostalni AI Scout 17.11.2026, samo NBA utakmice u naredna 24h. ESPN: TOR-NYK event 401910002 u 00:30 UTC, POR-MIN event 401910003 u 01:00 UTC 18.11. Scottie Barnes vise 21.5 poena, Megapari referentna kvota 1.87 prema Basketball Sphere clanku objavljenom 17.11: zadnjih devet nastupa 30,17,22,29,41,28,0,28,23 = 7/9 iznad 21.5; posljednjih pet 4/5, prosjek posljednjih pet 27.8, 36 min u zadnjoj utakmici i 30 poena protiv istih NYK 15.11. Rizici: nedavni propust utakmica/povratak nakon odsustva, jedan meč sa nula poena, Knicks mogu promijeniti odbranu u revanšu. Deni Avdija vise 23.5 poena, Megapari referentna kvota 1.87 prema istom clanku: zadnjih deset 27,34,28,24,15,22,21,28,24,24 = 7/10 iznad 23.5, prosjek 24.7; zadnjih pet 25.6 i oko 32 min, prethodne cetiri utakmice 24+ poena, 27 poena u 30 minuta protiv MIN 16.11. Rizici: drugi uzastopni duel s MIN, prilagodjavanje odbrane, umor i varijacija suta. Kvota 1.87 za oba izbora je javna urednicka Megapari referenca na dan 17.11, NIJE neposredno potvrdjena u aktivnoj kladionicarskoj sesiji i moze se promijeniti. Analizirani i alternativni kandidati RJ Barrett vise 19.5 FanDuel -106 (6/10), LaMelo Ball manje 21.5 FanDuel -120 (5/14 preko), Paul Reed manje 11.5, Darius Garland vise 22.5 i Luka Doncic vise 36.5 iz Basketball Sphere; preferirani su Barnes i Avdija zbog 7/9 i 7/10 prolaznosti i kvote 1.87. Nema garancije prolaza.",
         "settled_at_utc": "2026-11-18T07:49:20.358532+00:00",
         "original_odds": 3.5
       }
     ],
-    "total_payout": 0.0,
+    "total_payout": 0,
     "net_change": -2.26,
     "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
     "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",
