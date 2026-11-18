@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "system": "nba-sistem",
+  "initial_bank": 1000,
+  "currency": "EUR",
+  "stake_percent_per_ticket": 1,
+  "tickets_per_cycle": 10,
+  "legs_per_ticket": 2,
+  "distinct_players_per_cycle": true,
+  "bank_separate_from": [
+    "A",
+    "B",
+    "C"
+  ],
+  "cycles": []
+}
