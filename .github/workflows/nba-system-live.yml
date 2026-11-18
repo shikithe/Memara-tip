@@ -1,0 +1,35 @@
+name: NBA SISTEM — live points and ticket settlement
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'nba_system_live.py'
+      - '.github/workflows/nba-system-live.yml'
+  schedule:
+    - cron: '*/5 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: nba-system-live-settlement
+  cancel-in-progress: false
+jobs:
+  settle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify NBA system results
+        run: python nba_system_live.py
+      - name: Save NBA system only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add nba-sistem.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: settle NBA system live outcomes [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
