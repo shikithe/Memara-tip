@@ -26,7 +26,19 @@
       "index": 1,
       "home": "Portland Trail Blazers",
       "away": "Minnesota Timberwolves",
-      "state": "unverified"
+      "state": "final",
+      "score": "DNP",
+      "sport": "basketball",
+      "source": "nba-official-scorers-report",
+      "event_id": "401910003",
+      "player_id": "4683021",
+      "points_line": 23.5,
+      "player_points": null,
+      "void": true,
+      "void_reason": "did_not_play",
+      "effective_odd": 1,
+      "result_status": "pogođen",
+      "verification_source_url": "https://statsdmz.nba.com/pdfs/20261117/20261117_PORMIN_book.pdf"
     }
   ],
   "bank_unchanged": true

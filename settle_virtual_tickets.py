@@ -3,7 +3,8 @@
 
 Idempotent: derives the balance from original after-stakes balance plus the
 payouts of settled tickets. No event is paid twice on repeated execution.
-Does not modify published selections, odds or stakes; does not edit archive.
+Preserves selections and stakes; a verified DNP changes only its effective leg
+odds to 1.00 and recalculates ticket odds. Does not edit archive.
 """
 import argparse
 import copy
@@ -73,16 +74,41 @@ def settle(published, snapshot):
             if not rec or rec.get("home")!=match.get("home") or rec.get("away")!=match.get("away"):
                 legs.append(None)
                 continue
-            if rec.get("source")!="espn-public-unofficial":
+            if rec.get("source") not in ("espn-public-unofficial","nba-official-scorers-report"):
+                legs.append(None)
+                continue
+            if rec.get("source")=="nba-official-scorers-report" and not (match.get("sport")=="basketball" and rec.get("void") is True and rec.get("verification_source_url")):
                 legs.append(None)
                 continue
             if match.get("sport")=="basketball" and match.get("market")=="player_points":
                 if rec.get("sport")!="basketball" or str(rec.get("event_id"))!=str(match.get("espn_event_id")) or str(rec.get("player_id"))!=str(match.get("player_id")):
                     legs.append(None)
                     continue
-                if rec.get("state") not in ("live","final") or not isinstance(rec.get("player_points"),int):
+                if rec.get("state") not in ("live","final"):
                     legs.append(None)
                     continue
+                if rec.get("void") is True:
+                    # VOID is a winning/neutral leg, not a zero-point UNDER hit.
+                    # It can only settle when the whole game is FINAL.
+                    if rec["state"]!="final" or rec.get("void_reason")!="did_not_play" or rec.get("player_points") is not None:
+                        legs.append(None)
+                        continue
+                    if match.get("result_status")=="promašen" or (match.get("final_points") is not None and "final_points" in match):
+                        raise ValueError("DNP conflicts with previously locked player result")
+                    if match.get("original_odd") is None:
+                        match["original_odd"]=match.get("odd")
+                    match["odd"]=1.0
+                    match["void"]=True
+                    match["void_reason"]="did_not_play"
+                    match["result_status"]="pogođen"
+                    match.pop("final_points",None)
+                    legs.append("pogođen")
+                    continue
+                if not isinstance(rec.get("player_points"),int):
+                    legs.append(None)
+                    continue
+                if match.get("void"):
+                    raise ValueError("Previously confirmed VOID contradicts a scored game")
                 points=rec["player_points"]
                 line=float(match["points_line"])
                 side=match.get("pick")
@@ -113,6 +139,14 @@ def settle(published, snapshot):
                 legs.append(None)
         if not legs:
             continue
+        # Adjust effective ticket odds once, and only for verified VOID legs.
+        if any(m.get("void") for m in ticket.get("matches",[])):
+            if ticket.get("original_odds") is None:
+                ticket["original_odds"]=ticket.get("odds")
+            adjusted=Decimal(1)
+            for leg in ticket["matches"]:
+                adjusted*=amount(leg["odd"])
+            ticket["odds"]=float(cents(adjusted))
         # A single final loss makes the ticket irreversibly lost.
         if "promašen" in legs:
             expected="izgubljen"
@@ -123,6 +157,8 @@ def settle(published, snapshot):
         if ticket["status"] in ("dobitan","izgubljen"):
             if expected and expected!=ticket["status"]:
                 raise ValueError("Locked ticket conflicts with verified scores")
+            if ticket["status"]=="dobitan" and any(m.get("void") for m in ticket.get("matches",[])):
+                ticket["payout"]=float(cents(amount(ticket["stake"])*amount(ticket["odds"])))
             continue
         if expected is None:
             continue
@@ -138,7 +174,24 @@ def settle(published, snapshot):
     original["total_payout"]=float(cents(payouts))
     original.pop("provisional_payout",None)
     original.pop("provisional_ticket_ids",None)
+    def leg_finished(t, i, m):
+        rec=outcomes.get((str(t.get("id")),i))
+        if not rec or rec.get("state")!="final" or rec.get("home")!=m.get("home") or rec.get("away")!=m.get("away"):
+            return False
+        if m.get("sport")=="basketball" and m.get("market")=="player_points":
+            return (rec.get("source") in ("espn-public-unofficial","nba-official-scorers-report")
+                    and rec.get("sport")=="basketball"
+                    and str(rec.get("event_id"))==str(m.get("espn_event_id"))
+                    and str(rec.get("player_id"))==str(m.get("player_id"))
+                    and ((rec.get("void") is True and rec.get("void_reason")=="did_not_play" and
+                          rec.get("player_points") is None and
+                          (rec.get("source")!="nba-official-scorers-report" or bool(rec.get("verification_source_url"))))
+                         or isinstance(rec.get("player_points"),int)))
+        return rec.get("source")=="espn-public-unofficial" and rec.get("result_status") in ("pogođen","promašen")
+    # Closing a whole ticket may be irreversible before all legs have finished.
+    # Do not archive a card until EVERY individual result is final, including VOID.
     complete=all(t.get("status") in ("dobitan","izgubljen","preskočen")
+                 and all(leg_finished(t,i,m) for i,m in enumerate(t.get("matches",[])))
                  for t in original.get("tickets",[]))
     original["settled"]=bool(complete)
     original["provisional"]=not complete

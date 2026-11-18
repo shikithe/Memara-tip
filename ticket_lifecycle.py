@@ -20,7 +20,7 @@ def main(now=None):
         if t.get("status")=="aktivan": t["status"]="objavljen"
     current,_=settle(current,scores)
     tickets=current.get("tickets",[])
-    if not tickets or not all(t.get("status") in DONE for t in tickets):
+    if not tickets or not current.get("settled") or not all(t.get("status") in DONE for t in tickets):
         save(DATA,current); return
     current["settled"]=True
     current["provisional"]=False

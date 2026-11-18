@@ -50,6 +50,67 @@ class TestSettlement(unittest.TestCase):
         self.assertTrue(a["settled"])
         self.assertEqual(a["tickets"][1]["payout"],0)
 
+    def test_nba_void_is_winning_leg_with_one_odd_and_correct_bank(self):
+        p={"date":"2026-10-24","bank_before":100,"bank_after_stakes":90,
+           "bank_after":90,"daily_stake":10,"tickets":[{"id":"C","stake":10,"odds":3.5,
+           "status":"objavljen","matches":[
+              {"home":"TOR","away":"NYK","sport":"basketball","market":"player_points","espn_event_id":"101","player_id":"42","points_line":21.5,"pick":"over","odd":1.87},
+              {"home":"POR","away":"MIN","sport":"basketball","market":"player_points","espn_event_id":"102","player_id":"43","points_line":23.5,"pick":"over","odd":1.87}]}]}
+        r=[{"ticket":"C","index":0,"home":"TOR","away":"NYK","state":"final",
+            "source":"espn-public-unofficial","event_id":"101","player_id":"42","sport":"basketball","player_points":24},
+           {"ticket":"C","index":1,"home":"POR","away":"MIN","state":"final",
+            "source":"espn-public-unofficial","event_id":"102","player_id":"43","sport":"basketball","player_points":None,
+            "void":True,"void_reason":"did_not_play","result_status":"pogođen","effective_odd":1}]
+        a,changed=settle(p,scores(r))
+        self.assertEqual(changed,["C"])
+        self.assertTrue(a["settled"])
+        self.assertEqual(a["tickets"][0]["status"],"dobitan")
+        self.assertEqual(a["tickets"][0]["odds"],1.87)
+        self.assertEqual(a["tickets"][0]["matches"][1]["odd"],1)
+        self.assertEqual(a["tickets"][0]["matches"][1]["original_odd"],1.87)
+        self.assertEqual(a["tickets"][0]["matches"][1]["result_status"],"pogođen")
+        self.assertEqual(a["tickets"][0]["payout"],18.7)
+        self.assertEqual(a["bank_after"],108.7)
+        b,again=settle(a,scores(r))
+        self.assertEqual(again,[])
+        self.assertEqual(b,a)
+
+    def test_nba_void_does_not_settle_before_game_final(self):
+        p={"date":"2026-10-24","bank_before":100,"bank_after_stakes":90,
+           "bank_after":90,"daily_stake":10,"tickets":[{"id":"C","stake":10,"odds":1.87,
+           "status":"objavljen","matches":[
+              {"home":"POR","away":"MIN","sport":"basketball","market":"player_points","espn_event_id":"102","player_id":"43","points_line":23.5,"pick":"over","odd":1.87}]}]}
+        r={"ticket":"C","index":0,"home":"POR","away":"MIN","state":"live",
+           "source":"espn-public-unofficial","event_id":"102","player_id":"43","sport":"basketball","player_points":None,
+           "void":True,"void_reason":"did_not_play"}
+        a,_=settle(p,scores([r]))
+        self.assertFalse(a["settled"])
+        self.assertEqual(a["tickets"][0]["status"],"objavljen")
+        r["state"]="final"
+        b,_=settle(a,scores([r]))
+        self.assertTrue(b["settled"])
+        self.assertEqual(b["tickets"][0]["status"],"dobitan")
+
+    def test_lost_nba_ticket_waits_for_every_leg_to_finish_before_archive(self):
+        p={"date":"2026-10-24","bank_before":100,"bank_after_stakes":90,
+           "bank_after":90,"daily_stake":10,"tickets":[{"id":"C","stake":10,"odds":3.5,
+           "status":"objavljen","matches":[
+              {"home":"TOR","away":"NYK","sport":"basketball","market":"player_points","espn_event_id":"101","player_id":"42","points_line":21.5,"pick":"over","odd":1.87},
+              {"home":"POR","away":"MIN","sport":"basketball","market":"player_points","espn_event_id":"102","player_id":"43","points_line":23.5,"pick":"over","odd":1.87}]}]}
+        loss={"ticket":"C","index":0,"home":"TOR","away":"NYK","state":"final",
+              "source":"espn-public-unofficial","event_id":"101","player_id":"42","sport":"basketball","player_points":20}
+        a,_=settle(p,scores([loss]))
+        self.assertEqual(a["tickets"][0]["status"],"izgubljen")
+        self.assertFalse(a["settled"])
+        no_show={"ticket":"C","index":1,"home":"POR","away":"MIN","state":"final",
+                 "source":"espn-public-unofficial","event_id":"102","player_id":"43","sport":"basketball",
+                 "player_points":None,"void":True,"void_reason":"did_not_play"}
+        b,_=settle(a,scores([loss,no_show]))
+        self.assertTrue(b["settled"])
+        self.assertEqual(b["tickets"][0]["odds"],1.87)
+        self.assertEqual(b["tickets"][0]["matches"][1]["result_status"],"pogođen")
+        self.assertEqual(b["tickets"][0]["payout"],0)
+
     def test_cross_date_rejected(self):
         with self.assertRaises(ValueError):
             settle(sample(),{"date":"2026-10-23","source":"espn-public-unofficial","updated_at_utc":"2026-10-24T18:00:00Z","matches":[]})

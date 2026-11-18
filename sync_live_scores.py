@@ -124,7 +124,7 @@ def run(source="data.json",output="live-scores.json"):
         old = json.loads(Path(output).read_text(encoding="utf-8"))
         if old.get("date") == published.get("date"):
             for item in old.get("matches", []):
-                if item.get("state") == "final" and item.get("source") == "espn-public-unofficial":
+                if item.get("state") == "final" and item.get("source") in ("espn-public-unofficial", "nba-official-scorers-report"):
                     key = (item.get("ticket"),item.get("index"),item.get("home"),item.get("away"))
                     previous[key] = item
     except (OSError,ValueError,TypeError):

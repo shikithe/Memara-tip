@@ -20,6 +20,12 @@ def rollover(live, archive, today):
     if not live.get("settled",False):
         print("PENDING_SETTLEMENT: keep prior publication intact until results are settled")
         return live,archive,False
+    # A previously settled ticket must still show every NBA leg outcome before archiving.
+    if any(m.get("sport")=="basketball" and m.get("market")=="player_points"
+           and m.get("result_status") not in ("pogođen","promašen")
+           for t in live.get("tickets",[]) for m in t.get("matches",[])):
+        print("PENDING_NBA_LEG: cannot archive without final individual results")
+        return live,archive,False
     records=deepcopy(archive)
     # Empty waiting days are carried forward, not added to ticket history.
     if live.get("tickets"):
