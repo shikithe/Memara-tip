@@ -36,7 +36,9 @@
           "bookmaker": "DraftKings",
           "quote_source_url": "https://betsharp.com/nba/player/anthony-black",
           "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
-          "quote_timestamp_verified": false
+          "quote_timestamp_verified": false,
+          "result_status": "pogođen",
+          "final_points": 15
         },
         {
           "fixture_id": "espn:basketball:nba:401910017:3945274",

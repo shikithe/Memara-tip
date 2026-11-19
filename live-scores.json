@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "updated_at_utc": "2026-11-18T23:28:26.196387+00:00",
+  "updated_at_utc": "2026-11-19T04:12:38.238169+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,14 +9,33 @@
       "index": 0,
       "home": "Orlando Magic",
       "away": "Philadelphia 76ers",
-      "state": "unverified"
+      "state": "final",
+      "points_line": 14.5,
+      "period": null,
+      "game_clock": "",
+      "source": "espn-public-unofficial",
+      "event_id": "401910010",
+      "player_id": "4712849",
+      "sport": "basketball",
+      "score": "15",
+      "player_points": 15,
+      "result_status": "pogođen"
     },
     {
       "ticket": "C",
       "index": 1,
       "home": "Los Angeles Lakers",
       "away": "Utah Jazz",
-      "state": "unverified"
+      "state": "live",
+      "points_line": 35.5,
+      "period": 2,
+      "game_clock": "1.3",
+      "source": "espn-public-unofficial",
+      "event_id": "401910017",
+      "player_id": "3945274",
+      "sport": "basketball",
+      "score": "22",
+      "player_points": 22
     }
   ],
   "bank_unchanged": true
