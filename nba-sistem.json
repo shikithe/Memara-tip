@@ -12,5 +12,865 @@
     "B",
     "C"
   ],
-  "cycles": []
+  "cycles": [
+    {
+      "id": "nba-2026-11-19",
+      "date": "2026-11-19",
+      "bank_start": 1000,
+      "status": "open",
+      "created_at_utc": "2026-11-19T18:00:00Z",
+      "scout": {
+        "offered": 49,
+        "verified_ids": 22,
+        "top20": 20,
+        "top10": 10,
+        "top5": 5,
+        "note": "AI shortlist of 22 ESPN-identified BetSharp/DraftKings points offers; selected 20. Last-five ESPN sample per leg is included when retrievable; H2H, exact defender and opponent-defense not verified. Scout did NOT individually audit all 49 offers. Odds reference only and may change."
+      },
+      "tickets": [
+        {
+          "id": "1",
+          "stake": 10,
+          "status": "pending",
+          "total_odd": 3.5684,
+          "potential_payout": 35.68,
+          "legs": [
+            {
+              "player": "Karl-Anthony Towns",
+              "team": "NY",
+              "opponent": "MIN",
+              "pick": "over",
+              "points_line": 20.5,
+              "odd": 1.9009,
+              "american_odd": -111,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910021",
+              "player_id": "3136195",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-15",
+                    "points": 28
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 23
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 21
+                  },
+                  {
+                    "date": "2026-11-10",
+                    "points": 21
+                  },
+                  {
+                    "date": "2026-11-07",
+                    "points": 29
+                  }
+                ],
+                "last_five_average": 24.4,
+                "last_five_hit_rate": "5/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer over na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+              }
+            },
+            {
+              "player": "Deni Avdija",
+              "team": "POR",
+              "opponent": "MIL",
+              "pick": "under",
+              "points_line": 24.5,
+              "odd": 1.8772,
+              "american_odd": -114,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910020",
+              "player_id": "4683021",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [],
+                "last_five_average": null,
+                "last_five_hit_rate": "not_verified",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer privremen, nema potvrđene posljednje utakmice u izvučenom ESPN zapisu."
+              }
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stake": 10,
+          "status": "pending",
+          "total_odd": 3.3953,
+          "potential_payout": 33.95,
+          "legs": [
+            {
+              "player": "Scoot Henderson",
+              "team": "POR",
+              "opponent": "MIL",
+              "pick": "under",
+              "points_line": 11.5,
+              "odd": 1.7937,
+              "american_odd": -126,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910020",
+              "player_id": "4683678",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-04",
+                    "points": 9
+                  },
+                  {
+                    "date": "2026-11-02",
+                    "points": 8
+                  }
+                ],
+                "last_five_average": 8.5,
+                "last_five_hit_rate": "2/2",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer under na osnovu 2 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+              }
+            },
+            {
+              "player": "OG Anunoby",
+              "team": "NY",
+              "opponent": "MIN",
+              "pick": "under",
+              "points_line": 15.5,
+              "odd": 1.8929,
+              "american_odd": -112,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910021",
+              "player_id": "3934719",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [],
+                "last_five_average": null,
+                "last_five_hit_rate": "not_verified",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer privremen, nema potvrđene posljednje utakmice u izvučenom ESPN zapisu."
+              }
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stake": 10,
+          "status": "pending",
+          "total_odd": 3.6849,
+          "potential_payout": 36.85,
+          "legs": [
+            {
+              "player": "Donovan Clingan",
+              "team": "POR",
+              "opponent": "MIL",
+              "pick": "over",
+              "points_line": 13.5,
+              "odd": 2.01,
+              "american_odd": 101,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910020",
+              "player_id": "5105565",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-02",
+                    "points": 17
+                  }
+                ],
+                "last_five_average": 17,
+                "last_five_hit_rate": "1/1",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer over na osnovu 1 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+              }
+            },
+            {
+              "player": "Jalen Brunson",
+              "team": "NY",
+              "opponent": "MIN",
+              "pick": "under",
+              "points_line": 25.5,
+              "odd": 1.8333,
+              "american_odd": -120,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910021",
+              "player_id": "3934672",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [],
+                "last_five_average": null,
+                "last_five_hit_rate": "not_verified",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer privremen, nema potvrđene posljednje utakmice u izvučenom ESPN zapisu."
+              }
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "stake": 10,
+          "status": "pending",
+          "total_odd": 3.3743,
+          "potential_payout": 33.74,
+          "legs": [
+            {
+              "player": "De'Aaron Fox",
+              "team": "SA",
+              "opponent": "LAC",
+              "pick": "under",
+              "points_line": 15.5,
+              "odd": 1.8475,
+              "american_odd": -118,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910022",
+              "player_id": "4066259",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-18",
+                    "points": 6
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 7
+                  },
+                  {
+                    "date": "2026-11-12",
+                    "points": 17
+                  },
+                  {
+                    "date": "2026-11-10",
+                    "points": 15
+                  },
+                  {
+                    "date": "2026-11-08",
+                    "points": 8
+                  }
+                ],
+                "last_five_average": 10.6,
+                "last_five_hit_rate": "4/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+              }
+            },
+            {
+              "player": "Brandin Podziemski",
+              "team": "GS",
+              "opponent": "MEM",
+              "pick": "under",
+              "points_line": 16.5,
+              "odd": 1.8264,
+              "american_odd": -121,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910019",
+              "player_id": "4709138",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [],
+                "last_five_average": null,
+                "last_five_hit_rate": "not_verified",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer privremen, nema potvrđene posljednje utakmice u izvučenom ESPN zapisu."
+              }
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "stake": 10,
+          "status": "pending",
+          "total_odd": 3.6044,
+          "potential_payout": 36.04,
+          "legs": [
+            {
+              "player": "Jaden McDaniels",
+              "team": "MIN",
+              "opponent": "NY",
+              "pick": "under",
+              "points_line": 16.5,
+              "odd": 1.8547,
+              "american_odd": -117,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910021",
+              "player_id": "4431671",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-17",
+                    "points": 15
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 15
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 13
+                  },
+                  {
+                    "date": "2026-11-10",
+                    "points": 16
+                  },
+                  {
+                    "date": "2026-11-09",
+                    "points": 21
+                  }
+                ],
+                "last_five_average": 16,
+                "last_five_hit_rate": "4/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+              }
+            },
+            {
+              "player": "Stephon Castle",
+              "team": "SA",
+              "opponent": "LAC",
+              "pick": "under",
+              "points_line": 17.5,
+              "odd": 1.9434,
+              "american_odd": -106,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910022",
+              "player_id": "4845367",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-16",
+                    "points": 4
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 13
+                  },
+                  {
+                    "date": "2026-11-12",
+                    "points": 23
+                  },
+                  {
+                    "date": "2026-11-10",
+                    "points": 19
+                  },
+                  {
+                    "date": "2026-11-08",
+                    "points": 16
+                  }
+                ],
+                "last_five_average": 15,
+                "last_five_hit_rate": "3/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+              }
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "stake": 10,
+          "status": "pending",
+          "total_odd": 3.9418,
+          "potential_payout": 39.42,
+          "legs": [
+            {
+              "player": "Mikal Bridges",
+              "team": "NY",
+              "opponent": "MIN",
+              "pick": "over",
+              "points_line": 10.5,
+              "odd": 2,
+              "american_odd": 100,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910021",
+              "player_id": "3147657",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-17",
+                    "points": 23
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 15
+                  },
+                  {
+                    "date": "2026-11-12",
+                    "points": 6
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 22
+                  },
+                  {
+                    "date": "2026-11-09",
+                    "points": 16
+                  }
+                ],
+                "last_five_average": 16.4,
+                "last_five_hit_rate": "4/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer over na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+              }
+            },
+            {
+              "player": "Rui Hachimura",
+              "team": "LAC",
+              "opponent": "SA",
+              "pick": "over",
+              "points_line": 12.5,
+              "odd": 1.9709,
+              "american_odd": -103,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910022",
+              "player_id": "4066648",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-18",
+                    "points": 6
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 14
+                  },
+                  {
+                    "date": "2026-11-12",
+                    "points": 13
+                  },
+                  {
+                    "date": "2026-11-10",
+                    "points": 21
+                  },
+                  {
+                    "date": "2026-11-08",
+                    "points": 8
+                  }
+                ],
+                "last_five_average": 12.4,
+                "last_five_hit_rate": "3/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer over na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+              }
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "stake": 10,
+          "status": "pending",
+          "total_odd": 3.5693,
+          "potential_payout": 35.69,
+          "legs": [
+            {
+              "player": "Tyler Herro",
+              "team": "MIL",
+              "opponent": "POR",
+              "pick": "over",
+              "points_line": 20.5,
+              "odd": 1.9615,
+              "american_odd": -104,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910020",
+              "player_id": "4395725",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-11",
+                    "points": 27
+                  },
+                  {
+                    "date": "2026-11-08",
+                    "points": 13
+                  },
+                  {
+                    "date": "2026-11-06",
+                    "points": 23
+                  },
+                  {
+                    "date": "2026-11-04",
+                    "points": 25
+                  },
+                  {
+                    "date": "2026-11-02",
+                    "points": 21
+                  }
+                ],
+                "last_five_average": 21.8,
+                "last_five_hit_rate": "4/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer over na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+              }
+            },
+            {
+              "player": "Darius Garland",
+              "team": "LAC",
+              "opponent": "SA",
+              "pick": "under",
+              "points_line": 19.5,
+              "odd": 1.8197,
+              "american_odd": -122,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910022",
+              "player_id": "4396907",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-10",
+                    "points": 13
+                  },
+                  {
+                    "date": "2026-11-08",
+                    "points": 24
+                  },
+                  {
+                    "date": "2026-11-04",
+                    "points": 26
+                  },
+                  {
+                    "date": "2026-11-02",
+                    "points": 16
+                  },
+                  {
+                    "date": "2026-11-01",
+                    "points": 15
+                  }
+                ],
+                "last_five_average": 18.8,
+                "last_five_hit_rate": "3/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+              }
+            }
+          ]
+        },
+        {
+          "id": "8",
+          "stake": 10,
+          "status": "pending",
+          "total_odd": 3.7645,
+          "potential_payout": 37.64,
+          "legs": [
+            {
+              "player": "Yaxel Lendeborg",
+              "team": "GS",
+              "opponent": "MEM",
+              "pick": "over",
+              "points_line": 21.5,
+              "odd": 1.9804,
+              "american_odd": -102,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910019",
+              "player_id": "5175737",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-16",
+                    "points": 28
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 3
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 25
+                  },
+                  {
+                    "date": "2026-11-09",
+                    "points": 23
+                  },
+                  {
+                    "date": "2026-11-07",
+                    "points": 23
+                  }
+                ],
+                "last_five_average": 20.4,
+                "last_five_hit_rate": "4/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer over na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+              }
+            },
+            {
+              "player": "Damian Lillard",
+              "team": "POR",
+              "opponent": "MIL",
+              "pick": "under",
+              "points_line": 22.5,
+              "odd": 1.9009,
+              "american_odd": -111,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910020",
+              "player_id": "6606",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-18",
+                    "points": 18
+                  },
+                  {
+                    "date": "2026-11-10",
+                    "points": 14
+                  },
+                  {
+                    "date": "2026-11-08",
+                    "points": 19
+                  },
+                  {
+                    "date": "2026-11-07",
+                    "points": 34
+                  },
+                  {
+                    "date": "2026-11-04",
+                    "points": 36
+                  }
+                ],
+                "last_five_average": 24.2,
+                "last_five_hit_rate": "3/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+              }
+            }
+          ]
+        },
+        {
+          "id": "9",
+          "stake": 10,
+          "status": "pending",
+          "total_odd": 3.5385,
+          "potential_payout": 35.38,
+          "legs": [
+            {
+              "player": "Josh Hart",
+              "team": "NY",
+              "opponent": "MIN",
+              "pick": "under",
+              "points_line": 7.5,
+              "odd": 1.885,
+              "american_odd": -113,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910021",
+              "player_id": "3062679",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-13",
+                    "points": 0
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 6
+                  },
+                  {
+                    "date": "2026-11-02",
+                    "points": 8
+                  }
+                ],
+                "last_five_average": 4.67,
+                "last_five_hit_rate": "2/3",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer under na osnovu 3 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+              }
+            },
+            {
+              "player": "Cameron Boozer",
+              "team": "MEM",
+              "opponent": "GS",
+              "pick": "under",
+              "points_line": 17.5,
+              "odd": 1.8772,
+              "american_odd": -114,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910019",
+              "player_id": "5041935",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-18",
+                    "points": 18
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 29
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 15
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 12
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 13
+                  }
+                ],
+                "last_five_average": 17.4,
+                "last_five_hit_rate": "3/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+              }
+            }
+          ]
+        },
+        {
+          "id": "10",
+          "stake": 10,
+          "status": "pending",
+          "total_odd": 3.3113,
+          "potential_payout": 33.11,
+          "legs": [
+            {
+              "player": "LaMelo Ball",
+              "team": "MIN",
+              "opponent": "NY",
+              "pick": "under",
+              "points_line": 19.5,
+              "odd": 1.8197,
+              "american_odd": -122,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910021",
+              "player_id": "4432816",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-17",
+                    "points": 20
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 16
+                  },
+                  {
+                    "date": "2026-11-01",
+                    "points": 18
+                  }
+                ],
+                "last_five_average": 18,
+                "last_five_hit_rate": "2/3",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer under na osnovu 3 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+              }
+            },
+            {
+              "player": "Ayo Dosunmu",
+              "team": "MIN",
+              "opponent": "NY",
+              "pick": "under",
+              "points_line": 18.5,
+              "odd": 1.8197,
+              "american_odd": -122,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401910021",
+              "player_id": "4397002",
+              "start_utc": "2026-11-20T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-17",
+                    "points": 21
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 18
+                  },
+                  {
+                    "date": "2026-11-12",
+                    "points": 12
+                  },
+                  {
+                    "date": "2026-11-10",
+                    "points": 20
+                  },
+                  {
+                    "date": "2026-11-08",
+                    "points": 14
+                  }
+                ],
+                "last_five_average": 17,
+                "last_five_hit_rate": "3/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
