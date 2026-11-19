@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "updated_at_utc": "2026-11-19T04:22:32.511591+00:00",
+  "updated_at_utc": "2026-11-19T04:47:39.011191+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -28,14 +28,14 @@
       "away": "Utah Jazz",
       "state": "live",
       "points_line": 35.5,
-      "period": 2,
-      "game_clock": "0.0",
+      "period": 3,
+      "game_clock": "4:44",
       "source": "espn-public-unofficial",
       "event_id": "401910017",
       "player_id": "3945274",
       "sport": "basketball",
-      "score": "22",
-      "player_points": 22
+      "score": "26",
+      "player_points": 26
     }
   ],
   "bank_unchanged": true
