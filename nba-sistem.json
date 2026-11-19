@@ -149,19 +149,31 @@
               "analysis": {
                 "last_five": [
                   {
-                    "date": "2026-11-04",
+                    "date": "2026-11-17",
                     "points": 9
                   },
                   {
-                    "date": "2026-11-02",
-                    "points": 8
+                    "date": "2026-11-16",
+                    "points": 10
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 11
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 5
+                  },
+                  {
+                    "date": "2026-11-10",
+                    "points": 11
                   }
                 ],
-                "last_five_average": 8.5,
-                "last_five_hit_rate": "2/2",
+                "last_five_average": 9.2,
+                "last_five_hit_rate": "5/5",
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
-                "scout_note": "Smjer under na osnovu 2 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+                "scout_note": "ESPN posljednjih pet mečeva: 9, 10, 11, 5, 11. UNDER 11.5 prolaz 5/5; H2H i defanzivni matchup nisu potvrđeni."
               }
             },
             {
