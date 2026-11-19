@@ -206,6 +206,61 @@ async function checkEspnDirectly(){
   showRefreshStatus('⚠ ESPN direktna provjera nedostupna; čekamo GitHub osvježavanje');
  }
 }
+// Independent browser-side NBA ESPN fallback: repairs delayed GitHub snapshots.
+// This is display-only; only the server workflow can persist bank/settlement.
+async function checkNbaEspnDirectly(){
+ if(!currentData||document.hidden||!Array.isArray(currentData.tickets))return;
+ const jobs=[];
+ for(const t of currentData.tickets)for(const [i,leg] of (t.matches||[]).entries()){
+  if(leg.sport!=='basketball'||leg.market!=='player_points'||leg.final_points!==undefined||leg.void===true)continue;
+  const event=String(leg.espn_event_id||leg.event_id||''),pid=String(leg.player_id||'');
+  if(!/^\d+$/.test(event)||!/^\d+$/.test(pid))continue;
+  const start=new Date(leg.start_utc||leg.datetime).getTime();
+  if(!Number.isFinite(start)||Date.now()-start < -20*60000||Date.now()-start>36*3600000)continue;
+  jobs.push({t,i,leg,event,pid});
+ }
+ if(!jobs.length)return;
+ const results=new Map();let confirmed=0,changed=false;
+ await Promise.all([...new Set(jobs.map(x=>x.event))].map(async event=>{
+  try{
+   const resp=await fetch('https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event='+encodeURIComponent(event),{cache:'no-store'});
+   if(resp.ok)results.set(event,await resp.json());
+  }catch(e){/* Unsupported CORS or temporary network failure: keep verified snapshots */ }
+ }));
+ if(!liveScores||liveScores.date!==currentData.date)liveScores={date:currentData.date,matches:[]};
+ for(const job of jobs){
+  const doc=results.get(job.event);if(!doc)continue;
+  const header=doc.header?.competitions?.[0]?.status||doc.status||{};
+  const status=header.type||{},state=status.state==='post'&&status.completed?'final':status.state==='in'?'live':null;
+  if(!state)continue;
+  let pts=null,dnp=false;
+  const teams=doc.boxscore?.players||[];
+  for(const team of teams)for(const section of (team.statistics||[])){
+   const keys=(section.keys||[]).map(x=>String(x).toLowerCase()),labels=(section.labels||[]).map(x=>String(x).toLowerCase());
+   let ix=keys.findIndex(x=>x==='points'||x==='pts');if(ix<0)ix=labels.findIndex(x=>x==='points'||x==='pts');
+   for(const entry of (section.athletes||[])){
+    if(String(entry.athlete?.id)!==job.pid)continue;
+    const reason=String(entry.reason||entry.status||'').toUpperCase();
+    if(state==='final'&&(entry.didNotPlay===true||entry.did_not_play===true||/^(DNP|DND|DID NOT PLAY|DID NOT DRESS)/.test(reason)))dnp=true;
+    if(ix>=0&&entry.stats?.[ix]!==undefined&&entry.stats[ix]!==null&&String(entry.stats[ix]).trim()!==''){
+     const n=Number(entry.stats[ix]);if(Number.isInteger(n)&&n>=0)pts=n;
+    }
+   }
+  }
+  if(pts===null&&!dnp)continue;
+  const old=liveScores.matches.find(x=>x.ticket===job.t.id&&x.index===job.i&&String(x.event_id||'')===job.event);
+  if(old?.state==='final'&&state!=='final')continue;
+  if(old?.state==='live'&&state==='live'&&Number.isFinite(Number(old.player_points))&&old.player_points!==null&&pts!==null&&Number(old.player_points)>pts)continue;
+  const line=Number(job.leg.points_line),pick=job.leg.pick;
+  const outcome=dnp?'pogođen':pts!==null&&pick==='over'?(pts>line?'pogođen':state==='final'?'promašen':null):pts!==null&&pick==='under'?(pts>=line?'promašen':state==='final'?'pogođen':null):null;
+  const next={...(old||{}),ticket:job.t.id,index:job.i,home:job.leg.home,away:job.leg.away,event_id:job.event,player_id:job.pid,sport:'basketball',state,period:header.period??null,game_clock:String(header.displayClock||''),score:dnp?'DNP':String(pts),player_points:pts,source:'espn-browser-direct',observed_at_utc:new Date().toISOString()};
+  if(dnp){next.void=true;next.effective_odd=1;}else{delete next.void;delete next.effective_odd;}
+  if(outcome)next.result_status=outcome;else delete next.result_status;
+  if(old)Object.assign(old,next);else liveScores.matches.push(next);
+  confirmed++;changed=true;
+ }
+ if(changed){render(currentData,false,'out');showRefreshStatus('🏀 ESPN direktno: '+confirmed+' tip(ova) · '+refreshClock()+' · GitHub potvrđuje banku');}
+}
 async function refreshPublishedData(){
   try{
     const response=await fetch('./data.json?v='+Date.now(),{cache:'no-store'});
@@ -230,6 +285,7 @@ async function pollPublishedScores(force=false){
     await refreshPublishedData();
     await loadScores();
     await checkEspnDirectly();
+    await checkNbaEspnDirectly();
   }finally{pollBusy=false}
 }
 setInterval(()=>{pollPublishedScores()},15000);
@@ -252,5 +308,5 @@ function refreshClock(){return new Intl.DateTimeFormat("bs-BA",{timeZone:"Europe
   window.location.replace(next.toString());
 }
 function switchTab(which){const archive=which==='archive';document.getElementById('currentPanel').hidden=archive;document.getElementById('archivePanel').hidden=!archive;for(const [id,selected] of [['currentTab',!archive],['archiveTab',archive]]){const b=document.getElementById(id);b.classList.toggle('active',selected);b.setAttribute('aria-selected',String(selected))}if(archive)loadArchive()}document.getElementById('currentTab').addEventListener('click',()=>switchTab('current'));document.getElementById('archiveTab').addEventListener('click',()=>switchTab('archive'));function showArchive(){const date=document.getElementById('archiveDate').value;const d=archiveData.find(x=>x.date===date);if(d)render(d,false,'archiveOut');else document.getElementById('archiveOut').innerHTML='<div class="notice">Nema sačuvane ponude za taj datum.</div>'}document.getElementById('archiveDate').addEventListener('change',showArchive);async function loadArchive(){document.getElementById('archiveLoading').textContent='Učitavanje arhive…';try{const r=await fetch('./archive.json?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('Arhiva nedostupna');const list=await r.json();archiveData=(Array.isArray(list)?list:[]).filter(x=>x&&x.date).sort((a,b)=>b.date.localeCompare(a.date));const sel=document.getElementById('archiveDate');const prior=sel.value;sel.innerHTML=archiveData.map(x=>'<option value="'+esc(x.date)+'">'+esc(x.date.split('-').reverse().join('.'))+'</option>').join('');if(archiveData.some(x=>x.date===prior))sel.value=prior;document.getElementById('archiveLoading').textContent=archiveData.length?'':'Arhiva je trenutno prazna.';if(archiveData.length)showArchive();else document.getElementById('archiveOut').innerHTML='';return true}catch(e){document.getElementById('archiveLoading').textContent='Arhiva trenutno nije dostupna. Pokušaj osvježiti stranicu.';return false}}
-fetch('./data.json?v='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json()}).then(d=>{currentData=d;render(d);return loadScores().then(checkEspnDirectly)}).catch(()=>{currentData=fallback;render(fallback,true);loadScores()});
+fetch('./data.json?v='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json()}).then(d=>{currentData=d;render(d);return loadScores().then(async()=>{await checkEspnDirectly();await checkNbaEspnDirectly()})}).catch(()=>{currentData=fallback;render(fallback,true);loadScores()});
 </script></body></html>
