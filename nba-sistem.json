@@ -18,22 +18,22 @@
       "date": "2026-11-19",
       "bank_start": 1000,
       "status": "open",
-      "created_at_utc": "2026-11-19T18:00:00Z",
+      "created_at_utc": "2026-11-19T18:02:11.183Z",
       "scout": {
         "offered": 49,
         "verified_ids": 22,
         "top20": 20,
         "top10": 10,
         "top5": 5,
-        "note": "AI shortlist of 22 ESPN-identified BetSharp/DraftKings points offers; selected 20. Last-five ESPN sample per leg is included when retrievable; H2H, exact defender and opponent-defense not verified. Scout did NOT individually audit all 49 offers. Odds reference only and may change."
+        "note": "20 izbora među 22 ESPN-identifikovana BetSharp/DraftKings kandidata, ne svih 49; nekoliko posljednjih pet statistika nepotpuno i naznačeno uz igrača; H2H, čuvari i protivnički defanzivni matchup nisu detaljno potvrđeni. Odabrano po višem prolazu u posljednjim verifikovanim nastupima; tipovi nisu garancija. Referentne kvote podložne promjenama."
       },
       "tickets": [
         {
           "id": "1",
           "stake": 10,
           "status": "pending",
-          "total_odd": 3.5684,
-          "potential_payout": 35.68,
+          "total_odd": 3.5982,
+          "potential_payout": 35.98,
           "legs": [
             {
               "player": "Karl-Anthony Towns",
@@ -83,10 +83,10 @@
               "player": "Deni Avdija",
               "team": "POR",
               "opponent": "MIL",
-              "pick": "under",
+              "pick": "over",
               "points_line": 24.5,
-              "odd": 1.8772,
-              "american_odd": -114,
+              "odd": 1.8929,
+              "american_odd": -112,
               "bookmaker": "DraftKings",
               "source": "https://betsharp.com/nba/props?m=points",
               "espn_event_id": "401910020",
@@ -94,12 +94,33 @@
               "start_utc": "2026-11-20T01:00:00Z",
               "status": "pending",
               "analysis": {
-                "last_five": [],
-                "last_five_average": null,
-                "last_five_hit_rate": "not_verified",
+                "last_five": [
+                  {
+                    "date": "2026-11-16",
+                    "points": 27
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 34
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 28
+                  },
+                  {
+                    "date": "2026-11-10",
+                    "points": 24
+                  },
+                  {
+                    "date": "2026-11-07",
+                    "points": 15
+                  }
+                ],
+                "last_five_average": 25.6,
+                "last_five_hit_rate": "3/5",
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
-                "scout_note": "Smjer privremen, nema potvrđene posljednje utakmice u izvučenom ESPN zapisu."
+                "scout_note": "ESPN posljednjih 5 potvrđenih utakmica: 27, 34, 28, 24, 15; OVER 24.5 prolaz 3/5. H2H i matchup nisu potvrđeni."
               }
             }
           ]
@@ -108,8 +129,8 @@
           "id": "2",
           "stake": 10,
           "status": "pending",
-          "total_odd": 3.3953,
-          "potential_payout": 33.95,
+          "total_odd": 3.3671,
+          "potential_payout": 33.67,
           "legs": [
             {
               "player": "Scoot Henderson",
@@ -147,10 +168,10 @@
               "player": "OG Anunoby",
               "team": "NY",
               "opponent": "MIN",
-              "pick": "under",
+              "pick": "over",
               "points_line": 15.5,
-              "odd": 1.8929,
-              "american_odd": -112,
+              "odd": 1.8772,
+              "american_odd": -114,
               "bookmaker": "DraftKings",
               "source": "https://betsharp.com/nba/props?m=points",
               "espn_event_id": "401910021",
@@ -158,12 +179,33 @@
               "start_utc": "2026-11-20T01:00:00Z",
               "status": "pending",
               "analysis": {
-                "last_five": [],
-                "last_five_average": null,
-                "last_five_hit_rate": "not_verified",
+                "last_five": [
+                  {
+                    "date": "2026-11-17",
+                    "points": 16
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 21
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 11
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 14
+                  },
+                  {
+                    "date": "2026-11-10",
+                    "points": 19
+                  }
+                ],
+                "last_five_average": 16.2,
+                "last_five_hit_rate": "3/5",
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
-                "scout_note": "Smjer privremen, nema potvrđene posljednje utakmice u izvučenom ESPN zapisu."
+                "scout_note": "ESPN posljednjih 5 potvrđenih utakmica: 16, 21, 11, 14, 19; OVER 15.5 prolaz 3/5. H2H i matchup nisu potvrđeni."
               }
             }
           ]
@@ -172,8 +214,8 @@
           "id": "3",
           "stake": 10,
           "status": "pending",
-          "total_odd": 3.6849,
-          "potential_payout": 36.85,
+          "total_odd": 3.9062,
+          "potential_payout": 39.06,
           "legs": [
             {
               "player": "Donovan Clingan",
@@ -207,10 +249,10 @@
               "player": "Jalen Brunson",
               "team": "NY",
               "opponent": "MIN",
-              "pick": "under",
+              "pick": "over",
               "points_line": 25.5,
-              "odd": 1.8333,
-              "american_odd": -120,
+              "odd": 1.9434,
+              "american_odd": -106,
               "bookmaker": "DraftKings",
               "source": "https://betsharp.com/nba/props?m=points",
               "espn_event_id": "401910021",
@@ -218,12 +260,33 @@
               "start_utc": "2026-11-20T01:00:00Z",
               "status": "pending",
               "analysis": {
-                "last_five": [],
-                "last_five_average": null,
-                "last_five_hit_rate": "not_verified",
+                "last_five": [
+                  {
+                    "date": "2026-11-17",
+                    "points": 31
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 28
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 33
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 27
+                  },
+                  {
+                    "date": "2026-11-10",
+                    "points": 23
+                  }
+                ],
+                "last_five_average": 28.4,
+                "last_five_hit_rate": "4/5",
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
-                "scout_note": "Smjer privremen, nema potvrđene posljednje utakmice u izvučenom ESPN zapisu."
+                "scout_note": "ESPN posljednjih 5 potvrđenih utakmica: 31, 28, 33, 27, 23; OVER 25.5 prolaz 4/5. H2H i matchup nisu potvrđeni."
               }
             }
           ]
@@ -294,12 +357,33 @@
               "start_utc": "2026-11-20T01:00:00Z",
               "status": "pending",
               "analysis": {
-                "last_five": [],
-                "last_five_average": null,
-                "last_five_hit_rate": "not_verified",
+                "last_five": [
+                  {
+                    "date": "2026-11-18",
+                    "points": 10
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 15
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 8
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 22
+                  },
+                  {
+                    "date": "2026-11-09",
+                    "points": 25
+                  }
+                ],
+                "last_five_average": 16,
+                "last_five_hit_rate": "3/5",
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
-                "scout_note": "Smjer privremen, nema potvrđene posljednje utakmice u izvučenom ESPN zapisu."
+                "scout_note": "ESPN posljednjih 5 potvrđenih utakmica: 10, 15, 8, 22, 25; UNDER 16.5 prolaz 3/5. H2H i matchup nisu potvrđeni."
               }
             }
           ]
@@ -716,6 +800,14 @@
               "analysis": {
                 "last_five": [
                   {
+                    "date": "2026-11-17",
+                    "points": 5
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 0
+                  },
+                  {
                     "date": "2026-11-13",
                     "points": 0
                   },
@@ -728,11 +820,11 @@
                     "points": 8
                   }
                 ],
-                "last_five_average": 4.67,
-                "last_five_hit_rate": "2/3",
+                "last_five_average": 3.8,
+                "last_five_hit_rate": "4/5",
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
-                "scout_note": "Smjer under na osnovu 3 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
+                "scout_note": "ESPN posljednjih 5 potvrđenih utakmica: 5, 0, 0, 6, 8; UNDER 7.5 prolaz 4/5. H2H i matchup nisu potvrđeni."
               }
             },
             {
