@@ -3351,5 +3351,93 @@
       "C": "objavljen"
     },
     "odds_verification_note": "AI selected publicly displayed bookmaker comparison quotes; not independently refreshed by GitHub or confirmed in individual bookmaker accounts."
+  },
+  {
+    "date": "2026-11-18",
+    "published": "18.11.2026. u 16:59 (Europe/Sarajevo)",
+    "publication_type": "independent_ai_approved_github_nba_c",
+    "bank_before": 223.94,
+    "daily_stake": 2.24,
+    "bank_after": 221.7,
+    "bank_after_stakes": 221.7,
+    "provisional": false,
+    "settled": true,
+    "odds_verified": false,
+    "tickets": [
+      {
+        "id": "C",
+        "label": "NBA · DVA IGRAČA",
+        "matches": [
+          {
+            "fixture_id": "espn:basketball:nba:401910010:4712849",
+            "event_id": "401910010",
+            "espn_event_id": "401910010",
+            "player_id": "4712849",
+            "player": "Anthony Black",
+            "home": "Orlando Magic",
+            "away": "Philadelphia 76ers",
+            "team": "Orlando Magic",
+            "opponent": "Philadelphia 76ers",
+            "league": "nba",
+            "sport": "basketball",
+            "datetime": "2026-11-19T00:00:00+00:00",
+            "start_utc": "2026-11-19T00:00:00+00:00",
+            "market": "player_points",
+            "points_line": 14.5,
+            "pick": "over",
+            "market_name": "Više od 14.5 poena",
+            "odd": 1.9091,
+            "bookmaker": "DraftKings",
+            "quote_source_url": "https://betsharp.com/nba/player/anthony-black",
+            "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+            "quote_timestamp_verified": false,
+            "result_status": "pogođen",
+            "final_points": 15
+          },
+          {
+            "fixture_id": "espn:basketball:nba:401910017:3945274",
+            "event_id": "401910017",
+            "espn_event_id": "401910017",
+            "player_id": "3945274",
+            "player": "Luka Doncic",
+            "home": "Los Angeles Lakers",
+            "away": "Utah Jazz",
+            "team": "Los Angeles Lakers",
+            "opponent": "Utah Jazz",
+            "league": "nba",
+            "sport": "basketball",
+            "datetime": "2026-11-19T03:00:00+00:00",
+            "start_utc": "2026-11-19T03:00:00+00:00",
+            "market": "player_points",
+            "points_line": 35.5,
+            "pick": "over",
+            "market_name": "Više od 35.5 poena",
+            "odd": 1.8333,
+            "bookmaker": "DraftKings",
+            "quote_source_url": "https://betsharp.com/nba/player/luka-doncic",
+            "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+            "quote_timestamp_verified": false,
+            "result_status": "promašen",
+            "final_points": 29
+          }
+        ],
+        "odds": 3.5,
+        "stake": 2.24,
+        "status": "izgubljen",
+        "payout": 0.0,
+        "analysis": "AI Scout 18.11.2026; rolling 24h od 15:57 UTC. ESPN potvrđuje PHI@ORL 19.11 00:00Z event 401910010 i UTA@LAL 19.11 03:00Z event 401910017. BetSharp jedini izvor tržišta, obje cijene u konzistentnoj DK koloni (agregatorske reference, bez bookmaker timestamp potvrde). Anthony Black OVER 14.5 DK -110 = 1.9091, UNDER 14.5 DK -116 = 1.8621. Zadnjih 10 poena 20,5,22,26,18,10,23,17,8,18: 7/10 OVER, prosjek 16.7, zadnjih pet 18.2, prosjek minuta ~32.4; sezonu 16.7 PPG potvrđuje NBA.com. Philadelphia dopušta 25.9 PPG SG poziciji (#9 lakši matchup po NBAHOUSE). Banchero odsutan, Black očekivan starter, mogući direktni matchup VJ Edgecombe (nije zvanično potvrđen; preuzimanja i switch odbrana mogu promijeniti). Rizik: nekoliko utakmica 5-10 poena, promjenjiva upotreba, 76ers fizička odbrana. Luka Doncic OVER 35.5 DK -120 = 1.8333, UNDER 35.5 DK -107 = 1.9346. Zadnjih 10 poena 36,43,32,32,53,40,42,45,37,41: 7/10 OVER, prosjek 40.1, zadnjih pet 39.2; prosjek minuta ~36.7, sezonski 39.0 PPG prema ESPN. Utah dopušta PG 28.4 PPG (#7 lakši matchup NBAHOUSE); Keyonte George moguć primarni čuvar u dijelu posjeda, ali direktni čuvar nije potvrđen i mogu preuzimati Darryn Peterson/krila. Austin Reaves odsutan, veća kreacija za Luku. Rizici: visok prag 35.5, moguća velika razlika u rezultatu, nezavisna projekcija 32.8 niža od praga, moguća promjena Reaves statusa. Oba izbora su nesigurna, nema garancije. Statistika NBAHOUSE 18.11, povrede ESPN i izvještaji 18.11. Tržište: https://betsharp.com/nba/props?m=points ; pojedinačne stranice u matches.",
+        "settled_at_utc": "2026-11-19T11:44:25.782938+00:00"
+      }
+    ],
+    "total_payout": 0.0,
+    "net_change": -2.24,
+    "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
+    "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",
+    "published_at_utc": "2026-11-18T15:59:24.556418+00:00",
+    "daily_budget": 22.39,
+    "pending_ticket_statuses": {
+      "C": "objavljen"
+    },
+    "odds_verification_note": "AI selected publicly displayed bookmaker comparison quotes; not independently refreshed by GitHub or confirmed in individual bookmaker accounts."
   }
 ]
