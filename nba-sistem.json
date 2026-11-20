@@ -1121,8 +1121,8 @@
           11,
           11
         ],
-        "group_number": 4,
-        "group_range": "37-48",
+        "group_number": 5,
+        "group_range": "49-60",
         "group_candidates": [
           "Aaron Wiggins",
           "Brandon Miller",
@@ -1139,8 +1139,8 @@
         ],
         "group_reviewed": 12,
         "group_selected": [
-          "Nolan Traore",
-          "Franz Wagner"
+          "Moritz Wagner",
+          "Jalen Smith"
         ],
         "ranking": [
           {
@@ -1164,7 +1164,8 @@
           1,
           2,
           3,
-          4
+          4,
+          5
         ],
         "group_progress": [
           {
@@ -1335,6 +1336,93 @@
                 "market": "over",
                 "line": 25.5,
                 "odds": 1.9615,
+                "hit_rate": "4/5"
+              }
+            ],
+            "evaluation": "All original group members received numeric last-five averages where publicly retrievable; injuries, confirmed defender and up to 5 H2H not fully verified. Picks are provisional analysis, not guarantees.",
+            "source": "https://statz.ai/nba/players/;https://betsharp.com/nba/props?m=points"
+          },
+          {
+            "number": 5,
+            "range": [
+              49,
+              60
+            ],
+            "candidates": [
+              {
+                "name": "Moritz Wagner",
+                "last_five_average": 10.6,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "AJ Dybantsa",
+                "last_five_average": 15.2,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Alexandre Sarr",
+                "last_five_average": 15.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Anthony Davis",
+                "last_five_average": 27,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Bilal Coulibaly",
+                "last_five_average": 6.4,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Isaac Okoro",
+                "last_five_average": 9.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Jalen Smith",
+                "last_five_average": 17.2,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Joshua Giddey",
+                "last_five_average": "not_verified",
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Kyshawn George",
+                "last_five_average": 17.6,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Matas Buzelis",
+                "last_five_average": 16.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Nicolas Claxton",
+                "last_five_average": 9,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Norman Powell",
+                "last_five_average": 22.8,
+                "full_h2h": "not_verified"
+              }
+            ],
+            "selected": [
+              {
+                "name": "Moritz Wagner",
+                "market": "over",
+                "line": 7.5,
+                "odds": 1.7813,
+                "hit_rate": "4/5"
+              },
+              {
+                "name": "Jalen Smith",
+                "market": "over",
+                "line": 14.5,
+                "odds": 1.8264,
                 "hit_rate": "4/5"
               }
             ],
@@ -1698,6 +1786,95 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Četiri od posljednjih pet preko 25,5, prosjek 30,8; protivnički matchup i eventualne izmjene minutaže nepotvrđeni.",
                 "source_stats": "https://statz.ai/nba/players/franz-wagner"
+              }
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "stake": 9.86,
+          "status": "pending",
+          "total_odd": 3.2534,
+          "potential_payout": 32.08,
+          "legs": [
+            {
+              "player": "Moritz Wagner",
+              "team": "BKN",
+              "opponent": "ORL",
+              "pick": "over",
+              "points_line": 7.5,
+              "odd": 1.7813,
+              "american_odd": -128,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909306",
+              "player_id": "3150844",
+              "start_utc": "2026-11-21T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "points": 11
+                  },
+                  {
+                    "points": 4
+                  },
+                  {
+                    "points": 10
+                  },
+                  {
+                    "points": 16
+                  },
+                  {
+                    "points": 12
+                  }
+                ],
+                "last_five_average": 10.6,
+                "last_five_hit_rate": "4/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_fully_verified",
+                "scout_note": "Četiri od posljednjih pet preko 7,5; prosjek 10,6, ali defanzivna snaga Orlanda donosi rizik.",
+                "source_stats": "https://statz.ai/nba/players/moritz-wagner"
+              }
+            },
+            {
+              "player": "Jalen Smith",
+              "team": "CHI",
+              "opponent": "WSH",
+              "pick": "over",
+              "points_line": 14.5,
+              "odd": 1.8264,
+              "american_odd": -121,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909309",
+              "player_id": "4397189",
+              "start_utc": "2026-11-21T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "points": 14
+                  },
+                  {
+                    "points": 17
+                  },
+                  {
+                    "points": 15
+                  },
+                  {
+                    "points": 23
+                  },
+                  {
+                    "points": 17
+                  }
+                ],
+                "last_five_average": 17.2,
+                "last_five_hit_rate": "4/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_fully_verified",
+                "scout_note": "Četiri od posljednjih pet preko 14,5; trenutna forma 17,2, naspram sezone 13,4. Rizik varijabilne minute.",
+                "source_stats": "https://statz.ai/nba/players/jalen-smith"
               }
             }
           ]
