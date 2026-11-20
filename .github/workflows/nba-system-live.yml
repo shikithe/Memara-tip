@@ -10,7 +10,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: nba-system-live-settlement
+  group: nba-system-ledger
   cancel-in-progress: false
 jobs:
   settle:
