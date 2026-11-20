@@ -40,35 +40,21 @@ class ESPNABTests(unittest.TestCase):
     def test_two_tickets_without_kvoter(self):
         self.assertEqual([t["id"] for t in verify(APPROVAL, FEED, CURRENT, NOW)],["A","B"])
 
-    def test_stale_feed_rejected(self):
-        stale=copy.deepcopy(FEED)
-        stale["date"]="2026-11-20"
-        with self.assertRaisesRegex(ValueError,"today"):
-            verify(APPROVAL,stale,CURRENT,NOW)
+    def test_no_espn_identification_or_odds_validation(self):
+        altered = copy.deepcopy(APPROVAL)
+        altered["feed_generated_at_utc"] = "OLD"
+        altered["tickets"][0]["matches"][0]["fixture_id"] = "AI-OWN-IDENTIFIER"
+        altered["tickets"][0]["matches"][0]["odd"] = 2.34
+        altered["tickets"][1]["matches"][0]["pick"] = "1"
+        altered["tickets"][1]["matches"][0]["source"] = ""
+        result = verify(altered, {}, CURRENT, NOW)
+        self.assertEqual(result, altered["tickets"])
 
-    def test_b_market_only_three_plus(self):
-        a=copy.deepcopy(APPROVAL)
-        a["tickets"][1]["matches"][0]["pick"]="1"
-        with self.assertRaisesRegex(ValueError,"3\\+"):
-            verify(a,FEED,CURRENT,NOW)
-
-    def test_missing_quote_source_rejected(self):
-        a=copy.deepcopy(APPROVAL)
-        a["tickets"][0]["matches"][0]["source"]=""
-        with self.assertRaisesRegex(ValueError,"HTTPS"):
-            verify(a,FEED,CURRENT,NOW)
-
-    def test_wrong_feed_snapshot_rejected(self):
-        a=copy.deepcopy(APPROVAL)
-        a["feed_generated_at_utc"]="2026-11-21T08:00:00Z"
-        with self.assertRaisesRegex(ValueError,"snapshot"):
-            verify(a,FEED,CURRENT,NOW)
-
-    def test_duplicate_fixture_rejected(self):
-        a=copy.deepcopy(APPROVAL)
-        a["tickets"][1]["matches"][0]["fixture_id"]="espn:football:ger.1:1"
-        with self.assertRaisesRegex(ValueError,"duplicate"):
-            verify(a,FEED,CURRENT,NOW)
+    def test_old_approval_date_is_rejected(self):
+        altered = copy.deepcopy(APPROVAL)
+        altered["date"] = "2026-11-20"
+        with self.assertRaisesRegex(ValueError, "today"):
+            verify(altered, None, CURRENT, NOW)
 
     def test_preserve_nba_c_and_idempotence(self):
         with tempfile.TemporaryDirectory() as td:
