@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-20",
+  "source": "https://betsharp.com/nba/props?m=points",
+  "bookmaker": "DraftKings",
+  "list_origin": "Reconstructed later on 2026-11-20 from publicly displayed ordered BetSharp table. First twelve names exactly match original ticket-1 snapshot, full remaining order not provably identical to original capture.",
+  "original_snapshot_exact": false,
+  "noted": "116 names with draftkings availability: Jordan Goodwin excluded because no DK odds, following current published table. Odds are not frozen and MUST be confirmed again for each leg before publishing. Table changes can affect unverified group names. No claim of full original snapshot.",
+  "count": 116,
+  "groups": [
+    {
+      "number": 1,
+      "range": [
+        1,
+        12
+      ],
+      "names": [
+        "Aaron Wiggins",
+        "Brandon Miller",
+        "Coby White",
+        "Dyson Daniels",
+        "Jalen Johnson",
+        "Kingston Flemings",
+        "Luguentz Dort",
+        "Moussa Diabaté",
+        "Naz Reid",
+        "Nickeil Alexander-Walker",
+        "Onyeka Okongwu",
+        "Royce O'Neale"
+      ]
+    },
+    {
+      "number": 2,
+      "range": [
+        13,
+        24
+      ],
+      "names": [
+        "Sion James",
+        "Aaron Nesmith",
+        "Andrew Nembhard",
+        "Donovan Mitchell",
+        "Ivica Zubac",
+        "James Harden",
+        "Jarrett Allen",
+        "Kelly Oubre Jr.",
+        "Pascal Siakam",
+        "Peyton Watson",
+        "Tyrese Proctor",
+        "Ausar Thompson"
+      ]
+    },
+    {
+      "number": 3,
+      "range": [
+        25,
+        36
+      ],
+      "names": [
+        "Cade Cunningham",
+        "Daniss Jenkins",
+        "Immanuel Quickley",
+        "Ja'Kobe Walter",
+        "Jakob Poeltl",
+        "Jamal Shead",
+        "Jamison Battle",
+        "Javonte Green",
+        "John Collins",
+        "Kevin Huerter",
+        "Paul Reed",
+        "Scottie Barnes"
+      ]
+    },
+    {
+      "number": 4,
+      "range": [
+        37,
+        48
+      ],
+      "names": [
+        "Anthony Black",
+        "Day'Ron Sharpe",
+        "Desmond Bane",
+        "Egor Demin",
+        "Franz Wagner",
+        "Jalen Suggs",
+        "Julius Randle",
+        "Michael Porter Jr.",
+        "Mikel Brown Jr.",
+        "Nolan Traore",
+        "Tristan da Silva",
+        "Wendell Carter Jr."
+      ]
+    },
+    {
+      "number": 5,
+      "range": [
+        49,
+        60
+      ],
+      "names": [
+        "Moritz Wagner",
+        "AJ Dybantsa",
+        "Alexandre Sarr",
+        "Anthony Davis",
+        "Bilal Coulibaly",
+        "Isaac Okoro",
+        "Jalen Smith",
+        "Joshua Giddey",
+        "Kyshawn George",
+        "Matas Buzelis",
+        "Nicolas Claxton",
+        "Norman Powell"
+      ]
+    },
+    {
+      "number": 6,
+      "range": [
+        61,
+        72
+      ],
+      "names": [
+        "Trae Young",
+        "Tre Jones",
+        "Khris Middleton",
+        "Aday Mara",
+        "Ajay Mitchell",
+        "Herbert Jones",
+        "Isaiah Hartenstein",
+        "Jared McCain",
+        "Jaylin Williams",
+        "Jeremiah Fears",
+        "Kenrich Williams",
+        "Saddiq Bey"
+      ]
+    },
+    {
+      "number": 7,
+      "range": [
+        73,
+        83
+      ],
+      "names": [
+        "Shai Gilgeous-Alexander",
+        "Trey Murphy III",
+        "Yves Missi",
+        "Zion Williamson",
+        "Ace Bailey",
+        "Collin Gillespie",
+        "Darryn Peterson",
+        "Devin Booker",
+        "Dillon Brooks",
+        "Jalen Green",
+        "Jaxson Hayes"
+      ]
+    },
+    {
+      "number": 8,
+      "range": [
+        84,
+        94
+      ],
+      "names": [
+        "Josh Green",
+        "Keyonte George",
+        "Miles Bridges",
+        "Oso Ighodaro",
+        "Brice Sensabaugh",
+        "Mo Bamba",
+        "Aaron Gordon",
+        "Alperen Sengun",
+        "Amen Thompson",
+        "Cameron Johnson",
+        "Christian Braun"
+      ]
+    },
+    {
+      "number": 9,
+      "range": [
+        95,
+        105
+      ],
+      "names": [
+        "DeMar DeRozan",
+        "Fred VanVleet",
+        "Jabari Smith Jr.",
+        "Jamal Murray",
+        "Kevin Durant",
+        "Marcus Smart",
+        "Nikola Jokic",
+        "Tari Eason",
+        "Collin Sexton",
+        "Darius Acuff Jr.",
+        "De'Andre Hunter"
+      ]
+    },
+    {
+      "number": 10,
+      "range": [
+        106,
+        116
+      ],
+      "names": [
+        "Domantas Sabonis",
+        "Jake LaRavia",
+        "Keegan Murray",
+        "Luka Doncic",
+        "Malik Monk",
+        "Matisse Thybulle",
+        "Quentin Grimes",
+        "Sandro Mamukelashvili",
+        "Walker Kessler",
+        "Zach LaVine",
+        "Ziaire Williams"
+      ]
+    }
+  ],
+  "reviewed_groups": [
+    1
+  ],
+  "published_ticket_ids": [
+    "1"
+  ]
+}
