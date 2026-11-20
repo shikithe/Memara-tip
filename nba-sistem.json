@@ -1121,8 +1121,8 @@
           11,
           11
         ],
-        "group_number": 8,
-        "group_range": "84-94",
+        "group_number": 9,
+        "group_range": "95-105",
         "group_candidates": [
           "Aaron Wiggins",
           "Brandon Miller",
@@ -1139,8 +1139,8 @@
         ],
         "group_reviewed": 12,
         "group_selected": [
-          "Aaron Gordon",
-          "Keyonte George"
+          "Marcus Smart",
+          "DeMar DeRozan"
         ],
         "ranking": [
           {
@@ -1168,7 +1168,8 @@
           5,
           6,
           7,
-          8
+          8,
+          9
         ],
         "group_progress": [
           {
@@ -1678,6 +1679,88 @@
                 "line": 24.5,
                 "odds": 1.8475,
                 "hit_rate": "3/5"
+              }
+            ],
+            "evaluation": "All original group members received numeric last-five averages where publicly retrievable; injuries, confirmed defender and up to 5 H2H not fully verified. Picks are provisional analysis, not guarantees.",
+            "source": "https://statz.ai/nba/players/;https://betsharp.com/nba/props?m=points"
+          },
+          {
+            "number": 9,
+            "range": [
+              95,
+              105
+            ],
+            "candidates": [
+              {
+                "name": "DeMar DeRozan",
+                "last_five_average": 8.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Fred VanVleet",
+                "last_five_average": 16.2,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Jabari Smith Jr.",
+                "last_five_average": 11.6,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Jamal Murray",
+                "last_five_average": 28,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Kevin Durant",
+                "last_five_average": 22,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Marcus Smart",
+                "last_five_average": 4.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Nikola Jokic",
+                "last_five_average": 25.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Tari Eason",
+                "last_five_average": 12.6,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Collin Sexton",
+                "last_five_average": 11,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Darius Acuff Jr.",
+                "last_five_average": 28,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "De'Andre Hunter",
+                "last_five_average": 14.8,
+                "full_h2h": "not_verified"
+              }
+            ],
+            "selected": [
+              {
+                "name": "Marcus Smart",
+                "market": "under",
+                "line": 6.5,
+                "odds": 1.8772,
+                "hit_rate": "5/5"
+              },
+              {
+                "name": "DeMar DeRozan",
+                "market": "under",
+                "line": 9.5,
+                "odds": 1.885,
+                "hit_rate": "4/5"
               }
             ],
             "evaluation": "All original group members received numeric last-five averages where publicly retrievable; injuries, confirmed defender and up to 5 H2H not fully verified. Picks are provisional analysis, not guarantees.",
@@ -2396,6 +2479,95 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Tri od pet ispod 24,5 uz prosjek 20,4; dva meča iznad granice ukazuju na veći rizik.",
                 "source_stats": "https://statz.ai/nba/players/keyonte-george"
+              }
+            }
+          ]
+        },
+        {
+          "id": "9",
+          "stake": 9.86,
+          "status": "pending",
+          "total_odd": 3.5385,
+          "potential_payout": 34.89,
+          "legs": [
+            {
+              "player": "Marcus Smart",
+              "team": "HOU",
+              "opponent": "DEN",
+              "pick": "under",
+              "points_line": 6.5,
+              "odd": 1.8772,
+              "american_odd": -114,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909312",
+              "player_id": "2990992",
+              "start_utc": "2026-11-21T03:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "points": 4
+                  },
+                  {
+                    "points": 6
+                  },
+                  {
+                    "points": 5
+                  },
+                  {
+                    "points": 5
+                  },
+                  {
+                    "points": 4
+                  }
+                ],
+                "last_five_average": 4.8,
+                "last_five_hit_rate": "5/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_fully_verified",
+                "scout_note": "Svih pet posljednjih ispod 6,5, prosjek 4,8; sezonski 7,9 i uloga u napadu mogu promijeniti trend.",
+                "source_stats": "https://statz.ai/nba/players/marcus-smart"
+              }
+            },
+            {
+              "player": "DeMar DeRozan",
+              "team": "DEN",
+              "opponent": "HOU",
+              "pick": "under",
+              "points_line": 9.5,
+              "odd": 1.885,
+              "american_odd": -113,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909312",
+              "player_id": "3978",
+              "start_utc": "2026-11-21T03:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "points": 18
+                  },
+                  {
+                    "points": 2
+                  },
+                  {
+                    "points": 9
+                  },
+                  {
+                    "points": 8
+                  },
+                  {
+                    "points": 7
+                  }
+                ],
+                "last_five_average": 8.8,
+                "last_five_hit_rate": "4/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_fully_verified",
+                "scout_note": "Četiri od pet ispod 9,5; uloga i 18 poena u najnovijem nastupu predstavljaju rizik.",
+                "source_stats": "https://statz.ai/nba/players/demar-derozan"
               }
             }
           ]
