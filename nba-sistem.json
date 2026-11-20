@@ -1121,8 +1121,8 @@
           11,
           11
         ],
-        "group_number": 9,
-        "group_range": "95-105",
+        "group_number": 10,
+        "group_range": "106-116",
         "group_candidates": [
           "Aaron Wiggins",
           "Brandon Miller",
@@ -1139,8 +1139,8 @@
         ],
         "group_reviewed": 12,
         "group_selected": [
-          "Marcus Smart",
-          "DeMar DeRozan"
+          "Jake LaRavia",
+          "Malik Monk"
         ],
         "ranking": [
           {
@@ -1169,7 +1169,8 @@
           6,
           7,
           8,
-          9
+          9,
+          10
         ],
         "group_progress": [
           {
@@ -1760,6 +1761,88 @@
                 "market": "under",
                 "line": 9.5,
                 "odds": 1.885,
+                "hit_rate": "4/5"
+              }
+            ],
+            "evaluation": "All original group members received numeric last-five averages where publicly retrievable; injuries, confirmed defender and up to 5 H2H not fully verified. Picks are provisional analysis, not guarantees.",
+            "source": "https://statz.ai/nba/players/;https://betsharp.com/nba/props?m=points"
+          },
+          {
+            "number": 10,
+            "range": [
+              106,
+              116
+            ],
+            "candidates": [
+              {
+                "name": "Domantas Sabonis",
+                "last_five_average": 11.4,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Jake LaRavia",
+                "last_five_average": 4.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Keegan Murray",
+                "last_five_average": 11,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Luka Doncic",
+                "last_five_average": 34.4,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Malik Monk",
+                "last_five_average": 7.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Matisse Thybulle",
+                "last_five_average": 6.4,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Quentin Grimes",
+                "last_five_average": 6.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Sandro Mamukelashvili",
+                "last_five_average": 11.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Walker Kessler",
+                "last_five_average": 14.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Zach LaVine",
+                "last_five_average": 18.6,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Ziaire Williams",
+                "last_five_average": 6.8,
+                "full_h2h": "not_verified"
+              }
+            ],
+            "selected": [
+              {
+                "name": "Jake LaRavia",
+                "market": "under",
+                "line": 6.5,
+                "odds": 1.9259,
+                "hit_rate": "4/5"
+              },
+              {
+                "name": "Malik Monk",
+                "market": "under",
+                "line": 11.5,
+                "odds": 1.8264,
                 "hit_rate": "4/5"
               }
             ],
@@ -2568,6 +2651,95 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Četiri od pet ispod 9,5; uloga i 18 poena u najnovijem nastupu predstavljaju rizik.",
                 "source_stats": "https://statz.ai/nba/players/demar-derozan"
+              }
+            }
+          ]
+        },
+        {
+          "id": "10",
+          "stake": 9.86,
+          "status": "pending",
+          "total_odd": 3.5175,
+          "potential_payout": 34.68,
+          "legs": [
+            {
+              "player": "Jake LaRavia",
+              "team": "LAL",
+              "opponent": "SAC",
+              "pick": "under",
+              "points_line": 6.5,
+              "odd": 1.9259,
+              "american_odd": -108,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909313",
+              "player_id": "4592691",
+              "start_utc": "2026-11-21T03:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "points": 4
+                  },
+                  {
+                    "points": 4
+                  },
+                  {
+                    "points": 12
+                  },
+                  {
+                    "points": 0
+                  },
+                  {
+                    "points": 4
+                  }
+                ],
+                "last_five_average": 4.8,
+                "last_five_hit_rate": "4/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_fully_verified",
+                "scout_note": "Četiri od pet ispod 6,5, prosjek 4,8; rizik promjene minutaže, jedan nastup 12 poena.",
+                "source_stats": "https://statz.ai/nba/players/jake-laravia"
+              }
+            },
+            {
+              "player": "Malik Monk",
+              "team": "SAC",
+              "opponent": "LAL",
+              "pick": "under",
+              "points_line": 11.5,
+              "odd": 1.8264,
+              "american_odd": -121,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909313",
+              "player_id": "4066262",
+              "start_utc": "2026-11-21T03:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "points": 8
+                  },
+                  {
+                    "points": 14
+                  },
+                  {
+                    "points": 7
+                  },
+                  {
+                    "points": 1
+                  },
+                  {
+                    "points": 9
+                  }
+                ],
+                "last_five_average": 7.8,
+                "last_five_hit_rate": "4/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_fully_verified",
+                "scout_note": "Četiri od pet ispod 11,5, prosjek 7,8; šuterska varijansa i 14 poena u jednom nastupu su rizik.",
+                "source_stats": "https://statz.ai/nba/players/malik-monk"
               }
             }
           ]
