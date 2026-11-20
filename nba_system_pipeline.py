@@ -255,8 +255,7 @@ def publish(date, group=None):
     scout["group_number"] = upcoming
     scout["group_range"] = "-".join(map(str, groups[upcoming - 1]["range"]))
     scout["group_selected"] = [l["player"] for l in legs]
-    scout.setdefault("audit_paths", {})[str(upcoming)] = str(
-        audit_path(date, upcoming).relative_to(ROOT))
+    scout.setdefault("audit_paths", {})[str(upcoming)] = str(Path("collector-output") / audit_path(date, upcoming).name)
     scout["selection_method"] = "full_ranked_scout"
     save(DATA, ledger)
     print(json.dumps({"published_ticket": upcoming, "date": date,
