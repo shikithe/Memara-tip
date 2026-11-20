@@ -1,14 +1,14 @@
 {
   "date": "2026-11-20",
   "published": "20.11.2026. u 19:11 (Europe/Sarajevo)",
-  "publication_type": "independent_verified_github",
+  "publication_type": "independent_ai_approved_github_nba_c",
   "bank_before": 219.48,
-  "daily_stake": 14.27,
-  "bank_after": 205.21,
-  "bank_after_stakes": 205.21,
+  "daily_stake": 16.46,
+  "bank_after": 203.02,
+  "bank_after_stakes": 203.02,
   "provisional": false,
   "settled": false,
-  "odds_verified": true,
+  "odds_verified": false,
   "tickets": [
     {
       "id": "A",
@@ -71,18 +71,79 @@
       "stake": 14.27,
       "status": "objavljen",
       "payout": 0
+    },
+    {
+      "id": "C",
+      "label": "NBA · DVA IGRAČA",
+      "matches": [
+        {
+          "fixture_id": "espn:basketball:nba:401909306:5279130",
+          "event_id": "401909306",
+          "espn_event_id": "401909306",
+          "player_id": "5279130",
+          "player": "Nolan Traore",
+          "home": "Brooklyn Nets",
+          "away": "Orlando Magic",
+          "team": "Brooklyn Nets",
+          "opponent": "Orlando Magic",
+          "league": "nba",
+          "sport": "basketball",
+          "datetime": "2026-11-21T00:30:00+00:00",
+          "start_utc": "2026-11-21T00:30:00+00:00",
+          "market": "player_points",
+          "points_line": 10.5,
+          "pick": "over",
+          "market_name": "Više od 10.5 poena",
+          "odd": 1.7936507936507935,
+          "bookmaker": "DraftKings",
+          "quote_source_url": "https://betsharp.com/nba/props?m=points",
+          "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+          "quote_timestamp_verified": false
+        },
+        {
+          "fixture_id": "espn:basketball:nba:401909305:4869342",
+          "event_id": "401909305",
+          "espn_event_id": "401909305",
+          "player_id": "4869342",
+          "player": "Dyson Daniels",
+          "home": "Atlanta Hawks",
+          "away": "Charlotte Hornets",
+          "team": "Atlanta Hawks",
+          "opponent": "Charlotte Hornets",
+          "league": "nba",
+          "sport": "basketball",
+          "datetime": "2026-11-21T00:00:00+00:00",
+          "start_utc": "2026-11-21T00:00:00+00:00",
+          "market": "player_points",
+          "points_line": 10.5,
+          "pick": "under",
+          "market_name": "Manje od 10.5 poena",
+          "odd": 1.8928571428571428,
+          "bookmaker": "DraftKings",
+          "quote_source_url": "https://betsharp.com/nba/props?m=points",
+          "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+          "quote_timestamp_verified": false
+        }
+      ],
+      "odds": 3.4,
+      "stake": 2.19,
+      "status": "objavljen",
+      "payout": 0,
+      "analysis": "NBA C AI Scout 20.11.2026, izdvojen od NBA 10-ke. ESPN raspored: CHA@ATL event 401909305 21.11 00:00 UTC; ORL@BKN event 401909306 21.11 00:30 UTC. BetSharp NBA player points ponuda 116 igraca kroz 48h, nisu svi analizirani; u ovom etapnom pregledu detaljno su poredjeni kandidati Nolan Traore, Dyson Daniels, Tristan da Silva, Jakob Poeltl i Marcus Smart, sa osnovnim uporednim podacima i za nekoliko dodatnih. Odabrani su 2 po ESPN statistici, posljednjih pet igranih meceva i javnoj DraftKings BetSharp ponudi. Nolan Traore BKN OVER 10.5 poena DK -126 (1.79365079), zadnjih 5 ESPN nastupa do 18.11: 13/23 min, 23/30, 11/20, 14/21, 19/23, prosjek 16.0, pet od pet iznad granice. H2H ORL dvije utakmice: 21 PTS 38 min 05.02.2026 i 6 PTS 20 min 07.01.2026; prosjek 13.5, jedan od dva preko. Protivnik ORL, očekivana uloga u rotaciji BKN i trend zadnjih pet podupiru over; rizici promjenjiva minutaza, status DTD u nekim javnim predikcijama (novinski izvjestaj za BKN navodi samo Grant Nelson na listi) i jacina odbrane. Dyson Daniels ATL UNDER 10.5 poena DK -112 (1.89285714), ESPN 18.11 10/37 min, 15.11 9/27, 13.11 6/36, 09.11 10/31, 07.11 9/31; prosjek 8.8, svih pet ispod granice. H2H CHA: po NBAHouse prosjek posljednjih 5 oko 15.8, znatno veci od ovog praga, a protiv CHA je 23.10.2026 postigao 11; to je jasan znacajan rizik protiv UNDER. CHA dopusta relativno vise poena bekovima, jos jedan rizik, ali Danielsova najnovija uloga sa vise skokova/asistencija i niska produktivnost u pet posljednjih meceva daju prednost UNDER. Nema potvrde konkretnog direktnog cuvara ni potpune najnovije NBA injury liste za sve ucesnike; bez izmisljanja. Zajednicka kvota 3.3954. Izvor ponude https://betsharp.com/nba/props?m=points jedan dosljedan DraftKings bookmaker stupac, javna referentna cijena, bez zagarantovane kladionicarske izvrsivosti. ESPN evidencija igraca i raspored, AskScores H2H, alternativne javne najave i statistike. Nijedan drugi tiket ni banku ne dirati."
     }
   ],
   "total_payout": 0,
   "net_change": 0,
-  "analysis_status": "Independent verified ticket publication",
+  "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
   "selection_method": "Each approved ticket independently checked",
   "published_at_utc": "2026-11-20T18:11:47.984068+00:00",
   "daily_budget": 21.95,
   "pending_ticket_statuses": {
-    "A": "objavljen"
+    "A": "objavljen",
+    "C": "objavljen"
   },
   "pending_ticket_reasons": {
     "A": ""
-  }
+  },
+  "odds_verification_note": "AI selected publicly displayed bookmaker comparison quotes; not independently refreshed by GitHub or confirmed in individual bookmaker accounts."
 }
