@@ -1,0 +1,62 @@
+name: NBA SISTEM — full Scout sequential publication
+on:
+  workflow_dispatch:
+    inputs:
+      cycle_date:
+        description: "NBA SYSTEM cycle date YYYY-MM-DD (frozen snapshot)"
+        required: true
+        type: string
+  push:
+    paths:
+      - 'collector-output/nba-system-scout-????-??-??-group-*.json'
+permissions:
+  contents: write
+concurrency:
+  group: nba-system-ledger
+  cancel-in-progress: false
+jobs:
+  verify-and-publish-next:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate pipeline and all rank-audit constraints
+        run: python -m unittest discover -s tests -p 'test_nba_system_pipeline.py' -v
+      - name: Read date from manual input or newly committed Scout audit
+        id: cycle
+        env:
+          MANUAL_DATE: ${{ inputs.cycle_date }}
+          TRIGGER: ${{ github.event_name }}
+        run: |
+          python - <<'PY'
+          import os, re, subprocess
+          date=os.environ.get('MANUAL_DATE', '').strip()
+          if os.environ['TRIGGER']=='push':
+              files=subprocess.check_output(['git','diff-tree','--no-commit-id','--name-only','-r','HEAD'],text=True).splitlines()
+              matching=[re.fullmatch(r'collector-output/nba-system-scout-(\d{4}-\d{2}-\d{2})-group-\d+\.json',p) for p in files]
+              dates={m.group(1) for m in matching if m}
+              if len(dates)!=1:
+                  raise SystemExit('Push must contain Scout audits of exactly one cycle')
+              date=dates.pop()
+          if not re.fullmatch(r'\d{4}-\d{2}-\d{2}',date):
+              raise SystemExit('Missing or invalid date')
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f: f.write('date='+date+'\n')
+          print('Scout cycle:',date)
+          PY
+      - name: Strict next-ticket gate (never skip any group)
+        run: python nba_system_pipeline.py publish --date "${{ steps.cycle.outputs.date }}"
+      - name: Commit only the NBA system ledger
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add nba-sistem.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: publish next fully ranked NBA SISTEM group [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
