@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "no_active_list",
-  "completed_at_utc": "2026-11-19T07:55:33.468461+00:00",
+  "completed_at_utc": "2026-11-20T07:55:38.090683+00:00",
   "source": "shikithe/Slavojka:listaSix-expiry-cron",
   "protected": [
     "data.json",
