@@ -69,7 +69,8 @@ def publish_nba_c(checked, now, local):
     item={"id":"C","label":"NBA · DVA IGRAČA","matches":matches,
           "odds":round(checked["combined_odds"],2),"stake":stake,
           "status":"objavljen","payout":0,
-          "analysis":load(ROOT/"memarasix-1455-approved.json")["tickets"][0]["analysis"]}
+          "analysis":load(ROOT/"memarasix-1455-approved.json")["tickets"][0]["analysis"],
+          "scout_analysis":load(ROOT/"memarasix-1455-approved.json")["tickets"][0].get("scout_analysis")}
     balance=round(float(data.get("bank_after",0))-stake,2)
     if balance<0: return audit("Insufficient bank balance")
     statuses=dict(data.get("pending_ticket_statuses",{})) if same_day else {}
