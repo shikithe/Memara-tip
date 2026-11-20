@@ -8,7 +8,7 @@ on:
         type: string
   push:
     paths:
-      - 'collector-output/nba-system-scout-????-??-??-group-*.json'
+      - 'collector-output/nba-system-scout-*.json'
 permissions:
   contents: write
 concurrency:
