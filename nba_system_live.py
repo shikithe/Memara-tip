@@ -91,6 +91,53 @@ def update_cycle(c, cache):
             changed=True
     return changed
 
+def reconcile_bank(c):
+    """Maintain independent cycle ledger only from settled system tickets."""
+    tickets=c.get("tickets") or []
+    if not tickets:
+        return False
+    bank_start=round(float(c.get("bank_start",0)),2)
+    total_stake=round(sum(float(t.get("stake",0)) for t in tickets),2)
+    finished=[t for t in tickets if str(t.get("status","")).lower() in FINAL]
+    returns=round(sum(float(t.get("payout",0)) for t in finished),2)
+    wins=sum(str(t.get("status","")).lower()=="won" for t in finished)
+    losses=sum(str(t.get("status","")).lower()=="lost" for t in finished)
+    voids=sum(str(t.get("status","")).lower()=="void" for t in finished)
+    # Reserve all stakes, add back only confirmed payouts/refunds.
+    visible_bank=round(bank_start-total_stake+returns,2)
+    all_final=len(finished)==len(tickets)
+    account={
+        "tickets_total":len(tickets),
+        "tickets_settled":len(finished),
+        "tickets_pending":len(tickets)-len(finished),
+        "tickets_won":wins,
+        "tickets_lost":losses,
+        "tickets_void":voids,
+        "total_staked":total_stake,
+        "total_returned":returns,
+        "available_bank":visible_bank,
+        "net_profit_confirmed":round(returns-sum(float(t.get("stake",0)) for t in finished),2),
+        "complete":all_final,
+    }
+    changed=False
+    if c.get("accounting")!=account:
+        c["accounting"]=account
+        changed=True
+    if all_final:
+        final_profit=round(returns-total_stake,2)
+        for key,value in (
+            ("status","settled"),
+            ("bank_end",visible_bank),
+            ("bank_profit",final_profit)
+        ):
+            if c.get(key)!=value:
+                c[key]=value
+                changed=True
+        if not c.get("settled_at_utc"):
+            c["settled_at_utc"]=datetime.now(timezone.utc).isoformat()
+            changed=True
+    return changed
+
 def main():
     if not PATH.exists():return
     data=json.loads(PATH.read_text(encoding="utf-8"))
@@ -99,6 +146,7 @@ def main():
     for c in data.get("cycles",[]):
         if any(str(t.get("status","pending")).lower() not in FINAL for t in c.get("tickets",[])):
             changed |= update_cycle(c,cache)
+        changed |= reconcile_bank(c)
     if changed:
         PATH.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
         print("NBA system settlement updated.")
