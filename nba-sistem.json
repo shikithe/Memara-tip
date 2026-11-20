@@ -1121,8 +1121,8 @@
           11,
           11
         ],
-        "group_number": 6,
-        "group_range": "61-72",
+        "group_number": 7,
+        "group_range": "73-83",
         "group_candidates": [
           "Aaron Wiggins",
           "Brandon Miller",
@@ -1139,8 +1139,8 @@
         ],
         "group_reviewed": 12,
         "group_selected": [
-          "Ajay Mitchell",
-          "Kenrich Williams"
+          "Collin Gillespie",
+          "Zion Williamson"
         ],
         "ranking": [
           {
@@ -1166,7 +1166,8 @@
           3,
           4,
           5,
-          6
+          6,
+          7
         ],
         "group_progress": [
           {
@@ -1511,6 +1512,88 @@
                 "market": "over",
                 "line": 7.5,
                 "odds": 1.7752,
+                "hit_rate": "4/5"
+              }
+            ],
+            "evaluation": "All original group members received numeric last-five averages where publicly retrievable; injuries, confirmed defender and up to 5 H2H not fully verified. Picks are provisional analysis, not guarantees.",
+            "source": "https://statz.ai/nba/players/;https://betsharp.com/nba/props?m=points"
+          },
+          {
+            "number": 7,
+            "range": [
+              73,
+              83
+            ],
+            "candidates": [
+              {
+                "name": "Shai Gilgeous-Alexander",
+                "last_five_average": 32.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Trey Murphy III",
+                "last_five_average": 17.6,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Yves Missi",
+                "last_five_average": 6.4,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Zion Williamson",
+                "last_five_average": 23,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Ace Bailey",
+                "last_five_average": 11,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Collin Gillespie",
+                "last_five_average": 14,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Darryn Peterson",
+                "last_five_average": 18.2,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Devin Booker",
+                "last_five_average": 23.2,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Dillon Brooks",
+                "last_five_average": 13.6,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Jalen Green",
+                "last_five_average": 13.6,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Jaxson Hayes",
+                "last_five_average": 11,
+                "full_h2h": "not_verified"
+              }
+            ],
+            "selected": [
+              {
+                "name": "Collin Gillespie",
+                "market": "over",
+                "line": 9.5,
+                "odds": 1.8065,
+                "hit_rate": "4/5"
+              },
+              {
+                "name": "Zion Williamson",
+                "market": "over",
+                "line": 19.5,
+                "odds": 1.9174,
                 "hit_rate": "4/5"
               }
             ],
@@ -2052,6 +2135,95 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Četiri od pet iznad 7,5, prosjek 8,4; niska sezonska minutaža/uloga nosi neizvjesnost.",
                 "source_stats": "https://statz.ai/nba/players/kenrich-williams"
+              }
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "stake": 9.86,
+          "status": "pending",
+          "total_odd": 3.4638,
+          "potential_payout": 34.15,
+          "legs": [
+            {
+              "player": "Collin Gillespie",
+              "team": "PHX",
+              "opponent": "UTAH",
+              "pick": "over",
+              "points_line": 9.5,
+              "odd": 1.8065,
+              "american_odd": -124,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909311",
+              "player_id": "4278585",
+              "start_utc": "2026-11-21T02:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "points": 9
+                  },
+                  {
+                    "points": 10
+                  },
+                  {
+                    "points": 26
+                  },
+                  {
+                    "points": 13
+                  },
+                  {
+                    "points": 12
+                  }
+                ],
+                "last_five_average": 14,
+                "last_five_hit_rate": "4/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_fully_verified",
+                "scout_note": "Četiri od posljednjih pet preko 9,5; prosjek 14,0, sezonski 9,3. Rizik mogućeg povratka na sezonski prosjek.",
+                "source_stats": "https://statz.ai/nba/players/collin-gillespie"
+              }
+            },
+            {
+              "player": "Zion Williamson",
+              "team": "NO",
+              "opponent": "OKC",
+              "pick": "over",
+              "points_line": 19.5,
+              "odd": 1.9174,
+              "american_odd": -109,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909310",
+              "player_id": "4395628",
+              "start_utc": "2026-11-21T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "points": 24
+                  },
+                  {
+                    "points": 16
+                  },
+                  {
+                    "points": 24
+                  },
+                  {
+                    "points": 22
+                  },
+                  {
+                    "points": 29
+                  }
+                ],
+                "last_five_average": 23,
+                "last_five_hit_rate": "4/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_fully_verified",
+                "scout_note": "Četiri od pet preko 19,5; prosjek 23,0, ali Thunder je jak defanzivni matchup.",
+                "source_stats": "https://statz.ai/nba/players/zion-williamson"
               }
             }
           ]
