@@ -1,6 +1,6 @@
 {
   "date": "2026-11-19",
-  "updated_at_utc": "2026-11-20T02:30:27.887740+00:00",
+  "updated_at_utc": "2026-11-20T02:37:50.679437+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -12,7 +12,7 @@
       "state": "live",
       "points_line": 11.5,
       "period": 3,
-      "game_clock": "11:16",
+      "game_clock": "9:41",
       "source": "espn-public-unofficial",
       "event_id": "401910020",
       "player_id": "4683678",
@@ -29,7 +29,7 @@
       "state": "live",
       "points_line": 7.5,
       "period": 3,
-      "game_clock": "5:51",
+      "game_clock": "1:56",
       "source": "espn-public-unofficial",
       "event_id": "401910021",
       "player_id": "3062679",
