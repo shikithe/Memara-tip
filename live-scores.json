@@ -1,43 +1,8 @@
 {
-  "date": "2026-11-19",
-  "updated_at_utc": "2026-11-20T10:21:09.460542+00:00",
+  "date": "2026-11-20",
+  "updated_at_utc": "2026-11-20T10:26:30.072852+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
-  "matches": [
-    {
-      "ticket": "C",
-      "index": 0,
-      "home": "Portland Trail Blazers",
-      "away": "Milwaukee Bucks",
-      "state": "final",
-      "points_line": 11.5,
-      "period": null,
-      "game_clock": "",
-      "source": "espn-public-unofficial",
-      "event_id": "401910020",
-      "player_id": "4683678",
-      "sport": "basketball",
-      "score": "27",
-      "player_points": 27,
-      "result_status": "promašen"
-    },
-    {
-      "ticket": "C",
-      "index": 1,
-      "home": "New York Knicks",
-      "away": "Minnesota Timberwolves",
-      "state": "final",
-      "points_line": 7.5,
-      "period": null,
-      "game_clock": "",
-      "source": "espn-public-unofficial",
-      "event_id": "401910021",
-      "player_id": "3062679",
-      "sport": "basketball",
-      "score": "11",
-      "player_points": 11,
-      "result_status": "promašen"
-    }
-  ],
+  "matches": [],
   "bank_unchanged": true
 }
