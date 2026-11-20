@@ -2744,7 +2744,20 @@
             }
           ]
         }
-      ]
+      ],
+      "accounting": {
+        "tickets_total": 10,
+        "tickets_settled": 0,
+        "tickets_pending": 10,
+        "tickets_won": 0,
+        "tickets_lost": 0,
+        "tickets_void": 0,
+        "total_staked": 98.6,
+        "total_returned": 0,
+        "available_bank": 887.26,
+        "net_profit_confirmed": 0,
+        "complete": false
+      }
     }
   ]
 }
