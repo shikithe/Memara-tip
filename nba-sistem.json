@@ -48,7 +48,7 @@
               "espn_event_id": "401910021",
               "player_id": "3136195",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -77,7 +77,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer over na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
-              }
+              },
+              "player_points": 7,
+              "game_state": "live",
+              "game_clock": "2:47",
+              "period": 1
             },
             {
               "player": "Deni Avdija",
@@ -145,7 +149,7 @@
               "espn_event_id": "401910020",
               "player_id": "4683678",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -174,7 +178,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "ESPN posljednjih pet mečeva: 9, 10, 11, 5, 11. UNDER 11.5 prolaz 5/5; H2H i defanzivni matchup nisu potvrđeni."
-              }
+              },
+              "player_points": 2,
+              "game_state": "live",
+              "game_clock": "3:47",
+              "period": 1
             },
             {
               "player": "OG Anunoby",
@@ -189,7 +197,7 @@
               "espn_event_id": "401910021",
               "player_id": "3934719",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -218,7 +226,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "ESPN posljednjih 5 potvrđenih utakmica: 16, 21, 11, 14, 19; OVER 15.5 prolaz 3/5. H2H i matchup nisu potvrđeni."
-              }
+              },
+              "player_points": 5,
+              "game_state": "live",
+              "game_clock": "2:47",
+              "period": 1
             }
           ]
         },
@@ -242,7 +254,7 @@
               "espn_event_id": "401910020",
               "player_id": "5105565",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -255,7 +267,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer over na osnovu 1 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
-              }
+              },
+              "player_points": 2,
+              "game_state": "live",
+              "game_clock": "3:47",
+              "period": 1
             },
             {
               "player": "Jalen Brunson",
@@ -270,7 +286,7 @@
               "espn_event_id": "401910021",
               "player_id": "3934672",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -299,7 +315,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "ESPN posljednjih 5 potvrđenih utakmica: 31, 28, 33, 27, 23; OVER 25.5 prolaz 4/5. H2H i matchup nisu potvrđeni."
-              }
+              },
+              "player_points": 0,
+              "game_state": "live",
+              "game_clock": "2:47",
+              "period": 1
             }
           ]
         },
@@ -323,7 +343,7 @@
               "espn_event_id": "401910022",
               "player_id": "4066259",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -352,7 +372,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
-              }
+              },
+              "player_points": 2,
+              "game_state": "live",
+              "game_clock": "2:52",
+              "period": 1
             },
             {
               "player": "Brandin Podziemski",
@@ -367,7 +391,7 @@
               "espn_event_id": "401910019",
               "player_id": "4709138",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -396,7 +420,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "ESPN posljednjih 5 potvrđenih utakmica: 10, 15, 8, 22, 25; UNDER 16.5 prolaz 3/5. H2H i matchup nisu potvrđeni."
-              }
+              },
+              "player_points": 2,
+              "game_state": "live",
+              "game_clock": "3:12",
+              "period": 1
             }
           ]
         },
@@ -420,7 +448,7 @@
               "espn_event_id": "401910021",
               "player_id": "4431671",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -449,7 +477,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
-              }
+              },
+              "player_points": 5,
+              "game_state": "live",
+              "game_clock": "2:47",
+              "period": 1
             },
             {
               "player": "Stephon Castle",
@@ -464,7 +496,7 @@
               "espn_event_id": "401910022",
               "player_id": "4845367",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -493,7 +525,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
-              }
+              },
+              "player_points": 7,
+              "game_state": "live",
+              "game_clock": "2:52",
+              "period": 1
             }
           ]
         },
@@ -517,7 +553,7 @@
               "espn_event_id": "401910021",
               "player_id": "3147657",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -546,7 +582,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer over na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
-              }
+              },
+              "player_points": 2,
+              "game_state": "live",
+              "game_clock": "2:47",
+              "period": 1
             },
             {
               "player": "Rui Hachimura",
@@ -561,7 +601,7 @@
               "espn_event_id": "401910022",
               "player_id": "4066648",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -590,7 +630,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer over na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
-              }
+              },
+              "player_points": 4,
+              "game_state": "live",
+              "game_clock": "2:52",
+              "period": 1
             }
           ]
         },
@@ -614,7 +658,7 @@
               "espn_event_id": "401910020",
               "player_id": "4395725",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -643,7 +687,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer over na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
-              }
+              },
+              "player_points": 6,
+              "game_state": "live",
+              "game_clock": "3:47",
+              "period": 1
             },
             {
               "player": "Darius Garland",
@@ -658,7 +706,7 @@
               "espn_event_id": "401910022",
               "player_id": "4396907",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -687,7 +735,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
-              }
+              },
+              "player_points": 4,
+              "game_state": "live",
+              "game_clock": "2:52",
+              "period": 1
             }
           ]
         },
@@ -711,7 +763,7 @@
               "espn_event_id": "401910019",
               "player_id": "5175737",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -740,7 +792,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer over na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
-              }
+              },
+              "player_points": 2,
+              "game_state": "live",
+              "game_clock": "3:12",
+              "period": 1
             },
             {
               "player": "Damian Lillard",
@@ -755,7 +811,7 @@
               "espn_event_id": "401910020",
               "player_id": "6606",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -784,7 +840,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
-              }
+              },
+              "player_points": 8,
+              "game_state": "live",
+              "game_clock": "3:47",
+              "period": 1
             }
           ]
         },
@@ -808,7 +868,7 @@
               "espn_event_id": "401910021",
               "player_id": "3062679",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -837,7 +897,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "ESPN posljednjih 5 potvrđenih utakmica: 5, 0, 0, 6, 8; UNDER 7.5 prolaz 4/5. H2H i matchup nisu potvrđeni."
-              }
+              },
+              "player_points": 6,
+              "game_state": "live",
+              "game_clock": "2:47",
+              "period": 1
             },
             {
               "player": "Cameron Boozer",
@@ -852,7 +916,7 @@
               "espn_event_id": "401910019",
               "player_id": "5041935",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -881,7 +945,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
-              }
+              },
+              "player_points": 7,
+              "game_state": "live",
+              "game_clock": "3:12",
+              "period": 1
             }
           ]
         },
@@ -905,7 +973,7 @@
               "espn_event_id": "401910021",
               "player_id": "4432816",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -926,7 +994,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer under na osnovu 3 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
-              }
+              },
+              "player_points": 9,
+              "game_state": "live",
+              "game_clock": "2:47",
+              "period": 1
             },
             {
               "player": "Ayo Dosunmu",
@@ -941,7 +1013,7 @@
               "espn_event_id": "401910021",
               "player_id": "4397002",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -970,7 +1042,11 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
-              }
+              },
+              "player_points": 3,
+              "game_state": "live",
+              "game_clock": "2:47",
+              "period": 1
             }
           ]
         }
