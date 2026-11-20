@@ -15,3 +15,14 @@ Pravilo potvrđeno 20.11.2026. Koristi se za svaki NAREDNI ciklus NBA desetke. O
 9. Vremensko ograničenje ili nedostupnost izvora **nisu razlog za spuštanje standarda**. Ako izvršavanje mora stati, pošteno prijavi prvi nezavršen korak i nastavi na idućem pokretanju; nikad ne tvrdi da je svih 10 potpuno analizirano ako nisu.
 
 **Prioritet:** ako stariji prompt dozvoljava samo pregled L5 prosjeka ili objavu bez pune rang-tabele, ovaj dokument i nova eksplicitna korisnička instrukcija imaju prioritet.
+
+## Izvršni workflow — implementirano 20.11.2026.
+
+- `nba_system_pipeline.py` je **strogi kontrolor** koji ne bira tipove. Provjerava datirani zamrznuti originalni snapshot, 10 matematički uravnoteženih grupa, **tačno sva M člana** svake rang-liste, ocjene, izvore, prethodnih 5 utakmica sa minutažom, objasnjenja matchupa/povreda i obavezne dvije najbolje rangirane opcije; ne dopušta objavu ako je meč počeo ili bilo šta preskočeno.
+- Za novi datum Scout sprema `collector-output/nba-system-offer-YYYY-MM-DD.json` sa `frozen:true`, `original_snapshot_exact:true` (samo ako je izvor stvarno preuzet prije prve objave), `date`, `captured_at_utc`, `source`, `bookmaker` i `offers` listom sa ESPN ID-evima, datumima mečeva, oba ponuđena decimalna oddsa i granicom poena. Broj i redoslijed kandidata se nikad ne mijenjaju tokom ciklusa.
+- Za svaku grupu AI Scout priprema `collector-output/nba-system-scout-YYYY-MM-DD-group-N.json` sa `ranking` od 1 do M i `selected_player_ids` prva dva rangirana. Datoteka je potpun samostalan revizijski trag, ne samo imena dva izabrana.
+- Kada Scout audit bude upisan na GitHub, `.github/workflows/nba-system-scout-publish.yml` **automatski provjerava i objavljuje samo prvi još neobjavljen tiket** pomoću `python nba_system_pipeline.py publish --date YYYY-MM-DD`. Ako kandidat/izvor nedostaje, workflow završava greškom i ne mijenja `nba-sistem.json`.
+- AI u **istom aktivnom izvršavanju** odmah nakon potvrde objave nastavlja istraživanje naredne grupe. GitHub workflow objavljuje i provjerava, ali **ne može sam pokrenuti novo ChatGPT AI istraživanje** ako je AI izvršavanje već završeno; za to je potreban odvojen stvarni AI okidač.
+- Prethodni NBA settlement workflow i publisher koriste isti concurrency lock `nba-system-ledger` radi smanjenja sukoba.
+- `.github/workflows/nba-system-scout-ci.yml` automatizovano provjerava 7 Python testova: uravnoteženje, originalni snapshot, puni rang, izbor top 2, zabranu preskakanja, idempotentno stanje i uzastopnu objavu.
+- **Stari ciklusi ostaju neizmijenjeni**, uključujući 20.11.2026, koji nije prethodno prošao ovu strožu kontrolu.
