@@ -6,7 +6,7 @@
   "daily_stake": 16.46,
   "bank_after": 203.02,
   "bank_after_stakes": 203.02,
-  "provisional": false,
+  "provisional": true,
   "settled": false,
   "odds_verified": false,
   "tickets": [
@@ -132,8 +132,8 @@
       "analysis": "NBA C AI Scout 20.11.2026, izdvojen od NBA 10-ke. ESPN raspored: CHA@ATL event 401909305 21.11 00:00 UTC; ORL@BKN event 401909306 21.11 00:30 UTC. BetSharp NBA player points ponuda 116 igraca kroz 48h, nisu svi analizirani; u ovom etapnom pregledu detaljno su poredjeni kandidati Nolan Traore, Dyson Daniels, Tristan da Silva, Jakob Poeltl i Marcus Smart, sa osnovnim uporednim podacima i za nekoliko dodatnih. Odabrani su 2 po ESPN statistici, posljednjih pet igranih meceva i javnoj DraftKings BetSharp ponudi. Nolan Traore BKN OVER 10.5 poena DK -126 (1.79365079), zadnjih 5 ESPN nastupa do 18.11: 13/23 min, 23/30, 11/20, 14/21, 19/23, prosjek 16.0, pet od pet iznad granice. H2H ORL dvije utakmice: 21 PTS 38 min 05.02.2026 i 6 PTS 20 min 07.01.2026; prosjek 13.5, jedan od dva preko. Protivnik ORL, očekivana uloga u rotaciji BKN i trend zadnjih pet podupiru over; rizici promjenjiva minutaza, status DTD u nekim javnim predikcijama (novinski izvjestaj za BKN navodi samo Grant Nelson na listi) i jacina odbrane. Dyson Daniels ATL UNDER 10.5 poena DK -112 (1.89285714), ESPN 18.11 10/37 min, 15.11 9/27, 13.11 6/36, 09.11 10/31, 07.11 9/31; prosjek 8.8, svih pet ispod granice. H2H CHA: po NBAHouse prosjek posljednjih 5 oko 15.8, znatno veci od ovog praga, a protiv CHA je 23.10.2026 postigao 11; to je jasan znacajan rizik protiv UNDER. CHA dopusta relativno vise poena bekovima, jos jedan rizik, ali Danielsova najnovija uloga sa vise skokova/asistencija i niska produktivnost u pet posljednjih meceva daju prednost UNDER. Nema potvrde konkretnog direktnog cuvara ni potpune najnovije NBA injury liste za sve ucesnike; bez izmisljanja. Zajednicka kvota 3.3954. Izvor ponude https://betsharp.com/nba/props?m=points jedan dosljedan DraftKings bookmaker stupac, javna referentna cijena, bez zagarantovane kladionicarske izvrsivosti. ESPN evidencija igraca i raspored, AskScores H2H, alternativne javne najave i statistike. Nijedan drugi tiket ni banku ne dirati."
     }
   ],
-  "total_payout": 0,
-  "net_change": 0,
+  "total_payout": 0.0,
+  "net_change": null,
   "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
   "selection_method": "Each approved ticket independently checked",
   "published_at_utc": "2026-11-20T18:11:47.984068+00:00",

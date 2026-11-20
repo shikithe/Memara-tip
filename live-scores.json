@@ -1,8 +1,59 @@
 {
   "date": "2026-11-20",
-  "updated_at_utc": "2026-11-20T11:44:48.875459+00:00",
+  "updated_at_utc": "2026-11-20T18:41:28.155641+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
-  "matches": [],
+  "matches": [
+    {
+      "ticket": "A",
+      "index": 0,
+      "home": "Bayern Munich",
+      "away": "FC Cologne",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401884736",
+      "league": "ger.1",
+      "minute": null
+    },
+    {
+      "ticket": "A",
+      "index": 1,
+      "home": "Cercle Brugge KSV",
+      "away": "KVC Westerlo",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401878937",
+      "league": "bel.1",
+      "minute": null
+    },
+    {
+      "ticket": "A",
+      "index": 2,
+      "home": "Athletic Club",
+      "away": "Espanyol",
+      "state": "scheduled",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401882805",
+      "league": "esp.1",
+      "minute": null
+    },
+    {
+      "ticket": "C",
+      "index": 0,
+      "home": "Brooklyn Nets",
+      "away": "Orlando Magic",
+      "state": "unverified"
+    },
+    {
+      "ticket": "C",
+      "index": 1,
+      "home": "Atlanta Hawks",
+      "away": "Charlotte Hornets",
+      "state": "unverified"
+    }
+  ],
   "bank_unchanged": true
 }
