@@ -126,7 +126,7 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "ESPN posljednjih 5 potvrđenih utakmica: 27, 34, 28, 24, 15; OVER 24.5 prolaz 3/5. H2H i matchup nisu potvrđeni."
               },
-              "effective_odd": 1.0,
+              "effective_odd": 1,
               "game_state": "final"
             }
           ],
@@ -238,8 +238,8 @@
               "period": null
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-20T05:06:37.728507+00:00"
         },
         {
@@ -330,8 +330,8 @@
               "period": null
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-20T05:06:37.728541+00:00"
         },
         {
@@ -546,8 +546,8 @@
               "period": null
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-20T05:06:37.834844+00:00"
         },
         {
@@ -654,8 +654,8 @@
               "period": null
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-20T05:06:37.834876+00:00"
         },
         {
@@ -762,8 +762,8 @@
               "period": null
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-20T05:06:37.834918+00:00"
         },
         {
@@ -870,8 +870,8 @@
               "period": null
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-20T05:06:37.834974+00:00"
         },
         {
@@ -978,8 +978,8 @@
               "period": null
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-20T05:06:37.835002+00:00"
         },
         {
@@ -1090,7 +1090,7 @@
         "tickets_won": 3,
         "tickets_lost": 7,
         "tickets_void": 0,
-        "total_staked": 100.0,
+        "total_staked": 100,
         "total_returned": 85.86,
         "available_bank": 985.86,
         "net_profit_confirmed": -14.14,
@@ -1099,6 +1099,163 @@
       "bank_end": 985.86,
       "bank_profit": -14.14,
       "settled_at_utc": "2026-11-20T05:06:37.835062+00:00"
+    },
+    {
+      "id": "nba-2026-11-20",
+      "date": "2026-11-20",
+      "bank_start": 985.86,
+      "status": "published",
+      "created_at_utc": "2026-11-20T19:46:16.417Z",
+      "scout": {
+        "offered": 116,
+        "total_groups": 10,
+        "group_sizes": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11,
+          11,
+          11,
+          11
+        ],
+        "group_number": 1,
+        "group_range": "1-12",
+        "group_candidates": [
+          "Aaron Wiggins",
+          "Brandon Miller",
+          "Coby White",
+          "Dyson Daniels",
+          "Jalen Johnson",
+          "Kingston Flemings",
+          "Luguentz Dort",
+          "Moussa Diabaté",
+          "Naz Reid",
+          "Nickeil Alexander-Walker",
+          "Onyeka Okongwu",
+          "Royce O'Neale"
+        ],
+        "group_reviewed": 12,
+        "group_selected": [
+          "Onyeka Okongwu",
+          "Brandon Miller"
+        ],
+        "ranking": [
+          {
+            "rank": 1,
+            "player": "Onyeka Okongwu",
+            "pick": "over",
+            "line": 14.5,
+            "reason": "Posljednjih 5 utakmica: 28,16,17,16,16; 5/5 preko linije; H2H zadnja 3 vs CHA: 10,18,16 (2/3)."
+          },
+          {
+            "rank": 2,
+            "player": "Brandon Miller",
+            "pick": "under",
+            "line": 21.5,
+            "reason": "Posljednjih pet prosjek 13,6, sezonski 19,9; posljednji nastup 28 i visoka šuterska uloga su rizik."
+          }
+        ],
+        "note": "Grupa 1/10 (1-12) analizirana po dostupnim podacima, izabrana 2 najbolja preliminarna kandidata. Ostalih devet grupa nije obrađeno. Kvote DraftKings sa BetSharp ponude 20.11.2026, mogu se mijenjati. H2H i defanzivni čuvar nisu za svakog od 12 potpuni; ne označavati kompletnu verified analizu za cijeli pool.",
+        "source": "https://betsharp.com/nba/props?m=points"
+      },
+      "tickets": [
+        {
+          "id": "1",
+          "stake": 9.86,
+          "status": "pending",
+          "total_odd": 3.524,
+          "potential_payout": 34.75,
+          "legs": [
+            {
+              "player": "Onyeka Okongwu",
+              "team": "ATL",
+              "opponent": "CHA",
+              "pick": "over",
+              "points_line": 14.5,
+              "odd": 1.885,
+              "american_odd": -113,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909305",
+              "player_id": "4431680",
+              "start_utc": "2026-11-21T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-18",
+                    "points": 28
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 16
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 17
+                  },
+                  {
+                    "date": "2026-11-09",
+                    "points": 16
+                  },
+                  {
+                    "date": "2026-11-07",
+                    "points": 16
+                  }
+                ],
+                "last_five_average": 18.6,
+                "last_five_hit_rate": "5/5",
+                "h2h": {
+                  "vs": "CHA",
+                  "last_three": [
+                    {
+                      "date": "2026-10-23",
+                      "points": 10
+                    },
+                    {
+                      "date": "2026-02-11",
+                      "points": 18
+                    },
+                    {
+                      "date": "2026-02-07",
+                      "points": 16
+                    }
+                  ],
+                  "hit_rate": "2/3"
+                },
+                "opponent_defense": "Opponent position-specific defensive matchup not verified",
+                "scout_note": "5/5 posljednjih preko 14,5 uz 18,6 prosjek; protiv CHA zadnja 3 10,18,16, dakle 2/3. Rizik: 10 poena u prethodnom CHA meču, 22 min. Izvori: ESPN/StatMuse/BetSharp."
+              }
+            },
+            {
+              "player": "Brandon Miller",
+              "team": "CHA",
+              "opponent": "ATL",
+              "pick": "under",
+              "points_line": 21.5,
+              "odd": 1.8696,
+              "american_odd": -115,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909305",
+              "player_id": "4433287",
+              "start_utc": "2026-11-21T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [],
+                "last_five_average": 13.6,
+                "last_five_hit_rate": "not_verified",
+                "h2h": "not_fully_verified",
+                "opponent_defense": "ATL opponent defense and direct defender not independently verified",
+                "scout_note": "Posljednjih 5 prosjek 13,6 (Statz.ai), sezona 19,9 u 30,5 min, UNDER 21,5; zadnji meč vs LAL 28 poena te se povratak u veću minutažu mora računati kao rizik. ESPN oktobarski H2H vs ATL: 6 poena, nije dovoljno za kompletan H2H."
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
