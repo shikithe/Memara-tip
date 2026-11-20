@@ -1121,8 +1121,8 @@
           11,
           11
         ],
-        "group_number": 1,
-        "group_range": "1-12",
+        "group_number": 2,
+        "group_range": "13-24",
         "group_candidates": [
           "Aaron Wiggins",
           "Brandon Miller",
@@ -1139,8 +1139,8 @@
         ],
         "group_reviewed": 12,
         "group_selected": [
-          "Onyeka Okongwu",
-          "Brandon Miller"
+          "Kelly Oubre Jr.",
+          "Pascal Siakam"
         ],
         "ranking": [
           {
@@ -1158,8 +1158,12 @@
             "reason": "Posljednjih pet prosjek 13,6, sezonski 19,9; posljednji nastup 28 i visoka šuterska uloga su rizik."
           }
         ],
-        "note": "Grupa 1/10 (1-12) analizirana po dostupnim podacima, izabrana 2 najbolja preliminarna kandidata. Ostalih devet grupa nije obrađeno. Kvote DraftKings sa BetSharp ponude 20.11.2026, mogu se mijenjati. H2H i defanzivni čuvar nisu za svakog od 12 potpuni; ne označavati kompletnu verified analizu za cijeli pool.",
-        "source": "https://betsharp.com/nba/props?m=points"
+        "note": "Tiket 2 iz grupe 13–24; pregledano 12 kandidata, dostupni Statz zadnjih pet, granice i DraftKings iz BetSharp 20.11.2026. H2H/čuvari nisu kompletno provjereni. Ne tvrditi kompletno potvrđen scout cijele grupe.",
+        "source": "https://betsharp.com/nba/props?m=points",
+        "groups_completed": [
+          1,
+          2
+        ]
       },
       "tickets": [
         {
@@ -1251,6 +1255,93 @@
                 "h2h": "not_fully_verified",
                 "opponent_defense": "ATL opponent defense and direct defender not independently verified",
                 "scout_note": "Posljednjih 5 prosjek 13,6 (Statz.ai), sezona 19,9 u 30,5 min, UNDER 21,5; zadnji meč vs LAL 28 poena te se povratak u veću minutažu mora računati kao rizik. ESPN oktobarski H2H vs ATL: 6 poena, nije dovoljno za kompletan H2H."
+              }
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "stake": 9.86,
+          "status": "pending",
+          "total_odd": 3.767,
+          "potential_payout": 37.14,
+          "legs": [
+            {
+              "player": "Kelly Oubre Jr.",
+              "team": "IND",
+              "opponent": "CLE",
+              "pick": "over",
+              "points_line": 12.5,
+              "odd": 1.9901,
+              "american_odd": -101,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909307",
+              "player_id": "3133603",
+              "start_utc": "2026-11-21T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "points": 17
+                  },
+                  {
+                    "points": 16
+                  },
+                  {
+                    "points": 16
+                  },
+                  {
+                    "points": 14
+                  },
+                  {
+                    "points": 14
+                  }
+                ],
+                "last_five_average": 15.4,
+                "last_five_hit_rate": "5/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "5/5 posljednjih preko 12,5 uz 15,4 poena i 27,5 min. Rizik sezonski prosjek 11,2, moguć povratak na manje poena; H2H i direktni čuvar nepotvrđeni."
+              }
+            },
+            {
+              "player": "Pascal Siakam",
+              "team": "IND",
+              "opponent": "CLE",
+              "pick": "over",
+              "points_line": 23.5,
+              "odd": 1.8929,
+              "american_odd": -112,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909307",
+              "player_id": "3149673",
+              "start_utc": "2026-11-21T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "points": 24
+                  },
+                  {
+                    "points": 31
+                  },
+                  {
+                    "points": 19
+                  },
+                  {
+                    "points": 28
+                  },
+                  {
+                    "points": 29
+                  }
+                ],
+                "last_five_average": 26.2,
+                "last_five_hit_rate": "4/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_verified",
+                "scout_note": "4/5 preko 23,5, posljednjih pet 24,31,19,28,29; projekcija Statz 21,5 i CLE odbrana su rizici. Nema potvrđenog kompletnog H2H."
               }
             }
           ]
