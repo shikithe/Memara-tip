@@ -17,7 +17,7 @@
       "id": "nba-2026-11-19",
       "date": "2026-11-19",
       "bank_start": 1000,
-      "status": "open",
+      "status": "settled",
       "created_at_utc": "2026-11-19T18:02:11.183Z",
       "scout": {
         "offered": 49,
@@ -31,7 +31,7 @@
         {
           "id": "1",
           "stake": 10,
-          "status": "pending",
+          "status": "won",
           "total_odd": 3.5982,
           "potential_payout": 35.98,
           "legs": [
@@ -48,7 +48,7 @@
               "espn_event_id": "401910021",
               "player_id": "3136195",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -78,10 +78,10 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer over na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
               },
-              "player_points": 7,
-              "game_state": "live",
-              "game_clock": "2:47",
-              "period": 1
+              "player_points": 22,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Deni Avdija",
@@ -96,7 +96,7 @@
               "espn_event_id": "401910020",
               "player_id": "4683021",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "pending",
+              "status": "void",
               "analysis": {
                 "last_five": [
                   {
@@ -125,14 +125,19 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "ESPN posljednjih 5 potvrđenih utakmica: 27, 34, 28, 24, 15; OVER 24.5 prolaz 3/5. H2H i matchup nisu potvrđeni."
-              }
+              },
+              "effective_odd": 1.0,
+              "game_state": "final"
             }
-          ]
+          ],
+          "effective_odd": 1.9009,
+          "payout": 19.01,
+          "settled_at_utc": "2026-11-20T05:06:37.728429+00:00"
         },
         {
           "id": "2",
           "stake": 10,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.3671,
           "potential_payout": 33.67,
           "legs": [
@@ -149,7 +154,7 @@
               "espn_event_id": "401910020",
               "player_id": "4683678",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -179,10 +184,10 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "ESPN posljednjih pet mečeva: 9, 10, 11, 5, 11. UNDER 11.5 prolaz 5/5; H2H i defanzivni matchup nisu potvrđeni."
               },
-              "player_points": 2,
-              "game_state": "live",
-              "game_clock": "3:47",
-              "period": 1
+              "player_points": 27,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "OG Anunoby",
@@ -197,7 +202,7 @@
               "espn_event_id": "401910021",
               "player_id": "3934719",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -227,17 +232,20 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "ESPN posljednjih 5 potvrđenih utakmica: 16, 21, 11, 14, 19; OVER 15.5 prolaz 3/5. H2H i matchup nisu potvrđeni."
               },
-              "player_points": 5,
-              "game_state": "live",
-              "game_clock": "2:47",
-              "period": 1
+              "player_points": 15,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-20T05:06:37.728507+00:00"
         },
         {
           "id": "3",
           "stake": 10,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.9062,
           "potential_payout": 39.06,
           "legs": [
@@ -254,7 +262,7 @@
               "espn_event_id": "401910020",
               "player_id": "5105565",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -268,10 +276,10 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer over na osnovu 1 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
               },
-              "player_points": 2,
-              "game_state": "live",
-              "game_clock": "3:47",
-              "period": 1
+              "player_points": 7,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Jalen Brunson",
@@ -286,7 +294,7 @@
               "espn_event_id": "401910021",
               "player_id": "3934672",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -316,17 +324,20 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "ESPN posljednjih 5 potvrđenih utakmica: 31, 28, 33, 27, 23; OVER 25.5 prolaz 4/5. H2H i matchup nisu potvrđeni."
               },
-              "player_points": 0,
-              "game_state": "live",
-              "game_clock": "2:47",
-              "period": 1
+              "player_points": 21,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-20T05:06:37.728541+00:00"
         },
         {
           "id": "4",
           "stake": 10,
-          "status": "pending",
+          "status": "won",
           "total_odd": 3.3743,
           "potential_payout": 33.74,
           "legs": [
@@ -343,7 +354,7 @@
               "espn_event_id": "401910022",
               "player_id": "4066259",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -373,10 +384,10 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
               },
-              "player_points": 2,
-              "game_state": "live",
-              "game_clock": "2:52",
-              "period": 1
+              "player_points": 10,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Brandin Podziemski",
@@ -391,7 +402,7 @@
               "espn_event_id": "401910019",
               "player_id": "4709138",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -421,17 +432,20 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "ESPN posljednjih 5 potvrđenih utakmica: 10, 15, 8, 22, 25; UNDER 16.5 prolaz 3/5. H2H i matchup nisu potvrđeni."
               },
-              "player_points": 2,
-              "game_state": "live",
-              "game_clock": "3:12",
-              "period": 1
+              "player_points": 15,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             }
-          ]
+          ],
+          "effective_odd": 3.37427,
+          "payout": 33.74,
+          "settled_at_utc": "2026-11-20T05:06:37.834767+00:00"
         },
         {
           "id": "5",
           "stake": 10,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.6044,
           "potential_payout": 36.04,
           "legs": [
@@ -448,7 +462,7 @@
               "espn_event_id": "401910021",
               "player_id": "4431671",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -478,10 +492,10 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
               },
-              "player_points": 5,
-              "game_state": "live",
-              "game_clock": "2:47",
-              "period": 1
+              "player_points": 17,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Stephon Castle",
@@ -496,7 +510,7 @@
               "espn_event_id": "401910022",
               "player_id": "4845367",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -526,17 +540,20 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
               },
-              "player_points": 7,
-              "game_state": "live",
-              "game_clock": "2:52",
-              "period": 1
+              "player_points": 21,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-20T05:06:37.834844+00:00"
         },
         {
           "id": "6",
           "stake": 10,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.9418,
           "potential_payout": 39.42,
           "legs": [
@@ -553,7 +570,7 @@
               "espn_event_id": "401910021",
               "player_id": "3147657",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -583,10 +600,10 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer over na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
               },
-              "player_points": 2,
-              "game_state": "live",
-              "game_clock": "2:47",
-              "period": 1
+              "player_points": 8,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Rui Hachimura",
@@ -601,7 +618,7 @@
               "espn_event_id": "401910022",
               "player_id": "4066648",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -631,17 +648,20 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer over na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
               },
-              "player_points": 4,
-              "game_state": "live",
-              "game_clock": "2:52",
-              "period": 1
+              "player_points": 17,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-20T05:06:37.834876+00:00"
         },
         {
           "id": "7",
           "stake": 10,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.5693,
           "potential_payout": 35.69,
           "legs": [
@@ -658,7 +678,7 @@
               "espn_event_id": "401910020",
               "player_id": "4395725",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -688,10 +708,10 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer over na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
               },
-              "player_points": 6,
-              "game_state": "live",
-              "game_clock": "3:47",
-              "period": 1
+              "player_points": 19,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Darius Garland",
@@ -706,7 +726,7 @@
               "espn_event_id": "401910022",
               "player_id": "4396907",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -736,17 +756,20 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
               },
-              "player_points": 4,
-              "game_state": "live",
-              "game_clock": "2:52",
-              "period": 1
+              "player_points": 23,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-20T05:06:37.834918+00:00"
         },
         {
           "id": "8",
           "stake": 10,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.7645,
           "potential_payout": 37.64,
           "legs": [
@@ -763,7 +786,7 @@
               "espn_event_id": "401910019",
               "player_id": "5175737",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -793,10 +816,10 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer over na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
               },
-              "player_points": 2,
-              "game_state": "live",
-              "game_clock": "3:12",
-              "period": 1
+              "player_points": 11,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Damian Lillard",
@@ -811,7 +834,7 @@
               "espn_event_id": "401910020",
               "player_id": "6606",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -841,17 +864,20 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
               },
-              "player_points": 8,
-              "game_state": "live",
-              "game_clock": "3:47",
-              "period": 1
+              "player_points": 33,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-20T05:06:37.834974+00:00"
         },
         {
           "id": "9",
           "stake": 10,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.5385,
           "potential_payout": 35.38,
           "legs": [
@@ -868,7 +894,7 @@
               "espn_event_id": "401910021",
               "player_id": "3062679",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -898,10 +924,10 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "ESPN posljednjih 5 potvrđenih utakmica: 5, 0, 0, 6, 8; UNDER 7.5 prolaz 4/5. H2H i matchup nisu potvrđeni."
               },
-              "player_points": 6,
-              "game_state": "live",
-              "game_clock": "2:47",
-              "period": 1
+              "player_points": 11,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Cameron Boozer",
@@ -916,7 +942,7 @@
               "espn_event_id": "401910019",
               "player_id": "5041935",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -946,17 +972,20 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
               },
-              "player_points": 7,
-              "game_state": "live",
-              "game_clock": "3:12",
-              "period": 1
+              "player_points": 16,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-20T05:06:37.835002+00:00"
         },
         {
           "id": "10",
           "stake": 10,
-          "status": "pending",
+          "status": "won",
           "total_odd": 3.3113,
           "potential_payout": 33.11,
           "legs": [
@@ -973,7 +1002,7 @@
               "espn_event_id": "401910021",
               "player_id": "4432816",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -995,10 +1024,10 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer under na osnovu 3 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
               },
-              "player_points": 9,
-              "game_state": "live",
-              "game_clock": "2:47",
-              "period": 1
+              "player_points": 15,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Ayo Dosunmu",
@@ -1013,7 +1042,7 @@
               "espn_event_id": "401910021",
               "player_id": "4397002",
               "start_utc": "2026-11-20T01:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -1043,14 +1072,33 @@
                 "opponent_defense": "not_verified",
                 "scout_note": "Smjer under na osnovu 5 potvrđenih prethodnih mečeva; procjena bez potvrđenog H2H/čuvara."
               },
-              "player_points": 3,
-              "game_state": "live",
-              "game_clock": "2:47",
-              "period": 1
+              "player_points": 6,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             }
-          ]
+          ],
+          "effective_odd": 3.31131,
+          "payout": 33.11,
+          "settled_at_utc": "2026-11-20T05:06:37.835032+00:00"
         }
-      ]
+      ],
+      "accounting": {
+        "tickets_total": 10,
+        "tickets_settled": 10,
+        "tickets_pending": 0,
+        "tickets_won": 3,
+        "tickets_lost": 7,
+        "tickets_void": 0,
+        "total_staked": 100.0,
+        "total_returned": 85.86,
+        "available_bank": 985.86,
+        "net_profit_confirmed": -14.14,
+        "complete": true
+      },
+      "bank_end": 985.86,
+      "bank_profit": -14.14,
+      "settled_at_utc": "2026-11-20T05:06:37.835062+00:00"
     }
   ]
 }
