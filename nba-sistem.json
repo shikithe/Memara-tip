@@ -1121,8 +1121,8 @@
           11,
           11
         ],
-        "group_number": 2,
-        "group_range": "13-24",
+        "group_number": 3,
+        "group_range": "25-36",
         "group_candidates": [
           "Aaron Wiggins",
           "Brandon Miller",
@@ -1139,8 +1139,8 @@
         ],
         "group_reviewed": 12,
         "group_selected": [
-          "Kelly Oubre Jr.",
-          "Pascal Siakam"
+          "Jakob Poeltl",
+          "Kevin Huerter"
         ],
         "ranking": [
           {
@@ -1158,11 +1158,101 @@
             "reason": "Posljednjih pet prosjek 13,6, sezonski 19,9; posljednji nastup 28 i visoka šuterska uloga su rizik."
           }
         ],
-        "note": "Tiket 2 iz grupe 13–24; pregledano 12 kandidata, dostupni Statz zadnjih pet, granice i DraftKings iz BetSharp 20.11.2026. H2H/čuvari nisu kompletno provjereni. Ne tvrditi kompletno potvrđen scout cijele grupe.",
+        "note": "116-player pool frozen in collector-output/nba-system-offer-2026-11-20.json (reconstructed original order); groups published sequentially with source and last-five points. H2H and defenders are not fully verified for all candidates; these are virtual picks and not guaranteed outcomes.",
         "source": "https://betsharp.com/nba/props?m=points",
         "groups_completed": [
           1,
-          2
+          2,
+          3
+        ],
+        "group_progress": [
+          {
+            "number": 3,
+            "range": [
+              25,
+              36
+            ],
+            "candidates": [
+              {
+                "name": "Cade Cunningham",
+                "last_five_average": 28.6,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Daniss Jenkins",
+                "last_five_average": 19,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Immanuel Quickley",
+                "last_five_average": 18.4,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Ja'Kobe Walter",
+                "last_five_average": 14.6,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Jakob Poeltl",
+                "last_five_average": 7.4,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Jamal Shead",
+                "last_five_average": 9.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Jamison Battle",
+                "last_five_average": 8.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Javonte Green",
+                "last_five_average": 8.2,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "John Collins",
+                "last_five_average": 14.6,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Kevin Huerter",
+                "last_five_average": 15,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Paul Reed",
+                "last_five_average": 10.6,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Scottie Barnes",
+                "last_five_average": 27.8,
+                "full_h2h": "not_verified"
+              }
+            ],
+            "selected": [
+              {
+                "name": "Jakob Poeltl",
+                "market": "under",
+                "line": 11.5,
+                "odds": 1.8065,
+                "hit_rate": "5/5"
+              },
+              {
+                "name": "Kevin Huerter",
+                "market": "under",
+                "line": 12.5,
+                "odds": 1.8197,
+                "hit_rate": "3/5"
+              }
+            ],
+            "evaluation": "All original group members received numeric last-five averages where publicly retrievable; injuries, confirmed defender and up to 5 H2H not fully verified. Picks are provisional analysis, not guarantees.",
+            "source": "https://statz.ai/nba/players/;https://betsharp.com/nba/props?m=points"
+          }
         ]
       },
       "tickets": [
@@ -1342,6 +1432,95 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "4/5 preko 23,5, posljednjih pet 24,31,19,28,29; projekcija Statz 21,5 i CLE odbrana su rizici. Nema potvrđenog kompletnog H2H."
+              }
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "stake": 9.86,
+          "status": "pending",
+          "total_odd": 3.2873,
+          "potential_payout": 32.41,
+          "legs": [
+            {
+              "player": "Jakob Poeltl",
+              "team": "TOR",
+              "opponent": "DET",
+              "pick": "under",
+              "points_line": 11.5,
+              "odd": 1.8065,
+              "american_odd": -124,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909308",
+              "player_id": "3134908",
+              "start_utc": "2026-11-21T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "points": 8
+                  },
+                  {
+                    "points": 3
+                  },
+                  {
+                    "points": 11
+                  },
+                  {
+                    "points": 9
+                  },
+                  {
+                    "points": 6
+                  }
+                ],
+                "last_five_average": 7.4,
+                "last_five_hit_rate": "5/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_fully_verified",
+                "scout_note": "Pet posljednjih ispod 11,5; sezonski prosjek 8,1. Rizik: minutaža se može promijeniti.",
+                "source_stats": "https://statz.ai/nba/players/jakob-poeltl"
+              }
+            },
+            {
+              "player": "Kevin Huerter",
+              "team": "DET",
+              "opponent": "TOR",
+              "pick": "under",
+              "points_line": 12.5,
+              "odd": 1.8197,
+              "american_odd": -122,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909308",
+              "player_id": "4066372",
+              "start_utc": "2026-11-21T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "points": 20
+                  },
+                  {
+                    "points": 11
+                  },
+                  {
+                    "points": 12
+                  },
+                  {
+                    "points": 24
+                  },
+                  {
+                    "points": 8
+                  }
+                ],
+                "last_five_average": 15,
+                "last_five_hit_rate": "3/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_fully_verified",
+                "scout_note": "Tri od posljednjih pet ispod 12,5, sezonski prosjek 9,9; nedavni mečevi od 20 i 24 su glavni rizik.",
+                "source_stats": "https://statz.ai/nba/players/kevin-huerter"
               }
             }
           ]
