@@ -1,17 +1,88 @@
 {
   "date": "2026-11-20",
-  "published": "Čeka validnu objavu: 12:00 Europe/Sarajevo",
-  "publication_type": "awaiting_daily_publication",
+  "published": "20.11.2026. u 19:11 (Europe/Sarajevo)",
+  "publication_type": "independent_verified_github",
   "bank_before": 219.48,
-  "daily_stake": 0,
-  "bank_after": 219.48,
-  "bank_after_stakes": 219.48,
+  "daily_stake": 14.27,
+  "bank_after": 205.21,
+  "bank_after_stakes": 205.21,
   "provisional": false,
-  "settled": true,
-  "odds_verified": false,
-  "tickets": [],
+  "settled": false,
+  "odds_verified": true,
+  "tickets": [
+    {
+      "id": "A",
+      "matches": [
+        {
+          "fixture_id": "espn:football:ger.1:401884736",
+          "home": "Bayern Munich",
+          "away": "FC Cologne",
+          "start_utc": "2026-11-20T19:30:00Z",
+          "pick": "3+",
+          "odd": 1.16,
+          "odds": 1.16,
+          "bookmaker": "OddsRun public odds",
+          "provider_event_id": "ai-web:espn:football:ger.1:401884736",
+          "market_source": "The Odds API",
+          "market_name": "3+",
+          "odds_verified_at_utc": "2026-11-20T18:10:37.995Z",
+          "odds_status": "last_known_snapshot",
+          "form_home_matches": 5,
+          "form_away_matches": 5
+        },
+        {
+          "fixture_id": "espn:football:bel.1:401878937",
+          "home": "Cercle Brugge KSV",
+          "away": "KVC Westerlo",
+          "start_utc": "2026-11-20T19:45:00Z",
+          "pick": "3+",
+          "odd": 1.47,
+          "odds": 1.47,
+          "bookmaker": "TipsterArea public odds",
+          "provider_event_id": "ai-web:espn:football:bel.1:401878937",
+          "market_source": "The Odds API",
+          "market_name": "3+",
+          "odds_verified_at_utc": "2026-11-20T18:10:37.995Z",
+          "odds_status": "last_known_snapshot",
+          "form_home_matches": 5,
+          "form_away_matches": 5
+        },
+        {
+          "fixture_id": "espn:football:esp.1:401882805",
+          "home": "Athletic Club",
+          "away": "Espanyol",
+          "start_utc": "2026-11-20T20:00:00Z",
+          "pick": "1",
+          "odd": 1.54,
+          "odds": 1.54,
+          "bookmaker": "TipsterArea public odds",
+          "provider_event_id": "ai-web:espn:football:esp.1:401882805",
+          "market_source": "The Odds API",
+          "market_name": "1X2",
+          "odds_verified_at_utc": "2026-11-20T18:10:37.995Z",
+          "odds_status": "last_known_snapshot",
+          "form_home_matches": 5,
+          "form_away_matches": 5
+        }
+      ],
+      "odds": 2.63,
+      "analysis": "AI Scout 20.11.2026: kompletna ESPN ponuda od pet meceva pregledana. BAYERN-KOLN: Bayern prvi sa 21 bodom (6-3-0), 29:9 gol-razlika, 20 golova u cetiri domace ligaske utakmice, H2H 20 pobjeda i 2 remija u 22 Bundesligaska meca; Koln 15. sa 9 bodova, samo dva gola u zadnje cetiri lige, slaba odbrana/izostaju Hubers i Van den Berg. Bayern bez Neuera, Gnabryja, Diaz, Daviesa, Saibarija; Musiala moguc povratak; rizik napadackih izostanaka, ali dovoljno izrazita domaca produkcija za 3+ pri 1.16. CERCLE-WESTERLO: Cercle 16. sa 9 bodova, 14:22, posljednjih 5 kod kuce 1-0-4, prima oko 2.0 po mecu; Westerlo 9. sa 14 bodova, 26:30, u 5 gostovanja 9 golova dao i 11 primio, u 4 od 5 dao gol; zadnja 2 H2H 4:1 i 2:0 za Cercle, prosjek 3.5. Cercle bez Manneha, Ndale, Adaramole, Herrmanna i Amanija, Westerlo bez Haspolata i Ourege; 3+ pri 1.47 se uklapa u golgeterski i defanzivni profil, uz rizik da Cercle kod kuce bude neefikasan. ATHLETIC-ESPANYOL: Athletic 7. sa 16 bodova kroz 11, posljednje 4 ukupno 3 pobjede i remi; zadnja 3 liga 7 bodova, solidan San Mames; Espanyol 13. sa 12 bodova iz 12, 6 poraza, u 6 gostovanja sakupio 7 bodova. Ipak Espanyol je dobio zadnja dva H2H, dolazi s novim trenerom Sarabiom i 4 boda u zadnje 2 utakmice; negativne informacije su eksplicitne. Athletic bez Guruzete, Sannadija, Egiluza, neizvjesni Paredes i Serrano; Espanyol bez Calatrave, Garcie, Carrerasa i Gonzaleza. Athletic 1 pri 1.54 je procjena umjerene sigurnosti. Izbaceni: Troyes-Le Havre zbog slabog napada Troyesa i novog trenera Le Havrea koji je izgubio 6 uzastopno; Velez-Belgrano je eliminacioni mec, pet zadnjih Velez 2 pobjede, Belgrano 1, model daje samo 33% za 3+ uz ponuđenu 2.27 (negativna vrijednost). Nisu potvrdeni svi detaljni individualni xG za svaku ekipu i direktni cuvari, te se ne izmisljaju. Ukupna kvota A 1.16 x 1.47 x 1.54 = 2.625168. B nije odobren jer po postojecem MemaraSix pravilu prihvata samo 3+ i ne smije dijeliti meceve sa A, a preostala dva meca ne nude kvalitetnu kombinaciju. Izvori: fcbayern.com, sportsmole.co.uk, wmrtips.com, scorenow.ai; online kvote iz ListaSix public-web snapshots 20.11.",
+      "label": "GLAVNI TIKET",
+      "stake": 14.27,
+      "status": "objavljen",
+      "payout": 0
+    }
+  ],
   "total_payout": 0,
   "net_change": 0,
-  "analysis_status": "Prethodni tiket je u arhivi. Današnji tiketi još nisu objavljeni.",
-  "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter"
+  "analysis_status": "Independent verified ticket publication",
+  "selection_method": "Each approved ticket independently checked",
+  "published_at_utc": "2026-11-20T18:11:47.984068+00:00",
+  "daily_budget": 21.95,
+  "pending_ticket_statuses": {
+    "A": "objavljen"
+  },
+  "pending_ticket_reasons": {
+    "A": ""
+  }
 }
