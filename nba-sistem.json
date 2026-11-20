@@ -1121,8 +1121,8 @@
           11,
           11
         ],
-        "group_number": 3,
-        "group_range": "25-36",
+        "group_number": 4,
+        "group_range": "37-48",
         "group_candidates": [
           "Aaron Wiggins",
           "Brandon Miller",
@@ -1139,8 +1139,8 @@
         ],
         "group_reviewed": 12,
         "group_selected": [
-          "Jakob Poeltl",
-          "Kevin Huerter"
+          "Nolan Traore",
+          "Franz Wagner"
         ],
         "ranking": [
           {
@@ -1163,7 +1163,8 @@
         "groups_completed": [
           1,
           2,
-          3
+          3,
+          4
         ],
         "group_progress": [
           {
@@ -1248,6 +1249,93 @@
                 "line": 12.5,
                 "odds": 1.8197,
                 "hit_rate": "3/5"
+              }
+            ],
+            "evaluation": "All original group members received numeric last-five averages where publicly retrievable; injuries, confirmed defender and up to 5 H2H not fully verified. Picks are provisional analysis, not guarantees.",
+            "source": "https://statz.ai/nba/players/;https://betsharp.com/nba/props?m=points"
+          },
+          {
+            "number": 4,
+            "range": [
+              37,
+              48
+            ],
+            "candidates": [
+              {
+                "name": "Anthony Black",
+                "last_five_average": 17.6,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Day'Ron Sharpe",
+                "last_five_average": 9.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Desmond Bane",
+                "last_five_average": 20,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Egor Demin",
+                "last_five_average": 13.2,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Franz Wagner",
+                "last_five_average": 30.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Jalen Suggs",
+                "last_five_average": 10.2,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Julius Randle",
+                "last_five_average": 20.4,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Michael Porter Jr.",
+                "last_five_average": 22,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Mikel Brown Jr.",
+                "last_five_average": 12,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Nolan Traore",
+                "last_five_average": 16.6,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Tristan da Silva",
+                "last_five_average": 14.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Wendell Carter Jr.",
+                "last_five_average": 11.6,
+                "full_h2h": "not_verified"
+              }
+            ],
+            "selected": [
+              {
+                "name": "Nolan Traore",
+                "market": "over",
+                "line": 10.5,
+                "odds": 1.7937,
+                "hit_rate": "5/5"
+              },
+              {
+                "name": "Franz Wagner",
+                "market": "over",
+                "line": 25.5,
+                "odds": 1.9615,
+                "hit_rate": "4/5"
               }
             ],
             "evaluation": "All original group members received numeric last-five averages where publicly retrievable; injuries, confirmed defender and up to 5 H2H not fully verified. Picks are provisional analysis, not guarantees.",
@@ -1521,6 +1609,95 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Tri od posljednjih pet ispod 12,5, sezonski prosjek 9,9; nedavni mečevi od 20 i 24 su glavni rizik.",
                 "source_stats": "https://statz.ai/nba/players/kevin-huerter"
+              }
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "stake": 9.86,
+          "status": "pending",
+          "total_odd": 3.5183,
+          "potential_payout": 34.69,
+          "legs": [
+            {
+              "player": "Nolan Traore",
+              "team": "BKN",
+              "opponent": "ORL",
+              "pick": "over",
+              "points_line": 10.5,
+              "odd": 1.7937,
+              "american_odd": -126,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909306",
+              "player_id": "5279130",
+              "start_utc": "2026-11-21T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "points": 13
+                  },
+                  {
+                    "points": 23
+                  },
+                  {
+                    "points": 11
+                  },
+                  {
+                    "points": 14
+                  },
+                  {
+                    "points": 19
+                  }
+                ],
+                "last_five_average": 16,
+                "last_five_hit_rate": "5/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_fully_verified",
+                "scout_note": "Pet prethodnih preko 10,5; direktni dueli sa ORL mješoviti i to je rizik.",
+                "source_stats": "https://statz.ai/nba/players/nolan-traore"
+              }
+            },
+            {
+              "player": "Franz Wagner",
+              "team": "ORL",
+              "opponent": "BKN",
+              "pick": "over",
+              "points_line": 25.5,
+              "odd": 1.9615,
+              "american_odd": -104,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909306",
+              "player_id": "4566434",
+              "start_utc": "2026-11-21T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "points": 27
+                  },
+                  {
+                    "points": 21
+                  },
+                  {
+                    "points": 35
+                  },
+                  {
+                    "points": 38
+                  },
+                  {
+                    "points": 33
+                  }
+                ],
+                "last_five_average": 30.8,
+                "last_five_hit_rate": "4/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_fully_verified",
+                "scout_note": "Četiri od posljednjih pet preko 25,5, prosjek 30,8; protivnički matchup i eventualne izmjene minutaže nepotvrđeni.",
+                "source_stats": "https://statz.ai/nba/players/franz-wagner"
               }
             }
           ]
