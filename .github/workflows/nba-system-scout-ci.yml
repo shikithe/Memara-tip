@@ -1,0 +1,21 @@
+name: NBA SISTEM — Scout gate tests
+on:
+  push:
+    paths:
+      - 'nba_system_pipeline.py'
+      - 'tests/test_nba_system_pipeline.py'
+      - '.github/workflows/nba-system-scout-ci.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test group balancing, exact rank gate and sequential publishing
+        run: python -m unittest discover -s tests -p 'test_nba_system_pipeline.py' -v
