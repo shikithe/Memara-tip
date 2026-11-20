@@ -1121,8 +1121,8 @@
           11,
           11
         ],
-        "group_number": 5,
-        "group_range": "49-60",
+        "group_number": 6,
+        "group_range": "61-72",
         "group_candidates": [
           "Aaron Wiggins",
           "Brandon Miller",
@@ -1139,8 +1139,8 @@
         ],
         "group_reviewed": 12,
         "group_selected": [
-          "Moritz Wagner",
-          "Jalen Smith"
+          "Ajay Mitchell",
+          "Kenrich Williams"
         ],
         "ranking": [
           {
@@ -1165,7 +1165,8 @@
           2,
           3,
           4,
-          5
+          5,
+          6
         ],
         "group_progress": [
           {
@@ -1423,6 +1424,93 @@
                 "market": "over",
                 "line": 14.5,
                 "odds": 1.8264,
+                "hit_rate": "4/5"
+              }
+            ],
+            "evaluation": "All original group members received numeric last-five averages where publicly retrievable; injuries, confirmed defender and up to 5 H2H not fully verified. Picks are provisional analysis, not guarantees.",
+            "source": "https://statz.ai/nba/players/;https://betsharp.com/nba/props?m=points"
+          },
+          {
+            "number": 6,
+            "range": [
+              61,
+              72
+            ],
+            "candidates": [
+              {
+                "name": "Trae Young",
+                "last_five_average": 15.2,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Tre Jones",
+                "last_five_average": 11.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Khris Middleton",
+                "last_five_average": 5.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Aday Mara",
+                "last_five_average": 13,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Ajay Mitchell",
+                "last_five_average": 17.6,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Herbert Jones",
+                "last_five_average": 7.4,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Isaiah Hartenstein",
+                "last_five_average": 11.4,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Jared McCain",
+                "last_five_average": 16.8,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Jaylin Williams",
+                "last_five_average": 3,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Jeremiah Fears",
+                "last_five_average": 18.4,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Kenrich Williams",
+                "last_five_average": 8.4,
+                "full_h2h": "not_verified"
+              },
+              {
+                "name": "Saddiq Bey",
+                "last_five_average": 18.6,
+                "full_h2h": "not_verified"
+              }
+            ],
+            "selected": [
+              {
+                "name": "Ajay Mitchell",
+                "market": "under",
+                "line": 19.5,
+                "odds": 1.8065,
+                "hit_rate": "4/5"
+              },
+              {
+                "name": "Kenrich Williams",
+                "market": "over",
+                "line": 7.5,
+                "odds": 1.7752,
                 "hit_rate": "4/5"
               }
             ],
@@ -1875,6 +1963,95 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Četiri od posljednjih pet preko 14,5; trenutna forma 17,2, naspram sezone 13,4. Rizik varijabilne minute.",
                 "source_stats": "https://statz.ai/nba/players/jalen-smith"
+              }
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "stake": 9.86,
+          "status": "pending",
+          "total_odd": 3.2069,
+          "potential_payout": 31.62,
+          "legs": [
+            {
+              "player": "Ajay Mitchell",
+              "team": "OKC",
+              "opponent": "NO",
+              "pick": "under",
+              "points_line": 19.5,
+              "odd": 1.8065,
+              "american_odd": -124,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909310",
+              "player_id": "4900671",
+              "start_utc": "2026-11-21T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "points": 13
+                  },
+                  {
+                    "points": 14
+                  },
+                  {
+                    "points": 14
+                  },
+                  {
+                    "points": 12
+                  },
+                  {
+                    "points": 35
+                  }
+                ],
+                "last_five_average": 17.6,
+                "last_five_hit_rate": "4/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_fully_verified",
+                "scout_note": "Četiri posljednje od pet ispod 19,5; posljednji skok na 35 veliki rizik promjene napadačke uloge.",
+                "source_stats": "https://statz.ai/nba/players/ajay-mitchell"
+              }
+            },
+            {
+              "player": "Kenrich Williams",
+              "team": "OKC",
+              "opponent": "NO",
+              "pick": "over",
+              "points_line": 7.5,
+              "odd": 1.7752,
+              "american_odd": -129,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/props?m=points",
+              "espn_event_id": "401909310",
+              "player_id": "3133626",
+              "start_utc": "2026-11-21T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "points": 10
+                  },
+                  {
+                    "points": 10
+                  },
+                  {
+                    "points": 8
+                  },
+                  {
+                    "points": 11
+                  },
+                  {
+                    "points": 3
+                  }
+                ],
+                "last_five_average": 8.4,
+                "last_five_hit_rate": "4/5",
+                "h2h": "not_verified",
+                "opponent_defense": "not_fully_verified",
+                "scout_note": "Četiri od pet iznad 7,5, prosjek 8,4; niska sezonska minutaža/uloga nosi neizvjesnost.",
+                "source_stats": "https://statz.ai/nba/players/kenrich-williams"
               }
             }
           ]
