@@ -1,6 +1,6 @@
 {
   "date": "2026-11-20",
-  "updated_at_utc": "2026-11-21T00:13:34.788610+00:00",
+  "updated_at_utc": "2026-11-21T00:15:23.823334+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -58,13 +58,13 @@
       "state": "live",
       "points_line": 10.5,
       "period": 1,
-      "game_clock": "10:16",
+      "game_clock": "9:19",
       "source": "espn-public-unofficial",
       "event_id": "401909305",
       "player_id": "4869342",
       "sport": "basketball",
-      "score": "0",
-      "player_points": 0
+      "score": "3",
+      "player_points": 3
     }
   ],
   "bank_unchanged": true
