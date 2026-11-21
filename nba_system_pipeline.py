@@ -65,8 +65,8 @@ def validate_snapshot(snap, date):
         require(snap.get("filtered_source_exact") is True,
                 "Snapshot must be original or verifiably filtered from original")
         filt = snap.get("filtered_from_source") or {}
-        require(filt.get("path") == "collector-output/betsharp-nba-daily.json",
-                "Filtered snapshot source must point to original BetSharp collector")
+        require(filt.get("path") == f"collector-output/betsharp-history/{date}.json",
+                "Filtered snapshot source must point to immutable dated BetSharp capture")
         original = load(ROOT / filt["path"])
         raw = original.get("offers")
         require(isinstance(raw, list) and original.get("status") == "ok"
