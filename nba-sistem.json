@@ -3550,6 +3550,141 @@
               }
             }
           ]
+        },
+        {
+          "id": "6",
+          "stake": 9.91,
+          "status": "pending",
+          "total_odd": 3.2779,
+          "potential_payout": 32.48,
+          "legs": [
+            {
+              "player": "Rudy Gobert",
+              "team": "MIN",
+              "opponent": "MEM",
+              "pick": "under",
+              "points_line": 9.5,
+              "odd": 1.8403,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/rudy-gobert",
+              "espn_event_id": "401910026",
+              "player_id": "3032976",
+              "start_utc": "2026-11-22T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 9,
+                    "minutes": 35
+                  },
+                  {
+                    "date": "2026-11-17",
+                    "points": 0,
+                    "minutes": 22
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 18,
+                    "minutes": 32
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 1,
+                    "minutes": 27
+                  },
+                  {
+                    "date": "2026-11-12",
+                    "points": 9,
+                    "minutes": 23
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Ne postoji pouzdan komplet zadnjih pet pojedinačnih H2H nastupa s današnjim protivnikom."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Nema potvrđenih preciznih dozvoljenih poena protivnika na ovoj poziciji."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Početni sastav i direktni čuvar nisu potvrđeni u dostupnim izvorima."
+                },
+                "injuries": {
+                  "status": "not_listed",
+                  "reason": "Nije označen kao OUT/QUESTIONABLE u dostupnom službenom NBA izvještaju, dostupnost može da se promijeni."
+                },
+                "minutes_projection": "Recent 5 nastupa 22–35 min; ne garantuje buduće minute.",
+                "scout_score": 74,
+                "scout_note": "UNDER 9.5 prolazi u 4 od posljednjih pet i sezonski srednji rezultat znatno je ispod ponuđene granice.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-6.json"
+              }
+            },
+            {
+              "player": "Taylor Hendricks",
+              "team": "MEM",
+              "opponent": "MIN",
+              "pick": "over",
+              "points_line": 9.5,
+              "odd": 1.7812,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/taylor-hendricks",
+              "espn_event_id": "401910026",
+              "player_id": "4684806",
+              "start_utc": "2026-11-22T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 11,
+                    "minutes": 20
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 18,
+                    "minutes": 21
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 9,
+                    "minutes": 19
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 22,
+                    "minutes": 29
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 10,
+                    "minutes": 19
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Ne postoji pouzdan komplet zadnjih pet pojedinačnih H2H nastupa s današnjim protivnikom."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Nema potvrđenih preciznih dozvoljenih poena protivnika na ovoj poziciji."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Početni sastav i direktni čuvar nisu potvrđeni u dostupnim izvorima."
+                },
+                "injuries": {
+                  "status": "not_listed",
+                  "reason": "Nije označen kao OUT/QUESTIONABLE u dostupnom službenom NBA izvještaju, dostupnost može da se promijeni."
+                },
+                "minutes_projection": "Recent 5 nastupa 19–29 min; ne garantuje buduće minute.",
+                "scout_score": 70,
+                "scout_note": "OVER 9.5 u 4/5 posljednjih nastupa uz rast sa 3-7 na 19-29 minuta i napadačku ulogu.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-6.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -3558,22 +3693,24 @@
           2,
           3,
           4,
-          5
+          5,
+          6
         ],
         "offered": 54,
         "total_groups": 10,
-        "group_number": 5,
-        "group_range": "25-29",
+        "group_number": 6,
+        "group_range": "30-34",
         "group_selected": [
-          "LaMelo Ball",
-          "Jonathan Kuminga"
+          "Rudy Gobert",
+          "Taylor Hendricks"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-21-group-1.json",
           "2": "collector-output/nba-system-scout-2026-11-21-group-2.json",
           "3": "collector-output/nba-system-scout-2026-11-21-group-3.json",
           "4": "collector-output/nba-system-scout-2026-11-21-group-4.json",
-          "5": "collector-output/nba-system-scout-2026-11-21-group-5.json"
+          "5": "collector-output/nba-system-scout-2026-11-21-group-5.json",
+          "6": "collector-output/nba-system-scout-2026-11-21-group-6.json"
         },
         "selection_method": "full_ranked_scout"
       }
