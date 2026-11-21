@@ -1,0 +1,295 @@
+{
+  "date": "2026-11-21",
+  "list_number": 9,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-21T17:10:21.095317+00:00",
+  "total_offers": 68,
+  "group_size": 6,
+  "original_positions": [
+    57,
+    62
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Damian Lillard",
+      "team": "POR",
+      "game": "POR @ NY",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/damian-lillard",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-portland-trail-blazers-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 20.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 20.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 19.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 20.5,
+          "over_american": -113,
+          "under_american": -121,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -138,
+          "under_american": 113,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.13
+        }
+      },
+      "original_offer_position": 57
+    },
+    {
+      "player": "Deni Avdija",
+      "team": "POR",
+      "game": "POR @ NY",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/deni-avdija",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-portland-trail-blazers-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 23.5,
+          "over_american": -102,
+          "under_american": -125,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -111,
+          "under_american": -118,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8475
+        },
+        "BR": {
+          "line": 22.5,
+          "over_american": -117,
+          "under_american": -115,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8696
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 117,
+          "under_american": -150,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6667
+        }
+      },
+      "original_offer_position": 58
+    },
+    {
+      "player": "Donovan Clingan",
+      "team": "POR",
+      "game": "POR @ NY",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/donovan-clingan",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-portland-trail-blazers-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -103,
+          "under_american": -124,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -108,
+          "under_american": -127,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -138,
+          "under_american": 113,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.13
+        }
+      },
+      "original_offer_position": 59
+    },
+    {
+      "player": "Jalen Brunson",
+      "team": "NY",
+      "game": "POR @ NY",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/jalen-brunson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-portland-trail-blazers-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 28.5,
+          "over_american": -114,
+          "under_american": -112,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 28.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 28.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 28.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 29.5,
+          "over_american": 108,
+          "under_american": -133,
+          "over_decimal": 2.08,
+          "under_decimal": 1.7519
+        }
+      },
+      "original_offer_position": 60
+    },
+    {
+      "player": "Josh Hart",
+      "team": "NY",
+      "game": "POR @ NY",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/josh-hart",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-portland-trail-blazers-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -112,
+          "under_american": -114,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -127,
+          "under_american": -108,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -108,
+          "under_american": -113,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.885
+        }
+      },
+      "original_offer_position": 61
+    },
+    {
+      "player": "Jrue Holiday",
+      "team": "POR",
+      "game": "POR @ NY",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/jrue-holiday",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-portland-trail-blazers-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -104,
+          "under_american": -122,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8197
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -117,
+          "under_american": -117,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 127,
+          "under_american": -178,
+          "over_decimal": 2.27,
+          "under_decimal": 1.5618
+        }
+      },
+      "original_offer_position": 62
+    }
+  ]
+}
