@@ -1,0 +1,476 @@
+{
+  "date": "2026-11-21",
+  "group_number": 3,
+  "analysis_complete": true,
+  "ranking": [
+    {
+      "player_id": "5254165",
+      "player": "Keaton Wagler",
+      "rank": 1,
+      "score": 75,
+      "confidence": 68,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 7,
+          "minutes": 17
+        },
+        {
+          "date": "2026-11-17",
+          "points": 15,
+          "minutes": 18
+        },
+        {
+          "date": "2026-11-15",
+          "points": 12,
+          "minutes": 28
+        },
+        {
+          "date": "2026-11-13",
+          "points": 14,
+          "minutes": 18
+        },
+        {
+          "date": "2026-11-10",
+          "points": 11,
+          "minutes": 23
+        }
+      ],
+      "season_context": "Rookie 2026; L5 11.8 poena i 20.8 minuta uz varijabilnu ulogu.",
+      "home_away_context": "Sezonska kućna/gostujuća razlika nema dovoljno precizne numeričke potvrde za ovu liniju.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Nema pouzdano potvrđenih pojedinačnih pet H2H mečeva u današnjim izvorima."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Pozicijski splitovi primljenih poena nisu potvrđeni za ovu konkretnu ulogu."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar nije potvrđen do izlaska startera; rizik procjene ostaje."
+      },
+      "injuries": {
+        "status": "not_listed_official_report",
+        "reason": "Nije označen kao OUT ili QUESTIONABLE na dostupnom 12:30 ET injury izvještaju, stanje može da se promijeni."
+      },
+      "minutes_projection": "Orijentacioni nedavni raspon 17-28 min.",
+      "role_projection": "Procjena na osnovu posljednjih pet nastupa, konačna rotacija nepoznata.",
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8547
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Ne postoji kalibriran metod za procenat; rang na osnovu L5 uspjeha, minuta i rizika.",
+        "availability_confirmed": true,
+        "reason": "OVER 9.5 pokriven u 4/5 nedavnih nastupa (7 15 12 14 11), niska ponuđena linija i dostupna NBA/ESPN identifikacija.",
+        "risk": "Rookie sa varijabilnom minutažom 17-28; u posljednjem meču samo 7, pa uloga u rotaciji nije potpuno stabilna."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Prolaz po ESPN i potvrđena sekundarna LandOfBasketball L5 statistika; nepoznato označeno not_verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/keaton-wagler",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/keaton_wagler.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "2991139",
+      "player": "Kris Dunn",
+      "rank": 2,
+      "score": 69,
+      "confidence": 62,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 6,
+          "minutes": 20
+        },
+        {
+          "date": "2026-11-17",
+          "points": 2,
+          "minutes": 26
+        },
+        {
+          "date": "2026-11-15",
+          "points": 7,
+          "minutes": 18
+        },
+        {
+          "date": "2026-11-13",
+          "points": 2,
+          "minutes": 20
+        },
+        {
+          "date": "2026-11-10",
+          "points": 3,
+          "minutes": 19
+        }
+      ],
+      "season_context": "Sezonski 7.3 PPG, noviji L5 4.0 poena i 20.6 minuta.",
+      "home_away_context": "Sezonska kućna/gostujuća razlika nema dovoljno precizne numeričke potvrde za ovu liniju.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Nema pouzdano potvrđenih pojedinačnih pet H2H mečeva u današnjim izvorima."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Pozicijski splitovi primljenih poena nisu potvrđeni za ovu konkretnu ulogu."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar nije potvrđen do izlaska startera; rizik procjene ostaje."
+      },
+      "injuries": {
+        "status": "not_listed_official_report",
+        "reason": "Nije označen kao OUT ili QUESTIONABLE na dostupnom 12:30 ET injury izvještaju, stanje može da se promijeni."
+      },
+      "minutes_projection": "Orijentacioni nedavni raspon 18-26 min.",
+      "role_projection": "Procjena na osnovu posljednjih pet nastupa, konačna rotacija nepoznata.",
+      "market": {
+        "points_line": 5.5,
+        "over_odd": 2.1,
+        "under_odd": 1.7143
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Ne postoji kalibriran metod za procenat; rang na osnovu L5 uspjeha, minuta i rizika.",
+        "availability_confirmed": true,
+        "reason": "L5 prosjek 4.0 ispod 5.5, uz 3/5 nastupa UNDER i smanjene minute u posljednjih pet; defanzivna uloga umjesto napadačke.",
+        "risk": "Niska granica od 5.5 lako se prelazi uz dvije pogođene trojke, sezonski prosjek 7.3 iznad linije."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Prolaz po ESPN i potvrđena sekundarna LandOfBasketball L5 statistika; nepoznato označeno not_verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/kris-dunn",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/kris_dunn.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "betsharp:2026-11-21:0018",
+      "player": "Naji Marshall",
+      "rank": 3,
+      "score": 62,
+      "confidence": 61,
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 12,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-15",
+          "points": 13,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-14",
+          "points": 12,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-12",
+          "points": 13,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-09",
+          "points": 6,
+          "minutes": 25
+        }
+      ],
+      "season_context": "Role player: posljednjih 5 11.2 PPG.",
+      "home_away_context": "Sezonska kućna/gostujuća razlika nema dovoljno precizne numeričke potvrde za ovu liniju.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Nema pouzdano potvrđenih pojedinačnih pet H2H mečeva u današnjim izvorima."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Pozicijski splitovi primljenih poena nisu potvrđeni za ovu konkretnu ulogu."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar nije potvrđen do izlaska startera; rizik procjene ostaje."
+      },
+      "injuries": {
+        "status": "not_listed_official_report",
+        "reason": "Nije označen kao OUT ili QUESTIONABLE na dostupnom 12:30 ET injury izvještaju, stanje može da se promijeni."
+      },
+      "minutes_projection": "Orijentacioni nedavni raspon 23-30 min.",
+      "role_projection": "Procjena na osnovu posljednjih pet nastupa, konačna rotacija nepoznata.",
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.9615,
+        "under_odd": 1.813
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Ne postoji kalibriran metod za procenat; rang na osnovu L5 uspjeha, minuta i rizika.",
+        "availability_confirmed": false,
+        "reason": "Tri od posljednjih pet mečeva UNDER 12.5, s relativno ograničenom primarnom šuterskom ulogom.",
+        "risk": "Granica 12.5 veoma blizu novim rezultatima 12,13,12,13,6; veća minutaža zbog izostanaka mijenja projekciju."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Prolaz po ESPN i potvrđena sekundarna LandOfBasketball L5 statistika; nepoznato označeno not_verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/naji-marshall",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/naji_marshall.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "betsharp:2026-11-21:0017",
+      "player": "Max Strus",
+      "rank": 4,
+      "score": 56,
+      "confidence": 56,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 18,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-17",
+          "points": 3,
+          "minutes": 21
+        },
+        {
+          "date": "2026-11-15",
+          "points": 14,
+          "minutes": 25
+        },
+        {
+          "date": "2026-11-13",
+          "points": 3,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-10",
+          "points": 12,
+          "minutes": 22
+        }
+      ],
+      "season_context": "5/8 najnovijih mečeva sa širokim rasponom 3-18 poena.",
+      "home_away_context": "Sezonska kućna/gostujuća razlika nema dovoljno precizne numeričke potvrde za ovu liniju.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Nema pouzdano potvrđenih pojedinačnih pet H2H mečeva u današnjim izvorima."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Pozicijski splitovi primljenih poena nisu potvrđeni za ovu konkretnu ulogu."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar nije potvrđen do izlaska startera; rizik procjene ostaje."
+      },
+      "injuries": {
+        "status": "not_listed_official_report",
+        "reason": "Nije označen kao OUT ili QUESTIONABLE na dostupnom 12:30 ET injury izvještaju, stanje može da se promijeni."
+      },
+      "minutes_projection": "Orijentacioni nedavni raspon 21-32 min.",
+      "role_projection": "Procjena na osnovu posljednjih pet nastupa, konačna rotacija nepoznata.",
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.8621,
+        "under_odd": 1.9091
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Ne postoji kalibriran metod za procenat; rang na osnovu L5 uspjeha, minuta i rizika.",
+        "availability_confirmed": false,
+        "reason": "Tri od pet nastupa prešlo 11.5; minute i procenat trojki značajno variraju.",
+        "risk": "Šuter s velikom volatilnošću, nakon ranije povrede 3 poena dvaput u posljednjih pet."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Prolaz po ESPN i potvrđena sekundarna LandOfBasketball L5 statistika; nepoznato označeno not_verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/max-strus",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/max_strus.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "betsharp:2026-11-21:0013",
+      "player": "Derrick Jones Jr.",
+      "rank": 5,
+      "score": 52,
+      "confidence": 56,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 8,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-17",
+          "points": 5,
+          "minutes": 28
+        },
+        {
+          "date": "2026-11-15",
+          "points": 13,
+          "minutes": 26
+        },
+        {
+          "date": "2026-11-13",
+          "points": 14,
+          "minutes": 29
+        },
+        {
+          "date": "2026-11-10",
+          "points": 11,
+          "minutes": 24
+        }
+      ],
+      "season_context": "2026/27 role-first wing; minutes typically high 20s, modest points.",
+      "home_away_context": "Sezonska kućna/gostujuća razlika nema dovoljno precizne numeričke potvrde za ovu liniju.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Nema pouzdano potvrđenih pojedinačnih pet H2H mečeva u današnjim izvorima."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Pozicijski splitovi primljenih poena nisu potvrđeni za ovu konkretnu ulogu."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar nije potvrđen do izlaska startera; rizik procjene ostaje."
+      },
+      "injuries": {
+        "status": "not_listed_official_report",
+        "reason": "Nije označen kao OUT ili QUESTIONABLE na dostupnom 12:30 ET injury izvještaju, stanje može da se promijeni."
+      },
+      "minutes_projection": "Orijentacioni nedavni raspon 24-29 min.",
+      "role_projection": "Procjena na osnovu posljednjih pet nastupa, konačna rotacija nepoznata.",
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.9804,
+        "under_odd": 1.8
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Ne postoji kalibriran metod za procenat; rang na osnovu L5 uspjeha, minuta i rizika.",
+        "availability_confirmed": false,
+        "reason": "Only 2/5 of latest games below 9.5, so under has weak empirical support and should not be top selection.",
+        "risk": "L5 points 8 5 13 14 11 and minutes 24-29, low edge; can rise if Clippers rotation changes."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Prolaz po ESPN i potvrđena sekundarna LandOfBasketball L5 statistika; nepoznato označeno not_verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/derrick-jones",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/derrick_jones_jr.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "6442",
+      "player": "Kyrie Irving",
+      "rank": 6,
+      "score": 49,
+      "confidence": 53,
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 17,
+          "minutes": 29
+        },
+        {
+          "date": "2026-11-14",
+          "points": 34,
+          "minutes": 37
+        },
+        {
+          "date": "2026-11-12",
+          "points": 10,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-09",
+          "points": 35,
+          "minutes": 38
+        },
+        {
+          "date": "2026-11-08",
+          "points": 21,
+          "minutes": 29
+        }
+      ],
+      "season_context": "Sezonski prosjek 22.7; promjenjiva agresivnost u šutu.",
+      "home_away_context": "Sezonska kućna/gostujuća razlika nema dovoljno precizne numeričke potvrde za ovu liniju.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Nema pouzdano potvrđenih pojedinačnih pet H2H mečeva u današnjim izvorima."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Pozicijski splitovi primljenih poena nisu potvrđeni za ovu konkretnu ulogu."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar nije potvrđen do izlaska startera; rizik procjene ostaje."
+      },
+      "injuries": {
+        "status": "not_listed_official_report",
+        "reason": "Nije označen kao OUT ili QUESTIONABLE na dostupnom 12:30 ET injury izvještaju, stanje može da se promijeni."
+      },
+      "minutes_projection": "Orijentacioni nedavni raspon 27-38 min.",
+      "role_projection": "Procjena na osnovu posljednjih pet nastupa, konačna rotacija nepoznata.",
+      "market": {
+        "points_line": 23.5,
+        "over_odd": 1.9259,
+        "under_odd": 1.8475
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Ne postoji kalibriran metod za procenat; rang na osnovu L5 uspjeha, minuta i rizika.",
+        "availability_confirmed": false,
+        "reason": "Tri od posljednjih pet ispod 23.5, ali veliki skokovi 34 i 35 čine UNDER slabijom opcijom.",
+        "risk": "Glavni bek u napadu kada aktivan; oscilacije upotrebe i zdravlje koljena traže oprez."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Prolaz po ESPN i potvrđena sekundarna LandOfBasketball L5 statistika; nepoznato označeno not_verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/kyrie-irving",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/kyrie_irving.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    }
+  ],
+  "selected_player_ids": [
+    "5254165",
+    "2991139"
+  ],
+  "selection_reason": "Keaton Wagler OVER 9.5, prolaz u 4 od 5 mečeva i sačuvana DraftKings linija 9.5; Kris Dunn UNDER 5.5, prosjek zadnjih pet 4.0 uz 3/5 ispod, dva potvrđena ESPN identiteta i ESPN početak utakmice. Minutaža i nepoznati matchup daju značajnu neizvjesnost.",
+  "source_snapshot_url": "https://github.com/shikithe/Memara-tip/blob/main/collector-output/nba-system-offer-2026-11-21.json",
+  "notes": "All six candidates researched ESPN then secondary game log; published candidates checked for pregame 2026-11-22T01:00Z. No invented numeric success probabilities."
+}
