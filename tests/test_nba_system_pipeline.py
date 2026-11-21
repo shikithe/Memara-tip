@@ -17,7 +17,9 @@ def offer(i):
 
 def candidate(o, rank, score):
     return {"player_id": o["player_id"], "player": o["player"],
-            "rank": rank, "score": score,
+            "rank": rank, "score": score, "confidence": 75,
+            "research": {"espn_attempted": True, "secondary_attempted": False,
+                         "coverage_note": "Five ESPN game logs documented"},
             "last_five": [{"date": f"2098-12-{d:02d}", "points": 12, "minutes": 28}
                           for d in range(20,25)],
             "season_context": "12 ppg in the season",
@@ -97,41 +99,39 @@ class PipelineTests(unittest.TestCase):
         with self.assertRaisesRegex(p.GateError, "top-ranked"):
             p.validate_audit(audit, self.snapshot, self.groups, 1)
 
-    def test_excluded_player_after_both_sources_does_not_block_group(self):
+    def test_sparse_candidate_does_not_block_other_picks(self):
         audit = self.audit()
-        excluded = audit["ranking"][-1]
-        excluded["eligibility"] = "insufficient_data"
-        excluded["last_five"] = []
-        excluded["assessment"] = {"availability_confirmed": False}
-        excluded["research"] = {
+        sparse = audit["ranking"][-1]
+        sparse["last_five"] = []
+        sparse["confidence"] = 15
+        sparse["research"] = {
             "espn_attempted": True, "secondary_attempted": True,
-            "missing": ["five confirmed recent game logs"],
-            "reason": "The primary and secondary game logs both failed verification"}
+            "coverage_note": "Both sources lacked verified game-level totals"}
         picks = p.validate_audit(audit, self.snapshot, self.groups, 1)
         self.assertEqual(len(picks), 2)
 
-    def test_excluded_top_ranked_cannot_be_selected(self):
+    def test_selected_player_can_have_partial_games_if_real_market_verified(self):
         audit = self.audit()
-        excluded = audit["ranking"][0]
-        excluded["eligibility"] = "insufficient_data"
-        excluded["last_five"] = []
-        excluded["assessment"] = {"availability_confirmed": False}
-        excluded["research"] = {
+        first = audit["ranking"][0]
+        first["last_five"] = first["last_five"][:3]
+        first["confidence"] = 50
+        first["research"] = {
             "espn_attempted": True, "secondary_attempted": True,
-            "missing": ["five individual game logs"],
-            "reason": "No reliable primary or backup recent game statistics found"}
-        with self.assertRaisesRegex(p.GateError, "Top two must"):
+            "coverage_note": "Only three dated games available after both sources"}
+        picks = p.validate_audit(audit, self.snapshot, self.groups, 1)
+        self.assertEqual(len(picks), 2)
+
+    def test_selected_player_requires_real_odds_and_espn_identity(self):
+        audit = self.audit()
+        self.snapshot["offers"][0]["over_odd"] = None
+        audit["ranking"][0]["market"]["over_odd"] = None
+        with self.assertRaisesRegex(p.GateError, "actual odds and line"):
             p.validate_audit(audit, self.snapshot, self.groups, 1)
 
-    def test_cannot_mark_unresearched_member_excluded(self):
+    def test_each_member_must_have_research_coverage(self):
         audit = self.audit()
-        excluded = audit["ranking"][-1]
-        excluded["eligibility"] = "insufficient_data"
-        excluded["last_five"] = []
-        excluded["assessment"] = {"availability_confirmed": False}
-        excluded["research"] = {"espn_attempted": True, "secondary_attempted": False,
-                                "missing": ["last five games"], "reason": "No games available"}
-        with self.assertRaisesRegex(p.GateError, "ESPN and secondary attempts"):
+        audit["ranking"][-1].pop("research")
+        with self.assertRaisesRegex(p.GateError, "first ESPN pass"):
             p.validate_audit(audit, self.snapshot, self.groups, 1)
 
     def test_cannot_skip_groups(self):
