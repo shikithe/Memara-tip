@@ -1,0 +1,610 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-21",
+  "source": "collector-output/betsharp-nba-daily.json",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "captured_at_utc": "2026-11-21T17:10:21.095317+00:00",
+  "source_player_count": 68,
+  "partition_rule": "N/10, first N%10 groups receive one extra; original capture order preserved",
+  "groups": [
+    {
+      "number": 1,
+      "range": [
+        1,
+        7
+      ],
+      "count": 7,
+      "players": [
+        {
+          "player": "Darius Acuff Jr.",
+          "team": "SAC",
+          "game": "BOS @ SAC",
+          "bookmaker": "DraftKings",
+          "line": 23.5
+        },
+        {
+          "player": "Derrick White",
+          "team": "BOS",
+          "game": "BOS @ SAC",
+          "bookmaker": "DraftKings",
+          "line": 14.5
+        },
+        {
+          "player": "Domantas Sabonis",
+          "team": "SAC",
+          "game": "BOS @ SAC",
+          "bookmaker": "DraftKings",
+          "line": 12.5
+        },
+        {
+          "player": "Jayson Tatum",
+          "team": "BOS",
+          "game": "BOS @ SAC",
+          "bookmaker": "DraftKings",
+          "line": 26.5
+        },
+        {
+          "player": "Keegan Murray",
+          "team": "SAC",
+          "game": "BOS @ SAC",
+          "bookmaker": "DraftKings",
+          "line": 12.5
+        },
+        {
+          "player": "Paul George",
+          "team": "BOS",
+          "game": "BOS @ SAC",
+          "bookmaker": "DraftKings",
+          "line": 22.5
+        },
+        {
+          "player": "Zach LaVine",
+          "team": "SAC",
+          "game": "BOS @ SAC",
+          "bookmaker": "DraftKings",
+          "line": 18.5
+        }
+      ],
+      "scout_status": "not_completed",
+      "publication_status": "not_published"
+    },
+    {
+      "number": 2,
+      "range": [
+        8,
+        14
+      ],
+      "count": 7,
+      "players": [
+        {
+          "player": "Brook Lopez",
+          "team": "LAC",
+          "game": "LAC @ DAL",
+          "bookmaker": "DraftKings",
+          "line": 12.5
+        },
+        {
+          "player": "Caleb Martin",
+          "team": "DAL",
+          "game": "LAC @ DAL",
+          "bookmaker": "DraftKings",
+          "line": 5.5
+        },
+        {
+          "player": "Cooper Flagg",
+          "team": "DAL",
+          "game": "LAC @ DAL",
+          "bookmaker": "DraftKings",
+          "line": 24.5
+        },
+        {
+          "player": "Daniel Gafford",
+          "team": "DAL",
+          "game": "LAC @ DAL",
+          "bookmaker": "DraftKings",
+          "line": 8.5
+        },
+        {
+          "player": "Darius Garland",
+          "team": "LAC",
+          "game": "LAC @ DAL",
+          "bookmaker": "DraftKings",
+          "line": 21.5
+        },
+        {
+          "player": "Derrick Jones Jr.",
+          "team": "LAC",
+          "game": "LAC @ DAL",
+          "bookmaker": "DraftKings",
+          "line": 9.5
+        },
+        {
+          "player": "Keaton Wagler",
+          "team": "LAC",
+          "game": "LAC @ DAL",
+          "bookmaker": "DraftKings",
+          "line": 9.5
+        }
+      ],
+      "scout_status": "not_completed",
+      "publication_status": "not_published"
+    },
+    {
+      "number": 3,
+      "range": [
+        15,
+        21
+      ],
+      "count": 7,
+      "players": [
+        {
+          "player": "Kris Dunn",
+          "team": "LAC",
+          "game": "LAC @ DAL",
+          "bookmaker": "DraftKings",
+          "line": 4.5
+        },
+        {
+          "player": "Kyrie Irving",
+          "team": "DAL",
+          "game": "LAC @ DAL",
+          "bookmaker": "DraftKings",
+          "line": 23.5
+        },
+        {
+          "player": "Max Strus",
+          "team": "LAC",
+          "game": "LAC @ DAL",
+          "bookmaker": "DraftKings",
+          "line": 11.5
+        },
+        {
+          "player": "Naji Marshall",
+          "team": "DAL",
+          "game": "LAC @ DAL",
+          "bookmaker": "DraftKings",
+          "line": 12.5
+        },
+        {
+          "player": "P.J. Washington",
+          "team": "DAL",
+          "game": "LAC @ DAL",
+          "bookmaker": "DraftKings",
+          "line": 12.5
+        },
+        {
+          "player": "Rui Hachimura",
+          "team": "LAC",
+          "game": "LAC @ DAL",
+          "bookmaker": "DraftKings",
+          "line": 14.5
+        },
+        {
+          "player": "Ayo Dosunmu",
+          "team": "MIN",
+          "game": "MEM @ MIN",
+          "bookmaker": "DraftKings",
+          "line": 18.5
+        }
+      ],
+      "scout_status": "not_completed",
+      "publication_status": "not_published"
+    },
+    {
+      "number": 4,
+      "range": [
+        22,
+        28
+      ],
+      "count": 7,
+      "players": [
+        {
+          "player": "Bones Hyland",
+          "team": "MIN",
+          "game": "MEM @ MIN",
+          "bookmaker": "DraftKings",
+          "line": 9.5
+        },
+        {
+          "player": "Cam Spencer",
+          "team": "MEM",
+          "game": "MEM @ MIN",
+          "bookmaker": "DraftKings",
+          "line": 10.5
+        },
+        {
+          "player": "Cedric Coward",
+          "team": "MEM",
+          "game": "MEM @ MIN",
+          "bookmaker": "DraftKings",
+          "line": 16.5
+        },
+        {
+          "player": "Isaiah Stewart",
+          "team": "MEM",
+          "game": "MEM @ MIN",
+          "bookmaker": "DraftKings",
+          "line": 9.5
+        },
+        {
+          "player": "Jaden McDaniels",
+          "team": "MIN",
+          "game": "MEM @ MIN",
+          "bookmaker": "DraftKings",
+          "line": 17.5
+        },
+        {
+          "player": "Jaylen Wells",
+          "team": "MEM",
+          "game": "MEM @ MIN",
+          "bookmaker": "DraftKings",
+          "line": 10.5
+        },
+        {
+          "player": "Jonathan Kuminga",
+          "team": "MIN",
+          "game": "MEM @ MIN",
+          "bookmaker": "DraftKings",
+          "line": 15.5
+        }
+      ],
+      "scout_status": "not_completed",
+      "publication_status": "not_published"
+    },
+    {
+      "number": 5,
+      "range": [
+        29,
+        35
+      ],
+      "count": 7,
+      "players": [
+        {
+          "player": "LaMelo Ball",
+          "team": "MIN",
+          "game": "MEM @ MIN",
+          "bookmaker": "DraftKings",
+          "line": 20.5
+        },
+        {
+          "player": "Rudy Gobert",
+          "team": "MIN",
+          "game": "MEM @ MIN",
+          "bookmaker": "DraftKings",
+          "line": 9.5
+        },
+        {
+          "player": "Taylor Hendricks",
+          "team": "MEM",
+          "game": "MEM @ MIN",
+          "bookmaker": "DraftKings",
+          "line": 9.5
+        },
+        {
+          "player": "Terrence Shannon Jr.",
+          "team": "MIN",
+          "game": "MEM @ MIN",
+          "bookmaker": "DraftKings",
+          "line": 12.5
+        },
+        {
+          "player": "Ty Jerome",
+          "team": "MEM",
+          "game": "MEM @ MIN",
+          "bookmaker": "DraftKings",
+          "line": 22.5
+        },
+        {
+          "player": "Zach Edey",
+          "team": "MEM",
+          "game": "MEM @ MIN",
+          "bookmaker": "DraftKings",
+          "line": 9.5
+        },
+        {
+          "player": "Anfernee Simons",
+          "team": "PHI",
+          "game": "MIL @ PHI",
+          "bookmaker": "DraftKings",
+          "line": 12.5
+        }
+      ],
+      "scout_status": "not_completed",
+      "publication_status": "not_published"
+    },
+    {
+      "number": 6,
+      "range": [
+        36,
+        42
+      ],
+      "count": 7,
+      "players": [
+        {
+          "player": "Brayden Burries",
+          "team": "MIL",
+          "game": "MIL @ PHI",
+          "bookmaker": "DraftKings",
+          "line": 11.5
+        },
+        {
+          "player": "Jaime Jaquez Jr.",
+          "team": "MIL",
+          "game": "MIL @ PHI",
+          "bookmaker": "DraftKings",
+          "line": 12.5
+        },
+        {
+          "player": "Joel Embiid",
+          "team": "PHI",
+          "game": "MIL @ PHI",
+          "bookmaker": "DraftKings",
+          "line": 25.5
+        },
+        {
+          "player": "Kasparas Jakučionis",
+          "team": "MIL",
+          "game": "MIL @ PHI",
+          "bookmaker": "DraftKings",
+          "line": 7.5
+        },
+        {
+          "player": "Kentavious Caldwell-Pope",
+          "team": "PHI",
+          "game": "MIL @ PHI",
+          "bookmaker": "DraftKings",
+          "line": 7.5
+        },
+        {
+          "player": "Kyle Kuzma",
+          "team": "MIL",
+          "game": "MIL @ PHI",
+          "bookmaker": "DraftKings",
+          "line": 11.5
+        },
+        {
+          "player": "LeBron James",
+          "team": "PHI",
+          "game": "MIL @ PHI",
+          "bookmaker": "DraftKings",
+          "line": 18.5
+        }
+      ],
+      "scout_status": "not_completed",
+      "publication_status": "not_published"
+    },
+    {
+      "number": 7,
+      "range": [
+        43,
+        49
+      ],
+      "count": 7,
+      "players": [
+        {
+          "player": "Myles Turner",
+          "team": "MIL",
+          "game": "MIL @ PHI",
+          "bookmaker": "DraftKings",
+          "line": 9.5
+        },
+        {
+          "player": "Nate Ament",
+          "team": "MIL",
+          "game": "MIL @ PHI",
+          "bookmaker": "DraftKings",
+          "line": 8.5
+        },
+        {
+          "player": "Ryan Rollins",
+          "team": "MIL",
+          "game": "MIL @ PHI",
+          "bookmaker": "DraftKings",
+          "line": 10.5
+        },
+        {
+          "player": "Tyler Herro",
+          "team": "MIL",
+          "game": "MIL @ PHI",
+          "bookmaker": "DraftKings",
+          "line": 20.5
+        },
+        {
+          "player": "Tyrese Maxey",
+          "team": "PHI",
+          "game": "MIL @ PHI",
+          "bookmaker": "DraftKings",
+          "line": 24.5
+        },
+        {
+          "player": "VJ Edgecombe",
+          "team": "PHI",
+          "game": "MIL @ PHI",
+          "bookmaker": "DraftKings",
+          "line": 14.5
+        },
+        {
+          "player": "De'Aaron Fox",
+          "team": "SA",
+          "game": "NO @ SA",
+          "bookmaker": "DraftKings",
+          "line": 14.5
+        }
+      ],
+      "scout_status": "not_completed",
+      "publication_status": "not_published"
+    },
+    {
+      "number": 8,
+      "range": [
+        50,
+        56
+      ],
+      "count": 7,
+      "players": [
+        {
+          "player": "Devin Vassell",
+          "team": "SA",
+          "game": "NO @ SA",
+          "bookmaker": "DraftKings",
+          "line": 12.5
+        },
+        {
+          "player": "Jeremiah Fears",
+          "team": "NO",
+          "game": "NO @ SA",
+          "bookmaker": "DraftKings",
+          "line": 16.5
+        },
+        {
+          "player": "Julian Champagnie",
+          "team": "SA",
+          "game": "NO @ SA",
+          "bookmaker": "DraftKings",
+          "line": 11.5
+        },
+        {
+          "player": "Keldon Johnson",
+          "team": "SA",
+          "game": "NO @ SA",
+          "bookmaker": "DraftKings",
+          "line": 11.5
+        },
+        {
+          "player": "Stephon Castle",
+          "team": "SA",
+          "game": "NO @ SA",
+          "bookmaker": "DraftKings",
+          "line": 18.5
+        },
+        {
+          "player": "Victor Wembanyama",
+          "team": "SA",
+          "game": "NO @ SA",
+          "bookmaker": "DraftKings",
+          "line": 29.5
+        },
+        {
+          "player": "Zion Williamson",
+          "team": "NO",
+          "game": "NO @ SA",
+          "bookmaker": "DraftKings",
+          "line": 19.5
+        }
+      ],
+      "scout_status": "not_completed",
+      "publication_status": "not_published"
+    },
+    {
+      "number": 9,
+      "range": [
+        57,
+        62
+      ],
+      "count": 6,
+      "players": [
+        {
+          "player": "Damian Lillard",
+          "team": "POR",
+          "game": "POR @ NY",
+          "bookmaker": "DraftKings",
+          "line": 20.5
+        },
+        {
+          "player": "Deni Avdija",
+          "team": "POR",
+          "game": "POR @ NY",
+          "bookmaker": "DraftKings",
+          "line": 23.5
+        },
+        {
+          "player": "Donovan Clingan",
+          "team": "POR",
+          "game": "POR @ NY",
+          "bookmaker": "DraftKings",
+          "line": 10.5
+        },
+        {
+          "player": "Jalen Brunson",
+          "team": "NY",
+          "game": "POR @ NY",
+          "bookmaker": "DraftKings",
+          "line": 28.5
+        },
+        {
+          "player": "Josh Hart",
+          "team": "NY",
+          "game": "POR @ NY",
+          "bookmaker": "DraftKings",
+          "line": 9.5
+        },
+        {
+          "player": "Jrue Holiday",
+          "team": "POR",
+          "game": "POR @ NY",
+          "bookmaker": "DraftKings",
+          "line": 13.5
+        }
+      ],
+      "scout_status": "not_completed",
+      "publication_status": "not_published"
+    },
+    {
+      "number": 10,
+      "range": [
+        63,
+        68
+      ],
+      "count": 6,
+      "players": [
+        {
+          "player": "Karl-Anthony Towns",
+          "team": "NY",
+          "game": "POR @ NY",
+          "bookmaker": "DraftKings",
+          "line": 21.5
+        },
+        {
+          "player": "Landry Shamet",
+          "team": "NY",
+          "game": "POR @ NY",
+          "bookmaker": "DraftKings",
+          "line": 11.5
+        },
+        {
+          "player": "Mikal Bridges",
+          "team": "NY",
+          "game": "POR @ NY",
+          "bookmaker": "DraftKings",
+          "line": 11.5
+        },
+        {
+          "player": "OG Anunoby",
+          "team": "NY",
+          "game": "POR @ NY",
+          "bookmaker": "Kalshi",
+          "line": 14.5
+        },
+        {
+          "player": "Sidy Cissoko",
+          "team": "POR",
+          "game": "POR @ NY",
+          "bookmaker": "DraftKings",
+          "line": 7.5
+        },
+        {
+          "player": "Toumani Camara",
+          "team": "POR",
+          "game": "POR @ NY",
+          "bookmaker": "DraftKings",
+          "line": 11.5
+        }
+      ],
+      "scout_status": "not_completed",
+      "publication_status": "not_published"
+    }
+  ],
+  "analysis_status": "pending_per_player_espn_ids_last5_minutes_h2h_injuries_defensive_matchup",
+  "publication_allowed": false,
+  "note": "This preserves the exact 68-player division. It is NOT an approved Scout audit or publishable ticket; each player must be analyzed before any group ticket publishes."
+}
