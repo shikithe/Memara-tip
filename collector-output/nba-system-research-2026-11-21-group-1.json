@@ -1,12 +1,12 @@
 {
   "date": "2026-11-21",
   "group_number": 1,
-  "status": "blocked_pending_full_verified_scout",
+  "status": "research_in_progress",
   "analysis_complete": false,
   "publication_allowed": false,
   "bank_start": 990.84,
   "stake_per_ticket": 9.91,
-  "source_capture_utc": "2026-11-21T17:10:21.095317+00:00",
+  "source_capture_utc": "2026-11-21T17:37:58.291930+00:00",
   "fixture_start_utc": "2026-11-22T03:00:00Z",
   "original_positions": [
     1,
@@ -15,220 +15,81 @@
   "candidates": [
     {
       "original_position": 1,
+      "new_group_position": 1,
       "player": "Darius Acuff Jr.",
       "team": "SAC",
-      "fixture": "BOS @ SAC",
-      "game_date_et": "2026-11-21",
-      "market": "player_points",
+      "game": "BOS @ SAC",
       "bookmaker": "DraftKings",
       "points_line": 23.5,
-      "over_odd": 1.9709,
-      "under_odd": 1.813,
-      "quote_source": "https://betsharp.com/nba/player/darius-acuff",
-      "espn_event_id": "401910028",
-      "espn_player_id": null,
-      "last_five": {
-        "status": "not_verified"
-      },
-      "home_away": {
-        "status": "not_verified"
-      },
-      "h2h": {
-        "status": "not_verified"
-      },
-      "opponent_defense": {
-        "status": "not_verified"
-      },
-      "injuries": {
-        "status": "not_verified"
-      },
-      "scout_status": "awaiting_complete_individual_evidence"
+      "over_odd": 1.9346,
+      "under_odd": 1.8403,
+      "source": "https://betsharp.com/nba/player/darius-acuff",
+      "research_status": "awaiting_complete_scoped_scout"
     },
     {
       "original_position": 2,
+      "new_group_position": 2,
       "player": "Derrick White",
       "team": "BOS",
-      "fixture": "BOS @ SAC",
-      "game_date_et": "2026-11-21",
-      "market": "player_points",
+      "game": "BOS @ SAC",
       "bookmaker": "DraftKings",
       "points_line": 14.5,
-      "over_odd": 1.9709,
-      "under_odd": 1.8065,
-      "quote_source": "https://betsharp.com/nba/player/derrick-white",
-      "espn_event_id": "401910028",
-      "espn_player_id": null,
-      "last_five": {
-        "status": "not_verified"
-      },
-      "home_away": {
-        "status": "not_verified"
-      },
-      "h2h": {
-        "status": "not_verified"
-      },
-      "opponent_defense": {
-        "status": "not_verified"
-      },
-      "injuries": {
-        "status": "questionable_left_AC_contusion_reported_2026_11_21"
-      },
-      "scout_status": "awaiting_complete_individual_evidence"
+      "over_odd": 1.9091,
+      "under_odd": 1.8621,
+      "source": "https://betsharp.com/nba/player/derrick-white",
+      "research_status": "awaiting_complete_scoped_scout"
     },
     {
       "original_position": 3,
+      "new_group_position": 3,
       "player": "Domantas Sabonis",
       "team": "SAC",
-      "fixture": "BOS @ SAC",
-      "game_date_et": "2026-11-21",
-      "market": "player_points",
+      "game": "BOS @ SAC",
       "bookmaker": "DraftKings",
       "points_line": 12.5,
-      "over_odd": 1.9346,
-      "under_odd": 1.8333,
-      "quote_source": "https://betsharp.com/nba/player/domantas-sabonis",
-      "espn_event_id": "401910028",
-      "espn_player_id": null,
-      "last_five": {
-        "status": "not_verified"
-      },
-      "home_away": {
-        "status": "not_verified"
-      },
-      "h2h": {
-        "status": "not_verified"
-      },
-      "opponent_defense": {
-        "status": "not_verified"
-      },
-      "injuries": {
-        "status": "not_verified"
-      },
-      "scout_status": "awaiting_complete_individual_evidence"
+      "over_odd": 1.9091,
+      "under_odd": 1.8696,
+      "source": "https://betsharp.com/nba/player/domantas-sabonis",
+      "research_status": "awaiting_complete_scoped_scout"
     },
     {
       "original_position": 4,
+      "new_group_position": 4,
       "player": "Jayson Tatum",
       "team": "BOS",
-      "fixture": "BOS @ SAC",
-      "game_date_et": "2026-11-21",
-      "market": "player_points",
+      "game": "BOS @ SAC",
       "bookmaker": "DraftKings",
       "points_line": 26.5,
-      "over_odd": 1.9091,
-      "under_odd": 1.8696,
-      "quote_source": "https://betsharp.com/nba/player/jayson-tatum",
-      "espn_event_id": "401910028",
-      "espn_player_id": null,
-      "last_five": {
-        "status": "not_verified"
-      },
-      "home_away": {
-        "status": "not_verified"
-      },
-      "h2h": {
-        "status": "not_verified"
-      },
-      "opponent_defense": {
-        "status": "not_verified"
-      },
-      "injuries": {
-        "status": "questionable_rest_reported_2026_11_21"
-      },
-      "scout_status": "awaiting_complete_individual_evidence"
+      "over_odd": 1.9174,
+      "under_odd": 1.8547,
+      "source": "https://betsharp.com/nba/player/jayson-tatum",
+      "research_status": "awaiting_complete_scoped_scout"
     },
     {
       "original_position": 5,
+      "new_group_position": 5,
       "player": "Keegan Murray",
       "team": "SAC",
-      "fixture": "BOS @ SAC",
-      "game_date_et": "2026-11-21",
-      "market": "player_points",
+      "game": "BOS @ SAC",
       "bookmaker": "DraftKings",
-      "points_line": 12.5,
-      "over_odd": 2.01,
-      "under_odd": 1.7752,
-      "quote_source": "https://betsharp.com/nba/player/keegan-murray",
-      "espn_event_id": "401910028",
-      "espn_player_id": null,
-      "last_five": {
-        "status": "not_verified"
-      },
-      "home_away": {
-        "status": "not_verified"
-      },
-      "h2h": {
-        "status": "not_verified"
-      },
-      "opponent_defense": {
-        "status": "not_verified"
-      },
-      "injuries": {
-        "status": "not_verified"
-      },
-      "scout_status": "awaiting_complete_individual_evidence"
+      "points_line": 11.5,
+      "over_odd": 1.8,
+      "under_odd": 1.9804,
+      "source": "https://betsharp.com/nba/player/keegan-murray",
+      "research_status": "awaiting_complete_scoped_scout"
     },
     {
       "original_position": 6,
+      "new_group_position": 6,
       "player": "Paul George",
       "team": "BOS",
-      "fixture": "BOS @ SAC",
-      "game_date_et": "2026-11-21",
-      "market": "player_points",
+      "game": "BOS @ SAC",
       "bookmaker": "DraftKings",
       "points_line": 22.5,
-      "over_odd": 1.8475,
-      "under_odd": 1.9259,
-      "quote_source": "https://betsharp.com/nba/player/paul-george",
-      "espn_event_id": "401910028",
-      "espn_player_id": "4251",
-      "last_five": {
-        "status": "not_verified"
-      },
-      "home_away": {
-        "status": "not_verified"
-      },
-      "h2h": {
-        "status": "not_verified"
-      },
-      "opponent_defense": {
-        "status": "not_verified"
-      },
-      "injuries": {
-        "status": "not_verified"
-      },
-      "scout_status": "awaiting_complete_individual_evidence"
-    },
-    {
-      "original_position": 7,
-      "player": "Zach LaVine",
-      "team": "SAC",
-      "fixture": "BOS @ SAC",
-      "game_date_et": "2026-11-21",
-      "market": "player_points",
-      "bookmaker": "DraftKings",
-      "points_line": 18.5,
-      "over_odd": 1.9804,
-      "under_odd": 1.8,
-      "quote_source": "https://betsharp.com/nba/player/zach-lavine",
-      "espn_event_id": "401910028",
-      "espn_player_id": null,
-      "last_five": {
-        "status": "not_verified"
-      },
-      "home_away": {
-        "status": "not_verified"
-      },
-      "h2h": {
-        "status": "not_verified"
-      },
-      "opponent_defense": {
-        "status": "not_verified"
-      },
-      "injuries": {
-        "status": "not_verified"
-      },
-      "scout_status": "awaiting_complete_individual_evidence"
+      "over_odd": 1.8929,
+      "under_odd": 1.8772,
+      "source": "https://betsharp.com/nba/player/paul-george",
+      "research_status": "awaiting_complete_scoped_scout"
     }
   ],
   "injury_source": "https://www.actionnetwork.com/nba/injury-report",
@@ -240,7 +101,7 @@
     "Confirmed availability for doubtful/unknown players",
     "Complete ranked Scout audit for all seven"
   ],
-  "note": "Manual run did begin group 1, verified today's odds and 3 unambiguous ESPN game-log snippets, but stopped before selecting/approving two players because full Scout evidence and player availability are not verified. Never label analysis_complete true or send next_group feedback.",
+  "note": "Rebased group 1 onto frozen filtered 54-offer 10-group snapshot after MIL@PHI started. No Scout audit or ticket publication; earlier research was for now-obsolete group of 7. Preserve original ESPN L5 findings where applicable.",
   "manual_run_triggered_at_local": "2026-11-21T18:47:00+01:00",
   "source_check": {
     "betsharp_snapshot": "collector-output/betsharp-nba-daily.json",
@@ -351,11 +212,11 @@
     }
   ],
   "blockers": [
-    "Complete, current individual L5 PTS/MIN records for Darius Acuff Jr., Keegan Murray, Paul George and Zach LaVine (partial/cached sources disagree)",
-    "Actual confirmed ESPN player IDs for all seven",
-    "Opponent position defense / direct defender evidence and player-specific matchup",
-    "Confirmed game-day active status for Tatum and White",
-    "Complete full Scout ranking 1..7 and source-frozen ESPN-ID snapshot required by nba_system_pipeline.py"
+    "Confirm all six game logs and contextual evidence, using primary full-pass then backup",
+    "Complete player identity and matchup verification for selected two",
+    "Check two available, future match players and odds before audit publication"
   ],
-  "feedback_state": "no_publication_no_next_group_trigger"
+  "feedback_state": "no_publication_no_next_group_trigger",
+  "source_snapshot": "collector-output/nba-system-offer-2026-11-21.json",
+  "group_size": 6
 }
