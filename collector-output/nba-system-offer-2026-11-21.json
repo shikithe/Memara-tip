@@ -9,7 +9,7 @@
   "original_snapshot_exact": false,
   "filtered_source_exact": true,
   "filtered_from_source": {
-    "path": "collector-output/betsharp-nba-daily.json",
+    "path": "collector-output/betsharp-history/2026-11-21.json",
     "source_count": 68,
     "original_order_preserved": true,
     "original_positions": [
@@ -71,7 +71,8 @@
     "excluded_count": 14,
     "excluded_fixture": "MIL @ PHI",
     "excluded_reason": "Already started at 2026-11-21 19:00 CET",
-    "eligible_count": 54
+    "eligible_count": 54,
+    "archive_timestamp_utc": "2026-11-21T17:37:58.291930+00:00"
   },
   "offers": [
     {
