@@ -32,6 +32,9 @@ jobs:
           python3 -m unittest -v test_memarasix_publication_gate.py test_memarasix_verified_quotes.py test_memarasix_nba_c_rule.py
           python3 -m unittest discover -s tests -p 'test_ai_event_approval_gate.py' -v
           python3 -m unittest discover -s tests -p 'test_nba_c_rolling_window.py' -v
+          python3 -m unittest discover -s tests -p 'test_memarasix_scout_six_gate.py' -v
+      - name: Reject A/B unless ALL ESPN fixtures have six probability estimates and each approved leg is the TOP market
+        run: python3 memarasix_scout_six_gate.py
       - name: Validate and publish independently AI-approved A/B/C
         run: python3 memarasix_1455_publish.py
       - name: Commit only publisher-owned audit and tickets
