@@ -21,14 +21,31 @@ def setup():
     def score(fid,p,top,second):
         return {"fixture_id":fid,"probability_pct":p,"strongest_market":top,
                 "strongest_pct":p[top],"second_market":second,
-                "second_pct":p[second],"candidate_A":True,"candidate_B":top=="3+"}
+                "second_pct":p[second],"third_pct":p["NG"],"candidate_A":True,"candidate_B":top=="3+"}
     scout = {"date":DAY,"source_active_sha256":receipt["active_sha256"],
              "source_history_sha256":canonical_hash(history),
              "total_espn_fixtures":3,"total_market_probabilities":18,
              "ranked_fixtures":[score("espn:a",p_a,"1","3+"),
                                 score("espn:b",p_b,"3+","GG"),
                                 score("espn:c",p_c,"3+","GG")]}
-    approval = {"date": DAY, "tickets":[
+    shortlist = ["espn:b", "espn:c", "espn:a"]
+    scout["detailed_ai_top_ten_fixture_ids"] = shortlist
+    scout["detailed_ai_handoff"] = {
+        "limit":10, "count":3, "math_recalculation_prohibited":True,
+        "candidates":[{"fixture_id":fid} for fid in shortlist]}
+    factor_names = ("xg_xga", "injuries_suspensions", "expected_lineups",
+                    "h2h", "motivation_table", "rest_schedule", "quote_source")
+    reviews = [{
+        "fixture_id":fid,
+        "decision":"approved" if fid in ("espn:a","espn:b") else "rejected",
+        "review_summary":"Independent examination of injuries, expected lineups, xG, H2H, motivation and rest. Results used without repeating five-game Poisson math.",
+        "new_factors":{name:{"status":"unavailable", "notes":"No confirmed extra data found for this fixture on this test"} for name in factor_names}
+    } for fid in shortlist]
+    approval = {"date": DAY, "detailed_ai_review":{
+        "source_active_sha256":receipt["active_sha256"],
+        "source_history_sha256":scout["source_history_sha256"],
+        "candidates":reviews
+    },"tickets":[
         {"id":"A","matches":[{"fixture_id":"espn:a","pick":"1","odd":1.7}]},
         {"id":"B","matches":[{"fixture_id":"espn:b","pick":"3+","odd":1.65}]}
     ]}
@@ -70,6 +87,32 @@ class TestScoutSixGate(unittest.TestCase):
         approval,active,hist,receipt,scout=setup()
         scout["source_history_sha256"]="not-the-current-history"
         with self.assertRaisesRegex(ValueError,"synchronized history"):
+            validate_scout(approval,active,hist,receipt,scout)
+
+    def test_must_review_all_top_candidates(self):
+        approval,active,hist,receipt,scout=setup()
+        approval["detailed_ai_review"]["candidates"].pop()
+        with self.assertRaisesRegex(ValueError,"review all ten"):
+            validate_scout(approval,active,hist,receipt,scout)
+
+    def test_shortlist_must_be_correct_ranked_order(self):
+        approval,active,hist,receipt,scout=setup()
+        scout["detailed_ai_handoff"]["candidates"].reverse()
+        with self.assertRaisesRegex(ValueError,"TOP 10"):
+            validate_scout(approval,active,hist,receipt,scout)
+
+    def test_no_duplicate_math_factors_in_ai_review(self):
+        approval,active,hist,receipt,scout=setup()
+        review=approval["detailed_ai_review"]["candidates"][0]
+        review["new_factors"]["last_five_results"]={"status":"unavailable","notes":"Duplicate math"}
+        with self.assertRaisesRegex(ValueError,"seven NEW factors"):
+            validate_scout(approval,active,hist,receipt,scout)
+
+    def test_rejected_candidate_must_not_be_picked(self):
+        approval,active,hist,receipt,scout=setup()
+        approval["detailed_ai_review"]["candidates"][1]["decision"]="rejected"
+        approval["tickets"][1]["matches"][0]={"fixture_id":"espn:c","pick":"3+","odd":1.75}
+        with self.assertRaisesRegex(ValueError,"without detailed review approval"):
             validate_scout(approval,active,hist,receipt,scout)
 
     def test_nba_only_not_checked(self):
