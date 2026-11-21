@@ -1,7 +1,7 @@
 {
   "date": "2026-11-21",
   "group_number": 1,
-  "status": "research_in_progress",
+  "status": "blocked_pending_full_verified_scout",
   "analysis_complete": false,
   "publication_allowed": false,
   "bank_start": 990.84,
@@ -240,5 +240,122 @@
     "Confirmed availability for doubtful/unknown players",
     "Complete ranked Scout audit for all seven"
   ],
-  "note": "Research checkpoint, NOT a validated scout audit or ticket publication. Do not substitute this file for nba-system-scout-2026-11-21-group-1.json."
+  "note": "Manual run did begin group 1, verified today's odds and 3 unambiguous ESPN game-log snippets, but stopped before selecting/approving two players because full Scout evidence and player availability are not verified. Never label analysis_complete true or send next_group feedback.",
+  "manual_run_triggered_at_local": "2026-11-21T18:47:00+01:00",
+  "source_check": {
+    "betsharp_snapshot": "collector-output/betsharp-nba-daily.json",
+    "first_group": "collector-output/nba-system-lists/2026-11-21/list-01.json",
+    "match": "BOS @ SAC",
+    "scheduled_start_utc": "2026-11-22T03:00:00Z",
+    "market_verified": "All 7 DraftKings points lines and both prices present in stored BetSharp snapshot",
+    "unverified": "Live sportsbook quote and finalized player availability"
+  },
+  "source_findings": [
+    {
+      "player": "Derrick White",
+      "last5": [
+        {
+          "date": "2026-11-19",
+          "points": 12,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-17",
+          "points": 9,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-15",
+          "points": 16,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-12",
+          "points": 19,
+          "minutes": 38
+        },
+        {
+          "date": "2026-11-11",
+          "points": 5,
+          "minutes": 22
+        }
+      ],
+      "source": "https://www.espn.com/nba/player/gamelog/_/id/3078576/derrick-white?season=2027",
+      "availability": "Questionable, left AC joint injury",
+      "report": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_11_30AM.pdf"
+    },
+    {
+      "player": "Jayson Tatum",
+      "last5": [
+        {
+          "date": "2026-11-18",
+          "points": 24,
+          "minutes": 37
+        },
+        {
+          "date": "2026-11-16",
+          "points": 24,
+          "minutes": 36
+        },
+        {
+          "date": "2026-11-15",
+          "points": 32,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-11",
+          "points": 24,
+          "minutes": 38
+        },
+        {
+          "date": "2026-11-10",
+          "points": 21,
+          "minutes": 32
+        }
+      ],
+      "source": "https://www.espn.com/nba/player/gamelog/_/id/4065648/jayson-tatum",
+      "availability": "Questionable, rest",
+      "report": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_11_30AM.pdf"
+    },
+    {
+      "player": "Domantas Sabonis",
+      "last5": [
+        {
+          "date": "2026-11-18",
+          "points": 8,
+          "minutes": 24
+        },
+        {
+          "date": "2026-11-15",
+          "points": 11,
+          "minutes": 29
+        },
+        {
+          "date": "2026-11-13",
+          "points": 21,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-10",
+          "points": 0,
+          "minutes": 24
+        },
+        {
+          "date": "2026-11-06",
+          "points": 17,
+          "minutes": 31
+        }
+      ],
+      "source": "https://www.espn.com/nba/player/gamelog/_/id/3155942/domantas-sabonis",
+      "availability": "Not separately verified"
+    }
+  ],
+  "blockers": [
+    "Complete, current individual L5 PTS/MIN records for Darius Acuff Jr., Keegan Murray, Paul George and Zach LaVine (partial/cached sources disagree)",
+    "Actual confirmed ESPN player IDs for all seven",
+    "Opponent position defense / direct defender evidence and player-specific matchup",
+    "Confirmed game-day active status for Tatum and White",
+    "Complete full Scout ranking 1..7 and source-frozen ESPN-ID snapshot required by nba_system_pipeline.py"
+  ],
+  "feedback_state": "no_publication_no_next_group_trigger"
 }
