@@ -16,6 +16,17 @@ Pravilo potvrđeno 20.11.2026. Koristi se za svaki NAREDNI ciklus NBA desetke. O
 
 **Prioritet:** ako stariji prompt dozvoljava samo pregled L5 prosjeka ili objavu bez pune rang-tabele, ovaj dokument i nova eksplicitna korisnička instrukcija imaju prioritet.
 
+## PRIORITETNO PRAVILO 21.11.2026. — ESPN prvo kompletan prolaz, pa sekundarni izvori
+
+1. AI Scout prolazi cijelu odabranu grupu **od prvog do posljednjeg igrača na ESPN-u**. Ako je četvrtom igraču game log nedostupan, zapiše nedostatak i **nastavlja na petog**, šestog, sedmog itd. Nepostojanje pojedinačnog podatka nikad ne prekida obradu grupe.
+2. Tek kada je obavljen primarni ESPN prolaz svih članova, pravi drugi prolaz **samo za igrače i polja kojima nešto nedostaje** preko dostupnog vjerodostojnog sekundarnog izvora (npr. NBA.com ili provjerljive statističke stranice). Zabilježi oba pokušaja, URL-ove, datum i koje statistike i dalje nedostaju.
+3. Svi igrači grupe moraju biti evidentirani u audit rang-listi 1–M. Ako i nakon drugog prolaza pojedinom igraču nedostaje pouzdana L5 statistika, označi ga `eligibility: "insufficient_data"` i `research: {"espn_attempted":true,"secondary_attempted":true,"missing":["..."],"reason":"..."}`, pa ga izuzmi iz izbora. Nije dozvoljeno izmišljati poene, minute, H2H ili procente radi popunjavanja praznina.
+4. Ako nakon **oba** prolaza postoje najmanje **dva potpuno provjerena i dovoljno dobra kandidata**, rangiraj ih iznad nepotpunih, odaberi dva najbolje argumentovana tipa, i objavi preko standardnog GitHub validacionog pipelinea. Zadrži nepotpune članove u audit evidenciji s nižim rangom i obrazloženjem.
+5. Ako su preostala manje od dva pouzdana tipa, ili su mečevi počeli, ili nema potvrde o nastupu, grupa ostaje blokirana. **Statistička nedostupnost nekih ostalih članova ne blokira objavu dobre dvojice.**
+6. Jedna grupa po AI izvršavanju; narednu aktivira samo feedback potvrđene GitHub objave kada postoji nova satna AI provjera, a ne novi cron po pojedinom igraču.
+
+**Napomena implementacije:** GitHub validator `nba_system_pipeline.py` sada dozvoljava `eligibility:"insufficient_data"` samo uz oba evidentirana pokušaja i nedostajuće stavke; dva izabrana člana moraju biti `eligible` sa punim individualnim `last_five`. Ovo pravilo zamjenjuje raniju obavezu da svako od M članova mora imati pet numeričkih game log zapisa.
+
 ## Izvršni workflow — implementirano 20.11.2026.
 
 - `nba_system_pipeline.py` je **strogi kontrolor** koji ne bira tipove. Provjerava datirani zamrznuti originalni snapshot, 10 matematički uravnoteženih grupa, **tačno sva M člana** svake rang-liste, ocjene, izvore, prethodnih 5 utakmica sa minutažom, objasnjenja matchupa/povreda i obavezne dvije najbolje rangirane opcije; ne dopušta objavu ako je meč počeo ili bilo šta preskočeno.
