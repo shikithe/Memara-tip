@@ -83,7 +83,7 @@ class PipelineTests(unittest.TestCase):
     def test_requires_original_frozen_snapshot(self):
         invalid = copy.deepcopy(self.snapshot)
         invalid["original_snapshot_exact"] = False
-        with self.assertRaisesRegex(p.GateError, "verified, frozen"):
+        with self.assertRaisesRegex(p.GateError, "original or verifiably filtered"):
             p.validate_snapshot(invalid, DAY)
 
     def test_rejects_missing_full_ranking(self):
