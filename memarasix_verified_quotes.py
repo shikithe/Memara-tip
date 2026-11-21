@@ -9,6 +9,7 @@ from datetime import timedelta
 
 MARKETS=(
     ("1X2","home","1"),
+    ("1X2","draw","X"),
     ("1X2","away","2"),
     ("3+","over","3+"),
     ("2+","over","2+"),
