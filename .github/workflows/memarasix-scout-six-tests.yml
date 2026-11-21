@@ -6,6 +6,9 @@ on:
     paths:
       - 'memarasix_scout_six_gate.py'
       - 'tests/test_memarasix_scout_six_gate.py'
+      - 'memarasix_approval_gate.py'
+      - 'memarasix_verified_quotes.py'
+      - 'test_memarasix_verified_quotes.py'
       - '.github/workflows/memarasix-scout-six-tests.yml'
 permissions:
   contents: read
@@ -20,3 +23,5 @@ jobs:
           python-version: '3.11'
       - name: Test all six-market probabilities, top pick, date and hashes
         run: python3 -m unittest discover -s tests -p 'test_memarasix_scout_six_gate.py' -v
+      - name: Test bookmaker cross-check for all six markets including draw X
+        run: python3 -m unittest -v test_memarasix_verified_quotes.py
