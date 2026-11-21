@@ -1,0 +1,476 @@
+{
+  "date": "2026-11-21",
+  "group_number": 4,
+  "analysis_complete": true,
+  "ranking": [
+    {
+      "player_id": "4903027",
+      "player": "Cedric Coward",
+      "rank": 1,
+      "score": 76,
+      "confidence": 71,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 19,
+          "minutes": 25
+        },
+        {
+          "date": "2026-11-18",
+          "points": 20,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-16",
+          "points": 18,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-14",
+          "points": 23,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-13",
+          "points": 14,
+          "minutes": 30
+        }
+      ],
+      "season_context": "L5 18,8 PPG i 29,6 minuta, stabilan rast uloge.",
+      "home_away_context": "Precizni splitovi po domaćin/gost za ovu granicu nisu zasebno potvrđeni.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Pojedinačnih pet H2H susreta protiv trenutnog rivala nema nezavisno potvrđenih."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nema verifikovanog pozicijskog defensive-rating splita za ovu utakmicu; ne izmišljati čuvara."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Još nisu objavljeni precizni matchup čuvari za današnji duel."
+      },
+      "injuries": {
+        "status": "not_listed_1230_report",
+        "reason": "Nije izričito navedeno da je ovaj igrač OUT/QUESTIONABLE u raspoloživom službenom injury reportu, moguća naknadna promjena."
+      },
+      "minutes_projection": "Posljednjih pet minutaža u rasponu 25-33.",
+      "role_projection": "Na osnovu zadnje forme i raspoložive minutne rotacije.",
+      "market": {
+        "points_line": 16.5,
+        "over_odd": 1.8696,
+        "under_odd": 1.9091
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Nekalibrirani Scout rang zasnovan na L5 prolazu i rizicima; nema izmišljenih procenata.",
+        "availability_confirmed": true,
+        "reason": "OVER 16.5 ostvaren u 4/5 posljednjih mečeva i poeni su 19,20,18,23,14 uz sličnu minutažu.",
+        "risk": "Iako snažan trend, igrači su međusobno korelisani po timu, agresivna Minnesota odbrana i šuterske oscilacije mogu spustiti oba."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Svih šest prošlo ESPN pokušaj; sekundarni izvještaj po mečevima i minutima upotrijebljen gdje dostupno."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/cedric-coward",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/cedric_coward.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "4433083",
+      "player": "Cam Spencer",
+      "rank": 2,
+      "score": 72,
+      "confidence": 67,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 9,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-18",
+          "points": 26,
+          "minutes": 29
+        },
+        {
+          "date": "2026-11-16",
+          "points": 12,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-14",
+          "points": 17,
+          "minutes": 34
+        },
+        {
+          "date": "2026-11-13",
+          "points": 14,
+          "minutes": 24
+        }
+      ],
+      "season_context": "L5 15,6 PPG, 29,2 minute; porast napadačke uloge.",
+      "home_away_context": "Precizni splitovi po domaćin/gost za ovu granicu nisu zasebno potvrđeni.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Pojedinačnih pet H2H susreta protiv trenutnog rivala nema nezavisno potvrđenih."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nema verifikovanog pozicijskog defensive-rating splita za ovu utakmicu; ne izmišljati čuvara."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Još nisu objavljeni precizni matchup čuvari za današnji duel."
+      },
+      "injuries": {
+        "status": "not_listed_1230_report",
+        "reason": "Nije izričito navedeno da je ovaj igrač OUT/QUESTIONABLE u raspoloživom službenom injury reportu, moguća naknadna promjena."
+      },
+      "minutes_projection": "Posljednjih pet minutaža u rasponu 24-34.",
+      "role_projection": "Na osnovu zadnje forme i raspoložive minutne rotacije.",
+      "market": {
+        "points_line": 10.5,
+        "over_odd": 1.9804,
+        "under_odd": 1.8065
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Nekalibrirani Scout rang zasnovan na L5 prolazu i rizicima; nema izmišljenih procenata.",
+        "availability_confirmed": true,
+        "reason": "OVER 10.5 potvrđen u 4 od posljednjih pet utakmica s rastom minuta i velikim doprinosom asistencijama.",
+        "risk": "Posljednji nastup 9 ispod linije; šut i rotacija mogu biti nestabilni. Drugi odabrani saigrač može povećati zajednički rizik."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Svih šest prošlo ESPN pokušaj; sekundarni izvještaj po mečevima i minutima upotrijebljen gdje dostupno."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/cam-spencer",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/cam_spencer.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "betsharp:2026-11-21:0022",
+      "player": "Bones Hyland",
+      "rank": 3,
+      "score": 63,
+      "confidence": 59,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 6,
+          "minutes": 15
+        },
+        {
+          "date": "2026-11-17",
+          "points": 13,
+          "minutes": 17
+        },
+        {
+          "date": "2026-11-16",
+          "points": 5,
+          "minutes": 13
+        },
+        {
+          "date": "2026-11-14",
+          "points": 12,
+          "minutes": 21
+        },
+        {
+          "date": "2026-11-12",
+          "points": 24,
+          "minutes": 23
+        }
+      ],
+      "season_context": "L5 12 PPG ali najnovije minute 13-17, uz česte promjene usage.",
+      "home_away_context": "Precizni splitovi po domaćin/gost za ovu granicu nisu zasebno potvrđeni.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Pojedinačnih pet H2H susreta protiv trenutnog rivala nema nezavisno potvrđenih."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nema verifikovanog pozicijskog defensive-rating splita za ovu utakmicu; ne izmišljati čuvara."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Još nisu objavljeni precizni matchup čuvari za današnji duel."
+      },
+      "injuries": {
+        "status": "not_listed_1230_report",
+        "reason": "Nije izričito navedeno da je ovaj igrač OUT/QUESTIONABLE u raspoloživom službenom injury reportu, moguća naknadna promjena."
+      },
+      "minutes_projection": "Posljednjih pet minutaža u rasponu 13-23.",
+      "role_projection": "Na osnovu zadnje forme i raspoložive minutne rotacije.",
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.8696,
+        "under_odd": 1.9009
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Nekalibrirani Scout rang zasnovan na L5 prolazu i rizicima; nema izmišljenih procenata.",
+        "availability_confirmed": false,
+        "reason": "UNDER 9.5 u 2/5 i slaba minutaža daju razloge za rizik, ali 24 poena prije pet utakmica slabi procjenu.",
+        "risk": "3/5 posljednjih prelaze 9.5, pa empirijski oslonac za under nije dobar."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Svih šest prošlo ESPN pokušaj; sekundarni izvještaj po mečevima i minutima upotrijebljen gdje dostupno."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/bones-hyland",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/bones_hyland.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "betsharp:2026-11-21:0019",
+      "player": "P.J. Washington",
+      "rank": 4,
+      "score": 60,
+      "confidence": 61,
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 21,
+          "minutes": 25
+        },
+        {
+          "date": "2026-11-15",
+          "points": 8,
+          "minutes": 25
+        },
+        {
+          "date": "2026-11-14",
+          "points": 10,
+          "minutes": 26
+        },
+        {
+          "date": "2026-11-12",
+          "points": 10,
+          "minutes": 16
+        },
+        {
+          "date": "2026-11-09",
+          "points": 13,
+          "minutes": 35
+        }
+      ],
+      "season_context": "L5 12,4 PPG i 25,4 minuta u promjenljivoj ulozi.",
+      "home_away_context": "Precizni splitovi po domaćin/gost za ovu granicu nisu zasebno potvrđeni.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Pojedinačnih pet H2H susreta protiv trenutnog rivala nema nezavisno potvrđenih."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nema verifikovanog pozicijskog defensive-rating splita za ovu utakmicu; ne izmišljati čuvara."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Još nisu objavljeni precizni matchup čuvari za današnji duel."
+      },
+      "injuries": {
+        "status": "not_listed_1230_report",
+        "reason": "Nije izričito navedeno da je ovaj igrač OUT/QUESTIONABLE u raspoloživom službenom injury reportu, moguća naknadna promjena."
+      },
+      "minutes_projection": "Posljednjih pet minutaža u rasponu 16-35.",
+      "role_projection": "Na osnovu zadnje forme i raspoložive minutne rotacije.",
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.8197,
+        "under_odd": 1.9524
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Nekalibrirani Scout rang zasnovan na L5 prolazu i rizicima; nema izmišljenih procenata.",
+        "availability_confirmed": false,
+        "reason": "UNDER 12.5 je prošao u 3/5 zadnjih mečeva, a prosjek 12.4 je tik ispod linije; prednost je mala.",
+        "risk": "21 poen u najnovijoj utakmici, minutaža varira 16-35 i saigrači mogu uticati na napadačku ulogu."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Svih šest prošlo ESPN pokušaj; sekundarni izvještaj po mečevima i minutima upotrijebljen gdje dostupno."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/pj-washington",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/pj_washington.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "betsharp:2026-11-21:0021",
+      "player": "Ayo Dosunmu",
+      "rank": 5,
+      "score": 54,
+      "confidence": 56,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 6,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-17",
+          "points": 30,
+          "minutes": 39
+        },
+        {
+          "date": "2026-11-16",
+          "points": 8,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-14",
+          "points": 24,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-12",
+          "points": 18,
+          "minutes": 27
+        }
+      ],
+      "season_context": "L5 17,2 PPG uz 32,2 minute, veoma promjenljiv.",
+      "home_away_context": "Precizni splitovi po domaćin/gost za ovu granicu nisu zasebno potvrđeni.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Pojedinačnih pet H2H susreta protiv trenutnog rivala nema nezavisno potvrđenih."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nema verifikovanog pozicijskog defensive-rating splita za ovu utakmicu; ne izmišljati čuvara."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Još nisu objavljeni precizni matchup čuvari za današnji duel."
+      },
+      "injuries": {
+        "status": "not_listed_1230_report",
+        "reason": "Nije izričito navedeno da je ovaj igrač OUT/QUESTIONABLE u raspoloživom službenom injury reportu, moguća naknadna promjena."
+      },
+      "minutes_projection": "Posljednjih pet minutaža u rasponu 27-39.",
+      "role_projection": "Na osnovu zadnje forme i raspoložive minutne rotacije.",
+      "market": {
+        "points_line": 18.5,
+        "over_odd": 1.8065,
+        "under_odd": 1.9709
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Nekalibrirani Scout rang zasnovan na L5 prolazu i rizicima; nema izmišljenih procenata.",
+        "availability_confirmed": false,
+        "reason": "Tri od pet ispod 18.5 i L5 prosjek ispod, ali dva jako visoka nastupa onemogućavaju snažan zaključak.",
+        "risk": "Dvaput preko 23 poena u pet mečeva, stabilna 30+ minutaža često daje prostora za novi over."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Svih šest prošlo ESPN pokušaj; sekundarni izvještaj po mečevima i minutima upotrijebljen gdje dostupno."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/ayo-dosunmu",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/ayo_dosunmu.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "betsharp:2026-11-21:0020",
+      "player": "Rui Hachimura",
+      "rank": 6,
+      "score": 52,
+      "confidence": 52,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 17,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-17",
+          "points": 20,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-15",
+          "points": 4,
+          "minutes": 22
+        },
+        {
+          "date": "2026-11-13",
+          "points": 7,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-10",
+          "points": 13,
+          "minutes": 23
+        }
+      ],
+      "season_context": "L5 12,2 PPG i 27,2 minute.",
+      "home_away_context": "Precizni splitovi po domaćin/gost za ovu granicu nisu zasebno potvrđeni.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Pojedinačnih pet H2H susreta protiv trenutnog rivala nema nezavisno potvrđenih."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nema verifikovanog pozicijskog defensive-rating splita za ovu utakmicu; ne izmišljati čuvara."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Još nisu objavljeni precizni matchup čuvari za današnji duel."
+      },
+      "injuries": {
+        "status": "not_listed_1230_report",
+        "reason": "Nije izričito navedeno da je ovaj igrač OUT/QUESTIONABLE u raspoloživom službenom injury reportu, moguća naknadna promjena."
+      },
+      "minutes_projection": "Posljednjih pet minutaža u rasponu 22-32.",
+      "role_projection": "Na osnovu zadnje forme i raspoložive minutne rotacije.",
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.9901,
+        "under_odd": 1.7937
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Nekalibrirani Scout rang zasnovan na L5 prolazu i rizicima; nema izmišljenih procenata.",
+        "availability_confirmed": false,
+        "reason": "Tri od pet UNDER 14.5, ali zadnja dva nastupa 17 i 20, zato slabija predvidljivost.",
+        "risk": "Posljednja dva meča iznad 14.5 signaliziraju mogući napadački rast; šuterski rol nestabilan."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Svih šest prošlo ESPN pokušaj; sekundarni izvještaj po mečevima i minutima upotrijebljen gdje dostupno."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/rui-hachimura",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/rui_hachimura.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    }
+  ],
+  "selected_player_ids": [
+    "4903027",
+    "4433083"
+  ],
+  "selection_reason": "Cedric Coward OVER 16.5 i Cam Spencer OVER 10.5 u posljednjih 5 imaju po 4 prolaza i stabilan rast uloge, L5 provjeren iz sekundarnog game log-a; oba Memphis igrača dijele rizik istog tempa i moguće korelacije. Prepoznat je rizik oba over-a.",
+  "source_snapshot_url": "https://github.com/shikithe/Memara-tip/blob/main/collector-output/nba-system-offer-2026-11-21.json",
+  "notes": "Verified six-player first and secondary pass. Tip odds from frozen BetSharp DraftKings; kickoff MEM@MIN 01:00 UTC Nov22."
+}
