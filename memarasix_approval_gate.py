@@ -81,7 +81,7 @@ def valid_approval(active, history, receipt, approved, now):
             if start <= now + timedelta(minutes=20):
                 raise ValueError("Approved fixture already started or begins too soon")
             pick = leg.get("pick")
-            if pick not in {"1", "2", "2+", "3+", "GG", "NG"}:
+            if pick not in {"1", "X", "2", "2+", "3+", "GG", "NG"}:
                 raise ValueError("Unknown approved market")
             if tid == "B" and pick != "3+":
                 raise ValueError("Ticket B can contain only over 2.5")
