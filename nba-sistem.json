@@ -2589,7 +2589,7 @@
               "player_points": 18,
               "game_state": "final",
               "game_clock": "",
-              "period": 2,
+              "period": 4,
               "result_source": "NBA box score (PHX-UTAH / HOU-DEN)",
               "result_verified_date": "2026-11-21"
             },
@@ -2635,14 +2635,14 @@
               "player_points": 14,
               "game_state": "final",
               "game_clock": "",
-              "period": 3,
+              "period": 4,
               "result_source": "NBA box score (PHX-UTAH / HOU-DEN)",
               "result_verified_date": "2026-11-21"
             }
           ],
           "effective_odd": 0,
           "payout": 0,
-          "settled_at_utc": "2026-11-21T08:30:00Z"
+          "settled_at_utc": "2026-11-21T08:07:48.255Z"
         },
         {
           "id": "9",
@@ -2693,7 +2693,7 @@
               "player_points": 3,
               "game_state": "final",
               "game_clock": "",
-              "period": 2,
+              "period": 4,
               "result_source": "RealGM NBA box score (HOU-DEN)",
               "result_verified_date": "2026-11-21"
             },
@@ -2739,14 +2739,14 @@
               "player_points": 15,
               "game_state": "final",
               "game_clock": "",
-              "period": 2,
+              "period": 4,
               "result_source": "RealGM NBA box score (HOU-DEN)",
               "result_verified_date": "2026-11-21"
             }
           ],
           "effective_odd": 0,
           "payout": 0,
-          "settled_at_utc": "2026-11-21T08:30:00Z"
+          "settled_at_utc": "2026-11-21T08:07:48.255Z"
         },
         {
           "id": "10",
@@ -2797,7 +2797,7 @@
               "player_points": 6,
               "game_state": "final",
               "game_clock": "",
-              "period": 2,
+              "period": 4,
               "result_source": "CBS Sports final box score (SAC-LAL)",
               "result_verified_date": "2026-11-21"
             },
@@ -2843,14 +2843,14 @@
               "player_points": 2,
               "game_state": "final",
               "game_clock": "",
-              "period": 2,
+              "period": 4,
               "result_source": "CBS Sports final box score (SAC-LAL)",
               "result_verified_date": "2026-11-21"
             }
           ],
           "effective_odd": 3.51746,
           "payout": 34.68,
-          "settled_at_utc": "2026-11-21T08:30:00Z"
+          "settled_at_utc": "2026-11-21T08:07:48.255Z"
         }
       ],
       "accounting": {
@@ -2868,7 +2868,7 @@
       },
       "bank_end": 990.84,
       "bank_profit": 4.98,
-      "settled_at_utc": "2026-11-21T08:30:00Z"
+      "settled_at_utc": "2026-11-21T08:07:48.255Z"
     }
   ]
 }
