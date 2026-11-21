@@ -1855,7 +1855,7 @@
         {
           "id": "1",
           "stake": 9.86,
-          "status": "pending",
+          "status": "won",
           "total_odd": 3.524,
           "potential_payout": 34.75,
           "legs": [
@@ -1872,7 +1872,7 @@
               "espn_event_id": "401909305",
               "player_id": "4431680",
               "start_utc": "2026-11-21T00:00:00Z",
-              "status": "pending",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -1918,7 +1918,10 @@
                 },
                 "opponent_defense": "Opponent position-specific defensive matchup not verified",
                 "scout_note": "5/5 posljednjih preko 14,5 uz 18,6 prosjek; protiv CHA zadnja 3 10,18,16, dakle 2/3. Rizik: 10 poena u prethodnom CHA meču, 22 min. Izvori: ESPN/StatMuse/BetSharp."
-              }
+              },
+              "player_points": 16,
+              "game_state": "final",
+              "game_clock": ""
             },
             {
               "player": "Brandon Miller",
@@ -1933,7 +1936,7 @@
               "espn_event_id": "401909305",
               "player_id": "4433287",
               "start_utc": "2026-11-21T00:00:00Z",
-              "status": "pending",
+              "status": "won",
               "analysis": {
                 "last_five": [],
                 "last_five_average": 13.6,
@@ -1941,14 +1944,20 @@
                 "h2h": "not_fully_verified",
                 "opponent_defense": "ATL opponent defense and direct defender not independently verified",
                 "scout_note": "Posljednjih 5 prosjek 13,6 (Statz.ai), sezona 19,9 u 30,5 min, UNDER 21,5; zadnji meč vs LAL 28 poena te se povratak u veću minutažu mora računati kao rizik. ESPN oktobarski H2H vs ATL: 6 poena, nije dovoljno za kompletan H2H."
-              }
+              },
+              "player_points": 19,
+              "game_state": "final",
+              "game_clock": ""
             }
-          ]
+          ],
+          "effective_odd": 3.5242,
+          "payout": 34.75,
+          "settled_at_utc": "2026-11-21T04:05:10.151648+00:00"
         },
         {
           "id": "2",
           "stake": 9.86,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.767,
           "potential_payout": 37.14,
           "legs": [
@@ -1965,7 +1974,7 @@
               "espn_event_id": "401909307",
               "player_id": "3133603",
               "start_utc": "2026-11-21T00:30:00Z",
-              "status": "pending",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -1989,7 +1998,10 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "5/5 posljednjih preko 12,5 uz 15,4 poena i 27,5 min. Rizik sezonski prosjek 11,2, moguć povratak na manje poena; H2H i direktni čuvar nepotvrđeni."
-              }
+              },
+              "player_points": 17,
+              "game_state": "final",
+              "game_clock": ""
             },
             {
               "player": "Pascal Siakam",
@@ -2004,7 +2016,7 @@
               "espn_event_id": "401909307",
               "player_id": "3149673",
               "start_utc": "2026-11-21T00:30:00Z",
-              "status": "pending",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -2028,14 +2040,20 @@
                 "h2h": "not_verified",
                 "opponent_defense": "not_verified",
                 "scout_note": "4/5 preko 23,5, posljednjih pet 24,31,19,28,29; projekcija Statz 21,5 i CLE odbrana su rizici. Nema potvrđenog kompletnog H2H."
-              }
+              },
+              "player_points": 21,
+              "game_state": "final",
+              "game_clock": ""
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-21T04:05:10.389473+00:00"
         },
         {
           "id": "3",
           "stake": 9.86,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.2873,
           "potential_payout": 32.41,
           "legs": [
@@ -2052,7 +2070,7 @@
               "espn_event_id": "401909308",
               "player_id": "3134908",
               "start_utc": "2026-11-21T00:30:00Z",
-              "status": "pending",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -2077,7 +2095,10 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Pet posljednjih ispod 11,5; sezonski prosjek 8,1. Rizik: minutaža se može promijeniti.",
                 "source_stats": "https://statz.ai/nba/players/jakob-poeltl"
-              }
+              },
+              "player_points": 10,
+              "game_state": "final",
+              "game_clock": ""
             },
             {
               "player": "Kevin Huerter",
@@ -2092,7 +2113,7 @@
               "espn_event_id": "401909308",
               "player_id": "4066372",
               "start_utc": "2026-11-21T00:30:00Z",
-              "status": "pending",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -2117,14 +2138,20 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Tri od posljednjih pet ispod 12,5, sezonski prosjek 9,9; nedavni mečevi od 20 i 24 su glavni rizik.",
                 "source_stats": "https://statz.ai/nba/players/kevin-huerter"
-              }
+              },
+              "player_points": 20,
+              "game_state": "final",
+              "game_clock": ""
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-21T04:05:10.538838+00:00"
         },
         {
           "id": "4",
           "stake": 9.86,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.5183,
           "potential_payout": 34.69,
           "legs": [
@@ -2141,7 +2168,7 @@
               "espn_event_id": "401909306",
               "player_id": "5279130",
               "start_utc": "2026-11-21T00:30:00Z",
-              "status": "pending",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -2166,7 +2193,10 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Pet prethodnih preko 10,5; direktni dueli sa ORL mješoviti i to je rizik.",
                 "source_stats": "https://statz.ai/nba/players/nolan-traore"
-              }
+              },
+              "player_points": 4,
+              "game_state": "final",
+              "game_clock": ""
             },
             {
               "player": "Franz Wagner",
@@ -2181,7 +2211,7 @@
               "espn_event_id": "401909306",
               "player_id": "4566434",
               "start_utc": "2026-11-21T00:30:00Z",
-              "status": "pending",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -2206,14 +2236,20 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Četiri od posljednjih pet preko 25,5, prosjek 30,8; protivnički matchup i eventualne izmjene minutaže nepotvrđeni.",
                 "source_stats": "https://statz.ai/nba/players/franz-wagner"
-              }
+              },
+              "player_points": 35,
+              "game_state": "final",
+              "game_clock": ""
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-21T04:05:10.813343+00:00"
         },
         {
           "id": "5",
           "stake": 9.86,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.2534,
           "potential_payout": 32.08,
           "legs": [
@@ -2230,7 +2266,7 @@
               "espn_event_id": "401909306",
               "player_id": "3150844",
               "start_utc": "2026-11-21T00:30:00Z",
-              "status": "pending",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -2255,7 +2291,10 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Četiri od posljednjih pet preko 7,5; prosjek 10,6, ali defanzivna snaga Orlanda donosi rizik.",
                 "source_stats": "https://statz.ai/nba/players/moritz-wagner"
-              }
+              },
+              "player_points": 3,
+              "game_state": "final",
+              "game_clock": ""
             },
             {
               "player": "Jalen Smith",
@@ -2270,7 +2309,7 @@
               "espn_event_id": "401909309",
               "player_id": "4397189",
               "start_utc": "2026-11-21T01:00:00Z",
-              "status": "pending",
+              "status": "void",
               "analysis": {
                 "last_five": [
                   {
@@ -2295,14 +2334,19 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Četiri od posljednjih pet preko 14,5; trenutna forma 17,2, naspram sezone 13,4. Rizik varijabilne minute.",
                 "source_stats": "https://statz.ai/nba/players/jalen-smith"
-              }
+              },
+              "effective_odd": 1.0,
+              "game_state": "final"
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-21T04:05:11.077462+00:00"
         },
         {
           "id": "6",
           "stake": 9.86,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.2069,
           "potential_payout": 31.62,
           "legs": [
@@ -2319,7 +2363,7 @@
               "espn_event_id": "401909310",
               "player_id": "4900671",
               "start_utc": "2026-11-21T01:00:00Z",
-              "status": "pending",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -2344,7 +2388,10 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Četiri posljednje od pet ispod 19,5; posljednji skok na 35 veliki rizik promjene napadačke uloge.",
                 "source_stats": "https://statz.ai/nba/players/ajay-mitchell"
-              }
+              },
+              "player_points": 8,
+              "game_state": "final",
+              "game_clock": ""
             },
             {
               "player": "Kenrich Williams",
@@ -2359,7 +2406,7 @@
               "espn_event_id": "401909310",
               "player_id": "3133626",
               "start_utc": "2026-11-21T01:00:00Z",
-              "status": "pending",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -2384,14 +2431,20 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Četiri od pet iznad 7,5, prosjek 8,4; niska sezonska minutaža/uloga nosi neizvjesnost.",
                 "source_stats": "https://statz.ai/nba/players/kenrich-williams"
-              }
+              },
+              "player_points": 6,
+              "game_state": "final",
+              "game_clock": ""
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-21T04:05:11.244345+00:00"
         },
         {
           "id": "7",
           "stake": 9.86,
-          "status": "pending",
+          "status": "won",
           "total_odd": 3.4638,
           "potential_payout": 34.15,
           "legs": [
@@ -2408,7 +2461,7 @@
               "espn_event_id": "401909311",
               "player_id": "4278585",
               "start_utc": "2026-11-21T02:30:00Z",
-              "status": "pending",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -2433,7 +2486,11 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Četiri od posljednjih pet preko 9,5; prosjek 14,0, sezonski 9,3. Rizik mogućeg povratka na sezonski prosjek.",
                 "source_stats": "https://statz.ai/nba/players/collin-gillespie"
-              }
+              },
+              "player_points": 11,
+              "game_state": "live",
+              "game_clock": "7:31",
+              "period": 3
             },
             {
               "player": "Zion Williamson",
@@ -2448,7 +2505,7 @@
               "espn_event_id": "401909310",
               "player_id": "4395628",
               "start_utc": "2026-11-21T01:00:00Z",
-              "status": "pending",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -2473,9 +2530,15 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Četiri od pet preko 19,5; prosjek 23,0, ali Thunder je jak defanzivni matchup.",
                 "source_stats": "https://statz.ai/nba/players/zion-williamson"
-              }
+              },
+              "player_points": 22,
+              "game_state": "final",
+              "game_clock": ""
             }
-          ]
+          ],
+          "effective_odd": 3.46378,
+          "payout": 34.15,
+          "settled_at_utc": "2026-11-21T04:05:11.454675+00:00"
         },
         {
           "id": "8",
@@ -2497,7 +2560,7 @@
               "espn_event_id": "401909312",
               "player_id": "3064290",
               "start_utc": "2026-11-21T03:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -2522,7 +2585,11 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Četiri od pet ispod 11,5, prosjek 9,4; Houstonov defanzivni matchup može pomoći, ali šutevi variraju.",
                 "source_stats": "https://statz.ai/nba/players/aaron-gordon"
-              }
+              },
+              "player_points": 7,
+              "game_state": "live",
+              "game_clock": "1:44",
+              "period": 2
             },
             {
               "player": "Keyonte George",
@@ -2537,7 +2604,7 @@
               "espn_event_id": "401909311",
               "player_id": "4433627",
               "start_utc": "2026-11-21T02:30:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -2562,7 +2629,11 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Tri od pet ispod 24,5 uz prosjek 20,4; dva meča iznad granice ukazuju na veći rizik.",
                 "source_stats": "https://statz.ai/nba/players/keyonte-george"
-              }
+              },
+              "player_points": 8,
+              "game_state": "live",
+              "game_clock": "7:31",
+              "period": 3
             }
           ]
         },
@@ -2586,7 +2657,7 @@
               "espn_event_id": "401909312",
               "player_id": "2990992",
               "start_utc": "2026-11-21T03:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -2611,7 +2682,11 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Svih pet posljednjih ispod 6,5, prosjek 4,8; sezonski 7,9 i uloga u napadu mogu promijeniti trend.",
                 "source_stats": "https://statz.ai/nba/players/marcus-smart"
-              }
+              },
+              "player_points": 3,
+              "game_state": "live",
+              "game_clock": "1:44",
+              "period": 2
             },
             {
               "player": "DeMar DeRozan",
@@ -2626,7 +2701,7 @@
               "espn_event_id": "401909312",
               "player_id": "3978",
               "start_utc": "2026-11-21T03:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -2651,7 +2726,11 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Četiri od pet ispod 9,5; uloga i 18 poena u najnovijem nastupu predstavljaju rizik.",
                 "source_stats": "https://statz.ai/nba/players/demar-derozan"
-              }
+              },
+              "player_points": 9,
+              "game_state": "live",
+              "game_clock": "1:44",
+              "period": 2
             }
           ]
         },
@@ -2675,7 +2754,7 @@
               "espn_event_id": "401909313",
               "player_id": "4592691",
               "start_utc": "2026-11-21T03:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -2700,7 +2779,11 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Četiri od pet ispod 6,5, prosjek 4,8; rizik promjene minutaže, jedan nastup 12 poena.",
                 "source_stats": "https://statz.ai/nba/players/jake-laravia"
-              }
+              },
+              "player_points": 1,
+              "game_state": "live",
+              "game_clock": "1:19",
+              "period": 2
             },
             {
               "player": "Malik Monk",
@@ -2715,7 +2798,7 @@
               "espn_event_id": "401909313",
               "player_id": "4066262",
               "start_utc": "2026-11-21T03:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -2740,22 +2823,26 @@
                 "opponent_defense": "not_fully_verified",
                 "scout_note": "Četiri od pet ispod 11,5, prosjek 7,8; šuterska varijansa i 14 poena u jednom nastupu su rizik.",
                 "source_stats": "https://statz.ai/nba/players/malik-monk"
-              }
+              },
+              "player_points": 2,
+              "game_state": "live",
+              "game_clock": "1:19",
+              "period": 2
             }
           ]
         }
       ],
       "accounting": {
         "tickets_total": 10,
-        "tickets_settled": 0,
-        "tickets_pending": 10,
-        "tickets_won": 0,
-        "tickets_lost": 0,
+        "tickets_settled": 7,
+        "tickets_pending": 3,
+        "tickets_won": 2,
+        "tickets_lost": 5,
         "tickets_void": 0,
         "total_staked": 98.6,
-        "total_returned": 0,
-        "available_bank": 887.26,
-        "net_profit_confirmed": 0,
+        "total_returned": 68.9,
+        "available_bank": 956.16,
+        "net_profit_confirmed": -0.12,
         "complete": false
       }
     }
