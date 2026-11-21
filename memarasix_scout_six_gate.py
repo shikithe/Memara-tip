@@ -166,8 +166,22 @@ def validate_scout(approval, active, history, receipt, scout):
                 raise ValueError("Missing verified/unavailable evidence status for " + name)
             if not str(value.get("notes", "")).strip():
                 raise ValueError("Each new-factors check must give real evidence or explicitly note unavailable")
-            if value["status"] == "verified" and not isinstance(value.get("source_url"), str):
-                raise ValueError("Verified new factor must name a public source URL")
+            if value["status"] == "verified" and not str(value.get("source_url", "")).startswith(("https://", "http://")):
+                raise ValueError("Verified new factor must link to a real public source URL")
+        # Independent third-party model is an extra check, not a rerun of our math.
+        # It may be unavailable for smaller competitions; explicitly record that.
+        independent = item.get("independent_model_check")
+        if not isinstance(independent, dict) or independent.get("status") not in ("verified", "unavailable"):
+            raise ValueError("Every top-ten review needs an independent-model check or honest unavailable status")
+        if len(str(independent.get("notes", "")).strip()) < 20:
+            raise ValueError("Independent-model check needs a substantive explanation")
+        if independent["status"] == "verified":
+            if not str(independent.get("source_url", "")).startswith(("https://", "http://")):
+                raise ValueError("Verified independent model needs a public match source URL")
+            if not str(independent.get("provider", "")).strip():
+                raise ValueError("Verified independent model needs its provider")
+            if not str(independent.get("model_or_market_basis", "")).strip():
+                raise ValueError("Separate bookmaker-based probabilities from own goal-model probabilities")
         review_by_id[fid] = item
     if set(review_by_id) != set(expected_top_ten):
         raise ValueError("Every top-ten handoff fixture must receive an AI review")
