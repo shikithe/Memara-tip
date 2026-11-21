@@ -62,8 +62,15 @@ def publish_nba_c(checked, now, local):
     if bank<=0: return audit("Invalid bank for NBA C")
     budget=round(bank*.1,2)
     spent_before=round(sum(float(t.get("stake",0)) for t in existing),2)
-    stake=round(budget*.10,2)
-    if stake<=0 or spent_before+stake>budget+0.001:
+    approval=load(ROOT/"memarasix-1455-approved.json")
+    # Explicit one-day user-approved exception only: 21 Nov 2026 manual C,
+    # stake 2% of the original day's bank, even if A/B used the prior 10% allocation.
+    manual_c_2pct=(current=="2026-11-21" and
+        approval.get("manual_c_stake_override")=="2026-11-21_2pct_bank_start" and
+        len(approval.get("tickets",[]))==1 and
+        approval["tickets"][0].get("id")=="C")
+    stake=round(bank*.02,2) if manual_c_2pct else round(budget*.10,2)
+    if stake<=0 or (not manual_c_2pct and spent_before+stake>budget+0.001):
         return audit("NBA C exceeds remaining daily stake budget")
     matches=checked["verified_matches"]
     item={"id":"C","label":"NBA · DVA IGRAČA","matches":matches,
