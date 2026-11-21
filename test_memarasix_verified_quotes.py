@@ -33,6 +33,14 @@ class AliasPublicationTests(unittest.TestCase):
         self.assertTrue(all(x["fixture_id"]==FIXTURE_ID for x in rows))
         self.assertTrue(all(x["home"]=="AC Milan" for x in rows))
         self.assertEqual({x["provider_event_id"] for x in rows},{"e101"})
+    def test_draw_x_is_verified_as_sixth_market(self):
+        a,h,m,p=inputs()
+        m["fixtures"][0]["odds_offers"][0]["markets"]["1X2"]["draw"]=3.45
+        p["offers"][0]["markets"]["1X2"]["draw"]=3.45
+        rows=verified_candidates(a,h,m,p,NOW,dt)
+        self.assertEqual({x["pick"] for x in rows},{"1","X","3+"})
+        self.assertEqual(next(x["odd"] for x in rows if x["pick"]=="X"),3.45)
+
     def test_wrong_event_is_rejected(self):
         a,h,m,p=inputs()
         p["offers"][0]["event_id"]="other"
