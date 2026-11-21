@@ -1,0 +1,399 @@
+{
+  "date": "2026-11-21",
+  "group_number": 10,
+  "analysis_complete": true,
+  "ranking": [
+    {
+      "player_id": "4431736",
+      "player": "Toumani Camara",
+      "rank": 1,
+      "score": 68,
+      "confidence": 61,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 18,
+          "minutes": 37
+        },
+        {
+          "date": "2026-11-17",
+          "points": 10,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-16",
+          "points": 3,
+          "minutes": 26
+        },
+        {
+          "date": "2026-11-13",
+          "points": 14,
+          "minutes": 36
+        },
+        {
+          "date": "2026-11-11",
+          "points": 14,
+          "minutes": 38
+        }
+      ],
+      "season_context": "Nedavni L5 11.8 poena, snažna minutaža 26-38 i šuterska uloga promjenjiva.",
+      "home_away_context": "Odvojeni precizni home/away poeni za ovu granicu nisu kvantifikovani; L5 pokriva obje vrste mečeva.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet konkretnih međusobnih susreta sa današnjim protivnikom nisu zasebno potvrđeni."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Ne postoje pouzdani pozicijski defensive splitovi u dostupnoj provjeri."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Aktuelni direktni matchup čuvar nije potvrđen pred početak utakmice."
+      },
+      "injuries": {
+        "status": "not_listed",
+        "reason": "Nije naveden kao OUT/QUESTIONABLE u dostupnom službenom NBA injury reportu; nema garancije nastupa."
+      },
+      "minutes_projection": "Raspon minutaže L5 26–38.",
+      "role_projection": "Procijenjena rola na osnovu posljednjih 5 nastupa i mogućih izostanaka saigrača.",
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 2,
+        "under_odd": 1.7812
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Rang na osnovu stvarnih L5 rezultata i pouzdanosti tržišta; nije rađena kalibracija postotka.",
+        "availability_confirmed": true,
+        "reason": "OVER 12.5 je prošao u tri od pet i postiže 18 u najnovijem, 14 u dva ranija meča, uz minute 36-38 u tri od pet.",
+        "risk": "Dva razočaravajuća rezultata 10 i 3 te promjenljivi kvalitet vanjskog šuta mogu dovesti do UNDER."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primarni ESPN prolaz i sekundarni 2026/27 game-log za svih pet; nedostajući DK market ostavljen null."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/toumani-camara",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/toumani_camara.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "3914044",
+      "player": "Landry Shamet",
+      "rank": 2,
+      "score": 65,
+      "confidence": 58,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 10,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-17",
+          "points": 12,
+          "minutes": 24
+        },
+        {
+          "date": "2026-11-15",
+          "points": 23,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-13",
+          "points": 5,
+          "minutes": 21
+        },
+        {
+          "date": "2026-11-11",
+          "points": 12,
+          "minutes": 29
+        }
+      ],
+      "season_context": "L5 12.4 poena, prethodne minute od 21 do 30, šuterska sekundarna uloga.",
+      "home_away_context": "Odvojeni precizni home/away poeni za ovu granicu nisu kvantifikovani; L5 pokriva obje vrste mečeva.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet konkretnih međusobnih susreta sa današnjim protivnikom nisu zasebno potvrđeni."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Ne postoje pouzdani pozicijski defensive splitovi u dostupnoj provjeri."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Aktuelni direktni matchup čuvar nije potvrđen pred početak utakmice."
+      },
+      "injuries": {
+        "status": "not_listed",
+        "reason": "Nije naveden kao OUT/QUESTIONABLE u dostupnom službenom NBA injury reportu; nema garancije nastupa."
+      },
+      "minutes_projection": "Raspon minutaže L5 21–30.",
+      "role_projection": "Procijenjena rola na osnovu posljednjih 5 nastupa i mogućih izostanaka saigrača.",
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.9901,
+        "under_odd": 1.7937
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Rang na osnovu stvarnih L5 rezultata i pouzdanosti tržišta; nije rađena kalibracija postotka.",
+        "availability_confirmed": true,
+        "reason": "OVER 11.5 u tri od pet posljednjih nastupa; dodatne minute i moguće izostajanje Townsa/Anunobyja povećavaju otvorene šuteve.",
+        "risk": "Izrazito promjenljiv šut, ima 5 i 10 u posljednjih pet, protivnik Portland može promijeniti raspodjelu šuteva."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primarni ESPN prolaz i sekundarni 2026/27 game-log za svih pet; nedostajući DK market ostavljen null."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/landry-shamet",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/landry_shamet.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "3147657",
+      "player": "Mikal Bridges",
+      "rank": 3,
+      "score": 59,
+      "confidence": 56,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 8,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-17",
+          "points": 17,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-15",
+          "points": 5,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-13",
+          "points": 18,
+          "minutes": 29
+        },
+        {
+          "date": "2026-11-11",
+          "points": 2,
+          "minutes": 17
+        }
+      ],
+      "season_context": "L5 10.0 poena i 27.8 minuta, promjenljiv napadački fokus.",
+      "home_away_context": "Odvojeni precizni home/away poeni za ovu granicu nisu kvantifikovani; L5 pokriva obje vrste mečeva.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet konkretnih međusobnih susreta sa današnjim protivnikom nisu zasebno potvrđeni."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Ne postoje pouzdani pozicijski defensive splitovi u dostupnoj provjeri."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Aktuelni direktni matchup čuvar nije potvrđen pred početak utakmice."
+      },
+      "injuries": {
+        "status": "not_listed",
+        "reason": "Nije naveden kao OUT/QUESTIONABLE u dostupnom službenom NBA injury reportu; nema garancije nastupa."
+      },
+      "minutes_projection": "Raspon minutaže L5 17–32.",
+      "role_projection": "Procijenjena rola na osnovu posljednjih 5 nastupa i mogućih izostanaka saigrača.",
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.9709,
+        "under_odd": 1.8065
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Rang na osnovu stvarnih L5 rezultata i pouzdanosti tržišta; nije rađena kalibracija postotka.",
+        "availability_confirmed": false,
+        "reason": "UNDER 11.5 tri puta u pet, uključujući najnoviji meč osam poena i raniji dva i pet.",
+        "risk": "17 i 18 u L5, mogući većii broj šuteva kada Towns ili Anunoby ne budu igrali."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primarni ESPN prolaz i sekundarni 2026/27 game-log za svih pet; nedostajući DK market ostavljen null."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/mikal-bridges",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/mikal_bridges.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "5081727",
+      "player": "Sidy Cissoko",
+      "rank": 4,
+      "score": 56,
+      "confidence": 53,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 13,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-17",
+          "points": 6,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-16",
+          "points": 5,
+          "minutes": 28
+        },
+        {
+          "date": "2026-11-13",
+          "points": 3,
+          "minutes": 26
+        },
+        {
+          "date": "2026-11-11",
+          "points": 19,
+          "minutes": 29
+        }
+      ],
+      "season_context": "L5 9.2 poena, vrlo varijabilan, i tri od pet ispod sedam i po.",
+      "home_away_context": "Odvojeni precizni home/away poeni za ovu granicu nisu kvantifikovani; L5 pokriva obje vrste mečeva.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet konkretnih međusobnih susreta sa današnjim protivnikom nisu zasebno potvrđeni."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Ne postoje pouzdani pozicijski defensive splitovi u dostupnoj provjeri."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Aktuelni direktni matchup čuvar nije potvrđen pred početak utakmice."
+      },
+      "injuries": {
+        "status": "not_listed",
+        "reason": "Nije naveden kao OUT/QUESTIONABLE u dostupnom službenom NBA injury reportu; nema garancije nastupa."
+      },
+      "minutes_projection": "Raspon minutaže L5 26–32.",
+      "role_projection": "Procijenjena rola na osnovu posljednjih 5 nastupa i mogućih izostanaka saigrača.",
+      "market": {
+        "points_line": 7.5,
+        "over_odd": 1.7874,
+        "under_odd": 2
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Rang na osnovu stvarnih L5 rezultata i pouzdanosti tržišta; nije rađena kalibracija postotka.",
+        "availability_confirmed": false,
+        "reason": "UNDER 7.5 u tri od pet sa rezultatima 6,5,3 i visokom ponuđenom kvotom 2.00; značajni outlieri 13 i 19.",
+        "risk": "U najnovijem meču je postigao 13, a samo dva solidna šuterska segmenta mogu preći 7.5."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primarni ESPN prolaz i sekundarni 2026/27 game-log za svih pet; nedostajući DK market ostavljen null."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/sidy-cissoko",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/sidy_cissoko.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "3934719",
+      "player": "OG Anunoby",
+      "rank": 5,
+      "score": 28,
+      "confidence": 25,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 15,
+          "minutes": 36
+        },
+        {
+          "date": "2026-11-17",
+          "points": 16,
+          "minutes": 36
+        },
+        {
+          "date": "2026-11-15",
+          "points": 21,
+          "minutes": 44
+        },
+        {
+          "date": "2026-11-13",
+          "points": 11,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-11",
+          "points": 14,
+          "minutes": 34
+        }
+      ],
+      "season_context": "L5 poeni zabilježeni, ali nije potvrđena ponuđena DraftKings granica.",
+      "home_away_context": "Odvojeni precizni home/away poeni za ovu granicu nisu kvantifikovani; L5 pokriva obje vrste mečeva.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet konkretnih međusobnih susreta sa današnjim protivnikom nisu zasebno potvrđeni."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Ne postoje pouzdani pozicijski defensive splitovi u dostupnoj provjeri."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Aktuelni direktni matchup čuvar nije potvrđen pred početak utakmice."
+      },
+      "injuries": {
+        "status": "doubtful",
+        "reason": "NBA izvještaj navodi Doubtful zbog koštane kontuzije; u DK nema ni granice ni kvote."
+      },
+      "minutes_projection": "Raspon minutaže L5 33–44.",
+      "role_projection": "Procijenjena rola na osnovu posljednjih 5 nastupa i mogućih izostanaka saigrača.",
+      "market": {
+        "points_line": null,
+        "over_odd": null,
+        "under_odd": null
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Rang na osnovu stvarnih L5 rezultata i pouzdanosti tržišta; nije rađena kalibracija postotka.",
+        "availability_confirmed": false,
+        "reason": "Scout je provjerio posljednje nastupe, ali BetSharp DK kolona nema ni liniju ni kvote; zato se ne može donijeti validan tip.",
+        "risk": "NBA službeni injury report ga označava Doubtful, uz potpuno odsutne DK liniju i cijene."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primarni ESPN prolaz i sekundarni 2026/27 game-log za svih pet; nedostajući DK market ostavljen null."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/og-anunoby",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/og_anunoby.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    }
+  ],
+  "selected_player_ids": [
+    "4431736",
+    "3914044"
+  ],
+  "selection_reason": "Toumani Camara OVER 12.5 i Landry Shamet OVER 11.5 imali su po 3/5 prelazaka na pravoj BetSharp DraftKings granici, uz recentnu minutažu i aktuelne nastupe; OG Anunoby zbog Doubtful i nepostojeće DK granice nije podoban. Preostali imaju sličan ili slabiji statistički profil. Ovo nisu garantovani pogoci.",
+  "source_snapshot_url": "https://github.com/shikithe/Memara-tip/blob/main/collector-output/nba-system-offer-2026-11-21.json",
+  "notes": "All five L5 checked with ESPN attempted and secondary scores, one absent market preserved null, no made-up probabilities. Last group 10."
+}
