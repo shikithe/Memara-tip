@@ -1,0 +1,342 @@
+{
+  "date": "2026-11-21",
+  "list_number": 5,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-21T17:10:21.095317+00:00",
+  "total_offers": 68,
+  "group_size": 7,
+  "original_positions": [
+    29,
+    35
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "LaMelo Ball",
+      "team": "MIN",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/lamelo-ball",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 20.5,
+          "over_american": -108,
+          "under_american": -118,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8475
+        },
+        "FD": {
+          "line": 20.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 19.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 20.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -122,
+          "under_american": -104,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9615
+        }
+      },
+      "original_offer_position": 29
+    },
+    {
+      "player": "Rudy Gobert",
+      "team": "MIN",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/rudy-gobert",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -110,
+          "under_american": -119,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8403
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -122,
+          "over_decimal": 2,
+          "under_decimal": 1.8197
+        }
+      },
+      "original_offer_position": 30
+    },
+    {
+      "player": "Taylor Hendricks",
+      "team": "MEM",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/taylor-hendricks",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -128,
+          "under_american": 102,
+          "over_decimal": 1.7812,
+          "under_decimal": 2.02
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": 105,
+          "under_american": -145,
+          "over_decimal": 2.05,
+          "under_decimal": 1.6897
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -117,
+          "under_american": -104,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9615
+        }
+      },
+      "original_offer_position": 31
+    },
+    {
+      "player": "Terrence Shannon Jr.",
+      "team": "MIN",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/terrence-shannon",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -112,
+          "under_american": -114,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 163,
+          "under_american": -203,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4926
+        }
+      },
+      "original_offer_position": 32
+    },
+    {
+      "player": "Ty Jerome",
+      "team": "MEM",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/ty-jerome",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 22.5,
+          "over_american": -112,
+          "under_american": -114,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 23.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 127,
+          "under_american": -178,
+          "over_decimal": 2.27,
+          "under_decimal": 1.5618
+        }
+      },
+      "original_offer_position": 33
+    },
+    {
+      "player": "Zach Edey",
+      "team": "MEM",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/zach-edey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -104,
+          "under_american": -123,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.813
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -108,
+          "under_american": -120,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -117,
+          "under_american": -117,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 104,
+          "under_american": -133,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7519
+        }
+      },
+      "original_offer_position": 34
+    },
+    {
+      "player": "Anfernee Simons",
+      "team": "PHI",
+      "game": "MIL @ PHI",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 1:00PM",
+      "player_url": "https://betsharp.com/nba/player/anfernee-simons",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-milwaukee-bucks-at-philadelphia-76ers#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -108,
+          "under_american": -118,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -117,
+          "under_american": -115,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8696
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 138,
+          "under_american": -170,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5882
+        }
+      },
+      "original_offer_position": 35
+    }
+  ]
+}
