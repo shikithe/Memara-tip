@@ -1,0 +1,328 @@
+{
+  "date": "2026-11-21",
+  "list_number": 1,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-21T17:10:21.095317+00:00",
+  "total_offers": 68,
+  "group_size": 7,
+  "original_positions": [
+    1,
+    7
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Darius Acuff Jr.",
+      "team": "SAC",
+      "game": "BOS @ SAC",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/darius-acuff",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-boston-celtics-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 23.5,
+          "over_american": -103,
+          "under_american": -123,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.813
+        },
+        "FD": {
+          "line": 23.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 23.5,
+          "over_american": -108,
+          "under_american": -127,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 117,
+          "under_american": -144,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 1
+    },
+    {
+      "player": "Derrick White",
+      "team": "BOS",
+      "game": "BOS @ SAC",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/derrick-white",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-boston-celtics-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -103,
+          "under_american": -124,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -104,
+          "under_american": -125,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 108,
+          "under_american": -133,
+          "over_decimal": 2.08,
+          "under_decimal": 1.7519
+        }
+      },
+      "original_offer_position": 2
+    },
+    {
+      "player": "Domantas Sabonis",
+      "team": "SAC",
+      "game": "BOS @ SAC",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/domantas-sabonis",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-boston-celtics-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -107,
+          "under_american": -120,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 163,
+          "under_american": -245,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4082
+        }
+      },
+      "original_offer_position": 3
+    },
+    {
+      "player": "Jayson Tatum",
+      "team": "BOS",
+      "game": "BOS @ SAC",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/jayson-tatum",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-boston-celtics-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 26.5,
+          "over_american": -110,
+          "under_american": -115,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 26.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 25.5,
+          "over_american": -127,
+          "under_american": -108,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -150,
+          "under_american": 117,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.17
+        }
+      },
+      "original_offer_position": 4
+    },
+    {
+      "player": "Keegan Murray",
+      "team": "SAC",
+      "game": "BOS @ SAC",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/keegan-murray",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-boston-celtics-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": 101,
+          "under_american": -129,
+          "over_decimal": 2.01,
+          "under_decimal": 1.7752
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -233,
+          "under_american": 170,
+          "over_decimal": 1.4292,
+          "under_decimal": 2.7
+        }
+      },
+      "original_offer_position": 5
+    },
+    {
+      "player": "Paul George",
+      "team": "BOS",
+      "game": "BOS @ SAC",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/paul-george",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-boston-celtics-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 22.5,
+          "over_american": -118,
+          "under_american": -108,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9259
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "BR": {
+          "line": 21.5,
+          "over_american": -137,
+          "under_american": 102,
+          "over_decimal": 1.7299,
+          "under_decimal": 2.02
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 122,
+          "under_american": -170,
+          "over_decimal": 2.22,
+          "under_decimal": 1.5882
+        }
+      },
+      "original_offer_position": 6
+    },
+    {
+      "player": "Zach LaVine",
+      "team": "SAC",
+      "game": "BOS @ SAC",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/zach-lavine",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-boston-celtics-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -102,
+          "under_american": -125,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 138,
+          "under_american": -186,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5376
+        }
+      },
+      "original_offer_position": 7
+    }
+  ]
+}
