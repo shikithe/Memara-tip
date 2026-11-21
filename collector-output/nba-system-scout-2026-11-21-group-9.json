@@ -1,0 +1,398 @@
+{
+  "date": "2026-11-21",
+  "group_number": 9,
+  "analysis_complete": true,
+  "ranking": [
+    {
+      "player_id": "3062679",
+      "player": "Josh Hart",
+      "rank": 1,
+      "score": 73,
+      "confidence": 64,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 11,
+          "minutes": 28
+        },
+        {
+          "date": "2026-11-17",
+          "points": 5,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-15",
+          "points": 0,
+          "minutes": 26
+        },
+        {
+          "date": "2026-11-13",
+          "points": 0,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-11",
+          "points": 6,
+          "minutes": 26
+        }
+      ],
+      "season_context": "Nedavna niska poenterska uloga; L5 prosjek samo 4.4 uz 23-31 minuta.",
+      "home_away_context": "Home/away broj poena na baš ovoj granici nije detaljno kvantifikovan; procjena koristi prethodnih 5 provjerenih utakmica.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Pojedinačni pet prethodnih H2H rezultata nisu kompletno potvrđeni."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nije potvrđen precizan pozicijski matchup dozvoljenih poena za ovu utakmicu."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Današnji starter i primarni matchup čuvar nisu pouzdano potvrđeni."
+      },
+      "injuries": {
+        "status": "not_listed",
+        "reason": "Nije na službenoj listi OUT/QUESTIONABLE u dostupnom NBA injury reportu, konačni nastup nije garantovan."
+      },
+      "minutes_projection": "Posljednjih pet minutaža 23-31.",
+      "role_projection": "Očekivana uloga na osnovu pet nedavnih nastupa i zdravstvenih rizika saigrača.",
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.8,
+        "under_odd": 1.9804
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Procjena utemeljena na L5 prolazima, prosjeku, ulaznim kvotama i rizicima, bez kalibriranog procenta.",
+        "availability_confirmed": true,
+        "reason": "UNDER 9.5 u 4/5 nastupa i L5 prosjek 4.4, nizak volumen šuta i prioritet skoka/defanzive.",
+        "risk": "U najnovijem meču 11 poena i moguća povreda Townsa može povećati potrošnju i ulogu šuta."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game log pokušaj i sekundarni datirani poeni/minute potvrđeni za svakog igrača; rizik povreda zabilježen."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/josh-hart",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/josh_hart.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "3995",
+      "player": "Jrue Holiday",
+      "rank": 2,
+      "score": 70,
+      "confidence": 63,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 22,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-17",
+          "points": 23,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-16",
+          "points": 10,
+          "minutes": 25
+        },
+        {
+          "date": "2026-11-13",
+          "points": 6,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-11",
+          "points": 19,
+          "minutes": 30
+        }
+      ],
+      "season_context": "L5 16.0 PPG uz minute 25-31, ugledni sekundarni bek i važan šuter.",
+      "home_away_context": "Home/away broj poena na baš ovoj granici nije detaljno kvantifikovan; procjena koristi prethodnih 5 provjerenih utakmica.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Pojedinačni pet prethodnih H2H rezultata nisu kompletno potvrđeni."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nije potvrđen precizan pozicijski matchup dozvoljenih poena za ovu utakmicu."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Današnji starter i primarni matchup čuvar nisu pouzdano potvrđeni."
+      },
+      "injuries": {
+        "status": "not_listed",
+        "reason": "Nije na službenoj listi OUT/QUESTIONABLE u dostupnom NBA injury reportu, konačni nastup nije garantovan."
+      },
+      "minutes_projection": "Posljednjih pet minutaža 25-31.",
+      "role_projection": "Očekivana uloga na osnovu pet nedavnih nastupa i zdravstvenih rizika saigrača.",
+      "market": {
+        "points_line": 13.5,
+        "over_odd": 1.9615,
+        "under_odd": 1.8197
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Procjena utemeljena na L5 prolazima, prosjeku, ulaznim kvotama i rizicima, bez kalibriranog procenta.",
+        "availability_confirmed": true,
+        "reason": "OVER 13.5 ostvaren u 3/5, a zadnja dva 22 i 23 uz odsustvo Avdije ukazuju na potencijalno jaču ofanzivnu ulogu.",
+        "risk": "Ako Deni Avdija zaigra, potrošnja lopte može se smanjiti; prethodno samo 6 i 10 poena."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game log pokušaj i sekundarni datirani poeni/minute potvrđeni za svakog igrača; rizik povreda zabilježen."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jrue-holiday",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/jrue_holiday.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "3934672",
+      "player": "Jalen Brunson",
+      "rank": 3,
+      "score": 59,
+      "confidence": 55,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 21,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-17",
+          "points": 31,
+          "minutes": 34
+        },
+        {
+          "date": "2026-11-15",
+          "points": 28,
+          "minutes": 41
+        },
+        {
+          "date": "2026-11-13",
+          "points": 33,
+          "minutes": 36
+        },
+        {
+          "date": "2026-11-11",
+          "points": 27,
+          "minutes": 35
+        }
+      ],
+      "season_context": "L5 prosjek 28, linija 28.5 vrlo blizu; prvotimac s velikim usage.",
+      "home_away_context": "Home/away broj poena na baš ovoj granici nije detaljno kvantifikovan; procjena koristi prethodnih 5 provjerenih utakmica.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Pojedinačni pet prethodnih H2H rezultata nisu kompletno potvrđeni."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nije potvrđen precizan pozicijski matchup dozvoljenih poena za ovu utakmicu."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Današnji starter i primarni matchup čuvar nisu pouzdano potvrđeni."
+      },
+      "injuries": {
+        "status": "not_listed",
+        "reason": "Nije na službenoj listi OUT/QUESTIONABLE u dostupnom NBA injury reportu, konačni nastup nije garantovan."
+      },
+      "minutes_projection": "Posljednjih pet minutaža 34-41.",
+      "role_projection": "Očekivana uloga na osnovu pet nedavnih nastupa i zdravstvenih rizika saigrača.",
+      "market": {
+        "points_line": 28.5,
+        "over_odd": 1.8333,
+        "under_odd": 1.9434
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Procjena utemeljena na L5 prolazima, prosjeku, ulaznim kvotama i rizicima, bez kalibriranog procenta.",
+        "availability_confirmed": false,
+        "reason": "UNDER 28.5 u 3/5, posljednja utakmica samo 21; ipak blizu linije i sezonki snažna uloga znače slabiji rub.",
+        "risk": "Tri nastupa od 28 ili više, 31 i 33 su over; ako Towns ne nastupi Brunsonova uloga može porasti."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game log pokušaj i sekundarni datirani poeni/minute potvrđeni za svakog igrača; rizik povreda zabilježen."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jalen-brunson",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/jalen_brunson.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "5105565",
+      "player": "Donovan Clingan",
+      "rank": 4,
+      "score": 58,
+      "confidence": 56,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 7,
+          "minutes": 26
+        },
+        {
+          "date": "2026-11-17",
+          "points": 12,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-16",
+          "points": 10,
+          "minutes": 22
+        },
+        {
+          "date": "2026-11-13",
+          "points": 13,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-11",
+          "points": 5,
+          "minutes": 30
+        }
+      ],
+      "season_context": "Recent 9.4 PPG, rim protector i visoki skakač.",
+      "home_away_context": "Home/away broj poena na baš ovoj granici nije detaljno kvantifikovan; procjena koristi prethodnih 5 provjerenih utakmica.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Pojedinačni pet prethodnih H2H rezultata nisu kompletno potvrđeni."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nije potvrđen precizan pozicijski matchup dozvoljenih poena za ovu utakmicu."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Današnji starter i primarni matchup čuvar nisu pouzdano potvrđeni."
+      },
+      "injuries": {
+        "status": "not_listed",
+        "reason": "Nije na službenoj listi OUT/QUESTIONABLE u dostupnom NBA injury reportu, konačni nastup nije garantovan."
+      },
+      "minutes_projection": "Posljednjih pet minutaža 22-32.",
+      "role_projection": "Očekivana uloga na osnovu pet nedavnih nastupa i zdravstvenih rizika saigrača.",
+      "market": {
+        "points_line": 10.5,
+        "over_odd": 1.9615,
+        "under_odd": 1.813
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Procjena utemeljena na L5 prolazima, prosjeku, ulaznim kvotama i rizicima, bez kalibriranog procenta.",
+        "availability_confirmed": false,
+        "reason": "Tri od posljednjih pet ispod 10.5, a ukupni L5 prosjek 9.4 poena nudi ograničeno uporište za under.",
+        "risk": "Dva puta 12 ili 13, minutaža 22-32, Portland može aktivnije tražiti centra."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game log pokušaj i sekundarni datirani poeni/minute potvrđeni za svakog igrača; rizik povreda zabilježen."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/donovan-clingan",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/donovan_clingan.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "3136195",
+      "player": "Karl-Anthony Towns",
+      "rank": 5,
+      "score": 46,
+      "confidence": 40,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 22,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-17",
+          "points": 16,
+          "minutes": 36
+        },
+        {
+          "date": "2026-11-15",
+          "points": 28,
+          "minutes": 43
+        },
+        {
+          "date": "2026-11-13",
+          "points": 23,
+          "minutes": 34
+        },
+        {
+          "date": "2026-11-11",
+          "points": 21,
+          "minutes": 34
+        }
+      ],
+      "season_context": "L5 22 PPG, predložena linija 21.5, uz stabilne minute kada aktivan.",
+      "home_away_context": "Home/away broj poena na baš ovoj granici nije detaljno kvantifikovan; procjena koristi prethodnih 5 provjerenih utakmica.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Pojedinačni pet prethodnih H2H rezultata nisu kompletno potvrđeni."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nije potvrđen precizan pozicijski matchup dozvoljenih poena za ovu utakmicu."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Današnji starter i primarni matchup čuvar nisu pouzdano potvrđeni."
+      },
+      "injuries": {
+        "status": "questionable",
+        "reason": "Zvanično questionable zbog problema s desnim stopalom / plantarnom fascijom."
+      },
+      "minutes_projection": "Posljednjih pet minutaža 33-43.",
+      "role_projection": "Očekivana uloga na osnovu pet nedavnih nastupa i zdravstvenih rizika saigrača.",
+      "market": {
+        "points_line": 21.5,
+        "over_odd": 1.9615,
+        "under_odd": 1.8197
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Procjena utemeljena na L5 prolazima, prosjeku, ulaznim kvotama i rizicima, bez kalibriranog procenta.",
+        "availability_confirmed": false,
+        "reason": "UNDER 21.5 prošao je samo 2/5, a zvanični injury report ga je označio Questionable; nema dovoljno prednosti.",
+        "risk": "Questionable zbog plantarne fascije i mogućnost smanjene minutaže ili potpunog izostanka."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game log pokušaj i sekundarni datirani poeni/minute potvrđeni za svakog igrača; rizik povreda zabilježen."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/karl-anthony-towns",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/karl_anthony_towns.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    }
+  ],
+  "selected_player_ids": [
+    "3062679",
+    "3995"
+  ],
+  "selection_reason": "Josh Hart UNDER 9.5 prošao je u 4/5 uz L5 prosjek 4.4; Jrue Holiday OVER 13.5 u 3/5 i podignut učinak posljednja dva meča 22,23, potencijalno povoljniji uz upitnog Avdiju. Towns je Questionable pa nije izabran.",
+  "source_snapshot_url": "https://github.com/shikithe/Memara-tip/blob/main/collector-output/nba-system-offer-2026-11-21.json"
+}
