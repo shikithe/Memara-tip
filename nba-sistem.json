@@ -3010,22 +3010,159 @@
               }
             }
           ]
+        },
+        {
+          "id": "2",
+          "stake": 9.91,
+          "status": "pending",
+          "total_odd": 3.3571,
+          "potential_payout": 33.27,
+          "legs": [
+            {
+              "player": "Daniel Gafford",
+              "team": "DAL",
+              "opponent": "LAC",
+              "pick": "under",
+              "points_line": 8.5,
+              "odd": 1.9346,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/daniel-gafford",
+              "espn_event_id": "401910025",
+              "player_id": "4278049",
+              "start_utc": "2026-11-22T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-18",
+                    "points": 6,
+                    "minutes": 24
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 3,
+                    "minutes": 19
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 10,
+                    "minutes": 17
+                  },
+                  {
+                    "date": "2026-11-12",
+                    "points": 3,
+                    "minutes": 16
+                  },
+                  {
+                    "date": "2026-11-09",
+                    "points": 8,
+                    "minutes": 20
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Do pet relevantnih H2H mečeva protiv današnjeg protivnika nisu pojedinačno verifikovani."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Nisu dostupni pouzdani savremeni splitovi dozvoljenih poena po poziciji za ovaj matchup."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Direktni čuvar i početni raspored rotacije nisu potvrđeni pred početak utakmice."
+                },
+                "injuries": {
+                  "status": "not_listed_official_report",
+                  "reason": "Nije označen OUT/QUESTIONABLE u 12:30 ET NBA injury izvještaju; mogućnost promjene do meča ostaje."
+                },
+                "minutes_projection": "Okvirna istorijska L5 minutaža 16–24 minuta, ne garantuje današnje vrijeme.",
+                "scout_score": 74,
+                "scout_note": "Četiri od pet posljednjih nastupa ispod 8,5 poena, L5 prosjek 6 i ograničena minutaža; UNDER 8,5 na sačuvanoj kvoti 1,9346.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-2.json"
+              }
+            },
+            {
+              "player": "Caleb Martin",
+              "team": "DAL",
+              "opponent": "LAC",
+              "pick": "over",
+              "points_line": 5.5,
+              "odd": 1.7353,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/caleb-martin",
+              "espn_event_id": "401910025",
+              "player_id": "3138160",
+              "start_utc": "2026-11-22T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-18",
+                    "points": 8,
+                    "minutes": 20
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 12,
+                    "minutes": 34
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 15,
+                    "minutes": 33
+                  },
+                  {
+                    "date": "2026-11-12",
+                    "points": 7,
+                    "minutes": 21
+                  },
+                  {
+                    "date": "2026-11-09",
+                    "points": 0,
+                    "minutes": 19
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Do pet relevantnih H2H mečeva protiv današnjeg protivnika nisu pojedinačno verifikovani."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Nisu dostupni pouzdani savremeni splitovi dozvoljenih poena po poziciji za ovaj matchup."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Direktni čuvar i početni raspored rotacije nisu potvrđeni pred početak utakmice."
+                },
+                "injuries": {
+                  "status": "available_per_official_injury_report",
+                  "reason": "Na 12:30 ET NBA izvještaju označen Available sa zaštitom desnog palca."
+                },
+                "minutes_projection": "Okvirna istorijska L5 minutaža 19–34 minuta, ne garantuje današnje vrijeme.",
+                "scout_score": 70,
+                "scout_note": "Četiri od posljednjih pet nastupa iznad granice 5,5 uz kvotu 1,7353; uprkos promjenljivoj minutaži linija je niska.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-2.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
         "groups_completed": [
-          1
+          1,
+          2
         ],
         "offered": 54,
         "total_groups": 10,
-        "group_number": 1,
-        "group_range": "1-6",
+        "group_number": 2,
+        "group_range": "7-12",
         "group_selected": [
-          "Paul George",
-          "Domantas Sabonis"
+          "Daniel Gafford",
+          "Caleb Martin"
         ],
         "audit_paths": {
-          "1": "collector-output/nba-system-scout-2026-11-21-group-1.json"
+          "1": "collector-output/nba-system-scout-2026-11-21-group-1.json",
+          "2": "collector-output/nba-system-scout-2026-11-21-group-2.json"
         },
         "selection_method": "full_ranked_scout"
       }
