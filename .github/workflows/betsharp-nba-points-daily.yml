@@ -53,6 +53,9 @@ jobs:
       - name: Collect all listed NBA points players for today's ET games
         if: steps.gate.outputs.run == 'true'
         run: python collect_betsharp_nba.py
+      - name: Split complete captured offer into ten daily lists
+        if: steps.gate.outputs.run == 'true'
+        run: python split_betsharp_nba_into_ten.py
       - name: Archive today's immutable capture and commit
         if: steps.gate.outputs.run == 'true'
         run: |
@@ -63,6 +66,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -- collector-output/betsharp-nba-daily.json "collector-output/betsharp-history/${date_et}.json"
+          git add -- "collector-output/nba-system-lists/${date_et}/"
           if ! git diff --cached --quiet; then
             git commit -m "data: BetSharp NBA points snapshot ${date_et}"
             for attempt in 1 2 3 4 5; do
