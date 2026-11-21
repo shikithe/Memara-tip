@@ -2869,6 +2869,166 @@
       "bank_end": 990.84,
       "bank_profit": 4.98,
       "settled_at_utc": "2026-11-21T08:07:48.255Z"
+    },
+    {
+      "id": "nba-2026-11-21",
+      "date": "2026-11-21",
+      "bank_start": 990.84,
+      "status": "published",
+      "tickets": [
+        {
+          "id": "1",
+          "stake": 9.91,
+          "status": "pending",
+          "total_odd": 3.5096,
+          "potential_payout": 34.78,
+          "legs": [
+            {
+              "player": "Paul George",
+              "team": "BOS",
+              "opponent": "SAC",
+              "pick": "under",
+              "points_line": 22.5,
+              "odd": 1.8772,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/paul-george",
+              "espn_event_id": "401910028",
+              "player_id": "4251",
+              "start_utc": "2026-11-22T03:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-18",
+                    "points": 10,
+                    "minutes": 23
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 22,
+                    "minutes": 36
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 7,
+                    "minutes": 25
+                  },
+                  {
+                    "date": "2026-11-10",
+                    "points": 36,
+                    "minutes": 30
+                  },
+                  {
+                    "date": "2026-11-08",
+                    "points": 27,
+                    "minutes": 28
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Do pet pojedinačnih susreta protiv istog protivnika nije moglo biti pouzdano izvučeno za aktuelnu liniju."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Precizna statistika protivničke odbrane na njegovoj poziciji nije potvrđena u svježem izvoru; Boston 11-4, Sacramento 1-14."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Direktni čuvar nije potvrđen prije konačne objave početnog sastava."
+                },
+                "injuries": {
+                  "status": "not_listed_in_2026_11_21_1230_report",
+                  "reason": "Nije naveden među prijavljenim povredama u aktuelnom 12:30 ET NBA izvještaju."
+                },
+                "minutes_projection": "Očekivanje okvirno oko recentnog L5 raspona 23-36 minuta, osim promjena role/povrede.",
+                "scout_score": 68,
+                "scout_note": "Posljednjih pet mečeva 10,22,7,36,27: tri puta ispod 22,5, L5 prosjek 20,4, dok je sezonski prosjek 19,9 ispod linije i utakmica nije počela.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-1.json"
+              }
+            },
+            {
+              "player": "Domantas Sabonis",
+              "team": "SAC",
+              "opponent": "BOS",
+              "pick": "under",
+              "points_line": 12.5,
+              "odd": 1.8696,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/domantas-sabonis",
+              "espn_event_id": "401910028",
+              "player_id": "3155942",
+              "start_utc": "2026-11-22T03:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 19,
+                    "minutes": 38
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 8,
+                    "minutes": 24
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 11,
+                    "minutes": 29
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 21,
+                    "minutes": 35
+                  },
+                  {
+                    "date": "2026-11-10",
+                    "points": 0,
+                    "minutes": 24
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Do pet pojedinačnih susreta protiv istog protivnika nije moglo biti pouzdano izvučeno za aktuelnu liniju."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Precizna statistika protivničke odbrane na njegovoj poziciji nije potvrđena u svježem izvoru; Boston 11-4, Sacramento 1-14."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Direktni čuvar nije potvrđen prije konačne objave početnog sastava."
+                },
+                "injuries": {
+                  "status": "not_listed_in_2026_11_21_1230_report",
+                  "reason": "Nije naveden među prijavljenim povredama u aktuelnom 12:30 ET NBA izvještaju."
+                },
+                "minutes_projection": "Očekivanje okvirno oko recentnog L5 raspona 24-38 minuta, osim promjena role/povrede.",
+                "scout_score": 65,
+                "scout_note": "Ima 3 od posljednjih 5 utakmica ispod 12,5 poena (19,8,11,21,0), dok je napadačka produkcija promjenljiva u kontekstu poraza Kingsa.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-1.json"
+              }
+            }
+          ]
+        }
+      ],
+      "scout": {
+        "groups_completed": [
+          1
+        ],
+        "offered": 54,
+        "total_groups": 10,
+        "group_number": 1,
+        "group_range": "1-6",
+        "group_selected": [
+          "Paul George",
+          "Domantas Sabonis"
+        ],
+        "audit_paths": {
+          "1": "collector-output/nba-system-scout-2026-11-21-group-1.json"
+        },
+        "selection_method": "full_ranked_scout"
+      }
     }
   ]
 }
