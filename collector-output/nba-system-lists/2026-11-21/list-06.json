@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "date": "2026-11-21",
   "list_number": 6,
   "total_lists": 10,
@@ -6,288 +7,251 @@
   "source_url": "https://betsharp.com/nba/props?m=points",
   "source_snapshot": "collector-output/betsharp-nba-daily.json",
   "captured_at_utc": "2026-11-21T17:37:58.291930+00:00",
-  "total_offers": 68,
-  "group_size": 7,
-  "original_positions": [
-    36,
-    42
+  "filtered_at_local": "2026-11-21T19:15:02+01:00",
+  "filter_reason": "MIL @ PHI game already started at 19:00 CET; no games started before 19:15 CET eligible",
+  "excluded_game": "MIL @ PHI",
+  "excluded_count": 14,
+  "total_offers": 54,
+  "original_offers": 68,
+  "group_size": 5,
+  "original_offer_positions": [
+    30,
+    31,
+    32,
+    33,
+    34
   ],
   "status": "awaiting_scout",
   "analysis_complete": false,
   "publication_allowed": false,
   "offers": [
     {
-      "player": "Brayden Burries",
-      "team": "MIL",
-      "game": "MIL @ PHI",
+      "player": "Rudy Gobert",
+      "team": "MIN",
+      "game": "MEM @ MIN",
       "game_date_et": "2026-11-21",
-      "game_time_et": "Sat 1:00PM",
-      "player_url": "https://betsharp.com/nba/player/brayden-burries",
-      "game_url": "https://betsharp.com/nba/game/2026-11-21-milwaukee-bucks-at-philadelphia-76ers#props",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/rudy-gobert",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
       "points_market": {
-        "FD": {
-          "line": 11.5,
-          "over_american": -113,
-          "under_american": -113,
-          "over_decimal": 1.885,
-          "under_decimal": 1.885
-        },
-        "MGM": {
-          "line": 10.5,
-          "over_american": -135,
-          "under_american": 100,
-          "over_decimal": 1.7407,
-          "under_decimal": 2.0
-        },
-        "KAL": {
+        "DK": {
           "line": 9.5,
-          "over_american": -178,
-          "under_american": 144,
-          "over_decimal": 1.5618,
-          "under_decimal": 2.44
-        }
-      },
-      "original_offer_position": 36
-    },
-    {
-      "player": "Jaime Jaquez Jr.",
-      "team": "MIL",
-      "game": "MIL @ PHI",
-      "game_date_et": "2026-11-21",
-      "game_time_et": "Sat 1:00PM",
-      "player_url": "https://betsharp.com/nba/player/jaime-jaquez",
-      "game_url": "https://betsharp.com/nba/game/2026-11-21-milwaukee-bucks-at-philadelphia-76ers#props",
-      "points_market": {
-        "MGM": {
-          "line": 12.5,
-          "over_american": -120,
-          "under_american": -110,
-          "over_decimal": 1.8333,
-          "under_decimal": 1.9091
-        },
-        "KAL": {
-          "line": 14.5,
-          "over_american": 156,
-          "under_american": -194,
-          "over_decimal": 2.56,
-          "under_decimal": 1.5155
-        }
-      },
-      "original_offer_position": 37
-    },
-    {
-      "player": "Joel Embiid",
-      "team": "PHI",
-      "game": "MIL @ PHI",
-      "game_date_et": "2026-11-21",
-      "game_time_et": "Sat 1:00PM",
-      "player_url": "https://betsharp.com/nba/player/joel-embiid",
-      "game_url": "https://betsharp.com/nba/game/2026-11-21-milwaukee-bucks-at-philadelphia-76ers#props",
-      "points_market": {
-        "DK": {
-          "line": 25.5,
-          "over_american": -111,
-          "under_american": -115,
-          "over_decimal": 1.9009,
-          "under_decimal": 1.8696
+          "over_american": -110,
+          "under_american": -119,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8403
         },
         "FD": {
-          "line": 25.5,
-          "over_american": -106,
-          "under_american": -120,
-          "over_decimal": 1.9434,
-          "under_decimal": 1.8333
-        },
-        "MGM": {
-          "line": 24.5,
-          "over_american": -115,
-          "under_american": -115,
-          "over_decimal": 1.8696,
-          "under_decimal": 1.8696
-        },
-        "BR": {
-          "line": 25.5,
-          "over_american": -118,
-          "under_american": -114,
-          "over_decimal": 1.8475,
-          "under_decimal": 1.8772
-        },
-        "KAL": {
-          "line": 24.5,
-          "over_american": -117,
-          "under_american": -108,
-          "over_decimal": 1.8547,
-          "under_decimal": 1.9259
-        }
-      },
-      "original_offer_position": 38
-    },
-    {
-      "player": "Kasparas Jakučionis",
-      "team": "MIL",
-      "game": "MIL @ PHI",
-      "game_date_et": "2026-11-21",
-      "game_time_et": "Sat 1:00PM",
-      "player_url": "https://betsharp.com/nba/player/kasparas-jakucionis",
-      "game_url": "https://betsharp.com/nba/game/2026-11-21-milwaukee-bucks-at-philadelphia-76ers#props",
-      "points_market": {
-        "DK": {
-          "line": 8.5,
-          "over_american": 102,
+          "line": 9.5,
+          "over_american": 100,
           "under_american": -130,
-          "over_decimal": 2.02,
+          "over_decimal": 2,
           "under_decimal": 1.7692
         },
-        "FD": {
-          "line": 7.5,
-          "over_american": -120,
-          "under_american": -106,
-          "over_decimal": 1.8333,
-          "under_decimal": 1.9434
-        },
         "MGM": {
-          "line": 7.5,
-          "over_american": -140,
-          "under_american": 105,
-          "over_decimal": 1.7143,
-          "under_decimal": 2.05
+          "line": 9.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
         },
         "KAL": {
           "line": 9.5,
-          "over_american": 156,
-          "under_american": -194,
-          "over_decimal": 2.56,
-          "under_decimal": 1.5155
+          "over_american": 100,
+          "under_american": -122,
+          "over_decimal": 2,
+          "under_decimal": 1.8197
         }
       },
-      "original_offer_position": 39
+      "original_offer_position": 30
     },
     {
-      "player": "Kentavious Caldwell-Pope",
-      "team": "PHI",
-      "game": "MIL @ PHI",
+      "player": "Taylor Hendricks",
+      "team": "MEM",
+      "game": "MEM @ MIN",
       "game_date_et": "2026-11-21",
-      "game_time_et": "Sat 1:00PM",
-      "player_url": "https://betsharp.com/nba/player/kentavious-caldwell-pope",
-      "game_url": "https://betsharp.com/nba/game/2026-11-21-milwaukee-bucks-at-philadelphia-76ers#props",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/taylor-hendricks",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
       "points_market": {
         "DK": {
-          "line": 7.5,
-          "over_american": -110,
-          "under_american": -116,
-          "over_decimal": 1.9091,
-          "under_decimal": 1.8621
+          "line": 9.5,
+          "over_american": -128,
+          "under_american": 102,
+          "over_decimal": 1.7812,
+          "under_decimal": 2.02
         },
         "FD": {
-          "line": 6.5,
-          "over_american": -125,
+          "line": 9.5,
+          "over_american": -130,
           "under_american": -102,
-          "over_decimal": 1.8,
+          "over_decimal": 1.7692,
           "under_decimal": 1.9804
         },
         "MGM": {
-          "line": 6.5,
+          "line": 10.5,
+          "over_american": 105,
+          "under_american": -145,
+          "over_decimal": 2.05,
+          "under_decimal": 1.6897
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": 100,
+          "under_american": -136,
+          "over_decimal": 2,
+          "under_decimal": 1.7353
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -117,
+          "under_american": -104,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9615
+        }
+      },
+      "original_offer_position": 31
+    },
+    {
+      "player": "Terrence Shannon Jr.",
+      "team": "MIN",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/terrence-shannon",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -112,
+          "under_american": -114,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 163,
+          "under_american": -233,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4292
+        }
+      },
+      "original_offer_position": 32
+    },
+    {
+      "player": "Ty Jerome",
+      "team": "MEM",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/ty-jerome",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 22.5,
+          "over_american": -112,
+          "under_american": -114,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 22.5,
           "over_american": -115,
           "under_american": -115,
           "over_decimal": 1.8696,
           "under_decimal": 1.8696
         },
         "BR": {
-          "line": 7.5,
-          "over_american": -104,
-          "under_american": -130,
-          "over_decimal": 1.9615,
-          "under_decimal": 1.7692
+          "line": 23.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
         },
         "KAL": {
-          "line": 9.5,
-          "over_american": 178,
-          "under_american": -257,
-          "over_decimal": 2.78,
-          "under_decimal": 1.3891
+          "line": 24.5,
+          "over_american": 133,
+          "under_american": -178,
+          "over_decimal": 2.33,
+          "under_decimal": 1.5618
         }
       },
-      "original_offer_position": 40
+      "original_offer_position": 33
     },
     {
-      "player": "Kyle Kuzma",
-      "team": "MIL",
-      "game": "MIL @ PHI",
+      "player": "Zach Edey",
+      "team": "MEM",
+      "game": "MEM @ MIN",
       "game_date_et": "2026-11-21",
-      "game_time_et": "Sat 1:00PM",
-      "player_url": "https://betsharp.com/nba/player/kyle-kuzma",
-      "game_url": "https://betsharp.com/nba/game/2026-11-21-milwaukee-bucks-at-philadelphia-76ers#props",
-      "points_market": {
-        "FD": {
-          "line": 11.5,
-          "over_american": -130,
-          "under_american": 102,
-          "over_decimal": 1.7692,
-          "under_decimal": 2.02
-        },
-        "MGM": {
-          "line": 11.5,
-          "over_american": -111,
-          "under_american": -118,
-          "over_decimal": 1.9009,
-          "under_decimal": 1.8475
-        },
-        "KAL": {
-          "line": 9.5,
-          "over_american": -194,
-          "under_american": 156,
-          "over_decimal": 1.5155,
-          "under_decimal": 2.56
-        }
-      },
-      "original_offer_position": 41
-    },
-    {
-      "player": "LeBron James",
-      "team": "PHI",
-      "game": "MIL @ PHI",
-      "game_date_et": "2026-11-21",
-      "game_time_et": "Sat 1:00PM",
-      "player_url": "https://betsharp.com/nba/player/lebron-james",
-      "game_url": "https://betsharp.com/nba/game/2026-11-21-milwaukee-bucks-at-philadelphia-76ers#props",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/zach-edey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
       "points_market": {
         "DK": {
-          "line": 17.5,
-          "over_american": -109,
-          "under_american": -117,
-          "over_decimal": 1.9174,
-          "under_decimal": 1.8547
+          "line": 9.5,
+          "over_american": -104,
+          "under_american": -123,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.813
         },
         "FD": {
-          "line": 17.5,
-          "over_american": -115,
-          "under_american": -111,
-          "over_decimal": 1.8696,
-          "under_decimal": 1.9009
+          "line": 9.5,
+          "over_american": -108,
+          "under_american": -120,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8333
         },
         "MGM": {
-          "line": 17.5,
-          "over_american": -105,
-          "under_american": -125,
-          "over_decimal": 1.9524,
-          "under_decimal": 1.8
+          "line": 8.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
         },
         "BR": {
-          "line": 17.5,
-          "over_american": -120,
-          "under_american": -113,
-          "over_decimal": 1.8333,
-          "under_decimal": 1.885
+          "line": 9.5,
+          "over_american": -117,
+          "under_american": -115,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8696
         },
         "KAL": {
-          "line": 19.5,
-          "over_american": 144,
-          "under_american": -194,
-          "over_decimal": 2.44,
-          "under_decimal": 1.5155
+          "line": 9.5,
+          "over_american": 104,
+          "under_american": -127,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7874
         }
       },
-      "original_offer_position": 42
+      "original_offer_position": 34
     }
   ]
 }
