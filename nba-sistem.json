@@ -1104,7 +1104,7 @@
       "id": "nba-2026-11-20",
       "date": "2026-11-20",
       "bank_start": 985.86,
-      "status": "published",
+      "status": "settled",
       "created_at_utc": "2026-11-20T19:46:16.417Z",
       "scout": {
         "offered": 116,
@@ -2046,8 +2046,8 @@
               "game_clock": ""
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-21T04:05:10.389473+00:00"
         },
         {
@@ -2144,8 +2144,8 @@
               "game_clock": ""
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-21T04:05:10.538838+00:00"
         },
         {
@@ -2242,8 +2242,8 @@
               "game_clock": ""
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-21T04:05:10.813343+00:00"
         },
         {
@@ -2335,12 +2335,12 @@
                 "scout_note": "Četiri od posljednjih pet preko 14,5; trenutna forma 17,2, naspram sezone 13,4. Rizik varijabilne minute.",
                 "source_stats": "https://statz.ai/nba/players/jalen-smith"
               },
-              "effective_odd": 1.0,
+              "effective_odd": 1,
               "game_state": "final"
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-21T04:05:11.077462+00:00"
         },
         {
@@ -2437,8 +2437,8 @@
               "game_clock": ""
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-21T04:05:11.244345+00:00"
         },
         {
@@ -2543,7 +2543,7 @@
         {
           "id": "8",
           "stake": 9.86,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.4971,
           "potential_payout": 34.48,
           "legs": [
@@ -2560,7 +2560,7 @@
               "espn_event_id": "401909312",
               "player_id": "3064290",
               "start_utc": "2026-11-21T03:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -2586,10 +2586,12 @@
                 "scout_note": "Četiri od pet ispod 11,5, prosjek 9,4; Houstonov defanzivni matchup može pomoći, ali šutevi variraju.",
                 "source_stats": "https://statz.ai/nba/players/aaron-gordon"
               },
-              "player_points": 7,
-              "game_state": "live",
-              "game_clock": "1:44",
-              "period": 2
+              "player_points": 18,
+              "game_state": "final",
+              "game_clock": "",
+              "period": 2,
+              "result_source": "NBA box score (PHX-UTAH / HOU-DEN)",
+              "result_verified_date": "2026-11-21"
             },
             {
               "player": "Keyonte George",
@@ -2604,7 +2606,7 @@
               "espn_event_id": "401909311",
               "player_id": "4433627",
               "start_utc": "2026-11-21T02:30:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -2630,17 +2632,22 @@
                 "scout_note": "Tri od pet ispod 24,5 uz prosjek 20,4; dva meča iznad granice ukazuju na veći rizik.",
                 "source_stats": "https://statz.ai/nba/players/keyonte-george"
               },
-              "player_points": 8,
-              "game_state": "live",
-              "game_clock": "7:31",
-              "period": 3
+              "player_points": 14,
+              "game_state": "final",
+              "game_clock": "",
+              "period": 3,
+              "result_source": "NBA box score (PHX-UTAH / HOU-DEN)",
+              "result_verified_date": "2026-11-21"
             }
-          ]
+          ],
+          "effective_odd": 0,
+          "payout": 0,
+          "settled_at_utc": "2026-11-21T08:30:00Z"
         },
         {
           "id": "9",
           "stake": 9.86,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.5385,
           "potential_payout": 34.89,
           "legs": [
@@ -2657,7 +2664,7 @@
               "espn_event_id": "401909312",
               "player_id": "2990992",
               "start_utc": "2026-11-21T03:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -2684,9 +2691,11 @@
                 "source_stats": "https://statz.ai/nba/players/marcus-smart"
               },
               "player_points": 3,
-              "game_state": "live",
-              "game_clock": "1:44",
-              "period": 2
+              "game_state": "final",
+              "game_clock": "",
+              "period": 2,
+              "result_source": "RealGM NBA box score (HOU-DEN)",
+              "result_verified_date": "2026-11-21"
             },
             {
               "player": "DeMar DeRozan",
@@ -2701,7 +2710,7 @@
               "espn_event_id": "401909312",
               "player_id": "3978",
               "start_utc": "2026-11-21T03:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -2727,17 +2736,22 @@
                 "scout_note": "Četiri od pet ispod 9,5; uloga i 18 poena u najnovijem nastupu predstavljaju rizik.",
                 "source_stats": "https://statz.ai/nba/players/demar-derozan"
               },
-              "player_points": 9,
-              "game_state": "live",
-              "game_clock": "1:44",
-              "period": 2
+              "player_points": 15,
+              "game_state": "final",
+              "game_clock": "",
+              "period": 2,
+              "result_source": "RealGM NBA box score (HOU-DEN)",
+              "result_verified_date": "2026-11-21"
             }
-          ]
+          ],
+          "effective_odd": 0,
+          "payout": 0,
+          "settled_at_utc": "2026-11-21T08:30:00Z"
         },
         {
           "id": "10",
           "stake": 9.86,
-          "status": "pending",
+          "status": "won",
           "total_odd": 3.5175,
           "potential_payout": 34.68,
           "legs": [
@@ -2754,7 +2768,7 @@
               "espn_event_id": "401909313",
               "player_id": "4592691",
               "start_utc": "2026-11-21T03:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -2780,10 +2794,12 @@
                 "scout_note": "Četiri od pet ispod 6,5, prosjek 4,8; rizik promjene minutaže, jedan nastup 12 poena.",
                 "source_stats": "https://statz.ai/nba/players/jake-laravia"
               },
-              "player_points": 1,
-              "game_state": "live",
-              "game_clock": "1:19",
-              "period": 2
+              "player_points": 6,
+              "game_state": "final",
+              "game_clock": "",
+              "period": 2,
+              "result_source": "CBS Sports final box score (SAC-LAL)",
+              "result_verified_date": "2026-11-21"
             },
             {
               "player": "Malik Monk",
@@ -2798,7 +2814,7 @@
               "espn_event_id": "401909313",
               "player_id": "4066262",
               "start_utc": "2026-11-21T03:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -2825,26 +2841,34 @@
                 "source_stats": "https://statz.ai/nba/players/malik-monk"
               },
               "player_points": 2,
-              "game_state": "live",
-              "game_clock": "1:19",
-              "period": 2
+              "game_state": "final",
+              "game_clock": "",
+              "period": 2,
+              "result_source": "CBS Sports final box score (SAC-LAL)",
+              "result_verified_date": "2026-11-21"
             }
-          ]
+          ],
+          "effective_odd": 3.51746,
+          "payout": 34.68,
+          "settled_at_utc": "2026-11-21T08:30:00Z"
         }
       ],
       "accounting": {
         "tickets_total": 10,
-        "tickets_settled": 7,
-        "tickets_pending": 3,
-        "tickets_won": 2,
-        "tickets_lost": 5,
+        "tickets_settled": 10,
+        "tickets_pending": 0,
+        "tickets_won": 3,
+        "tickets_lost": 7,
         "tickets_void": 0,
         "total_staked": 98.6,
-        "total_returned": 68.9,
-        "available_bank": 956.16,
-        "net_profit_confirmed": -0.12,
-        "complete": false
-      }
+        "total_returned": 103.58,
+        "available_bank": 990.84,
+        "net_profit_confirmed": 4.98,
+        "complete": true
+      },
+      "bank_end": 990.84,
+      "bank_profit": 4.98,
+      "settled_at_utc": "2026-11-21T08:30:00Z"
     }
   ]
 }
