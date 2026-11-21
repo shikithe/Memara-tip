@@ -16,16 +16,16 @@ Pravilo potvrđeno 20.11.2026. Koristi se za svaki NAREDNI ciklus NBA desetke. O
 
 **Prioritet:** ako stariji prompt dozvoljava samo pregled L5 prosjeka ili objavu bez pune rang-tabele, ovaj dokument i nova eksplicitna korisnička instrukcija imaju prioritet.
 
-## PRIORITETNO PRAVILO 21.11.2026. — ESPN prvo kompletan prolaz, pa sekundarni izvori
+## NAJNOVIJE PRAVILO 21.11.2026. — KVALITET PODATAKA ODREĐUJE KVALITET ANALIZE
 
-1. AI Scout prolazi cijelu odabranu grupu **od prvog do posljednjeg igrača na ESPN-u**. Ako je četvrtom igraču game log nedostupan, zapiše nedostatak i **nastavlja na petog**, šestog, sedmog itd. Nepostojanje pojedinačnog podatka nikad ne prekida obradu grupe.
-2. Tek kada je obavljen primarni ESPN prolaz svih članova, pravi drugi prolaz **samo za igrače i polja kojima nešto nedostaje** preko dostupnog vjerodostojnog sekundarnog izvora (npr. NBA.com ili provjerljive statističke stranice). Zabilježi oba pokušaja, URL-ove, datum i koje statistike i dalje nedostaju.
-3. Svi igrači grupe moraju biti evidentirani u audit rang-listi 1–M. Ako i nakon drugog prolaza pojedinom igraču nedostaje pouzdana L5 statistika, označi ga `eligibility: "insufficient_data"` i `research: {"espn_attempted":true,"secondary_attempted":true,"missing":["..."],"reason":"..."}`, pa ga izuzmi iz izbora. Nije dozvoljeno izmišljati poene, minute, H2H ili procente radi popunjavanja praznina.
-4. Ako nakon **oba** prolaza postoje najmanje **dva potpuno provjerena i dovoljno dobra kandidata**, rangiraj ih iznad nepotpunih, odaberi dva najbolje argumentovana tipa, i objavi preko standardnog GitHub validacionog pipelinea. Zadrži nepotpune članove u audit evidenciji s nižim rangom i obrazloženjem.
-5. Ako su preostala manje od dva pouzdana tipa, ili su mečevi počeli, ili nema potvrde o nastupu, grupa ostaje blokirana. **Statistička nedostupnost nekih ostalih članova ne blokira objavu dobre dvojice.**
-6. Jedna grupa po AI izvršavanju; narednu aktivira samo feedback potvrđene GitHub objave kada postoji nova satna AI provjera, a ne novi cron po pojedinom igraču.
+1. **Prvi prolaz**: pretraži ESPN za svakog člana grupe, strogo od prvog do posljednjeg. Ako za igrača nema statistike, zabilježi i pređi na sljedećeg. NEMA zaustavljanja posla.
+2. **Drugi prolaz**: za igrače sa nedostajućim podacima provjeri nezavisan drugi izvor. Ako sekundarni izvor takođe ne daje traženi podatak, zabilježi `not_verified` i nastavi dalje. Ne traži puni L5 po svaku cijenu.
+3. **Rangiranje SVIH**: za svakog upiši sve zaista pronađene game log zapise (0–5), sezonu, matchup, povrede i izvore gdje je moguće. Nema fabrikovanja. Procjena i numerički `score` su proporcionalni dokazima, a posebno zabilježi `confidence:0..100` — malo podataka znači *nižu pouzdanost*, a ne automatsku diskvalifikaciju. Ako nema osnova za preciznu vjerovatnoću, `estimated_probability:null`; nikada ne izmišljaj broj.
+4. Odaberi najbolje dvije opcije uz uvažavanje kvaliteta i količine dokaza, procijenjene prednosti u odnosu na kvotu i sportskog rizika. Smiju imati manje od 5 potvrđenih utakmica ako su drugi dostupni dokazi korisni; jasno objasni ograničenja. U auditu `ranking` i dalje moraju biti svi M originalni kandidati.
+5. **Objava traži stvarno potvrđene podatke koji su neophodni za konkretan tip**: pravi ESPN player ID i event ID, tačan budući start, granicu, obje postojeće kvote (jedinstveni odabrani bookmaker), identitet i status nastupa. Ako takva dva kandidata ne postoje, prijavi stvarni razlog blokade. Ako ima ih dva, nepotpuna statistika ostalih ne blokira tiket.
+6. GitHub `nba_system_pipeline.py` ne donosi sportske odluke, već čuva izvorni redoslijed, sprečava izmišljene identitete/kvote i preskakanje grupa; ova metoda se primjenjuje na **svih deset** cikličkih grupa.
 
-**Napomena implementacije:** GitHub validator `nba_system_pipeline.py` sada dozvoljava `eligibility:"insufficient_data"` samo uz oba evidentirana pokušaja i nedostajuće stavke; dva izabrana člana moraju biti `eligible` sa punim individualnim `last_five`. Ovo pravilo zamjenjuje raniju obavezu da svako od M članova mora imati pet numeričkih game log zapisa.
+**Ovo pravilo ima prednost nad ranijim tvrdnjama da svi kandidati ili oba izabrana moraju imati kompletan petomečni game log.** Nikad ne označavaj izmišljene informacije kao potvrđene.
 
 ## Izvršni workflow — implementirano 20.11.2026.
 
