@@ -1,1 +1,1 @@
-BetSharp NBA points: on-demand refresh requested 2026-11-21.
+BetSharp NBA points automated ten-list integration test 2026-11-21 second run.
