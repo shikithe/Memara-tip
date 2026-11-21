@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "market": "player_points",
+  "game_date_et": "2026-11-21",
+  "collected_at_utc": null,
+  "player_count": 0,
+  "status": "awaiting_first_collection",
+  "note": "Collector and cron installed; no automated BetSharp snapshot has been captured yet. Do not use as a current odds feed.",
+  "offers": []
+}
