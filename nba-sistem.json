@@ -3280,26 +3280,163 @@
               }
             }
           ]
+        },
+        {
+          "id": "4",
+          "stake": 9.91,
+          "status": "pending",
+          "total_odd": 3.7026,
+          "potential_payout": 36.69,
+          "legs": [
+            {
+              "player": "Cedric Coward",
+              "team": "MEM",
+              "opponent": "MIN",
+              "pick": "over",
+              "points_line": 16.5,
+              "odd": 1.8696,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/cedric-coward",
+              "espn_event_id": "401910026",
+              "player_id": "4903027",
+              "start_utc": "2026-11-22T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 19,
+                    "minutes": 25
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 20,
+                    "minutes": 33
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 18,
+                    "minutes": 27
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 23,
+                    "minutes": 33
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 14,
+                    "minutes": 30
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Pojedinačnih pet H2H susreta protiv trenutnog rivala nema nezavisno potvrđenih."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Nema verifikovanog pozicijskog defensive-rating splita za ovu utakmicu; ne izmišljati čuvara."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Još nisu objavljeni precizni matchup čuvari za današnji duel."
+                },
+                "injuries": {
+                  "status": "not_listed_1230_report",
+                  "reason": "Nije izričito navedeno da je ovaj igrač OUT/QUESTIONABLE u raspoloživom službenom injury reportu, moguća naknadna promjena."
+                },
+                "minutes_projection": "Posljednjih pet minutaža u rasponu 25-33.",
+                "scout_score": 76,
+                "scout_note": "OVER 16.5 ostvaren u 4/5 posljednjih mečeva i poeni su 19,20,18,23,14 uz sličnu minutažu.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-4.json"
+              }
+            },
+            {
+              "player": "Cam Spencer",
+              "team": "MEM",
+              "opponent": "MIN",
+              "pick": "over",
+              "points_line": 10.5,
+              "odd": 1.9804,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/cam-spencer",
+              "espn_event_id": "401910026",
+              "player_id": "4433083",
+              "start_utc": "2026-11-22T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 9,
+                    "minutes": 27
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 26,
+                    "minutes": 29
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 12,
+                    "minutes": 32
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 17,
+                    "minutes": 34
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 14,
+                    "minutes": 24
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Pojedinačnih pet H2H susreta protiv trenutnog rivala nema nezavisno potvrđenih."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Nema verifikovanog pozicijskog defensive-rating splita za ovu utakmicu; ne izmišljati čuvara."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Još nisu objavljeni precizni matchup čuvari za današnji duel."
+                },
+                "injuries": {
+                  "status": "not_listed_1230_report",
+                  "reason": "Nije izričito navedeno da je ovaj igrač OUT/QUESTIONABLE u raspoloživom službenom injury reportu, moguća naknadna promjena."
+                },
+                "minutes_projection": "Posljednjih pet minutaža u rasponu 24-34.",
+                "scout_score": 72,
+                "scout_note": "OVER 10.5 potvrđen u 4 od posljednjih pet utakmica s rastom minuta i velikim doprinosom asistencijama.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-4.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
         "groups_completed": [
           1,
           2,
-          3
+          3,
+          4
         ],
         "offered": 54,
         "total_groups": 10,
-        "group_number": 3,
-        "group_range": "13-18",
+        "group_number": 4,
+        "group_range": "19-24",
         "group_selected": [
-          "Keaton Wagler",
-          "Kris Dunn"
+          "Cedric Coward",
+          "Cam Spencer"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-21-group-1.json",
           "2": "collector-output/nba-system-scout-2026-11-21-group-2.json",
-          "3": "collector-output/nba-system-scout-2026-11-21-group-3.json"
+          "3": "collector-output/nba-system-scout-2026-11-21-group-3.json",
+          "4": "collector-output/nba-system-scout-2026-11-21-group-4.json"
         },
         "selection_method": "full_ranked_scout"
       }
