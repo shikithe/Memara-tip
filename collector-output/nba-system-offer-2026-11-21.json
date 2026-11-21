@@ -803,8 +803,8 @@
       "points_line": 20.5,
       "over_odd": 1.9091,
       "under_odd": 1.8621,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "6606",
+      "espn_event_id": "401910024"
     },
     {
       "original_offer_position": 58,
@@ -820,8 +820,8 @@
       "points_line": 23.5,
       "over_odd": 1.9804,
       "under_odd": 1.8,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4683021",
+      "espn_event_id": "401910024"
     },
     {
       "original_offer_position": 59,
@@ -837,8 +837,8 @@
       "points_line": 10.5,
       "over_odd": 1.9615,
       "under_odd": 1.813,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "5105565",
+      "espn_event_id": "401910024"
     },
     {
       "original_offer_position": 60,
@@ -854,8 +854,8 @@
       "points_line": 28.5,
       "over_odd": 1.8333,
       "under_odd": 1.9434,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3934672",
+      "espn_event_id": "401910024"
     },
     {
       "original_offer_position": 61,
@@ -871,8 +871,8 @@
       "points_line": 9.5,
       "over_odd": 1.8,
       "under_odd": 1.9804,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3062679",
+      "espn_event_id": "401910024"
     },
     {
       "original_offer_position": 62,
@@ -888,8 +888,8 @@
       "points_line": 13.5,
       "over_odd": 1.9615,
       "under_odd": 1.8197,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3995",
+      "espn_event_id": "401910024"
     },
     {
       "original_offer_position": 63,
@@ -905,8 +905,8 @@
       "points_line": 21.5,
       "over_odd": 1.9615,
       "under_odd": 1.8197,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3136195",
+      "espn_event_id": "401910024"
     },
     {
       "original_offer_position": 64,
@@ -922,8 +922,8 @@
       "points_line": 11.5,
       "over_odd": 1.9901,
       "under_odd": 1.7937,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3914044",
+      "espn_event_id": "401910024"
     },
     {
       "original_offer_position": 65,
@@ -939,8 +939,8 @@
       "points_line": 11.5,
       "over_odd": 1.9709,
       "under_odd": 1.8065,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3147657",
+      "espn_event_id": "401910024"
     },
     {
       "original_offer_position": 66,
@@ -956,8 +956,8 @@
       "points_line": null,
       "over_odd": null,
       "under_odd": null,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3934719",
+      "espn_event_id": "401910024"
     },
     {
       "original_offer_position": 67,
@@ -973,8 +973,8 @@
       "points_line": 7.5,
       "over_odd": 1.7874,
       "under_odd": 2,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "5081727",
+      "espn_event_id": "401910024"
     },
     {
       "original_offer_position": 68,
@@ -990,8 +990,8 @@
       "points_line": 12.5,
       "over_odd": 2,
       "under_odd": 1.7812,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4431736",
+      "espn_event_id": "401910024"
     }
   ],
   "publication_allowed": false,
