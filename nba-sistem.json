@@ -3685,6 +3685,141 @@
               }
             }
           ]
+        },
+        {
+          "id": "7",
+          "stake": 9.91,
+          "status": "pending",
+          "total_odd": 3.3483,
+          "potential_payout": 33.18,
+          "legs": [
+            {
+              "player": "Keldon Johnson",
+              "team": "SA",
+              "opponent": "NO",
+              "pick": "under",
+              "points_line": 11.5,
+              "odd": 1.8333,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/keldon-johnson",
+              "espn_event_id": "401910027",
+              "player_id": "4395723",
+              "start_utc": "2026-11-22T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 10,
+                    "minutes": 27
+                  },
+                  {
+                    "date": "2026-11-17",
+                    "points": 4,
+                    "minutes": 15
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 11,
+                    "minutes": 29
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 18,
+                    "minutes": 25
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 10,
+                    "minutes": 28
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Pet individualnih mečeva protiv današnjeg protivnika nije potvrđeno."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Precizni pozicijski defensive matchup današnjeg protivnika nije izvučen iz pouzdanog izvora."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Direktni čuvar i starter rotacija još nisu potvrđeni."
+                },
+                "injuries": {
+                  "status": "not_listed",
+                  "reason": "U službenom izvještaju za SA nisu označeni OUT/QUESTIONABLE, status se može promijeniti."
+                },
+                "minutes_projection": "Raspon posljednjih pet odigranih minuta: 15–29.",
+                "scout_score": 74,
+                "scout_note": "UNDER 11.5 u 4/5 zadnjih nastupa, uključujući posljednja tri, uz nizak broj šuteva u rotacionoj ulozi.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-7.json"
+              }
+            },
+            {
+              "player": "De'Aaron Fox",
+              "team": "SA",
+              "opponent": "NO",
+              "pick": "under",
+              "points_line": 14.5,
+              "odd": 1.8264,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/deaaron-fox",
+              "espn_event_id": "401910027",
+              "player_id": "4066259",
+              "start_utc": "2026-11-22T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 10,
+                    "minutes": 32
+                  },
+                  {
+                    "date": "2026-11-17",
+                    "points": 6,
+                    "minutes": 34
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 7,
+                    "minutes": 17
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 17,
+                    "minutes": 31
+                  },
+                  {
+                    "date": "2026-11-09",
+                    "points": 15,
+                    "minutes": 29
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Pet individualnih mečeva protiv današnjeg protivnika nije potvrđeno."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Precizni pozicijski defensive matchup današnjeg protivnika nije izvučen iz pouzdanog izvora."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Direktni čuvar i starter rotacija još nisu potvrđeni."
+                },
+                "injuries": {
+                  "status": "not_listed",
+                  "reason": "U službenom izvještaju za SA nisu označeni OUT/QUESTIONABLE, status se može promijeniti."
+                },
+                "minutes_projection": "Raspon posljednjih pet odigranih minuta: 17–34.",
+                "scout_score": 69,
+                "scout_note": "UNDER 14.5 u tri posljednjih pet i prosjek L5 11; pretežno distribucija umjesto visokog volumen šuta u Spurs napadu.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-7.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -3694,15 +3829,16 @@
           3,
           4,
           5,
-          6
+          6,
+          7
         ],
         "offered": 54,
         "total_groups": 10,
-        "group_number": 6,
-        "group_range": "30-34",
+        "group_number": 7,
+        "group_range": "35-39",
         "group_selected": [
-          "Rudy Gobert",
-          "Taylor Hendricks"
+          "Keldon Johnson",
+          "De'Aaron Fox"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-21-group-1.json",
@@ -3710,7 +3846,8 @@
           "3": "collector-output/nba-system-scout-2026-11-21-group-3.json",
           "4": "collector-output/nba-system-scout-2026-11-21-group-4.json",
           "5": "collector-output/nba-system-scout-2026-11-21-group-5.json",
-          "6": "collector-output/nba-system-scout-2026-11-21-group-6.json"
+          "6": "collector-output/nba-system-scout-2026-11-21-group-6.json",
+          "7": "collector-output/nba-system-scout-2026-11-21-group-7.json"
         },
         "selection_method": "full_ranked_scout"
       }
