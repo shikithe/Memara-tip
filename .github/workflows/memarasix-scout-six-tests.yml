@@ -1,0 +1,22 @@
+name: MemaraSix Scout 6/6 validation regression tests (no publication)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'memarasix_scout_six_gate.py'
+      - 'tests/test_memarasix_scout_six_gate.py'
+      - '.github/workflows/memarasix-scout-six-tests.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test all six-market probabilities, top pick, date and hashes
+        run: python3 -m unittest discover -s tests -p 'test_memarasix_scout_six_gate.py' -v
