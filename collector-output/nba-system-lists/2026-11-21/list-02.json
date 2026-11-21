@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "date": "2026-11-21",
   "list_number": 2,
   "total_lists": 10,
@@ -6,16 +7,72 @@
   "source_url": "https://betsharp.com/nba/props?m=points",
   "source_snapshot": "collector-output/betsharp-nba-daily.json",
   "captured_at_utc": "2026-11-21T17:37:58.291930+00:00",
-  "total_offers": 68,
-  "group_size": 7,
-  "original_positions": [
+  "filtered_at_local": "2026-11-21T19:15:02+01:00",
+  "filter_reason": "MIL @ PHI game already started at 19:00 CET; no games started before 19:15 CET eligible",
+  "excluded_game": "MIL @ PHI",
+  "excluded_count": 14,
+  "total_offers": 54,
+  "original_offers": 68,
+  "group_size": 6,
+  "original_offer_positions": [
+    7,
     8,
-    14
+    9,
+    10,
+    11,
+    12
   ],
   "status": "awaiting_scout",
   "analysis_complete": false,
   "publication_allowed": false,
   "offers": [
+    {
+      "player": "Zach LaVine",
+      "team": "SAC",
+      "game": "BOS @ SAC",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/zach-lavine",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-boston-celtics-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -123,
+          "under_american": -104,
+          "over_decimal": 1.813,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 138,
+          "under_american": -194,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5155
+        }
+      },
+      "original_offer_position": 7
+    },
     {
       "player": "Brook Lopez",
       "team": "LAC",
@@ -178,7 +235,7 @@
           "over_american": -132,
           "under_american": 100,
           "over_decimal": 1.7576,
-          "under_decimal": 2.0
+          "under_decimal": 2
         },
         "MGM": {
           "line": 8.5,
@@ -250,100 +307,6 @@
         }
       },
       "original_offer_position": 12
-    },
-    {
-      "player": "Derrick Jones Jr.",
-      "team": "LAC",
-      "game": "LAC @ DAL",
-      "game_date_et": "2026-11-21",
-      "game_time_et": "Sat 8:00PM",
-      "player_url": "https://betsharp.com/nba/player/derrick-jones",
-      "game_url": "https://betsharp.com/nba/game/2026-11-21-la-clippers-at-dallas-mavericks#props",
-      "points_market": {
-        "DK": {
-          "line": 9.5,
-          "over_american": -102,
-          "under_american": -125,
-          "over_decimal": 1.9804,
-          "under_decimal": 1.8
-        },
-        "FD": {
-          "line": 8.5,
-          "over_american": -130,
-          "under_american": -102,
-          "over_decimal": 1.7692,
-          "under_decimal": 1.9804
-        },
-        "MGM": {
-          "line": 8.5,
-          "over_american": -120,
-          "under_american": -110,
-          "over_decimal": 1.8333,
-          "under_decimal": 1.9091
-        },
-        "BR": {
-          "line": 8.5,
-          "over_american": -125,
-          "under_american": -108,
-          "over_decimal": 1.8,
-          "under_decimal": 1.9259
-        },
-        "KAL": {
-          "line": 9.5,
-          "over_american": 108,
-          "under_american": -133,
-          "over_decimal": 2.08,
-          "under_decimal": 1.7519
-        }
-      },
-      "original_offer_position": 13
-    },
-    {
-      "player": "Keaton Wagler",
-      "team": "LAC",
-      "game": "LAC @ DAL",
-      "game_date_et": "2026-11-21",
-      "game_time_et": "Sat 8:00PM",
-      "player_url": "https://betsharp.com/nba/player/keaton-wagler",
-      "game_url": "https://betsharp.com/nba/game/2026-11-21-la-clippers-at-dallas-mavericks#props",
-      "points_market": {
-        "DK": {
-          "line": 9.5,
-          "over_american": -109,
-          "under_american": -117,
-          "over_decimal": 1.9174,
-          "under_decimal": 1.8547
-        },
-        "FD": {
-          "line": 9.5,
-          "over_american": -112,
-          "under_american": -118,
-          "over_decimal": 1.8929,
-          "under_decimal": 1.8475
-        },
-        "MGM": {
-          "line": 9.5,
-          "over_american": -115,
-          "under_american": -115,
-          "over_decimal": 1.8696,
-          "under_decimal": 1.8696
-        },
-        "BR": {
-          "line": 9.5,
-          "over_american": -130,
-          "under_american": -104,
-          "over_decimal": 1.7692,
-          "under_decimal": 1.9615
-        },
-        "KAL": {
-          "line": 9.5,
-          "over_american": -113,
-          "under_american": -108,
-          "over_decimal": 1.885,
-          "under_decimal": 1.9259
-        }
-      },
-      "original_offer_position": 14
     }
   ]
 }
