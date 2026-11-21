@@ -1,0 +1,398 @@
+{
+  "date": "2026-11-21",
+  "group_number": 8,
+  "analysis_complete": true,
+  "ranking": [
+    {
+      "player_id": "5104157",
+      "player": "Victor Wembanyama",
+      "rank": 1,
+      "score": 67,
+      "confidence": 63,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 32,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-17",
+          "points": 25,
+          "minutes": 34
+        },
+        {
+          "date": "2026-11-15",
+          "points": 26,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-13",
+          "points": 12,
+          "minutes": 21
+        },
+        {
+          "date": "2026-11-11",
+          "points": 32,
+          "minutes": 32
+        }
+      ],
+      "season_context": "Sezonski prosjek poena približno 28.4 i kućni split oko 26.3, ponuđena granica 29.5.",
+      "home_away_context": "Posebni home-away prosjeci nisu za sve igrače uporedivi; Victor ima potvrđen kućni split oko 26.3 PPG, drugi nedovoljno verifikovani.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Nema potpunog provjerenog skupa do pet direktnih NBA susreta za današnju granicu."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Pozicijski split protivnika i precizni odbrambeni matchup nisu nezavisno kvantifikovani."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Bez potvrđenog današnjeg starter matchupa, direktni čuvar nije verificiran."
+      },
+      "injuries": {
+        "status": "not_listed",
+        "reason": "Nije označen OUT/QUESTIONABLE u dostupnom zvaničnom injury reportu; nije garancija starta."
+      },
+      "minutes_projection": "Posljednjih 5 minuta 21-35; procjena nesigurna.",
+      "role_projection": "Uloga iz stvarnih L5, moguće promjene zbog izostanaka i rasporeda.",
+      "market": {
+        "points_line": 29.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8547
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Nekalibrirani rang zasnovan na stvarnim L5 i statusu, bez izmišljenog tačnog postotka.",
+        "availability_confirmed": true,
+        "reason": "UNDER 29.5 u 3/5 i L5 prosjek 25.4, kućni sezonki split oko 26.3; prednost ima uslovnu vrijednost protiv New Orleansa.",
+        "risk": "Ima dva visoka meča 32 i 32 i čak 52 ranije u sezoni; visoki usage može preći granicu."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Svaki igrač pregledan ESPN profil i sekundarni datirani game log, posebne povrede eksplicitno zabilježene."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/victor-wembanyama",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/victor_wembanyama.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "6606",
+      "player": "Damian Lillard",
+      "rank": 2,
+      "score": 64,
+      "confidence": 60,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 33,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-17",
+          "points": 25,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-16",
+          "points": 9,
+          "minutes": 24
+        },
+        {
+          "date": "2026-11-13",
+          "points": 29,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-11",
+          "points": 18,
+          "minutes": 32
+        }
+      ],
+      "season_context": "L5 prosjek 22.8, a ESPN sezonski prosjek oko 20.4, blizu linije 20.5.",
+      "home_away_context": "Posebni home-away prosjeci nisu za sve igrače uporedivi; Victor ima potvrđen kućni split oko 26.3 PPG, drugi nedovoljno verifikovani.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Nema potpunog provjerenog skupa do pet direktnih NBA susreta za današnju granicu."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Pozicijski split protivnika i precizni odbrambeni matchup nisu nezavisno kvantifikovani."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Bez potvrđenog današnjeg starter matchupa, direktni čuvar nije verificiran."
+      },
+      "injuries": {
+        "status": "not_listed",
+        "reason": "Nije označen OUT/QUESTIONABLE u dostupnom zvaničnom injury reportu; nije garancija starta."
+      },
+      "minutes_projection": "Posljednjih 5 minuta 24-35; procjena nesigurna.",
+      "role_projection": "Uloga iz stvarnih L5, moguće promjene zbog izostanaka i rasporeda.",
+      "market": {
+        "points_line": 20.5,
+        "over_odd": 1.9091,
+        "under_odd": 1.8621
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Nekalibrirani rang zasnovan na stvarnim L5 i statusu, bez izmišljenog tačnog postotka.",
+        "availability_confirmed": true,
+        "reason": "Tri od posljednjih pet preko 20.5 uz dva najnovija nastupa od 33 i 25, napadačka odgovornost se povećala s izostancima.",
+        "risk": "Loša pojedinačna večer od devet poena, promjenjiva efikasnost šuta; korisna linija tek ako nastupi u uobičajenoj minutaži."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Svaki igrač pregledan ESPN profil i sekundarni datirani game log, posebne povrede eksplicitno zabilježene."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/damian-lillard",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/damian_lillard.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "4395628",
+      "player": "Zion Williamson",
+      "rank": 3,
+      "score": 62,
+      "confidence": 58,
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 22,
+          "minutes": 37
+        },
+        {
+          "date": "2026-11-18",
+          "points": 24,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-16",
+          "points": 16,
+          "minutes": 25
+        },
+        {
+          "date": "2026-11-14",
+          "points": 24,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-13",
+          "points": 22,
+          "minutes": 33
+        }
+      ],
+      "season_context": "L5 prosjek 21.6 poena, 31.6 minuta uz velika opterećenja na ulazima.",
+      "home_away_context": "Posebni home-away prosjeci nisu za sve igrače uporedivi; Victor ima potvrđen kućni split oko 26.3 PPG, drugi nedovoljno verifikovani.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Nema potpunog provjerenog skupa do pet direktnih NBA susreta za današnju granicu."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Pozicijski split protivnika i precizni odbrambeni matchup nisu nezavisno kvantifikovani."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Bez potvrđenog današnjeg starter matchupa, direktni čuvar nije verificiran."
+      },
+      "injuries": {
+        "status": "opponent_report_not_submitted",
+        "reason": "New Orleans NBA report nije bio dostavljen u 12:30 ET, zato je konačni injury status neutvrđen."
+      },
+      "minutes_projection": "Posljednjih 5 minuta 25-37; procjena nesigurna.",
+      "role_projection": "Uloga iz stvarnih L5, moguće promjene zbog izostanaka i rasporeda.",
+      "market": {
+        "points_line": 19.5,
+        "over_odd": 1.8264,
+        "under_odd": 1.9434
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Nekalibrirani rang zasnovan na stvarnim L5 i statusu, bez izmišljenog tačnog postotka.",
+        "availability_confirmed": false,
+        "reason": "OVER 19.5 u 4/5 nedavnih nastupa uz trajni napadački potencijal, ali nema konačnog injury izvještaja New Orleansa.",
+        "risk": "Pelicans nisu dostavili službeni injury report u dostupnoj verziji, ne smije se tretirati kao garantovano aktivan."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Svaki igrač pregledan ESPN profil i sekundarni datirani game log, posebne povrede eksplicitno zabilježene."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/zion-williamson",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/zion_williamson.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "4845367",
+      "player": "Stephon Castle",
+      "rank": 4,
+      "score": 55,
+      "confidence": 54,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 21,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-17",
+          "points": 10,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-15",
+          "points": 20,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-13",
+          "points": 32,
+          "minutes": 25
+        },
+        {
+          "date": "2026-11-11",
+          "points": 11,
+          "minutes": 29
+        }
+      ],
+      "season_context": "Sezonska produkcija u novembru promjenjiva, naročito kod asistencija i šuta.",
+      "home_away_context": "Posebni home-away prosjeci nisu za sve igrače uporedivi; Victor ima potvrđen kućni split oko 26.3 PPG, drugi nedovoljno verifikovani.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Nema potpunog provjerenog skupa do pet direktnih NBA susreta za današnju granicu."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Pozicijski split protivnika i precizni odbrambeni matchup nisu nezavisno kvantifikovani."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Bez potvrđenog današnjeg starter matchupa, direktni čuvar nije verificiran."
+      },
+      "injuries": {
+        "status": "not_listed",
+        "reason": "Nije označen OUT/QUESTIONABLE u dostupnom zvaničnom injury reportu; nije garancija starta."
+      },
+      "minutes_projection": "Posljednjih 5 minuta 25-35; procjena nesigurna.",
+      "role_projection": "Uloga iz stvarnih L5, moguće promjene zbog izostanaka i rasporeda.",
+      "market": {
+        "points_line": 17.5,
+        "over_odd": 1.885,
+        "under_odd": 1.8929
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Nekalibrirani rang zasnovan na stvarnim L5 i statusu, bez izmišljenog tačnog postotka.",
+        "availability_confirmed": false,
+        "reason": "OVER 17.5 prošao je u 3/5 utakmica, ali sezonski prosjek bliži 14 znači veći rizik od pretpostavke po L5.",
+        "risk": "Posljednjih pet uključuje 10 i 11, a nedavni startovi i minute ne garantuju broj šuteva."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Svaki igrač pregledan ESPN profil i sekundarni datirani game log, posebne povrede eksplicitno zabilježene."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/stephon-castle",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/stephon_castle.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "4683021",
+      "player": "Deni Avdija",
+      "rank": 5,
+      "score": 51,
+      "confidence": 45,
+      "last_five": [
+        {
+          "date": "2026-11-16",
+          "points": 27,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-13",
+          "points": 34,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-11",
+          "points": 28,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-10",
+          "points": 24,
+          "minutes": 34
+        },
+        {
+          "date": "2026-11-07",
+          "points": 15,
+          "minutes": 24
+        }
+      ],
+      "season_context": "L5 25.6 poena, 31.6 minute, ali izostanak u posljednja dva meča Nov17/19.",
+      "home_away_context": "Posebni home-away prosjeci nisu za sve igrače uporedivi; Victor ima potvrđen kućni split oko 26.3 PPG, drugi nedovoljno verifikovani.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Nema potpunog provjerenog skupa do pet direktnih NBA susreta za današnju granicu."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Pozicijski split protivnika i precizni odbrambeni matchup nisu nezavisno kvantifikovani."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Bez potvrđenog današnjeg starter matchupa, direktni čuvar nije verificiran."
+      },
+      "injuries": {
+        "status": "questionable",
+        "reason": "NBA report označava Questionable zbog lijevog stopala."
+      },
+      "minutes_projection": "Posljednjih 5 minuta 24-35; procjena nesigurna.",
+      "role_projection": "Uloga iz stvarnih L5, moguće promjene zbog izostanaka i rasporeda.",
+      "market": {
+        "points_line": 23.5,
+        "over_odd": 1.9804,
+        "under_odd": 1.8
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Nekalibrirani rang zasnovan na stvarnim L5 i statusu, bez izmišljenog tačnog postotka.",
+        "availability_confirmed": false,
+        "reason": "Četiri od pet prethodno odigranih iznad 23.5, ali upitan nastup s kontuzijom stopala predstavlja dominantan rizik.",
+        "risk": "Questionable zbog kontuzije lijevog stopala u službenom reportu; moguća ograničena minutaža ili DNP."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Svaki igrač pregledan ESPN profil i sekundarni datirani game log, posebne povrede eksplicitno zabilježene."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/deni-avdija",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/deni_avdija.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    }
+  ],
+  "selected_player_ids": [
+    "5104157",
+    "6606"
+  ],
+  "selection_reason": "Victor Wembanyama UNDER 29.5 (3/5 ispod, L5 prosjek 25.4, kućni split 26.3) i Damian Lillard OVER 20.5 (3/5 iznad, uz dva najnovija od 33 i 25) odabrani su među pet uzimajući u obzir nesiguran status Avdije i još nepotvrđen NO injury report za Ziona. Oba imaju znatan rizik.",
+  "source_snapshot_url": "https://github.com/shikithe/Memara-tip/blob/main/collector-output/nba-system-offer-2026-11-21.json"
+}
