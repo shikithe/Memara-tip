@@ -4090,6 +4090,141 @@
               }
             }
           ]
+        },
+        {
+          "id": "10",
+          "stake": 9.91,
+          "status": "pending",
+          "total_odd": 3.9802,
+          "potential_payout": 39.44,
+          "legs": [
+            {
+              "player": "Toumani Camara",
+              "team": "POR",
+              "opponent": "NY",
+              "pick": "over",
+              "points_line": 12.5,
+              "odd": 2,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/toumani-camara",
+              "espn_event_id": "401910024",
+              "player_id": "4431736",
+              "start_utc": "2026-11-22T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 18,
+                    "minutes": 37
+                  },
+                  {
+                    "date": "2026-11-17",
+                    "points": 10,
+                    "minutes": 33
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 3,
+                    "minutes": 26
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 14,
+                    "minutes": 36
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 14,
+                    "minutes": 38
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Do pet konkretnih međusobnih susreta sa današnjim protivnikom nisu zasebno potvrđeni."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Ne postoje pouzdani pozicijski defensive splitovi u dostupnoj provjeri."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Aktuelni direktni matchup čuvar nije potvrđen pred početak utakmice."
+                },
+                "injuries": {
+                  "status": "not_listed",
+                  "reason": "Nije naveden kao OUT/QUESTIONABLE u dostupnom službenom NBA injury reportu; nema garancije nastupa."
+                },
+                "minutes_projection": "Raspon minutaže L5 26–38.",
+                "scout_score": 68,
+                "scout_note": "OVER 12.5 je prošao u tri od pet i postiže 18 u najnovijem, 14 u dva ranija meča, uz minute 36-38 u tri od pet.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-10.json"
+              }
+            },
+            {
+              "player": "Landry Shamet",
+              "team": "NY",
+              "opponent": "POR",
+              "pick": "over",
+              "points_line": 11.5,
+              "odd": 1.9901,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/landry-shamet",
+              "espn_event_id": "401910024",
+              "player_id": "3914044",
+              "start_utc": "2026-11-22T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 10,
+                    "minutes": 30
+                  },
+                  {
+                    "date": "2026-11-17",
+                    "points": 12,
+                    "minutes": 24
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 23,
+                    "minutes": 30
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 5,
+                    "minutes": 21
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 12,
+                    "minutes": 29
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Do pet konkretnih međusobnih susreta sa današnjim protivnikom nisu zasebno potvrđeni."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Ne postoje pouzdani pozicijski defensive splitovi u dostupnoj provjeri."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Aktuelni direktni matchup čuvar nije potvrđen pred početak utakmice."
+                },
+                "injuries": {
+                  "status": "not_listed",
+                  "reason": "Nije naveden kao OUT/QUESTIONABLE u dostupnom službenom NBA injury reportu; nema garancije nastupa."
+                },
+                "minutes_projection": "Raspon minutaže L5 21–30.",
+                "scout_score": 65,
+                "scout_note": "OVER 11.5 u tri od pet posljednjih nastupa; dodatne minute i moguće izostajanje Townsa/Anunobyja povećavaju otvorene šuteve.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-10.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -4102,15 +4237,16 @@
           6,
           7,
           8,
-          9
+          9,
+          10
         ],
         "offered": 54,
         "total_groups": 10,
-        "group_number": 9,
-        "group_range": "45-49",
+        "group_number": 10,
+        "group_range": "50-54",
         "group_selected": [
-          "Josh Hart",
-          "Jrue Holiday"
+          "Toumani Camara",
+          "Landry Shamet"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-21-group-1.json",
@@ -4121,7 +4257,8 @@
           "6": "collector-output/nba-system-scout-2026-11-21-group-6.json",
           "7": "collector-output/nba-system-scout-2026-11-21-group-7.json",
           "8": "collector-output/nba-system-scout-2026-11-21-group-8.json",
-          "9": "collector-output/nba-system-scout-2026-11-21-group-9.json"
+          "9": "collector-output/nba-system-scout-2026-11-21-group-9.json",
+          "10": "collector-output/nba-system-scout-2026-11-21-group-10.json"
         },
         "selection_method": "full_ranked_scout"
       }
