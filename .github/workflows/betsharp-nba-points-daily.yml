@@ -1,6 +1,9 @@
 name: MEMARA BetSharp NBA daily player points
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'collector-output/betsharp-trigger.txt'
   schedule:
     # 12:05/12:25/12:45 local Sarajevo (both CET & CEST);
     # one successful ET-date snapshot per day, later slots are retries.
@@ -34,7 +37,7 @@ jobs:
           from zoneinfo import ZoneInfo
           local=datetime.now(ZoneInfo('Europe/Sarajevo'))
           et=datetime.now(ZoneInfo('America/New_York')).date().isoformat()
-          run=os.environ['EVENT_NAME']=='workflow_dispatch' or local.hour==12
+          run=os.environ['EVENT_NAME'] in ('workflow_dispatch', 'push') or local.hour==12
           p=Path('collector-output/betsharp-nba-daily.json')
           if p.exists() and os.environ['EVENT_NAME']=='schedule':
               d=json.loads(p.read_text())
