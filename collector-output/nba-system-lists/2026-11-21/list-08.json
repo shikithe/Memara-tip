@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "date": "2026-11-21",
   "list_number": 8,
   "total_lists": 10,
@@ -6,204 +7,24 @@
   "source_url": "https://betsharp.com/nba/props?m=points",
   "source_snapshot": "collector-output/betsharp-nba-daily.json",
   "captured_at_utc": "2026-11-21T17:37:58.291930+00:00",
-  "total_offers": 68,
-  "group_size": 7,
-  "original_positions": [
-    50,
-    56
+  "filtered_at_local": "2026-11-21T19:15:02+01:00",
+  "filter_reason": "MIL @ PHI game already started at 19:00 CET; no games started before 19:15 CET eligible",
+  "excluded_game": "MIL @ PHI",
+  "excluded_count": 14,
+  "total_offers": 54,
+  "original_offers": 68,
+  "group_size": 5,
+  "original_offer_positions": [
+    54,
+    55,
+    56,
+    57,
+    58
   ],
   "status": "awaiting_scout",
   "analysis_complete": false,
   "publication_allowed": false,
   "offers": [
-    {
-      "player": "Devin Vassell",
-      "team": "SA",
-      "game": "NO @ SA",
-      "game_date_et": "2026-11-21",
-      "game_time_et": "Sat 8:00PM",
-      "player_url": "https://betsharp.com/nba/player/devin-vassell",
-      "game_url": "https://betsharp.com/nba/game/2026-11-21-new-orleans-pelicans-at-san-antonio-spurs#props",
-      "points_market": {
-        "DK": {
-          "line": 12.5,
-          "over_american": -108,
-          "under_american": -118,
-          "over_decimal": 1.9259,
-          "under_decimal": 1.8475
-        },
-        "FD": {
-          "line": 12.5,
-          "over_american": -106,
-          "under_american": -125,
-          "over_decimal": 1.9434,
-          "under_decimal": 1.8
-        },
-        "MGM": {
-          "line": 12.5,
-          "over_american": -115,
-          "under_american": -115,
-          "over_decimal": 1.8696,
-          "under_decimal": 1.8696
-        },
-        "BR": {
-          "line": 12.5,
-          "over_american": -110,
-          "under_american": -124,
-          "over_decimal": 1.9091,
-          "under_decimal": 1.8065
-        },
-        "KAL": {
-          "line": 14.5,
-          "over_american": 156,
-          "under_american": -203,
-          "over_decimal": 2.56,
-          "under_decimal": 1.4926
-        }
-      },
-      "original_offer_position": 50
-    },
-    {
-      "player": "Jeremiah Fears",
-      "team": "NO",
-      "game": "NO @ SA",
-      "game_date_et": "2026-11-21",
-      "game_time_et": "Sat 8:00PM",
-      "player_url": "https://betsharp.com/nba/player/jeremiah-fears",
-      "game_url": "https://betsharp.com/nba/game/2026-11-21-new-orleans-pelicans-at-san-antonio-spurs#props",
-      "points_market": {
-        "DK": {
-          "line": 16.5,
-          "over_american": 100,
-          "under_american": -127,
-          "over_decimal": 2.0,
-          "under_decimal": 1.7874
-        },
-        "FD": {
-          "line": 15.5,
-          "over_american": -128,
-          "under_american": -104,
-          "over_decimal": 1.7812,
-          "under_decimal": 1.9615
-        },
-        "MGM": {
-          "line": 16.5,
-          "over_american": -111,
-          "under_american": -120,
-          "over_decimal": 1.9009,
-          "under_decimal": 1.8333
-        },
-        "BR": {
-          "line": 16.5,
-          "over_american": -106,
-          "under_american": -129,
-          "over_decimal": 1.9434,
-          "under_decimal": 1.7752
-        },
-        "KAL": {
-          "line": 14.5,
-          "over_american": -163,
-          "under_american": 117,
-          "over_decimal": 1.6135,
-          "under_decimal": 2.17
-        }
-      },
-      "original_offer_position": 51
-    },
-    {
-      "player": "Julian Champagnie",
-      "team": "SA",
-      "game": "NO @ SA",
-      "game_date_et": "2026-11-21",
-      "game_time_et": "Sat 8:00PM",
-      "player_url": "https://betsharp.com/nba/player/julian-champagnie",
-      "game_url": "https://betsharp.com/nba/game/2026-11-21-new-orleans-pelicans-at-san-antonio-spurs#props",
-      "points_market": {
-        "DK": {
-          "line": 11.5,
-          "over_american": -115,
-          "under_american": -111,
-          "over_decimal": 1.8696,
-          "under_decimal": 1.9009
-        },
-        "FD": {
-          "line": 11.5,
-          "over_american": -104,
-          "under_american": -128,
-          "over_decimal": 1.9615,
-          "under_decimal": 1.7812
-        },
-        "MGM": {
-          "line": 11.5,
-          "over_american": 100,
-          "under_american": -135,
-          "over_decimal": 2.0,
-          "under_decimal": 1.7407
-        },
-        "BR": {
-          "line": 11.5,
-          "over_american": -118,
-          "under_american": -114,
-          "over_decimal": 1.8475,
-          "under_decimal": 1.8772
-        },
-        "KAL": {
-          "line": 9.5,
-          "over_american": -213,
-          "under_american": 170,
-          "over_decimal": 1.4695,
-          "under_decimal": 2.7
-        }
-      },
-      "original_offer_position": 52
-    },
-    {
-      "player": "Keldon Johnson",
-      "team": "SA",
-      "game": "NO @ SA",
-      "game_date_et": "2026-11-21",
-      "game_time_et": "Sat 8:00PM",
-      "player_url": "https://betsharp.com/nba/player/keldon-johnson",
-      "game_url": "https://betsharp.com/nba/game/2026-11-21-new-orleans-pelicans-at-san-antonio-spurs#props",
-      "points_market": {
-        "DK": {
-          "line": 11.5,
-          "over_american": -107,
-          "under_american": -120,
-          "over_decimal": 1.9346,
-          "under_decimal": 1.8333
-        },
-        "FD": {
-          "line": 10.5,
-          "over_american": -132,
-          "under_american": 100,
-          "over_decimal": 1.7576,
-          "under_decimal": 2.0
-        },
-        "MGM": {
-          "line": 11.5,
-          "over_american": -111,
-          "under_american": -120,
-          "over_decimal": 1.9009,
-          "under_decimal": 1.8333
-        },
-        "BR": {
-          "line": 11.5,
-          "over_american": -108,
-          "under_american": -125,
-          "over_decimal": 1.9259,
-          "under_decimal": 1.8
-        },
-        "KAL": {
-          "line": 9.5,
-          "over_american": -194,
-          "under_american": 133,
-          "over_decimal": 1.5155,
-          "under_decimal": 2.33
-        }
-      },
-      "original_offer_position": 53
-    },
     {
       "player": "Stephon Castle",
       "team": "SA",
@@ -344,6 +165,100 @@
         }
       },
       "original_offer_position": 56
+    },
+    {
+      "player": "Damian Lillard",
+      "team": "POR",
+      "game": "POR @ NY",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/damian-lillard",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-portland-trail-blazers-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 20.5,
+          "over_american": -110,
+          "under_american": -116,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8621
+        },
+        "FD": {
+          "line": 20.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 19.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 20.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -138,
+          "under_american": 113,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.13
+        }
+      },
+      "original_offer_position": 57
+    },
+    {
+      "player": "Deni Avdija",
+      "team": "POR",
+      "game": "POR @ NY",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/deni-avdija",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-portland-trail-blazers-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 23.5,
+          "over_american": -102,
+          "under_american": -125,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -111,
+          "under_american": -120,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 22.5,
+          "over_american": -118,
+          "under_american": -115,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8696
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 122,
+          "under_american": -156,
+          "over_decimal": 2.22,
+          "under_decimal": 1.641
+        }
+      },
+      "original_offer_position": 58
     }
   ]
 }
