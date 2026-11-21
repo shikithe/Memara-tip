@@ -1,14 +1,14 @@
 {
   "date": "2026-11-21",
   "published": "21.11.2026. u 11:42 (Europe/Sarajevo)",
-  "publication_type": "independent_verified_github",
+  "publication_type": "independent_ai_approved_github_nba_c",
   "bank_before": 203.02,
-  "daily_stake": 20.3,
-  "bank_after": 182.72,
-  "bank_after_stakes": 182.72,
-  "provisional": true,
+  "daily_stake": 24.36,
+  "bank_after": 178.66,
+  "bank_after_stakes": 178.66,
+  "provisional": false,
   "settled": false,
-  "odds_verified": true,
+  "odds_verified": false,
   "tickets": [
     {
       "id": "A",
@@ -116,20 +116,221 @@
       "stake": 6.09,
       "status": "objavljen",
       "payout": 0
+    },
+    {
+      "id": "C",
+      "label": "NBA · DVA IGRAČA",
+      "matches": [
+        {
+          "fixture_id": "espn:basketball:nba:401910028:202331",
+          "event_id": "401910028",
+          "espn_event_id": "401910028",
+          "player_id": "202331",
+          "player": "Paul George",
+          "home": "Boston Celtics",
+          "away": "Sacramento Kings",
+          "team": "Boston Celtics",
+          "opponent": "Sacramento Kings",
+          "league": "nba",
+          "sport": "basketball",
+          "datetime": "2026-11-22T03:00:00+00:00",
+          "start_utc": "2026-11-22T03:00:00+00:00",
+          "market": "player_points",
+          "points_line": 22.5,
+          "pick": "under",
+          "market_name": "Manje od 22.5 poena",
+          "odd": 1.9259,
+          "bookmaker": "DraftKings",
+          "quote_source_url": "https://betsharp.com/nba/player/paul-george",
+          "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+          "quote_timestamp_verified": false
+        },
+        {
+          "fixture_id": "espn:basketball:nba:401910026:3032976",
+          "event_id": "401910026",
+          "espn_event_id": "401910026",
+          "player_id": "3032976",
+          "player": "Rudy Gobert",
+          "home": "Minnesota Timberwolves",
+          "away": "Memphis Grizzlies",
+          "team": "Minnesota Timberwolves",
+          "opponent": "Memphis Grizzlies",
+          "league": "nba",
+          "sport": "basketball",
+          "datetime": "2026-11-22T01:00:00+00:00",
+          "start_utc": "2026-11-22T01:00:00+00:00",
+          "market": "player_points",
+          "points_line": 9.5,
+          "pick": "under",
+          "market_name": "Manje od 9.5 poena",
+          "odd": 1.8403,
+          "bookmaker": "DraftKings",
+          "quote_source_url": "https://betsharp.com/nba/player/rudy-gobert",
+          "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+          "quote_timestamp_verified": false
+        }
+      ],
+      "odds": 3.54,
+      "stake": 4.06,
+      "status": "objavljen",
+      "payout": 0,
+      "analysis": "Ručno odobren danas po izričitoj korisnikovoj instrukciji 2% početne dnevne banke. Paul George UNDER 22,5: 3/5 ispod u L5, prosjek 20,4; Tatum questionable je rizik. Rudy Gobert UNDER 9,5: 4/5 u L5, 7/10 u L10 i sezonski prosjek 7,7. DraftKings kvote iz današnjeg BetSharp capture-a; H2H i kompletna protivnička odbrana nedovoljno potvrđeni. Startovi 02:00 i 04:00 CET 22.11.2026. C ostaje virtuelni tiket.",
+      "scout_analysis": {
+        "date": "2026-11-21",
+        "intro": "Ručni NBA C Scout: samo igrači sa stvarnom BetSharp DraftKings istom granicom i oba smjera; uz povratno provjerene NBA statistike. Ulog izuzetak 2% početne banke, današnji korisnikov zahtjev.",
+        "players": [
+          {
+            "id": "202331",
+            "name": "Paul George",
+            "team": "Boston Celtics",
+            "opponent": "Sacramento Kings",
+            "pick": "under",
+            "line": 22.5,
+            "odd": 1.9259,
+            "games": [
+              [
+                "18.11.",
+                10,
+                23
+              ],
+              [
+                "16.11.",
+                22,
+                36
+              ],
+              [
+                "15.11.",
+                7,
+                25
+              ],
+              [
+                "10.11.",
+                36,
+                30
+              ],
+              [
+                "08.11.",
+                27,
+                28
+              ]
+            ],
+            "h2h": [],
+            "last10": "Nije pouzdano potvrđeno za ovu granicu",
+            "pros": [
+              "3 od 5 posljednjih mečeva ostao ispod 22,5 poena",
+              "Prosjek L5 20,4 poena, ispod ponuđene granice",
+              "Sezonski prosjek 19,9 poena u 13 nastupa (prije susreta)"
+            ],
+            "risks": [
+              "Na 10.11. postigao je 36, a 08.11. 27 poena: mogući veliki napadački skokovi",
+              "Jayson Tatum naveden kao upitan protiv Sacramenta: moguća povećana uloga Georgea",
+              "Sacramento je u slaboj formi odbrane, pa matchup nije naročito povoljan za UNDER",
+              "Protivnički direktni čuvar i H2H na ovoj liniji nisu potvrđeni"
+            ],
+            "assessment": "Izbor UNDER je zasnovan na prosjeku i 3/5 prolaza, ali rizik nije nizak jer Tatumov status i slabija odbrana Kingsa mogu povećati potrošnju i broj poena.",
+            "sources": [
+              [
+                "L5 poeni i minute",
+                "https://www.legchecksports.com/players/nba/paul-george/"
+              ],
+              [
+                "NBA status i sezona",
+                "https://www.fsroundup.com/nba-player/paul-george"
+              ],
+              [
+                "Aktuelni BetSharp bet DK",
+                "https://betsharp.com/nba/player/paul-george"
+              ],
+              [
+                "Boston-Sacramento injury preview",
+                "https://www.bostonglobe.com/2026/11/21/sports/celtics-kings-preview-november-21/"
+              ]
+            ]
+          },
+          {
+            "id": "3032976",
+            "name": "Rudy Gobert",
+            "team": "Minnesota Timberwolves",
+            "opponent": "Memphis Grizzlies",
+            "pick": "under",
+            "line": 9.5,
+            "odd": 1.8403,
+            "games": [
+              [
+                "19.11.",
+                9,
+                35
+              ],
+              [
+                "17.11.",
+                0,
+                22
+              ],
+              [
+                "16.11.",
+                18,
+                32
+              ],
+              [
+                "14.11.",
+                1,
+                27
+              ],
+              [
+                "12.11.",
+                9,
+                23
+              ]
+            ],
+            "h2h": [],
+            "last10": "7/10 UNDER na granici 9,5 poena, prema game-log evidenciji",
+            "pros": [
+              "4 od posljednjih 5 nastupa završio ispod 9,5 poena",
+              "7 od posljednjih 10 završilo ispod 9,5 poena",
+              "Sezonski prosjek 7,7 poena, 4/15 OVER na 9,5"
+            ],
+            "risks": [
+              "U pobjedi 16.11. postigao je 18 poena i potencijalno može preći granicu",
+              "Sezonski matchup Memphis vs centri nije nezavisno kvantifikovan",
+              "Posljednju utakmicu je igrao 35 minuta, pa se uloga može povećati",
+              "Specifični H2H na istoj granici nisu potvrđeni"
+            ],
+            "assessment": "UNDER 9,5 ima solidno empirijsko uporište u odnosu na L5, L10 i sezonski prosjek; mala granica znači da jedan bolji napadački period može poništiti prednost.",
+            "sources": [
+              [
+                "Sezonski game log sa minutama",
+                "https://www.statiqsports.com/nba/rudy-gobert/game-log"
+              ],
+              [
+                "NBA status",
+                "https://www.fsroundup.com/nba-player/rudy-gobert"
+              ],
+              [
+                "Aktuelni BetSharp bet DK",
+                "https://betsharp.com/nba/player/rudy-gobert"
+              ]
+            ]
+          }
+        ],
+        "conclusion": "Paul George UNDER 22,5 @1,9259 x Rudy Gobert UNDER 9,5 @1,8403 = ukupna kvota približno 3,54. Projekcija proističe iz ranije forme; nema garancije pogodaka. George je najveći rizik ako Tatum ne nastupi.",
+        "caution": "Kvote preuzete sa javnog BetSharp poređenja u 17:10 UTC; ne predstavlja direktnu live DraftKings potvrdu. H2H i individualni defanzivni matchup nisu potpuno potvrđeni. Ulazak u tim nije garancija minutaže."
+      }
     }
   ],
   "total_payout": 0.0,
   "net_change": null,
-  "analysis_status": "Independent verified ticket publication",
+  "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
   "selection_method": "Each approved ticket independently checked",
   "published_at_utc": "2026-11-21T10:42:29.798506+00:00",
   "daily_budget": 20.3,
   "pending_ticket_statuses": {
     "A": "objavljen",
-    "B": "objavljen"
+    "B": "objavljen",
+    "C": "objavljen"
   },
   "pending_ticket_reasons": {
     "A": "",
     "B": ""
-  }
+  },
+  "odds_verification_note": "AI selected publicly displayed bookmaker comparison quotes; not independently refreshed by GitHub or confirmed in individual bookmaker accounts."
 }
