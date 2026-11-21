@@ -3145,24 +3145,161 @@
               }
             }
           ]
+        },
+        {
+          "id": "3",
+          "stake": 9.91,
+          "status": "pending",
+          "total_odd": 3.287,
+          "potential_payout": 32.57,
+          "legs": [
+            {
+              "player": "Keaton Wagler",
+              "team": "LAC",
+              "opponent": "DAL",
+              "pick": "over",
+              "points_line": 9.5,
+              "odd": 1.9174,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/keaton-wagler",
+              "espn_event_id": "401910025",
+              "player_id": "5254165",
+              "start_utc": "2026-11-22T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 7,
+                    "minutes": 17
+                  },
+                  {
+                    "date": "2026-11-17",
+                    "points": 15,
+                    "minutes": 18
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 12,
+                    "minutes": 28
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 14,
+                    "minutes": 18
+                  },
+                  {
+                    "date": "2026-11-10",
+                    "points": 11,
+                    "minutes": 23
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Nema pouzdano potvrđenih pojedinačnih pet H2H mečeva u današnjim izvorima."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Pozicijski splitovi primljenih poena nisu potvrđeni za ovu konkretnu ulogu."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Direktni čuvar nije potvrđen do izlaska startera; rizik procjene ostaje."
+                },
+                "injuries": {
+                  "status": "not_listed_official_report",
+                  "reason": "Nije označen kao OUT ili QUESTIONABLE na dostupnom 12:30 ET injury izvještaju, stanje može da se promijeni."
+                },
+                "minutes_projection": "Orijentacioni nedavni raspon 17-28 min.",
+                "scout_score": 75,
+                "scout_note": "OVER 9.5 pokriven u 4/5 nedavnih nastupa (7 15 12 14 11), niska ponuđena linija i dostupna NBA/ESPN identifikacija.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-3.json"
+              }
+            },
+            {
+              "player": "Kris Dunn",
+              "team": "LAC",
+              "opponent": "DAL",
+              "pick": "under",
+              "points_line": 5.5,
+              "odd": 1.7143,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/kris-dunn",
+              "espn_event_id": "401910025",
+              "player_id": "2991139",
+              "start_utc": "2026-11-22T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 6,
+                    "minutes": 20
+                  },
+                  {
+                    "date": "2026-11-17",
+                    "points": 2,
+                    "minutes": 26
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 7,
+                    "minutes": 18
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 2,
+                    "minutes": 20
+                  },
+                  {
+                    "date": "2026-11-10",
+                    "points": 3,
+                    "minutes": 19
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Nema pouzdano potvrđenih pojedinačnih pet H2H mečeva u današnjim izvorima."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Pozicijski splitovi primljenih poena nisu potvrđeni za ovu konkretnu ulogu."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Direktni čuvar nije potvrđen do izlaska startera; rizik procjene ostaje."
+                },
+                "injuries": {
+                  "status": "not_listed_official_report",
+                  "reason": "Nije označen kao OUT ili QUESTIONABLE na dostupnom 12:30 ET injury izvještaju, stanje može da se promijeni."
+                },
+                "minutes_projection": "Orijentacioni nedavni raspon 18-26 min.",
+                "scout_score": 69,
+                "scout_note": "L5 prosjek 4.0 ispod 5.5, uz 3/5 nastupa UNDER i smanjene minute u posljednjih pet; defanzivna uloga umjesto napadačke.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-3.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
         "groups_completed": [
           1,
-          2
+          2,
+          3
         ],
         "offered": 54,
         "total_groups": 10,
-        "group_number": 2,
-        "group_range": "7-12",
+        "group_number": 3,
+        "group_range": "13-18",
         "group_selected": [
-          "Daniel Gafford",
-          "Caleb Martin"
+          "Keaton Wagler",
+          "Kris Dunn"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-21-group-1.json",
-          "2": "collector-output/nba-system-scout-2026-11-21-group-2.json"
+          "2": "collector-output/nba-system-scout-2026-11-21-group-2.json",
+          "3": "collector-output/nba-system-scout-2026-11-21-group-3.json"
         },
         "selection_method": "full_ranked_scout"
       }
