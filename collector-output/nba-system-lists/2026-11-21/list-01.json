@@ -5,7 +5,7 @@
   "source": "BetSharp",
   "source_url": "https://betsharp.com/nba/props?m=points",
   "source_snapshot": "collector-output/betsharp-nba-daily.json",
-  "captured_at_utc": "2026-11-21T17:10:21.095317+00:00",
+  "captured_at_utc": "2026-11-21T17:37:58.291930+00:00",
   "total_offers": 68,
   "group_size": 7,
   "original_positions": [
@@ -27,17 +27,17 @@
       "points_market": {
         "DK": {
           "line": 23.5,
-          "over_american": -103,
-          "under_american": -123,
-          "over_decimal": 1.9709,
-          "under_decimal": 1.813
+          "over_american": -107,
+          "under_american": -119,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8403
         },
         "FD": {
           "line": 23.5,
-          "over_american": -112,
-          "under_american": -118,
-          "over_decimal": 1.8929,
-          "under_decimal": 1.8475
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
         },
         "MGM": {
           "line": 22.5,
@@ -74,17 +74,17 @@
       "points_market": {
         "DK": {
           "line": 14.5,
-          "over_american": -103,
-          "under_american": -124,
-          "over_decimal": 1.9709,
-          "under_decimal": 1.8065
+          "over_american": -110,
+          "under_american": -116,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8621
         },
         "FD": {
           "line": 14.5,
           "over_american": -104,
-          "under_american": -125,
+          "under_american": -128,
           "over_decimal": 1.9615,
-          "under_decimal": 1.8
+          "under_decimal": 1.7812
         },
         "BR": {
           "line": 14.5,
@@ -96,9 +96,9 @@
         "KAL": {
           "line": 14.5,
           "over_american": 108,
-          "under_american": -133,
+          "under_american": -138,
           "over_decimal": 2.08,
-          "under_decimal": 1.7519
+          "under_decimal": 1.7246
         }
       },
       "original_offer_position": 2
@@ -114,17 +114,17 @@
       "points_market": {
         "DK": {
           "line": 12.5,
-          "over_american": -107,
-          "under_american": -120,
-          "over_decimal": 1.9346,
-          "under_decimal": 1.8333
+          "over_american": -110,
+          "under_american": -115,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8696
         },
         "FD": {
           "line": 12.5,
-          "over_american": -104,
-          "under_american": -128,
-          "over_decimal": 1.9615,
-          "under_decimal": 1.7812
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
         },
         "MGM": {
           "line": 11.5,
@@ -143,9 +143,9 @@
         "KAL": {
           "line": 14.5,
           "over_american": 163,
-          "under_american": -245,
+          "under_american": -233,
           "over_decimal": 2.63,
-          "under_decimal": 1.4082
+          "under_decimal": 1.4292
         }
       },
       "original_offer_position": 3
@@ -161,17 +161,17 @@
       "points_market": {
         "DK": {
           "line": 26.5,
-          "over_american": -110,
-          "under_american": -115,
-          "over_decimal": 1.9091,
-          "under_decimal": 1.8696
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
         },
         "FD": {
           "line": 26.5,
-          "over_american": -110,
-          "under_american": -120,
-          "over_decimal": 1.9091,
-          "under_decimal": 1.8333
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
         },
         "BR": {
           "line": 25.5,
@@ -200,18 +200,18 @@
       "game_url": "https://betsharp.com/nba/game/2026-11-21-boston-celtics-at-sacramento-kings#props",
       "points_market": {
         "DK": {
-          "line": 12.5,
-          "over_american": 101,
-          "under_american": -129,
-          "over_decimal": 2.01,
-          "under_decimal": 1.7752
+          "line": 11.5,
+          "over_american": -125,
+          "under_american": -102,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9804
         },
         "FD": {
           "line": 11.5,
-          "over_american": -118,
-          "under_american": -112,
-          "over_decimal": 1.8475,
-          "under_decimal": 1.8929
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
         },
         "MGM": {
           "line": 11.5,
@@ -229,10 +229,10 @@
         },
         "KAL": {
           "line": 9.5,
-          "over_american": -233,
-          "under_american": 170,
-          "over_decimal": 1.4292,
-          "under_decimal": 2.7
+          "over_american": -245,
+          "under_american": 178,
+          "over_decimal": 1.4082,
+          "under_decimal": 2.78
         }
       },
       "original_offer_position": 5
@@ -248,17 +248,17 @@
       "points_market": {
         "DK": {
           "line": 22.5,
-          "over_american": -118,
-          "under_american": -108,
-          "over_decimal": 1.8475,
-          "under_decimal": 1.9259
+          "over_american": -112,
+          "under_american": -114,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8772
         },
         "FD": {
           "line": 22.5,
-          "over_american": -125,
-          "under_american": -106,
-          "over_decimal": 1.8,
-          "under_decimal": 1.9434
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
         },
         "BR": {
           "line": 21.5,
@@ -287,18 +287,18 @@
       "game_url": "https://betsharp.com/nba/game/2026-11-21-boston-celtics-at-sacramento-kings#props",
       "points_market": {
         "DK": {
-          "line": 18.5,
-          "over_american": -102,
-          "under_american": -125,
-          "over_decimal": 1.9804,
-          "under_decimal": 1.8
+          "line": 17.5,
+          "over_american": -123,
+          "under_american": -104,
+          "over_decimal": 1.813,
+          "under_decimal": 1.9615
         },
         "FD": {
           "line": 18.5,
-          "over_american": 102,
-          "under_american": -136,
-          "over_decimal": 2.02,
-          "under_decimal": 1.7353
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
         },
         "MGM": {
           "line": 17.5,
@@ -317,9 +317,9 @@
         "KAL": {
           "line": 19.5,
           "over_american": 138,
-          "under_american": -186,
+          "under_american": -194,
           "over_decimal": 2.38,
-          "under_decimal": 1.5376
+          "under_decimal": 1.5155
         }
       },
       "original_offer_position": 7

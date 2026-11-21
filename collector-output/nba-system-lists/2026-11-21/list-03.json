@@ -5,7 +5,7 @@
   "source": "BetSharp",
   "source_url": "https://betsharp.com/nba/props?m=points",
   "source_snapshot": "collector-output/betsharp-nba-daily.json",
-  "captured_at_utc": "2026-11-21T17:10:21.095317+00:00",
+  "captured_at_utc": "2026-11-21T17:37:58.291930+00:00",
   "total_offers": 68,
   "group_size": 7,
   "original_positions": [
@@ -26,18 +26,18 @@
       "game_url": "https://betsharp.com/nba/game/2026-11-21-la-clippers-at-dallas-mavericks#props",
       "points_market": {
         "DK": {
-          "line": 4.5,
-          "over_american": -140,
-          "under_american": 110,
-          "over_decimal": 1.7143,
-          "under_decimal": 2.1
+          "line": 5.5,
+          "over_american": 110,
+          "under_american": -140,
+          "over_decimal": 2.1,
+          "under_decimal": 1.7143
         },
         "FD": {
           "line": 5.5,
-          "over_american": 102,
-          "under_american": -136,
-          "over_decimal": 2.02,
-          "under_decimal": 1.7353
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
         },
         "MGM": {
           "line": 5.5,
@@ -128,10 +128,10 @@
         },
         "FD": {
           "line": 11.5,
-          "over_american": -125,
-          "under_american": -106,
-          "over_decimal": 1.8,
-          "under_decimal": 1.9434
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
         },
         "MGM": {
           "line": 11.5,
@@ -168,10 +168,10 @@
       "points_market": {
         "DK": {
           "line": 12.5,
-          "over_american": -102,
-          "under_american": -124,
-          "over_decimal": 1.9804,
-          "under_decimal": 1.8065
+          "over_american": -104,
+          "under_american": -123,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.813
         },
         "FD": {
           "line": 12.5,
@@ -197,9 +197,9 @@
         "KAL": {
           "line": 14.5,
           "over_american": 170,
-          "under_american": -223,
+          "under_american": -233,
           "over_decimal": 2.7,
-          "under_decimal": 1.4484
+          "under_decimal": 1.4292
         }
       },
       "original_offer_position": 18
@@ -215,17 +215,17 @@
       "points_market": {
         "DK": {
           "line": 12.5,
-          "over_american": -121,
+          "over_american": -122,
           "under_american": -105,
-          "over_decimal": 1.8264,
+          "over_decimal": 1.8197,
           "under_decimal": 1.9524
         },
         "FD": {
           "line": 12.5,
-          "over_american": -114,
-          "under_american": -114,
-          "over_decimal": 1.8772,
-          "under_decimal": 1.8772
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
         },
         "MGM": {
           "line": 12.5,
@@ -243,9 +243,9 @@
         },
         "KAL": {
           "line": 14.5,
-          "over_american": 163,
+          "over_american": 150,
           "under_american": -213,
-          "over_decimal": 2.63,
+          "over_decimal": 2.5,
           "under_decimal": 1.4695
         }
       },
@@ -269,10 +269,10 @@
         },
         "FD": {
           "line": 13.5,
-          "over_american": -118,
-          "under_american": -112,
-          "over_decimal": 1.8475,
-          "under_decimal": 1.8929
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
         },
         "MGM": {
           "line": 13.5,
@@ -319,7 +319,7 @@
           "over_american": -132,
           "under_american": 100,
           "over_decimal": 1.7576,
-          "under_decimal": 2
+          "under_decimal": 2.0
         },
         "MGM": {
           "line": 18.5,
@@ -337,9 +337,9 @@
         },
         "KAL": {
           "line": 19.5,
-          "over_american": 113,
+          "over_american": 117,
           "under_american": -156,
-          "over_decimal": 2.13,
+          "over_decimal": 2.17,
           "under_decimal": 1.641
         }
       },

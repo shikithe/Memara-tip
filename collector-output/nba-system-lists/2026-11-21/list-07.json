@@ -5,7 +5,7 @@
   "source": "BetSharp",
   "source_url": "https://betsharp.com/nba/props?m=points",
   "source_snapshot": "collector-output/betsharp-nba-daily.json",
-  "captured_at_utc": "2026-11-21T17:10:21.095317+00:00",
+  "captured_at_utc": "2026-11-21T17:37:58.291930+00:00",
   "total_offers": 68,
   "group_size": 7,
   "original_positions": [
@@ -27,16 +27,16 @@
       "points_market": {
         "DK": {
           "line": 9.5,
-          "over_american": -105,
+          "over_american": -106,
           "under_american": -121,
-          "over_decimal": 1.9524,
+          "over_decimal": 1.9434,
           "under_decimal": 1.8264
         },
         "FD": {
           "line": 9.5,
           "over_american": 100,
           "under_american": -128,
-          "over_decimal": 2,
+          "over_decimal": 2.0,
           "under_decimal": 1.7812
         },
         "MGM": {
@@ -45,13 +45,6 @@
           "under_american": 105,
           "over_decimal": 1.7143,
           "under_decimal": 2.05
-        },
-        "BR": {
-          "line": 9.5,
-          "over_american": -118,
-          "under_american": -114,
-          "over_decimal": 1.8475,
-          "under_decimal": 1.8772
         },
         "KAL": {
           "line": 9.5,
@@ -72,33 +65,12 @@
       "player_url": "https://betsharp.com/nba/player/nate-ament",
       "game_url": "https://betsharp.com/nba/game/2026-11-21-milwaukee-bucks-at-philadelphia-76ers#props",
       "points_market": {
-        "DK": {
-          "line": 8.5,
-          "over_american": -123,
-          "under_american": -104,
-          "over_decimal": 1.813,
-          "under_decimal": 1.9615
-        },
-        "FD": {
-          "line": 8.5,
-          "over_american": -128,
-          "under_american": 100,
-          "over_decimal": 1.7812,
-          "under_decimal": 2
-        },
         "MGM": {
           "line": 8.5,
           "over_american": -120,
           "under_american": -110,
           "over_decimal": 1.8333,
           "under_decimal": 1.9091
-        },
-        "BR": {
-          "line": 8.5,
-          "over_american": -129,
-          "under_american": -106,
-          "over_decimal": 1.7752,
-          "under_decimal": 1.9434
         },
         "KAL": {
           "line": 9.5,
@@ -119,19 +91,12 @@
       "player_url": "https://betsharp.com/nba/player/ryan-rollins",
       "game_url": "https://betsharp.com/nba/game/2026-11-21-milwaukee-bucks-at-philadelphia-76ers#props",
       "points_market": {
-        "DK": {
-          "line": 10.5,
-          "over_american": -119,
-          "under_american": -108,
-          "over_decimal": 1.8403,
-          "under_decimal": 1.9259
-        },
         "KAL": {
           "line": 9.5,
           "over_american": -133,
-          "under_american": 108,
+          "under_american": 104,
           "over_decimal": 1.7519,
-          "under_decimal": 2.08
+          "under_decimal": 2.04
         }
       },
       "original_offer_position": 45
@@ -145,19 +110,12 @@
       "player_url": "https://betsharp.com/nba/player/tyler-herro",
       "game_url": "https://betsharp.com/nba/game/2026-11-21-milwaukee-bucks-at-philadelphia-76ers#props",
       "points_market": {
-        "DK": {
-          "line": 20.5,
-          "over_american": -109,
-          "under_american": -116,
-          "over_decimal": 1.9174,
-          "under_decimal": 1.8621
-        },
         "FD": {
           "line": 20.5,
-          "over_american": -102,
-          "under_american": -125,
-          "over_decimal": 1.9804,
-          "under_decimal": 1.8
+          "over_american": -104,
+          "under_american": -122,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8197
         },
         "MGM": {
           "line": 20.5,
@@ -165,13 +123,6 @@
           "under_american": -120,
           "over_decimal": 1.9091,
           "under_decimal": 1.8333
-        },
-        "BR": {
-          "line": 20.5,
-          "over_american": -122,
-          "under_american": -110,
-          "over_decimal": 1.8197,
-          "under_decimal": 1.9091
         },
         "KAL": {
           "line": 19.5,
@@ -194,10 +145,10 @@
       "points_market": {
         "DK": {
           "line": 24.5,
-          "over_american": -114,
-          "under_american": -112,
-          "over_decimal": 1.8772,
-          "under_decimal": 1.8929
+          "over_american": -120,
+          "under_american": -106,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9434
         },
         "FD": {
           "line": 24.5,
@@ -214,11 +165,11 @@
           "under_decimal": 1.9091
         },
         "BR": {
-          "line": 23.5,
-          "over_american": -121,
-          "under_american": -112,
-          "over_decimal": 1.8264,
-          "under_decimal": 1.8929
+          "line": 24.5,
+          "over_american": -124,
+          "under_american": -109,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9174
         },
         "KAL": {
           "line": 24.5,
@@ -240,39 +191,39 @@
       "game_url": "https://betsharp.com/nba/game/2026-11-21-milwaukee-bucks-at-philadelphia-76ers#props",
       "points_market": {
         "DK": {
-          "line": 14.5,
-          "over_american": -103,
-          "under_american": -124,
-          "over_decimal": 1.9709,
-          "under_decimal": 1.8065
+          "line": 13.5,
+          "over_american": -126,
+          "under_american": -101,
+          "over_decimal": 1.7937,
+          "under_decimal": 1.9901
         },
         "FD": {
-          "line": 14.5,
-          "over_american": 100,
-          "under_american": -128,
-          "over_decimal": 2,
-          "under_decimal": 1.7812
+          "line": 13.5,
+          "over_american": -122,
+          "under_american": -104,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9615
         },
         "MGM": {
-          "line": 14.5,
-          "over_american": -105,
-          "under_american": -125,
-          "over_decimal": 1.9524,
-          "under_decimal": 1.8
+          "line": 13.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
         },
         "BR": {
-          "line": 14.5,
-          "over_american": -112,
-          "under_american": -121,
-          "over_decimal": 1.8929,
-          "under_decimal": 1.8264
+          "line": 13.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
         },
         "KAL": {
           "line": 14.5,
-          "over_american": -108,
-          "under_american": -113,
-          "over_decimal": 1.9259,
-          "under_decimal": 1.885
+          "over_american": 104,
+          "under_american": -127,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7874
         }
       },
       "original_offer_position": 48
@@ -295,30 +246,30 @@
         },
         "FD": {
           "line": 14.5,
-          "over_american": -106,
-          "under_american": -125,
-          "over_decimal": 1.9434,
-          "under_decimal": 1.8
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
         },
         "MGM": {
           "line": 13.5,
           "over_american": -135,
           "under_american": 100,
           "over_decimal": 1.7407,
-          "under_decimal": 2
+          "under_decimal": 2.0
         },
         "BR": {
           "line": 14.5,
-          "over_american": -121,
-          "under_american": -112,
-          "over_decimal": 1.8264,
-          "under_decimal": 1.8929
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
         },
         "KAL": {
           "line": 14.5,
           "over_american": 100,
           "under_american": -122,
-          "over_decimal": 2,
+          "over_decimal": 2.0,
           "under_decimal": 1.8197
         }
       },

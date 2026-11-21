@@ -5,7 +5,7 @@
   "source": "BetSharp",
   "source_url": "https://betsharp.com/nba/props?m=points",
   "source_snapshot": "collector-output/betsharp-nba-daily.json",
-  "captured_at_utc": "2026-11-21T17:10:21.095317+00:00",
+  "captured_at_utc": "2026-11-21T17:37:58.291930+00:00",
   "total_offers": 68,
   "group_size": 6,
   "original_positions": [
@@ -27,9 +27,9 @@
       "points_market": {
         "DK": {
           "line": 21.5,
-          "over_american": -105,
+          "over_american": -104,
           "under_american": -122,
-          "over_decimal": 1.9524,
+          "over_decimal": 1.9615,
           "under_decimal": 1.8197
         },
         "FD": {
@@ -41,16 +41,16 @@
         },
         "BR": {
           "line": 21.5,
-          "over_american": -117,
+          "over_american": -115,
           "under_american": -117,
-          "over_decimal": 1.8547,
+          "over_decimal": 1.8696,
           "under_decimal": 1.8547
         },
         "KAL": {
           "line": 19.5,
-          "over_american": -186,
+          "over_american": -178,
           "under_american": 138,
-          "over_decimal": 1.5376,
+          "over_decimal": 1.5618,
           "under_decimal": 2.38
         }
       },
@@ -107,17 +107,17 @@
       "points_market": {
         "DK": {
           "line": 11.5,
-          "over_american": 101,
-          "under_american": -128,
-          "over_decimal": 2.01,
-          "under_decimal": 1.7812
+          "over_american": -103,
+          "under_american": -124,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.8065
         },
         "FD": {
           "line": 10.5,
-          "over_american": -130,
-          "under_american": -102,
-          "over_decimal": 1.7692,
-          "under_decimal": 1.9804
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
         },
         "MGM": {
           "line": 10.5,
@@ -176,7 +176,7 @@
           "over_american": -127,
           "under_american": 100,
           "over_decimal": 1.7874,
-          "under_decimal": 2
+          "under_decimal": 2.0
         },
         "FD": {
           "line": 7.5,
@@ -194,9 +194,9 @@
         },
         "BR": {
           "line": 7.5,
-          "over_american": -125,
+          "over_american": -127,
           "under_american": -108,
-          "over_decimal": 1.8,
+          "over_decimal": 1.7874,
           "under_decimal": 1.9259
         },
         "KAL": {
@@ -219,18 +219,18 @@
       "game_url": "https://betsharp.com/nba/game/2026-11-21-portland-trail-blazers-at-new-york-knicks#props",
       "points_market": {
         "DK": {
-          "line": 11.5,
-          "over_american": -127,
-          "under_american": 100,
-          "over_decimal": 1.7874,
-          "under_decimal": 2
+          "line": 12.5,
+          "over_american": 100,
+          "under_american": -128,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7812
         },
         "FD": {
           "line": 12.5,
-          "over_american": -102,
-          "under_american": -130,
-          "over_decimal": 1.9804,
-          "under_decimal": 1.7692
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
         },
         "MGM": {
           "line": 11.5,
