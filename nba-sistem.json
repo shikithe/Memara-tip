@@ -3415,6 +3415,141 @@
               }
             }
           ]
+        },
+        {
+          "id": "5",
+          "stake": 9.91,
+          "status": "pending",
+          "total_odd": 3.3743,
+          "potential_payout": 33.44,
+          "legs": [
+            {
+              "player": "LaMelo Ball",
+              "team": "MIN",
+              "opponent": "MEM",
+              "pick": "under",
+              "points_line": 20.5,
+              "odd": 1.8475,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/lamelo-ball",
+              "espn_event_id": "401910026",
+              "player_id": "4432816",
+              "start_utc": "2026-11-22T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 15,
+                    "minutes": 35
+                  },
+                  {
+                    "date": "2026-11-17",
+                    "points": 18,
+                    "minutes": 31
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 6,
+                    "minutes": 24
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 19,
+                    "minutes": 30
+                  },
+                  {
+                    "date": "2026-11-12",
+                    "points": 22,
+                    "minutes": 25
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Direktni do pet H2H susreta s istim protivnikom nisu potvrđeni."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Nema verificiranog pojedinačnog defender matchup-a ili pozicijskih splitova."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Specifičan protivnički čuvar nije najavljen u potvrđenoj početnoj postavi."
+                },
+                "injuries": {
+                  "status": "not_listed",
+                  "reason": "Nije označen kao questionable/out u dostupnom NBA službenom izvještaju za MEM@MIN; ne garantuje nastup."
+                },
+                "minutes_projection": "L5 minute 24–35; nije garantovano.",
+                "scout_score": 72,
+                "scout_note": "UNDER 20.5 prošao je 4 od posljednjih pet utakmica, uz prosjek 16 poena i raznovrsnu ulogu.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-5.json"
+              }
+            },
+            {
+              "player": "Jonathan Kuminga",
+              "team": "MIN",
+              "opponent": "MEM",
+              "pick": "under",
+              "points_line": 15.5,
+              "odd": 1.8264,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/jonathan-kuminga",
+              "espn_event_id": "401910026",
+              "player_id": "4433247",
+              "start_utc": "2026-11-22T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 23,
+                    "minutes": 35
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 13,
+                    "minutes": 29
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 11,
+                    "minutes": 35
+                  },
+                  {
+                    "date": "2026-11-12",
+                    "points": 14,
+                    "minutes": 24
+                  },
+                  {
+                    "date": "2026-11-08",
+                    "points": 4,
+                    "minutes": 25
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Direktni do pet H2H susreta s istim protivnikom nisu potvrđeni."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Nema verificiranog pojedinačnog defender matchup-a ili pozicijskih splitova."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Specifičan protivnički čuvar nije najavljen u potvrđenoj početnoj postavi."
+                },
+                "injuries": {
+                  "status": "not_listed",
+                  "reason": "Nije označen kao questionable/out u dostupnom NBA službenom izvještaju za MEM@MIN; ne garantuje nastup."
+                },
+                "minutes_projection": "L5 minute 24–35; nije garantovano.",
+                "scout_score": 69,
+                "scout_note": "Četiri od pet posljednjih utakmica su ispod 15.5 poena, uz L5 prosjek 13 i razne minute.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-5.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -3422,21 +3557,23 @@
           1,
           2,
           3,
-          4
+          4,
+          5
         ],
         "offered": 54,
         "total_groups": 10,
-        "group_number": 4,
-        "group_range": "19-24",
+        "group_number": 5,
+        "group_range": "25-29",
         "group_selected": [
-          "Cedric Coward",
-          "Cam Spencer"
+          "LaMelo Ball",
+          "Jonathan Kuminga"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-21-group-1.json",
           "2": "collector-output/nba-system-scout-2026-11-21-group-2.json",
           "3": "collector-output/nba-system-scout-2026-11-21-group-3.json",
-          "4": "collector-output/nba-system-scout-2026-11-21-group-4.json"
+          "4": "collector-output/nba-system-scout-2026-11-21-group-4.json",
+          "5": "collector-output/nba-system-scout-2026-11-21-group-5.json"
         },
         "selection_method": "full_ranked_scout"
       }
