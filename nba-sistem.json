@@ -3955,6 +3955,141 @@
               }
             }
           ]
+        },
+        {
+          "id": "9",
+          "stake": 9.91,
+          "status": "pending",
+          "total_odd": 3.8846,
+          "potential_payout": 38.5,
+          "legs": [
+            {
+              "player": "Josh Hart",
+              "team": "NY",
+              "opponent": "POR",
+              "pick": "under",
+              "points_line": 9.5,
+              "odd": 1.9804,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/josh-hart",
+              "espn_event_id": "401910024",
+              "player_id": "3062679",
+              "start_utc": "2026-11-22T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 11,
+                    "minutes": 28
+                  },
+                  {
+                    "date": "2026-11-17",
+                    "points": 5,
+                    "minutes": 31
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 0,
+                    "minutes": 26
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 0,
+                    "minutes": 23
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 6,
+                    "minutes": 26
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Pojedinačni pet prethodnih H2H rezultata nisu kompletno potvrđeni."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Nije potvrđen precizan pozicijski matchup dozvoljenih poena za ovu utakmicu."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Današnji starter i primarni matchup čuvar nisu pouzdano potvrđeni."
+                },
+                "injuries": {
+                  "status": "not_listed",
+                  "reason": "Nije na službenoj listi OUT/QUESTIONABLE u dostupnom NBA injury reportu, konačni nastup nije garantovan."
+                },
+                "minutes_projection": "Posljednjih pet minutaža 23-31.",
+                "scout_score": 73,
+                "scout_note": "UNDER 9.5 u 4/5 nastupa i L5 prosjek 4.4, nizak volumen šuta i prioritet skoka/defanzive.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-9.json"
+              }
+            },
+            {
+              "player": "Jrue Holiday",
+              "team": "POR",
+              "opponent": "NY",
+              "pick": "over",
+              "points_line": 13.5,
+              "odd": 1.9615,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/jrue-holiday",
+              "espn_event_id": "401910024",
+              "player_id": "3995",
+              "start_utc": "2026-11-22T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 22,
+                    "minutes": 31
+                  },
+                  {
+                    "date": "2026-11-17",
+                    "points": 23,
+                    "minutes": 31
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 10,
+                    "minutes": 25
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 6,
+                    "minutes": 27
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 19,
+                    "minutes": 30
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Pojedinačni pet prethodnih H2H rezultata nisu kompletno potvrđeni."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Nije potvrđen precizan pozicijski matchup dozvoljenih poena za ovu utakmicu."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Današnji starter i primarni matchup čuvar nisu pouzdano potvrđeni."
+                },
+                "injuries": {
+                  "status": "not_listed",
+                  "reason": "Nije na službenoj listi OUT/QUESTIONABLE u dostupnom NBA injury reportu, konačni nastup nije garantovan."
+                },
+                "minutes_projection": "Posljednjih pet minutaža 25-31.",
+                "scout_score": 70,
+                "scout_note": "OVER 13.5 ostvaren u 3/5, a zadnja dva 22 i 23 uz odsustvo Avdije ukazuju na potencijalno jaču ofanzivnu ulogu.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-9.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -3966,15 +4101,16 @@
           5,
           6,
           7,
-          8
+          8,
+          9
         ],
         "offered": 54,
         "total_groups": 10,
-        "group_number": 8,
-        "group_range": "40-44",
+        "group_number": 9,
+        "group_range": "45-49",
         "group_selected": [
-          "Victor Wembanyama",
-          "Damian Lillard"
+          "Josh Hart",
+          "Jrue Holiday"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-21-group-1.json",
@@ -3984,7 +4120,8 @@
           "5": "collector-output/nba-system-scout-2026-11-21-group-5.json",
           "6": "collector-output/nba-system-scout-2026-11-21-group-6.json",
           "7": "collector-output/nba-system-scout-2026-11-21-group-7.json",
-          "8": "collector-output/nba-system-scout-2026-11-21-group-8.json"
+          "8": "collector-output/nba-system-scout-2026-11-21-group-8.json",
+          "9": "collector-output/nba-system-scout-2026-11-21-group-9.json"
         },
         "selection_method": "full_ranked_scout"
       }
