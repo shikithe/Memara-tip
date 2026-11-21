@@ -1,0 +1,477 @@
+{
+  "date": "2026-11-21",
+  "group_number": 1,
+  "analysis_complete": true,
+  "ranking": [
+    {
+      "player_id": "4251",
+      "player": "Paul George",
+      "rank": 1,
+      "score": 68,
+      "confidence": 63,
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 10,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-16",
+          "points": 22,
+          "minutes": 36
+        },
+        {
+          "date": "2026-11-15",
+          "points": 7,
+          "minutes": 25
+        },
+        {
+          "date": "2026-11-10",
+          "points": 36,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-08",
+          "points": 27,
+          "minutes": 28
+        }
+      ],
+      "season_context": "Sezonski prosjek 19,9 poena i 29,6 minuta, oscilirajući volume i 3PT pogodci.",
+      "home_away_context": "2026/27 stanje obuhvata mješavinu domaćih i gostujućih utakmica; zasebno precizan H/A prosjek za liniju nije potvrđen.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet pojedinačnih susreta protiv istog protivnika nije moglo biti pouzdano izvučeno za aktuelnu liniju."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precizna statistika protivničke odbrane na njegovoj poziciji nije potvrđena u svježem izvoru; Boston 11-4, Sacramento 1-14."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar nije potvrđen prije konačne objave početnog sastava."
+      },
+      "injuries": {
+        "status": "not_listed_in_2026_11_21_1230_report",
+        "reason": "Nije naveden među prijavljenim povredama u aktuelnom 12:30 ET NBA izvještaju."
+      },
+      "minutes_projection": "Očekivanje okvirno oko recentnog L5 raspona 23-36 minuta, osim promjena role/povrede.",
+      "role_projection": "Uloga zavisi od sastava, minutnih rotacija i toka meča.",
+      "market": {
+        "points_line": 22.5,
+        "over_odd": 1.8929,
+        "under_odd": 1.8772
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Nije kalibrirana vjerovatnoća; koristi se kombinacija empirijskog L5 prolaza, sezonskog prosjeka, minutaže, injury rizika i margine kladionice.",
+        "availability_confirmed": true,
+        "reason": "Posljednjih pet mečeva 10,22,7,36,27: tri puta ispod 22,5, L5 prosjek 20,4, dok je sezonski prosjek 19,9 ispod linije i utakmica nije počela.",
+        "risk": "Tatum je questionable; ako ne nastupi, George može dobiti znatno veći napadački teret. Ima dva visoka rezultata 36 i 27 poena u L5."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Provjeren ESPN i dodatni javni game log; nedostatak H2H i matchup-a eksplicitno evidentiran."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/paul-george",
+        "https://www.espn.com/nba/player/gamelog/_/id/4251/paul-george?season=2027",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "3155942",
+      "player": "Domantas Sabonis",
+      "rank": 2,
+      "score": 65,
+      "confidence": 62,
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 19,
+          "minutes": 38
+        },
+        {
+          "date": "2026-11-18",
+          "points": 8,
+          "minutes": 24
+        },
+        {
+          "date": "2026-11-15",
+          "points": 11,
+          "minutes": 29
+        },
+        {
+          "date": "2026-11-13",
+          "points": 21,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-10",
+          "points": 0,
+          "minutes": 24
+        }
+      ],
+      "season_context": "Sezonski prosjek 14,1 poena; jedna od glavnih uloga je dodavanje i skok, 13,4 skoka i 5,4 asistencije.",
+      "home_away_context": "2026/27 stanje obuhvata mješavinu domaćih i gostujućih utakmica; zasebno precizan H/A prosjek za liniju nije potvrđen.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet pojedinačnih susreta protiv istog protivnika nije moglo biti pouzdano izvučeno za aktuelnu liniju."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precizna statistika protivničke odbrane na njegovoj poziciji nije potvrđena u svježem izvoru; Boston 11-4, Sacramento 1-14."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar nije potvrđen prije konačne objave početnog sastava."
+      },
+      "injuries": {
+        "status": "not_listed_in_2026_11_21_1230_report",
+        "reason": "Nije naveden među prijavljenim povredama u aktuelnom 12:30 ET NBA izvještaju."
+      },
+      "minutes_projection": "Očekivanje okvirno oko recentnog L5 raspona 24-38 minuta, osim promjena role/povrede.",
+      "role_projection": "Uloga zavisi od sastava, minutnih rotacija i toka meča.",
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.9091,
+        "under_odd": 1.8696
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Nije kalibrirana vjerovatnoća; koristi se kombinacija empirijskog L5 prolaza, sezonskog prosjeka, minutaže, injury rizika i margine kladionice.",
+        "availability_confirmed": true,
+        "reason": "Ima 3 od posljednjih 5 utakmica ispod 12,5 poena (19,8,11,21,0), dok je napadačka produkcija promjenljiva u kontekstu poraza Kingsa.",
+        "risk": "Sezonski prosjek 14,1 i posljednjih 19 poena pokazuju da je granica 12,5 tanka; može dobiti više lopti protiv Bostonovih visokih igrača."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Provjeren ESPN i dodatni javni game log; nedostatak H2H i matchup-a eksplicitno evidentiran."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/domantas-sabonis",
+        "https://www.espn.com/nba/player/gamelog/_/id/3155942/domantas-sabonis?season=2027",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "betsharp:2026-11-21:0001",
+      "player": "Darius Acuff Jr.",
+      "rank": 3,
+      "score": 63,
+      "confidence": 57,
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 18,
+          "minutes": 36
+        },
+        {
+          "date": "2026-11-18",
+          "points": 36,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-15",
+          "points": 26,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-13",
+          "points": 17,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-10",
+          "points": 29,
+          "minutes": 40
+        }
+      ],
+      "season_context": "NBA rookie, posljednjih deset 26,5 poena, 36,7 minuta; uzorak još mali.",
+      "home_away_context": "2026/27 stanje obuhvata mješavinu domaćih i gostujućih utakmica; zasebno precizan H/A prosjek za liniju nije potvrđen.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet pojedinačnih susreta protiv istog protivnika nije moglo biti pouzdano izvučeno za aktuelnu liniju."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precizna statistika protivničke odbrane na njegovoj poziciji nije potvrđena u svježem izvoru; Boston 11-4, Sacramento 1-14."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar nije potvrđen prije konačne objave početnog sastava."
+      },
+      "injuries": {
+        "status": "not_listed_in_2026_11_21_1230_report",
+        "reason": "Nije naveden među prijavljenim povredama u aktuelnom 12:30 ET NBA izvještaju."
+      },
+      "minutes_projection": "Očekivanje okvirno oko recentnog L5 raspona 33-40 minuta, osim promjena role/povrede.",
+      "role_projection": "Uloga zavisi od sastava, minutnih rotacija i toka meča.",
+      "market": {
+        "points_line": 23.5,
+        "over_odd": 1.9346,
+        "under_odd": 1.8403
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Nije kalibrirana vjerovatnoća; koristi se kombinacija empirijskog L5 prolaza, sezonskog prosjeka, minutaže, injury rizika i margine kladionice.",
+        "availability_confirmed": false,
+        "reason": "Igra 36+ minuta, ima 3/5 mečeva iznad 23,5 i L10 prosjek 26,5; njegov agresivan volumen šuteva donosi potencijal, ali i velike oscilacije.",
+        "risk": "Rookie šuterska efikasnost jako varira; prethodni meč 18 poena i Bostonova odbrana smanjuju izvjesnost."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Provjeren ESPN i dodatni javni game log; nedostatak H2H i matchup-a eksplicitno evidentiran."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/darius-acuff",
+        "https://www.landofbasketball.com/nba_players_games/last_10/darius_acuff_jr_all.htm",
+        "https://www.nba.com/player/1643411/darius-acuff-jr"
+      ]
+    },
+    {
+      "player_id": "4065648",
+      "player": "Jayson Tatum",
+      "rank": 4,
+      "score": 56,
+      "confidence": 50,
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 24,
+          "minutes": 37
+        },
+        {
+          "date": "2026-11-16",
+          "points": 24,
+          "minutes": 36
+        },
+        {
+          "date": "2026-11-15",
+          "points": 32,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-11",
+          "points": 24,
+          "minutes": 38
+        },
+        {
+          "date": "2026-11-10",
+          "points": 21,
+          "minutes": 32
+        }
+      ],
+      "season_context": "Sezonski prosjek 26,4 poena, 34,1 minuta, linija blizu prosjeka.",
+      "home_away_context": "2026/27 stanje obuhvata mješavinu domaćih i gostujućih utakmica; zasebno precizan H/A prosjek za liniju nije potvrđen.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet pojedinačnih susreta protiv istog protivnika nije moglo biti pouzdano izvučeno za aktuelnu liniju."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precizna statistika protivničke odbrane na njegovoj poziciji nije potvrđena u svježem izvoru; Boston 11-4, Sacramento 1-14."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar nije potvrđen prije konačne objave početnog sastava."
+      },
+      "injuries": {
+        "status": "questionable",
+        "reason": "Rest / questionable"
+      },
+      "minutes_projection": "Očekivanje okvirno oko recentnog L5 raspona 30-38 minuta, osim promjena role/povrede.",
+      "role_projection": "Uloga zavisi od sastava, minutnih rotacija i toka meča.",
+      "market": {
+        "points_line": 26.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8547
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Nije kalibrirana vjerovatnoća; koristi se kombinacija empirijskog L5 prolaza, sezonskog prosjeka, minutaže, injury rizika i margine kladionice.",
+        "availability_confirmed": false,
+        "reason": "Četiri od posljednjih pet nastupa završio je ispod 26,5 (24,24,32,24,21); ipak prijavljen questionable zbog odmora.",
+        "risk": "Ako nastupi punim minutama može preći granicu; ako bude odmarao tip može biti void; status na povredama upitan."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Provjeren ESPN i dodatni javni game log; nedostatak H2H i matchup-a eksplicitno evidentiran."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jayson-tatum",
+        "https://www.espn.com/nba/player/gamelog/_/id/4065648/jayson-tatum?season=2027",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "3078576",
+      "player": "Derrick White",
+      "rank": 5,
+      "score": 54,
+      "confidence": 52,
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 12,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-16",
+          "points": 9,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-15",
+          "points": 16,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-11",
+          "points": 19,
+          "minutes": 38
+        },
+        {
+          "date": "2026-11-10",
+          "points": 5,
+          "minutes": 22
+        }
+      ],
+      "season_context": "15 nastupa, 12,7 PPG i 29,9 minuta.",
+      "home_away_context": "2026/27 stanje obuhvata mješavinu domaćih i gostujućih utakmica; zasebno precizan H/A prosjek za liniju nije potvrđen.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet pojedinačnih susreta protiv istog protivnika nije moglo biti pouzdano izvučeno za aktuelnu liniju."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precizna statistika protivničke odbrane na njegovoj poziciji nije potvrđena u svježem izvoru; Boston 11-4, Sacramento 1-14."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar nije potvrđen prije konačne objave početnog sastava."
+      },
+      "injuries": {
+        "status": "questionable",
+        "reason": "Left AC Joint Contusion / questionable"
+      },
+      "minutes_projection": "Očekivanje okvirno oko recentnog L5 raspona 22-38 minuta, osim promjena role/povrede.",
+      "role_projection": "Uloga zavisi od sastava, minutnih rotacija i toka meča.",
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.9091,
+        "under_odd": 1.8621
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Nije kalibrirana vjerovatnoća; koristi se kombinacija empirijskog L5 prolaza, sezonskog prosjeka, minutaže, injury rizika i margine kladionice.",
+        "availability_confirmed": false,
+        "reason": "Posljednjih 5 poena 12,9,16,19,5 i prosjek 12,2 prema ponuđenoj granici 14,5; prvenstveni rizik je upitan nastup.",
+        "risk": "Upitan zbog kontuzije lijevog AC zgloba; povećane minute ili izostanak Tatum-a mogu uticati na volumen šuta."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Provjeren ESPN i dodatni javni game log; nedostatak H2H i matchup-a eksplicitno evidentiran."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/derrick-white",
+        "https://www.espn.com/nba/player/gamelog/_/id/3078576/derrick-white?season=2027",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "betsharp:2026-11-21:0005",
+      "player": "Keegan Murray",
+      "rank": 6,
+      "score": 48,
+      "confidence": 50,
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 13,
+          "minutes": 40
+        },
+        {
+          "date": "2026-11-18",
+          "points": 12,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-15",
+          "points": 6,
+          "minutes": 21
+        },
+        {
+          "date": "2026-11-13",
+          "points": 16,
+          "minutes": 40
+        },
+        {
+          "date": "2026-11-10",
+          "points": 11,
+          "minutes": 24
+        }
+      ],
+      "season_context": "Osam utakmica, 10,3 poena u sezoni; produktivnost veoma zavisi od minutaže.",
+      "home_away_context": "2026/27 stanje obuhvata mješavinu domaćih i gostujućih utakmica; zasebno precizan H/A prosjek za liniju nije potvrđen.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet pojedinačnih susreta protiv istog protivnika nije moglo biti pouzdano izvučeno za aktuelnu liniju."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precizna statistika protivničke odbrane na njegovoj poziciji nije potvrđena u svježem izvoru; Boston 11-4, Sacramento 1-14."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar nije potvrđen prije konačne objave početnog sastava."
+      },
+      "injuries": {
+        "status": "not_listed_in_2026_11_21_1230_report",
+        "reason": "Nije naveden među prijavljenim povredama u aktuelnom 12:30 ET NBA izvještaju."
+      },
+      "minutes_projection": "Očekivanje okvirno oko recentnog L5 raspona 21-40 minuta, osim promjena role/povrede.",
+      "role_projection": "Uloga zavisi od sastava, minutnih rotacija i toka meča.",
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.8,
+        "under_odd": 1.9804
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Nije kalibrirana vjerovatnoća; koristi se kombinacija empirijskog L5 prolaza, sezonskog prosjeka, minutaže, injury rizika i margine kladionice.",
+        "availability_confirmed": false,
+        "reason": "U posljednjih pet mečeva ostvario 13,12,6,16,11 i tri puta prešao 11,5 poena; šuterska forma je nestabilna.",
+        "risk": "Mali uzorak zbog ranijih propuštenih mečeva i sezonski prosjek 10,3, ispod ponuđene linije."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Provjeren ESPN i dodatni javni game log; nedostatak H2H i matchup-a eksplicitno evidentiran."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/keegan-murray",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/keegan_murray.htm",
+        "https://www.nba.com/player/1631099/keegan-murray"
+      ]
+    }
+  ],
+  "selected_player_ids": [
+    "4251",
+    "3155942"
+  ],
+  "selection_reason": "Paul George UNDER 22,5 i Domantas Sabonis UNDER 12,5 imaju dostupne potvrđene L5 zapise, odgovarajuće sačuvane DraftKings kvote i nisu označeni upitnim na zvaničnom NBA injury izvještaju. Izbor nosi značajan rizik zbog promjena u ulozi ako Tatum ne nastupi. Nije garancija prolaza.",
+  "source_snapshot_url": "https://github.com/shikithe/Memara-tip/blob/main/collector-output/nba-system-offer-2026-11-21.json",
+  "scout_completed_at_local": "2026-11-21T19:50:00+01:00",
+  "notes": "All six original positions researched using ESPN and secondary logs; game starts 2026-11-22 03:00 UTC, no prior start. Partial uncertainty explicitly recorded; no numerical fabricated win probabilities."
+}
