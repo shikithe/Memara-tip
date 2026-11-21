@@ -1,6 +1,6 @@
 {
   "date": "2026-11-21",
-  "updated_at_utc": "2026-11-21T20:54:55.770990+00:00",
+  "updated_at_utc": "2026-11-21T20:58:05.336361+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -61,11 +61,12 @@
       "home": "Zulte-Waregem",
       "away": "Antwerp",
       "state": "live",
-      "score": "0:2",
+      "score": "1:2",
       "source": "espn-public-unofficial",
       "event_id": "401878938",
       "league": "bel.1",
-      "minute": "52"
+      "minute": "56",
+      "result_status": "pogođen"
     },
     {
       "ticket": "C",

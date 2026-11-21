@@ -4,7 +4,7 @@
   "publication_type": "independent_ai_approved_github_nba_c",
   "bank_before": 203.02,
   "daily_stake": 24.36,
-  "bank_after": 178.66,
+  "bank_after": 194.55,
   "bank_after_stakes": 178.66,
   "provisional": true,
   "settled": false,
@@ -120,8 +120,9 @@
       "analysis": "ESPN Scout 21.11.2026 Belgian league Over 2.5 only. Charleroi 4/5 last games with 3+ goals, scored/conceded 14:7; Sint-Truidense 5/5 over, 14:11. Over 2.5 quoted 1.52, high attack/defensive openness, but market risk remains. Zulte-Waregem 4/5 over, scored/conceded 5:15; Antwerp 5/5 over, scored/conceded 8:13. Over 2.5 quoted 1.72; both defenses recently conceding heavily, but older H2H less goal-heavy. Verified separate kickoff times and no overlap with A fixtures. Public source: TipsterArea game pages; five recent results per side: current ESPN collector. No xG values invented.",
       "label": "GOLOVI",
       "stake": 6.09,
-      "status": "objavljen",
-      "payout": 0
+      "status": "dobitan",
+      "payout": 15.89,
+      "settled_at_utc": "2026-11-21T20:58:05.336361+00:00"
     },
     {
       "id": "C",
@@ -323,7 +324,7 @@
       }
     }
   ],
-  "total_payout": 0,
+  "total_payout": 15.89,
   "net_change": null,
   "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
   "selection_method": "Each approved ticket independently checked",
