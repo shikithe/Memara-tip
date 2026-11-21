@@ -1,0 +1,399 @@
+{
+  "date": "2026-11-21",
+  "group_number": 6,
+  "analysis_complete": true,
+  "ranking": [
+    {
+      "player_id": "3032976",
+      "player": "Rudy Gobert",
+      "rank": 1,
+      "score": 74,
+      "confidence": 68,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 9,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-17",
+          "points": 0,
+          "minutes": 22
+        },
+        {
+          "date": "2026-11-16",
+          "points": 18,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-14",
+          "points": 1,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-12",
+          "points": 9,
+          "minutes": 23
+        }
+      ],
+      "season_context": "Sezonska forma procijenjena prema dostupnom prethodnom game-logu i individualnim ulogama; reprezentativan uzorak osjetljiv na DNP.",
+      "home_away_context": "Home/away split prema ponuđenoj granici nije odvojeno kvantitativno potvrđen.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Ne postoji pouzdan komplet zadnjih pet pojedinačnih H2H nastupa s današnjim protivnikom."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nema potvrđenih preciznih dozvoljenih poena protivnika na ovoj poziciji."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Početni sastav i direktni čuvar nisu potvrđeni u dostupnim izvorima."
+      },
+      "injuries": {
+        "status": "not_listed",
+        "reason": "Nije označen kao OUT/QUESTIONABLE u dostupnom službenom NBA izvještaju, dostupnost može da se promijeni."
+      },
+      "minutes_projection": "Recent 5 nastupa 22–35 min; ne garantuje buduće minute.",
+      "role_projection": "Role based on actual last played game logs and current participation uncertainty.",
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.9091,
+        "under_odd": 1.8403
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Evidencioni L5 uspjeh i dostupnost bez tvrđenja kalibrirane vjerovatnoće.",
+        "availability_confirmed": true,
+        "reason": "UNDER 9.5 prolazi u 4 od posljednjih pet i sezonski srednji rezultat znatno je ispod ponuđene granice.",
+        "risk": "Jedan od pet je bio 18 poena; veće minute i ofanzivni skok mogu izbaciti rezultat iz underskog raspona."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Prolaz ESPN, zatim LandOfBasketball potvrda datiranih ranijih utakmica, DNP evidentiran."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/rudy-gobert",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/rudy_gobert.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "4684806",
+      "player": "Taylor Hendricks",
+      "rank": 2,
+      "score": 70,
+      "confidence": 63,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 11,
+          "minutes": 20
+        },
+        {
+          "date": "2026-11-18",
+          "points": 18,
+          "minutes": 21
+        },
+        {
+          "date": "2026-11-16",
+          "points": 9,
+          "minutes": 19
+        },
+        {
+          "date": "2026-11-14",
+          "points": 22,
+          "minutes": 29
+        },
+        {
+          "date": "2026-11-13",
+          "points": 10,
+          "minutes": 19
+        }
+      ],
+      "season_context": "Sezonska forma procijenjena prema dostupnom prethodnom game-logu i individualnim ulogama; reprezentativan uzorak osjetljiv na DNP.",
+      "home_away_context": "Home/away split prema ponuđenoj granici nije odvojeno kvantitativno potvrđen.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Ne postoji pouzdan komplet zadnjih pet pojedinačnih H2H nastupa s današnjim protivnikom."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nema potvrđenih preciznih dozvoljenih poena protivnika na ovoj poziciji."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Početni sastav i direktni čuvar nisu potvrđeni u dostupnim izvorima."
+      },
+      "injuries": {
+        "status": "not_listed",
+        "reason": "Nije označen kao OUT/QUESTIONABLE u dostupnom službenom NBA izvještaju, dostupnost može da se promijeni."
+      },
+      "minutes_projection": "Recent 5 nastupa 19–29 min; ne garantuje buduće minute.",
+      "role_projection": "Role based on actual last played game logs and current participation uncertainty.",
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.7812,
+        "under_odd": 2.02
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Evidencioni L5 uspjeh i dostupnost bez tvrđenja kalibrirane vjerovatnoće.",
+        "availability_confirmed": true,
+        "reason": "OVER 9.5 u 4/5 posljednjih nastupa uz rast sa 3-7 na 19-29 minuta i napadačku ulogu.",
+        "risk": "Historijski DNP i minutaže 3-7 tokom oktobra ukazuju na rotacionu nestabilnost, jedan L5 meč bio samo devet poena."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Prolaz ESPN, zatim LandOfBasketball potvrda datiranih ranijih utakmica, DNP evidentiran."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/taylor-hendricks",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/taylor_hendricks.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "4432847",
+      "player": "Terrence Shannon Jr.",
+      "rank": 3,
+      "score": 61,
+      "confidence": 58,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 10,
+          "minutes": 21
+        },
+        {
+          "date": "2026-11-17",
+          "points": 12,
+          "minutes": 24
+        },
+        {
+          "date": "2026-11-16",
+          "points": 34,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-14",
+          "points": 14,
+          "minutes": 22
+        },
+        {
+          "date": "2026-11-12",
+          "points": 6,
+          "minutes": 21
+        }
+      ],
+      "season_context": "Sezonska forma procijenjena prema dostupnom prethodnom game-logu i individualnim ulogama; reprezentativan uzorak osjetljiv na DNP.",
+      "home_away_context": "Home/away split prema ponuđenoj granici nije odvojeno kvantitativno potvrđen.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Ne postoji pouzdan komplet zadnjih pet pojedinačnih H2H nastupa s današnjim protivnikom."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nema potvrđenih preciznih dozvoljenih poena protivnika na ovoj poziciji."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Početni sastav i direktni čuvar nisu potvrđeni u dostupnim izvorima."
+      },
+      "injuries": {
+        "status": "not_listed",
+        "reason": "Nije označen kao OUT/QUESTIONABLE u dostupnom službenom NBA izvještaju, dostupnost može da se promijeni."
+      },
+      "minutes_projection": "Recent 5 nastupa 21–35 min; ne garantuje buduće minute.",
+      "role_projection": "Role based on actual last played game logs and current participation uncertainty.",
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.8929,
+        "under_odd": 1.8772
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Evidencioni L5 uspjeh i dostupnost bez tvrđenja kalibrirane vjerovatnoće.",
+        "availability_confirmed": false,
+        "reason": "U 3 od posljednjih pet ispod 12.5, L5 prosjek podignut izolovanom utakmicom sa 34 poena.",
+        "risk": "Velika eksplozija 34 poena i minutaže 35 pokazuje oscilacije koje se ne mogu zanemariti."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Prolaz ESPN, zatim LandOfBasketball potvrda datiranih ranijih utakmica, DNP evidentiran."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/terrence-shannon",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/terrence_shannon_jr.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "4600663",
+      "player": "Zach Edey",
+      "rank": 4,
+      "score": 49,
+      "confidence": 43,
+      "last_five": [
+        {
+          "date": "2026-11-11",
+          "points": 2,
+          "minutes": 20
+        },
+        {
+          "date": "2026-11-09",
+          "points": 8,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-06",
+          "points": 14,
+          "minutes": 20
+        },
+        {
+          "date": "2026-11-04",
+          "points": 11,
+          "minutes": 25
+        },
+        {
+          "date": "2026-11-02",
+          "points": 6,
+          "minutes": 19
+        }
+      ],
+      "season_context": "Sezonska forma procijenjena prema dostupnom prethodnom game-logu i individualnim ulogama; reprezentativan uzorak osjetljiv na DNP.",
+      "home_away_context": "Home/away split prema ponuđenoj granici nije odvojeno kvantitativno potvrđen.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Ne postoji pouzdan komplet zadnjih pet pojedinačnih H2H nastupa s današnjim protivnikom."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nema potvrđenih preciznih dozvoljenih poena protivnika na ovoj poziciji."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Početni sastav i direktni čuvar nisu potvrđeni u dostupnim izvorima."
+      },
+      "injuries": {
+        "status": "not_listed",
+        "reason": "Nije označen kao OUT/QUESTIONABLE u dostupnom službenom NBA izvještaju, dostupnost može da se promijeni."
+      },
+      "minutes_projection": "Recent 5 nastupa 19–25 min; ne garantuje buduće minute.",
+      "role_projection": "Role based on actual last played game logs and current participation uncertainty.",
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.9615,
+        "under_odd": 1.813
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Evidencioni L5 uspjeh i dostupnost bez tvrđenja kalibrirane vjerovatnoće.",
+        "availability_confirmed": false,
+        "reason": "UNDER 9.5 prolazi u 3/5 zadnjih stvarno odigranih utakmica; dostupni rezultati ukazuju na promjenjivu produkciju.",
+        "risk": "Dugo nije nastupao poslije 11. novembra, nedostaju pouzdane aktuelne minute, izbjegavati kao primarni izbor."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Prolaz ESPN, zatim LandOfBasketball potvrda datiranih ranijih utakmica, DNP evidentiran."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/zach-edey",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/zach_edey.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "4065733",
+      "player": "Ty Jerome",
+      "rank": 5,
+      "score": 46,
+      "confidence": 42,
+      "last_five": [
+        {
+          "date": "2026-11-13",
+          "points": 17,
+          "minutes": 29
+        },
+        {
+          "date": "2026-11-11",
+          "points": 22,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-09",
+          "points": 27,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-06",
+          "points": 21,
+          "minutes": 28
+        },
+        {
+          "date": "2026-11-04",
+          "points": 23,
+          "minutes": 29
+        }
+      ],
+      "season_context": "Sezonska forma procijenjena prema dostupnom prethodnom game-logu i individualnim ulogama; reprezentativan uzorak osjetljiv na DNP.",
+      "home_away_context": "Home/away split prema ponuđenoj granici nije odvojeno kvantitativno potvrđen.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Ne postoji pouzdan komplet zadnjih pet pojedinačnih H2H nastupa s današnjim protivnikom."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nema potvrđenih preciznih dozvoljenih poena protivnika na ovoj poziciji."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Početni sastav i direktni čuvar nisu potvrđeni u dostupnim izvorima."
+      },
+      "injuries": {
+        "status": "probable",
+        "reason": "Službeni 12:30 izvještaj: probable zbog povrede desnog kuka."
+      },
+      "minutes_projection": "Recent 5 nastupa 28–32 min; ne garantuje buduće minute.",
+      "role_projection": "Role based on actual last played game logs and current participation uncertainty.",
+      "market": {
+        "points_line": 22.5,
+        "over_odd": 1.8929,
+        "under_odd": 1.8772
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Evidencioni L5 uspjeh i dostupnost bez tvrđenja kalibrirane vjerovatnoće.",
+        "availability_confirmed": false,
+        "reason": "L5 je 3/5 ispod 22.5, ali četiri uzastopna DNP do ove utakmice umanjuju vrijednost historijskog prosjeka.",
+        "risk": "Zvaničan injury report navodi probable zbog desnog kuka; više dana nije nastupao, pa projekcija minutaže nije sigurna."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Prolaz ESPN, zatim LandOfBasketball potvrda datiranih ranijih utakmica, DNP evidentiran."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/ty-jerome",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/ty_jerome.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    }
+  ],
+  "selected_player_ids": [
+    "3032976",
+    "4684806"
+  ],
+  "selection_reason": "Rudy Gobert UNDER 9.5 i Taylor Hendricks OVER 9.5 imaju po 4/5 empirijski prolaznih posljednjih nastupa; dodatno je vrednovana minutaža, a igrači sa produženim DNP periodima smješteni na kraj rang-liste.",
+  "source_snapshot_url": "https://github.com/shikithe/Memara-tip/blob/main/collector-output/nba-system-offer-2026-11-21.json",
+  "notes": "Individualna ESPN i sekundarna L5 verifikacija za 5 članova, sa eksplicitnim injury rizikom za Ty Jerome i dužim DNP za Edey."
+}
