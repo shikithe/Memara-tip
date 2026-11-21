@@ -1,0 +1,70 @@
+name: MEMARA BetSharp NBA daily player points
+on:
+  workflow_dispatch:
+  schedule:
+    # 12:05/12:25/12:45 local Sarajevo (both CET & CEST);
+    # one successful ET-date snapshot per day, later slots are retries.
+    - cron: '5,25,45 10,11 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: memara-betsharp-nba-points
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check local scheduled window and existing snapshot
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python - <<'PY'
+          import json,os
+          from datetime import datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          local=datetime.now(ZoneInfo('Europe/Sarajevo'))
+          et=datetime.now(ZoneInfo('America/New_York')).date().isoformat()
+          run=os.environ['EVENT_NAME']=='workflow_dispatch' or local.hour==12
+          p=Path('collector-output/betsharp-nba-daily.json')
+          if p.exists() and os.environ['EVENT_NAME']=='schedule':
+              d=json.loads(p.read_text())
+              if d.get('game_date_et')==et and d.get('status')=='ok' and d.get('player_count',0)>0:
+                  run=False
+                  print('BETSHARP_ALREADY_COLLECTED',et)
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f: f.write('run='+str(run).lower()+'\n')
+          print('BETSHARP_GATE',local.isoformat(),run)
+          PY
+      - name: Install HTML parser
+        if: steps.gate.outputs.run == 'true'
+        run: pip install 'beautifulsoup4>=4.12,<5'
+      - name: Collect all listed NBA points players for today's ET games
+        if: steps.gate.outputs.run == 'true'
+        run: python collect_betsharp_nba.py
+      - name: Archive today's immutable capture and commit
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          set -euo pipefail
+          date_et="$(python -c "import json;print(json.load(open('collector-output/betsharp-nba-daily.json'))['game_date_et'])")"
+          mkdir -p collector-output/betsharp-history
+          cp collector-output/betsharp-nba-daily.json "collector-output/betsharp-history/${date_et}.json"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- collector-output/betsharp-nba-daily.json "collector-output/betsharp-history/${date_et}.json"
+          if ! git diff --cached --quiet; then
+            git commit -m "data: BetSharp NBA points snapshot ${date_et}"
+            for attempt in 1 2 3 4 5; do
+              if git pull --rebase origin main && git push origin HEAD:main; then exit 0; fi
+              sleep 5
+            done
+            exit 1
+          fi
