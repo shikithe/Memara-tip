@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "date": "2026-11-21",
   "list_number": 10,
   "total_lists": 10,
@@ -6,56 +7,24 @@
   "source_url": "https://betsharp.com/nba/props?m=points",
   "source_snapshot": "collector-output/betsharp-nba-daily.json",
   "captured_at_utc": "2026-11-21T17:37:58.291930+00:00",
-  "total_offers": 68,
-  "group_size": 6,
-  "original_positions": [
-    63,
+  "filtered_at_local": "2026-11-21T19:15:02+01:00",
+  "filter_reason": "MIL @ PHI game already started at 19:00 CET",
+  "excluded_game": "MIL @ PHI",
+  "excluded_count": 14,
+  "total_offers": 54,
+  "original_offers": 68,
+  "group_size": 5,
+  "original_offer_positions": [
+    64,
+    65,
+    66,
+    67,
     68
   ],
   "status": "awaiting_scout",
   "analysis_complete": false,
   "publication_allowed": false,
   "offers": [
-    {
-      "player": "Karl-Anthony Towns",
-      "team": "NY",
-      "game": "POR @ NY",
-      "game_date_et": "2026-11-21",
-      "game_time_et": "Sat 7:30PM",
-      "player_url": "https://betsharp.com/nba/player/karl-anthony-towns",
-      "game_url": "https://betsharp.com/nba/game/2026-11-21-portland-trail-blazers-at-new-york-knicks#props",
-      "points_market": {
-        "DK": {
-          "line": 21.5,
-          "over_american": -104,
-          "under_american": -122,
-          "over_decimal": 1.9615,
-          "under_decimal": 1.8197
-        },
-        "FD": {
-          "line": 21.5,
-          "over_american": -118,
-          "under_american": -112,
-          "over_decimal": 1.8475,
-          "under_decimal": 1.8929
-        },
-        "BR": {
-          "line": 21.5,
-          "over_american": -115,
-          "under_american": -117,
-          "over_decimal": 1.8696,
-          "under_decimal": 1.8547
-        },
-        "KAL": {
-          "line": 19.5,
-          "over_american": -178,
-          "under_american": 138,
-          "over_decimal": 1.5618,
-          "under_decimal": 2.38
-        }
-      },
-      "original_offer_position": 63
-    },
     {
       "player": "Landry Shamet",
       "team": "NY",
@@ -117,7 +86,7 @@
           "over_american": -132,
           "under_american": 100,
           "over_decimal": 1.7576,
-          "under_decimal": 2.0
+          "under_decimal": 2
         },
         "MGM": {
           "line": 10.5,
@@ -176,7 +145,7 @@
           "over_american": -127,
           "under_american": 100,
           "over_decimal": 1.7874,
-          "under_decimal": 2.0
+          "under_decimal": 2
         },
         "FD": {
           "line": 7.5,
@@ -222,7 +191,7 @@
           "line": 12.5,
           "over_american": 100,
           "under_american": -128,
-          "over_decimal": 2.0,
+          "over_decimal": 2,
           "under_decimal": 1.7812
         },
         "FD": {
