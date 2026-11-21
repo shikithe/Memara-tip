@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-20",
-  "active_sha256": "719b7677057eed59cd15b471dc21133cdf2347aa92bc14db80487ccab2a427b3",
-  "fixtures": 5,
+  "date": "2026-11-21",
+  "active_sha256": "0dd15dcbe2c2087d3b8578513c240847cfa73707fcd97dc94138b8d3026f5691",
+  "fixtures": 53,
   "source": "shikithe/Slavojka:shared/active-list.json",
-  "synced_at_utc": "2026-11-20T17:01:36.010777+00:00"
+  "synced_at_utc": "2026-11-21T10:40:29.351623+00:00"
 }
