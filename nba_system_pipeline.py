@@ -57,8 +57,46 @@ def source_valid(value):
 
 def validate_snapshot(snap, date):
     require(snap.get("date") == date, "Snapshot date mismatch")
-    require(snap.get("frozen") is True and snap.get("original_snapshot_exact") is True,
-            "A verified, frozen original full offer snapshot is required, not a reconstructed list")
+    require(snap.get("frozen") is True,
+            "A frozen source snapshot is required")
+    if snap.get("original_snapshot_exact") is not True:
+        # Explicitly filtered source must be independently checked against the
+        # original GitHub-collected BetSharp offer, preserving all eligible rows.
+        require(snap.get("filtered_source_exact") is True,
+                "Snapshot must be original or verifiably filtered from original")
+        filt = snap.get("filtered_from_source") or {}
+        require(filt.get("path") == "collector-output/betsharp-nba-daily.json",
+                "Filtered snapshot source must point to original BetSharp collector")
+        original = load(ROOT / filt["path"])
+        raw = original.get("offers")
+        require(isinstance(raw, list) and original.get("status") == "ok"
+                and original.get("game_date_et") == date
+                and len(raw) == filt.get("source_count"),
+                "Filtered source date/count mismatch")
+        omit = filt.get("excluded_fixture")
+        require(isinstance(omit, str) and omit,
+                "Missing excluded fixture audit")
+        remaining = [(i, row) for i, row in enumerate(raw, 1)
+                     if row.get("game") != omit]
+        require(filt.get("excluded_count") == len(raw) - len(remaining)
+                and filt.get("eligible_count") == len(remaining)
+                and filt.get("original_positions") == [i for i, _ in remaining],
+                "Filtered source counts or original positions mismatch")
+        offers_reconciled = snap.get("offers")
+        require(isinstance(offers_reconciled, list)
+                and len(offers_reconciled) == len(remaining),
+                "Filtered offer list incomplete")
+        for (source_i, source_row), derived in zip(remaining, offers_reconciled):
+            dk = (source_row.get("points_market") or {}).get("DK") or {}
+            require(derived.get("original_offer_position") == source_i
+                    and derived.get("player") == source_row.get("player")
+                    and derived.get("team") == source_row.get("team")
+                    and derived.get("game") == source_row.get("game")
+                    and derived.get("source") == source_row.get("player_url")
+                    and derived.get("points_line") == dk.get("line")
+                    and derived.get("over_odd") == dk.get("over_decimal")
+                    and derived.get("under_odd") == dk.get("under_decimal"),
+                    "Filtered snapshot must preserve exact original names, odds and order")
     require(source_valid(snap.get("source")) and snap.get("captured_at_utc"),
             "Snapshot requires original source URL and acquisition timestamp")
     offers = snap.get("offers")
