@@ -1,0 +1,260 @@
+{
+  "date": "2026-11-21",
+  "list_number": 10,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-21T17:10:21.095317+00:00",
+  "total_offers": 68,
+  "group_size": 6,
+  "original_positions": [
+    63,
+    68
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Karl-Anthony Towns",
+      "team": "NY",
+      "game": "POR @ NY",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/karl-anthony-towns",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-portland-trail-blazers-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 21.5,
+          "over_american": -105,
+          "under_american": -122,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8197
+        },
+        "FD": {
+          "line": 21.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "BR": {
+          "line": 21.5,
+          "over_american": -117,
+          "under_american": -117,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -186,
+          "under_american": 138,
+          "over_decimal": 1.5376,
+          "under_decimal": 2.38
+        }
+      },
+      "original_offer_position": 63
+    },
+    {
+      "player": "Landry Shamet",
+      "team": "NY",
+      "game": "POR @ NY",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/landry-shamet",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-portland-trail-blazers-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -101,
+          "under_american": -126,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7937
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -109,
+          "under_american": -125,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -170,
+          "under_american": 138,
+          "over_decimal": 1.5882,
+          "under_decimal": 2.38
+        }
+      },
+      "original_offer_position": 64
+    },
+    {
+      "player": "Mikal Bridges",
+      "team": "NY",
+      "game": "POR @ NY",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/mikal-bridges",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-portland-trail-blazers-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": 101,
+          "under_american": -128,
+          "over_decimal": 2.01,
+          "under_decimal": 1.7812
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -163,
+          "under_american": 133,
+          "over_decimal": 1.6135,
+          "under_decimal": 2.33
+        }
+      },
+      "original_offer_position": 65
+    },
+    {
+      "player": "OG Anunoby",
+      "team": "NY",
+      "game": "POR @ NY",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/og-anunoby",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-portland-trail-blazers-at-new-york-knicks#props",
+      "points_market": {
+        "KAL": {
+          "line": 14.5,
+          "over_american": -203,
+          "under_american": 133,
+          "over_decimal": 1.4926,
+          "under_decimal": 2.33
+        }
+      },
+      "original_offer_position": 66
+    },
+    {
+      "player": "Sidy Cissoko",
+      "team": "POR",
+      "game": "POR @ NY",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/sidy-cissoko",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-portland-trail-blazers-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -127,
+          "under_american": 100,
+          "over_decimal": 1.7874,
+          "under_decimal": 2
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 170,
+          "under_american": -213,
+          "over_decimal": 2.7,
+          "under_decimal": 1.4695
+        }
+      },
+      "original_offer_position": 67
+    },
+    {
+      "player": "Toumani Camara",
+      "team": "POR",
+      "game": "POR @ NY",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/toumani-camara",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-portland-trail-blazers-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -127,
+          "under_american": 100,
+          "over_decimal": 1.7874,
+          "under_decimal": 2
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 170,
+          "under_american": -233,
+          "over_decimal": 2.7,
+          "under_decimal": 1.4292
+        }
+      },
+      "original_offer_position": 68
+    }
+  ]
+}
