@@ -128,10 +128,10 @@
       "label": "NBA · DVA IGRAČA",
       "matches": [
         {
-          "fixture_id": "espn:basketball:nba:401910028:202331",
+          "fixture_id": "espn:basketball:nba:401910028:4251",
           "event_id": "401910028",
           "espn_event_id": "401910028",
-          "player_id": "202331",
+          "player_id": "4251",
           "player": "Paul George",
           "home": "Boston Celtics",
           "away": "Sacramento Kings",
@@ -186,7 +186,7 @@
         "intro": "Ručni NBA C Scout: samo igrači sa stvarnom BetSharp DraftKings istom granicom i oba smjera; uz povratno provjerene NBA statistike. Ulog izuzetak 2% početne banke, današnji korisnikov zahtjev.",
         "players": [
           {
-            "id": "202331",
+            "id": "4251",
             "name": "Paul George",
             "team": "Boston Celtics",
             "opponent": "Sacramento Kings",
@@ -323,7 +323,7 @@
       }
     }
   ],
-  "total_payout": 0.0,
+  "total_payout": 0,
   "net_change": null,
   "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
   "selection_method": "Each approved ticket independently checked",
