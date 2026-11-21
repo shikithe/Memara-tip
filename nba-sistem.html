@@ -48,6 +48,101 @@
 .ticket-foot .potential .ticket-finance-value{color:#075d41}
 .ticket-foot .ticket-result{border-top-color:#cba42a}
 
+
+/* NBA SYSTEM — core Ticket C visual language (no portraits or analysis) */
+.tickets{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
+.ticket,.ticket.settled-won,.ticket.settled-lost,.ticket.settled-void{
+  --ticket-accent:#c276ff;
+  background:linear-gradient(135deg,#29183f,#0b172c 65%);
+  border:2px solid var(--ticket-accent);
+  border-radius:20px;
+  color:#f3f8ff;
+  box-shadow:none;
+}
+.ticket.settled-won{--ticket-accent:#19f2a0;border-color:var(--ticket-accent)}
+.ticket.settled-lost{--ticket-accent:#ff6974;border-color:var(--ticket-accent)}
+.ticket.settled-void{--ticket-accent:#b8c2d5;border-color:var(--ticket-accent)}
+.ticket-head{
+  padding:18px;
+  background:#ffffff08;
+  border-bottom:1px solid #ffffff1a;
+  color:#f3f8ff;
+  font-size:21px;
+  font-weight:900;
+  gap:12px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.ticket-head>span:first-child{
+  background:var(--ticket-accent);
+  color:#061423;
+  padding:7px 12px;
+  border-radius:50px;
+  font-size:14px;
+  font-weight:900;
+  letter-spacing:.02em;
+}
+.ticket-head .status{font-size:13px;font-weight:900}
+.ticket-head .status.yellow{color:#ffd58c}
+.ticket-head .status.green{color:#19f2a0}
+.ticket-head .status.red{color:#ff6974}
+.ticket-body{padding:5px 15px;background:transparent}
+.ticket .leg{
+  background:transparent;
+  box-shadow:none;
+  border:0;
+  border-radius:0;
+  border-bottom:1px solid #ffffff27;
+  margin:0;
+  padding:20px 5px;
+  color:#f3f8ff;
+}
+.ticket .leg:last-child{margin:0;border:0}
+.ticket .leg+.leg{margin:0;padding-top:20px;border-top:0}
+.ticket .leg+.leg:before{content:none}
+.ticket .leg strong{
+  font-size:clamp(21px,2.5vw,25px);
+  font-weight:900;
+  color:#f3f8ff;
+  text-shadow:none;
+  line-height:1.25;
+}
+.ticket .leg .player-team{color:#c3b1de;font-weight:750;font-size:14px}
+.ticket .leg small{color:#bfd0e2;font-size:13px}
+.ticket .leg .leg-pick,.ticket .leg .leg-odd{
+  display:inline-block;
+  margin:8px 7px 5px 0;
+  padding:8px 11px;
+  border:1px solid var(--ticket-accent);
+  border-radius:9px;
+  background:#22183c;
+  color:#d9b7ff;
+  font-size:17px;
+  line-height:1.3;
+  font-weight:900;
+  box-shadow:none;
+}
+.ticket .leg .leg-odd{color:var(--ticket-accent);font-size:19px}
+.ticket .leg.hit .leg-pick,.ticket .leg.hit .leg-odd{border-color:#19f2a0;color:#19f2a0;background:#073d31}
+.ticket .leg.miss .leg-pick,.ticket .leg.miss .leg-odd{border-color:#ff6974;color:#ff6974;background:#381b27}
+.ticket .leg.void .leg-pick,.ticket .leg.void .leg-odd{border-color:#a4bacf;color:#dce7ef;background:#293345}
+.ticket-foot{
+  background:#ffffff09;
+  border-top:1px solid #ffffff20;
+  color:#f3f8ff;
+  padding:16px 19px;
+}
+.ticket-foot .ticket-finance-label,.ticket-foot .ticket-result{color:#a4bad0}
+.ticket-foot .ticket-finance-value{color:#f3f8ff;font-size:21px}
+.ticket-foot .potential .ticket-finance-value{color:var(--ticket-accent)}
+.ticket-foot .ticket-result{border-top-color:#ffffff20}
+@media(max-width:650px){
+  .tickets{grid-template-columns:1fr;gap:21px}
+  .ticket-body{padding:5px 15px}
+  .ticket .leg{padding:19px 5px}
+  .ticket .leg strong{font-size:23px}
+}
+
 </style></head><body><div class="wrap"><div class="header"><div class="brand">Memara<span>Six</span> 🏀</div><a class="nav" href="./index.html">← Glavni pregled</a></div>
 <nav><a class="nav" href="./index.html">⚽ A / B / C</a><a class="nav active" href="./nba-sistem.html" aria-current="page">🏀 NBA SISTEM</a></nav>
 <h1>NBA SISTEM</h1><p class="muted">Odvojena virtuelna banka · do 20 različitih košarkaša · do 10 tiketa sa po dva igrača · ulog po tiketu 1% banke na početku ciklusa.</p>
