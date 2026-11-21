@@ -1,6 +1,6 @@
 {
   "date": "2026-11-20",
-  "updated_at_utc": "2026-11-21T00:15:23.823334+00:00",
+  "updated_at_utc": "2026-11-21T07:06:27.242845+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -48,23 +48,34 @@
       "index": 0,
       "home": "Brooklyn Nets",
       "away": "Orlando Magic",
-      "state": "unverified"
+      "state": "final",
+      "points_line": 10.5,
+      "period": null,
+      "game_clock": "",
+      "source": "espn-public-unofficial",
+      "event_id": "401909306",
+      "player_id": "5279130",
+      "sport": "basketball",
+      "score": "4",
+      "player_points": 4,
+      "result_status": "promašen"
     },
     {
       "ticket": "C",
       "index": 1,
       "home": "Atlanta Hawks",
       "away": "Charlotte Hornets",
-      "state": "live",
+      "state": "final",
       "points_line": 10.5,
-      "period": 1,
-      "game_clock": "9:19",
+      "period": null,
+      "game_clock": "",
       "source": "espn-public-unofficial",
       "event_id": "401909305",
       "player_id": "4869342",
       "sport": "basketball",
-      "score": "3",
-      "player_points": 3
+      "score": "11",
+      "player_points": 11,
+      "result_status": "promašen"
     }
   ],
   "bank_unchanged": true
