@@ -39,7 +39,9 @@ def setup():
         "fixture_id":fid,
         "decision":"approved" if fid in ("espn:a","espn:b") else "rejected",
         "review_summary":"Independent examination of injuries, expected lineups, xG, H2H, motivation and rest. Results used without repeating five-game Poisson math.",
-        "new_factors":{name:{"status":"unavailable", "notes":"No confirmed extra data found for this fixture on this test"} for name in factor_names}
+        "new_factors":{name:{"status":"unavailable", "notes":"No confirmed extra data found for this fixture on this test"} for name in factor_names},
+        "independent_model_check":{"status":"unavailable",
+            "notes":"External model page not available for this fictional test fixture"}
     } for fid in shortlist]
     approval = {"date": DAY, "detailed_ai_review":{
         "source_active_sha256":receipt["active_sha256"],
@@ -153,6 +155,30 @@ class TestScoutSixGate(unittest.TestCase):
                                  for k in ("1","X","2","3+","GG","NG")}
         scout["detailed_ai_top_ten_fixture_ids"]=["espn:a","espn:b","espn:c"]
         with self.assertRaisesRegex(ValueError,"TOP 10"):
+            validate_scout(approval,active,hist,receipt,scout)
+
+    def test_model_comparison_is_mandatory_for_each_candidate(self):
+        approval,active,hist,receipt,scout=setup()
+        del approval["detailed_ai_review"]["candidates"][0]["independent_model_check"]
+        with self.assertRaisesRegex(ValueError,"independent-model check"):
+            validate_scout(approval,active,hist,receipt,scout)
+
+    def test_model_comparison_with_verified_link_is_valid(self):
+        approval,active,hist,receipt,scout=setup()
+        approval["detailed_ai_review"]["candidates"][0]["independent_model_check"]={
+            "status":"verified",
+            "provider":"FairXG",
+            "source_url":"https://fairxg.com/sport/football/match/coventry-vs-crystal-palace",
+            "model_or_market_basis":"39 pct bookmakers-following; 46 pct team-news goal model",
+            "notes":"Market-based probability is not independent of the bookmaker; separately report goal model."
+        }
+        self.assertTrue(validate_scout(approval,active,hist,receipt,scout)["checked"])
+
+    def test_verified_factor_requires_real_public_url(self):
+        approval,active,hist,receipt,scout=setup()
+        approval["detailed_ai_review"]["candidates"][0]["new_factors"]["injuries_suspensions"]={
+            "status":"verified","notes":"Available on official club website","source_url":""}
+        with self.assertRaisesRegex(ValueError,"public source URL"):
             validate_scout(approval,active,hist,receipt,scout)
 
     def test_nba_only_not_checked(self):
