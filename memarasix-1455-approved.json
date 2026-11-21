@@ -1,119 +1,65 @@
 {
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "approval_source": "chatgpt_ai_analyst",
-  "approved_at_utc": "2026-11-20T18:15:15.771Z",
+  "approved_at_utc": "2026-11-21T10:42:20.461Z",
+  "source_active_sha256": "0dd15dcbe2c2087d3b8578513c240847cfa73707fcd97dc94138b8d3026f5691",
   "publication_allowed": true,
-  "state": "nba_c_independent_ai_scout_approved_for_event_publication",
+  "scout_source": "ESPN last five league games plus public preview checks; source odds as shown in ListaSix",
   "tickets": [
     {
-      "id": "C",
-      "analysis": "NBA C AI Scout 20.11.2026, izdvojen od NBA 10-ke. ESPN raspored: CHA@ATL event 401909305 21.11 00:00 UTC; ORL@BKN event 401909306 21.11 00:30 UTC. BetSharp NBA player points ponuda 116 igraca kroz 48h, nisu svi analizirani; u ovom etapnom pregledu detaljno su poredjeni kandidati Nolan Traore, Dyson Daniels, Tristan da Silva, Jakob Poeltl i Marcus Smart, sa osnovnim uporednim podacima i za nekoliko dodatnih. Odabrani su 2 po ESPN statistici, posljednjih pet igranih meceva i javnoj DraftKings BetSharp ponudi. Nolan Traore BKN OVER 10.5 poena DK -126 (1.79365079), zadnjih 5 ESPN nastupa do 18.11: 13/23 min, 23/30, 11/20, 14/21, 19/23, prosjek 16.0, pet od pet iznad granice. H2H ORL dvije utakmice: 21 PTS 38 min 05.02.2026 i 6 PTS 20 min 07.01.2026; prosjek 13.5, jedan od dva preko. Protivnik ORL, očekivana uloga u rotaciji BKN i trend zadnjih pet podupiru over; rizici promjenjiva minutaza, status DTD u nekim javnim predikcijama (novinski izvjestaj za BKN navodi samo Grant Nelson na listi) i jacina odbrane. Dyson Daniels ATL UNDER 10.5 poena DK -112 (1.89285714), ESPN 18.11 10/37 min, 15.11 9/27, 13.11 6/36, 09.11 10/31, 07.11 9/31; prosjek 8.8, svih pet ispod granice. H2H CHA: po NBAHouse prosjek posljednjih 5 oko 15.8, znatno veci od ovog praga, a protiv CHA je 23.10.2026 postigao 11; to je jasan znacajan rizik protiv UNDER. CHA dopusta relativno vise poena bekovima, jos jedan rizik, ali Danielsova najnovija uloga sa vise skokova/asistencija i niska produktivnost u pet posljednjih meceva daju prednost UNDER. Nema potvrde konkretnog direktnog cuvara ni potpune najnovije NBA injury liste za sve ucesnike; bez izmisljanja. Zajednicka kvota 3.3954. Izvor ponude https://betsharp.com/nba/props?m=points jedan dosljedan DraftKings bookmaker stupac, javna referentna cijena, bez zagarantovane kladionicarske izvrsivosti. ESPN evidencija igraca i raspored, AskScores H2H, alternativne javne najave i statistike. Nijedan drugi tiket ni banku ne dirati.",
+      "id": "A",
+      "analysis": "ESPN Scout 21.11.2026, last five league games per side, pre-match source validation. Lazio 13/15 points and goals 14:5; Lecce 4/15, goals 6:10. Lazio home win 1.45 despite doubt around Marusic/Frattesi and Zaccagni absence; previous H2H includes 2:0 and 0:0. Como 12/15, 9:4; Cagliari 3/15, 4:12. Como home win 1.31 despite Kean injury, recent H2H 2:1 Como, 0:0 home. Real Madrid 15/15, 13:2; Celta 6/15, 2:4. Madrid home win 1.21, Vinicius available again; Asencio/Rodrygo reported absent. Excluded the stronger-scoring but more injury-affected Galatasaray and inconsistent Man City. Form sourced from ESPN real scoreboards, injury/H2H checked against contemporary match previews. Quotes are public snapshots, not guaranteed at kickoff.",
+      "combined_odds": 2.3,
       "matches": [
         {
-          "player": "Nolan Traore",
-          "player_id": "5279130",
-          "espn_event_id": "401909306",
-          "team": "Brooklyn Nets",
-          "opponent": "Orlando Magic",
-          "market": "player_points",
-          "pick": "over",
-          "points_line": 10.5,
-          "odd": 1.7936507936507935,
-          "bookmaker": "DraftKings",
-          "source": "https://betsharp.com/nba/props?m=points",
-          "start_utc": "2026-11-21T00:30:00Z",
-          "quote_timestamp_verified": false
+          "fixture_id": "espn:football:ita.1:401874981",
+          "pick": "1",
+          "odd": 1.45,
+          "bookmaker": "1xBet via TipsterArea",
+          "source": "https://tipsterarea.com/match/lazio-lecce-serie-a-italy-956004"
         },
         {
-          "player": "Dyson Daniels",
-          "player_id": "4869342",
-          "espn_event_id": "401909305",
-          "team": "Atlanta Hawks",
-          "opponent": "Charlotte Hornets",
-          "market": "player_points",
-          "pick": "under",
-          "points_line": 10.5,
-          "odd": 1.8928571428571428,
-          "bookmaker": "DraftKings",
-          "source": "https://betsharp.com/nba/props?m=points",
-          "start_utc": "2026-11-21T00:00:00Z",
-          "quote_timestamp_verified": false
+          "fixture_id": "espn:football:ita.1:401875056",
+          "pick": "1",
+          "odd": 1.31,
+          "bookmaker": "1xBet via TipsterArea",
+          "source": "https://tipsterarea.com/match/como-cagliari-serie-a-italy-956003"
+        },
+        {
+          "fixture_id": "espn:football:esp.1:401882798",
+          "pick": "1",
+          "odd": 1.21,
+          "bookmaker": "SportyTrader market comparison",
+          "source": "https://www.sportytrader.com/en/odds/real-madrid-celta-vigo-8586542/"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "analysis": "ESPN Scout 21.11.2026 Belgian league Over 2.5 only. Charleroi 4/5 last games with 3+ goals, scored/conceded 14:7; Sint-Truidense 5/5 over, 14:11. Over 2.5 quoted 1.52, high attack/defensive openness, but market risk remains. Zulte-Waregem 4/5 over, scored/conceded 5:15; Antwerp 5/5 over, scored/conceded 8:13. Over 2.5 quoted 1.72; both defenses recently conceding heavily, but older H2H less goal-heavy. Verified separate kickoff times and no overlap with A fixtures. Public source: TipsterArea game pages; five recent results per side: current ESPN collector. No xG values invented.",
+      "combined_odds": 2.61,
+      "matches": [
+        {
+          "fixture_id": "espn:football:bel.1:401878940",
+          "pick": "3+",
+          "odd": 1.52,
+          "bookmaker": "1xbet via TipsterArea",
+          "source": "https://tipsterarea.com/match/charleroi-saint-truiden-pro-league-belgium-956066"
+        },
+        {
+          "fixture_id": "espn:football:bel.1:401878938",
+          "pick": "3+",
+          "odd": 1.72,
+          "bookmaker": "TipsterArea pre-match bookmaker average",
+          "source": "https://tipsterarea.com/match/zulte-waregem-royal-antwerp-pro-league-belgium-956069"
         }
       ]
     }
   ],
-  "previous_football_approval_preserved": {
-    "date": "2026-11-20",
-    "tickets": [
-      {
-        "id": "A",
-        "analysis": "AI Scout 20.11.2026: kompletna ESPN ponuda od pet meceva pregledana. BAYERN-KOLN: Bayern prvi sa 21 bodom (6-3-0), 29:9 gol-razlika, 20 golova u cetiri domace ligaske utakmice, H2H 20 pobjeda i 2 remija u 22 Bundesligaska meca; Koln 15. sa 9 bodova, samo dva gola u zadnje cetiri lige, slaba odbrana/izostaju Hubers i Van den Berg. Bayern bez Neuera, Gnabryja, Diaz, Daviesa, Saibarija; Musiala moguc povratak; rizik napadackih izostanaka, ali dovoljno izrazita domaca produkcija za 3+ pri 1.16. CERCLE-WESTERLO: Cercle 16. sa 9 bodova, 14:22, posljednjih 5 kod kuce 1-0-4, prima oko 2.0 po mecu; Westerlo 9. sa 14 bodova, 26:30, u 5 gostovanja 9 golova dao i 11 primio, u 4 od 5 dao gol; zadnja 2 H2H 4:1 i 2:0 za Cercle, prosjek 3.5. Cercle bez Manneha, Ndale, Adaramole, Herrmanna i Amanija, Westerlo bez Haspolata i Ourege; 3+ pri 1.47 se uklapa u golgeterski i defanzivni profil, uz rizik da Cercle kod kuce bude neefikasan. ATHLETIC-ESPANYOL: Athletic 7. sa 16 bodova kroz 11, posljednje 4 ukupno 3 pobjede i remi; zadnja 3 liga 7 bodova, solidan San Mames; Espanyol 13. sa 12 bodova iz 12, 6 poraza, u 6 gostovanja sakupio 7 bodova. Ipak Espanyol je dobio zadnja dva H2H, dolazi s novim trenerom Sarabiom i 4 boda u zadnje 2 utakmice; negativne informacije su eksplicitne. Athletic bez Guruzete, Sannadija, Egiluza, neizvjesni Paredes i Serrano; Espanyol bez Calatrave, Garcie, Carrerasa i Gonzaleza. Athletic 1 pri 1.54 je procjena umjerene sigurnosti. Izbaceni: Troyes-Le Havre zbog slabog napada Troyesa i novog trenera Le Havrea koji je izgubio 6 uzastopno; Velez-Belgrano je eliminacioni mec, pet zadnjih Velez 2 pobjede, Belgrano 1, model daje samo 33% za 3+ uz ponuđenu 2.27 (negativna vrijednost). Nisu potvrdeni svi detaljni individualni xG za svaku ekipu i direktni cuvari, te se ne izmisljaju. Ukupna kvota A 1.16 x 1.47 x 1.54 = 2.625168. B nije odobren jer po postojecem MemaraSix pravilu prihvata samo 3+ i ne smije dijeliti meceve sa A, a preostala dva meca ne nude kvalitetnu kombinaciju. Izvori: fcbayern.com, sportsmole.co.uk, wmrtips.com, scorenow.ai; online kvote iz ListaSix public-web snapshots 20.11.",
-        "matches": [
-          {
-            "fixture_id": "espn:football:ger.1:401884736",
-            "pick": "3+",
-            "odd": 1.16,
-            "bookmaker": "OddsRun public odds",
-            "source": "https://oddsrun.com/match/football/de/123/12153830/germany-bundesliga-i/bayern-munich-vs-cologne/"
-          },
-          {
-            "fixture_id": "espn:football:bel.1:401878937",
-            "pick": "3+",
-            "odd": 1.47,
-            "bookmaker": "TipsterArea public odds",
-            "source": "https://tipsterarea.com/match/cercle-brugge-westerlo-pro-league-belgium-955832"
-          },
-          {
-            "fixture_id": "espn:football:esp.1:401882805",
-            "pick": "1",
-            "odd": 1.54,
-            "bookmaker": "TipsterArea public odds",
-            "source": "https://tipsterarea.com/match/athletic-bilbao-espanyol-primera-division-spain-955826"
-          }
-        ]
-      }
-    ],
-    "approved_at_utc": "2026-11-20T18:11:38.011Z"
-  },
   "previous_day_approval_preserved": {
-    "date": "2026-11-19",
-    "tickets": [
-      {
-        "id": "C",
-        "analysis": "Autonomni NBA Scout 19.11.2026, rolling prozor od 16:04:52 UTC do 20.11 16:04:52 UTC. ESPN scoreboard potvrđuje 4 utakmice 20.11 01:00 UTC: GS@MEM 401910019, POR@MIL 401910020, NY@MIN 401910021, LAC@SA 401910022. BetSharp NBA points 48 igrača, 48 s obostranim istim pragom u barem jednoj koloni; svi 48 imaju po 5 stvarno odigranih mečeva pregledanih u NBAHOUSE game logs, H2H protiv tačnog protivnika pronađen za 46, bez H2H 2 (Brayden Burries, Keaton Wagler). Scout faze: pregled 48, TOP20: Scoot Henderson, Josh Hart, Gui Santos, Myles Turner, Cedric Coward, Jalen Brunson, Jaden McDaniels, Damian Lillard, Darius Garland, Jaylen Wells, Mikal Bridges, OG Anunoby, Rudy Gobert, Ayo Dosunmu, Brook Lopez, Karl-Anthony Towns, Kyle Kuzma, Deni Avdija, Stephon Castle, Al Horford. TOP10: Scoot Henderson, Josh Hart, Gui Santos, Myles Turner, Cedric Coward, Jalen Brunson, Jaden McDaniels, Darius Garland, Ayo Dosunmu, Mikal Bridges. TOP5: Scoot Henderson, Josh Hart, Gui Santos, Myles Turner, Cedric Coward. Ty Jerome isključen zbog prijavljenog odsustva; Al Horford povreda leđa; Deni Avdija questionable; ostali eliminisani zbog slabije kombinacije recentne forme, minutaže, matchup-a i cijene. FINAL #1 Scoot Henderson UNDER 11.5 DK -124 = 1.80645161, DK OVER 11.5 -103 = 1.97087379 (obje u istoj DK koloni, samo agregatorska BetSharp referenca bez timestamp-a). Zadnjih pet stvarnih nastupa: 17.11 9 PTS/21 MIN, 16.11 10/23, 13.11 11/23, 11.11 5/19, 10.11 11/23; prosjek 9.2 PTS, 21.8 MIN, UNDER 5/5. Sezona 8.7 PPG, 22.1 MPG. H2H MIL: 25.03.26 23, 28.01.25 10, 04.01.25 9, 31.01.24 15, 26.11.23 13; prosjek 14, UNDER 2/5; stariji sastavi i uloge nisu direktno uporedivi. Očekivanih 19-24 minuta; Damian Lillard i Jrue Holiday dijele kreaciju, uz mogući matchup s Tyler Herro/Brayden Burries, nijedan direktni čuvar nije potvrđen; Milwaukee slaba ukupna odbrana (#30 DRtg prema RealGM) najveći je rizik za UNDER, moguća dodatna minutaža ako Avdija/Camara izostanu. Bez prijavljene povrede Scoota. FINAL #2 Josh Hart UNDER 7.5 DK -117 = 1.85470085, DK OVER 7.5 -109 = 1.91743119 (jedinstvena DK kolona, BetSharp referenca). Zadnjih pet 17.11 5 PTS/31 MIN, 15.11 0/26, 13.11 0/23, 11.11 6/26, 02.11 8/27; prosjek 3.8 PTS i 26.6 MIN, UNDER 4/5; sezona oko 6.6 PPG. H2H MIN: 23.12.25 12, 05.11.25 18, 17.01.25 12, 01.01.24 8, 20.11.23 4; prosjek 10.8, UNDER 1/5, ali drugačije minute i sastavi. Minnesota top odbrana (#1 DRtg prema RealGM), Knicks najsporiji tempo (#30); očekivan mogući matchup Ayo Dosunmu ili Jaden McDaniels kroz switch, direktni čuvar nije potvrđen. Hart nedavno povratak nakon problema sa skočnim zglobom/bolesti, šuterski pad i konkurencija Shameta/Bridgesa, rizik oporavka i pozitivne H2H istorije. TOP5 eliminacije: Gui Santos UNDER 8.5 DK -130 =1.769 uz 4/5 recentno ispod ali Horford odsustvo može podići minute i postoje izvještaji o zglobu; Myles Turner UNDER 8.5 DK -101 =1.990, 4/5 recentno ispod ali H2H 0/5 ispod i Portland size matchup; Cedric Coward OVER 14.5 DK -122 =1.820, 4/5 recentno preko ali H2H 0/2 preko i veća volatilnost. Nijedan 5/5 nije garancija; nema dokaza direktne bookmaker sesije. Izvori tržišta samo https://betsharp.com/nba/player/scoot-henderson i https://betsharp.com/nba/player/josh-hart; ESPN scoreboard 20261119, NBAHOUSE player game logs i H2H, NBA.com, RealGM i aktuelne injury/rotation stranice isključivo za statistiku i kontekst. Odabir je procjena, ne garantovani ishod.",
-        "matches": [
-          {
-            "player_id": "4683678",
-            "player": "Scoot Henderson",
-            "espn_event_id": "401910020",
-            "team": "Portland Trail Blazers",
-            "opponent": "Milwaukee Bucks",
-            "start_utc": "2026-11-20T01:00:00Z",
-            "market": "player_points",
-            "pick": "under",
-            "points_line": 11.5,
-            "odd": 1.8065,
-            "bookmaker": "DraftKings",
-            "source": "https://betsharp.com/nba/player/scoot-henderson",
-            "quote_timestamp_verified": false
-          },
-          {
-            "player_id": "3062679",
-            "player": "Josh Hart",
-            "espn_event_id": "401910021",
-            "team": "New York Knicks",
-            "opponent": "Minnesota Timberwolves",
-            "start_utc": "2026-11-20T01:00:00Z",
-            "market": "player_points",
-            "pick": "under",
-            "points_line": 7.5,
-            "odd": 1.8547,
-            "bookmaker": "DraftKings",
-            "source": "https://betsharp.com/nba/player/josh-hart",
-            "quote_timestamp_verified": false
-          }
-        ]
-      }
+    "date": "2026-11-20",
+    "ticket_ids": [
+      "C"
     ]
   }
 }
