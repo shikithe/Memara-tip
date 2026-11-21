@@ -3820,6 +3820,141 @@
               }
             }
           ]
+        },
+        {
+          "id": "8",
+          "stake": 9.91,
+          "status": "pending",
+          "total_odd": 3.5408,
+          "potential_payout": 35.09,
+          "legs": [
+            {
+              "player": "Victor Wembanyama",
+              "team": "SA",
+              "opponent": "NO",
+              "pick": "under",
+              "points_line": 29.5,
+              "odd": 1.8547,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/victor-wembanyama",
+              "espn_event_id": "401910027",
+              "player_id": "5104157",
+              "start_utc": "2026-11-22T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 32,
+                    "minutes": 33
+                  },
+                  {
+                    "date": "2026-11-17",
+                    "points": 25,
+                    "minutes": 34
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 26,
+                    "minutes": 35
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 12,
+                    "minutes": 21
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 32,
+                    "minutes": 32
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Nema potpunog provjerenog skupa do pet direktnih NBA susreta za današnju granicu."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Pozicijski split protivnika i precizni odbrambeni matchup nisu nezavisno kvantifikovani."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Bez potvrđenog današnjeg starter matchupa, direktni čuvar nije verificiran."
+                },
+                "injuries": {
+                  "status": "not_listed",
+                  "reason": "Nije označen OUT/QUESTIONABLE u dostupnom zvaničnom injury reportu; nije garancija starta."
+                },
+                "minutes_projection": "Posljednjih 5 minuta 21-35; procjena nesigurna.",
+                "scout_score": 67,
+                "scout_note": "UNDER 29.5 u 3/5 i L5 prosjek 25.4, kućni sezonki split oko 26.3; prednost ima uslovnu vrijednost protiv New Orleansa.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-8.json"
+              }
+            },
+            {
+              "player": "Damian Lillard",
+              "team": "POR",
+              "opponent": "NY",
+              "pick": "over",
+              "points_line": 20.5,
+              "odd": 1.9091,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/damian-lillard",
+              "espn_event_id": "401910024",
+              "player_id": "6606",
+              "start_utc": "2026-11-22T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 33,
+                    "minutes": 35
+                  },
+                  {
+                    "date": "2026-11-17",
+                    "points": 25,
+                    "minutes": 31
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 9,
+                    "minutes": 24
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 29,
+                    "minutes": 33
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 18,
+                    "minutes": 32
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Nema potpunog provjerenog skupa do pet direktnih NBA susreta za današnju granicu."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Pozicijski split protivnika i precizni odbrambeni matchup nisu nezavisno kvantifikovani."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Bez potvrđenog današnjeg starter matchupa, direktni čuvar nije verificiran."
+                },
+                "injuries": {
+                  "status": "not_listed",
+                  "reason": "Nije označen OUT/QUESTIONABLE u dostupnom zvaničnom injury reportu; nije garancija starta."
+                },
+                "minutes_projection": "Posljednjih 5 minuta 24-35; procjena nesigurna.",
+                "scout_score": 64,
+                "scout_note": "Tri od posljednjih pet preko 20.5 uz dva najnovija nastupa od 33 i 25, napadačka odgovornost se povećala s izostancima.",
+                "audit": "collector-output/nba-system-scout-2026-11-21-group-8.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -3830,15 +3965,16 @@
           4,
           5,
           6,
-          7
+          7,
+          8
         ],
         "offered": 54,
         "total_groups": 10,
-        "group_number": 7,
-        "group_range": "35-39",
+        "group_number": 8,
+        "group_range": "40-44",
         "group_selected": [
-          "Keldon Johnson",
-          "De'Aaron Fox"
+          "Victor Wembanyama",
+          "Damian Lillard"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-21-group-1.json",
@@ -3847,7 +3983,8 @@
           "4": "collector-output/nba-system-scout-2026-11-21-group-4.json",
           "5": "collector-output/nba-system-scout-2026-11-21-group-5.json",
           "6": "collector-output/nba-system-scout-2026-11-21-group-6.json",
-          "7": "collector-output/nba-system-scout-2026-11-21-group-7.json"
+          "7": "collector-output/nba-system-scout-2026-11-21-group-7.json",
+          "8": "collector-output/nba-system-scout-2026-11-21-group-8.json"
         },
         "selection_method": "full_ranked_scout"
       }
