@@ -115,6 +115,46 @@ class TestScoutSixGate(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"without detailed review approval"):
             validate_scout(approval,active,hist,receipt,scout)
 
+    def test_value_aware_market_can_differ_from_raw_probability_top(self):
+        approval,active,hist,receipt,scout=setup()
+        # Fixture A: 1 is the highest RAW P, but priced 3+ wins the NEW value score.
+        scout["schema_version"]=2
+        scout["value_selection_enabled"]=True
+        values={"espn:a":{"1":40.,"3+":60.},
+                "espn:b":{"2":32.,"3+":65.},
+                "espn:c":{"2":30.,"3+":50.}}
+        for row in scout["ranked_fixtures"]:
+            fid=row["fixture_id"]
+            prices={"1":active["fixtures"][0]["home_odds"],"3+":active["fixtures"][0]["over25_odds"]}
+            scores=values[fid]
+            row["market_value"]={k:{"score": scores.get(k), "odds":prices.get(k)}
+                                for k in ("1","X","2","3+","GG","NG")}
+            row["recommended_market"]="3+"
+            row["recommended_pct"]=row["probability_pct"]["3+"]
+            row["recommended_score"]=scores["3+"]
+            row["recommended_odds"]=next(x["over25_odds"] for x in active["fixtures"] if x["fixture_id"]==fid)
+        ordered=["espn:b","espn:a","espn:c"]
+        scout["detailed_ai_top_ten_fixture_ids"]=ordered
+        scout["detailed_ai_handoff"]["candidates"]=[{"fixture_id":x} for x in ordered]
+        approval["tickets"][0]["matches"][0]["pick"]="3+"
+        approval["tickets"][0]["matches"][0]["odd"]=1.6
+        result=validate_scout(approval,active,hist,receipt,scout)
+        self.assertTrue(result["checked"])
+
+    def test_value_ranked_handoff_cannot_fall_back_to_raw_rank(self):
+        approval,active,hist,receipt,scout=setup()
+        scout["schema_version"]=2
+        scout["value_selection_enabled"]=True
+        for row in scout["ranked_fixtures"]:
+            row["recommended_market"]=row["strongest_market"]
+            row["recommended_pct"]=row["strongest_pct"]
+            row["recommended_score"]=50. if row["fixture_id"]=="espn:a" else (60. if row["fixture_id"]=="espn:b" else 40.)
+            row["market_value"]={k:{"score":row["recommended_score"] if k==row["recommended_market"] else None}
+                                 for k in ("1","X","2","3+","GG","NG")}
+        scout["detailed_ai_top_ten_fixture_ids"]=["espn:a","espn:b","espn:c"]
+        with self.assertRaisesRegex(ValueError,"TOP 10"):
+            validate_scout(approval,active,hist,receipt,scout)
+
     def test_nba_only_not_checked(self):
         approval,active,hist,receipt,scout=setup()
         approval["tickets"]=[{"id":"C","matches":[{"player":"Test"}]}]
