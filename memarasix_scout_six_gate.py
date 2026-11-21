@@ -90,12 +90,36 @@ def validate_scout(approval, active, history, receipt, scout):
     # Cross-check the exact handoff list: 10 strongest eligible matches only.
     # The ranked matrix still contains all matches, but detailed research does not
     # repeat the earlier Poisson, five-game and home/away calculations.
+    value_model = scout.get("value_selection_enabled") is True
+    if value_model:
+        if scout.get("schema_version") != 2:
+            raise ValueError("Unsupported value-model Scout report schema")
+        for row in rows:
+            pick = row.get("recommended_market")
+            markets = row.get("market_value")
+            if not isinstance(markets, dict) or set(markets) != set(MARKETS):
+                raise ValueError("Missing six-market score/EV matrix")
+            scored = [k for k in MARKETS if isinstance(markets[k], dict) and
+                      isinstance(markets[k].get("score"), (int, float))]
+            if not scored:
+                if pick is not None: raise ValueError("Scout selected market without an available price")
+                continue
+            expected_choice = sorted(scored,
+                key=lambda k: (-markets[k]["score"], -row["probability_pct"][k],
+                               {"3+":0,"1":1,"2":2,"GG":3,"NG":4,"X":5}[k]))[0]
+            if pick != expected_choice:
+                raise ValueError("Value model did not choose the highest-scored market")
+            if row.get("recommended_score") != markets[pick]["score"]:
+                raise ValueError("Value model score does not match its six-market matrix")
     expected_top_ten = [
-        row["fixture_id"]
-        for row in sorted(
+        row["fixture_id"] for row in sorted(
             (row for row in rows if row.get("candidate_A")),
-            key=lambda r: (-r["strongest_pct"], -r["second_pct"],
-                           -r.get("third_pct", 0), r["fixture_id"])
+            key=(lambda r: (-float(r.get("recommended_score") if r.get("recommended_score") is not None else -1e10),
+                            -float(r.get("recommended_pct") or 0),
+                            -r["second_pct"], -r.get("third_pct",0), r["fixture_id"]))
+                  if value_model else
+                  (lambda r: (-r["strongest_pct"], -r["second_pct"],
+                              -r.get("third_pct",0), r["fixture_id"]))
         )[:10]
     ]
     handoff = scout.get("detailed_ai_handoff", {})
@@ -165,10 +189,12 @@ def validate_scout(approval, active, history, receipt, scout):
                 raise ValueError("AI selected a top-ten fixture without detailed review approval")
             score = ranked[fid]
             pick = leg.get("pick")
-            if pick != score["strongest_market"]:
+            model_pick = (score.get("recommended_market")
+                          if value_model else score["strongest_market"])
+            if pick != model_pick:
                 raise ValueError(
                     "AI selection uses a weaker market for " + str(fid) +
-                    ": approved=" + str(pick) + " Scout top=" + score["strongest_market"]
+                    ": approved=" + str(pick) + " Scout top=" + str(model_pick)
                 )
             if tid == "B" and pick != "3+":
                 raise ValueError("Ticket B permits only 3+ as this match's top market")
