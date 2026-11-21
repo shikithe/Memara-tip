@@ -97,6 +97,43 @@ class PipelineTests(unittest.TestCase):
         with self.assertRaisesRegex(p.GateError, "top-ranked"):
             p.validate_audit(audit, self.snapshot, self.groups, 1)
 
+    def test_excluded_player_after_both_sources_does_not_block_group(self):
+        audit = self.audit()
+        excluded = audit["ranking"][-1]
+        excluded["eligibility"] = "insufficient_data"
+        excluded["last_five"] = []
+        excluded["assessment"] = {"availability_confirmed": False}
+        excluded["research"] = {
+            "espn_attempted": True, "secondary_attempted": True,
+            "missing": ["five confirmed recent game logs"],
+            "reason": "The primary and secondary game logs both failed verification"}
+        picks = p.validate_audit(audit, self.snapshot, self.groups, 1)
+        self.assertEqual(len(picks), 2)
+
+    def test_excluded_top_ranked_cannot_be_selected(self):
+        audit = self.audit()
+        excluded = audit["ranking"][0]
+        excluded["eligibility"] = "insufficient_data"
+        excluded["last_five"] = []
+        excluded["assessment"] = {"availability_confirmed": False}
+        excluded["research"] = {
+            "espn_attempted": True, "secondary_attempted": True,
+            "missing": ["five individual game logs"],
+            "reason": "No reliable primary or backup recent game statistics found"}
+        with self.assertRaisesRegex(p.GateError, "Top two must"):
+            p.validate_audit(audit, self.snapshot, self.groups, 1)
+
+    def test_cannot_mark_unresearched_member_excluded(self):
+        audit = self.audit()
+        excluded = audit["ranking"][-1]
+        excluded["eligibility"] = "insufficient_data"
+        excluded["last_five"] = []
+        excluded["assessment"] = {"availability_confirmed": False}
+        excluded["research"] = {"espn_attempted": True, "secondary_attempted": False,
+                                "missing": ["last five games"], "reason": "No games available"}
+        with self.assertRaisesRegex(p.GateError, "ESPN and secondary attempts"):
+            p.validate_audit(audit, self.snapshot, self.groups, 1)
+
     def test_cannot_skip_groups(self):
         self.audit(2)
         with self.assertRaisesRegex(p.GateError, "next ticket is 1"):
