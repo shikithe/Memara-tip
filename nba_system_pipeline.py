@@ -105,6 +105,30 @@ def validate_member(row, offer):
     require(isinstance(row.get("rank"), int) and row["rank"] >= 1, "Every player needs an integer rank")
     require(isinstance(row.get("score"), (int, float)) and math.isfinite(row["score"]),
             f"{row.get('player')}: missing numeric Scout score")
+    # All candidates must be visited. Players with missing information after
+    # both research passes may be excluded, but cannot be selected.
+    eligibility = row.get("eligibility", "eligible")
+    require(eligibility in ("eligible", "insufficient_data"),
+            f"{row.get('player')}: unknown eligibility")
+    if eligibility == "insufficient_data":
+        research = row.get("research")
+        require(isinstance(research, dict)
+                and research.get("espn_attempted") is True
+                and research.get("secondary_attempted") is True
+                and isinstance(research.get("missing"), list)
+                and bool(research["missing"])
+                and isinstance(research.get("reason"), str)
+                and len(research["reason"].strip()) >= 20,
+                f"{row.get('player')}: ESPN and secondary attempts must be recorded")
+        require(isinstance(row.get("sources"), list)
+                and all(source_valid(u) for u in row["sources"]),
+                f"{row.get('player')}: invalid research source URLs")
+        require(not row.get("last_five") or
+                (isinstance(row["last_five"], list) and len(row["last_five"]) <= 5),
+                f"{row.get('player')}: partial game log must be at most five entries")
+        require(row.get("assessment", {}).get("availability_confirmed") is not True,
+                f"{row.get('player')}: incomplete Scout cannot be marked available")
+        return
     for field in REQUIRED_SCOUT:
         require(field in row, f"{row.get('player')}: missing Scout field {field}")
         require(row[field] not in (None, "", [], {}),
@@ -161,6 +185,10 @@ def validate_audit(audit, snap, groups, g):
     ordered = sorted(rows, key=lambda x: x["rank"])
     require(all(ordered[i]["score"] >= ordered[i+1]["score"] for i in range(len(ordered)-1)),
             "Scout scores must be descending in rank order")
+    require(len([r for r in rows if r.get("eligibility", "eligible") == "eligible"]) >= 2,
+            "Fewer than two eligible fully verified players after ESPN and secondary pass")
+    require(all(r.get("eligibility", "eligible") == "eligible" for r in ordered[:2]),
+            "Top two must have complete, eligible Scout evidence")
     selected = audit.get("selected_player_ids")
     require(isinstance(selected, list) and len(selected) == 2 and
             selected == [str(ordered[0]["player_id"]), str(ordered[1]["player_id"])],
