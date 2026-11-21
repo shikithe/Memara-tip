@@ -6,7 +6,10 @@ on:
       - 'nba_system_live.py'
       - '.github/workflows/nba-system-live.yml'
   schedule:
-    - cron: '*/5 * * * *'
+    # GitHub can delay/drop high-frequency cron jobs. Use staggered slots instead.
+    - cron: '17,47 * * * *'
+    # Extra final-score retries overnight (UTC, Europe/Berlin +1 in winter).
+    - cron: '27 4-9 * * *'
 permissions:
   contents: write
 concurrency:
