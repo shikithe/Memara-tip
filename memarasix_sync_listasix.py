@@ -43,7 +43,7 @@ def download(path):
     return json.loads(payload)
 
 
-def validate(active, history, now, expected_date=None, expected_sha256=None):
+def validate(active, history, now, expected_date=None, expected_sha256=None, expected_history_sha256=None):
     today = now.astimezone(SAR).date().isoformat()
     if expected_date and expected_date != today:
         raise ValueError("Event carries a stale date")
@@ -64,7 +64,11 @@ def validate(active, history, now, expected_date=None, expected_sha256=None):
     digest = canonical_hash(active)
     if expected_sha256 and digest != expected_sha256:
         raise ValueError("Event hash does not match actual source: retry newer signal")
-    return {"date": today, "active_sha256": digest, "fixtures": len(fixtures),
+    history_digest = canonical_hash(history)
+    if expected_history_sha256 and history_digest != expected_history_sha256:
+        raise ValueError("Event history hash does not match actual ESPN source")
+    return {"date": today, "active_sha256": digest,
+            "history_sha256": history_digest, "fixtures": len(fixtures),
             "source": "shikithe/Slavojka:shared/active-list.json",
             "synced_at_utc": now.isoformat()}
 
@@ -81,7 +85,8 @@ def write_snapshot(root, active, history, receipt):
         if (canonical_hash(old_active) == canonical_hash(active)
                 and canonical_hash(old_history) == canonical_hash(history)
                 and old_receipt.get("date") == receipt["date"]
-                and old_receipt.get("active_sha256") == receipt["active_sha256"]):
+                and old_receipt.get("active_sha256") == receipt["active_sha256"]
+                and old_receipt.get("history_sha256") == receipt["history_sha256"]):
             print("LISTASIX_ALREADY_SYNCED_WITH_RECEIPT")
             return False
     except (OSError, ValueError, TypeError):
@@ -100,6 +105,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--expected-date", default="")
     parser.add_argument("--expected-sha256", default="")
+    parser.add_argument("--expected-history-sha256", default="")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     now = datetime.now(timezone.utc)
@@ -107,7 +113,8 @@ def main():
     history = download("shared/agent/history-h2h.json")
     receipt = validate(active, history, now,
                        expected_date=args.expected_date,
-                       expected_sha256=args.expected_sha256)
+                       expected_sha256=args.expected_sha256,
+                       expected_history_sha256=args.expected_history_sha256)
     if not args.dry_run:
         write_snapshot(Path("."), active, history, receipt)
     print("LISTASIX_SYNC_VALIDATED", json.dumps(receipt, ensure_ascii=False))
