@@ -1,6 +1,6 @@
 {
   "date": "2026-11-21",
-  "updated_at_utc": "2026-11-21T15:16:39.909847+00:00",
+  "updated_at_utc": "2026-11-21T15:22:13.474924+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -14,7 +14,7 @@
       "source": "espn-public-unofficial",
       "event_id": "401874981",
       "league": "ita.1",
-      "minute": "60"
+      "minute": "65"
     },
     {
       "ticket": "A",
@@ -22,11 +22,11 @@
       "home": "Como",
       "away": "Cagliari",
       "state": "live",
-      "score": "1:0",
+      "score": "2:0",
       "source": "espn-public-unofficial",
       "event_id": "401875056",
       "league": "ita.1",
-      "minute": "54"
+      "minute": "60"
     },
     {
       "ticket": "A",
@@ -46,11 +46,11 @@
       "home": "Royal Charleroi SC",
       "away": "Sint-Truidense",
       "state": "live",
-      "score": "0:0",
+      "score": "1:0",
       "source": "espn-public-unofficial",
       "event_id": "401878940",
       "league": "bel.1",
-      "minute": "14"
+      "minute": "20"
     },
     {
       "ticket": "B",
