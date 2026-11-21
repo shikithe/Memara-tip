@@ -26,6 +26,28 @@
 .ticket.settled-void{background:linear-gradient(145deg,#435666,#1a354b 75%);border-color:#a5b6c8}
 @media(max-width:650px){.tickets{gap:30px}.ticket-body{padding:13px}.ticket .leg{padding:18px 15px 20px}.ticket .leg strong{font-size:23px}}
 
+
+/* Mozzart-inspired vivid yellow ticket shell; player panels retain their blue styling */
+.ticket,.ticket.settled-won,.ticket.settled-lost,.ticket.settled-void{
+  background:linear-gradient(165deg,#ffed22 0%,#ffdf00 58%,#ffd400 100%);
+  color:#182538;
+  border-color:#d7a900;
+}
+.ticket.settled-won{border-color:#16a875}
+.ticket.settled-lost{border-color:#e45063}
+.ticket.settled-void{border-color:#8796a4}
+.ticket-head{background:#ffdc00;color:#172333;border-bottom:2px solid #b38f00}
+.ticket-head .status.yellow{color:#4d3b00}
+.ticket-head .status.green{color:#075a40}
+.ticket-head .status.red{color:#932338}
+.ticket-body{background:transparent}
+.ticket .leg{color:#f2f8ff}
+.ticket-foot{background:#ffe54e;color:#172333;border-top:2px solid #bf9600}
+.ticket-foot .ticket-finance-label,.ticket-foot .ticket-result{color:#554500}
+.ticket-foot .ticket-finance-value{color:#172333}
+.ticket-foot .potential .ticket-finance-value{color:#075d41}
+.ticket-foot .ticket-result{border-top-color:#cba42a}
+
 </style></head><body><div class="wrap"><div class="header"><div class="brand">Memara<span>Six</span> 🏀</div><a class="nav" href="./index.html">← Glavni pregled</a></div>
 <nav><a class="nav" href="./index.html">⚽ A / B / C</a><a class="nav active" href="./nba-sistem.html" aria-current="page">🏀 NBA SISTEM</a></nav>
 <h1>NBA SISTEM</h1><p class="muted">Odvojena virtuelna banka · do 20 različitih košarkaša · do 10 tiketa sa po dva igrača · ulog po tiketu 1% banke na početku ciklusa.</p>
