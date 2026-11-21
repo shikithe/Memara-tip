@@ -33,11 +33,13 @@ jobs:
         env:
           SOURCE_DATE: ${{ github.event.client_payload.date }}
           SOURCE_SHA256: ${{ github.event.client_payload.active_sha256 }}
+          SOURCE_HISTORY_SHA256: ${{ github.event.client_payload.history_sha256 }}
         run: |
           set -euo pipefail
           python3 memarasix_sync_listasix.py \
             --expected-date "$SOURCE_DATE" \
-            --expected-sha256 "$SOURCE_SHA256"
+            --expected-sha256 "$SOURCE_SHA256" \
+            --expected-history-sha256 "$SOURCE_HISTORY_SHA256"
       - name: Commit synchronized active list, history and receipt together
         id: synchronized
         run: |
