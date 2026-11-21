@@ -1,0 +1,349 @@
+{
+  "date": "2026-11-21",
+  "list_number": 3,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-21T17:10:21.095317+00:00",
+  "total_offers": 68,
+  "group_size": 7,
+  "original_positions": [
+    15,
+    21
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Kris Dunn",
+      "team": "LAC",
+      "game": "LAC @ DAL",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/kris-dunn",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-la-clippers-at-dallas-mavericks#props",
+      "points_market": {
+        "DK": {
+          "line": 4.5,
+          "over_american": -140,
+          "under_american": 110,
+          "over_decimal": 1.7143,
+          "under_decimal": 2.1
+        },
+        "FD": {
+          "line": 5.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 5.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 5.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -144,
+          "under_american": 108,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 15
+    },
+    {
+      "player": "Kyrie Irving",
+      "team": "DAL",
+      "game": "LAC @ DAL",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/kyrie-irving",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-la-clippers-at-dallas-mavericks#props",
+      "points_market": {
+        "DK": {
+          "line": 23.5,
+          "over_american": -108,
+          "under_american": -118,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8475
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 23.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 22.5,
+          "over_american": -117,
+          "under_american": -115,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8696
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 117,
+          "under_american": -163,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6135
+        }
+      },
+      "original_offer_position": 16
+    },
+    {
+      "player": "Max Strus",
+      "team": "LAC",
+      "game": "LAC @ DAL",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/max-strus",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-la-clippers-at-dallas-mavericks#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -116,
+          "under_american": -110,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -109,
+          "under_american": -125,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -203,
+          "under_american": 163,
+          "over_decimal": 1.4926,
+          "under_decimal": 2.63
+        }
+      },
+      "original_offer_position": 17
+    },
+    {
+      "player": "Naji Marshall",
+      "team": "DAL",
+      "game": "LAC @ DAL",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/naji-marshall",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-la-clippers-at-dallas-mavericks#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -102,
+          "under_american": -124,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 170,
+          "under_american": -223,
+          "over_decimal": 2.7,
+          "under_decimal": 1.4484
+        }
+      },
+      "original_offer_position": 18
+    },
+    {
+      "player": "P.J. Washington",
+      "team": "DAL",
+      "game": "LAC @ DAL",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/pj-washington",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-la-clippers-at-dallas-mavericks#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -121,
+          "under_american": -105,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 163,
+          "under_american": -213,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4695
+        }
+      },
+      "original_offer_position": 19
+    },
+    {
+      "player": "Rui Hachimura",
+      "team": "LAC",
+      "game": "LAC @ DAL",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/rui-hachimura",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-la-clippers-at-dallas-mavericks#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -101,
+          "under_american": -126,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7937
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -120,
+          "under_american": -114,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.8772
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 108,
+          "under_american": -133,
+          "over_decimal": 2.08,
+          "under_decimal": 1.7519
+        }
+      },
+      "original_offer_position": 20
+    },
+    {
+      "player": "Ayo Dosunmu",
+      "team": "MIN",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/ayo-dosunmu",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -124,
+          "under_american": -103,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9709
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2
+        },
+        "MGM": {
+          "line": 18.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 113,
+          "under_american": -156,
+          "over_decimal": 2.13,
+          "under_decimal": 1.641
+        }
+      },
+      "original_offer_position": 21
+    }
+  ]
+}
