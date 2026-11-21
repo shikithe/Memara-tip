@@ -1,0 +1,328 @@
+{
+  "date": "2026-11-21",
+  "list_number": 4,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-21T17:10:21.095317+00:00",
+  "total_offers": 68,
+  "group_size": 7,
+  "original_positions": [
+    22,
+    28
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Bones Hyland",
+      "team": "MIN",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/bones-hyland",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -111,
+          "under_american": -118,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8475
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -121,
+          "under_american": -113,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.885
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -113,
+          "under_american": -108,
+          "over_decimal": 1.885,
+          "under_decimal": 1.9259
+        }
+      },
+      "original_offer_position": 22
+    },
+    {
+      "player": "Cam Spencer",
+      "team": "MEM",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/cam-spencer",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -102,
+          "under_american": -124,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -130,
+          "under_american": 100,
+          "over_decimal": 1.7692,
+          "under_decimal": 2
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -124,
+          "under_american": -109,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9174
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -138,
+          "under_american": 113,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.13
+        }
+      },
+      "original_offer_position": 23
+    },
+    {
+      "player": "Cedric Coward",
+      "team": "MEM",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/cedric-coward",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 16.5,
+          "over_american": -115,
+          "under_american": -110,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 16.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 16.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 16.5,
+          "over_american": -122,
+          "under_american": -110,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9091
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -178,
+          "under_american": 138,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.38
+        }
+      },
+      "original_offer_position": 24
+    },
+    {
+      "player": "Isaiah Stewart",
+      "team": "MEM",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/isaiah-stewart",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -120,
+          "under_american": -106,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -117,
+          "under_american": -104,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9615
+        }
+      },
+      "original_offer_position": 25
+    },
+    {
+      "player": "Jaden McDaniels",
+      "team": "MIN",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jaden-mcdaniels",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -112,
+          "under_american": -114,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 16.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 156,
+          "under_american": -194,
+          "over_decimal": 2.56,
+          "under_decimal": 1.5155
+        }
+      },
+      "original_offer_position": 26
+    },
+    {
+      "player": "Jaylen Wells",
+      "team": "MEM",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jaylen-wells",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -118,
+          "under_american": -109,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -109,
+          "under_american": -125,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -156,
+          "under_american": 127,
+          "over_decimal": 1.641,
+          "under_decimal": 2.27
+        }
+      },
+      "original_offer_position": 27
+    },
+    {
+      "player": "Jonathan Kuminga",
+      "team": "MIN",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-21",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jonathan-kuminga",
+      "game_url": "https://betsharp.com/nba/game/2026-11-21-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -105,
+          "under_american": -121,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -111,
+          "under_american": -118,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8475
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -108,
+          "under_american": -113,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.885
+        }
+      },
+      "original_offer_position": 28
+    }
+  ]
+}
