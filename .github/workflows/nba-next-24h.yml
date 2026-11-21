@@ -1,6 +1,10 @@
 name: MEMARA NBA next 24 hours
 on:
   workflow_dispatch:
+  schedule:
+    # At 12:00, 12:20 and 12:40 Sarajevo time; both CET/CEST covered.
+    # Gate below rejects slots outside local hour 12 and skips same-day success.
+    - cron: '0,20,40 10,11 * * *'
 permissions:
   contents: write
 concurrency:
