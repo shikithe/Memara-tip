@@ -1,0 +1,476 @@
+{
+  "date": "2026-11-21",
+  "group_number": 2,
+  "analysis_complete": true,
+  "ranking": [
+    {
+      "player_id": "4278049",
+      "player": "Daniel Gafford",
+      "rank": 1,
+      "score": 74,
+      "confidence": 67,
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 6,
+          "minutes": 24
+        },
+        {
+          "date": "2026-11-15",
+          "points": 3,
+          "minutes": 19
+        },
+        {
+          "date": "2026-11-14",
+          "points": 10,
+          "minutes": 17
+        },
+        {
+          "date": "2026-11-12",
+          "points": 3,
+          "minutes": 16
+        },
+        {
+          "date": "2026-11-09",
+          "points": 8,
+          "minutes": 20
+        }
+      ],
+      "season_context": "Nedavni raspored minuta 16-24 i mali volumen šuteva, L5 prosjek 6.",
+      "home_away_context": "Nedavni relevantni nastupi uključuju i domaće i gostujuće; zasebni H/A poeni za današnju granicu nisu numerički potvrđeni.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet relevantnih H2H mečeva protiv današnjeg protivnika nisu pojedinačno verifikovani."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nisu dostupni pouzdani savremeni splitovi dozvoljenih poena po poziciji za ovaj matchup."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar i početni raspored rotacije nisu potvrđeni pred početak utakmice."
+      },
+      "injuries": {
+        "status": "not_listed_official_report",
+        "reason": "Nije označen OUT/QUESTIONABLE u 12:30 ET NBA injury izvještaju; mogućnost promjene do meča ostaje."
+      },
+      "minutes_projection": "Okvirna istorijska L5 minutaža 16–24 minuta, ne garantuje današnje vrijeme.",
+      "role_projection": "Uloga procijenjena iz zadnjih pet nastupa; konačna početna postava može je promijeniti.",
+      "market": {
+        "points_line": 8.5,
+        "over_odd": 1.8403,
+        "under_odd": 1.9346
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Bez kalibriranog procenta; L5 učestalost, minute, role i kvota su heuristički rangirani.",
+        "availability_confirmed": true,
+        "reason": "Četiri od pet posljednjih nastupa ispod 8,5 poena, L5 prosjek 6 i ograničena minutaža; UNDER 8,5 na sačuvanoj kvoti 1,9346.",
+        "risk": "Dobar završivač blizu koša; u povoljnom matchup-u i sa dodatnom minutažom može preći 8,5; ranije postojala povreda lica."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primarni ESPN pokušaj i drugi pass LandOfBasketball obuhvatili su datirane poene i minute; detaljni H2H/čuvar nedostaju."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/daniel-gafford",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/daniel_gafford.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "3138160",
+      "player": "Caleb Martin",
+      "rank": 2,
+      "score": 70,
+      "confidence": 65,
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 8,
+          "minutes": 20
+        },
+        {
+          "date": "2026-11-15",
+          "points": 12,
+          "minutes": 34
+        },
+        {
+          "date": "2026-11-14",
+          "points": 15,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-12",
+          "points": 7,
+          "minutes": 21
+        },
+        {
+          "date": "2026-11-09",
+          "points": 0,
+          "minutes": 19
+        }
+      ],
+      "season_context": "Ograničen rani dio sezone zbog povrede, nakon povratka L5 8,12,15,7,0 poena.",
+      "home_away_context": "Nedavni relevantni nastupi uključuju i domaće i gostujuće; zasebni H/A poeni za današnju granicu nisu numerički potvrđeni.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet relevantnih H2H mečeva protiv današnjeg protivnika nisu pojedinačno verifikovani."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nisu dostupni pouzdani savremeni splitovi dozvoljenih poena po poziciji za ovaj matchup."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar i početni raspored rotacije nisu potvrđeni pred početak utakmice."
+      },
+      "injuries": {
+        "status": "available_per_official_injury_report",
+        "reason": "Na 12:30 ET NBA izvještaju označen Available sa zaštitom desnog palca."
+      },
+      "minutes_projection": "Okvirna istorijska L5 minutaža 19–34 minuta, ne garantuje današnje vrijeme.",
+      "role_projection": "Uloga procijenjena iz zadnjih pet nastupa; konačna početna postava može je promijeniti.",
+      "market": {
+        "points_line": 5.5,
+        "over_odd": 1.7353,
+        "under_odd": 2.06
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Bez kalibriranog procenta; L5 učestalost, minute, role i kvota su heuristički rangirani.",
+        "availability_confirmed": true,
+        "reason": "Četiri od posljednjih pet nastupa iznad granice 5,5 uz kvotu 1,7353; uprkos promjenljivoj minutaži linija je niska.",
+        "risk": "Caleb ima medicinski evidentiran thumb splint i neujednačenu ulogu; 0 poena Nov9 i male minute su ključni rizici."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primarni ESPN pokušaj i drugi pass LandOfBasketball obuhvatili su datirane poene i minute; detaljni H2H/čuvar nedostaju."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/caleb-martin",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/caleb_martin.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "betsharp:2026-11-21:0007",
+      "player": "Zach LaVine",
+      "rank": 3,
+      "score": 65,
+      "confidence": 65,
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 19,
+          "minutes": 39
+        },
+        {
+          "date": "2026-11-18",
+          "points": 18,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-13",
+          "points": 12,
+          "minutes": 36
+        },
+        {
+          "date": "2026-11-10",
+          "points": 31,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-08",
+          "points": 15,
+          "minutes": 25
+        }
+      ],
+      "season_context": "14 utakmica, oko 21 PPG, 33,4 minuta",
+      "home_away_context": "Nedavni relevantni nastupi uključuju i domaće i gostujuće; zasebni H/A poeni za današnju granicu nisu numerički potvrđeni.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet relevantnih H2H mečeva protiv današnjeg protivnika nisu pojedinačno verifikovani."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nisu dostupni pouzdani savremeni splitovi dozvoljenih poena po poziciji za ovaj matchup."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar i početni raspored rotacije nisu potvrđeni pred početak utakmice."
+      },
+      "injuries": {
+        "status": "not_listed_official_report",
+        "reason": "Nije označen OUT/QUESTIONABLE u 12:30 ET NBA injury izvještaju; mogućnost promjene do meča ostaje."
+      },
+      "minutes_projection": "Okvirna istorijska L5 minutaža 25–39 minuta, ne garantuje današnje vrijeme.",
+      "role_projection": "Uloga procijenjena iz zadnjih pet nastupa; konačna početna postava može je promijeniti.",
+      "market": {
+        "points_line": 17.5,
+        "over_odd": 1.813,
+        "under_odd": 1.9615
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Bez kalibriranog procenta; L5 učestalost, minute, role i kvota su heuristički rangirani.",
+        "availability_confirmed": false,
+        "reason": "Sezonski prosjek oko 21 poen iznad granice 17,5; 3/5 posljednjih prolaza za više, stabilna uloga šutera u Sacramentu.",
+        "risk": "Oscilacije u realizaciji, porazi Kingsa i protivnik Boston mogu spuštati broj šuteva."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primarni ESPN pokušaj i drugi pass LandOfBasketball obuhvatili su datirane poene i minute; detaljni H2H/čuvar nedostaju."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/zach-lavine",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/zach_lavine.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "betsharp:2026-11-21:0012",
+      "player": "Darius Garland",
+      "rank": 4,
+      "score": 62,
+      "confidence": 61,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 23,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-17",
+          "points": 20,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-15",
+          "points": 27,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-13",
+          "points": 24,
+          "minutes": 37
+        },
+        {
+          "date": "2026-11-10",
+          "points": 13,
+          "minutes": 25
+        }
+      ],
+      "season_context": "L5 prosjek 21,4 poena, između 25 i 37 minuta.",
+      "home_away_context": "Nedavni relevantni nastupi uključuju i domaće i gostujuće; zasebni H/A poeni za današnju granicu nisu numerički potvrđeni.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet relevantnih H2H mečeva protiv današnjeg protivnika nisu pojedinačno verifikovani."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nisu dostupni pouzdani savremeni splitovi dozvoljenih poena po poziciji za ovaj matchup."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar i početni raspored rotacije nisu potvrđeni pred početak utakmice."
+      },
+      "injuries": {
+        "status": "not_listed_official_report",
+        "reason": "Nije označen OUT/QUESTIONABLE u 12:30 ET NBA injury izvještaju; mogućnost promjene do meča ostaje."
+      },
+      "minutes_projection": "Okvirna istorijska L5 minutaža 25–37 minuta, ne garantuje današnje vrijeme.",
+      "role_projection": "Uloga procijenjena iz zadnjih pet nastupa; konačna početna postava može je promijeniti.",
+      "market": {
+        "points_line": 21.5,
+        "over_odd": 1.8929,
+        "under_odd": 1.8772
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Bez kalibriranog procenta; L5 učestalost, minute, role i kvota su heuristički rangirani.",
+        "availability_confirmed": false,
+        "reason": "Tri od pet zadnjih utakmica iznad linije 21,5, uz pojačanu minutažu u posljednje četiri; prednost nije velika.",
+        "risk": "Veoma blizu L5 prosjeka i niska rezerva iznad 21,5, pa pojedinačni promašaji odlučuju."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primarni ESPN pokušaj i drugi pass LandOfBasketball obuhvatili su datirane poene i minute; detaljni H2H/čuvar nedostaju."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/darius-garland",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/darius_garland.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "betsharp:2026-11-21:0008",
+      "player": "Brook Lopez",
+      "rank": 5,
+      "score": 58,
+      "confidence": 58,
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 23,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-17",
+          "points": 23,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-15",
+          "points": 7,
+          "minutes": 29
+        },
+        {
+          "date": "2026-11-13",
+          "points": 26,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-10",
+          "points": 8,
+          "minutes": 19
+        }
+      ],
+      "season_context": "Sezonski poeni promjenljivi; L5 prosjek 17,4 uz 25,8 min.",
+      "home_away_context": "Nedavni relevantni nastupi uključuju i domaće i gostujuće; zasebni H/A poeni za današnju granicu nisu numerički potvrđeni.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet relevantnih H2H mečeva protiv današnjeg protivnika nisu pojedinačno verifikovani."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nisu dostupni pouzdani savremeni splitovi dozvoljenih poena po poziciji za ovaj matchup."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar i početni raspored rotacije nisu potvrđeni pred početak utakmice."
+      },
+      "injuries": {
+        "status": "not_listed_official_report",
+        "reason": "Nije označen OUT/QUESTIONABLE u 12:30 ET NBA injury izvještaju; mogućnost promjene do meča ostaje."
+      },
+      "minutes_projection": "Okvirna istorijska L5 minutaža 19–31 minuta, ne garantuje današnje vrijeme.",
+      "role_projection": "Uloga procijenjena iz zadnjih pet nastupa; konačna početna postava može je promijeniti.",
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.8264,
+        "under_odd": 1.9434
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "Bez kalibriranog procenta; L5 učestalost, minute, role i kvota su heuristički rangirani.",
+        "availability_confirmed": false,
+        "reason": "Tri od pet nastupa premašila 12,5 poena i dvije najnovije utakmice po 23 poena; uzorak daje srednje uporište za OVER.",
+        "risk": "Backup centar s vrlo promenljivom minutažom, kombinacija šuta za tri i uloge u rotaciji."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primarni ESPN pokušaj i drugi pass LandOfBasketball obuhvatili su datirane poene i minute; detaljni H2H/čuvar nedostaju."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/brook-lopez",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/brook_lopez.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    },
+    {
+      "player_id": "betsharp:2026-11-21:0010",
+      "player": "Cooper Flagg",
+      "rank": 6,
+      "score": 57,
+      "confidence": 59,
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 33,
+          "minutes": 34
+        },
+        {
+          "date": "2026-11-15",
+          "points": 17,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-14",
+          "points": 18,
+          "minutes": 38
+        },
+        {
+          "date": "2026-11-12",
+          "points": 12,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-09",
+          "points": 43,
+          "minutes": 39
+        }
+      ],
+      "season_context": "Sezonski oko 24,2 poena, mnogo šuteva i visok usage.",
+      "home_away_context": "Nedavni relevantni nastupi uključuju i domaće i gostujuće; zasebni H/A poeni za današnju granicu nisu numerički potvrđeni.",
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Do pet relevantnih H2H mečeva protiv današnjeg protivnika nisu pojedinačno verifikovani."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Nisu dostupni pouzdani savremeni splitovi dozvoljenih poena po poziciji za ovaj matchup."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direktni čuvar i početni raspored rotacije nisu potvrđeni pred početak utakmice."
+      },
+      "injuries": {
+        "status": "not_listed_official_report",
+        "reason": "Nije označen OUT/QUESTIONABLE u 12:30 ET NBA injury izvještaju; mogućnost promjene do meča ostaje."
+      },
+      "minutes_projection": "Okvirna istorijska L5 minutaža 27–39 minuta, ne garantuje današnje vrijeme.",
+      "role_projection": "Uloga procijenjena iz zadnjih pet nastupa; konačna početna postava može je promijeniti.",
+      "market": {
+        "points_line": 25.5,
+        "over_odd": 1.9804,
+        "under_odd": 1.8
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "Bez kalibriranog procenta; L5 učestalost, minute, role i kvota su heuristički rangirani.",
+        "availability_confirmed": false,
+        "reason": "Tri od pet posljednjih utakmica ispod linije 25,5 poena, iako veliki usponi 33 i 43 znače veoma širok raspon.",
+        "risk": "Igrač visokog usage-a, skokovi do 43 poena, protivnikova obrana i izostanci saigrača mijenjaju projekciju."
+      },
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primarni ESPN pokušaj i drugi pass LandOfBasketball obuhvatili su datirane poene i minute; detaljni H2H/čuvar nedostaju."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/cooper-flagg",
+        "https://www.landofbasketball.com/nba_players_game_logs/2027/cooper_flagg.htm",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-21_12_30PM.pdf"
+      ]
+    }
+  ],
+  "selected_player_ids": [
+    "4278049",
+    "3138160"
+  ],
+  "selection_reason": "Daniel Gafford UNDER 8,5 (4/5 ispod uz L5 prosjek 6 i minute 16-24) i Caleb Martin OVER 5,5 (4/5 iznad, zvanično available, linija niska) izabrani su kao najbolje zasnovane opcije ove grupe, sa nedovoljno potvrđenim H2H i matchup statistikom kao eksplicitnim rizicima.",
+  "source_snapshot_url": "https://github.com/shikithe/Memara-tip/blob/main/collector-output/nba-system-offer-2026-11-21.json",
+  "notes": "Group2 from frozen 54-offer list; ESPN schedule 401910025 starts 2026-11-22T01:00Z, official injury report and secondary game logs checked. Scout ranks all six with documented uncertainty."
+}
