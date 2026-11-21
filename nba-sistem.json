@@ -4261,6 +4261,19 @@
           "10": "collector-output/nba-system-scout-2026-11-21-group-10.json"
         },
         "selection_method": "full_ranked_scout"
+      },
+      "accounting": {
+        "tickets_total": 10,
+        "tickets_settled": 0,
+        "tickets_pending": 10,
+        "tickets_won": 0,
+        "tickets_lost": 0,
+        "tickets_void": 0,
+        "total_staked": 99.1,
+        "total_returned": 0,
+        "available_bank": 891.74,
+        "net_profit_confirmed": 0,
+        "complete": false
       }
     }
   ]
