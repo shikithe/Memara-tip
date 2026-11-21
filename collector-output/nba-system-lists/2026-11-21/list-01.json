@@ -1,4 +1,5 @@
 {
+  "schema_version": 2,
   "date": "2026-11-21",
   "list_number": 1,
   "total_lists": 10,
@@ -6,11 +7,20 @@
   "source_url": "https://betsharp.com/nba/props?m=points",
   "source_snapshot": "collector-output/betsharp-nba-daily.json",
   "captured_at_utc": "2026-11-21T17:37:58.291930+00:00",
-  "total_offers": 68,
-  "group_size": 7,
-  "original_positions": [
+  "filtered_at_local": "2026-11-21T19:15:02+01:00",
+  "filter_reason": "MIL @ PHI game already started at 19:00 CET; no games started before 19:15 CET eligible",
+  "excluded_game": "MIL @ PHI",
+  "excluded_count": 14,
+  "total_offers": 54,
+  "original_offers": 68,
+  "group_size": 6,
+  "original_offer_positions": [
     1,
-    7
+    2,
+    3,
+    4,
+    5,
+    6
   ],
   "status": "awaiting_scout",
   "analysis_complete": false,
@@ -276,53 +286,6 @@
         }
       },
       "original_offer_position": 6
-    },
-    {
-      "player": "Zach LaVine",
-      "team": "SAC",
-      "game": "BOS @ SAC",
-      "game_date_et": "2026-11-21",
-      "game_time_et": "Sat 10:00PM",
-      "player_url": "https://betsharp.com/nba/player/zach-lavine",
-      "game_url": "https://betsharp.com/nba/game/2026-11-21-boston-celtics-at-sacramento-kings#props",
-      "points_market": {
-        "DK": {
-          "line": 17.5,
-          "over_american": -123,
-          "under_american": -104,
-          "over_decimal": 1.813,
-          "under_decimal": 1.9615
-        },
-        "FD": {
-          "line": 18.5,
-          "over_american": 100,
-          "under_american": -132,
-          "over_decimal": 2.0,
-          "under_decimal": 1.7576
-        },
-        "MGM": {
-          "line": 17.5,
-          "over_american": -115,
-          "under_american": -115,
-          "over_decimal": 1.8696,
-          "under_decimal": 1.8696
-        },
-        "BR": {
-          "line": 18.5,
-          "over_american": -106,
-          "under_american": -129,
-          "over_decimal": 1.9434,
-          "under_decimal": 1.7752
-        },
-        "KAL": {
-          "line": 19.5,
-          "over_american": 138,
-          "under_american": -194,
-          "over_decimal": 2.38,
-          "under_decimal": 1.5155
-        }
-      },
-      "original_offer_position": 7
     }
   ]
 }
