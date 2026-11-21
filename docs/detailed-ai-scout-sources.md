@@ -8,7 +8,7 @@ The scheduled **ChatGPT A/B analyst** performs the live web investigation. GitHu
 
 1. **Official clubs and leagues** (club news, team news, press conferences, bans) for injuries and suspensions. Search each club + date + opponent. Use the published time.
 2. **Trusted independent team news** for predicted lineups and cross-checks: The Guardian, BBC Sport, Sports Mole, reputable match previews, and current specialist local media. Predicted lineups are predictions, not confirmed starting XIs.
-3. **Independent probability and xG models**, when that precise fixture has a dated page: FairXG `https://fairxg.com/` and other legitimate xG providers. Compare match date, teams, competition and market. Distinguish **actual historical xG** from **forecast xG** and from **result-model expected goals**.
+3. **FairXG is optional cross-check only**, when that precise fixture has a dated page: `https://fairxg.com/`. Verify date, league, home/away and precise market. If it has **no page for that game**, keep **ListaSix Mathematical Scout 6/6 as the only mathematical probability model**; do **not** search for a replacement probability model, force a change of pick, or disqualify solely for missing FairXG. Still independently research the six other contextual factors and actual historical xG when reliably available. Distinguish **actual historical xG** from **forecast xG** and **our results-derived modeled goals**.
 4. For FairXG specifically: its **published market-based bookmaker-following probability** and its **own goal-model probability after team-news allowance** are DISTINCT. Record both with correct labels when they differ. The Coventry–Crystal Palace 2026-11-21 illustration gives **39% market-based** and **46% news-adjusted goal model** for Coventry; do not merge them or present either as actual xG.
 5. **Schedule, motivation and standings:** official competitions, ESPN verified data and league tables; source link + publication/verification time.
 6. **H2H:** verified previous meetings only; do not invent five meetings where fewer exist.
@@ -19,7 +19,7 @@ For every one of the ten, produce seven `new_factors` keys already required by `
 Also produce **`independent_model_check`** for every reviewed candidate:
 - `status: verified | unavailable`
 - `notes`: what the other model says and whether it agrees with our recommended market, or why none could be verified
-- if verified: `provider`, `source_url`, `model_or_market_basis` and numerical comparison where available. For a published market-following result, say this isn't independent of bookmaker odds.
+- if verified: `provider`, `source_url`, `model_or_market_basis` and numerical comparison where available. For a published market-following result, say this isn't independent of bookmaker odds. If FairXG does not cover the match, record `status: unavailable` with the reason, **fall back to the existing Mathematical Scout estimates**, and do not seek a substitute prediction model.
 - `checked_at_utc` is the time of retrieval, not the site's publication time; retain publication date separately when available.
 - Never pretend a model covers a match it does not cover.
 
