@@ -87,6 +87,67 @@ def validate_scout(approval, active, history, receipt, scout):
         if second not in MARKETS or second == top or abs(p[second] - second_top) > 0.05:
             raise ValueError("Scout runner-up market inconsistent with six probabilities")
         ranked[fid] = row
+    # Cross-check the exact handoff list: 10 strongest eligible matches only.
+    # The ranked matrix still contains all matches, but detailed research does not
+    # repeat the earlier Poisson, five-game and home/away calculations.
+    expected_top_ten = [
+        row["fixture_id"]
+        for row in sorted(
+            (row for row in rows if row.get("candidate_A")),
+            key=lambda r: (-r["strongest_pct"], -r["second_pct"],
+                           -r.get("third_pct", 0), r["fixture_id"])
+        )[:10]
+    ]
+    handoff = scout.get("detailed_ai_handoff", {})
+    received = handoff.get("candidates", []) if isinstance(handoff, dict) else []
+    forwarded = [r.get("fixture_id") for r in received if isinstance(r, dict)]
+    if not expected_top_ten or forwarded != expected_top_ten:
+        raise ValueError("Detailed AI handoff must contain exactly the TOP 10 eligible fixtures in order")
+    if scout.get("detailed_ai_top_ten_fixture_ids") != expected_top_ten:
+        raise ValueError("Detailed AI top ten ID list mismatch")
+    if handoff.get("math_recalculation_prohibited") is not True:
+        raise ValueError("Do not repeat previous mathematical Scout analysis")
+
+    # The AI must document research on all ten candidates, including rejected
+    # ones. These fields deliberately exclude prior five-match/goals/form math.
+    review = approval.get("detailed_ai_review", {})
+    reviewed = review.get("candidates", []) if isinstance(review, dict) else []
+    if not isinstance(reviewed, list) or len(reviewed) != len(expected_top_ten):
+        raise ValueError("AI must review all ten handed-off candidates before A/B approval")
+    if review.get("source_active_sha256") != scout.get("source_active_sha256") or \
+       review.get("source_history_sha256") != scout.get("source_history_sha256"):
+        raise ValueError("Detailed AI review must use exactly the same Scout source snapshots")
+    mandatory = {
+        "xg_xga", "injuries_suspensions", "expected_lineups", "h2h",
+        "motivation_table", "rest_schedule", "quote_source"
+    }
+    review_by_id = {}
+    for item in reviewed:
+        if not isinstance(item, dict):
+            raise ValueError("Malformed detailed AI review candidate")
+        fid = item.get("fixture_id")
+        if fid in review_by_id:
+            raise ValueError("Duplicate candidate in detailed AI review")
+        if fid not in expected_top_ten:
+            raise ValueError("Detailed AI reviewed a fixture outside top ten")
+        if item.get("decision") not in ("approved", "rejected", "uncertain"):
+            raise ValueError("Detailed AI decision missing")
+        if len(str(item.get("review_summary", "")).strip()) < 40:
+            raise ValueError("Substantive independent AI review summary missing")
+        factors = item.get("new_factors")
+        if not isinstance(factors, dict) or set(factors) != mandatory:
+            raise ValueError("Detailed AI review must cover seven NEW factors, not repeat mathematical Scout work")
+        for name, value in factors.items():
+            if not isinstance(value, dict) or value.get("status") not in ("verified", "unavailable"):
+                raise ValueError("Missing verified/unavailable evidence status for " + name)
+            if not str(value.get("notes", "")).strip():
+                raise ValueError("Each new-factors check must give real evidence or explicitly note unavailable")
+            if value["status"] == "verified" and not isinstance(value.get("source_url"), str):
+                raise ValueError("Verified new factor must name a public source URL")
+        review_by_id[fid] = item
+    if set(review_by_id) != set(expected_top_ten):
+        raise ValueError("Every top-ten handoff fixture must receive an AI review")
+
     source_fixtures = {r["fixture_id"]: r for r in fixtures}
     used = set()
     for ticket in tickets:
@@ -98,6 +159,10 @@ def validate_scout(approval, active, history, receipt, scout):
             used.add(fid)
             if fid not in ranked:
                 raise ValueError("AI-approved fixture missing from all-match Scout")
+            if fid not in expected_top_ten:
+                raise ValueError("AI-approved fixture is OUTSIDE the ten strongest eligible candidates")
+            if review_by_id[fid].get("decision") != "approved":
+                raise ValueError("AI selected a top-ten fixture without detailed review approval")
             score = ranked[fid]
             pick = leg.get("pick")
             if pick != score["strongest_market"]:
