@@ -1,6 +1,6 @@
 {
   "date": "2026-11-21",
-  "updated_at_utc": "2026-11-21T15:22:13.474924+00:00",
+  "updated_at_utc": "2026-11-21T17:26:01.172192+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,24 +9,26 @@
       "index": 0,
       "home": "Lazio",
       "away": "Lecce",
-      "state": "live",
-      "score": "1:0",
+      "state": "final",
+      "score": "3:0",
       "source": "espn-public-unofficial",
       "event_id": "401874981",
       "league": "ita.1",
-      "minute": "65"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "A",
       "index": 1,
       "home": "Como",
       "away": "Cagliari",
-      "state": "live",
+      "state": "final",
       "score": "2:0",
       "source": "espn-public-unofficial",
       "event_id": "401875056",
       "league": "ita.1",
-      "minute": "60"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "A",
@@ -45,12 +47,13 @@
       "index": 0,
       "home": "Royal Charleroi SC",
       "away": "Sint-Truidense",
-      "state": "live",
-      "score": "1:0",
+      "state": "final",
+      "score": "2:2",
       "source": "espn-public-unofficial",
       "event_id": "401878940",
       "league": "bel.1",
-      "minute": "20"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "B",
@@ -63,6 +66,20 @@
       "event_id": "401878938",
       "league": "bel.1",
       "minute": null
+    },
+    {
+      "ticket": "C",
+      "index": 0,
+      "home": "Boston Celtics",
+      "away": "Sacramento Kings",
+      "state": "unverified"
+    },
+    {
+      "ticket": "C",
+      "index": 1,
+      "home": "Minnesota Timberwolves",
+      "away": "Memphis Grizzlies",
+      "state": "unverified"
     }
   ],
   "bank_unchanged": true

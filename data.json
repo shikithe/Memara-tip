@@ -6,7 +6,7 @@
   "daily_stake": 24.36,
   "bank_after": 178.66,
   "bank_after_stakes": 178.66,
-  "provisional": false,
+  "provisional": true,
   "settled": false,
   "odds_verified": false,
   "tickets": [
@@ -28,7 +28,9 @@
           "odds_verified_at_utc": "2026-11-21T10:40:17.792988+00:00",
           "odds_status": "last_known_snapshot",
           "form_home_matches": 5,
-          "form_away_matches": 5
+          "form_away_matches": 5,
+          "result_status": "pogođen",
+          "final_score": "3:0"
         },
         {
           "fixture_id": "espn:football:ita.1:401875056",
@@ -45,7 +47,9 @@
           "odds_verified_at_utc": "2026-11-21T10:40:17.792975+00:00",
           "odds_status": "last_known_snapshot",
           "form_home_matches": 5,
-          "form_away_matches": 5
+          "form_away_matches": 5,
+          "result_status": "pogođen",
+          "final_score": "2:0"
         },
         {
           "fixture_id": "espn:football:esp.1:401882798",
@@ -90,7 +94,9 @@
           "odds_verified_at_utc": "2026-11-21T10:40:17.793216+00:00",
           "odds_status": "last_known_snapshot",
           "form_home_matches": 5,
-          "form_away_matches": 5
+          "form_away_matches": 5,
+          "result_status": "pogođen",
+          "final_score": "2:2"
         },
         {
           "fixture_id": "espn:football:bel.1:401878938",
