@@ -5119,6 +5119,132 @@
               }
             }
           ]
+        },
+        {
+          "id": "6",
+          "stake": 9.25,
+          "status": "pending",
+          "total_odd": 3.8296,
+          "potential_payout": 35.42,
+          "legs": [
+            {
+              "player": "Nickeil Alexander-Walker",
+              "team": "ATL",
+              "opponent": "DET",
+              "pick": "under",
+              "points_line": 19.5,
+              "odd": 1.9615,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/nickeil-alexander-walker",
+              "espn_event_id": "401910029",
+              "player_id": "4278039",
+              "start_utc": "2026-11-22T20:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 19,
+                    "minutes": 32
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 19,
+                    "minutes": 32
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 20,
+                    "minutes": 33
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 16,
+                    "minutes": 41
+                  },
+                  {
+                    "date": "2026-11-09",
+                    "points": 20,
+                    "minutes": 34
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Last five direct player opponents game box scores not independently retrieved."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Opponent defense by exact individual position and scheme not verified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "No confirmed game plan for individual on-ball defensive assignment."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "2026-11-22 official league injury report reviewed; CJ McCollum, Landale out; Detroit Duren and Robinson out, Flemings questionable."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No reliable official predicted minutes, only actual prior logs available."
+                },
+                "scout_score": 85,
+                "scout_note": "Nickeil scored 19,19,20,16,20 in his previous five, three under the frozen 19.5 line, with 32 to 41 minutes; last-five average 18.8, but season average 20.9. Historical observed numbers do not guarantee the outcome.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-6.json"
+              }
+            },
+            {
+              "player": "Kevin Huerter",
+              "team": "DET",
+              "opponent": "ATL",
+              "pick": "under",
+              "points_line": 13.5,
+              "odd": 1.9524,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/kevin-huerter",
+              "espn_event_id": "401910029",
+              "player_id": "4066372",
+              "start_utc": "2026-11-22T20:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 11,
+                    "minutes": 19.7
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 11,
+                    "minutes": 36
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Last five direct player opponents game box scores not independently retrieved."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Opponent defense by exact individual position and scheme not verified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "No confirmed game plan for individual on-ball defensive assignment."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "2026-11-22 official league injury report reviewed; CJ McCollum, Landale out; Detroit Duren and Robinson out, Flemings questionable."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No reliable official predicted minutes, only actual prior logs available."
+                },
+                "scout_score": 80,
+                "scout_note": "Huerter has season average 10.6 against line 13.5 and latest cited results 11,20,9,11,20 show three unders; validated Nov20 11pts 19:42 minutes and Nov18 11 in 36 minutes. Historical observed numbers do not guarantee the outcome.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-6.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -5127,22 +5253,24 @@
           2,
           3,
           4,
-          5
+          5,
+          6
         ],
         "offered": 88,
         "total_groups": 10,
-        "group_number": 5,
-        "group_range": "37-45",
+        "group_number": 6,
+        "group_range": "46-54",
         "group_selected": [
-          "Nikola Jokić",
-          "Tre Jones"
+          "Nickeil Alexander-Walker",
+          "Kevin Huerter"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-22-group-1.json",
           "2": "collector-output/nba-system-scout-2026-11-22-group-2.json",
           "3": "collector-output/nba-system-scout-2026-11-22-group-3.json",
           "4": "collector-output/nba-system-scout-2026-11-22-group-4.json",
-          "5": "collector-output/nba-system-scout-2026-11-22-group-5.json"
+          "5": "collector-output/nba-system-scout-2026-11-22-group-5.json",
+          "6": "collector-output/nba-system-scout-2026-11-22-group-6.json"
         },
         "selection_method": "full_ranked_scout"
       }
