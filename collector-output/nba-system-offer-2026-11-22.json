@@ -514,15 +514,19 @@
       "team": "DEN",
       "opponent": "CHI",
       "game": "DEN @ CHI",
-      "start_utc": null,
+      "start_utc": "2026-11-23T00:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/cameron-johnson",
       "points_line": 13.5,
       "over_odd": 1.9434,
       "under_odd": 1.8333,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3138196",
+      "espn_event_id": "401910032",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/3138196",
+        "https://www.nba.com/game/chi-vs-den-0022600283"
+      ]
     },
     {
       "original_offer_position": 30,
