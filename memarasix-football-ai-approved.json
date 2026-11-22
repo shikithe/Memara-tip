@@ -1,0 +1,637 @@
+{
+  "date": "2026-11-22",
+  "feed_generated_at_utc": "2026-11-22T08:45:33.379109+00:00",
+  "approval_source": "chatgpt_ai_analyst",
+  "publication_allowed": true,
+  "approved_at_utc": "2026-11-22T11:54:42.592Z",
+  "source_active_sha256": "6ec5789d72fddd88f7b02aa7c1a4b856d4c802d52df4d35ec189dabb49921164",
+  "source_history_sha256": "2e34052d6011833ec82bd86e2b6277f0368cb1d248e09b0e5d37bffe6b91c327",
+  "detailed_ai_review": {
+    "source_active_sha256": "6ec5789d72fddd88f7b02aa7c1a4b856d4c802d52df4d35ec189dabb49921164",
+    "source_history_sha256": "2e34052d6011833ec82bd86e2b6277f0368cb1d248e09b0e5d37bffe6b91c327",
+    "scout_generated_at_utc": "2026-11-22T11:17:13.436807+00:00",
+    "candidates": [
+      {
+        "rank": 1,
+        "fixture_id": "espn:football:ita.1:401874960",
+        "match": "Sassuolo - Genoa",
+        "datetime": "2026-11-22T14:00:00Z",
+        "recommended_market": "3+",
+        "recommended_score": 42.652,
+        "model_adjusted_probability_pct": 60.36,
+        "verified_quote": {
+          "pick": "3+",
+          "odd": 2.02,
+          "bookmaker": "1xbet",
+          "source_url": "https://tipsterarea.com/match/sassuolo-genoa-serie-a-italy-956422"
+        },
+        "new_factors": {
+          "xg_xga": {
+            "status": "unavailable",
+            "notes": "Nije potvrđena direktna aktuelna statistika stvarnog xG/xGA iz pouzdanog izvora; Scoutove modelirane golove ne predstavljati kao opaženi xG."
+          },
+          "injuries_suspensions": {
+            "status": "verified",
+            "notes": "Sassuolo je izgubio pet uzastopnih susreta s 19 primljenih golova, ali ima dileme oko Berardija i Adzica; Genoa je u boljoj formi i ima četiri uzastopne H2H pobjede.",
+            "source_url": "https://www.sportsmole.co.uk/football/sassuolo/preview/sassuolo-vs-genoa-prediction-team-news-lineups_609480.html"
+          },
+          "expected_lineups": {
+            "status": "verified",
+            "notes": "Predloženi sastavi navedeni u predmeč izvještaju gdje su dostupni; nisu zvanično potvrđenih jedanaest.",
+            "source_url": "https://www.sportsmole.co.uk/football/sassuolo/preview/sassuolo-vs-genoa-prediction-team-news-lineups_609480.html"
+          },
+          "h2h": {
+            "status": "verified",
+            "notes": "Ishodi i trend H2H opisani su u predmeč izvještaju; ne tumačiti kao samostalni prediktor.",
+            "source_url": "https://www.sportsmole.co.uk/football/sassuolo/preview/sassuolo-vs-genoa-prediction-team-news-lineups_609480.html"
+          },
+          "motivation_table": {
+            "status": "verified",
+            "notes": "Sassuolo je izgubio pet uzastopnih susreta s 19 primljenih golova, ali ima dileme oko Berardija i Adzica; Genoa je u boljoj formi i ima četiri uzastopne H2H pobjede.",
+            "source_url": "https://www.sportsmole.co.uk/football/sassuolo/preview/sassuolo-vs-genoa-prediction-team-news-lineups_609480.html"
+          },
+          "rest_schedule": {
+            "status": "verified",
+            "notes": "Nastavak nakon reprezentativne pauze; pregledane navedene posljednje utakmice i kontekst rasporeda, bez izmišljanja nedostupnih dana odmora.",
+            "source_url": "https://www.sportsmole.co.uk/football/sassuolo/preview/sassuolo-vs-genoa-prediction-team-news-lineups_609480.html"
+          },
+          "quote_source": {
+            "status": "verified",
+            "notes": "TipsterArea javna predmeč stranica i podudaranje timova/dana; Scoutov tip 3+, zabilježena kvota 2. Dodatno pregledana eksplicitna kvota 2.02 (1xbet). Kvote su prikazane kao predmeč iz 08:01 i mogu se promijeniti.",
+            "source_url": "https://tipsterarea.com/match/sassuolo-genoa-serie-a-italy-956422"
+          }
+        },
+        "independent_model_check": {
+          "status": "unavailable",
+          "notes": "Nema dovoljno potvrđenog nezavisnog modela istog tržišta za neposredno poređenje; ne izmišljati FairXG signal."
+        },
+        "review_summary": "Visok broj primljenih golova Sassuola i dobro stanje napada Genoe podržavaju 3+, ali napadački izostanci i novi trener Sassuola smanjuju sigurnost. Sassuolo je izgubio pet uzastopnih susreta s 19 primljenih golova, ali ima dileme oko Berardija i Adzica; Genoa je u boljoj formi i ima četiri uzastopne H2H pobjede.",
+        "decision": "approved",
+        "reviewed_source": "https://www.sportsmole.co.uk/football/sassuolo/preview/sassuolo-vs-genoa-prediction-team-news-lineups_609480.html"
+      },
+      {
+        "rank": 2,
+        "fixture_id": "espn:football:usa.1:401933730",
+        "match": "Chicago Fire FC - Charlotte FC",
+        "datetime": "2026-11-22T23:30:00Z",
+        "recommended_market": "3+",
+        "recommended_score": 41.939,
+        "model_adjusted_probability_pct": 78.05,
+        "verified_quote": null,
+        "new_factors": {
+          "xg_xga": {
+            "status": "unavailable",
+            "notes": "Nije potvrđena direktna aktuelna statistika stvarnog xG/xGA iz pouzdanog izvora; Scoutove modelirane golove ne predstavljati kao opaženi xG."
+          },
+          "injuries_suspensions": {
+            "status": "verified",
+            "notes": "MLS doigravanje, prvi meč serije. Chicago je ove sezone pobijedio oba H2H, uključujući 2:1 i 1:0; objava startnih 11 očekuje se sat prije meča.",
+            "source_url": "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-opens-2026-mls-cup-playoffs-against-charlotte-fc"
+          },
+          "expected_lineups": {
+            "status": "verified",
+            "notes": "Predloženi sastavi navedeni u predmeč izvještaju gdje su dostupni; nisu zvanično potvrđenih jedanaest.",
+            "source_url": "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-opens-2026-mls-cup-playoffs-against-charlotte-fc"
+          },
+          "h2h": {
+            "status": "verified",
+            "notes": "Ishodi i trend H2H opisani su u predmeč izvještaju; ne tumačiti kao samostalni prediktor.",
+            "source_url": "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-opens-2026-mls-cup-playoffs-against-charlotte-fc"
+          },
+          "motivation_table": {
+            "status": "verified",
+            "notes": "MLS doigravanje, prvi meč serije. Chicago je ove sezone pobijedio oba H2H, uključujući 2:1 i 1:0; objava startnih 11 očekuje se sat prije meča.",
+            "source_url": "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-opens-2026-mls-cup-playoffs-against-charlotte-fc"
+          },
+          "rest_schedule": {
+            "status": "verified",
+            "notes": "Play-off serija sa sljedećim mečom 28.11; nije regularno ligaško kolo.",
+            "source_url": "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-opens-2026-mls-cup-playoffs-against-charlotte-fc"
+          },
+          "quote_source": {
+            "status": "verified",
+            "notes": "TipsterArea javna predmeč stranica i podudaranje timova/dana; Scoutov tip 3+, zabilježena kvota 1.3. Kvota nije dodatno ručno potvrđena u ovoj sesiji; ne birati za objavu. Kvote su prikazane kao predmeč iz 08:01 i mogu se promijeniti.",
+            "source_url": "https://tipsterarea.com/match/chicago-fire-charlotte-fc-playoff-usa-956702"
+          }
+        },
+        "independent_model_check": {
+          "status": "unavailable",
+          "notes": "Nema dovoljno potvrđenog nezavisnog modela istog tržišta za neposredno poređenje; ne izmišljati FairXG signal."
+        },
+        "review_summary": "Jak napad obje ekipe, ali utakmica je plej-of, a posljednji direktni duel završio je 1:0. Kvota 1.30 za 3+ nema dovoljno prostora za neizvjesnost. MLS doigravanje, prvi meč serije. Chicago je ove sezone pobijedio oba H2H, uključujući 2:1 i 1:0; objava startnih 11 očekuje se sat prije meča.",
+        "decision": "rejected",
+        "reviewed_source": "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-opens-2026-mls-cup-playoffs-against-charlotte-fc"
+      },
+      {
+        "rank": 3,
+        "fixture_id": "espn:football:tur.1:401888248",
+        "match": "Kasimpasa - Alanyaspor",
+        "datetime": "2026-11-22T13:00:00Z",
+        "recommended_market": "1",
+        "recommended_score": 39.94,
+        "model_adjusted_probability_pct": 58.68,
+        "verified_quote": {
+          "pick": "1",
+          "odd": 1.91,
+          "bookmaker": "1xbet",
+          "source_url": "https://tipsterarea.com/match/kasimpasa-alanyaspor-super-lig-turkiye-956434"
+        },
+        "new_factors": {
+          "xg_xga": {
+            "status": "unavailable",
+            "notes": "Nije potvrđena direktna aktuelna statistika stvarnog xG/xGA iz pouzdanog izvora; Scoutove modelirane golove ne predstavljati kao opaženi xG."
+          },
+          "injuries_suspensions": {
+            "status": "verified",
+            "notes": "Kasimpasa peta sa 20 bodova i nizom neporaženosti; Alanyaspor trinaesti, četiri poraza uzastopno. Domaći imaju nekoliko izostanaka uključujući suspendovanog Mendesa.",
+            "source_url": "https://www.sportsmole.co.uk/football/kasimpasa/preview/kasimpasa-vs-alanyaspor-prediction-team-news-lineups_609507.html"
+          },
+          "expected_lineups": {
+            "status": "verified",
+            "notes": "Predloženi sastavi navedeni u predmeč izvještaju gdje su dostupni; nisu zvanično potvrđenih jedanaest.",
+            "source_url": "https://www.sportsmole.co.uk/football/kasimpasa/preview/kasimpasa-vs-alanyaspor-prediction-team-news-lineups_609507.html"
+          },
+          "h2h": {
+            "status": "verified",
+            "notes": "Ishodi i trend H2H opisani su u predmeč izvještaju; ne tumačiti kao samostalni prediktor.",
+            "source_url": "https://www.sportsmole.co.uk/football/kasimpasa/preview/kasimpasa-vs-alanyaspor-prediction-team-news-lineups_609507.html"
+          },
+          "motivation_table": {
+            "status": "verified",
+            "notes": "Kasimpasa peta sa 20 bodova i nizom neporaženosti; Alanyaspor trinaesti, četiri poraza uzastopno. Domaći imaju nekoliko izostanaka uključujući suspendovanog Mendesa.",
+            "source_url": "https://www.sportsmole.co.uk/football/kasimpasa/preview/kasimpasa-vs-alanyaspor-prediction-team-news-lineups_609507.html"
+          },
+          "rest_schedule": {
+            "status": "verified",
+            "notes": "Nastavak nakon reprezentativne pauze; pregledane navedene posljednje utakmice i kontekst rasporeda, bez izmišljanja nedostupnih dana odmora.",
+            "source_url": "https://www.sportsmole.co.uk/football/kasimpasa/preview/kasimpasa-vs-alanyaspor-prediction-team-news-lineups_609507.html"
+          },
+          "quote_source": {
+            "status": "verified",
+            "notes": "TipsterArea javna predmeč stranica i podudaranje timova/dana; Scoutov tip 1, zabilježena kvota 1.98. Dodatno pregledana eksplicitna kvota 1.91 (1xbet). Kvote su prikazane kao predmeč iz 08:01 i mogu se promijeniti.",
+            "source_url": "https://tipsterarea.com/match/kasimpasa-alanyaspor-super-lig-turkiye-956434"
+          }
+        },
+        "independent_model_check": {
+          "status": "unavailable",
+          "notes": "Nema dovoljno potvrđenog nezavisnog modela istog tržišta za neposredno poređenje; ne izmišljati FairXG signal."
+        },
+        "review_summary": "Kasimpasa ima jasnu takmičarsku prednost, bolju aktuelnu formu i domaći teren. Rizik je izostanak dijela igrača; uz potvđenu premecnu kvotu 1.91 tip 1 ostaje prihvatljiv. Kasimpasa peta sa 20 bodova i nizom neporaženosti; Alanyaspor trinaesti, četiri poraza uzastopno. Domaći imaju nekoliko izostanaka uključujući suspendovanog Mendesa.",
+        "decision": "approved",
+        "reviewed_source": "https://www.sportsmole.co.uk/football/kasimpasa/preview/kasimpasa-vs-alanyaspor-prediction-team-news-lineups_609507.html"
+      },
+      {
+        "rank": 4,
+        "fixture_id": "espn:football:ita.1:401874989",
+        "match": "AC Milan - Frosinone",
+        "datetime": "2026-11-22T17:00:00Z",
+        "recommended_market": "GG",
+        "recommended_score": 38.493,
+        "model_adjusted_probability_pct": 71.07,
+        "verified_quote": {
+          "pick": "GG",
+          "odd": 1.44,
+          "bookmaker": "betfair",
+          "source_url": "https://tipsterarea.com/match/milan-frosinone-serie-a-italy-956423"
+        },
+        "new_factors": {
+          "xg_xga": {
+            "status": "unavailable",
+            "notes": "Nije potvrđena direktna aktuelna statistika stvarnog xG/xGA iz pouzdanog izvora; Scoutove modelirane golove ne predstavljati kao opaženi xG."
+          },
+          "injuries_suspensions": {
+            "status": "verified",
+            "notes": "Milan četiri pobjede u posljednjih pet ligaških susreta i 2+ gola na svakom; Frosinone samo dva boda u gostima od kraja avgusta; više važnih Milanovih igrača odsutno.",
+            "source_url": "https://www.sportsmole.co.uk/football/ac-milan/preview/ac-milan-vs-frosinone-prediction-team-news-lineups_609496.html"
+          },
+          "expected_lineups": {
+            "status": "verified",
+            "notes": "Predloženi sastavi navedeni u predmeč izvještaju gdje su dostupni; nisu zvanično potvrđenih jedanaest.",
+            "source_url": "https://www.sportsmole.co.uk/football/ac-milan/preview/ac-milan-vs-frosinone-prediction-team-news-lineups_609496.html"
+          },
+          "h2h": {
+            "status": "verified",
+            "notes": "Ishodi i trend H2H opisani su u predmeč izvještaju; ne tumačiti kao samostalni prediktor.",
+            "source_url": "https://www.sportsmole.co.uk/football/ac-milan/preview/ac-milan-vs-frosinone-prediction-team-news-lineups_609496.html"
+          },
+          "motivation_table": {
+            "status": "verified",
+            "notes": "Milan četiri pobjede u posljednjih pet ligaških susreta i 2+ gola na svakom; Frosinone samo dva boda u gostima od kraja avgusta; više važnih Milanovih igrača odsutno.",
+            "source_url": "https://www.sportsmole.co.uk/football/ac-milan/preview/ac-milan-vs-frosinone-prediction-team-news-lineups_609496.html"
+          },
+          "rest_schedule": {
+            "status": "verified",
+            "notes": "Nastavak nakon reprezentativne pauze; pregledane navedene posljednje utakmice i kontekst rasporeda, bez izmišljanja nedostupnih dana odmora.",
+            "source_url": "https://www.sportsmole.co.uk/football/ac-milan/preview/ac-milan-vs-frosinone-prediction-team-news-lineups_609496.html"
+          },
+          "quote_source": {
+            "status": "verified",
+            "notes": "TipsterArea javna predmeč stranica i podudaranje timova/dana; Scoutov tip GG, zabilježena kvota 1.42. Dodatno pregledana eksplicitna kvota 1.44 (betfair). Kvote su prikazane kao predmeč iz 08:01 i mogu se promijeniti.",
+            "source_url": "https://tipsterarea.com/match/milan-frosinone-serie-a-italy-956423"
+          }
+        },
+        "independent_model_check": {
+          "status": "unavailable",
+          "notes": "Nema dovoljno potvrđenog nezavisnog modela istog tržišta za neposredno poređenje; ne izmišljati FairXG signal."
+        },
+        "review_summary": "Prognoza 3:2 i ofanzivni pristup oba tima podržavaju GG. Frosinone ima slab učinak u gostima, što je glavni kontraargument. Milan četiri pobjede u posljednjih pet ligaških susreta i 2+ gola na svakom; Frosinone samo dva boda u gostima od kraja avgusta; više važnih Milanovih igrača odsutno.",
+        "decision": "approved",
+        "reviewed_source": "https://www.sportsmole.co.uk/football/ac-milan/preview/ac-milan-vs-frosinone-prediction-team-news-lineups_609496.html"
+      },
+      {
+        "rank": 5,
+        "fixture_id": "espn:football:ger.1:401884733",
+        "match": "FC Augsburg - Mainz",
+        "datetime": "2026-11-22T14:30:00Z",
+        "recommended_market": "3+",
+        "recommended_score": 38.056,
+        "model_adjusted_probability_pct": 71.33,
+        "verified_quote": {
+          "pick": "3+",
+          "odd": 1.41,
+          "bookmaker": "1xbet",
+          "source_url": "https://tipsterarea.com/match/augsburg-mainz-bundesliga-germany-956418"
+        },
+        "new_factors": {
+          "xg_xga": {
+            "status": "unavailable",
+            "notes": "Nije potvrđena direktna aktuelna statistika stvarnog xG/xGA iz pouzdanog izvora; Scoutove modelirane golove ne predstavljati kao opaženi xG."
+          },
+          "injuries_suspensions": {
+            "status": "verified",
+            "notes": "Augsburg slaba odbrana i niz bez pobjede; Mainz četiri poraza u šest ligaških utakmica, ali često postiže golove i dobro igra na strani. Glavni izostanci Matsima, Massengo, Kohr.",
+            "source_url": "https://www.sportsmole.co.uk/football/augsburg/preview/augsburg-vs-mainz-prediction-team-news-lineups_609502.html"
+          },
+          "expected_lineups": {
+            "status": "verified",
+            "notes": "Predloženi sastavi navedeni u predmeč izvještaju gdje su dostupni; nisu zvanično potvrđenih jedanaest.",
+            "source_url": "https://www.sportsmole.co.uk/football/augsburg/preview/augsburg-vs-mainz-prediction-team-news-lineups_609502.html"
+          },
+          "h2h": {
+            "status": "verified",
+            "notes": "Ishodi i trend H2H opisani su u predmeč izvještaju; ne tumačiti kao samostalni prediktor.",
+            "source_url": "https://www.sportsmole.co.uk/football/augsburg/preview/augsburg-vs-mainz-prediction-team-news-lineups_609502.html"
+          },
+          "motivation_table": {
+            "status": "verified",
+            "notes": "Augsburg slaba odbrana i niz bez pobjede; Mainz četiri poraza u šest ligaških utakmica, ali često postiže golove i dobro igra na strani. Glavni izostanci Matsima, Massengo, Kohr.",
+            "source_url": "https://www.sportsmole.co.uk/football/augsburg/preview/augsburg-vs-mainz-prediction-team-news-lineups_609502.html"
+          },
+          "rest_schedule": {
+            "status": "verified",
+            "notes": "Nastavak nakon reprezentativne pauze; pregledane navedene posljednje utakmice i kontekst rasporeda, bez izmišljanja nedostupnih dana odmora.",
+            "source_url": "https://www.sportsmole.co.uk/football/augsburg/preview/augsburg-vs-mainz-prediction-team-news-lineups_609502.html"
+          },
+          "quote_source": {
+            "status": "verified",
+            "notes": "TipsterArea javna predmeč stranica i podudaranje timova/dana; Scoutov tip 3+, zabilježena kvota 1.41. Dodatno pregledana eksplicitna kvota 1.41 (1xbet). Kvote su prikazane kao predmeč iz 08:01 i mogu se promijeniti.",
+            "source_url": "https://tipsterarea.com/match/augsburg-mainz-bundesliga-germany-956418"
+          }
+        },
+        "independent_model_check": {
+          "status": "unavailable",
+          "notes": "Nema dovoljno potvrđenog nezavisnog modela istog tržišta za neposredno poređenje; ne izmišljati FairXG signal."
+        },
+        "review_summary": "Oba tima loše brane, a nezavisna redakcijska prognoza 2:2 potvrđuje scenario 3+. Odmor poslije reprezentativne pauze i nesigurnost sastava su rizici. Augsburg slaba odbrana i niz bez pobjede; Mainz četiri poraza u šest ligaških utakmica, ali često postiže golove i dobro igra na strani. Glavni izostanci Matsima, Massengo, Kohr.",
+        "decision": "approved",
+        "reviewed_source": "https://www.sportsmole.co.uk/football/augsburg/preview/augsburg-vs-mainz-prediction-team-news-lineups_609502.html"
+      },
+      {
+        "rank": 6,
+        "fixture_id": "espn:football:fra.1:401876401",
+        "match": "Lorient - Stade Rennais",
+        "datetime": "2026-11-22T16:15:00Z",
+        "recommended_market": "3+",
+        "recommended_score": 37.104,
+        "model_adjusted_probability_pct": 57.02,
+        "verified_quote": null,
+        "new_factors": {
+          "xg_xga": {
+            "status": "verified",
+            "notes": "Football Signal navodi istorijski napadački xG po meču Lorient oko 1.01 i Rennes oko 2.16. Nije novi predmeč Poisson obračun.",
+            "source_url": "https://www.footballsignal.net/insights/archive/2026-11-21/4-2026-20261122-lorient-rennes-insight"
+          },
+          "injuries_suspensions": {
+            "status": "verified",
+            "notes": "Lorient ima četiri clean sheeta u pet ligaških mečeva, samo devet datih golova; Rennes prima puno golova, ali je Lorient pobijedio prethodnih šest H2H.",
+            "source_url": "https://www.sportsmole.co.uk/football/lorient/preview/lorient-vs-rennes-prediction-team-news-lineups_609529.html"
+          },
+          "expected_lineups": {
+            "status": "verified",
+            "notes": "Predloženi sastavi navedeni u predmeč izvještaju gdje su dostupni; nisu zvanično potvrđenih jedanaest.",
+            "source_url": "https://www.sportsmole.co.uk/football/lorient/preview/lorient-vs-rennes-prediction-team-news-lineups_609529.html"
+          },
+          "h2h": {
+            "status": "verified",
+            "notes": "Ishodi i trend H2H opisani su u predmeč izvještaju; ne tumačiti kao samostalni prediktor.",
+            "source_url": "https://www.sportsmole.co.uk/football/lorient/preview/lorient-vs-rennes-prediction-team-news-lineups_609529.html"
+          },
+          "motivation_table": {
+            "status": "verified",
+            "notes": "Lorient ima četiri clean sheeta u pet ligaških mečeva, samo devet datih golova; Rennes prima puno golova, ali je Lorient pobijedio prethodnih šest H2H.",
+            "source_url": "https://www.sportsmole.co.uk/football/lorient/preview/lorient-vs-rennes-prediction-team-news-lineups_609529.html"
+          },
+          "rest_schedule": {
+            "status": "verified",
+            "notes": "Nastavak nakon reprezentativne pauze; pregledane navedene posljednje utakmice i kontekst rasporeda, bez izmišljanja nedostupnih dana odmora.",
+            "source_url": "https://www.sportsmole.co.uk/football/lorient/preview/lorient-vs-rennes-prediction-team-news-lineups_609529.html"
+          },
+          "quote_source": {
+            "status": "verified",
+            "notes": "TipsterArea javna predmeč stranica i podudaranje timova/dana; Scoutov tip 3+, zabilježena kvota 1.94. Kvota nije dodatno ručno potvrđena u ovoj sesiji; ne birati za objavu. Kvote su prikazane kao predmeč iz 08:01 i mogu se promijeniti.",
+            "source_url": "https://tipsterarea.com/match/lorient-rennais-ligue-1-france-956426"
+          }
+        },
+        "independent_model_check": {
+          "status": "unavailable",
+          "notes": "Nema dovoljno potvrđenog nezavisnog modela istog tržišta za neposredno poređenje; ne izmišljati FairXG signal."
+        },
+        "review_summary": "Lorientov oprezan stil, niz mečeva s malo golova i 4 clean sheeta protivureče 3+ iako Rennes ima propuste u odbrani. Lorient ima četiri clean sheeta u pet ligaških mečeva, samo devet datih golova; Rennes prima puno golova, ali je Lorient pobijedio prethodnih šest H2H.",
+        "decision": "rejected",
+        "reviewed_source": "https://www.sportsmole.co.uk/football/lorient/preview/lorient-vs-rennes-prediction-team-news-lineups_609529.html"
+      },
+      {
+        "rank": 7,
+        "fixture_id": "espn:football:ned.1:401875542",
+        "match": "Go Ahead Eagles - Fortuna Sittard",
+        "datetime": "2026-11-22T15:45:00Z",
+        "recommended_market": "GG",
+        "recommended_score": 36.761,
+        "model_adjusted_probability_pct": 67.59,
+        "verified_quote": null,
+        "new_factors": {
+          "xg_xga": {
+            "status": "unavailable",
+            "notes": "Nije potvrđena direktna aktuelna statistika stvarnog xG/xGA iz pouzdanog izvora; Scoutove modelirane golove ne predstavljati kao opaženi xG."
+          },
+          "injuries_suspensions": {
+            "status": "verified",
+            "notes": "Fortuna neporažena šest kola, a posljednja tri direktna susreta bila su 3:0, 2:2, 2:2. Fortuna ima više ozlijeđenih prvotimaca.",
+            "source_url": "https://www.sportsmole.co.uk/football/go-ahead-eagles/preview/go-ahead-eagles-vs-sittard-prediction-team-news-lineups_609534.html"
+          },
+          "expected_lineups": {
+            "status": "verified",
+            "notes": "Predloženi sastavi navedeni u predmeč izvještaju gdje su dostupni; nisu zvanično potvrđenih jedanaest.",
+            "source_url": "https://www.sportsmole.co.uk/football/go-ahead-eagles/preview/go-ahead-eagles-vs-sittard-prediction-team-news-lineups_609534.html"
+          },
+          "h2h": {
+            "status": "verified",
+            "notes": "Ishodi i trend H2H opisani su u predmeč izvještaju; ne tumačiti kao samostalni prediktor.",
+            "source_url": "https://www.sportsmole.co.uk/football/go-ahead-eagles/preview/go-ahead-eagles-vs-sittard-prediction-team-news-lineups_609534.html"
+          },
+          "motivation_table": {
+            "status": "verified",
+            "notes": "Fortuna neporažena šest kola, a posljednja tri direktna susreta bila su 3:0, 2:2, 2:2. Fortuna ima više ozlijeđenih prvotimaca.",
+            "source_url": "https://www.sportsmole.co.uk/football/go-ahead-eagles/preview/go-ahead-eagles-vs-sittard-prediction-team-news-lineups_609534.html"
+          },
+          "rest_schedule": {
+            "status": "verified",
+            "notes": "Nastavak nakon reprezentativne pauze; pregledane navedene posljednje utakmice i kontekst rasporeda, bez izmišljanja nedostupnih dana odmora.",
+            "source_url": "https://www.sportsmole.co.uk/football/go-ahead-eagles/preview/go-ahead-eagles-vs-sittard-prediction-team-news-lineups_609534.html"
+          },
+          "quote_source": {
+            "status": "verified",
+            "notes": "TipsterArea javna predmeč stranica i podudaranje timova/dana; Scoutov tip GG, zabilježena kvota 1.48. Kvota nije dodatno ručno potvrđena u ovoj sesiji; ne birati za objavu. Kvote su prikazane kao predmeč iz 08:01 i mogu se promijeniti.",
+            "source_url": "https://tipsterarea.com/match/go-ahead-eagles-fortuna-sittard-eredivisie-netherlands-956431"
+          }
+        },
+        "independent_model_check": {
+          "status": "unavailable",
+          "notes": "Nema dovoljno potvrđenog nezavisnog modela istog tržišta za neposredno poređenje; ne izmišljati FairXG signal."
+        },
+        "review_summary": "GG je matematički blizu granice, ali Fortuna u posljednjim mečevima bilježi i pobjede 1:0. Ne daje prednost pred čvršćim A kandidatima. Fortuna neporažena šest kola, a posljednja tri direktna susreta bila su 3:0, 2:2, 2:2. Fortuna ima više ozlijeđenih prvotimaca.",
+        "decision": "uncertain",
+        "reviewed_source": "https://www.sportsmole.co.uk/football/go-ahead-eagles/preview/go-ahead-eagles-vs-sittard-prediction-team-news-lineups_609534.html"
+      },
+      {
+        "rank": 8,
+        "fixture_id": "espn:football:ita.1:401875047",
+        "match": "Bologna - Udinese",
+        "datetime": "2026-11-22T14:00:00Z",
+        "recommended_market": "3+",
+        "recommended_score": 36.066,
+        "model_adjusted_probability_pct": 55.75,
+        "verified_quote": null,
+        "new_factors": {
+          "xg_xga": {
+            "status": "verified",
+            "notes": "Regista predmeč model očekuje golove Bologna 1.9, Udinese 0.9 i Over 2.5 oko 53%; nije isto što i ostvareni xG.",
+            "source_url": "https://www.registacalcio.it/en/partite/19713506"
+          },
+          "injuries_suspensions": {
+            "status": "verified",
+            "notes": "Bologna četiri ligaške pobjede zaredom; Udinese na dnu tabele. Posljednja tri H2H bez gola Udinesea; Bologna bez Mirande, Holma i Enema.",
+            "source_url": "https://www.sportsmole.co.uk/football/bologna/preview/bologna-vs-udinese-prediction-team-news-lineups_609467.html"
+          },
+          "expected_lineups": {
+            "status": "verified",
+            "notes": "Predloženi sastavi navedeni u predmeč izvještaju gdje su dostupni; nisu zvanično potvrđenih jedanaest.",
+            "source_url": "https://www.sportsmole.co.uk/football/bologna/preview/bologna-vs-udinese-prediction-team-news-lineups_609467.html"
+          },
+          "h2h": {
+            "status": "verified",
+            "notes": "Ishodi i trend H2H opisani su u predmeč izvještaju; ne tumačiti kao samostalni prediktor.",
+            "source_url": "https://www.sportsmole.co.uk/football/bologna/preview/bologna-vs-udinese-prediction-team-news-lineups_609467.html"
+          },
+          "motivation_table": {
+            "status": "verified",
+            "notes": "Bologna četiri ligaške pobjede zaredom; Udinese na dnu tabele. Posljednja tri H2H bez gola Udinesea; Bologna bez Mirande, Holma i Enema.",
+            "source_url": "https://www.sportsmole.co.uk/football/bologna/preview/bologna-vs-udinese-prediction-team-news-lineups_609467.html"
+          },
+          "rest_schedule": {
+            "status": "verified",
+            "notes": "Nastavak nakon reprezentativne pauze; pregledane navedene posljednje utakmice i kontekst rasporeda, bez izmišljanja nedostupnih dana odmora.",
+            "source_url": "https://www.sportsmole.co.uk/football/bologna/preview/bologna-vs-udinese-prediction-team-news-lineups_609467.html"
+          },
+          "quote_source": {
+            "status": "verified",
+            "notes": "TipsterArea javna predmeč stranica i podudaranje timova/dana; Scoutov tip 3+, zabilježena kvota 1.98. Kvota nije dodatno ručno potvrđena u ovoj sesiji; ne birati za objavu. Kvote su prikazane kao predmeč iz 08:01 i mogu se promijeniti.",
+            "source_url": "https://tipsterarea.com/match/bologna-udinese-serie-a-italy-956421"
+          }
+        },
+        "independent_model_check": {
+          "status": "verified",
+          "provider": "Regista",
+          "source_url": "https://www.registacalcio.it/en/partite/19713506",
+          "notes": "Regista 3+ oko 53%, Scout originalno 60.1%; oko 7 procentnih poena razlike, različita metodologija."
+        },
+        "review_summary": "Nezavisni Regista model procjenjuje 3+ oko 53% uz xG 1.9:0.9, a H2H i Udineseova slaba ofanziva ne daju čvrstu potvrdu 3+. Bologna četiri ligaške pobjede zaredom; Udinese na dnu tabele. Posljednja tri H2H bez gola Udinesea; Bologna bez Mirande, Holma i Enema.",
+        "decision": "rejected",
+        "reviewed_source": "https://www.sportsmole.co.uk/football/bologna/preview/bologna-vs-udinese-prediction-team-news-lineups_609467.html"
+      },
+      {
+        "rank": 9,
+        "fixture_id": "espn:football:ned.1:401875547",
+        "match": "Ajax Amsterdam - ADO Den Haag",
+        "datetime": "2026-11-22T13:30:00Z",
+        "recommended_market": "GG",
+        "recommended_score": 35.505,
+        "model_adjusted_probability_pct": 61.58,
+        "verified_quote": null,
+        "new_factors": {
+          "xg_xga": {
+            "status": "unavailable",
+            "notes": "Nije potvrđena direktna aktuelna statistika stvarnog xG/xGA iz pouzdanog izvora; Scoutove modelirane golove ne predstavljati kao opaženi xG."
+          },
+          "injuries_suspensions": {
+            "status": "verified",
+            "notes": "Ajax u borbi za vrh protiv ADO-a koji je predzadnji; ADO ima novog trenera. Ajaxu se nekoliko igrača vraća poslije povreda; ADO rijetko daje golove u gostima.",
+            "source_url": "https://english.ajax.nl/articles/sanchez-looking-forward-to-home-clash-with-ado-and-reunion-with-the-fans"
+          },
+          "expected_lineups": {
+            "status": "verified",
+            "notes": "Predloženi sastavi navedeni u predmeč izvještaju gdje su dostupni; nisu zvanično potvrđenih jedanaest.",
+            "source_url": "https://english.ajax.nl/articles/sanchez-looking-forward-to-home-clash-with-ado-and-reunion-with-the-fans"
+          },
+          "h2h": {
+            "status": "verified",
+            "notes": "Ishodi i trend H2H opisani su u predmeč izvještaju; ne tumačiti kao samostalni prediktor.",
+            "source_url": "https://english.ajax.nl/articles/sanchez-looking-forward-to-home-clash-with-ado-and-reunion-with-the-fans"
+          },
+          "motivation_table": {
+            "status": "verified",
+            "notes": "Ajax u borbi za vrh protiv ADO-a koji je predzadnji; ADO ima novog trenera. Ajaxu se nekoliko igrača vraća poslije povreda; ADO rijetko daje golove u gostima.",
+            "source_url": "https://english.ajax.nl/articles/sanchez-looking-forward-to-home-clash-with-ado-and-reunion-with-the-fans"
+          },
+          "rest_schedule": {
+            "status": "verified",
+            "notes": "Nastavak nakon reprezentativne pauze; pregledane navedene posljednje utakmice i kontekst rasporeda, bez izmišljanja nedostupnih dana odmora.",
+            "source_url": "https://english.ajax.nl/articles/sanchez-looking-forward-to-home-clash-with-ado-and-reunion-with-the-fans"
+          },
+          "quote_source": {
+            "status": "verified",
+            "notes": "TipsterArea javna predmeč stranica i podudaranje timova/dana; Scoutov tip GG, zabilježena kvota 1.68. Kvota nije dodatno ručno potvrđena u ovoj sesiji; ne birati za objavu. Kvote su prikazane kao predmeč iz 08:01 i mogu se promijeniti.",
+            "source_url": "https://tipsterarea.com/match/ajax-amsterdam-ado-den-haag-eredivisie-netherlands-956429"
+          }
+        },
+        "independent_model_check": {
+          "status": "unavailable",
+          "notes": "Nema dovoljno potvrđenog nezavisnog modela istog tržišta za neposredno poređenje; ne izmišljati FairXG signal."
+        },
+        "review_summary": "Tip GG ostaje upitan jer ADO nije postigao gol na tri od šest gostovanja, a Ajax je izraziti favorit. Samo matematika nije dovoljna. Ajax u borbi za vrh protiv ADO-a koji je predzadnji; ADO ima novog trenera. Ajaxu se nekoliko igrača vraća poslije povreda; ADO rijetko daje golove u gostima.",
+        "decision": "rejected",
+        "reviewed_source": "https://english.ajax.nl/articles/sanchez-looking-forward-to-home-clash-with-ado-and-reunion-with-the-fans"
+      },
+      {
+        "rank": 10,
+        "fixture_id": "espn:football:bel.1:401878942",
+        "match": "Waasland-Beveren - KAA Gent",
+        "datetime": "2026-11-22T12:30:00Z",
+        "recommended_market": "3+",
+        "recommended_score": 34.597,
+        "model_adjusted_probability_pct": 57.43,
+        "verified_quote": null,
+        "new_factors": {
+          "xg_xga": {
+            "status": "unavailable",
+            "notes": "Nije potvrđena direktna aktuelna statistika stvarnog xG/xGA iz pouzdanog izvora; Scoutove modelirane golove ne predstavljati kao opaženi xG."
+          },
+          "injuries_suspensions": {
+            "status": "verified",
+            "notes": "SK Beveren ima četiri odsutna, Gent tri. Gent ima 16 pobjeda u 19 H2H, Beveren 2, a Gent je postizao pet golova u zadnjih pet utakmica.",
+            "source_url": "https://www.fotmob.com/matches/sk-beveren-vs-gent/2tiqu2"
+          },
+          "expected_lineups": {
+            "status": "verified",
+            "notes": "Predloženi sastavi navedeni u predmeč izvještaju gdje su dostupni; nisu zvanično potvrđenih jedanaest.",
+            "source_url": "https://www.fotmob.com/matches/sk-beveren-vs-gent/2tiqu2"
+          },
+          "h2h": {
+            "status": "verified",
+            "notes": "Ishodi i trend H2H opisani su u predmeč izvještaju; ne tumačiti kao samostalni prediktor.",
+            "source_url": "https://www.fotmob.com/matches/sk-beveren-vs-gent/2tiqu2"
+          },
+          "motivation_table": {
+            "status": "verified",
+            "notes": "SK Beveren ima četiri odsutna, Gent tri. Gent ima 16 pobjeda u 19 H2H, Beveren 2, a Gent je postizao pet golova u zadnjih pet utakmica.",
+            "source_url": "https://www.fotmob.com/matches/sk-beveren-vs-gent/2tiqu2"
+          },
+          "rest_schedule": {
+            "status": "unavailable",
+            "notes": "Nema pouzdano dokumentovanih dana odmora oba kluba.",
+            "source_url": "https://www.fotmob.com/matches/sk-beveren-vs-gent/2tiqu2"
+          },
+          "quote_source": {
+            "status": "verified",
+            "notes": "TipsterArea javna predmeč stranica i podudaranje timova/dana; Scoutov tip 3+, zabilježena kvota 1.83. Kvota nije dodatno ručno potvrđena u ovoj sesiji; ne birati za objavu. Kvote su prikazane kao predmeč iz 08:01 i mogu se promijeniti.",
+            "source_url": "https://tipsterarea.com/match/sk-beveren-kaa-gent-pro-league-belgium-956438"
+          }
+        },
+        "independent_model_check": {
+          "status": "unavailable",
+          "notes": "Nema dovoljno potvrđenog nezavisnog modela istog tržišta za neposredno poređenje; ne izmišljati FairXG signal."
+        },
+        "review_summary": "Golovi su mogući, ali procjena 3+ je osjetljiva na izostanke i Gentove clean sheetove. Meč ranije počinje; nije u konačnom izboru. SK Beveren ima četiri odsutna, Gent tri. Gent ima 16 pobjeda u 19 H2H, Beveren 2, a Gent je postizao pet golova u zadnjih pet utakmica.",
+        "decision": "uncertain",
+        "reviewed_source": "https://www.fotmob.com/matches/sk-beveren-vs-gent/2tiqu2"
+      }
+    ],
+    "scout_count": 10,
+    "method": "7 external checks each; missing observations explicitly marked unavailable; only highest-score recommended market used",
+    "selection_caveat": "Pre-match odds scraped/published 08:01, they may change, matches must not have started"
+  },
+  "tickets": [
+    {
+      "id": "A",
+      "combined_odds": 2.75,
+      "analysis": "Kasimpasa 1: bolji položaj i serija neporaženosti protiv Alanyaspora u četiri uzastopna poraza; izostanci domaćih su rizik. Milan-Frosinone GG: Milan često postiže 2+ gola, a ofanzivni pristup rivala i predmeč prognoze podržavaju oba daju gol, iako Frosinone ima loš gostujući skor. Preporuke nisu garancija; kvote preuzete sa javno vidljive predmeč stranice.",
+      "matches": [
+        {
+          "fixture_id": "espn:football:tur.1:401888248",
+          "match": "Kasimpasa - Alanyaspor",
+          "datetime": "2026-11-22T13:00:00Z",
+          "pick": "1",
+          "odd": 1.91,
+          "bookmaker": "1xbet",
+          "source": "https://tipsterarea.com/match/kasimpasa-alanyaspor-super-lig-turkiye-956434",
+          "quote_checked_at_utc": "2026-11-22T11:54:42.590Z",
+          "model_adjusted_probability_pct": 58.68,
+          "analysis": "Kasimpasa ima jasnu takmičarsku prednost, bolju aktuelnu formu i domaći teren. Rizik je izostanak dijela igrača; uz potvđenu premecnu kvotu 1.91 tip 1 ostaje prihvatljiv. Kasimpasa peta sa 20 bodova i nizom neporaženosti; Alanyaspor trinaesti, četiri poraza uzastopno. Domaći imaju nekoliko izostanaka uključujući suspendovanog Mendesa."
+        },
+        {
+          "fixture_id": "espn:football:ita.1:401874989",
+          "match": "AC Milan - Frosinone",
+          "datetime": "2026-11-22T17:00:00Z",
+          "pick": "GG",
+          "odd": 1.44,
+          "bookmaker": "betfair",
+          "source": "https://tipsterarea.com/match/milan-frosinone-serie-a-italy-956423",
+          "quote_checked_at_utc": "2026-11-22T11:54:42.592Z",
+          "model_adjusted_probability_pct": 71.07,
+          "analysis": "Prognoza 3:2 i ofanzivni pristup oba tima podržavaju GG. Frosinone ima slab učinak u gostima, što je glavni kontraargument. Milan četiri pobjede u posljednjih pet ligaških susreta i 2+ gola na svakom; Frosinone samo dva boda u gostima od kraja avgusta; više važnih Milanovih igrača odsutno."
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "combined_odds": 2.848,
+      "analysis": "Sassuolo-Genoa 3+: Sassuolo je primio 19 golova u 5 poraza, Genoa je napadački u boljoj formi; izostanci kod domaćih i novi trener su značajan rizik. Augsburg-Mainz 3+: oba tima imaju odbrambenih problema; nezavisna predmeč prognoza 2:2 podržava tri ili više gola. Kvote su javno objavljene predmeč vrijednosti i mogu se mijenjati.",
+      "matches": [
+        {
+          "fixture_id": "espn:football:ita.1:401874960",
+          "match": "Sassuolo - Genoa",
+          "datetime": "2026-11-22T14:00:00Z",
+          "pick": "3+",
+          "odd": 2.02,
+          "bookmaker": "1xbet",
+          "source": "https://tipsterarea.com/match/sassuolo-genoa-serie-a-italy-956422",
+          "quote_checked_at_utc": "2026-11-22T11:54:42.592Z",
+          "model_adjusted_probability_pct": 60.36,
+          "analysis": "Visok broj primljenih golova Sassuola i dobro stanje napada Genoe podržavaju 3+, ali napadački izostanci i novi trener Sassuola smanjuju sigurnost. Sassuolo je izgubio pet uzastopnih susreta s 19 primljenih golova, ali ima dileme oko Berardija i Adzica; Genoa je u boljoj formi i ima četiri uzastopne H2H pobjede."
+        },
+        {
+          "fixture_id": "espn:football:ger.1:401884733",
+          "match": "FC Augsburg - Mainz",
+          "datetime": "2026-11-22T14:30:00Z",
+          "pick": "3+",
+          "odd": 1.41,
+          "bookmaker": "1xbet",
+          "source": "https://tipsterarea.com/match/augsburg-mainz-bundesliga-germany-956418",
+          "quote_checked_at_utc": "2026-11-22T11:54:42.592Z",
+          "model_adjusted_probability_pct": 71.33,
+          "analysis": "Oba tima loše brane, a nezavisna redakcijska prognoza 2:2 potvrđuje scenario 3+. Odmor poslije reprezentativne pauze i nesigurnost sastava su rizici. Augsburg slaba odbrana i niz bez pobjede; Mainz četiri poraza u šest ligaških utakmica, ali često postiže golove i dobro igra na strani. Glavni izostanci Matsima, Massengo, Kohr."
+        }
+      ]
+    }
+  ]
+}
