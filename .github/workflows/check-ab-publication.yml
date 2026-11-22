@@ -1,0 +1,40 @@
+name: MemaraSix verify A and B published
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '10,40 11-18 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: memarasix-ab-publication-check
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify publication checker behavior
+        run: python3 -m unittest -v test_check_ab_publication.py
+      - name: Verify published A/B from actual website data
+        run: python3 check_ab_publication.py
+      - name: Commit read-only monitor result
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f collector-output/ab-publication-check.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Monitor A/B website publication status [skip ci]"
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then exit 0; fi
+              sleep $((attempt * 2))
+            done
+            exit 1
+          fi
