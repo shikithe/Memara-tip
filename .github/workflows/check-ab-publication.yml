@@ -1,4 +1,4 @@
-name: MemaraSix verify A and B published
+name: Senzor A/B
 on:
   workflow_dispatch:
   schedule:
