@@ -10,7 +10,7 @@ on:
       - '.github/workflows/check-ab-publication.yml'
   workflow_dispatch:
   schedule:
-    # Covers CET and CEST: technical 10:00-12:15; publication 12:45-23:45 local.
+    # Covers CET and CEST: technical checks stop at confirmed TOP10; publication 13:00-23:45 local.
     - cron: '0,15,30,45 8-22 * * *'
 permissions:
   contents: write
@@ -39,8 +39,14 @@ jobs:
           from datetime import datetime
           from zoneinfo import ZoneInfo
           from ab_sensor_phase import phase
+          from pathlib import Path
           now=datetime.now(ZoneInfo("Europe/Sarajevo"))
-          current=phase(now)
+          marker=Path("collector-output/ab-preparation-feedback.json")
+          try:
+              preparation=json.loads(marker.read_text(encoding="utf-8")) if marker.exists() else None
+          except (ValueError,OSError):
+              preparation=None
+          current=phase(now,preparation)
           with open(os.environ["GITHUB_OUTPUT"],"a") as out:
               out.write("phase="+current+"\n")
           print("SENZOR_AB_PHASE",current,now.isoformat())
@@ -57,6 +63,22 @@ jobs:
         run: |
           python3 -m unittest -v test_inspektor_ab.py
           python3 inspektor_ab.py
+      - name: Inspektor confirms TOP10 — tell Sensor to suspend technical preparation
+        if: steps.gate.outputs.phase == 'technical' && steps.inspector.outputs.next_stage == 'await_publication'
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          x=json.loads(Path("collector-output/ab-inspector.json").read_text(encoding="utf-8"))
+          if x.get("feedback")!="TOP10_CONFIRMED_WAIT_PUBLICATION" or x.get("next_stage")!="await_publication":
+              raise SystemExit("No verified TOP10 confirmation")
+          marker={"date":x["date"],"feedback":x["feedback"],"source_fingerprint":x["source_fingerprint"],
+                  "top10_count":x["top10_count"],"next_action":"publication_only_from_13_00"}
+          path=Path("collector-output/ab-preparation-feedback.json")
+          path.parent.mkdir(parents=True,exist_ok=True)
+          path.write_text(json.dumps(marker,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+          print("SENSOR_STANDBY_UNTIL_1300",x["date"],marker["top10_count"])
+          PY
 
       - name: Inspektor — trigger only the missing technical stage
         continue-on-error: true
@@ -119,7 +141,7 @@ jobs:
               print("AI_INSPECTOR_HANDOFF_OPENED")
           PY
 
-      - name: Publication-only sensor every 15min after 12:45; stop on A+B
+      - name: Publication-only sensor every 15min from 13:00; stop on A+B
         if: steps.gate.outputs.phase == 'publication'
         id: publication
         run: |
@@ -186,8 +208,8 @@ jobs:
           if any(x["title"]==title for x in json.loads(listing.stdout)):
               print("AB_PUBLICATION_AI_FEEDBACK_ALREADY_SENT")
           else:
-              body=("A_B_PUBLICATION_MISSING after 12:45 Sarajevo.\n"
-                    "Technical verification ends at 12:15; do not restart ESPN, TipsterArea, or Scout.\n"
+              body=("A_B_PUBLICATION_MISSING after 13:00 Sarajevo.\n"
+                    "Technical verification ends upon TOP10_READY or by 13:00; do not restart ESPN, TipsterArea, or Scout.\n"
                     "Independent AI analyst: verify today's TOP10_READY and approval status, "
                     "finish missing A/B approvals if evidence supports, and commit to the existing "
                     "publisher input. If already approved but not visible on the website, "
@@ -205,7 +227,9 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f collector-output/ab-publication-check.json collector-output/ab-inspector.json collector-output/ab-publication-feedback.json 2>/dev/null || true
+          for f in collector-output/ab-publication-check.json collector-output/ab-inspector.json collector-output/ab-publication-feedback.json collector-output/ab-preparation-feedback.json; do
+            if [ -f "$f" ]; then git add -f -- "$f"; fi
+          done
           if ! git diff --cached --quiet; then
             git commit -m "Monitor A/B website publication status [skip ci]"
             for attempt in 1 2 3; do
