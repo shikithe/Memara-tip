@@ -5462,6 +5462,117 @@
               }
             }
           ]
+        },
+        {
+          "id": "9",
+          "stake": 9.25,
+          "status": "pending",
+          "total_odd": 3.779,
+          "potential_payout": 34.96,
+          "legs": [
+            {
+              "player": "Shai Gilgeous-Alexander",
+              "team": "OKC",
+              "opponent": "MIA",
+              "pick": "over",
+              "points_line": 32.5,
+              "odd": 1.9174,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/shai-gilgeous-alexander",
+              "espn_event_id": "401910030",
+              "player_id": "4278073",
+              "start_utc": "2026-11-22T23:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 40,
+                    "minutes": 37
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 34,
+                    "minutes": 36
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Full head-to-head player box score history for this specific opponent not independently verified."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Precise position-specific defensive strength and latest injuries were not fully quantified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Defender identity cannot be confirmed until lineups and on-court assignments are observed."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Team rotation and player injury mentions reviewed; no future appearance guarantee."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "Future minutes projections were not independently corroborated; actual verified game logs used."
+                },
+                "scout_score": 90,
+                "scout_note": "Shai is averaging 31.7 points season, has cleared 32.5 in four of his latest five games per current props history, including 40 Nov 20 and 34 Nov 18. Strong active primary-scoring role supports over. This is a statistically motivated lean, not a calibrated win probability.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-9.json"
+              }
+            },
+            {
+              "player": "Anthony Davis",
+              "team": "WSH",
+              "opponent": "ORL",
+              "pick": "over",
+              "points_line": 24.5,
+              "odd": 1.9709,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/anthony-davis",
+              "espn_event_id": "401910031",
+              "player_id": "6583",
+              "start_utc": "2026-11-23T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-15",
+                    "points": 14,
+                    "minutes": 30.6
+                  },
+                  {
+                    "date": "2026-11-12",
+                    "points": 22,
+                    "minutes": 29.7
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Full head-to-head player box score history for this specific opponent not independently verified."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Precise position-specific defensive strength and latest injuries were not fully quantified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Defender identity cannot be confirmed until lineups and on-court assignments are observed."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Team rotation and player injury mentions reviewed; no future appearance guarantee."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "Future minutes projections were not independently corroborated; actual verified game logs used."
+                },
+                "scout_score": 84,
+                "scout_note": "Anthony Davis is averaging 25.3 points and cleared 24.5 in nine of 15 seasonal games. His last five included 36,25,23,14,30 points, three overs, against the Orlando matchup. This is a statistically motivated lean, not a calibrated win probability.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-9.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -5473,15 +5584,16 @@
           5,
           6,
           7,
-          8
+          8,
+          9
         ],
         "offered": 88,
         "total_groups": 10,
-        "group_number": 8,
-        "group_range": "64-72",
+        "group_number": 9,
+        "group_range": "73-80",
         "group_selected": [
-          "Davion Mitchell",
-          "Andrew Wiggins"
+          "Shai Gilgeous-Alexander",
+          "Anthony Davis"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-22-group-1.json",
@@ -5491,7 +5603,8 @@
           "5": "collector-output/nba-system-scout-2026-11-22-group-5.json",
           "6": "collector-output/nba-system-scout-2026-11-22-group-6.json",
           "7": "collector-output/nba-system-scout-2026-11-22-group-7.json",
-          "8": "collector-output/nba-system-scout-2026-11-22-group-8.json"
+          "8": "collector-output/nba-system-scout-2026-11-22-group-8.json",
+          "9": "collector-output/nba-system-scout-2026-11-22-group-9.json"
         },
         "selection_method": "full_ranked_scout"
       }
