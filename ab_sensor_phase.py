@@ -6,11 +6,13 @@ from zoneinfo import ZoneInfo
 
 TZ=ZoneInfo("Europe/Sarajevo")
 
-def phase(now):
+def phase(now, preparation=None):
     clock=now.astimezone(TZ).time().replace(tzinfo=None)
-    if time(10,0) <= clock <= time(12,15):
+    if time(10,0) <= clock < time(13,0):
+        if isinstance(preparation, dict) and preparation.get("date")==now.astimezone(TZ).date().isoformat() and preparation.get("feedback")=="TOP10_CONFIRMED_WAIT_PUBLICATION":
+            return "standby"
         return "technical"
-    if time(12,45) <= clock <= time(23,59,59):
+    if time(13,0) <= clock <= time(23,59,59):
         return "publication"
     return "idle"
 
