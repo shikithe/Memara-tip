@@ -1192,15 +1192,19 @@
       "team": "MIA",
       "opponent": "OKC",
       "game": "OKC @ MIA",
-      "start_utc": null,
+      "start_utc": "2026-11-22T23:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/andrew-wiggins",
       "points_line": 9.5,
       "over_odd": 1.9346,
       "under_odd": 1.8403,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3059319",
+      "espn_event_id": "401910030",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/3059319",
+        "https://www.espn.com/nba/game/_/gameId/401910030/thunder-heat"
+      ]
     },
     {
       "original_offer_position": 68,
@@ -1243,15 +1247,19 @@
       "team": "MIA",
       "opponent": "OKC",
       "game": "OKC @ MIA",
-      "start_utc": null,
+      "start_utc": "2026-11-22T23:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/davion-mitchell",
       "points_line": 14.5,
       "over_odd": 1.9259,
       "under_odd": 1.8475,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4278053",
+      "espn_event_id": "401910030",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/4278053",
+        "https://www.espn.com/nba/game/_/gameId/401910030/thunder-heat"
+      ]
     },
     {
       "original_offer_position": 71,
