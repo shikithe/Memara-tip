@@ -4701,24 +4701,167 @@
               }
             }
           ]
+        },
+        {
+          "id": "3",
+          "stake": 9.25,
+          "status": "pending",
+          "total_odd": 3.5693,
+          "potential_payout": 33.02,
+          "legs": [
+            {
+              "player": "Aaron Gordon",
+              "team": "DEN",
+              "opponent": "CHI",
+              "pick": "under",
+              "points_line": 13.5,
+              "odd": 1.9091,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/aaron-gordon",
+              "espn_event_id": "401910032",
+              "player_id": "3064290",
+              "start_utc": "2026-11-23T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 18,
+                    "minutes": 31
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 13,
+                    "minutes": 31
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 11,
+                    "minutes": 24
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 11,
+                    "minutes": 33
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 9,
+                    "minutes": 27
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five direct player matchups against tonight's team were not independently verified."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Position-specific defensive point allowances were not independently verified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Individual on-ball defender has not been confirmed by published starting assignments."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Team injury reports and pregame availability reviewed, but lineup confirmation can still change."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No authoritative forward minutes projection; last-five actual minutes where verified."
+                },
+                "scout_score": 85,
+                "scout_note": "Gordon scored 18,13,11,11,9 in his latest five (4/5 under 13.5). Season baseline 11.6 points and relatively moderate scoring volume support the under lean; he played 31 minutes on Nov 20.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-3.json"
+              }
+            },
+            {
+              "player": "Darryn Peterson",
+              "team": "UTAH",
+              "opponent": "DAL",
+              "pick": "under",
+              "points_line": 18.5,
+              "odd": 1.8696,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/darryn-peterson",
+              "espn_event_id": "401910033",
+              "player_id": "5041955",
+              "start_utc": "2026-11-23T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 20,
+                    "minutes": 32
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 11,
+                    "minutes": 19
+                  },
+                  {
+                    "date": "2026-11-17",
+                    "points": 13,
+                    "minutes": 31
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 17,
+                    "minutes": 34
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 28,
+                    "minutes": 34
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five direct player matchups against tonight's team were not independently verified."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Position-specific defensive point allowances were not independently verified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Individual on-ball defender has not been confirmed by published starting assignments."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Team injury reports and pregame availability reviewed, but lineup confirmation can still change."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No authoritative forward minutes projection; last-five actual minutes where verified."
+                },
+                "scout_score": 79,
+                "scout_note": "Peterson scored 20,11,13,17,28 in last five; three under 18.5. Season average 16.7 and last-five average 17.8 indicate a modest under lean, although recent shot volume creates uncertainty.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-3.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
         "groups_completed": [
           1,
-          2
+          2,
+          3
         ],
         "offered": 88,
         "total_groups": 10,
-        "group_number": 2,
-        "group_range": "10-18",
+        "group_number": 3,
+        "group_range": "19-27",
         "group_selected": [
-          "Payton Pritchard",
-          "Cooper Flagg"
+          "Aaron Gordon",
+          "Darryn Peterson"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-22-group-1.json",
-          "2": "collector-output/nba-system-scout-2026-11-22-group-2.json"
+          "2": "collector-output/nba-system-scout-2026-11-22-group-2.json",
+          "3": "collector-output/nba-system-scout-2026-11-22-group-3.json"
         },
         "selection_method": "full_ranked_scout"
       }
