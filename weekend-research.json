@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.6",
-  "date": "2026-11-21",
-  "generated_at_utc": "2026-11-21T08:00:46Z",
+  "schema_version": "1.7",
+  "date": "2026-11-22",
+  "generated_at_utc": "2026-11-22T08:00:30Z",
   "project": "MAIN MemaraSix",
   "repository": "shikithe/Memara-tip",
-  "phase": "09:00 weekend research draft ONLY",
+  "phase": "09:00 weekend research DRAFT ONLY",
   "status": "PARTIAL_RESEARCH_BLOCKED_STALE_COLLECTOR_UNVERIFIED_ODDS",
   "publication_allowed": false,
-  "approval_author": "Daily AI analyst only; weekend task forbidden to write memarasix-1455-approved.json",
+  "approval_author": "Daily AI analyst only; weekend preparation forbidden to modify approved tickets",
   "inputs": {
     "collector_feed": {
       "path": "collector-feed.json",
@@ -25,6 +25,7 @@
       "path": "collector-output/nba-player-points.json",
       "generated_at_utc": null,
       "offer_count": 0,
+      "status": "awaiting_daily_refresh",
       "cleared_at_utc": "2026-11-16T19:06:33.886509+00:00",
       "fresh": false,
       "verified_player_points_offers": 0,
@@ -32,104 +33,89 @@
     }
   },
   "external_research": {
-    "date": "2026-11-21",
+    "date": "2026-11-22",
+    "fixture_source": "https://www.theguardian.com/football/fixtures/2026/Nov/22",
     "fixtures": [
       {
-        "event": "Manchester City – Fulham",
-        "kickoff_sarajevo": "13:30",
-        "note": "after 12:20 but limited time for pre-match verification"
+        "event": "Hull City – Brighton",
+        "kickoff_sarajevo": "15:00",
+        "status": "schedule checked; full 5–10-match scout, verified odds and lineups pending"
       },
       {
-        "event": "Chelsea – Leeds",
-        "kickoff_sarajevo": "16:00",
-        "note": "Chelsea injuries confirmed in Reuters: Joao Pedro, Lacroix, James, Hato, Gittens out; Caicedo reportedly fit; predicted XI not confirmed"
+        "event": "Liverpool – Manchester United",
+        "kickoff_sarajevo": "17:30",
+        "status": "Van Dijk, Gravenberch and Frimpong reported fit/returning; Bradley and Leoni still unavailable; lineup unconfirmed",
+        "sources": [
+          "https://liverpooloffside.sbnation.com/liverpool-fc-news-coverage/85177/van-dijk-gravenberch-and-frimpong-fit-and-ready-to-face-man-united"
+        ]
       },
       {
-        "event": "Borussia Mönchengladbach – Borussia Dortmund",
+        "event": "Augsburg – Mainz",
         "kickoff_sarajevo": "15:30",
-        "note": "BVB official 19 Nov: Guirassy, Anton, Chukwuemeka, Inacio doubtful; Can, Konstantelias, Lerma absent"
+        "status": "Augsburg 20 scored/20 conceded in nine Bundesliga matches; Mainz 18/19. Augsburg recent five: 2-5 Leipzig, 1-2 Freiburg, 1-1 Union, 3-4 Elversberg, 2-2 Bayern (reported; independent match-by-match verification pending). Injury reports disagree; do not assume full squads.",
+        "sources": [
+          "https://www.forebet.com/en/football-match-previews/32240-augsburg-look-to-capitalize-as-mainz-aim-to-end-poor-run-at-wwk-arena",
+          "https://www.tufutbolero.com/de/nachrichten/augsburg-mainz-vorschau-augsburg-kommt-mit-funf-ausfallen-fcccf3"
+        ]
       },
       {
-        "event": "Eintracht Frankfurt – Hoffenheim",
-        "kickoff_sarajevo": "15:30",
-        "note": "Club preview: both vulnerable in second halves; external 3+ model 77% unverified independent forecast; odds.report 1.62 is rated price, not bookmaker quote"
+        "event": "Werder Bremen – Hamburg",
+        "kickoff_sarajevo": "17:30",
+        "status": "derby; scout and verified odds pending"
       },
       {
-        "event": "Union Berlin – RB Leipzig",
-        "kickoff_sarajevo": "15:30"
+        "event": "Barcelona – Villarreal",
+        "kickoff_sarajevo": "14:00",
+        "status": "schedule checked, scout pending"
       },
       {
-        "event": "Newcastle – Arsenal",
-        "kickoff_sarajevo": "18:30"
-      },
+        "event": "Atalanta – Inter",
+        "kickoff_sarajevo": "20:45",
+        "status": "Inter four wins in last five all competitions, Atalanta one win in last five per Goal; reports conflict on Lautaro Martinez availability; starting XIs not confirmed",
+        "sources": [
+          "https://www.goal.com/en/news/watch-atalanta-v-inter-live-today-who-is-showing-the-match-on-tv-and-online/blte03efe4d428dc5c4",
+          "https://goldenpredictions.com/news/atalanta-vs-inter-milan-prediction-and-predicted-line-ups-serie-a-sunday-22-november-in-bergamo-eyes-on-de-ketelaere-id-794"
+        ]
+      }
+    ],
+    "excluded": [
       {
-        "event": "Napoli – Torino",
-        "kickoff_sarajevo": "20:45"
+        "event": "Juventus – Venezia",
+        "kickoff_sarajevo": "12:30",
+        "reason": "only 30 minutes after planned publication, less than preferred 12:20 buffer; not prioritized"
       }
     ],
     "sources": [
-      {
-        "url": "https://products.bundesliga.com/fixtures/export/pdf?league%5B0%5D=1d570dd9-b10b-44de-9f64-8c91e56bf168&matchday%5B0%5D=10&season=b2f90c16-d6ef-40b1-a974-e6b1bf102c2a",
-        "type": "official schedule",
-        "date": "2026-11-08"
-      },
-      {
-        "url": "https://www.theguardian.com/football/fixtures/2026/Nov/21",
-        "type": "fixture schedule",
-        "date": "2026-11-21"
-      },
-      {
-        "url": "https://www.bvb.de/de/en/news/news-overview/news.html/2026/11/19/Four-Question-Marks-Ahead-of-the-Gladbach-Match.html",
-        "type": "official injury report",
-        "date": "2026-11-19"
-      },
-      {
-        "url": "https://www.reuters.com/sports/soccer/injury-hit-chelsea-aim-halt-slide-against-leeds-alonso-confirms-pedros-absence-2026-11-20/",
-        "type": "reported injury update",
-        "date": "2026-11-20"
-      },
-      {
-        "url": "https://go.eintracht.de/aVYHfC",
-        "type": "official club preview",
-        "date": "2026-11-17"
-      },
-      {
-        "url": "https://www.footyntel.com/bundesliga/frankfurt-vs-hoffenheim/",
-        "type": "independent probability model not validated",
-        "date": "2026-11-21"
-      },
-      {
-        "url": "https://odds.report/en/predictions/eintracht-frankfurt-vs-tsg-1899-hoffenheim-bl1-2026-11-21/",
-        "type": "model-rated price not live bookmaker quote",
-        "date": "2026-11-09"
-      }
+      "https://www.theguardian.com/football/fixtures/2026/Nov/22",
+      "https://tipste.com/de/schedule/day/2026-11-22",
+      "https://www.fotmob.com/en-GB/matches/augsburg-vs-mainz-05/2rtngt"
     ],
     "incomplete_checks": [
-      "Full last 5–10 finished matches across competitions for every candidate",
-      "independently sourced actual xG/xGA",
-      "confirmed starting XIs",
-      "bookmaker-specific current odds, timestamps and implied probabilities",
-      "NBA minutes/line/market verification"
+      "Fresh 22 Nov collector unavailable",
+      "Full last 5–10 completed matches across all competitions for each team",
+      "Independently verified real xG/xGA, home/away split, rest, suspensions and official lineups",
+      "Bookmaker-specific odds and timestamps; no validated over 2.5 market price",
+      "NBA player points market, line, bookmaker, decimal odds and capture timestamp"
     ]
   },
   "rules": {
-    "A": "Football only, each ticket total odds strictly 2.00–3.00 inclusive",
-    "B": "Different football events, over 2.5 only, total odds strictly 2.00–3.00 inclusive",
-    "C": "4–6 distinct football/NBA events, total odds >=10 (target 10–13), no overlaps, NBA only C",
+    "A": "Football only; total odds strictly 2.00–3.00 inclusive",
+    "B": "Other football events; over 2.5 goals only; total odds strictly 2.00–3.00 inclusive",
+    "C": "4–6 distinct football/NBA events, total odds >=10 (target 10–13), no overlaps; NBA only C",
     "kickoff": "After 12:00 Sarajevo, preferably after 12:20"
   },
   "tickets": {
     "A": {
       "status": "NOT_APPROVED",
-      "reason": "No fresh collector, verified odds, complete scout"
+      "reason": "No fresh collector or bookmaker odds; incomplete scout"
     },
     "B": {
       "status": "NOT_APPROVED",
-      "reason": "No verified over 2.5 prices or complete five-match multi-competition comparison"
+      "reason": "No verified over 2.5 odds, independent model-vs-market probability check incomplete"
     },
     "C": {
       "status": "UNAVAILABLE",
-      "reason": "No 4–6 verified distinct odds and no current NBA player_points offers"
+      "reason": "No verified combination of 4–6 events with odds >=10; NBA offers absent"
     }
   },
   "protected_files_unchanged": [
@@ -138,16 +124,16 @@
     "archive.json",
     "bank",
     "DEMO",
-    "published tickets"
+    "previously published tickets"
   ],
   "actions_taken": [
-    "Read collector feed and NBA player points source",
-    "Cross-checked independent fixture and official club sources",
-    "Saved research-only draft; no approvals"
+    "Read actual GitHub collector feed and NBA player points JSON",
+    "Checked external 22 Nov fixtures, recent form and team news for selected candidates",
+    "Saved research-only draft; no approvals or publication"
   ],
   "next_required_checks": [
-    "Fresh 21 Nov collector after 09:00",
-    "Current odds and independent multi-competition scout",
-    "Confirm team news and starting XIs before daily analyst approval"
+    "Wait for fresh 22 Nov collector; only then conduct full candidate-specific scout",
+    "Validate market-specific odds and time of capture before 11:45",
+    "Daily analyst alone handles approvals; no duplicate approval"
   ]
 }
