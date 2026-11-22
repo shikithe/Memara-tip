@@ -160,7 +160,7 @@ def run(source="data.json",output="live-scores.json"):
                     pick=str(m.get("pick","")).strip().upper()
                     threshold={"3+":3,"OVER 2.5":3,"O2.5":3,
                                "2+":2,"OVER 1.5":2,"O1.5":2}.get(pick)
-                    if threshold is not None and e["home_score"]+e["away_score"]>=threshold:
+                    if (threshold is not None and e["home_score"]+e["away_score"]>=threshold) or (pick=="GG" and e["home_score"]>0 and e["away_score"]>0):
                         record["result_status"]="pogođen"
         except (KeyError,ValueError,TypeError):
             pass
