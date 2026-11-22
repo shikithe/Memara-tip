@@ -1,0 +1,634 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-22",
+  "group_number": 6,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Nickeil Alexander-Walker",
+      "player_id": "4278039",
+      "score": 85,
+      "confidence": 78,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete identity and Detroit-Atlanta event, then secondary NBA, Basketball Reference, and team/injury previews; unmatched recent games excluded."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/nickeil-alexander-walker",
+        "https://www.basketball-reference.com/players/a/alexani01.html"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 19,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-18",
+          "points": 19,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-15",
+          "points": 20,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-13",
+          "points": 16,
+          "minutes": 41
+        },
+        {
+          "date": "2026-11-09",
+          "points": 20,
+          "minutes": 34
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available NBA season baseline and last five rate sourced, never calibrated as probability"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Home and away split across comparable minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five direct player opponents game box scores not independently retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense by exact individual position and scheme not verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed game plan for individual on-ball defensive assignment."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "2026-11-22 official league injury report reviewed; CJ McCollum, Landale out; Detroit Duren and Robinson out, Flemings questionable."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official predicted minutes, only actual prior logs available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation position and season use inferred from sourced team preview."
+      },
+      "market": {
+        "points_line": 19.5,
+        "over_odd": 1.813,
+        "under_odd": 1.9615,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/nickeil-alexander-walker"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "no calibrated probability",
+        "availability_confirmed": true,
+        "reason": "Nickeil scored 19,19,20,16,20 in his previous five, three under the frozen 19.5 line, with 32 to 41 minutes; last-five average 18.8, but season average 20.9. Historical observed numbers do not guarantee the outcome.",
+        "risk": "Season level 20.9 is above the line, his high role and injuries to Atlanta creators could boost scoring. Participant status remains subject to tipoff roster confirmation."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Kevin Huerter",
+      "player_id": "4066372",
+      "score": 80,
+      "confidence": 72,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete identity and Detroit-Atlanta event, then secondary NBA, Basketball Reference, and team/injury previews; unmatched recent games excluded."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/kevin-huerter",
+        "https://www.nba.com/player/1628989/kevin-huerter"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 11,
+          "minutes": 19.7
+        },
+        {
+          "date": "2026-11-18",
+          "points": 11,
+          "minutes": 36
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available NBA season baseline and last five rate sourced, never calibrated as probability"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Home and away split across comparable minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five direct player opponents game box scores not independently retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense by exact individual position and scheme not verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed game plan for individual on-ball defensive assignment."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "2026-11-22 official league injury report reviewed; CJ McCollum, Landale out; Detroit Duren and Robinson out, Flemings questionable."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official predicted minutes, only actual prior logs available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation position and season use inferred from sourced team preview."
+      },
+      "market": {
+        "points_line": 13.5,
+        "over_odd": 1.8264,
+        "under_odd": 1.9524,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/kevin-huerter"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "no calibrated probability",
+        "availability_confirmed": true,
+        "reason": "Huerter has season average 10.6 against line 13.5 and latest cited results 11,20,9,11,20 show three unders; validated Nov20 11pts 19:42 minutes and Nov18 11 in 36 minutes. Historical observed numbers do not guarantee the outcome.",
+        "risk": "Recent minutes show dramatic variation and injury-affected Detroit rotation can increase shot chances. Participant status remains subject to tipoff roster confirmation."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Jalen Johnson",
+      "player_id": "betsharp:2026-11-22:0046",
+      "score": 77,
+      "confidence": 78,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete identity and Detroit-Atlanta event, then secondary NBA, Basketball Reference, and team/injury previews; unmatched recent games excluded."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jalen-johnson",
+        "https://www.nba.com/game/det-vs-atl-0022600280"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available NBA season baseline and last five rate sourced, never calibrated as probability"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Home and away split across comparable minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five direct player opponents game box scores not independently retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense by exact individual position and scheme not verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed game plan for individual on-ball defensive assignment."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "2026-11-22 official league injury report reviewed; CJ McCollum, Landale out; Detroit Duren and Robinson out, Flemings questionable."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official predicted minutes, only actual prior logs available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation position and season use inferred from sourced team preview."
+      },
+      "market": {
+        "points_line": 20.5,
+        "over_odd": 1.8065,
+        "under_odd": 1.9804,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jalen-johnson"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "no calibrated probability",
+        "availability_confirmed": false,
+        "reason": "Jalen Johnson scores 19.7 season points versus 20.5 line; recent 15,27,14,16,26 includes three unders but he broke out with 26 and may be rebounding from ankle limitation. Historical observed numbers do not guarantee the outcome.",
+        "risk": "Recent left ankle injury and high usage with CJ McCollum absent can increase scoring volatility. Participant status remains subject to tipoff roster confirmation."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Luguentz Dort",
+      "player_id": "betsharp:2026-11-22:0050",
+      "score": 71,
+      "confidence": 57,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete identity and Detroit-Atlanta event, then secondary NBA, Basketball Reference, and team/injury previews; unmatched recent games excluded."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/luguentz-dort",
+        "https://www.nba.com/player/1629027"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available NBA season baseline and last five rate sourced, never calibrated as probability"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Home and away split across comparable minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five direct player opponents game box scores not independently retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense by exact individual position and scheme not verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed game plan for individual on-ball defensive assignment."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "2026-11-22 official league injury report reviewed; CJ McCollum, Landale out; Detroit Duren and Robinson out, Flemings questionable."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official predicted minutes, only actual prior logs available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation position and season use inferred from sourced team preview."
+      },
+      "market": {
+        "points_line": 8.5,
+        "over_odd": 1.885,
+        "under_odd": 1.885,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/luguentz-dort"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "no calibrated probability",
+        "availability_confirmed": false,
+        "reason": "Dort has 8.9 season points against 8.5 line, a very narrow margin, while reported declining shooting efficiency weakens any confident over selection. Historical observed numbers do not guarantee the outcome.",
+        "risk": "Opponent starting defensive role and 3-point volatility may shift the outcome. Participant status remains subject to tipoff roster confirmation."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "John Collins",
+      "player_id": "betsharp:2026-11-22:0047",
+      "score": 68,
+      "confidence": 62,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete identity and Detroit-Atlanta event, then secondary NBA, Basketball Reference, and team/injury previews; unmatched recent games excluded."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/john-collins",
+        "https://www.nba.com/player/1628381"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available NBA season baseline and last five rate sourced, never calibrated as probability"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Home and away split across comparable minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five direct player opponents game box scores not independently retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense by exact individual position and scheme not verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed game plan for individual on-ball defensive assignment."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "2026-11-22 official league injury report reviewed; CJ McCollum, Landale out; Detroit Duren and Robinson out, Flemings questionable."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official predicted minutes, only actual prior logs available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation position and season use inferred from sourced team preview."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.9524,
+        "under_odd": 1.8197,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/john-collins"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "no calibrated probability",
+        "availability_confirmed": false,
+        "reason": "Collins season scoring ~10.6 versus 11.5 player-point line suggests a modest under but last five of 10,8,11,20,3 show four unders. Historical observed numbers do not guarantee the outcome.",
+        "risk": "Injuries to Detroit frontcourt could raise Collins minutes and post touches. Participant status remains subject to tipoff roster confirmation."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Onyeka Okongwu",
+      "player_id": "betsharp:2026-11-22:0052",
+      "score": 65,
+      "confidence": 62,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete identity and Detroit-Atlanta event, then secondary NBA, Basketball Reference, and team/injury previews; unmatched recent games excluded."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/onyeka-okongwu",
+        "https://www.nba.com/player/1630168"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available NBA season baseline and last five rate sourced, never calibrated as probability"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Home and away split across comparable minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five direct player opponents game box scores not independently retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense by exact individual position and scheme not verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed game plan for individual on-ball defensive assignment."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "2026-11-22 official league injury report reviewed; CJ McCollum, Landale out; Detroit Duren and Robinson out, Flemings questionable."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official predicted minutes, only actual prior logs available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation position and season use inferred from sourced team preview."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.8547,
+        "under_odd": 1.9259,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/onyeka-okongwu"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "no calibrated probability",
+        "availability_confirmed": false,
+        "reason": "Okongwu season baseline 15.1 versus 14.5 is slightly over, but opponent frontcourt depleted; under side not strongly supported. Historical observed numbers do not guarantee the outcome.",
+        "risk": "Injury-related frontcourt shift may generate easy scoring opportunities. Participant status remains subject to tipoff roster confirmation."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Paul Reed",
+      "player_id": "betsharp:2026-11-22:0053",
+      "score": 61,
+      "confidence": 57,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete identity and Detroit-Atlanta event, then secondary NBA, Basketball Reference, and team/injury previews; unmatched recent games excluded."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/paul-reed",
+        "https://www.nba.com/player/1629679"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available NBA season baseline and last five rate sourced, never calibrated as probability"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Home and away split across comparable minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five direct player opponents game box scores not independently retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense by exact individual position and scheme not verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed game plan for individual on-ball defensive assignment."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "2026-11-22 official league injury report reviewed; CJ McCollum, Landale out; Detroit Duren and Robinson out, Flemings questionable."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official predicted minutes, only actual prior logs available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation position and season use inferred from sourced team preview."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.9804,
+        "under_odd": 1.8,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/paul-reed"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "no calibrated probability",
+        "availability_confirmed": false,
+        "reason": "Reed 11.4 seasonal scoring approximates 11.5 line; current minute distribution may change with Detroit injuries and no strong statistical edge verified. Historical observed numbers do not guarantee the outcome.",
+        "risk": "Potential Jalen Duren absence may increase playing time and change scoring. Participant status remains subject to tipoff roster confirmation."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Aaron Nesmith",
+      "player_id": "betsharp:2026-11-22:0054",
+      "score": 56,
+      "confidence": 41,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete identity and Detroit-Atlanta event, then secondary NBA, Basketball Reference, and team/injury previews; unmatched recent games excluded."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/aaron-nesmith",
+        "https://www.cbssports.com/nba/players/3041270/aaron-nesmith/game-log/"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-11",
+          "points": 2,
+          "minutes": 22
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available NBA season baseline and last five rate sourced, never calibrated as probability"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Home and away split across comparable minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five direct player opponents game box scores not independently retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense by exact individual position and scheme not verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed game plan for individual on-ball defensive assignment."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "2026-11-22 official league injury report reviewed; CJ McCollum, Landale out; Detroit Duren and Robinson out, Flemings questionable."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official predicted minutes, only actual prior logs available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation position and season use inferred from sourced team preview."
+      },
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.9434,
+        "under_odd": 1.8333,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/aaron-nesmith"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "no calibrated probability",
+        "availability_confirmed": false,
+        "reason": "Nesmith scored 2 in one verified recent game; missing full late-November results make this very low-confidence under assessment at 12.5. Historical observed numbers do not guarantee the outcome.",
+        "risk": "One sampled game and travel/rotation status cannot predict outcome. Participant status remains subject to tipoff roster confirmation."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Kingston Flemings",
+      "player_id": "betsharp:2026-11-22:0049",
+      "score": 49,
+      "confidence": 26,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete identity and Detroit-Atlanta event, then secondary NBA, Basketball Reference, and team/injury previews; unmatched recent games excluded."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/kingston-flemings",
+        "https://www.nba.com/game/det-vs-atl-0022600280"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available NBA season baseline and last five rate sourced, never calibrated as probability"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Home and away split across comparable minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five direct player opponents game box scores not independently retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense by exact individual position and scheme not verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed game plan for individual on-ball defensive assignment."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "2026-11-22 official league injury report reviewed; CJ McCollum, Landale out; Detroit Duren and Robinson out, Flemings questionable."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official predicted minutes, only actual prior logs available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation position and season use inferred from sourced team preview."
+      },
+      "market": {
+        "points_line": 7.5,
+        "over_odd": 1.7634,
+        "under_odd": 2.02,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/kingston-flemings"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "no calibrated probability",
+        "availability_confirmed": false,
+        "reason": "Flemings 7.5-point line has no reliable recent playing-stat sample gathered and current injury status questionable with back strain, so evaluation is unsuitable for selection. Historical observed numbers do not guarantee the outcome.",
+        "risk": "Player questionable with lumbar strain; void risk and potential absence make market participation uncertain. Participant status remains subject to tipoff roster confirmation."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "4278039",
+    "4066372"
+  ],
+  "selection_reason": "Full nine-player two-pass Scout compared original DraftKings prices, available logs and injury context. Nickeil Alexander-Walker UNDER 19.5 had three of five recent unders, Kevin Huerter UNDER 13.5 had season average 10.6 and three of five below line, but absent CJ McCollum and Detroit rotation injuries increase usage risk. These are uncalibrated estimates and only sourced facts were used.",
+  "notes": "NBA game 401910029 verified, future 20:30Z; potentially unavailable Flemings never selected."
+}
