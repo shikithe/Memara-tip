@@ -853,15 +853,19 @@
       "team": "DET",
       "opponent": "ATL",
       "game": "DET @ ATL",
-      "start_utc": null,
+      "start_utc": "2026-11-22T20:30:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/kevin-huerter",
       "points_line": 13.5,
       "over_odd": 1.8264,
       "under_odd": 1.9524,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4066372",
+      "espn_event_id": "401910029",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/4066372",
+        "https://www.espn.com/nba/game/_/gameId/401910029/pistons-hawks"
+      ]
     },
     {
       "original_offer_position": 49,
@@ -904,15 +908,19 @@
       "team": "ATL",
       "opponent": "DET",
       "game": "DET @ ATL",
-      "start_utc": null,
+      "start_utc": "2026-11-22T20:30:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/nickeil-alexander-walker",
       "points_line": 19.5,
       "over_odd": 1.813,
       "under_odd": 1.9615,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4278039",
+      "espn_event_id": "401910029",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/4278039",
+        "https://www.espn.com/nba/game/_/gameId/401910029/pistons-hawks"
+      ]
     },
     {
       "original_offer_position": 52,
