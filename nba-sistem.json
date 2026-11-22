@@ -4978,6 +4978,147 @@
               }
             }
           ]
+        },
+        {
+          "id": "5",
+          "stake": 9.25,
+          "status": "pending",
+          "total_odd": 3.4463,
+          "potential_payout": 31.88,
+          "legs": [
+            {
+              "player": "Nikola Jokić",
+              "team": "DEN",
+              "opponent": "CHI",
+              "pick": "over",
+              "points_line": 25.5,
+              "odd": 1.813,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/nikola-jokic",
+              "espn_event_id": "401910032",
+              "player_id": "3112335",
+              "start_utc": "2026-11-23T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 26,
+                    "minutes": 38
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 24,
+                    "minutes": 39
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 28,
+                    "minutes": 38
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 26,
+                    "minutes": 37
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 27,
+                    "minutes": 37
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five individual recent head to head scoring outcomes against this opponent not independently found."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Precise defense by player position and same-week changes not independently confirmed."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Individual starting defensive matchup not verified before confirmed starting fives."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Reviewed team injury context, but no game participation guarantee inferred from not being listed out."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No authoritative published minutes projection, only actual historical logged minutes."
+                },
+                "scout_score": 87,
+                "scout_note": "Four of last five verified scored above 25.5 (26,24,28,26,27), and high 37-39 minute workload gives sustained volume in favorable matchup. This is a historical statistical lean rather than a proven predictive probability.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-5.json"
+              }
+            },
+            {
+              "player": "Tre Jones",
+              "team": "CHI",
+              "opponent": "DEN",
+              "pick": "under",
+              "points_line": 13.5,
+              "odd": 1.9009,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/tre-jones",
+              "espn_event_id": "401910032",
+              "player_id": "4395626",
+              "start_utc": "2026-11-23T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 12,
+                    "minutes": 25
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 10,
+                    "minutes": 16
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 16,
+                    "minutes": 23
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 16,
+                    "minutes": 24
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 4,
+                    "minutes": 15
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five individual recent head to head scoring outcomes against this opponent not independently found."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Precise defense by player position and same-week changes not independently confirmed."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Individual starting defensive matchup not verified before confirmed starting fives."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Reviewed team injury context, but no game participation guarantee inferred from not being listed out."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No authoritative published minutes projection, only actual historical logged minutes."
+                },
+                "scout_score": 77,
+                "scout_note": "Three of last five below 13.5, five-game average around 11.6 and season mean around 10.9; assists and low usage are important. This is a historical statistical lean rather than a proven predictive probability.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-5.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -4985,21 +5126,23 @@
           1,
           2,
           3,
-          4
+          4,
+          5
         ],
         "offered": 88,
         "total_groups": 10,
-        "group_number": 4,
-        "group_range": "28-36",
+        "group_number": 5,
+        "group_range": "37-45",
         "group_selected": [
-          "Joshua Giddey",
-          "Cameron Johnson"
+          "Nikola Jokić",
+          "Tre Jones"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-22-group-1.json",
           "2": "collector-output/nba-system-scout-2026-11-22-group-2.json",
           "3": "collector-output/nba-system-scout-2026-11-22-group-3.json",
-          "4": "collector-output/nba-system-scout-2026-11-22-group-4.json"
+          "4": "collector-output/nba-system-scout-2026-11-22-group-4.json",
+          "5": "collector-output/nba-system-scout-2026-11-22-group-5.json"
         },
         "selection_method": "full_ranked_scout"
       }
