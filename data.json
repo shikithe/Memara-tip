@@ -4,9 +4,9 @@
   "publication_type": "independent_ai_approved_github_nba_c",
   "bank_before": 241.6,
   "daily_stake": 28.99,
-  "bank_after": 212.61,
+  "bank_after": 259.11,
   "bank_after_stakes": 212.61,
-  "provisional": false,
+  "provisional": true,
   "settled": false,
   "odds_verified": false,
   "tickets": [
@@ -43,8 +43,9 @@
         }
       ],
       "stake": 16.91,
-      "status": "objavljen",
-      "payout": 0
+      "status": "dobitan",
+      "payout": 46.5,
+      "settled_at_utc": "2026-11-22T17:47:58.012878+00:00"
     },
     {
       "id": "B",
@@ -61,7 +62,9 @@
           "source": "https://tipsterarea.com/match/sassuolo-genoa-serie-a-italy-956422",
           "quote_checked_at_utc": "2026-11-22T11:54:42.592Z",
           "model_adjusted_probability_pct": 60.36,
-          "analysis": "Visok broj primljenih golova Sassuola i dobro stanje napada Genoe podržavaju 3+, ali napadački izostanci i novi trener Sassuola smanjuju sigurnost. Sassuolo je izgubio pet uzastopnih susreta s 19 primljenih golova, ali ima dileme oko Berardija i Adzica; Genoa je u boljoj formi i ima četiri uzastopne H2H pobjede."
+          "analysis": "Visok broj primljenih golova Sassuola i dobro stanje napada Genoe podržavaju 3+, ali napadački izostanci i novi trener Sassuola smanjuju sigurnost. Sassuolo je izgubio pet uzastopnih susreta s 19 primljenih golova, ali ima dileme oko Berardija i Adzica; Genoa je u boljoj formi i ima četiri uzastopne H2H pobjede.",
+          "result_status": "promašen",
+          "final_score": "0:2"
         },
         {
           "fixture_id": "espn:football:ger.1:401884733",
@@ -73,12 +76,15 @@
           "source": "https://tipsterarea.com/match/augsburg-mainz-bundesliga-germany-956418",
           "quote_checked_at_utc": "2026-11-22T11:54:42.592Z",
           "model_adjusted_probability_pct": 71.33,
-          "analysis": "Oba tima loše brane, a nezavisna redakcijska prognoza 2:2 potvrđuje scenario 3+. Odmor poslije reprezentativne pauze i nesigurnost sastava su rizici. Augsburg slaba odbrana i niz bez pobjede; Mainz četiri poraza u šest ligaških utakmica, ali često postiže golove i dobro igra na strani. Glavni izostanci Matsima, Massengo, Kohr."
+          "analysis": "Oba tima loše brane, a nezavisna redakcijska prognoza 2:2 potvrđuje scenario 3+. Odmor poslije reprezentativne pauze i nesigurnost sastava su rizici. Augsburg slaba odbrana i niz bez pobjede; Mainz četiri poraza u šest ligaških utakmica, ali često postiže golove i dobro igra na strani. Glavni izostanci Matsima, Massengo, Kohr.",
+          "result_status": "pogođen",
+          "final_score": "3:1"
         }
       ],
       "stake": 7.25,
-      "status": "objavljen",
-      "payout": 0
+      "status": "izgubljen",
+      "payout": 0.0,
+      "settled_at_utc": "2026-11-22T17:47:58.012878+00:00"
     },
     {
       "id": "C",
@@ -274,7 +280,7 @@
       }
     }
   ],
-  "total_payout": 0.0,
+  "total_payout": 46.5,
   "net_change": null,
   "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
   "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",

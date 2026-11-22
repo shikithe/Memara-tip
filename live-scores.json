@@ -1,6 +1,6 @@
 {
   "date": "2026-11-22",
-  "updated_at_utc": "2026-11-22T15:41:56.056299+00:00",
+  "updated_at_utc": "2026-11-22T17:47:58.012878+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -23,40 +23,55 @@
       "index": 1,
       "home": "AC Milan",
       "away": "Frosinone",
-      "state": "scheduled",
+      "state": "live",
       "fixture_id": "espn:football:ita.1:401874989",
-      "score": "0:0",
+      "score": "2:1",
       "source": "espn-public-unofficial",
       "event_id": "401874989",
       "league": "ita.1",
-      "minute": null
+      "minute": "45"
     },
     {
       "ticket": "B",
       "index": 0,
       "home": "Sassuolo",
       "away": "Genoa",
-      "state": "live",
+      "state": "final",
       "fixture_id": "espn:football:ita.1:401874960",
       "score": "0:2",
       "source": "espn-public-unofficial",
       "event_id": "401874960",
       "league": "ita.1",
-      "minute": "82"
+      "minute": null,
+      "result_status": "promašen"
     },
     {
       "ticket": "B",
       "index": 1,
       "home": "FC Augsburg",
       "away": "Mainz",
-      "state": "live",
+      "state": "final",
       "fixture_id": "espn:football:ger.1:401884733",
-      "score": "3:0",
+      "score": "3:1",
       "source": "espn-public-unofficial",
       "event_id": "401884733",
       "league": "ger.1",
-      "minute": "51",
+      "minute": null,
       "result_status": "pogođen"
+    },
+    {
+      "ticket": "C",
+      "index": 0,
+      "home": "Detroit Pistons",
+      "away": "Atlanta Hawks",
+      "state": "unverified"
+    },
+    {
+      "ticket": "C",
+      "index": 1,
+      "home": "Oklahoma City Thunder",
+      "away": "Miami Heat",
+      "state": "unverified"
     }
   ],
   "bank_unchanged": true
