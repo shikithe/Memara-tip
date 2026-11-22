@@ -52,7 +52,7 @@ def inspect(site, feed, active, scout, today, history=None):
             missing.append(fixture["fixture_id"])
     result["ready"]["tipsterarea_quoted"] = len(rows) - len(missing)
     result["missing_odds_ids"] = missing
-    if history is not None and (
+    if (
         not isinstance(history, dict) or history.get("date") != today or
         {x.get("fixture_id") for x in history.get("fixtures", [])} != ids
     ):
