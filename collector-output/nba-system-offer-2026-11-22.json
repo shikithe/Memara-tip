@@ -336,15 +336,19 @@
       "team": "UTAH",
       "opponent": "DAL",
       "game": "DAL @ UTAH",
-      "start_utc": null,
+      "start_utc": "2026-11-23T00:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/darryn-peterson",
       "points_line": 18.5,
       "over_odd": 1.9009,
       "under_odd": 1.8696,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "5041955",
+      "espn_event_id": "401910033",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/5041955",
+        "https://www.nba.com/game/dal-vs-uta-0022600284"
+      ]
     },
     {
       "original_offer_position": 20,
@@ -472,15 +476,19 @@
       "team": "DEN",
       "opponent": "CHI",
       "game": "DEN @ CHI",
-      "start_utc": null,
+      "start_utc": "2026-11-23T00:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/aaron-gordon",
       "points_line": 13.5,
       "over_odd": 1.8772,
       "under_odd": 1.9091,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3064290",
+      "espn_event_id": "401910032",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/3064290",
+        "https://www.nba.com/game/chi-vs-den-0022600283"
+      ]
     },
     {
       "original_offer_position": 28,
