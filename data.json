@@ -1,17 +1,97 @@
 {
   "date": "2026-11-22",
-  "published": "Čeka validnu objavu: 12:00 Europe/Sarajevo",
-  "publication_type": "awaiting_daily_publication",
+  "published": "22.11.2026. u 12:54 (Europe/Sarajevo)",
+  "publication_type": "independent_ai_espn_only_github_publisher",
   "bank_before": 241.6,
-  "daily_stake": 0,
-  "bank_after": 241.6,
-  "bank_after_stakes": 241.6,
+  "daily_stake": 24.16,
+  "bank_after": 217.44,
+  "bank_after_stakes": 217.44,
   "provisional": false,
-  "settled": true,
+  "settled": false,
   "odds_verified": false,
-  "tickets": [],
+  "tickets": [
+    {
+      "id": "A",
+      "combined_odds": 2.75,
+      "analysis": "Kasimpasa 1: bolji položaj i serija neporaženosti protiv Alanyaspora u četiri uzastopna poraza; izostanci domaćih su rizik. Milan-Frosinone GG: Milan često postiže 2+ gola, a ofanzivni pristup rivala i predmeč prognoze podržavaju oba daju gol, iako Frosinone ima loš gostujući skor. Preporuke nisu garancija; kvote preuzete sa javno vidljive predmeč stranice.",
+      "matches": [
+        {
+          "fixture_id": "espn:football:tur.1:401888248",
+          "match": "Kasimpasa - Alanyaspor",
+          "datetime": "2026-11-22T13:00:00Z",
+          "pick": "1",
+          "odd": 1.91,
+          "bookmaker": "1xbet",
+          "source": "https://tipsterarea.com/match/kasimpasa-alanyaspor-super-lig-turkiye-956434",
+          "quote_checked_at_utc": "2026-11-22T11:54:42.590Z",
+          "model_adjusted_probability_pct": 58.68,
+          "analysis": "Kasimpasa ima jasnu takmičarsku prednost, bolju aktuelnu formu i domaći teren. Rizik je izostanak dijela igrača; uz potvđenu premecnu kvotu 1.91 tip 1 ostaje prihvatljiv. Kasimpasa peta sa 20 bodova i nizom neporaženosti; Alanyaspor trinaesti, četiri poraza uzastopno. Domaći imaju nekoliko izostanaka uključujući suspendovanog Mendesa."
+        },
+        {
+          "fixture_id": "espn:football:ita.1:401874989",
+          "match": "AC Milan - Frosinone",
+          "datetime": "2026-11-22T17:00:00Z",
+          "pick": "GG",
+          "odd": 1.44,
+          "bookmaker": "betfair",
+          "source": "https://tipsterarea.com/match/milan-frosinone-serie-a-italy-956423",
+          "quote_checked_at_utc": "2026-11-22T11:54:42.592Z",
+          "model_adjusted_probability_pct": 71.07,
+          "analysis": "Prognoza 3:2 i ofanzivni pristup oba tima podržavaju GG. Frosinone ima slab učinak u gostima, što je glavni kontraargument. Milan četiri pobjede u posljednjih pet ligaških susreta i 2+ gola na svakom; Frosinone samo dva boda u gostima od kraja avgusta; više važnih Milanovih igrača odsutno."
+        }
+      ],
+      "stake": 16.91,
+      "status": "objavljen",
+      "payout": 0
+    },
+    {
+      "id": "B",
+      "combined_odds": 2.848,
+      "analysis": "Sassuolo-Genoa 3+: Sassuolo je primio 19 golova u 5 poraza, Genoa je napadački u boljoj formi; izostanci kod domaćih i novi trener su značajan rizik. Augsburg-Mainz 3+: oba tima imaju odbrambenih problema; nezavisna predmeč prognoza 2:2 podržava tri ili više gola. Kvote su javno objavljene predmeč vrijednosti i mogu se mijenjati.",
+      "matches": [
+        {
+          "fixture_id": "espn:football:ita.1:401874960",
+          "match": "Sassuolo - Genoa",
+          "datetime": "2026-11-22T14:00:00Z",
+          "pick": "3+",
+          "odd": 2.02,
+          "bookmaker": "1xbet",
+          "source": "https://tipsterarea.com/match/sassuolo-genoa-serie-a-italy-956422",
+          "quote_checked_at_utc": "2026-11-22T11:54:42.592Z",
+          "model_adjusted_probability_pct": 60.36,
+          "analysis": "Visok broj primljenih golova Sassuola i dobro stanje napada Genoe podržavaju 3+, ali napadački izostanci i novi trener Sassuola smanjuju sigurnost. Sassuolo je izgubio pet uzastopnih susreta s 19 primljenih golova, ali ima dileme oko Berardija i Adzica; Genoa je u boljoj formi i ima četiri uzastopne H2H pobjede."
+        },
+        {
+          "fixture_id": "espn:football:ger.1:401884733",
+          "match": "FC Augsburg - Mainz",
+          "datetime": "2026-11-22T14:30:00Z",
+          "pick": "3+",
+          "odd": 1.41,
+          "bookmaker": "1xbet",
+          "source": "https://tipsterarea.com/match/augsburg-mainz-bundesliga-germany-956418",
+          "quote_checked_at_utc": "2026-11-22T11:54:42.592Z",
+          "model_adjusted_probability_pct": 71.33,
+          "analysis": "Oba tima loše brane, a nezavisna redakcijska prognoza 2:2 potvrđuje scenario 3+. Odmor poslije reprezentativne pauze i nesigurnost sastava su rizici. Augsburg slaba odbrana i niz bez pobjede; Mainz četiri poraza u šest ligaških utakmica, ali često postiže golove i dobro igra na strani. Glavni izostanci Matsima, Massengo, Kohr."
+        }
+      ],
+      "stake": 7.25,
+      "status": "objavljen",
+      "payout": 0
+    }
+  ],
   "total_payout": 0,
   "net_change": 0,
   "analysis_status": "Prethodni tiket je u arhivi. Današnji tiketi još nisu objavljeni.",
-  "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter"
+  "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",
+  "published_at_utc": "2026-11-22T11:54:52.517286+00:00",
+  "daily_budget": 24.16,
+  "pending_ticket_statuses": {
+    "A": "objavljen",
+    "B": "objavljen"
+  },
+  "pending_ticket_reasons": {
+    "A": "",
+    "B": ""
+  },
+  "odds_verification_note": "AI-provided selections are reproduced verbatim; GitHub does not check ESPN, markets or quotes."
 }
