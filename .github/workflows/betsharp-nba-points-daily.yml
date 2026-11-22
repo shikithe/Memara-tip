@@ -8,6 +8,8 @@ on:
     # 12:05/12:25/12:45 local Sarajevo (both CET & CEST);
     # one successful ET-date snapshot per day, later slots are retries.
     - cron: '5,25,45 10,11 * * *'
+    # Recovery checks after preparation window; same capture serves C and NBA 10.
+    - cron: '10 12-22 * * *'
 permissions:
   contents: write
 concurrency:
@@ -37,7 +39,7 @@ jobs:
           from zoneinfo import ZoneInfo
           local=datetime.now(ZoneInfo('Europe/Sarajevo'))
           et=datetime.now(ZoneInfo('America/New_York')).date().isoformat()
-          run=os.environ['EVENT_NAME'] in ('workflow_dispatch', 'push') or local.hour==12
+          run=os.environ['EVENT_NAME'] in ('workflow_dispatch', 'push') or 12 <= local.hour <= 23
           p=Path('collector-output/betsharp-nba-daily.json')
           if p.exists() and os.environ['EVENT_NAME']=='schedule':
               d=json.loads(p.read_text())
