@@ -5,14 +5,17 @@ on:
     paths:
       - 'inspektor_ab.py'
       - 'test_inspektor_ab.py'
+      - 'ab_sensor_phase.py'
+      - 'test_ab_sensor_phase.py'
       - '.github/workflows/check-ab-publication.yml'
   workflow_dispatch:
   schedule:
-    # UTC covers both CET and CEST. Local Sarajevo gate below enforces 10:00–12:15.
-    - cron: '0,15,30,45 8-11 * * *'
+    # Covers CET and CEST: technical 10:00-12:15; publication 12:45-23:45 local.
+    - cron: '0,15,30,45 8-22 * * *'
 permissions:
   contents: write
   issues: write
+  actions: write
 concurrency:
   group: memarasix-ab-publication-check
   cancel-in-progress: false
@@ -27,30 +30,29 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Sarajevo time gate — 10:00 through 12:15 every day
+      - name: Determine Sarajevo technical / publication phase
         id: gate
-        env:
-          EVENT_NAME: ${{ github.event_name }}
         run: |
+          python3 -m unittest -v test_ab_sensor_phase.py
           python3 - <<'PY'
           import os
-          from datetime import datetime, time
+          from datetime import datetime
           from zoneinfo import ZoneInfo
+          from ab_sensor_phase import phase
           now=datetime.now(ZoneInfo("Europe/Sarajevo"))
-          allowed=(time(10, 0) <= now.time().replace(tzinfo=None) <= time(12, 15))
-          enabled=(os.environ["EVENT_NAME"] == "workflow_dispatch") or allowed
-          with open(os.environ["GITHUB_OUTPUT"], "a") as out:
-              out.write("enabled=" + ("true" if enabled else "false") + "\n")
-          print("SENZOR_AB_TIME_GATE", now.isoformat(), "enabled=", enabled)
+          current=phase(now)
+          with open(os.environ["GITHUB_OUTPUT"],"a") as out:
+              out.write("phase="+current+"\n")
+          print("SENZOR_AB_PHASE",current,now.isoformat())
           PY
       - name: Verify publication checker behavior
-        if: steps.gate.outputs.enabled == 'true'
+        if: steps.gate.outputs.phase == 'technical'
         run: python3 -m unittest -v test_check_ab_publication.py
       - name: Verify published A/B from actual website data
-        if: steps.gate.outputs.enabled == 'true'
+        if: steps.gate.outputs.phase == 'technical'
         run: python3 check_ab_publication.py
       - name: Inspektor — resume from first missing stage only
-        if: steps.gate.outputs.enabled == 'true'
+        if: steps.gate.outputs.phase == 'technical'
         id: inspector
         run: |
           python3 -m unittest -v test_inspektor_ab.py
@@ -58,7 +60,7 @@ jobs:
 
       - name: Inspektor — trigger only the missing technical stage
         continue-on-error: true
-        if: steps.gate.outputs.enabled == 'true' && (steps.inspector.outputs.next_stage == 'espn' || steps.inspector.outputs.next_stage == 'tipsterarea' || steps.inspector.outputs.next_stage == 'history' || steps.inspector.outputs.next_stage == 'scout_6of6')
+        if: steps.gate.outputs.phase == 'technical' && (steps.inspector.outputs.next_stage == 'espn' || steps.inspector.outputs.next_stage == 'tipsterarea' || steps.inspector.outputs.next_stage == 'history' || steps.inspector.outputs.next_stage == 'scout_6of6')
         env:
           INSPECTOR_DISPATCH_TOKEN: ${{ secrets.INSPECTOR_DISPATCH_TOKEN }}
           NEXT_STAGE: ${{ steps.inspector.outputs.next_stage }}
@@ -90,7 +92,7 @@ jobs:
           PY
 
       - name: Inspektor — issue AI analyst handoff only when Scout is ready
-        if: steps.gate.outputs.enabled == 'true' && steps.inspector.outputs.next_stage == 'ai_analysis'
+        if: steps.gate.outputs.phase == 'technical' && steps.inspector.outputs.next_stage == 'ai_analysis'
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
@@ -116,13 +118,93 @@ jobs:
               print("AI_INSPECTOR_HANDOFF_OPENED")
           PY
 
+      - name: Publication-only sensor every 15min after 12:45; stop on A+B
+        if: steps.gate.outputs.phase == 'publication'
+        id: publication
+        run: |
+          python3 -m unittest -v test_check_ab_publication.py
+          python3 check_ab_publication.py
+          python3 - <<'PY'
+          import json, os
+          from datetime import datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          from ab_sensor_phase import publication_feedback
+          from check_ab_publication import check
+          today=datetime.now(ZoneInfo("Europe/Sarajevo"))
+          result=check(json.loads(Path("data.json").read_text()),today.date().isoformat())
+          signal=publication_feedback(result,today)
+          path=Path("collector-output/ab-publication-feedback.json")
+          path.parent.mkdir(parents=True,exist_ok=True)
+          path.write_text(json.dumps(signal,ensure_ascii=False,indent=2)+"\\n")
+          with open(os.environ["GITHUB_OUTPUT"],"a") as out:
+              out.write("needs_recovery="+str(not result["both_published"]).lower()+"\\n")
+          print("SENZOR_AB_PUBLICATION",signal["feedback"],"missing",signal["missing"])
+          PY
+      - name: Inspector publication recovery - retry publisher for existing approved tickets
+        if: steps.gate.outputs.phase == 'publication' && steps.publication.outputs.needs_recovery == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import json,os,subprocess
+          from pathlib import Path
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          today=datetime.now(ZoneInfo("Europe/Sarajevo")).date().isoformat()
+          approval=Path("memarasix-football-ai-approved.json")
+          valid=False
+          if approval.exists():
+              try:
+                  doc=json.loads(approval.read_text(encoding="utf-8"))
+                  valid=doc.get("date")==today and doc.get("approval_source")=="chatgpt_ai_analyst" and bool(doc.get("tickets"))
+              except (ValueError,OSError):
+                  pass
+          if valid:
+              subprocess.run(["gh","workflow","run","memarasix-espn-ab-publish.yml",
+                              "--repo",os.environ["GH_REPO"],"--ref","main"],check=True)
+              print("AB_PUBLICATION_RETRY_DISPATCHED_FOR_EXISTING_AI_APPROVAL")
+          else:
+              print("AB_PUBLICATION_AWAITING_AI_APPROVAL; no fabricated tickets or forced publisher run")
+          PY
+      - name: Inspector feedback to AI analyst for missing A/B publication
+        if: steps.gate.outputs.phase == 'publication' && steps.publication.outputs.needs_recovery == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import json,os,subprocess
+          from pathlib import Path
+          signal=json.loads(Path("collector-output/ab-publication-feedback.json").read_text())
+          title="INSPEKTOR A/B — PUBLICATION_RETRY — "+signal["date"]
+          listing=subprocess.run(["gh","issue","list","--state","all","--repo",os.environ["GH_REPO"],
+                                   "--search",title,"--json","title,number"],
+                                  check=True,capture_output=True,text=True)
+          if any(x["title"]==title for x in json.loads(listing.stdout)):
+              print("AB_PUBLICATION_AI_FEEDBACK_ALREADY_SENT")
+          else:
+              body=("A_B_PUBLICATION_MISSING after 12:45 Sarajevo.\\n"
+                    "Technical verification ends at 12:15; do not restart ESPN, TipsterArea, or Scout.\\n"
+                    "Independent AI analyst: verify today's TOP10_READY and approval status, "
+                    "finish missing A/B approvals if evidence supports, and commit to the existing "
+                    "publisher input. If already approved but not visible on the website, "
+                    "inspect publisher errors. No invented picks.\\n"
+                    "This GitHub issue is a feedback record, not an instantaneous ChatGPT trigger.\\n"
+                    "Monitor repeats each 15 minutes until both tickets are actually published.")
+              subprocess.run(["gh","issue","create","--repo",os.environ["GH_REPO"],
+                              "--title",title,"--body",body],check=True)
+              print("AB_PUBLICATION_AI_FEEDBACK_CREATED")
+          PY
+
       - name: Commit read-only monitor result
-        if: always() && steps.gate.outputs.enabled == 'true'
+        if: always() && steps.gate.outputs.phase != 'idle'
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f collector-output/ab-publication-check.json collector-output/ab-inspector.json
+          git add -f collector-output/ab-publication-check.json collector-output/ab-inspector.json collector-output/ab-publication-feedback.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "Monitor A/B website publication status [skip ci]"
             for attempt in 1 2 3; do
