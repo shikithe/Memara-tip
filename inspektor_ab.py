@@ -94,7 +94,8 @@ def main():
     else:
         load = remote_json
     result = inspect(site, load("shared/collector-feed.json"), load("shared/active-list.json"),
-                     load("shared/agent/scout-six-markets.json"), args.date,\n                     load("shared/agent/history-h2h.json"))
+                     load("shared/agent/scout-six-markets.json"), args.date,
+                     load("shared/agent/history-h2h.json"))
     result["checked_at_sarajevo"] = datetime.now(TZ).isoformat()
     dest = Path(args.output)
     dest.parent.mkdir(parents=True, exist_ok=True)
