@@ -136,9 +136,9 @@ jobs:
           signal=publication_feedback(result,today)
           path=Path("collector-output/ab-publication-feedback.json")
           path.parent.mkdir(parents=True,exist_ok=True)
-          path.write_text(json.dumps(signal,ensure_ascii=False,indent=2)+"\\n")
+          path.write_text(json.dumps(signal,ensure_ascii=False,indent=2)+"\n")
           with open(os.environ["GITHUB_OUTPUT"],"a") as out:
-              out.write("needs_recovery="+str(not result["both_published"]).lower()+"\\n")
+              out.write("needs_recovery="+str(not result["both_published"]).lower()+"\n")
           print("SENZOR_AB_PUBLICATION",signal["feedback"],"missing",signal["missing"])
           PY
       - name: Inspector publication recovery - retry publisher for existing approved tickets
@@ -185,13 +185,13 @@ jobs:
           if any(x["title"]==title for x in json.loads(listing.stdout)):
               print("AB_PUBLICATION_AI_FEEDBACK_ALREADY_SENT")
           else:
-              body=("A_B_PUBLICATION_MISSING after 12:45 Sarajevo.\\n"
-                    "Technical verification ends at 12:15; do not restart ESPN, TipsterArea, or Scout.\\n"
+              body=("A_B_PUBLICATION_MISSING after 12:45 Sarajevo.\n"
+                    "Technical verification ends at 12:15; do not restart ESPN, TipsterArea, or Scout.\n"
                     "Independent AI analyst: verify today's TOP10_READY and approval status, "
                     "finish missing A/B approvals if evidence supports, and commit to the existing "
                     "publisher input. If already approved but not visible on the website, "
-                    "inspect publisher errors. No invented picks.\\n"
-                    "This GitHub issue is a feedback record, not an instantaneous ChatGPT trigger.\\n"
+                    "inspect publisher errors. No invented picks.\n"
+                    "This GitHub issue is a feedback record, not an instantaneous ChatGPT trigger.\n"
                     "Monitor repeats each 15 minutes until both tickets are actually published.")
               subprocess.run(["gh","issue","create","--repo",os.environ["GH_REPO"],
                               "--title",title,"--body",body],check=True)
