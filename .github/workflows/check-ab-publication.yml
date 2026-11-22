@@ -70,7 +70,8 @@ jobs:
           from datetime import datetime, time
           from zoneinfo import ZoneInfo
           stage=os.environ["NEXT_STAGE"]
-          workflows={"espn":"listasix-daily.yml","tipsterarea":"tipster-html-collector.yml",\n                     "history":"listasix-scout-history.yml",
+          workflows={"espn":"listasix-daily.yml","tipsterarea":"tipster-html-collector.yml",
+                     "history":"listasix-scout-history.yml",
                      "scout_6of6":"listasix-scout-six-markets.yml"}
           now=datetime.now(ZoneInfo("Europe/Sarajevo"))
           if not time(10,0) <= now.time().replace(tzinfo=None) <= time(12,15):
