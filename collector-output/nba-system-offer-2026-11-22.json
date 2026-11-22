@@ -175,15 +175,19 @@
       "team": "BOS",
       "opponent": "GS",
       "game": "BOS @ GS",
-      "start_utc": null,
+      "start_utc": "2026-11-23T01:30:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/payton-pritchard",
       "points_line": 15.5,
       "over_odd": 1.885,
       "under_odd": 1.885,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4066354",
+      "espn_event_id": "401910035",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/4066354",
+        "https://www.nba.com/game/bos-vs-gsw-0022600286"
+      ]
     },
     {
       "original_offer_position": 11,
@@ -294,15 +298,19 @@
       "team": "DAL",
       "opponent": "UTAH",
       "game": "DAL @ UTAH",
-      "start_utc": null,
+      "start_utc": "2026-11-23T00:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/cooper-flagg",
       "points_line": 24.5,
       "over_odd": 1.8772,
       "under_odd": 1.9009,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "5041939",
+      "espn_event_id": "401910033",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/5041939",
+        "https://www.nba.com/game/dal-vs-uta-0022600284"
+      ]
     },
     {
       "original_offer_position": 18,
