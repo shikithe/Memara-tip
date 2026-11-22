@@ -1,6 +1,6 @@
 {
   "date": "2026-11-22",
-  "updated_at_utc": "2026-11-22T15:34:50.584489+00:00",
+  "updated_at_utc": "2026-11-22T15:41:56.056299+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -42,7 +42,7 @@
       "source": "espn-public-unofficial",
       "event_id": "401874960",
       "league": "ita.1",
-      "minute": "75"
+      "minute": "82"
     },
     {
       "ticket": "B",
@@ -51,11 +51,12 @@
       "away": "Mainz",
       "state": "live",
       "fixture_id": "espn:football:ger.1:401884733",
-      "score": "2:0",
+      "score": "3:0",
       "source": "espn-public-unofficial",
       "event_id": "401884733",
       "league": "ger.1",
-      "minute": "45"
+      "minute": "51",
+      "result_status": "pogođen"
     }
   ],
   "bank_unchanged": true
