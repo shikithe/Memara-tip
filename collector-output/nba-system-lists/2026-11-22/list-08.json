@@ -5,8 +5,8 @@
   "source": "BetSharp",
   "source_url": "https://betsharp.com/nba/props?m=points",
   "source_snapshot": "collector-output/betsharp-nba-daily.json",
-  "captured_at_utc": "2026-11-22T17:09:50.149274+00:00",
-  "total_offers": 89,
+  "captured_at_utc": "2026-11-22T17:37:32.241431+00:00",
+  "total_offers": 88,
   "group_size": 9,
   "original_positions": [
     64,
@@ -16,46 +16,6 @@
   "analysis_complete": false,
   "publication_allowed": false,
   "offers": [
-    {
-      "player": "Obi Toppin",
-      "team": "IND",
-      "game": "IND @ NY",
-      "game_date_et": "2026-11-22",
-      "game_time_et": "Sun 8:00PM",
-      "player_url": "https://betsharp.com/nba/player/obi-toppin",
-      "game_url": "https://betsharp.com/nba/game/2026-11-22-indiana-pacers-at-new-york-knicks#props",
-      "points_market": {
-        "DK": {
-          "line": 11.5,
-          "over_american": -106,
-          "under_american": -121,
-          "over_decimal": 1.9434,
-          "under_decimal": 1.8264
-        },
-        "FD": {
-          "line": 11.5,
-          "over_american": -104,
-          "under_american": -128,
-          "over_decimal": 1.9615,
-          "under_decimal": 1.7812
-        },
-        "BR": {
-          "line": 11.5,
-          "over_american": -112,
-          "under_american": -122,
-          "over_decimal": 1.8929,
-          "under_decimal": 1.8197
-        },
-        "KAL": {
-          "line": 9.5,
-          "over_american": -186,
-          "under_american": 127,
-          "over_decimal": 1.5376,
-          "under_decimal": 2.27
-        }
-      },
-      "original_offer_position": 64
-    },
     {
       "player": "Pascal Siakam",
       "team": "IND",
@@ -67,17 +27,17 @@
       "points_market": {
         "DK": {
           "line": 19.5,
-          "over_american": -122,
-          "under_american": -105,
-          "over_decimal": 1.8197,
-          "under_decimal": 1.9524
+          "over_american": -124,
+          "under_american": -103,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9709
         },
         "FD": {
           "line": 20.5,
-          "over_american": -104,
-          "under_american": -128,
-          "over_decimal": 1.9615,
-          "under_decimal": 1.7812
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
         },
         "MGM": {
           "line": 20.5,
@@ -96,12 +56,12 @@
         "KAL": {
           "line": 19.5,
           "over_american": -133,
-          "under_american": -104,
+          "under_american": 104,
           "over_decimal": 1.7519,
-          "under_decimal": 1.9615
+          "under_decimal": 2.04
         }
       },
-      "original_offer_position": 65
+      "original_offer_position": 64
     },
     {
       "player": "Aday Mara",
@@ -114,34 +74,41 @@
       "points_market": {
         "DK": {
           "line": 11.5,
-          "over_american": -114,
-          "under_american": -112,
-          "over_decimal": 1.8772,
-          "under_decimal": 1.8929
+          "over_american": -110,
+          "under_american": -116,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8621
         },
         "FD": {
           "line": 11.5,
-          "over_american": -112,
-          "under_american": -118,
-          "over_decimal": 1.8929,
-          "under_decimal": 1.8475
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
         },
         "BR": {
           "line": 11.5,
-          "over_american": -106,
+          "over_american": -105,
           "under_american": -129,
-          "over_decimal": 1.9434,
+          "over_decimal": 1.9524,
           "under_decimal": 1.7752
         },
         "KAL": {
           "line": 9.5,
           "over_american": -213,
-          "under_american": 144,
+          "under_american": 156,
           "over_decimal": 1.4695,
-          "under_decimal": 2.44
+          "under_decimal": 2.56
         }
       },
-      "original_offer_position": 66
+      "original_offer_position": 65
     },
     {
       "player": "Ajay Mitchell",
@@ -161,17 +128,24 @@
         },
         "FD": {
           "line": 20.5,
-          "over_american": -114,
-          "under_american": -114,
-          "over_decimal": 1.8772,
-          "under_decimal": 1.8772
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
         },
         "BR": {
           "line": 20.5,
-          "over_american": -112,
-          "under_american": -121,
-          "over_decimal": 1.8929,
-          "under_decimal": 1.8264
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
         },
         "KAL": {
           "line": 19.5,
@@ -181,7 +155,7 @@
           "under_decimal": 2.0
         }
       },
-      "original_offer_position": 67
+      "original_offer_position": 66
     },
     {
       "player": "Andrew Wiggins",
@@ -201,10 +175,10 @@
         },
         "FD": {
           "line": 9.5,
-          "over_american": -106,
-          "under_american": -125,
-          "over_decimal": 1.9434,
-          "under_decimal": 1.8
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
         },
         "KAL": {
           "line": 9.5,
@@ -214,7 +188,7 @@
           "under_decimal": 1.885
         }
       },
-      "original_offer_position": 68
+      "original_offer_position": 67
     },
     {
       "player": "Bam Adebayo",
@@ -234,17 +208,17 @@
         },
         "FD": {
           "line": 19.5,
-          "over_american": -130,
-          "under_american": 100,
-          "over_decimal": 1.7692,
-          "under_decimal": 2.0
+          "over_american": -125,
+          "under_american": -102,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9804
         },
         "MGM": {
-          "line": 18.5,
-          "over_american": -130,
-          "under_american": -105,
-          "over_decimal": 1.7692,
-          "under_decimal": 1.9524
+          "line": 19.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
         },
         "BR": {
           "line": 19.5,
@@ -255,13 +229,13 @@
         },
         "KAL": {
           "line": 19.5,
-          "over_american": -117,
-          "under_american": -117,
-          "over_decimal": 1.8547,
-          "under_decimal": 1.8547
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
         }
       },
-      "original_offer_position": 69
+      "original_offer_position": 68
     },
     {
       "player": "Bobby Portis",
@@ -274,27 +248,27 @@
       "points_market": {
         "DK": {
           "line": 8.5,
-          "over_american": -101,
-          "under_american": -126,
-          "over_decimal": 1.9901,
-          "under_decimal": 1.7937
+          "over_american": -102,
+          "under_american": -125,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8
         },
         "FD": {
           "line": 8.5,
-          "over_american": -104,
-          "under_american": -125,
-          "over_decimal": 1.9615,
-          "under_decimal": 1.8
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
         },
         "KAL": {
           "line": 9.5,
           "over_american": 138,
-          "under_american": -194,
+          "under_american": -186,
           "over_decimal": 2.38,
-          "under_decimal": 1.5155
+          "under_decimal": 1.5376
         }
       },
-      "original_offer_position": 70
+      "original_offer_position": 69
     },
     {
       "player": "Davion Mitchell",
@@ -307,24 +281,24 @@
       "points_market": {
         "DK": {
           "line": 14.5,
-          "over_american": -112,
-          "under_american": -114,
-          "over_decimal": 1.8929,
-          "under_decimal": 1.8772
+          "over_american": -108,
+          "under_american": -118,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8475
         },
         "FD": {
           "line": 14.5,
           "over_american": 102,
-          "under_american": -132,
+          "under_american": -136,
           "over_decimal": 2.02,
-          "under_decimal": 1.7576
+          "under_decimal": 1.7353
         },
         "MGM": {
           "line": 13.5,
-          "over_american": -125,
-          "under_american": -105,
-          "over_decimal": 1.8,
-          "under_decimal": 1.9524
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
         },
         "BR": {
           "line": 14.5,
@@ -341,7 +315,7 @@
           "under_decimal": 1.8547
         }
       },
-      "original_offer_position": 71
+      "original_offer_position": 70
     },
     {
       "player": "Giannis Antetokounmpo",
@@ -353,18 +327,18 @@
       "game_url": "https://betsharp.com/nba/game/2026-11-22-oklahoma-city-thunder-at-miami-heat#props",
       "points_market": {
         "DK": {
-          "line": 26.5,
-          "over_american": -123,
-          "under_american": -104,
-          "over_decimal": 1.813,
-          "under_decimal": 1.9615
+          "line": 27.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
         },
         "FD": {
           "line": 27.5,
-          "over_american": 100,
-          "under_american": -132,
-          "over_decimal": 2.0,
-          "under_decimal": 1.7576
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
         },
         "MGM": {
           "line": 26.5,
@@ -382,10 +356,57 @@
         },
         "KAL": {
           "line": 29.5,
-          "over_american": 133,
-          "under_american": -178,
-          "over_decimal": 2.33,
-          "under_decimal": 1.5618
+          "over_american": 138,
+          "under_american": -186,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5376
+        }
+      },
+      "original_offer_position": 71
+    },
+    {
+      "player": "Isaiah Hartenstein",
+      "team": "OKC",
+      "game": "OKC @ MIA",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/isaiah-hartenstein",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-oklahoma-city-thunder-at-miami-heat#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -111,
+          "under_american": -113,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -108,
+          "under_american": -117,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8547
         }
       },
       "original_offer_position": 72

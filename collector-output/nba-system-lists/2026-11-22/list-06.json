@@ -5,8 +5,8 @@
   "source": "BetSharp",
   "source_url": "https://betsharp.com/nba/props?m=points",
   "source_snapshot": "collector-output/betsharp-nba-daily.json",
-  "captured_at_utc": "2026-11-22T17:09:50.149274+00:00",
-  "total_offers": 89,
+  "captured_at_utc": "2026-11-22T17:37:32.241431+00:00",
+  "total_offers": 88,
   "group_size": 9,
   "original_positions": [
     46,
@@ -16,46 +16,6 @@
   "analysis_complete": false,
   "publication_allowed": false,
   "offers": [
-    {
-      "player": "Isaiah Joe",
-      "team": "DET",
-      "game": "DET @ ATL",
-      "game_date_et": "2026-11-22",
-      "game_time_et": "Sun 3:30PM",
-      "player_url": "https://betsharp.com/nba/player/isaiah-joe",
-      "game_url": "https://betsharp.com/nba/game/2026-11-22-detroit-pistons-at-atlanta-hawks#props",
-      "points_market": {
-        "DK": {
-          "line": 9.5,
-          "over_american": -104,
-          "under_american": -123,
-          "over_decimal": 1.9615,
-          "under_decimal": 1.813
-        },
-        "FD": {
-          "line": 9.5,
-          "over_american": -111,
-          "under_american": -115,
-          "over_decimal": 1.9009,
-          "under_decimal": 1.8696
-        },
-        "BR": {
-          "line": 8.5,
-          "over_american": -136,
-          "under_american": 100,
-          "over_decimal": 1.7353,
-          "under_decimal": 2.0
-        },
-        "KAL": {
-          "line": 9.5,
-          "over_american": 100,
-          "under_american": -122,
-          "over_decimal": 2.0,
-          "under_decimal": 1.8197
-        }
-      },
-      "original_offer_position": 46
-    },
     {
       "player": "Jalen Johnson",
       "team": "ATL",
@@ -74,10 +34,10 @@
         },
         "FD": {
           "line": 21.5,
-          "over_american": 102,
-          "under_american": -130,
-          "over_decimal": 2.02,
-          "under_decimal": 1.7692
+          "over_american": 100,
+          "under_american": -128,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7812
         },
         "MGM": {
           "line": 20.5,
@@ -88,10 +48,10 @@
         },
         "BR": {
           "line": 20.5,
-          "over_american": -125,
-          "under_american": -108,
-          "over_decimal": 1.8,
-          "under_decimal": 1.9259
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
         },
         "KAL": {
           "line": 19.5,
@@ -101,7 +61,7 @@
           "under_decimal": 2.17
         }
       },
-      "original_offer_position": 47
+      "original_offer_position": 46
     },
     {
       "player": "John Collins",
@@ -135,20 +95,20 @@
         },
         "BR": {
           "line": 10.5,
-          "over_american": -124,
-          "under_american": -109,
-          "over_decimal": 1.8065,
-          "under_decimal": 1.9174
+          "over_american": -122,
+          "under_american": -110,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9091
         },
         "KAL": {
           "line": 9.5,
           "over_american": -178,
-          "under_american": 144,
+          "under_american": 138,
           "over_decimal": 1.5618,
-          "under_decimal": 2.44
+          "under_decimal": 2.38
         }
       },
-      "original_offer_position": 48
+      "original_offer_position": 47
     },
     {
       "player": "Kevin Huerter",
@@ -195,7 +155,7 @@
           "under_decimal": 1.6944
         }
       },
-      "original_offer_position": 49
+      "original_offer_position": 48
     },
     {
       "player": "Kingston Flemings",
@@ -215,20 +175,20 @@
         },
         "FD": {
           "line": 8.5,
-          "over_american": 104,
-          "under_american": -132,
-          "over_decimal": 2.04,
-          "under_decimal": 1.7576
+          "over_american": 102,
+          "under_american": -130,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7692
         },
         "BR": {
-          "line": 8.5,
-          "over_american": -103,
-          "under_american": -132,
-          "over_decimal": 1.9709,
-          "under_decimal": 1.7576
+          "line": 7.5,
+          "over_american": -136,
+          "under_american": 100,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.0
         }
       },
-      "original_offer_position": 50
+      "original_offer_position": 49
     },
     {
       "player": "Luguentz Dort",
@@ -248,20 +208,27 @@
         },
         "FD": {
           "line": 8.5,
-          "over_american": -120,
-          "under_american": -106,
-          "over_decimal": 1.8333,
-          "under_decimal": 1.9434
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
         },
         "KAL": {
           "line": 9.5,
           "over_american": 117,
-          "under_american": -163,
+          "under_american": -170,
           "over_decimal": 2.17,
-          "under_decimal": 1.6135
+          "under_decimal": 1.5882
         }
       },
-      "original_offer_position": 51
+      "original_offer_position": 50
     },
     {
       "player": "Nickeil Alexander-Walker",
@@ -295,10 +262,10 @@
         },
         "BR": {
           "line": 20.5,
-          "over_american": -121,
-          "under_american": -112,
-          "over_decimal": 1.8264,
-          "under_decimal": 1.8929
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
         },
         "KAL": {
           "line": 19.5,
@@ -308,7 +275,7 @@
           "under_decimal": 2.0
         }
       },
-      "original_offer_position": 52
+      "original_offer_position": 51
     },
     {
       "player": "Onyeka Okongwu",
@@ -342,10 +309,10 @@
         },
         "BR": {
           "line": 13.5,
-          "over_american": -129,
-          "under_american": -106,
-          "over_decimal": 1.7752,
-          "under_decimal": 1.9434
+          "over_american": -122,
+          "under_american": -110,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9091
         },
         "KAL": {
           "line": 14.5,
@@ -355,7 +322,7 @@
           "under_decimal": 2.0
         }
       },
-      "original_offer_position": 53
+      "original_offer_position": 52
     },
     {
       "player": "Paul Reed",
@@ -393,6 +360,53 @@
           "under_american": 133,
           "over_decimal": 1.5618,
           "under_decimal": 2.33
+        }
+      },
+      "original_offer_position": 53
+    },
+    {
+      "player": "Aaron Nesmith",
+      "team": "IND",
+      "game": "IND @ NY",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/aaron-nesmith",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-indiana-pacers-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -136,
+          "under_american": 100,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.0
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 163,
+          "under_american": -213,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4695
         }
       },
       "original_offer_position": 54

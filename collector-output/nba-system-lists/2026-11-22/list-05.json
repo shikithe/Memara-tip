@@ -5,8 +5,8 @@
   "source": "BetSharp",
   "source_url": "https://betsharp.com/nba/props?m=points",
   "source_snapshot": "collector-output/betsharp-nba-daily.json",
-  "captured_at_utc": "2026-11-22T17:09:50.149274+00:00",
-  "total_offers": 89,
+  "captured_at_utc": "2026-11-22T17:37:32.241431+00:00",
+  "total_offers": 88,
   "group_size": 9,
   "original_positions": [
     37,
@@ -34,82 +34,77 @@
         },
         "FD": {
           "line": 25.5,
-          "over_american": -130,
-          "under_american": -102,
-          "over_decimal": 1.7692,
-          "under_decimal": 1.9804
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
         },
         "MGM": {
-          "line": 25.5,
-          "over_american": -125,
-          "under_american": -105,
-          "over_decimal": 1.8,
-          "under_decimal": 1.9524
+          "line": 26.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
         },
         "BR": {
           "line": 25.5,
-          "over_american": -114,
-          "under_american": -118,
-          "over_decimal": 1.8772,
-          "under_decimal": 1.8475
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
         },
         "KAL": {
           "line": 24.5,
           "over_american": -156,
-          "under_american": 117,
+          "under_american": 122,
           "over_decimal": 1.641,
-          "under_decimal": 2.17
+          "under_decimal": 2.22
         }
       },
       "original_offer_position": 37
     },
     {
-      "player": "Norman Powell",
-      "team": "",
-      "game": "DEN @ CHI",
-      "game_date_et": "2026-11-22",
-      "game_time_et": "Sun 7:00PM",
-      "player_url": "https://betsharp.com/nba/player/norman-powell",
-      "game_url": "https://betsharp.com/nba/game/2026-11-22-denver-nuggets-at-chicago-bulls#props",
-      "points_market": {
-        "BR": {
-          "line": 21.5,
-          "over_american": -118,
-          "under_american": -114,
-          "over_decimal": 1.8475,
-          "under_decimal": 1.8772
-        }
-      },
-      "original_offer_position": 38
-    },
-    {
       "player": "Patrick Williams",
-      "team": "",
+      "team": "CHI",
       "game": "DEN @ CHI",
       "game_date_et": "2026-11-22",
       "game_time_et": "Sun 7:00PM",
       "player_url": "https://betsharp.com/nba/player/patrick-williams",
       "game_url": "https://betsharp.com/nba/game/2026-11-22-denver-nuggets-at-chicago-bulls#props",
       "points_market": {
-        "FD": {
+        "DK": {
           "line": 7.5,
-          "over_american": -114,
-          "under_american": -114,
-          "over_decimal": 1.8772,
-          "under_decimal": 1.8772
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
         }
       },
-      "original_offer_position": 39
+      "original_offer_position": 38
     },
     {
       "player": "Tre Jones",
-      "team": "",
+      "team": "CHI",
       "game": "DEN @ CHI",
       "game_date_et": "2026-11-22",
       "game_time_et": "Sun 7:00PM",
       "player_url": "https://betsharp.com/nba/player/tre-jones",
       "game_url": "https://betsharp.com/nba/game/2026-11-22-denver-nuggets-at-chicago-bulls#props",
       "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
         "FD": {
           "line": 13.5,
           "over_american": -114,
@@ -118,7 +113,7 @@
           "under_decimal": 1.8772
         }
       },
-      "original_offer_position": 40
+      "original_offer_position": 39
     },
     {
       "player": "Aaron Wiggins",
@@ -138,27 +133,27 @@
         },
         "FD": {
           "line": 13.5,
-          "over_american": -118,
-          "under_american": -108,
-          "over_decimal": 1.8475,
-          "under_decimal": 1.9259
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
         },
         "BR": {
-          "line": 13.5,
-          "over_american": -109,
-          "under_american": -124,
-          "over_decimal": 1.9174,
-          "under_decimal": 1.8065
+          "line": 12.5,
+          "over_american": -148,
+          "under_american": 108,
+          "over_decimal": 1.6757,
+          "under_decimal": 2.08
         },
         "KAL": {
           "line": 14.5,
           "over_american": 117,
-          "under_american": -144,
+          "under_american": -150,
           "over_decimal": 2.17,
-          "under_decimal": 1.6944
+          "under_decimal": 1.6667
         }
       },
-      "original_offer_position": 41
+      "original_offer_position": 40
     },
     {
       "player": "Ausar Thompson",
@@ -192,10 +187,10 @@
         },
         "BR": {
           "line": 11.5,
-          "over_american": -130,
-          "under_american": -104,
-          "over_decimal": 1.7692,
-          "under_decimal": 1.9615
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
         },
         "KAL": {
           "line": 9.5,
@@ -205,7 +200,7 @@
           "under_decimal": 2.7
         }
       },
-      "original_offer_position": 42
+      "original_offer_position": 41
     },
     {
       "player": "Cade Cunningham",
@@ -239,20 +234,20 @@
         },
         "BR": {
           "line": 25.5,
-          "over_american": -115,
-          "under_american": -117,
-          "over_decimal": 1.8696,
-          "under_decimal": 1.8547
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
         },
         "KAL": {
           "line": 24.5,
-          "over_american": -150,
-          "under_american": 117,
-          "over_decimal": 1.6667,
-          "under_decimal": 2.17
+          "over_american": -144,
+          "under_american": 113,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.13
         }
       },
-      "original_offer_position": 43
+      "original_offer_position": 42
     },
     {
       "player": "Daniss Jenkins",
@@ -278,18 +273,18 @@
           "under_decimal": 1.7812
         },
         "MGM": {
-          "line": 16.5,
-          "over_american": -105,
-          "under_american": -125,
-          "over_decimal": 1.9524,
-          "under_decimal": 1.8
+          "line": 15.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
         },
         "BR": {
           "line": 15.5,
-          "over_american": -118,
-          "under_american": -114,
-          "over_decimal": 1.8475,
-          "under_decimal": 1.8772
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
         },
         "KAL": {
           "line": 14.5,
@@ -299,7 +294,7 @@
           "under_decimal": 2.17
         }
       },
-      "original_offer_position": 44
+      "original_offer_position": 43
     },
     {
       "player": "Dyson Daniels",
@@ -319,24 +314,24 @@
         },
         "FD": {
           "line": 10.5,
-          "over_american": -122,
-          "under_american": -104,
-          "over_decimal": 1.8197,
-          "under_decimal": 1.9615
+          "over_american": -125,
+          "under_american": -102,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9804
         },
         "MGM": {
           "line": 10.5,
-          "over_american": -110,
+          "over_american": -111,
           "under_american": -120,
-          "over_decimal": 1.9091,
+          "over_decimal": 1.9009,
           "under_decimal": 1.8333
         },
         "BR": {
           "line": 10.5,
-          "over_american": -115,
-          "under_american": -118,
-          "over_decimal": 1.8696,
-          "under_decimal": 1.8475
+          "over_american": -107,
+          "under_american": -127,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.7874
         },
         "KAL": {
           "line": 9.5,
@@ -344,6 +339,46 @@
           "under_american": 133,
           "over_decimal": 1.6135,
           "under_decimal": 2.33
+        }
+      },
+      "original_offer_position": 44
+    },
+    {
+      "player": "Isaiah Joe",
+      "team": "DET",
+      "game": "DET @ ATL",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 3:30PM",
+      "player_url": "https://betsharp.com/nba/player/isaiah-joe",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-detroit-pistons-at-atlanta-hawks#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -104,
+          "under_american": -123,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.813
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -134,
+          "under_american": -103,
+          "over_decimal": 1.7463,
+          "under_decimal": 1.9709
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -122,
+          "over_decimal": 2.0,
+          "under_decimal": 1.8197
         }
       },
       "original_offer_position": 45

@@ -5,8 +5,8 @@
   "source": "BetSharp",
   "source_url": "https://betsharp.com/nba/props?m=points",
   "source_snapshot": "collector-output/betsharp-nba-daily.json",
-  "captured_at_utc": "2026-11-22T17:09:50.149274+00:00",
-  "total_offers": 89,
+  "captured_at_utc": "2026-11-22T17:37:32.241431+00:00",
+  "total_offers": 88,
   "group_size": 9,
   "original_positions": [
     10,
@@ -27,10 +27,10 @@
       "points_market": {
         "DK": {
           "line": 15.5,
-          "over_american": -109,
-          "under_american": -117,
-          "over_decimal": 1.9174,
-          "under_decimal": 1.8547
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
         },
         "FD": {
           "line": 16.5,
@@ -48,10 +48,10 @@
         },
         "KAL": {
           "line": 14.5,
-          "over_american": -156,
-          "under_american": 113,
-          "over_decimal": 1.641,
-          "under_decimal": 2.13
+          "over_american": -150,
+          "under_american": 117,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.17
         }
       },
       "original_offer_position": 10
@@ -67,17 +67,17 @@
       "points_market": {
         "DK": {
           "line": 8.5,
-          "over_american": -106,
-          "under_american": -120,
-          "over_decimal": 1.9434,
-          "under_decimal": 1.8333
+          "over_american": -110,
+          "under_american": -115,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8696
         },
         "FD": {
           "line": 8.5,
-          "over_american": -114,
-          "under_american": -114,
-          "over_decimal": 1.8772,
-          "under_decimal": 1.8772
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
         },
         "BR": {
           "line": 8.5,
@@ -88,10 +88,10 @@
         },
         "KAL": {
           "line": 9.5,
-          "over_american": 122,
-          "under_american": -150,
-          "over_decimal": 2.22,
-          "under_decimal": 1.6667
+          "over_american": 127,
+          "under_american": -156,
+          "over_decimal": 2.27,
+          "under_decimal": 1.641
         }
       },
       "original_offer_position": 11
@@ -107,10 +107,10 @@
       "points_market": {
         "DK": {
           "line": 7.5,
-          "over_american": -107,
-          "under_american": -119,
-          "over_decimal": 1.9346,
-          "under_decimal": 1.8403
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
         },
         "FD": {
           "line": 7.5,
@@ -129,9 +129,9 @@
         "KAL": {
           "line": 9.5,
           "over_american": 170,
-          "under_american": -223,
+          "under_american": -213,
           "over_decimal": 2.7,
-          "under_decimal": 1.4484
+          "under_decimal": 1.4695
         }
       },
       "original_offer_position": 12
@@ -147,10 +147,10 @@
       "points_market": {
         "DK": {
           "line": 19.5,
-          "over_american": -117,
-          "under_american": -109,
-          "over_decimal": 1.8547,
-          "under_decimal": 1.9174
+          "over_american": -121,
+          "under_american": -105,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9524
         },
         "FD": {
           "line": 20.5,
@@ -176,9 +176,9 @@
         "KAL": {
           "line": 19.5,
           "over_american": -117,
-          "under_american": -113,
+          "under_american": -104,
           "over_decimal": 1.8547,
-          "under_decimal": 1.885
+          "under_decimal": 1.9615
         }
       },
       "original_offer_position": 13
@@ -349,9 +349,9 @@
         },
         "KAL": {
           "line": 24.5,
-          "over_american": -122,
+          "over_american": -127,
           "under_american": 100,
-          "over_decimal": 1.8197,
+          "over_decimal": 1.7874,
           "under_decimal": 2.0
         }
       },
