@@ -1,0 +1,422 @@
+{
+  "date": "2026-11-22",
+  "list_number": 9,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-22T17:07:59.231311+00:00",
+  "total_offers": 89,
+  "group_size": 9,
+  "original_positions": [
+    73,
+    81
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Isaiah Hartenstein",
+      "team": "OKC",
+      "game": "OKC @ MIA",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/isaiah-hartenstein",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-oklahoma-city-thunder-at-miami-heat#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -112,
+          "under_american": -113,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -108,
+          "under_american": -117,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8547
+        }
+      },
+      "original_offer_position": 73
+    },
+    {
+      "player": "Jared McCain",
+      "team": "OKC",
+      "game": "OKC @ MIA",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/jared-mccain",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-oklahoma-city-thunder-at-miami-heat#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -137,
+          "under_american": 102,
+          "over_decimal": 1.7299,
+          "under_decimal": 2.02
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 117,
+          "under_american": -150,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6667
+        }
+      },
+      "original_offer_position": 74
+    },
+    {
+      "player": "Klay Thompson",
+      "team": "MIA",
+      "game": "OKC @ MIA",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/klay-thompson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-oklahoma-city-thunder-at-miami-heat#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -113,
+          "under_american": -112,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -120,
+          "under_american": -108,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -120,
+          "under_american": -111,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -115,
+          "under_american": -118,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        }
+      },
+      "original_offer_position": 75
+    },
+    {
+      "player": "Pelle Larsson",
+      "team": "MIA",
+      "game": "OKC @ MIA",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/pelle-larsson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-oklahoma-city-thunder-at-miami-heat#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -105,
+          "under_american": -121,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -134,
+          "under_american": -103,
+          "over_decimal": 1.7463,
+          "under_decimal": 1.9709
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -144,
+          "under_american": 104,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 76
+    },
+    {
+      "player": "Shai Gilgeous-Alexander",
+      "team": "OKC",
+      "game": "OKC @ MIA",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/shai-gilgeous-alexander",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-oklahoma-city-thunder-at-miami-heat#props",
+      "points_market": {
+        "DK": {
+          "line": 32.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 32.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "BR": {
+          "line": 32.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 34.5,
+          "over_american": 127,
+          "under_american": -156,
+          "over_decimal": 2.27,
+          "under_decimal": 1.641
+        }
+      },
+      "original_offer_position": 77
+    },
+    {
+      "player": "AJ Dybantsa",
+      "team": "WSH",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/aj-dybantsa",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -118,
+          "under_american": -108,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9259
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -105,
+          "under_american": -130,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.7692
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -125,
+          "under_american": -109,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9174
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 127,
+          "under_american": -170,
+          "over_decimal": 2.27,
+          "under_decimal": 1.5882
+        }
+      },
+      "original_offer_position": 78
+    },
+    {
+      "player": "Alexandre Sarr",
+      "team": "WSH",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/alexandre-sarr",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -103,
+          "under_american": -124,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -104,
+          "under_american": -130,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7692
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -144,
+          "under_american": 117,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.17
+        }
+      },
+      "original_offer_position": 79
+    },
+    {
+      "player": "Anthony Black",
+      "team": "ORL",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/anthony-black",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -111,
+          "under_american": -114,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -127,
+          "under_american": 104,
+          "over_decimal": 1.7874,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 80
+    },
+    {
+      "player": "Anthony Davis",
+      "team": "WSH",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/anthony-davis",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 23.5,
+          "over_american": -120,
+          "under_american": -106,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 24.5,
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 23.5,
+          "over_american": -127,
+          "under_american": -108,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 113,
+          "under_american": -138,
+          "over_decimal": 2.13,
+          "under_decimal": 1.7246
+        }
+      },
+      "original_offer_position": 81
+    }
+  ]
+}

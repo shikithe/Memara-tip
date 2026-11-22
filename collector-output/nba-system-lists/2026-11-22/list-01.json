@@ -1,0 +1,422 @@
+{
+  "date": "2026-11-22",
+  "list_number": 1,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-22T17:07:59.231311+00:00",
+  "total_offers": 89,
+  "group_size": 9,
+  "original_positions": [
+    1,
+    9
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Baylor Scheierman",
+      "team": "BOS",
+      "game": "BOS @ GS",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/baylor-scheierman",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-boston-celtics-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -101,
+          "under_american": -126,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7937
+        },
+        "FD": {
+          "line": 6.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 6.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -104,
+          "under_american": -130,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7692
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 212,
+          "under_american": -270,
+          "over_decimal": 3.12,
+          "under_decimal": 1.3704
+        }
+      },
+      "original_offer_position": 1
+    },
+    {
+      "player": "Brandin Podziemski",
+      "team": "GS",
+      "game": "BOS @ GS",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/brandin-podziemski",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-boston-celtics-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -116,
+          "under_american": -113,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 16.5,
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -156,
+          "under_american": 122,
+          "over_decimal": 1.641,
+          "under_decimal": 2.22
+        }
+      },
+      "original_offer_position": 2
+    },
+    {
+      "player": "Charles Bassey",
+      "team": "GS",
+      "game": "BOS @ GS",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/charles-bassey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-boston-celtics-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -118,
+          "under_american": -108,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9259
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 144,
+          "under_american": -178,
+          "over_decimal": 2.44,
+          "under_decimal": 1.5618
+        }
+      },
+      "original_offer_position": 3
+    },
+    {
+      "player": "De'Anthony Melton",
+      "team": "GS",
+      "game": "BOS @ GS",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/deanthony-melton",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-boston-celtics-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -104,
+          "under_american": -122,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8197
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -156,
+          "under_american": 122,
+          "over_decimal": 1.641,
+          "under_decimal": 2.22
+        }
+      },
+      "original_offer_position": 4
+    },
+    {
+      "player": "Derrick White",
+      "team": "BOS",
+      "game": "BOS @ GS",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/derrick-white",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-boston-celtics-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -118,
+          "under_american": -110,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        }
+      },
+      "original_offer_position": 5
+    },
+    {
+      "player": "Draymond Green",
+      "team": "GS",
+      "game": "BOS @ GS",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/draymond-green",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-boston-celtics-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 4.5,
+          "over_american": -117,
+          "under_american": -109,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 4.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 4.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 4.5,
+          "over_american": -137,
+          "under_american": 102,
+          "over_decimal": 1.7299,
+          "under_decimal": 2.02
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -117,
+          "under_american": -108,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9259
+        }
+      },
+      "original_offer_position": 6
+    },
+    {
+      "player": "Gui Santos",
+      "team": "GS",
+      "game": "BOS @ GS",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/gui-santos",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-boston-celtics-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -117,
+          "under_american": -109,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -136,
+          "under_american": 102,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.02
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -141,
+          "under_american": 105,
+          "over_decimal": 1.7092,
+          "under_decimal": 2.05
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 138,
+          "under_american": -186,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5376
+        }
+      },
+      "original_offer_position": 7
+    },
+    {
+      "player": "Jayson Tatum",
+      "team": "BOS",
+      "game": "BOS @ GS",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/jayson-tatum",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-boston-celtics-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 28.5,
+          "over_american": -103,
+          "under_american": -124,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 27.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 28.5,
+          "over_american": -111,
+          "under_american": -118,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8475
+        },
+        "BR": {
+          "line": 27.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        }
+      },
+      "original_offer_position": 8
+    },
+    {
+      "player": "Neemias Queta",
+      "team": "BOS",
+      "game": "BOS @ GS",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/neemias-queta",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-boston-celtics-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -107,
+          "under_american": -119,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8403
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        }
+      },
+      "original_offer_position": 9
+    }
+  ]
+}

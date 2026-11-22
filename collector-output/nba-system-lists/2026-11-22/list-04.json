@@ -1,0 +1,415 @@
+{
+  "date": "2026-11-22",
+  "list_number": 4,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-22T17:07:59.231311+00:00",
+  "total_offers": 89,
+  "group_size": 9,
+  "original_positions": [
+    28,
+    36
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Buddy Hield",
+      "team": "CHI",
+      "game": "DEN @ CHI",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/buddy-hield",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-denver-nuggets-at-chicago-bulls#props",
+      "points_market": {
+        "FD": {
+          "line": 11.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        }
+      },
+      "original_offer_position": 28
+    },
+    {
+      "player": "Cameron Johnson",
+      "team": "DEN",
+      "game": "DEN @ CHI",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/cameron-johnson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-denver-nuggets-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -105,
+          "under_american": -130,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.7692
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -129,
+          "under_american": -105,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9524
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 127,
+          "under_american": -178,
+          "over_decimal": 2.27,
+          "under_decimal": 1.5618
+        }
+      },
+      "original_offer_position": 29
+    },
+    {
+      "player": "Christian Braun",
+      "team": "DEN",
+      "game": "DEN @ CHI",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/christian-braun",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-denver-nuggets-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -108,
+          "under_american": -116,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8621
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -111,
+          "under_american": -118,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8475
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 127,
+          "under_american": -170,
+          "over_decimal": 2.27,
+          "under_decimal": 1.5882
+        }
+      },
+      "original_offer_position": 30
+    },
+    {
+      "player": "DeMar DeRozan",
+      "team": "DEN",
+      "game": "DEN @ CHI",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/demar-derozan",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-denver-nuggets-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -108,
+          "under_american": -118,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8475
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -203,
+          "under_american": 156,
+          "over_decimal": 1.4926,
+          "under_decimal": 2.56
+        }
+      },
+      "original_offer_position": 31
+    },
+    {
+      "player": "Isaac Okoro",
+      "team": "CHI",
+      "game": "DEN @ CHI",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/isaac-okoro",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-denver-nuggets-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -103,
+          "under_american": -124,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -122,
+          "under_american": 100,
+          "over_decimal": 1.8197,
+          "under_decimal": 2.0
+        }
+      },
+      "original_offer_position": 32
+    },
+    {
+      "player": "Jalen Smith",
+      "team": "CHI",
+      "game": "DEN @ CHI",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/jalen-smith",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-denver-nuggets-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -128,
+          "under_american": 100,
+          "over_decimal": 1.7812,
+          "under_decimal": 2.0
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 133,
+          "under_american": -178,
+          "over_decimal": 2.33,
+          "under_decimal": 1.5618
+        }
+      },
+      "original_offer_position": 33
+    },
+    {
+      "player": "Jamal Murray",
+      "team": "DEN",
+      "game": "DEN @ CHI",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/jamal-murray",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-denver-nuggets-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 23.5,
+          "over_american": -106,
+          "under_american": -121,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 23.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 23.5,
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 117,
+          "under_american": -150,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6667
+        }
+      },
+      "original_offer_position": 34
+    },
+    {
+      "player": "Joshua Giddey",
+      "team": "CHI",
+      "game": "DEN @ CHI",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/joshua-giddey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-denver-nuggets-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -108,
+          "under_american": -118,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8475
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 150,
+          "under_american": -194,
+          "over_decimal": 2.5,
+          "under_decimal": 1.5155
+        }
+      },
+      "original_offer_position": 35
+    },
+    {
+      "player": "Matas Buzelis",
+      "team": "CHI",
+      "game": "DEN @ CHI",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/matas-buzelis",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-denver-nuggets-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 16.5,
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 16.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 150,
+          "under_american": -194,
+          "over_decimal": 2.5,
+          "under_decimal": 1.5155
+        }
+      },
+      "original_offer_position": 36
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+{
+  "date": "2026-11-22",
+  "list_number": 2,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-22T17:07:59.231311+00:00",
+  "total_offers": 89,
+  "group_size": 9,
+  "original_positions": [
+    10,
+    18
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Payton Pritchard",
+      "team": "BOS",
+      "game": "BOS @ GS",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/payton-pritchard",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-boston-celtics-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 16.5,
+          "over_american": 104,
+          "under_american": -138,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7246
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -156,
+          "under_american": 113,
+          "over_decimal": 1.641,
+          "under_decimal": 2.13
+        }
+      },
+      "original_offer_position": 10
+    },
+    {
+      "player": "Sam Hauser",
+      "team": "BOS",
+      "game": "BOS @ GS",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/sam-hauser",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-boston-celtics-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 122,
+          "under_american": -150,
+          "over_decimal": 2.22,
+          "under_decimal": 1.6667
+        }
+      },
+      "original_offer_position": 11
+    },
+    {
+      "player": "Will Richard",
+      "team": "GS",
+      "game": "BOS @ GS",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/will-richard",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-boston-celtics-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -107,
+          "under_american": -119,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8403
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 170,
+          "under_american": -223,
+          "over_decimal": 2.7,
+          "under_decimal": 1.4484
+        }
+      },
+      "original_offer_position": 12
+    },
+    {
+      "player": "Yaxel Lendeborg",
+      "team": "GS",
+      "game": "BOS @ GS",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/yaxel-lendeborg",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-boston-celtics-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 19.5,
+          "over_american": -117,
+          "under_american": -109,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 20.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 19.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 20.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -117,
+          "under_american": -113,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.885
+        }
+      },
+      "original_offer_position": 13
+    },
+    {
+      "player": "Ace Bailey",
+      "team": "UTAH",
+      "game": "DAL @ UTAH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/ace-bailey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-dallas-mavericks-at-utah-jazz#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -104,
+          "under_american": -125,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -107,
+          "under_american": -127,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 100,
+          "under_american": -122,
+          "over_decimal": 2.0,
+          "under_decimal": 1.8197
+        }
+      },
+      "original_offer_position": 14
+    },
+    {
+      "player": "Brice Sensabaugh",
+      "team": "UTAH",
+      "game": "DAL @ UTAH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/brice-sensabaugh",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-dallas-mavericks-at-utah-jazz#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -125,
+          "under_american": -102,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9804
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -124,
+          "under_american": -109,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9174
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 144,
+          "under_american": -194,
+          "over_decimal": 2.44,
+          "under_decimal": 1.5155
+        }
+      },
+      "original_offer_position": 15
+    },
+    {
+      "player": "Caleb Martin",
+      "team": "DAL",
+      "game": "DAL @ UTAH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/caleb-martin",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-dallas-mavericks-at-utah-jazz#props",
+      "points_market": {
+        "DK": {
+          "line": 5.5,
+          "over_american": -128,
+          "under_american": 101,
+          "over_decimal": 1.7812,
+          "under_decimal": 2.01
+        },
+        "MGM": {
+          "line": 5.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 5.5,
+          "over_american": -137,
+          "under_american": 102,
+          "over_decimal": 1.7299,
+          "under_decimal": 2.02
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -203,
+          "under_american": 150,
+          "over_decimal": 1.4926,
+          "under_decimal": 2.5
+        }
+      },
+      "original_offer_position": 16
+    },
+    {
+      "player": "Cooper Flagg",
+      "team": "DAL",
+      "game": "DAL @ UTAH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/cooper-flagg",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-dallas-mavericks-at-utah-jazz#props",
+      "points_market": {
+        "DK": {
+          "line": 24.5,
+          "over_american": -114,
+          "under_american": -111,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 25.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 24.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 24.5,
+          "over_american": -115,
+          "under_american": -118,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -122,
+          "under_american": 100,
+          "over_decimal": 1.8197,
+          "under_decimal": 2.0
+        }
+      },
+      "original_offer_position": 17
+    },
+    {
+      "player": "Daniel Gafford",
+      "team": "DAL",
+      "game": "DAL @ UTAH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/daniel-gafford",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-dallas-mavericks-at-utah-jazz#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -102,
+          "under_american": -125,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -102,
+          "under_american": -128,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -122,
+          "over_decimal": 2.0,
+          "under_decimal": 1.8197
+        }
+      },
+      "original_offer_position": 18
+    }
+  ]
+}

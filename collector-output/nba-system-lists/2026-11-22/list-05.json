@@ -1,0 +1,352 @@
+{
+  "date": "2026-11-22",
+  "list_number": 5,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-22T17:07:59.231311+00:00",
+  "total_offers": 89,
+  "group_size": 9,
+  "original_positions": [
+    37,
+    45
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Nikola Jokić",
+      "team": "DEN",
+      "game": "DEN @ CHI",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/nikola-jokic",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-denver-nuggets-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 25.5,
+          "over_american": -123,
+          "under_american": -104,
+          "over_decimal": 1.813,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 25.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 25.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 25.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -156,
+          "under_american": 117,
+          "over_decimal": 1.641,
+          "under_decimal": 2.17
+        }
+      },
+      "original_offer_position": 37
+    },
+    {
+      "player": "Norman Powell",
+      "team": "",
+      "game": "DEN @ CHI",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/norman-powell",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-denver-nuggets-at-chicago-bulls#props",
+      "points_market": {
+        "BR": {
+          "line": 21.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
+        }
+      },
+      "original_offer_position": 38
+    },
+    {
+      "player": "Patrick Williams",
+      "team": "",
+      "game": "DEN @ CHI",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/patrick-williams",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-denver-nuggets-at-chicago-bulls#props",
+      "points_market": {
+        "FD": {
+          "line": 7.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        }
+      },
+      "original_offer_position": 39
+    },
+    {
+      "player": "Tre Jones",
+      "team": "",
+      "game": "DEN @ CHI",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/tre-jones",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-denver-nuggets-at-chicago-bulls#props",
+      "points_market": {
+        "FD": {
+          "line": 13.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        }
+      },
+      "original_offer_position": 40
+    },
+    {
+      "player": "Aaron Wiggins",
+      "team": "ATL",
+      "game": "DET @ ATL",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 3:30PM",
+      "player_url": "https://betsharp.com/nba/player/aaron-wiggins",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-detroit-pistons-at-atlanta-hawks#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -118,
+          "under_american": -108,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9259
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 117,
+          "under_american": -144,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 41
+    },
+    {
+      "player": "Ausar Thompson",
+      "team": "DET",
+      "game": "DET @ ATL",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 3:30PM",
+      "player_url": "https://betsharp.com/nba/player/ausar-thompson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-detroit-pistons-at-atlanta-hawks#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -119,
+          "under_american": -109,
+          "over_decimal": 1.8403,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -125,
+          "under_american": -102,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -213,
+          "under_american": 170,
+          "over_decimal": 1.4695,
+          "under_decimal": 2.7
+        }
+      },
+      "original_offer_position": 42
+    },
+    {
+      "player": "Cade Cunningham",
+      "team": "DET",
+      "game": "DET @ ATL",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 3:30PM",
+      "player_url": "https://betsharp.com/nba/player/cade-cunningham",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-detroit-pistons-at-atlanta-hawks#props",
+      "points_market": {
+        "DK": {
+          "line": 25.5,
+          "over_american": -120,
+          "under_american": -107,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9346
+        },
+        "FD": {
+          "line": 25.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "MGM": {
+          "line": 25.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 25.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -150,
+          "under_american": 117,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.17
+        }
+      },
+      "original_offer_position": 43
+    },
+    {
+      "player": "Daniss Jenkins",
+      "team": "DET",
+      "game": "DET @ ATL",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 3:30PM",
+      "player_url": "https://betsharp.com/nba/player/daniss-jenkins",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-detroit-pistons-at-atlanta-hawks#props",
+      "points_market": {
+        "DK": {
+          "line": 16.5,
+          "over_american": -101,
+          "under_american": -126,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7937
+        },
+        "FD": {
+          "line": 16.5,
+          "over_american": 100,
+          "under_american": -128,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 16.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -150,
+          "under_american": 117,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.17
+        }
+      },
+      "original_offer_position": 44
+    },
+    {
+      "player": "Dyson Daniels",
+      "team": "ATL",
+      "game": "DET @ ATL",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 3:30PM",
+      "player_url": "https://betsharp.com/nba/player/dyson-daniels",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-detroit-pistons-at-atlanta-hawks#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -119,
+          "under_american": -107,
+          "over_decimal": 1.8403,
+          "under_decimal": 1.9346
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -122,
+          "under_american": -104,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -115,
+          "under_american": -118,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -163,
+          "under_american": 133,
+          "over_decimal": 1.6135,
+          "under_decimal": 2.33
+        }
+      },
+      "original_offer_position": 45
+    }
+  ]
+}

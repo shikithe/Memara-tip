@@ -1,0 +1,382 @@
+{
+  "date": "2026-11-22",
+  "list_number": 10,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-22T17:07:59.231311+00:00",
+  "total_offers": 89,
+  "group_size": 8,
+  "original_positions": [
+    82,
+    89
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Bilal Coulibaly",
+      "team": "WSH",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/bilal-coulibaly",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 6.5,
+          "over_american": -119,
+          "under_american": -107,
+          "over_decimal": 1.8403,
+          "under_decimal": 1.9346
+        },
+        "FD": {
+          "line": 6.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "BR": {
+          "line": 6.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -285,
+          "under_american": 203,
+          "over_decimal": 1.3509,
+          "under_decimal": 3.03
+        }
+      },
+      "original_offer_position": 82
+    },
+    {
+      "player": "Desmond Bane",
+      "team": "ORL",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/desmond-bane",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 19.5,
+          "over_american": -110,
+          "under_american": -116,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8621
+        },
+        "FD": {
+          "line": 19.5,
+          "over_american": -108,
+          "under_american": -120,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 18.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 19.5,
+          "over_american": -107,
+          "under_american": -127,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -104,
+          "under_american": -122,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8197
+        }
+      },
+      "original_offer_position": 83
+    },
+    {
+      "player": "Franz Wagner",
+      "team": "ORL",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/franz-wagner",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 24.5,
+          "over_american": -120,
+          "under_american": -106,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 25.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 24.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 25.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -133,
+          "under_american": 108,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 84
+    },
+    {
+      "player": "Jalen Suggs",
+      "team": "ORL",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/jalen-suggs",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -119,
+          "under_american": -107,
+          "over_decimal": 1.8403,
+          "under_decimal": 1.9346
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -213,
+          "under_american": 170,
+          "over_decimal": 1.4695,
+          "under_decimal": 2.7
+        }
+      },
+      "original_offer_position": 85
+    },
+    {
+      "player": "Kyshawn George",
+      "team": "WSH",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/kyshawn-george",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -122,
+          "under_american": -104,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 16.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -124,
+          "under_american": -109,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9174
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -150,
+          "under_american": 122,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.22
+        }
+      },
+      "original_offer_position": 86
+    },
+    {
+      "player": "Trae Young",
+      "team": "WSH",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/trae-young",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -107,
+          "under_american": -119,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8403
+        },
+        "FD": {
+          "line": 16.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 16.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 156,
+          "under_american": -203,
+          "over_decimal": 2.56,
+          "under_decimal": 1.4926
+        }
+      },
+      "original_offer_position": 87
+    },
+    {
+      "player": "Tristan da Silva",
+      "team": "ORL",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/tristan-da-silva",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -117,
+          "under_american": -109,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -178,
+          "under_american": 144,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.44
+        }
+      },
+      "original_offer_position": 88
+    },
+    {
+      "player": "Wendell Carter Jr.",
+      "team": "ORL",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-22",
+      "game_time_et": "Sun 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/wendell-carter",
+      "game_url": "https://betsharp.com/nba/game/2026-11-22-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -122,
+          "under_american": -104,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": 100,
+          "under_american": -135,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7407
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": 100,
+          "under_american": -136,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7353
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 170,
+          "under_american": -223,
+          "over_decimal": 2.7,
+          "under_decimal": 1.4484
+        }
+      },
+      "original_offer_position": 89
+    }
+  ]
+}
