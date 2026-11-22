@@ -58,6 +58,9 @@ jobs:
       - name: Split complete captured offer into ten daily lists
         if: steps.gate.outputs.run == 'true'
         run: python split_betsharp_nba_into_ten.py
+      - name: Verify all ten lists and emit readiness feedback in same collection job
+        if: steps.gate.outputs.run == 'true'
+        run: python nba_system_first_group_feedback.py
       - name: Archive today's immutable capture and commit
         if: steps.gate.outputs.run == 'true'
         run: |
@@ -69,6 +72,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -- collector-output/betsharp-nba-daily.json "collector-output/betsharp-history/${date_et}.json"
           git add -- "collector-output/nba-system-lists/${date_et}/"
+          git add -- collector-output/nba-system-feedback.json
           if ! git diff --cached --quiet; then
             git commit -m "data: BetSharp NBA points snapshot ${date_et}"
             for attempt in 1 2 3 4 5; do
