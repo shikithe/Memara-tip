@@ -1,0 +1,651 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-22",
+  "group_number": 8,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Davion Mitchell",
+      "player_id": "4278053",
+      "score": 89,
+      "confidence": 84,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN identity, injury and match date, followed NBA/CBS/StatIQ player logs and team game news; no missing log entries were fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/davion-mitchell",
+        "https://www.cbssports.com/nba/players/2892012/davion-mitchell/game-log/"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 24,
+          "minutes": 36
+        },
+        {
+          "date": "2026-11-16",
+          "points": 16,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-13",
+          "points": 22,
+          "minutes": 39
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where verified, season averages and reported five/ten game scoring hit counts; no calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Detailed scoring splits separately for home/road and minutes not confirmed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five verified historical scoring head-to-head games were not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position specific allowances not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct defensive assignment not confirmed from published starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam questionable hip, Adebayo past hip issue, other statuses checked against latest public news."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified published projection for future minutes; actual minutes included if sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from sourced season and last-game descriptions."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.9259,
+        "under_odd": 1.8475,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/davion-mitchell"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "uncalibrated",
+        "availability_confirmed": true,
+        "reason": "Mitchell 17.2 season scoring average above 14.5; aggregate record shows 12/15 over this season and five of last five over. Verified scoring latest 24,16,22 in 33-39 minutes. Direction selected with evidence-weighted confidence and limited sample caveat.",
+        "risk": "He plays a high-assist guard role and his shot volume is variable against strong OKC perimeter defense. Outcome remains uncertain for single-match bets."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Andrew Wiggins",
+      "player_id": "3059319",
+      "score": 80,
+      "confidence": 71,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN identity, injury and match date, followed NBA/CBS/StatIQ player logs and team game news; no missing log entries were fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/andrew-wiggins",
+        "https://www.statiqsports.com/nba/andrew-wiggins/last-5-games"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 11,
+          "minutes": 26
+        },
+        {
+          "date": "2026-11-14",
+          "points": 10,
+          "minutes": 23
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where verified, season averages and reported five/ten game scoring hit counts; no calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Detailed scoring splits separately for home/road and minutes not confirmed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five verified historical scoring head-to-head games were not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position specific allowances not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct defensive assignment not confirmed from published starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam questionable hip, Adebayo past hip issue, other statuses checked against latest public news."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified published projection for future minutes; actual minutes included if sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from sourced season and last-game descriptions."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.9346,
+        "under_odd": 1.8403,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/andrew-wiggins"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "uncalibrated",
+        "availability_confirmed": true,
+        "reason": "Wiggins averages 9.5 points on season, and public recent five sample indicates four of five above 9.5; current over 9.5 price 1.9346 seems reasonable given active forward bench role. Direction selected with evidence-weighted confidence and limited sample caveat.",
+        "risk": "Limited seasonal scoring baseline, occasional short minutes and 3-point volatility against strong OKC defense. Outcome remains uncertain for single-match bets."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Isaiah Hartenstein",
+      "player_id": "betsharp:2026-11-22:0072",
+      "score": 75,
+      "confidence": 72,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN identity, injury and match date, followed NBA/CBS/StatIQ player logs and team game news; no missing log entries were fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/isaiah-hartenstein",
+        "https://www.nba.com/player/1628392/isaiah_hartenstein"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 5,
+          "minutes": 28
+        },
+        {
+          "date": "2026-11-11",
+          "points": 20,
+          "minutes": 34
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where verified, season averages and reported five/ten game scoring hit counts; no calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Detailed scoring splits separately for home/road and minutes not confirmed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five verified historical scoring head-to-head games were not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position specific allowances not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct defensive assignment not confirmed from published starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam questionable hip, Adebayo past hip issue, other statuses checked against latest public news."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified published projection for future minutes; actual minutes included if sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from sourced season and last-game descriptions."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.885,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/isaiah-hartenstein"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "uncalibrated",
+        "availability_confirmed": false,
+        "reason": "Hartenstein season 8.2 points versus 9.5, and Miami defense matchup adds potential scoring constraints; however recent last-five 11.0 mean warns of increased opportunity. Direction selected with evidence-weighted confidence and limited sample caveat.",
+        "risk": "Starting minutes and efficient rim shots could bring a double-digit game despite lower season mean. Outcome remains uncertain for single-match bets."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Pascal Siakam",
+      "player_id": "betsharp:2026-11-22:0064",
+      "score": 68,
+      "confidence": 49,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN identity, injury and match date, followed NBA/CBS/StatIQ player logs and team game news; no missing log entries were fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/pascal-siakam",
+        "https://www.nba.com/player/1627783/pascal-siakam"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 19,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-18",
+          "points": 28,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-15",
+          "points": 31,
+          "minutes": 34
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where verified, season averages and reported five/ten game scoring hit counts; no calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Detailed scoring splits separately for home/road and minutes not confirmed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five verified historical scoring head-to-head games were not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position specific allowances not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct defensive assignment not confirmed from published starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam questionable hip, Adebayo past hip issue, other statuses checked against latest public news."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified published projection for future minutes; actual minutes included if sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from sourced season and last-game descriptions."
+      },
+      "market": {
+        "points_line": 19.5,
+        "over_odd": 1.8065,
+        "under_odd": 1.9709,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/pascal-siakam"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "uncalibrated",
+        "availability_confirmed": false,
+        "reason": "Siakam averages near 23 points above 19.5-point line, with recent games 19,28,31, but 22 November hip injury tag makes availability unconfirmed. Direction selected with evidence-weighted confidence and limited sample caveat.",
+        "risk": "Listed questionable with hip issue and could miss game; do not select. Outcome remains uncertain for single-match bets."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Bam Adebayo",
+      "player_id": "betsharp:2026-11-22:0068",
+      "score": 66,
+      "confidence": 60,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN identity, injury and match date, followed NBA/CBS/StatIQ player logs and team game news; no missing log entries were fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/bam-adebayo",
+        "https://www.nba.com/player/1628389/bam-adebayo"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-14",
+          "points": 20,
+          "minutes": 36
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where verified, season averages and reported five/ten game scoring hit counts; no calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Detailed scoring splits separately for home/road and minutes not confirmed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five verified historical scoring head-to-head games were not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position specific allowances not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct defensive assignment not confirmed from published starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam questionable hip, Adebayo past hip issue, other statuses checked against latest public news."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified published projection for future minutes; actual minutes included if sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from sourced season and last-game descriptions."
+      },
+      "market": {
+        "points_line": 19.5,
+        "over_odd": 1.9259,
+        "under_odd": 1.8475,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/bam-adebayo"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "uncalibrated",
+        "availability_confirmed": false,
+        "reason": "Bam 19.5 points line is near current scoring level, and 20-point recent verified game shows narrow margin; existing hip tightness affects certainty. Direction selected with evidence-weighted confidence and limited sample caveat.",
+        "risk": "Miami center can dominate paint scoring, and minutes may fluctuate with hip discomfort. Outcome remains uncertain for single-match bets."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Giannis Antetokounmpo",
+      "player_id": "betsharp:2026-11-22:0071",
+      "score": 61,
+      "confidence": 54,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN identity, injury and match date, followed NBA/CBS/StatIQ player logs and team game news; no missing log entries were fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/giannis-antetokounmpo",
+        "https://www.reuters.com/sports/basketball/heats-bam-adebayo-giannis-antetokounmpo-take-aim-rockets--flm-2026-11-16/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where verified, season averages and reported five/ten game scoring hit counts; no calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Detailed scoring splits separately for home/road and minutes not confirmed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five verified historical scoring head-to-head games were not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position specific allowances not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct defensive assignment not confirmed from published starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam questionable hip, Adebayo past hip issue, other statuses checked against latest public news."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified published projection for future minutes; actual minutes included if sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from sourced season and last-game descriptions."
+      },
+      "market": {
+        "points_line": 27.5,
+        "over_odd": 1.9434,
+        "under_odd": 1.8333,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/giannis-antetokounmpo"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "uncalibrated",
+        "availability_confirmed": false,
+        "reason": "Giannis 27.5 line is significant but full recent NBA game log was not verified; Miami pairing with Bam Adebayo creates usage and defensive-shift uncertainty. Direction selected with evidence-weighted confidence and limited sample caveat.",
+        "risk": "Star forward may generate high scoring and minutes, so this under lacks adequate confidence. Outcome remains uncertain for single-match bets."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Ajay Mitchell",
+      "player_id": "betsharp:2026-11-22:0066",
+      "score": 56,
+      "confidence": 54,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN identity, injury and match date, followed NBA/CBS/StatIQ player logs and team game news; no missing log entries were fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/ajay-mitchell",
+        "https://www.nba.com/thunder/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where verified, season averages and reported five/ten game scoring hit counts; no calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Detailed scoring splits separately for home/road and minutes not confirmed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five verified historical scoring head-to-head games were not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position specific allowances not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct defensive assignment not confirmed from published starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam questionable hip, Adebayo past hip issue, other statuses checked against latest public news."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified published projection for future minutes; actual minutes included if sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from sourced season and last-game descriptions."
+      },
+      "market": {
+        "points_line": 20.5,
+        "over_odd": 1.885,
+        "under_odd": 1.885,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/ajay-mitchell"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "uncalibrated",
+        "availability_confirmed": false,
+        "reason": "Ajay Mitchell 20.5 points line requires high shot creation; exact last five dated game scoring rows not fully verified, lowering rank. Direction selected with evidence-weighted confidence and limited sample caveat.",
+        "risk": "Opposition defensive assignments and Thunder player availability can cause major usage changes. Outcome remains uncertain for single-match bets."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Aday Mara",
+      "player_id": "betsharp:2026-11-22:0065",
+      "score": 51,
+      "confidence": 41,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN identity, injury and match date, followed NBA/CBS/StatIQ player logs and team game news; no missing log entries were fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/aday-mara",
+        "https://www.nba.com/thunder/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where verified, season averages and reported five/ten game scoring hit counts; no calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Detailed scoring splits separately for home/road and minutes not confirmed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five verified historical scoring head-to-head games were not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position specific allowances not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct defensive assignment not confirmed from published starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam questionable hip, Adebayo past hip issue, other statuses checked against latest public news."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified published projection for future minutes; actual minutes included if sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from sourced season and last-game descriptions."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.9091,
+        "under_odd": 1.8621,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/aday-mara"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "uncalibrated",
+        "availability_confirmed": false,
+        "reason": "Aday Mara 11.5 line is provided by fixed snapshot, but current player role, injury report and five-game scoring not fully verified to support a higher rank. Direction selected with evidence-weighted confidence and limited sample caveat.",
+        "risk": "Recent minutes unknown, and playing or bench role could differ significantly. Outcome remains uncertain for single-match bets."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Bobby Portis",
+      "player_id": "betsharp:2026-11-22:0069",
+      "score": 46,
+      "confidence": 37,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN identity, injury and match date, followed NBA/CBS/StatIQ player logs and team game news; no missing log entries were fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/bobby-portis",
+        "https://www.nba.com/heat/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where verified, season averages and reported five/ten game scoring hit counts; no calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Detailed scoring splits separately for home/road and minutes not confirmed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five verified historical scoring head-to-head games were not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position specific allowances not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct defensive assignment not confirmed from published starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam questionable hip, Adebayo past hip issue, other statuses checked against latest public news."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified published projection for future minutes; actual minutes included if sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from sourced season and last-game descriptions."
+      },
+      "market": {
+        "points_line": 8.5,
+        "over_odd": 1.9804,
+        "under_odd": 1.8,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/bobby-portis"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "uncalibrated",
+        "availability_confirmed": false,
+        "reason": "Bobby Portis line 8.5 is a low threshold and the current five-game scoring sample is unavailable from trusted source, making selection unwise. Direction selected with evidence-weighted confidence and limited sample caveat.",
+        "risk": "Miami frontcourt rotations and player roster use uncertain with other available stars. Outcome remains uncertain for single-match bets."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "4278053",
+    "3059319"
+  ],
+  "selection_reason": "Entire group reviewed in primary ESPN and secondary sports reporting. Davion Mitchell OVER 14.5 has 12 of 15 seasonal overs and five of five recent overs with active role; Andrew Wiggins OVER 9.5 has four of five recent overs and available scorer minutes. Siakam excluded due to questionable hip. Both selected have ESPN IDs and future 23:00 UTC fixture verified.",
+  "notes": "Missing L5 and defender reports for the other 7 marked not_verified and reflected in confidence, original BetSharp DK offers preserved."
+}
