@@ -20,7 +20,7 @@ ODDS = ("home_odds", "draw_odds", "away_odds", "over25_odds", "btts_yes_odds", "
 def valid_odd(n):
     return isinstance(n, (int, float)) and not isinstance(n, bool) and 1.01 < n < 50
 
-def inspect(site, feed, active, scout, today, history=None):
+def inspect(site, feed, active, scout, today, history=None, top10=None):
     tickets = check(site, today)
     result = {"date": today, "tickets": tickets, "next_stage": None, "reason": "", "ready": {}}
     if tickets["both_published"]:
@@ -66,7 +66,35 @@ def inspect(site, feed, active, scout, today, history=None):
         result.update(next_stage="scout_6of6", reason="Scout 6/6 report absent, stale or incomplete")
         return result
     result["ready"]["scout_6of6"] = True
-    result.update(next_stage="ai_analysis", reason="Scout exists; missing A/B require independent analyst approval")
+    # TOP10_READY is the terminal preparation checkpoint. Verify today's
+    # actual handoff and matching ESPN IDs, not merely a stale named flag.
+    handoff = scout.get("detailed_ai_handoff", {})
+    candidates = top10.get("candidates", []) if isinstance(top10, dict) else []
+    ids_top10 = top10.get("fixture_ids", []) if isinstance(top10, dict) else []
+    valid_top10 = (
+        isinstance(top10, dict) and top10.get("date") == today
+        and top10.get("feedback") == "TOP10_READY"
+        and isinstance(top10.get("source_fingerprint"), str)
+        and len(top10["source_fingerprint"]) == 64
+        and isinstance(candidates, list) and bool(candidates)
+        and top10.get("count") == len(candidates)
+        and isinstance(ids_top10, list)
+        and ids_top10 == [x.get("fixture_id") for x in candidates if isinstance(x, dict)]
+        and len(set(ids_top10)) == len(ids_top10)
+        and set(ids_top10).issubset(ids)
+        and handoff.get("count") == len(candidates)
+        and [x.get("fixture_id") for x in handoff.get("candidates", [])] == ids_top10
+    )
+    if valid_top10:
+        result.update(
+            next_stage="await_publication",
+            feedback="TOP10_CONFIRMED_WAIT_PUBLICATION",
+            source_fingerprint=top10["source_fingerprint"],
+            top10_count=len(candidates),
+            reason="TOP10_READY confirmed; stop technical inspections until 13:00 Sarajevo",
+        )
+        return result
+    result.update(next_stage="ai_analysis", reason="Scout exists; TOP10_READY not yet confirmed")
     return result
 
 def remote_json(name):
@@ -95,7 +123,8 @@ def main():
         load = remote_json
     result = inspect(site, load("shared/collector-feed.json"), load("shared/active-list.json"),
                      load("shared/agent/scout-six-markets.json"), args.date,
-                     load("shared/agent/history-h2h.json"))
+                     load("shared/agent/history-h2h.json"),
+                     load("shared/agent/top10-feedback.json"))
     result["checked_at_sarajevo"] = datetime.now(TZ).isoformat()
     dest = Path(args.output)
     dest.parent.mkdir(parents=True, exist_ok=True)
