@@ -65,8 +65,8 @@ def publish_nba_c(checked, now, local):
     approval=load(ROOT/"memarasix-1455-approved.json")
     # Explicit one-day user-approved exception only: 21 Nov 2026 manual C,
     # stake 2% of the original day's bank, even if A/B used the prior 10% allocation.
-    manual_c_2pct=(current=="2026-11-21" and
-        approval.get("manual_c_stake_override")=="2026-11-21_2pct_bank_start" and
+    manual_c_2pct=(current in ("2026-11-21", "2026-11-22") and
+        approval.get("manual_c_stake_override")==f"{current}_2pct_bank_start" and
         len(approval.get("tickets",[]))==1 and
         approval["tickets"][0].get("id")=="C")
     stake=round(bank*.02,2) if manual_c_2pct else round(budget*.10,2)
