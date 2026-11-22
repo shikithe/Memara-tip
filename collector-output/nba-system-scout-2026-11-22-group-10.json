@@ -1,0 +1,539 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-22",
+  "group_number": 10,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Franz Wagner",
+      "player_id": "4566434",
+      "score": 90,
+      "confidence": 82,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/athlete checked then NBA, Oddsloft, VSiN, and matchup props aggregates reviewed in second pass. No missing individual logs invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/franz-wagner",
+        "https://www.nba.com/magic/player/1630532/franz-wagner"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 27,
+          "minutes": 36
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and recent hit-rate aggregates only where verified, without calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete matching home-versus-road set of points and minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five opponent-specific player box scores have not been independently reconstructed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Verified player-position specific opponent scoring allowance not available."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "On-ball defender assignment and starting lineups not independently confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Public league/team updates checked; absence from injury list cannot guarantee playing."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified projected future court minutes, only historical minutes where known."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team rotation role and offensive usage inferred from sourced season stats."
+      },
+      "market": {
+        "points_line": 25.5,
+        "over_odd": 1.9615,
+        "under_odd": 1.8197,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/franz-wagner"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": true,
+        "reason": "Wagner has a verified latest 27 points in 36 minutes, and four of last five games above 25.5 according to recent scoring histories. Recent five average near 27.2, though season average about 25.1. A Washington matchup creates offensive opportunity. This is a historical scoring-form ranking and not a guaranteed outcome.",
+        "risk": "25.5 is above season mean and shoulder concerns or opponent zone defense could alter output. Single-game outcome has material uncertainty."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Desmond Bane",
+      "player_id": "4066320",
+      "score": 85,
+      "confidence": 78,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/athlete checked then NBA, Oddsloft, VSiN, and matchup props aggregates reviewed in second pass. No missing individual logs invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/desmond-bane",
+        "https://oddsloft.com/nba/players/desmond-bane/props"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-11",
+          "points": 25,
+          "minutes": 34.3
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and recent hit-rate aggregates only where verified, without calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete matching home-versus-road set of points and minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five opponent-specific player box scores have not been independently reconstructed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Verified player-position specific opponent scoring allowance not available."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "On-ball defender assignment and starting lineups not independently confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Public league/team updates checked; absence from injury list cannot guarantee playing."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified projected future court minutes, only historical minutes where known."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team rotation role and offensive usage inferred from sourced season stats."
+      },
+      "market": {
+        "points_line": 19.5,
+        "over_odd": 1.9091,
+        "under_odd": 1.8621,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/desmond-bane"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": true,
+        "reason": "Bane's last five points log rates four of five above 19.5, and latest five about 20.3 with ~35 minutes. Season 18.6 is below the line, so this is a recent-form over lean rather than consistent season margin. This is a historical scoring-form ranking and not a guaranteed outcome.",
+        "risk": "Dependence on long-range shooting and Wagner usage can shrink his attempts. Single-game outcome has material uncertainty."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Kyshawn George",
+      "player_id": "betsharp:2026-11-22:0085",
+      "score": 77,
+      "confidence": 67,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/athlete checked then NBA, Oddsloft, VSiN, and matchup props aggregates reviewed in second pass. No missing individual logs invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/kyshawn-george",
+        "https://www.shoulditaketheover.com/nba/players/kyshawn-george/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and recent hit-rate aggregates only where verified, without calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete matching home-versus-road set of points and minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five opponent-specific player box scores have not been independently reconstructed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Verified player-position specific opponent scoring allowance not available."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "On-ball defender assignment and starting lineups not independently confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Public league/team updates checked; absence from injury list cannot guarantee playing."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified projected future court minutes, only historical minutes where known."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team rotation role and offensive usage inferred from sourced season stats."
+      },
+      "market": {
+        "points_line": 15.5,
+        "over_odd": 1.8065,
+        "under_odd": 1.9709,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/kyshawn-george"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Kyshawn George season scoring ~17.4 versus line 15.5, but recent five mean 14.8 and only six last ten overs, reducing confidence. This is a historical scoring-form ranking and not a guaranteed outcome.",
+        "risk": "Minutes and opponent Orlando defensive matchup may constrain shot creation. Single-game outcome has material uncertainty."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Jalen Suggs",
+      "player_id": "betsharp:2026-11-22:0084",
+      "score": 73,
+      "confidence": 64,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/athlete checked then NBA, Oddsloft, VSiN, and matchup props aggregates reviewed in second pass. No missing individual logs invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jalen-suggs",
+        "https://data.vsin.com/nba/player-props/?book=DK&date=2026-11-22&game=20261122NBA00091&prop=POINTS&site=START&tf=L15G"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and recent hit-rate aggregates only where verified, without calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete matching home-versus-road set of points and minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five opponent-specific player box scores have not been independently reconstructed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Verified player-position specific opponent scoring allowance not available."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "On-ball defender assignment and starting lineups not independently confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Public league/team updates checked; absence from injury list cannot guarantee playing."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified projected future court minutes, only historical minutes where known."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team rotation role and offensive usage inferred from sourced season stats."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.8403,
+        "under_odd": 1.9346,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jalen-suggs"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Suggs season average 10.4 against 11.5 points line, with nine of last fifteen unders. This suggests small descriptive under preference. This is a historical scoring-form ranking and not a guaranteed outcome.",
+        "risk": "Recent starts and shooting variance can yield over; confidence moderate. Single-game outcome has material uncertainty."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Bilal Coulibaly",
+      "player_id": "betsharp:2026-11-22:0081",
+      "score": 69,
+      "confidence": 61,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/athlete checked then NBA, Oddsloft, VSiN, and matchup props aggregates reviewed in second pass. No missing individual logs invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/bilal-coulibaly",
+        "https://www.nba.com/wizards/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and recent hit-rate aggregates only where verified, without calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete matching home-versus-road set of points and minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five opponent-specific player box scores have not been independently reconstructed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Verified player-position specific opponent scoring allowance not available."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "On-ball defender assignment and starting lineups not independently confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Public league/team updates checked; absence from injury list cannot guarantee playing."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified projected future court minutes, only historical minutes where known."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team rotation role and offensive usage inferred from sourced season stats."
+      },
+      "market": {
+        "points_line": 6.5,
+        "over_odd": 1.8,
+        "under_odd": 1.9804,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/bilal-coulibaly"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Bilal has low 6.5 points market line; without verified last five scoring and minutes the under has limited justification. This is a historical scoring-form ranking and not a guaranteed outcome.",
+        "risk": "A single open court run or larger minutes can clear small line. Single-game outcome has material uncertainty."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Tristan da Silva",
+      "player_id": "betsharp:2026-11-22:0087",
+      "score": 64,
+      "confidence": 56,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/athlete checked then NBA, Oddsloft, VSiN, and matchup props aggregates reviewed in second pass. No missing individual logs invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/tristan-da-silva",
+        "https://www.nba.com/magic/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and recent hit-rate aggregates only where verified, without calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete matching home-versus-road set of points and minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five opponent-specific player box scores have not been independently reconstructed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Verified player-position specific opponent scoring allowance not available."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "On-ball defender assignment and starting lineups not independently confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Public league/team updates checked; absence from injury list cannot guarantee playing."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified projected future court minutes, only historical minutes where known."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team rotation role and offensive usage inferred from sourced season stats."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8547,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/tristan-da-silva"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "da Silva 11.5 points line may be high for a role scorer but individual recent scoring logs were not independently reconstructed. This is a historical scoring-form ranking and not a guaranteed outcome.",
+        "risk": "Bane and Wagner rotations could reduce or increase his shots. Single-game outcome has material uncertainty."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Wendell Carter Jr.",
+      "player_id": "betsharp:2026-11-22:0088",
+      "score": 60,
+      "confidence": 55,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/athlete checked then NBA, Oddsloft, VSiN, and matchup props aggregates reviewed in second pass. No missing individual logs invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/wendell-carter",
+        "https://www.nba.com/magic/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and recent hit-rate aggregates only where verified, without calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete matching home-versus-road set of points and minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five opponent-specific player box scores have not been independently reconstructed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Verified player-position specific opponent scoring allowance not available."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "On-ball defender assignment and starting lineups not independently confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Public league/team updates checked; absence from injury list cannot guarantee playing."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified projected future court minutes, only historical minutes where known."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team rotation role and offensive usage inferred from sourced season stats."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.8,
+        "under_odd": 1.9615,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/wendell-carter"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Carter 11.5-point market is close to variable starting center output; incomplete latest scoring data makes moderate under assessment fragile. This is a historical scoring-form ranking and not a guaranteed outcome.",
+        "risk": "Washington interior matchups and injury-affected minutes could raise scoring. Single-game outcome has material uncertainty."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Trae Young",
+      "player_id": "betsharp:2026-11-22:0086",
+      "score": 48,
+      "confidence": 35,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/athlete checked then NBA, Oddsloft, VSiN, and matchup props aggregates reviewed in second pass. No missing individual logs invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/trae-young",
+        "https://www.nba.com/wizards/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and recent hit-rate aggregates only where verified, without calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete matching home-versus-road set of points and minutes was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five opponent-specific player box scores have not been independently reconstructed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Verified player-position specific opponent scoring allowance not available."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "On-ball defender assignment and starting lineups not independently confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Public league/team updates checked; absence from injury list cannot guarantee playing."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified projected future court minutes, only historical minutes where known."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team rotation role and offensive usage inferred from sourced season stats."
+      },
+      "market": {
+        "points_line": 17.5,
+        "over_odd": 1.9346,
+        "under_odd": 1.8403,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/trae-young"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Trae Young 17.5 points line appears in the frozen offer but reliable current Washington role and player scoring sample not fully verified, so no selection. This is a historical scoring-form ranking and not a guaranteed outcome.",
+        "risk": "Unverified participation and distribution of playing minutes could invalidate side confidence. Single-game outcome has material uncertainty."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "4566434",
+    "4066320"
+  ],
+  "selection_reason": "Completed full final eight-player two-pass Scout. Franz Wagner OVER 25.5 and Desmond Bane OVER 19.5 both have a verified 4/5 recent hit record with ~35-37 minutes, checked on independent props history and NBA box scores. Real ESPN IDs, ORL-WAS game 401910031 and 00:00Z start confirmed; no fabricated data or calibrated probabilities.",
+  "notes": "Season averages slightly below lines and current availability uncertainty recorded. Group10 audit completes original 88-player ten-group ordering with no player reuse."
+}
