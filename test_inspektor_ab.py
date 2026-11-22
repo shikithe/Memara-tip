@@ -1,5 +1,15 @@
 import unittest
-from inspektor_ab import inspect
+from inspektor_ab import inspect as raw_inspect
+
+def inspect(site, feed, active, scout, today, history=None, top10=None, odds_feedback=None):
+    """Default to consistent finalized odds for existing inspector fixtures."""
+    if odds_feedback is None and isinstance(feed, dict) and isinstance(active, dict):
+        rows=active.get("fixtures", [])
+        quoted=sum(any(isinstance(x.get(k),(int,float)) and 1.01 < x[k] < 50 for k in ("home_odds","draw_odds","away_odds","over25_odds","btts_yes_odds","btts_no_odds")) for x in rows)
+        odds_feedback={"date":today,"feedback":"ODDS_READY","status":"ready_for_scout",
+                       "final":True,"espn_total":len(feed.get("football_candidates", [])),
+                       "matched_with_quotes":quoted,"skipped_unmatched":len(rows)-quoted}
+    return raw_inspect(site,feed,active,scout,today,history,top10,odds_feedback)
 
 TODAY = "2026-11-22"
 
@@ -36,6 +46,15 @@ class InspectorTests(unittest.TestCase):
         self.assertEqual(result["feedback"],"TOP10_CONFIRMED_WAIT_PUBLICATION")
         top10["date"]="2026-11-21"
         self.assertEqual(inspect(s,f,a,c,TODAY,h,top10)["next_stage"],"ai_analysis")
+
+    def test_missing_final_odds_feedback_blocks_downstream(self):
+        s, f, a, c, h = state()
+        result = raw_inspect(s, f, a, c, TODAY, h, None, None)
+        self.assertEqual(result["next_stage"], "tipsterarea")
+        self.assertIn("ODDS_READY", result["reason"])
+        invalid={"date":TODAY,"feedback":"ODDS_READY","status":"ready_for_scout",
+                 "final":True,"espn_total":1,"matched_with_quotes":0,"skipped_unmatched":1}
+        self.assertEqual(raw_inspect(s,f,a,c,TODAY,h,None,invalid)["next_stage"],"tipsterarea")
 
     def test_both_tickets_stop(self):
         s, f, a, c, h = state()
