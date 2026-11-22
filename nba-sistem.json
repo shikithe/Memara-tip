@@ -5139,7 +5139,7 @@
               "espn_event_id": "401910029",
               "player_id": "4278039",
               "start_utc": "2026-11-22T20:30:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -5191,7 +5191,11 @@
                 "scout_score": 85,
                 "scout_note": "Nickeil scored 19,19,20,16,20 in his previous five, three under the frozen 19.5 line, with 32 to 41 minutes; last-five average 18.8, but season average 20.9. Historical observed numbers do not guarantee the outcome.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-6.json"
-              }
+              },
+              "player_points": 17,
+              "game_state": "live",
+              "game_clock": "9:36",
+              "period": 4
             },
             {
               "player": "Kevin Huerter",
@@ -5205,7 +5209,7 @@
               "espn_event_id": "401910029",
               "player_id": "4066372",
               "start_utc": "2026-11-22T20:30:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -5242,7 +5246,11 @@
                 "scout_score": 80,
                 "scout_note": "Huerter has season average 10.6 against line 13.5 and latest cited results 11,20,9,11,20 show three unders; validated Nov20 11pts 19:42 minutes and Nov18 11 in 36 minutes. Historical observed numbers do not guarantee the outcome.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-6.json"
-              }
+              },
+              "player_points": 2,
+              "game_state": "live",
+              "game_clock": "9:36",
+              "period": 4
             }
           ]
         },
@@ -5710,6 +5718,19 @@
           "10": "collector-output/nba-system-scout-2026-11-22-group-10.json"
         },
         "selection_method": "full_ranked_scout"
+      },
+      "accounting": {
+        "tickets_total": 10,
+        "tickets_settled": 0,
+        "tickets_pending": 10,
+        "tickets_won": 0,
+        "tickets_lost": 0,
+        "tickets_void": 0,
+        "total_staked": 92.5,
+        "total_returned": 0,
+        "available_bank": 832.42,
+        "net_profit_confirmed": 0,
+        "complete": false
       }
     }
   ]
