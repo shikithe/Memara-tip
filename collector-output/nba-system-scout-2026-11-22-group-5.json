@@ -1,0 +1,699 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-22",
+  "group_number": 5,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Nikola Jokić",
+      "player_id": "3112335",
+      "score": 87,
+      "confidence": 81,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identity and game schedule checked, NBA/CBS dated player logs examined; absent entries left unverified; no fabrication of player performance."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/nikola-jokic",
+        "https://www.cbssports.com/nba/players/2135542/nikola-jokic/game-log/"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 26,
+          "minutes": 38
+        },
+        {
+          "date": "2026-11-18",
+          "points": 24,
+          "minutes": 39
+        },
+        {
+          "date": "2026-11-16",
+          "points": 28,
+          "minutes": 38
+        },
+        {
+          "date": "2026-11-14",
+          "points": 26,
+          "minutes": 37
+        },
+        {
+          "date": "2026-11-11",
+          "points": 27,
+          "minutes": 37
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Relevant season averages only where separately sourced; no calibration of historical hit rate."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete season split into home and road results was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual recent head to head scoring outcomes against this opponent not independently found."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise defense by player position and same-week changes not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual starting defensive matchup not verified before confirmed starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed team injury context, but no game participation guarantee inferred from not being listed out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative published minutes projection, only actual historical logged minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent minutes and reported role used as limited role indicator."
+      },
+      "market": {
+        "points_line": 25.5,
+        "over_odd": 1.813,
+        "under_odd": 1.9615,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/nikola-jokic"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": true,
+        "reason": "Four of last five verified scored above 25.5 (26,24,28,26,27), and high 37-39 minute workload gives sustained volume in favorable matchup. This is a historical statistical lean rather than a proven predictive probability.",
+        "risk": "Season baseline around 24 points is lower than 25.5 and recent 5-game shooting may regress. Normal game-level randomness remains substantial."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Tre Jones",
+      "player_id": "4395626",
+      "score": 77,
+      "confidence": 73,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identity and game schedule checked, NBA/CBS dated player logs examined; absent entries left unverified; no fabrication of player performance."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/tre-jones",
+        "https://www.nba.com/player/1630200"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 12,
+          "minutes": 25
+        },
+        {
+          "date": "2026-11-18",
+          "points": 10,
+          "minutes": 16
+        },
+        {
+          "date": "2026-11-16",
+          "points": 16,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-14",
+          "points": 16,
+          "minutes": 24
+        },
+        {
+          "date": "2026-11-13",
+          "points": 4,
+          "minutes": 15
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Relevant season averages only where separately sourced; no calibration of historical hit rate."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete season split into home and road results was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual recent head to head scoring outcomes against this opponent not independently found."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise defense by player position and same-week changes not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual starting defensive matchup not verified before confirmed starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed team injury context, but no game participation guarantee inferred from not being listed out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative published minutes projection, only actual historical logged minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent minutes and reported role used as limited role indicator."
+      },
+      "market": {
+        "points_line": 13.5,
+        "over_odd": 1.8696,
+        "under_odd": 1.9009,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/tre-jones"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": true,
+        "reason": "Three of last five below 13.5, five-game average around 11.6 and season mean around 10.9; assists and low usage are important. This is a historical statistical lean rather than a proven predictive probability.",
+        "risk": "Starting/bench minutes vary 15-25 and opportunities against Denver could exceed recent usage. Normal game-level randomness remains substantial."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Patrick Williams",
+      "player_id": "betsharp:2026-11-22:0038",
+      "score": 71,
+      "confidence": 66,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identity and game schedule checked, NBA/CBS dated player logs examined; absent entries left unverified; no fabrication of player performance."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/patrick-williams",
+        "https://www.nba.com/player/1630172/patrick-williams/profile"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 6,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-14",
+          "points": 14,
+          "minutes": 26
+        },
+        {
+          "date": "2026-11-13",
+          "points": 13,
+          "minutes": 24
+        },
+        {
+          "date": "2026-11-11",
+          "points": 9,
+          "minutes": 28
+        },
+        {
+          "date": "2026-11-08",
+          "points": 7,
+          "minutes": 25
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Relevant season averages only where separately sourced; no calibration of historical hit rate."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete season split into home and road results was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual recent head to head scoring outcomes against this opponent not independently found."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise defense by player position and same-week changes not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual starting defensive matchup not verified before confirmed starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed team injury context, but no game participation guarantee inferred from not being listed out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative published minutes projection, only actual historical logged minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent minutes and reported role used as limited role indicator."
+      },
+      "market": {
+        "points_line": 7.5,
+        "over_odd": 1.8696,
+        "under_odd": 1.9009,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/patrick-williams"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Recent scores 6,14,13,9,7 give two unders at 7.5; season baseline near seven but minutes generally 23-28. This is a historical statistical lean rather than a proven predictive probability.",
+        "risk": "Potential lineups and injuries can shift low-volume scoring. Normal game-level randomness remains substantial."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Dyson Daniels",
+      "player_id": "betsharp:2026-11-22:0044",
+      "score": 68,
+      "confidence": 66,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identity and game schedule checked, NBA/CBS dated player logs examined; absent entries left unverified; no fabrication of player performance."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/dyson-daniels",
+        "https://www.nba.com/player/1630700"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 11,
+          "minutes": 35
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Relevant season averages only where separately sourced; no calibration of historical hit rate."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete season split into home and road results was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual recent head to head scoring outcomes against this opponent not independently found."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise defense by player position and same-week changes not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual starting defensive matchup not verified before confirmed starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed team injury context, but no game participation guarantee inferred from not being listed out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative published minutes projection, only actual historical logged minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent minutes and reported role used as limited role indicator."
+      },
+      "market": {
+        "points_line": 10.5,
+        "over_odd": 1.8403,
+        "under_odd": 1.9346,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/dyson-daniels"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Last-five average reported near 9.2 and season 9.6 versus 10.5, while confirmed Nov20 produced 11 in 35 minutes. This is a historical statistical lean rather than a proven predictive probability.",
+        "risk": "Heavy minutes, rebounding opportunities and Atlanta rotation could raise points. Normal game-level randomness remains substantial."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Ausar Thompson",
+      "player_id": "betsharp:2026-11-22:0041",
+      "score": 66,
+      "confidence": 66,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identity and game schedule checked, NBA/CBS dated player logs examined; absent entries left unverified; no fabrication of player performance."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/ausar-thompson",
+        "https://www.nba.com/player/1641709"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Relevant season averages only where separately sourced; no calibration of historical hit rate."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete season split into home and road results was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual recent head to head scoring outcomes against this opponent not independently found."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise defense by player position and same-week changes not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual starting defensive matchup not verified before confirmed starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed team injury context, but no game participation guarantee inferred from not being listed out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative published minutes projection, only actual historical logged minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent minutes and reported role used as limited role indicator."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.8403,
+        "under_odd": 1.9174,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/ausar-thompson"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Season scoring baseline near 10.6 versus 11.5 and latest five mean near 12.8 make the market finely balanced. This is a historical statistical lean rather than a proven predictive probability.",
+        "risk": "Poor free throw or changing Detroit workload can shift scoring; dated last-five log not fully verified. Normal game-level randomness remains substantial."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Aaron Wiggins",
+      "player_id": "betsharp:2026-11-22:0040",
+      "score": 61,
+      "confidence": 59,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identity and game schedule checked, NBA/CBS dated player logs examined; absent entries left unverified; no fabrication of player performance."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/aaron-wiggins",
+        "https://www.nba.com/player/1630598"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 19,
+          "minutes": 34
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Relevant season averages only where separately sourced; no calibration of historical hit rate."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete season split into home and road results was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual recent head to head scoring outcomes against this opponent not independently found."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise defense by player position and same-week changes not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual starting defensive matchup not verified before confirmed starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed team injury context, but no game participation guarantee inferred from not being listed out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative published minutes projection, only actual historical logged minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent minutes and reported role used as limited role indicator."
+      },
+      "market": {
+        "points_line": 13.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8547,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/aaron-wiggins"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Wiggins posted 19 in latest verified outing against 13.5 line; reported last-five mean 12.8 implies mixed outcomes, so moderate under lean is not robust. This is a historical statistical lean rather than a proven predictive probability.",
+        "risk": "Increased minutes with injury-affected Atlanta rotation can yield more points. Normal game-level randomness remains substantial."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Cade Cunningham",
+      "player_id": "betsharp:2026-11-22:0042",
+      "score": 58,
+      "confidence": 60,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identity and game schedule checked, NBA/CBS dated player logs examined; absent entries left unverified; no fabrication of player performance."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/cade-cunningham",
+        "https://www.nba.com/player/1630595"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 23,
+          "minutes": 36
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Relevant season averages only where separately sourced; no calibration of historical hit rate."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete season split into home and road results was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual recent head to head scoring outcomes against this opponent not independently found."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise defense by player position and same-week changes not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual starting defensive matchup not verified before confirmed starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed team injury context, but no game participation guarantee inferred from not being listed out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative published minutes projection, only actual historical logged minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent minutes and reported role used as limited role indicator."
+      },
+      "market": {
+        "points_line": 25.5,
+        "over_odd": 1.8333,
+        "under_odd": 1.9346,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/cade-cunningham"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Cunningham logged 23 points in latest verified game; 25.5 line is demanding but high star usage leads substantial tail risk. This is a historical statistical lean rather than a proven predictive probability.",
+        "risk": "His scoring volume and Atlanta pace make an over entirely plausible. Normal game-level randomness remains substantial."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Daniss Jenkins",
+      "player_id": "betsharp:2026-11-22:0043",
+      "score": 53,
+      "confidence": 51,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identity and game schedule checked, NBA/CBS dated player logs examined; absent entries left unverified; no fabrication of player performance."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/daniss-jenkins",
+        "https://www.nba.com/player/1642450/daniss-jenkins"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 14,
+          "minutes": 39
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Relevant season averages only where separately sourced; no calibration of historical hit rate."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete season split into home and road results was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual recent head to head scoring outcomes against this opponent not independently found."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise defense by player position and same-week changes not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual starting defensive matchup not verified before confirmed starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed team injury context, but no game participation guarantee inferred from not being listed out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative published minutes projection, only actual historical logged minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent minutes and reported role used as limited role indicator."
+      },
+      "market": {
+        "points_line": 16.5,
+        "over_odd": 1.9901,
+        "under_odd": 1.7937,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/daniss-jenkins"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Jenkins recorded 14 points on Nov20 in 39 minutes under 16.5; season reported 14.3, but one game insufficient for reliable inference. This is a historical statistical lean rather than a proven predictive probability.",
+        "risk": "Recent expanded minutes could lead more shots and quick improvement in efficiency. Normal game-level randomness remains substantial."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Isaiah Joe",
+      "player_id": "betsharp:2026-11-22:0045",
+      "score": 48,
+      "confidence": 46,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identity and game schedule checked, NBA/CBS dated player logs examined; absent entries left unverified; no fabrication of player performance."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/isaiah-joe",
+        "https://www.nba.com/player/1630198"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 11,
+          "minutes": 16
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Relevant season averages only where separately sourced; no calibration of historical hit rate."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete season split into home and road results was not independently retrieved."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual recent head to head scoring outcomes against this opponent not independently found."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise defense by player position and same-week changes not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual starting defensive matchup not verified before confirmed starting fives."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed team injury context, but no game participation guarantee inferred from not being listed out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative published minutes projection, only actual historical logged minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent minutes and reported role used as limited role indicator."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.9615,
+        "under_odd": 1.813,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/isaiah-joe"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Latest verified 11 points in 16 minutes slightly above 9.5; limited evidence supports only a low-confidence under tendency. This is a historical statistical lean rather than a proven predictive probability.",
+        "risk": "High-variance shooting and uncertain 2026 team role can overturn this lean. Normal game-level randomness remains substantial."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "3112335",
+    "4395626"
+  ],
+  "selection_reason": "All nine source players reviewed, Jokić OVER 25.5 is backed by 4/5 recent scores clearing the line with stable minutes and Tre Jones UNDER 13.5 is backed by 3/5 recent unders plus lower season production. Original DK market, ESPN athlete and game identity checked; health and defensive uncertainty acknowledged. No numerical probability fabricated.",
+  "notes": "Full dated L5 for other players unavailable; not_verified fields and lower confidence used instead of inventing evidence."
+}
