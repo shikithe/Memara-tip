@@ -61,10 +61,16 @@ def settle(published, snapshot):
             return False
         threshold = {"3+":3, "OVER 2.5":3, "O2.5":3,
                      "2+":2, "OVER 1.5":2, "O1.5":2}.get(str(match.get("pick","")).strip().upper())
-        if threshold is None:
+        pick = str(match.get("pick","")).strip().upper()
+        if threshold is None and pick != "GG":
             return False
         parts = str(rec.get("score","")).split(":")
-        return len(parts)==2 and all(x.isdigit() for x in parts) and sum(map(int,parts))>=threshold
+        if len(parts)!=2 or not all(x.isdigit() for x in parts):
+            return False
+        goals = list(map(int,parts))
+        if pick == "GG":
+            return all(goal > 0 for goal in goals)
+        return sum(goals)>=threshold
 
     for ticket in original.get("tickets",[]):
         if ticket.get("status") not in ("objavljen","aktivan","dobitan","izgubljen"):
