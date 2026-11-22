@@ -1,8 +1,9 @@
-name: NBA 10 — ready feedback 18:10 Sarajevo
+name: NBA 10 — readiness fallback after daily capture
 on:
   schedule:
-    # 18:10 Europe/Sarajevo: UTC 16:20 (summer), 17:20 (winter).
-    - cron: '10 16,17 * * *'
+    # UTC summer 16:15/16:35/16:50, winter 17:15/17:35/17:50.
+    # Backups; main collector writes feedback atomically after ten-list creation.
+    - cron: '15,35,50 16,17 * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -30,7 +31,7 @@ jobs:
           from datetime import datetime
           from zoneinfo import ZoneInfo
           now=datetime.now(ZoneInfo("Europe/Sarajevo"))
-          run=os.environ["EVENT_NAME"]=="workflow_dispatch" or (now.hour==18 and now.minute>=10 and now.minute<55)
+          run=os.environ["EVENT_NAME"]=="workflow_dispatch" or (now.hour==18 or (now.hour==19 and now.minute<30))
           with open(os.environ["GITHUB_OUTPUT"],"a") as f:
               f.write("run="+str(run).lower()+"\n")
           print("READY_FEEDBACK_GATE",now.isoformat(),run)
