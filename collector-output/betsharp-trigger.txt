@@ -1,1 +1,1 @@
-Manual retry requested 2026-11-22 18:10 Europe/Berlin: refresh BetSharp points offers and regenerate NBA 10 groups. Do not touch published tickets.
+2026-11-22 shared BetSharp NBA C + system 10: refresh canonical points snapshot and ten lists after retry workflow patch.
