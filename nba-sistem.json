@@ -4413,6 +4413,172 @@
       "bank_end": 924.92,
       "bank_profit": -65.92,
       "settled_at_utc": "2026-11-22T08:50:17.083596+00:00"
+    },
+    {
+      "id": "nba-2026-11-22",
+      "date": "2026-11-22",
+      "bank_start": 924.92,
+      "status": "published",
+      "tickets": [
+        {
+          "id": "1",
+          "stake": 9.25,
+          "status": "pending",
+          "total_odd": 3.4891,
+          "potential_payout": 32.27,
+          "legs": [
+            {
+              "player": "Draymond Green",
+              "team": "GS",
+              "opponent": "BOS",
+              "pick": "under",
+              "points_line": 4.5,
+              "odd": 1.9174,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/draymond-green",
+              "espn_event_id": "401910035",
+              "player_id": "6589",
+              "start_utc": "2026-11-23T01:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-18",
+                    "points": 3,
+                    "minutes": 23
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 2,
+                    "minutes": 25
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 4,
+                    "minutes": 16
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 7,
+                    "minutes": 27
+                  },
+                  {
+                    "date": "2026-11-09",
+                    "points": 2,
+                    "minutes": 21
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Reliable five individual head-to-head scoring logs versus this opponent not independently matched."
+                },
+                "opponent_defense": {
+                  "status": "partially_verified",
+                  "note": "Boston overall defense rated third by available season report; player-position defensive coverage not individually verified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Starting defensive assignments and direct defender for this game not verified."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Missed 19 November with right elbow management; not listed among Golden State absences in NBA report 22 November 11 AM ET."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No independently sourced official minute projection; previous minutes recorded in five_game_log."
+                },
+                "scout_score": 87,
+                "scout_note": "Draymond averaged 3.2 points in 13 played games and went under 4.5 points in 11 of 13; last five scoring games were 3,2,4,7,2. Boston has a strong team defense, but Curry's absence can redistribute offensive usage. Selected side cleared 4/5 of recent played games.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-1.json"
+              }
+            },
+            {
+              "player": "De'Anthony Melton",
+              "team": "GS",
+              "opponent": "BOS",
+              "pick": "under",
+              "points_line": 10.5,
+              "odd": 1.8197,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/deanthony-melton",
+              "espn_event_id": "401910035",
+              "player_id": "4066436",
+              "start_utc": "2026-11-23T01:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-19",
+                    "points": 9,
+                    "minutes": 25
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 0,
+                    "minutes": 19
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 8,
+                    "minutes": 21
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 8,
+                    "minutes": 18
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 11,
+                    "minutes": 25
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Reliable five individual head-to-head scoring logs versus this opponent not independently matched."
+                },
+                "opponent_defense": {
+                  "status": "partially_verified",
+                  "note": "Boston overall defense rated third by available season report; player-position defensive coverage not individually verified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Starting defensive assignments and direct defender for this game not verified."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Melton is absent from Golden State's listed unavailable players in the official 22 November injury report; not a guarantee of court time."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No independently sourced official minute projection; previous minutes recorded in five_game_log."
+                },
+                "scout_score": 80,
+                "scout_note": "Melton was under 10.5 points in four of his last five games: 9,0,8,8,11. His recent shooting and minutes have been volatile; Boston's strong defense favors a cautious under, although Curry being unavailable can increase responsibility. Selected side cleared 4/5 of recent played games.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-1.json"
+              }
+            }
+          ]
+        }
+      ],
+      "scout": {
+        "groups_completed": [
+          1
+        ],
+        "offered": 88,
+        "total_groups": 10,
+        "group_number": 1,
+        "group_range": "1-9",
+        "group_selected": [
+          "Draymond Green",
+          "De'Anthony Melton"
+        ],
+        "audit_paths": {
+          "1": "collector-output/nba-system-scout-2026-11-22-group-1.json"
+        },
+        "selection_method": "full_ranked_scout"
+      }
     }
   ]
 }
