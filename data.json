@@ -1,12 +1,12 @@
 {
   "date": "2026-11-22",
   "published": "22.11.2026. u 12:54 (Europe/Sarajevo)",
-  "publication_type": "independent_ai_espn_only_github_publisher",
+  "publication_type": "independent_ai_approved_github_nba_c",
   "bank_before": 241.6,
-  "daily_stake": 24.16,
-  "bank_after": 217.44,
-  "bank_after_stakes": 217.44,
-  "provisional": true,
+  "daily_stake": 28.99,
+  "bank_after": 212.61,
+  "bank_after_stakes": 212.61,
+  "provisional": false,
   "settled": false,
   "odds_verified": false,
   "tickets": [
@@ -79,21 +79,215 @@
       "stake": 7.25,
       "status": "objavljen",
       "payout": 0
+    },
+    {
+      "id": "C",
+      "label": "NBA · DVA IGRAČA",
+      "matches": [
+        {
+          "fixture_id": "espn:basketball:nba:401910029:4684742",
+          "event_id": "401910029",
+          "espn_event_id": "401910029",
+          "player_id": "4684742",
+          "player": "Ausar Thompson",
+          "home": "Detroit Pistons",
+          "away": "Atlanta Hawks",
+          "team": "Detroit Pistons",
+          "opponent": "Atlanta Hawks",
+          "league": "nba",
+          "sport": "basketball",
+          "datetime": "2026-11-22T20:30:00+00:00",
+          "start_utc": "2026-11-22T20:30:00+00:00",
+          "market": "player_points",
+          "points_line": 11.5,
+          "pick": "over",
+          "market_name": "Više od 11.5 poena",
+          "odd": 1.8403,
+          "bookmaker": "DraftKings",
+          "quote_source_url": "https://betsharp.com/nba/player/ausar-thompson",
+          "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+          "quote_timestamp_verified": false
+        },
+        {
+          "fixture_id": "espn:basketball:nba:401910030:4222252",
+          "event_id": "401910030",
+          "espn_event_id": "401910030",
+          "player_id": "4222252",
+          "player": "Isaiah Hartenstein",
+          "home": "Oklahoma City Thunder",
+          "away": "Miami Heat",
+          "team": "Oklahoma City Thunder",
+          "opponent": "Miami Heat",
+          "league": "nba",
+          "sport": "basketball",
+          "datetime": "2026-11-22T23:00:00+00:00",
+          "start_utc": "2026-11-22T23:00:00+00:00",
+          "market": "player_points",
+          "points_line": 9.5,
+          "pick": "under",
+          "market_name": "Manje od 9.5 poena",
+          "odd": 1.885,
+          "bookmaker": "DraftKings",
+          "quote_source_url": "https://betsharp.com/nba/player/isaiah-hartenstein",
+          "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+          "quote_timestamp_verified": false
+        }
+      ],
+      "odds": 3.47,
+      "stake": 4.83,
+      "status": "objavljen",
+      "payout": 0,
+      "analysis": "Izričito odobren RUČNI C 22.11. sa ulogom 2% početne dnevne banke 241,60 € = 4,83 €, izvan već potrošenog 10% budžeta; samo virtuelna evidencija. Ausar Thompson OVER 11,5: zadnjih pet 13/10/14/10/17, prosjek 12,8, 3/5 preko; sezonskih 10,6 ispod granice je glavni rizik. Isaiah Hartenstein UNDER 9,5: zadnjih pet 5/6/3/21/20, 3/5 ispod; prethodnih deset 8/10 ispod, prosjek 7,4; dvadeset+ poena u dva susreta pokazuje rizik. Kvote iz jedne konzistentne DK kolone svježeg BetSharp prikaza, samo indikativne; direktni matchup/H2H nije dovoljno potvrđen. Od sutra redovna rezerva C 1,5% banke.",
+      "scout_analysis": {
+        "date": "2026-11-22",
+        "intro": "Ručni NBA C Scout, posebna dozvola korisnika za izuzetni ulog 2% banke. Dva analizirana igrača, ne tvrdi se da je detaljno istraženo svih 90 igrača u ponudi.",
+        "players": [
+          {
+            "id": "4684742",
+            "name": "Ausar Thompson",
+            "team": "Detroit Pistons",
+            "opponent": "Atlanta Hawks",
+            "pick": "over",
+            "line": 11.5,
+            "odd": 1.8403,
+            "games": [
+              [
+                "20.11.",
+                13,
+                33
+              ],
+              [
+                "18.11.",
+                10,
+                34
+              ],
+              [
+                "17.11.",
+                14,
+                29
+              ],
+              [
+                "14.11.",
+                10,
+                18
+              ],
+              [
+                "12.11.",
+                17,
+                43
+              ]
+            ],
+            "h2h": [],
+            "last10": "4/10 OVER prema Reko; kompletni log nije nezavisno obrađen",
+            "pros": [
+              "Posljednjih pet: 13, 10, 14, 10, 17 poena, prosjek 12,8.",
+              "Granica 11,5 pređena u 3 od 5 posljednjih nastupa.",
+              "U posljednja tri nastupa igrao je 29, 34 i 33 minute."
+            ],
+            "risks": [
+              "Sezonski prosjek 10,6 poena niži je od granice 11,5.",
+              "Samo 4/10 preko prema drugom izvoru, pa L5 porast može biti kratkotrajan.",
+              "Direktni čuvar i H2H protiv Hawksa nisu potvrđeni."
+            ],
+            "assessment": "Blaga prednost trenutnog L5 trenda, ali sezonski profil i duži niz ne potvrđuju jak edge; povišen rizik.",
+            "sources": [
+              [
+                "Nedavna forma i minute",
+                "https://www.statiqsports.com/nba/ausar-thompson/last-5-games"
+              ],
+              [
+                "Sezonski prosjek i L10",
+                "https://reko.bet/nba/players/ausar-thompson-30962"
+              ],
+              [
+                "BetSharp kvote",
+                "https://betsharp.com/nba/player/ausar-thompson"
+              ]
+            ]
+          },
+          {
+            "id": "4222252",
+            "name": "Isaiah Hartenstein",
+            "team": "Oklahoma City Thunder",
+            "opponent": "Miami Heat",
+            "pick": "under",
+            "line": 9.5,
+            "odd": 1.885,
+            "games": [
+              [
+                "20.11.",
+                5,
+                28
+              ],
+              [
+                "18.11.",
+                6,
+                27
+              ],
+              [
+                "15.11.",
+                3,
+                18
+              ],
+              [
+                "13.11.",
+                21,
+                30
+              ],
+              [
+                "11.11.",
+                20,
+                34
+              ]
+            ],
+            "h2h": [],
+            "last10": "8/10 UNDER 9,5 poena",
+            "pros": [
+              "Posljednjih pet: 5, 6, 3, 21, 20; 3/5 ispod granice 9,5.",
+              "U posljednjih deset mečeva postigao je u prosjeku 7,4 poena.",
+              "U 8/10 posljednjih odigranih utakmica ostao je ispod 9,5."
+            ],
+            "risks": [
+              "Dva od posljednjih pet mečeva postigao je 20 ili više poena.",
+              "Na terenu može dobiti šansu za lake poene iz reketa i drugog napada.",
+              "Direktni čuvar protiv Heata i H2H nisu potvrđeni."
+            ],
+            "assessment": "UNDER je oslonjen na 8/10 ispod granice i nizak prosjek; no mali prag lako prelazi u večeri s većim brojem šuteva.",
+            "sources": [
+              [
+                "Poeni i minutaža zadnjih 10",
+                "https://nbahouse.net/props/isaiah-hartenstein"
+              ],
+              [
+                "BetSharp kvote",
+                "https://betsharp.com/nba/player/isaiah-hartenstein"
+              ],
+              [
+                "Provjera statusa",
+                "https://www.fsroundup.com/nba-player/isaiah-hartenstein"
+              ]
+            ]
+          }
+        ],
+        "conclusion": "Ausar Thompson više od 11,5 @1,8403 i Isaiah Hartenstein manje od 9,5 @1,885; ukupna indikativna kvota 3,47, virtuelni ulog 4,83 €. Posebni današnji budžetski izuzetak.",
+        "caution": "Kvote su iz uporedne javne BetSharp DK kolone, nisu direktno potvrđene kod DraftKings-a; H2H i čuvari nisu potvrđeni. Nije izvršen potpuni TOP20-TOP10-TOP5 proces na svima iz ponude."
+      }
     }
   ],
   "total_payout": 0.0,
   "net_change": null,
-  "analysis_status": "Prethodni tiket je u arhivi. Današnji tiketi još nisu objavljeni.",
+  "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
   "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",
   "published_at_utc": "2026-11-22T11:54:52.517286+00:00",
   "daily_budget": 24.16,
   "pending_ticket_statuses": {
     "A": "objavljen",
-    "B": "objavljen"
+    "B": "objavljen",
+    "C": "objavljen"
   },
   "pending_ticket_reasons": {
     "A": "",
     "B": ""
   },
-  "odds_verification_note": "AI-provided selections are reproduced verbatim; GitHub does not check ESPN, markets or quotes."
+  "odds_verification_note": "AI selected publicly displayed bookmaker comparison quotes; not independently refreshed by GitHub or confirmed in individual bookmaker accounts."
 }
