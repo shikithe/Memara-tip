@@ -1,0 +1,709 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-22",
+  "group_number": 4,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Joshua Giddey",
+      "player_id": "betsharp:2026-11-22:0035",
+      "score": 87,
+      "confidence": 81,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete and fixture, secondary NBA.com, CBS and StatMuse date-specific logs for group players. Missing evidence remains not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/joshua-giddey",
+        "https://www.nba.com/player/1630581"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 2,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-18",
+          "points": 18,
+          "minutes": 28
+        },
+        {
+          "date": "2026-11-16",
+          "points": 4,
+          "minutes": 24
+        },
+        {
+          "date": "2026-11-14",
+          "points": 8,
+          "minutes": 26
+        },
+        {
+          "date": "2026-11-13",
+          "points": 15,
+          "minutes": 39
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only supported mean or sampled verified rows included"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full season-scoped home versus away scoring split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five confirmed opponent head to head box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional efficiency not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct man-to-man defender not confirmed before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Pregame team and NBA injury context reviewed but no final lineup guarantees."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Unverified future minute projection; game log contains available actual minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role based on recent verified minutes and team reporting."
+      },
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.8264,
+        "under_odd": 1.9434,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/joshua-giddey"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calculated",
+        "availability_confirmed": true,
+        "reason": "Three of five recent games under 12.5, including 2,4 and 8, with recent mean 9.4; role involves playmaking more than shot volume. Analysis based on the documented source's dated actual numbers; no calibrated predictive probability.",
+        "risk": "Minutes and usage can rise against Denver. One game remains volatile and available records do not eliminate uncertainty."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Cameron Johnson",
+      "player_id": "3138196",
+      "score": 82,
+      "confidence": 74,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete and fixture, secondary NBA.com, CBS and StatMuse date-specific logs for group players. Missing evidence remains not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/cameron-johnson",
+        "https://www.statmuse.com/nba/player/cameron-johnson-9985/game-log"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 19,
+          "minutes": 29
+        },
+        {
+          "date": "2026-11-18",
+          "points": 8,
+          "minutes": 26
+        },
+        {
+          "date": "2026-11-16",
+          "points": 9,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-14",
+          "points": 12,
+          "minutes": 31
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only supported mean or sampled verified rows included"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full season-scoped home versus away scoring split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five confirmed opponent head to head box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional efficiency not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct man-to-man defender not confirmed before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Pregame team and NBA injury context reviewed but no final lineup guarantees."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Unverified future minute projection; game log contains available actual minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role based on recent verified minutes and team reporting."
+      },
+      "market": {
+        "points_line": 13.5,
+        "over_odd": 1.9434,
+        "under_odd": 1.8333,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/cameron-johnson"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calculated",
+        "availability_confirmed": true,
+        "reason": "Three of four checked scoring games below 13.5, season baseline around 12.1 points; moderate minutes. Analysis based on the documented source's dated actual numbers; no calibrated predictive probability.",
+        "risk": "Recent 19-point performance indicates real over risk. One game remains volatile and available records do not eliminate uncertainty."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "DeMar DeRozan",
+      "player_id": "betsharp:2026-11-22:0031",
+      "score": 73,
+      "confidence": 66,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete and fixture, secondary NBA.com, CBS and StatMuse date-specific logs for group players. Missing evidence remains not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/demar-derozan",
+        "https://www.nba.com/nuggets/player/201942/demar_derozan"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 15,
+          "minutes": 22
+        },
+        {
+          "date": "2026-11-14",
+          "points": 9,
+          "minutes": 24
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only supported mean or sampled verified rows included"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full season-scoped home versus away scoring split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five confirmed opponent head to head box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional efficiency not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct man-to-man defender not confirmed before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Pregame team and NBA injury context reviewed but no final lineup guarantees."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Unverified future minute projection; game log contains available actual minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role based on recent verified minutes and team reporting."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.9091,
+        "under_odd": 1.8621,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/demar-derozan"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calculated",
+        "availability_confirmed": false,
+        "reason": "Season scoring around 10.3 is below 11.5, though two verified game samples show scoring fluctuations. Analysis based on the documented source's dated actual numbers; no calibrated predictive probability.",
+        "risk": "Bench minutes and shot volume may change; last five incomplete. One game remains volatile and available records do not eliminate uncertainty."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Christian Braun",
+      "player_id": "betsharp:2026-11-22:0030",
+      "score": 69,
+      "confidence": 63,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete and fixture, secondary NBA.com, CBS and StatMuse date-specific logs for group players. Missing evidence remains not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/christian-braun",
+        "https://www.nba.com/player/1631128"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 15,
+          "minutes": 35
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only supported mean or sampled verified rows included"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full season-scoped home versus away scoring split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five confirmed opponent head to head box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional efficiency not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct man-to-man defender not confirmed before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Pregame team and NBA injury context reviewed but no final lineup guarantees."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Unverified future minute projection; game log contains available actual minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role based on recent verified minutes and team reporting."
+      },
+      "market": {
+        "points_line": 13.5,
+        "over_odd": 1.9709,
+        "under_odd": 1.8,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/christian-braun"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calculated",
+        "availability_confirmed": false,
+        "reason": "Season mean near 13.2 versus 13.5 line leaves a small under lean; single observed 15-point game not decisive. Analysis based on the documented source's dated actual numbers; no calibrated predictive probability.",
+        "risk": "High minutes and possible return to shooting rhythm. One game remains volatile and available records do not eliminate uncertainty."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Matas Buzelis",
+      "player_id": "betsharp:2026-11-22:0036",
+      "score": 64,
+      "confidence": 77,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete and fixture, secondary NBA.com, CBS and StatMuse date-specific logs for group players. Missing evidence remains not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/matas-buzelis",
+        "https://www.nba.com/player/1641824/matas-buzelis/profile"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 9,
+          "minutes": 25
+        },
+        {
+          "date": "2026-11-18",
+          "points": 25,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-16",
+          "points": 23,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-14",
+          "points": 18,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-13",
+          "points": 11,
+          "minutes": 29
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only supported mean or sampled verified rows included"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full season-scoped home versus away scoring split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five confirmed opponent head to head box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional efficiency not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct man-to-man defender not confirmed before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Pregame team and NBA injury context reviewed but no final lineup guarantees."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Unverified future minute projection; game log contains available actual minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role based on recent verified minutes and team reporting."
+      },
+      "market": {
+        "points_line": 16.5,
+        "over_odd": 1.8,
+        "under_odd": 1.9804,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/matas-buzelis"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calculated",
+        "availability_confirmed": false,
+        "reason": "Two of five last results below 16.5; despite season 14.7 average, his recent upswing weakens under position. Analysis based on the documented source's dated actual numbers; no calibrated predictive probability.",
+        "risk": "Strong three-point streak and 29-31 minute workload. One game remains volatile and available records do not eliminate uncertainty."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Isaac Okoro",
+      "player_id": "betsharp:2026-11-22:0032",
+      "score": 59,
+      "confidence": 49,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete and fixture, secondary NBA.com, CBS and StatMuse date-specific logs for group players. Missing evidence remains not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/isaac-okoro",
+        "https://www.nba.com/player/1630171/isaac-okoro"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-16",
+          "points": 13,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-13",
+          "points": 15,
+          "minutes": 41
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only supported mean or sampled verified rows included"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full season-scoped home versus away scoring split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five confirmed opponent head to head box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional efficiency not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct man-to-man defender not confirmed before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Pregame team and NBA injury context reviewed but no final lineup guarantees."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Unverified future minute projection; game log contains available actual minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role based on recent verified minutes and team reporting."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.8065,
+        "under_odd": 1.9709,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/isaac-okoro"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calculated",
+        "availability_confirmed": false,
+        "reason": "Last-ten average around 8.6 under 9.5 line, but both extracted recent scoring games exceeded it. Analysis based on the documented source's dated actual numbers; no calibrated predictive probability.",
+        "risk": "Uncertain current shot share and starting rotation. One game remains volatile and available records do not eliminate uncertainty."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Buddy Hield",
+      "player_id": "betsharp:2026-11-22:0028",
+      "score": 56,
+      "confidence": 46,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete and fixture, secondary NBA.com, CBS and StatMuse date-specific logs for group players. Missing evidence remains not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/buddy-hield",
+        "https://www.cbssports.com/nba/players/2019264/buddy-hield/game-log/"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 15,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-18",
+          "points": 11,
+          "minutes": 19
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only supported mean or sampled verified rows included"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full season-scoped home versus away scoring split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five confirmed opponent head to head box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional efficiency not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct man-to-man defender not confirmed before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Pregame team and NBA injury context reviewed but no final lineup guarantees."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Unverified future minute projection; game log contains available actual minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role based on recent verified minutes and team reporting."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.9346,
+        "under_odd": 1.8403,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/buddy-hield"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calculated",
+        "availability_confirmed": false,
+        "reason": "Two checked games 15 and 11 bracket the 11.5 line; there is insufficient consistent evidence for selection. Analysis based on the documented source's dated actual numbers; no calibrated predictive probability.",
+        "risk": "High-variance long distance shots and changing minutes. One game remains volatile and available records do not eliminate uncertainty."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Jalen Smith",
+      "player_id": "betsharp:2026-11-22:0033",
+      "score": 51,
+      "confidence": 32,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete and fixture, secondary NBA.com, CBS and StatMuse date-specific logs for group players. Missing evidence remains not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jalen-smith",
+        "https://www.nba.com/bulls/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only supported mean or sampled verified rows included"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full season-scoped home versus away scoring split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five confirmed opponent head to head box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional efficiency not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct man-to-man defender not confirmed before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Pregame team and NBA injury context reviewed but no final lineup guarantees."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Unverified future minute projection; game log contains available actual minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role based on recent verified minutes and team reporting."
+      },
+      "market": {
+        "points_line": 13.5,
+        "over_odd": 1.9091,
+        "under_odd": 1.8621,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jalen-smith"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calculated",
+        "availability_confirmed": false,
+        "reason": "With 13.5 line, no reliable recent five games extracted, so this is a low-information lean only. Analysis based on the documented source's dated actual numbers; no calibrated predictive probability.",
+        "risk": "Frontcourt rotation and matchup minutes not verified. One game remains volatile and available records do not eliminate uncertainty."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Jamal Murray",
+      "player_id": "betsharp:2026-11-22:0034",
+      "score": 47,
+      "confidence": 36,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete and fixture, secondary NBA.com, CBS and StatMuse date-specific logs for group players. Missing evidence remains not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jamal-murray",
+        "https://www.nba.com/nuggets/"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 21,
+          "minutes": 38
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only supported mean or sampled verified rows included"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full season-scoped home versus away scoring split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five confirmed opponent head to head box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional efficiency not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct man-to-man defender not confirmed before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Pregame team and NBA injury context reviewed but no final lineup guarantees."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Unverified future minute projection; game log contains available actual minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role based on recent verified minutes and team reporting."
+      },
+      "market": {
+        "points_line": 23.5,
+        "over_odd": 1.9524,
+        "under_odd": 1.8197,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jamal-murray"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calculated",
+        "availability_confirmed": false,
+        "reason": "A verified 21-point game is under 23.5, but his high usage and missing full five-game data weaken forecast. Analysis based on the documented source's dated actual numbers; no calibrated predictive probability.",
+        "risk": "Scoring spikes against faster defenses are possible. One game remains volatile and available records do not eliminate uncertainty."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "betsharp:2026-11-22:0035",
+    "3138196"
+  ],
+  "selection_reason": "Complete group comparison ranks Joshua Giddey UNDER 12.5 and Cameron Johnson UNDER 13.5 highest on observed under counts and season baselines; all nine original members documented and weak evidence explicitly marked. Real identities, NBA game and fixed sportsbook offers verified but no sports guarantee.",
+  "notes": "No invented H2H, defender, missing box scores or precision probability."
+}
