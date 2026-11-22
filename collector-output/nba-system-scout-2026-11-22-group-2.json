@@ -1,0 +1,767 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-22",
+  "group_number": 2,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Payton Pritchard",
+      "player_id": "4066354",
+      "score": 88,
+      "confidence": 80,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN direct profiles and match date researched; NBA, CBS, StatMuse, team news checked secondarily. Confirmed rows only; unavailable rows omitted and matchups/defenders not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/payton-pritchard",
+        "https://www.statmuse.com/nba/player/payton-pritchard-10180/game-log",
+        "https://www.nba.com/game/bos-vs-gsw-0022600286"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-21",
+          "points": 9,
+          "minutes": 34
+        },
+        {
+          "date": "2026-11-18",
+          "points": 15,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-16",
+          "points": 21,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-15",
+          "points": 10,
+          "minutes": 19
+        },
+        {
+          "date": "2026-11-11",
+          "points": 14,
+          "minutes": 31
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_average": 13.8
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Latest full-season home versus away scoring split was not independently reconstructed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five verified direct player head-to-head scoring logs against this opponent not available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional defense and direct point prop impacts were not sufficiently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Likely one-to-one on-court defender cannot be established before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "reason": "Published injury previews reviewed; future court participation is not certain, even for players not listed as out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified official forward minute projection, rely only on dated realized minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "reason": "Role inferred from dated appearances and pregame NBA injury context only."
+      },
+      "market": {
+        "points_line": 15.5,
+        "over_odd": 1.885,
+        "under_odd": 1.885,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/payton-pritchard"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": true,
+        "reason": "Pritchard was under 15.5 in four of his last five (9,15,21,10,14) and averaged 13.4 season points; 15.5 is above observed typical output. Played 34 minutes in last game and is expected in the rotation.",
+        "risk": "Starting role and Tatum/White availability could change his offensive usage substantially; last five is small sample."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Cooper Flagg",
+      "player_id": "5041939",
+      "score": 84,
+      "confidence": 79,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN direct profiles and match date researched; NBA, CBS, StatMuse, team news checked secondarily. Confirmed rows only; unavailable rows omitted and matchups/defenders not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/cooper-flagg",
+        "https://www.cbssports.com/nba/players/29556534/cooper-flagg/game-log/",
+        "https://www.nba.com/game/dal-vs-uta-0022600284"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-21",
+          "points": 22,
+          "minutes": 36
+        },
+        {
+          "date": "2026-11-18",
+          "points": 33,
+          "minutes": 34
+        },
+        {
+          "date": "2026-11-15",
+          "points": 17,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-14",
+          "points": 18,
+          "minutes": 38
+        },
+        {
+          "date": "2026-11-12",
+          "points": 12,
+          "minutes": 27
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_average": 20.4
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Latest full-season home versus away scoring split was not independently reconstructed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five verified direct player head-to-head scoring logs against this opponent not available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional defense and direct point prop impacts were not sufficiently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Likely one-to-one on-court defender cannot be established before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "reason": "Published injury previews reviewed; future court participation is not certain, even for players not listed as out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified official forward minute projection, rely only on dated realized minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "reason": "Role inferred from dated appearances and pregame NBA injury context only."
+      },
+      "market": {
+        "points_line": 24.5,
+        "over_odd": 1.8772,
+        "under_odd": 1.9009,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/cooper-flagg"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": true,
+        "reason": "Flagg scored 22,33,17,18,12 in his last five: four below 24.5. Second game in two nights may make efficiency more volatile. However the season average near 24 makes the edge modest.",
+        "risk": "Utah has missing frontcourt defenders; softer defense can increase scoring and there is considerable star-usage variance."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Yaxel Lendeborg",
+      "player_id": "betsharp:2026-11-22:0013",
+      "score": 77,
+      "confidence": 72,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN direct profiles and match date researched; NBA, CBS, StatMuse, team news checked secondarily. Confirmed rows only; unavailable rows omitted and matchups/defenders not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/yaxel-lendeborg",
+        "https://www.statmuse.com/nba/player/yaxel-lendeborg-30683/game-log?seasonYear=2026",
+        "https://www.nba.com/game/bos-vs-gsw-0022600286"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 11,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-18",
+          "points": 13,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-16",
+          "points": 28,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-11",
+          "points": 25,
+          "minutes": 36
+        },
+        {
+          "date": "2026-11-09",
+          "points": 23,
+          "minutes": 27
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_average": 20
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Latest full-season home versus away scoring split was not independently reconstructed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five verified direct player head-to-head scoring logs against this opponent not available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional defense and direct point prop impacts were not sufficiently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Likely one-to-one on-court defender cannot be established before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "reason": "Published injury previews reviewed; future court participation is not certain, even for players not listed as out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified official forward minute projection, rely only on dated realized minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "reason": "Role inferred from dated appearances and pregame NBA injury context only."
+      },
+      "market": {
+        "points_line": 19.5,
+        "over_odd": 1.8264,
+        "under_odd": 1.9524,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/yaxel-lendeborg"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "At 19.5 points, Yaxel has only two unders in the last five confirmed outings (11,13,28,25,23), while season scoring around 19.6 is close to the line; candidate remains volatile.",
+        "risk": "No verified starting defensive assignment, season changes and increased usage with missing Warriors scorers could lead to over."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Sam Hauser",
+      "player_id": "betsharp:2026-11-22:0011",
+      "score": 73,
+      "confidence": 72,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN direct profiles and match date researched; NBA, CBS, StatMuse, team news checked secondarily. Confirmed rows only; unavailable rows omitted and matchups/defenders not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/sam-hauser",
+        "https://www.cbssports.com/nba/players/2268221/sam-hauser/game-log/",
+        "https://www.nba.com/game/bos-vs-gsw-0022600286"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-21",
+          "points": 14,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-18",
+          "points": 9,
+          "minutes": 17
+        },
+        {
+          "date": "2026-11-16",
+          "points": 12,
+          "minutes": 25
+        },
+        {
+          "date": "2026-11-15",
+          "points": 8,
+          "minutes": 11
+        },
+        {
+          "date": "2026-11-11",
+          "points": 8,
+          "minutes": 24
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_average": 10.2
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Latest full-season home versus away scoring split was not independently reconstructed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five verified direct player head-to-head scoring logs against this opponent not available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional defense and direct point prop impacts were not sufficiently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Likely one-to-one on-court defender cannot be established before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "reason": "Published injury previews reviewed; future court participation is not certain, even for players not listed as out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified official forward minute projection, rely only on dated realized minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "reason": "Role inferred from dated appearances and pregame NBA injury context only."
+      },
+      "market": {
+        "points_line": 8.5,
+        "over_odd": 1.9091,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/sam-hauser"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "Hauser logged 14,9,12,8,8 in last five, clearing 8.5 three times. Longer run average around 8.8 barely exceeds line, making this a weaker choice than top two.",
+        "risk": "External shooting percentages have high variance, and Celtics roster status plus rotation could adjust attempts."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Will Richard",
+      "player_id": "betsharp:2026-11-22:0012",
+      "score": 67,
+      "confidence": 63,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN direct profiles and match date researched; NBA, CBS, StatMuse, team news checked secondarily. Confirmed rows only; unavailable rows omitted and matchups/defenders not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/will-richard",
+        "https://www.nba.com/player/1642954/will-richard",
+        "https://www.nba.com/game/bos-vs-gsw-0022600286"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 15,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-18",
+          "points": 20,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-16",
+          "points": 11,
+          "minutes": 23
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_average": 15.3
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Latest full-season home versus away scoring split was not independently reconstructed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five verified direct player head-to-head scoring logs against this opponent not available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional defense and direct point prop impacts were not sufficiently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Likely one-to-one on-court defender cannot be established before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "reason": "Published injury previews reviewed; future court participation is not certain, even for players not listed as out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified official forward minute projection, rely only on dated realized minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "reason": "Role inferred from dated appearances and pregame NBA injury context only."
+      },
+      "market": {
+        "points_line": 7.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8547,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/will-richard"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "Richard has scored 15,20,11 in three recent confirmed outings all over 7.5. However small sample and unusually hot shooting provide insufficient certainty for top rank.",
+        "risk": "Shot-making and actual 23–27-minute rotation may shift with injuries and matchup; only three rows confirmed."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Brice Sensabaugh",
+      "player_id": "betsharp:2026-11-22:0015",
+      "score": 64,
+      "confidence": 69,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN direct profiles and match date researched; NBA, CBS, StatMuse, team news checked secondarily. Confirmed rows only; unavailable rows omitted and matchups/defenders not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/brice-sensabaugh",
+        "https://www.nba.com/player/1641729/brice-sensabaugh/profile",
+        "https://www.nba.com/game/bos-vs-gsw-0022600286"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 18,
+          "minutes": 26
+        },
+        {
+          "date": "2026-11-18",
+          "points": 8,
+          "minutes": 14
+        },
+        {
+          "date": "2026-11-17",
+          "points": 40,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-15",
+          "points": 14,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-13",
+          "points": 7,
+          "minutes": 27
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_average": 17.4
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Latest full-season home versus away scoring split was not independently reconstructed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five verified direct player head-to-head scoring logs against this opponent not available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional defense and direct point prop impacts were not sufficiently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Likely one-to-one on-court defender cannot be established before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "reason": "Published injury previews reviewed; future court participation is not certain, even for players not listed as out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified official forward minute projection, rely only on dated realized minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "reason": "Role inferred from dated appearances and pregame NBA injury context only."
+      },
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.8,
+        "under_odd": 1.9804,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/brice-sensabaugh"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "Sensabaugh scored 18,8,40,14,7 in his last five, exceeding 12.5 in three games but showing dramatic variance. Jazz absences may increase opportunity.",
+        "risk": "Minutes range 14 to 35 and recent anomalous 40-point game create very wide outcomes and uncertain shot volume."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Ace Bailey",
+      "player_id": "betsharp:2026-11-22:0014",
+      "score": 60,
+      "confidence": 51,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN direct profiles and match date researched; NBA, CBS, StatMuse, team news checked secondarily. Confirmed rows only; unavailable rows omitted and matchups/defenders not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/ace-bailey",
+        "https://www.nba.com/player/1642846/airious-bailey",
+        "https://www.nba.com/game/bos-vs-gsw-0022600286"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 19,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-17",
+          "points": 5,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-13",
+          "points": 21,
+          "minutes": 34
+        },
+        {
+          "date": "2026-11-11",
+          "points": 18,
+          "minutes": 31
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_average": 15.8
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Latest full-season home versus away scoring split was not independently reconstructed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five verified direct player head-to-head scoring logs against this opponent not available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional defense and direct point prop impacts were not sufficiently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Likely one-to-one on-court defender cannot be established before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "reason": "Published injury previews reviewed; future court participation is not certain, even for players not listed as out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified official forward minute projection, rely only on dated realized minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "reason": "Role inferred from dated appearances and pregame NBA injury context only."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.9434,
+        "under_odd": 1.8333,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/ace-bailey"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "Bailey recently mixed 19,5,21,18 points in four verifiable games. At 14.5 his unders are not especially strong and one or more recent games were unavailable, lowering confidence.",
+        "risk": "Jazz injuries may increase shot attempts and last few performances are unstable."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Daniel Gafford",
+      "player_id": "betsharp:2026-11-22:0018",
+      "score": 53,
+      "confidence": 38,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN direct profiles and match date researched; NBA, CBS, StatMuse, team news checked secondarily. Confirmed rows only; unavailable rows omitted and matchups/defenders not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/daniel-gafford",
+        "https://www.nba.com/player/1629655/daniel-gafford",
+        "https://www.nba.com/game/bos-vs-gsw-0022600286"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_average": null
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Latest full-season home versus away scoring split was not independently reconstructed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five verified direct player head-to-head scoring logs against this opponent not available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional defense and direct point prop impacts were not sufficiently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Likely one-to-one on-court defender cannot be established before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "reason": "Published injury previews reviewed; future court participation is not certain, even for players not listed as out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified official forward minute projection, rely only on dated realized minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "reason": "Role inferred from dated appearances and pregame NBA injury context only."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.9804,
+        "under_odd": 1.8,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/daniel-gafford"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "Gafford point line 9.5 is near routine center production, but game-to-game minutes, recent face injury and disputed source data make an outcome forecast unreliable.",
+        "risk": "Current health and whether he will receive starter minutes remain uncertain; no five-game rows independently reconstructed."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Caleb Martin",
+      "player_id": "betsharp:2026-11-22:0016",
+      "score": 49,
+      "confidence": 34,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN direct profiles and match date researched; NBA, CBS, StatMuse, team news checked secondarily. Confirmed rows only; unavailable rows omitted and matchups/defenders not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/caleb-martin",
+        "https://www.nba.com/player/1628997/undefined",
+        "https://www.nba.com/game/bos-vs-gsw-0022600286"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_average": null
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Latest full-season home versus away scoring split was not independently reconstructed."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five verified direct player head-to-head scoring logs against this opponent not available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent positional defense and direct point prop impacts were not sufficiently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Likely one-to-one on-court defender cannot be established before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "reason": "Published injury previews reviewed; future court participation is not certain, even for players not listed as out."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No verified official forward minute projection, rely only on dated realized minutes."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "reason": "Role inferred from dated appearances and pregame NBA injury context only."
+      },
+      "market": {
+        "points_line": 5.5,
+        "over_odd": 1.7812,
+        "under_odd": 2.01,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/caleb-martin"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "Martin's low 5.5 point line is reachable in typical rotation minutes, but the role and exact late-November scoring series are incompletely evidenced, so confidence is low.",
+        "risk": "Rotation uncertainty, potentially low minutes and unavailable verified latest match logs make this unsuitable for selection."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "4066354",
+    "5041939"
+  ],
+  "selection_reason": "All nine players reviewed using available ESPN profiles and game schedules, league/club injury context and secondary dated game logs. Pritchard UNDER 15.5 and Cooper Flagg UNDER 24.5 offer the strongest observed recent 4-of-5 under patterns with confirmed identities and available DraftKings offers; neither empirical rate is a verified predictive probability and both have significant injury/rotation caveats.",
+  "notes": "Nondisplayed five-game data were not fabricated. Actual line/odds snapshot frozen earlier. Selected participation not guaranteed; status inferred from currently published injury reports and game previews."
+}
