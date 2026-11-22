@@ -1,0 +1,696 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-22",
+  "group_number": 3,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Aaron Gordon",
+      "player_id": "3064290",
+      "score": 85,
+      "confidence": 81,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/player identity and NBA player logs attempted in original group order, then cross-checked CBS, league profiles and pregame NBA reporting; only independently sourced five-game entries retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/aaron-gordon",
+        "https://www.cbssports.com/nba/players/2135532/aaron-gordon/game-log/"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 18,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-18",
+          "points": 13,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-16",
+          "points": 11,
+          "minutes": 24
+        },
+        {
+          "date": "2026-11-14",
+          "points": 11,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-11",
+          "points": 9,
+          "minutes": 27
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Dated game logs used where available; missing season sections explicitly unverified."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full home-versus-away seasonal scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five direct player matchups against tonight's team were not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowances were not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender has not been confirmed by published starting assignments."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team injury reports and pregame availability reviewed, but lineup confirmation can still change."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative forward minutes projection; last-five actual minutes where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inference only based on available game logs and team injury context."
+      },
+      "market": {
+        "points_line": 13.5,
+        "over_odd": 1.8772,
+        "under_odd": 1.9091,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/aaron-gordon"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_estimated",
+        "availability_confirmed": true,
+        "reason": "Gordon scored 18,13,11,11,9 in his latest five (4/5 under 13.5). Season baseline 11.6 points and relatively moderate scoring volume support the under lean; he played 31 minutes on Nov 20.",
+        "risk": "Chicago's defense and Jokic playmaking can create unexpected easy baskets; his calf issue was mentioned earlier but he played the latest game."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Darryn Peterson",
+      "player_id": "5041955",
+      "score": 79,
+      "confidence": 76,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/player identity and NBA player logs attempted in original group order, then cross-checked CBS, league profiles and pregame NBA reporting; only independently sourced five-game entries retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/darryn-peterson",
+        "https://www.nba.com/player/1643408/darryn-peterson"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 20,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-18",
+          "points": 11,
+          "minutes": 19
+        },
+        {
+          "date": "2026-11-17",
+          "points": 13,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-15",
+          "points": 17,
+          "minutes": 34
+        },
+        {
+          "date": "2026-11-13",
+          "points": 28,
+          "minutes": 34
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Dated game logs used where available; missing season sections explicitly unverified."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full home-versus-away seasonal scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five direct player matchups against tonight's team were not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowances were not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender has not been confirmed by published starting assignments."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team injury reports and pregame availability reviewed, but lineup confirmation can still change."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative forward minutes projection; last-five actual minutes where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inference only based on available game logs and team injury context."
+      },
+      "market": {
+        "points_line": 18.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/darryn-peterson"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_estimated",
+        "availability_confirmed": true,
+        "reason": "Peterson scored 20,11,13,17,28 in last five; three under 18.5. Season average 16.7 and last-five average 17.8 indicate a modest under lean, although recent shot volume creates uncertainty.",
+        "risk": "Utah missing veteran scorers and Dallas defense may push his usage higher, so the underlying edge is weaker than Gordon."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Keyonte George",
+      "player_id": "betsharp:2026-11-22:0022",
+      "score": 71,
+      "confidence": 75,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/player identity and NBA player logs attempted in original group order, then cross-checked CBS, league profiles and pregame NBA reporting; only independently sourced five-game entries retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/keyonte-george",
+        "https://www.nba.com/player/1641718/keyonte-george"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 14,
+          "minutes": 36
+        },
+        {
+          "date": "2026-11-18",
+          "points": 30,
+          "minutes": 39
+        },
+        {
+          "date": "2026-11-17",
+          "points": 30,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-15",
+          "points": 13,
+          "minutes": 34
+        },
+        {
+          "date": "2026-11-13",
+          "points": 27,
+          "minutes": 38
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Dated game logs used where available; missing season sections explicitly unverified."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full home-versus-away seasonal scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five direct player matchups against tonight's team were not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowances were not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender has not been confirmed by published starting assignments."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team injury reports and pregame availability reviewed, but lineup confirmation can still change."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative forward minutes projection; last-five actual minutes where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inference only based on available game logs and team injury context."
+      },
+      "market": {
+        "points_line": 24.5,
+        "over_odd": 1.9091,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/keyonte-george"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_estimated",
+        "availability_confirmed": false,
+        "reason": "George produced 14,30,30,13,27 in five, below 24.5 only twice. Five-game average 22.8 is lower than the line but high-minute starter scoring role limits confidence in an under.",
+        "risk": "High-volume shooting and extensive 34-39-minute minutes create large scoring upside."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Jaxson Hayes",
+      "player_id": "betsharp:2026-11-22:0020",
+      "score": 67,
+      "confidence": 55,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/player identity and NBA player logs attempted in original group order, then cross-checked CBS, league profiles and pregame NBA reporting; only independently sourced five-game entries retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jaxson-hayes",
+        "https://www.nba.com/player/1629637/jaxson-hayes"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 18,
+          "minutes": 28
+        },
+        {
+          "date": "2026-11-18",
+          "points": 6,
+          "minutes": 25
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Dated game logs used where available; missing season sections explicitly unverified."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full home-versus-away seasonal scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five direct player matchups against tonight's team were not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowances were not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender has not been confirmed by published starting assignments."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team injury reports and pregame availability reviewed, but lineup confirmation can still change."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative forward minutes projection; last-five actual minutes where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inference only based on available game logs and team injury context."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.8065,
+        "under_odd": 1.9709,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jaxson-hayes"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_estimated",
+        "availability_confirmed": false,
+        "reason": "Hayes averages 9.3 season points near 9.5 line. Two verified recent outings of 18 and 6 and frontcourt absences suggest uncertain center minutes; lean under is not strongly evidenced.",
+        "risk": "He may start with Utah frontcourt injuries, making attempts and minutes substantially higher."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Kyrie Irving",
+      "player_id": "betsharp:2026-11-22:0023",
+      "score": 62,
+      "confidence": 50,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/player identity and NBA player logs attempted in original group order, then cross-checked CBS, league profiles and pregame NBA reporting; only independently sourced five-game entries retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/kyrie-irving",
+        "https://www.nba.com/player/202681"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-21",
+          "points": 25,
+          "minutes": 34
+        },
+        {
+          "date": "2026-11-18",
+          "points": 17,
+          "minutes": 29
+        },
+        {
+          "date": "2026-11-14",
+          "points": 34,
+          "minutes": 37
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Dated game logs used where available; missing season sections explicitly unverified."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full home-versus-away seasonal scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five direct player matchups against tonight's team were not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowances were not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender has not been confirmed by published starting assignments."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team injury reports and pregame availability reviewed, but lineup confirmation can still change."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative forward minutes projection; last-five actual minutes where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inference only based on available game logs and team injury context."
+      },
+      "market": {
+        "points_line": 23.5,
+        "over_odd": 1.9709,
+        "under_odd": 1.8065,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/kyrie-irving"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_estimated",
+        "availability_confirmed": false,
+        "reason": "Kyrie scores near 22.5 per game against 23.5 line, with sampled recent 25,17,34 showing variable production; not enough consistent recent unders for selection.",
+        "risk": "Utah's weak team defense and high-usage starting role make an over easily plausible; the full five log was not verified."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "P.J. Washington",
+      "player_id": "betsharp:2026-11-22:0025",
+      "score": 58,
+      "confidence": 42,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/player identity and NBA player logs attempted in original group order, then cross-checked CBS, league profiles and pregame NBA reporting; only independently sourced five-game entries retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/pj-washington",
+        "https://www.nba.com/mavs/news/mavericks-jazz-preview-heres-hoping-this-trip-is-better-than-the-last-one"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Dated game logs used where available; missing season sections explicitly unverified."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full home-versus-away seasonal scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five direct player matchups against tonight's team were not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowances were not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender has not been confirmed by published starting assignments."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team injury reports and pregame availability reviewed, but lineup confirmation can still change."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative forward minutes projection; last-five actual minutes where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inference only based on available game logs and team injury context."
+      },
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.8547,
+        "under_odd": 1.9174,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/pj-washington"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_estimated",
+        "availability_confirmed": false,
+        "reason": "Washington scored 26 against Utah on Nov 6, but the current 12.5 line cannot be responsibly projected from that matchup alone; current scoring game log remains incomplete.",
+        "risk": "Shoulder issue was noted in recent team preview, so both playing status and minute load remain uncertain."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Josh Green",
+      "player_id": "betsharp:2026-11-22:0021",
+      "score": 54,
+      "confidence": 38,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/player identity and NBA player logs attempted in original group order, then cross-checked CBS, league profiles and pregame NBA reporting; only independently sourced five-game entries retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/josh-green",
+        "https://www.nba.com/jazz/news/preview-utah-jazz-host-dallas-mavericks"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Dated game logs used where available; missing season sections explicitly unverified."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full home-versus-away seasonal scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five direct player matchups against tonight's team were not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowances were not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender has not been confirmed by published starting assignments."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team injury reports and pregame availability reviewed, but lineup confirmation can still change."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative forward minutes projection; last-five actual minutes where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inference only based on available game logs and team injury context."
+      },
+      "market": {
+        "points_line": 5.5,
+        "over_odd": 1.8621,
+        "under_odd": 1.9091,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/josh-green"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_estimated",
+        "availability_confirmed": false,
+        "reason": "Green has an unusually low 5.5 line; individual recent verified points minutes and position assignment unavailable for this evaluation; the under pick has low conviction.",
+        "risk": "Utah injuries and lineup changes can expand a wing role even with low historical scoring."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Naji Marshall",
+      "player_id": "betsharp:2026-11-22:0024",
+      "score": 51,
+      "confidence": 34,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/player identity and NBA player logs attempted in original group order, then cross-checked CBS, league profiles and pregame NBA reporting; only independently sourced five-game entries retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/naji-marshall",
+        "https://www.nba.com/mavs/news/mavericks-jazz-preview-heres-hoping-this-trip-is-better-than-the-last-one"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Dated game logs used where available; missing season sections explicitly unverified."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full home-versus-away seasonal scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five direct player matchups against tonight's team were not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowances were not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender has not been confirmed by published starting assignments."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team injury reports and pregame availability reviewed, but lineup confirmation can still change."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative forward minutes projection; last-five actual minutes where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inference only based on available game logs and team injury context."
+      },
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.9709,
+        "under_odd": 1.8065,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/naji-marshall"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_estimated",
+        "availability_confirmed": false,
+        "reason": "Marshall 12.5 points line was read from canonical market, but recent individual dated scores not independently verified, preventing a reliable side-based edge estimate.",
+        "risk": "Dallas wing rotation and injury situation may alter usage, making a low-confidence lean inadequate for selection."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Zaccharie Risacher",
+      "player_id": "betsharp:2026-11-22:0026",
+      "score": 43,
+      "confidence": 26,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN game/player identity and NBA player logs attempted in original group order, then cross-checked CBS, league profiles and pregame NBA reporting; only independently sourced five-game entries retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/zaccharie-risacher",
+        "https://www.nba.com/mavs/news/mavericks-jazz-preview-heres-hoping-this-trip-is-better-than-the-last-one"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Dated game logs used where available; missing season sections explicitly unverified."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Full home-versus-away seasonal scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five direct player matchups against tonight's team were not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowances were not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender has not been confirmed by published starting assignments."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team injury reports and pregame availability reviewed, but lineup confirmation can still change."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No authoritative forward minutes projection; last-five actual minutes where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inference only based on available game logs and team injury context."
+      },
+      "market": {
+        "points_line": 6.5,
+        "over_odd": 1.7874,
+        "under_odd": 2,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/zaccharie-risacher"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_estimated",
+        "availability_confirmed": false,
+        "reason": "Risacher has a 6.5 point DraftKings offer in the canonical capture, but current Dallas team role, participation and prior-five logs were not verified to the standard for selection.",
+        "risk": "Unconfirmed roster role and playing time make any assessment high risk; ESPN identity intentionally not fabricated."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "3064290",
+    "5041955"
+  ],
+  "selection_reason": "All nine source offers and available dated player stats reviewed in both ESPN and secondary passes. Gordon UNDER 13.5 has four of last five historical unders with minutes recorded; Peterson UNDER 18.5 has three of last five and averages 16.7 season points. Confidence limited by frontcourt injuries and Utah scoring usage, never a guaranteed predicted win.",
+  "notes": "Seasonal comparisons are historical and not calibrated outcome probabilities. Every missing matchup/H2H/lineup field is explicitly not_verified; current offer comes from frozen 22 Nov capture."
+}
