@@ -58,7 +58,7 @@ jobs:
 
       - name: Inspektor — trigger only the missing technical stage
         continue-on-error: true
-        if: steps.gate.outputs.enabled == 'true' && (steps.inspector.outputs.next_stage == 'espn' || steps.inspector.outputs.next_stage == 'tipsterarea' || steps.inspector.outputs.next_stage == 'scout_6of6')
+        if: steps.gate.outputs.enabled == 'true' && (steps.inspector.outputs.next_stage == 'espn' || steps.inspector.outputs.next_stage == 'tipsterarea' || steps.inspector.outputs.next_stage == 'history' || steps.inspector.outputs.next_stage == 'scout_6of6')
         env:
           INSPECTOR_DISPATCH_TOKEN: ${{ secrets.INSPECTOR_DISPATCH_TOKEN }}
           NEXT_STAGE: ${{ steps.inspector.outputs.next_stage }}
@@ -68,7 +68,7 @@ jobs:
           from datetime import datetime, time
           from zoneinfo import ZoneInfo
           stage=os.environ["NEXT_STAGE"]
-          workflows={"espn":"listasix-daily.yml","tipsterarea":"tipster-html-collector.yml",
+          workflows={"espn":"listasix-daily.yml","tipsterarea":"tipster-html-collector.yml",\n                     "history":"listasix-scout-history.yml",
                      "scout_6of6":"listasix-scout-six-markets.yml"}
           now=datetime.now(ZoneInfo("Europe/Sarajevo"))
           if not time(10,0) <= now.time().replace(tzinfo=None) <= time(12,15):
