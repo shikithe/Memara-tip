@@ -1,5 +1,11 @@
 name: Senzor A/B
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'inspektor_ab.py'
+      - 'test_inspektor_ab.py'
+      - '.github/workflows/check-ab-publication.yml'
   workflow_dispatch:
   schedule:
     # UTC covers both CET and CEST. Local Sarajevo gate below enforces 10:00–12:15.
