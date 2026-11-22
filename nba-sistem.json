@@ -3030,7 +3030,7 @@
               "espn_event_id": "401910025",
               "player_id": "4278049",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -3079,7 +3079,11 @@
                 "scout_score": 74,
                 "scout_note": "Četiri od pet posljednjih nastupa ispod 8,5 poena, L5 prosjek 6 i ograničena minutaža; UNDER 8,5 na sačuvanoj kvoti 1,9346.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-2.json"
-              }
+              },
+              "player_points": 0,
+              "game_state": "live",
+              "game_clock": "0.5",
+              "period": 1
             },
             {
               "player": "Caleb Martin",
@@ -3093,7 +3097,7 @@
               "espn_event_id": "401910025",
               "player_id": "3138160",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -3142,7 +3146,11 @@
                 "scout_score": 70,
                 "scout_note": "Četiri od posljednjih pet nastupa iznad granice 5,5 uz kvotu 1,7353; uprkos promjenljivoj minutaži linija je niska.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-2.json"
-              }
+              },
+              "player_points": 0,
+              "game_state": "live",
+              "game_clock": "0.5",
+              "period": 1
             }
           ]
         },
@@ -3165,7 +3173,7 @@
               "espn_event_id": "401910025",
               "player_id": "5254165",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -3214,7 +3222,11 @@
                 "scout_score": 75,
                 "scout_note": "OVER 9.5 pokriven u 4/5 nedavnih nastupa (7 15 12 14 11), niska ponuđena linija i dostupna NBA/ESPN identifikacija.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-3.json"
-              }
+              },
+              "player_points": 0,
+              "game_state": "live",
+              "game_clock": "0.5",
+              "period": 1
             },
             {
               "player": "Kris Dunn",
@@ -3228,7 +3240,7 @@
               "espn_event_id": "401910025",
               "player_id": "2991139",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -3277,7 +3289,11 @@
                 "scout_score": 69,
                 "scout_note": "L5 prosjek 4.0 ispod 5.5, uz 3/5 nastupa UNDER i smanjene minute u posljednjih pet; defanzivna uloga umjesto napadačke.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-3.json"
-              }
+              },
+              "player_points": 0,
+              "game_state": "live",
+              "game_clock": "0.5",
+              "period": 1
             }
           ]
         },
@@ -3300,7 +3316,7 @@
               "espn_event_id": "401910026",
               "player_id": "4903027",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -3349,7 +3365,11 @@
                 "scout_score": 76,
                 "scout_note": "OVER 16.5 ostvaren u 4/5 posljednjih mečeva i poeni su 19,20,18,23,14 uz sličnu minutažu.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-4.json"
-              }
+              },
+              "player_points": 11,
+              "game_state": "live",
+              "game_clock": "0.0",
+              "period": 1
             },
             {
               "player": "Cam Spencer",
@@ -3363,7 +3383,7 @@
               "espn_event_id": "401910026",
               "player_id": "4433083",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -3412,7 +3432,11 @@
                 "scout_score": 72,
                 "scout_note": "OVER 10.5 potvrđen u 4 od posljednjih pet utakmica s rastom minuta i velikim doprinosom asistencijama.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-4.json"
-              }
+              },
+              "player_points": 2,
+              "game_state": "live",
+              "game_clock": "0.0",
+              "period": 1
             }
           ]
         },
@@ -3435,7 +3459,7 @@
               "espn_event_id": "401910026",
               "player_id": "4432816",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -3484,7 +3508,11 @@
                 "scout_score": 72,
                 "scout_note": "UNDER 20.5 prošao je 4 od posljednjih pet utakmica, uz prosjek 16 poena i raznovrsnu ulogu.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-5.json"
-              }
+              },
+              "player_points": 0,
+              "game_state": "live",
+              "game_clock": "0.0",
+              "period": 1
             },
             {
               "player": "Jonathan Kuminga",
@@ -3498,7 +3526,7 @@
               "espn_event_id": "401910026",
               "player_id": "4433247",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -3547,7 +3575,11 @@
                 "scout_score": 69,
                 "scout_note": "Četiri od pet posljednjih utakmica su ispod 15.5 poena, uz L5 prosjek 13 i razne minute.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-5.json"
-              }
+              },
+              "player_points": 7,
+              "game_state": "live",
+              "game_clock": "0.0",
+              "period": 1
             }
           ]
         },
@@ -3570,7 +3602,7 @@
               "espn_event_id": "401910026",
               "player_id": "3032976",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -3619,7 +3651,11 @@
                 "scout_score": 74,
                 "scout_note": "UNDER 9.5 prolazi u 4 od posljednjih pet i sezonski srednji rezultat znatno je ispod ponuđene granice.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-6.json"
-              }
+              },
+              "player_points": 2,
+              "game_state": "live",
+              "game_clock": "0.0",
+              "period": 1
             },
             {
               "player": "Taylor Hendricks",
@@ -3633,7 +3669,7 @@
               "espn_event_id": "401910026",
               "player_id": "4684806",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -3682,7 +3718,11 @@
                 "scout_score": 70,
                 "scout_note": "OVER 9.5 u 4/5 posljednjih nastupa uz rast sa 3-7 na 19-29 minuta i napadačku ulogu.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-6.json"
-              }
+              },
+              "player_points": 2,
+              "game_state": "live",
+              "game_clock": "0.0",
+              "period": 1
             }
           ]
         },
@@ -3705,7 +3745,7 @@
               "espn_event_id": "401910027",
               "player_id": "4395723",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -3754,7 +3794,11 @@
                 "scout_score": 74,
                 "scout_note": "UNDER 11.5 u 4/5 zadnjih nastupa, uključujući posljednja tri, uz nizak broj šuteva u rotacionoj ulozi.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-7.json"
-              }
+              },
+              "player_points": 0,
+              "game_state": "live",
+              "game_clock": "52.2",
+              "period": 1
             },
             {
               "player": "De'Aaron Fox",
@@ -3768,7 +3812,7 @@
               "espn_event_id": "401910027",
               "player_id": "4066259",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -3817,7 +3861,11 @@
                 "scout_score": 69,
                 "scout_note": "UNDER 14.5 u tri posljednjih pet i prosjek L5 11; pretežno distribucija umjesto visokog volumen šuta u Spurs napadu.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-7.json"
-              }
+              },
+              "player_points": 0,
+              "game_state": "live",
+              "game_clock": "52.2",
+              "period": 1
             }
           ]
         },
@@ -3840,7 +3888,7 @@
               "espn_event_id": "401910027",
               "player_id": "5104157",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -3889,7 +3937,11 @@
                 "scout_score": 67,
                 "scout_note": "UNDER 29.5 u 3/5 i L5 prosjek 25.4, kućni sezonki split oko 26.3; prednost ima uslovnu vrijednost protiv New Orleansa.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-8.json"
-              }
+              },
+              "player_points": 15,
+              "game_state": "live",
+              "game_clock": "52.2",
+              "period": 1
             },
             {
               "player": "Damian Lillard",
@@ -3903,7 +3955,7 @@
               "espn_event_id": "401910024",
               "player_id": "6606",
               "start_utc": "2026-11-22T00:30:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -3952,7 +4004,11 @@
                 "scout_score": 64,
                 "scout_note": "Tri od posljednjih pet preko 20.5 uz dva najnovija nastupa od 33 i 25, napadačka odgovornost se povećala s izostancima.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-8.json"
-              }
+              },
+              "player_points": 8,
+              "game_state": "live",
+              "game_clock": "0.1",
+              "period": 2
             }
           ]
         },
@@ -3975,7 +4031,7 @@
               "espn_event_id": "401910024",
               "player_id": "3062679",
               "start_utc": "2026-11-22T00:30:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -4024,7 +4080,11 @@
                 "scout_score": 73,
                 "scout_note": "UNDER 9.5 u 4/5 nastupa i L5 prosjek 4.4, nizak volumen šuta i prioritet skoka/defanzive.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-9.json"
-              }
+              },
+              "player_points": 0,
+              "game_state": "live",
+              "game_clock": "0.1",
+              "period": 2
             },
             {
               "player": "Jrue Holiday",
@@ -4038,7 +4098,7 @@
               "espn_event_id": "401910024",
               "player_id": "3995",
               "start_utc": "2026-11-22T00:30:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -4087,7 +4147,11 @@
                 "scout_score": 70,
                 "scout_note": "OVER 13.5 ostvaren u 3/5, a zadnja dva 22 i 23 uz odsustvo Avdije ukazuju na potencijalno jaču ofanzivnu ulogu.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-9.json"
-              }
+              },
+              "player_points": 4,
+              "game_state": "live",
+              "game_clock": "0.1",
+              "period": 2
             }
           ]
         },
@@ -4110,7 +4174,7 @@
               "espn_event_id": "401910024",
               "player_id": "4431736",
               "start_utc": "2026-11-22T00:30:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -4159,7 +4223,11 @@
                 "scout_score": 68,
                 "scout_note": "OVER 12.5 je prošao u tri od pet i postiže 18 u najnovijem, 14 u dva ranija meča, uz minute 36-38 u tri od pet.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-10.json"
-              }
+              },
+              "player_points": 0,
+              "game_state": "live",
+              "game_clock": "0.1",
+              "period": 2
             },
             {
               "player": "Landry Shamet",
@@ -4173,7 +4241,7 @@
               "espn_event_id": "401910024",
               "player_id": "3914044",
               "start_utc": "2026-11-22T00:30:00Z",
-              "status": "pending",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -4222,7 +4290,11 @@
                 "scout_score": 65,
                 "scout_note": "OVER 11.5 u tri od pet posljednjih nastupa; dodatne minute i moguće izostajanje Townsa/Anunobyja povećavaju otvorene šuteve.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-10.json"
-              }
+              },
+              "player_points": 14,
+              "game_state": "live",
+              "game_clock": "0.1",
+              "period": 2
             }
           ]
         }
