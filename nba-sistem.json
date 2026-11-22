@@ -5573,6 +5573,107 @@
               }
             }
           ]
+        },
+        {
+          "id": "10",
+          "stake": 9.25,
+          "status": "pending",
+          "total_odd": 3.7447,
+          "potential_payout": 34.64,
+          "legs": [
+            {
+              "player": "Franz Wagner",
+              "team": "ORL",
+              "opponent": "WSH",
+              "pick": "over",
+              "points_line": 25.5,
+              "odd": 1.9615,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/franz-wagner",
+              "espn_event_id": "401910031",
+              "player_id": "4566434",
+              "start_utc": "2026-11-23T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-18",
+                    "points": 27,
+                    "minutes": 36
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five opponent-specific player box scores have not been independently reconstructed."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Verified player-position specific opponent scoring allowance not available."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "On-ball defender assignment and starting lineups not independently confirmed."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Public league/team updates checked; absence from injury list cannot guarantee playing."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No verified projected future court minutes, only historical minutes where known."
+                },
+                "scout_score": 90,
+                "scout_note": "Wagner has a verified latest 27 points in 36 minutes, and four of last five games above 25.5 according to recent scoring histories. Recent five average near 27.2, though season average about 25.1. A Washington matchup creates offensive opportunity. This is a historical scoring-form ranking and not a guaranteed outcome.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-10.json"
+              }
+            },
+            {
+              "player": "Desmond Bane",
+              "team": "ORL",
+              "opponent": "WSH",
+              "pick": "over",
+              "points_line": 19.5,
+              "odd": 1.9091,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/desmond-bane",
+              "espn_event_id": "401910031",
+              "player_id": "4066320",
+              "start_utc": "2026-11-23T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-11",
+                    "points": 25,
+                    "minutes": 34.3
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five opponent-specific player box scores have not been independently reconstructed."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Verified player-position specific opponent scoring allowance not available."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "On-ball defender assignment and starting lineups not independently confirmed."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Public league/team updates checked; absence from injury list cannot guarantee playing."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No verified projected future court minutes, only historical minutes where known."
+                },
+                "scout_score": 85,
+                "scout_note": "Bane's last five points log rates four of five above 19.5, and latest five about 20.3 with ~35 minutes. Season 18.6 is below the line, so this is a recent-form over lean rather than consistent season margin. This is a historical scoring-form ranking and not a guaranteed outcome.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-10.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -5585,15 +5686,16 @@
           6,
           7,
           8,
-          9
+          9,
+          10
         ],
         "offered": 88,
         "total_groups": 10,
-        "group_number": 9,
-        "group_range": "73-80",
+        "group_number": 10,
+        "group_range": "81-88",
         "group_selected": [
-          "Shai Gilgeous-Alexander",
-          "Anthony Davis"
+          "Franz Wagner",
+          "Desmond Bane"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-22-group-1.json",
@@ -5604,7 +5706,8 @@
           "6": "collector-output/nba-system-scout-2026-11-22-group-6.json",
           "7": "collector-output/nba-system-scout-2026-11-22-group-7.json",
           "8": "collector-output/nba-system-scout-2026-11-22-group-8.json",
-          "9": "collector-output/nba-system-scout-2026-11-22-group-9.json"
+          "9": "collector-output/nba-system-scout-2026-11-22-group-9.json",
+          "10": "collector-output/nba-system-scout-2026-11-22-group-10.json"
         },
         "selection_method": "full_ranked_scout"
       }
