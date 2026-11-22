@@ -5346,6 +5346,122 @@
               }
             }
           ]
+        },
+        {
+          "id": "8",
+          "stake": 9.25,
+          "status": "pending",
+          "total_odd": 3.7258,
+          "potential_payout": 34.46,
+          "legs": [
+            {
+              "player": "Davion Mitchell",
+              "team": "MIA",
+              "opponent": "OKC",
+              "pick": "over",
+              "points_line": 14.5,
+              "odd": 1.9259,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/davion-mitchell",
+              "espn_event_id": "401910030",
+              "player_id": "4278053",
+              "start_utc": "2026-11-22T23:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-18",
+                    "points": 24,
+                    "minutes": 36
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 16,
+                    "minutes": 33
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 22,
+                    "minutes": 39
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five verified historical scoring head-to-head games were not retrieved."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Defender-position specific allowances not independently verified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Direct defensive assignment not confirmed from published starting fives."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Siakam questionable hip, Adebayo past hip issue, other statuses checked against latest public news."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No verified published projection for future minutes; actual minutes included if sourced."
+                },
+                "scout_score": 89,
+                "scout_note": "Mitchell 17.2 season scoring average above 14.5; aggregate record shows 12/15 over this season and five of last five over. Verified scoring latest 24,16,22 in 33-39 minutes. Direction selected with evidence-weighted confidence and limited sample caveat.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-8.json"
+              }
+            },
+            {
+              "player": "Andrew Wiggins",
+              "team": "MIA",
+              "opponent": "OKC",
+              "pick": "over",
+              "points_line": 9.5,
+              "odd": 1.9346,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/andrew-wiggins",
+              "espn_event_id": "401910030",
+              "player_id": "3059319",
+              "start_utc": "2026-11-22T23:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-18",
+                    "points": 11,
+                    "minutes": 26
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 10,
+                    "minutes": 23
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five verified historical scoring head-to-head games were not retrieved."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Defender-position specific allowances not independently verified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Direct defensive assignment not confirmed from published starting fives."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Siakam questionable hip, Adebayo past hip issue, other statuses checked against latest public news."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No verified published projection for future minutes; actual minutes included if sourced."
+                },
+                "scout_score": 80,
+                "scout_note": "Wiggins averages 9.5 points on season, and public recent five sample indicates four of five above 9.5; current over 9.5 price 1.9346 seems reasonable given active forward bench role. Direction selected with evidence-weighted confidence and limited sample caveat.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-8.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -5356,15 +5472,16 @@
           4,
           5,
           6,
-          7
+          7,
+          8
         ],
         "offered": 88,
         "total_groups": 10,
-        "group_number": 7,
-        "group_range": "55-63",
+        "group_number": 8,
+        "group_range": "64-72",
         "group_selected": [
-          "Josh Hart",
-          "Mikal Bridges"
+          "Davion Mitchell",
+          "Andrew Wiggins"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-22-group-1.json",
@@ -5373,7 +5490,8 @@
           "4": "collector-output/nba-system-scout-2026-11-22-group-4.json",
           "5": "collector-output/nba-system-scout-2026-11-22-group-5.json",
           "6": "collector-output/nba-system-scout-2026-11-22-group-6.json",
-          "7": "collector-output/nba-system-scout-2026-11-22-group-7.json"
+          "7": "collector-output/nba-system-scout-2026-11-22-group-7.json",
+          "8": "collector-output/nba-system-scout-2026-11-22-group-8.json"
         },
         "selection_method": "full_ranked_scout"
       }
