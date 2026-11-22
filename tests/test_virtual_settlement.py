@@ -176,6 +176,22 @@ class TestSettlement(unittest.TestCase):
         self.assertEqual(b["tickets"][1]["status"],"dobitan")
         self.assertEqual(b["bank_after"],98)
 
+    def test_live_gg_settles_ticket_a_without_waiting_for_final(self):
+        p=sample()
+        p["tickets"][0]["matches"][1]["pick"]="GG"
+        rows=[rec("A",0,"H1","A1","pogođen","2:1"),
+              rec("A",1,"H2","A2","pogođen","1:1")]
+        rows[1].update(state="live",event_id="123456")
+        a,changed=settle(p,scores(rows))
+        self.assertEqual(changed,["A"])
+        self.assertEqual(a["tickets"][0]["status"],"dobitan")
+        self.assertEqual(a["tickets"][0]["payout"],13.5)
+        self.assertEqual(a["bank_after"],103.5)
+        self.assertFalse(a["settled"])
+        b,again=settle(a,scores(rows))
+        self.assertEqual(again,[])
+        self.assertEqual(b,a)
+
     def test_no_early_credit_for_non_goal_markets(self):
         r=rec("B",0,"H3","A3","pogođen","2:1")
         r.update(state="live",event_id="123456")
