@@ -65,15 +65,19 @@
       "team": "GS",
       "opponent": "BOS",
       "game": "BOS @ GS",
-      "start_utc": null,
+      "start_utc": "2026-11-23T01:30:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/deanthony-melton",
       "points_line": 10.5,
       "over_odd": 1.9615,
       "under_odd": 1.8197,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4066436",
+      "espn_event_id": "401910035",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/4066436",
+        "https://www.espn.com/nba/game/_/gameId/401910035/celtics-warriors"
+      ]
     },
     {
       "original_offer_position": 5,
@@ -99,15 +103,19 @@
       "team": "GS",
       "opponent": "BOS",
       "game": "BOS @ GS",
-      "start_utc": null,
+      "start_utc": "2026-11-23T01:30:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/draymond-green",
       "points_line": 4.5,
       "over_odd": 1.8547,
       "under_odd": 1.9174,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "6589",
+      "espn_event_id": "401910035",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/6589",
+        "https://www.espn.com/nba/game/_/gameId/401910035/celtics-warriors"
+      ]
     },
     {
       "original_offer_position": 7,
