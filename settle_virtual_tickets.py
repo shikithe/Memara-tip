@@ -12,6 +12,7 @@ import json
 from datetime import datetime, timezone
 from decimal import Decimal, InvalidOperation, ROUND_HALF_UP
 from pathlib import Path
+from football_identity import identity
 
 CENT = Decimal("0.01")
 
@@ -56,7 +57,7 @@ def settle(published, snapshot):
             return False
         if rec.get("source") != "espn-public-unofficial" or not str(rec.get("event_id", "")).isdigit():
             return False
-        if rec.get("home") != match.get("home") or rec.get("away") != match.get("away"):
+        if rec.get("home") != home or rec.get("away") != away:
             return False
         threshold = {"3+":3, "OVER 2.5":3, "O2.5":3,
                      "2+":2, "OVER 1.5":2, "O1.5":2}.get(str(match.get("pick","")).strip().upper())
@@ -71,7 +72,11 @@ def settle(published, snapshot):
         legs=[]
         for index,match in enumerate(ticket.get("matches",[])):
             rec=outcomes.get((str(ticket["id"]),index))
-            if not rec or rec.get("home")!=match.get("home") or rec.get("away")!=match.get("away"):
+            home, away, league, event_id = identity(match)
+            if not rec or rec.get("home")!=home or rec.get("away")!=away:
+                legs.append(None)
+                continue
+            if event_id and (str(rec.get("event_id")) != event_id or rec.get("league") != league):
                 legs.append(None)
                 continue
             if rec.get("source") not in ("espn-public-unofficial","nba-official-scorers-report"):
@@ -164,7 +169,7 @@ def settle(published, snapshot):
             continue
         ticket["status"]=expected
         ticket["settled_at_utc"]=updated.isoformat()
-        ticket["payout"]=float(cents(amount(ticket["stake"])*amount(ticket["odds"]))) if expected=="dobitan" else 0.0
+        ticket["payout"]=float(cents(amount(ticket["stake"])*amount(ticket.get("odds",ticket.get("combined_odds"))))) if expected=="dobitan" else 0.0
         newly_settled.append(str(ticket["id"]))
     payouts=sum((cents(amount(t.get("payout",0))) for t in original.get("tickets",[])
                  if t.get("status")=="dobitan"),Decimal(0))
@@ -176,7 +181,10 @@ def settle(published, snapshot):
     original.pop("provisional_ticket_ids",None)
     def leg_finished(t, i, m):
         rec=outcomes.get((str(t.get("id")),i))
-        if not rec or rec.get("state")!="final" or rec.get("home")!=m.get("home") or rec.get("away")!=m.get("away"):
+        home, away, league, event_id = identity(m)
+        if not rec or rec.get("state")!="final" or rec.get("home")!=home or rec.get("away")!=away:
+            return False
+        if event_id and (str(rec.get("event_id"))!=event_id or rec.get("league")!=league):
             return False
         if m.get("sport")=="basketball" and m.get("market")=="player_points":
             return (rec.get("source") in ("espn-public-unofficial","nba-official-scorers-report")
