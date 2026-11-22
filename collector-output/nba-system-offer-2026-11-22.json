@@ -1353,15 +1353,19 @@
       "team": "OKC",
       "opponent": "MIA",
       "game": "OKC @ MIA",
-      "start_utc": null,
+      "start_utc": "2026-11-22T23:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/shai-gilgeous-alexander",
       "points_line": 32.5,
       "over_odd": 1.9174,
       "under_odd": 1.8547,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4278073",
+      "espn_event_id": "401910030",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/4278073",
+        "https://www.espn.com/nba/game/_/gameId/401910030"
+      ]
     },
     {
       "original_offer_position": 77,
@@ -1421,15 +1425,19 @@
       "team": "WSH",
       "opponent": "ORL",
       "game": "ORL @ WSH",
-      "start_utc": null,
+      "start_utc": "2026-11-23T00:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/anthony-davis",
       "points_line": 24.5,
       "over_odd": 1.9709,
       "under_odd": 1.8065,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "6583",
+      "espn_event_id": "401910031",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/6583",
+        "https://www.espn.com/nba/game/_/gameId/401910031"
+      ]
     },
     {
       "original_offer_position": 81,
