@@ -1463,15 +1463,19 @@
       "team": "ORL",
       "opponent": "WSH",
       "game": "ORL @ WSH",
-      "start_utc": null,
+      "start_utc": "2026-11-23T00:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/desmond-bane",
       "points_line": 19.5,
       "over_odd": 1.9091,
       "under_odd": 1.8621,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4066320",
+      "espn_event_id": "401910031",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/4066320",
+        "https://www.espn.com/nba/game/_/gameId/401910031/magic-wizards"
+      ]
     },
     {
       "original_offer_position": 83,
@@ -1480,15 +1484,19 @@
       "team": "ORL",
       "opponent": "WSH",
       "game": "ORL @ WSH",
-      "start_utc": null,
+      "start_utc": "2026-11-23T00:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/franz-wagner",
       "points_line": 25.5,
       "over_odd": 1.9615,
       "under_odd": 1.8197,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4566434",
+      "espn_event_id": "401910031",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/4566434",
+        "https://www.espn.com/nba/game/_/gameId/401910031/magic-wizards"
+      ]
     },
     {
       "original_offer_position": 84,
