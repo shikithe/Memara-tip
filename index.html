@@ -44,7 +44,7 @@ function kickoffLabel(m){
 let liveScores=null;
 function scoreFor(t,m,i,data){
   if(!liveScores||liveScores.date!==data.date||!Array.isArray(liveScores.matches))return null;
-  return liveScores.matches.find(x=>x.ticket===t.id&&x.index===i&&x.home===m.home&&x.away===m.away)||null;
+  return liveScores.matches.find(x=>x.ticket===t.id&&x.index===i&&(m.fixture_id&&x.fixture_id?x.fixture_id===m.fixture_id:x.home===(m.home||(m.match||"").split(" - ")[0])&&x.away===(m.away||(m.match||"").split(" - ")[1])))||null;
 }
 function effectiveResult(m,live){
   if(m.sport==="basketball"&&(m.void===true||(live?.void===true&&live.state==="final")))return "pogođen";
