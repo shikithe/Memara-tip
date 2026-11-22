@@ -5245,6 +5245,107 @@
               }
             }
           ]
+        },
+        {
+          "id": "7",
+          "stake": 9.25,
+          "status": "pending",
+          "total_odd": 3.8047,
+          "potential_payout": 35.19,
+          "legs": [
+            {
+              "player": "Josh Hart",
+              "team": "NY",
+              "opponent": "IND",
+              "pick": "under",
+              "points_line": 9.5,
+              "odd": 1.8929,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/josh-hart",
+              "espn_event_id": "401910034",
+              "player_id": "3062679",
+              "start_utc": "2026-11-23T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-11",
+                    "points": 6,
+                    "minutes": 15.5
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Last five verified head to head player scoring performances unavailable."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Position-specific defensive point allowance not verified sufficiently to quantify."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "No confirmed starting individual defender matchup available."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Towns illness and other Knicks availability reviewed in game previews; no guarantee of lineup."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No independently verified future minutes projection, only existing sourced logs."
+                },
+                "scout_score": 88,
+                "scout_note": "Third-party L10 game prop dataset reports only one over 9.5 out of ten and New York source game averages near 6.8, under the original DraftKings line. Current pick acknowledges incompleteness of primary minute-by-minute logs.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-7.json"
+              }
+            },
+            {
+              "player": "Mikal Bridges",
+              "team": "NY",
+              "opponent": "IND",
+              "pick": "under",
+              "points_line": 11.5,
+              "odd": 2.01,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/mikal-bridges",
+              "espn_event_id": "401910034",
+              "player_id": "3147657",
+              "start_utc": "2026-11-23T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-21",
+                    "points": 12,
+                    "minutes": 27.7
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Last five verified head to head player scoring performances unavailable."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Position-specific defensive point allowance not verified sufficiently to quantify."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "No confirmed starting individual defender matchup available."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Towns illness and other Knicks availability reviewed in game previews; no guarantee of lineup."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No independently verified future minutes projection, only existing sourced logs."
+                },
+                "scout_score": 84,
+                "scout_note": "Bridges has season points average near 7.5, below 11.5 market line; he made the winning shot vs Portland but was reported in a shooting slump despite scoring 12 that night. Current pick acknowledges incompleteness of primary minute-by-minute logs.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-7.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -5254,15 +5355,16 @@
           3,
           4,
           5,
-          6
+          6,
+          7
         ],
         "offered": 88,
         "total_groups": 10,
-        "group_number": 6,
-        "group_range": "46-54",
+        "group_number": 7,
+        "group_range": "55-63",
         "group_selected": [
-          "Nickeil Alexander-Walker",
-          "Kevin Huerter"
+          "Josh Hart",
+          "Mikal Bridges"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-22-group-1.json",
@@ -5270,7 +5372,8 @@
           "3": "collector-output/nba-system-scout-2026-11-22-group-3.json",
           "4": "collector-output/nba-system-scout-2026-11-22-group-4.json",
           "5": "collector-output/nba-system-scout-2026-11-22-group-5.json",
-          "6": "collector-output/nba-system-scout-2026-11-22-group-6.json"
+          "6": "collector-output/nba-system-scout-2026-11-22-group-6.json",
+          "7": "collector-output/nba-system-scout-2026-11-22-group-7.json"
         },
         "selection_method": "full_ranked_scout"
       }
