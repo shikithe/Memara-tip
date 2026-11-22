@@ -26,6 +26,17 @@ class InspectorTests(unittest.TestCase):
         s, f, a, c, h = state()
         self.assertEqual(inspect(s, f, a, c, TODAY, h)["next_stage"], "ai_analysis")
 
+    def test_confirmed_top10_halts_technical_checks(self):
+        s, f, a, c, h = state()
+        c["detailed_ai_handoff"] = {"count":1,"candidates":[{"fixture_id":"espn:1"}]}
+        top10 = {"date":TODAY,"feedback":"TOP10_READY","source_fingerprint":"a"*64,
+                 "count":1,"fixture_ids":["espn:1"],"candidates":[{"fixture_id":"espn:1"}]}
+        result=inspect(s,f,a,c,TODAY,h,top10)
+        self.assertEqual(result["next_stage"],"await_publication")
+        self.assertEqual(result["feedback"],"TOP10_CONFIRMED_WAIT_PUBLICATION")
+        top10["date"]="2026-11-21"
+        self.assertEqual(inspect(s,f,a,c,TODAY,h,top10)["next_stage"],"ai_analysis")
+
     def test_both_tickets_stop(self):
         s, f, a, c, h = state()
         s["tickets"] = [{"id": x, "status": "objavljen", "matches": [{"pick": "GG"}]}
