@@ -1,8 +1,37 @@
 {
   "date": "2026-11-22",
-  "updated_at_utc": "2026-11-22T11:29:38.094051+00:00",
+  "updated_at_utc": "2026-11-22T12:12:50.791267+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
-  "matches": [],
+  "matches": [
+    {
+      "ticket": "A",
+      "index": 0,
+      "home": null,
+      "away": null,
+      "state": "unverified"
+    },
+    {
+      "ticket": "A",
+      "index": 1,
+      "home": null,
+      "away": null,
+      "state": "unverified"
+    },
+    {
+      "ticket": "B",
+      "index": 0,
+      "home": null,
+      "away": null,
+      "state": "unverified"
+    },
+    {
+      "ticket": "B",
+      "index": 1,
+      "home": null,
+      "away": null,
+      "state": "unverified"
+    }
+  ],
   "bank_unchanged": true
 }
