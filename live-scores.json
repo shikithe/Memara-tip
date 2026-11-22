@@ -1,6 +1,6 @@
 {
   "date": "2026-11-22",
-  "updated_at_utc": "2026-11-22T21:12:20.119906+00:00",
+  "updated_at_utc": "2026-11-22T21:16:16.407527+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -68,7 +68,7 @@
       "state": "live",
       "points_line": 11.5,
       "period": 2,
-      "game_clock": "11:32",
+      "game_clock": "9:16",
       "source": "espn-public-unofficial",
       "event_id": "401910029",
       "player_id": "4684742",
