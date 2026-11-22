@@ -1,8 +1,11 @@
 {
   "date": "2026-11-22",
-  "feedback": "A_B_PUBLISHED",
-  "status": "complete",
-  "missing": [],
-  "next_action": "stop_today",
-  "checked_at_sarajevo": "2026-11-22T14:44:50.508421+01:00"
+  "feedback": "A_B_PUBLICATION_MISSING",
+  "status": "needs_ai_analyst_or_publisher",
+  "missing": [
+    "B"
+  ],
+  "next_action": "inspector_publication_recovery",
+  "checked_at_sarajevo": "2026-11-22T19:39:15.593465+01:00",
+  "note": "This is a GitHub signal; it does not directly start a ChatGPT automation."
 }
