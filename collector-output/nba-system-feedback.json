@@ -2,15 +2,16 @@
   "schema_version": 1,
   "date": "2026-11-22",
   "cycle_id": "nba-2026-11-22",
-  "last_published_group": 3,
+  "last_published_group": 4,
   "published_ticket_ids": [
     "1",
     "2",
-    "3"
+    "3",
+    "4"
   ],
-  "next_group": 4,
+  "next_group": 5,
   "state": "ready_for_next_ai_scout",
   "trigger_source": "github_confirmed_nba_system_ledger",
-  "updated_at_utc": "2026-11-22T18:10:20.337067+00:00",
+  "updated_at_utc": "2026-11-22T18:13:52.957760+00:00",
   "note": "AI must validate game start, frozen offer and all players in next group. A GitHub feedback file cannot directly wake ChatGPT."
 }

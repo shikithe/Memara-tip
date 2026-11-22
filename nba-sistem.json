@@ -4842,26 +4842,164 @@
               }
             }
           ]
+        },
+        {
+          "id": "4",
+          "stake": 9.25,
+          "status": "pending",
+          "total_odd": 3.5628,
+          "potential_payout": 32.96,
+          "legs": [
+            {
+              "player": "Joshua Giddey",
+              "team": "CHI",
+              "opponent": "DEN",
+              "pick": "under",
+              "points_line": 12.5,
+              "odd": 1.9434,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/joshua-giddey",
+              "espn_event_id": "401910032",
+              "player_id": "4871145",
+              "start_utc": "2026-11-23T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 2,
+                    "minutes": 23
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 18,
+                    "minutes": 28
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 4,
+                    "minutes": 24
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 8,
+                    "minutes": 26
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 15,
+                    "minutes": 39
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five confirmed opponent head to head box scores not independently collected."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Opponent positional efficiency not individually verified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Direct man-to-man defender not confirmed before lineups."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Pregame team and NBA injury context reviewed but no final lineup guarantees."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "Unverified future minute projection; game log contains available actual minutes."
+                },
+                "scout_score": 87,
+                "scout_note": "Three of five recent games under 12.5, including 2,4 and 8, with recent mean 9.4; role involves playmaking more than shot volume. Analysis based on the documented source's dated actual numbers; no calibrated predictive probability.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-4.json"
+              }
+            },
+            {
+              "player": "Cameron Johnson",
+              "team": "DEN",
+              "opponent": "CHI",
+              "pick": "under",
+              "points_line": 13.5,
+              "odd": 1.8333,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/cameron-johnson",
+              "espn_event_id": "401910032",
+              "player_id": "3138196",
+              "start_utc": "2026-11-23T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 19,
+                    "minutes": 29
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 8,
+                    "minutes": 26
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 9,
+                    "minutes": 27
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 12,
+                    "minutes": 31
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five confirmed opponent head to head box scores not independently collected."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Opponent positional efficiency not individually verified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Direct man-to-man defender not confirmed before lineups."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Pregame team and NBA injury context reviewed but no final lineup guarantees."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "Unverified future minute projection; game log contains available actual minutes."
+                },
+                "scout_score": 82,
+                "scout_note": "Three of four checked scoring games below 13.5, season baseline around 12.1 points; moderate minutes. Analysis based on the documented source's dated actual numbers; no calibrated predictive probability.",
+                "audit": "collector-output/nba-system-scout-2026-11-22-group-4.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
         "groups_completed": [
           1,
           2,
-          3
+          3,
+          4
         ],
         "offered": 88,
         "total_groups": 10,
-        "group_number": 3,
-        "group_range": "19-27",
+        "group_number": 4,
+        "group_range": "28-36",
         "group_selected": [
-          "Aaron Gordon",
-          "Darryn Peterson"
+          "Joshua Giddey",
+          "Cameron Johnson"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-22-group-1.json",
           "2": "collector-output/nba-system-scout-2026-11-22-group-2.json",
-          "3": "collector-output/nba-system-scout-2026-11-22-group-3.json"
+          "3": "collector-output/nba-system-scout-2026-11-22-group-3.json",
+          "4": "collector-output/nba-system-scout-2026-11-22-group-4.json"
         },
         "selection_method": "full_ranked_scout"
       }
