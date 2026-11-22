@@ -2,7 +2,8 @@ name: Senzor A/B
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0,15,30,45 11-18 * * *'
+    # UTC covers both CET and CEST. Local Sarajevo gate below enforces 10:00–12:15.
+    - cron: '0,15,30,45 8-11 * * *'
 permissions:
   contents: write
 concurrency:
@@ -19,11 +20,30 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Sarajevo time gate — 10:00 through 12:15 every day
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python3 - <<'PY'
+          import os
+          from datetime import datetime, time
+          from zoneinfo import ZoneInfo
+          now=datetime.now(ZoneInfo("Europe/Sarajevo"))
+          allowed=(time(10, 0) <= now.time().replace(tzinfo=None) <= time(12, 15))
+          enabled=(os.environ["EVENT_NAME"] == "workflow_dispatch") or allowed
+          with open(os.environ["GITHUB_OUTPUT"], "a") as out:
+              out.write("enabled=" + ("true" if enabled else "false") + "\n")
+          print("SENZOR_AB_TIME_GATE", now.isoformat(), "enabled=", enabled)
+          PY
       - name: Verify publication checker behavior
+        if: steps.gate.outputs.enabled == 'true'
         run: python3 -m unittest -v test_check_ab_publication.py
       - name: Verify published A/B from actual website data
+        if: steps.gate.outputs.enabled == 'true'
         run: python3 check_ab_publication.py
       - name: Commit read-only monitor result
+        if: steps.gate.outputs.enabled == 'true'
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
