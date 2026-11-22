@@ -1,1 +1,1 @@
-2026-11-22 shared BetSharp NBA C + system 10: refresh canonical points snapshot and ten lists after retry workflow patch.
+2026-11-22 recovery test: collect same BetSharp source, split into ten, write ready_for_first_ai_scout in SAME job; backup cron independent.
