@@ -20,7 +20,7 @@ ODDS = ("home_odds", "draw_odds", "away_odds", "over25_odds", "btts_yes_odds", "
 def valid_odd(n):
     return isinstance(n, (int, float)) and not isinstance(n, bool) and 1.01 < n < 50
 
-def inspect(site, feed, active, scout, today, history=None, top10=None):
+def inspect(site, feed, active, scout, today, history=None, top10=None, odds_feedback=None):
     tickets = check(site, today)
     result = {"date": today, "tickets": tickets, "next_stage": None, "reason": "", "ready": {}}
     if tickets["both_published"]:
@@ -52,6 +52,21 @@ def inspect(site, feed, active, scout, today, history=None, top10=None):
             missing.append(fixture["fixture_id"])
     result["ready"]["tipsterarea_quoted"] = len(rows) - len(missing)
     result["missing_odds_ids"] = missing
+    quoted = len(rows) - len(missing)
+    odds_ready = (
+        isinstance(odds_feedback, dict)
+        and odds_feedback.get("date") == today
+        and odds_feedback.get("feedback") == "ODDS_READY"
+        and odds_feedback.get("status") == "ready_for_scout"
+        and odds_feedback.get("final") is True
+        and odds_feedback.get("espn_total") == len(rows)
+        and odds_feedback.get("matched_with_quotes") == quoted
+        and odds_feedback.get("skipped_unmatched") == len(missing)
+    )
+    if not odds_ready:
+        result.update(next_stage="tipsterarea", reason="Final same-day ODDS_READY feedback absent or inconsistent")
+        return result
+    result["ready"]["odds_feedback"] = "ODDS_READY"
     if (
         not isinstance(history, dict) or history.get("date") != today or
         {x.get("fixture_id") for x in history.get("fixtures", [])} != ids
@@ -124,7 +139,8 @@ def main():
     result = inspect(site, load("shared/collector-feed.json"), load("shared/active-list.json"),
                      load("shared/agent/scout-six-markets.json"), args.date,
                      load("shared/agent/history-h2h.json"),
-                     load("shared/agent/top10-feedback.json"))
+                     load("shared/agent/top10-feedback.json"),
+                     load("shared/kvoter/coverage-feedback.json"))
     result["checked_at_sarajevo"] = datetime.now(TZ).isoformat()
     dest = Path(args.output)
     dest.parent.mkdir(parents=True, exist_ok=True)
