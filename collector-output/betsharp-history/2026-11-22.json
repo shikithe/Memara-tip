@@ -4,7 +4,7 @@
   "source_url": "https://betsharp.com/nba/props?m=points",
   "market": "player_points",
   "game_date_et": "2026-11-22",
-  "collected_at_utc": "2026-11-22T17:07:59.231311+00:00",
+  "collected_at_utc": "2026-11-22T17:09:50.149274+00:00",
   "player_count": 89,
   "status": "ok",
   "note": "Market snapshot only; player participation and odds require re-verification.",
@@ -2304,11 +2304,11 @@
           "under_decimal": 1.7353
         },
         "MGM": {
-          "line": 13.5,
-          "over_american": -130,
-          "under_american": -105,
-          "over_decimal": 1.7692,
-          "under_decimal": 1.9524
+          "line": 14.5,
+          "over_american": 100,
+          "under_american": -135,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7407
         },
         "BR": {
           "line": 13.5,
@@ -2351,10 +2351,10 @@
         },
         "MGM": {
           "line": 10.5,
-          "over_american": -130,
-          "under_american": -105,
-          "over_decimal": 1.7692,
-          "under_decimal": 1.9524
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
         },
         "BR": {
           "line": 10.5,
@@ -2404,10 +2404,10 @@
         },
         "BR": {
           "line": 27.5,
-          "over_american": -125,
-          "under_american": -108,
-          "over_decimal": 1.8,
-          "under_decimal": 1.9259
+          "over_american": -124,
+          "under_american": -109,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9174
         },
         "KAL": {
           "line": 29.5,
@@ -2496,10 +2496,10 @@
         },
         "BR": {
           "line": 20.5,
-          "over_american": -129,
-          "under_american": -106,
-          "over_decimal": 1.7752,
-          "under_decimal": 1.9434
+          "over_american": -127,
+          "under_american": -107,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9346
         },
         "KAL": {
           "line": 19.5,
@@ -2621,16 +2621,16 @@
         "MGM": {
           "line": 12.5,
           "over_american": -105,
-          "under_american": -130,
+          "under_american": -125,
           "over_decimal": 1.9524,
-          "under_decimal": 1.7692
+          "under_decimal": 1.8
         },
         "BR": {
           "line": 11.5,
-          "over_american": -115,
-          "under_american": -117,
-          "over_decimal": 1.8696,
-          "under_decimal": 1.8547
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
         },
         "KAL": {
           "line": 14.5,

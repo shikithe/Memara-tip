@@ -5,7 +5,7 @@
   "source": "BetSharp",
   "source_url": "https://betsharp.com/nba/props?m=points",
   "source_snapshot": "collector-output/betsharp-nba-daily.json",
-  "captured_at_utc": "2026-11-22T17:07:59.231311+00:00",
+  "captured_at_utc": "2026-11-22T17:09:50.149274+00:00",
   "total_offers": 89,
   "group_size": 9,
   "original_positions": [
