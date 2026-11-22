@@ -3688,5 +3688,358 @@
       "A": ""
     },
     "odds_verification_note": "AI selected publicly displayed bookmaker comparison quotes; not independently refreshed by GitHub or confirmed in individual bookmaker accounts."
+  },
+  {
+    "date": "2026-11-21",
+    "published": "21.11.2026. u 11:42 (Europe/Sarajevo)",
+    "publication_type": "independent_ai_approved_github_nba_c",
+    "bank_before": 203.02,
+    "daily_stake": 24.36,
+    "bank_after": 241.6,
+    "bank_after_stakes": 178.66,
+    "provisional": false,
+    "settled": true,
+    "odds_verified": false,
+    "tickets": [
+      {
+        "id": "A",
+        "matches": [
+          {
+            "fixture_id": "espn:football:ita.1:401874981",
+            "home": "Lazio",
+            "away": "Lecce",
+            "start_utc": "2026-11-21T14:00:00Z",
+            "pick": "1",
+            "odd": 1.45,
+            "odds": 1.45,
+            "bookmaker": "1xBet via TipsterArea",
+            "provider_event_id": "ai-web:espn:football:ita.1:401874981",
+            "market_source": "The Odds API",
+            "market_name": "1X2",
+            "odds_verified_at_utc": "2026-11-21T10:40:17.792988+00:00",
+            "odds_status": "last_known_snapshot",
+            "form_home_matches": 5,
+            "form_away_matches": 5,
+            "result_status": "pogođen",
+            "final_score": "3:0"
+          },
+          {
+            "fixture_id": "espn:football:ita.1:401875056",
+            "home": "Como",
+            "away": "Cagliari",
+            "start_utc": "2026-11-21T14:00:00Z",
+            "pick": "1",
+            "odd": 1.31,
+            "odds": 1.31,
+            "bookmaker": "1xBet via TipsterArea",
+            "provider_event_id": "ai-web:espn:football:ita.1:401875056",
+            "market_source": "The Odds API",
+            "market_name": "1X2",
+            "odds_verified_at_utc": "2026-11-21T10:40:17.792975+00:00",
+            "odds_status": "last_known_snapshot",
+            "form_home_matches": 5,
+            "form_away_matches": 5,
+            "result_status": "pogođen",
+            "final_score": "2:0"
+          },
+          {
+            "fixture_id": "espn:football:esp.1:401882798",
+            "home": "Real Madrid",
+            "away": "Celta Vigo",
+            "start_utc": "2026-11-21T20:00:00Z",
+            "pick": "1",
+            "odd": 1.21,
+            "odds": 1.21,
+            "bookmaker": "SportyTrader market comparison",
+            "provider_event_id": "ai-web:espn:football:esp.1:401882798",
+            "market_source": "The Odds API",
+            "market_name": "1X2",
+            "odds_verified_at_utc": "2026-11-21T10:40:17.792892+00:00",
+            "odds_status": "last_known_snapshot",
+            "form_home_matches": 5,
+            "form_away_matches": 5,
+            "result_status": "pogođen",
+            "final_score": "2:1"
+          }
+        ],
+        "odds": 2.3,
+        "analysis": "ESPN Scout 21.11.2026, last five league games per side, pre-match source validation. Lazio 13/15 points and goals 14:5; Lecce 4/15, goals 6:10. Lazio home win 1.45 despite doubt around Marusic/Frattesi and Zaccagni absence; previous H2H includes 2:0 and 0:0. Como 12/15, 9:4; Cagliari 3/15, 4:12. Como home win 1.31 despite Kean injury, recent H2H 2:1 Como, 0:0 home. Real Madrid 15/15, 13:2; Celta 6/15, 2:4. Madrid home win 1.21, Vinicius available again; Asencio/Rodrygo reported absent. Excluded the stronger-scoring but more injury-affected Galatasaray and inconsistent Man City. Form sourced from ESPN real scoreboards, injury/H2H checked against contemporary match previews. Quotes are public snapshots, not guaranteed at kickoff.",
+        "label": "GLAVNI TIKET",
+        "stake": 14.21,
+        "status": "dobitan",
+        "payout": 32.68,
+        "settled_at_utc": "2026-11-22T00:46:47.807331+00:00"
+      },
+      {
+        "id": "B",
+        "matches": [
+          {
+            "fixture_id": "espn:football:bel.1:401878940",
+            "home": "Royal Charleroi SC",
+            "away": "Sint-Truidense",
+            "start_utc": "2026-11-21T15:00:00Z",
+            "pick": "3+",
+            "odd": 1.52,
+            "odds": 1.52,
+            "bookmaker": "1xbet via TipsterArea",
+            "provider_event_id": "ai-web:espn:football:bel.1:401878940",
+            "market_source": "The Odds API",
+            "market_name": "3+",
+            "odds_verified_at_utc": "2026-11-21T10:40:17.793216+00:00",
+            "odds_status": "last_known_snapshot",
+            "form_home_matches": 5,
+            "form_away_matches": 5,
+            "result_status": "pogođen",
+            "final_score": "2:2"
+          },
+          {
+            "fixture_id": "espn:football:bel.1:401878938",
+            "home": "Zulte-Waregem",
+            "away": "Antwerp",
+            "start_utc": "2026-11-21T19:45:00Z",
+            "pick": "3+",
+            "odd": 1.72,
+            "odds": 1.72,
+            "bookmaker": "TipsterArea pre-match bookmaker average",
+            "provider_event_id": "ai-web:espn:football:bel.1:401878938",
+            "market_source": "The Odds API",
+            "market_name": "3+",
+            "odds_verified_at_utc": "2026-11-21T10:40:17.793289+00:00",
+            "odds_status": "last_known_snapshot",
+            "form_home_matches": 5,
+            "form_away_matches": 5,
+            "result_status": "pogođen",
+            "final_score": "2:2"
+          }
+        ],
+        "odds": 2.61,
+        "analysis": "ESPN Scout 21.11.2026 Belgian league Over 2.5 only. Charleroi 4/5 last games with 3+ goals, scored/conceded 14:7; Sint-Truidense 5/5 over, 14:11. Over 2.5 quoted 1.52, high attack/defensive openness, but market risk remains. Zulte-Waregem 4/5 over, scored/conceded 5:15; Antwerp 5/5 over, scored/conceded 8:13. Over 2.5 quoted 1.72; both defenses recently conceding heavily, but older H2H less goal-heavy. Verified separate kickoff times and no overlap with A fixtures. Public source: TipsterArea game pages; five recent results per side: current ESPN collector. No xG values invented.",
+        "label": "GOLOVI",
+        "stake": 6.09,
+        "status": "dobitan",
+        "payout": 15.89,
+        "settled_at_utc": "2026-11-21T20:58:05.336361+00:00"
+      },
+      {
+        "id": "C",
+        "label": "NBA · DVA IGRAČA",
+        "matches": [
+          {
+            "fixture_id": "espn:basketball:nba:401910028:4251",
+            "event_id": "401910028",
+            "espn_event_id": "401910028",
+            "player_id": "4251",
+            "player": "Paul George",
+            "home": "Boston Celtics",
+            "away": "Sacramento Kings",
+            "team": "Boston Celtics",
+            "opponent": "Sacramento Kings",
+            "league": "nba",
+            "sport": "basketball",
+            "datetime": "2026-11-22T03:00:00+00:00",
+            "start_utc": "2026-11-22T03:00:00+00:00",
+            "market": "player_points",
+            "points_line": 22.5,
+            "pick": "under",
+            "market_name": "Manje od 22.5 poena",
+            "odd": 1.9259,
+            "bookmaker": "DraftKings",
+            "quote_source_url": "https://betsharp.com/nba/player/paul-george",
+            "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+            "quote_timestamp_verified": false,
+            "result_status": "pogođen",
+            "final_points": 19
+          },
+          {
+            "fixture_id": "espn:basketball:nba:401910026:3032976",
+            "event_id": "401910026",
+            "espn_event_id": "401910026",
+            "player_id": "3032976",
+            "player": "Rudy Gobert",
+            "home": "Minnesota Timberwolves",
+            "away": "Memphis Grizzlies",
+            "team": "Minnesota Timberwolves",
+            "opponent": "Memphis Grizzlies",
+            "league": "nba",
+            "sport": "basketball",
+            "datetime": "2026-11-22T01:00:00+00:00",
+            "start_utc": "2026-11-22T01:00:00+00:00",
+            "market": "player_points",
+            "points_line": 9.5,
+            "pick": "under",
+            "market_name": "Manje od 9.5 poena",
+            "odd": 1.8403,
+            "bookmaker": "DraftKings",
+            "quote_source_url": "https://betsharp.com/nba/player/rudy-gobert",
+            "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+            "quote_timestamp_verified": false,
+            "result_status": "pogođen",
+            "final_points": 7
+          }
+        ],
+        "odds": 3.54,
+        "stake": 4.06,
+        "status": "dobitan",
+        "payout": 14.37,
+        "analysis": "Ručno odobren danas po izričitoj korisnikovoj instrukciji 2% početne dnevne banke. Paul George UNDER 22,5: 3/5 ispod u L5, prosjek 20,4; Tatum questionable je rizik. Rudy Gobert UNDER 9,5: 4/5 u L5, 7/10 u L10 i sezonski prosjek 7,7. DraftKings kvote iz današnjeg BetSharp capture-a; H2H i kompletna protivnička odbrana nedovoljno potvrđeni. Startovi 02:00 i 04:00 CET 22.11.2026. C ostaje virtuelni tiket.",
+        "scout_analysis": {
+          "date": "2026-11-21",
+          "intro": "Ručni NBA C Scout: samo igrači sa stvarnom BetSharp DraftKings istom granicom i oba smjera; uz povratno provjerene NBA statistike. Ulog izuzetak 2% početne banke, današnji korisnikov zahtjev.",
+          "players": [
+            {
+              "id": "4251",
+              "name": "Paul George",
+              "team": "Boston Celtics",
+              "opponent": "Sacramento Kings",
+              "pick": "under",
+              "line": 22.5,
+              "odd": 1.9259,
+              "games": [
+                [
+                  "18.11.",
+                  10,
+                  23
+                ],
+                [
+                  "16.11.",
+                  22,
+                  36
+                ],
+                [
+                  "15.11.",
+                  7,
+                  25
+                ],
+                [
+                  "10.11.",
+                  36,
+                  30
+                ],
+                [
+                  "08.11.",
+                  27,
+                  28
+                ]
+              ],
+              "h2h": [],
+              "last10": "Nije pouzdano potvrđeno za ovu granicu",
+              "pros": [
+                "3 od 5 posljednjih mečeva ostao ispod 22,5 poena",
+                "Prosjek L5 20,4 poena, ispod ponuđene granice",
+                "Sezonski prosjek 19,9 poena u 13 nastupa (prije susreta)"
+              ],
+              "risks": [
+                "Na 10.11. postigao je 36, a 08.11. 27 poena: mogući veliki napadački skokovi",
+                "Jayson Tatum naveden kao upitan protiv Sacramenta: moguća povećana uloga Georgea",
+                "Sacramento je u slaboj formi odbrane, pa matchup nije naročito povoljan za UNDER",
+                "Protivnički direktni čuvar i H2H na ovoj liniji nisu potvrđeni"
+              ],
+              "assessment": "Izbor UNDER je zasnovan na prosjeku i 3/5 prolaza, ali rizik nije nizak jer Tatumov status i slabija odbrana Kingsa mogu povećati potrošnju i broj poena.",
+              "sources": [
+                [
+                  "L5 poeni i minute",
+                  "https://www.legchecksports.com/players/nba/paul-george/"
+                ],
+                [
+                  "NBA status i sezona",
+                  "https://www.fsroundup.com/nba-player/paul-george"
+                ],
+                [
+                  "Aktuelni BetSharp bet DK",
+                  "https://betsharp.com/nba/player/paul-george"
+                ],
+                [
+                  "Boston-Sacramento injury preview",
+                  "https://www.bostonglobe.com/2026/11/21/sports/celtics-kings-preview-november-21/"
+                ]
+              ]
+            },
+            {
+              "id": "3032976",
+              "name": "Rudy Gobert",
+              "team": "Minnesota Timberwolves",
+              "opponent": "Memphis Grizzlies",
+              "pick": "under",
+              "line": 9.5,
+              "odd": 1.8403,
+              "games": [
+                [
+                  "19.11.",
+                  9,
+                  35
+                ],
+                [
+                  "17.11.",
+                  0,
+                  22
+                ],
+                [
+                  "16.11.",
+                  18,
+                  32
+                ],
+                [
+                  "14.11.",
+                  1,
+                  27
+                ],
+                [
+                  "12.11.",
+                  9,
+                  23
+                ]
+              ],
+              "h2h": [],
+              "last10": "7/10 UNDER na granici 9,5 poena, prema game-log evidenciji",
+              "pros": [
+                "4 od posljednjih 5 nastupa završio ispod 9,5 poena",
+                "7 od posljednjih 10 završilo ispod 9,5 poena",
+                "Sezonski prosjek 7,7 poena, 4/15 OVER na 9,5"
+              ],
+              "risks": [
+                "U pobjedi 16.11. postigao je 18 poena i potencijalno može preći granicu",
+                "Sezonski matchup Memphis vs centri nije nezavisno kvantifikovan",
+                "Posljednju utakmicu je igrao 35 minuta, pa se uloga može povećati",
+                "Specifični H2H na istoj granici nisu potvrđeni"
+              ],
+              "assessment": "UNDER 9,5 ima solidno empirijsko uporište u odnosu na L5, L10 i sezonski prosjek; mala granica znači da jedan bolji napadački period može poništiti prednost.",
+              "sources": [
+                [
+                  "Sezonski game log sa minutama",
+                  "https://www.statiqsports.com/nba/rudy-gobert/game-log"
+                ],
+                [
+                  "NBA status",
+                  "https://www.fsroundup.com/nba-player/rudy-gobert"
+                ],
+                [
+                  "Aktuelni BetSharp bet DK",
+                  "https://betsharp.com/nba/player/rudy-gobert"
+                ]
+              ]
+            }
+          ],
+          "conclusion": "Paul George UNDER 22,5 @1,9259 x Rudy Gobert UNDER 9,5 @1,8403 = ukupna kvota približno 3,54. Projekcija proističe iz ranije forme; nema garancije pogodaka. George je najveći rizik ako Tatum ne nastupi.",
+          "caution": "Kvote preuzete sa javnog BetSharp poređenja u 17:10 UTC; ne predstavlja direktnu live DraftKings potvrdu. H2H i individualni defanzivni matchup nisu potpuno potvrđeni. Ulazak u tim nije garancija minutaže."
+        },
+        "settled_at_utc": "2026-11-22T07:30:33.574814+00:00"
+      }
+    ],
+    "total_payout": 62.94,
+    "net_change": 38.58,
+    "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
+    "selection_method": "Each approved ticket independently checked",
+    "published_at_utc": "2026-11-21T10:42:29.798506+00:00",
+    "daily_budget": 20.3,
+    "pending_ticket_statuses": {
+      "A": "objavljen",
+      "B": "objavljen",
+      "C": "objavljen"
+    },
+    "pending_ticket_reasons": {
+      "A": "",
+      "B": ""
+    },
+    "odds_verification_note": "AI selected publicly displayed bookmaker comparison quotes; not independently refreshed by GitHub or confirmed in individual bookmaker accounts."
   }
 ]
