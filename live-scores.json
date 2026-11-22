@@ -1,6 +1,6 @@
 {
   "date": "2026-11-21",
-  "updated_at_utc": "2026-11-21T20:58:05.336361+00:00",
+  "updated_at_utc": "2026-11-22T00:46:47.807331+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -35,12 +35,13 @@
       "index": 2,
       "home": "Real Madrid",
       "away": "Celta Vigo",
-      "state": "live",
-      "score": "0:1",
+      "state": "final",
+      "score": "2:1",
       "source": "espn-public-unofficial",
       "event_id": "401882798",
       "league": "esp.1",
-      "minute": "45"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "B",
@@ -60,12 +61,12 @@
       "index": 1,
       "home": "Zulte-Waregem",
       "away": "Antwerp",
-      "state": "live",
-      "score": "1:2",
+      "state": "final",
+      "score": "2:2",
       "source": "espn-public-unofficial",
       "event_id": "401878938",
       "league": "bel.1",
-      "minute": "56",
+      "minute": null,
       "result_status": "pogođen"
     },
     {

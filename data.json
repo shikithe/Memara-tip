@@ -4,7 +4,7 @@
   "publication_type": "independent_ai_approved_github_nba_c",
   "bank_before": 203.02,
   "daily_stake": 24.36,
-  "bank_after": 194.55,
+  "bank_after": 227.23,
   "bank_after_stakes": 178.66,
   "provisional": true,
   "settled": false,
@@ -66,15 +66,18 @@
           "odds_verified_at_utc": "2026-11-21T10:40:17.792892+00:00",
           "odds_status": "last_known_snapshot",
           "form_home_matches": 5,
-          "form_away_matches": 5
+          "form_away_matches": 5,
+          "result_status": "pogođen",
+          "final_score": "2:1"
         }
       ],
       "odds": 2.3,
       "analysis": "ESPN Scout 21.11.2026, last five league games per side, pre-match source validation. Lazio 13/15 points and goals 14:5; Lecce 4/15, goals 6:10. Lazio home win 1.45 despite doubt around Marusic/Frattesi and Zaccagni absence; previous H2H includes 2:0 and 0:0. Como 12/15, 9:4; Cagliari 3/15, 4:12. Como home win 1.31 despite Kean injury, recent H2H 2:1 Como, 0:0 home. Real Madrid 15/15, 13:2; Celta 6/15, 2:4. Madrid home win 1.21, Vinicius available again; Asencio/Rodrygo reported absent. Excluded the stronger-scoring but more injury-affected Galatasaray and inconsistent Man City. Form sourced from ESPN real scoreboards, injury/H2H checked against contemporary match previews. Quotes are public snapshots, not guaranteed at kickoff.",
       "label": "GLAVNI TIKET",
       "stake": 14.21,
-      "status": "objavljen",
-      "payout": 0
+      "status": "dobitan",
+      "payout": 32.68,
+      "settled_at_utc": "2026-11-22T00:46:47.807331+00:00"
     },
     {
       "id": "B",
@@ -113,7 +116,9 @@
           "odds_verified_at_utc": "2026-11-21T10:40:17.793289+00:00",
           "odds_status": "last_known_snapshot",
           "form_home_matches": 5,
-          "form_away_matches": 5
+          "form_away_matches": 5,
+          "result_status": "pogođen",
+          "final_score": "2:2"
         }
       ],
       "odds": 2.61,
@@ -324,7 +329,7 @@
       }
     }
   ],
-  "total_payout": 15.89,
+  "total_payout": 48.57,
   "net_change": null,
   "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
   "selection_method": "Each approved ticket independently checked",
