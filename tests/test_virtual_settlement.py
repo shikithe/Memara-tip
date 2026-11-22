@@ -111,6 +111,27 @@ class TestSettlement(unittest.TestCase):
         self.assertEqual(b["tickets"][0]["matches"][1]["result_status"],"pogođen")
         self.assertEqual(b["tickets"][0]["payout"],0)
 
+    def test_ai_publisher_fixture_only_and_combined_odds(self):
+        p={"date":"2026-10-24","bank_before":100,"bank_after_stakes":90,
+           "bank_after":90,"settled":False,"tickets":[
+               {"id":"A","stake":10,"combined_odds":2.75,"status":"objavljen",
+                "matches":[{"fixture_id":"espn:football:tur.1:401888248",
+                            "match":"Kasimpasa - Alanyaspor","pick":"1"}]}]}
+        r={"ticket":"A","index":0,"home":"Kasimpasa","away":"Alanyaspor",
+           "event_id":"401888248","league":"tur.1","source":"espn-public-unofficial",
+           "state":"final","result_status":"pogođen","score":"2:0"}
+        updated, completed=settle(p,scores([r]))
+        self.assertEqual(completed,["A"])
+        self.assertEqual(updated["tickets"][0]["payout"],27.5)
+        self.assertEqual(updated["bank_after"],117.5)
+        self.assertTrue(updated["settled"])
+        again, _=settle(updated,scores([r]))
+        self.assertEqual(again,updated)
+        wrong=dict(r,event_id="401888249")
+        fresh,_=settle(p,scores([wrong]))
+        self.assertEqual(fresh["tickets"][0]["status"],"objavljen")
+        self.assertFalse(fresh["settled"])
+
     def test_cross_date_rejected(self):
         with self.assertRaises(ValueError):
             settle(sample(),{"date":"2026-10-23","source":"espn-public-unofficial","updated_at_utc":"2026-10-24T18:00:00Z","matches":[]})
