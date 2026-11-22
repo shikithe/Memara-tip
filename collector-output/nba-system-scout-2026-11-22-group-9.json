@@ -1,0 +1,549 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-22",
+  "group_number": 9,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Shai Gilgeous-Alexander",
+      "player_id": "4278073",
+      "score": 90,
+      "confidence": 82,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identities and league fixtures attempted in first pass, then NBA/CBS/Reuters and odds archives for season and recent numbers; missing individual game rows omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/shai-gilgeous-alexander",
+        "https://www.statiqsports.com/nba/shai-gilgeous-alexander/game-log"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 40,
+          "minutes": 37
+        },
+        {
+          "date": "2026-11-18",
+          "points": 34,
+          "minutes": 36
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season hit count or scoring averages recorded only from cited current-source reports."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete opponent/venue specific historical scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Full head-to-head player box score history for this specific opponent not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific defensive strength and latest injuries were not fully quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defender identity cannot be confirmed until lineups and on-court assignments are observed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team rotation and player injury mentions reviewed; no future appearance guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projections were not independently corroborated; actual verified game logs used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current playing role based on sourced game logs and lineup previews."
+      },
+      "market": {
+        "points_line": 32.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8547,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/shai-gilgeous-alexander"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not estimated; descriptive hit rates only",
+        "availability_confirmed": true,
+        "reason": "Shai is averaging 31.7 points season, has cleared 32.5 in four of his latest five games per current props history, including 40 Nov 20 and 34 Nov 18. Strong active primary-scoring role supports over. This is a statistically motivated lean, not a calibrated win probability.",
+        "risk": "The 32.5 points line exceeds season average and Miami could double-team; full five logs were not independently minute-verified. Results can differ materially from historical frequencies."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Anthony Davis",
+      "player_id": "6583",
+      "score": 84,
+      "confidence": 76,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identities and league fixtures attempted in first pass, then NBA/CBS/Reuters and odds archives for season and recent numbers; missing individual game rows omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/anthony-davis",
+        "https://www.nba.com/player/203076/anthony-davis"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-15",
+          "points": 14,
+          "minutes": 30.6
+        },
+        {
+          "date": "2026-11-12",
+          "points": 22,
+          "minutes": 29.7
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season hit count or scoring averages recorded only from cited current-source reports."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete opponent/venue specific historical scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Full head-to-head player box score history for this specific opponent not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific defensive strength and latest injuries were not fully quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defender identity cannot be confirmed until lineups and on-court assignments are observed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team rotation and player injury mentions reviewed; no future appearance guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projections were not independently corroborated; actual verified game logs used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current playing role based on sourced game logs and lineup previews."
+      },
+      "market": {
+        "points_line": 24.5,
+        "over_odd": 1.9709,
+        "under_odd": 1.8065,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/anthony-davis"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not estimated; descriptive hit rates only",
+        "availability_confirmed": true,
+        "reason": "Anthony Davis is averaging 25.3 points and cleared 24.5 in nine of 15 seasonal games. His last five included 36,25,23,14,30 points, three overs, against the Orlando matchup. This is a statistically motivated lean, not a calibrated win probability.",
+        "risk": "Davis has injury and playing-time variability; younger Washington scorers may change his usage, and full game-by-game minutes of last five are not verified. Results can differ materially from historical frequencies."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Anthony Black",
+      "player_id": "betsharp:2026-11-22:0079",
+      "score": 75,
+      "confidence": 71,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identities and league fixtures attempted in first pass, then NBA/CBS/Reuters and odds archives for season and recent numbers; missing individual game rows omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/anthony-black",
+        "https://data.vsin.com/nba/player-props/?book=DK&date=2026-11-22&game=20261122NBA00091&prop=POINTS&site=START&tf=L15G"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season hit count or scoring averages recorded only from cited current-source reports."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete opponent/venue specific historical scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Full head-to-head player box score history for this specific opponent not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific defensive strength and latest injuries were not fully quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defender identity cannot be confirmed until lineups and on-court assignments are observed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team rotation and player injury mentions reviewed; no future appearance guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projections were not independently corroborated; actual verified game logs used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current playing role based on sourced game logs and lineup previews."
+      },
+      "market": {
+        "points_line": 15.5,
+        "over_odd": 1.9346,
+        "under_odd": 1.8403,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/anthony-black"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not estimated; descriptive hit rates only",
+        "availability_confirmed": false,
+        "reason": "Anthony Black season average approximately 13.4 and nine of last 15 were under 15.5, but recent 11-game over record around six means no decisive trend. This is a statistically motivated lean, not a calibrated win probability.",
+        "risk": "Orlando guard role has rising shot attempts; high-minute games can exceed the posted line. Results can differ materially from historical frequencies."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "AJ Dybantsa",
+      "player_id": "betsharp:2026-11-22:0077",
+      "score": 72,
+      "confidence": 70,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identities and league fixtures attempted in first pass, then NBA/CBS/Reuters and odds archives for season and recent numbers; missing individual game rows omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/aj-dybantsa",
+        "https://statz.ai/nba/players/aj-dybantsa/points"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season hit count or scoring averages recorded only from cited current-source reports."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete opponent/venue specific historical scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Full head-to-head player box score history for this specific opponent not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific defensive strength and latest injuries were not fully quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defender identity cannot be confirmed until lineups and on-court assignments are observed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team rotation and player injury mentions reviewed; no future appearance guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projections were not independently corroborated; actual verified game logs used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current playing role based on sourced game logs and lineup previews."
+      },
+      "market": {
+        "points_line": 17.5,
+        "over_odd": 1.8475,
+        "under_odd": 1.9259,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/aj-dybantsa"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not estimated; descriptive hit rates only",
+        "availability_confirmed": false,
+        "reason": "AJ Dybantsa season average 16.5 versus 17.5, five of ten over, meaning only marginal under advantage in small sample. This is a statistically motivated lean, not a calibrated win probability.",
+        "risk": "Washington high usage rookie can have explosive offense and season sample is small. Results can differ materially from historical frequencies."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Alexandre Sarr",
+      "player_id": "betsharp:2026-11-22:0078",
+      "score": 68,
+      "confidence": 70,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identities and league fixtures attempted in first pass, then NBA/CBS/Reuters and odds archives for season and recent numbers; missing individual game rows omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/alexandre-sarr",
+        "https://data.vsin.com/nba/player-props/?book=DK&date=2026-11-22&game=20261122NBA00091&prop=POINTS&site=START&tf=CS"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season hit count or scoring averages recorded only from cited current-source reports."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete opponent/venue specific historical scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Full head-to-head player box score history for this specific opponent not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific defensive strength and latest injuries were not fully quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defender identity cannot be confirmed until lineups and on-court assignments are observed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team rotation and player injury mentions reviewed; no future appearance guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projections were not independently corroborated; actual verified game logs used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current playing role based on sourced game logs and lineup previews."
+      },
+      "market": {
+        "points_line": 10.5,
+        "over_odd": 1.9091,
+        "under_odd": 1.8621,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/alexandre-sarr"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not estimated; descriptive hit rates only",
+        "availability_confirmed": false,
+        "reason": "Sarr averages around 11.3 points against line 10.5, with eight of sixteen seasonal overs; market roughly balanced. This is a statistically motivated lean, not a calibrated win probability.",
+        "risk": "Low recent efficiency and shot volume swings can result in an under. Results can differ materially from historical frequencies."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Pelle Larsson",
+      "player_id": "betsharp:2026-11-22:0075",
+      "score": 60,
+      "confidence": 49,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identities and league fixtures attempted in first pass, then NBA/CBS/Reuters and odds archives for season and recent numbers; missing individual game rows omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/pelle-larsson",
+        "https://www.nba.com/heat/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season hit count or scoring averages recorded only from cited current-source reports."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete opponent/venue specific historical scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Full head-to-head player box score history for this specific opponent not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific defensive strength and latest injuries were not fully quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defender identity cannot be confirmed until lineups and on-court assignments are observed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team rotation and player injury mentions reviewed; no future appearance guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projections were not independently corroborated; actual verified game logs used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current playing role based on sourced game logs and lineup previews."
+      },
+      "market": {
+        "points_line": 10.5,
+        "over_odd": 1.9524,
+        "under_odd": 1.8264,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/pelle-larsson"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not estimated; descriptive hit rates only",
+        "availability_confirmed": false,
+        "reason": "Pelle Larsson 10.5-point threshold is modest but complete five-game scoring log and rotation role were not independently confirmed. This is a statistically motivated lean, not a calibrated win probability.",
+        "risk": "Potential minutes increase from Miami injury absences reduces confidence. Results can differ materially from historical frequencies."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Jared McCain",
+      "player_id": "betsharp:2026-11-22:0073",
+      "score": 56,
+      "confidence": 46,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identities and league fixtures attempted in first pass, then NBA/CBS/Reuters and odds archives for season and recent numbers; missing individual game rows omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jared-mccain",
+        "https://www.nba.com/thunder/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season hit count or scoring averages recorded only from cited current-source reports."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete opponent/venue specific historical scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Full head-to-head player box score history for this specific opponent not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific defensive strength and latest injuries were not fully quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defender identity cannot be confirmed until lineups and on-court assignments are observed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team rotation and player injury mentions reviewed; no future appearance guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projections were not independently corroborated; actual verified game logs used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current playing role based on sourced game logs and lineup previews."
+      },
+      "market": {
+        "points_line": 18.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8547,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jared-mccain"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not estimated; descriptive hit rates only",
+        "availability_confirmed": false,
+        "reason": "Jared McCain is offered at 18.5 points yet precise late-November game results and injury/rotation details were not fully confirmed. This is a statistically motivated lean, not a calibrated win probability.",
+        "risk": "Possibility of significant shots with Thunder's second unit or missed injury status adds uncertainty. Results can differ materially from historical frequencies."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Klay Thompson",
+      "player_id": "betsharp:2026-11-22:0074",
+      "score": 51,
+      "confidence": 42,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN identities and league fixtures attempted in first pass, then NBA/CBS/Reuters and odds archives for season and recent numbers; missing individual game rows omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/klay-thompson",
+        "https://www.reuters.com/sports/basketball/heats-bam-adebayo-giannis-antetokounmpo-take-aim-rockets--flm-2026-11-16/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season hit count or scoring averages recorded only from cited current-source reports."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete opponent/venue specific historical scoring split was not independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Full head-to-head player box score history for this specific opponent not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific defensive strength and latest injuries were not fully quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defender identity cannot be confirmed until lineups and on-court assignments are observed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Team rotation and player injury mentions reviewed; no future appearance guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projections were not independently corroborated; actual verified game logs used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current playing role based on sourced game logs and lineup previews."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.885,
+        "under_odd": 1.8929,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/klay-thompson"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not estimated; descriptive hit rates only",
+        "availability_confirmed": false,
+        "reason": "Klay Thompson 14.5 line is close to historical volume and he has had 25-point outliers this season, with no complete verified recent log available. This is a statistically motivated lean, not a calibrated win probability.",
+        "risk": "High-variance three-point streaks can easily send him over the line. Results can differ materially from historical frequencies."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "4278073",
+    "6583"
+  ],
+  "selection_reason": "Two-pass review of all 8 players and fixed DK points markets ranks Shai Gilgeous-Alexander OVER 32.5 (four of last five recent overs, elite usage) and Anthony Davis OVER 24.5 (9/15 season overs and 3/5 recent overs). ESPN ID and future tipoffs confirmed for both. Injuries and matchup uncertainty noted; other members scored by evidence quality.",
+  "notes": "Unverified historical minutes, H2H, and defender assignments never filled with invented data."
+}
