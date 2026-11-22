@@ -1,184 +1,179 @@
 {
-  "date": "2026-11-21",
+  "date": "2026-11-22",
   "approval_source": "chatgpt_ai_analyst",
-  "approved_at_utc": "2026-11-21T17:23:00Z",
+  "approved_at_utc": "2026-11-22T17:06:00Z",
   "publication_allowed": true,
-  "manual_c_stake_override": "2026-11-21_2pct_bank_start",
+  "state": "nba_c_ai_manual_approved_for_technical_publishing",
+  "manual_c_stake_override": "2026-11-22_2pct_bank_start",
   "tickets": [
     {
       "id": "C",
-      "analysis": "Ručno odobren danas po izričitoj korisnikovoj instrukciji 2% početne dnevne banke. Paul George UNDER 22,5: 3/5 ispod u L5, prosjek 20,4; Tatum questionable je rizik. Rudy Gobert UNDER 9,5: 4/5 u L5, 7/10 u L10 i sezonski prosjek 7,7. DraftKings kvote iz današnjeg BetSharp capture-a; H2H i kompletna protivnička odbrana nedovoljno potvrđeni. Startovi 02:00 i 04:00 CET 22.11.2026. C ostaje virtuelni tiket.",
+      "analysis": "Izričito odobren RUČNI C 22.11. sa ulogom 2% početne dnevne banke 241,60 € = 4,83 €, izvan već potrošenog 10% budžeta; samo virtuelna evidencija. Ausar Thompson OVER 11,5: zadnjih pet 13/10/14/10/17, prosjek 12,8, 3/5 preko; sezonskih 10,6 ispod granice je glavni rizik. Isaiah Hartenstein UNDER 9,5: zadnjih pet 5/6/3/21/20, 3/5 ispod; prethodnih deset 8/10 ispod, prosjek 7,4; dvadeset+ poena u dva susreta pokazuje rizik. Kvote iz jedne konzistentne DK kolone svježeg BetSharp prikaza, samo indikativne; direktni matchup/H2H nije dovoljno potvrđen. Od sutra redovna rezerva C 1,5% banke.",
       "matches": [
         {
-          "player_id": "202331",
-          "espn_event_id": "401910028",
-          "player": "Paul George",
-          "team": "Boston Celtics",
-          "opponent": "Sacramento Kings",
-          "start_utc": "2026-11-22T03:00:00Z",
+          "player_id": "4684742",
+          "player": "Ausar Thompson",
+          "espn_event_id": "401910029",
+          "team": "Detroit Pistons",
+          "opponent": "Atlanta Hawks",
+          "start_utc": "2026-11-22T20:30:00Z",
           "market": "player_points",
-          "pick": "under",
-          "points_line": 22.5,
-          "odd": 1.9259,
+          "pick": "over",
+          "points_line": 11.5,
+          "odd": 1.8403,
           "bookmaker": "DraftKings",
-          "source": "https://betsharp.com/nba/player/paul-george",
+          "source": "https://betsharp.com/nba/player/ausar-thompson",
           "quote_timestamp_verified": false
         },
         {
-          "player_id": "3032976",
-          "espn_event_id": "401910026",
-          "player": "Rudy Gobert",
-          "team": "Minnesota Timberwolves",
-          "opponent": "Memphis Grizzlies",
-          "start_utc": "2026-11-22T01:00:00Z",
+          "player_id": "4222252",
+          "player": "Isaiah Hartenstein",
+          "espn_event_id": "401910030",
+          "team": "Oklahoma City Thunder",
+          "opponent": "Miami Heat",
+          "start_utc": "2026-11-22T23:00:00Z",
           "market": "player_points",
           "pick": "under",
           "points_line": 9.5,
-          "odd": 1.8403,
+          "odd": 1.885,
           "bookmaker": "DraftKings",
-          "source": "https://betsharp.com/nba/player/rudy-gobert",
+          "source": "https://betsharp.com/nba/player/isaiah-hartenstein",
           "quote_timestamp_verified": false
         }
       ],
       "scout_analysis": {
-        "date": "2026-11-21",
-        "intro": "Ručni NBA C Scout: samo igrači sa stvarnom BetSharp DraftKings istom granicom i oba smjera; uz povratno provjerene NBA statistike. Ulog izuzetak 2% početne banke, današnji korisnikov zahtjev.",
+        "date": "2026-11-22",
+        "intro": "Ručni NBA C Scout, posebna dozvola korisnika za izuzetni ulog 2% banke. Dva analizirana igrača, ne tvrdi se da je detaljno istraženo svih 90 igrača u ponudi.",
         "players": [
           {
-            "id": "202331",
-            "name": "Paul George",
-            "team": "Boston Celtics",
-            "opponent": "Sacramento Kings",
-            "pick": "under",
-            "line": 22.5,
-            "odd": 1.9259,
+            "id": "4684742",
+            "name": "Ausar Thompson",
+            "team": "Detroit Pistons",
+            "opponent": "Atlanta Hawks",
+            "pick": "over",
+            "line": 11.5,
+            "odd": 1.8403,
             "games": [
+              [
+                "20.11.",
+                13,
+                33
+              ],
               [
                 "18.11.",
                 10,
-                23
+                34
               ],
               [
-                "16.11.",
-                22,
-                36
+                "17.11.",
+                14,
+                29
               ],
               [
-                "15.11.",
-                7,
-                25
+                "14.11.",
+                10,
+                18
               ],
               [
-                "10.11.",
-                36,
-                30
-              ],
-              [
-                "08.11.",
-                27,
-                28
+                "12.11.",
+                17,
+                43
               ]
             ],
             "h2h": [],
-            "last10": "Nije pouzdano potvrđeno za ovu granicu",
+            "last10": "4/10 OVER prema Reko; kompletni log nije nezavisno obrađen",
             "pros": [
-              "3 od 5 posljednjih mečeva ostao ispod 22,5 poena",
-              "Prosjek L5 20,4 poena, ispod ponuđene granice",
-              "Sezonski prosjek 19,9 poena u 13 nastupa (prije susreta)"
+              "Posljednjih pet: 13, 10, 14, 10, 17 poena, prosjek 12,8.",
+              "Granica 11,5 pređena u 3 od 5 posljednjih nastupa.",
+              "U posljednja tri nastupa igrao je 29, 34 i 33 minute."
             ],
             "risks": [
-              "Na 10.11. postigao je 36, a 08.11. 27 poena: mogući veliki napadački skokovi",
-              "Jayson Tatum naveden kao upitan protiv Sacramenta: moguća povećana uloga Georgea",
-              "Sacramento je u slaboj formi odbrane, pa matchup nije naročito povoljan za UNDER",
-              "Protivnički direktni čuvar i H2H na ovoj liniji nisu potvrđeni"
+              "Sezonski prosjek 10,6 poena niži je od granice 11,5.",
+              "Samo 4/10 preko prema drugom izvoru, pa L5 porast može biti kratkotrajan.",
+              "Direktni čuvar i H2H protiv Hawksa nisu potvrđeni."
             ],
-            "assessment": "Izbor UNDER je zasnovan na prosjeku i 3/5 prolaza, ali rizik nije nizak jer Tatumov status i slabija odbrana Kingsa mogu povećati potrošnju i broj poena.",
+            "assessment": "Blaga prednost trenutnog L5 trenda, ali sezonski profil i duži niz ne potvrđuju jak edge; povišen rizik.",
             "sources": [
               [
-                "L5 poeni i minute",
-                "https://www.legchecksports.com/players/nba/paul-george/"
+                "Nedavna forma i minute",
+                "https://www.statiqsports.com/nba/ausar-thompson/last-5-games"
               ],
               [
-                "NBA status i sezona",
-                "https://www.fsroundup.com/nba-player/paul-george"
+                "Sezonski prosjek i L10",
+                "https://reko.bet/nba/players/ausar-thompson-30962"
               ],
               [
-                "Aktuelni BetSharp bet DK",
-                "https://betsharp.com/nba/player/paul-george"
-              ],
-              [
-                "Boston-Sacramento injury preview",
-                "https://www.bostonglobe.com/2026/11/21/sports/celtics-kings-preview-november-21/"
+                "BetSharp kvote",
+                "https://betsharp.com/nba/player/ausar-thompson"
               ]
             ]
           },
           {
-            "id": "3032976",
-            "name": "Rudy Gobert",
-            "team": "Minnesota Timberwolves",
-            "opponent": "Memphis Grizzlies",
+            "id": "4222252",
+            "name": "Isaiah Hartenstein",
+            "team": "Oklahoma City Thunder",
+            "opponent": "Miami Heat",
             "pick": "under",
             "line": 9.5,
-            "odd": 1.8403,
+            "odd": 1.885,
             "games": [
               [
-                "19.11.",
-                9,
-                35
+                "20.11.",
+                5,
+                28
               ],
               [
-                "17.11.",
-                0,
-                22
-              ],
-              [
-                "16.11.",
-                18,
-                32
-              ],
-              [
-                "14.11.",
-                1,
+                "18.11.",
+                6,
                 27
               ],
               [
-                "12.11.",
-                9,
-                23
+                "15.11.",
+                3,
+                18
+              ],
+              [
+                "13.11.",
+                21,
+                30
+              ],
+              [
+                "11.11.",
+                20,
+                34
               ]
             ],
             "h2h": [],
-            "last10": "7/10 UNDER na granici 9,5 poena, prema game-log evidenciji",
+            "last10": "8/10 UNDER 9,5 poena",
             "pros": [
-              "4 od posljednjih 5 nastupa završio ispod 9,5 poena",
-              "7 od posljednjih 10 završilo ispod 9,5 poena",
-              "Sezonski prosjek 7,7 poena, 4/15 OVER na 9,5"
+              "Posljednjih pet: 5, 6, 3, 21, 20; 3/5 ispod granice 9,5.",
+              "U posljednjih deset mečeva postigao je u prosjeku 7,4 poena.",
+              "U 8/10 posljednjih odigranih utakmica ostao je ispod 9,5."
             ],
             "risks": [
-              "U pobjedi 16.11. postigao je 18 poena i potencijalno može preći granicu",
-              "Sezonski matchup Memphis vs centri nije nezavisno kvantifikovan",
-              "Posljednju utakmicu je igrao 35 minuta, pa se uloga može povećati",
-              "Specifični H2H na istoj granici nisu potvrđeni"
+              "Dva od posljednjih pet mečeva postigao je 20 ili više poena.",
+              "Na terenu može dobiti šansu za lake poene iz reketa i drugog napada.",
+              "Direktni čuvar protiv Heata i H2H nisu potvrđeni."
             ],
-            "assessment": "UNDER 9,5 ima solidno empirijsko uporište u odnosu na L5, L10 i sezonski prosjek; mala granica znači da jedan bolji napadački period može poništiti prednost.",
+            "assessment": "UNDER je oslonjen na 8/10 ispod granice i nizak prosjek; no mali prag lako prelazi u večeri s većim brojem šuteva.",
             "sources": [
               [
-                "Sezonski game log sa minutama",
-                "https://www.statiqsports.com/nba/rudy-gobert/game-log"
+                "Poeni i minutaža zadnjih 10",
+                "https://nbahouse.net/props/isaiah-hartenstein"
               ],
               [
-                "NBA status",
-                "https://www.fsroundup.com/nba-player/rudy-gobert"
+                "BetSharp kvote",
+                "https://betsharp.com/nba/player/isaiah-hartenstein"
               ],
               [
-                "Aktuelni BetSharp bet DK",
-                "https://betsharp.com/nba/player/rudy-gobert"
+                "Provjera statusa",
+                "https://www.fsroundup.com/nba-player/isaiah-hartenstein"
               ]
             ]
           }
         ],
-        "conclusion": "Paul George UNDER 22,5 @1,9259 x Rudy Gobert UNDER 9,5 @1,8403 = ukupna kvota približno 3,54. Projekcija proističe iz ranije forme; nema garancije pogodaka. George je najveći rizik ako Tatum ne nastupi.",
-        "caution": "Kvote preuzete sa javnog BetSharp poređenja u 17:10 UTC; ne predstavlja direktnu live DraftKings potvrdu. H2H i individualni defanzivni matchup nisu potpuno potvrđeni. Ulazak u tim nije garancija minutaže."
+        "conclusion": "Ausar Thompson više od 11,5 @1,8403 i Isaiah Hartenstein manje od 9,5 @1,885; ukupna indikativna kvota 3,47, virtuelni ulog 4,83 €. Posebni današnji budžetski izuzetak.",
+        "caution": "Kvote su iz uporedne javne BetSharp DK kolone, nisu direktno potvrđene kod DraftKings-a; H2H i čuvari nisu potvrđeni. Nije izvršen potpuni TOP20-TOP10-TOP5 proces na svima iz ponude."
       }
     }
   ]
