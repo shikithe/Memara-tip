@@ -12,6 +12,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 from nba_live_points import enrich as enrich_nba_points
+from football_identity import identity
 
 ROOT = "https://site.api.espn.com/apis/site/v2/sports/soccer/"
 LEAGUES = ("eng.1","esp.1","ger.1","ita.1","fra.1","ned.1","por.1","sco.1","bel.1","tur.1",
@@ -105,7 +106,8 @@ def run(source="data.json",output="live-scores.json"):
             start=dt(m.get("start_sarajevo") or m.get("start_utc") or m["datetime"])
             if abs((now-start).total_seconds())<=36*3600:
                 day=start.astimezone(SAR).strftime("%Y%m%d")
-                league=m.get("league")
+                _, _, derived_league, _ = identity(m)
+                league=m.get("league") or derived_league
                 leagues=leagues_by_day.setdefault(day,set())
                 if isinstance(league,str) and re.fullmatch(r"[a-z0-9.]+",league):
                     leagues.add(league)
@@ -131,18 +133,21 @@ def run(source="data.json",output="live-scores.json"):
         pass
     results=[]
     for ticket,index,m in matches:
-        record={"ticket":ticket,"index":index,"home":m.get("home"),
-                "away":m.get("away"),"state":"unverified"}
+        home, away, derived_league, derived_event_id = identity(m)
+        record={"ticket":ticket,"index":index,"home":home,
+                "away":away,"state":"unverified"}
+        if derived_event_id:
+            record["fixture_id"] = m.get("fixture_id")
         try:
             kickoff=dt(m.get("start_sarajevo") or m.get("start_utc") or m["datetime"])
             candidates=[e for e in all_events if abs((e["start"]-kickoff).total_seconds())<=5400]
-            event_id=str(m.get("event_id") or "")
+            event_id=str(m.get("event_id") or derived_event_id or "")
             if event_id.isdigit():
                 candidates=[e for e in candidates if e["event_id"]==event_id
-                            and (not m.get("league") or e["league"]==m["league"])]
+                            and (not (m.get("league") or derived_league) or e["league"]==(m.get("league") or derived_league))]
             else:
-                candidates=[e for e in candidates if norm(e["home"])==norm(m.get("home"))
-                            and norm(e["away"])==norm(m.get("away"))]
+                candidates=[e for e in candidates if norm(e["home"])==norm(home)
+                            and norm(e["away"])==norm(away)]
             unique={e["event_id"]:e for e in candidates}
             if len(unique)==1:
                 e=next(iter(unique.values()))
@@ -159,7 +164,7 @@ def run(source="data.json",output="live-scores.json"):
                         record["result_status"]="pogođen"
         except (KeyError,ValueError,TypeError):
             pass
-        key = (ticket,index,m.get("home"),m.get("away"))
+        key = (ticket,index,home,away)
         if key in previous and record["state"] != "final":
             record = dict(previous[key])
         results.append(record)
