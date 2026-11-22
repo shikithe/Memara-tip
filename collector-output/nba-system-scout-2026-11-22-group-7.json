@@ -1,0 +1,608 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-22",
+  "group_number": 7,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Josh Hart",
+      "player_id": "3062679",
+      "score": 88,
+      "confidence": 76,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete/game schedule attempted, then searched NBA, Reuters, CBS, recent props summaries. Missing full L5/minutes noted and not invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/josh-hart",
+        "https://www.fsroundup.com/nba/props/game/ind-at-nyk-2026-11-22"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-11",
+          "points": 6,
+          "minutes": 15.5
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced season or L10 aggregates where available; no calibrated probabilities."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific scoring split at comparable recent minutes not independently established."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five verified head to head player scoring performances unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowance not verified sufficiently to quantify."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed starting individual defender matchup available."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Towns illness and other Knicks availability reviewed in game previews; no guarantee of lineup."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified future minutes projection, only existing sourced logs."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Observed team roles informed by news and current playing season."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.8772,
+        "under_odd": 1.8929,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/josh-hart"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not estimated",
+        "availability_confirmed": true,
+        "reason": "Third-party L10 game prop dataset reports only one over 9.5 out of ten and New York source game averages near 6.8, under the original DraftKings line. Current pick acknowledges incompleteness of primary minute-by-minute logs.",
+        "risk": "Hart can increase shot attempts and minutes when Knicks injury absences require him to play more; L10 aggregate not calibrated probability. Historical patterns do not prove tomorrow's outcome."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Mikal Bridges",
+      "player_id": "3147657",
+      "score": 84,
+      "confidence": 74,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete/game schedule attempted, then searched NBA, Reuters, CBS, recent props summaries. Missing full L5/minutes noted and not invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/mikal-bridges",
+        "https://www.reuters.com/sports/basketball/mikal-bridges-game-winner-helps-knicks-survive-blown-lead-vs-blazers--flm-2026-11-22/"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-21",
+          "points": 12,
+          "minutes": 27.7
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced season or L10 aggregates where available; no calibrated probabilities."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific scoring split at comparable recent minutes not independently established."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five verified head to head player scoring performances unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowance not verified sufficiently to quantify."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed starting individual defender matchup available."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Towns illness and other Knicks availability reviewed in game previews; no guarantee of lineup."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified future minutes projection, only existing sourced logs."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Observed team roles informed by news and current playing season."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.7752,
+        "under_odd": 2.01,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/mikal-bridges"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not estimated",
+        "availability_confirmed": true,
+        "reason": "Bridges has season points average near 7.5, below 11.5 market line; he made the winning shot vs Portland but was reported in a shooting slump despite scoring 12 that night. Current pick acknowledges incompleteness of primary minute-by-minute logs.",
+        "risk": "Back-to-back game against Indiana, variance in three pointers and absences of Knicks starters could raise his scoring opportunity. Historical patterns do not prove tomorrow's outcome."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Andrew Nembhard",
+      "player_id": "betsharp:2026-11-22:0055",
+      "score": 77,
+      "confidence": 71,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete/game schedule attempted, then searched NBA, Reuters, CBS, recent props summaries. Missing full L5/minutes noted and not invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/andrew-nembhard",
+        "https://archivepicks.com/matchups/nba/3976969854-indiana-pacers-at-new-york-knicks"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced season or L10 aggregates where available; no calibrated probabilities."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific scoring split at comparable recent minutes not independently established."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five verified head to head player scoring performances unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowance not verified sufficiently to quantify."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed starting individual defender matchup available."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Towns illness and other Knicks availability reviewed in game previews; no guarantee of lineup."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified future minutes projection, only existing sourced logs."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Observed team roles informed by news and current playing season."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.9901,
+        "under_odd": 1.7874,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/andrew-nembhard"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not estimated",
+        "availability_confirmed": false,
+        "reason": "Nembhard's 14.5 line has a reported 20% over hit rate in last five, supporting a recent under lean, although season baseline near 16.3 points. Current pick acknowledges incompleteness of primary minute-by-minute logs.",
+        "risk": "Pacers offensive injuries could boost his primary creator role and large game-to-game variance. Historical patterns do not prove tomorrow's outcome."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Jalen Brunson",
+      "player_id": "betsharp:2026-11-22:0057",
+      "score": 70,
+      "confidence": 70,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete/game schedule attempted, then searched NBA, Reuters, CBS, recent props summaries. Missing full L5/minutes noted and not invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jalen-brunson",
+        "https://www.reuters.com/sports/nba-roundup-knick-blow-huge-lead-win-on-mikal-bridges-buzzer-beater--flm-2026-11-22/"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-21",
+          "points": 30,
+          "minutes": 35
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced season or L10 aggregates where available; no calibrated probabilities."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific scoring split at comparable recent minutes not independently established."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five verified head to head player scoring performances unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowance not verified sufficiently to quantify."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed starting individual defender matchup available."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Towns illness and other Knicks availability reviewed in game previews; no guarantee of lineup."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified future minutes projection, only existing sourced logs."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Observed team roles informed by news and current playing season."
+      },
+      "market": {
+        "points_line": 27.5,
+        "over_odd": 1.8696,
+        "under_odd": 1.9091,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jalen-brunson"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not estimated",
+        "availability_confirmed": false,
+        "reason": "Brunson had 30 points against Portland and season baseline around 26.6 against 27.5 line; shot volume and usage are high. Current pick acknowledges incompleteness of primary minute-by-minute logs.",
+        "risk": "Active primary Knicks creator facing a depleted opponent can go above his line. Historical patterns do not prove tomorrow's outcome."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Ivica Zubac",
+      "player_id": "betsharp:2026-11-22:0056",
+      "score": 65,
+      "confidence": 63,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete/game schedule attempted, then searched NBA, Reuters, CBS, recent props summaries. Missing full L5/minutes noted and not invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/ivica-zubac",
+        "https://statsnext.com/nba/games/2026-11-23-pacers-at-knicks-bd04db45"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced season or L10 aggregates where available; no calibrated probabilities."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific scoring split at comparable recent minutes not independently established."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five verified head to head player scoring performances unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowance not verified sufficiently to quantify."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed starting individual defender matchup available."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Towns illness and other Knicks availability reviewed in game previews; no guarantee of lineup."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified future minutes projection, only existing sourced logs."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Observed team roles informed by news and current playing season."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.8929,
+        "under_odd": 1.885,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/ivica-zubac"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not estimated",
+        "availability_confirmed": false,
+        "reason": "Zubac season points baseline 10.8 relative to line 11.5, but five-game average 13 and minutes near 25 makes under weak. Current pick acknowledges incompleteness of primary minute-by-minute logs.",
+        "risk": "Rebounding and post scoring opportunity may improve with Knicks frontcourt health uncertainty. Historical patterns do not prove tomorrow's outcome."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Karl-Anthony Towns",
+      "player_id": "betsharp:2026-11-22:0059",
+      "score": 60,
+      "confidence": 46,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete/game schedule attempted, then searched NBA, Reuters, CBS, recent props summaries. Missing full L5/minutes noted and not invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/karl-anthony-towns",
+        "https://www.reuters.com/sports/nba-roundup-knick-blow-huge-lead-win-on-mikal-bridges-buzzer-beater--flm-2026-11-22/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced season or L10 aggregates where available; no calibrated probabilities."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific scoring split at comparable recent minutes not independently established."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five verified head to head player scoring performances unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowance not verified sufficiently to quantify."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed starting individual defender matchup available."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Towns illness and other Knicks availability reviewed in game previews; no guarantee of lineup."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified future minutes projection, only existing sourced logs."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Observed team roles informed by news and current playing season."
+      },
+      "market": {
+        "points_line": 20.5,
+        "over_odd": 1.8333,
+        "under_odd": 1.9434,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/karl-anthony-towns"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not estimated",
+        "availability_confirmed": false,
+        "reason": "Towns line 20.5 vs reported season around 20 points and missed Saturday game due to illness; no strong verified scoring edge. Current pick acknowledges incompleteness of primary minute-by-minute logs.",
+        "risk": "Unavailable due to Saturday illness, Sunday participation and minutes not definitively confirmed, so no selection. Historical patterns do not prove tomorrow's outcome."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Kelly Oubre Jr.",
+      "player_id": "betsharp:2026-11-22:0060",
+      "score": 57,
+      "confidence": 50,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete/game schedule attempted, then searched NBA, Reuters, CBS, recent props summaries. Missing full L5/minutes noted and not invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/kelly-oubre",
+        "https://statsnext.com/nba/games/2026-11-23-pacers-at-knicks-bd04db45"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced season or L10 aggregates where available; no calibrated probabilities."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific scoring split at comparable recent minutes not independently established."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five verified head to head player scoring performances unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowance not verified sufficiently to quantify."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed starting individual defender matchup available."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Towns illness and other Knicks availability reviewed in game previews; no guarantee of lineup."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified future minutes projection, only existing sourced logs."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Observed team roles informed by news and current playing season."
+      },
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.8621,
+        "under_odd": 1.9091,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/kelly-oubre"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not estimated",
+        "availability_confirmed": false,
+        "reason": "Reported recent scoring patterns include several mid-teen games against 12.5 line and recent improved minutes, making under uncertain. Current pick acknowledges incompleteness of primary minute-by-minute logs.",
+        "risk": "Shot selection and Pacers roster changes introduce substantial volatility. Historical patterns do not prove tomorrow's outcome."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Landry Shamet",
+      "player_id": "betsharp:2026-11-22:0061",
+      "score": 53,
+      "confidence": 40,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete/game schedule attempted, then searched NBA, Reuters, CBS, recent props summaries. Missing full L5/minutes noted and not invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/landry-shamet",
+        "https://www.nba.com/knicks/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced season or L10 aggregates where available; no calibrated probabilities."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific scoring split at comparable recent minutes not independently established."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five verified head to head player scoring performances unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowance not verified sufficiently to quantify."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed starting individual defender matchup available."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Towns illness and other Knicks availability reviewed in game previews; no guarantee of lineup."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified future minutes projection, only existing sourced logs."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Observed team roles informed by news and current playing season."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.9346,
+        "under_odd": 1.8403,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/landry-shamet"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not estimated",
+        "availability_confirmed": false,
+        "reason": "The 11.5-point line comes from the canonical BetSharp capture but current verified recent individual game-log numbers are insufficient for a confident pick. Current pick acknowledges incompleteness of primary minute-by-minute logs.",
+        "risk": "Rotation, three-point variance and available starters may alter his minutes considerably. Historical patterns do not prove tomorrow's outcome."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Obi Toppin",
+      "player_id": "betsharp:2026-11-22:0063",
+      "score": 49,
+      "confidence": 37,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete/game schedule attempted, then searched NBA, Reuters, CBS, recent props summaries. Missing full L5/minutes noted and not invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/obi-toppin",
+        "https://www.nba.com/pacers/news/preview-pacers-knicks-261122"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced season or L10 aggregates where available; no calibrated probabilities."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific scoring split at comparable recent minutes not independently established."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five verified head to head player scoring performances unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive point allowance not verified sufficiently to quantify."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No confirmed starting individual defender matchup available."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Towns illness and other Knicks availability reviewed in game previews; no guarantee of lineup."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified future minutes projection, only existing sourced logs."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Observed team roles informed by news and current playing season."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.9259,
+        "under_odd": 1.8475,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/obi-toppin"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not estimated",
+        "availability_confirmed": false,
+        "reason": "Toppin's market line is 11.5 and no verified five-game scoring log was reconstructed, so only a low-confidence under assessment is documented. Current pick acknowledges incompleteness of primary minute-by-minute logs.",
+        "risk": "Bench opportunity depends on available frontcourt rotation and illness/injury reports. Historical patterns do not prove tomorrow's outcome."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "3062679",
+    "3147657"
+  ],
+  "selection_reason": "All nine original Indiana-New York offers assessed in two research passes. Josh Hart UNDER 9.5 supported by only one over in ten recent games and low average, and Mikal Bridges UNDER 11.5 supported by current season scoring slump and seven-to-eight-point average. Their ESPN IDs and 01:00 UTC future tip-off verified. Incomplete individual logs lower confidence; these are not guaranteed wins."
+}
