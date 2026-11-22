@@ -55,7 +55,7 @@ function effectiveResult(m,live){
     return live.state==="final"?(hit?"pogođen":"promašen"):null;
   }
   if(m.result_status==="pogođen"||m.result_status==="promašen")return m.result_status;
-  if(live&&(live.state==="live"||live.state==="final")&&live.source==="espn-public-unofficial"){const pick=String(m.pick||"").trim().toUpperCase();const threshold={"3+":3,"OVER 2.5":3,"O2.5":3,"2+":2,"OVER 1.5":2,"O1.5":2}[pick];const parts=String(live.score||"").split(":");if(threshold&&parts.length===2&&parts.every(x=>/^\d+$/.test(x))&&Number(parts[0])+Number(parts[1])>=threshold)return "pogođen";}return live&&live.state==="final"&&(live.result_status==="pogođen"||live.result_status==="promašen")?live.result_status:null;
+  if(live&&(live.state==="live"||live.state==="final")&&live.source==="espn-public-unofficial"){const pick=String(m.pick||"").trim().toUpperCase();const threshold={"3+":3,"OVER 2.5":3,"O2.5":3,"2+":2,"OVER 1.5":2,"O1.5":2}[pick];const parts=String(live.score||"").split(":");if(parts.length===2&&parts.every(x=>/^\d+$/.test(x))){if(threshold&&Number(parts[0])+Number(parts[1])>=threshold)return "pogođen";if(pick==="GG"&&Number(parts[0])>0&&Number(parts[1])>0)return "pogođen";}}return live&&live.state==="final"&&(live.result_status==="pogođen"||live.result_status==="promašen")?live.result_status:null;
 }
 function derivedTicketStatus(ticket,data){
   if(ticket.status==="dobitan"||ticket.status==="izgubljen")return ticket.status;
@@ -101,7 +101,7 @@ function liveBankView(data,target){
   for(const ticket of data.tickets){
     if(ticket.status==="dobitan"||ticket.status==="izgubljen")continue;
     if(derivedTicketStatus(ticket,data)!=="dobitan")continue;
-    const stake=Number(ticket.stake),odds=Number(ticket.odds);
+    const stake=Number(ticket.stake),odds=Number(ticket.odds??ticket.combined_odds);
     if(!Number.isFinite(stake)||!Number.isFinite(odds)||stake<=0||odds<=0)continue;
     extra+=Math.round(stake*odds*100)/100;
   }
