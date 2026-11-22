@@ -20,7 +20,7 @@ ODDS = ("home_odds", "draw_odds", "away_odds", "over25_odds", "btts_yes_odds", "
 def valid_odd(n):
     return isinstance(n, (int, float)) and not isinstance(n, bool) and 1.01 < n < 50
 
-def inspect(site, feed, active, scout, today):
+def inspect(site, feed, active, scout, today, history=None):
     tickets = check(site, today)
     result = {"date": today, "tickets": tickets, "next_stage": None, "reason": "", "ready": {}}
     if tickets["both_published"]:
@@ -52,6 +52,12 @@ def inspect(site, feed, active, scout, today):
             missing.append(fixture["fixture_id"])
     result["ready"]["tipsterarea_quoted"] = len(rows) - len(missing)
     result["missing_odds_ids"] = missing
+    if history is not None and (
+        not isinstance(history, dict) or history.get("date") != today or
+        {x.get("fixture_id") for x in history.get("fixtures", [])} != ids
+    ):
+        result.update(next_stage="history", reason="Today's ESPN last-five/H2H history missing or stale")
+        return result
     # The existing fallback Scout is allowed to operate with partial prices.
     # Flag missing quote recovery separately; never report false completeness.
     if missing:
@@ -88,7 +94,7 @@ def main():
     else:
         load = remote_json
     result = inspect(site, load("shared/collector-feed.json"), load("shared/active-list.json"),
-                     load("shared/agent/scout-six-markets.json"), args.date)
+                     load("shared/agent/scout-six-markets.json"), args.date,\n                     load("shared/agent/history-h2h.json"))
     result["checked_at_sarajevo"] = datetime.now(TZ).isoformat()
     dest = Path(args.output)
     dest.parent.mkdir(parents=True, exist_ok=True)
