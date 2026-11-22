@@ -1,36 +1,60 @@
 {
   "date": "2026-11-22",
-  "updated_at_utc": "2026-11-22T12:12:50.791267+00:00",
+  "updated_at_utc": "2026-11-22T13:49:44.639984+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
     {
       "ticket": "A",
       "index": 0,
-      "home": null,
-      "away": null,
-      "state": "unverified"
+      "home": "Kasimpasa",
+      "away": "Alanyaspor",
+      "state": "live",
+      "fixture_id": "espn:football:tur.1:401888248",
+      "score": "1:1",
+      "source": "espn-public-unofficial",
+      "event_id": "401888248",
+      "league": "tur.1",
+      "minute": "45"
     },
     {
       "ticket": "A",
       "index": 1,
-      "home": null,
-      "away": null,
-      "state": "unverified"
+      "home": "AC Milan",
+      "away": "Frosinone",
+      "state": "scheduled",
+      "fixture_id": "espn:football:ita.1:401874989",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401874989",
+      "league": "ita.1",
+      "minute": null
     },
     {
       "ticket": "B",
       "index": 0,
-      "home": null,
-      "away": null,
-      "state": "unverified"
+      "home": "Sassuolo",
+      "away": "Genoa",
+      "state": "scheduled",
+      "fixture_id": "espn:football:ita.1:401874960",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401874960",
+      "league": "ita.1",
+      "minute": null
     },
     {
       "ticket": "B",
       "index": 1,
-      "home": null,
-      "away": null,
-      "state": "unverified"
+      "home": "FC Augsburg",
+      "away": "Mainz",
+      "state": "scheduled",
+      "fixture_id": "espn:football:ger.1:401884733",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401884733",
+      "league": "ger.1",
+      "minute": null
     }
   ],
   "bank_unchanged": true
