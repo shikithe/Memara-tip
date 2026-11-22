@@ -57,6 +57,7 @@ jobs:
           python3 inspektor_ab.py
 
       - name: Inspektor — trigger only the missing technical stage
+        continue-on-error: true
         if: steps.gate.outputs.enabled == 'true' && (steps.inspector.outputs.next_stage == 'espn' || steps.inspector.outputs.next_stage == 'tipsterarea' || steps.inspector.outputs.next_stage == 'scout_6of6')
         env:
           INSPECTOR_DISPATCH_TOKEN: ${{ secrets.INSPECTOR_DISPATCH_TOKEN }}
@@ -116,7 +117,7 @@ jobs:
           PY
 
       - name: Commit read-only monitor result
-        if: steps.gate.outputs.enabled == 'true'
+        if: always() && steps.gate.outputs.enabled == 'true'
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
