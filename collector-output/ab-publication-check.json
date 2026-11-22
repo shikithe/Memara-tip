@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-22",
+  "source": "Memara-tip/data.json",
+  "both_published": false,
+  "A": {
+    "published": false,
+    "matches": 0,
+    "status": "not_published",
+    "duplicate_entries": false
+  },
+  "B": {
+    "published": false,
+    "matches": 0,
+    "status": "not_published",
+    "duplicate_entries": false
+  },
+  "state": "missing_publication",
+  "missing": [
+    "A",
+    "B"
+  ],
+  "checked_at_sarajevo": "2026-11-22T11:30:02.101108+01:00"
+}

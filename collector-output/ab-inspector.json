@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-22",
+  "tickets": {
+    "date": "2026-11-22",
+    "source": "Memara-tip/data.json",
+    "both_published": false,
+    "A": {
+      "published": false,
+      "matches": 0,
+      "status": "not_published",
+      "duplicate_entries": false
+    },
+    "B": {
+      "published": false,
+      "matches": 0,
+      "status": "not_published",
+      "duplicate_entries": false
+    },
+    "state": "missing_publication",
+    "missing": [
+      "A",
+      "B"
+    ]
+  },
+  "next_stage": "scout_6of6",
+  "reason": "Scout 6/6 report absent, stale or incomplete",
+  "ready": {
+    "espn": 37,
+    "tipsterarea_quoted": 37
+  },
+  "missing_odds_ids": [],
+  "checked_at_sarajevo": "2026-11-22T11:30:02.563961+01:00"
+}
