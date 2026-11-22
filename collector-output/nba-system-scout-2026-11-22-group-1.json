@@ -1,0 +1,854 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-22",
+  "group_number": 1,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Draymond Green",
+      "player_id": "6589",
+      "score": 87,
+      "confidence": 77,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN player pages attempted; direct access blocked by JS anti-bot. Verified five played box-score lines against the cited secondary game log. Official game fixture and dated injury report cross-checked. Detailed defender-specific matchup and historical H2H not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/draymond-green",
+        "https://www.statiqsports.com/nba/draymond-green/game-log",
+        "https://www.nba.com/game/0022600286",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00AM.pdf"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 3,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-16",
+          "points": 2,
+          "minutes": 25
+        },
+        {
+          "date": "2026-11-13",
+          "points": 4,
+          "minutes": 16
+        },
+        {
+          "date": "2026-11-11",
+          "points": 7,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-09",
+          "points": 2,
+          "minutes": 21
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_points_average": 3.6,
+        "source": "https://www.statiqsports.com/nba/draymond-green/game-log"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable normalized season-wide away/home scoring splits not fully checked in this pass."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable five individual head-to-head scoring logs versus this opponent not independently matched."
+      },
+      "opponent_defense": {
+        "status": "partially_verified",
+        "note": "Boston overall defense rated third by available season report; player-position defensive coverage not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting defensive assignments and direct defender for this game not verified."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Missed 19 November with right elbow management; not listed among Golden State absences in NBA report 22 November 11 AM ET."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently sourced official minute projection; previous minutes recorded in five_game_log."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent court usage is inferred only from game log, with matchup-related changes treated as uncertainty."
+      },
+      "market": {
+        "points_line": 4.5,
+        "over_odd": 1.8547,
+        "under_odd": 1.9174,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/draymond-green"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calculated: five-game hit rates are not calibrated probabilities",
+        "availability_confirmed": true,
+        "reason": "Draymond averaged 3.2 points in 13 played games and went under 4.5 points in 11 of 13; last five scoring games were 3,2,4,7,2. Boston has a strong team defense, but Curry's absence can redistribute offensive usage. Selected side cleared 4/5 of recent played games.",
+        "risk": "Did not play Nov 19 because of right-elbow management; whether workload changes on return is not certain."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "De'Anthony Melton",
+      "player_id": "4066436",
+      "score": 80,
+      "confidence": 74,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN player pages attempted; direct access blocked by JS anti-bot. Verified five played box-score lines against the cited secondary game log. Official game fixture and dated injury report cross-checked. Detailed defender-specific matchup and historical H2H not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/deanthony-melton",
+        "https://www.cbssports.com/nba/players/2268604/deanthony-melton/game-log/",
+        "https://www.nba.com/game/0022600286",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00AM.pdf"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 9,
+          "minutes": 25
+        },
+        {
+          "date": "2026-11-18",
+          "points": 0,
+          "minutes": 19
+        },
+        {
+          "date": "2026-11-16",
+          "points": 8,
+          "minutes": 21
+        },
+        {
+          "date": "2026-11-13",
+          "points": 8,
+          "minutes": 18
+        },
+        {
+          "date": "2026-11-11",
+          "points": 11,
+          "minutes": 25
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_points_average": 7.2,
+        "source": "https://www.cbssports.com/nba/players/2268604/deanthony-melton/game-log/"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable normalized season-wide away/home scoring splits not fully checked in this pass."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable five individual head-to-head scoring logs versus this opponent not independently matched."
+      },
+      "opponent_defense": {
+        "status": "partially_verified",
+        "note": "Boston overall defense rated third by available season report; player-position defensive coverage not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting defensive assignments and direct defender for this game not verified."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Melton is absent from Golden State's listed unavailable players in the official 22 November injury report; not a guarantee of court time."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently sourced official minute projection; previous minutes recorded in five_game_log."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent court usage is inferred only from game log, with matchup-related changes treated as uncertainty."
+      },
+      "market": {
+        "points_line": 10.5,
+        "over_odd": 1.9615,
+        "under_odd": 1.8197,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/deanthony-melton"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calculated: five-game hit rates are not calibrated probabilities",
+        "availability_confirmed": true,
+        "reason": "Melton was under 10.5 points in four of his last five games: 9,0,8,8,11. His recent shooting and minutes have been volatile; Boston's strong defense favors a cautious under, although Curry being unavailable can increase responsibility. Selected side cleared 4/5 of recent played games.",
+        "risk": "Stephen Curry and Jimmy Butler missing could increase Melton shots, while reported 18–25-minute recent workload is variable."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Baylor Scheierman",
+      "player_id": "betsharp:2026-11-22:0001",
+      "score": 69,
+      "confidence": 67,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN player pages attempted; direct access blocked by JS anti-bot. Verified five played box-score lines against the cited secondary game log. Official game fixture and dated injury report cross-checked. Detailed defender-specific matchup and historical H2H not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/baylor-scheierman",
+        "https://www.statmuse.com/nba/player/baylor-scheierman-30405/game-log",
+        "https://www.nba.com/game/0022600286",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00AM.pdf"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-21",
+          "points": 4,
+          "minutes": 18
+        },
+        {
+          "date": "2026-11-18",
+          "points": 0,
+          "minutes": 13
+        },
+        {
+          "date": "2026-11-16",
+          "points": 0,
+          "minutes": 11
+        },
+        {
+          "date": "2026-11-15",
+          "points": 12,
+          "minutes": 18
+        },
+        {
+          "date": "2026-11-11",
+          "points": 9,
+          "minutes": 29
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_points_average": 5,
+        "source": "https://www.statmuse.com/nba/player/baylor-scheierman-30405/game-log"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable normalized season-wide away/home scoring splits not fully checked in this pass."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable five individual head-to-head scoring logs versus this opponent not independently matched."
+      },
+      "opponent_defense": {
+        "status": "partially_verified",
+        "note": "Boston overall defense rated third by available season report; player-position defensive coverage not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting defensive assignments and direct defender for this game not verified."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Boston game-day injury list was not yet submitted in checked league report."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently sourced official minute projection; previous minutes recorded in five_game_log."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent court usage is inferred only from game log, with matchup-related changes treated as uncertainty."
+      },
+      "market": {
+        "points_line": 7.5,
+        "over_odd": 1.9901,
+        "under_odd": 1.7937,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/baylor-scheierman"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calculated: five-game hit rates are not calibrated probabilities",
+        "availability_confirmed": false,
+        "reason": "Scheierman's 7.5-point line exceeds his season average around 5.6; scores 4,0,0,12,9 in last five indicate three recent unders. His bench-role minutes vary, with substantial uncertainty if other Celtics are missing. Selected side cleared 3/5 of recent played games.",
+        "risk": "The Boston injury report was not submitted as of the checked NBA report; Tatum and White rest/injury uncertainty may create unexpected minutes."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Brandin Podziemski",
+      "player_id": "betsharp:2026-11-22:0002",
+      "score": 68,
+      "confidence": 70,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN player pages attempted; direct access blocked by JS anti-bot. Verified five played box-score lines against the cited secondary game log. Official game fixture and dated injury report cross-checked. Detailed defender-specific matchup and historical H2H not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/brandin-podziemski",
+        "https://www.cbssports.com/nba/players/26778377/brandin-podziemski/game-log/",
+        "https://www.nba.com/game/0022600286",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00AM.pdf"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 15,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-18",
+          "points": 10,
+          "minutes": 29
+        },
+        {
+          "date": "2026-11-16",
+          "points": 15,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-13",
+          "points": 8,
+          "minutes": 22
+        },
+        {
+          "date": "2026-11-11",
+          "points": 22,
+          "minutes": 37
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_points_average": 14,
+        "source": "https://www.cbssports.com/nba/players/26778377/brandin-podziemski/game-log/"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable normalized season-wide away/home scoring splits not fully checked in this pass."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable five individual head-to-head scoring logs versus this opponent not independently matched."
+      },
+      "opponent_defense": {
+        "status": "partially_verified",
+        "note": "Boston overall defense rated third by available season report; player-position defensive coverage not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting defensive assignments and direct defender for this game not verified."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Was out at season opener due to back soreness; no specific absence confirmed for tonight."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently sourced official minute projection; previous minutes recorded in five_game_log."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent court usage is inferred only from game log, with matchup-related changes treated as uncertainty."
+      },
+      "market": {
+        "points_line": 15.5,
+        "over_odd": 1.8475,
+        "under_odd": 1.9259,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/brandin-podziemski"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calculated: five-game hit rates are not calibrated probabilities",
+        "availability_confirmed": false,
+        "reason": "Four of last five games were below the 15.5-point line, scoring 15,10,15,8,22. His season average is 15.8, so the recent under trend competes with a relatively high baseline and potential usage bump. Selected side cleared 4/5 of recent played games.",
+        "risk": "Curry is out, increasing uncertainty of Podziemski usage and making past-five rate less predictive."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Gui Santos",
+      "player_id": "betsharp:2026-11-22:0007",
+      "score": 62,
+      "confidence": 64,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN player pages attempted; direct access blocked by JS anti-bot. Verified five played box-score lines against the cited secondary game log. Official game fixture and dated injury report cross-checked. Detailed defender-specific matchup and historical H2H not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/gui-santos",
+        "https://www.cbssports.com/nba/players/28870519/gui-santos/game-log/",
+        "https://www.nba.com/game/0022600286",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00AM.pdf"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 8,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-18",
+          "points": 6,
+          "minutes": 17
+        },
+        {
+          "date": "2026-11-16",
+          "points": 12,
+          "minutes": 19
+        },
+        {
+          "date": "2026-11-13",
+          "points": 7,
+          "minutes": 21
+        },
+        {
+          "date": "2026-11-11",
+          "points": 0,
+          "minutes": 12
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_points_average": 6.6,
+        "source": "https://www.cbssports.com/nba/players/28870519/gui-santos/game-log/"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable normalized season-wide away/home scoring splits not fully checked in this pass."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable five individual head-to-head scoring logs versus this opponent not independently matched."
+      },
+      "opponent_defense": {
+        "status": "partially_verified",
+        "note": "Boston overall defense rated third by available season report; player-position defensive coverage not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting defensive assignments and direct defender for this game not verified."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Previously reported ankle issue, available for an earlier fixture; current participation not directly confirmed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently sourced official minute projection; previous minutes recorded in five_game_log."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent court usage is inferred only from game log, with matchup-related changes treated as uncertainty."
+      },
+      "market": {
+        "points_line": 7.5,
+        "over_odd": 1.8403,
+        "under_odd": 1.9346,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/gui-santos"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calculated: five-game hit rates are not calibrated probabilities",
+        "availability_confirmed": false,
+        "reason": "With a 7.5-point line, Gui scored 8,6,12,7,0 in his five latest matches: three unders. Season baseline around 6.3 points and fluctuating 12–23 minutes make a low-scoring lean plausible. Selected side cleared 3/5 of recent played games.",
+        "risk": "Warriors injuries may alter the forward rotation and give Santos additional shots/minutes."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Derrick White",
+      "player_id": "betsharp:2026-11-22:0005",
+      "score": 60,
+      "confidence": 55,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN player pages attempted; direct access blocked by JS anti-bot. Verified five played box-score lines against the cited secondary game log. Official game fixture and dated injury report cross-checked. Detailed defender-specific matchup and historical H2H not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/derrick-white",
+        "https://www.cbssports.com/nba/players/2844730/derrick-white/game-log/",
+        "https://www.nba.com/game/0022600286",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00AM.pdf"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 12,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-16",
+          "points": 9,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-15",
+          "points": 16,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-11",
+          "points": 19,
+          "minutes": 38
+        },
+        {
+          "date": "2026-11-10",
+          "points": 5,
+          "minutes": 22
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_points_average": 12.2,
+        "source": "https://www.cbssports.com/nba/players/2844730/derrick-white/game-log/"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable normalized season-wide away/home scoring splits not fully checked in this pass."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable five individual head-to-head scoring logs versus this opponent not independently matched."
+      },
+      "opponent_defense": {
+        "status": "partially_verified",
+        "note": "Boston overall defense rated third by available season report; player-position defensive coverage not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting defensive assignments and direct defender for this game not verified."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Left AC joint contusion and a missed game on Nov 21 make active status uncertain."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently sourced official minute projection; previous minutes recorded in five_game_log."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent court usage is inferred only from game log, with matchup-related changes treated as uncertainty."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8547,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/derrick-white"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calculated: five-game hit rates are not calibrated probabilities",
+        "availability_confirmed": false,
+        "reason": "White scored 12,9,16,19,5 in the last five played games: three below 14.5, with a modest season scoring baseline; the matchup is less important than shoulder availability and a possible recovery minutes restriction. Selected side cleared 3/5 of recent played games.",
+        "risk": "Sat the previous Celtics game with shoulder injury; return and full minutes not verified."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Neemias Queta",
+      "player_id": "betsharp:2026-11-22:0009",
+      "score": 56,
+      "confidence": 60,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN player pages attempted; direct access blocked by JS anti-bot. Verified five played box-score lines against the cited secondary game log. Official game fixture and dated injury report cross-checked. Detailed defender-specific matchup and historical H2H not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/neemias-queta",
+        "https://basketball.realgm.com/player/Neemias-Queta/GameLogs/120369",
+        "https://www.nba.com/game/0022600286",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00AM.pdf"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-21",
+          "points": 15,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-18",
+          "points": 17,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-15",
+          "points": 8,
+          "minutes": 15
+        },
+        {
+          "date": "2026-11-11",
+          "points": 11,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-10",
+          "points": 4,
+          "minutes": 22
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_points_average": 11,
+        "source": "https://basketball.realgm.com/player/Neemias-Queta/GameLogs/120369"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable normalized season-wide away/home scoring splits not fully checked in this pass."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable five individual head-to-head scoring logs versus this opponent not independently matched."
+      },
+      "opponent_defense": {
+        "status": "partially_verified",
+        "note": "Boston overall defense rated third by available season report; player-position defensive coverage not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting defensive assignments and direct defender for this game not verified."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Played November 21; new injury or rest status for tonight not independently confirmed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently sourced official minute projection; previous minutes recorded in five_game_log."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent court usage is inferred only from game log, with matchup-related changes treated as uncertainty."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8547,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/neemias-queta"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not calculated: five-game hit rates are not calibrated probabilities",
+        "availability_confirmed": false,
+        "reason": "Queta registered 15,17,8,11,4 in the latest five matches, three over the 9.5-point line. Minutes ranged roughly 15 to 31 and opposing big-man coverage is not verified. Selected side cleared 3/5 of recent played games.",
+        "risk": "Rapid minutes variation and second night of a back-to-back weaken recent hit-rate reliability."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Charles Bassey",
+      "player_id": "betsharp:2026-11-22:0003",
+      "score": 50,
+      "confidence": 62,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN player pages attempted; direct access blocked by JS anti-bot. Verified five played box-score lines against the cited secondary game log. Official game fixture and dated injury report cross-checked. Detailed defender-specific matchup and historical H2H not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/charles-bassey",
+        "https://www.cbssports.com/nba/players/3041745/charles-bassey/game-log/",
+        "https://www.nba.com/game/0022600286",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00AM.pdf"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 16,
+          "minutes": 25
+        },
+        {
+          "date": "2026-11-18",
+          "points": 10,
+          "minutes": 22
+        },
+        {
+          "date": "2026-11-16",
+          "points": 4,
+          "minutes": 16
+        },
+        {
+          "date": "2026-11-13",
+          "points": 11,
+          "minutes": 20
+        },
+        {
+          "date": "2026-11-11",
+          "points": 7,
+          "minutes": 13
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_points_average": 9.6,
+        "source": "https://www.cbssports.com/nba/players/3041745/charles-bassey/game-log/"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable normalized season-wide away/home scoring splits not fully checked in this pass."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable five individual head-to-head scoring logs versus this opponent not independently matched."
+      },
+      "opponent_defense": {
+        "status": "partially_verified",
+        "note": "Boston overall defense rated third by available season report; player-position defensive coverage not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting defensive assignments and direct defender for this game not verified."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "No confirmed absence found in checked Golden State injury list, but playing rotation remains uncertain."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently sourced official minute projection; previous minutes recorded in five_game_log."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent court usage is inferred only from game log, with matchup-related changes treated as uncertainty."
+      },
+      "market": {
+        "points_line": 7.5,
+        "over_odd": 1.8197,
+        "under_odd": 1.9259,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/charles-bassey"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not calculated: five-game hit rates are not calibrated probabilities",
+        "availability_confirmed": false,
+        "reason": "Bassey scored 16,10,4,11,7 over the last five; at 7.5 points he exceeded the line three times, but his limited minutes and matchup with Boston's bigs may dominate the result. Selected side cleared 3/5 of recent played games.",
+        "risk": "Rotation changes and time-sharing at center can sharply cut scoring chances despite hot recent games."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Jayson Tatum",
+      "player_id": "betsharp:2026-11-22:0008",
+      "score": 46,
+      "confidence": 48,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN player pages attempted; direct access blocked by JS anti-bot. Verified five played box-score lines against the cited secondary game log. Official game fixture and dated injury report cross-checked. Detailed defender-specific matchup and historical H2H not verified."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jayson-tatum",
+        "https://www.statmuse.com/nba/player/9582/game-log",
+        "https://www.nba.com/game/0022600286",
+        "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00AM.pdf"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 24,
+          "minutes": 37
+        },
+        {
+          "date": "2026-11-16",
+          "points": 24,
+          "minutes": 36
+        },
+        {
+          "date": "2026-11-15",
+          "points": 32,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-11",
+          "points": 24,
+          "minutes": 38
+        },
+        {
+          "date": "2026-11-10",
+          "points": 21,
+          "minutes": 32
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "five_game_points_average": 25,
+        "source": "https://www.statmuse.com/nba/player/9582/game-log"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable normalized season-wide away/home scoring splits not fully checked in this pass."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable five individual head-to-head scoring logs versus this opponent not independently matched."
+      },
+      "opponent_defense": {
+        "status": "partially_verified",
+        "note": "Boston overall defense rated third by available season report; player-position defensive coverage not individually verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting defensive assignments and direct defender for this game not verified."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Rested previous game; Boston official injury report incomplete as of available check."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently sourced official minute projection; previous minutes recorded in five_game_log."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent court usage is inferred only from game log, with matchup-related changes treated as uncertainty."
+      },
+      "market": {
+        "points_line": 28.5,
+        "over_odd": 1.9434,
+        "under_odd": 1.8333,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jayson-tatum"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calculated: five-game hit rates are not calibrated probabilities",
+        "availability_confirmed": false,
+        "reason": "Tatum scored 24,24,32,24,21 in the five latest played games, with four under 28.5; recent 26.4-point season average and historic high usage mean his output could swing substantially. Selected side cleared 4/5 of recent played games.",
+        "risk": "He rested November 21 and his status for November 22 has not been affirmatively confirmed by a final Boston lineup."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "6589",
+    "4066436"
+  ],
+  "selection_reason": "Compared all nine group players using original DraftKings markets, actual prior five box scores and a second-source/injury review. Green under 4.5 and Melton under 10.5 have the strongest combined empirical recent/season support and identifiable ESPN athletes, although absence of Curry adds usage uncertainty; this is not a calibrated probability and official lineup may change.",
+  "sources_policy": "Only verified dated numbers and canonical frozen odds; no synthetic statistics. Injury listing not equivalent to guaranteed appearance.",
+  "checked_injuries_url": "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-22_11_00AM.pdf",
+  "notes": "ESPN direct player pages returned anti-bot; secondary CBS/StatMuse/StatIQ/RealGM logs used in second pass. Event schedule verified NBA.com, ESPN event ID independently sourced. Individual H2H/defender specific stats marked not_verified."
+}
