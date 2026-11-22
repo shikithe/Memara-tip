@@ -2874,12 +2874,12 @@
       "id": "nba-2026-11-21",
       "date": "2026-11-21",
       "bank_start": 990.84,
-      "status": "published",
+      "status": "settled",
       "tickets": [
         {
           "id": "1",
           "stake": 9.91,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.5096,
           "potential_payout": 34.78,
           "legs": [
@@ -2895,7 +2895,7 @@
               "espn_event_id": "401910028",
               "player_id": "4251",
               "start_utc": "2026-11-22T03:00:00Z",
-              "status": "pending",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -2944,7 +2944,10 @@
                 "scout_score": 68,
                 "scout_note": "Posljednjih pet mečeva 10,22,7,36,27: tri puta ispod 22,5, L5 prosjek 20,4, dok je sezonski prosjek 19,9 ispod linije i utakmica nije počela.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-1.json"
-              }
+              },
+              "player_points": 19,
+              "game_state": "final",
+              "game_clock": ""
             },
             {
               "player": "Domantas Sabonis",
@@ -2958,7 +2961,7 @@
               "espn_event_id": "401910028",
               "player_id": "3155942",
               "start_utc": "2026-11-22T03:00:00Z",
-              "status": "pending",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -3007,9 +3010,15 @@
                 "scout_score": 65,
                 "scout_note": "Ima 3 od posljednjih 5 utakmica ispod 12,5 poena (19,8,11,21,0), dok je napadačka produkcija promjenljiva u kontekstu poraza Kingsa.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-1.json"
-              }
+              },
+              "player_points": 15,
+              "game_state": "final",
+              "game_clock": ""
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-22T08:50:17.021048+00:00"
         },
         {
           "id": "2",
@@ -3316,7 +3325,7 @@
         {
           "id": "4",
           "stake": 9.91,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.7026,
           "potential_payout": 36.69,
           "legs": [
@@ -3332,7 +3341,7 @@
               "espn_event_id": "401910026",
               "player_id": "4903027",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -3382,10 +3391,10 @@
                 "scout_note": "OVER 16.5 ostvaren u 4/5 posljednjih mečeva i poeni su 19,20,18,23,14 uz sličnu minutažu.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-4.json"
               },
-              "player_points": 11,
-              "game_state": "live",
-              "game_clock": "0.0",
-              "period": 1
+              "player_points": 23,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Cam Spencer",
@@ -3399,7 +3408,7 @@
               "espn_event_id": "401910026",
               "player_id": "4433083",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -3449,17 +3458,20 @@
                 "scout_note": "OVER 10.5 potvrđen u 4 od posljednjih pet utakmica s rastom minuta i velikim doprinosom asistencijama.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-4.json"
               },
-              "player_points": 2,
-              "game_state": "live",
-              "game_clock": "0.0",
-              "period": 1
+              "player_points": 9,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-22T08:50:17.083458+00:00"
         },
         {
           "id": "5",
           "stake": 9.91,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.3743,
           "potential_payout": 33.44,
           "legs": [
@@ -3475,7 +3487,7 @@
               "espn_event_id": "401910026",
               "player_id": "4432816",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -3525,10 +3537,10 @@
                 "scout_note": "UNDER 20.5 prošao je 4 od posljednjih pet utakmica, uz prosjek 16 poena i raznovrsnu ulogu.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-5.json"
               },
-              "player_points": 0,
-              "game_state": "live",
-              "game_clock": "0.0",
-              "period": 1
+              "player_points": 12,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Jonathan Kuminga",
@@ -3542,7 +3554,7 @@
               "espn_event_id": "401910026",
               "player_id": "4433247",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -3592,17 +3604,20 @@
                 "scout_note": "Četiri od pet posljednjih utakmica su ispod 15.5 poena, uz L5 prosjek 13 i razne minute.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-5.json"
               },
-              "player_points": 7,
-              "game_state": "live",
-              "game_clock": "0.0",
-              "period": 1
+              "player_points": 16,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-22T08:50:17.083516+00:00"
         },
         {
           "id": "6",
           "stake": 9.91,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.2779,
           "potential_payout": 32.48,
           "legs": [
@@ -3618,7 +3633,7 @@
               "espn_event_id": "401910026",
               "player_id": "3032976",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -3668,10 +3683,10 @@
                 "scout_note": "UNDER 9.5 prolazi u 4 od posljednjih pet i sezonski srednji rezultat znatno je ispod ponuđene granice.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-6.json"
               },
-              "player_points": 2,
-              "game_state": "live",
-              "game_clock": "0.0",
-              "period": 1
+              "player_points": 7,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Taylor Hendricks",
@@ -3685,7 +3700,7 @@
               "espn_event_id": "401910026",
               "player_id": "4684806",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -3735,12 +3750,15 @@
                 "scout_note": "OVER 9.5 u 4/5 posljednjih nastupa uz rast sa 3-7 na 19-29 minuta i napadačku ulogu.",
                 "audit": "collector-output/nba-system-scout-2026-11-21-group-6.json"
               },
-              "player_points": 2,
-              "game_state": "live",
-              "game_clock": "0.0",
-              "period": 1
+              "player_points": 5,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-22T08:50:17.083563+00:00"
         },
         {
           "id": "7",
@@ -4381,17 +4399,20 @@
       },
       "accounting": {
         "tickets_total": 10,
-        "tickets_settled": 0,
-        "tickets_pending": 10,
-        "tickets_won": 0,
-        "tickets_lost": 0,
+        "tickets_settled": 10,
+        "tickets_pending": 0,
+        "tickets_won": 1,
+        "tickets_lost": 9,
         "tickets_void": 0,
         "total_staked": 99.1,
-        "total_returned": 0,
-        "available_bank": 891.74,
-        "net_profit_confirmed": 0,
-        "complete": false
-      }
+        "total_returned": 33.18,
+        "available_bank": 924.92,
+        "net_profit_confirmed": -65.92,
+        "complete": true
+      },
+      "bank_end": 924.92,
+      "bank_profit": -65.92,
+      "settled_at_utc": "2026-11-22T08:50:17.083596+00:00"
     }
   ]
 }
