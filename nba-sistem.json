@@ -3014,7 +3014,7 @@
         {
           "id": "2",
           "stake": 9.91,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.3571,
           "potential_payout": 33.27,
           "legs": [
@@ -3030,7 +3030,7 @@
               "espn_event_id": "401910025",
               "player_id": "4278049",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -3083,7 +3083,10 @@
               "player_points": 0,
               "game_state": "live",
               "game_clock": "0.5",
-              "period": 1
+              "period": 1,
+              "points": 10,
+              "espn_verified_final": true,
+              "espn_boxscore_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910025"
             },
             {
               "player": "Caleb Martin",
@@ -3097,7 +3100,7 @@
               "espn_event_id": "401910025",
               "player_id": "3138160",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -3150,14 +3153,19 @@
               "player_points": 0,
               "game_state": "live",
               "game_clock": "0.5",
-              "period": 1
+              "period": 1,
+              "points": 0,
+              "espn_verified_final": true,
+              "espn_boxscore_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910025"
             }
-          ]
+          ],
+          "payout": 0,
+          "returned": 0
         },
         {
           "id": "3",
           "stake": 9.91,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.287,
           "potential_payout": 32.57,
           "legs": [
@@ -3173,7 +3181,7 @@
               "espn_event_id": "401910025",
               "player_id": "5254165",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -3226,7 +3234,10 @@
               "player_points": 0,
               "game_state": "live",
               "game_clock": "0.5",
-              "period": 1
+              "period": 1,
+              "points": 7,
+              "espn_verified_final": true,
+              "espn_boxscore_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910025"
             },
             {
               "player": "Kris Dunn",
@@ -3240,7 +3251,7 @@
               "espn_event_id": "401910025",
               "player_id": "2991139",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -3293,9 +3304,14 @@
               "player_points": 0,
               "game_state": "live",
               "game_clock": "0.5",
-              "period": 1
+              "period": 1,
+              "points": 3,
+              "espn_verified_final": true,
+              "espn_boxscore_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910025"
             }
-          ]
+          ],
+          "payout": 0,
+          "returned": 0
         },
         {
           "id": "4",
@@ -3729,7 +3745,7 @@
         {
           "id": "7",
           "stake": 9.91,
-          "status": "pending",
+          "status": "won",
           "total_odd": 3.3483,
           "potential_payout": 33.18,
           "legs": [
@@ -3745,7 +3761,7 @@
               "espn_event_id": "401910027",
               "player_id": "4395723",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -3798,7 +3814,10 @@
               "player_points": 0,
               "game_state": "live",
               "game_clock": "52.2",
-              "period": 1
+              "period": 1,
+              "points": 10,
+              "espn_verified_final": true,
+              "espn_boxscore_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910027"
             },
             {
               "player": "De'Aaron Fox",
@@ -3812,7 +3831,7 @@
               "espn_event_id": "401910027",
               "player_id": "4066259",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -3865,14 +3884,19 @@
               "player_points": 0,
               "game_state": "live",
               "game_clock": "52.2",
-              "period": 1
+              "period": 1,
+              "points": 5,
+              "espn_verified_final": true,
+              "espn_boxscore_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910027"
             }
-          ]
+          ],
+          "payout": 33.18,
+          "returned": 33.18
         },
         {
           "id": "8",
           "stake": 9.91,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.5408,
           "potential_payout": 35.09,
           "legs": [
@@ -3888,7 +3912,7 @@
               "espn_event_id": "401910027",
               "player_id": "5104157",
               "start_utc": "2026-11-22T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -3941,7 +3965,10 @@
               "player_points": 15,
               "game_state": "live",
               "game_clock": "52.2",
-              "period": 1
+              "period": 1,
+              "points": 50,
+              "espn_verified_final": true,
+              "espn_boxscore_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910027"
             },
             {
               "player": "Damian Lillard",
@@ -3955,7 +3982,7 @@
               "espn_event_id": "401910024",
               "player_id": "6606",
               "start_utc": "2026-11-22T00:30:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -4008,14 +4035,19 @@
               "player_points": 8,
               "game_state": "live",
               "game_clock": "0.1",
-              "period": 2
+              "period": 2,
+              "points": 15,
+              "espn_verified_final": true,
+              "espn_boxscore_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910024"
             }
-          ]
+          ],
+          "payout": 0,
+          "returned": 0
         },
         {
           "id": "9",
           "stake": 9.91,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.8846,
           "potential_payout": 38.5,
           "legs": [
@@ -4031,7 +4063,7 @@
               "espn_event_id": "401910024",
               "player_id": "3062679",
               "start_utc": "2026-11-22T00:30:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -4084,7 +4116,10 @@
               "player_points": 0,
               "game_state": "live",
               "game_clock": "0.1",
-              "period": 2
+              "period": 2,
+              "points": 0,
+              "espn_verified_final": true,
+              "espn_boxscore_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910024"
             },
             {
               "player": "Jrue Holiday",
@@ -4098,7 +4133,7 @@
               "espn_event_id": "401910024",
               "player_id": "3995",
               "start_utc": "2026-11-22T00:30:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -4151,14 +4186,19 @@
               "player_points": 4,
               "game_state": "live",
               "game_clock": "0.1",
-              "period": 2
+              "period": 2,
+              "points": 13,
+              "espn_verified_final": true,
+              "espn_boxscore_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910024"
             }
-          ]
+          ],
+          "payout": 0,
+          "returned": 0
         },
         {
           "id": "10",
           "stake": 9.91,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.9802,
           "potential_payout": 39.44,
           "legs": [
@@ -4174,7 +4214,7 @@
               "espn_event_id": "401910024",
               "player_id": "4431736",
               "start_utc": "2026-11-22T00:30:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -4227,7 +4267,10 @@
               "player_points": 0,
               "game_state": "live",
               "game_clock": "0.1",
-              "period": 2
+              "period": 2,
+              "points": 6,
+              "espn_verified_final": true,
+              "espn_boxscore_url": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401910024"
             },
             {
               "player": "Landry Shamet",
@@ -4296,7 +4339,9 @@
               "game_clock": "0.1",
               "period": 2
             }
-          ]
+          ],
+          "payout": 0,
+          "returned": 0
         }
       ],
       "scout": {
