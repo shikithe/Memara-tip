@@ -6,6 +6,7 @@ on:
     - cron: '0,15,30,45 8-11 * * *'
 permissions:
   contents: write
+  issues: write
 concurrency:
   group: memarasix-ab-publication-check
   cancel-in-progress: false
@@ -42,13 +43,79 @@ jobs:
       - name: Verify published A/B from actual website data
         if: steps.gate.outputs.enabled == 'true'
         run: python3 check_ab_publication.py
+      - name: Inspektor — resume from first missing stage only
+        if: steps.gate.outputs.enabled == 'true'
+        id: inspector
+        run: |
+          python3 -m unittest -v test_inspektor_ab.py
+          python3 inspektor_ab.py
+
+      - name: Inspektor — trigger only the missing technical stage
+        if: steps.gate.outputs.enabled == 'true' && (steps.inspector.outputs.next_stage == 'espn' || steps.inspector.outputs.next_stage == 'tipsterarea' || steps.inspector.outputs.next_stage == 'scout_6of6')
+        env:
+          INSPECTOR_DISPATCH_TOKEN: ${{ secrets.INSPECTOR_DISPATCH_TOKEN }}
+          NEXT_STAGE: ${{ steps.inspector.outputs.next_stage }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          from datetime import datetime, time
+          from zoneinfo import ZoneInfo
+          stage=os.environ["NEXT_STAGE"]
+          workflows={"espn":"listasix-daily.yml","tipsterarea":"tipster-html-collector.yml",
+                     "scout_6of6":"listasix-scout-six-markets.yml"}
+          now=datetime.now(ZoneInfo("Europe/Sarajevo"))
+          if not time(10,0) <= now.time().replace(tzinfo=None) <= time(12,15):
+              print("INSPECTOR_WINDOW_CLOSED")
+              raise SystemExit(0)
+          token=os.environ.get("INSPECTOR_DISPATCH_TOKEN")
+          if not token:
+              print("::warning::INSPECTOR_DISPATCH_TOKEN missing: cross-repository workflow cannot be triggered")
+              raise SystemExit(1)
+          path=workflows[stage]
+          url=f"https://api.github.com/repos/shikithe/Slavojka/actions/workflows/{path}/dispatches"
+          req=urllib.request.Request(url,data=b'{"ref":"main"}',method="POST",headers={
+              "Authorization":"Bearer "+token,"Accept":"application/vnd.github+json",
+              "X-GitHub-Api-Version":"2022-11-28","Content-Type":"application/json"})
+          with urllib.request.urlopen(req,timeout=20) as response:
+              if response.status!=204:
+                  raise RuntimeError("Failed to trigger: HTTP "+str(response.status))
+          print("INSPECTOR_RESUMED",stage,path)
+          PY
+
+      - name: Inspektor — issue AI analyst handoff only when Scout is ready
+        if: steps.gate.outputs.enabled == 'true' && steps.inspector.outputs.next_stage == 'ai_analysis'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import json,os,subprocess
+          from pathlib import Path
+          report=json.loads(Path("collector-output/ab-inspector.json").read_text())
+          title="INSPEKTOR A/B — AI Scout review — "+report["date"]
+          query=subprocess.run(["gh","issue","list","--state","open","--repo",os.environ["GH_REPO"],
+              "--search",title,"--json","title,number"],text=True,capture_output=True,check=True)
+          if any(x["title"]==title for x in json.loads(query.stdout)):
+              print("AI_INSPECTOR_HANDOFF_ALREADY_OPEN")
+          else:
+              body=("Today's ESPN, TipsterArea and Scout 6/6 are ready; A/B still not both published.\n"
+                    "Independent AI analyst: review Scout 6/6 shortlist, injuries, xG if available, "
+                    "lineups, form, H2H and verified prices. Commit only genuinely approved A/B to "
+                    "memarasix-football-ai-approved.json for existing publisher. Never auto-approve "
+                    "tickets or fabricate selections.\n"
+                    "Read collector-output/ab-inspector.json for exact status.")
+              subprocess.run(["gh","issue","create","--repo",os.environ["GH_REPO"],
+                  "--title",title,"--body",body],check=True)
+              print("AI_INSPECTOR_HANDOFF_OPENED")
+          PY
+
       - name: Commit read-only monitor result
         if: steps.gate.outputs.enabled == 'true'
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f collector-output/ab-publication-check.json
+          git add -f collector-output/ab-publication-check.json collector-output/ab-inspector.json
           if ! git diff --cached --quiet; then
             git commit -m "Monitor A/B website publication status [skip ci]"
             for attempt in 1 2 3; do
