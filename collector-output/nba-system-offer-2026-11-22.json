@@ -1031,15 +1031,19 @@
       "team": "NY",
       "opponent": "IND",
       "game": "IND @ NY",
-      "start_utc": null,
+      "start_utc": "2026-11-23T01:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/josh-hart",
       "points_line": 9.5,
       "over_odd": 1.8772,
       "under_odd": 1.8929,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3062679",
+      "espn_event_id": "401910034",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/3062679",
+        "https://www.espn.com/nba/game/_/gameId/401910034/pacers-knicks"
+      ]
     },
     {
       "original_offer_position": 59,
@@ -1099,15 +1103,19 @@
       "team": "NY",
       "opponent": "IND",
       "game": "IND @ NY",
-      "start_utc": null,
+      "start_utc": "2026-11-23T01:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/mikal-bridges",
       "points_line": 11.5,
       "over_odd": 1.7752,
       "under_odd": 2.01,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3147657",
+      "espn_event_id": "401910034",
+      "identity_verification_sources": [
+        "https://www.espn.com/nba/player/_/id/3147657",
+        "https://www.espn.com/nba/game/_/gameId/401910034/pacers-knicks"
+      ]
     },
     {
       "original_offer_position": 63,
