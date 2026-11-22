@@ -5,11 +5,13 @@ on:
     paths:
       - '.github/workflows/memarasix-live-scores.yml'
       - 'sync_live_scores.py'
+      - 'football_identity.py'
       - 'nba_live_points.py'
       - 'tests/test_nba_live_points.py'
       - 'index.html'
       - 'settle_virtual_tickets.py'
       - 'tests/test_virtual_settlement.py'
+      - 'tests/test_football_live_scores.py'
       - 'memarasix_daily_rollover.py'
       - 'tests/test_archive_handoff.py'
   schedule:
@@ -38,6 +40,7 @@ jobs:
       - name: Test safe repeatable settlement
         run: |
           python -m unittest discover -s tests -p test_virtual_settlement.py -v
+          python -m unittest discover -s tests -p test_football_live_scores.py -v
           python -m unittest discover -s tests -p test_nba_live_points.py -v
           python -m unittest discover -s tests -p test_archive_handoff.py -v
       - name: Collect score states safely
