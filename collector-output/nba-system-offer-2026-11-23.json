@@ -313,15 +313,20 @@
       "team": "CLE",
       "opponent": "CHI",
       "game": "CLE @ CHI",
-      "start_utc": null,
+      "start_utc": "2026-11-24T01:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/jarrett-allen",
       "points_line": 14.5,
       "over_odd": 1.8,
       "under_odd": 1.9804,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4066328",
+      "espn_event_id": "401910041",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-4066328",
+        "https://www.nba.com/player/1628386/jarrett-allen",
+        "https://www.dvidr.com/events/nba-cle-21718176"
+      ]
     },
     {
       "original_offer_position": 19,
@@ -449,15 +454,20 @@
       "team": "HOU",
       "opponent": "LAC",
       "game": "LAC @ HOU",
-      "start_utc": null,
+      "start_utc": "2026-11-24T01:30:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/amen-thompson",
       "points_line": 15.5,
       "over_odd": 1.9434,
       "under_odd": 1.8333,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4684740",
+      "espn_event_id": "401910043",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-4684740",
+        "https://www.nba.com/player/1641708",
+        "https://www.nba.com/game/0022600294"
+      ]
     },
     {
       "original_offer_position": 27,
