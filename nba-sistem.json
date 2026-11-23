@@ -6237,26 +6237,134 @@
               }
             }
           ]
+        },
+        {
+          "id": "4",
+          "stake": 8.64,
+          "status": "pending",
+          "total_odd": 3.3385,
+          "potential_payout": 28.84,
+          "legs": [
+            {
+              "player": "Cedric Coward",
+              "team": "MEM",
+              "opponent": "CHA",
+              "pick": "over",
+              "points_line": 15.5,
+              "odd": 1.8,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/cedric-coward",
+              "espn_event_id": "401910036",
+              "player_id": "4903027",
+              "start_utc": "2026-11-24T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-21",
+                    "points": 23,
+                    "minutes": 30
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 20,
+                    "minutes": 33
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five matched head-to-head player game logs not retrieved."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Position-specific opponent scoring efficiency not reliably quantified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "One-on-one defensive assignments not verified before tipoff."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Game-day injury reporting checked; Brandon Miller probable with knee contusion."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No official predicted minutes available; actual only when reported."
+                },
+                "scout_score": 88,
+                "scout_note": "Cedric scored 23 and 20 in confirmed recent 30-33 minute performances, both above frozen 15.5 line; starts regularly for Memphis. Selection is uncertainty-aware and not a guaranteed sports result.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-4.json"
+              }
+            },
+            {
+              "player": "Coby White",
+              "team": "CHA",
+              "opponent": "MEM",
+              "pick": "under",
+              "points_line": 17.5,
+              "odd": 1.8547,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/coby-white",
+              "espn_event_id": "401910036",
+              "player_id": "4395651",
+              "start_utc": "2026-11-24T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 11,
+                    "minutes": 26
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five matched head-to-head player game logs not retrieved."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Position-specific opponent scoring efficiency not reliably quantified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "One-on-one defensive assignments not verified before tipoff."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Game-day injury reporting checked; Brandon Miller probable with knee contusion."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No official predicted minutes available; actual only when reported."
+                },
+                "scout_score": 83,
+                "scout_note": "Coby's season average is about 12.5 against his 17.5 points line; scored 11 in latest confirmed contest playing 26 minutes. Selection is uncertainty-aware and not a guaranteed sports result.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-4.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
         "groups_completed": [
           1,
           2,
-          3
+          3,
+          4
         ],
         "offered": 122,
         "total_groups": 10,
-        "group_number": 3,
-        "group_range": "27-38",
+        "group_number": 4,
+        "group_range": "39-50",
         "group_selected": [
-          "Brook Lopez",
-          "Darius Garland"
+          "Cedric Coward",
+          "Coby White"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-23-group-1.json",
           "2": "collector-output/nba-system-scout-2026-11-23-group-2.json",
-          "3": "collector-output/nba-system-scout-2026-11-23-group-3.json"
+          "3": "collector-output/nba-system-scout-2026-11-23-group-3.json",
+          "4": "collector-output/nba-system-scout-2026-11-23-group-4.json"
         },
         "selection_method": "full_ranked_scout"
       },
