@@ -72,7 +72,8 @@ function scoreLine(m,live){
     if(!live||live.sport!=="basketball"||live.player_points===null||live.player_points===undefined||!Number.isFinite(Number(live.player_points)))return '<div class="kickoff">NBA poeni još nisu potvrđeni</div>';
     const outcome=effectiveResult(m,live),fraction=esc(live.player_points)+"/"+esc(m.pick==="over"?Math.floor(Number(m.points_line))+1:Math.ceil(Number(m.points_line))-1);
     const part=live.period?" · "+esc(live.period)+". četvrtina":"";
-    return '<div class="live-result '+(outcome==="pogođen"?"result-final-hit":outcome==="promašen"?"result-final-miss":"") + '">'+(live.state==="live"?"🔴 U TOKU":live.state==="stale"?"⏸ POSLJEDNJI ZAPIS":"KONAČNO")+part+" · "+fraction+" poena"+(outcome==="pogođen"?" · ✓ POGOĐEN":outcome==="promašen"?" · ✕ PROMAŠEN":"")+'</div>';
+    const remaining=(live.state==="live"&&live.game_clock)?" · "+esc(live.game_clock)+" preostalo":"";
+    return '<div class="live-result '+(outcome==="pogođen"?"result-final-hit":outcome==="promašen"?"result-final-miss":"") + '">'+(live.state==="live"?"🔴 U TOKU":live.state==="stale"?"⏸ POSLJEDNJI ZAPIS":"KONAČNO")+part+remaining+" · "+fraction+" poena"+(outcome==="pogođen"?" · ✓ POGOĐEN":outcome==="promašen"?" · ✕ PROMAŠEN":"")+'</div>';
   }
   if(m.final_score)return '<div class="finalscore">Konačno: '+esc(m.final_score)+'</div>';
   if(!live||!live.score)return '';
