@@ -5823,6 +5823,172 @@
       "bank_end": 864.3,
       "bank_profit": -60.62,
       "settled_at_utc": "2026-11-23T07:28:09Z"
+    },
+    {
+      "id": "nba-2026-11-23",
+      "date": "2026-11-23",
+      "bank_start": 864.3,
+      "status": "published",
+      "tickets": [
+        {
+          "id": "1",
+          "stake": 8.64,
+          "status": "pending",
+          "total_odd": 3.5539,
+          "potential_payout": 30.71,
+          "legs": [
+            {
+              "player": "Ayo Dosunmu",
+              "team": "MIN",
+              "opponent": "BKN",
+              "pick": "over",
+              "points_line": 17.5,
+              "odd": 1.9009,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/ayo-dosunmu",
+              "espn_event_id": "401910040",
+              "player_id": "4397002",
+              "start_utc": "2026-11-24T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-21",
+                    "points": 19,
+                    "minutes": 34
+                  },
+                  {
+                    "date": "2026-11-19",
+                    "points": 6,
+                    "minutes": 32
+                  },
+                  {
+                    "date": "2026-11-17",
+                    "points": 30,
+                    "minutes": 39
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 8,
+                    "minutes": 30
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 24,
+                    "minutes": 33
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "No fully reconciled prior five scoring lines against this same opponent were available."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Precise position-specific opponent defensive scoring averages could not be verified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Direct individual defender not predictable reliably without live starting lineups."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "League 23 Nov injury report and recent player status read; lineup is not final."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "There is no confirmed official minutes projection for this fixture; actual verified minutes used."
+                },
+                "scout_score": 90,
+                "scout_note": "Last five played: 19,6,30,8,24 (three above 17.5), 33.0 minutes average. Reported last-ten over hit rate 8/10 at comparable line, season average 17.9. High-usage Minnesota backcourt role provides opportunity. Direction remains an empirical, uncertain historical lean rather than a proven 1-game win chance.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-1.json"
+              }
+            },
+            {
+              "player": "Danny Wolf",
+              "team": "BKN",
+              "opponent": "MIN",
+              "pick": "over",
+              "points_line": 8.5,
+              "odd": 1.8696,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/danny-wolf",
+              "espn_event_id": "401910040",
+              "player_id": "5107173",
+              "start_utc": "2026-11-24T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 20,
+                    "minutes": 26
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 6,
+                    "minutes": 23
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 3,
+                    "minutes": 11
+                  },
+                  {
+                    "date": "2026-11-14",
+                    "points": 14,
+                    "minutes": 28
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 10,
+                    "minutes": 29
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "No fully reconciled prior five scoring lines against this same opponent were available."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Precise position-specific opponent defensive scoring averages could not be verified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Direct individual defender not predictable reliably without live starting lineups."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "League 23 Nov injury report and recent player status read; lineup is not final."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "There is no confirmed official minutes projection for this fixture; actual verified minutes used."
+                },
+                "scout_score": 84,
+                "scout_note": "Recent five: 20,6,3,14,10 points (three above 8.5), and season around 10.2. Started last game, scoring 20 across 26 minutes; minutes have varied widely. Direction remains an empirical, uncertain historical lean rather than a proven 1-game win chance.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-1.json"
+              }
+            }
+          ]
+        }
+      ],
+      "scout": {
+        "groups_completed": [
+          1
+        ],
+        "offered": 122,
+        "total_groups": 10,
+        "group_number": 1,
+        "group_range": "1-13",
+        "group_selected": [
+          "Ayo Dosunmu",
+          "Danny Wolf"
+        ],
+        "audit_paths": {
+          "1": "collector-output/nba-system-scout-2026-11-23-group-1.json"
+        },
+        "selection_method": "full_ranked_scout"
+      }
     }
   ]
 }

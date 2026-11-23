@@ -2,14 +2,13 @@
   "schema_version": 1,
   "date": "2026-11-23",
   "cycle_id": "nba-2026-11-23",
-  "last_published_group": 0,
-  "published_ticket_ids": [],
-  "next_group": 1,
-  "state": "ready_for_first_ai_scout",
-  "trigger_source": "github_verified_ten_lists",
-  "total_lists": 10,
-  "total_offers": 122,
-  "captured_at_utc": "2026-11-23T18:10:44.720200+00:00",
-  "updated_at_utc": "2026-11-23T18:10:44.831029+00:00",
-  "note": "Readiness signal for scheduled ChatGPT AI Scout; not a direct ChatGPT wake-up. Preserve later publication feedback."
+  "last_published_group": 1,
+  "published_ticket_ids": [
+    "1"
+  ],
+  "next_group": 2,
+  "state": "ready_for_next_ai_scout",
+  "trigger_source": "github_confirmed_nba_system_ledger",
+  "updated_at_utc": "2026-11-23T18:16:04.599986+00:00",
+  "note": "AI must validate game start, frozen offer and all players in next group. A GitHub feedback file cannot directly wake ChatGPT."
 }
