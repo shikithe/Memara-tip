@@ -69,7 +69,7 @@ def publish_nba_c(checked, now, local):
         approval.get("manual_c_stake_override")==f"{current}_2pct_bank_start" and
         len(approval.get("tickets",[]))==1 and
         approval["tickets"][0].get("id")=="C")
-    stake=round(bank*.02,2) if manual_c_2pct else round(budget*.10,2)
+    stake=round(bank*.02,2) if manual_c_2pct else round(bank*.015,2)
     if stake<=0 or (not manual_c_2pct and spent_before+stake>budget+0.001):
         return audit("NBA C exceeds remaining daily stake budget")
     matches=checked["verified_matches"]
