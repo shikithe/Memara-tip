@@ -2,12 +2,16 @@ name: NBA SISTEM — live points and ticket settlement
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
+      - 'nba-sistem.json'  # new NBA system cycle triggers first result refresh
       - 'nba_system_live.py'
       - '.github/workflows/nba-system-live.yml'
   schedule:
     # GitHub can delay/drop high-frequency cron jobs. Use staggered slots instead.
-    - cron: '17,47 * * * *'
+    - cron: '*/5 * * * *'
+    # Offset fallback for scheduled GitHub queue delays.
+    - cron: '2-59/15 * * * *'
     # Extra final-score retries overnight (UTC, Europe/Berlin +1 in winter).
     - cron: '27 4-9 * * *'
 permissions:
