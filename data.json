@@ -4,7 +4,7 @@
   "publication_type": "independent_ai_approved_github_nba_c",
   "bank_before": 275.87,
   "daily_stake": 22.07,
-  "bank_after": 253.8,
+  "bank_after": 301.44,
   "bank_after_stakes": 253.8,
   "provisional": true,
   "settled": false,
@@ -35,12 +35,15 @@
           "odd": 1.63,
           "source": "https://tipsterarea.com/match/monza-fiorentina-serie-a-italy-956695",
           "quote_checked_at_utc": "2026-11-23T13:19:47Z",
-          "analysis": "Probna selekcija 3+; provjeren termin i kvota iz predmečne ponude, bez pune nezavisne analize."
+          "analysis": "Probna selekcija 3+; provjeren termin i kvota iz predmečne ponude, bez pune nezavisne analize.",
+          "result_status": "pogođen",
+          "final_score": "3:0"
         }
       ],
       "stake": 17.93,
-      "status": "objavljen",
-      "payout": 0
+      "status": "dobitan",
+      "payout": 47.64,
+      "settled_at_utc": "2026-11-23T21:42:04.463406+00:00"
     },
     {
       "id": "C",
@@ -244,7 +247,7 @@
       }
     }
   ],
-  "total_payout": 0.0,
+  "total_payout": 47.64,
   "net_change": null,
   "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
   "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",

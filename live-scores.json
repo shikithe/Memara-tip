@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "updated_at_utc": "2026-11-23T19:38:34.418116+00:00",
+  "updated_at_utc": "2026-11-23T21:42:04.463406+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -23,13 +23,14 @@
       "index": 1,
       "home": "Monza",
       "away": "Fiorentina",
-      "state": "scheduled",
+      "state": "final",
       "fixture_id": "espn:football:ita.1:401875009",
-      "score": "0:0",
+      "score": "3:0",
       "source": "espn-public-unofficial",
       "event_id": "401875009",
       "league": "ita.1",
-      "minute": null
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "C",
