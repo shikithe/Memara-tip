@@ -6560,6 +6560,117 @@
               }
             }
           ]
+        },
+        {
+          "id": "7",
+          "stake": 8.64,
+          "status": "pending",
+          "total_odd": 3.783,
+          "potential_payout": 32.68,
+          "legs": [
+            {
+              "player": "Saddiq Bey",
+              "team": "NO",
+              "opponent": "PHX",
+              "pick": "over",
+              "points_line": 16.5,
+              "odd": 1.9901,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/saddiq-bey",
+              "espn_event_id": "401910042",
+              "player_id": "4397136",
+              "start_utc": "2026-11-24T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 21,
+                    "minutes": 37
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 23,
+                    "minutes": 33
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Previous five player scoring logs versus specific opponent unavailable."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Position-specific defensive concessions not confirmed."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Starting opponent defender not reliably established."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Murphy listed probable knees; individual availability cannot be guaranteed."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "Future minutes projection not independently validated, actual minutes used where verified."
+                },
+                "scout_score": 87,
+                "scout_note": "Bey posted 21 Nov20 and 23 Nov16, both above posted 16.5; he is a regular Pelicans forward, averaging roughly 15.9 this season. No modeled or guaranteed probability supplied.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-7.json"
+              }
+            },
+            {
+              "player": "Dillon Brooks",
+              "team": "PHX",
+              "opponent": "NO",
+              "pick": "over",
+              "points_line": 15.5,
+              "odd": 1.9009,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/dillon-brooks",
+              "espn_event_id": "401910042",
+              "player_id": "3155526",
+              "start_utc": "2026-11-24T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 18,
+                    "minutes": 32
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 29,
+                    "minutes": 31
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Previous five player scoring logs versus specific opponent unavailable."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Position-specific defensive concessions not confirmed."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Starting opponent defender not reliably established."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Murphy listed probable knees; individual availability cannot be guaranteed."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "Future minutes projection not independently validated, actual minutes used where verified."
+                },
+                "scout_score": 83,
+                "scout_note": "Brooks scored 18 and 29 in verified recent Suns appearances, above 15.5; five-game aggregate 15.6 and season baseline 15.1 make the edge small. No modeled or guaranteed probability supplied.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-7.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -6569,15 +6680,16 @@
           3,
           4,
           5,
-          6
+          6,
+          7
         ],
         "offered": 122,
         "total_groups": 10,
-        "group_number": 6,
-        "group_range": "63-74",
+        "group_number": 7,
+        "group_range": "75-86",
         "group_selected": [
-          "Pascal Siakam",
-          "Isaiah Hartenstein"
+          "Saddiq Bey",
+          "Dillon Brooks"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-23-group-1.json",
@@ -6585,7 +6697,8 @@
           "3": "collector-output/nba-system-scout-2026-11-23-group-3.json",
           "4": "collector-output/nba-system-scout-2026-11-23-group-4.json",
           "5": "collector-output/nba-system-scout-2026-11-23-group-5.json",
-          "6": "collector-output/nba-system-scout-2026-11-23-group-6.json"
+          "6": "collector-output/nba-system-scout-2026-11-23-group-6.json",
+          "7": "collector-output/nba-system-scout-2026-11-23-group-7.json"
         },
         "selection_method": "full_ranked_scout"
       },
