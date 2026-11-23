@@ -1,0 +1,795 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-23",
+  "group_number": 10,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Zach LaVine",
+      "player_id": "3064440",
+      "score": 89,
+      "confidence": 78,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete and official NBA fixture lookup attempted, with supplementary NBA.com, StatMuse and game-log report checks. Incomplete last-five logs omitted and explicit uncertainty retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/zach-lavine",
+        "https://www.statiqsports.com/nba/zach-lavine/last-5-games"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 19,
+          "minutes": 39
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and rolling averages included only for validated candidates; no estimated winning probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete venue-specific series matched to minutes has not been independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable prior five same-opponent player scoring box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense against exact player position was not quantified from a reliable source."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No verified specific individual defensive assignment before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "23 Nov game-day reports reviewed; LaVine not on injury report, Luka not listed out, Wembanyama questionable back tightness."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently confirmed expected future minutes, only past played minutes when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent Lakers or Sacramento offensive starter role corroborated by team and roster sources."
+      },
+      "market": {
+        "points_line": 16.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/zach-lavine"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": true,
+        "reason": "LaVine has a 20.5-point season average and about 18.6 over the last five, both above the frozen 16.5-point line. His last confirmed 20 Nov scoring was 19 in 39 minutes, clearing the line. This is an uncertain scouting judgement, not a guaranteed probability edge.",
+        "risk": "Spurs defense and Wembanyama's potential availability may significantly limit scoring, and the 5-game output is not a calibrated probability. Quote only from public BetSharp comparison snapshot."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Luka Dončić",
+      "player_id": "3945274",
+      "score": 86,
+      "confidence": 77,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete and official NBA fixture lookup attempted, with supplementary NBA.com, StatMuse and game-log report checks. Incomplete last-five logs omitted and explicit uncertainty retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/luka-doncic",
+        "https://www.statmuse.com/nba/ask/luka-doncic-last-5-games-with-lakers"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 25,
+          "minutes": 36
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and rolling averages included only for validated candidates; no estimated winning probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete venue-specific series matched to minutes has not been independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable prior five same-opponent player scoring box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense against exact player position was not quantified from a reliable source."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No verified specific individual defensive assignment before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "23 Nov game-day reports reviewed; LaVine not on injury report, Luka not listed out, Wembanyama questionable back tightness."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently confirmed expected future minutes, only past played minutes when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent Lakers or Sacramento offensive starter role corroborated by team and roster sources."
+      },
+      "market": {
+        "points_line": 35.5,
+        "over_odd": 1.8264,
+        "under_odd": 1.9434,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/luka-doncic"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": true,
+        "reason": "Dončić averages approximately 36 points this season, above the listed 35.5 line, and maintains very high shot volume against Utah. His most recent five-game mean is 33, below the line, so the season case is stronger than recent form. This is an uncertain scouting judgement, not a guaranteed probability edge.",
+        "risk": "Only 25 points in his latest game and the recent five-game average below 35.5 indicate meaningful downside, despite favorable expected Jazz defensive matchup. Quote only from public BetSharp comparison snapshot."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Ace Bailey",
+      "player_id": "betsharp:2026-11-23:0112",
+      "score": 69,
+      "confidence": 52,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete and official NBA fixture lookup attempted, with supplementary NBA.com, StatMuse and game-log report checks. Incomplete last-five logs omitted and explicit uncertainty retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/ace-bailey",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and rolling averages included only for validated candidates; no estimated winning probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete venue-specific series matched to minutes has not been independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable prior five same-opponent player scoring box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense against exact player position was not quantified from a reliable source."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No verified specific individual defensive assignment before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "23 Nov game-day reports reviewed; LaVine not on injury report, Luka not listed out, Wembanyama questionable back tightness."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently confirmed expected future minutes, only past played minutes when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent Lakers or Sacramento offensive starter role corroborated by team and roster sources."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.8,
+        "under_odd": 1.9804,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/ace-bailey"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Ace Bailey was included at the frozen BetSharp DK points line 14.5; full recent scoring/minute records and current matchup-specific role have not been independently confirmed, limiting directional confidence. This is an uncertain scouting judgement, not a guaranteed probability edge.",
+        "risk": "Court-time changes and high variance may reverse this cautious low-confidence lean. Quote only from public BetSharp comparison snapshot."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Collin Sexton",
+      "player_id": "betsharp:2026-11-23:0113",
+      "score": 66,
+      "confidence": 49,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete and official NBA fixture lookup attempted, with supplementary NBA.com, StatMuse and game-log report checks. Incomplete last-five logs omitted and explicit uncertainty retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/collin-sexton",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and rolling averages included only for validated candidates; no estimated winning probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete venue-specific series matched to minutes has not been independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable prior five same-opponent player scoring box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense against exact player position was not quantified from a reliable source."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No verified specific individual defensive assignment before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "23 Nov game-day reports reviewed; LaVine not on injury report, Luka not listed out, Wembanyama questionable back tightness."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently confirmed expected future minutes, only past played minutes when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent Lakers or Sacramento offensive starter role corroborated by team and roster sources."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/collin-sexton"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Collin Sexton was included at the frozen BetSharp DK points line 11.5; full recent scoring/minute records and current matchup-specific role have not been independently confirmed, limiting directional confidence. This is an uncertain scouting judgement, not a guaranteed probability edge.",
+        "risk": "Court-time changes and high variance may reverse this cautious low-confidence lean. Quote only from public BetSharp comparison snapshot."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Darryn Peterson",
+      "player_id": "betsharp:2026-11-23:0114",
+      "score": 63,
+      "confidence": 46,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete and official NBA fixture lookup attempted, with supplementary NBA.com, StatMuse and game-log report checks. Incomplete last-five logs omitted and explicit uncertainty retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/darryn-peterson",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and rolling averages included only for validated candidates; no estimated winning probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete venue-specific series matched to minutes has not been independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable prior five same-opponent player scoring box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense against exact player position was not quantified from a reliable source."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No verified specific individual defensive assignment before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "23 Nov game-day reports reviewed; LaVine not on injury report, Luka not listed out, Wembanyama questionable back tightness."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently confirmed expected future minutes, only past played minutes when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent Lakers or Sacramento offensive starter role corroborated by team and roster sources."
+      },
+      "market": {
+        "points_line": 18.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/darryn-peterson"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Darryn Peterson was included at the frozen BetSharp DK points line 18.5; full recent scoring/minute records and current matchup-specific role have not been independently confirmed, limiting directional confidence. This is an uncertain scouting judgement, not a guaranteed probability edge.",
+        "risk": "Court-time changes and high variance may reverse this cautious low-confidence lean. Quote only from public BetSharp comparison snapshot."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Jake LaRavia",
+      "player_id": "betsharp:2026-11-23:0115",
+      "score": 60,
+      "confidence": 43,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete and official NBA fixture lookup attempted, with supplementary NBA.com, StatMuse and game-log report checks. Incomplete last-five logs omitted and explicit uncertainty retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jake-laravia",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and rolling averages included only for validated candidates; no estimated winning probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete venue-specific series matched to minutes has not been independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable prior five same-opponent player scoring box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense against exact player position was not quantified from a reliable source."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No verified specific individual defensive assignment before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "23 Nov game-day reports reviewed; LaVine not on injury report, Luka not listed out, Wembanyama questionable back tightness."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently confirmed expected future minutes, only past played minutes when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent Lakers or Sacramento offensive starter role corroborated by team and roster sources."
+      },
+      "market": {
+        "points_line": 5.5,
+        "over_odd": 1.8403,
+        "under_odd": 1.9615,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jake-laravia"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Jake LaRavia was included at the frozen BetSharp DK points line 5.5; full recent scoring/minute records and current matchup-specific role have not been independently confirmed, limiting directional confidence. This is an uncertain scouting judgement, not a guaranteed probability edge.",
+        "risk": "Court-time changes and high variance may reverse this cautious low-confidence lean. Quote only from public BetSharp comparison snapshot."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Keyonte George",
+      "player_id": "betsharp:2026-11-23:0116",
+      "score": 57,
+      "confidence": 40,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete and official NBA fixture lookup attempted, with supplementary NBA.com, StatMuse and game-log report checks. Incomplete last-five logs omitted and explicit uncertainty retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/keyonte-george",
+        "https://www.nba.com/player/1641718/keyonte-george"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and rolling averages included only for validated candidates; no estimated winning probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete venue-specific series matched to minutes has not been independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable prior five same-opponent player scoring box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense against exact player position was not quantified from a reliable source."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No verified specific individual defensive assignment before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "23 Nov game-day reports reviewed; LaVine not on injury report, Luka not listed out, Wembanyama questionable back tightness."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently confirmed expected future minutes, only past played minutes when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent Lakers or Sacramento offensive starter role corroborated by team and roster sources."
+      },
+      "market": {
+        "points_line": 22.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8621,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/keyonte-george"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Keyonte George was included at the frozen BetSharp DK points line 22.5; full recent scoring/minute records and current matchup-specific role have not been independently confirmed, limiting directional confidence. This is an uncertain scouting judgement, not a guaranteed probability edge.",
+        "risk": "Court-time changes and high variance may reverse this cautious low-confidence lean. Quote only from public BetSharp comparison snapshot."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Matisse Thybulle",
+      "player_id": "betsharp:2026-11-23:0118",
+      "score": 54,
+      "confidence": 37,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete and official NBA fixture lookup attempted, with supplementary NBA.com, StatMuse and game-log report checks. Incomplete last-five logs omitted and explicit uncertainty retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/matisse-thybulle",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and rolling averages included only for validated candidates; no estimated winning probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete venue-specific series matched to minutes has not been independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable prior five same-opponent player scoring box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense against exact player position was not quantified from a reliable source."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No verified specific individual defensive assignment before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "23 Nov game-day reports reviewed; LaVine not on injury report, Luka not listed out, Wembanyama questionable back tightness."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently confirmed expected future minutes, only past played minutes when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent Lakers or Sacramento offensive starter role corroborated by team and roster sources."
+      },
+      "market": {
+        "points_line": 6.5,
+        "over_odd": 1.8403,
+        "under_odd": 1.9524,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/matisse-thybulle"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Matisse Thybulle was included at the frozen BetSharp DK points line 6.5; full recent scoring/minute records and current matchup-specific role have not been independently confirmed, limiting directional confidence. This is an uncertain scouting judgement, not a guaranteed probability edge.",
+        "risk": "Court-time changes and high variance may reverse this cautious low-confidence lean. Quote only from public BetSharp comparison snapshot."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Quentin Grimes",
+      "player_id": "betsharp:2026-11-23:0119",
+      "score": 51,
+      "confidence": 34,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete and official NBA fixture lookup attempted, with supplementary NBA.com, StatMuse and game-log report checks. Incomplete last-five logs omitted and explicit uncertainty retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/quentin-grimes",
+        "https://www.nba.com/player/1629656"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and rolling averages included only for validated candidates; no estimated winning probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete venue-specific series matched to minutes has not been independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable prior five same-opponent player scoring box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense against exact player position was not quantified from a reliable source."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No verified specific individual defensive assignment before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "23 Nov game-day reports reviewed; LaVine not on injury report, Luka not listed out, Wembanyama questionable back tightness."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently confirmed expected future minutes, only past played minutes when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent Lakers or Sacramento offensive starter role corroborated by team and roster sources."
+      },
+      "market": {
+        "points_line": 16.5,
+        "over_odd": 1.885,
+        "under_odd": 1.9009,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/quentin-grimes"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Quentin Grimes was included at the frozen BetSharp DK points line 16.5; full recent scoring/minute records and current matchup-specific role have not been independently confirmed, limiting directional confidence. This is an uncertain scouting judgement, not a guaranteed probability edge.",
+        "risk": "Court-time changes and high variance may reverse this cautious low-confidence lean. Quote only from public BetSharp comparison snapshot."
+      }
+    },
+    {
+      "rank": 10,
+      "player": "Sandro Mamukelashvili",
+      "player_id": "betsharp:2026-11-23:0120",
+      "score": 48,
+      "confidence": 31,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete and official NBA fixture lookup attempted, with supplementary NBA.com, StatMuse and game-log report checks. Incomplete last-five logs omitted and explicit uncertainty retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/sandro-mamukelashvili",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and rolling averages included only for validated candidates; no estimated winning probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete venue-specific series matched to minutes has not been independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable prior five same-opponent player scoring box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense against exact player position was not quantified from a reliable source."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No verified specific individual defensive assignment before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "23 Nov game-day reports reviewed; LaVine not on injury report, Luka not listed out, Wembanyama questionable back tightness."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently confirmed expected future minutes, only past played minutes when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent Lakers or Sacramento offensive starter role corroborated by team and roster sources."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.9804,
+        "under_odd": 1.8,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/sandro-mamukelashvili"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Sandro Mamukelashvili was included at the frozen BetSharp DK points line 9.5; full recent scoring/minute records and current matchup-specific role have not been independently confirmed, limiting directional confidence. This is an uncertain scouting judgement, not a guaranteed probability edge.",
+        "risk": "Court-time changes and high variance may reverse this cautious low-confidence lean. Quote only from public BetSharp comparison snapshot."
+      }
+    },
+    {
+      "rank": 11,
+      "player": "Walker Kessler",
+      "player_id": "betsharp:2026-11-23:0121",
+      "score": 45,
+      "confidence": 28,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete and official NBA fixture lookup attempted, with supplementary NBA.com, StatMuse and game-log report checks. Incomplete last-five logs omitted and explicit uncertainty retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/walker-kessler",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and rolling averages included only for validated candidates; no estimated winning probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete venue-specific series matched to minutes has not been independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable prior five same-opponent player scoring box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense against exact player position was not quantified from a reliable source."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No verified specific individual defensive assignment before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "23 Nov game-day reports reviewed; LaVine not on injury report, Luka not listed out, Wembanyama questionable back tightness."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently confirmed expected future minutes, only past played minutes when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent Lakers or Sacramento offensive starter role corroborated by team and roster sources."
+      },
+      "market": {
+        "points_line": 13.5,
+        "over_odd": 1.813,
+        "under_odd": 1.9615,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/walker-kessler"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Walker Kessler was included at the frozen BetSharp DK points line 13.5; full recent scoring/minute records and current matchup-specific role have not been independently confirmed, limiting directional confidence. This is an uncertain scouting judgement, not a guaranteed probability edge.",
+        "risk": "Court-time changes and high variance may reverse this cautious low-confidence lean. Quote only from public BetSharp comparison snapshot."
+      }
+    },
+    {
+      "rank": 12,
+      "player": "Ziaire Williams",
+      "player_id": "betsharp:2026-11-23:0122",
+      "score": 42,
+      "confidence": 25,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN athlete and official NBA fixture lookup attempted, with supplementary NBA.com, StatMuse and game-log report checks. Incomplete last-five logs omitted and explicit uncertainty retained."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/ziaire-williams",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and rolling averages included only for validated candidates; no estimated winning probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "A complete venue-specific series matched to minutes has not been independently verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Reliable prior five same-opponent player scoring box scores not independently collected."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Opponent defense against exact player position was not quantified from a reliable source."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "No verified specific individual defensive assignment before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "23 Nov game-day reports reviewed; LaVine not on injury report, Luka not listed out, Wembanyama questionable back tightness."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently confirmed expected future minutes, only past played minutes when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Recent Lakers or Sacramento offensive starter role corroborated by team and roster sources."
+      },
+      "market": {
+        "points_line": 7.5,
+        "over_odd": 1.9524,
+        "under_odd": 1.8264,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/ziaire-williams"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Ziaire Williams was included at the frozen BetSharp DK points line 7.5; full recent scoring/minute records and current matchup-specific role have not been independently confirmed, limiting directional confidence. This is an uncertain scouting judgement, not a guaranteed probability edge.",
+        "risk": "Court-time changes and high variance may reverse this cautious low-confidence lean. Quote only from public BetSharp comparison snapshot."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "3064440",
+    "3945274"
+  ],
+  "selection_reason": "Complete original twelve-player group10 ranking based on available ESPN/NBA evidence. Zach LaVine OVER16.5 is backed by 20.5 season points and 18.6 last-five average; Luka Dončić OVER35.5 is supported by high season ~36 points but weaker 33 last-five, and is a materially higher-risk choice. Genuine ESPN athlete IDs 3064440 and 3945274, and future 2026-11-24T03:00:00Z SA@SAC/UTA@LAL match starts independently verified. All exact DK odds/lines frozen, no synthetic H2H or previous game scores.",
+  "notes": "The two selections are from different games; uncertainty and incomplete candidate-specific data documented with lower confidence instead of made-up evidence."
+}
