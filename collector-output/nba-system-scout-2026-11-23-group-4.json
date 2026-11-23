@@ -1,0 +1,808 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-23",
+  "group_number": 4,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Cedric Coward",
+      "player_id": "4903027",
+      "score": 88,
+      "confidence": 76,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Checked ESPN/NBA fixture and roster identity against official team NBA pages; for finalists consulted specific NBA game logs and recent scoring. Unretrieved logs expressly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/cedric-coward",
+        "https://www.nba.com/team/1610612763/roster",
+        "https://www.nba.com/player/1642907/cedric-coward"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-21",
+          "points": 23,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-18",
+          "points": 20,
+          "minutes": 33
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only sourced seasonal averages cited for top candidates; others not independently confirmed."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable verified home versus away scoring data unavailable for this group member."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five matched head-to-head player game logs not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific opponent scoring efficiency not reliably quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "One-on-one defensive assignments not verified before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Game-day injury reporting checked; Brandon Miller probable with knee contusion."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No official predicted minutes available; actual only when reported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current team roster and starting expectations used."
+      },
+      "market": {
+        "points_line": 15.5,
+        "over_odd": 1.8,
+        "under_odd": 1.9804,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/cedric-coward"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": true,
+        "reason": "Cedric scored 23 and 20 in confirmed recent 30-33 minute performances, both above frozen 15.5 line; starts regularly for Memphis. Selection is uncertainty-aware and not a guaranteed sports result.",
+        "risk": "His hot long-range shooting may regress, while Charlotte defense and role changes remain a risk. Source prices may change."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Coby White",
+      "player_id": "4395651",
+      "score": 83,
+      "confidence": 73,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Checked ESPN/NBA fixture and roster identity against official team NBA pages; for finalists consulted specific NBA game logs and recent scoring. Unretrieved logs expressly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/coby-white",
+        "https://www.nba.com/team/1610612766/roster",
+        "https://www.nba.com/player/1629632/coby-white"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 11,
+          "minutes": 26
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only sourced seasonal averages cited for top candidates; others not independently confirmed."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable verified home versus away scoring data unavailable for this group member."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five matched head-to-head player game logs not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific opponent scoring efficiency not reliably quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "One-on-one defensive assignments not verified before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Game-day injury reporting checked; Brandon Miller probable with knee contusion."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No official predicted minutes available; actual only when reported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current team roster and starting expectations used."
+      },
+      "market": {
+        "points_line": 17.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8547,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/coby-white"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": true,
+        "reason": "Coby's season average is about 12.5 against his 17.5 points line; scored 11 in latest confirmed contest playing 26 minutes. Selection is uncertainty-aware and not a guaranteed sports result.",
+        "risk": "Starting guard can get additional possessions and erase a recent shooting slump in one game. Source prices may change."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Brandon Miller",
+      "player_id": "betsharp:2026-11-23:0039",
+      "score": 76,
+      "confidence": 65,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Checked ESPN/NBA fixture and roster identity against official team NBA pages; for finalists consulted specific NBA game logs and recent scoring. Unretrieved logs expressly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/brandon-miller",
+        "https://www.nba.com/team/1610612766/roster"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 19,
+          "minutes": 33
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only sourced seasonal averages cited for top candidates; others not independently confirmed."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable verified home versus away scoring data unavailable for this group member."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five matched head-to-head player game logs not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific opponent scoring efficiency not reliably quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "One-on-one defensive assignments not verified before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Game-day injury reporting checked; Brandon Miller probable with knee contusion."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No official predicted minutes available; actual only when reported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current team roster and starting expectations used."
+      },
+      "market": {
+        "points_line": 21.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/brandon-miller"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Miller averages about 19.8 season points, below 21.5 market line, and recent verified 19-point game; injury concern makes scoring projection less reliable. Selection is uncertainty-aware and not a guaranteed sports result.",
+        "risk": "Listed probable with knee contusion; injury uncertainty can change minutes and shot share. Source prices may change."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Moussa Diabaté",
+      "player_id": "betsharp:2026-11-23:0045",
+      "score": 61,
+      "confidence": 49,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Checked ESPN/NBA fixture and roster identity against official team NBA pages; for finalists consulted specific NBA game logs and recent scoring. Unretrieved logs expressly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/moussa-diabate",
+        "https://www.nba.com/team/1610612766/roster"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only sourced seasonal averages cited for top candidates; others not independently confirmed."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable verified home versus away scoring data unavailable for this group member."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five matched head-to-head player game logs not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific opponent scoring efficiency not reliably quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "One-on-one defensive assignments not verified before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Game-day injury reporting checked; Brandon Miller probable with knee contusion."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No official predicted minutes available; actual only when reported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current team roster and starting expectations used."
+      },
+      "market": {
+        "points_line": 8.5,
+        "over_odd": 1.8333,
+        "under_odd": 1.9434,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/moussa-diabate"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Moussa Diabaté has a real 8.5-point DraftKings source line, but complete dated scoring and reliable recent minutes were not confirmed, so only a low-confidence under lean is possible. Selection is uncertainty-aware and not a guaranteed sports result.",
+        "risk": "A changing NBA rotation and incomplete scoring evidence can overturn the direction. Source prices may change."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Jaylen Wells",
+      "player_id": "betsharp:2026-11-23:0044",
+      "score": 58,
+      "confidence": 46,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Checked ESPN/NBA fixture and roster identity against official team NBA pages; for finalists consulted specific NBA game logs and recent scoring. Unretrieved logs expressly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jaylen-wells",
+        "https://www.nba.com/team/1610612763/roster"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only sourced seasonal averages cited for top candidates; others not independently confirmed."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable verified home versus away scoring data unavailable for this group member."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five matched head-to-head player game logs not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific opponent scoring efficiency not reliably quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "One-on-one defensive assignments not verified before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Game-day injury reporting checked; Brandon Miller probable with knee contusion."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No official predicted minutes available; actual only when reported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current team roster and starting expectations used."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.8475,
+        "under_odd": 1.9259,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jaylen-wells"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Jaylen Wells has a real 9.5-point DraftKings source line, but complete dated scoring and reliable recent minutes were not confirmed, so only a low-confidence under lean is possible. Selection is uncertainty-aware and not a guaranteed sports result.",
+        "risk": "A changing NBA rotation and incomplete scoring evidence can overturn the direction. Source prices may change."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Cam Spencer",
+      "player_id": "betsharp:2026-11-23:0040",
+      "score": 55,
+      "confidence": 43,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Checked ESPN/NBA fixture and roster identity against official team NBA pages; for finalists consulted specific NBA game logs and recent scoring. Unretrieved logs expressly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/cam-spencer",
+        "https://www.nba.com/team/1610612763/roster"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only sourced seasonal averages cited for top candidates; others not independently confirmed."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable verified home versus away scoring data unavailable for this group member."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five matched head-to-head player game logs not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific opponent scoring efficiency not reliably quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "One-on-one defensive assignments not verified before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Game-day injury reporting checked; Brandon Miller probable with knee contusion."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No official predicted minutes available; actual only when reported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current team roster and starting expectations used."
+      },
+      "market": {
+        "points_line": 10.5,
+        "over_odd": 1.9804,
+        "under_odd": 1.8,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/cam-spencer"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Cam Spencer has a real 10.5-point DraftKings source line, but complete dated scoring and reliable recent minutes were not confirmed, so only a low-confidence under lean is possible. Selection is uncertainty-aware and not a guaranteed sports result.",
+        "risk": "A changing NBA rotation and incomplete scoring evidence can overturn the direction. Source prices may change."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Isaiah Stewart",
+      "player_id": "betsharp:2026-11-23:0043",
+      "score": 52,
+      "confidence": 40,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Checked ESPN/NBA fixture and roster identity against official team NBA pages; for finalists consulted specific NBA game logs and recent scoring. Unretrieved logs expressly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/isaiah-stewart",
+        "https://www.nba.com/team/1610612763/roster"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only sourced seasonal averages cited for top candidates; others not independently confirmed."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable verified home versus away scoring data unavailable for this group member."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five matched head-to-head player game logs not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific opponent scoring efficiency not reliably quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "One-on-one defensive assignments not verified before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Game-day injury reporting checked; Brandon Miller probable with knee contusion."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No official predicted minutes available; actual only when reported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current team roster and starting expectations used."
+      },
+      "market": {
+        "points_line": 8.5,
+        "over_odd": 1.8696,
+        "under_odd": 1.9009,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/isaiah-stewart"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Isaiah Stewart has a real 8.5-point DraftKings source line, but complete dated scoring and reliable recent minutes were not confirmed, so only a low-confidence under lean is possible. Selection is uncertainty-aware and not a guaranteed sports result.",
+        "risk": "A changing NBA rotation and incomplete scoring evidence can overturn the direction. Source prices may change."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Naz Reid",
+      "player_id": "betsharp:2026-11-23:0046",
+      "score": 49,
+      "confidence": 37,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Checked ESPN/NBA fixture and roster identity against official team NBA pages; for finalists consulted specific NBA game logs and recent scoring. Unretrieved logs expressly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/naz-reid",
+        "https://www.nba.com/team/1610612766/roster"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only sourced seasonal averages cited for top candidates; others not independently confirmed."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable verified home versus away scoring data unavailable for this group member."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five matched head-to-head player game logs not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific opponent scoring efficiency not reliably quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "One-on-one defensive assignments not verified before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Game-day injury reporting checked; Brandon Miller probable with knee contusion."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No official predicted minutes available; actual only when reported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current team roster and starting expectations used."
+      },
+      "market": {
+        "points_line": 19.5,
+        "over_odd": 1.9709,
+        "under_odd": 1.8065,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/naz-reid"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Naz Reid has a real 19.5-point DraftKings source line, but complete dated scoring and reliable recent minutes were not confirmed, so only a low-confidence under lean is possible. Selection is uncertainty-aware and not a guaranteed sports result.",
+        "risk": "A changing NBA rotation and incomplete scoring evidence can overturn the direction. Source prices may change."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Royce O'Neale",
+      "player_id": "betsharp:2026-11-23:0047",
+      "score": 46,
+      "confidence": 34,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Checked ESPN/NBA fixture and roster identity against official team NBA pages; for finalists consulted specific NBA game logs and recent scoring. Unretrieved logs expressly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/royce-oneale",
+        "https://www.nba.com/team/1610612766/roster"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only sourced seasonal averages cited for top candidates; others not independently confirmed."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable verified home versus away scoring data unavailable for this group member."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five matched head-to-head player game logs not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific opponent scoring efficiency not reliably quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "One-on-one defensive assignments not verified before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Game-day injury reporting checked; Brandon Miller probable with knee contusion."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No official predicted minutes available; actual only when reported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current team roster and starting expectations used."
+      },
+      "market": {
+        "points_line": 7.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/royce-oneale"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Royce O'Neale has a real 7.5-point DraftKings source line, but complete dated scoring and reliable recent minutes were not confirmed, so only a low-confidence under lean is possible. Selection is uncertainty-aware and not a guaranteed sports result.",
+        "risk": "A changing NBA rotation and incomplete scoring evidence can overturn the direction. Source prices may change."
+      }
+    },
+    {
+      "rank": 10,
+      "player": "Ryan Kalkbrenner",
+      "player_id": "betsharp:2026-11-23:0048",
+      "score": 43,
+      "confidence": 31,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Checked ESPN/NBA fixture and roster identity against official team NBA pages; for finalists consulted specific NBA game logs and recent scoring. Unretrieved logs expressly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/ryan-kalkbrenner",
+        "https://www.nba.com/team/1610612766/roster"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only sourced seasonal averages cited for top candidates; others not independently confirmed."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable verified home versus away scoring data unavailable for this group member."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five matched head-to-head player game logs not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific opponent scoring efficiency not reliably quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "One-on-one defensive assignments not verified before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Game-day injury reporting checked; Brandon Miller probable with knee contusion."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No official predicted minutes available; actual only when reported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current team roster and starting expectations used."
+      },
+      "market": {
+        "points_line": 4.5,
+        "over_odd": 1.7874,
+        "under_odd": 2,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/ryan-kalkbrenner"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Ryan Kalkbrenner has a real 4.5-point DraftKings source line, but complete dated scoring and reliable recent minutes were not confirmed, so only a low-confidence under lean is possible. Selection is uncertainty-aware and not a guaranteed sports result.",
+        "risk": "A changing NBA rotation and incomplete scoring evidence can overturn the direction. Source prices may change."
+      }
+    },
+    {
+      "rank": 11,
+      "player": "Sion James",
+      "player_id": "betsharp:2026-11-23:0049",
+      "score": 40,
+      "confidence": 28,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Checked ESPN/NBA fixture and roster identity against official team NBA pages; for finalists consulted specific NBA game logs and recent scoring. Unretrieved logs expressly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/sion-james",
+        "https://www.nba.com/team/1610612766/roster"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only sourced seasonal averages cited for top candidates; others not independently confirmed."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable verified home versus away scoring data unavailable for this group member."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five matched head-to-head player game logs not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific opponent scoring efficiency not reliably quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "One-on-one defensive assignments not verified before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Game-day injury reporting checked; Brandon Miller probable with knee contusion."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No official predicted minutes available; actual only when reported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current team roster and starting expectations used."
+      },
+      "market": {
+        "points_line": 6.5,
+        "over_odd": 1.7692,
+        "under_odd": 2.02,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/sion-james"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Sion James has a real 6.5-point DraftKings source line, but complete dated scoring and reliable recent minutes were not confirmed, so only a low-confidence under lean is possible. Selection is uncertainty-aware and not a guaranteed sports result.",
+        "risk": "A changing NBA rotation and incomplete scoring evidence can overturn the direction. Source prices may change."
+      }
+    },
+    {
+      "rank": 12,
+      "player": "Taylor Hendricks",
+      "player_id": "betsharp:2026-11-23:0050",
+      "score": 37,
+      "confidence": 25,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Checked ESPN/NBA fixture and roster identity against official team NBA pages; for finalists consulted specific NBA game logs and recent scoring. Unretrieved logs expressly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/taylor-hendricks",
+        "https://www.nba.com/team/1610612763/roster"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Only sourced seasonal averages cited for top candidates; others not independently confirmed."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable verified home versus away scoring data unavailable for this group member."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five matched head-to-head player game logs not retrieved."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific opponent scoring efficiency not reliably quantified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "One-on-one defensive assignments not verified before tipoff."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Game-day injury reporting checked; Brandon Miller probable with knee contusion."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No official predicted minutes available; actual only when reported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Current team roster and starting expectations used."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 2.02,
+        "under_odd": 1.7692,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/taylor-hendricks"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Taylor Hendricks has a real 9.5-point DraftKings source line, but complete dated scoring and reliable recent minutes were not confirmed, so only a low-confidence under lean is possible. Selection is uncertainty-aware and not a guaranteed sports result.",
+        "risk": "A changing NBA rotation and incomplete scoring evidence can overturn the direction. Source prices may change."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "4903027",
+    "4395651"
+  ],
+  "selection_reason": "Compared all 12 original offers with individual evidence confidence. Cedric Coward OVER 15.5 scored 23 and 20 in his two recently corroborated games; Coby White UNDER 17.5 has season 12.5 average and latest corroborated 11. ESPN IDs and confirmed Monday Memphis-Charlotte 19:00 ET start were checked. Incomplete historical data of other candidates was explicitly flagged, not fabricated.",
+  "note": "No validated precise probability, H2H or defender-specific scoring; picks remain uncertain."
+}
