@@ -6777,6 +6777,106 @@
               }
             }
           ]
+        },
+        {
+          "id": "9",
+          "stake": 8.64,
+          "status": "pending",
+          "total_odd": 3.4814,
+          "potential_payout": 30.08,
+          "legs": [
+            {
+              "player": "Devin Vassell",
+              "team": "SA",
+              "opponent": "SAC",
+              "pick": "under",
+              "points_line": 14.5,
+              "odd": 1.8621,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/devin-vassell",
+              "espn_event_id": "401910045",
+              "player_id": "4395630",
+              "start_utc": "2026-11-24T03:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-17",
+                    "points": 12,
+                    "minutes": 36
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 7,
+                    "minutes": 23
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five prior exact-opponent individual scoring game logs not fully established."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Quantified position-specific opponent defense effects not independently verified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Individual on-ball defender assignment not verified before starting lineup."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "League 23 November injury report checked: Victor Wembanyama questionable for back tightness; Vassell not listed out; Philadelphia injury situation can influence Maxey usage."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No trustworthy independently published forward playing-minute projection."
+                },
+                "scout_score": 90,
+                "scout_note": "Vassell averaged 10.0 points across his last five games and 11.3 this season, both clearly below the 14.5-point market line. In corroborated games he scored 12 in 36 minutes against Detroit and seven in 23 minutes in an earlier outing. This ranking is based on the best sources available, without a numerical predictive guarantee.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-9.json"
+              }
+            },
+            {
+              "player": "Tyrese Maxey",
+              "team": "PHI",
+              "opponent": "POR",
+              "pick": "under",
+              "points_line": 25.5,
+              "odd": 1.8696,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/tyrese-maxey",
+              "espn_event_id": "401910037",
+              "player_id": "4431678",
+              "start_utc": "2026-11-24T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five prior exact-opponent individual scoring game logs not fully established."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Quantified position-specific opponent defense effects not independently verified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Individual on-ball defender assignment not verified before starting lineup."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "League 23 November injury report checked: Victor Wembanyama questionable for back tightness; Vassell not listed out; Philadelphia injury situation can influence Maxey usage."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No trustworthy independently published forward playing-minute projection."
+                },
+                "scout_score": 85,
+                "scout_note": "Maxey averaged 23.8 points over the last five according to available independent recent-game aggregate, below the listed 25.5-point market line. This offers a modest descriptive under lean, not a predictive probability. This ranking is based on the best sources available, without a numerical predictive guarantee.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-9.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -6788,15 +6888,16 @@
           5,
           6,
           7,
-          8
+          8,
+          9
         ],
         "offered": 122,
         "total_groups": 10,
-        "group_number": 8,
-        "group_range": "87-98",
+        "group_number": 9,
+        "group_range": "99-110",
         "group_selected": [
-          "Deni Avdija",
-          "Damian Lillard"
+          "Devin Vassell",
+          "Tyrese Maxey"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-23-group-1.json",
@@ -6806,7 +6907,8 @@
           "5": "collector-output/nba-system-scout-2026-11-23-group-5.json",
           "6": "collector-output/nba-system-scout-2026-11-23-group-6.json",
           "7": "collector-output/nba-system-scout-2026-11-23-group-7.json",
-          "8": "collector-output/nba-system-scout-2026-11-23-group-8.json"
+          "8": "collector-output/nba-system-scout-2026-11-23-group-8.json",
+          "9": "collector-output/nba-system-scout-2026-11-23-group-9.json"
         },
         "selection_method": "full_ranked_scout"
       },
