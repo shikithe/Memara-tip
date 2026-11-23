@@ -1,0 +1,962 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-23",
+  "group_number": 2,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Jarrett Allen",
+      "player_id": "4066328",
+      "score": 91,
+      "confidence": 83,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Reviewed ESPN/NBA athlete game logs and roster sources where obtainable, searched team injury and secondary sources. Missing records left out of last_five and marked unknown."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jarrett-allen",
+        "https://www.nba.com/player/1628386/jarrett_allen",
+        "https://betsharp.com/nba/props?m=points"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 6,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-18",
+          "points": 19,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-16",
+          "points": 13,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-13",
+          "points": 9,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-11",
+          "points": 11,
+          "minutes": 32
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced seasonal scoring averages included only in assessment when verified"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "An equal-minutes home-away full season split was not verified for this player."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five reliable player-specific head-to-head game log rows versus this opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position-specific points conceded were not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual head-to-head on-ball defender has not been confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed 23 November official injury and preview reports; Allen not listed out, Amen had prior knee issue."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified minutes projection; only historical played minutes where sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation role inferred from available verified team news and recorded minutes."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.8,
+        "under_odd": 1.9804,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jarrett-allen"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": true,
+        "reason": "Four of five confirmed recent scores were below 14.5: 6,19,13,9,11, last-five average 11.6 and current season 12.6, both below line. This is a qualitative evidence-based assessment without calibrated true betting edge.",
+        "risk": "Allen scored 19 in one of those games; Evan Mobley absence and Chicago interior matchup may increase scoring touches. Line and odds from BetSharp comparative reference, not verified directly at the bookmaker."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Amen Thompson",
+      "player_id": "4684740",
+      "score": 86,
+      "confidence": 79,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Reviewed ESPN/NBA athlete game logs and roster sources where obtainable, searched team injury and secondary sources. Missing records left out of last_five and marked unknown."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/amen-thompson",
+        "https://www.nba.com/player/1641708",
+        "https://betsharp.com/nba/props?m=points"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 22,
+          "minutes": 26
+        },
+        {
+          "date": "2026-11-18",
+          "points": 15,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-15",
+          "points": 26,
+          "minutes": 29
+        },
+        {
+          "date": "2026-11-13",
+          "points": 12,
+          "minutes": 41
+        },
+        {
+          "date": "2026-11-11",
+          "points": 19,
+          "minutes": 29
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced seasonal scoring averages included only in assessment when verified"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "An equal-minutes home-away full season split was not verified for this player."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five reliable player-specific head-to-head game log rows versus this opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position-specific points conceded were not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual head-to-head on-ball defender has not been confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed 23 November official injury and preview reports; Allen not listed out, Amen had prior knee issue."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified minutes projection; only historical played minutes where sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation role inferred from available verified team news and recorded minutes."
+      },
+      "market": {
+        "points_line": 15.5,
+        "over_odd": 1.9434,
+        "under_odd": 1.8333,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/amen-thompson"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": true,
+        "reason": "Amen scored 22,15,26,12,19 in his last five, three above 15.5, for an average of 18.8; season rate 16.1 and high-pressure transition scoring could carry over. This is a qualitative evidence-based assessment without calibrated true betting edge.",
+        "risk": "Recent knee soreness caused a missed game; Clippers can prioritize stopping his drives, and shot volume varied even at 41 minutes. Line and odds from BetSharp comparative reference, not verified directly at the bookmaker."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Matas Buzelis",
+      "player_id": "betsharp:2026-11-23:0021",
+      "score": 78,
+      "confidence": 69,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Reviewed ESPN/NBA athlete game logs and roster sources where obtainable, searched team injury and secondary sources. Missing records left out of last_five and marked unknown."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/matas-buzelis",
+        "https://www.nba.com/player/1641824",
+        "https://betsharp.com/nba/props?m=points"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-22",
+          "points": 21,
+          "minutes": 38
+        },
+        {
+          "date": "2026-11-20",
+          "points": 9,
+          "minutes": 25
+        },
+        {
+          "date": "2026-11-16",
+          "points": 23,
+          "minutes": 31
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced seasonal scoring averages included only in assessment when verified"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "An equal-minutes home-away full season split was not verified for this player."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five reliable player-specific head-to-head game log rows versus this opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position-specific points conceded were not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual head-to-head on-ball defender has not been confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed 23 November official injury and preview reports; Allen not listed out, Amen had prior knee issue."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified minutes projection; only historical played minutes where sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation role inferred from available verified team news and recorded minutes."
+      },
+      "market": {
+        "points_line": 17.5,
+        "over_odd": 1.9524,
+        "under_odd": 1.8264,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/matas-buzelis"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Matas season average 15.1 is below 17.5, but 21,9,23 in three extracted games and previous 23 versus Cleveland make an under fragile. This is a qualitative evidence-based assessment without calibrated true betting edge.",
+        "risk": "Recent high minutes and hot shooting against Cleveland could repeat tonight. Line and odds from BetSharp comparative reference, not verified directly at the bookmaker."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "James Harden",
+      "player_id": "betsharp:2026-11-23:0017",
+      "score": 74,
+      "confidence": 70,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Reviewed ESPN/NBA athlete game logs and roster sources where obtainable, searched team injury and secondary sources. Missing records left out of last_five and marked unknown."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/james-harden",
+        "https://www.nba.com/cavaliers/news/preview-clechi-261123",
+        "https://betsharp.com/nba/props?m=points"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 51,
+          "minutes": 40
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced seasonal scoring averages included only in assessment when verified"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "An equal-minutes home-away full season split was not verified for this player."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five reliable player-specific head-to-head game log rows versus this opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position-specific points conceded were not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual head-to-head on-ball defender has not been confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed 23 November official injury and preview reports; Allen not listed out, Amen had prior knee issue."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified minutes projection; only historical played minutes where sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation role inferred from available verified team news and recorded minutes."
+      },
+      "market": {
+        "points_line": 18.5,
+        "over_odd": 1.9709,
+        "under_odd": 1.8065,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/james-harden"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Last confirmed scoring outlier was 51 points in 40 minutes and last five average reported 25.2, above 18.5; high ball-control role. This is a qualitative evidence-based assessment without calibrated true betting edge.",
+        "risk": "Season mean about 18.4 is just under line and one 51-point outlier distorts the five-game mean. Line and odds from BetSharp comparative reference, not verified directly at the bookmaker."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Alperen Sengun",
+      "player_id": "betsharp:2026-11-23:0025",
+      "score": 73,
+      "confidence": 67,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Reviewed ESPN/NBA athlete game logs and roster sources where obtainable, searched team injury and secondary sources. Missing records left out of last_five and marked unknown."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/alperen-sengun",
+        "https://www.nba.com/player/1630578",
+        "https://betsharp.com/nba/props?m=points"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-16",
+          "points": 23,
+          "minutes": 30
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced seasonal scoring averages included only in assessment when verified"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "An equal-minutes home-away full season split was not verified for this player."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five reliable player-specific head-to-head game log rows versus this opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position-specific points conceded were not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual head-to-head on-ball defender has not been confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed 23 November official injury and preview reports; Allen not listed out, Amen had prior knee issue."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified minutes projection; only historical played minutes where sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation role inferred from available verified team news and recorded minutes."
+      },
+      "market": {
+        "points_line": 21.5,
+        "over_odd": 1.9346,
+        "under_odd": 1.8403,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/alperen-sengun"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Season near 22.1 points exceeds 21.5 by a small margin; demonstrated 23 points against Miami, but L5 not fully verified. This is a qualitative evidence-based assessment without calibrated true betting edge.",
+        "risk": "Clippers may use double teams, and turnover/foul problems could cut scoring efficiency. Line and odds from BetSharp comparative reference, not verified directly at the bookmaker."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Joshua Giddey",
+      "player_id": "betsharp:2026-11-23:0020",
+      "score": 68,
+      "confidence": 63,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Reviewed ESPN/NBA athlete game logs and roster sources where obtainable, searched team injury and secondary sources. Missing records left out of last_five and marked unknown."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/joshua-giddey",
+        "https://www.nba.com/player/1630581",
+        "https://betsharp.com/nba/props?m=points"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 2,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-18",
+          "points": 18,
+          "minutes": 28
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced seasonal scoring averages included only in assessment when verified"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "An equal-minutes home-away full season split was not verified for this player."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five reliable player-specific head-to-head game log rows versus this opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position-specific points conceded were not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual head-to-head on-ball defender has not been confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed 23 November official injury and preview reports; Allen not listed out, Amen had prior knee issue."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified minutes projection; only historical played minutes where sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation role inferred from available verified team news and recorded minutes."
+      },
+      "market": {
+        "points_line": 13.5,
+        "over_odd": 1.8403,
+        "under_odd": 1.9346,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/joshua-giddey"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "At 13.5 the game logs are mixed; scored 2 and 18 in extracted samples, with point totals highly dependent on assist-first role. This is a qualitative evidence-based assessment without calibrated true betting edge.",
+        "risk": "Bulls can play him high minutes and change his scoring use late in games. Line and odds from BetSharp comparative reference, not verified directly at the bookmaker."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Donovan Mitchell",
+      "player_id": "betsharp:2026-11-23:0014",
+      "score": 64,
+      "confidence": 60,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Reviewed ESPN/NBA athlete game logs and roster sources where obtainable, searched team injury and secondary sources. Missing records left out of last_five and marked unknown."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/donovan-mitchell",
+        "https://www.nba.com/player/1628378",
+        "https://betsharp.com/nba/props?m=points"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 20,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-18",
+          "points": 34,
+          "minutes": 35
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced seasonal scoring averages included only in assessment when verified"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "An equal-minutes home-away full season split was not verified for this player."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five reliable player-specific head-to-head game log rows versus this opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position-specific points conceded were not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual head-to-head on-ball defender has not been confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed 23 November official injury and preview reports; Allen not listed out, Amen had prior knee issue."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified minutes projection; only historical played minutes where sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation role inferred from available verified team news and recorded minutes."
+      },
+      "market": {
+        "points_line": 26.5,
+        "over_odd": 1.8403,
+        "under_odd": 1.9346,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/donovan-mitchell"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Mitchell has a 26.5 line and is UNDER in one of two confirmed recent matches; overall L5 28.2 is above the line, making under only a weaker lean. This is a qualitative evidence-based assessment without calibrated true betting edge.",
+        "risk": "Strong volume shooting could beat line and same player already chosen separately for C virtual ledger. Line and odds from BetSharp comparative reference, not verified directly at the bookmaker."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Jalen Smith",
+      "player_id": "betsharp:2026-11-23:0016",
+      "score": 61,
+      "confidence": 49,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Reviewed ESPN/NBA athlete game logs and roster sources where obtainable, searched team injury and secondary sources. Missing records left out of last_five and marked unknown."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jalen-smith",
+        "https://www.nba.com/bulls/",
+        "https://betsharp.com/nba/props?m=points"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced seasonal scoring averages included only in assessment when verified"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "An equal-minutes home-away full season split was not verified for this player."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five reliable player-specific head-to-head game log rows versus this opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position-specific points conceded were not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual head-to-head on-ball defender has not been confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed 23 November official injury and preview reports; Allen not listed out, Amen had prior knee issue."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified minutes projection; only historical played minutes where sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation role inferred from available verified team news and recorded minutes."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.8065,
+        "under_odd": 1.9709,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jalen-smith"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "At 14.5 points, full last-five numbers and roster rotation for Smith are not verified; only cautious low-score tilt possible. This is a qualitative evidence-based assessment without calibrated true betting edge.",
+        "risk": "Cleveland frontcourt injuries could give easy baskets and boost Smith. Line and odds from BetSharp comparative reference, not verified directly at the bookmaker."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Isaac Okoro",
+      "player_id": "betsharp:2026-11-23:0015",
+      "score": 58,
+      "confidence": 47,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Reviewed ESPN/NBA athlete game logs and roster sources where obtainable, searched team injury and secondary sources. Missing records left out of last_five and marked unknown."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/isaac-okoro",
+        "https://www.nba.com/player/1630171",
+        "https://betsharp.com/nba/props?m=points"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced seasonal scoring averages included only in assessment when verified"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "An equal-minutes home-away full season split was not verified for this player."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five reliable player-specific head-to-head game log rows versus this opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position-specific points conceded were not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual head-to-head on-ball defender has not been confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed 23 November official injury and preview reports; Allen not listed out, Amen had prior knee issue."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified minutes projection; only historical played minutes where sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation role inferred from available verified team news and recorded minutes."
+      },
+      "market": {
+        "points_line": 10.5,
+        "over_odd": 1.9259,
+        "under_odd": 1.8475,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/isaac-okoro"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Okoro has a 10.5 points market but precise recent scores and forward minutes unavailable; low-confidence under due role as defender. This is a qualitative evidence-based assessment without calibrated true betting edge.",
+        "risk": "He can get transition opportunities and score more on high-minute nights. Line and odds from BetSharp comparative reference, not verified directly at the bookmaker."
+      }
+    },
+    {
+      "rank": 10,
+      "player": "Peyton Watson",
+      "player_id": "betsharp:2026-11-23:0023",
+      "score": 55,
+      "confidence": 45,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Reviewed ESPN/NBA athlete game logs and roster sources where obtainable, searched team injury and secondary sources. Missing records left out of last_five and marked unknown."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/peyton-watson",
+        "https://www.nba.com/cavaliers/news/preview-clechi-261123",
+        "https://betsharp.com/nba/props?m=points"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced seasonal scoring averages included only in assessment when verified"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "An equal-minutes home-away full season split was not verified for this player."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five reliable player-specific head-to-head game log rows versus this opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position-specific points conceded were not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual head-to-head on-ball defender has not been confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed 23 November official injury and preview reports; Allen not listed out, Amen had prior knee issue."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified minutes projection; only historical played minutes where sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation role inferred from available verified team news and recorded minutes."
+      },
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8621,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/peyton-watson"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Watson returned to Cleveland rotation with a 15-point reported game; line 12.5 has no strong observed unders. This is a qualitative evidence-based assessment without calibrated true betting edge.",
+        "risk": "Higher role with injuries could lift his minutes and shots. Line and odds from BetSharp comparative reference, not verified directly at the bookmaker."
+      }
+    },
+    {
+      "rank": 11,
+      "player": "Tyrese Proctor",
+      "player_id": "betsharp:2026-11-23:0024",
+      "score": 51,
+      "confidence": 41,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Reviewed ESPN/NBA athlete game logs and roster sources where obtainable, searched team injury and secondary sources. Missing records left out of last_five and marked unknown."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/tyrese-proctor",
+        "https://www.nba.com/cavaliers/",
+        "https://betsharp.com/nba/props?m=points"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced seasonal scoring averages included only in assessment when verified"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "An equal-minutes home-away full season split was not verified for this player."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five reliable player-specific head-to-head game log rows versus this opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position-specific points conceded were not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual head-to-head on-ball defender has not been confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed 23 November official injury and preview reports; Allen not listed out, Amen had prior knee issue."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified minutes projection; only historical played minutes where sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation role inferred from available verified team news and recorded minutes."
+      },
+      "market": {
+        "points_line": 8.5,
+        "over_odd": 1.7874,
+        "under_odd": 1.9901,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/tyrese-proctor"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Proctor 8.5 is low and current game-by-game scoring evidence is incomplete, making side ranking uncertain. This is a qualitative evidence-based assessment without calibrated true betting edge.",
+        "risk": "Substitution patterns and opposing defense can change opportunities sharply. Line and odds from BetSharp comparative reference, not verified directly at the bookmaker."
+      }
+    },
+    {
+      "rank": 12,
+      "player": "Jaylon Tyson",
+      "player_id": "betsharp:2026-11-23:0019",
+      "score": 46,
+      "confidence": 37,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Reviewed ESPN/NBA athlete game logs and roster sources where obtainable, searched team injury and secondary sources. Missing records left out of last_five and marked unknown."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jaylon-tyson",
+        "https://www.nba.com/cavaliers/news/preview-clechi-261123",
+        "https://betsharp.com/nba/props?m=points"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced seasonal scoring averages included only in assessment when verified"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "An equal-minutes home-away full season split was not verified for this player."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five reliable player-specific head-to-head game log rows versus this opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position-specific points conceded were not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual head-to-head on-ball defender has not been confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed 23 November official injury and preview reports; Allen not listed out, Amen had prior knee issue."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified minutes projection; only historical played minutes where sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation role inferred from available verified team news and recorded minutes."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.813,
+        "under_odd": 1.9615,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jaylon-tyson"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Tyson 9.5 point line and ankle-probable injury listing create uncertain active role and low-confidence under. This is a qualitative evidence-based assessment without calibrated true betting edge.",
+        "risk": "If active and healthy he can easily surpass a low point line in a high-pace game. Line and odds from BetSharp comparative reference, not verified directly at the bookmaker."
+      }
+    },
+    {
+      "rank": 13,
+      "player": "Meleek Thomas",
+      "player_id": "betsharp:2026-11-23:0022",
+      "score": 43,
+      "confidence": 33,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Reviewed ESPN/NBA athlete game logs and roster sources where obtainable, searched team injury and secondary sources. Missing records left out of last_five and marked unknown."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/meleek-thomas",
+        "https://www.nba.com/cavaliers/",
+        "https://betsharp.com/nba/props?m=points"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Sourced seasonal scoring averages included only in assessment when verified"
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "An equal-minutes home-away full season split was not verified for this player."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Last five reliable player-specific head-to-head game log rows versus this opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Defender-position-specific points conceded were not independently confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual head-to-head on-ball defender has not been confirmed."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Reviewed 23 November official injury and preview reports; Allen not listed out, Amen had prior knee issue."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independently verified minutes projection; only historical played minutes where sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation role inferred from available verified team news and recorded minutes."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.9434,
+        "under_odd": 1.8264,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/meleek-thomas"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calculated",
+        "availability_confirmed": false,
+        "reason": "Rookie Thomas 9.5 offers insufficient verified five-game scoring sample for evidence-based pick. This is a qualitative evidence-based assessment without calibrated true betting edge.",
+        "risk": "Uncertain rookie rotation or playing time may make posted line unreliable. Line and odds from BetSharp comparative reference, not verified directly at the bookmaker."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "4066328",
+    "4684740"
+  ],
+  "selection_reason": "All thirteen players from group 2 are ranked in a two-pass evidence assessment. Jarrett Allen UNDER 14.5 has four of five under and recent average 11.6, while Amen Thompson OVER 15.5 has three of five overs and average 18.8. Their current rosters and respective CLE@CHI and LAC@HOU ESPN IDs and future game starts are independently confirmed; offers are from frozen original DK column. Knee and role risks remain, with no claim of calibrated winning probability.",
+  "notes": "Unavailable L5 and matchup reports for others explicitly left unknown and lower confidence rather than fabricated."
+}
