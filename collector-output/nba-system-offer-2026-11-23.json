@@ -1759,15 +1759,19 @@
       "team": "PHI",
       "opponent": "POR",
       "game": "POR @ PHI",
-      "start_utc": null,
+      "start_utc": "2026-11-24T00:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/tyrese-maxey",
       "points_line": 25.5,
       "over_odd": 1.9009,
       "under_odd": 1.8696,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4431678",
+      "espn_event_id": "401910037",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-4431678",
+        "https://www.nba.com/games?date=2026-11-23"
+      ]
     },
     {
       "original_offer_position": 101,
@@ -1844,15 +1848,19 @@
       "team": "SA",
       "opponent": "SAC",
       "game": "SA @ SAC",
-      "start_utc": null,
+      "start_utc": "2026-11-24T03:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/devin-vassell",
       "points_line": 14.5,
       "over_odd": 1.9091,
       "under_odd": 1.8621,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4395630",
+      "espn_event_id": "401910045",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-4395630",
+        "https://www.nba.com/game/0022600296"
+      ]
     },
     {
       "original_offer_position": 106,
