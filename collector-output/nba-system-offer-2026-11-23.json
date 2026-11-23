@@ -1373,15 +1373,18 @@
       "team": "PHX",
       "opponent": "NO",
       "game": "PHX @ NO",
-      "start_utc": null,
+      "start_utc": "2026-11-24T01:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/dillon-brooks",
       "points_line": 15.5,
       "over_odd": 1.9009,
       "under_odd": 1.8696,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3155526",
+      "espn_event_id": "401910042",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-3155526"
+      ]
     },
     {
       "original_offer_position": 79,
@@ -1492,15 +1495,18 @@
       "team": "NO",
       "opponent": "PHX",
       "game": "PHX @ NO",
-      "start_utc": null,
+      "start_utc": "2026-11-24T01:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/saddiq-bey",
       "points_line": 16.5,
       "over_odd": 1.9901,
       "under_odd": 1.7937,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4397136",
+      "espn_event_id": "401910042",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-4397136"
+      ]
     },
     {
       "original_offer_position": 86,
