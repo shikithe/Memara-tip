@@ -722,15 +722,19 @@
       "team": "MEM",
       "opponent": "CHA",
       "game": "MEM @ CHA",
-      "start_utc": null,
+      "start_utc": "2026-11-24T00:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/cedric-coward",
       "points_line": 15.5,
       "over_odd": 1.8,
       "under_odd": 1.9804,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4903027",
+      "espn_event_id": "401910036",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-4903027",
+        "https://www.nba.com/game/cha-vs-mem-0022600287"
+      ]
     },
     {
       "original_offer_position": 42,
@@ -739,15 +743,19 @@
       "team": "CHA",
       "opponent": "MEM",
       "game": "MEM @ CHA",
-      "start_utc": null,
+      "start_utc": "2026-11-24T00:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/coby-white",
       "points_line": 17.5,
       "over_odd": 1.9174,
       "under_odd": 1.8547,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4395651",
+      "espn_event_id": "401910036",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-4395651",
+        "https://www.nba.com/game/cha-vs-mem-0022600287"
+      ]
     },
     {
       "original_offer_position": 43,
