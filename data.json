@@ -100,7 +100,7 @@
       "analysis": "Ručni NBA C 23.11: Booker manje 26,5 @1,8475 (L5 prosjek 23,8, zadnji potvrđeni 23 poena u 38 minuta) i Donovan Mitchell manje 26,5 @1,9346 (zadnji 20 poena, ali L5 prosjek drugog izvora 28,2 predstavlja značajan rizik). Igrači su u stvarnim sastavima PHX/CLE, utakmice imaju potvrđene ESPN ID i počinju u 01:00 UTC 24.11. Obje granice i kvote uzete su iz jedne DK kolone novog BetSharp snapshot-a od 23.11. Izostanci, čuvari i H2H nepotpuno potvrđeni, ne prikazuje se kao potpuni 122-player Scout.",
       "scout_analysis": {
         "date": "2026-11-23",
-        "intro": "Ručni C: dva provjerena NBA roster identiteta i dva buduća termina, ponuda iz istodnevnog BetSharp kolektora (122 ukupna reda; nepotvrđeni timovi ignorisani). Nisu sva 122 kandidata detaljno istražena. Scout ograničen na dostupne pouzdane informacije.",
+        "intro": "Naknadno dopunjen statistički prikaz za već objavljeni C 23.11.2026: potvrđeno posljednjih pet odigranih NBA utakmica za oba igrača (poeni, minute, datumi) prema StatMuse game logu; tipovi, granice, kvote, ulog, status i rezultat nisu mijenjani.",
         "players": [
           {
             "id": "3136193",
@@ -115,29 +115,49 @@
                 "20.11.",
                 23,
                 38
+              ],
+              [
+                "18.11.",
+                29,
+                33
+              ],
+              [
+                "16.11.",
+                20,
+                37
+              ],
+              [
+                "15.11.",
+                17,
+                28
+              ],
+              [
+                "12.11.",
+                30,
+                35
               ]
             ],
             "h2h": [],
-            "last10": "Nije potvrđeno",
+            "last10": "L5 UNDER 26,5: 3/5 (provjereno); L10 nije obračunat",
             "pros": [
-              "Posljednjih pet odigranih utakmica: prosjek 23,8 poena po dostupnoj statistici.",
-              "U posljednjem provjerenom meču 20.11. postigao je 23 poena za 38 minuta.",
-              "Istodnevna BetSharp DK granica 26,5 poena, ponuđeni UNDER 1,8475."
+              "Potvrđeni L5 poeni: 23, 29, 20, 17, 30; prosjek 23,8.",
+              "UNDER 26,5 prošao u 3 od 5 posljednjih nastupa.",
+              "Minutaža L5: 38, 33, 37, 28, 35; prosječno 34,2 minute."
             ],
             "risks": [
-              "Prosjek posljednjih pet nije procijenjena vjerovatnoća za ovaj prag.",
-              "Devin Booker ima visoku napadačku ulogu i može preskočiti granicu u jednoj efikasnoj večeri.",
-              "Nepotvrđeni su konkretan čuvar, H2H uzorak i konačna raspodjela šuteva."
+              "Dva od pet posljednjih nastupa završila su sa 29 i 30 poena, iznad ponuđene granice.",
+              "Podaci 3/5 ne predstavljaju pouzdanu procjenu šanse za prolaz.",
+              "Direktni čuvar, H2H protiv Pelicansa i najnoviji status za početak utakmice nisu uključeni u ovu korekciju."
             ],
             "assessment": "Umjeren UNDER oslonjen na posljednji skor 23 i prosjek 23,8 ispod 26,5; uzorak i matchup ne dokazuju prednost u odnosu na kvotu.",
             "sources": [
               [
-                "NBA profil / statistika",
-                "https://www.nba.com/player/1626164/devin-booker"
+                "StatMuse — kompletan game log, 2026–27",
+                "https://www.statmuse.com/nba/player/devin-booker-9301/game-log"
               ],
               [
-                "Posljednjih pet, prosjek",
-                "https://www.statiqsports.com/nba/devin-booker/last-5-games"
+                "NBA profil / statistika",
+                "https://www.nba.com/player/1626164/devin-booker"
               ],
               [
                 "Službena najava meča",
@@ -157,21 +177,51 @@
             "pick": "under",
             "line": 26.5,
             "odd": 1.9346,
-            "games": [],
+            "games": [
+              [
+                "20.11.",
+                20,
+                29
+              ],
+              [
+                "18.11.",
+                34,
+                35
+              ],
+              [
+                "16.11.",
+                39,
+                36
+              ],
+              [
+                "13.11.",
+                25,
+                33
+              ],
+              [
+                "11.11.",
+                23,
+                36
+              ]
+            ],
             "h2h": [],
-            "last10": "Nije kompletno potvrđeno; procjene izvora razilaze se",
+            "last10": "L5 UNDER 26,5: 3/5 (provjereno); L10 nije obračunat",
             "pros": [
-              "Službeni Cleveland preview za posljednju utakmicu protiv Memphisa bilježi 20 poena Mitchella.",
-              "Zabilježena dnevna BetSharp DK ponuda UNDER 26,5 poena po kvoti 1,9346.",
-              "Mitchell nije naveden na Clevelandovoj listi nedostupnih igrača u najavi meča."
+              "Potvrđeni L5 poeni: 20, 34, 39, 25, 23; prosjek 28,2.",
+              "UNDER 26,5 prošao u 3 od 5 posljednjih utakmica.",
+              "Minutaža L5: 29, 35, 36, 33, 36; prosječno 33,8 minuta."
             ],
             "risks": [
-              "Prema jednoj dostupnoj statistici prosjek posljednjih pet utakmica iznosi čak 28,2 poena, iznad granice.",
-              "Mitchell je visokovolumenski strijelac; visoka kvota ne znači statističku vrijednost.",
-              "Nema potvrđenih posljednjih pet redova s minutama, niti sigurnog H2H i direktnog čuvara."
+              "Prosjek 28,2 je iznad zadate granice od 26,5 poena.",
+              "U dva od posljednjih pet mečeva postigao je 34 i 39; 39 je bilo protiv Chicaga 16.11.",
+              "Sama učestalost 3/5 ne dokazuje pozitivnu očekivanu vrijednost na kvotu 1,9346."
             ],
-            "assessment": "Rizičan UNDER, uprkos posljednjih 20 poena; ukupna novija forma i značajna individualna potrošnja ne daju jaku statističku prednost. Ovaj izbor je slabije potkrijepljen od Bookera.",
+            "assessment": "UNDER 26,5 ostaje već objavljen, ali dodatni provjereni podaci pokazuju nepovoljnu sredinu 28,2 i 39 protiv Chicaga 16.11; tip je visokorizičan, bez dokazane statističke prednosti.",
             "sources": [
+              [
+                "StatMuse — kompletan game log, 2026–27",
+                "https://www.statmuse.com/nba/player/donovan-mitchell-9592/game-log"
+              ],
               [
                 "Cleveland službena najava",
                 "https://www.nba.com/cavaliers/news/preview-clechi-261123"
@@ -181,22 +231,18 @@
                 "https://www.nba.com/player/1628378/donovan-mitchell"
               ],
               [
-                "Pregled forme",
-                "https://www.legchecksports.com/players/nba/donovan-mitchell/"
-              ],
-              [
                 "BetSharp cijena",
                 "https://betsharp.com/nba/player/donovan-mitchell"
               ]
             ]
           }
         ],
-        "conclusion": "Devin Booker UNDER 26,5 @1,8475 i Donovan Mitchell UNDER 26,5 @1,9346; kombinovana referentna kvota 3,57. Za oba su potvrđeni klub, protivnik, ESPN identitet i budući početak. Redovni C ulog 1,5% B0 = 4,14 € uz dnevni budžet. Najveći rizik: Donovanova petomečna forma nije jasna prednost za UNDER.",
-        "caution": "BetSharp kvote su uporedne, nisu direktno potvrđene u bookmaker računu. Nije rađena potpuna TOP20/TOP10/TOP5 analiza svih igrača, direktni čuvari i H2H nisu provjereni, neki zadnji rezultati djelimični."
+        "conclusion": "Booker UNDER 26,5 @1,8475: L5 23/29/20/17/30, prosjek 23,8, UNDER 3/5. Mitchell UNDER 26,5 @1,9346: L5 20/34/39/25/23, prosjek 28,2, UNDER 3/5. Mitchell je posebno rizičan jer je 16.11. protiv Chicaga postigao 39. Ovo je dopuna statističkog prikaza već objavljenog C, bez promjene virtuelnog uloga od 4,14 €.",
+        "caution": "Ažurirani L5 je potvrđen game logom StatMuse; H2H pet mečeva, pojedinačni čuvari i kalibrisana procjena vjerovatnoće nisu verifikovani. Kvote BetSharpa su komparativne. Tipovi i novac nisu mijenjani."
       }
     }
   ],
-  "total_payout": 0.0,
+  "total_payout": 0,
   "net_change": null,
   "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
   "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",
