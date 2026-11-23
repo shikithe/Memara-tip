@@ -1,0 +1,805 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-23",
+  "group_number": 7,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Saddiq Bey",
+      "player_id": "4397136",
+      "score": 87,
+      "confidence": 74,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team and fixture lookup attempted, NBA.com roster, Reuters games and current scoring summaries reviewed. Where date-specific data unavailable records intentionally left blank."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/saddiq-bey",
+        "https://www.nba.com/player/1630180/saddiq-bey"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 21,
+          "minutes": 37
+        },
+        {
+          "date": "2026-11-16",
+          "points": 23,
+          "minutes": 33
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent scoring included in reasons only if supported; confidence reflects missing data."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "No normalized home-road points sample with minutes verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Previous five player scoring logs versus specific opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive concessions not confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting opponent defender not reliably established."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Murphy listed probable knees; individual availability cannot be guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projection not independently validated, actual minutes used where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inferred from NBA team profiles and recent game reports."
+      },
+      "market": {
+        "points_line": 16.5,
+        "over_odd": 1.9901,
+        "under_odd": 1.7937,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/saddiq-bey"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "descriptive only",
+        "availability_confirmed": true,
+        "reason": "Bey posted 21 Nov20 and 23 Nov16, both above posted 16.5; he is a regular Pelicans forward, averaging roughly 15.9 this season. No modeled or guaranteed probability supplied.",
+        "risk": "Season mean 15.9 below 16.5, and hot three-point shooting drives his higher scoring nights. Game and quote conditions may change."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Dillon Brooks",
+      "player_id": "3155526",
+      "score": 83,
+      "confidence": 72,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team and fixture lookup attempted, NBA.com roster, Reuters games and current scoring summaries reviewed. Where date-specific data unavailable records intentionally left blank."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/dillon-brooks",
+        "https://www.nba.com/player/1628415/dillon-brooks"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 18,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-18",
+          "points": 29,
+          "minutes": 31
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent scoring included in reasons only if supported; confidence reflects missing data."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "No normalized home-road points sample with minutes verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Previous five player scoring logs versus specific opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive concessions not confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting opponent defender not reliably established."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Murphy listed probable knees; individual availability cannot be guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projection not independently validated, actual minutes used where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inferred from NBA team profiles and recent game reports."
+      },
+      "market": {
+        "points_line": 15.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/dillon-brooks"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "descriptive only",
+        "availability_confirmed": true,
+        "reason": "Brooks scored 18 and 29 in verified recent Suns appearances, above 15.5; five-game aggregate 15.6 and season baseline 15.1 make the edge small. No modeled or guaranteed probability supplied.",
+        "risk": "Offensive usage can shift to Booker, and average is barely above the market threshold. Game and quote conditions may change."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Collin Gillespie",
+      "player_id": "betsharp:2026-11-23:0075",
+      "score": 68,
+      "confidence": 49,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team and fixture lookup attempted, NBA.com roster, Reuters games and current scoring summaries reviewed. Where date-specific data unavailable records intentionally left blank."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/collin-gillespie",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent scoring included in reasons only if supported; confidence reflects missing data."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "No normalized home-road points sample with minutes verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Previous five player scoring logs versus specific opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive concessions not confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting opponent defender not reliably established."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Murphy listed probable knees; individual availability cannot be guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projection not independently validated, actual minutes used where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inferred from NBA team profiles and recent game reports."
+      },
+      "market": {
+        "points_line": 10.5,
+        "over_odd": 1.8547,
+        "under_odd": 1.9174,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/collin-gillespie"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "descriptive only",
+        "availability_confirmed": false,
+        "reason": "Collin Gillespie: authentic BetSharp points line 10.5 available but complete last-five scoring/minute logs not independently verified, making the under lean low confidence. No modeled or guaranteed probability supplied.",
+        "risk": "Unknown minutes, injury status or scorer usage could invalidate this lean. Game and quote conditions may change."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Derik Queen",
+      "player_id": "betsharp:2026-11-23:0076",
+      "score": 65,
+      "confidence": 46,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team and fixture lookup attempted, NBA.com roster, Reuters games and current scoring summaries reviewed. Where date-specific data unavailable records intentionally left blank."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/derik-queen",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent scoring included in reasons only if supported; confidence reflects missing data."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "No normalized home-road points sample with minutes verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Previous five player scoring logs versus specific opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive concessions not confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting opponent defender not reliably established."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Murphy listed probable knees; individual availability cannot be guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projection not independently validated, actual minutes used where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inferred from NBA team profiles and recent game reports."
+      },
+      "market": {
+        "points_line": 10.5,
+        "over_odd": 1.9901,
+        "under_odd": 1.7937,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/derik-queen"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "descriptive only",
+        "availability_confirmed": false,
+        "reason": "Derik Queen: authentic BetSharp points line 10.5 available but complete last-five scoring/minute logs not independently verified, making the under lean low confidence. No modeled or guaranteed probability supplied.",
+        "risk": "Unknown minutes, injury status or scorer usage could invalidate this lean. Game and quote conditions may change."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Devin Booker",
+      "player_id": "betsharp:2026-11-23:0077",
+      "score": 62,
+      "confidence": 43,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team and fixture lookup attempted, NBA.com roster, Reuters games and current scoring summaries reviewed. Where date-specific data unavailable records intentionally left blank."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/devin-booker",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent scoring included in reasons only if supported; confidence reflects missing data."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "No normalized home-road points sample with minutes verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Previous five player scoring logs versus specific opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive concessions not confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting opponent defender not reliably established."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Murphy listed probable knees; individual availability cannot be guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projection not independently validated, actual minutes used where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inferred from NBA team profiles and recent game reports."
+      },
+      "market": {
+        "points_line": 26.5,
+        "over_odd": 1.9259,
+        "under_odd": 1.8475,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/devin-booker"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "descriptive only",
+        "availability_confirmed": false,
+        "reason": "Devin Booker: authentic BetSharp points line 26.5 available but complete last-five scoring/minute logs not independently verified, making the under lean low confidence. No modeled or guaranteed probability supplied.",
+        "risk": "Unknown minutes, injury status or scorer usage could invalidate this lean. Game and quote conditions may change."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Herbert Jones",
+      "player_id": "betsharp:2026-11-23:0079",
+      "score": 59,
+      "confidence": 40,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team and fixture lookup attempted, NBA.com roster, Reuters games and current scoring summaries reviewed. Where date-specific data unavailable records intentionally left blank."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/herbert-jones",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent scoring included in reasons only if supported; confidence reflects missing data."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "No normalized home-road points sample with minutes verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Previous five player scoring logs versus specific opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive concessions not confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting opponent defender not reliably established."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Murphy listed probable knees; individual availability cannot be guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projection not independently validated, actual minutes used where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inferred from NBA team profiles and recent game reports."
+      },
+      "market": {
+        "points_line": 7.5,
+        "over_odd": 1.885,
+        "under_odd": 1.885,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/herbert-jones"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "descriptive only",
+        "availability_confirmed": false,
+        "reason": "Herbert Jones: authentic BetSharp points line 7.5 available but complete last-five scoring/minute logs not independently verified, making the under lean low confidence. No modeled or guaranteed probability supplied.",
+        "risk": "Unknown minutes, injury status or scorer usage could invalidate this lean. Game and quote conditions may change."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Jalen Green",
+      "player_id": "betsharp:2026-11-23:0080",
+      "score": 56,
+      "confidence": 37,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team and fixture lookup attempted, NBA.com roster, Reuters games and current scoring summaries reviewed. Where date-specific data unavailable records intentionally left blank."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jalen-green",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent scoring included in reasons only if supported; confidence reflects missing data."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "No normalized home-road points sample with minutes verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Previous five player scoring logs versus specific opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive concessions not confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting opponent defender not reliably established."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Murphy listed probable knees; individual availability cannot be guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projection not independently validated, actual minutes used where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inferred from NBA team profiles and recent game reports."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.9091,
+        "under_odd": 1.8772,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jalen-green"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "descriptive only",
+        "availability_confirmed": false,
+        "reason": "Jalen Green: authentic BetSharp points line 14.5 available but complete last-five scoring/minute logs not independently verified, making the under lean low confidence. No modeled or guaranteed probability supplied.",
+        "risk": "Unknown minutes, injury status or scorer usage could invalidate this lean. Game and quote conditions may change."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Jeremiah Fears",
+      "player_id": "betsharp:2026-11-23:0081",
+      "score": 53,
+      "confidence": 34,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team and fixture lookup attempted, NBA.com roster, Reuters games and current scoring summaries reviewed. Where date-specific data unavailable records intentionally left blank."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jeremiah-fears",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent scoring included in reasons only if supported; confidence reflects missing data."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "No normalized home-road points sample with minutes verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Previous five player scoring logs versus specific opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive concessions not confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting opponent defender not reliably established."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Murphy listed probable knees; individual availability cannot be guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projection not independently validated, actual minutes used where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inferred from NBA team profiles and recent game reports."
+      },
+      "market": {
+        "points_line": 17.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8547,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jeremiah-fears"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "descriptive only",
+        "availability_confirmed": false,
+        "reason": "Jeremiah Fears: authentic BetSharp points line 17.5 available but complete last-five scoring/minute logs not independently verified, making the under lean low confidence. No modeled or guaranteed probability supplied.",
+        "risk": "Unknown minutes, injury status or scorer usage could invalidate this lean. Game and quote conditions may change."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Jordan Goodwin",
+      "player_id": "betsharp:2026-11-23:0082",
+      "score": 50,
+      "confidence": 31,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team and fixture lookup attempted, NBA.com roster, Reuters games and current scoring summaries reviewed. Where date-specific data unavailable records intentionally left blank."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jordan-goodwin",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent scoring included in reasons only if supported; confidence reflects missing data."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "No normalized home-road points sample with minutes verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Previous five player scoring logs versus specific opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive concessions not confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting opponent defender not reliably established."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Murphy listed probable knees; individual availability cannot be guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projection not independently validated, actual minutes used where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inferred from NBA team profiles and recent game reports."
+      },
+      "market": {
+        "points_line": 8.5,
+        "over_odd": 1.8403,
+        "under_odd": 1.9346,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jordan-goodwin"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "descriptive only",
+        "availability_confirmed": false,
+        "reason": "Jordan Goodwin: authentic BetSharp points line 8.5 available but complete last-five scoring/minute logs not independently verified, making the under lean low confidence. No modeled or guaranteed probability supplied.",
+        "risk": "Unknown minutes, injury status or scorer usage could invalidate this lean. Game and quote conditions may change."
+      }
+    },
+    {
+      "rank": 10,
+      "player": "Miles Bridges",
+      "player_id": "betsharp:2026-11-23:0083",
+      "score": 47,
+      "confidence": 28,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team and fixture lookup attempted, NBA.com roster, Reuters games and current scoring summaries reviewed. Where date-specific data unavailable records intentionally left blank."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/miles-bridges",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent scoring included in reasons only if supported; confidence reflects missing data."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "No normalized home-road points sample with minutes verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Previous five player scoring logs versus specific opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive concessions not confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting opponent defender not reliably established."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Murphy listed probable knees; individual availability cannot be guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projection not independently validated, actual minutes used where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inferred from NBA team profiles and recent game reports."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/miles-bridges"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "descriptive only",
+        "availability_confirmed": false,
+        "reason": "Miles Bridges: authentic BetSharp points line 14.5 available but complete last-five scoring/minute logs not independently verified, making the under lean low confidence. No modeled or guaranteed probability supplied.",
+        "risk": "Unknown minutes, injury status or scorer usage could invalidate this lean. Game and quote conditions may change."
+      }
+    },
+    {
+      "rank": 11,
+      "player": "Oso Ighodaro",
+      "player_id": "betsharp:2026-11-23:0084",
+      "score": 44,
+      "confidence": 25,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team and fixture lookup attempted, NBA.com roster, Reuters games and current scoring summaries reviewed. Where date-specific data unavailable records intentionally left blank."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/oso-ighodaro",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent scoring included in reasons only if supported; confidence reflects missing data."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "No normalized home-road points sample with minutes verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Previous five player scoring logs versus specific opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive concessions not confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting opponent defender not reliably established."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Murphy listed probable knees; individual availability cannot be guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projection not independently validated, actual minutes used where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inferred from NBA team profiles and recent game reports."
+      },
+      "market": {
+        "points_line": 7.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/oso-ighodaro"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "descriptive only",
+        "availability_confirmed": false,
+        "reason": "Oso Ighodaro: authentic BetSharp points line 7.5 available but complete last-five scoring/minute logs not independently verified, making the under lean low confidence. No modeled or guaranteed probability supplied.",
+        "risk": "Unknown minutes, injury status or scorer usage could invalidate this lean. Game and quote conditions may change."
+      }
+    },
+    {
+      "rank": 12,
+      "player": "Trey Murphy III",
+      "player_id": "betsharp:2026-11-23:0086",
+      "score": 41,
+      "confidence": 22,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team and fixture lookup attempted, NBA.com roster, Reuters games and current scoring summaries reviewed. Where date-specific data unavailable records intentionally left blank."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/trey-murphy",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent scoring included in reasons only if supported; confidence reflects missing data."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "No normalized home-road points sample with minutes verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Previous five player scoring logs versus specific opponent unavailable."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific defensive concessions not confirmed."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Starting opponent defender not reliably established."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Murphy listed probable knees; individual availability cannot be guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes projection not independently validated, actual minutes used where verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Rotation inferred from NBA team profiles and recent game reports."
+      },
+      "market": {
+        "points_line": 15.5,
+        "over_odd": 1.9615,
+        "under_odd": 1.813,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/trey-murphy"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "descriptive only",
+        "availability_confirmed": false,
+        "reason": "Trey Murphy III: authentic BetSharp points line 15.5 available but complete last-five scoring/minute logs not independently verified, making the under lean low confidence. No modeled or guaranteed probability supplied.",
+        "risk": "Unknown minutes, injury status or scorer usage could invalidate this lean. Game and quote conditions may change."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "4397136",
+    "3155526"
+  ],
+  "selection_reason": "All 12 original candidates reviewed at available evidence quality. Bey OVER16.5 cleared 21 and 23 in last two confirmed outings; Brooks OVER15.5 cleared 18 and 29 in latest two, though season baseline 15.1 leaves edge unproven. NBA.com roster and 23 Nov Suns at Pelicans start 20:00 ET, ESPN IDs independently matched. Unavailable L5, H2H and individual defenders were documented rather than made up.",
+  "notes": "Sports risk acknowledged; all odds preserved from one original DK column, no dynamic bookmaker verification."
+}
