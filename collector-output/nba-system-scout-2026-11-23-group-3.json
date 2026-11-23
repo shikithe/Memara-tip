@@ -1,0 +1,858 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-23",
+  "group_number": 3,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Brook Lopez",
+      "player_id": "3448",
+      "score": 92,
+      "confidence": 78,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Compared ESPN/NBA.com game profiles and current injury reports with recent StatMuse, StatIQ, CBS and official 23 Nov game previews. Unavailable individual logs omitted, not made up."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/brook-lopez",
+        "https://www.statiqsports.com/nba/brook-lopez/last-5-games"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 23,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-21",
+          "points": 21,
+          "minutes": 25
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season figures mentioned only where supported by sources; recent small samples are descriptive, not calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable comparable home-road minutes and scoring split was not verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five confirmed player points against specific next opponent were not independently matched."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific Houston defense and future scheme unknown without verified matchup metrics."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Specific defender assignments remain unverified before starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Houston and Clippers current injury reports reviewed, and Clippers Brandon Ingram debut noted; individual appearances are not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independent confirmed game minute projection; logged actual minutes included when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from team profile and contemporary game previews."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.8264,
+        "under_odd": 1.9524,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/brook-lopez"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "No calibrated predictive model",
+        "availability_confirmed": true,
+        "reason": "Five-game scoring average about 20 against 11.5 DraftKings line, season 15.7, and most recent 21 and 23 points; above line in both verified recent outings. Evidence coverage and uncertain minutes were considered for the ranking.",
+        "risk": "His outside shooting and center rotation can swing, and aggressive Houston paint defense can depress attempts. Betting outcomes are random and the BetSharp price is an aggregator quote."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Darius Garland",
+      "player_id": "4396907",
+      "score": 87,
+      "confidence": 77,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Compared ESPN/NBA.com game profiles and current injury reports with recent StatMuse, StatIQ, CBS and official 23 Nov game previews. Unavailable individual logs omitted, not made up."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/darius-garland",
+        "https://www.statiqsports.com/nba/darius-garland/last-5-games"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 23,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-17",
+          "points": 20,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-15",
+          "points": 27,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-13",
+          "points": 24,
+          "minutes": 37
+        },
+        {
+          "date": "2026-11-10",
+          "points": 13,
+          "minutes": 25
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season figures mentioned only where supported by sources; recent small samples are descriptive, not calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable comparable home-road minutes and scoring split was not verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five confirmed player points against specific next opponent were not independently matched."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific Houston defense and future scheme unknown without verified matchup metrics."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Specific defender assignments remain unverified before starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Houston and Clippers current injury reports reviewed, and Clippers Brandon Ingram debut noted; individual appearances are not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independent confirmed game minute projection; logged actual minutes included when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from team profile and contemporary game previews."
+      },
+      "market": {
+        "points_line": 18.5,
+        "over_odd": 1.9434,
+        "under_odd": 1.8333,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/darius-garland"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "No calibrated predictive model",
+        "availability_confirmed": true,
+        "reason": "Last five confirmed 23,20,27,24,13 across 25–37 minutes; four of five exceed 18.5 and mean 21.4, with season average 20.9. Evidence coverage and uncertain minutes were considered for the ranking.",
+        "risk": "Brandon Ingram's expected Clippers debut could redirect possessions and shots; Houston can defend guards physically. Betting outcomes are random and the BetSharp price is an aggregator quote."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Rui Hachimura",
+      "player_id": "betsharp:2026-11-23:0038",
+      "score": 75,
+      "confidence": 70,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Compared ESPN/NBA.com game profiles and current injury reports with recent StatMuse, StatIQ, CBS and official 23 Nov game previews. Unavailable individual logs omitted, not made up."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/rui-hachimura",
+        "https://www.nba.com/player/1629060"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-21",
+          "points": 19,
+          "minutes": 29
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season figures mentioned only where supported by sources; recent small samples are descriptive, not calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable comparable home-road minutes and scoring split was not verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five confirmed player points against specific next opponent were not independently matched."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific Houston defense and future scheme unknown without verified matchup metrics."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Specific defender assignments remain unverified before starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Houston and Clippers current injury reports reviewed, and Clippers Brandon Ingram debut noted; individual appearances are not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independent confirmed game minute projection; logged actual minutes included when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from team profile and contemporary game previews."
+      },
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.8621,
+        "under_odd": 1.9091,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/rui-hachimura"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "No calibrated predictive model",
+        "availability_confirmed": false,
+        "reason": "Five-game reported average 13.4 versus line12.5, plus 19 points in latest confirmed game; small gap and role uncertainty. Evidence coverage and uncertain minutes were considered for the ranking.",
+        "risk": "Brandon Ingram returning changes wing usage and could reduce Hachimura minutes or shots. Betting outcomes are random and the BetSharp price is an aggregator quote."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Jabari Smith Jr.",
+      "player_id": "betsharp:2026-11-23:0032",
+      "score": 72,
+      "confidence": 68,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Compared ESPN/NBA.com game profiles and current injury reports with recent StatMuse, StatIQ, CBS and official 23 Nov game previews. Unavailable individual logs omitted, not made up."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jabari-smith",
+        "https://www.statiqsports.com/nba/jabari-smith-jr/last-5-games"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 21,
+          "minutes": 32
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season figures mentioned only where supported by sources; recent small samples are descriptive, not calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable comparable home-road minutes and scoring split was not verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five confirmed player points against specific next opponent were not independently matched."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific Houston defense and future scheme unknown without verified matchup metrics."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Specific defender assignments remain unverified before starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Houston and Clippers current injury reports reviewed, and Clippers Brandon Ingram debut noted; individual appearances are not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independent confirmed game minute projection; logged actual minutes included when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from team profile and contemporary game previews."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.8929,
+        "under_odd": 1.8772,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jabari-smith"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "No calibrated predictive model",
+        "availability_confirmed": false,
+        "reason": "Jabari averages about 13 in last five below line14.5, but scored 21 in the latest game and season mean is 15.6, undermining an under. Evidence coverage and uncertain minutes were considered for the ranking.",
+        "risk": "Hot shooting and stable frontcourt minutes create meaningful upside over 14.5. Betting outcomes are random and the BetSharp price is an aggregator quote."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Kevin Durant",
+      "player_id": "betsharp:2026-11-23:0034",
+      "score": 68,
+      "confidence": 73,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Compared ESPN/NBA.com game profiles and current injury reports with recent StatMuse, StatIQ, CBS and official 23 Nov game previews. Unavailable individual logs omitted, not made up."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/kevin-durant",
+        "https://www.statiqsports.com/nba/kevin-durant/last-5-games"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 18,
+          "minutes": 31
+        },
+        {
+          "date": "2026-11-16",
+          "points": 22,
+          "minutes": 29
+        },
+        {
+          "date": "2026-11-15",
+          "points": 25,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-13",
+          "points": 22,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-11",
+          "points": 20,
+          "minutes": 34
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season figures mentioned only where supported by sources; recent small samples are descriptive, not calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable comparable home-road minutes and scoring split was not verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five confirmed player points against specific next opponent were not independently matched."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific Houston defense and future scheme unknown without verified matchup metrics."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Specific defender assignments remain unverified before starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Houston and Clippers current injury reports reviewed, and Clippers Brandon Ingram debut noted; individual appearances are not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independent confirmed game minute projection; logged actual minutes included when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from team profile and contemporary game previews."
+      },
+      "market": {
+        "points_line": 21.5,
+        "over_odd": 1.9709,
+        "under_odd": 1.8065,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/kevin-durant"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "No calibrated predictive model",
+        "availability_confirmed": false,
+        "reason": "Five-game reported scoring 21.2 near offered 21.5, with one verified 18 and other games around 20–25; edge is marginal. Evidence coverage and uncertain minutes were considered for the ranking.",
+        "risk": "Star shooter can score 30+ without much warning; line near true season average. Betting outcomes are random and the BetSharp price is an aggregator quote."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Derrick Jones Jr.",
+      "player_id": "betsharp:2026-11-23:0030",
+      "score": 64,
+      "confidence": 54,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Compared ESPN/NBA.com game profiles and current injury reports with recent StatMuse, StatIQ, CBS and official 23 Nov game previews. Unavailable individual logs omitted, not made up."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/derrick-jones",
+        "https://www.nba.com/player/1627884/derrick-jones-jr"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season figures mentioned only where supported by sources; recent small samples are descriptive, not calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable comparable home-road minutes and scoring split was not verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five confirmed player points against specific next opponent were not independently matched."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific Houston defense and future scheme unknown without verified matchup metrics."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Specific defender assignments remain unverified before starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Houston and Clippers current injury reports reviewed, and Clippers Brandon Ingram debut noted; individual appearances are not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independent confirmed game minute projection; logged actual minutes included when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from team profile and contemporary game previews."
+      },
+      "market": {
+        "points_line": 8.5,
+        "over_odd": 1.9804,
+        "under_odd": 1.8,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/derrick-jones"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "No calibrated predictive model",
+        "availability_confirmed": false,
+        "reason": "Jones has 8.5 point line; incomplete recent shot/minute evidence and frontcourt matchup make only low-confidence under. Evidence coverage and uncertain minutes were considered for the ranking.",
+        "risk": "Extra rotation chances or transition plays can push him above low line. Betting outcomes are random and the BetSharp price is an aggregator quote."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Fred VanVleet",
+      "player_id": "betsharp:2026-11-23:0031",
+      "score": 60,
+      "confidence": 48,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Compared ESPN/NBA.com game profiles and current injury reports with recent StatMuse, StatIQ, CBS and official 23 Nov game previews. Unavailable individual logs omitted, not made up."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/fred-vanvleet",
+        "https://www.nba.com/player/1627832/fred-vanvleet"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season figures mentioned only where supported by sources; recent small samples are descriptive, not calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable comparable home-road minutes and scoring split was not verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five confirmed player points against specific next opponent were not independently matched."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific Houston defense and future scheme unknown without verified matchup metrics."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Specific defender assignments remain unverified before starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Houston and Clippers current injury reports reviewed, and Clippers Brandon Ingram debut noted; individual appearances are not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independent confirmed game minute projection; logged actual minutes included when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from team profile and contemporary game previews."
+      },
+      "market": {
+        "points_line": 13.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8547,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/fred-vanvleet"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "No calibrated predictive model",
+        "availability_confirmed": false,
+        "reason": "VanVleet 13.5 line and reported changing health mean cannot confidently estimate from partial available game evidence. Evidence coverage and uncertain minutes were considered for the ranking.",
+        "risk": "Point guard rotation and recovery can change minutes and shot use. Betting outcomes are random and the BetSharp price is an aggregator quote."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Brandon Ingram",
+      "player_id": "betsharp:2026-11-23:0027",
+      "score": 57,
+      "confidence": 44,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Compared ESPN/NBA.com game profiles and current injury reports with recent StatMuse, StatIQ, CBS and official 23 Nov game previews. Unavailable individual logs omitted, not made up."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/brandon-ingram",
+        "https://www.reuters.com/sports/basketball/brandon-ingram-set-debut-clippers-visit-rockets--flm-2026-11-23/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season figures mentioned only where supported by sources; recent small samples are descriptive, not calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable comparable home-road minutes and scoring split was not verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five confirmed player points against specific next opponent were not independently matched."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific Houston defense and future scheme unknown without verified matchup metrics."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Specific defender assignments remain unverified before starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Houston and Clippers current injury reports reviewed, and Clippers Brandon Ingram debut noted; individual appearances are not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independent confirmed game minute projection; logged actual minutes included when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from team profile and contemporary game previews."
+      },
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.885,
+        "under_odd": 1.885,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/brandon-ingram"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "No calibrated predictive model",
+        "availability_confirmed": false,
+        "reason": "Ingram is expected to debut with Clippers, making any 12.5-point forecast too sensitive to an unknown role/minute restriction. Evidence coverage and uncertain minutes were considered for the ranking.",
+        "risk": "First game after absence can have either a strict minutes restriction or surprise heavy usage. Betting outcomes are random and the BetSharp price is an aggregator quote."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Reed Sheppard",
+      "player_id": "betsharp:2026-11-23:0037",
+      "score": 54,
+      "confidence": 45,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Compared ESPN/NBA.com game profiles and current injury reports with recent StatMuse, StatIQ, CBS and official 23 Nov game previews. Unavailable individual logs omitted, not made up."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/reed-sheppard",
+        "https://www.nba.com/player/1642263/reed-sheppard"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season figures mentioned only where supported by sources; recent small samples are descriptive, not calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable comparable home-road minutes and scoring split was not verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five confirmed player points against specific next opponent were not independently matched."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific Houston defense and future scheme unknown without verified matchup metrics."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Specific defender assignments remain unverified before starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Houston and Clippers current injury reports reviewed, and Clippers Brandon Ingram debut noted; individual appearances are not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independent confirmed game minute projection; logged actual minutes included when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from team profile and contemporary game previews."
+      },
+      "market": {
+        "points_line": 7.5,
+        "over_odd": 1.7812,
+        "under_odd": 2.01,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/reed-sheppard"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "No calibrated predictive model",
+        "availability_confirmed": false,
+        "reason": "Sheppard has a 7.5 line, but five-game scoring and expected guard minutes unavailable at reliable confidence. Evidence coverage and uncertain minutes were considered for the ranking.",
+        "risk": "Small line can be exceeded quickly with hot three point shooting. Betting outcomes are random and the BetSharp price is an aggregator quote."
+      }
+    },
+    {
+      "rank": 10,
+      "player": "Marcus Smart",
+      "player_id": "betsharp:2026-11-23:0035",
+      "score": 51,
+      "confidence": 39,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Compared ESPN/NBA.com game profiles and current injury reports with recent StatMuse, StatIQ, CBS and official 23 Nov game previews. Unavailable individual logs omitted, not made up."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/marcus-smart",
+        "https://www.nba.com/player/203935/marcus-smart"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season figures mentioned only where supported by sources; recent small samples are descriptive, not calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable comparable home-road minutes and scoring split was not verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five confirmed player points against specific next opponent were not independently matched."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific Houston defense and future scheme unknown without verified matchup metrics."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Specific defender assignments remain unverified before starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Houston and Clippers current injury reports reviewed, and Clippers Brandon Ingram debut noted; individual appearances are not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independent confirmed game minute projection; logged actual minutes included when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from team profile and contemporary game previews."
+      },
+      "market": {
+        "points_line": 6.5,
+        "over_odd": 2.04,
+        "under_odd": 1.7576,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/marcus-smart"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "No calibrated predictive model",
+        "availability_confirmed": false,
+        "reason": "At 6.5 points, Smart is a defensive-oriented guard, but his current Houston usage and recent scoring are insufficiently verified. Evidence coverage and uncertain minutes were considered for the ranking.",
+        "risk": "Low points threshold may be cleared through incidental scoring in a short stint. Betting outcomes are random and the BetSharp price is an aggregator quote."
+      }
+    },
+    {
+      "rank": 11,
+      "player": "Max Strus",
+      "player_id": "betsharp:2026-11-23:0036",
+      "score": 48,
+      "confidence": 34,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Compared ESPN/NBA.com game profiles and current injury reports with recent StatMuse, StatIQ, CBS and official 23 Nov game previews. Unavailable individual logs omitted, not made up."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/max-strus",
+        "https://www.nba.com/player/1629622/max-strus"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season figures mentioned only where supported by sources; recent small samples are descriptive, not calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable comparable home-road minutes and scoring split was not verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five confirmed player points against specific next opponent were not independently matched."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific Houston defense and future scheme unknown without verified matchup metrics."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Specific defender assignments remain unverified before starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Houston and Clippers current injury reports reviewed, and Clippers Brandon Ingram debut noted; individual appearances are not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independent confirmed game minute projection; logged actual minutes included when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from team profile and contemporary game previews."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.9615,
+        "under_odd": 1.813,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/max-strus"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "No calibrated predictive model",
+        "availability_confirmed": false,
+        "reason": "Strus 9.5 line comes from consistent source but the present Clippers role and last-five scoring data are not independently corroborated. Evidence coverage and uncertain minutes were considered for the ranking.",
+        "risk": "Outside shooting can produce double digit scoring despite any average. Betting outcomes are random and the BetSharp price is an aggregator quote."
+      }
+    },
+    {
+      "rank": 12,
+      "player": "Keaton Wagler",
+      "player_id": "betsharp:2026-11-23:0033",
+      "score": 43,
+      "confidence": 29,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Compared ESPN/NBA.com game profiles and current injury reports with recent StatMuse, StatIQ, CBS and official 23 Nov game previews. Unavailable individual logs omitted, not made up."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/keaton-wagler",
+        "https://www.nba.com/clippers/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season figures mentioned only where supported by sources; recent small samples are descriptive, not calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Reliable comparable home-road minutes and scoring split was not verified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Up to five confirmed player points against specific next opponent were not independently matched."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-specific Houston defense and future scheme unknown without verified matchup metrics."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Specific defender assignments remain unverified before starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Houston and Clippers current injury reports reviewed, and Clippers Brandon Ingram debut noted; individual appearances are not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No independent confirmed game minute projection; logged actual minutes included when sourced."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from team profile and contemporary game previews."
+      },
+      "market": {
+        "points_line": 8.5,
+        "over_odd": 1.9259,
+        "under_odd": 1.8475,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/keaton-wagler"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "No calibrated predictive model",
+        "availability_confirmed": false,
+        "reason": "Keaton Wagler 8.5 line appears in original offer but actual roster role and reliable five-game NBA scoring not verified. Evidence coverage and uncertain minutes were considered for the ranking.",
+        "risk": "Uncertain player availability and probable limited NBA role make selection unsafe. Betting outcomes are random and the BetSharp price is an aggregator quote."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "3448",
+    "4396907"
+  ],
+  "selection_reason": "All twelve original offers checked in ESPN/NBA primary pass and secondary current scoring sources. Brook Lopez OVER11.5 has season 15.7 and reported last-five 20, while Darius Garland OVER18.5 has four of five recent overs and season 20.9. ESPN confirmed Clippers roster identities and 23 Nov 20:30 ET Clippers@Rockets fixture. Ingram returning creates material playing time risk, recorded rather than concealed.",
+  "notes": "Unconfirmed last-five rows for remaining players are empty, not fabricated; individual head-to-head, exact defenders and projected minutes remain unknown."
+}
