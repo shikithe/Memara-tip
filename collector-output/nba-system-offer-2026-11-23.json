@@ -1583,15 +1583,18 @@
       "team": "POR",
       "opponent": "PHI",
       "game": "POR @ PHI",
-      "start_utc": null,
+      "start_utc": "2026-11-24T00:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/damian-lillard",
       "points_line": 21.5,
       "over_odd": 1.8772,
       "under_odd": 1.8929,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "6606",
+      "espn_event_id": "401910037",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-6606"
+      ]
     },
     {
       "original_offer_position": 91,
@@ -1600,15 +1603,18 @@
       "team": "POR",
       "opponent": "PHI",
       "game": "POR @ PHI",
-      "start_utc": null,
+      "start_utc": "2026-11-24T00:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/deni-avdija",
       "points_line": 23.5,
       "over_odd": 1.885,
       "under_odd": 1.8929,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4683021",
+      "espn_event_id": "401910037",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-4683021"
+      ]
     },
     {
       "original_offer_position": 92,
