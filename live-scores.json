@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "updated_at_utc": "2026-11-23T17:41:27.226390+00:00",
+  "updated_at_utc": "2026-11-23T17:45:13.636206+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -15,7 +15,7 @@
       "source": "espn-public-unofficial",
       "event_id": "401888370",
       "league": "tur.1",
-      "minute": "42"
+      "minute": "45"
     },
     {
       "ticket": "A",
