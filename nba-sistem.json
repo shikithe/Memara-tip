@@ -4423,7 +4423,7 @@
         {
           "id": "1",
           "stake": 9.25,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.4891,
           "potential_payout": 32.27,
           "legs": [
@@ -4439,7 +4439,7 @@
               "espn_event_id": "401910035",
               "player_id": "6589",
               "start_utc": "2026-11-23T01:30:00Z",
-              "status": "pending",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -4491,7 +4491,11 @@
                 "scout_score": 87,
                 "scout_note": "Draymond averaged 3.2 points in 13 played games and went under 4.5 points in 11 of 13; last five scoring games were 3,2,4,7,2. Boston has a strong team defense, but Curry's absence can redistribute offensive usage. Selected side cleared 4/5 of recent played games.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-1.json"
-              }
+              },
+              "player_points": 9,
+              "game_state": "live",
+              "game_clock": "4:26",
+              "period": 3
             },
             {
               "player": "De'Anthony Melton",
@@ -4505,7 +4509,7 @@
               "espn_event_id": "401910035",
               "player_id": "4066436",
               "start_utc": "2026-11-23T01:30:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -4557,14 +4561,21 @@
                 "scout_score": 80,
                 "scout_note": "Melton was under 10.5 points in four of his last five games: 9,0,8,8,11. His recent shooting and minutes have been volatile; Boston's strong defense favors a cautious under, although Curry being unavailable can increase responsibility. Selected side cleared 4/5 of recent played games.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-1.json"
-              }
+              },
+              "player_points": 2,
+              "game_state": "live",
+              "game_clock": "4:26",
+              "period": 3
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-23T03:08:23.758953+00:00"
         },
         {
           "id": "2",
           "stake": 9.25,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.5832,
           "potential_payout": 33.14,
           "legs": [
@@ -4580,7 +4591,7 @@
               "espn_event_id": "401910035",
               "player_id": "4066354",
               "start_utc": "2026-11-23T01:30:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -4632,7 +4643,11 @@
                 "scout_score": 88,
                 "scout_note": "Pritchard was under 15.5 in four of his last five (9,15,21,10,14) and averaged 13.4 season points; 15.5 is above observed typical output. Played 34 minutes in last game and is expected in the rotation.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-2.json"
-              }
+              },
+              "player_points": 5,
+              "game_state": "live",
+              "game_clock": "4:26",
+              "period": 3
             },
             {
               "player": "Cooper Flagg",
@@ -4646,7 +4661,7 @@
               "espn_event_id": "401910033",
               "player_id": "5041939",
               "start_utc": "2026-11-23T00:00:00Z",
-              "status": "pending",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -4698,14 +4713,20 @@
                 "scout_score": 84,
                 "scout_note": "Flagg scored 22,33,17,18,12 in his last five: four below 24.5. Second game in two nights may make efficiency more volatile. However the season average near 24 makes the edge modest.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-2.json"
-              }
+              },
+              "player_points": 28,
+              "game_state": "final",
+              "game_clock": ""
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-23T03:08:23.843006+00:00"
         },
         {
           "id": "3",
           "stake": 9.25,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.5693,
           "potential_payout": 33.02,
           "legs": [
@@ -4721,7 +4742,7 @@
               "espn_event_id": "401910032",
               "player_id": "3064290",
               "start_utc": "2026-11-23T00:00:00Z",
-              "status": "pending",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -4773,7 +4794,10 @@
                 "scout_score": 85,
                 "scout_note": "Gordon scored 18,13,11,11,9 in his latest five (4/5 under 13.5). Season baseline 11.6 points and relatively moderate scoring volume support the under lean; he played 31 minutes on Nov 20.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-3.json"
-              }
+              },
+              "player_points": 18,
+              "game_state": "final",
+              "game_clock": ""
             },
             {
               "player": "Darryn Peterson",
@@ -4787,7 +4811,7 @@
               "espn_event_id": "401910033",
               "player_id": "5041955",
               "start_utc": "2026-11-23T00:00:00Z",
-              "status": "pending",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -4839,14 +4863,20 @@
                 "scout_score": 79,
                 "scout_note": "Peterson scored 20,11,13,17,28 in last five; three under 18.5. Season average 16.7 and last-five average 17.8 indicate a modest under lean, although recent shot volume creates uncertainty.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-3.json"
-              }
+              },
+              "player_points": 6,
+              "game_state": "final",
+              "game_clock": ""
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-23T03:08:23.934033+00:00"
         },
         {
           "id": "4",
           "stake": 9.25,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.5628,
           "potential_payout": 32.96,
           "legs": [
@@ -4862,7 +4892,7 @@
               "espn_event_id": "401910032",
               "player_id": "4871145",
               "start_utc": "2026-11-23T00:00:00Z",
-              "status": "pending",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -4914,7 +4944,10 @@
                 "scout_score": 87,
                 "scout_note": "Three of five recent games under 12.5, including 2,4 and 8, with recent mean 9.4; role involves playmaking more than shot volume. Analysis based on the documented source's dated actual numbers; no calibrated predictive probability.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-4.json"
-              }
+              },
+              "player_points": 23,
+              "game_state": "final",
+              "game_clock": ""
             },
             {
               "player": "Cameron Johnson",
@@ -4928,7 +4961,7 @@
               "espn_event_id": "401910032",
               "player_id": "3138196",
               "start_utc": "2026-11-23T00:00:00Z",
-              "status": "pending",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -4975,14 +5008,20 @@
                 "scout_score": 82,
                 "scout_note": "Three of four checked scoring games below 13.5, season baseline around 12.1 points; moderate minutes. Analysis based on the documented source's dated actual numbers; no calibrated predictive probability.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-4.json"
-              }
+              },
+              "player_points": 16,
+              "game_state": "final",
+              "game_clock": ""
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-23T03:08:23.934089+00:00"
         },
         {
           "id": "5",
           "stake": 9.25,
-          "status": "pending",
+          "status": "won",
           "total_odd": 3.4463,
           "potential_payout": 31.88,
           "legs": [
@@ -4998,7 +5037,7 @@
               "espn_event_id": "401910032",
               "player_id": "3112335",
               "start_utc": "2026-11-23T00:00:00Z",
-              "status": "pending",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -5050,7 +5089,10 @@
                 "scout_score": 87,
                 "scout_note": "Four of last five verified scored above 25.5 (26,24,28,26,27), and high 37-39 minute workload gives sustained volume in favorable matchup. This is a historical statistical lean rather than a proven predictive probability.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-5.json"
-              }
+              },
+              "player_points": 37,
+              "game_state": "final",
+              "game_clock": ""
             },
             {
               "player": "Tre Jones",
@@ -5064,7 +5106,7 @@
               "espn_event_id": "401910032",
               "player_id": "4395626",
               "start_utc": "2026-11-23T00:00:00Z",
-              "status": "pending",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -5116,14 +5158,20 @@
                 "scout_score": 77,
                 "scout_note": "Three of last five below 13.5, five-game average around 11.6 and season mean around 10.9; assists and low usage are important. This is a historical statistical lean rather than a proven predictive probability.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-5.json"
-              }
+              },
+              "player_points": 9,
+              "game_state": "final",
+              "game_clock": ""
             }
-          ]
+          ],
+          "effective_odd": 3.44633,
+          "payout": 31.88,
+          "settled_at_utc": "2026-11-23T03:08:23.934132+00:00"
         },
         {
           "id": "6",
           "stake": 9.25,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.8296,
           "potential_payout": 35.42,
           "legs": [
@@ -5139,7 +5187,7 @@
               "espn_event_id": "401910029",
               "player_id": "4278039",
               "start_utc": "2026-11-22T20:30:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -5192,10 +5240,10 @@
                 "scout_note": "Nickeil scored 19,19,20,16,20 in his previous five, three under the frozen 19.5 line, with 32 to 41 minutes; last-five average 18.8, but season average 20.9. Historical observed numbers do not guarantee the outcome.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-6.json"
               },
-              "player_points": 17,
-              "game_state": "live",
-              "game_clock": "9:36",
-              "period": 4
+              "player_points": 27,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Kevin Huerter",
@@ -5209,7 +5257,7 @@
               "espn_event_id": "401910029",
               "player_id": "4066372",
               "start_utc": "2026-11-22T20:30:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -5248,11 +5296,14 @@
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-6.json"
               },
               "player_points": 2,
-              "game_state": "live",
-              "game_clock": "9:36",
-              "period": 4
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-23T03:08:24.145427+00:00"
         },
         {
           "id": "7",
@@ -5273,7 +5324,7 @@
               "espn_event_id": "401910034",
               "player_id": "3062679",
               "start_utc": "2026-11-23T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -5305,7 +5356,11 @@
                 "scout_score": 88,
                 "scout_note": "Third-party L10 game prop dataset reports only one over 9.5 out of ten and New York source game averages near 6.8, under the original DraftKings line. Current pick acknowledges incompleteness of primary minute-by-minute logs.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-7.json"
-              }
+              },
+              "player_points": 4,
+              "game_state": "live",
+              "game_clock": "9:30",
+              "period": 4
             },
             {
               "player": "Mikal Bridges",
@@ -5319,7 +5374,7 @@
               "espn_event_id": "401910034",
               "player_id": "3147657",
               "start_utc": "2026-11-23T01:00:00Z",
-              "status": "pending",
+              "status": "live",
               "analysis": {
                 "last_five": [
                   {
@@ -5351,14 +5406,18 @@
                 "scout_score": 84,
                 "scout_note": "Bridges has season points average near 7.5, below 11.5 market line; he made the winning shot vs Portland but was reported in a shooting slump despite scoring 12 that night. Current pick acknowledges incompleteness of primary minute-by-minute logs.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-7.json"
-              }
+              },
+              "player_points": 3,
+              "game_state": "live",
+              "game_clock": "9:30",
+              "period": 4
             }
           ]
         },
         {
           "id": "8",
           "stake": 9.25,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.7258,
           "potential_payout": 34.46,
           "legs": [
@@ -5374,7 +5433,7 @@
               "espn_event_id": "401910030",
               "player_id": "4278053",
               "start_utc": "2026-11-22T23:00:00Z",
-              "status": "pending",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -5416,7 +5475,10 @@
                 "scout_score": 89,
                 "scout_note": "Mitchell 17.2 season scoring average above 14.5; aggregate record shows 12/15 over this season and five of last five over. Verified scoring latest 24,16,22 in 33-39 minutes. Direction selected with evidence-weighted confidence and limited sample caveat.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-8.json"
-              }
+              },
+              "player_points": 14,
+              "game_state": "final",
+              "game_clock": ""
             },
             {
               "player": "Andrew Wiggins",
@@ -5430,7 +5492,7 @@
               "espn_event_id": "401910030",
               "player_id": "3059319",
               "start_utc": "2026-11-22T23:00:00Z",
-              "status": "pending",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -5467,14 +5529,20 @@
                 "scout_score": 80,
                 "scout_note": "Wiggins averages 9.5 points on season, and public recent five sample indicates four of five above 9.5; current over 9.5 price 1.9346 seems reasonable given active forward bench role. Direction selected with evidence-weighted confidence and limited sample caveat.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-8.json"
-              }
+              },
+              "player_points": 5,
+              "game_state": "final",
+              "game_clock": ""
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-23T03:08:24.424183+00:00"
         },
         {
           "id": "9",
           "stake": 9.25,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.779,
           "potential_payout": 34.96,
           "legs": [
@@ -5490,7 +5558,7 @@
               "espn_event_id": "401910030",
               "player_id": "4278073",
               "start_utc": "2026-11-22T23:00:00Z",
-              "status": "pending",
+              "status": "void",
               "analysis": {
                 "last_five": [
                   {
@@ -5527,7 +5595,9 @@
                 "scout_score": 90,
                 "scout_note": "Shai is averaging 31.7 points season, has cleared 32.5 in four of his latest five games per current props history, including 40 Nov 20 and 34 Nov 18. Strong active primary-scoring role supports over. This is a statistically motivated lean, not a calibrated win probability.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-9.json"
-              }
+              },
+              "effective_odd": 1.0,
+              "game_state": "final"
             },
             {
               "player": "Anthony Davis",
@@ -5541,7 +5611,7 @@
               "espn_event_id": "401910031",
               "player_id": "6583",
               "start_utc": "2026-11-23T00:00:00Z",
-              "status": "pending",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -5578,14 +5648,20 @@
                 "scout_score": 84,
                 "scout_note": "Anthony Davis is averaging 25.3 points and cleared 24.5 in nine of 15 seasonal games. His last five included 36,25,23,14,30 points, three overs, against the Orlando matchup. This is a statistically motivated lean, not a calibrated win probability.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-9.json"
-              }
+              },
+              "player_points": 22,
+              "game_state": "final",
+              "game_clock": ""
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-23T03:08:24.535332+00:00"
         },
         {
           "id": "10",
           "stake": 9.25,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.7447,
           "potential_payout": 34.64,
           "legs": [
@@ -5601,7 +5677,7 @@
               "espn_event_id": "401910031",
               "player_id": "4566434",
               "start_utc": "2026-11-23T00:00:00Z",
-              "status": "pending",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -5633,7 +5709,10 @@
                 "scout_score": 90,
                 "scout_note": "Wagner has a verified latest 27 points in 36 minutes, and four of last five games above 25.5 according to recent scoring histories. Recent five average near 27.2, though season average about 25.1. A Washington matchup creates offensive opportunity. This is a historical scoring-form ranking and not a guaranteed outcome.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-10.json"
-              }
+              },
+              "player_points": 16,
+              "game_state": "final",
+              "game_clock": ""
             },
             {
               "player": "Desmond Bane",
@@ -5647,7 +5726,7 @@
               "espn_event_id": "401910031",
               "player_id": "4066320",
               "start_utc": "2026-11-23T00:00:00Z",
-              "status": "pending",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -5679,9 +5758,15 @@
                 "scout_score": 85,
                 "scout_note": "Bane's last five points log rates four of five above 19.5, and latest five about 20.3 with ~35 minutes. Season 18.6 is below the line, so this is a recent-form over lean rather than consistent season margin. This is a historical scoring-form ranking and not a guaranteed outcome.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-10.json"
-              }
+              },
+              "player_points": 17,
+              "game_state": "final",
+              "game_clock": ""
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-23T03:08:24.535387+00:00"
         }
       ],
       "scout": {
@@ -5721,15 +5806,15 @@
       },
       "accounting": {
         "tickets_total": 10,
-        "tickets_settled": 0,
-        "tickets_pending": 10,
-        "tickets_won": 0,
-        "tickets_lost": 0,
+        "tickets_settled": 9,
+        "tickets_pending": 1,
+        "tickets_won": 1,
+        "tickets_lost": 8,
         "tickets_void": 0,
         "total_staked": 92.5,
-        "total_returned": 0,
-        "available_bank": 832.42,
-        "net_profit_confirmed": 0,
+        "total_returned": 31.88,
+        "available_bank": 864.3,
+        "net_profit_confirmed": -51.37,
         "complete": false
       }
     }
