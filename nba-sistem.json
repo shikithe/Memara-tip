@@ -6449,6 +6449,117 @@
               }
             }
           ]
+        },
+        {
+          "id": "6",
+          "stake": 8.64,
+          "status": "pending",
+          "total_odd": 3.3245,
+          "potential_payout": 28.72,
+          "legs": [
+            {
+              "player": "Pascal Siakam",
+              "team": "IND",
+              "opponent": "OKC",
+              "pick": "over",
+              "points_line": 20.5,
+              "odd": 1.8403,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/pascal-siakam",
+              "espn_event_id": "401910038",
+              "player_id": "3149673",
+              "start_utc": "2026-11-24T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-22",
+                    "points": 25,
+                    "minutes": 33
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five same-opponent individual historical box scores unverified."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Positional defense scoring suppression not quantitatively verified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Exact one-on-one defender will depend on the starting lineup."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Siakam hip soreness status cleared before game; individual participation not guaranteed."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "Future minutes unavailable; actual playing minutes used when supported."
+                },
+                "scout_score": 89,
+                "scout_note": "Siakam averages about 23 points this season and 24.4 points in last eight, both above tonight's 20.5; scored 25 points in 33 minutes yesterday and was removed from injury list. This is a descriptive evidence-based selection, not certain outcome.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-6.json"
+              }
+            },
+            {
+              "player": "Isaiah Hartenstein",
+              "team": "OKC",
+              "opponent": "IND",
+              "pick": "under",
+              "points_line": 9.5,
+              "odd": 1.8065,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/isaiah-hartenstein",
+              "espn_event_id": "401910038",
+              "player_id": "4222252",
+              "start_utc": "2026-11-24T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-22",
+                    "points": 2,
+                    "minutes": 23
+                  },
+                  {
+                    "date": "2026-11-20",
+                    "points": 5,
+                    "minutes": 28
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 6,
+                    "minutes": 27
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five same-opponent individual historical box scores unverified."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Positional defense scoring suppression not quantitatively verified."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Exact one-on-one defender will depend on the starting lineup."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Siakam hip soreness status cleared before game; individual participation not guaranteed."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "Future minutes unavailable; actual playing minutes used when supported."
+                },
+                "scout_score": 85,
+                "scout_note": "Hartenstein scored 2,5,6 in recent corroborated games, all below 9.5; five-game scoring average 7.4 and he plays mostly as screen/rebounding center. This is a descriptive evidence-based selection, not certain outcome.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-6.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -6457,22 +6568,24 @@
           2,
           3,
           4,
-          5
+          5,
+          6
         ],
         "offered": 122,
         "total_groups": 10,
-        "group_number": 5,
-        "group_range": "51-62",
+        "group_number": 6,
+        "group_range": "63-74",
         "group_selected": [
-          "Immanuel Quickley",
-          "Ty Jerome"
+          "Pascal Siakam",
+          "Isaiah Hartenstein"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-23-group-1.json",
           "2": "collector-output/nba-system-scout-2026-11-23-group-2.json",
           "3": "collector-output/nba-system-scout-2026-11-23-group-3.json",
           "4": "collector-output/nba-system-scout-2026-11-23-group-4.json",
-          "5": "collector-output/nba-system-scout-2026-11-23-group-5.json"
+          "5": "collector-output/nba-system-scout-2026-11-23-group-5.json",
+          "6": "collector-output/nba-system-scout-2026-11-23-group-6.json"
         },
         "selection_method": "full_ranked_scout"
       },
