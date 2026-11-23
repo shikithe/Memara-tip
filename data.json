@@ -23,7 +23,9 @@
           "odd": 1.63,
           "source": "https://tipsterarea.com/match/istanbul-basaksehir-corum-super-lig-turkiye-956701",
           "quote_checked_at_utc": "2026-11-23T13:19:47Z",
-          "analysis": "Probna selekcija 3+; provjeren termin i kvota iz predmečne ponude, bez pune nezavisne analize."
+          "analysis": "Probna selekcija 3+; provjeren termin i kvota iz predmečne ponude, bez pune nezavisne analize.",
+          "result_status": "pogođen",
+          "final_score": "4:2"
         },
         {
           "fixture_id": "espn:football:ita.1:401875009",
@@ -242,7 +244,7 @@
       }
     }
   ],
-  "total_payout": 0,
+  "total_payout": 0.0,
   "net_change": null,
   "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
   "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",

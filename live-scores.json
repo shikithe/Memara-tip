@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "updated_at_utc": "2026-11-23T18:42:25.511149+00:00",
+  "updated_at_utc": "2026-11-23T19:38:34.418116+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,13 +9,13 @@
       "index": 0,
       "home": "Istanbul Basaksehir",
       "away": "Çorum FK",
-      "state": "live",
+      "state": "final",
       "fixture_id": "espn:football:tur.1:401888370",
-      "score": "1:2",
+      "score": "4:2",
       "source": "espn-public-unofficial",
       "event_id": "401888370",
       "league": "tur.1",
-      "minute": "82",
+      "minute": null,
       "result_status": "pogođen"
     },
     {
