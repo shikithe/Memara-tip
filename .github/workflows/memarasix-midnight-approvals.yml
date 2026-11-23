@@ -32,6 +32,8 @@ jobs:
               f.write("ready="+str(ok).lower()+"\n")
           print("APPROVAL_MIDNIGHT_GATE",ok)
           PY
+      - name: Test safe approval cleanup
+        run: python3 -m unittest discover -s tests -p test_midnight_approvals.py -v
       - name: Remove obsolete approval inputs only
         if: steps.gate.outputs.ready == 'true'
         run: python3 reset_daily_approvals.py
