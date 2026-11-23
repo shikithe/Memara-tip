@@ -7,6 +7,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: memarasix-daily-publication
   cancel-in-progress: false
@@ -36,3 +37,12 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
+      - name: Dispatch live score/clock tracking immediately after publication
+        if: success()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh workflow run memarasix-live-scores.yml --repo "$GH_REPO" --ref main
+          echo "MEMARASIX_LIVE_TRACKING_DISPATCHED"
