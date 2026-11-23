@@ -1,5 +1,9 @@
 {
-  "status": "no_update",
-  "reason": "A/B already published",
-  "timestamp_utc": "2026-11-22T18:39:22.491715+00:00"
+  "status": "published",
+  "tickets": [
+    "A"
+  ],
+  "daily_stake_added": 17.93,
+  "bank_after_stakes": 257.94,
+  "timestamp_utc": "2026-11-23T13:20:26.544972+00:00"
 }

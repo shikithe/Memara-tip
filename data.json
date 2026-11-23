@@ -1,17 +1,57 @@
 {
   "date": "2026-11-23",
-  "published": "Čeka validnu objavu: 12:00 Europe/Sarajevo",
-  "publication_type": "awaiting_daily_publication",
+  "published": "23.11.2026. u 14:20 (Europe/Sarajevo)",
+  "publication_type": "independent_ai_espn_only_github_publisher",
   "bank_before": 275.87,
-  "daily_stake": 0,
-  "bank_after": 275.87,
-  "bank_after_stakes": 275.87,
+  "daily_stake": 17.93,
+  "bank_after": 257.94,
+  "bank_after_stakes": 257.94,
   "provisional": false,
-  "settled": true,
+  "settled": false,
   "odds_verified": false,
-  "tickets": [],
+  "tickets": [
+    {
+      "id": "A",
+      "combined_odds": 2.6569,
+      "analysis": "RUČNI PROBNI TIKET na izričit korisnikov zahtjev nakon prekida Scout 6/6. Oba para 3+ uz jutros objavljene kvote 1,63 na TipsterArea. Raspored i predmečne kvote potvrđeni; statistička prednost, H2H, xG, sastavi i konačna vrijednost kvota NISU provjereni. Ne predstavljati kao punu Scout analizu.",
+      "matches": [
+        {
+          "fixture_id": "espn:football:tur.1:401888370",
+          "match": "Istanbul Basaksehir - Çorum FK",
+          "datetime": "2026-11-23T17:00:00Z",
+          "pick": "3+",
+          "odd": 1.63,
+          "source": "https://tipsterarea.com/match/istanbul-basaksehir-corum-super-lig-turkiye-956701",
+          "quote_checked_at_utc": "2026-11-23T13:19:47Z",
+          "analysis": "Probna selekcija 3+; provjeren termin i kvota iz predmečne ponude, bez pune nezavisne analize."
+        },
+        {
+          "fixture_id": "espn:football:ita.1:401875009",
+          "match": "Monza - Fiorentina",
+          "datetime": "2026-11-23T19:45:00Z",
+          "pick": "3+",
+          "odd": 1.63,
+          "source": "https://tipsterarea.com/match/monza-fiorentina-serie-a-italy-956695",
+          "quote_checked_at_utc": "2026-11-23T13:19:47Z",
+          "analysis": "Probna selekcija 3+; provjeren termin i kvota iz predmečne ponude, bez pune nezavisne analize."
+        }
+      ],
+      "stake": 17.93,
+      "status": "objavljen",
+      "payout": 0
+    }
+  ],
   "total_payout": 0,
   "net_change": 0,
   "analysis_status": "Prethodni tiket je u arhivi. Današnji tiketi još nisu objavljeni.",
-  "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter"
+  "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",
+  "published_at_utc": "2026-11-23T13:20:26.544414+00:00",
+  "daily_budget": 27.59,
+  "pending_ticket_statuses": {
+    "A": "objavljen"
+  },
+  "pending_ticket_reasons": {
+    "A": ""
+  },
+  "odds_verification_note": "AI-provided selections are reproduced verbatim; GitHub does not check ESPN, markets or quotes."
 }
