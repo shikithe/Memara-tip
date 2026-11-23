@@ -3016,8 +3016,8 @@
               "game_clock": ""
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-22T08:50:17.021048+00:00"
         },
         {
@@ -3464,8 +3464,8 @@
               "period": null
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-22T08:50:17.083458+00:00"
         },
         {
@@ -3610,8 +3610,8 @@
               "period": null
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-22T08:50:17.083516+00:00"
         },
         {
@@ -3756,8 +3756,8 @@
               "period": null
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-22T08:50:17.083563+00:00"
         },
         {
@@ -4418,7 +4418,7 @@
       "id": "nba-2026-11-22",
       "date": "2026-11-22",
       "bank_start": 924.92,
-      "status": "published",
+      "status": "settled",
       "tickets": [
         {
           "id": "1",
@@ -4568,8 +4568,8 @@
               "period": 3
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-23T03:08:23.758953+00:00"
         },
         {
@@ -4719,8 +4719,8 @@
               "game_clock": ""
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-23T03:08:23.843006+00:00"
         },
         {
@@ -4869,8 +4869,8 @@
               "game_clock": ""
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-23T03:08:23.934033+00:00"
         },
         {
@@ -5014,8 +5014,8 @@
               "game_clock": ""
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-23T03:08:23.934089+00:00"
         },
         {
@@ -5301,14 +5301,14 @@
               "period": null
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-23T03:08:24.145427+00:00"
         },
         {
           "id": "7",
           "stake": 9.25,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.8047,
           "potential_payout": 35.19,
           "legs": [
@@ -5324,7 +5324,7 @@
               "espn_event_id": "401910034",
               "player_id": "3062679",
               "start_utc": "2026-11-23T01:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -5357,9 +5357,9 @@
                 "scout_note": "Third-party L10 game prop dataset reports only one over 9.5 out of ten and New York source game averages near 6.8, under the original DraftKings line. Current pick acknowledges incompleteness of primary minute-by-minute logs.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-7.json"
               },
-              "player_points": 4,
-              "game_state": "live",
-              "game_clock": "9:30",
+              "player_points": 10,
+              "game_state": "final",
+              "game_clock": "",
               "period": 4
             },
             {
@@ -5374,7 +5374,7 @@
               "espn_event_id": "401910034",
               "player_id": "3147657",
               "start_utc": "2026-11-23T01:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -5407,12 +5407,15 @@
                 "scout_note": "Bridges has season points average near 7.5, below 11.5 market line; he made the winning shot vs Portland but was reported in a shooting slump despite scoring 12 that night. Current pick acknowledges incompleteness of primary minute-by-minute logs.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-7.json"
               },
-              "player_points": 3,
-              "game_state": "live",
-              "game_clock": "9:30",
+              "player_points": 8,
+              "game_state": "final",
+              "game_clock": "",
               "period": 4
             }
-          ]
+          ],
+          "effective_odd": 0,
+          "payout": 0,
+          "settled_at_utc": "2026-11-23T07:28:09Z"
         },
         {
           "id": "8",
@@ -5535,8 +5538,8 @@
               "game_clock": ""
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-23T03:08:24.424183+00:00"
         },
         {
@@ -5596,7 +5599,7 @@
                 "scout_note": "Shai is averaging 31.7 points season, has cleared 32.5 in four of his latest five games per current props history, including 40 Nov 20 and 34 Nov 18. Strong active primary-scoring role supports over. This is a statistically motivated lean, not a calibrated win probability.",
                 "audit": "collector-output/nba-system-scout-2026-11-22-group-9.json"
               },
-              "effective_odd": 1.0,
+              "effective_odd": 1,
               "game_state": "final"
             },
             {
@@ -5654,8 +5657,8 @@
               "game_clock": ""
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-23T03:08:24.535332+00:00"
         },
         {
@@ -5764,8 +5767,8 @@
               "game_clock": ""
             }
           ],
-          "effective_odd": 0.0,
-          "payout": 0.0,
+          "effective_odd": 0,
+          "payout": 0,
           "settled_at_utc": "2026-11-23T03:08:24.535387+00:00"
         }
       ],
@@ -5806,17 +5809,20 @@
       },
       "accounting": {
         "tickets_total": 10,
-        "tickets_settled": 9,
-        "tickets_pending": 1,
+        "tickets_settled": 10,
+        "tickets_pending": 0,
         "tickets_won": 1,
-        "tickets_lost": 8,
+        "tickets_lost": 9,
         "tickets_void": 0,
         "total_staked": 92.5,
         "total_returned": 31.88,
         "available_bank": 864.3,
-        "net_profit_confirmed": -51.37,
-        "complete": false
-      }
+        "net_profit_confirmed": -60.62,
+        "complete": true
+      },
+      "bank_end": 864.3,
+      "bank_profit": -60.62,
+      "settled_at_utc": "2026-11-23T07:28:09Z"
     }
   ]
 }
