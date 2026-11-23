@@ -1,11 +1,11 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "source": "Memara-tip/data.json",
   "both_published": false,
   "A": {
     "published": true,
     "matches": 2,
-    "status": "dobitan",
+    "status": "objavljen",
     "duplicate_entries": false
   },
   "B": {
@@ -18,5 +18,5 @@
   "missing": [
     "B"
   ],
-  "checked_at_sarajevo": "2026-11-22T19:39:15.573413+01:00"
+  "checked_at_sarajevo": "2026-11-23T20:38:04.392819+01:00"
 }
