@@ -1,12 +1,12 @@
 {
   "date": "2026-11-23",
   "published": "23.11.2026. u 14:20 (Europe/Sarajevo)",
-  "publication_type": "independent_ai_espn_only_github_publisher",
+  "publication_type": "independent_ai_approved_github_nba_c",
   "bank_before": 275.87,
-  "daily_stake": 17.93,
-  "bank_after": 257.94,
-  "bank_after_stakes": 257.94,
-  "provisional": true,
+  "daily_stake": 22.07,
+  "bank_after": 253.8,
+  "bank_after_stakes": 253.8,
+  "provisional": false,
   "settled": false,
   "odds_verified": false,
   "tickets": [
@@ -39,19 +39,175 @@
       "stake": 17.93,
       "status": "objavljen",
       "payout": 0
+    },
+    {
+      "id": "C",
+      "label": "NBA · DVA IGRAČA",
+      "matches": [
+        {
+          "fixture_id": "espn:basketball:nba:401910042:3136193",
+          "event_id": "401910042",
+          "espn_event_id": "401910042",
+          "player_id": "3136193",
+          "player": "Devin Booker",
+          "home": "Phoenix Suns",
+          "away": "New Orleans Pelicans",
+          "team": "Phoenix Suns",
+          "opponent": "New Orleans Pelicans",
+          "league": "nba",
+          "sport": "basketball",
+          "datetime": "2026-11-24T01:00:00+00:00",
+          "start_utc": "2026-11-24T01:00:00+00:00",
+          "market": "player_points",
+          "points_line": 26.5,
+          "pick": "under",
+          "market_name": "Manje od 26.5 poena",
+          "odd": 1.8475,
+          "bookmaker": "DraftKings",
+          "quote_source_url": "https://betsharp.com/nba/player/devin-booker",
+          "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+          "quote_timestamp_verified": false
+        },
+        {
+          "fixture_id": "espn:basketball:nba:401910041:3908809",
+          "event_id": "401910041",
+          "espn_event_id": "401910041",
+          "player_id": "3908809",
+          "player": "Donovan Mitchell",
+          "home": "Cleveland Cavaliers",
+          "away": "Chicago Bulls",
+          "team": "Cleveland Cavaliers",
+          "opponent": "Chicago Bulls",
+          "league": "nba",
+          "sport": "basketball",
+          "datetime": "2026-11-24T01:00:00+00:00",
+          "start_utc": "2026-11-24T01:00:00+00:00",
+          "market": "player_points",
+          "points_line": 26.5,
+          "pick": "under",
+          "market_name": "Manje od 26.5 poena",
+          "odd": 1.9346,
+          "bookmaker": "DraftKings",
+          "quote_source_url": "https://betsharp.com/nba/player/donovan-mitchell",
+          "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+          "quote_timestamp_verified": false
+        }
+      ],
+      "odds": 3.57,
+      "stake": 4.14,
+      "status": "objavljen",
+      "payout": 0,
+      "analysis": "Ručni NBA C 23.11: Booker manje 26,5 @1,8475 (L5 prosjek 23,8, zadnji potvrđeni 23 poena u 38 minuta) i Donovan Mitchell manje 26,5 @1,9346 (zadnji 20 poena, ali L5 prosjek drugog izvora 28,2 predstavlja značajan rizik). Igrači su u stvarnim sastavima PHX/CLE, utakmice imaju potvrđene ESPN ID i počinju u 01:00 UTC 24.11. Obje granice i kvote uzete su iz jedne DK kolone novog BetSharp snapshot-a od 23.11. Izostanci, čuvari i H2H nepotpuno potvrđeni, ne prikazuje se kao potpuni 122-player Scout.",
+      "scout_analysis": {
+        "date": "2026-11-23",
+        "intro": "Ručni C: dva provjerena NBA roster identiteta i dva buduća termina, ponuda iz istodnevnog BetSharp kolektora (122 ukupna reda; nepotvrđeni timovi ignorisani). Nisu sva 122 kandidata detaljno istražena. Scout ograničen na dostupne pouzdane informacije.",
+        "players": [
+          {
+            "id": "3136193",
+            "name": "Devin Booker",
+            "team": "Phoenix Suns",
+            "opponent": "New Orleans Pelicans",
+            "pick": "under",
+            "line": 26.5,
+            "odd": 1.8475,
+            "games": [
+              [
+                "20.11.",
+                23,
+                38
+              ]
+            ],
+            "h2h": [],
+            "last10": "Nije potvrđeno",
+            "pros": [
+              "Posljednjih pet odigranih utakmica: prosjek 23,8 poena po dostupnoj statistici.",
+              "U posljednjem provjerenom meču 20.11. postigao je 23 poena za 38 minuta.",
+              "Istodnevna BetSharp DK granica 26,5 poena, ponuđeni UNDER 1,8475."
+            ],
+            "risks": [
+              "Prosjek posljednjih pet nije procijenjena vjerovatnoća za ovaj prag.",
+              "Devin Booker ima visoku napadačku ulogu i može preskočiti granicu u jednoj efikasnoj večeri.",
+              "Nepotvrđeni su konkretan čuvar, H2H uzorak i konačna raspodjela šuteva."
+            ],
+            "assessment": "Umjeren UNDER oslonjen na posljednji skor 23 i prosjek 23,8 ispod 26,5; uzorak i matchup ne dokazuju prednost u odnosu na kvotu.",
+            "sources": [
+              [
+                "NBA profil / statistika",
+                "https://www.nba.com/player/1626164/devin-booker"
+              ],
+              [
+                "Posljednjih pet, prosjek",
+                "https://www.statiqsports.com/nba/devin-booker/last-5-games"
+              ],
+              [
+                "Službena najava meča",
+                "https://www.nba.com/pelicans/news/pelicans-vs-suns-injury-report-game-preview-11-23-2026"
+              ],
+              [
+                "BetSharp cijena",
+                "https://betsharp.com/nba/player/devin-booker"
+              ]
+            ]
+          },
+          {
+            "id": "3908809",
+            "name": "Donovan Mitchell",
+            "team": "Cleveland Cavaliers",
+            "opponent": "Chicago Bulls",
+            "pick": "under",
+            "line": 26.5,
+            "odd": 1.9346,
+            "games": [],
+            "h2h": [],
+            "last10": "Nije kompletno potvrđeno; procjene izvora razilaze se",
+            "pros": [
+              "Službeni Cleveland preview za posljednju utakmicu protiv Memphisa bilježi 20 poena Mitchella.",
+              "Zabilježena dnevna BetSharp DK ponuda UNDER 26,5 poena po kvoti 1,9346.",
+              "Mitchell nije naveden na Clevelandovoj listi nedostupnih igrača u najavi meča."
+            ],
+            "risks": [
+              "Prema jednoj dostupnoj statistici prosjek posljednjih pet utakmica iznosi čak 28,2 poena, iznad granice.",
+              "Mitchell je visokovolumenski strijelac; visoka kvota ne znači statističku vrijednost.",
+              "Nema potvrđenih posljednjih pet redova s minutama, niti sigurnog H2H i direktnog čuvara."
+            ],
+            "assessment": "Rizičan UNDER, uprkos posljednjih 20 poena; ukupna novija forma i značajna individualna potrošnja ne daju jaku statističku prednost. Ovaj izbor je slabije potkrijepljen od Bookera.",
+            "sources": [
+              [
+                "Cleveland službena najava",
+                "https://www.nba.com/cavaliers/news/preview-clechi-261123"
+              ],
+              [
+                "NBA profil",
+                "https://www.nba.com/player/1628378/donovan-mitchell"
+              ],
+              [
+                "Pregled forme",
+                "https://www.legchecksports.com/players/nba/donovan-mitchell/"
+              ],
+              [
+                "BetSharp cijena",
+                "https://betsharp.com/nba/player/donovan-mitchell"
+              ]
+            ]
+          }
+        ],
+        "conclusion": "Devin Booker UNDER 26,5 @1,8475 i Donovan Mitchell UNDER 26,5 @1,9346; kombinovana referentna kvota 3,57. Za oba su potvrđeni klub, protivnik, ESPN identitet i budući početak. Redovni C ulog 1,5% B0 = 4,14 € uz dnevni budžet. Najveći rizik: Donovanova petomečna forma nije jasna prednost za UNDER.",
+        "caution": "BetSharp kvote su uporedne, nisu direktno potvrđene u bookmaker računu. Nije rađena potpuna TOP20/TOP10/TOP5 analiza svih igrača, direktni čuvari i H2H nisu provjereni, neki zadnji rezultati djelimični."
+      }
     }
   ],
   "total_payout": 0.0,
   "net_change": null,
-  "analysis_status": "Prethodni tiket je u arhivi. Današnji tiketi još nisu objavljeni.",
+  "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
   "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",
   "published_at_utc": "2026-11-23T13:20:26.544414+00:00",
   "daily_budget": 27.59,
   "pending_ticket_statuses": {
-    "A": "objavljen"
+    "A": "objavljen",
+    "C": "objavljen"
   },
   "pending_ticket_reasons": {
     "A": ""
   },
-  "odds_verification_note": "AI-provided selections are reproduced verbatim; GitHub does not check ESPN, markets or quotes."
+  "odds_verification_note": "AI selected publicly displayed bookmaker comparison quotes; not independently refreshed by GitHub or confirmed in individual bookmaker accounts."
 }
