@@ -1,0 +1,958 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-23",
+  "group_number": 1,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Ayo Dosunmu",
+      "player_id": "4397002",
+      "score": 90,
+      "confidence": 78,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete/fixture identifiers and consulted NBA.com pages, roster/injury reports and BetSharp/secondary dated logs. Only actual verified game rows entered, missing data not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/ayo-dosunmu",
+        "https://www.nba.com/player/1630245/ayo-dosunmu",
+        "https://www.nba.com/game/bkn-vs-min-0022600291"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-21",
+          "points": 19,
+          "minutes": 34
+        },
+        {
+          "date": "2026-11-19",
+          "points": 6,
+          "minutes": 32
+        },
+        {
+          "date": "2026-11-17",
+          "points": 30,
+          "minutes": 39
+        },
+        {
+          "date": "2026-11-16",
+          "points": 8,
+          "minutes": 30
+        },
+        {
+          "date": "2026-11-14",
+          "points": 24,
+          "minutes": 33
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available, season scoring level cited in reason; no fabricated full-season splits."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Consistent home versus away per-player scoring sample was not verified in available data."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "No fully reconciled prior five scoring lines against this same opponent were available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific opponent defensive scoring averages could not be verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct individual defender not predictable reliably without live starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 Nov injury report and recent player status read; lineup is not final."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "There is no confirmed official minutes projection for this fixture; actual verified minutes used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from documented recent lineup and available current team roster."
+      },
+      "market": {
+        "points_line": 17.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/ayo-dosunmu"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": true,
+        "reason": "Last five played: 19,6,30,8,24 (three above 17.5), 33.0 minutes average. Reported last-ten over hit rate 8/10 at comparable line, season average 17.9. High-usage Minnesota backcourt role provides opportunity. Direction remains an empirical, uncertain historical lean rather than a proven 1-game win chance.",
+        "risk": "Two of last five were markedly under, and Minnesota has other ball handlers, so usage and scoring can fluctuate. Prices are public aggregator quotes not directly verified at bookmaker."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Danny Wolf",
+      "player_id": "5107173",
+      "score": 84,
+      "confidence": 75,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete/fixture identifiers and consulted NBA.com pages, roster/injury reports and BetSharp/secondary dated logs. Only actual verified game rows entered, missing data not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/danny-wolf",
+        "https://www.nba.com/player/1642874/danny-wolf/bio",
+        "https://www.nba.com/game/bkn-vs-min-0022600291"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 20,
+          "minutes": 26
+        },
+        {
+          "date": "2026-11-18",
+          "points": 6,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-16",
+          "points": 3,
+          "minutes": 11
+        },
+        {
+          "date": "2026-11-14",
+          "points": 14,
+          "minutes": 28
+        },
+        {
+          "date": "2026-11-11",
+          "points": 10,
+          "minutes": 29
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available, season scoring level cited in reason; no fabricated full-season splits."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Consistent home versus away per-player scoring sample was not verified in available data."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "No fully reconciled prior five scoring lines against this same opponent were available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific opponent defensive scoring averages could not be verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct individual defender not predictable reliably without live starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 Nov injury report and recent player status read; lineup is not final."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "There is no confirmed official minutes projection for this fixture; actual verified minutes used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from documented recent lineup and available current team roster."
+      },
+      "market": {
+        "points_line": 8.5,
+        "over_odd": 1.8696,
+        "under_odd": 1.9009,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/danny-wolf"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": true,
+        "reason": "Recent five: 20,6,3,14,10 points (three above 8.5), and season around 10.2. Started last game, scoring 20 across 26 minutes; minutes have varied widely. Direction remains an empirical, uncertain historical lean rather than a proven 1-game win chance.",
+        "risk": "Played 11 minutes and scored 3 in one recent game; starting status and 3-point shooting make the over volatile. Prices are public aggregator quotes not directly verified at bookmaker."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Michael Porter Jr.",
+      "player_id": "betsharp:2026-11-23:0009",
+      "score": 77,
+      "confidence": 70,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete/fixture identifiers and consulted NBA.com pages, roster/injury reports and BetSharp/secondary dated logs. Only actual verified game rows entered, missing data not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/michael-porter",
+        "https://www.statiqsports.com/nba/michael-porter-jr/last-5-games",
+        "https://www.nba.com/game/bkn-vs-min-0022600291"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 5,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-11",
+          "points": 22,
+          "minutes": 28
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available, season scoring level cited in reason; no fabricated full-season splits."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Consistent home versus away per-player scoring sample was not verified in available data."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "No fully reconciled prior five scoring lines against this same opponent were available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific opponent defensive scoring averages could not be verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct individual defender not predictable reliably without live starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 Nov injury report and recent player status read; lineup is not final."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "There is no confirmed official minutes projection for this fixture; actual verified minutes used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from documented recent lineup and available current team roster."
+      },
+      "market": {
+        "points_line": 19.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/michael-porter"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "Recent five-game average 17.4 below his 19.5 line, with a recently reported five-point game. A large underdog may have unusually uneven shot volume. Direction remains an empirical, uncertain historical lean rather than a proven 1-game win chance.",
+        "risk": "Nets depend on Porter for scoring and he can exceed 20, while personal-status reports have included a questionable tag. Prices are public aggregator quotes not directly verified at bookmaker."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Day'Ron Sharpe",
+      "player_id": "betsharp:2026-11-23:0003",
+      "score": 74,
+      "confidence": 65,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete/fixture identifiers and consulted NBA.com pages, roster/injury reports and BetSharp/secondary dated logs. Only actual verified game rows entered, missing data not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/dayron-sharpe",
+        "https://www.nba.com/nets/player/1630549/day%27ron_sharpe",
+        "https://www.nba.com/game/bkn-vs-min-0022600291"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-18",
+          "points": 6,
+          "minutes": 22
+        },
+        {
+          "date": "2026-11-14",
+          "points": 16,
+          "minutes": 28
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available, season scoring level cited in reason; no fabricated full-season splits."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Consistent home versus away per-player scoring sample was not verified in available data."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "No fully reconciled prior five scoring lines against this same opponent were available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific opponent defensive scoring averages could not be verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct individual defender not predictable reliably without live starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 Nov injury report and recent player status read; lineup is not final."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "There is no confirmed official minutes projection for this fixture; actual verified minutes used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from documented recent lineup and available current team roster."
+      },
+      "market": {
+        "points_line": 8.5,
+        "over_odd": 1.885,
+        "under_odd": 1.885,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/dayron-sharpe"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "Sharpe's season points ~10.2 exceeds 8.5 line, and his last two confirmed scoring outings vary from six to sixteen; still a possible center over. Direction remains an empirical, uncertain historical lean rather than a proven 1-game win chance.",
+        "risk": "Game-to-game center minutes and strong Minnesota interior defense create a substantial scoring risk. Prices are public aggregator quotes not directly verified at bookmaker."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Jaden McDaniels",
+      "player_id": "betsharp:2026-11-23:0005",
+      "score": 68,
+      "confidence": 61,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete/fixture identifiers and consulted NBA.com pages, roster/injury reports and BetSharp/secondary dated logs. Only actual verified game rows entered, missing data not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jaden-mcdaniels",
+        "https://www.nba.com/player/1630183/jaden-mcdaniels",
+        "https://www.nba.com/game/bkn-vs-min-0022600291"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-19",
+          "points": 17,
+          "minutes": 39
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available, season scoring level cited in reason; no fabricated full-season splits."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Consistent home versus away per-player scoring sample was not verified in available data."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "No fully reconciled prior five scoring lines against this same opponent were available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific opponent defensive scoring averages could not be verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct individual defender not predictable reliably without live starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 Nov injury report and recent player status read; lineup is not final."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "There is no confirmed official minutes projection for this fixture; actual verified minutes used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from documented recent lineup and available current team roster."
+      },
+      "market": {
+        "points_line": 17.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.8772,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jaden-mcdaniels"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "Jaden is a defense-first forward; 17 in one latest validated 39-minute game, close to 17.5 line. Other last-five scores were not established at equal confidence. Direction remains an empirical, uncertain historical lean rather than a proven 1-game win chance.",
+        "risk": "Long minutes or corner shooting opportunities against Brooklyn could exceed 17.5 even if scoring is not primary role. Prices are public aggregator quotes not directly verified at bookmaker."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Jonathan Kuminga",
+      "player_id": "betsharp:2026-11-23:0006",
+      "score": 66,
+      "confidence": 60,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete/fixture identifiers and consulted NBA.com pages, roster/injury reports and BetSharp/secondary dated logs. Only actual verified game rows entered, missing data not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jonathan-kuminga",
+        "https://www.nba.com/player/1630228/jonathan-kuminga",
+        "https://www.nba.com/game/bkn-vs-min-0022600291"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 17,
+          "minutes": 34
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available, season scoring level cited in reason; no fabricated full-season splits."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Consistent home versus away per-player scoring sample was not verified in available data."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "No fully reconciled prior five scoring lines against this same opponent were available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific opponent defensive scoring averages could not be verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct individual defender not predictable reliably without live starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 Nov injury report and recent player status read; lineup is not final."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "There is no confirmed official minutes projection for this fixture; actual verified minutes used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from documented recent lineup and available current team roster."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.9091,
+        "under_odd": 1.8621,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jonathan-kuminga"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "Kuminga had 17 in a cited recent 34-minute performance, above 14.5; his scoring line and long minutes keep possible over attractive, so under remains weak. Direction remains an empirical, uncertain historical lean rather than a proven 1-game win chance.",
+        "risk": "Free-throw volume and current Minnesota attacking role can change rapidly, undermining statistical lean. Prices are public aggregator quotes not directly verified at bookmaker."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "LaMelo Ball",
+      "player_id": "betsharp:2026-11-23:0008",
+      "score": 64,
+      "confidence": 52,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete/fixture identifiers and consulted NBA.com pages, roster/injury reports and BetSharp/secondary dated logs. Only actual verified game rows entered, missing data not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/lamelo-ball",
+        "https://www.nba.com/player/1630163/lamelo_ball",
+        "https://www.nba.com/game/bkn-vs-min-0022600291"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available, season scoring level cited in reason; no fabricated full-season splits."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Consistent home versus away per-player scoring sample was not verified in available data."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "No fully reconciled prior five scoring lines against this same opponent were available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific opponent defensive scoring averages could not be verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct individual defender not predictable reliably without live starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 Nov injury report and recent player status read; lineup is not final."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "There is no confirmed official minutes projection for this fixture; actual verified minutes used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from documented recent lineup and available current team roster."
+      },
+      "market": {
+        "points_line": 18.5,
+        "over_odd": 1.8264,
+        "under_odd": 1.9524,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/lamelo-ball"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "LaMelo appears on Minnesota's official 2026 roster; his 18.5 points BetSharp line is plausible for a lead guard but current five-game scoring series was not confirmed. Direction remains an empirical, uncertain historical lean rather than a proven 1-game win chance.",
+        "risk": "Strong ball-handling usage and inconsistent shot distribution could easily produce a high-scoring evening. Prices are public aggregator quotes not directly verified at bookmaker."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Julius Randle",
+      "player_id": "betsharp:2026-11-23:0007",
+      "score": 63,
+      "confidence": 52,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete/fixture identifiers and consulted NBA.com pages, roster/injury reports and BetSharp/secondary dated logs. Only actual verified game rows entered, missing data not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/julius-randle",
+        "https://www.nba.com/player/203944/julius-randle",
+        "https://www.nba.com/game/bkn-vs-min-0022600291"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available, season scoring level cited in reason; no fabricated full-season splits."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Consistent home versus away per-player scoring sample was not verified in available data."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "No fully reconciled prior five scoring lines against this same opponent were available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific opponent defensive scoring averages could not be verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct individual defender not predictable reliably without live starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 Nov injury report and recent player status read; lineup is not final."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "There is no confirmed official minutes projection for this fixture; actual verified minutes used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from documented recent lineup and available current team roster."
+      },
+      "market": {
+        "points_line": 20.5,
+        "over_odd": 1.9709,
+        "under_odd": 1.8065,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/julius-randle"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "Randle appears as a Nets forward in current official NBA roster; 20.5 is a demanding line but latest five scoring dates and minutes were not independently retrieved. Direction remains an empirical, uncertain historical lean rather than a proven 1-game win chance.",
+        "risk": "Known veteran offensive skills and significant shot volume may defeat a low-information under lean. Prices are public aggregator quotes not directly verified at bookmaker."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Egor Dëmin",
+      "player_id": "betsharp:2026-11-23:0004",
+      "score": 61,
+      "confidence": 52,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete/fixture identifiers and consulted NBA.com pages, roster/injury reports and BetSharp/secondary dated logs. Only actual verified game rows entered, missing data not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/egor-demin",
+        "https://www.nba.com/player/1642856/egor-demin",
+        "https://www.nba.com/game/bkn-vs-min-0022600291"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-11",
+          "points": 22,
+          "minutes": 23
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available, season scoring level cited in reason; no fabricated full-season splits."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Consistent home versus away per-player scoring sample was not verified in available data."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "No fully reconciled prior five scoring lines against this same opponent were available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific opponent defensive scoring averages could not be verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct individual defender not predictable reliably without live starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 Nov injury report and recent player status read; lineup is not final."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "There is no confirmed official minutes projection for this fixture; actual verified minutes used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from documented recent lineup and available current team roster."
+      },
+      "market": {
+        "points_line": 10.5,
+        "over_odd": 2,
+        "under_odd": 1.7812,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/egor-demin"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "At 10.5 points, Demin may have uncertain minutes; a verified 22-point outing in 23 minutes demonstrates real over potential but is one game only. Direction remains an empirical, uncertain historical lean rather than a proven 1-game win chance.",
+        "risk": "Leg problems reported earlier, role and shot efficiency could vary; no reliable last-five trend confirmed. Prices are public aggregator quotes not directly verified at bookmaker."
+      }
+    },
+    {
+      "rank": 10,
+      "player": "Rudy Gobert",
+      "player_id": "betsharp:2026-11-23:0012",
+      "score": 57,
+      "confidence": 49,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete/fixture identifiers and consulted NBA.com pages, roster/injury reports and BetSharp/secondary dated logs. Only actual verified game rows entered, missing data not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/rudy-gobert",
+        "https://www.nba.com/player/203497/rudy-gobert",
+        "https://www.nba.com/game/bkn-vs-min-0022600291"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available, season scoring level cited in reason; no fabricated full-season splits."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Consistent home versus away per-player scoring sample was not verified in available data."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "No fully reconciled prior five scoring lines against this same opponent were available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific opponent defensive scoring averages could not be verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct individual defender not predictable reliably without live starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 Nov injury report and recent player status read; lineup is not final."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "There is no confirmed official minutes projection for this fixture; actual verified minutes used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from documented recent lineup and available current team roster."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.9804,
+        "under_odd": 1.813,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/rudy-gobert"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "Gobert's 9.5-point line is near his usual lower-usage role as paint defender/rebounder; without verified latest scoring logs little edge exists. Direction remains an empirical, uncertain historical lean rather than a proven 1-game win chance.",
+        "risk": "Offensive rebounds and lobs vs Brooklyn may drive an unexpectedly high points total. Prices are public aggregator quotes not directly verified at bookmaker."
+      }
+    },
+    {
+      "rank": 11,
+      "player": "Terrence Shannon Jr.",
+      "player_id": "betsharp:2026-11-23:0013",
+      "score": 52,
+      "confidence": 48,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete/fixture identifiers and consulted NBA.com pages, roster/injury reports and BetSharp/secondary dated logs. Only actual verified game rows entered, missing data not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/terrence-shannon",
+        "https://www.nba.com/player/1630545/terrence-shannon-jr",
+        "https://www.nba.com/game/bkn-vs-min-0022600291"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-21",
+          "points": 15,
+          "minutes": 26
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available, season scoring level cited in reason; no fabricated full-season splits."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Consistent home versus away per-player scoring sample was not verified in available data."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "No fully reconciled prior five scoring lines against this same opponent were available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific opponent defensive scoring averages could not be verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct individual defender not predictable reliably without live starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 Nov injury report and recent player status read; lineup is not final."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "There is no confirmed official minutes projection for this fixture; actual verified minutes used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from documented recent lineup and available current team roster."
+      },
+      "market": {
+        "points_line": 13.5,
+        "over_odd": 1.8772,
+        "under_odd": 1.8929,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/terrence-shannon"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "The 13.5 line is close to Shannon's confirmed 15-point 26-minute recent game. Other four game logs unavailable, giving a low-confidence under only. Direction remains an empirical, uncertain historical lean rather than a proven 1-game win chance.",
+        "risk": "Minnesota rotation may increase Shannon's scoring chances and minutes. Prices are public aggregator quotes not directly verified at bookmaker."
+      }
+    },
+    {
+      "rank": 12,
+      "player": "Mikel Brown Jr.",
+      "player_id": "betsharp:2026-11-23:0010",
+      "score": 47,
+      "confidence": 37,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete/fixture identifiers and consulted NBA.com pages, roster/injury reports and BetSharp/secondary dated logs. Only actual verified game rows entered, missing data not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/mikel-brown",
+        "https://www.nba.com/player/1643414",
+        "https://www.nba.com/game/bkn-vs-min-0022600291"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available, season scoring level cited in reason; no fabricated full-season splits."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Consistent home versus away per-player scoring sample was not verified in available data."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "No fully reconciled prior five scoring lines against this same opponent were available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific opponent defensive scoring averages could not be verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct individual defender not predictable reliably without live starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 Nov injury report and recent player status read; lineup is not final."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "There is no confirmed official minutes projection for this fixture; actual verified minutes used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from documented recent lineup and available current team roster."
+      },
+      "market": {
+        "points_line": 13.5,
+        "over_odd": 1.8621,
+        "under_odd": 1.9091,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/mikel-brown"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "Mikel Brown Jr. 13.5 points line appears in today's canonical offer but his recent five complete logs were not independently reconstructed. Direction remains an empirical, uncertain historical lean rather than a proven 1-game win chance.",
+        "risk": "Recent illness and rookie usage variability leave his playing time and scoring high variance. Prices are public aggregator quotes not directly verified at bookmaker."
+      }
+    },
+    {
+      "rank": 13,
+      "player": "Moritz Wagner",
+      "player_id": "betsharp:2026-11-23:0011",
+      "score": 42,
+      "confidence": 34,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN athlete/fixture identifiers and consulted NBA.com pages, roster/injury reports and BetSharp/secondary dated logs. Only actual verified game rows entered, missing data not fabricated."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/moritz-wagner",
+        "https://www.nba.com/player/1629021/moritz_wagner",
+        "https://www.nba.com/game/bkn-vs-min-0022600291"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Where available, season scoring level cited in reason; no fabricated full-season splits."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Consistent home versus away per-player scoring sample was not verified in available data."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "No fully reconciled prior five scoring lines against this same opponent were available."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Precise position-specific opponent defensive scoring averages could not be verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Direct individual defender not predictable reliably without live starting lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 Nov injury report and recent player status read; lineup is not final."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "There is no confirmed official minutes projection for this fixture; actual verified minutes used."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Role inferred from documented recent lineup and available current team roster."
+      },
+      "market": {
+        "points_line": 8.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8547,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/moritz-wagner"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not_calibrated",
+        "availability_confirmed": false,
+        "reason": "Wagner has an 8.5 point line and a source-confirmed 15-point appearance in another matchup, but dated scoring log and role vary. Direction remains an empirical, uncertain historical lean rather than a proven 1-game win chance.",
+        "risk": "Brooklyn frontcourt rotations and outside shooting volatility mean this prediction has weak basis. Prices are public aggregator quotes not directly verified at bookmaker."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "4397002",
+    "5107173"
+  ],
+  "selection_reason": "Entire first 13-player group checked in original offer order and both ESPN/secondary passes. Ayo Dosunmu OVER 17.5 has five dated scoring records (19,6,30,8,24), a reported 8/10 longer-run hit rate and 17.9 season PPG. Danny Wolf OVER 8.5 scored 20,6,3,14,10 in last five, with season ~10.2 and 20 points in his last outing. Both exact Minnesota/Brooklyn NBA rosters and 23 Nov 19:30 ET event IDs confirmed; selected sides have real DraftKings prices. Insufficient matchup/H2H information lowers confidence.",
+  "note": "Two chosen players from same upcoming BKN-MIN contest. No fabricated stats; unknown opponent defenders, H2H and other-player missing game logs explicitly marked."
+}
