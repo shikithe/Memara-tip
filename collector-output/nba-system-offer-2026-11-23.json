@@ -1212,15 +1212,19 @@
       "team": "OKC",
       "opponent": "IND",
       "game": "OKC @ IND",
-      "start_utc": null,
+      "start_utc": "2026-11-24T00:30:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/isaiah-hartenstein",
       "points_line": 9.5,
       "over_odd": 1.9709,
       "under_odd": 1.8065,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4222252",
+      "espn_event_id": "401910038",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-4222252",
+        "https://www.nba.com/game/okc-vs-ind-0022600289"
+      ]
     },
     {
       "original_offer_position": 70,
@@ -1280,15 +1284,19 @@
       "team": "IND",
       "opponent": "OKC",
       "game": "OKC @ IND",
-      "start_utc": null,
+      "start_utc": "2026-11-24T00:30:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/pascal-siakam",
       "points_line": 20.5,
       "over_odd": 1.8403,
       "under_odd": 1.9346,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3149673",
+      "espn_event_id": "401910038",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-3149673",
+        "https://www.nba.com/game/okc-vs-ind-0022600289"
+      ]
     },
     {
       "original_offer_position": 74,
