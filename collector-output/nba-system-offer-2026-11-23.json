@@ -1954,15 +1954,19 @@
       "team": "SAC",
       "opponent": "SA",
       "game": "SA @ SAC",
-      "start_utc": null,
+      "start_utc": "2026-11-24T03:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/zach-lavine",
       "points_line": 16.5,
       "over_odd": 1.9009,
       "under_odd": 1.8696,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3064440",
+      "espn_event_id": "401910045",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-3064440",
+        "https://www.nba.com/game/0022600296"
+      ]
     },
     {
       "original_offer_position": 112,
@@ -2056,15 +2060,19 @@
       "team": "LAL",
       "opponent": "UTAH",
       "game": "UTAH @ LAL",
-      "start_utc": null,
+      "start_utc": "2026-11-24T03:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/luka-doncic",
       "points_line": 35.5,
       "over_odd": 1.8264,
       "under_odd": 1.9434,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3945274",
+      "espn_event_id": "401910044",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-3945274",
+        "https://www.nba.com/game/uta-vs-lal-0022600295"
+      ]
     },
     {
       "original_offer_position": 118,
