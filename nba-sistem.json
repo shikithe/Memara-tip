@@ -6877,6 +6877,107 @@
               }
             }
           ]
+        },
+        {
+          "id": "10",
+          "stake": 8.64,
+          "status": "pending",
+          "total_odd": 3.4718,
+          "potential_payout": 30.0,
+          "legs": [
+            {
+              "player": "Zach LaVine",
+              "team": "SAC",
+              "opponent": "SA",
+              "pick": "over",
+              "points_line": 16.5,
+              "odd": 1.9009,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/zach-lavine",
+              "espn_event_id": "401910045",
+              "player_id": "3064440",
+              "start_utc": "2026-11-24T03:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 19,
+                    "minutes": 39
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Reliable prior five same-opponent player scoring box scores not independently collected."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Opponent defense against exact player position was not quantified from a reliable source."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "No verified specific individual defensive assignment before tipoff."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "23 Nov game-day reports reviewed; LaVine not on injury report, Luka not listed out, Wembanyama questionable back tightness."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No independently confirmed expected future minutes, only past played minutes when sourced."
+                },
+                "scout_score": 89,
+                "scout_note": "LaVine has a 20.5-point season average and about 18.6 over the last five, both above the frozen 16.5-point line. His last confirmed 20 Nov scoring was 19 in 39 minutes, clearing the line. This is an uncertain scouting judgement, not a guaranteed probability edge.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-10.json"
+              }
+            },
+            {
+              "player": "Luka Dončić",
+              "team": "LAL",
+              "opponent": "UTAH",
+              "pick": "over",
+              "points_line": 35.5,
+              "odd": 1.8264,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/luka-doncic",
+              "espn_event_id": "401910044",
+              "player_id": "3945274",
+              "start_utc": "2026-11-24T03:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 25,
+                    "minutes": 36
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Reliable prior five same-opponent player scoring box scores not independently collected."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Opponent defense against exact player position was not quantified from a reliable source."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "No verified specific individual defensive assignment before tipoff."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "23 Nov game-day reports reviewed; LaVine not on injury report, Luka not listed out, Wembanyama questionable back tightness."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No independently confirmed expected future minutes, only past played minutes when sourced."
+                },
+                "scout_score": 86,
+                "scout_note": "Dončić averages approximately 36 points this season, above the listed 35.5 line, and maintains very high shot volume against Utah. His most recent five-game mean is 33, below the line, so the season case is stronger than recent form. This is an uncertain scouting judgement, not a guaranteed probability edge.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-10.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -6889,15 +6990,16 @@
           6,
           7,
           8,
-          9
+          9,
+          10
         ],
         "offered": 122,
         "total_groups": 10,
-        "group_number": 9,
-        "group_range": "99-110",
+        "group_number": 10,
+        "group_range": "111-122",
         "group_selected": [
-          "Devin Vassell",
-          "Tyrese Maxey"
+          "Zach LaVine",
+          "Luka Dončić"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-23-group-1.json",
@@ -6908,7 +7010,8 @@
           "6": "collector-output/nba-system-scout-2026-11-23-group-6.json",
           "7": "collector-output/nba-system-scout-2026-11-23-group-7.json",
           "8": "collector-output/nba-system-scout-2026-11-23-group-8.json",
-          "9": "collector-output/nba-system-scout-2026-11-23-group-9.json"
+          "9": "collector-output/nba-system-scout-2026-11-23-group-9.json",
+          "10": "collector-output/nba-system-scout-2026-11-23-group-10.json"
         },
         "selection_method": "full_ranked_scout"
       },
