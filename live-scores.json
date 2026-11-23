@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "updated_at_utc": "2026-11-23T18:13:38.554748+00:00",
+  "updated_at_utc": "2026-11-23T18:42:25.511149+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -11,11 +11,12 @@
       "away": "Çorum FK",
       "state": "live",
       "fixture_id": "espn:football:tur.1:401888370",
-      "score": "0:1",
+      "score": "1:2",
       "source": "espn-public-unofficial",
       "event_id": "401888370",
       "league": "tur.1",
-      "minute": "53"
+      "minute": "82",
+      "result_status": "pogođen"
     },
     {
       "ticket": "A",
