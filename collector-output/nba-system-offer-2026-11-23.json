@@ -900,15 +900,18 @@
       "team": "MEM",
       "opponent": "CHA",
       "game": "MEM @ CHA",
-      "start_utc": null,
+      "start_utc": "2026-11-24T00:00:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/ty-jerome",
       "points_line": 22.5,
       "over_odd": 1.8333,
       "under_odd": 1.9434,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4065733",
+      "espn_event_id": "401910036",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-4065733"
+      ]
     },
     {
       "original_offer_position": 52,
@@ -985,15 +988,18 @@
       "team": "TOR",
       "opponent": "MIL",
       "game": "MIL @ TOR",
-      "start_utc": null,
+      "start_utc": "2026-11-24T00:30:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/immanuel-quickley",
       "points_line": 18.5,
       "over_odd": 1.885,
       "under_odd": 1.885,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4395724",
+      "espn_event_id": "401910039",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-4395724"
+      ]
     },
     {
       "original_offer_position": 57,
