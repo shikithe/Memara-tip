@@ -5970,22 +5970,165 @@
               }
             }
           ]
+        },
+        {
+          "id": "2",
+          "stake": 8.64,
+          "status": "pending",
+          "total_odd": 3.8487,
+          "potential_payout": 33.25,
+          "legs": [
+            {
+              "player": "Jarrett Allen",
+              "team": "CLE",
+              "opponent": "CHI",
+              "pick": "under",
+              "points_line": 14.5,
+              "odd": 1.9804,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/jarrett-allen",
+              "espn_event_id": "401910041",
+              "player_id": "4066328",
+              "start_utc": "2026-11-24T01:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 6,
+                    "minutes": 31
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 19,
+                    "minutes": 30
+                  },
+                  {
+                    "date": "2026-11-16",
+                    "points": 13,
+                    "minutes": 30
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 9,
+                    "minutes": 32
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 11,
+                    "minutes": 32
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Last five reliable player-specific head-to-head game log rows versus this opponent unavailable."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Defender-position-specific points conceded were not independently confirmed."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Individual head-to-head on-ball defender has not been confirmed."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Reviewed 23 November official injury and preview reports; Allen not listed out, Amen had prior knee issue."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No independently verified minutes projection; only historical played minutes where sourced."
+                },
+                "scout_score": 91,
+                "scout_note": "Four of five confirmed recent scores were below 14.5: 6,19,13,9,11, last-five average 11.6 and current season 12.6, both below line. This is a qualitative evidence-based assessment without calibrated true betting edge.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-2.json"
+              }
+            },
+            {
+              "player": "Amen Thompson",
+              "team": "HOU",
+              "opponent": "LAC",
+              "pick": "over",
+              "points_line": 15.5,
+              "odd": 1.9434,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/amen-thompson",
+              "espn_event_id": "401910043",
+              "player_id": "4684740",
+              "start_utc": "2026-11-24T01:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 22,
+                    "minutes": 26
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 15,
+                    "minutes": 31
+                  },
+                  {
+                    "date": "2026-11-15",
+                    "points": 26,
+                    "minutes": 29
+                  },
+                  {
+                    "date": "2026-11-13",
+                    "points": 12,
+                    "minutes": 41
+                  },
+                  {
+                    "date": "2026-11-11",
+                    "points": 19,
+                    "minutes": 29
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Last five reliable player-specific head-to-head game log rows versus this opponent unavailable."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Defender-position-specific points conceded were not independently confirmed."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Individual head-to-head on-ball defender has not been confirmed."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Reviewed 23 November official injury and preview reports; Allen not listed out, Amen had prior knee issue."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No independently verified minutes projection; only historical played minutes where sourced."
+                },
+                "scout_score": 86,
+                "scout_note": "Amen scored 22,15,26,12,19 in his last five, three above 15.5, for an average of 18.8; season rate 16.1 and high-pressure transition scoring could carry over. This is a qualitative evidence-based assessment without calibrated true betting edge.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-2.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
         "groups_completed": [
-          1
+          1,
+          2
         ],
         "offered": 122,
         "total_groups": 10,
-        "group_number": 1,
-        "group_range": "1-13",
+        "group_number": 2,
+        "group_range": "14-26",
         "group_selected": [
-          "Ayo Dosunmu",
-          "Danny Wolf"
+          "Jarrett Allen",
+          "Amen Thompson"
         ],
         "audit_paths": {
-          "1": "collector-output/nba-system-scout-2026-11-23-group-1.json"
+          "1": "collector-output/nba-system-scout-2026-11-23-group-1.json",
+          "2": "collector-output/nba-system-scout-2026-11-23-group-2.json"
         },
         "selection_method": "full_ranked_scout"
       },
