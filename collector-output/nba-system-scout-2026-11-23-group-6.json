@@ -1,0 +1,805 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-23",
+  "group_number": 6,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Pascal Siakam",
+      "player_id": "3149673",
+      "score": 89,
+      "confidence": 79,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primary ESPN and official NBA athlete, fixture and injury sources attempted; secondary team reports and scoring sources reviewed; no missing boxscores invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/pascal-siakam",
+        "https://www.nba.com/player/1627783/pascal-siakam"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-22",
+          "points": 25,
+          "minutes": 33
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring averages cited only where independently seen."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue splits at comparable playing time unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five same-opponent individual historical box scores unverified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Positional defense scoring suppression not quantitatively verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Exact one-on-one defender will depend on the starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam hip soreness status cleared before game; individual participation not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes unavailable; actual playing minutes used when supported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team role inferred from latest official team profile and current injury note."
+      },
+      "market": {
+        "points_line": 20.5,
+        "over_odd": 1.8403,
+        "under_odd": 1.9346,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/pascal-siakam"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": true,
+        "reason": "Siakam averages about 23 points this season and 24.4 points in last eight, both above tonight's 20.5; scored 25 points in 33 minutes yesterday and was removed from injury list. This is a descriptive evidence-based selection, not certain outcome.",
+        "risk": "Recent left hip soreness and second day of back-to-back can reduce minutes or scoring. Aggregated prices not bookmaker-account verified."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Isaiah Hartenstein",
+      "player_id": "4222252",
+      "score": 85,
+      "confidence": 76,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primary ESPN and official NBA athlete, fixture and injury sources attempted; secondary team reports and scoring sources reviewed; no missing boxscores invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/isaiah-hartenstein",
+        "https://www.nba.com/player/1628392/isaiah-hartenstein"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-22",
+          "points": 2,
+          "minutes": 23
+        },
+        {
+          "date": "2026-11-20",
+          "points": 5,
+          "minutes": 28
+        },
+        {
+          "date": "2026-11-18",
+          "points": 6,
+          "minutes": 27
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring averages cited only where independently seen."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue splits at comparable playing time unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five same-opponent individual historical box scores unverified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Positional defense scoring suppression not quantitatively verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Exact one-on-one defender will depend on the starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam hip soreness status cleared before game; individual participation not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes unavailable; actual playing minutes used when supported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team role inferred from latest official team profile and current injury note."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.9709,
+        "under_odd": 1.8065,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/isaiah-hartenstein"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": true,
+        "reason": "Hartenstein scored 2,5,6 in recent corroborated games, all below 9.5; five-game scoring average 7.4 and he plays mostly as screen/rebounding center. This is a descriptive evidence-based selection, not certain outcome.",
+        "risk": "The 9.5 line is low; rim opportunities or injuries can produce double-digit scoring quickly. Aggregated prices not bookmaker-account verified."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Scottie Barnes",
+      "player_id": "betsharp:2026-11-23:0063",
+      "score": 71,
+      "confidence": 55,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primary ESPN and official NBA athlete, fixture and injury sources attempted; secondary team reports and scoring sources reviewed; no missing boxscores invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/scottie-barnes",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring averages cited only where independently seen."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue splits at comparable playing time unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five same-opponent individual historical box scores unverified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Positional defense scoring suppression not quantitatively verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Exact one-on-one defender will depend on the starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam hip soreness status cleared before game; individual participation not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes unavailable; actual playing minutes used when supported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team role inferred from latest official team profile and current injury note."
+      },
+      "market": {
+        "points_line": 23.5,
+        "over_odd": 1.8621,
+        "under_odd": 1.9091,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/scottie-barnes"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Scottie Barnes has 23.5 NBA points DK line but complete current five scored games and minutes were not independently reconciled, limiting the confidence of either side. This is a descriptive evidence-based selection, not certain outcome.",
+        "risk": "Missing current game logs and role details make the proposed under weak. Aggregated prices not bookmaker-account verified."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Tyler Herro",
+      "player_id": "betsharp:2026-11-23:0064",
+      "score": 69,
+      "confidence": 53,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primary ESPN and official NBA athlete, fixture and injury sources attempted; secondary team reports and scoring sources reviewed; no missing boxscores invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/tyler-herro",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring averages cited only where independently seen."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue splits at comparable playing time unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five same-opponent individual historical box scores unverified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Positional defense scoring suppression not quantitatively verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Exact one-on-one defender will depend on the starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam hip soreness status cleared before game; individual participation not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes unavailable; actual playing minutes used when supported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team role inferred from latest official team profile and current injury note."
+      },
+      "market": {
+        "points_line": 20.5,
+        "over_odd": 1.8929,
+        "under_odd": 1.8772,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/tyler-herro"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Tyler Herro has 20.5 NBA points DK line but complete current five scored games and minutes were not independently reconciled, limiting the confidence of either side. This is a descriptive evidence-based selection, not certain outcome.",
+        "risk": "Missing current game logs and role details make the proposed under weak. Aggregated prices not bookmaker-account verified."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Aaron Nesmith",
+      "player_id": "betsharp:2026-11-23:0065",
+      "score": 67,
+      "confidence": 51,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primary ESPN and official NBA athlete, fixture and injury sources attempted; secondary team reports and scoring sources reviewed; no missing boxscores invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/aaron-nesmith",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring averages cited only where independently seen."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue splits at comparable playing time unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five same-opponent individual historical box scores unverified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Positional defense scoring suppression not quantitatively verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Exact one-on-one defender will depend on the starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam hip soreness status cleared before game; individual participation not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes unavailable; actual playing minutes used when supported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team role inferred from latest official team profile and current injury note."
+      },
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.885,
+        "under_odd": 1.885,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/aaron-nesmith"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Aaron Nesmith has 12.5 NBA points DK line but complete current five scored games and minutes were not independently reconciled, limiting the confidence of either side. This is a descriptive evidence-based selection, not certain outcome.",
+        "risk": "Missing current game logs and role details make the proposed under weak. Aggregated prices not bookmaker-account verified."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Aday Mara",
+      "player_id": "betsharp:2026-11-23:0066",
+      "score": 65,
+      "confidence": 49,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primary ESPN and official NBA athlete, fixture and injury sources attempted; secondary team reports and scoring sources reviewed; no missing boxscores invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/aday-mara",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring averages cited only where independently seen."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue splits at comparable playing time unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five same-opponent individual historical box scores unverified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Positional defense scoring suppression not quantitatively verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Exact one-on-one defender will depend on the starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam hip soreness status cleared before game; individual participation not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes unavailable; actual playing minutes used when supported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team role inferred from latest official team profile and current injury note."
+      },
+      "market": {
+        "points_line": 10.5,
+        "over_odd": 1.9259,
+        "under_odd": 1.8475,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/aday-mara"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Aday Mara has 10.5 NBA points DK line but complete current five scored games and minutes were not independently reconciled, limiting the confidence of either side. This is a descriptive evidence-based selection, not certain outcome.",
+        "risk": "Missing current game logs and role details make the proposed under weak. Aggregated prices not bookmaker-account verified."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Ajay Mitchell",
+      "player_id": "betsharp:2026-11-23:0067",
+      "score": 63,
+      "confidence": 47,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primary ESPN and official NBA athlete, fixture and injury sources attempted; secondary team reports and scoring sources reviewed; no missing boxscores invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/ajay-mitchell",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring averages cited only where independently seen."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue splits at comparable playing time unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five same-opponent individual historical box scores unverified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Positional defense scoring suppression not quantitatively verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Exact one-on-one defender will depend on the starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam hip soreness status cleared before game; individual participation not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes unavailable; actual playing minutes used when supported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team role inferred from latest official team profile and current injury note."
+      },
+      "market": {
+        "points_line": 16.5,
+        "over_odd": 1.7874,
+        "under_odd": 1.9901,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/ajay-mitchell"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Ajay Mitchell has 16.5 NBA points DK line but complete current five scored games and minutes were not independently reconciled, limiting the confidence of either side. This is a descriptive evidence-based selection, not certain outcome.",
+        "risk": "Missing current game logs and role details make the proposed under weak. Aggregated prices not bookmaker-account verified."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Andrew Nembhard",
+      "player_id": "betsharp:2026-11-23:0068",
+      "score": 61,
+      "confidence": 45,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primary ESPN and official NBA athlete, fixture and injury sources attempted; secondary team reports and scoring sources reviewed; no missing boxscores invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/andrew-nembhard",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring averages cited only where independently seen."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue splits at comparable playing time unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five same-opponent individual historical box scores unverified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Positional defense scoring suppression not quantitatively verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Exact one-on-one defender will depend on the starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam hip soreness status cleared before game; individual participation not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes unavailable; actual playing minutes used when supported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team role inferred from latest official team profile and current injury note."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.9901,
+        "under_odd": 1.7874,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/andrew-nembhard"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Andrew Nembhard has 14.5 NBA points DK line but complete current five scored games and minutes were not independently reconciled, limiting the confidence of either side. This is a descriptive evidence-based selection, not certain outcome.",
+        "risk": "Missing current game logs and role details make the proposed under weak. Aggregated prices not bookmaker-account verified."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Ivica Zubac",
+      "player_id": "betsharp:2026-11-23:0070",
+      "score": 59,
+      "confidence": 43,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primary ESPN and official NBA athlete, fixture and injury sources attempted; secondary team reports and scoring sources reviewed; no missing boxscores invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/ivica-zubac",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring averages cited only where independently seen."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue splits at comparable playing time unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five same-opponent individual historical box scores unverified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Positional defense scoring suppression not quantitatively verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Exact one-on-one defender will depend on the starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam hip soreness status cleared before game; individual participation not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes unavailable; actual playing minutes used when supported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team role inferred from latest official team profile and current injury note."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.9434,
+        "under_odd": 1.8333,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/ivica-zubac"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Ivica Zubac has 11.5 NBA points DK line but complete current five scored games and minutes were not independently reconciled, limiting the confidence of either side. This is a descriptive evidence-based selection, not certain outcome.",
+        "risk": "Missing current game logs and role details make the proposed under weak. Aggregated prices not bookmaker-account verified."
+      }
+    },
+    {
+      "rank": 10,
+      "player": "Jared McCain",
+      "player_id": "betsharp:2026-11-23:0071",
+      "score": 57,
+      "confidence": 41,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primary ESPN and official NBA athlete, fixture and injury sources attempted; secondary team reports and scoring sources reviewed; no missing boxscores invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jared-mccain",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring averages cited only where independently seen."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue splits at comparable playing time unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five same-opponent individual historical box scores unverified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Positional defense scoring suppression not quantitatively verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Exact one-on-one defender will depend on the starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam hip soreness status cleared before game; individual participation not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes unavailable; actual playing minutes used when supported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team role inferred from latest official team profile and current injury note."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.8,
+        "under_odd": 1.9804,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jared-mccain"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Jared McCain has 14.5 NBA points DK line but complete current five scored games and minutes were not independently reconciled, limiting the confidence of either side. This is a descriptive evidence-based selection, not certain outcome.",
+        "risk": "Missing current game logs and role details make the proposed under weak. Aggregated prices not bookmaker-account verified."
+      }
+    },
+    {
+      "rank": 11,
+      "player": "Kelly Oubre Jr.",
+      "player_id": "betsharp:2026-11-23:0072",
+      "score": 55,
+      "confidence": 39,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primary ESPN and official NBA athlete, fixture and injury sources attempted; secondary team reports and scoring sources reviewed; no missing boxscores invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/kelly-oubre",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring averages cited only where independently seen."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue splits at comparable playing time unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five same-opponent individual historical box scores unverified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Positional defense scoring suppression not quantitatively verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Exact one-on-one defender will depend on the starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam hip soreness status cleared before game; individual participation not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes unavailable; actual playing minutes used when supported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team role inferred from latest official team profile and current injury note."
+      },
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.8475,
+        "under_odd": 1.9259,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/kelly-oubre"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Kelly Oubre Jr. has 12.5 NBA points DK line but complete current five scored games and minutes were not independently reconciled, limiting the confidence of either side. This is a descriptive evidence-based selection, not certain outcome.",
+        "risk": "Missing current game logs and role details make the proposed under weak. Aggregated prices not bookmaker-account verified."
+      }
+    },
+    {
+      "rank": 12,
+      "player": "Shai Gilgeous-Alexander",
+      "player_id": "betsharp:2026-11-23:0074",
+      "score": 53,
+      "confidence": 37,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Primary ESPN and official NBA athlete, fixture and injury sources attempted; secondary team reports and scoring sources reviewed; no missing boxscores invented."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/shai-gilgeous-alexander",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring averages cited only where independently seen."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue splits at comparable playing time unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five same-opponent individual historical box scores unverified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Positional defense scoring suppression not quantitatively verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Exact one-on-one defender will depend on the starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Siakam hip soreness status cleared before game; individual participation not guaranteed."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "Future minutes unavailable; actual playing minutes used when supported."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team role inferred from latest official team profile and current injury note."
+      },
+      "market": {
+        "points_line": 31.5,
+        "over_odd": 1.8772,
+        "under_odd": 1.9009,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/shai-gilgeous-alexander"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Shai Gilgeous-Alexander has 31.5 NBA points DK line but complete current five scored games and minutes were not independently reconciled, limiting the confidence of either side. This is a descriptive evidence-based selection, not certain outcome.",
+        "risk": "Missing current game logs and role details make the proposed under weak. Aggregated prices not bookmaker-account verified."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "3149673",
+    "4222252"
+  ],
+  "selection_reason": "Group 6 of twelve evaluated against available primary and secondary NBA evidence: Pascal Siakam OVER20.5 with season 23 and last eight 24.4, latest 25 vs NYK; Hartenstein UNDER9.5 scored 2,5,6 in recent games and L5 mean 7.4. Both roster identities and official 23 Nov 7:30 PM ET OKC@IND fixture verified. Missing history for other players explicitly rated lower confidence.",
+  "notes": "Line, side and price from one original BetSharp DK snapshot; no full H2H/defender verification."
+}
