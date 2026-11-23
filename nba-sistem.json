@@ -6343,6 +6343,112 @@
               }
             }
           ]
+        },
+        {
+          "id": "5",
+          "stake": 8.64,
+          "status": "pending",
+          "total_odd": 3.6633,
+          "potential_payout": 31.65,
+          "legs": [
+            {
+              "player": "Immanuel Quickley",
+              "team": "TOR",
+              "opponent": "MIL",
+              "pick": "over",
+              "points_line": 18.5,
+              "odd": 1.885,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/immanuel-quickley",
+              "espn_event_id": "401910039",
+              "player_id": "4395724",
+              "start_utc": "2026-11-24T00:30:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-20",
+                    "points": 18,
+                    "minutes": 33
+                  },
+                  {
+                    "date": "2026-11-18",
+                    "points": 24,
+                    "minutes": 34
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five individual opponent-specific points box scores not independently verified."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Position-by-position opponent defensive points efficiency not independently established."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Defensive assignment cannot be reliably known before lineups."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Toronto Barrett out with hamstring issue; Jerome prior hip issue, no verified active guarantee."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No reliable official future-minute estimate; actual minutes included only when verified."
+                },
+                "scout_score": 87,
+                "scout_note": "Quickley averages 19.8 in the last five, above his 18.5 DK points line; 18 in latest and 24 in prior verified games. Toronto currently without RJ Barrett, potentially boosting usage. Evidence is partial and the true outcome chance is unknown.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-5.json"
+              }
+            },
+            {
+              "player": "Ty Jerome",
+              "team": "MEM",
+              "opponent": "CHA",
+              "pick": "under",
+              "points_line": 22.5,
+              "odd": 1.9434,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/ty-jerome",
+              "espn_event_id": "401910036",
+              "player_id": "4065733",
+              "start_utc": "2026-11-24T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-21",
+                    "points": 18,
+                    "minutes": 27
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five individual opponent-specific points box scores not independently verified."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Position-by-position opponent defensive points efficiency not independently established."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Defensive assignment cannot be reliably known before lineups."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Toronto Barrett out with hamstring issue; Jerome prior hip issue, no verified active guarantee."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No reliable official future-minute estimate; actual minutes included only when verified."
+                },
+                "scout_score": 81,
+                "scout_note": "Jerome averages 21 in last five, below 22.5 points line, and Nov21 scored 18 in 27 minutes; his limited 27-minute latest appearance can create a mild under lean. Evidence is partial and the true outcome chance is unknown.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-5.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -6350,21 +6456,23 @@
           1,
           2,
           3,
-          4
+          4,
+          5
         ],
         "offered": 122,
         "total_groups": 10,
-        "group_number": 4,
-        "group_range": "39-50",
+        "group_number": 5,
+        "group_range": "51-62",
         "group_selected": [
-          "Cedric Coward",
-          "Coby White"
+          "Immanuel Quickley",
+          "Ty Jerome"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-23-group-1.json",
           "2": "collector-output/nba-system-scout-2026-11-23-group-2.json",
           "3": "collector-output/nba-system-scout-2026-11-23-group-3.json",
-          "4": "collector-output/nba-system-scout-2026-11-23-group-4.json"
+          "4": "collector-output/nba-system-scout-2026-11-23-group-4.json",
+          "5": "collector-output/nba-system-scout-2026-11-23-group-5.json"
         },
         "selection_method": "full_ranked_scout"
       },
