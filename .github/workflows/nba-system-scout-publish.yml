@@ -11,6 +11,7 @@ on:
       - 'collector-output/nba-system-scout-*.json'
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: nba-system-ledger
   cancel-in-progress: false
@@ -62,3 +63,12 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
+      - name: Start NBA ten-ticket live scores and quarters after publication
+        if: success()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh workflow run nba-system-live.yml --repo "$GH_REPO" --ref main
+          echo "NBA_TEN_LIVE_TRACKING_DISPATCHED"
