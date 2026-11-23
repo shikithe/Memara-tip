@@ -6671,6 +6671,112 @@
               }
             }
           ]
+        },
+        {
+          "id": "8",
+          "stake": 8.64,
+          "status": "pending",
+          "total_odd": 3.5385,
+          "potential_payout": 30.57,
+          "legs": [
+            {
+              "player": "Deni Avdija",
+              "team": "POR",
+              "opponent": "PHI",
+              "pick": "over",
+              "points_line": 23.5,
+              "odd": 1.885,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/deni-avdija",
+              "espn_event_id": "401910037",
+              "player_id": "4683021",
+              "start_utc": "2026-11-24T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-21",
+                    "points": 20,
+                    "minutes": 36
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five prior scoring games against specific opponent not independently confirmed."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Player position defensive ratings not reliably established."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Expected individual defender cannot be confirmed ahead of lineups."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Embiid questionable with illness, Zion probable with thigh issue; selected players not affirmatively confirmed by final game roster."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No confirmed expected future playing time minutes available."
+                },
+                "scout_score": 87,
+                "scout_note": "Avdija season scoring 23.9 and last-ten 24.3 sit slightly above the 23.5 threshold; 28 points against OKC recently, but 20 in last game. Rankings reflect only observed available facts.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-8.json"
+              }
+            },
+            {
+              "player": "Damian Lillard",
+              "team": "POR",
+              "opponent": "PHI",
+              "pick": "over",
+              "points_line": 21.5,
+              "odd": 1.8772,
+              "bookmaker": "DraftKings",
+              "source": "https://betsharp.com/nba/player/damian-lillard",
+              "espn_event_id": "401910037",
+              "player_id": "6606",
+              "start_utc": "2026-11-24T00:00:00Z",
+              "status": "pending",
+              "analysis": {
+                "last_five": [
+                  {
+                    "date": "2026-11-21",
+                    "points": 15,
+                    "minutes": 33
+                  },
+                  {
+                    "date": "2026-11-17",
+                    "points": 25,
+                    "minutes": 31
+                  }
+                ],
+                "h2h": {
+                  "status": "not_verified",
+                  "reason": "Five prior scoring games against specific opponent not independently confirmed."
+                },
+                "opponent_defense": {
+                  "status": "not_verified",
+                  "reason": "Player position defensive ratings not reliably established."
+                },
+                "direct_defender": {
+                  "status": "not_verified",
+                  "reason": "Expected individual defender cannot be confirmed ahead of lineups."
+                },
+                "injuries": {
+                  "status": "partially_verified",
+                  "note": "Embiid questionable with illness, Zion probable with thigh issue; selected players not affirmatively confirmed by final game roster."
+                },
+                "minutes_projection": {
+                  "status": "not_verified",
+                  "reason": "No confirmed expected future playing time minutes available."
+                },
+                "scout_score": 83,
+                "scout_note": "Lillard last-five scoring average 22.2 sits just above 21.5 line, with a confirmed 25-point game versus Minnesota. Rankings reflect only observed available facts.",
+                "audit": "collector-output/nba-system-scout-2026-11-23-group-8.json"
+              }
+            }
+          ]
         }
       ],
       "scout": {
@@ -6681,15 +6787,16 @@
           4,
           5,
           6,
-          7
+          7,
+          8
         ],
         "offered": 122,
         "total_groups": 10,
-        "group_number": 7,
-        "group_range": "75-86",
+        "group_number": 8,
+        "group_range": "87-98",
         "group_selected": [
-          "Saddiq Bey",
-          "Dillon Brooks"
+          "Deni Avdija",
+          "Damian Lillard"
         ],
         "audit_paths": {
           "1": "collector-output/nba-system-scout-2026-11-23-group-1.json",
@@ -6698,7 +6805,8 @@
           "4": "collector-output/nba-system-scout-2026-11-23-group-4.json",
           "5": "collector-output/nba-system-scout-2026-11-23-group-5.json",
           "6": "collector-output/nba-system-scout-2026-11-23-group-6.json",
-          "7": "collector-output/nba-system-scout-2026-11-23-group-7.json"
+          "7": "collector-output/nba-system-scout-2026-11-23-group-7.json",
+          "8": "collector-output/nba-system-scout-2026-11-23-group-8.json"
         },
         "selection_method": "full_ranked_scout"
       },
