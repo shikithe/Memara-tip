@@ -1,179 +1,140 @@
 {
-  "date": "2026-11-22",
+  "date": "2026-11-23",
   "approval_source": "chatgpt_ai_analyst",
-  "approved_at_utc": "2026-11-22T17:06:00Z",
+  "approved_at_utc": "2026-11-23T18:12:30Z",
   "publication_allowed": true,
   "state": "nba_c_ai_manual_approved_for_technical_publishing",
-  "manual_c_stake_override": "2026-11-22_2pct_bank_start",
   "tickets": [
     {
       "id": "C",
-      "analysis": "Izričito odobren RUČNI C 22.11. sa ulogom 2% početne dnevne banke 241,60 € = 4,83 €, izvan već potrošenog 10% budžeta; samo virtuelna evidencija. Ausar Thompson OVER 11,5: zadnjih pet 13/10/14/10/17, prosjek 12,8, 3/5 preko; sezonskih 10,6 ispod granice je glavni rizik. Isaiah Hartenstein UNDER 9,5: zadnjih pet 5/6/3/21/20, 3/5 ispod; prethodnih deset 8/10 ispod, prosjek 7,4; dvadeset+ poena u dva susreta pokazuje rizik. Kvote iz jedne konzistentne DK kolone svježeg BetSharp prikaza, samo indikativne; direktni matchup/H2H nije dovoljno potvrđen. Od sutra redovna rezerva C 1,5% banke.",
+      "analysis": "Ručni NBA C 23.11: Booker manje 26,5 @1,8475 (L5 prosjek 23,8, zadnji potvrđeni 23 poena u 38 minuta) i Donovan Mitchell manje 26,5 @1,9346 (zadnji 20 poena, ali L5 prosjek drugog izvora 28,2 predstavlja značajan rizik). Igrači su u stvarnim sastavima PHX/CLE, utakmice imaju potvrđene ESPN ID i počinju u 01:00 UTC 24.11. Obje granice i kvote uzete su iz jedne DK kolone novog BetSharp snapshot-a od 23.11. Izostanci, čuvari i H2H nepotpuno potvrđeni, ne prikazuje se kao potpuni 122-player Scout.",
       "matches": [
         {
-          "player_id": "4684742",
-          "player": "Ausar Thompson",
-          "espn_event_id": "401910029",
-          "team": "Detroit Pistons",
-          "opponent": "Atlanta Hawks",
-          "start_utc": "2026-11-22T20:30:00Z",
+          "player_id": "3136193",
+          "player": "Devin Booker",
+          "espn_event_id": "401910042",
+          "team": "Phoenix Suns",
+          "opponent": "New Orleans Pelicans",
+          "start_utc": "2026-11-24T01:00:00Z",
           "market": "player_points",
-          "pick": "over",
-          "points_line": 11.5,
-          "odd": 1.8403,
+          "pick": "under",
+          "points_line": 26.5,
+          "odd": 1.8475,
           "bookmaker": "DraftKings",
-          "source": "https://betsharp.com/nba/player/ausar-thompson",
+          "source": "https://betsharp.com/nba/player/devin-booker",
           "quote_timestamp_verified": false
         },
         {
-          "player_id": "4222252",
-          "player": "Isaiah Hartenstein",
-          "espn_event_id": "401910030",
-          "team": "Oklahoma City Thunder",
-          "opponent": "Miami Heat",
-          "start_utc": "2026-11-22T23:00:00Z",
+          "player_id": "3908809",
+          "player": "Donovan Mitchell",
+          "espn_event_id": "401910041",
+          "team": "Cleveland Cavaliers",
+          "opponent": "Chicago Bulls",
+          "start_utc": "2026-11-24T01:00:00Z",
           "market": "player_points",
           "pick": "under",
-          "points_line": 9.5,
-          "odd": 1.885,
+          "points_line": 26.5,
+          "odd": 1.9346,
           "bookmaker": "DraftKings",
-          "source": "https://betsharp.com/nba/player/isaiah-hartenstein",
+          "source": "https://betsharp.com/nba/player/donovan-mitchell",
           "quote_timestamp_verified": false
         }
       ],
       "scout_analysis": {
-        "date": "2026-11-22",
-        "intro": "Ručni NBA C Scout, posebna dozvola korisnika za izuzetni ulog 2% banke. Dva analizirana igrača, ne tvrdi se da je detaljno istraženo svih 90 igrača u ponudi.",
+        "date": "2026-11-23",
+        "intro": "Ručni C: dva provjerena NBA roster identiteta i dva buduća termina, ponuda iz istodnevnog BetSharp kolektora (122 ukupna reda; nepotvrđeni timovi ignorisani). Nisu sva 122 kandidata detaljno istražena. Scout ograničen na dostupne pouzdane informacije.",
         "players": [
           {
-            "id": "4684742",
-            "name": "Ausar Thompson",
-            "team": "Detroit Pistons",
-            "opponent": "Atlanta Hawks",
-            "pick": "over",
-            "line": 11.5,
-            "odd": 1.8403,
+            "id": "3136193",
+            "name": "Devin Booker",
+            "team": "Phoenix Suns",
+            "opponent": "New Orleans Pelicans",
+            "pick": "under",
+            "line": 26.5,
+            "odd": 1.8475,
             "games": [
               [
                 "20.11.",
-                13,
-                33
-              ],
-              [
-                "18.11.",
-                10,
-                34
-              ],
-              [
-                "17.11.",
-                14,
-                29
-              ],
-              [
-                "14.11.",
-                10,
-                18
-              ],
-              [
-                "12.11.",
-                17,
-                43
+                23,
+                38
               ]
             ],
             "h2h": [],
-            "last10": "4/10 OVER prema Reko; kompletni log nije nezavisno obrađen",
+            "last10": "Nije potvrđeno",
             "pros": [
-              "Posljednjih pet: 13, 10, 14, 10, 17 poena, prosjek 12,8.",
-              "Granica 11,5 pređena u 3 od 5 posljednjih nastupa.",
-              "U posljednja tri nastupa igrao je 29, 34 i 33 minute."
+              "Posljednjih pet odigranih utakmica: prosjek 23,8 poena po dostupnoj statistici.",
+              "U posljednjem provjerenom meču 20.11. postigao je 23 poena za 38 minuta.",
+              "Istodnevna BetSharp DK granica 26,5 poena, ponuđeni UNDER 1,8475."
             ],
             "risks": [
-              "Sezonski prosjek 10,6 poena niži je od granice 11,5.",
-              "Samo 4/10 preko prema drugom izvoru, pa L5 porast može biti kratkotrajan.",
-              "Direktni čuvar i H2H protiv Hawksa nisu potvrđeni."
+              "Prosjek posljednjih pet nije procijenjena vjerovatnoća za ovaj prag.",
+              "Devin Booker ima visoku napadačku ulogu i može preskočiti granicu u jednoj efikasnoj večeri.",
+              "Nepotvrđeni su konkretan čuvar, H2H uzorak i konačna raspodjela šuteva."
             ],
-            "assessment": "Blaga prednost trenutnog L5 trenda, ali sezonski profil i duži niz ne potvrđuju jak edge; povišen rizik.",
+            "assessment": "Umjeren UNDER oslonjen na posljednji skor 23 i prosjek 23,8 ispod 26,5; uzorak i matchup ne dokazuju prednost u odnosu na kvotu.",
             "sources": [
               [
-                "Nedavna forma i minute",
-                "https://www.statiqsports.com/nba/ausar-thompson/last-5-games"
+                "NBA profil / statistika",
+                "https://www.nba.com/player/1626164/devin-booker"
               ],
               [
-                "Sezonski prosjek i L10",
-                "https://reko.bet/nba/players/ausar-thompson-30962"
+                "Posljednjih pet, prosjek",
+                "https://www.statiqsports.com/nba/devin-booker/last-5-games"
               ],
               [
-                "BetSharp kvote",
-                "https://betsharp.com/nba/player/ausar-thompson"
+                "Službena najava meča",
+                "https://www.nba.com/pelicans/news/pelicans-vs-suns-injury-report-game-preview-11-23-2026"
+              ],
+              [
+                "BetSharp cijena",
+                "https://betsharp.com/nba/player/devin-booker"
               ]
             ]
           },
           {
-            "id": "4222252",
-            "name": "Isaiah Hartenstein",
-            "team": "Oklahoma City Thunder",
-            "opponent": "Miami Heat",
+            "id": "3908809",
+            "name": "Donovan Mitchell",
+            "team": "Cleveland Cavaliers",
+            "opponent": "Chicago Bulls",
             "pick": "under",
-            "line": 9.5,
-            "odd": 1.885,
-            "games": [
-              [
-                "20.11.",
-                5,
-                28
-              ],
-              [
-                "18.11.",
-                6,
-                27
-              ],
-              [
-                "15.11.",
-                3,
-                18
-              ],
-              [
-                "13.11.",
-                21,
-                30
-              ],
-              [
-                "11.11.",
-                20,
-                34
-              ]
-            ],
+            "line": 26.5,
+            "odd": 1.9346,
+            "games": [],
             "h2h": [],
-            "last10": "8/10 UNDER 9,5 poena",
+            "last10": "Nije kompletno potvrđeno; procjene izvora razilaze se",
             "pros": [
-              "Posljednjih pet: 5, 6, 3, 21, 20; 3/5 ispod granice 9,5.",
-              "U posljednjih deset mečeva postigao je u prosjeku 7,4 poena.",
-              "U 8/10 posljednjih odigranih utakmica ostao je ispod 9,5."
+              "Službeni Cleveland preview za posljednju utakmicu protiv Memphisa bilježi 20 poena Mitchella.",
+              "Zabilježena dnevna BetSharp DK ponuda UNDER 26,5 poena po kvoti 1,9346.",
+              "Mitchell nije naveden na Clevelandovoj listi nedostupnih igrača u najavi meča."
             ],
             "risks": [
-              "Dva od posljednjih pet mečeva postigao je 20 ili više poena.",
-              "Na terenu može dobiti šansu za lake poene iz reketa i drugog napada.",
-              "Direktni čuvar protiv Heata i H2H nisu potvrđeni."
+              "Prema jednoj dostupnoj statistici prosjek posljednjih pet utakmica iznosi čak 28,2 poena, iznad granice.",
+              "Mitchell je visokovolumenski strijelac; visoka kvota ne znači statističku vrijednost.",
+              "Nema potvrđenih posljednjih pet redova s minutama, niti sigurnog H2H i direktnog čuvara."
             ],
-            "assessment": "UNDER je oslonjen na 8/10 ispod granice i nizak prosjek; no mali prag lako prelazi u večeri s većim brojem šuteva.",
+            "assessment": "Rizičan UNDER, uprkos posljednjih 20 poena; ukupna novija forma i značajna individualna potrošnja ne daju jaku statističku prednost. Ovaj izbor je slabije potkrijepljen od Bookera.",
             "sources": [
               [
-                "Poeni i minutaža zadnjih 10",
-                "https://nbahouse.net/props/isaiah-hartenstein"
+                "Cleveland službena najava",
+                "https://www.nba.com/cavaliers/news/preview-clechi-261123"
               ],
               [
-                "BetSharp kvote",
-                "https://betsharp.com/nba/player/isaiah-hartenstein"
+                "NBA profil",
+                "https://www.nba.com/player/1628378/donovan-mitchell"
               ],
               [
-                "Provjera statusa",
-                "https://www.fsroundup.com/nba-player/isaiah-hartenstein"
+                "Pregled forme",
+                "https://www.legchecksports.com/players/nba/donovan-mitchell/"
+              ],
+              [
+                "BetSharp cijena",
+                "https://betsharp.com/nba/player/donovan-mitchell"
               ]
             ]
           }
         ],
-        "conclusion": "Ausar Thompson više od 11,5 @1,8403 i Isaiah Hartenstein manje od 9,5 @1,885; ukupna indikativna kvota 3,47, virtuelni ulog 4,83 €. Posebni današnji budžetski izuzetak.",
-        "caution": "Kvote su iz uporedne javne BetSharp DK kolone, nisu direktno potvrđene kod DraftKings-a; H2H i čuvari nisu potvrđeni. Nije izvršen potpuni TOP20-TOP10-TOP5 proces na svima iz ponude."
+        "conclusion": "Devin Booker UNDER 26,5 @1,8475 i Donovan Mitchell UNDER 26,5 @1,9346; kombinovana referentna kvota 3,57. Za oba su potvrđeni klub, protivnik, ESPN identitet i budući početak. Redovni C ulog 1,5% B0 = 4,14 € uz dnevni budžet. Najveći rizik: Donovanova petomečna forma nije jasna prednost za UNDER.",
+        "caution": "BetSharp kvote su uporedne, nisu direktno potvrđene u bookmaker računu. Nije rađena potpuna TOP20/TOP10/TOP5 analiza svih igrača, direktni čuvari i H2H nisu provjereni, neki zadnji rezultati djelimični."
       }
     }
   ]
