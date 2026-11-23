@@ -1,0 +1,794 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-23",
+  "group_number": 9,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Devin Vassell",
+      "player_id": "4395630",
+      "score": 90,
+      "confidence": 80,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN/NBA roster and match lookup; searched secondary recent player log and official NBA injury data. Only actual corroborated dated rows shown, unknown entries omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/devin-vassell",
+        "https://www.legchecksports.com/players/nba/devin-vassell/"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-17",
+          "points": 12,
+          "minutes": 36
+        },
+        {
+          "date": "2026-11-13",
+          "points": 7,
+          "minutes": 23
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent averages included where sourced; scoring hit rate not equated with forecast probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific home-away scorer performance at similar minutes unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior exact-opponent individual scoring game logs not fully established."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Quantified position-specific opponent defense effects not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender assignment not verified before starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 November injury report checked: Victor Wembanyama questionable for back tightness; Vassell not listed out; Philadelphia injury situation can influence Maxey usage."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No trustworthy independently published forward playing-minute projection."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Player roles from NBA roster and recent game performance when supported."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.9091,
+        "under_odd": 1.8621,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/devin-vassell"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": true,
+        "reason": "Vassell averaged 10.0 points across his last five games and 11.3 this season, both clearly below the 14.5-point market line. In corroborated games he scored 12 in 36 minutes against Detroit and seven in 23 minutes in an earlier outing. This ranking is based on the best sources available, without a numerical predictive guarantee.",
+        "risk": "Guard starts for San Antonio and can break the line with outside shots; older groin/adductor injury history raises minutes uncertainty. Quoted prices originate from a comparison site and may change."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Tyrese Maxey",
+      "player_id": "4431678",
+      "score": 85,
+      "confidence": 69,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN/NBA roster and match lookup; searched secondary recent player log and official NBA injury data. Only actual corroborated dated rows shown, unknown entries omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/tyrese-maxey",
+        "https://www.statmuse.com/nba/ask/tyrese-maxey-last-5-games"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent averages included where sourced; scoring hit rate not equated with forecast probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific home-away scorer performance at similar minutes unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior exact-opponent individual scoring game logs not fully established."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Quantified position-specific opponent defense effects not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender assignment not verified before starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 November injury report checked: Victor Wembanyama questionable for back tightness; Vassell not listed out; Philadelphia injury situation can influence Maxey usage."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No trustworthy independently published forward playing-minute projection."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Player roles from NBA roster and recent game performance when supported."
+      },
+      "market": {
+        "points_line": 25.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/tyrese-maxey"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": true,
+        "reason": "Maxey averaged 23.8 points over the last five according to available independent recent-game aggregate, below the listed 25.5-point market line. This offers a modest descriptive under lean, not a predictive probability. This ranking is based on the best sources available, without a numerical predictive guarantee.",
+        "risk": "Maxey is Philadelphia's primary creator and averages about 25.9 season points; Joel Embiid illness or other roster absences could increase his shot volume. Quoted prices originate from a comparison site and may change."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Toumani Camara",
+      "player_id": "betsharp:2026-11-23:0099",
+      "score": 68,
+      "confidence": 51,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN/NBA roster and match lookup; searched secondary recent player log and official NBA injury data. Only actual corroborated dated rows shown, unknown entries omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/toumani-camara",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent averages included where sourced; scoring hit rate not equated with forecast probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific home-away scorer performance at similar minutes unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior exact-opponent individual scoring game logs not fully established."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Quantified position-specific opponent defense effects not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender assignment not verified before starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 November injury report checked: Victor Wembanyama questionable for back tightness; Vassell not listed out; Philadelphia injury situation can influence Maxey usage."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No trustworthy independently published forward playing-minute projection."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Player roles from NBA roster and recent game performance when supported."
+      },
+      "market": {
+        "points_line": 10.5,
+        "over_odd": 1.7692,
+        "under_odd": 2.02,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/toumani-camara"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Toumani Camara appears in the original 23 Nov BetSharp points offer with a DraftKings threshold of 10.5; current five game scoring and playing-time lines were not independently corroborated, so this is a low-confidence lean only. This ranking is based on the best sources available, without a numerical predictive guarantee.",
+        "risk": "Individual minutes, injury and opponent defensive matchups remain uncertain. Quoted prices originate from a comparison site and may change."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "VJ Edgecombe",
+      "player_id": "betsharp:2026-11-23:0101",
+      "score": 65,
+      "confidence": 48,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN/NBA roster and match lookup; searched secondary recent player log and official NBA injury data. Only actual corroborated dated rows shown, unknown entries omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/vj-edgecombe",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent averages included where sourced; scoring hit rate not equated with forecast probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific home-away scorer performance at similar minutes unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior exact-opponent individual scoring game logs not fully established."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Quantified position-specific opponent defense effects not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender assignment not verified before starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 November injury report checked: Victor Wembanyama questionable for back tightness; Vassell not listed out; Philadelphia injury situation can influence Maxey usage."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No trustworthy independently published forward playing-minute projection."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Player roles from NBA roster and recent game performance when supported."
+      },
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.885,
+        "under_odd": 1.8929,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/vj-edgecombe"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "VJ Edgecombe appears in the original 23 Nov BetSharp points offer with a DraftKings threshold of 12.5; current five game scoring and playing-time lines were not independently corroborated, so this is a low-confidence lean only. This ranking is based on the best sources available, without a numerical predictive guarantee.",
+        "risk": "Individual minutes, injury and opponent defensive matchups remain uncertain. Quoted prices originate from a comparison site and may change."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Darius Acuff Jr.",
+      "player_id": "betsharp:2026-11-23:0102",
+      "score": 62,
+      "confidence": 45,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN/NBA roster and match lookup; searched secondary recent player log and official NBA injury data. Only actual corroborated dated rows shown, unknown entries omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/darius-acuff",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent averages included where sourced; scoring hit rate not equated with forecast probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific home-away scorer performance at similar minutes unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior exact-opponent individual scoring game logs not fully established."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Quantified position-specific opponent defense effects not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender assignment not verified before starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 November injury report checked: Victor Wembanyama questionable for back tightness; Vassell not listed out; Philadelphia injury situation can influence Maxey usage."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No trustworthy independently published forward playing-minute projection."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Player roles from NBA roster and recent game performance when supported."
+      },
+      "market": {
+        "points_line": 23.5,
+        "over_odd": 1.9346,
+        "under_odd": 1.8403,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/darius-acuff"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Darius Acuff Jr. appears in the original 23 Nov BetSharp points offer with a DraftKings threshold of 23.5; current five game scoring and playing-time lines were not independently corroborated, so this is a low-confidence lean only. This ranking is based on the best sources available, without a numerical predictive guarantee.",
+        "risk": "Individual minutes, injury and opponent defensive matchups remain uncertain. Quoted prices originate from a comparison site and may change."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "De'Aaron Fox",
+      "player_id": "betsharp:2026-11-23:0103",
+      "score": 59,
+      "confidence": 42,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN/NBA roster and match lookup; searched secondary recent player log and official NBA injury data. Only actual corroborated dated rows shown, unknown entries omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/deaaron-fox",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent averages included where sourced; scoring hit rate not equated with forecast probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific home-away scorer performance at similar minutes unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior exact-opponent individual scoring game logs not fully established."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Quantified position-specific opponent defense effects not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender assignment not verified before starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 November injury report checked: Victor Wembanyama questionable for back tightness; Vassell not listed out; Philadelphia injury situation can influence Maxey usage."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No trustworthy independently published forward playing-minute projection."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Player roles from NBA roster and recent game performance when supported."
+      },
+      "market": {
+        "points_line": 15.5,
+        "over_odd": 1.7937,
+        "under_odd": 1.9901,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/deaaron-fox"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "De'Aaron Fox appears in the original 23 Nov BetSharp points offer with a DraftKings threshold of 15.5; current five game scoring and playing-time lines were not independently corroborated, so this is a low-confidence lean only. This ranking is based on the best sources available, without a numerical predictive guarantee.",
+        "risk": "Individual minutes, injury and opponent defensive matchups remain uncertain. Quoted prices originate from a comparison site and may change."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "De'Andre Hunter",
+      "player_id": "betsharp:2026-11-23:0104",
+      "score": 56,
+      "confidence": 39,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN/NBA roster and match lookup; searched secondary recent player log and official NBA injury data. Only actual corroborated dated rows shown, unknown entries omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/deandre-hunter",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent averages included where sourced; scoring hit rate not equated with forecast probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific home-away scorer performance at similar minutes unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior exact-opponent individual scoring game logs not fully established."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Quantified position-specific opponent defense effects not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender assignment not verified before starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 November injury report checked: Victor Wembanyama questionable for back tightness; Vassell not listed out; Philadelphia injury situation can influence Maxey usage."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No trustworthy independently published forward playing-minute projection."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Player roles from NBA roster and recent game performance when supported."
+      },
+      "market": {
+        "points_line": 13.5,
+        "over_odd": 1.813,
+        "under_odd": 1.9709,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/deandre-hunter"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "De'Andre Hunter appears in the original 23 Nov BetSharp points offer with a DraftKings threshold of 13.5; current five game scoring and playing-time lines were not independently corroborated, so this is a low-confidence lean only. This ranking is based on the best sources available, without a numerical predictive guarantee.",
+        "risk": "Individual minutes, injury and opponent defensive matchups remain uncertain. Quoted prices originate from a comparison site and may change."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Domantas Sabonis",
+      "player_id": "betsharp:2026-11-23:0106",
+      "score": 53,
+      "confidence": 36,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN/NBA roster and match lookup; searched secondary recent player log and official NBA injury data. Only actual corroborated dated rows shown, unknown entries omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/domantas-sabonis",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent averages included where sourced; scoring hit rate not equated with forecast probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific home-away scorer performance at similar minutes unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior exact-opponent individual scoring game logs not fully established."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Quantified position-specific opponent defense effects not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender assignment not verified before starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 November injury report checked: Victor Wembanyama questionable for back tightness; Vassell not listed out; Philadelphia injury situation can influence Maxey usage."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No trustworthy independently published forward playing-minute projection."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Player roles from NBA roster and recent game performance when supported."
+      },
+      "market": {
+        "points_line": 14.5,
+        "over_odd": 1.9901,
+        "under_odd": 1.8,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/domantas-sabonis"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Domantas Sabonis appears in the original 23 Nov BetSharp points offer with a DraftKings threshold of 14.5; current five game scoring and playing-time lines were not independently corroborated, so this is a low-confidence lean only. This ranking is based on the best sources available, without a numerical predictive guarantee.",
+        "risk": "Individual minutes, injury and opponent defensive matchups remain uncertain. Quoted prices originate from a comparison site and may change."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Julian Champagnie",
+      "player_id": "betsharp:2026-11-23:0107",
+      "score": 50,
+      "confidence": 33,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN/NBA roster and match lookup; searched secondary recent player log and official NBA injury data. Only actual corroborated dated rows shown, unknown entries omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/julian-champagnie",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent averages included where sourced; scoring hit rate not equated with forecast probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific home-away scorer performance at similar minutes unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior exact-opponent individual scoring game logs not fully established."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Quantified position-specific opponent defense effects not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender assignment not verified before starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 November injury report checked: Victor Wembanyama questionable for back tightness; Vassell not listed out; Philadelphia injury situation can influence Maxey usage."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No trustworthy independently published forward playing-minute projection."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Player roles from NBA roster and recent game performance when supported."
+      },
+      "market": {
+        "points_line": 13.5,
+        "over_odd": 1.9434,
+        "under_odd": 1.8264,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/julian-champagnie"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Julian Champagnie appears in the original 23 Nov BetSharp points offer with a DraftKings threshold of 13.5; current five game scoring and playing-time lines were not independently corroborated, so this is a low-confidence lean only. This ranking is based on the best sources available, without a numerical predictive guarantee.",
+        "risk": "Individual minutes, injury and opponent defensive matchups remain uncertain. Quoted prices originate from a comparison site and may change."
+      }
+    },
+    {
+      "rank": 10,
+      "player": "Keegan Murray",
+      "player_id": "betsharp:2026-11-23:0108",
+      "score": 47,
+      "confidence": 30,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN/NBA roster and match lookup; searched secondary recent player log and official NBA injury data. Only actual corroborated dated rows shown, unknown entries omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/keegan-murray",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent averages included where sourced; scoring hit rate not equated with forecast probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific home-away scorer performance at similar minutes unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior exact-opponent individual scoring game logs not fully established."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Quantified position-specific opponent defense effects not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender assignment not verified before starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 November injury report checked: Victor Wembanyama questionable for back tightness; Vassell not listed out; Philadelphia injury situation can influence Maxey usage."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No trustworthy independently published forward playing-minute projection."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Player roles from NBA roster and recent game performance when supported."
+      },
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/keegan-murray"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Keegan Murray appears in the original 23 Nov BetSharp points offer with a DraftKings threshold of 12.5; current five game scoring and playing-time lines were not independently corroborated, so this is a low-confidence lean only. This ranking is based on the best sources available, without a numerical predictive guarantee.",
+        "risk": "Individual minutes, injury and opponent defensive matchups remain uncertain. Quoted prices originate from a comparison site and may change."
+      }
+    },
+    {
+      "rank": 11,
+      "player": "Stephon Castle",
+      "player_id": "betsharp:2026-11-23:0109",
+      "score": 44,
+      "confidence": 27,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN/NBA roster and match lookup; searched secondary recent player log and official NBA injury data. Only actual corroborated dated rows shown, unknown entries omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/stephon-castle",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent averages included where sourced; scoring hit rate not equated with forecast probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific home-away scorer performance at similar minutes unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior exact-opponent individual scoring game logs not fully established."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Quantified position-specific opponent defense effects not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender assignment not verified before starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 November injury report checked: Victor Wembanyama questionable for back tightness; Vassell not listed out; Philadelphia injury situation can influence Maxey usage."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No trustworthy independently published forward playing-minute projection."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Player roles from NBA roster and recent game performance when supported."
+      },
+      "market": {
+        "points_line": 19.5,
+        "over_odd": 1.8197,
+        "under_odd": 1.9524,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/stephon-castle"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Stephon Castle appears in the original 23 Nov BetSharp points offer with a DraftKings threshold of 19.5; current five game scoring and playing-time lines were not independently corroborated, so this is a low-confidence lean only. This ranking is based on the best sources available, without a numerical predictive guarantee.",
+        "risk": "Individual minutes, injury and opponent defensive matchups remain uncertain. Quoted prices originate from a comparison site and may change."
+      }
+    },
+    {
+      "rank": 12,
+      "player": "Victor Wembanyama",
+      "player_id": "betsharp:2026-11-23:0110",
+      "score": 41,
+      "confidence": 24,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "Attempted ESPN/NBA roster and match lookup; searched secondary recent player log and official NBA injury data. Only actual corroborated dated rows shown, unknown entries omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/victor-wembanyama",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season/recent averages included where sourced; scoring hit rate not equated with forecast probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Venue-specific home-away scorer performance at similar minutes unverified."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior exact-opponent individual scoring game logs not fully established."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Quantified position-specific opponent defense effects not independently verified."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Individual on-ball defender assignment not verified before starting lineup."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "League 23 November injury report checked: Victor Wembanyama questionable for back tightness; Vassell not listed out; Philadelphia injury situation can influence Maxey usage."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No trustworthy independently published forward playing-minute projection."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Player roles from NBA roster and recent game performance when supported."
+      },
+      "market": {
+        "points_line": 29.5,
+        "over_odd": 1.9615,
+        "under_odd": 1.8197,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/victor-wembanyama"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Victor Wembanyama appears in the original 23 Nov BetSharp points offer with a DraftKings threshold of 29.5; current five game scoring and playing-time lines were not independently corroborated, so this is a low-confidence lean only. This ranking is based on the best sources available, without a numerical predictive guarantee.",
+        "risk": "Individual minutes, injury and opponent defensive matchups remain uncertain. Quoted prices originate from a comparison site and may change."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "4395630",
+    "4431678"
+  ],
+  "selection_reason": "All 12 original candidates retained in ranked audit. Devin Vassell UNDER14.5 is supported by five-game mean10.0 versus 14.5 and 11.3 season, with actual 12 and 7-point boxscores. Tyrese Maxey UNDER25.5 has five-game mean23.8 below the line, though high season 25.9, Joel Embiid illness and primary usage make his choice substantially riskier. Both player ESPN IDs and future SA@SAC/POR@PHI starts checked, same-column fresh DraftKings BetSharp quotes; no precise probability or fabricated L5.",
+  "notes": "Other group's players retain original order/IDs but rank by available information with explicitly low confidence, without invented game logs."
+}
