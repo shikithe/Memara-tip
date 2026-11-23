@@ -1,0 +1,800 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-23",
+  "group_number": 5,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Immanuel Quickley",
+      "player_id": "4395724",
+      "score": 87,
+      "confidence": 75,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN/NBA official player and current matchup information attempted; secondary NBA.com, StatMuse and injury information reviewed. Unverified player game logs explicitly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/immanuel-quickley",
+        "https://www.nba.com/player/1630193/immanuel-quickley"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-20",
+          "points": 18,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-18",
+          "points": 24,
+          "minutes": 34
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring levels included in reason when verified; not a calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable season home versus away scoring sample unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual opponent-specific points box scores not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-by-position opponent defensive points efficiency not independently established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defensive assignment cannot be reliably known before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Toronto Barrett out with hamstring issue; Jerome prior hip issue, no verified active guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official future-minute estimate; actual minutes included only when verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team and role informed by official roster and available recent game news."
+      },
+      "market": {
+        "points_line": 18.5,
+        "over_odd": 1.885,
+        "under_odd": 1.885,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/immanuel-quickley"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": true,
+        "reason": "Quickley averages 19.8 in the last five, above his 18.5 DK points line; 18 in latest and 24 in prior verified games. Toronto currently without RJ Barrett, potentially boosting usage. Evidence is partial and the true outcome chance is unknown.",
+        "risk": "Only two of last five scored 19+ according to available aggregate; individual shooting can fluctuate. Price quoted from BetSharp comparison source."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Ty Jerome",
+      "player_id": "4065733",
+      "score": 81,
+      "confidence": 70,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN/NBA official player and current matchup information attempted; secondary NBA.com, StatMuse and injury information reviewed. Unverified player game logs explicitly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/ty-jerome",
+        "https://www.nba.com/player/1629660/ty-jerome"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-21",
+          "points": 18,
+          "minutes": 27
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring levels included in reason when verified; not a calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable season home versus away scoring sample unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual opponent-specific points box scores not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-by-position opponent defensive points efficiency not independently established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defensive assignment cannot be reliably known before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Toronto Barrett out with hamstring issue; Jerome prior hip issue, no verified active guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official future-minute estimate; actual minutes included only when verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team and role informed by official roster and available recent game news."
+      },
+      "market": {
+        "points_line": 22.5,
+        "over_odd": 1.8333,
+        "under_odd": 1.9434,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/ty-jerome"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": true,
+        "reason": "Jerome averages 21 in last five, below 22.5 points line, and Nov21 scored 18 in 27 minutes; his limited 27-minute latest appearance can create a mild under lean. Evidence is partial and the true outcome chance is unknown.",
+        "risk": "Season mean 24.8 exceeds line and game-to-game shooting volume is highly variable; hip ailment previously reported. Price quoted from BetSharp comparison source."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Zach Edey",
+      "player_id": "betsharp:2026-11-23:0052",
+      "score": 65,
+      "confidence": 48,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN/NBA official player and current matchup information attempted; secondary NBA.com, StatMuse and injury information reviewed. Unverified player game logs explicitly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/zach-edey",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring levels included in reason when verified; not a calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable season home versus away scoring sample unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual opponent-specific points box scores not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-by-position opponent defensive points efficiency not independently established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defensive assignment cannot be reliably known before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Toronto Barrett out with hamstring issue; Jerome prior hip issue, no verified active guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official future-minute estimate; actual minutes included only when verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team and role informed by official roster and available recent game news."
+      },
+      "market": {
+        "points_line": 8.5,
+        "over_odd": 1.9615,
+        "under_odd": 1.813,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/zach-edey"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Zach Edey appears in the 23 November original points offers at line 8.5; complete current last-five scoring and minute logs were not independently verified. Evidence is partial and the true outcome chance is unknown.",
+        "risk": "Unknown minutes and matchup status make this a low-confidence side. Price quoted from BetSharp comparison source."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Allen Graves",
+      "player_id": "betsharp:2026-11-23:0053",
+      "score": 63,
+      "confidence": 46,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN/NBA official player and current matchup information attempted; secondary NBA.com, StatMuse and injury information reviewed. Unverified player game logs explicitly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/allen-graves",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring levels included in reason when verified; not a calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable season home versus away scoring sample unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual opponent-specific points box scores not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-by-position opponent defensive points efficiency not independently established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defensive assignment cannot be reliably known before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Toronto Barrett out with hamstring issue; Jerome prior hip issue, no verified active guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official future-minute estimate; actual minutes included only when verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team and role informed by official roster and available recent game news."
+      },
+      "market": {
+        "points_line": 8.5,
+        "over_odd": 1.885,
+        "under_odd": 1.885,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/allen-graves"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Allen Graves appears in the 23 November original points offers at line 8.5; complete current last-five scoring and minute logs were not independently verified. Evidence is partial and the true outcome chance is unknown.",
+        "risk": "Unknown minutes and matchup status make this a low-confidence side. Price quoted from BetSharp comparison source."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Brayden Burries",
+      "player_id": "betsharp:2026-11-23:0054",
+      "score": 61,
+      "confidence": 44,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN/NBA official player and current matchup information attempted; secondary NBA.com, StatMuse and injury information reviewed. Unverified player game logs explicitly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/brayden-burries",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring levels included in reason when verified; not a calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable season home versus away scoring sample unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual opponent-specific points box scores not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-by-position opponent defensive points efficiency not independently established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defensive assignment cannot be reliably known before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Toronto Barrett out with hamstring issue; Jerome prior hip issue, no verified active guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official future-minute estimate; actual minutes included only when verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team and role informed by official roster and available recent game news."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.885,
+        "under_odd": 1.9009,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/brayden-burries"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Brayden Burries appears in the 23 November original points offers at line 11.5; complete current last-five scoring and minute logs were not independently verified. Evidence is partial and the true outcome chance is unknown.",
+        "risk": "Unknown minutes and matchup status make this a low-confidence side. Price quoted from BetSharp comparison source."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Collin Murray-Boyles",
+      "player_id": "betsharp:2026-11-23:0055",
+      "score": 59,
+      "confidence": 42,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN/NBA official player and current matchup information attempted; secondary NBA.com, StatMuse and injury information reviewed. Unverified player game logs explicitly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/collin-murray-boyles",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring levels included in reason when verified; not a calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable season home versus away scoring sample unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual opponent-specific points box scores not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-by-position opponent defensive points efficiency not independently established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defensive assignment cannot be reliably known before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Toronto Barrett out with hamstring issue; Jerome prior hip issue, no verified active guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official future-minute estimate; actual minutes included only when verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team and role informed by official roster and available recent game news."
+      },
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.9524,
+        "under_odd": 1.8197,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/collin-murray-boyles"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Collin Murray-Boyles appears in the 23 November original points offers at line 12.5; complete current last-five scoring and minute logs were not independently verified. Evidence is partial and the true outcome chance is unknown.",
+        "risk": "Unknown minutes and matchup status make this a low-confidence side. Price quoted from BetSharp comparison source."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Ja'Kobe Walter",
+      "player_id": "betsharp:2026-11-23:0057",
+      "score": 57,
+      "confidence": 40,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN/NBA official player and current matchup information attempted; secondary NBA.com, StatMuse and injury information reviewed. Unverified player game logs explicitly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jakobe-walter",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring levels included in reason when verified; not a calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable season home versus away scoring sample unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual opponent-specific points box scores not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-by-position opponent defensive points efficiency not independently established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defensive assignment cannot be reliably known before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Toronto Barrett out with hamstring issue; Jerome prior hip issue, no verified active guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official future-minute estimate; actual minutes included only when verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team and role informed by official roster and available recent game news."
+      },
+      "market": {
+        "points_line": 13.5,
+        "over_odd": 1.8696,
+        "under_odd": 1.9009,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jakobe-walter"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Ja'Kobe Walter appears in the 23 November original points offers at line 13.5; complete current last-five scoring and minute logs were not independently verified. Evidence is partial and the true outcome chance is unknown.",
+        "risk": "Unknown minutes and matchup status make this a low-confidence side. Price quoted from BetSharp comparison source."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Jaime Jaquez Jr.",
+      "player_id": "betsharp:2026-11-23:0058",
+      "score": 55,
+      "confidence": 38,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN/NBA official player and current matchup information attempted; secondary NBA.com, StatMuse and injury information reviewed. Unverified player game logs explicitly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jaime-jaquez",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring levels included in reason when verified; not a calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable season home versus away scoring sample unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual opponent-specific points box scores not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-by-position opponent defensive points efficiency not independently established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defensive assignment cannot be reliably known before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Toronto Barrett out with hamstring issue; Jerome prior hip issue, no verified active guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official future-minute estimate; actual minutes included only when verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team and role informed by official roster and available recent game news."
+      },
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.9804,
+        "under_odd": 1.8065,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jaime-jaquez"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Jaime Jaquez Jr. appears in the 23 November original points offers at line 12.5; complete current last-five scoring and minute logs were not independently verified. Evidence is partial and the true outcome chance is unknown.",
+        "risk": "Unknown minutes and matchup status make this a low-confidence side. Price quoted from BetSharp comparison source."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Jakob Poeltl",
+      "player_id": "betsharp:2026-11-23:0059",
+      "score": 53,
+      "confidence": 36,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN/NBA official player and current matchup information attempted; secondary NBA.com, StatMuse and injury information reviewed. Unverified player game logs explicitly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jakob-poeltl",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring levels included in reason when verified; not a calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable season home versus away scoring sample unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual opponent-specific points box scores not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-by-position opponent defensive points efficiency not independently established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defensive assignment cannot be reliably known before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Toronto Barrett out with hamstring issue; Jerome prior hip issue, no verified active guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official future-minute estimate; actual minutes included only when verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team and role informed by official roster and available recent game news."
+      },
+      "market": {
+        "points_line": 10.5,
+        "over_odd": 2.03,
+        "under_odd": 1.7576,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jakob-poeltl"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Jakob Poeltl appears in the 23 November original points offers at line 10.5; complete current last-five scoring and minute logs were not independently verified. Evidence is partial and the true outcome chance is unknown.",
+        "risk": "Unknown minutes and matchup status make this a low-confidence side. Price quoted from BetSharp comparison source."
+      }
+    },
+    {
+      "rank": 10,
+      "player": "Kyle Kuzma",
+      "player_id": "betsharp:2026-11-23:0060",
+      "score": 51,
+      "confidence": 34,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN/NBA official player and current matchup information attempted; secondary NBA.com, StatMuse and injury information reviewed. Unverified player game logs explicitly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/kyle-kuzma",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring levels included in reason when verified; not a calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable season home versus away scoring sample unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual opponent-specific points box scores not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-by-position opponent defensive points efficiency not independently established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defensive assignment cannot be reliably known before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Toronto Barrett out with hamstring issue; Jerome prior hip issue, no verified active guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official future-minute estimate; actual minutes included only when verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team and role informed by official roster and available recent game news."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.8929,
+        "under_odd": 1.885,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/kyle-kuzma"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Kyle Kuzma appears in the 23 November original points offers at line 11.5; complete current last-five scoring and minute logs were not independently verified. Evidence is partial and the true outcome chance is unknown.",
+        "risk": "Unknown minutes and matchup status make this a low-confidence side. Price quoted from BetSharp comparison source."
+      }
+    },
+    {
+      "rank": 11,
+      "player": "Myles Turner",
+      "player_id": "betsharp:2026-11-23:0061",
+      "score": 49,
+      "confidence": 32,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN/NBA official player and current matchup information attempted; secondary NBA.com, StatMuse and injury information reviewed. Unverified player game logs explicitly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/myles-turner",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring levels included in reason when verified; not a calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable season home versus away scoring sample unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual opponent-specific points box scores not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-by-position opponent defensive points efficiency not independently established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defensive assignment cannot be reliably known before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Toronto Barrett out with hamstring issue; Jerome prior hip issue, no verified active guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official future-minute estimate; actual minutes included only when verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team and role informed by official roster and available recent game news."
+      },
+      "market": {
+        "points_line": 7.5,
+        "over_odd": 1.7874,
+        "under_odd": 1.9901,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/myles-turner"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Myles Turner appears in the 23 November original points offers at line 7.5; complete current last-five scoring and minute logs were not independently verified. Evidence is partial and the true outcome chance is unknown.",
+        "risk": "Unknown minutes and matchup status make this a low-confidence side. Price quoted from BetSharp comparison source."
+      }
+    },
+    {
+      "rank": 12,
+      "player": "Ryan Rollins",
+      "player_id": "betsharp:2026-11-23:0062",
+      "score": 47,
+      "confidence": 30,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN/NBA official player and current matchup information attempted; secondary NBA.com, StatMuse and injury information reviewed. Unverified player game logs explicitly omitted."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/ryan-rollins",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Scoring levels included in reason when verified; not a calibrated probability."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Comparable season home versus away scoring sample unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five individual opponent-specific points box scores not independently verified."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Position-by-position opponent defensive points efficiency not independently established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Defensive assignment cannot be reliably known before lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Toronto Barrett out with hamstring issue; Jerome prior hip issue, no verified active guarantee."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No reliable official future-minute estimate; actual minutes included only when verified."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Team and role informed by official roster and available recent game news."
+      },
+      "market": {
+        "points_line": 11.5,
+        "over_odd": 1.8264,
+        "under_odd": 1.9524,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/ryan-rollins"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not calibrated",
+        "availability_confirmed": false,
+        "reason": "Ryan Rollins appears in the 23 November original points offers at line 11.5; complete current last-five scoring and minute logs were not independently verified. Evidence is partial and the true outcome chance is unknown.",
+        "risk": "Unknown minutes and matchup status make this a low-confidence side. Price quoted from BetSharp comparison source."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "4395724",
+    "4065733"
+  ],
+  "selection_reason": "Group of twelve original offered players ranked by available evidence; Immanuel Quickley OVER18.5 has last five average 19.8 and Toronto injury boost potential; Ty Jerome UNDER22.5 averages 21 last five and scored 18 in latest, but season mean 24.8 creates marked risk. Correct ESPN athlete/game identities and unstarted Monday MEM-CHA and MIL-TOR fixtures checked. Missing records for other group athletes explicitly not verified.",
+  "notes": "No claim that unknown L5 or matchup-specific defensive records have been independently confirmed."
+}
