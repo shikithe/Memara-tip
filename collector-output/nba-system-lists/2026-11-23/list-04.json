@@ -1,0 +1,563 @@
+{
+  "date": "2026-11-23",
+  "list_number": 4,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-23T18:10:44.720200+00:00",
+  "total_offers": 122,
+  "group_size": 12,
+  "original_positions": [
+    39,
+    50
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Brandon Miller",
+      "team": "CHA",
+      "game": "MEM @ CHA",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/brandon-miller",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-memphis-grizzlies-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 21.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 21.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 21.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 21.5,
+          "over_american": -109,
+          "under_american": -125,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -170,
+          "under_american": 127,
+          "over_decimal": 1.5882,
+          "under_decimal": 2.27
+        }
+      },
+      "original_offer_position": 39
+    },
+    {
+      "player": "Cam Spencer",
+      "team": "MEM",
+      "game": "MEM @ CHA",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/cam-spencer",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-memphis-grizzlies-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -102,
+          "under_american": -125,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": 100,
+          "under_american": -135,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7407
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -129,
+          "under_american": -105,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9524
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -138,
+          "under_american": 108,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 40
+    },
+    {
+      "player": "Cedric Coward",
+      "team": "MEM",
+      "game": "MEM @ CHA",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/cedric-coward",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-memphis-grizzlies-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -125,
+          "under_american": -102,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9804
+        },
+        "FD": {
+          "line": 16.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -125,
+          "under_american": -109,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9174
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -156,
+          "under_american": 122,
+          "over_decimal": 1.641,
+          "under_decimal": 2.22
+        }
+      },
+      "original_offer_position": 41
+    },
+    {
+      "player": "Coby White",
+      "team": "CHA",
+      "game": "MEM @ CHA",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/coby-white",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-memphis-grizzlies-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 138,
+          "under_american": -178,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5618
+        }
+      },
+      "original_offer_position": 42
+    },
+    {
+      "player": "Isaiah Stewart",
+      "team": "MEM",
+      "game": "MEM @ CHA",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/isaiah-stewart",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-memphis-grizzlies-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -117,
+          "under_american": -115,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8696
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 117,
+          "under_american": -156,
+          "over_decimal": 2.17,
+          "under_decimal": 1.641
+        }
+      },
+      "original_offer_position": 43
+    },
+    {
+      "player": "Jaylen Wells",
+      "team": "MEM",
+      "game": "MEM @ CHA",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/jaylen-wells",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-memphis-grizzlies-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -118,
+          "under_american": -108,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9259
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -111,
+          "under_american": -118,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -111,
+          "under_american": -120,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -113,
+          "under_american": -108,
+          "over_decimal": 1.885,
+          "under_decimal": 1.9259
+        }
+      },
+      "original_offer_position": 44
+    },
+    {
+      "player": "Moussa Diabaté",
+      "team": "CHA",
+      "game": "MEM @ CHA",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/moussa-diabate",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-memphis-grizzlies-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -120,
+          "under_american": -106,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 127,
+          "under_american": -156,
+          "over_decimal": 2.27,
+          "under_decimal": 1.641
+        }
+      },
+      "original_offer_position": 45
+    },
+    {
+      "player": "Naz Reid",
+      "team": "CHA",
+      "game": "MEM @ CHA",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/naz-reid",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-memphis-grizzlies-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 19.5,
+          "over_american": -103,
+          "under_american": -124,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 18.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 104,
+          "under_american": -127,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7874
+        }
+      },
+      "original_offer_position": 46
+    },
+    {
+      "player": "Royce O'Neale",
+      "team": "CHA",
+      "game": "MEM @ CHA",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/royce-oneale",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-memphis-grizzlies-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -111,
+          "under_american": -118,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8475
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -117,
+          "under_american": -115,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8696
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 186,
+          "under_american": -233,
+          "over_decimal": 2.86,
+          "under_decimal": 1.4292
+        }
+      },
+      "original_offer_position": 47
+    },
+    {
+      "player": "Ryan Kalkbrenner",
+      "team": "CHA",
+      "game": "MEM @ CHA",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/ryan-kalkbrenner",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-memphis-grizzlies-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 4.5,
+          "over_american": -127,
+          "under_american": 100,
+          "over_decimal": 1.7874,
+          "under_decimal": 2.0
+        },
+        "FD": {
+          "line": 5.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "BR": {
+          "line": 5.5,
+          "over_american": -107,
+          "under_american": -127,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -122,
+          "under_american": 100,
+          "over_decimal": 1.8197,
+          "under_decimal": 2.0
+        }
+      },
+      "original_offer_position": 48
+    },
+    {
+      "player": "Sion James",
+      "team": "CHA",
+      "game": "MEM @ CHA",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/sion-james",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-memphis-grizzlies-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 6.5,
+          "over_american": -130,
+          "under_american": 102,
+          "over_decimal": 1.7692,
+          "under_decimal": 2.02
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 186,
+          "under_american": -257,
+          "over_decimal": 2.86,
+          "under_decimal": 1.3891
+        }
+      },
+      "original_offer_position": 49
+    },
+    {
+      "player": "Taylor Hendricks",
+      "team": "MEM",
+      "game": "MEM @ CHA",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/taylor-hendricks",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-memphis-grizzlies-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": 102,
+          "under_american": -130,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7692
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -138,
+          "under_american": 104,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.04
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 104,
+          "under_american": -133,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7519
+        }
+      },
+      "original_offer_position": 50
+    }
+  ]
+}

@@ -1,0 +1,570 @@
+{
+  "date": "2026-11-23",
+  "list_number": 6,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-23T18:10:44.720200+00:00",
+  "total_offers": 122,
+  "group_size": 12,
+  "original_positions": [
+    63,
+    74
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Scottie Barnes",
+      "team": "TOR",
+      "game": "MIL @ TOR",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/scottie-barnes",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-milwaukee-bucks-at-toronto-raptors#props",
+      "points_market": {
+        "DK": {
+          "line": 23.5,
+          "over_american": -116,
+          "under_american": -110,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 23.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "MGM": {
+          "line": 23.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 22.5,
+          "over_american": -127,
+          "under_american": -107,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9346
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 104,
+          "under_american": -138,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7246
+        }
+      },
+      "original_offer_position": 63
+    },
+    {
+      "player": "Tyler Herro",
+      "team": "MIL",
+      "game": "MIL @ TOR",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/tyler-herro",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-milwaukee-bucks-at-toronto-raptors#props",
+      "points_market": {
+        "DK": {
+          "line": 20.5,
+          "over_american": -112,
+          "under_american": -114,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 20.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 20.5,
+          "over_american": -105,
+          "under_american": -129,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -133,
+          "under_american": 108,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 64
+    },
+    {
+      "player": "Aaron Nesmith",
+      "team": "IND",
+      "game": "OKC @ IND",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/aaron-nesmith",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-oklahoma-city-thunder-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 156,
+          "under_american": -194,
+          "over_decimal": 2.56,
+          "under_decimal": 1.5155
+        }
+      },
+      "original_offer_position": 65
+    },
+    {
+      "player": "Aday Mara",
+      "team": "OKC",
+      "game": "OKC @ IND",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/aday-mara",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-oklahoma-city-thunder-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -108,
+          "under_american": -118,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8475
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -103,
+          "under_american": -134,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.7463
+        }
+      },
+      "original_offer_position": 66
+    },
+    {
+      "player": "Ajay Mitchell",
+      "team": "OKC",
+      "game": "OKC @ IND",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/ajay-mitchell",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-oklahoma-city-thunder-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 16.5,
+          "over_american": -127,
+          "under_american": -101,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9901
+        },
+        "FD": {
+          "line": 16.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 16.5,
+          "over_american": -118,
+          "under_american": -111,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 16.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -203,
+          "under_american": 156,
+          "over_decimal": 1.4926,
+          "under_decimal": 2.56
+        }
+      },
+      "original_offer_position": 67
+    },
+    {
+      "player": "Andrew Nembhard",
+      "team": "IND",
+      "game": "OKC @ IND",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/andrew-nembhard",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-oklahoma-city-thunder-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -101,
+          "under_american": -127,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7874
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -120,
+          "under_american": -111,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -108,
+          "under_american": -133,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.7519
+        }
+      },
+      "original_offer_position": 68
+    },
+    {
+      "player": "Isaiah Hartenstein",
+      "team": "OKC",
+      "game": "OKC @ IND",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/isaiah-hartenstein",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-oklahoma-city-thunder-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -103,
+          "under_american": -124,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -124,
+          "under_american": -109,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9174
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -122,
+          "over_decimal": 2.0,
+          "under_decimal": 1.8197
+        }
+      },
+      "original_offer_position": 69
+    },
+    {
+      "player": "Ivica Zubac",
+      "team": "IND",
+      "game": "OKC @ IND",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/ivica-zubac",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-oklahoma-city-thunder-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -194,
+          "under_american": 138,
+          "over_decimal": 1.5155,
+          "under_decimal": 2.38
+        }
+      },
+      "original_offer_position": 70
+    },
+    {
+      "player": "Jared McCain",
+      "team": "OKC",
+      "game": "OKC @ IND",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/jared-mccain",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-oklahoma-city-thunder-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -125,
+          "under_american": -102,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9804
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -121,
+          "under_american": -113,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.885
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -133,
+          "under_american": 104,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 71
+    },
+    {
+      "player": "Kelly Oubre Jr.",
+      "team": "IND",
+      "game": "OKC @ IND",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/kelly-oubre",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-oklahoma-city-thunder-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -118,
+          "under_american": -108,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9259
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 150,
+          "under_american": -194,
+          "over_decimal": 2.5,
+          "under_decimal": 1.5155
+        }
+      },
+      "original_offer_position": 72
+    },
+    {
+      "player": "Pascal Siakam",
+      "team": "IND",
+      "game": "OKC @ IND",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/pascal-siakam",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-oklahoma-city-thunder-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 20.5,
+          "over_american": -119,
+          "under_american": -107,
+          "over_decimal": 1.8403,
+          "under_decimal": 1.9346
+        },
+        "FD": {
+          "line": 21.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 20.5,
+          "over_american": -122,
+          "under_american": -110,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9091
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -156,
+          "under_american": 113,
+          "over_decimal": 1.641,
+          "under_decimal": 2.13
+        }
+      },
+      "original_offer_position": 73
+    },
+    {
+      "player": "Shai Gilgeous-Alexander",
+      "team": "OKC",
+      "game": "OKC @ IND",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/shai-gilgeous-alexander",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-oklahoma-city-thunder-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 31.5,
+          "over_american": -114,
+          "under_american": -111,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 31.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 32.5,
+          "over_american": 105,
+          "under_american": -140,
+          "over_decimal": 2.05,
+          "under_decimal": 1.7143
+        },
+        "BR": {
+          "line": 32.5,
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
+        }
+      },
+      "original_offer_position": 74
+    }
+  ]
+}

@@ -1,0 +1,577 @@
+{
+  "date": "2026-11-23",
+  "list_number": 3,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-23T18:10:44.720200+00:00",
+  "total_offers": 122,
+  "group_size": 12,
+  "original_positions": [
+    27,
+    38
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Brandon Ingram",
+      "team": "LAC",
+      "game": "LAC @ HOU",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/brandon-ingram",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-la-clippers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -145,
+          "under_american": 105,
+          "over_decimal": 1.6897,
+          "under_decimal": 2.05
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -107,
+          "under_american": -127,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 150,
+          "under_american": -194,
+          "over_decimal": 2.5,
+          "under_decimal": 1.5155
+        }
+      },
+      "original_offer_position": 27
+    },
+    {
+      "player": "Brook Lopez",
+      "team": "LAC",
+      "game": "LAC @ HOU",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/brook-lopez",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-la-clippers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -121,
+          "under_american": -105,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -122,
+          "under_american": -110,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9091
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -223,
+          "under_american": 170,
+          "over_decimal": 1.4484,
+          "under_decimal": 2.7
+        }
+      },
+      "original_offer_position": 28
+    },
+    {
+      "player": "Darius Garland",
+      "team": "LAC",
+      "game": "LAC @ HOU",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/darius-garland",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-la-clippers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 18.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 117,
+          "under_american": -150,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6667
+        }
+      },
+      "original_offer_position": 29
+    },
+    {
+      "player": "Derrick Jones Jr.",
+      "team": "LAC",
+      "game": "LAC @ HOU",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/derrick-jones",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-la-clippers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -102,
+          "under_american": -125,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 133,
+          "under_american": -186,
+          "over_decimal": 2.33,
+          "under_decimal": 1.5376
+        }
+      },
+      "original_offer_position": 30
+    },
+    {
+      "player": "Fred VanVleet",
+      "team": "HOU",
+      "game": "LAC @ HOU",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/fred-vanvleet",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-la-clippers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 127,
+          "under_american": -163,
+          "over_decimal": 2.27,
+          "under_decimal": 1.6135
+        }
+      },
+      "original_offer_position": 31
+    },
+    {
+      "player": "Jabari Smith Jr.",
+      "team": "HOU",
+      "game": "LAC @ HOU",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/jabari-smith",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-la-clippers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -112,
+          "under_american": -114,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 104,
+          "under_american": -133,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7519
+        }
+      },
+      "original_offer_position": 32
+    },
+    {
+      "player": "Keaton Wagler",
+      "team": "LAC",
+      "game": "LAC @ HOU",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/keaton-wagler",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-la-clippers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -108,
+          "under_american": -118,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8475
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 122,
+          "under_american": -156,
+          "over_decimal": 2.22,
+          "under_decimal": 1.641
+        }
+      },
+      "original_offer_position": 33
+    },
+    {
+      "player": "Kevin Durant",
+      "team": "HOU",
+      "game": "LAC @ HOU",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/kevin-durant",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-la-clippers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 21.5,
+          "over_american": -103,
+          "under_american": -124,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 21.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 21.5,
+          "over_american": -107,
+          "under_american": -127,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -170,
+          "under_american": 138,
+          "over_decimal": 1.5882,
+          "under_decimal": 2.38
+        }
+      },
+      "original_offer_position": 34
+    },
+    {
+      "player": "Marcus Smart",
+      "team": "HOU",
+      "game": "LAC @ HOU",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/marcus-smart",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-la-clippers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 6.5,
+          "over_american": 104,
+          "under_american": -132,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 6.5,
+          "over_american": 100,
+          "under_american": -135,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7407
+        },
+        "BR": {
+          "line": 6.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -223,
+          "under_american": 163,
+          "over_decimal": 1.4484,
+          "under_decimal": 2.63
+        }
+      },
+      "original_offer_position": 35
+    },
+    {
+      "player": "Max Strus",
+      "team": "LAC",
+      "game": "LAC @ HOU",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/max-strus",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-la-clippers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -104,
+          "under_american": -123,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.813
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 104,
+          "under_american": -138,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7246
+        }
+      },
+      "original_offer_position": 36
+    },
+    {
+      "player": "Reed Sheppard",
+      "team": "HOU",
+      "game": "LAC @ HOU",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/reed-sheppard",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-la-clippers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -128,
+          "under_american": 101,
+          "over_decimal": 1.7812,
+          "under_decimal": 2.01
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": 120,
+          "under_american": -160,
+          "over_decimal": 2.2,
+          "under_decimal": 1.625
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -136,
+          "under_american": 100,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.0
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 138,
+          "under_american": -194,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5155
+        }
+      },
+      "original_offer_position": 37
+    },
+    {
+      "player": "Rui Hachimura",
+      "team": "LAC",
+      "game": "LAC @ HOU",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/rui-hachimura",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-la-clippers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -116,
+          "under_american": -110,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -118,
+          "under_american": -115,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8696
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 144,
+          "under_american": -186,
+          "over_decimal": 2.44,
+          "under_decimal": 1.5376
+        }
+      },
+      "original_offer_position": 38
+    }
+  ]
+}

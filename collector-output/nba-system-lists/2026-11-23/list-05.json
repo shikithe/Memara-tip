@@ -1,0 +1,563 @@
+{
+  "date": "2026-11-23",
+  "list_number": 5,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-23T18:10:44.720200+00:00",
+  "total_offers": 122,
+  "group_size": 12,
+  "original_positions": [
+    51,
+    62
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Ty Jerome",
+      "team": "MEM",
+      "game": "MEM @ CHA",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/ty-jerome",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-memphis-grizzlies-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 22.5,
+          "over_american": -120,
+          "under_american": -106,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 23.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 22.5,
+          "over_american": -127,
+          "under_american": -108,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 138,
+          "under_american": -178,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5618
+        }
+      },
+      "original_offer_position": 51
+    },
+    {
+      "player": "Zach Edey",
+      "team": "MEM",
+      "game": "MEM @ CHA",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/zach-edey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-memphis-grizzlies-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -104,
+          "under_american": -123,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.813
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 117,
+          "under_american": -144,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 52
+    },
+    {
+      "player": "Allen Graves",
+      "team": "TOR",
+      "game": "MIL @ TOR",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/allen-graves",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-milwaukee-bucks-at-toronto-raptors#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 127,
+          "under_american": -163,
+          "over_decimal": 2.27,
+          "under_decimal": 1.6135
+        }
+      },
+      "original_offer_position": 53
+    },
+    {
+      "player": "Brayden Burries",
+      "team": "MIL",
+      "game": "MIL @ TOR",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/brayden-burries",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-milwaukee-bucks-at-toronto-raptors#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -113,
+          "under_american": -111,
+          "over_decimal": 1.885,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -120,
+          "under_american": -113,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.885
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -213,
+          "under_american": 150,
+          "over_decimal": 1.4695,
+          "under_decimal": 2.5
+        }
+      },
+      "original_offer_position": 54
+    },
+    {
+      "player": "Collin Murray-Boyles",
+      "team": "TOR",
+      "game": "MIL @ TOR",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/collin-murray-boyles",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-milwaukee-bucks-at-toronto-raptors#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -105,
+          "under_american": -122,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8197
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": 104,
+          "under_american": -138,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7246
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -132,
+          "under_american": -103,
+          "over_decimal": 1.7576,
+          "under_decimal": 1.9709
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 194,
+          "under_american": -245,
+          "over_decimal": 2.94,
+          "under_decimal": 1.4082
+        }
+      },
+      "original_offer_position": 55
+    },
+    {
+      "player": "Immanuel Quickley",
+      "team": "TOR",
+      "game": "MIL @ TOR",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/immanuel-quickley",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-milwaukee-bucks-at-toronto-raptors#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 18.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -127,
+          "under_american": -107,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9346
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 100,
+          "under_american": -144,
+          "over_decimal": 2.0,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 56
+    },
+    {
+      "player": "Ja'Kobe Walter",
+      "team": "TOR",
+      "game": "MIL @ TOR",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/jakobe-walter",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-milwaukee-bucks-at-toronto-raptors#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -125,
+          "under_american": -104,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -111,
+          "under_american": -118,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8475
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -127,
+          "under_american": -108,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 113,
+          "under_american": -150,
+          "over_decimal": 2.13,
+          "under_decimal": 1.6667
+        }
+      },
+      "original_offer_position": 57
+    },
+    {
+      "player": "Jaime Jaquez Jr.",
+      "team": "MIL",
+      "game": "MIL @ TOR",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/jaime-jaquez",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-milwaukee-bucks-at-toronto-raptors#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -102,
+          "under_american": -124,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -124,
+          "under_american": -109,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9174
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -233,
+          "under_american": 156,
+          "over_decimal": 1.4292,
+          "under_decimal": 2.56
+        }
+      },
+      "original_offer_position": 58
+    },
+    {
+      "player": "Jakob Poeltl",
+      "team": "TOR",
+      "game": "MIL @ TOR",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/jakob-poeltl",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-milwaukee-bucks-at-toronto-raptors#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": 103,
+          "under_american": -132,
+          "over_decimal": 2.03,
+          "under_decimal": 1.7576
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -122,
+          "under_american": -106,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9434
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -107,
+          "under_american": -127,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -133,
+          "under_american": 100,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.0
+        }
+      },
+      "original_offer_position": 59
+    },
+    {
+      "player": "Kyle Kuzma",
+      "team": "MIL",
+      "game": "MIL @ TOR",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/kyle-kuzma",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-milwaukee-bucks-at-toronto-raptors#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -112,
+          "under_american": -113,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -124,
+          "under_american": -109,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9174
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -203,
+          "under_american": 156,
+          "over_decimal": 1.4926,
+          "under_decimal": 2.56
+        }
+      },
+      "original_offer_position": 60
+    },
+    {
+      "player": "Myles Turner",
+      "team": "MIL",
+      "game": "MIL @ TOR",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/myles-turner",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-milwaukee-bucks-at-toronto-raptors#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -127,
+          "under_american": -101,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9901
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 170,
+          "under_american": -213,
+          "over_decimal": 2.7,
+          "under_decimal": 1.4695
+        }
+      },
+      "original_offer_position": 61
+    },
+    {
+      "player": "Ryan Rollins",
+      "team": "MIL",
+      "game": "MIL @ TOR",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/ryan-rollins",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-milwaukee-bucks-at-toronto-raptors#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -121,
+          "under_american": -105,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -118,
+          "under_american": -111,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -122,
+          "under_american": -110,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9091
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -233,
+          "under_american": 170,
+          "over_decimal": 1.4292,
+          "under_decimal": 2.7
+        }
+      },
+      "original_offer_position": 62
+    }
+  ]
+}

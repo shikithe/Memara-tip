@@ -1,0 +1,631 @@
+{
+  "date": "2026-11-23",
+  "list_number": 1,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-23T18:10:44.720200+00:00",
+  "total_offers": 122,
+  "group_size": 13,
+  "original_positions": [
+    1,
+    13
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Ayo Dosunmu",
+      "team": "MIN",
+      "game": "BKN @ MIN",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/ayo-dosunmu",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-brooklyn-nets-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 16.5,
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 150,
+          "under_american": -186,
+          "over_decimal": 2.5,
+          "under_decimal": 1.5376
+        }
+      },
+      "original_offer_position": 1
+    },
+    {
+      "player": "Danny Wolf",
+      "team": "BKN",
+      "game": "BKN @ MIN",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/danny-wolf",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-brooklyn-nets-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -136,
+          "under_american": 100,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.0
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 108,
+          "under_american": -138,
+          "over_decimal": 2.08,
+          "under_decimal": 1.7246
+        }
+      },
+      "original_offer_position": 2
+    },
+    {
+      "player": "Day'Ron Sharpe",
+      "team": "BKN",
+      "game": "BKN @ MIN",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/dayron-sharpe",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-brooklyn-nets-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -136,
+          "under_american": 100,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.0
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 122,
+          "under_american": -156,
+          "over_decimal": 2.22,
+          "under_decimal": 1.641
+        }
+      },
+      "original_offer_position": 3
+    },
+    {
+      "player": "Egor Dëmin",
+      "team": "BKN",
+      "game": "BKN @ MIN",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/egor-demin",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-brooklyn-nets-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": 100,
+          "under_american": -128,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7812
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -125,
+          "under_american": -104,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -127,
+          "under_american": -107,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9346
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -133,
+          "under_american": 104,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 4
+    },
+    {
+      "player": "Jaden McDaniels",
+      "team": "MIN",
+      "game": "BKN @ MIN",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/jaden-mcdaniels",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-brooklyn-nets-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -111,
+          "under_american": -114,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 156,
+          "under_american": -203,
+          "over_decimal": 2.56,
+          "under_decimal": 1.4926
+        }
+      },
+      "original_offer_position": 5
+    },
+    {
+      "player": "Jonathan Kuminga",
+      "team": "MIN",
+      "game": "BKN @ MIN",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/jonathan-kuminga",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-brooklyn-nets-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -110,
+          "under_american": -116,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8621
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -113,
+          "under_american": -114,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -111,
+          "under_american": -118,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8475
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -107,
+          "under_american": -127,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -104,
+          "under_american": -117,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8547
+        }
+      },
+      "original_offer_position": 6
+    },
+    {
+      "player": "Julius Randle",
+      "team": "BKN",
+      "game": "BKN @ MIN",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/julius-randle",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-brooklyn-nets-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 20.5,
+          "over_american": -103,
+          "under_american": -124,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 20.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 19.5,
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -133,
+          "under_american": 104,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 7
+    },
+    {
+      "player": "LaMelo Ball",
+      "team": "MIN",
+      "game": "BKN @ MIN",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/lamelo-ball",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-brooklyn-nets-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -121,
+          "under_american": -105,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 18.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 117,
+          "under_american": -144,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 8
+    },
+    {
+      "player": "Michael Porter Jr.",
+      "team": "BKN",
+      "game": "BKN @ MIN",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/michael-porter",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-brooklyn-nets-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 19.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 20.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 19.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        }
+      },
+      "original_offer_position": 9
+    },
+    {
+      "player": "Mikel Brown Jr.",
+      "team": "BKN",
+      "game": "BKN @ MIN",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/mikel-brown",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-brooklyn-nets-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -116,
+          "under_american": -110,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -160,
+          "under_american": 120,
+          "over_decimal": 1.625,
+          "under_decimal": 2.2
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 117,
+          "under_american": -163,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6135
+        }
+      },
+      "original_offer_position": 10
+    },
+    {
+      "player": "Moritz Wagner",
+      "team": "BKN",
+      "game": "BKN @ MIN",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/moritz-wagner",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-brooklyn-nets-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -103,
+          "under_american": -132,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.7576
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 133,
+          "under_american": -186,
+          "over_decimal": 2.33,
+          "under_decimal": 1.5376
+        }
+      },
+      "original_offer_position": 11
+    },
+    {
+      "player": "Rudy Gobert",
+      "team": "MIN",
+      "game": "BKN @ MIN",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/rudy-gobert",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-brooklyn-nets-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -102,
+          "under_american": -123,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.813
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -130,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -115,
+          "under_american": -118,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 104,
+          "under_american": -127,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7874
+        }
+      },
+      "original_offer_position": 12
+    },
+    {
+      "player": "Terrence Shannon Jr.",
+      "team": "MIN",
+      "game": "BKN @ MIN",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/terrence-shannon",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-brooklyn-nets-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -114,
+          "under_american": -112,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -108,
+          "under_american": -127,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 133,
+          "under_american": -170,
+          "over_decimal": 2.33,
+          "under_decimal": 1.5882
+        }
+      },
+      "original_offer_position": 13
+    }
+  ]
+}

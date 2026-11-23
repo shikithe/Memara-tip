@@ -1,0 +1,624 @@
+{
+  "date": "2026-11-23",
+  "list_number": 2,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-23T18:10:44.720200+00:00",
+  "total_offers": 122,
+  "group_size": 13,
+  "original_positions": [
+    14,
+    26
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Donovan Mitchell",
+      "team": "CLE",
+      "game": "CLE @ CHI",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/donovan-mitchell",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-cleveland-cavaliers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 26.5,
+          "over_american": -119,
+          "under_american": -107,
+          "over_decimal": 1.8403,
+          "under_decimal": 1.9346
+        },
+        "FD": {
+          "line": 26.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 26.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 27.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -178,
+          "under_american": 144,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.44
+        }
+      },
+      "original_offer_position": 14
+    },
+    {
+      "player": "Isaac Okoro",
+      "team": "CHI",
+      "game": "CLE @ CHI",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/isaac-okoro",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-cleveland-cavaliers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -108,
+          "under_american": -118,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8475
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -138,
+          "under_american": 113,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.13
+        }
+      },
+      "original_offer_position": 15
+    },
+    {
+      "player": "Jalen Smith",
+      "team": "CHI",
+      "game": "CLE @ CHI",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jalen-smith",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-cleveland-cavaliers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -124,
+          "under_american": -103,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9709
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -111,
+          "under_american": -118,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -129,
+          "under_american": -105,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9524
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -113,
+          "under_american": -108,
+          "over_decimal": 1.885,
+          "under_decimal": 1.9259
+        }
+      },
+      "original_offer_position": 16
+    },
+    {
+      "player": "James Harden",
+      "team": "CLE",
+      "game": "CLE @ CHI",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/james-harden",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-cleveland-cavaliers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -103,
+          "under_american": -124,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 127,
+          "under_american": -156,
+          "over_decimal": 2.27,
+          "under_decimal": 1.641
+        }
+      },
+      "original_offer_position": 17
+    },
+    {
+      "player": "Jarrett Allen",
+      "team": "CLE",
+      "game": "CLE @ CHI",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jarrett-allen",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-cleveland-cavaliers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -125,
+          "under_american": -102,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9804
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -125,
+          "under_american": -104,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -117,
+          "under_american": -108,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9259
+        }
+      },
+      "original_offer_position": 18
+    },
+    {
+      "player": "Jaylon Tyson",
+      "team": "CLE",
+      "game": "CLE @ CHI",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jaylon-tyson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-cleveland-cavaliers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -123,
+          "under_american": -104,
+          "over_decimal": 1.813,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -127,
+          "under_american": -104,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9615
+        }
+      },
+      "original_offer_position": 19
+    },
+    {
+      "player": "Joshua Giddey",
+      "team": "CHI",
+      "game": "CLE @ CHI",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/joshua-giddey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-cleveland-cavaliers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -119,
+          "under_american": -107,
+          "over_decimal": 1.8403,
+          "under_decimal": 1.9346
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 113,
+          "under_american": -144,
+          "over_decimal": 2.13,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 20
+    },
+    {
+      "player": "Matas Buzelis",
+      "team": "CHI",
+      "game": "CLE @ CHI",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/matas-buzelis",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-cleveland-cavaliers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -105,
+          "under_american": -121,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 16.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 150,
+          "under_american": -233,
+          "over_decimal": 2.5,
+          "under_decimal": 1.4292
+        }
+      },
+      "original_offer_position": 21
+    },
+    {
+      "player": "Meleek Thomas",
+      "team": "CLE",
+      "game": "CLE @ CHI",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/meleek-thomas",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-cleveland-cavaliers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -106,
+          "under_american": -121,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -104,
+          "under_american": -130,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7692
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -122,
+          "over_decimal": 2.0,
+          "under_decimal": 1.8197
+        }
+      },
+      "original_offer_position": 22
+    },
+    {
+      "player": "Peyton Watson",
+      "team": "CLE",
+      "game": "CLE @ CHI",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/peyton-watson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-cleveland-cavaliers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -109,
+          "under_american": -116,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8621
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 156,
+          "under_american": -213,
+          "over_decimal": 2.56,
+          "under_decimal": 1.4695
+        }
+      },
+      "original_offer_position": 23
+    },
+    {
+      "player": "Tyrese Proctor",
+      "team": "CLE",
+      "game": "CLE @ CHI",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/tyrese-proctor",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-cleveland-cavaliers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -127,
+          "under_american": -101,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9901
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -127,
+          "under_american": -108,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 104,
+          "under_american": -144,
+          "over_decimal": 2.04,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 24
+    },
+    {
+      "player": "Alperen Sengun",
+      "team": "HOU",
+      "game": "LAC @ HOU",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/alperen-sengun",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-la-clippers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 21.5,
+          "over_american": -107,
+          "under_american": -119,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8403
+        },
+        "FD": {
+          "line": 21.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 21.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -163,
+          "under_american": 127,
+          "over_decimal": 1.6135,
+          "under_decimal": 2.27
+        }
+      },
+      "original_offer_position": 25
+    },
+    {
+      "player": "Amen Thompson",
+      "team": "HOU",
+      "game": "LAC @ HOU",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/amen-thompson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-la-clippers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -120,
+          "under_american": -113,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.885
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -133,
+          "under_american": 108,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 26
+    }
+  ]
+}

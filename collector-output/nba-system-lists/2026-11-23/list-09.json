@@ -1,0 +1,577 @@
+{
+  "date": "2026-11-23",
+  "list_number": 9,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-23T18:10:44.720200+00:00",
+  "total_offers": 122,
+  "group_size": 12,
+  "original_positions": [
+    99,
+    110
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Toumani Camara",
+      "team": "POR",
+      "game": "POR @ PHI",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/toumani-camara",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-portland-trail-blazers-at-philadelphia-76ers#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -130,
+          "under_american": 102,
+          "over_decimal": 1.7692,
+          "under_decimal": 2.02
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -186,
+          "under_american": 138,
+          "over_decimal": 1.5376,
+          "under_decimal": 2.38
+        }
+      },
+      "original_offer_position": 99
+    },
+    {
+      "player": "Tyrese Maxey",
+      "team": "PHI",
+      "game": "POR @ PHI",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/tyrese-maxey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-portland-trail-blazers-at-philadelphia-76ers#props",
+      "points_market": {
+        "DK": {
+          "line": 25.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 25.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 24.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 24.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -117,
+          "under_american": -104,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9615
+        }
+      },
+      "original_offer_position": 100
+    },
+    {
+      "player": "VJ Edgecombe",
+      "team": "PHI",
+      "game": "POR @ PHI",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/vj-edgecombe",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-portland-trail-blazers-at-philadelphia-76ers#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -113,
+          "under_american": -112,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -104,
+          "under_american": -130,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7692
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 138,
+          "under_american": -186,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5376
+        }
+      },
+      "original_offer_position": 101
+    },
+    {
+      "player": "Darius Acuff Jr.",
+      "team": "SAC",
+      "game": "SA @ SAC",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/darius-acuff",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-san-antonio-spurs-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 23.5,
+          "over_american": -107,
+          "under_american": -119,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8403
+        },
+        "FD": {
+          "line": 23.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 23.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 104,
+          "under_american": -127,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7874
+        }
+      },
+      "original_offer_position": 102
+    },
+    {
+      "player": "De'Aaron Fox",
+      "team": "SA",
+      "game": "SA @ SAC",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/deaaron-fox",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-san-antonio-spurs-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -126,
+          "under_american": -101,
+          "over_decimal": 1.7937,
+          "under_decimal": 1.9901
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 16.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -120,
+          "under_american": -113,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.885
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -138,
+          "under_american": 104,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 103
+    },
+    {
+      "player": "De'Andre Hunter",
+      "team": "SAC",
+      "game": "SA @ SAC",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/deandre-hunter",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-san-antonio-spurs-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -123,
+          "under_american": -103,
+          "over_decimal": 1.813,
+          "under_decimal": 1.9709
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -104,
+          "under_american": -117,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8547
+        }
+      },
+      "original_offer_position": 104
+    },
+    {
+      "player": "Devin Vassell",
+      "team": "SA",
+      "game": "SA @ SAC",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/devin-vassell",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-san-antonio-spurs-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -110,
+          "under_american": -116,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8621
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -104,
+          "under_american": -122,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8197
+        }
+      },
+      "original_offer_position": 105
+    },
+    {
+      "player": "Domantas Sabonis",
+      "team": "SAC",
+      "game": "SA @ SAC",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/domantas-sabonis",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-san-antonio-spurs-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -101,
+          "under_american": -125,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.8
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -155,
+          "under_american": 115,
+          "over_decimal": 1.6452,
+          "under_decimal": 2.15
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 108,
+          "under_american": -150,
+          "over_decimal": 2.08,
+          "under_decimal": 1.6667
+        }
+      },
+      "original_offer_position": 106
+    },
+    {
+      "player": "Julian Champagnie",
+      "team": "SA",
+      "game": "SA @ SAC",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/julian-champagnie",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-san-antonio-spurs-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -106,
+          "under_american": -121,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -132,
+          "under_american": -103,
+          "over_decimal": 1.7576,
+          "under_decimal": 1.9709
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 122,
+          "under_american": -178,
+          "over_decimal": 2.22,
+          "under_decimal": 1.5618
+        }
+      },
+      "original_offer_position": 107
+    },
+    {
+      "player": "Keegan Murray",
+      "team": "SAC",
+      "game": "SA @ SAC",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/keegan-murray",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-san-antonio-spurs-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -120,
+          "under_american": -113,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.885
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 150,
+          "under_american": -203,
+          "over_decimal": 2.5,
+          "under_decimal": 1.4926
+        }
+      },
+      "original_offer_position": 108
+    },
+    {
+      "player": "Stephon Castle",
+      "team": "SA",
+      "game": "SA @ SAC",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/stephon-castle",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-san-antonio-spurs-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 19.5,
+          "over_american": -122,
+          "under_american": -105,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 20.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 20.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -127,
+          "under_american": -108,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9259
+        }
+      },
+      "original_offer_position": 109
+    },
+    {
+      "player": "Victor Wembanyama",
+      "team": "SA",
+      "game": "SA @ SAC",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/victor-wembanyama",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-san-antonio-spurs-at-sacramento-kings#props",
+      "points_market": {
+        "DK": {
+          "line": 29.5,
+          "over_american": -104,
+          "under_american": -122,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8197
+        },
+        "FD": {
+          "line": 29.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 29.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 29.5,
+          "over_american": -124,
+          "under_american": -109,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9174
+        },
+        "KAL": {
+          "line": 29.5,
+          "over_american": -133,
+          "under_american": 108,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 110
+    }
+  ]
+}

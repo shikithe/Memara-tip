@@ -1,0 +1,556 @@
+{
+  "date": "2026-11-23",
+  "list_number": 7,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-23T18:10:44.720200+00:00",
+  "total_offers": 122,
+  "group_size": 12,
+  "original_positions": [
+    75,
+    86
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Collin Gillespie",
+      "team": "PHX",
+      "game": "PHX @ NO",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/collin-gillespie",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-phoenix-suns-at-new-orleans-pelicans#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -117,
+          "under_american": -109,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -156,
+          "under_american": 113,
+          "over_decimal": 1.641,
+          "under_decimal": 2.13
+        }
+      },
+      "original_offer_position": 75
+    },
+    {
+      "player": "Derik Queen",
+      "team": "NO",
+      "game": "PHX @ NO",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/derik-queen",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-phoenix-suns-at-new-orleans-pelicans#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -101,
+          "under_american": -126,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7937
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": 100,
+          "under_american": -136,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7353
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -144,
+          "under_american": 108,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 76
+    },
+    {
+      "player": "Devin Booker",
+      "team": "PHX",
+      "game": "PHX @ NO",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/devin-booker",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-phoenix-suns-at-new-orleans-pelicans#props",
+      "points_market": {
+        "DK": {
+          "line": 26.5,
+          "over_american": -108,
+          "under_american": -118,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8475
+        },
+        "FD": {
+          "line": 25.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 25.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 26.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -163,
+          "under_american": 122,
+          "over_decimal": 1.6135,
+          "under_decimal": 2.22
+        }
+      },
+      "original_offer_position": 77
+    },
+    {
+      "player": "Dillon Brooks",
+      "team": "PHX",
+      "game": "PHX @ NO",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/dillon-brooks",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-phoenix-suns-at-new-orleans-pelicans#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -111,
+          "under_american": -120,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -144,
+          "under_american": 117,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.17
+        }
+      },
+      "original_offer_position": 78
+    },
+    {
+      "player": "Herbert Jones",
+      "team": "NO",
+      "game": "PHX @ NO",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/herbert-jones",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-phoenix-suns-at-new-orleans-pelicans#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -117,
+          "under_american": -115,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8696
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 163,
+          "under_american": -233,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4292
+        }
+      },
+      "original_offer_position": 79
+    },
+    {
+      "player": "Jalen Green",
+      "team": "PHX",
+      "game": "PHX @ NO",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jalen-green",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-phoenix-suns-at-new-orleans-pelicans#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -110,
+          "under_american": -114,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": 104,
+          "under_american": -136,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -120,
+          "under_american": -113,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.885
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -108,
+          "under_american": -113,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.885
+        }
+      },
+      "original_offer_position": 80
+    },
+    {
+      "player": "Jeremiah Fears",
+      "team": "NO",
+      "game": "PHX @ NO",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jeremiah-fears",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-phoenix-suns-at-new-orleans-pelicans#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -120,
+          "under_american": -111,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 144,
+          "under_american": -194,
+          "over_decimal": 2.44,
+          "under_decimal": 1.5155
+        }
+      },
+      "original_offer_position": 81
+    },
+    {
+      "player": "Jordan Goodwin",
+      "team": "PHX",
+      "game": "PHX @ NO",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jordan-goodwin",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-phoenix-suns-at-new-orleans-pelicans#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -119,
+          "under_american": -107,
+          "over_decimal": 1.8403,
+          "under_decimal": 1.9346
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -124,
+          "under_american": -109,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9174
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 122,
+          "under_american": -156,
+          "over_decimal": 2.22,
+          "under_decimal": 1.641
+        }
+      },
+      "original_offer_position": 82
+    },
+    {
+      "player": "Miles Bridges",
+      "team": "PHX",
+      "game": "PHX @ NO",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/miles-bridges",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-phoenix-suns-at-new-orleans-pelicans#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": 104,
+          "under_american": -138,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7246
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 100,
+          "under_american": -133,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7519
+        }
+      },
+      "original_offer_position": 83
+    },
+    {
+      "player": "Oso Ighodaro",
+      "team": "PHX",
+      "game": "PHX @ NO",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/oso-ighodaro",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-phoenix-suns-at-new-orleans-pelicans#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 186,
+          "under_american": -245,
+          "over_decimal": 2.86,
+          "under_decimal": 1.4082
+        }
+      },
+      "original_offer_position": 84
+    },
+    {
+      "player": "Saddiq Bey",
+      "team": "NO",
+      "game": "PHX @ NO",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/saddiq-bey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-phoenix-suns-at-new-orleans-pelicans#props",
+      "points_market": {
+        "DK": {
+          "line": 16.5,
+          "over_american": -101,
+          "under_american": -126,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7937
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -144,
+          "under_american": 117,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.17
+        }
+      },
+      "original_offer_position": 85
+    },
+    {
+      "player": "Trey Murphy III",
+      "team": "NO",
+      "game": "PHX @ NO",
+      "game_date_et": "2026-11-23",
+      "game_time_et": "Mon 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/trey-murphy",
+      "game_url": "https://betsharp.com/nba/game/2026-11-23-phoenix-suns-at-new-orleans-pelicans#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -104,
+          "under_american": -123,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.813
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -127,
+          "under_american": -107,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9346
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -156,
+          "under_american": 108,
+          "over_decimal": 1.641,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 86
+    }
+  ]
+}
