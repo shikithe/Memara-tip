@@ -493,15 +493,19 @@
       "team": "LAC",
       "opponent": "HOU",
       "game": "LAC @ HOU",
-      "start_utc": null,
+      "start_utc": "2026-11-24T01:30:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/brook-lopez",
       "points_line": 11.5,
       "over_odd": 1.8264,
       "under_odd": 1.9524,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "3448",
+      "espn_event_id": "401910043",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-3448",
+        "https://www.nba.com/game/0022600294"
+      ]
     },
     {
       "original_offer_position": 29,
@@ -510,15 +514,19 @@
       "team": "LAC",
       "opponent": "HOU",
       "game": "LAC @ HOU",
-      "start_utc": null,
+      "start_utc": "2026-11-24T01:30:00Z",
       "market": "player_points",
       "bookmaker": "DraftKings",
       "source": "https://betsharp.com/nba/player/darius-garland",
       "points_line": 18.5,
       "over_odd": 1.9434,
       "under_odd": 1.8333,
-      "player_id": null,
-      "espn_event_id": null
+      "player_id": "4396907",
+      "espn_event_id": "401910043",
+      "identity_verification_sources": [
+        "https://playathletex.com/directory/basketball-nba-espn-4396907",
+        "https://www.nba.com/game/0022600294"
+      ]
     },
     {
       "original_offer_position": 30,
