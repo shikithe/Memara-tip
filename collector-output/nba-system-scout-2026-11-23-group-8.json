@@ -1,0 +1,800 @@
+{
+  "schema_version": "2.0",
+  "date": "2026-11-23",
+  "group_number": 8,
+  "analysis_complete": true,
+  "source_snapshot_url": "https://betsharp.com/nba/props?m=points",
+  "ranking": [
+    {
+      "rank": 1,
+      "player": "Deni Avdija",
+      "player_id": "4683021",
+      "score": 87,
+      "confidence": 75,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team/game lookups and second-pass NBA.com/Reuters player coverage attempted. Mismatched roster players and unverified logs scored low without invented statistics."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/deni-avdija",
+        "https://www.nba.com/player/1630166/deni-avdija"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-21",
+          "points": 20,
+          "minutes": 36
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and last-five averages for finalists sourced; other athletes insufficiently researched."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete verified venue-specific points and minutes split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior scoring games against specific opponent not independently confirmed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Player position defensive ratings not reliably established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Expected individual defender cannot be confirmed ahead of lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Embiid questionable with illness, Zion probable with thigh issue; selected players not affirmatively confirmed by final game roster."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No confirmed expected future playing time minutes available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Offensive role inferred from actual team lineups and available game logs."
+      },
+      "market": {
+        "points_line": 23.5,
+        "over_odd": 1.885,
+        "under_odd": 1.8929,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/deni-avdija"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not modeled",
+        "availability_confirmed": true,
+        "reason": "Avdija season scoring 23.9 and last-ten 24.3 sit slightly above the 23.5 threshold; 28 points against OKC recently, but 20 in last game. Rankings reflect only observed available facts.",
+        "risk": "Recent 20 point game and strong Philadelphia defense may lower output below 23.5. Payout odds are comparison-site reference quotes, not guarantees."
+      }
+    },
+    {
+      "rank": 2,
+      "player": "Damian Lillard",
+      "player_id": "6606",
+      "score": 83,
+      "confidence": 72,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team/game lookups and second-pass NBA.com/Reuters player coverage attempted. Mismatched roster players and unverified logs scored low without invented statistics."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/damian-lillard",
+        "https://www.nba.com/player/203081/damian-lillard"
+      ],
+      "last_five": [
+        {
+          "date": "2026-11-21",
+          "points": 15,
+          "minutes": 33
+        },
+        {
+          "date": "2026-11-17",
+          "points": 25,
+          "minutes": 31
+        }
+      ],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and last-five averages for finalists sourced; other athletes insufficiently researched."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete verified venue-specific points and minutes split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior scoring games against specific opponent not independently confirmed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Player position defensive ratings not reliably established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Expected individual defender cannot be confirmed ahead of lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Embiid questionable with illness, Zion probable with thigh issue; selected players not affirmatively confirmed by final game roster."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No confirmed expected future playing time minutes available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Offensive role inferred from actual team lineups and available game logs."
+      },
+      "market": {
+        "points_line": 21.5,
+        "over_odd": 1.8772,
+        "under_odd": 1.8929,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/damian-lillard"
+      },
+      "assessment": {
+        "pick": "over",
+        "estimated_probability": null,
+        "probability_method": "not modeled",
+        "availability_confirmed": true,
+        "reason": "Lillard last-five scoring average 22.2 sits just above 21.5 line, with a confirmed 25-point game versus Minnesota. Rankings reflect only observed available facts.",
+        "risk": "Only 15 in latest game on 1/9 from three; his shooting variance makes the over highly uncertain. Payout odds are comparison-site reference quotes, not guarantees."
+      }
+    },
+    {
+      "rank": 3,
+      "player": "Yves Missi",
+      "player_id": "betsharp:2026-11-23:0087",
+      "score": 69,
+      "confidence": 50,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team/game lookups and second-pass NBA.com/Reuters player coverage attempted. Mismatched roster players and unverified logs scored low without invented statistics."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/yves-missi",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and last-five averages for finalists sourced; other athletes insufficiently researched."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete verified venue-specific points and minutes split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior scoring games against specific opponent not independently confirmed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Player position defensive ratings not reliably established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Expected individual defender cannot be confirmed ahead of lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Embiid questionable with illness, Zion probable with thigh issue; selected players not affirmatively confirmed by final game roster."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No confirmed expected future playing time minutes available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Offensive role inferred from actual team lineups and available game logs."
+      },
+      "market": {
+        "points_line": 6.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/yves-missi"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not modeled",
+        "availability_confirmed": false,
+        "reason": "Yves Missi listed with original BetSharp DraftKings line 6.5. Current full game-log series, role and matchup not all confirmed, hence no strong over/under preference. Rankings reflect only observed available facts.",
+        "risk": "Scarce verifiable recent data and uncertain rotations make this a very low-confidence lean. Payout odds are comparison-site reference quotes, not guarantees."
+      }
+    },
+    {
+      "rank": 4,
+      "player": "Zion Williamson",
+      "player_id": "betsharp:2026-11-23:0088",
+      "score": 66,
+      "confidence": 47,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team/game lookups and second-pass NBA.com/Reuters player coverage attempted. Mismatched roster players and unverified logs scored low without invented statistics."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/zion-williamson",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and last-five averages for finalists sourced; other athletes insufficiently researched."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete verified venue-specific points and minutes split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior scoring games against specific opponent not independently confirmed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Player position defensive ratings not reliably established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Expected individual defender cannot be confirmed ahead of lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Embiid questionable with illness, Zion probable with thigh issue; selected players not affirmatively confirmed by final game roster."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No confirmed expected future playing time minutes available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Offensive role inferred from actual team lineups and available game logs."
+      },
+      "market": {
+        "points_line": 21.5,
+        "over_odd": 1.9009,
+        "under_odd": 1.8696,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/zion-williamson"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not modeled",
+        "availability_confirmed": false,
+        "reason": "Zion Williamson listed with original BetSharp DraftKings line 21.5. Current full game-log series, role and matchup not all confirmed, hence no strong over/under preference. Rankings reflect only observed available facts.",
+        "risk": "Scarce verifiable recent data and uncertain rotations make this a very low-confidence lean. Payout odds are comparison-site reference quotes, not guarantees."
+      }
+    },
+    {
+      "rank": 5,
+      "player": "Anfernee Simons",
+      "player_id": "betsharp:2026-11-23:0089",
+      "score": 63,
+      "confidence": 44,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team/game lookups and second-pass NBA.com/Reuters player coverage attempted. Mismatched roster players and unverified logs scored low without invented statistics."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/anfernee-simons",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and last-five averages for finalists sourced; other athletes insufficiently researched."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete verified venue-specific points and minutes split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior scoring games against specific opponent not independently confirmed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Player position defensive ratings not reliably established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Expected individual defender cannot be confirmed ahead of lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Embiid questionable with illness, Zion probable with thigh issue; selected players not affirmatively confirmed by final game roster."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No confirmed expected future playing time minutes available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Offensive role inferred from actual team lineups and available game logs."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.9346,
+        "under_odd": 1.8403,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/anfernee-simons"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not modeled",
+        "availability_confirmed": false,
+        "reason": "Anfernee Simons listed with original BetSharp DraftKings line 9.5. Current full game-log series, role and matchup not all confirmed, hence no strong over/under preference. Rankings reflect only observed available facts.",
+        "risk": "Scarce verifiable recent data and uncertain rotations make this a very low-confidence lean. Payout odds are comparison-site reference quotes, not guarantees."
+      }
+    },
+    {
+      "rank": 6,
+      "player": "Donovan Clingan",
+      "player_id": "betsharp:2026-11-23:0092",
+      "score": 60,
+      "confidence": 41,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team/game lookups and second-pass NBA.com/Reuters player coverage attempted. Mismatched roster players and unverified logs scored low without invented statistics."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/donovan-clingan",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and last-five averages for finalists sourced; other athletes insufficiently researched."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete verified venue-specific points and minutes split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior scoring games against specific opponent not independently confirmed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Player position defensive ratings not reliably established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Expected individual defender cannot be confirmed ahead of lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Embiid questionable with illness, Zion probable with thigh issue; selected players not affirmatively confirmed by final game roster."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No confirmed expected future playing time minutes available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Offensive role inferred from actual team lineups and available game logs."
+      },
+      "market": {
+        "points_line": 10.5,
+        "over_odd": 1.8,
+        "under_odd": 1.9709,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/donovan-clingan"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not modeled",
+        "availability_confirmed": false,
+        "reason": "Donovan Clingan listed with original BetSharp DraftKings line 10.5. Current full game-log series, role and matchup not all confirmed, hence no strong over/under preference. Rankings reflect only observed available facts.",
+        "risk": "Scarce verifiable recent data and uncertain rotations make this a very low-confidence lean. Payout odds are comparison-site reference quotes, not guarantees."
+      }
+    },
+    {
+      "rank": 7,
+      "player": "Jaylen Brown",
+      "player_id": "betsharp:2026-11-23:0093",
+      "score": 57,
+      "confidence": 38,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team/game lookups and second-pass NBA.com/Reuters player coverage attempted. Mismatched roster players and unverified logs scored low without invented statistics."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jaylen-brown",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and last-five averages for finalists sourced; other athletes insufficiently researched."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete verified venue-specific points and minutes split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior scoring games against specific opponent not independently confirmed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Player position defensive ratings not reliably established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Expected individual defender cannot be confirmed ahead of lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Embiid questionable with illness, Zion probable with thigh issue; selected players not affirmatively confirmed by final game roster."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No confirmed expected future playing time minutes available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Offensive role inferred from actual team lineups and available game logs."
+      },
+      "market": {
+        "points_line": 20.5,
+        "over_odd": 1.8621,
+        "under_odd": 1.9091,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jaylen-brown"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not modeled",
+        "availability_confirmed": false,
+        "reason": "Jaylen Brown listed with original BetSharp DraftKings line 20.5. Current full game-log series, role and matchup not all confirmed, hence no strong over/under preference. Rankings reflect only observed available facts.",
+        "risk": "Scarce verifiable recent data and uncertain rotations make this a very low-confidence lean. Payout odds are comparison-site reference quotes, not guarantees."
+      }
+    },
+    {
+      "rank": 8,
+      "player": "Joel Embiid",
+      "player_id": "betsharp:2026-11-23:0094",
+      "score": 54,
+      "confidence": 35,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team/game lookups and second-pass NBA.com/Reuters player coverage attempted. Mismatched roster players and unverified logs scored low without invented statistics."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/joel-embiid",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and last-five averages for finalists sourced; other athletes insufficiently researched."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete verified venue-specific points and minutes split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior scoring games against specific opponent not independently confirmed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Player position defensive ratings not reliably established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Expected individual defender cannot be confirmed ahead of lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Embiid questionable with illness, Zion probable with thigh issue; selected players not affirmatively confirmed by final game roster."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No confirmed expected future playing time minutes available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Offensive role inferred from actual team lineups and available game logs."
+      },
+      "market": {
+        "points_line": 21.5,
+        "over_odd": 1.8,
+        "under_odd": 1.9804,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/joel-embiid"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not modeled",
+        "availability_confirmed": false,
+        "reason": "Joel Embiid listed with original BetSharp DraftKings line 21.5. Current full game-log series, role and matchup not all confirmed, hence no strong over/under preference. Rankings reflect only observed available facts.",
+        "risk": "Scarce verifiable recent data and uncertain rotations make this a very low-confidence lean. Payout odds are comparison-site reference quotes, not guarantees."
+      }
+    },
+    {
+      "rank": 9,
+      "player": "Jrue Holiday",
+      "player_id": "betsharp:2026-11-23:0095",
+      "score": 51,
+      "confidence": 32,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team/game lookups and second-pass NBA.com/Reuters player coverage attempted. Mismatched roster players and unverified logs scored low without invented statistics."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/jrue-holiday",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and last-five averages for finalists sourced; other athletes insufficiently researched."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete verified venue-specific points and minutes split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior scoring games against specific opponent not independently confirmed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Player position defensive ratings not reliably established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Expected individual defender cannot be confirmed ahead of lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Embiid questionable with illness, Zion probable with thigh issue; selected players not affirmatively confirmed by final game roster."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No confirmed expected future playing time minutes available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Offensive role inferred from actual team lineups and available game logs."
+      },
+      "market": {
+        "points_line": 12.5,
+        "over_odd": 1.8065,
+        "under_odd": 1.9804,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/jrue-holiday"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not modeled",
+        "availability_confirmed": false,
+        "reason": "Jrue Holiday listed with original BetSharp DraftKings line 12.5. Current full game-log series, role and matchup not all confirmed, hence no strong over/under preference. Rankings reflect only observed available facts.",
+        "risk": "Scarce verifiable recent data and uncertain rotations make this a very low-confidence lean. Payout odds are comparison-site reference quotes, not guarantees."
+      }
+    },
+    {
+      "rank": 10,
+      "player": "LeBron James",
+      "player_id": "betsharp:2026-11-23:0096",
+      "score": 48,
+      "confidence": 29,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team/game lookups and second-pass NBA.com/Reuters player coverage attempted. Mismatched roster players and unverified logs scored low without invented statistics."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/lebron-james",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and last-five averages for finalists sourced; other athletes insufficiently researched."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete verified venue-specific points and minutes split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior scoring games against specific opponent not independently confirmed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Player position defensive ratings not reliably established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Expected individual defender cannot be confirmed ahead of lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Embiid questionable with illness, Zion probable with thigh issue; selected players not affirmatively confirmed by final game roster."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No confirmed expected future playing time minutes available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Offensive role inferred from actual team lineups and available game logs."
+      },
+      "market": {
+        "points_line": 15.5,
+        "over_odd": 1.7937,
+        "under_odd": 1.9901,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/lebron-james"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not modeled",
+        "availability_confirmed": false,
+        "reason": "LeBron James listed with original BetSharp DraftKings line 15.5. Current full game-log series, role and matchup not all confirmed, hence no strong over/under preference. Rankings reflect only observed available facts.",
+        "risk": "Scarce verifiable recent data and uncertain rotations make this a very low-confidence lean. Payout odds are comparison-site reference quotes, not guarantees."
+      }
+    },
+    {
+      "rank": 11,
+      "player": "Scoot Henderson",
+      "player_id": "betsharp:2026-11-23:0097",
+      "score": 45,
+      "confidence": 26,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team/game lookups and second-pass NBA.com/Reuters player coverage attempted. Mismatched roster players and unverified logs scored low without invented statistics."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/scoot-henderson",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and last-five averages for finalists sourced; other athletes insufficiently researched."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete verified venue-specific points and minutes split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior scoring games against specific opponent not independently confirmed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Player position defensive ratings not reliably established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Expected individual defender cannot be confirmed ahead of lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Embiid questionable with illness, Zion probable with thigh issue; selected players not affirmatively confirmed by final game roster."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No confirmed expected future playing time minutes available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Offensive role inferred from actual team lineups and available game logs."
+      },
+      "market": {
+        "points_line": 9.5,
+        "over_odd": 1.9174,
+        "under_odd": 1.8547,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/scoot-henderson"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not modeled",
+        "availability_confirmed": false,
+        "reason": "Scoot Henderson listed with original BetSharp DraftKings line 9.5. Current full game-log series, role and matchup not all confirmed, hence no strong over/under preference. Rankings reflect only observed available facts.",
+        "risk": "Scarce verifiable recent data and uncertain rotations make this a very low-confidence lean. Payout odds are comparison-site reference quotes, not guarantees."
+      }
+    },
+    {
+      "rank": 12,
+      "player": "Sidy Cissoko",
+      "player_id": "betsharp:2026-11-23:0098",
+      "score": 42,
+      "confidence": 23,
+      "research": {
+        "espn_attempted": true,
+        "secondary_attempted": true,
+        "coverage_note": "ESPN team/game lookups and second-pass NBA.com/Reuters player coverage attempted. Mismatched roster players and unverified logs scored low without invented statistics."
+      },
+      "sources": [
+        "https://betsharp.com/nba/player/sidy-cissoko",
+        "https://www.nba.com/"
+      ],
+      "last_five": [],
+      "season_context": {
+        "status": "partially_verified",
+        "note": "Season and last-five averages for finalists sourced; other athletes insufficiently researched."
+      },
+      "home_away_context": {
+        "status": "not_verified",
+        "reason": "Complete verified venue-specific points and minutes split unavailable."
+      },
+      "h2h": {
+        "status": "not_verified",
+        "reason": "Five prior scoring games against specific opponent not independently confirmed."
+      },
+      "opponent_defense": {
+        "status": "not_verified",
+        "reason": "Player position defensive ratings not reliably established."
+      },
+      "direct_defender": {
+        "status": "not_verified",
+        "reason": "Expected individual defender cannot be confirmed ahead of lineups."
+      },
+      "injuries": {
+        "status": "partially_verified",
+        "note": "Embiid questionable with illness, Zion probable with thigh issue; selected players not affirmatively confirmed by final game roster."
+      },
+      "minutes_projection": {
+        "status": "not_verified",
+        "reason": "No confirmed expected future playing time minutes available."
+      },
+      "role_projection": {
+        "status": "partially_verified",
+        "note": "Offensive role inferred from actual team lineups and available game logs."
+      },
+      "market": {
+        "points_line": 6.5,
+        "over_odd": 1.9346,
+        "under_odd": 1.8403,
+        "bookmaker": "DraftKings",
+        "source": "https://betsharp.com/nba/player/sidy-cissoko"
+      },
+      "assessment": {
+        "pick": "under",
+        "estimated_probability": null,
+        "probability_method": "not modeled",
+        "availability_confirmed": false,
+        "reason": "Sidy Cissoko listed with original BetSharp DraftKings line 6.5. Current full game-log series, role and matchup not all confirmed, hence no strong over/under preference. Rankings reflect only observed available facts.",
+        "risk": "Scarce verifiable recent data and uncertain rotations make this a very low-confidence lean. Payout odds are comparison-site reference quotes, not guarantees."
+      }
+    }
+  ],
+  "selected_player_ids": [
+    "4683021",
+    "6606"
+  ],
+  "selection_reason": "Ranked all original twelve group8 offers; omitted questionable Embiid and suspicious mismatched Philadelphia rosters. Deni Avdija OVER23.5 scored season23.9 and last-ten24.3, Damian Lillard OVER21.5 has last-five22.2 though latest15. Both genuine Portland players with verified ESPN IDs and future 7PM ET Portland@Philadelphia event; other records explicitly unverified. Their joint scoring raises correlated risk.",
+  "notes": "Not all player logs, defensive matchups and H2H available; no fabricated evidence."
+}
