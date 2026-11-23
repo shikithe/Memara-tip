@@ -6369,15 +6369,15 @@
         "selection_method": "full_ranked_scout"
       },
       "accounting": {
-        "tickets_total": 3,
+        "tickets_total": 4,
         "tickets_settled": 0,
-        "tickets_pending": 3,
+        "tickets_pending": 4,
         "tickets_won": 0,
         "tickets_lost": 0,
         "tickets_void": 0,
-        "total_staked": 25.92,
+        "total_staked": 34.56,
         "total_returned": 0,
-        "available_bank": 838.38,
+        "available_bank": 829.74,
         "net_profit_confirmed": 0,
         "complete": false
       }
