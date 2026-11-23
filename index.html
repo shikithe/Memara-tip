@@ -55,7 +55,7 @@ function effectiveResult(m,live){
     return live.state==="final"?(hit?"pogođen":"promašen"):null;
   }
   if(m.result_status==="pogođen"||m.result_status==="promašen")return m.result_status;
-  if(live&&(live.state==="live"||live.state==="final")&&live.source==="espn-public-unofficial"){const pick=String(m.pick||"").trim().toUpperCase();const threshold={"3+":3,"OVER 2.5":3,"O2.5":3,"2+":2,"OVER 1.5":2,"O1.5":2}[pick];const parts=String(live.score||"").split(":");if(parts.length===2&&parts.every(x=>/^\d+$/.test(x))){if(threshold&&Number(parts[0])+Number(parts[1])>=threshold)return "pogođen";if(pick==="GG"&&Number(parts[0])>0&&Number(parts[1])>0)return "pogođen";}}return live&&live.state==="final"&&(live.result_status==="pogođen"||live.result_status==="promašen")?live.result_status:null;
+  if(live&&(live.state==="live"||live.state==="final")&&["espn-public-unofficial","espn-browser-direct"].includes(live.source)){const pick=String(m.pick||"").trim().toUpperCase();const threshold={"3+":3,"OVER 2.5":3,"O2.5":3,"2+":2,"OVER 1.5":2,"O1.5":2}[pick];const parts=String(live.score||"").split(":");if(parts.length===2&&parts.every(x=>/^\d+$/.test(x))){if(threshold&&Number(parts[0])+Number(parts[1])>=threshold)return "pogođen";if(pick==="GG"&&Number(parts[0])>0&&Number(parts[1])>0)return "pogođen";}}return live&&live.state==="final"&&(live.result_status==="pogođen"||live.result_status==="promašen")?live.result_status:null;
 }
 function derivedTicketStatus(ticket,data){
   if(ticket.status==="dobitan"||ticket.status==="izgubljen")return ticket.status;
@@ -76,7 +76,7 @@ function scoreLine(m,live){
   }
   if(m.final_score)return '<div class="finalscore">Konačno: '+esc(m.final_score)+'</div>';
   if(!live||!live.score)return '';
-  if(live.state==="live"){const hit=effectiveResult(m,live)==="pogođen";return '<div class="live-result '+(hit?'result-final-hit':'')+'">🔴 U TOKU'+(live.minute?' · '+esc(live.minute)+(String(live.minute).includes("'")?'':"'"):'')+' · '+esc(live.score)+(hit?' · ✓ POGOĐEN':'')+'</div>'; }
+  if(live.state==="live"){const hit=effectiveResult(m,live)==="pogođen";return '<div class="live-result '+(hit?'result-final-hit':'')+'">'+(live.match_phase==='half_time'?'⏸ PAUZA':'🔴 U TOKU')+(live.minute?' · '+esc(live.minute)+(String(live.minute).includes("'")?'':"'"):'')+' · '+esc(live.score)+(hit?' · ✓ POGOĐEN':'')+'</div>'; }
   if(live.state==="stale")return '<div class="finalscore">⏸ Posljednji zabilježeni rezultat'+(live.minute?' ('+esc(live.minute)+"')":'')+': '+esc(live.score)+' · čeka novo očitavanje</div>';
   if(live.state==="final"){
     const label=live.result_status==="pogođen"?"✓ POGOĐEN":live.result_status==="promašen"?"✕ PROMAŠEN":"KONAČNO";
@@ -212,61 +212,83 @@ function scoreDate(value){
  return new Intl.DateTimeFormat('en-CA',{year:'numeric',month:'2-digit',day:'2-digit',timeZone:'Europe/Sarajevo'}).format(d).replaceAll('-','');
 }
 async function checkEspnDirectly(){
- if(!currentData||!liveScores||liveScores.date!==currentData.date||document.hidden)return;
- const pending=liveScores.matches.filter(m=>m.event_id&&m.league&&m.state!=='final'&&m.state!=='unverified');
- if(!pending.length)return;
- const groups=new Map();
- for(const m of pending){
-  const leg=currentData.tickets.find(t=>t.id===m.ticket)?.matches?.[m.index];
-  const day=leg?scoreDate(leg.start_sarajevo||leg.start_utc||leg.datetime):null;
-  if(!day||!/^[a-z0-9.]+$/i.test(m.league))continue;
-  const key=m.league+'|'+day;
-  if(!groups.has(key))groups.set(key,[]);
-  groups.get(key).push(m);
+ // GitHub cron is best-effort. Use published ESPN fixture IDs even when
+ // live-scores.json is empty, late, or predates the ticket's publication.
+ // This only updates the display: bank and ticket settlement stay server-owned.
+ if(!currentData||document.hidden||!Array.isArray(currentData.tickets))return;
+ const jobs=[], now=Date.now();
+ for(const t of currentData.tickets)for(const [i,leg] of (t.matches||[]).entries()){
+  if(leg.sport==='basketball'||leg.final_score)continue;
+  const match=String(leg.fixture_id||'').match(/^espn:football:([a-z0-9.]+):(\d+)$/);
+  if(!match)continue;
+  const startMs=new Date(leg.start_utc||leg.datetime||leg.start_sarajevo||'').getTime();
+  if(!Number.isFinite(startMs)||now<startMs-20*60000||now>startMs+36*3600000)continue;
+  jobs.push({ticket:t.id,index:i,leg,league:match[1],eventId:match[2],
+             day:scoreDate(leg.start_sarajevo||leg.start_utc||leg.datetime)});
  }
- let changed=false,success=0;
- await Promise.all([...groups].slice(0,8).map(async ([key,tracked])=>{
+ if(!jobs.length)return;
+ if(!liveScores||liveScores.date!==currentData.date||!Array.isArray(liveScores.matches))
+  liveScores={date:currentData.date,matches:[]};
+ const grouped=new Map();
+ for(const job of jobs){
+  if(!job.day||!/^[a-z0-9.]+$/.test(job.league))continue;
+  const key=job.league+'|'+job.day;
+  if(!grouped.has(key))grouped.set(key,[]);
+  grouped.get(key).push(job);
+ }
+ let changed=false,success=0,confirmed=0;
+ await Promise.all([...grouped].slice(0,12).map(async ([key,tracked])=>{
   const [league,day]=key.split('|');
   try{
    const url='https://site.api.espn.com/apis/site/v2/sports/soccer/'+encodeURIComponent(league)+'/scoreboard?dates='+day+'&limit=500';
    const resp=await fetch(url,{cache:'no-store'});
    if(!resp.ok)return;
    const result=await resp.json();success++;
-   for(const m of tracked){
-    const event=(result.events||[]).find(e=>String(e.id)===String(m.event_id));
+   for(const job of tracked){
+    const event=(result.events||[]).find(e=>String(e.id)===job.eventId);
     if(!event)continue;
     const competition=event.competitions?.[0];
     const home=competition?.competitors?.find(x=>x.homeAway==='home');
     const away=competition?.competitors?.find(x=>x.homeAway==='away');
     const hs=Number(home?.score),as=Number(away?.score);
     if(!Number.isInteger(hs)||!Number.isInteger(as)||hs<0||as<0)continue;
-    const status=event.status?.type||{},state=status.state;
-    const extraTime=/penalt|extra time|aet/i.test(status.description||'');
-    const final=state==='post'&&status.completed===true&&!extraTime;
+    const officialStart=new Date(event.date||competition?.date||'').getTime();
+    const publishedStart=new Date(job.leg.start_utc||job.leg.datetime||job.leg.start_sarajevo).getTime();
+    if(!Number.isFinite(officialStart)||Math.abs(officialStart-publishedStart)>6*3600000)continue;
+    const st=event.status?.type||{},state=st.state;
+    const extraTime=/penalt|extra time|aet/i.test(st.description||'');
+    const final=state==='post'&&st.completed===true&&!extraTime;
     if(state!=='in'&&!final)continue;
-    const old=liveScores.matches.find(x=>x.ticket===m.ticket&&x.index===m.index);
-    if(!old||old.state==='final')continue;
-    const next={...old,score:hs+':'+as,state:final?'final':'live',minute:null};
-    if(!final){
-     const detail=String(status.shortDetail||status.detail||'');
-     const clock=String(event.status?.displayClock||'');
-     const found=detail.match(/(\d{1,3}(?:\+\d{1,2})?)\s*['′’]/)||clock.match(/^(\d{1,3})(?::[0-5]\d)?$/);
-     next.minute=found?found[1]:null;
+    const old=liveScores.matches.find(x=>x.ticket===job.ticket&&x.index===job.index);
+    if(old?.state==='final'&&!final)continue;
+    const name=String(job.leg.match||'').split(' - ');
+    const rawDetail=String(st.shortDetail||st.detail||st.description||'');
+    const clock=String(event.status?.displayClock||'');
+    const minuteMatch=rawDetail.match(/(\d{1,3}(?:\+\d{1,2})?)\s*['′’]/)||clock.match(/^(\d{1,3})(?::[0-5]\d)?$/);
+    const pause=/half.?time|halftime|interval|break|pauza/i.test(rawDetail);
+    const next={ticket:job.ticket,index:job.index,fixture_id:job.leg.fixture_id,
+     home:job.leg.home||name[0]||'',away:job.leg.away||name[1]||'',
+     league,event_id:job.eventId,source:'espn-browser-direct',
+     observed_at_utc:new Date().toISOString(),score:hs+':'+as,
+     state:final?'final':'live',minute:final?null:(minuteMatch?minuteMatch[1]:null),
+     match_phase:pause?'half_time':null};
+    if(final){const decision=decideLivePick(job.leg.pick,hs,as);
+     if(decision!==null)next.result_status=decision?'pogođen':'promašen';
     }else{
-     const leg=currentData.tickets.find(t=>t.id===m.ticket)?.matches?.[m.index];
-     const pick=leg?decideLivePick(leg.pick,hs,as):null;
-     if(pick!==null)next.result_status=pick?'pogođen':'promašen';
+     const pick=String(job.leg.pick||'').trim().toUpperCase();
+     const threshold={'3+':3,'OVER 2.5':3,'O2.5':3,'2+':2,'OVER 1.5':2,'O1.5':2}[pick];
+     if((threshold&&hs+as>=threshold)||(pick==='GG'&&hs>0&&as>0))
+       next.result_status='pogođen';
     }
-    Object.assign(old,next);
-    changed=true;
+    if(old)Object.assign(old,next);else liveScores.matches.push(next);
+    confirmed++;changed=true;
    }
-  }catch(e){/* CORS or ESPN unavailable: keep published results */ }
+  }catch(e){/* Browser CORS/provider issues: no fabricated results */ }
  }));
- if(changed){
-  if(currentData)render(currentData,false,'out');
-  showRefreshStatus('ESPN direktna provjera · '+refreshClock()+' · banku potvrđuje GitHub');
+ if(changed){render(currentData,false,'out');
+  showRefreshStatus('ESPN direktno: '+confirmed+' utakmica · '+refreshClock()+' · banku potvrđuje GitHub');
  }else if(!success){
-  showRefreshStatus('⚠ ESPN direktna provjera nedostupna; čekamo GitHub osvježavanje');
+  showRefreshStatus('⚠ ESPN direktna provjera nedostupna; čeka se GitHub osvježavanje');
  }
 }
 // Independent browser-side NBA ESPN fallback: repairs delayed GitHub snapshots.
