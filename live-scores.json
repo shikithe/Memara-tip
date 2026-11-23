@@ -1,8 +1,35 @@
 {
   "date": "2026-11-23",
-  "updated_at_utc": "2026-11-23T12:51:50.329365+00:00",
+  "updated_at_utc": "2026-11-23T17:41:27.226390+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
-  "matches": [],
+  "matches": [
+    {
+      "ticket": "A",
+      "index": 0,
+      "home": "Istanbul Basaksehir",
+      "away": "Çorum FK",
+      "state": "live",
+      "fixture_id": "espn:football:tur.1:401888370",
+      "score": "0:1",
+      "source": "espn-public-unofficial",
+      "event_id": "401888370",
+      "league": "tur.1",
+      "minute": "42"
+    },
+    {
+      "ticket": "A",
+      "index": 1,
+      "home": "Monza",
+      "away": "Fiorentina",
+      "state": "scheduled",
+      "fixture_id": "espn:football:ita.1:401875009",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401875009",
+      "league": "ita.1",
+      "minute": null
+    }
+  ],
   "bank_unchanged": true
 }
