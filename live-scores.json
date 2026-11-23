@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "updated_at_utc": "2026-11-23T17:46:14.621804+00:00",
+  "updated_at_utc": "2026-11-23T18:13:38.554748+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -15,7 +15,7 @@
       "source": "espn-public-unofficial",
       "event_id": "401888370",
       "league": "tur.1",
-      "minute": "45"
+      "minute": "53"
     },
     {
       "ticket": "A",
@@ -29,6 +29,20 @@
       "event_id": "401875009",
       "league": "ita.1",
       "minute": null
+    },
+    {
+      "ticket": "C",
+      "index": 0,
+      "home": "Phoenix Suns",
+      "away": "New Orleans Pelicans",
+      "state": "unverified"
+    },
+    {
+      "ticket": "C",
+      "index": 1,
+      "home": "Cleveland Cavaliers",
+      "away": "Chicago Bulls",
+      "state": "unverified"
     }
   ],
   "bank_unchanged": true
