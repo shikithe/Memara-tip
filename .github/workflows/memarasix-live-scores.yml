@@ -14,6 +14,7 @@ on:
       - 'settle_virtual_tickets.py'
       - 'tests/test_virtual_settlement.py'
       - 'tests/test_football_live_scores.py'
+      - 'tests/test_live_tracking_contract.py'
       - 'memarasix_daily_rollover.py'
       - 'tests/test_archive_handoff.py'
   schedule:
@@ -43,6 +44,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p test_virtual_settlement.py -v
           python -m unittest discover -s tests -p test_football_live_scores.py -v
+          python -m unittest discover -s tests -p test_live_tracking_contract.py -v
           python -m unittest discover -s tests -p test_nba_live_points.py -v
           python -m unittest discover -s tests -p test_archive_handoff.py -v
       - name: Verify browser score and minute JavaScript parses
