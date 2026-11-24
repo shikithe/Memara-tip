@@ -10,6 +10,38 @@ class NBABoxscoreTests(unittest.TestCase):
     def test_strict_player_id(self):
         self.assertEqual(player_points(sample(),"42"),26)
         self.assertIsNone(player_points(sample(),"43"))
+    def test_scheduled_c_event_is_verified_without_invented_points(self):
+        m={"sport":"basketball","market":"player_points","pick":"over",
+           "points_line":21.5,"espn_event_id":"401909315","player_id":"6583",
+           "start_utc":"2026-11-25T01:00:00Z","home":"Washington Wizards",
+           "away":"Boston Celtics"}
+        published={"tickets":[{"id":"C","matches":[m]}]}
+        records=[{"ticket":"C","index":0,"home":m["home"],"away":m["away"],
+                  "state":"unverified"}]
+        from unittest.mock import Mock
+        fake=Mock(side_effect=lambda eid:sample(state="pre"))
+        result=enrich(published,records,{},datetime(2026,11,24,18,0,
+                      tzinfo=timezone.utc),fake)[0]
+        self.assertEqual(result["state"],"scheduled")
+        self.assertEqual(result["event_id"],"401909315")
+        self.assertEqual(result["player_id"],"6583")
+        self.assertEqual(result["sport"],"basketball")
+        self.assertNotIn("player_points",result)
+        self.assertNotIn("result_status",result)
+        fake.assert_called_once_with("401909315")
+
+    def test_unreachable_pregame_summary_remains_unverified(self):
+        m={"sport":"basketball","market":"player_points","pick":"over",
+           "points_line":25.5,"espn_event_id":"401909316","player_id":"3112335",
+           "start_utc":"2026-11-25T03:00:00Z","home":"Denver Nuggets",
+           "away":"Dallas Mavericks"}
+        published={"tickets":[{"id":"C","matches":[m]}]}
+        records=[{"ticket":"C","index":0,"home":m["home"],"away":m["away"],
+                  "state":"unverified"}]
+        result=enrich(published,records,{},datetime(2026,11,24,18,0,
+               tzinfo=timezone.utc),lambda _eid: (_ for _ in ()).throw(OSError("offline")))[0]
+        self.assertEqual(result["state"],"unverified")
+
     def test_live_over_hit(self):
         m={"sport":"basketball","market":"player_points","pick":"over","points_line":25.5,"espn_event_id":"401","player_id":"42","start_utc":"2026-11-15T20:00:00Z","home":"A","away":"B"}
         published={"tickets":[{"id":"C","matches":[m]}]}
