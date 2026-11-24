@@ -5,9 +5,9 @@ on:
     paths:
       - 'collector-output/betsharp-trigger.txt'
   schedule:
-    # 12:05/12:25/12:45 local Sarajevo (both CET & CEST);
-    # one successful ET-date snapshot per day, later slots are retries.
-    - cron: '5,25,45 10,11 * * *'
+    # 11:45 local: clear -> verified feedback -> collect; noon retries.
+    - cron: '45 9,10 * * *'
+    - cron: '0,5,25,45 10,11 * * *'
     # Recovery checks after preparation window; same capture serves C and NBA 10.
     - cron: '10 12-22 * * *'
 permissions:
@@ -39,30 +39,90 @@ jobs:
           from zoneinfo import ZoneInfo
           local=datetime.now(ZoneInfo('Europe/Sarajevo'))
           et=datetime.now(ZoneInfo('America/New_York')).date().isoformat()
-          run=os.environ['EVENT_NAME'] in ('workflow_dispatch', 'push') or 12 <= local.hour <= 23
+          run=os.environ['EVENT_NAME'] in ('workflow_dispatch', 'push') or (local.hour==11 and local.minute>=45) or 12 <= local.hour <= 23
           p=Path('collector-output/betsharp-nba-daily.json')
-          if p.exists() and os.environ['EVENT_NAME']=='schedule':
+          try:
               d=json.loads(p.read_text())
-              if d.get('game_date_et')==et and d.get('status')=='ok' and d.get('player_count',0)>0:
-                  run=False
-                  print('BETSHARP_ALREADY_COLLECTED',et)
+          except (OSError, ValueError):
+              d={}
+          if (d.get('game_date_et')==et and d.get('status')=='ok'
+              and isinstance(d.get('offers'),list) and d['offers']
+              and d.get('player_count')==len(d['offers'])):
+              run=False
+              print('BETSHARP_ALREADY_COLLECTED',et)
           with open(os.environ['GITHUB_OUTPUT'],'a') as f: f.write('run='+str(run).lower()+'\n')
           print('BETSHARP_GATE',local.isoformat(),run)
           PY
-      - name: Install HTML parser
+      - name: Clear old BetSharp snapshot and verify feedback on main
+        id: clearance
         if: steps.gate.outputs.run == 'true'
+        run: |
+          set -euo pipefail
+          path=collector-output/betsharp-nba-daily.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin main
+          git merge --ff-only origin/main
+          python - <<'PY'
+          import json
+          from datetime import datetime,timezone
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          p=Path('collector-output/betsharp-nba-daily.json')
+          day=datetime.now(ZoneInfo('America/New_York')).date().isoformat()
+          try:
+              d=json.loads(p.read_text())
+          except (OSError,ValueError):
+              d={}
+          if (d.get('game_date_et')==day and d.get('status')=='ok'
+              and isinstance(d.get('offers'),list) and d['offers']
+              and d.get('player_count')==len(d['offers'])):
+              raise SystemExit('Current daily snapshot appeared; refusing to erase it')
+          if not (d.get('clearance_date_et')==day and d.get('status')=='awaiting_daily_refresh'
+                  and d.get('player_count')==0 and d.get('offers')==[] and d.get('cleared_at_utc')):
+              d={'schema_version':'1.0','source':'BetSharp','source_url':'https://betsharp.com/nba/props?m=points',
+                 'market':'player_points','game_date_et':None,'collected_at_utc':None,
+                 'player_count':0,'offers':[],'status':'awaiting_daily_refresh',
+                 'clearance_date_et':day,'cleared_at_utc':datetime.now(timezone.utc).isoformat(),
+                 'note':'Active offer cleared; historical captures and tickets unchanged.'}
+              p.parent.mkdir(parents=True,exist_ok=True)
+              p.write_text(json.dumps(d,indent=2)+'\n')
+          PY
+          git add -- "$path"
+          if ! git diff --cached --quiet; then
+            git commit -m "data: clear BetSharp NBA active list before collection"
+            # Non-fast-forward failure leaves main safe; next scheduled attempt retries.
+            git push origin HEAD:main
+          fi
+          git fetch origin main
+          git show "origin/main:$path" > "$RUNNER_TEMP/betsharp-clearance.json"
+          python - <<'PY'
+          import json,os
+          from datetime import datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          d=json.loads((Path(os.environ['RUNNER_TEMP'])/'betsharp-clearance.json').read_text())
+          day=datetime.now(ZoneInfo('America/New_York')).date().isoformat()
+          assert d.get('clearance_date_et')==day and d.get('status')=='awaiting_daily_refresh'
+          assert d.get('player_count')==0 and d.get('offers')==[] and d.get('cleared_at_utc')
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:
+              f.write('confirmed=true\n')
+          print('NBA_CLEARANCE_CONFIRMED=true',day,d['cleared_at_utc'])
+          PY
+      - name: Install HTML parser
+        if: steps.clearance.outputs.confirmed == 'true'
         run: pip install 'beautifulsoup4>=4.12,<5'
       - name: Collect all listed NBA points players for today's ET games
-        if: steps.gate.outputs.run == 'true'
+        if: steps.clearance.outputs.confirmed == 'true'
         run: python collect_betsharp_nba.py
       - name: Split complete captured offer into ten daily lists
-        if: steps.gate.outputs.run == 'true'
+        if: steps.clearance.outputs.confirmed == 'true'
         run: python split_betsharp_nba_into_ten.py
       - name: Verify all ten lists and emit readiness feedback in same collection job
-        if: steps.gate.outputs.run == 'true'
+        if: steps.clearance.outputs.confirmed == 'true'
         run: python nba_system_first_group_feedback.py
       - name: Archive today's immutable capture and commit
-        if: steps.gate.outputs.run == 'true'
+        if: steps.clearance.outputs.confirmed == 'true'
         run: |
           set -euo pipefail
           date_et="$(python -c "import json;print(json.load(open('collector-output/betsharp-nba-daily.json'))['game_date_et'])")"
