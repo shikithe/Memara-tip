@@ -6,7 +6,7 @@
   "daily_stake": 30.14,
   "bank_after": 271.3,
   "bank_after_stakes": 271.3,
-  "provisional": false,
+  "provisional": true,
   "settled": false,
   "odds_verified": false,
   "tickets": [
@@ -302,7 +302,7 @@
       }
     }
   ],
-  "total_payout": 0,
+  "total_payout": 0.0,
   "net_change": null,
   "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
   "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",

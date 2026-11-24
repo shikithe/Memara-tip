@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "updated_at_utc": "2026-11-24T17:12:20.235674+00:00",
+  "updated_at_utc": "2026-11-24T18:12:26.189806+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -55,6 +55,20 @@
       "event_id": "401915294",
       "league": "uefa.champions",
       "minute": null
+    },
+    {
+      "ticket": "C",
+      "index": 0,
+      "home": "Washington Wizards",
+      "away": "Boston Celtics",
+      "state": "unverified"
+    },
+    {
+      "ticket": "C",
+      "index": 1,
+      "home": "Denver Nuggets",
+      "away": "Dallas Mavericks",
+      "state": "unverified"
     }
   ],
   "bank_unchanged": true
