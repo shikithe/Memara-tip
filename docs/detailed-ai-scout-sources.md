@@ -4,6 +4,14 @@ Applies to **all ten** candidate fixtures in `Slavojka/shared/agent/scout-six-ma
 
 The scheduled **ChatGPT A/B analyst** performs the live web investigation. GitHub cannot substitute a fixed scraper for nuanced injury news, official coach reports and new managers. This is one analyst run, not one automation per fixture.
 
+## Jezik i oblik objašnjenja na MemaraSix sajtu
+
+Svako buduće korisniku vidljivo objašnjenje fudbalskih tiketa A i B napiši **na srpskom jeziku, latinicom, ijekavicom**. Ovo obuhvata `tickets[].analysis` i `tickets[].matches[].analysis` u AI odobrenju, kao i tekstove `review_summary`, `new_factors.*.notes` i napomene u detaljnom AI izvještaju. JSON ključevi, kodovi tržišta (1/X/2/3+/GG/NG), statusi protokola, datumi, originalna imena klubova i URL-ovi ostaju nepromijenjeni.
+
+Objašnjenje mora sadržati sažet razlog izbora, odvojeni razlog za svaki par, stvarnu kvotu, matematičku i FairXG vjerovatnoću kada je FairXG provjeren, konačni procenat i EV te izostanke i ključna ograničenja. Ako FairXG nije dostupan, jasno ga označi nedostupnim. Ne prevodi nazive izvora i ne izmišljaj činjenice ili podatke. Razlikuj prognozu od potvrđenog rezultata i matematičku procjenu od garantovanog ishoda.
+
+MemaraSix prikazuje `data.json -> tickets[].analysis` na sajtu. `memarasix-football-ai-approved.json -> tickets[].analysis` mora ostati **string** zbog ugovora izdavača; za objavljeni `data.json` korisnički prikaz podržava i strukturisani objekat `{summary, reasons, limits}`. Kada AI odobrenje sadrži jedan string, napiši razumljiv srpski sažetak sa konkretnim razlozima.
+
 ## Source priorities and evidence
 
 1. **Official clubs and leagues** (club news, team news, press conferences, bans) for injuries and suspensions. Search each club + date + opponent. Use the published time.
