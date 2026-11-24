@@ -5828,7 +5828,7 @@
       "id": "nba-2026-11-23",
       "date": "2026-11-23",
       "bank_start": 864.3,
-      "status": "published",
+      "status": "settled",
       "tickets": [
         {
           "id": "1",
@@ -6134,7 +6134,7 @@
         {
           "id": "3",
           "stake": 8.64,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.5494,
           "potential_payout": 30.67,
           "legs": [
@@ -6150,7 +6150,7 @@
               "espn_event_id": "401910043",
               "player_id": "3448",
               "start_utc": "2026-11-24T01:30:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -6189,9 +6189,9 @@
                 "audit": "collector-output/nba-system-scout-2026-11-23-group-3.json"
               },
               "player_points": 3,
-              "game_state": "live",
-              "game_clock": "8:13",
-              "period": 4
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Darius Garland",
@@ -6263,7 +6263,10 @@
               "game_clock": "9:11",
               "period": 4
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-24T14:06:40.339105+00:00"
         },
         {
           "id": "4",
@@ -6618,7 +6621,7 @@
         {
           "id": "7",
           "stake": 8.64,
-          "status": "pending",
+          "status": "won",
           "total_odd": 3.783,
           "potential_payout": 32.68,
           "legs": [
@@ -6634,7 +6637,7 @@
               "espn_event_id": "401910042",
               "player_id": "4397136",
               "start_utc": "2026-11-24T01:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -6672,10 +6675,10 @@
                 "scout_note": "Bey posted 21 Nov20 and 23 Nov16, both above posted 16.5; he is a regular Pelicans forward, averaging roughly 15.9 this season. No modeled or guaranteed probability supplied.",
                 "audit": "collector-output/nba-system-scout-2026-11-23-group-7.json"
               },
-              "player_points": 16,
-              "game_state": "live",
-              "game_clock": "0.1",
-              "period": 4
+              "player_points": 21,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Dillon Brooks",
@@ -6689,7 +6692,7 @@
               "espn_event_id": "401910042",
               "player_id": "3155526",
               "start_utc": "2026-11-24T01:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -6727,12 +6730,15 @@
                 "scout_note": "Brooks scored 18 and 29 in verified recent Suns appearances, above 15.5; five-game aggregate 15.6 and season baseline 15.1 make the edge small. No modeled or guaranteed probability supplied.",
                 "audit": "collector-output/nba-system-scout-2026-11-23-group-7.json"
               },
-              "player_points": 14,
-              "game_state": "live",
-              "game_clock": "0.1",
-              "period": 4
+              "player_points": 16,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             }
-          ]
+          ],
+          "effective_odd": 3.78298,
+          "payout": 32.68,
+          "settled_at_utc": "2026-11-24T14:06:40.464996+00:00"
         },
         {
           "id": "8",
@@ -6852,7 +6858,7 @@
         {
           "id": "9",
           "stake": 8.64,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.4814,
           "potential_payout": 30.08,
           "legs": [
@@ -6868,7 +6874,7 @@
               "espn_event_id": "401910045",
               "player_id": "4395630",
               "start_utc": "2026-11-24T03:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -6906,10 +6912,10 @@
                 "scout_note": "Vassell averaged 10.0 points across his last five games and 11.3 this season, both clearly below the 14.5-point market line. In corroborated games he scored 12 in 36 minutes against Detroit and seven in 23 minutes in an earlier outing. This ranking is based on the best sources available, without a numerical predictive guarantee.",
                 "audit": "collector-output/nba-system-scout-2026-11-23-group-9.json"
               },
-              "player_points": 3,
-              "game_state": "live",
-              "game_clock": "3:03",
-              "period": 1
+              "player_points": 16,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Tyrese Maxey",
@@ -6954,12 +6960,15 @@
               "game_state": "final",
               "game_clock": ""
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-24T14:06:40.579088+00:00"
         },
         {
           "id": "10",
           "stake": 8.64,
-          "status": "pending",
+          "status": "lost",
           "total_odd": 3.4718,
           "potential_payout": 30.0,
           "legs": [
@@ -6975,7 +6984,7 @@
               "espn_event_id": "401910045",
               "player_id": "3064440",
               "start_utc": "2026-11-24T03:00:00Z",
-              "status": "live",
+              "status": "won",
               "analysis": {
                 "last_five": [
                   {
@@ -7008,10 +7017,10 @@
                 "scout_note": "LaVine has a 20.5-point season average and about 18.6 over the last five, both above the frozen 16.5-point line. His last confirmed 20 Nov scoring was 19 in 39 minutes, clearing the line. This is an uncertain scouting judgement, not a guaranteed probability edge.",
                 "audit": "collector-output/nba-system-scout-2026-11-23-group-10.json"
               },
-              "player_points": 0,
-              "game_state": "live",
-              "game_clock": "3:03",
-              "period": 1
+              "player_points": 18,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             },
             {
               "player": "Luka Dončić",
@@ -7025,7 +7034,7 @@
               "espn_event_id": "401910044",
               "player_id": "3945274",
               "start_utc": "2026-11-24T03:00:00Z",
-              "status": "live",
+              "status": "lost",
               "analysis": {
                 "last_five": [
                   {
@@ -7058,12 +7067,15 @@
                 "scout_note": "Dončić averages approximately 36 points this season, above the listed 35.5 line, and maintains very high shot volume against Utah. His most recent five-game mean is 33, below the line, so the season case is stronger than recent form. This is an uncertain scouting judgement, not a guaranteed probability edge.",
                 "audit": "collector-output/nba-system-scout-2026-11-23-group-10.json"
               },
-              "player_points": 11,
-              "game_state": "live",
-              "game_clock": "4:50",
-              "period": 1
+              "player_points": 28,
+              "game_state": "final",
+              "game_clock": "",
+              "period": null
             }
-          ]
+          ],
+          "effective_odd": 0.0,
+          "payout": 0.0,
+          "settled_at_utc": "2026-11-24T14:06:40.700555+00:00"
         }
       ],
       "scout": {
@@ -7103,17 +7115,20 @@
       },
       "accounting": {
         "tickets_total": 10,
-        "tickets_settled": 6,
-        "tickets_pending": 4,
-        "tickets_won": 1,
-        "tickets_lost": 5,
+        "tickets_settled": 10,
+        "tickets_pending": 0,
+        "tickets_won": 2,
+        "tickets_lost": 8,
         "tickets_void": 0,
         "total_staked": 86.4,
-        "total_returned": 30.71,
-        "available_bank": 808.61,
-        "net_profit_confirmed": -21.13,
-        "complete": false
-      }
+        "total_returned": 63.39,
+        "available_bank": 841.29,
+        "net_profit_confirmed": -23.01,
+        "complete": true
+      },
+      "bank_end": 841.29,
+      "bank_profit": -23.01,
+      "settled_at_utc": "2026-11-24T14:06:40.700597+00:00"
     }
   ]
 }
