@@ -71,6 +71,41 @@ class ESPNABTests(unittest.TestCase):
             self.assertEqual(publish(root,NOW,FEED)["status"],"no_update")
             self.assertEqual(read(root/"data.json"),after)
 
+    def test_ab_only_cannot_consume_nba_c_reserve(self):
+        with tempfile.TemporaryDirectory() as td:
+            root=Path(td)
+            data={"date":DAY,"settled":True,"bank_before":200.0,
+                  "bank_after":200.0,"tickets":[]}
+            write(root/"data.json",data)
+            write(root/"memarasix-football-ai-approved.json",APPROVAL)
+            result=publish(root,NOW,FEED)
+            self.assertEqual(result["status"],"published")
+            after=read(root/"data.json")
+            self.assertEqual(after["football_ab_budget"],17.0)
+            self.assertEqual(after["reserved_nba_c_budget"],3.0)
+            self.assertEqual(after["daily_budget"],20.0)
+            self.assertEqual(after["daily_stake"],17.0)
+            self.assertEqual(sum(x["stake"] for x in after["tickets"]),17.0)
+            self.assertEqual(after["bank_after_stakes"],183.0)
+
+    def test_existing_c_stake_cannot_be_overwritten_or_exceed_daily_ten_percent(self):
+        with tempfile.TemporaryDirectory() as td:
+            root=Path(td)
+            c={"id":"C","stake":3.0,"status":"objavljen"}
+            data={"date":DAY,"settled":False,"bank_before":200.0,
+                  "bank_after":197.0,"tickets":[c]}
+            write(root/"data.json",data)
+            write(root/"memarasix-football-ai-approved.json",APPROVAL)
+            result=publish(root,NOW,FEED)
+            self.assertEqual(result["status"],"published")
+            after=read(root/"data.json")
+            self.assertEqual(after["tickets"][0],c)
+            self.assertEqual(after["daily_stake"],20.0)
+            self.assertEqual(after["football_ab_budget"],17.0)
+            self.assertEqual(after["reserved_nba_c_budget"],3.0)
+            self.assertEqual(after["bank_after"],180.0)
+            self.assertEqual(publish(root,NOW,FEED)["status"],"no_update")
+
     def test_unsettled_previous_day_fails_without_changes(self):
         with tempfile.TemporaryDirectory() as td:
             root=Path(td)
