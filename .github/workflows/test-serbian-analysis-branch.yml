@@ -1,0 +1,51 @@
+name: SAFE Serbian A/B ticket analysis rendering regression
+on:
+  push:
+    branches: [fix/serbian-latin-ab-analysis-20261124]
+    paths:
+      - 'data.json'
+      - 'docs/detailed-ai-scout-sources.md'
+      - '.github/workflows/test-serbian-analysis-branch.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Validate published A/B language, analysis view and unchanged payout fields
+        run: |
+          python3 - <<'PY'
+          import json,re
+          from pathlib import Path
+          d=json.loads(Path('data.json').read_text(encoding='utf-8'))
+          html=Path('index.html').read_text(encoding='utf-8')
+          assert d['date']=='2026-11-24'
+          assert d['bank_before']==301.44
+          assert d['bank_after']==275.82
+          assert d['football_ab_budget']==25.62
+          assert d['reserved_nba_c_budget']==4.52
+          assert all(key in html for key in ('OBJAŠNJENJE IZBORA','a.summary','a.reasons','a.limits'))
+          for t in d['tickets']:
+            assert t['id'] in {'A','B'} and t['status']=='objavljen'
+            a=t['analysis']
+            assert isinstance(a,dict) and len(a['reasons'])==2
+            assert all(isinstance(v,str) and len(v)>50 for v in a.values() if isinstance(v,str))
+            assert 'vjerovatno' in a['summary'] or 'kvota' in a['summary']
+            assert 'KVOTA' not in a['summary']
+            assert not re.search(r'Independent, documented|AI full TOP10 review|approved for ticket',str(a),re.I)
+            for m in t['matches']:
+              assert m['pick'] in {'GG','3+'} and m['odd']>1
+              assert 'matematički model daje' in m['analysis'].lower()
+              assert 'fairxg' in m['analysis'].lower()
+          assert {t['id'] for t in d['tickets']}=={'A','B'}
+          assert [(t['id'],t['stake'],t['combined_odds']) for t in d['tickets']] == [
+                  ('A',18.5,2.508),('B',7.12,2.1615)]
+          print('SERBIAN_ANALYSIS_DISPLAY_VERIFIED_WITHOUT_BANK_OR_TICKET_CHANGES')
+          PY
+      - name: Verify publisher contract remains passing
+        run: python3 -m unittest -v test_memarasix_espn_ab_publish.py
