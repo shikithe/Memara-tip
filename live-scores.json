@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "updated_at_utc": "2026-11-24T18:12:26.189806+00:00",
+  "updated_at_utc": "2026-11-24T18:20:18.452421+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -61,14 +61,28 @@
       "index": 0,
       "home": "Washington Wizards",
       "away": "Boston Celtics",
-      "state": "unverified"
+      "state": "scheduled",
+      "source": "espn-public-unofficial",
+      "sport": "basketball",
+      "event_id": "401909315",
+      "player_id": "6583",
+      "points_line": 21.5,
+      "period": null,
+      "game_clock": null
     },
     {
       "ticket": "C",
       "index": 1,
       "home": "Denver Nuggets",
       "away": "Dallas Mavericks",
-      "state": "unverified"
+      "state": "scheduled",
+      "source": "espn-public-unofficial",
+      "sport": "basketball",
+      "event_id": "401909316",
+      "player_id": "3112335",
+      "points_line": 25.5,
+      "period": null,
+      "game_clock": null
     }
   ],
   "bank_unchanged": true
