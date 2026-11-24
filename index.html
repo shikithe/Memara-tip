@@ -69,6 +69,7 @@ function scoreLine(m,live){
   if(m.sport==="basketball"){
     if(m.void===true||(live?.void===true&&live.state==="final"))return '<div class="finalscore">✓ VOID · NIJE IGRAO · kvota 1,00 · PROLAZ</div>';
     if(m.final_points!==undefined)return '<div class="finalscore">Konačno: '+esc(m.final_points)+' poena · '+(m.result_status==="pogođen"?"✓ POGOĐEN":"✕ PROMAŠEN")+'</div>';
+    if(live?.sport==="basketball"&&live.state==="scheduled")return '<div class="kickoff">🕒 ESPN termin potvrđen · čeka se početak utakmice</div>';
     if(!live||live.sport!=="basketball"||live.player_points===null||live.player_points===undefined||!Number.isFinite(Number(live.player_points)))return '<div class="kickoff">NBA poeni još nisu potvrđeni</div>';
     const outcome=effectiveResult(m,live),fraction=esc(live.player_points)+"/"+esc(m.pick==="over"?Math.floor(Number(m.points_line))+1:Math.ceil(Number(m.points_line))-1);
     const part=live.period?" · "+esc(live.period)+". četvrtina":"";
@@ -182,7 +183,7 @@ async function loadScores(){
     }
     if(currentData)render(currentData,false,'out');
     const updated=new Intl.DateTimeFormat('bs-BA',{timeZone:'Europe/Sarajevo',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(score.updated_at_utc));
-    showRefreshStatus('Rezultati osvježeni u '+updated+' · naredna provjera približno za 5 min');
+    showRefreshStatus('GitHub rezultati iz '+updated+' · preglednik provjerava direktno dok je otvoren; GitHub raspored može kasniti');
   }catch(e){
     // Retain previously verified final scores even during network failures.
     if(liveScores)liveScores={...liveScores,matches:liveScores.matches.map(x=>x.state==='live'?{...x,state:'stale'}:x)};
@@ -334,12 +335,17 @@ async function checkNbaEspnDirectly(){
    }
   }
   if(pts===null&&!dnp)continue;
-  const old=liveScores.matches.find(x=>x.ticket===job.t.id&&x.index===job.i&&String(x.event_id||'')===job.event);
+  // A newly published C ticket initially has an unverified placeholder without
+  // event_id. Update that SAME record, otherwise scoreFor() keeps finding the
+  // older placeholder and hides verified ESPN player points in the browser.
+  const old=liveScores.matches.find(x=>x.ticket===job.t.id&&x.index===job.i&&
+   (String(x.event_id||'')===job.event||
+    (!x.event_id&&x.home===job.leg.home&&x.away===job.leg.away)));
   if(old?.state==='final'&&state!=='final')continue;
   if(old?.state==='live'&&state==='live'&&Number.isFinite(Number(old.player_points))&&old.player_points!==null&&pts!==null&&Number(old.player_points)>pts)continue;
   const line=Number(job.leg.points_line),pick=job.leg.pick;
   const outcome=dnp?'pogođen':pts!==null&&pick==='over'?(pts>line?'pogođen':state==='final'?'promašen':null):pts!==null&&pick==='under'?(pts>=line?'promašen':state==='final'?'pogođen':null):null;
-  const next={...(old||{}),ticket:job.t.id,index:job.i,home:job.leg.home,away:job.leg.away,event_id:job.event,player_id:job.pid,sport:'basketball',state,period:header.period??null,game_clock:String(header.displayClock||''),score:dnp?'DNP':String(pts),player_points:pts,source:'espn-browser-direct',observed_at_utc:new Date().toISOString()};
+  const next={...(old||{}),ticket:job.t.id,index:job.i,fixture_id:job.leg.fixture_id,home:job.leg.home,away:job.leg.away,event_id:job.event,player_id:job.pid,sport:'basketball',state,period:header.period??null,game_clock:String(header.displayClock||''),score:dnp?'DNP':String(pts),player_points:pts,source:'espn-browser-direct',observed_at_utc:new Date().toISOString()};
   if(dnp){next.void=true;next.effective_odd=1;}else{delete next.void;delete next.effective_odd;}
   if(outcome)next.result_status=outcome;else delete next.result_status;
   if(old)Object.assign(old,next);else liveScores.matches.push(next);

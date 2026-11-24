@@ -105,6 +105,17 @@ def enrich(published, records, previous, now=None, fetcher=fetch_summary):
                 if doc is None:
                     continue
                 state,clock,period=read_state(doc)
+                if state=="scheduled":
+                    # A legitimate ESPN schedule is NOT a live score. Keeping
+                    # this distinct from "unverified" tells the user the C
+                    # event is linked and awaiting tip-off.
+                    record.update({"state":"scheduled",
+                                   "source":"espn-public-unofficial",
+                                   "sport":"basketball",
+                                   "event_id":event_id,"player_id":player_id,
+                                   "points_line":float(m["points_line"]),
+                                   "period":None,"game_clock":None})
+                    continue
                 if state not in ("live","final"):
                     continue
                 pts=player_points(doc,player_id)
