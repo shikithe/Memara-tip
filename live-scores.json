@@ -1,8 +1,61 @@
 {
   "date": "2026-11-24",
-  "updated_at_utc": "2026-11-24T05:59:51.523665+00:00",
+  "updated_at_utc": "2026-11-24T12:50:31.490201+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
-  "matches": [],
+  "matches": [
+    {
+      "ticket": "A",
+      "index": 0,
+      "home": "Real Madrid",
+      "away": "PSV Eindhoven",
+      "state": "scheduled",
+      "fixture_id": "espn:football:uefa.champions:401915298",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401915298",
+      "league": "uefa.champions",
+      "minute": null
+    },
+    {
+      "ticket": "A",
+      "index": 1,
+      "home": "Hibernian",
+      "away": "Dundee",
+      "state": "scheduled",
+      "fixture_id": "espn:football:sco.1:401878348",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401878348",
+      "league": "sco.1",
+      "minute": null
+    },
+    {
+      "ticket": "B",
+      "index": 0,
+      "home": "RB Leipzig",
+      "away": "Lens",
+      "state": "scheduled",
+      "fixture_id": "espn:football:uefa.champions:401915299",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401915299",
+      "league": "uefa.champions",
+      "minute": null
+    },
+    {
+      "ticket": "B",
+      "index": 1,
+      "home": "Feyenoord Rotterdam",
+      "away": "FC Porto",
+      "state": "scheduled",
+      "fixture_id": "espn:football:uefa.champions:401915294",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401915294",
+      "league": "uefa.champions",
+      "minute": null
+    }
+  ],
   "bank_unchanged": true
 }
