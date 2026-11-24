@@ -69,6 +69,7 @@ function scoreLine(m,live){
   if(m.sport==="basketball"){
     if(m.void===true||(live?.void===true&&live.state==="final"))return '<div class="finalscore">✓ VOID · NIJE IGRAO · kvota 1,00 · PROLAZ</div>';
     if(m.final_points!==undefined)return '<div class="finalscore">Konačno: '+esc(m.final_points)+' poena · '+(m.result_status==="pogođen"?"✓ POGOĐEN":"✕ PROMAŠEN")+'</div>';
+    if(live?.sport==="basketball"&&live.state==="scheduled")return '<div class="kickoff">🕒 ESPN termin potvrđen · čeka se početak utakmice</div>';
     if(!live||live.sport!=="basketball"||live.player_points===null||live.player_points===undefined||!Number.isFinite(Number(live.player_points)))return '<div class="kickoff">NBA poeni još nisu potvrđeni</div>';
     const outcome=effectiveResult(m,live),fraction=esc(live.player_points)+"/"+esc(m.pick==="over"?Math.floor(Number(m.points_line))+1:Math.ceil(Number(m.points_line))-1);
     const part=live.period?" · "+esc(live.period)+". četvrtina":"";
@@ -182,7 +183,7 @@ async function loadScores(){
     }
     if(currentData)render(currentData,false,'out');
     const updated=new Intl.DateTimeFormat('bs-BA',{timeZone:'Europe/Sarajevo',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(score.updated_at_utc));
-    showRefreshStatus('Rezultati osvježeni u '+updated+' · naredna provjera približno za 5 min');
+    showRefreshStatus('GitHub rezultati iz '+updated+' · preglednik provjerava direktno dok je otvoren; GitHub raspored može kasniti');
   }catch(e){
     // Retain previously verified final scores even during network failures.
     if(liveScores)liveScores={...liveScores,matches:liveScores.matches.map(x=>x.state==='live'?{...x,state:'stale'}:x)};
