@@ -1,140 +1,178 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "approval_source": "chatgpt_ai_analyst",
-  "approved_at_utc": "2026-11-23T18:12:30Z",
+  "approved_at_utc": "2026-11-24T18:11:47Z",
   "publication_allowed": true,
   "state": "nba_c_ai_manual_approved_for_technical_publishing",
   "tickets": [
     {
       "id": "C",
-      "analysis": "Ručni NBA C 23.11: Booker manje 26,5 @1,8475 (L5 prosjek 23,8, zadnji potvrđeni 23 poena u 38 minuta) i Donovan Mitchell manje 26,5 @1,9346 (zadnji 20 poena, ali L5 prosjek drugog izvora 28,2 predstavlja značajan rizik). Igrači su u stvarnim sastavima PHX/CLE, utakmice imaju potvrđene ESPN ID i počinju u 01:00 UTC 24.11. Obje granice i kvote uzete su iz jedne DK kolone novog BetSharp snapshot-a od 23.11. Izostanci, čuvari i H2H nepotpuno potvrđeni, ne prikazuje se kao potpuni 122-player Scout.",
+      "analysis": "Ručni oporavak: pregled 39 ponuđenih igrača, detaljna statistika odabranih kandidata, bez punog rankinga. Davis preko 21,5 i Jokić preko 25,5, oba 4/5 recentnih nastupa. DK kvote iz današnjeg BetSharp snapshot-a 18:03 UTC, bez nezavisne potvrde trenutne cijene. ESPN identifikatori utakmica potvrđeni kroz javne sekundarne rasporede; direktni ESPN nije dostupan.",
       "matches": [
         {
-          "player_id": "3136193",
-          "player": "Devin Booker",
-          "espn_event_id": "401910042",
-          "team": "Phoenix Suns",
-          "opponent": "New Orleans Pelicans",
-          "start_utc": "2026-11-24T01:00:00Z",
+          "player_id": "6583",
+          "player": "Anthony Davis",
+          "espn_event_id": "401909315",
+          "team": "Washington Wizards",
+          "opponent": "Boston Celtics",
+          "start_utc": "2026-11-25T01:00:00Z",
           "market": "player_points",
-          "pick": "under",
-          "points_line": 26.5,
-          "odd": 1.8475,
+          "pick": "over",
+          "points_line": 21.5,
+          "odd": 1.9009,
           "bookmaker": "DraftKings",
-          "source": "https://betsharp.com/nba/player/devin-booker",
+          "source": "https://betsharp.com/nba/player/anthony-davis",
           "quote_timestamp_verified": false
         },
         {
-          "player_id": "3908809",
-          "player": "Donovan Mitchell",
-          "espn_event_id": "401910041",
-          "team": "Cleveland Cavaliers",
-          "opponent": "Chicago Bulls",
-          "start_utc": "2026-11-24T01:00:00Z",
+          "player_id": "3112335",
+          "player": "Nikola Jokic",
+          "espn_event_id": "401909316",
+          "team": "Denver Nuggets",
+          "opponent": "Dallas Mavericks",
+          "start_utc": "2026-11-25T03:00:00Z",
           "market": "player_points",
-          "pick": "under",
-          "points_line": 26.5,
-          "odd": 1.9346,
+          "pick": "over",
+          "points_line": 25.5,
+          "odd": 1.8264,
           "bookmaker": "DraftKings",
-          "source": "https://betsharp.com/nba/player/donovan-mitchell",
+          "source": "https://betsharp.com/nba/player/nikola-jokic",
           "quote_timestamp_verified": false
         }
       ],
       "scout_analysis": {
-        "date": "2026-11-23",
-        "intro": "Ručni C: dva provjerena NBA roster identiteta i dva buduća termina, ponuda iz istodnevnog BetSharp kolektora (122 ukupna reda; nepotvrđeni timovi ignorisani). Nisu sva 122 kandidata detaljno istražena. Scout ograničen na dostupne pouzdane informacije.",
+        "date": "2026-11-24",
+        "intro": "Skraćeni Scout nakon oporavka kolektora: 39 ponuda, detaljna provjera dva odabrana igrača; bez punog rankinga.",
         "players": [
           {
-            "id": "3136193",
-            "name": "Devin Booker",
-            "team": "Phoenix Suns",
-            "opponent": "New Orleans Pelicans",
-            "pick": "under",
-            "line": 26.5,
-            "odd": 1.8475,
+            "id": "6583",
+            "name": "Anthony Davis",
+            "team": "Washington Wizards",
+            "opponent": "Boston Celtics",
+            "pick": "over",
+            "line": 21.5,
+            "odd": 1.9009,
             "games": [
               [
+                "22.11.",
+                22,
+                33
+              ],
+              [
                 "20.11.",
+                36,
+                34
+              ],
+              [
+                "18.11.",
+                25,
+                34
+              ],
+              [
+                "16.11.",
                 23,
-                38
+                35
+              ],
+              [
+                "15.11.",
+                14,
+                31
               ]
             ],
             "h2h": [],
-            "last10": "Nije potvrđeno",
+            "last10": "8/10",
             "pros": [
-              "Posljednjih pet odigranih utakmica: prosjek 23,8 poena po dostupnoj statistici.",
-              "U posljednjem provjerenom meču 20.11. postigao je 23 poena za 38 minuta.",
-              "Istodnevna BetSharp DK granica 26,5 poena, ponuđeni UNDER 1,8475."
+              "Četiri od posljednjih pet nastupa iznad 21,5.",
+              "Sezonski prosjek 25,1 poen.",
+              "Prosjek 33,9 minuta; nije prijavljen kao povrijeđen prema dostupnom jutarnjem izvještaju."
             ],
             "risks": [
-              "Prosjek posljednjih pet nije procijenjena vjerovatnoća za ovaj prag.",
-              "Devin Booker ima visoku napadačku ulogu i može preskočiti granicu u jednoj efikasnoj večeri.",
-              "Nepotvrđeni su konkretan čuvar, H2H uzorak i konačna raspodjela šuteva."
+              "Boston je u posljednjih pet utakmica primao 99,8 poena u prosjeku prema dostupnom izvještaju.",
+              "U jednom od posljednjih pet nastupa samo 14 poena.",
+              "Direktni čuvar i konačni sastav nisu potvrđeni."
             ],
-            "assessment": "Umjeren UNDER oslonjen na posljednji skor 23 i prosjek 23,8 ispod 26,5; uzorak i matchup ne dokazuju prednost u odnosu na kvotu.",
+            "assessment": "Granica ispod prosjeka, ali snažna odbrana Bostona smanjuje sigurnost.",
             "sources": [
               [
-                "NBA profil / statistika",
-                "https://www.nba.com/player/1626164/devin-booker"
+                "Statz game log",
+                "https://nba.statz.ai/nba/players/anthony-davis/game-log"
               ],
               [
-                "Posljednjih pet, prosjek",
-                "https://www.statiqsports.com/nba/devin-booker/last-5-games"
+                "Status i protivnička odbrana",
+                "https://darimarket.us/learn/strategy/is-anthony-davis-playing-tonight-november-24-2026"
               ],
               [
-                "Službena najava meča",
-                "https://www.nba.com/pelicans/news/pelicans-vs-suns-injury-report-game-preview-11-23-2026"
-              ],
-              [
-                "BetSharp cijena",
-                "https://betsharp.com/nba/player/devin-booker"
+                "ESPN identifikator preko rasporeda",
+                "https://www.raviolireviews.com/markets"
               ]
             ]
           },
           {
-            "id": "3908809",
-            "name": "Donovan Mitchell",
-            "team": "Cleveland Cavaliers",
-            "opponent": "Chicago Bulls",
-            "pick": "under",
-            "line": 26.5,
-            "odd": 1.9346,
-            "games": [],
+            "id": "3112335",
+            "name": "Nikola Jokic",
+            "team": "Denver Nuggets",
+            "opponent": "Dallas Mavericks",
+            "pick": "over",
+            "line": 25.5,
+            "odd": 1.8264,
+            "games": [
+              [
+                "22.11.",
+                37,
+                42
+              ],
+              [
+                "20.11.",
+                26,
+                38
+              ],
+              [
+                "18.11.",
+                24,
+                39
+              ],
+              [
+                "16.11.",
+                28,
+                38
+              ],
+              [
+                "14.11.",
+                26,
+                37
+              ]
+            ],
             "h2h": [],
-            "last10": "Nije kompletno potvrđeno; procjene izvora razilaze se",
+            "last10": "7/10",
             "pros": [
-              "Službeni Cleveland preview za posljednju utakmicu protiv Memphisa bilježi 20 poena Mitchella.",
-              "Zabilježena dnevna BetSharp DK ponuda UNDER 26,5 poena po kvoti 1,9346.",
-              "Mitchell nije naveden na Clevelandovoj listi nedostupnih igrača u najavi meča."
+              "Četiri od posljednjih pet nastupa iznad 25,5.",
+              "Prosjek posljednjih pet 28,2 poena.",
+              "U posljednjih pet igrao najmanje 37 minuta."
             ],
             "risks": [
-              "Prema jednoj dostupnoj statistici prosjek posljednjih pet utakmica iznosi čak 28,2 poena, iznad granice.",
-              "Mitchell je visokovolumenski strijelac; visoka kvota ne znači statističku vrijednost.",
-              "Nema potvrđenih posljednjih pet redova s minutama, niti sigurnog H2H i direktnog čuvara."
+              "Sezonski prosjek 24,1 poen je ispod granice prema NBC Sports.",
+              "Posljednji meč produžetak i 42 minuta, moguć umor.",
+              "Direktni čuvar, konačni sastav i H2H nisu potvrđeni."
             ],
-            "assessment": "Rizičan UNDER, uprkos posljednjih 20 poena; ukupna novija forma i značajna individualna potrošnja ne daju jaku statističku prednost. Ovaj izbor je slabije potkrijepljen od Bookera.",
+            "assessment": "Recentna forma podržava over, ali sezonski prosjek i umor nalažu oprez.",
             "sources": [
               [
-                "Cleveland službena najava",
-                "https://www.nba.com/cavaliers/news/preview-clechi-261123"
+                "StatMuse game log",
+                "https://www.statmuse.com/nba/player/nikola-joki%C4%87-9226/game-log"
               ],
               [
-                "NBA profil",
-                "https://www.nba.com/player/1628378/donovan-mitchell"
+                "NBC Sports preview",
+                "https://www.nbcsports.com/nba/news/how-to-watch-dallas-mavericks-vs-denver-nuggets-tv-live-stream-info-for-tonights-game"
               ],
               [
-                "Pregled forme",
-                "https://www.legchecksports.com/players/nba/donovan-mitchell/"
-              ],
-              [
-                "BetSharp cijena",
-                "https://betsharp.com/nba/player/donovan-mitchell"
+                "ESPN ID i termin",
+                "https://www.dvidr.com/events/nba-den-21718183"
               ]
             ]
           }
         ],
-        "conclusion": "Devin Booker UNDER 26,5 @1,8475 i Donovan Mitchell UNDER 26,5 @1,9346; kombinovana referentna kvota 3,57. Za oba su potvrđeni klub, protivnik, ESPN identitet i budući početak. Redovni C ulog 1,5% B0 = 4,14 € uz dnevni budžet. Najveći rizik: Donovanova petomečna forma nije jasna prednost za UNDER.",
-        "caution": "BetSharp kvote su uporedne, nisu direktno potvrđene u bookmaker računu. Nije rađena potpuna TOP20/TOP10/TOP5 analiza svih igrača, direktni čuvari i H2H nisu provjereni, neki zadnji rezultati djelimični."
+        "conclusion": "Ukupna referentna kvota 3.47. Rizici: odbrana Bostona i Jokićev umor.",
+        "caution": "Nisu potvrđeni H2H, direktni čuvari i konačni sastavi; kvote su snapshot, ne garantovana aktuelna cijena. ESPN ID preuzet iz sekundarnih rasporeda."
       }
     }
   ]
