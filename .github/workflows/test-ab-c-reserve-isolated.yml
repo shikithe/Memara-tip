@@ -1,0 +1,23 @@
+name: SAFE A/B and NBA C bank reserve regression
+on:
+  push:
+    branches: [test/ab-c-reserve-publisher-20261124]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reserve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify publisher contract with C ringfence
+        run: |
+          python -m compileall -q memarasix_espn_ab_publish.py
+          python -m unittest -v test_memarasix_espn_ab_publish.py
+          echo 'SAFE_NO_PRODUCTION_WRITES'
