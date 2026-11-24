@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "source": "Memara-tip/data.json",
-  "both_published": false,
+  "both_published": true,
   "A": {
     "published": true,
     "matches": 2,
@@ -9,14 +9,12 @@
     "duplicate_entries": false
   },
   "B": {
-    "published": false,
-    "matches": 0,
-    "status": "not_published",
+    "published": true,
+    "matches": 2,
+    "status": "objavljen",
     "duplicate_entries": false
   },
-  "state": "missing_publication",
-  "missing": [
-    "B"
-  ],
-  "checked_at_sarajevo": "2026-11-23T20:38:04.392819+01:00"
+  "state": "both_published",
+  "missing": [],
+  "checked_at_sarajevo": "2026-11-24T20:12:36.254318+01:00"
 }
