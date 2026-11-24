@@ -1,10 +1,15 @@
 name: MEMARA NBA next 24 hours
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'collector-output/espn-nba-trigger.txt'
   schedule:
     # At 12:00, 12:20 and 12:40 Sarajevo time; both CET/CEST covered.
-    # Gate below rejects slots outside local hour 12 and skips same-day success.
+    # Retry missing or stale snapshots throughout the day.
     - cron: '0,20,40 10,11 * * *'
+    - cron: '15,45 12-22 * * *'
 permissions:
   contents: write
 concurrency:
@@ -33,12 +38,12 @@ jobs:
           import json
           from pathlib import Path
           local = datetime.now(ZoneInfo('Europe/Sarajevo'))
-          ok = os.environ['EVENT_NAME'] == 'workflow_dispatch' or local.hour == 12
-          if ok and os.environ['EVENT_NAME'] == 'schedule':
+          ok = os.environ['EVENT_NAME'] in ('workflow_dispatch','push') or 12 <= local.hour <= 23
+          if ok:
               try:
                   last = json.loads(Path('collector-output/nba-next-24h.json').read_text())
                   stamp = datetime.fromisoformat(last['collected_at_utc'].replace('Z','+00:00'))
-                  if stamp.astimezone(ZoneInfo('Europe/Sarajevo')).date() == local.date() and last.get('status') == 'ok':
+                  if stamp.astimezone(ZoneInfo('Europe/Sarajevo')).date() == local.date() and last.get('status') == 'ok' and last.get('game_count',0)>0 and last.get('player_candidate_count',0)>0:
                       ok = False
                       print('NBA_PRECOLLECT_SKIP already collected successfully today')
               except (OSError,KeyError,ValueError,TypeError):
@@ -50,43 +55,67 @@ jobs:
       - name: Verify Python syntax
         if: steps.clock.outputs.run == 'true'
         run: python -m py_compile collector_nba_24h.py nba_analysis_merge.py
-      - name: Clear and COMMIT old NBA offers, retry branch conflicts
+      - name: Clear ESPN active list and verify feedback on main
+        id: clearance
         if: steps.clock.outputs.run == 'true'
         run: |
           set -euo pipefail
-          python -m unittest discover -s tests -p test_nba_clear_before_collect.py -v
-          python nba_clear_before_collect.py
-          stamp="$(python nba_clear_before_collect.py --verify | awk '{print $2}')"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- collector-output/nba-next-24h.json collector-output/nba-player-points.json collector-output/nba-analysis-ready.json collector-output/ticket-c-research.json collector-output/nba-free-statistics.json
-          git commit -m "data: clear NBA before collecting [skip ci]"
-          published=false
-          for attempt in 1 2 3 4 5; do
-            if git pull --rebase origin main && git push origin HEAD:main; then
-              published=true
-              break
-            fi
-            echo "NBA cleanup push conflict, attempt $attempt"
-            sleep 5
-          done
-          if [ "$published" != true ]; then
-            echo "::error::NBA cleanup could not be committed, collector blocked"
-            exit 1
+          path=collector-output/nba-next-24h.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin main
+          git merge --ff-only origin/main
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from datetime import datetime,timezone
+          from zoneinfo import ZoneInfo
+          p=Path('collector-output/nba-next-24h.json')
+          try:
+              d=json.loads(p.read_text())
+          except (OSError,ValueError):
+              d={}
+          now=datetime.now(timezone.utc)
+          today=now.astimezone(ZoneInfo('Europe/Sarajevo')).date().isoformat()
+          try:
+              fresh=datetime.fromisoformat(d['collected_at_utc'].replace('Z','+00:00')).astimezone(ZoneInfo('Europe/Sarajevo')).date().isoformat()==today
+          except (KeyError,TypeError,ValueError,AttributeError):
+              fresh=False
+          if fresh and d.get('status')=='ok' and d.get('games') and d.get('players'):
+              raise SystemExit('Fresh ESPN snapshot appeared; refusing to erase it')
+          if not (d.get('clearance_date_local')==today and d.get('status')=='awaiting_daily_refresh' and d.get('games')==[] and d.get('players')==[]):
+              d={'schema_version':'1.0','source':'espn-public-unofficial','collected_at_utc':None,
+                 'window_start_utc':None,'window_end_utc':None,'timezone_display':'Europe/Sarajevo',
+                 'games':[],'players':[],'game_count':0,'player_candidate_count':0,
+                 'limitations':[],'errors':[],'status':'awaiting_daily_refresh',
+                 'publication_allowed':False,'clearance_date_local':today,'cleared_at_utc':now.isoformat()}
+              p.write_text(json.dumps(d,indent=2)+'\n')
+          PY
+          git add -- "$path"
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: clear stale ESPN NBA active list'
+            git push origin HEAD:main
           fi
           git fetch origin main
-          python nba_clear_before_collect.py --verify --ref origin/main --stamp "$stamp"
-          echo "NBA_CLEARANCE_CONFIRMED=true"
-      - name: Verify clearance before ESPN fetch
-        if: steps.clock.outputs.run == 'true'
-        run: |
-          git fetch origin main
-          python nba_clear_before_collect.py --verify --ref origin/main
+          git show "origin/main:$path" > "$RUNNER_TEMP/espn-clearance.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          d=json.loads((Path(os.environ['RUNNER_TEMP'])/'espn-clearance.json').read_text())
+          assert d.get('clearance_date_local')==datetime.now(ZoneInfo('Europe/Sarajevo')).date().isoformat()
+          assert d.get('status')=='awaiting_daily_refresh' and d.get('games')==[] and d.get('players')==[]
+          assert d.get('game_count')==0 and d.get('player_candidate_count')==0 and d.get('publication_allowed') is False
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:
+              f.write('confirmed=true\n')
+          print('ESPN_NBA_CLEARANCE_CONFIRMED=true')
+          PY
       - name: Fetch NBA games and team rosters
-        if: steps.clock.outputs.run == 'true'
+        if: steps.clearance.outputs.confirmed == 'true'
         run: python collector_nba_24h.py --hours 24 --output collector-output/nba-next-24h.json
       - name: Validate output and print summary
-        if: steps.clock.outputs.run == 'true'
+        if: steps.clearance.outputs.confirmed == 'true'
         run: |
           python - <<'PY'
           import json
@@ -97,32 +126,20 @@ jobs:
           assert all(p['points_line'] is None and p['over_odds'] is None and p['under_odds'] is None for p in data['players'])
           print('NBA:', data['game_count'], 'games,', data['player_candidate_count'], 'roster candidates')
           PY
-      - name: Initialize separate analyst queue (odds pending)
-        if: steps.clock.outputs.run == 'true'
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          p = Path('collector-output/nba-player-points.json')
-          p.parent.mkdir(parents=True, exist_ok=True)
-          p.write_text(json.dumps({'generated_at_utc': None, 'offers': [], 'offer_count': 0}) + '\n')
-          PY
-          python nba_analysis_merge.py
       - uses: actions/upload-artifact@v4
-        if: always() && steps.clock.outputs.run == 'true'
+        if: always() && steps.clearance.outputs.confirmed == 'true'
         with:
           name: nba-next-24h
           path: |
             collector-output/nba-next-24h.json
-            collector-output/nba-analysis-ready.json
           if-no-files-found: warn
           retention-days: 7
       - name: Commit JSON snapshot without altering tickets
-        if: steps.clock.outputs.run == 'true' && github.ref == 'refs/heads/main'
+        if: steps.clearance.outputs.confirmed == 'true' && github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add collector-output/nba-next-24h.json collector-output/nba-analysis-ready.json
+          git add collector-output/nba-next-24h.json
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh NBA next-24h candidate snapshot"
             git pull --rebase origin main
