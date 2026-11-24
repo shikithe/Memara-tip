@@ -1,17 +1,115 @@
 {
   "date": "2026-11-24",
-  "published": "Čeka validnu objavu: 12:00 Europe/Sarajevo",
-  "publication_type": "awaiting_daily_publication",
+  "published": "24.11.2026. u 13:50 (Europe/Sarajevo)",
+  "publication_type": "independent_ai_espn_only_github_publisher",
   "bank_before": 301.44,
-  "daily_stake": 0,
-  "bank_after": 301.44,
-  "bank_after_stakes": 301.44,
+  "daily_stake": 25.62,
+  "bank_after": 275.82,
+  "bank_after_stakes": 275.82,
   "provisional": false,
-  "settled": true,
+  "settled": false,
   "odds_verified": false,
-  "tickets": [],
+  "tickets": [
+    {
+      "id": "A",
+      "combined_odds": 2.508,
+      "analysis": "Independent, documented TOP10 review of all ten ESPN fixtures (source fingerprint 84fda55aba8a13b0dca1d93d54aa72f7bb0f5ec1498ffab725f5220dc8c04d63); the two selected A legs have no overlap with the other ticket and combined odds in 2.00–3.00. FairXG matched exact games and all seven context factors reviewed; unavailable fields are explicitly flagged. This is an estimated probability and EV, NOT a calibrated edge or guaranteed result. Final quote and lineups may change. Saved full ten-candidate review at shikithe/Slavojka/shared/agent/detailed-ai-progress-2026-11-24.json.",
+      "matches": [
+        {
+          "fixture_id": "espn:football:uefa.champions:401915298",
+          "match": "Real Madrid - PSV Eindhoven",
+          "datetime": "2026-11-24T20:00:00Z",
+          "pick": "GG",
+          "odd": 1.52,
+          "source": "https://www.betfair.es/betting/en/football/uefa-champions-league/real-madrid-v-psv/e-36288652",
+          "bookmaker": "Betfair",
+          "quote_checked_at_utc": "2026-11-24T12:50:07.760Z",
+          "math_probability_pct": 72.5,
+          "fairxg_probability_pct": 71,
+          "final_probability_pct": 71.75,
+          "final_ev_pct": 9.06,
+          "independent_model_source": "https://fairxg.com/sport/football/match/real-madrid-vs-psv-eindhoven",
+          "analysis": "AI full TOP10 review. Approved for ticket A, GG 1.52 from an independently checked source; FINAL model probability 71.75% / EV 9.06% (estimate, not calibrated). Real model vs FairXG checked, Real Madrid Endrick, Raúl Asencio, Rodrygo out; PSV Mauro Junior and Ouaissa out. Forecast xG and injuries can modify confidence; projected XI is not official starting XI. Original math 72.5%, same-day verified FairXG 71%, combined by project rule p_final=71.75%, estimated final EV=9.06% at source quote 1.52. Real Madrid Endrick, Raúl Asencio, Rodrygo out; PSV Mauro Junior and Ouaissa out. ESPN verified final-event data, last completed home 2026-11-21T20:00Z (72h), away 2026-11-21T15:30Z (76.5h) before kickoff; note travel/rotation unverified. UEFA says clubs meet first time in 37 years; do not fabricate more recent H2H."
+        },
+        {
+          "fixture_id": "espn:football:sco.1:401878348",
+          "match": "Hibernian - Dundee",
+          "datetime": "2026-11-24T19:45:00Z",
+          "pick": "GG",
+          "odd": 1.65,
+          "source": "https://tipsterarea.com/match/hibernian-dundee-fc-premiership-scotland-956824",
+          "bookmaker": "TipsterArea published market quote",
+          "quote_checked_at_utc": "2026-11-24T12:50:07.760Z",
+          "math_probability_pct": 68.4,
+          "fairxg_probability_pct": 58,
+          "final_probability_pct": 63.2,
+          "final_ev_pct": 4.28,
+          "independent_model_source": "https://fairxg.com/sport/football/match/hibernian-vs-dundee",
+          "analysis": "AI full TOP10 review. Approved for ticket A, GG 1.65 from an independently checked source; FINAL model probability 63.2% / EV 4.28% (estimate, not calibrated). Real model vs FairXG checked, Hibernian Passlack, Hanley, Mayor and others absent; Dundee Bevan suspended after red card, plus several ACL absentees. Forecast xG and injuries can modify confidence; projected XI is not official starting XI. Original math 68.4%, same-day verified FairXG 58%, combined by project rule p_final=63.2%, estimated final EV=4.28% at source quote 1.65. Hibernian Passlack, Hanley, Mayor and others absent; Dundee Bevan suspended after red card, plus several ACL absentees. ESPN verified final-event data, last completed home 2026-11-21T15:00Z (76.8h), away 2026-11-21T17:45Z (74h) before kickoff; note travel/rotation unverified. Prior Aug 30 league meeting: Dundee 1-2 Hibernian; no five-match H2H sample verified. Model disagreement >=10 percentage points; this lowers confidence despite positive estimated EV."
+        }
+      ],
+      "stake": 18.5,
+      "status": "objavljen",
+      "payout": 0
+    },
+    {
+      "id": "B",
+      "combined_odds": 2.1615,
+      "analysis": "Independent, documented TOP10 review of all ten ESPN fixtures (source fingerprint 84fda55aba8a13b0dca1d93d54aa72f7bb0f5ec1498ffab725f5220dc8c04d63); the two selected B legs have no overlap with the other ticket and combined odds in 2.00–3.00. FairXG matched exact games and all seven context factors reviewed; unavailable fields are explicitly flagged. This is an estimated probability and EV, NOT a calibrated edge or guaranteed result. Final quote and lineups may change. Saved full ten-candidate review at shikithe/Slavojka/shared/agent/detailed-ai-progress-2026-11-24.json.",
+      "matches": [
+        {
+          "fixture_id": "espn:football:uefa.champions:401915299",
+          "match": "RB Leipzig - Lens",
+          "datetime": "2026-11-24T20:00:00Z",
+          "pick": "3+",
+          "odd": 1.31,
+          "source": "https://tipsterarea.com/match/rb-leipzig-lens-champions-league-group-stage-956790",
+          "bookmaker": "TipsterArea published market quote",
+          "quote_checked_at_utc": "2026-11-24T12:50:07.760Z",
+          "math_probability_pct": 80.5,
+          "fairxg_probability_pct": 77,
+          "final_probability_pct": 78.75,
+          "final_ev_pct": 3.16,
+          "independent_model_source": "https://fairxg.com/sport/football/match/rb-leipzig-vs-lens",
+          "analysis": "AI full TOP10 review. Approved for ticket B, 3+ 1.31 from an independently checked source; FINAL model probability 78.75% / EV 3.16% (estimate, not calibrated). Real model vs FairXG checked, Leipzig without Lukeba/Ouedraogo; Lens without Edouard and three doubtful. Forecast xG and injuries can modify confidence; projected XI is not official starting XI. Original math 80.5%, same-day verified FairXG 77%, combined by project rule p_final=78.75%, estimated final EV=3.16% at source quote 1.31. Leipzig without Lukeba/Ouedraogo; Lens without Edouard and three doubtful. ESPN verified final-event data, last completed home 2026-11-21T14:30Z (77.5h), away 2026-11-21T19:45Z (72.3h) before kickoff; note travel/rotation unverified. No reliably verified recent head-to-head sample for this exact fixture."
+        },
+        {
+          "fixture_id": "espn:football:uefa.champions:401915294",
+          "match": "Feyenoord Rotterdam - FC Porto",
+          "datetime": "2026-11-24T20:00:00Z",
+          "pick": "3+",
+          "odd": 1.65,
+          "source": "https://tipsterarea.com/match/feyenoord-porto-champions-league-group-stage-956788",
+          "bookmaker": "TipsterArea published market quote",
+          "quote_checked_at_utc": "2026-11-24T12:50:07.760Z",
+          "math_probability_pct": 64.6,
+          "fairxg_probability_pct": 63,
+          "final_probability_pct": 63.8,
+          "final_ev_pct": 5.27,
+          "independent_model_source": "https://fairxg.com/sport/football/match/feyenoord-vs-porto",
+          "analysis": "AI full TOP10 review. Approved for ticket B, 3+ 1.65 from an independently checked source; FINAL model probability 63.8% / EV 5.27% (estimate, not calibrated). Real model vs FairXG checked, Feyenoord Beelen, Bos, Moder, Nieuwkoop, St. Juste out; Porto Smalling out and William Gomes doubtful. Forecast xG and injuries can modify confidence; projected XI is not official starting XI. Original math 64.6%, same-day verified FairXG 63%, combined by project rule p_final=63.8%, estimated final EV=5.27% at source quote 1.65. Feyenoord Beelen, Bos, Moder, Nieuwkoop, St. Juste out; Porto Smalling out and William Gomes doubtful. ESPN verified final-event data, last completed home 2026-11-21T17:45Z (74.3h), away 2026-11-20T20:45Z (95.3h) before kickoff; note travel/rotation unverified. No reliably verified recent head-to-head sample for this exact fixture."
+        }
+      ],
+      "stake": 7.12,
+      "status": "objavljen",
+      "payout": 0
+    }
+  ],
   "total_payout": 0,
   "net_change": 0,
   "analysis_status": "Prethodni tiket je u arhivi. Današnji tiketi još nisu objavljeni.",
-  "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter"
+  "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",
+  "published_at_utc": "2026-11-24T12:50:19.741907+00:00",
+  "daily_budget": 30.14,
+  "football_ab_budget": 25.62,
+  "reserved_nba_c_budget": 4.52,
+  "pending_ticket_statuses": {
+    "A": "objavljen",
+    "B": "objavljen"
+  },
+  "pending_ticket_reasons": {
+    "A": "",
+    "B": ""
+  },
+  "odds_verification_note": "AI-provided selections are reproduced verbatim; GitHub does not check ESPN, markets or quotes."
 }
