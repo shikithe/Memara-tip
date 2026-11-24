@@ -334,12 +334,17 @@ async function checkNbaEspnDirectly(){
    }
   }
   if(pts===null&&!dnp)continue;
-  const old=liveScores.matches.find(x=>x.ticket===job.t.id&&x.index===job.i&&String(x.event_id||'')===job.event);
+  // A newly published C ticket initially has an unverified placeholder without
+  // event_id. Update that SAME record, otherwise scoreFor() keeps finding the
+  // older placeholder and hides verified ESPN player points in the browser.
+  const old=liveScores.matches.find(x=>x.ticket===job.t.id&&x.index===job.i&&
+   (String(x.event_id||'')===job.event||
+    (!x.event_id&&x.home===job.leg.home&&x.away===job.leg.away)));
   if(old?.state==='final'&&state!=='final')continue;
   if(old?.state==='live'&&state==='live'&&Number.isFinite(Number(old.player_points))&&old.player_points!==null&&pts!==null&&Number(old.player_points)>pts)continue;
   const line=Number(job.leg.points_line),pick=job.leg.pick;
   const outcome=dnp?'pogođen':pts!==null&&pick==='over'?(pts>line?'pogođen':state==='final'?'promašen':null):pts!==null&&pick==='under'?(pts>=line?'promašen':state==='final'?'pogođen':null):null;
-  const next={...(old||{}),ticket:job.t.id,index:job.i,home:job.leg.home,away:job.leg.away,event_id:job.event,player_id:job.pid,sport:'basketball',state,period:header.period??null,game_clock:String(header.displayClock||''),score:dnp?'DNP':String(pts),player_points:pts,source:'espn-browser-direct',observed_at_utc:new Date().toISOString()};
+  const next={...(old||{}),ticket:job.t.id,index:job.i,fixture_id:job.leg.fixture_id,home:job.leg.home,away:job.leg.away,event_id:job.event,player_id:job.pid,sport:'basketball',state,period:header.period??null,game_clock:String(header.displayClock||''),score:dnp?'DNP':String(pts),player_points:pts,source:'espn-browser-direct',observed_at_utc:new Date().toISOString()};
   if(dnp){next.void=true;next.effective_odd=1;}else{delete next.void;delete next.effective_odd;}
   if(outcome)next.result_status=outcome;else delete next.result_status;
   if(old)Object.assign(old,next);else liveScores.matches.push(next);
