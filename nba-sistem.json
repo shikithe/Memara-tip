@@ -6190,7 +6190,7 @@
               },
               "player_points": 3,
               "game_state": "live",
-              "game_clock": "9:11",
+              "game_clock": "8:13",
               "period": 4
             },
             {
@@ -6674,7 +6674,7 @@
               },
               "player_points": 16,
               "game_state": "live",
-              "game_clock": "22.9",
+              "game_clock": "0.1",
               "period": 4
             },
             {
@@ -6729,7 +6729,7 @@
               },
               "player_points": 14,
               "game_state": "live",
-              "game_clock": "22.9",
+              "game_clock": "0.1",
               "period": 4
             }
           ]
@@ -7060,7 +7060,7 @@
               },
               "player_points": 11,
               "game_state": "live",
-              "game_clock": "5:23",
+              "game_clock": "4:50",
               "period": 1
             }
           ]
