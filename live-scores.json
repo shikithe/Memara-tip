@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "updated_at_utc": "2026-11-23T22:03:41.499498+00:00",
+  "updated_at_utc": "2026-11-24T05:31:06.915500+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -37,14 +37,34 @@
       "index": 0,
       "home": "Phoenix Suns",
       "away": "New Orleans Pelicans",
-      "state": "unverified"
+      "state": "final",
+      "points_line": 26.5,
+      "period": null,
+      "game_clock": "",
+      "source": "espn-public-unofficial",
+      "event_id": "401910042",
+      "player_id": "3136193",
+      "sport": "basketball",
+      "score": "22",
+      "player_points": 22,
+      "result_status": "pogođen"
     },
     {
       "ticket": "C",
       "index": 1,
       "home": "Cleveland Cavaliers",
       "away": "Chicago Bulls",
-      "state": "unverified"
+      "state": "final",
+      "points_line": 26.5,
+      "period": null,
+      "game_clock": "",
+      "source": "espn-public-unofficial",
+      "event_id": "401910041",
+      "player_id": "3908809",
+      "sport": "basketball",
+      "score": "28",
+      "player_points": 28,
+      "result_status": "promašen"
     }
   ],
   "bank_unchanged": true
