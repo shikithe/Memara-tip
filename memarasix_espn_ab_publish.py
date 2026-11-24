@@ -82,16 +82,26 @@ def publish(root=Path("."), now=None, feed=None):
     balance = float(current.get("bank_after", 0))
     if bank <= 0 or balance <= 0:
         raise ValueError("invalid bank")
+    # The user's bank rule reserves 1.5% of STARTING daily bank for NBA C.
+    # A/B may spend at most 8.5% together; never absorb C's reserve.
     budget = round(bank * .1, 2)
+    football_budget = round(bank * .085, 2)
+    c_reserved = round(bank * .015, 2)
+    # Guard against independent cent rounding accidentally exceeding 10%.
+    football_budget = min(football_budget, round(budget - c_reserved, 2))
     spent = round(sum(float(t.get("stake", 0)) for t in existing), 2)
-    shares = {"A": .65, "B": .25}
-    if not existing and len(selections) == 2:
-        shares = {"A": .70, "B": .30}
+    spent_ab = round(sum(float(t.get("stake", 0)) for t in existing
+                         if t.get("id") in ("A", "B")), 2)
+    # Preserve historic A:B 65:25 ratio, scaled proportionally into 8.5%.
+    shares = {"A": 65.0 / 90.0, "B": 25.0 / 90.0}
     added = 0.
     for t in selections:
-        stake = round(budget * shares[t["id"]], 2)
-        if stake <= 0 or round(spent + added + stake, 2) > budget + .001 or balance < added + stake:
-            raise ValueError("insufficient daily stake budget")
+        stake = round(football_budget * shares[t["id"]], 2)
+        if (stake <= 0
+                or round(spent_ab + added + stake, 2) > football_budget + .001
+                or round(spent + added + stake, 2) > budget + .001
+                or balance < added + stake):
+            raise ValueError("insufficient A/B stake budget; NBA C reserve protected")
         t.update({"stake": stake, "status": "objavljen", "payout": 0})
         added = round(added + stake, 2)
     statuses = dict(current.get("pending_ticket_statuses", {})) if same_day else {}
@@ -105,6 +115,7 @@ def publish(root=Path("."), now=None, feed=None):
         "published_at_utc": current.get("published_at_utc") if existing else now.isoformat(),
         "publication_type": "independent_ai_espn_only_github_publisher",
         "bank_before": bank, "daily_budget": budget,
+        "football_ab_budget": football_budget, "reserved_nba_c_budget": c_reserved,
         "daily_stake": round(spent+added, 2),
         "bank_after": round(balance-added, 2),
         "bank_after_stakes": round(balance-added, 2),
