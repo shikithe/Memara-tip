@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-24",
+  "list_number": 6,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-24T18:03:06.482070+00:00",
+  "total_offers": 39,
+  "group_size": 4,
+  "original_positions": [
+    21,
+    24
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Jamal Murray",
+      "team": "DEN",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/jamal-murray",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 23.5,
+          "over_american": -116,
+          "under_american": -111,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 23.5,
+          "over_american": -107,
+          "under_american": -127,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 117,
+          "under_american": -144,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 21
+    },
+    {
+      "player": "Kyrie Irving",
+      "team": "DAL",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/kyrie-irving",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 22.5,
+          "over_american": -118,
+          "under_american": -108,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9259
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 22.5,
+          "over_american": -125,
+          "under_american": -109,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9174
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 138,
+          "under_american": -194,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5155
+        }
+      },
+      "original_offer_position": 22
+    },
+    {
+      "player": "Naji Marshall",
+      "team": "DAL",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/naji-marshall",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -106,
+          "under_american": -121,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": 104,
+          "under_american": -138,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7246
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": 100,
+          "under_american": -136,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7353
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -127,
+          "under_american": -104,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9615
+        }
+      },
+      "original_offer_position": 23
+    },
+    {
+      "player": "Nikola Jokic",
+      "team": "DEN",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/nikola-jokic",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 25.5,
+          "over_american": -121,
+          "under_american": -105,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 25.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 26.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 25.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -144,
+          "under_american": 113,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.13
+        }
+      },
+      "original_offer_position": 24
+    }
+  ]
+}

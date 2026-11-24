@@ -1,0 +1,161 @@
+{
+  "date": "2026-11-24",
+  "list_number": 10,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-24T18:03:06.482070+00:00",
+  "total_offers": 39,
+  "group_size": 3,
+  "original_positions": [
+    37,
+    39
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Paul Reed",
+      "team": "DET",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/paul-reed",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -127,
+          "under_american": 100,
+          "over_decimal": 1.7874,
+          "under_decimal": 2.0
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -120,
+          "under_american": -108,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -120,
+          "under_american": -111,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -127,
+          "under_american": 104,
+          "over_decimal": 1.7874,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 37
+    },
+    {
+      "player": "Tristan da Silva",
+      "team": "ORL",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/tristan-da-silva",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -144,
+          "under_american": 117,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.17
+        }
+      },
+      "original_offer_position": 38
+    },
+    {
+      "player": "Wendell Carter Jr.",
+      "team": "ORL",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/wendell-carter",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -122,
+          "under_american": -103,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9709
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -104,
+          "under_american": -130,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7692
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -163,
+          "under_american": 113,
+          "over_decimal": 1.6135,
+          "under_decimal": 2.13
+        }
+      },
+      "original_offer_position": 39
+    }
+  ]
+}

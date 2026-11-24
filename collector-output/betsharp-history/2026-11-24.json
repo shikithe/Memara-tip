@@ -1,0 +1,1793 @@
+{
+  "schema_version": "1.0",
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "market": "player_points",
+  "game_date_et": "2026-11-24",
+  "collected_at_utc": "2026-11-24T18:03:06.482070+00:00",
+  "player_count": 39,
+  "status": "ok",
+  "note": "Market snapshot only; player participation and odds require re-verification.",
+  "offers": [
+    {
+      "player": "AJ Dybantsa",
+      "team": "WSH",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/aj-dybantsa",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -127,
+          "under_american": -101,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9901
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 16.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -156,
+          "under_american": 127,
+          "over_decimal": 1.641,
+          "under_decimal": 2.27
+        }
+      }
+    },
+    {
+      "player": "Alexandre Sarr",
+      "team": "WSH",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/alexandre-sarr",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -118,
+          "under_american": -108,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9259
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -108,
+          "under_american": -117,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8547
+        }
+      }
+    },
+    {
+      "player": "Anthony Davis",
+      "team": "WSH",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/anthony-davis",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 21.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 21.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 21.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -178,
+          "under_american": 144,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.44
+        }
+      }
+    },
+    {
+      "player": "Bilal Coulibaly",
+      "team": "WSH",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/bilal-coulibaly",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 6.5,
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 6.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 6.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 6.5,
+          "over_american": -127,
+          "under_american": -106,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -270,
+          "under_american": 178,
+          "over_decimal": 1.3704,
+          "under_decimal": 2.78
+        }
+      }
+    },
+    {
+      "player": "Derrick White",
+      "team": "BOS",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/derrick-white",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -108,
+          "under_american": -118,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8475
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 127,
+          "under_american": -163,
+          "over_decimal": 2.27,
+          "under_decimal": 1.6135
+        }
+      }
+    },
+    {
+      "player": "Hugo Gonzalez",
+      "team": "BOS",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/hugo-gonzalez",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 5.5,
+          "over_american": -122,
+          "under_american": -105,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 4.5,
+          "over_american": -152,
+          "under_american": 112,
+          "over_decimal": 1.6579,
+          "under_decimal": 2.12
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -150,
+          "under_american": 113,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.13
+        }
+      }
+    },
+    {
+      "player": "Jayson Tatum",
+      "team": "BOS",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jayson-tatum",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 25.5,
+          "over_american": -119,
+          "under_american": -107,
+          "over_decimal": 1.8403,
+          "under_decimal": 1.9346
+        },
+        "FD": {
+          "line": 25.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 25.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 26.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -150,
+          "under_american": 113,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.13
+        }
+      }
+    },
+    {
+      "player": "Kyshawn George",
+      "team": "WSH",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/kyshawn-george",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -118,
+          "under_american": -108,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9259
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -127,
+          "under_american": 100,
+          "over_decimal": 1.7874,
+          "under_decimal": 2.0
+        }
+      }
+    },
+    {
+      "player": "Neemias Queta",
+      "team": "BOS",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/neemias-queta",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -128,
+          "under_american": 100,
+          "over_decimal": 1.7812,
+          "under_decimal": 2.0
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -178,
+          "under_american": 122,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.22
+        }
+      }
+    },
+    {
+      "player": "Paul George",
+      "team": "BOS",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/paul-george",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -115,
+          "under_american": -110,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 18.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 100,
+          "under_american": -138,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7246
+        }
+      }
+    },
+    {
+      "player": "Payton Pritchard",
+      "team": "BOS",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/payton-pritchard",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -112,
+          "under_american": -114,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 122,
+          "under_american": -170,
+          "over_decimal": 2.22,
+          "under_decimal": 1.5882
+        }
+      }
+    },
+    {
+      "player": "Sam Hauser",
+      "team": "BOS",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/sam-hauser",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 6.5,
+          "over_american": -114,
+          "under_american": -112,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -102,
+          "under_american": -128,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -127,
+          "under_american": -107,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9346
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 194,
+          "under_american": -270,
+          "over_decimal": 2.94,
+          "under_decimal": 1.3704
+        }
+      }
+    },
+    {
+      "player": "Trae Young",
+      "team": "WSH",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/trae-young",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -105,
+          "under_american": -121,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -134,
+          "under_american": -103,
+          "over_decimal": 1.7463,
+          "under_decimal": 1.9709
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -133,
+          "under_american": 108,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.08
+        }
+      }
+    },
+    {
+      "player": "Aaron Gordon",
+      "team": "DEN",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/aaron-gordon",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -116,
+          "under_american": -110,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 108,
+          "under_american": -144,
+          "over_decimal": 2.08,
+          "under_decimal": 1.6944
+        }
+      }
+    },
+    {
+      "player": "Caleb Martin",
+      "team": "DAL",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/caleb-martin",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 5.5,
+          "over_american": -122,
+          "under_american": -104,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 5.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 5.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 5.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -178,
+          "under_american": 133,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.33
+        }
+      }
+    },
+    {
+      "player": "Cameron Johnson",
+      "team": "DEN",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/cameron-johnson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -124,
+          "under_american": -103,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9709
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -122,
+          "under_american": -112,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 138,
+          "under_american": -170,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5882
+        }
+      }
+    },
+    {
+      "player": "Christian Braun",
+      "team": "DEN",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/christian-braun",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -107,
+          "under_american": -121,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 138,
+          "under_american": -170,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5882
+        }
+      }
+    },
+    {
+      "player": "Cooper Flagg",
+      "team": "DAL",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/cooper-flagg",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 24.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 24.5,
+          "over_american": -104,
+          "under_american": -125,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 24.5,
+          "over_american": -111,
+          "under_american": -120,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 23.5,
+          "over_american": -143,
+          "under_american": 107,
+          "over_decimal": 1.6993,
+          "under_decimal": 2.07
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -108,
+          "under_american": -117,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8547
+        }
+      }
+    },
+    {
+      "player": "Daniel Gafford",
+      "team": "DAL",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/daniel-gafford",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -104,
+          "under_american": -123,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.813
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -104,
+          "under_american": -125,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -108,
+          "under_american": -117,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8547
+        }
+      }
+    },
+    {
+      "player": "DeMar DeRozan",
+      "team": "DEN",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/demar-derozan",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -118,
+          "under_american": -110,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -138,
+          "under_american": 104,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.04
+        }
+      }
+    },
+    {
+      "player": "Jamal Murray",
+      "team": "DEN",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/jamal-murray",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 23.5,
+          "over_american": -116,
+          "under_american": -111,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 23.5,
+          "over_american": -107,
+          "under_american": -127,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 117,
+          "under_american": -144,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6944
+        }
+      }
+    },
+    {
+      "player": "Kyrie Irving",
+      "team": "DAL",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/kyrie-irving",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 22.5,
+          "over_american": -118,
+          "under_american": -108,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9259
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 22.5,
+          "over_american": -125,
+          "under_american": -109,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9174
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 138,
+          "under_american": -194,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5155
+        }
+      }
+    },
+    {
+      "player": "Naji Marshall",
+      "team": "DAL",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/naji-marshall",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -106,
+          "under_american": -121,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": 104,
+          "under_american": -138,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7246
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": 100,
+          "under_american": -136,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7353
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -127,
+          "under_american": -104,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9615
+        }
+      }
+    },
+    {
+      "player": "Nikola Jokic",
+      "team": "DEN",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/nikola-jokic",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 25.5,
+          "over_american": -121,
+          "under_american": -105,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 25.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 26.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 25.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -144,
+          "under_american": 113,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.13
+        }
+      }
+    },
+    {
+      "player": "P.J. Washington",
+      "team": "DAL",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/pj-washington",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -111,
+          "under_american": -114,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -105,
+          "under_american": -129,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 156,
+          "under_american": -203,
+          "over_decimal": 2.56,
+          "under_decimal": 1.4926
+        }
+      }
+    },
+    {
+      "player": "Zaccharie Risacher",
+      "team": "DAL",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/zaccharie-risacher",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -114,
+          "under_american": -112,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -121,
+          "under_american": -113,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.885
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 117,
+          "under_american": -144,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6944
+        }
+      }
+    },
+    {
+      "player": "Anthony Black",
+      "team": "ORL",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/anthony-black",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -116,
+          "under_american": -110,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -110,
+          "under_american": -118,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 100,
+          "under_american": -122,
+          "over_decimal": 2.0,
+          "under_decimal": 1.8197
+        }
+      }
+    },
+    {
+      "player": "Ausar Thompson",
+      "team": "DET",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/ausar-thompson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -121,
+          "under_american": -104,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -163,
+          "under_american": 127,
+          "over_decimal": 1.6135,
+          "under_decimal": 2.27
+        }
+      }
+    },
+    {
+      "player": "Cade Cunningham",
+      "team": "DET",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/cade-cunningham",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 24.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 24.5,
+          "over_american": -113,
+          "under_american": -114,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 24.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 24.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -117,
+          "under_american": -104,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9615
+        }
+      }
+    },
+    {
+      "player": "Daniss Jenkins",
+      "team": "DET",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/daniss-jenkins",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -126,
+          "under_american": -101,
+          "over_decimal": 1.7937,
+          "under_decimal": 1.9901
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -133,
+          "under_american": 108,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.08
+        }
+      }
+    },
+    {
+      "player": "Desmond Bane",
+      "team": "ORL",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/desmond-bane",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 16.5,
+          "over_american": -143,
+          "under_american": 106,
+          "over_decimal": 1.6993,
+          "under_decimal": 2.06
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 144,
+          "under_american": -213,
+          "over_decimal": 2.44,
+          "under_decimal": 1.4695
+        }
+      }
+    },
+    {
+      "player": "Franz Wagner",
+      "team": "ORL",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/franz-wagner",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 23.5,
+          "over_american": -101,
+          "under_american": -126,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7937
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -140,
+          "under_american": 105,
+          "over_decimal": 1.7143,
+          "under_decimal": 2.05
+        },
+        "BR": {
+          "line": 23.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 122,
+          "under_american": -163,
+          "over_decimal": 2.22,
+          "under_decimal": 1.6135
+        }
+      }
+    },
+    {
+      "player": "Isaiah Joe",
+      "team": "DET",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/isaiah-joe",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": 101,
+          "under_american": -128,
+          "over_decimal": 2.01,
+          "under_decimal": 1.7812
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -178,
+          "under_american": 138,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.38
+        }
+      }
+    },
+    {
+      "player": "Jalen Suggs",
+      "team": "ORL",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/jalen-suggs",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": 100,
+          "under_american": -128,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7812
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -122,
+          "under_american": -110,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9091
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -186,
+          "under_american": 122,
+          "over_decimal": 1.5376,
+          "under_decimal": 2.22
+        }
+      }
+    },
+    {
+      "player": "John Collins",
+      "team": "DET",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/john-collins",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -112,
+          "under_american": -113,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -106,
+          "under_american": -127,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -144,
+          "under_american": 104,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.04
+        }
+      }
+    },
+    {
+      "player": "Kevin Huerter",
+      "team": "DET",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/kevin-huerter",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -114,
+          "under_american": -111,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -129,
+          "under_american": -105,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9524
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -203,
+          "under_american": 144,
+          "over_decimal": 1.4926,
+          "under_decimal": 2.44
+        }
+      }
+    },
+    {
+      "player": "Paul Reed",
+      "team": "DET",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/paul-reed",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -127,
+          "under_american": 100,
+          "over_decimal": 1.7874,
+          "under_decimal": 2.0
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -120,
+          "under_american": -108,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -120,
+          "under_american": -111,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -127,
+          "under_american": 104,
+          "over_decimal": 1.7874,
+          "under_decimal": 2.04
+        }
+      }
+    },
+    {
+      "player": "Tristan da Silva",
+      "team": "ORL",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/tristan-da-silva",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -144,
+          "under_american": 117,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.17
+        }
+      }
+    },
+    {
+      "player": "Wendell Carter Jr.",
+      "team": "ORL",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/wendell-carter",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -122,
+          "under_american": -103,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9709
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -104,
+          "under_american": -130,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7692
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -163,
+          "under_american": 113,
+          "over_decimal": 1.6135,
+          "under_decimal": 2.13
+        }
+      }
+    }
+  ]
+}

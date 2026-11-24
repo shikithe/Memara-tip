@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-24",
+  "list_number": 1,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-24T18:03:06.482070+00:00",
+  "total_offers": 39,
+  "group_size": 4,
+  "original_positions": [
+    1,
+    4
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "AJ Dybantsa",
+      "team": "WSH",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/aj-dybantsa",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -127,
+          "under_american": -101,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9901
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 16.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -156,
+          "under_american": 127,
+          "over_decimal": 1.641,
+          "under_decimal": 2.27
+        }
+      },
+      "original_offer_position": 1
+    },
+    {
+      "player": "Alexandre Sarr",
+      "team": "WSH",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/alexandre-sarr",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -118,
+          "under_american": -108,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9259
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -108,
+          "under_american": -117,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8547
+        }
+      },
+      "original_offer_position": 2
+    },
+    {
+      "player": "Anthony Davis",
+      "team": "WSH",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/anthony-davis",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 21.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 21.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 21.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -178,
+          "under_american": 144,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.44
+        }
+      },
+      "original_offer_position": 3
+    },
+    {
+      "player": "Bilal Coulibaly",
+      "team": "WSH",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/bilal-coulibaly",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 6.5,
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 6.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 6.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 6.5,
+          "over_american": -127,
+          "under_american": -106,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -270,
+          "under_american": 178,
+          "over_decimal": 1.3704,
+          "under_decimal": 2.78
+        }
+      },
+      "original_offer_position": 4
+    }
+  ]
+}

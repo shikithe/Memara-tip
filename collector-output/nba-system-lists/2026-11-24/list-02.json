@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-24",
+  "list_number": 2,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-24T18:03:06.482070+00:00",
+  "total_offers": 39,
+  "group_size": 4,
+  "original_positions": [
+    5,
+    8
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Derrick White",
+      "team": "BOS",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/derrick-white",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -108,
+          "under_american": -118,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8475
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 127,
+          "under_american": -163,
+          "over_decimal": 2.27,
+          "under_decimal": 1.6135
+        }
+      },
+      "original_offer_position": 5
+    },
+    {
+      "player": "Hugo Gonzalez",
+      "team": "BOS",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/hugo-gonzalez",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 5.5,
+          "over_american": -122,
+          "under_american": -105,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 4.5,
+          "over_american": -152,
+          "under_american": 112,
+          "over_decimal": 1.6579,
+          "under_decimal": 2.12
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -150,
+          "under_american": 113,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.13
+        }
+      },
+      "original_offer_position": 6
+    },
+    {
+      "player": "Jayson Tatum",
+      "team": "BOS",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jayson-tatum",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 25.5,
+          "over_american": -119,
+          "under_american": -107,
+          "over_decimal": 1.8403,
+          "under_decimal": 1.9346
+        },
+        "FD": {
+          "line": 25.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 25.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 26.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -150,
+          "under_american": 113,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.13
+        }
+      },
+      "original_offer_position": 7
+    },
+    {
+      "player": "Kyshawn George",
+      "team": "WSH",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/kyshawn-george",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -118,
+          "under_american": -108,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9259
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -127,
+          "under_american": 100,
+          "over_decimal": 1.7874,
+          "under_decimal": 2.0
+        }
+      },
+      "original_offer_position": 8
+    }
+  ]
+}

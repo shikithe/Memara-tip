@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-24",
+  "list_number": 9,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-24T18:03:06.482070+00:00",
+  "total_offers": 39,
+  "group_size": 4,
+  "original_positions": [
+    33,
+    36
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Isaiah Joe",
+      "team": "DET",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/isaiah-joe",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": 101,
+          "under_american": -128,
+          "over_decimal": 2.01,
+          "under_decimal": 1.7812
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -178,
+          "under_american": 138,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.38
+        }
+      },
+      "original_offer_position": 33
+    },
+    {
+      "player": "Jalen Suggs",
+      "team": "ORL",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/jalen-suggs",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": 100,
+          "under_american": -128,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7812
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -122,
+          "under_american": -110,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9091
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -186,
+          "under_american": 122,
+          "over_decimal": 1.5376,
+          "under_decimal": 2.22
+        }
+      },
+      "original_offer_position": 34
+    },
+    {
+      "player": "John Collins",
+      "team": "DET",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/john-collins",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -112,
+          "under_american": -113,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -106,
+          "under_american": -127,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -144,
+          "under_american": 104,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 35
+    },
+    {
+      "player": "Kevin Huerter",
+      "team": "DET",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/kevin-huerter",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -114,
+          "under_american": -111,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -129,
+          "under_american": -105,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9524
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -203,
+          "under_american": 144,
+          "over_decimal": 1.4926,
+          "under_decimal": 2.44
+        }
+      },
+      "original_offer_position": 36
+    }
+  ]
+}

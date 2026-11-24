@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-24",
+  "list_number": 8,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-24T18:03:06.482070+00:00",
+  "total_offers": 39,
+  "group_size": 4,
+  "original_positions": [
+    29,
+    32
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Cade Cunningham",
+      "team": "DET",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/cade-cunningham",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 24.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 24.5,
+          "over_american": -113,
+          "under_american": -114,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 24.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 24.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -117,
+          "under_american": -104,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9615
+        }
+      },
+      "original_offer_position": 29
+    },
+    {
+      "player": "Daniss Jenkins",
+      "team": "DET",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/daniss-jenkins",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -126,
+          "under_american": -101,
+          "over_decimal": 1.7937,
+          "under_decimal": 1.9901
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -133,
+          "under_american": 108,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 30
+    },
+    {
+      "player": "Desmond Bane",
+      "team": "ORL",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/desmond-bane",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 16.5,
+          "over_american": -143,
+          "under_american": 106,
+          "over_decimal": 1.6993,
+          "under_decimal": 2.06
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 144,
+          "under_american": -213,
+          "over_decimal": 2.44,
+          "under_decimal": 1.4695
+        }
+      },
+      "original_offer_position": 31
+    },
+    {
+      "player": "Franz Wagner",
+      "team": "ORL",
+      "game": "DET @ ORL",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/franz-wagner",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-detroit-pistons-at-orlando-magic#props",
+      "points_market": {
+        "DK": {
+          "line": 23.5,
+          "over_american": -101,
+          "under_american": -126,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7937
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -140,
+          "under_american": 105,
+          "over_decimal": 1.7143,
+          "under_decimal": 2.05
+        },
+        "BR": {
+          "line": 23.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 122,
+          "under_american": -163,
+          "over_decimal": 2.22,
+          "under_decimal": 1.6135
+        }
+      },
+      "original_offer_position": 32
+    }
+  ]
+}

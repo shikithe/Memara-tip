@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-24",
+  "list_number": 4,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-24T18:03:06.482070+00:00",
+  "total_offers": 39,
+  "group_size": 4,
+  "original_positions": [
+    13,
+    16
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Trae Young",
+      "team": "WSH",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/trae-young",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -105,
+          "under_american": -121,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -134,
+          "under_american": -103,
+          "over_decimal": 1.7463,
+          "under_decimal": 1.9709
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -133,
+          "under_american": 108,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 13
+    },
+    {
+      "player": "Aaron Gordon",
+      "team": "DEN",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/aaron-gordon",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -116,
+          "under_american": -110,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 108,
+          "under_american": -144,
+          "over_decimal": 2.08,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 14
+    },
+    {
+      "player": "Caleb Martin",
+      "team": "DAL",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/caleb-martin",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 5.5,
+          "over_american": -122,
+          "under_american": -104,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 5.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 5.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 5.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -178,
+          "under_american": 133,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.33
+        }
+      },
+      "original_offer_position": 15
+    },
+    {
+      "player": "Cameron Johnson",
+      "team": "DEN",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/cameron-johnson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -124,
+          "under_american": -103,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9709
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -122,
+          "under_american": -112,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 138,
+          "under_american": -170,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5882
+        }
+      },
+      "original_offer_position": 16
+    }
+  ]
+}

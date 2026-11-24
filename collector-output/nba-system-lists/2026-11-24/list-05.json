@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-24",
+  "list_number": 5,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-24T18:03:06.482070+00:00",
+  "total_offers": 39,
+  "group_size": 4,
+  "original_positions": [
+    17,
+    20
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Christian Braun",
+      "team": "DEN",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/christian-braun",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -107,
+          "under_american": -121,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 138,
+          "under_american": -170,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5882
+        }
+      },
+      "original_offer_position": 17
+    },
+    {
+      "player": "Cooper Flagg",
+      "team": "DAL",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/cooper-flagg",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 24.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 24.5,
+          "over_american": -104,
+          "under_american": -125,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 24.5,
+          "over_american": -111,
+          "under_american": -120,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 23.5,
+          "over_american": -143,
+          "under_american": 107,
+          "over_decimal": 1.6993,
+          "under_decimal": 2.07
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -108,
+          "under_american": -117,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8547
+        }
+      },
+      "original_offer_position": 18
+    },
+    {
+      "player": "Daniel Gafford",
+      "team": "DAL",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/daniel-gafford",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -104,
+          "under_american": -123,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.813
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -104,
+          "under_american": -125,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -108,
+          "under_american": -117,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8547
+        }
+      },
+      "original_offer_position": 19
+    },
+    {
+      "player": "DeMar DeRozan",
+      "team": "DEN",
+      "game": "DAL @ DEN",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/demar-derozan",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-dallas-mavericks-at-denver-nuggets#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -118,
+          "under_american": -110,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -138,
+          "under_american": 104,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 20
+    }
+  ]
+}

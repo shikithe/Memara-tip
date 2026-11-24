@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-24",
+  "list_number": 3,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-24T18:03:06.482070+00:00",
+  "total_offers": 39,
+  "group_size": 4,
+  "original_positions": [
+    9,
+    12
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Neemias Queta",
+      "team": "BOS",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/neemias-queta",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -128,
+          "under_american": 100,
+          "over_decimal": 1.7812,
+          "under_decimal": 2.0
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -178,
+          "under_american": 122,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.22
+        }
+      },
+      "original_offer_position": 9
+    },
+    {
+      "player": "Paul George",
+      "team": "BOS",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/paul-george",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -115,
+          "under_american": -110,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 18.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 100,
+          "under_american": -138,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7246
+        }
+      },
+      "original_offer_position": 10
+    },
+    {
+      "player": "Payton Pritchard",
+      "team": "BOS",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/payton-pritchard",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -112,
+          "under_american": -114,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 122,
+          "under_american": -170,
+          "over_decimal": 2.22,
+          "under_decimal": 1.5882
+        }
+      },
+      "original_offer_position": 11
+    },
+    {
+      "player": "Sam Hauser",
+      "team": "BOS",
+      "game": "BOS @ WSH",
+      "game_date_et": "2026-11-24",
+      "game_time_et": "Tue 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/sam-hauser",
+      "game_url": "https://betsharp.com/nba/game/2026-11-24-boston-celtics-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 6.5,
+          "over_american": -114,
+          "under_american": -112,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -102,
+          "under_american": -128,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -127,
+          "under_american": -107,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9346
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 194,
+          "under_american": -270,
+          "over_decimal": 2.94,
+          "under_decimal": 1.3704
+        }
+      },
+      "original_offer_position": 12
+    }
+  ]
+}
