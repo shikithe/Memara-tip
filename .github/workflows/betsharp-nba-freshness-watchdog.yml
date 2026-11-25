@@ -1,6 +1,9 @@
 name: MEMARA BetSharp NBA freshness watchdog
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/betsharp-nba-freshness-watchdog.yml'
   schedule:
     # Independent fallback checks, UTC. Local Sarajevo window is checked in code.
     - cron: '17 10,11,12,14,16,18,20 * * *'
