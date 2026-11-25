@@ -1,8 +1,35 @@
 {
   "date": "2026-11-25",
-  "updated_at_utc": "2026-11-25T13:00:01.263552+00:00",
+  "updated_at_utc": "2026-11-25T13:58:41.482901+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
-  "matches": [],
+  "matches": [
+    {
+      "ticket": "A",
+      "index": 0,
+      "home": "Paris Saint-Germain",
+      "away": "AS Roma",
+      "state": "scheduled",
+      "fixture_id": "espn:football:uefa.champions:401915374",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401915374",
+      "league": "uefa.champions",
+      "minute": null
+    },
+    {
+      "ticket": "A",
+      "index": 1,
+      "home": "Sabah FK",
+      "away": "Barcelona",
+      "state": "scheduled",
+      "fixture_id": "espn:football:uefa.champions:401915378",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401915378",
+      "league": "uefa.champions",
+      "minute": null
+    }
+  ],
   "bank_unchanged": true
 }
