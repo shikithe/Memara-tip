@@ -4,7 +4,7 @@
   "publication_type": "independent_ai_approved_github_nba_c",
   "bank_before": 301.44,
   "daily_stake": 30.14,
-  "bank_after": 271.3,
+  "bank_after": 317.7,
   "bank_after_stakes": 271.3,
   "provisional": true,
   "settled": false,
@@ -36,7 +36,9 @@
           "final_probability_pct": 71.75,
           "final_ev_pct": 9.06,
           "independent_model_source": "https://fairxg.com/sport/football/match/real-madrid-vs-psv-eindhoven",
-          "analysis": "Detaljna AI provjera za tiket A: GG po kvoti 1,52. Matematički model daje 72,5%, FairXG 71%, a konačna procjena je 71,75% (procijenjeni EV +9,06%). Prema tada pregledanim izvještajima, Real Madrid je bez Endricka, Raúla Asencija i Rodryga, a PSV bez Maura Juniora i Ouaisse. Očekivani sastavi nisu potvrđene početne postave. Posljednje potvrđene utakmice odigrane su 21.11, uz oko 72 sata odmora domaćina i 76,5 sati gosta. Noviji međusobni susreti nisu potvrđeni; UEFA navodi prvi susret ovih klubova nakon 37 godina."
+          "analysis": "Detaljna AI provjera za tiket A: GG po kvoti 1,52. Matematički model daje 72,5%, FairXG 71%, a konačna procjena je 71,75% (procijenjeni EV +9,06%). Prema tada pregledanim izvještajima, Real Madrid je bez Endricka, Raúla Asencija i Rodryga, a PSV bez Maura Juniora i Ouaisse. Očekivani sastavi nisu potvrđene početne postave. Posljednje potvrđene utakmice odigrane su 21.11, uz oko 72 sata odmora domaćina i 76,5 sati gosta. Noviji međusobni susreti nisu potvrđeni; UEFA navodi prvi susret ovih klubova nakon 37 godina.",
+          "result_status": "pogođen",
+          "final_score": "5:1"
         },
         {
           "fixture_id": "espn:football:sco.1:401878348",
@@ -52,12 +54,15 @@
           "final_probability_pct": 63.2,
           "final_ev_pct": 4.28,
           "independent_model_source": "https://fairxg.com/sport/football/match/hibernian-vs-dundee",
-          "analysis": "Detaljna AI provjera za tiket A: GG po kvoti 1,65. Matematički model daje 68,4%, FairXG 58%, a konačna procjena je 63,2% (procijenjeni EV +4,28%). Zabilježeni su izostanci Passlacka, Hanleyja i Mayora kod Hiberniana, te suspenzija Bevana i drugi izostanci kod Dundeeja. Posljednje utakmice odigrane su 21.11. Prethodni potvrđeni međusobni duel 30. avgusta završen je Dundee – Hibernian 1:2. Neslaganje modela od 10,4 procentna poena značajan je rizik."
+          "analysis": "Detaljna AI provjera za tiket A: GG po kvoti 1,65. Matematički model daje 68,4%, FairXG 58%, a konačna procjena je 63,2% (procijenjeni EV +4,28%). Zabilježeni su izostanci Passlacka, Hanleyja i Mayora kod Hiberniana, te suspenzija Bevana i drugi izostanci kod Dundeeja. Posljednje utakmice odigrane su 21.11. Prethodni potvrđeni međusobni duel 30. avgusta završen je Dundee – Hibernian 1:2. Neslaganje modela od 10,4 procentna poena značajan je rizik.",
+          "result_status": "pogođen",
+          "final_score": "2:1"
         }
       ],
       "stake": 18.5,
-      "status": "objavljen",
-      "payout": 0
+      "status": "dobitan",
+      "payout": 46.4,
+      "settled_at_utc": "2026-11-25T00:44:15.483164+00:00"
     },
     {
       "id": "B",
@@ -85,7 +90,9 @@
           "final_probability_pct": 78.75,
           "final_ev_pct": 3.16,
           "independent_model_source": "https://fairxg.com/sport/football/match/rb-leipzig-vs-lens",
-          "analysis": "Detaljna AI provjera za tiket B: 3+ golova po kvoti 1,31. Matematički model daje 80,5%, FairXG 77%, a konačna procjena je 78,75% (procijenjeni EV +3,16%). FairXG predviđa 2,78 gola Leipziga i 1,26 gola Lensa; to su prognoze, ne stvarni istorijski xG. Leipzig je prema pregledanim izvještajima bez Lukebe i Ouedraoga, dok Lens nema Édouarda i ima još tri upitna igrača. Posljednji potvrđeni nastupi bili su 21.11; pouzdana novija istorija međusobnih duela nije nađena."
+          "analysis": "Detaljna AI provjera za tiket B: 3+ golova po kvoti 1,31. Matematički model daje 80,5%, FairXG 77%, a konačna procjena je 78,75% (procijenjeni EV +3,16%). FairXG predviđa 2,78 gola Leipziga i 1,26 gola Lensa; to su prognoze, ne stvarni istorijski xG. Leipzig je prema pregledanim izvještajima bez Lukebe i Ouedraoga, dok Lens nema Édouarda i ima još tri upitna igrača. Posljednji potvrđeni nastupi bili su 21.11; pouzdana novija istorija međusobnih duela nije nađena.",
+          "result_status": "pogođen",
+          "final_score": "3:1"
         },
         {
           "fixture_id": "espn:football:uefa.champions:401915294",
@@ -101,12 +108,15 @@
           "final_probability_pct": 63.8,
           "final_ev_pct": 5.27,
           "independent_model_source": "https://fairxg.com/sport/football/match/feyenoord-vs-porto",
-          "analysis": "Detaljna AI provjera za tiket B: 3+ golova po kvoti 1,65. Matematički model daje 64,6%, FairXG 63%, a konačna procjena je 63,8% (procijenjeni EV +5,27%). Prema pregledanim izvještajima, Feyenoord je bez Beelena, Bosa, Modera, Nieuwkoopa i St. Justea. Porto je bez Smallinga, a William Gomes je upitan. Posljednje potvrđene utakmice odigrane su 21.11. (Feyenoord) i 20.11. (Porto). Noviji međusobni dueli nisu pouzdano potvrđeni."
+          "analysis": "Detaljna AI provjera za tiket B: 3+ golova po kvoti 1,65. Matematički model daje 64,6%, FairXG 63%, a konačna procjena je 63,8% (procijenjeni EV +5,27%). Prema pregledanim izvještajima, Feyenoord je bez Beelena, Bosa, Modera, Nieuwkoopa i St. Justea. Porto je bez Smallinga, a William Gomes je upitan. Posljednje potvrđene utakmice odigrane su 21.11. (Feyenoord) i 20.11. (Porto). Noviji međusobni dueli nisu pouzdano potvrđeni.",
+          "result_status": "promašen",
+          "final_score": "0:1"
         }
       ],
       "stake": 7.12,
-      "status": "objavljen",
-      "payout": 0
+      "status": "izgubljen",
+      "payout": 0.0,
+      "settled_at_utc": "2026-11-25T00:44:15.483164+00:00"
     },
     {
       "id": "C",
@@ -302,7 +312,7 @@
       }
     }
   ],
-  "total_payout": 0.0,
+  "total_payout": 46.4,
   "net_change": null,
   "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
   "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",

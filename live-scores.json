@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "updated_at_utc": "2026-11-24T18:20:18.452421+00:00",
+  "updated_at_utc": "2026-11-25T00:44:15.483164+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,52 +9,56 @@
       "index": 0,
       "home": "Real Madrid",
       "away": "PSV Eindhoven",
-      "state": "scheduled",
+      "state": "final",
       "fixture_id": "espn:football:uefa.champions:401915298",
-      "score": "0:0",
+      "score": "5:1",
       "source": "espn-public-unofficial",
       "event_id": "401915298",
       "league": "uefa.champions",
-      "minute": null
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "A",
       "index": 1,
       "home": "Hibernian",
       "away": "Dundee",
-      "state": "scheduled",
+      "state": "final",
       "fixture_id": "espn:football:sco.1:401878348",
-      "score": "0:0",
+      "score": "2:1",
       "source": "espn-public-unofficial",
       "event_id": "401878348",
       "league": "sco.1",
-      "minute": null
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "B",
       "index": 0,
       "home": "RB Leipzig",
       "away": "Lens",
-      "state": "scheduled",
+      "state": "final",
       "fixture_id": "espn:football:uefa.champions:401915299",
-      "score": "0:0",
+      "score": "3:1",
       "source": "espn-public-unofficial",
       "event_id": "401915299",
       "league": "uefa.champions",
-      "minute": null
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "B",
       "index": 1,
       "home": "Feyenoord Rotterdam",
       "away": "FC Porto",
-      "state": "scheduled",
+      "state": "final",
       "fixture_id": "espn:football:uefa.champions:401915294",
-      "score": "0:0",
+      "score": "0:1",
       "source": "espn-public-unofficial",
       "event_id": "401915294",
       "league": "uefa.champions",
-      "minute": null
+      "minute": null,
+      "result_status": "promašen"
     },
     {
       "ticket": "C",
