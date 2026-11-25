@@ -1,1 +1,1 @@
-2026-11-24 NBA_CLEARANCE_CONFIRMED=true; active snapshot empty; source blob 39502d9fb1da05e77b8dc45b7576a8e9b7150f9f; refresh today and emit ten-list readiness feedback.
+2026-11-25 manual recovery: refresh stale BetSharp NBA active offer; enforce committed empty-list clearance before fetching; produce dated ten-group readiness feedback. Requested after independent watchdog install.
