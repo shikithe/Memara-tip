@@ -1,0 +1,71 @@
+name: SAFE November 25 AI-approved A-only publisher dry run
+on:
+  push:
+    branches: [test/manual-ai-a-20261125]
+    paths:
+      - 'memarasix-football-ai-approved.json'
+      - '.github/workflows/test-ai-a-only-20261125.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run publisher contract regression
+        run: python3 -m unittest -v test_memarasix_espn_ab_publish.py
+      - name: Verify all ten reviews then publish to temporary directory only
+        run: |
+          python3 - <<'PY'
+          import json,tempfile,copy
+          from pathlib import Path
+          from datetime import datetime,timedelta
+          from memarasix_espn_ab_publish import verify,publish,read,write
+          data=read('data.json')
+          approval=read('memarasix-football-ai-approved.json')
+          now=datetime.fromisoformat(approval['approved_at_utc'].replace('Z','+00:00'))+timedelta(minutes=1)
+          assert approval['date']==data['date']=='2026-11-25'
+          assert data['tickets']==[]
+          assert approval['approval_source']=='chatgpt_ai_analyst'
+          assert approval['publication_allowed'] is True
+          assert approval['detailed_ai_review']['date']==approval['date']
+          rows=approval['detailed_ai_review']['candidates']
+          assert len(rows)==10
+          assert [t['id'] for t in approval['tickets']]==['A']
+          legs=approval['tickets'][0]['matches']
+          assert len(legs)==2 and len({m['fixture_id'] for m in legs})==2
+          assert all(m['pick']=='GG' for m in legs)
+          assert all(m['source'].startswith('https://tipsterarea.com/match/')
+                     and m['odds_status']=='published_aggregator_quote_not_verified_in_bookmaker_account'
+                     and m['analysis'] for m in legs)
+          assert all(m['odd']!=m['active_list_previous_odds'] for m in legs)
+          assert 2<=approval['tickets'][0]['combined_odds']<=3
+          assert abs(legs[0]['odd']*legs[1]['odd']-
+                     approval['tickets'][0]['combined_odds'])<1e-8
+          assert approval['b_blocker']
+          assert len(verify(approval,None,data,now))==1
+          with tempfile.TemporaryDirectory() as temp:
+              root=Path(temp)
+              write(root/'data.json',data)
+              write(root/'memarasix-football-ai-approved.json',approval)
+              published=publish(root,now=now)
+              after=read(root/'data.json')
+              print('DRY_RUN',published)
+              assert published['status']=='published'
+              assert {t['id'] for t in after['tickets']}=={'A'}
+              assert after['tickets'][0]['status']=='objavljen'
+              assert after['bank_before']==data['bank_before']
+              assert 0<after['reserved_nba_c_budget']<=after['daily_budget']
+              assert after['bank_after']<data['bank_after']
+              assert after['daily_stake']<=after['football_ab_budget']
+              assert publish(root,now=now)['status']=='no_update'
+          assert read('data.json')==data
+          print('AI_TOP10_A_ONLY_B_BLOCKED_BANK_C_RESERVED_NO_MAIN_CHANGE')
+          PY
