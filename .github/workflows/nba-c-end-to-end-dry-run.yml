@@ -1,0 +1,20 @@
+name: NBA C — isolated end-to-end dry run
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/nba-c-end-to-end-dry-run.yml'
+      - 'tests/test_nba_c_end_to_end_dry_run.py'
+permissions:
+  contents: read
+jobs:
+  simulation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Exercise actual NBA C approval validator and publisher only in temp sandbox
+        run: python -m unittest discover -s tests -p 'test_nba_c_end_to_end_dry_run.py' -v
