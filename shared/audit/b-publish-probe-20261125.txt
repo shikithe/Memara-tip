@@ -1,1 +1,1 @@
-B publication isolated test branch, no bank or ticket writes.
+B safe branch-only test revised. No actual A or B changed.
