@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "kind": "nba_c_scout_test",
+  "date": "2026-11-25",
+  "test_only": true,
+  "publication_allowed": false,
+  "input": {
+    "path": "collector-output/betsharp-nba-daily.json",
+    "game_date_et": "2026-11-25",
+    "offers": 115
+  },
+  "scout_progress": {
+    "status": "partial_research",
+    "players_checked": 2,
+    "ranked_all": false,
+    "approved": false,
+    "blocked_at": "complete verification of candidate identities, current lines, injury availability and final comparative selection"
+  },
+  "players": [
+    {
+      "name": "Julius Randle",
+      "team": "BKN",
+      "opponent": "MIL",
+      "line": 21.5,
+      "over_odd": 1.8929,
+      "under_odd": 1.885,
+      "bookmaker": "DraftKings",
+      "last_five": [
+        {
+          "date": "2026-11-23",
+          "points": 29,
+          "minutes": 35
+        },
+        {
+          "date": "2026-11-20",
+          "points": 27,
+          "minutes": 39
+        },
+        {
+          "date": "2026-11-18",
+          "points": 17,
+          "minutes": 27
+        },
+        {
+          "date": "2026-11-16",
+          "points": 33,
+          "minutes": 34
+        },
+        {
+          "date": "2026-11-14",
+          "points": 22,
+          "minutes": 31
+        }
+      ],
+      "last_five_over_line": 4,
+      "assessment": "Last five 4/5 over 21.5, but form-only selection insufficient: matchup, current availability and remaining candidates not fully investigated.",
+      "sources": [
+        "https://www.cbssports.com/nba/players/2135560/julius-randle/game-log/2026/",
+        "https://www.nba.com/gamenotes/nets.pdf"
+      ]
+    },
+    {
+      "name": "Michael Porter Jr.",
+      "team": "BKN",
+      "opponent": "MIL",
+      "line": 22.5,
+      "over_odd": 1.885,
+      "under_odd": 1.885,
+      "bookmaker": "DraftKings",
+      "confirmed_recent_games": [
+        {
+          "date": "2026-11-23",
+          "points": 11,
+          "minutes": 31
+        }
+      ],
+      "recent_five_points_average_reported": 15.8,
+      "assessment": "Recent scoring average below line; not yet sufficient for validated under selection without matchup/injury checks.",
+      "sources": [
+        "https://www.basketball-reference.com/players/p/portemi01.html",
+        "https://www.nba.com/player/1629008/michael-porter-jr/rotowire"
+      ]
+    }
+  ],
+  "result": "TEST PARTIAL: actual research and write executed; production C approval intentionally not created without full verification."
+}
