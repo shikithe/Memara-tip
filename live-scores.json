@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "updated_at_utc": "2026-11-25T01:25:20.620633+00:00",
+  "updated_at_utc": "2026-11-25T09:12:25.260744+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -65,30 +65,34 @@
       "index": 0,
       "home": "Washington Wizards",
       "away": "Boston Celtics",
-      "state": "live",
+      "state": "final",
       "points_line": 21.5,
-      "period": 1,
-      "game_clock": "6:57",
+      "period": null,
+      "game_clock": "",
       "source": "espn-public-unofficial",
       "event_id": "401909315",
       "player_id": "6583",
       "sport": "basketball",
-      "score": "0",
-      "player_points": 0
+      "score": "33",
+      "player_points": 33,
+      "result_status": "pogođen"
     },
     {
       "ticket": "C",
       "index": 1,
       "home": "Denver Nuggets",
       "away": "Dallas Mavericks",
-      "state": "scheduled",
-      "source": "espn-public-unofficial",
-      "sport": "basketball",
-      "event_id": "401909316",
-      "player_id": "3112335",
+      "state": "final",
       "points_line": 25.5,
       "period": null,
-      "game_clock": null
+      "game_clock": "",
+      "source": "espn-public-unofficial",
+      "event_id": "401909316",
+      "player_id": "3112335",
+      "sport": "basketball",
+      "score": "18",
+      "player_points": 18,
+      "result_status": "promašen"
     }
   ],
   "bank_unchanged": true
