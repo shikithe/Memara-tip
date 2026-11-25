@@ -1,0 +1,509 @@
+{
+  "date": "2026-11-25",
+  "list_number": 6,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-25T19:26:23.159307+00:00",
+  "total_offers": 115,
+  "group_size": 11,
+  "original_positions": [
+    61,
+    71
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "LeBron James",
+      "team": "PHI",
+      "game": "MIA @ PHI",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/lebron-james",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-miami-heat-at-philadelphia-76ers#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -125,
+          "under_american": -104,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "MGM": {
+          "line": 18.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 113,
+          "under_american": -144,
+          "over_decimal": 2.13,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 61
+    },
+    {
+      "player": "Pelle Larsson",
+      "team": "MIA",
+      "game": "MIA @ PHI",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/pelle-larsson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-miami-heat-at-philadelphia-76ers#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -129,
+          "under_american": 101,
+          "over_decimal": 1.7752,
+          "under_decimal": 2.01
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -102,
+          "under_american": -125,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": 100,
+          "under_american": -135,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7407
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -103,
+          "under_american": -132,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.7576
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -178,
+          "under_american": 138,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.38
+        }
+      },
+      "original_offer_position": 62
+    },
+    {
+      "player": "Tyrese Maxey",
+      "team": "PHI",
+      "game": "MIA @ PHI",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/tyrese-maxey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-miami-heat-at-philadelphia-76ers#props",
+      "points_market": {
+        "DK": {
+          "line": 25.5,
+          "over_american": -122,
+          "under_american": -104,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 25.5,
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "MGM": {
+          "line": 25.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 26.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -138,
+          "under_american": 113,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.13
+        }
+      },
+      "original_offer_position": 63
+    },
+    {
+      "player": "VJ Edgecombe",
+      "team": "PHI",
+      "game": "MIA @ PHI",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/vj-edgecombe",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-miami-heat-at-philadelphia-76ers#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -125,
+          "under_american": -102,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9804
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": 102,
+          "under_american": -130,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -134,
+          "under_american": -103,
+          "over_decimal": 1.7463,
+          "under_decimal": 1.9709
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 100,
+          "under_american": -127,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7874
+        }
+      },
+      "original_offer_position": 64
+    },
+    {
+      "player": "Ajay Mitchell",
+      "team": "OKC",
+      "game": "MIN @ OKC",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/ajay-mitchell",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-minnesota-timberwolves-at-oklahoma-city-thunder#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -114,
+          "under_american": -112,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -105,
+          "under_american": -130,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.7692
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -108,
+          "under_american": -127,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 163,
+          "under_american": -203,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4926
+        }
+      },
+      "original_offer_position": 65
+    },
+    {
+      "player": "Alex Caruso",
+      "team": "OKC",
+      "game": "MIN @ OKC",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/alex-caruso",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-minnesota-timberwolves-at-oklahoma-city-thunder#props",
+      "points_market": {
+        "DK": {
+          "line": 6.5,
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 6.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 6.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": 100,
+          "under_american": -136,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7353
+        }
+      },
+      "original_offer_position": 66
+    },
+    {
+      "player": "Ayo Dosunmu",
+      "team": "MIN",
+      "game": "MIN @ OKC",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/ayo-dosunmu",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-minnesota-timberwolves-at-oklahoma-city-thunder#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -110,
+          "under_american": -115,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 144,
+          "under_american": -178,
+          "over_decimal": 2.44,
+          "under_decimal": 1.5618
+        }
+      },
+      "original_offer_position": 67
+    },
+    {
+      "player": "Bennett Stirtz",
+      "team": "OKC",
+      "game": "MIN @ OKC",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/bennett-stirtz",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-minnesota-timberwolves-at-oklahoma-city-thunder#props",
+      "points_market": {
+        "DK": {
+          "line": 6.5,
+          "over_american": -123,
+          "under_american": -103,
+          "over_decimal": 1.813,
+          "under_decimal": 1.9709
+        },
+        "FD": {
+          "line": 6.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        }
+      },
+      "original_offer_position": 68
+    },
+    {
+      "player": "Isaiah Hartenstein",
+      "team": "OKC",
+      "game": "MIN @ OKC",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/isaiah-hartenstein",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-minnesota-timberwolves-at-oklahoma-city-thunder#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -135,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7407
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -120,
+          "under_american": -113,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.885
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -122,
+          "over_decimal": 2.0,
+          "under_decimal": 1.8197
+        }
+      },
+      "original_offer_position": 69
+    },
+    {
+      "player": "Jaden McDaniels",
+      "team": "MIN",
+      "game": "MIN @ OKC",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/jaden-mcdaniels",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-minnesota-timberwolves-at-oklahoma-city-thunder#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -104,
+          "under_american": -122,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8197
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 144,
+          "under_american": -186,
+          "over_decimal": 2.44,
+          "under_decimal": 1.5376
+        }
+      },
+      "original_offer_position": 70
+    },
+    {
+      "player": "Jared McCain",
+      "team": "OKC",
+      "game": "MIN @ OKC",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/jared-mccain",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-minnesota-timberwolves-at-oklahoma-city-thunder#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -112,
+          "under_american": -114,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -140,
+          "under_american": 105,
+          "over_decimal": 1.7143,
+          "under_decimal": 2.05
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -107,
+          "under_american": -127,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -127,
+          "under_american": 104,
+          "over_decimal": 1.7874,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 71
+    }
+  ]
+}

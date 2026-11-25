@@ -1,0 +1,542 @@
+{
+  "date": "2026-11-25",
+  "list_number": 4,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-25T19:26:23.159307+00:00",
+  "total_offers": 115,
+  "group_size": 12,
+  "original_positions": [
+    37,
+    48
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Tyrese Proctor",
+      "team": "CLE",
+      "game": "CLE @ NY",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/tyrese-proctor",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-cleveland-cavaliers-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 6.5,
+          "over_american": -121,
+          "under_american": -105,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 6.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "BR": {
+          "line": 6.5,
+          "over_american": -136,
+          "under_american": 100,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.0
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -270,
+          "under_american": 212,
+          "over_decimal": 1.3704,
+          "under_decimal": 3.12
+        }
+      },
+      "original_offer_position": 37
+    },
+    {
+      "player": "Brandon Ingram",
+      "team": "LAC",
+      "game": "LAC @ MEM",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/brandon-ingram",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-la-clippers-at-memphis-grizzlies#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 16.5,
+          "over_american": -145,
+          "under_american": 105,
+          "over_decimal": 1.6897,
+          "under_decimal": 2.05
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": 102,
+          "under_american": -139,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7194
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 163,
+          "under_american": -203,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4926
+        }
+      },
+      "original_offer_position": 38
+    },
+    {
+      "player": "Brook Lopez",
+      "team": "LAC",
+      "game": "LAC @ MEM",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/brook-lopez",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-la-clippers-at-memphis-grizzlies#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -115,
+          "under_american": -110,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": 100,
+          "under_american": -135,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7407
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": 105,
+          "under_american": -141,
+          "over_decimal": 2.05,
+          "under_decimal": 1.7092
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 178,
+          "under_american": -223,
+          "over_decimal": 2.78,
+          "under_decimal": 1.4484
+        }
+      },
+      "original_offer_position": 39
+    },
+    {
+      "player": "Cam Spencer",
+      "team": "MEM",
+      "game": "LAC @ MEM",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/cam-spencer",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-la-clippers-at-memphis-grizzlies#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -122,
+          "under_american": -104,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -115,
+          "under_american": -112,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -122,
+          "under_american": 100,
+          "over_decimal": 1.8197,
+          "under_decimal": 2.0
+        }
+      },
+      "original_offer_position": 40
+    },
+    {
+      "player": "Cedric Coward",
+      "team": "MEM",
+      "game": "LAC @ MEM",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/cedric-coward",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-la-clippers-at-memphis-grizzlies#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -114,
+          "under_american": -112,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -103,
+          "under_american": -134,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.7463
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 156,
+          "under_american": -223,
+          "over_decimal": 2.56,
+          "under_decimal": 1.4484
+        }
+      },
+      "original_offer_position": 41
+    },
+    {
+      "player": "Darius Garland",
+      "team": "LAC",
+      "game": "LAC @ MEM",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/darius-garland",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-la-clippers-at-memphis-grizzlies#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -114,
+          "under_american": -112,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 18.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 19.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 104,
+          "under_american": -138,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7246
+        }
+      },
+      "original_offer_position": 42
+    },
+    {
+      "player": "Derrick Jones Jr.",
+      "team": "LAC",
+      "game": "LAC @ MEM",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/derrick-jones",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-la-clippers-at-memphis-grizzlies#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -106,
+          "under_american": -121,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 178,
+          "under_american": -223,
+          "over_decimal": 2.78,
+          "under_decimal": 1.4484
+        }
+      },
+      "original_offer_position": 43
+    },
+    {
+      "player": "Isaiah Stewart",
+      "team": "MEM",
+      "game": "LAC @ MEM",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/isaiah-stewart",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-la-clippers-at-memphis-grizzlies#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -127,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7874
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -108,
+          "under_american": -120,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -108,
+          "under_american": -117,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8547
+        }
+      },
+      "original_offer_position": 44
+    },
+    {
+      "player": "Jaylen Wells",
+      "team": "MEM",
+      "game": "LAC @ MEM",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jaylen-wells",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-la-clippers-at-memphis-grizzlies#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -126,
+          "under_american": -101,
+          "over_decimal": 1.7937,
+          "under_decimal": 1.9901
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -128,
+          "under_american": -102,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -117,
+          "under_american": -115,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8696
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -133,
+          "under_american": 104,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 45
+    },
+    {
+      "player": "Kris Dunn",
+      "team": "LAC",
+      "game": "LAC @ MEM",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/kris-dunn",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-la-clippers-at-memphis-grizzlies#props",
+      "points_market": {
+        "KAL": {
+          "line": 4.5,
+          "over_american": -138,
+          "under_american": 100,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.0
+        }
+      },
+      "original_offer_position": 46
+    },
+    {
+      "player": "Kris Murray",
+      "team": "MEM",
+      "game": "LAC @ MEM",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/kris-murray",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-la-clippers-at-memphis-grizzlies#props",
+      "points_market": {
+        "DK": {
+          "line": 5.5,
+          "over_american": 103,
+          "under_american": -131,
+          "over_decimal": 2.03,
+          "under_decimal": 1.7634
+        },
+        "FD": {
+          "line": 5.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "BR": {
+          "line": 4.5,
+          "over_american": -143,
+          "under_american": 106,
+          "over_decimal": 1.6993,
+          "under_decimal": 2.06
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -127,
+          "under_american": 104,
+          "over_decimal": 1.7874,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 47
+    },
+    {
+      "player": "Max Strus",
+      "team": "LAC",
+      "game": "LAC @ MEM",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/max-strus",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-la-clippers-at-memphis-grizzlies#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -120,
+          "under_american": -106,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": 100,
+          "under_american": -135,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7407
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 156,
+          "under_american": -194,
+          "over_decimal": 2.56,
+          "under_decimal": 1.5155
+        }
+      },
+      "original_offer_position": 48
+    }
+  ]
+}

@@ -1,0 +1,584 @@
+{
+  "date": "2026-11-25",
+  "list_number": 1,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-25T19:26:23.159307+00:00",
+  "total_offers": 115,
+  "group_size": 12,
+  "original_positions": [
+    1,
+    12
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Brayden Burries",
+      "team": "MIL",
+      "game": "BKN @ MIL",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/brayden-burries",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-brooklyn-nets-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -122,
+          "under_american": -104,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 144,
+          "under_american": -178,
+          "over_decimal": 2.44,
+          "under_decimal": 1.5618
+        }
+      },
+      "original_offer_position": 1
+    },
+    {
+      "player": "Danny Wolf",
+      "team": "BKN",
+      "game": "BKN @ MIL",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/danny-wolf",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-brooklyn-nets-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -106,
+          "under_american": -121,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -120,
+          "under_american": -113,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.885
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -113,
+          "under_american": -108,
+          "over_decimal": 1.885,
+          "under_decimal": 1.9259
+        }
+      },
+      "original_offer_position": 2
+    },
+    {
+      "player": "Day'Ron Sharpe",
+      "team": "BKN",
+      "game": "BKN @ MIL",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/dayron-sharpe",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-brooklyn-nets-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -116,
+          "under_american": -110,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -136,
+          "under_american": 100,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.0
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -127,
+          "under_american": 100,
+          "over_decimal": 1.7874,
+          "under_decimal": 2.0
+        }
+      },
+      "original_offer_position": 3
+    },
+    {
+      "player": "Egor Demin",
+      "team": "BKN",
+      "game": "BKN @ MIL",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/egor-demin",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-brooklyn-nets-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -128,
+          "under_american": 100,
+          "over_decimal": 1.7812,
+          "under_decimal": 2.0
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": 100,
+          "under_american": -135,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7407
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -138,
+          "under_american": 113,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.13
+        }
+      },
+      "original_offer_position": 4
+    },
+    {
+      "player": "Jaime Jaquez Jr.",
+      "team": "MIL",
+      "game": "BKN @ MIL",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jaime-jaquez",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-brooklyn-nets-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -103,
+          "under_american": -124,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -103,
+          "under_american": -132,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.7576
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -213,
+          "under_american": 170,
+          "over_decimal": 1.4695,
+          "under_decimal": 2.7
+        }
+      },
+      "original_offer_position": 5
+    },
+    {
+      "player": "Julius Randle",
+      "team": "BKN",
+      "game": "BKN @ MIL",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/julius-randle",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-brooklyn-nets-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 21.5,
+          "over_american": -112,
+          "under_american": -113,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 21.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 21.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 21.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -178,
+          "under_american": 138,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.38
+        }
+      },
+      "original_offer_position": 6
+    },
+    {
+      "player": "Kel'el Ware",
+      "team": "MIL",
+      "game": "BKN @ MIL",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/kelel-ware",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-brooklyn-nets-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -114,
+          "under_american": -112,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 117,
+          "under_american": -144,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 7
+    },
+    {
+      "player": "Kyle Kuzma",
+      "team": "MIL",
+      "game": "BKN @ MIL",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/kyle-kuzma",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-brooklyn-nets-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -104,
+          "under_american": -122,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8197
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -129,
+          "under_american": -105,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9524
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 122,
+          "under_american": -150,
+          "over_decimal": 2.22,
+          "under_decimal": 1.6667
+        }
+      },
+      "original_offer_position": 8
+    },
+    {
+      "player": "Michael Porter Jr.",
+      "team": "BKN",
+      "game": "BKN @ MIL",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/michael-porter",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-brooklyn-nets-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 22.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 22.5,
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 186,
+          "under_american": -233,
+          "over_decimal": 2.86,
+          "under_decimal": 1.4292
+        }
+      },
+      "original_offer_position": 9
+    },
+    {
+      "player": "Mikel Brown Jr.",
+      "team": "BKN",
+      "game": "BKN @ MIL",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/mikel-brown",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-brooklyn-nets-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -126,
+          "under_american": -101,
+          "over_decimal": 1.7937,
+          "under_decimal": 1.9901
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -118,
+          "under_american": -111,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -133,
+          "under_american": 108,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 10
+    },
+    {
+      "player": "Myles Turner",
+      "team": "MIL",
+      "game": "BKN @ MIL",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/myles-turner",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-brooklyn-nets-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -117,
+          "under_american": -109,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -102,
+          "under_american": -128,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -135,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7407
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -117,
+          "under_american": -115,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8696
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -104,
+          "under_american": -117,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8547
+        }
+      },
+      "original_offer_position": 11
+    },
+    {
+      "player": "Nate Ament",
+      "team": "MIL",
+      "game": "BKN @ MIL",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/nate-ament",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-brooklyn-nets-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": 100,
+          "under_american": -127,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7874
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 156,
+          "under_american": -194,
+          "over_decimal": 2.56,
+          "under_decimal": 1.5155
+        }
+      },
+      "original_offer_position": 12
+    }
+  ]
+}

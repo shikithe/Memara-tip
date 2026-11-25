@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "date": "2026-11-24",
-  "cycle_id": "nba-2026-11-24",
+  "date": "2026-11-25",
+  "cycle_id": "nba-2026-11-25",
   "last_published_group": 0,
   "published_ticket_ids": [],
   "next_group": 1,
   "state": "ready_for_first_ai_scout",
   "trigger_source": "github_verified_ten_lists",
   "total_lists": 10,
-  "total_offers": 39,
-  "captured_at_utc": "2026-11-24T18:03:06.482070+00:00",
-  "updated_at_utc": "2026-11-24T18:03:06.583842+00:00",
+  "total_offers": 115,
+  "captured_at_utc": "2026-11-25T19:26:23.159307+00:00",
+  "updated_at_utc": "2026-11-25T19:26:23.284285+00:00",
   "note": "Readiness signal for scheduled ChatGPT AI Scout; not a direct ChatGPT wake-up. Preserve later publication feedback."
 }

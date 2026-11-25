@@ -1,0 +1,507 @@
+{
+  "date": "2026-11-25",
+  "list_number": 5,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-25T19:26:23.159307+00:00",
+  "total_offers": 115,
+  "group_size": 12,
+  "original_positions": [
+    49,
+    60
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Rui Hachimura",
+      "team": "LAC",
+      "game": "LAC @ MEM",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/rui-hachimura",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-la-clippers-at-memphis-grizzlies#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -116,
+          "under_american": -110,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 138,
+          "under_american": -186,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5376
+        }
+      },
+      "original_offer_position": 49
+    },
+    {
+      "player": "Taylor Hendricks",
+      "team": "MEM",
+      "game": "LAC @ MEM",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/taylor-hendricks",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-la-clippers-at-memphis-grizzlies#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -110,
+          "under_american": -116,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8621
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -105,
+          "under_american": -129,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 127,
+          "under_american": -163,
+          "over_decimal": 2.27,
+          "under_decimal": 1.6135
+        }
+      },
+      "original_offer_position": 50
+    },
+    {
+      "player": "Ty Jerome",
+      "team": "MEM",
+      "game": "LAC @ MEM",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/ty-jerome",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-la-clippers-at-memphis-grizzlies#props",
+      "points_market": {
+        "DK": {
+          "line": 23.5,
+          "over_american": -105,
+          "under_american": -122,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8197
+        },
+        "FD": {
+          "line": 23.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 23.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 23.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 117,
+          "under_american": -144,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 51
+    },
+    {
+      "player": "Zach Edey",
+      "team": "MEM",
+      "game": "LAC @ MEM",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/zach-edey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-la-clippers-at-memphis-grizzlies#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -103,
+          "under_american": -123,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.813
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -136,
+          "under_american": 102,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.02
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": 110,
+          "under_american": -150,
+          "over_decimal": 2.1,
+          "under_decimal": 1.6667
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -122,
+          "under_american": -110,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9091
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 104,
+          "under_american": -127,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7874
+        }
+      },
+      "original_offer_position": 52
+    },
+    {
+      "player": "Anfernee Simons",
+      "team": "PHI",
+      "game": "MIA @ PHI",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/anfernee-simons",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-miami-heat-at-philadelphia-76ers#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -124,
+          "under_american": -103,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9709
+        }
+      },
+      "original_offer_position": 53
+    },
+    {
+      "player": "Bam Adebayo",
+      "team": "MIA",
+      "game": "MIA @ PHI",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/bam-adebayo",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-miami-heat-at-philadelphia-76ers#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -122,
+          "under_american": -104,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": -120,
+          "under_american": -106,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9434
+        },
+        "MGM": {
+          "line": 18.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 100,
+          "under_american": -122,
+          "over_decimal": 2.0,
+          "under_decimal": 1.8197
+        }
+      },
+      "original_offer_position": 54
+    },
+    {
+      "player": "Davion Mitchell",
+      "team": "MIA",
+      "game": "MIA @ PHI",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/davion-mitchell",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-miami-heat-at-philadelphia-76ers#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -102,
+          "under_american": -125,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -127,
+          "under_american": 104,
+          "over_decimal": 1.7874,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 55
+    },
+    {
+      "player": "Dean Wade",
+      "team": "PHI",
+      "game": "MIA @ PHI",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/dean-wade",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-miami-heat-at-philadelphia-76ers#props",
+      "points_market": {
+        "DK": {
+          "line": 5.5,
+          "over_american": 101,
+          "under_american": -129,
+          "over_decimal": 2.01,
+          "under_decimal": 1.7752
+        }
+      },
+      "original_offer_position": 56
+    },
+    {
+      "player": "Giannis Antetokounmpo",
+      "team": "MIA",
+      "game": "MIA @ PHI",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/giannis-antetokounmpo",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-miami-heat-at-philadelphia-76ers#props",
+      "points_market": {
+        "DK": {
+          "line": 28.5,
+          "over_american": -121,
+          "under_american": -105,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 29.5,
+          "over_american": -104,
+          "under_american": -122,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 28.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 29.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
+        },
+        "KAL": {
+          "line": 29.5,
+          "over_american": 100,
+          "under_american": -122,
+          "over_decimal": 2.0,
+          "under_decimal": 1.8197
+        }
+      },
+      "original_offer_position": 57
+    },
+    {
+      "player": "Jabari Walker",
+      "team": "PHI",
+      "game": "MIA @ PHI",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/jabari-walker",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-miami-heat-at-philadelphia-76ers#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 170,
+          "under_american": -223,
+          "over_decimal": 2.7,
+          "under_decimal": 1.4484
+        }
+      },
+      "original_offer_position": 58
+    },
+    {
+      "player": "Jaylen Brown",
+      "team": "PHI",
+      "game": "MIA @ PHI",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/jaylen-brown",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-miami-heat-at-philadelphia-76ers#props",
+      "points_market": {
+        "DK": {
+          "line": 22.5,
+          "over_american": -112,
+          "under_american": -113,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 22.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 138,
+          "under_american": -170,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5882
+        }
+      },
+      "original_offer_position": 59
+    },
+    {
+      "player": "Klay Thompson",
+      "team": "MIA",
+      "game": "MIA @ PHI",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/klay-thompson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-miami-heat-at-philadelphia-76ers#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -102,
+          "under_american": -125,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 133,
+          "under_american": -163,
+          "over_decimal": 2.33,
+          "under_decimal": 1.6135
+        }
+      },
+      "original_offer_position": 60
+    }
+  ]
+}

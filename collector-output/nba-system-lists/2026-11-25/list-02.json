@@ -1,0 +1,584 @@
+{
+  "date": "2026-11-25",
+  "list_number": 2,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-25T19:26:23.159307+00:00",
+  "total_offers": 115,
+  "group_size": 12,
+  "original_positions": [
+    13,
+    24
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Noah Clowney",
+      "team": "BKN",
+      "game": "BKN @ MIL",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/noah-clowney",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-brooklyn-nets-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": 101,
+          "under_american": -128,
+          "over_decimal": 2.01,
+          "under_decimal": 1.7812
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -120,
+          "under_american": -111,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -120,
+          "under_american": -113,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.885
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 178,
+          "under_american": -233,
+          "over_decimal": 2.78,
+          "under_decimal": 1.4292
+        }
+      },
+      "original_offer_position": 13
+    },
+    {
+      "player": "Ryan Rollins",
+      "team": "MIL",
+      "game": "BKN @ MIL",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/ryan-rollins",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-brooklyn-nets-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -112,
+          "under_american": -113,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -105,
+          "under_american": -130,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.7692
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -213,
+          "under_american": 170,
+          "over_decimal": 1.4695,
+          "under_decimal": 2.7
+        }
+      },
+      "original_offer_position": 14
+    },
+    {
+      "player": "Tyler Herro",
+      "team": "MIL",
+      "game": "BKN @ MIL",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/tyler-herro",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-brooklyn-nets-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 22.5,
+          "over_american": -123,
+          "under_american": -104,
+          "over_decimal": 1.813,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 22.5,
+          "over_american": -127,
+          "under_american": -108,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 133,
+          "under_american": -163,
+          "over_decimal": 2.33,
+          "under_decimal": 1.6135
+        }
+      },
+      "original_offer_position": 15
+    },
+    {
+      "player": "Brandon Miller",
+      "team": "CHA",
+      "game": "CHI @ CHA",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/brandon-miller",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-chicago-bulls-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 21.5,
+          "over_american": -118,
+          "under_american": -108,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9259
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 21.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 22.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -178,
+          "under_american": 144,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.44
+        }
+      },
+      "original_offer_position": 16
+    },
+    {
+      "player": "Buddy Hield",
+      "team": "CHI",
+      "game": "CHI @ CHA",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/buddy-hield",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-chicago-bulls-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -120,
+          "under_american": -111,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 117,
+          "under_american": -144,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 17
+    },
+    {
+      "player": "Coby White",
+      "team": "CHA",
+      "game": "CHI @ CHA",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/coby-white",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-chicago-bulls-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 19.5,
+          "over_american": -108,
+          "under_american": -117,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 19.5,
+          "over_american": -111,
+          "under_american": -118,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 19.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 19.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -104,
+          "under_american": -117,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8547
+        }
+      },
+      "original_offer_position": 18
+    },
+    {
+      "player": "Isaac Okoro",
+      "team": "CHI",
+      "game": "CHI @ CHA",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/isaac-okoro",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-chicago-bulls-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -116,
+          "under_american": -110,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -113,
+          "under_american": -108,
+          "over_decimal": 1.885,
+          "under_decimal": 1.9259
+        }
+      },
+      "original_offer_position": 19
+    },
+    {
+      "player": "Jalen Smith",
+      "team": "CHI",
+      "game": "CHI @ CHA",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/jalen-smith",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-chicago-bulls-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -126,
+          "under_american": -101,
+          "over_decimal": 1.7937,
+          "under_decimal": 1.9901
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -120,
+          "under_american": -111,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 117,
+          "under_american": -144,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 20
+    },
+    {
+      "player": "Joshua Giddey",
+      "team": "CHI",
+      "game": "CHI @ CHA",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/joshua-giddey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-chicago-bulls-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -118,
+          "under_american": -108,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.9259
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 150,
+          "under_american": -203,
+          "over_decimal": 2.5,
+          "under_decimal": 1.4926
+        }
+      },
+      "original_offer_position": 21
+    },
+    {
+      "player": "Matas Buzelis",
+      "team": "CHI",
+      "game": "CHI @ CHA",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/matas-buzelis",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-chicago-bulls-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 16.5,
+          "over_american": -120,
+          "under_american": -106,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 16.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "MGM": {
+          "line": 16.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 16.5,
+          "over_american": -120,
+          "under_american": -113,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.885
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -186,
+          "under_american": 150,
+          "over_decimal": 1.5376,
+          "under_decimal": 2.5
+        }
+      },
+      "original_offer_position": 22
+    },
+    {
+      "player": "Moussa Diabate",
+      "team": "CHA",
+      "game": "CHI @ CHA",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/moussa-diabate",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-chicago-bulls-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -104,
+          "under_american": -122,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8197
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -111,
+          "under_american": -120,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -113,
+          "under_american": -108,
+          "over_decimal": 1.885,
+          "under_decimal": 1.9259
+        }
+      },
+      "original_offer_position": 23
+    },
+    {
+      "player": "Naz Reid",
+      "team": "CHA",
+      "game": "CHI @ CHA",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/naz-reid",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-chicago-bulls-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 20.5,
+          "over_american": -103,
+          "under_american": -123,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.813
+        },
+        "FD": {
+          "line": 19.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 19.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 19.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -117,
+          "under_american": -104,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9615
+        }
+      },
+      "original_offer_position": 24
+    }
+  ]
+}

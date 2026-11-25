@@ -1,0 +1,530 @@
+{
+  "date": "2026-11-25",
+  "list_number": 10,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-25T19:26:23.159307+00:00",
+  "total_offers": 115,
+  "group_size": 11,
+  "original_positions": [
+    105,
+    115
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Victor Wembanyama",
+      "team": "SA",
+      "game": "SA @ POR",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/victor-wembanyama",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-san-antonio-spurs-at-portland-trail-blazers#props",
+      "points_market": {
+        "DK": {
+          "line": 29.5,
+          "over_american": -122,
+          "under_american": -104,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 29.5,
+          "over_american": -108,
+          "under_american": -120,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 28.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 29.5,
+          "over_american": -117,
+          "under_american": -117,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 29.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        }
+      },
+      "original_offer_position": 105
+    },
+    {
+      "player": "Brandin Podziemski",
+      "team": "GS",
+      "game": "SAC @ GS",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/brandin-podziemski",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-sacramento-kings-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -114,
+          "under_american": -112,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 18.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -122,
+          "under_american": -110,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9091
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 122,
+          "under_american": -150,
+          "over_decimal": 2.22,
+          "under_decimal": 1.6667
+        }
+      },
+      "original_offer_position": 106
+    },
+    {
+      "player": "Charles Bassey",
+      "team": "GS",
+      "game": "SAC @ GS",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/charles-bassey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-sacramento-kings-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -116,
+          "under_american": -109,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -163,
+          "under_american": 117,
+          "over_decimal": 1.6135,
+          "under_decimal": 2.17
+        }
+      },
+      "original_offer_position": 107
+    },
+    {
+      "player": "Darius Acuff Jr.",
+      "team": "SAC",
+      "game": "SAC @ GS",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/darius-acuff",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-sacramento-kings-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 23.5,
+          "over_american": -117,
+          "under_american": -109,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 23.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 22.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 113,
+          "under_american": -156,
+          "over_decimal": 2.13,
+          "under_decimal": 1.641
+        }
+      },
+      "original_offer_position": 108
+    },
+    {
+      "player": "De'Andre Hunter",
+      "team": "SAC",
+      "game": "SAC @ GS",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/deandre-hunter",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-sacramento-kings-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -114,
+          "under_american": -112,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -140,
+          "under_american": 105,
+          "over_decimal": 1.7143,
+          "under_decimal": 2.05
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        }
+      },
+      "original_offer_position": 109
+    },
+    {
+      "player": "De'Anthony Melton",
+      "team": "GS",
+      "game": "SAC @ GS",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/deanthony-melton",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-sacramento-kings-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -101,
+          "under_american": -127,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7874
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -137,
+          "under_american": 102,
+          "over_decimal": 1.7299,
+          "under_decimal": 2.02
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 163,
+          "under_american": -223,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4484
+        }
+      },
+      "original_offer_position": 110
+    },
+    {
+      "player": "Domantas Sabonis",
+      "team": "SAC",
+      "game": "SAC @ GS",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/domantas-sabonis",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-sacramento-kings-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -101,
+          "under_american": -126,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7937
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -103,
+          "under_american": -132,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.7576
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -108,
+          "under_american": -113,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.885
+        }
+      },
+      "original_offer_position": 111
+    },
+    {
+      "player": "Draymond Green",
+      "team": "GS",
+      "game": "SAC @ GS",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/draymond-green",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-sacramento-kings-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 5.5,
+          "over_american": -128,
+          "under_american": 100,
+          "over_decimal": 1.7812,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 5.5,
+          "over_american": -145,
+          "under_american": 105,
+          "over_decimal": 1.6897,
+          "under_decimal": 2.05
+        },
+        "BR": {
+          "line": 5.5,
+          "over_american": -141,
+          "under_american": 104,
+          "over_decimal": 1.7092,
+          "under_decimal": 2.04
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -203,
+          "under_american": 150,
+          "over_decimal": 1.4926,
+          "under_decimal": 2.5
+        }
+      },
+      "original_offer_position": 112
+    },
+    {
+      "player": "Keegan Murray",
+      "team": "SAC",
+      "game": "SAC @ GS",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/keegan-murray",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-sacramento-kings-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 156,
+          "under_american": -203,
+          "over_decimal": 2.56,
+          "under_decimal": 1.4926
+        }
+      },
+      "original_offer_position": 113
+    },
+    {
+      "player": "Yaxel Lendeborg",
+      "team": "GS",
+      "game": "SAC @ GS",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/yaxel-lendeborg",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-sacramento-kings-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 21.5,
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 21.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 21.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 21.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -156,
+          "under_american": 122,
+          "over_decimal": 1.641,
+          "under_decimal": 2.22
+        }
+      },
+      "original_offer_position": 114
+    },
+    {
+      "player": "Zach LaVine",
+      "team": "SAC",
+      "game": "SAC @ GS",
+      "game_date_et": "2026-11-25",
+      "game_time_et": "Wed 10:00PM",
+      "player_url": "https://betsharp.com/nba/player/zach-lavine",
+      "game_url": "https://betsharp.com/nba/game/2026-11-25-sacramento-kings-at-golden-state-warriors#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -120,
+          "under_american": -107,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9346
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 127,
+          "under_american": -178,
+          "over_decimal": 2.27,
+          "under_decimal": 1.5618
+        }
+      },
+      "original_offer_position": 115
+    }
+  ]
+}
