@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "updated_at_utc": "2026-11-25T00:44:15.483164+00:00",
+  "updated_at_utc": "2026-11-25T01:25:20.620633+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -65,14 +65,16 @@
       "index": 0,
       "home": "Washington Wizards",
       "away": "Boston Celtics",
-      "state": "scheduled",
+      "state": "live",
+      "points_line": 21.5,
+      "period": 1,
+      "game_clock": "6:57",
       "source": "espn-public-unofficial",
-      "sport": "basketball",
       "event_id": "401909315",
       "player_id": "6583",
-      "points_line": 21.5,
-      "period": null,
-      "game_clock": null
+      "sport": "basketball",
+      "score": "0",
+      "player_points": 0
     },
     {
       "ticket": "C",
