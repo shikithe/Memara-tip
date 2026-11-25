@@ -1,6 +1,6 @@
 {
   "date": "2026-11-25",
-  "updated_at_utc": "2026-11-25T19:14:18.879216+00:00",
+  "updated_at_utc": "2026-11-25T19:56:06.313845+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -22,13 +22,13 @@
       "index": 1,
       "home": "Sabah FK",
       "away": "Barcelona",
-      "state": "live",
+      "state": "final",
       "fixture_id": "espn:football:uefa.champions:401915378",
       "score": "1:4",
       "source": "espn-public-unofficial",
       "event_id": "401915378",
       "league": "uefa.champions",
-      "minute": "72",
+      "minute": null,
       "result_status": "pogođen"
     },
     {
