@@ -97,7 +97,21 @@
       "espn_last_five": [],
       "statistics_verified": false,
       "rank": null,
-      "assessment": null
+      "assessment": null,
+      "preliminary_evidence": {
+        "latest_game": {
+          "date": "2026-11-23",
+          "points": 29,
+          "minutes": 35,
+          "source": "https://www.cbssports.com/nba/players/2135560/julius-randle/game-log/2026/"
+        },
+        "last_five_summary": {
+          "points_per_game": 25.6,
+          "minutes_per_game": 33,
+          "source": "https://www.landofbasketball.com/nba_players_games/last_5/julius_randle_all.htm"
+        },
+        "research_note": "Detailed five individual games and matchup remain to verify; no pick approved."
+      }
     },
     {
       "source_position": 7,
@@ -139,7 +153,20 @@
       "espn_last_five": [],
       "statistics_verified": false,
       "rank": null,
-      "assessment": null
+      "assessment": null,
+      "preliminary_evidence": {
+        "latest_game": {
+          "date": "2026-11-23",
+          "points": 11,
+          "minutes": 31,
+          "source": "https://www.basketball-reference.com/players/p/portemi01.html"
+        },
+        "last_five_summary": {
+          "points_per_game": 15.8,
+          "source": "https://www.statmuse.com/nba/ask/michael-porter-jr.-stats-in-his-last-5-games"
+        },
+        "research_note": "Individual game list and availability not yet verified; no pick approved."
+      }
     },
     {
       "source_position": 10,
@@ -183,5 +210,6 @@
       "rank": null,
       "assessment": null
     }
-  ]
+  ],
+  "researched_player_count": 2
 }
