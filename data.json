@@ -3,10 +3,10 @@
   "published": "25.11.2026. u 14:58 (Europe/Sarajevo)",
   "publication_type": "independent_ai_espn_only_github_publisher",
   "bank_before": 317.7,
-  "daily_stake": 19.5,
-  "bank_after": 298.2,
-  "bank_after_stakes": 298.2,
-  "provisional": true,
+  "daily_stake": 27.0,
+  "bank_after": 290.7,
+  "bank_after_stakes": 290.7,
+  "provisional": false,
   "settled": false,
   "odds_verified": false,
   "tickets": [
@@ -57,6 +57,44 @@
       "stake": 19.5,
       "status": "objavljen",
       "payout": 0
+    },
+    {
+      "id": "B",
+      "combined_odds": 2.0064,
+      "analysis": "B po matematičkoj vjerovatnoći 3+ iz TOP10, bez preklapanja s već objavljenim A. Brugge–Liverpool (67,8%; kvota 1,32), Sporting–Manchester United (61,1%; kvota 1,52); ukupno 2,0064. Više rangirani par Brugge–Slavia ima ukupno 1,9404 i ne prolazi minimalnu kvotu 2. FairXG: 73% odnosno 67%; zbirne procjene 70,4% i 64,05%. NEGATIVAN EV na oba para: −7,07% i −2,64%. Izbor je na korisnikov zahtjev prema vjerovatnoći, ne pozitivnom EV-u. UEFA izostanci provjereni; kladioničarski račun i konačne postave nisu potvrđeni. Virtuelni tiket.",
+      "matches": [
+        {
+          "fixture_id": "espn:football:uefa.champions:401915292",
+          "match": "Club Brugge - Liverpool",
+          "datetime": "2026-11-25T20:00:00Z",
+          "pick": "3+",
+          "odd": 1.32,
+          "bookmaker": "1xBet (TipsterArea)",
+          "source": "https://tipsterarea.com/match/club-brugge-liverpool-champions-league-group-stage-956876",
+          "quote_checked_at_utc": "2026-11-25T16:18:54.606Z",
+          "math_probability_pct": 67.8,
+          "fairxg_probability_pct": 73,
+          "final_ev_pct": -7.07,
+          "analysis": "Brugge 9/10, Liverpool 7/10 posljednjih utakmica s 3+ prema FairXG-u. Matematički Scout 67,8%, FairXG 73%, EV −7,07% na kvoti 1,32. UEFA potvrđuje važne izostanke."
+        },
+        {
+          "fixture_id": "espn:football:uefa.champions:401915373",
+          "match": "Sporting CP - Manchester United",
+          "datetime": "2026-11-25T20:00:00Z",
+          "pick": "3+",
+          "odd": 1.52,
+          "bookmaker": "1xBet (TipsterArea)",
+          "source": "https://tipsterarea.com/match/sporting-cp-manchester-united-champions-league-group-stage-956881",
+          "quote_checked_at_utc": "2026-11-25T16:18:54.606Z",
+          "math_probability_pct": 61.1,
+          "fairxg_probability_pct": 67,
+          "final_ev_pct": -2.64,
+          "analysis": "Scout 61,1%, FairXG 67%, EV −2,64% na javnoj kvoti 1,52. United je primio 15 golova u zadnjih pet mečeva. UEFA navodi izostanke kod oba tima."
+        }
+      ],
+      "stake": 7.5,
+      "status": "objavljen",
+      "payout": 0
     }
   ],
   "total_payout": 0.0,
@@ -68,10 +106,12 @@
   "football_ab_budget": 27.0,
   "reserved_nba_c_budget": 4.77,
   "pending_ticket_statuses": {
-    "A": "objavljen"
+    "A": "objavljen",
+    "B": "objavljen"
   },
   "pending_ticket_reasons": {
-    "A": ""
+    "A": "",
+    "B": ""
   },
   "odds_verification_note": "AI-provided selections are reproduced verbatim; GitHub does not check ESPN, markets or quotes."
 }
