@@ -1,0 +1,11 @@
+{
+  "kind": "listasix-ready-for-ai-review",
+  "date": "2026-11-25",
+  "source_active_sha256": "ee18b1fbb33eabbd2a62da6da1238072952f0cb2a54cd4e841f197cda237892c",
+  "fixtures": 11,
+  "synced_at_utc": "2026-11-25T18:41:59.816887+00:00",
+  "source": "shikithe/Memara-tip:main/listasix-data/active-list.json",
+  "approval_target": "shikithe/Memara-tip:main/memarasix-1455-approved.json",
+  "status": "WAITING_FOR_CHATGPT_AI_ANALYST",
+  "note": "Notification only. No picks, approvals or publication in this PR."
+}
