@@ -1,0 +1,83 @@
+name: MEMARA BetSharp NBA freshness watchdog
+on:
+  workflow_dispatch:
+  schedule:
+    # Independent fallback checks, UTC. Local Sarajevo window is checked in code.
+    - cron: '17 10,11,12,14,16,18,20 * * *'
+  workflow_run:
+    workflows:
+      - "MemaraSix independent candidate analysis"
+      - "MemaraSix football fixtures (free tier)"
+    types: [completed]
+permissions:
+  contents: read
+  actions: write
+concurrency:
+  group: memara-betsharp-nba-freshness-watchdog
+  cancel-in-progress: false
+jobs:
+  check-and-recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Inspect active collection date and workflow state
+        id: inspect
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os
+          from datetime import datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+          now = datetime.now(ZoneInfo("Europe/Sarajevo"))
+          et = datetime.now(ZoneInfo("America/New_York")).date().isoformat()
+          local_valid = (now.hour > 12 or (now.hour == 12 and now.minute >= 15)) and now.hour <= 23
+          try:
+              d = json.loads(Path("collector-output/betsharp-nba-daily.json").read_text(encoding="utf-8"))
+          except (OSError, ValueError):
+              d = {}
+          fresh = (d.get("game_date_et") == et and d.get("status") == "ok"
+                   and isinstance(d.get("offers"), list) and len(d["offers"]) > 0
+                   and d.get("player_count") == len(d["offers"])
+                   and bool(d.get("collected_at_utc")))
+          recover = local_valid and not fresh
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              print("recover=" + str(recover).lower(), file=f)
+              print("target_date=" + et, file=f)
+          print("NBA_WATCHDOG", "local", now.isoformat(), "et", et,
+                "stored_date", d.get("game_date_et"), "stored_count", d.get("player_count"),
+                "fresh", fresh, "recovery_needed", recover)
+          PY
+          gh api "repos/$GH_REPO/actions/workflows/betsharp-nba-points-daily.yml" --jq '{id,name,state,path}' || echo "NBA_WATCHDOG_WORKFLOW_STATE_UNAVAILABLE"
+      - name: Re-enable only the designated NBA collector if disabled and request collection
+        if: steps.inspect.outputs.recover == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          workflow="betsharp-nba-points-daily.yml"
+          state="$(gh api "repos/$GH_REPO/actions/workflows/$workflow" --jq '.state')"
+          echo "NBA_WATCHDOG_COLLECTOR_STATE=$state"
+          if [ "$state" != "active" ]; then
+            case "$state" in
+              disabled_manually|disabled_inactivity)
+                gh api -X PUT "repos/$GH_REPO/actions/workflows/$workflow/enable"
+                echo "NBA_WATCHDOG_REENABLED=$state"
+                ;;
+              *)
+                echo "::error::Unexpected collector workflow state: $state"
+                exit 1
+                ;;
+            esac
+          fi
+          # Collector itself performs committed pre-collection wipe, verification,
+          # date-gated fetch, ten-way split and readiness feedback.
+          gh workflow run "$workflow" --repo "$GH_REPO" --ref main
+          echo "NBA_WATCHDOG_DISPATCHED_FOR=${{ steps.inspect.outputs.target_date }}"
