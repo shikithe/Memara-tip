@@ -1,6 +1,6 @@
 {
   "date": "2026-11-25",
-  "updated_at_utc": "2026-11-25T13:58:41.482901+00:00",
+  "updated_at_utc": "2026-11-25T16:21:11.449526+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -27,6 +27,32 @@
       "score": "0:0",
       "source": "espn-public-unofficial",
       "event_id": "401915378",
+      "league": "uefa.champions",
+      "minute": null
+    },
+    {
+      "ticket": "B",
+      "index": 0,
+      "home": "Club Brugge",
+      "away": "Liverpool",
+      "state": "scheduled",
+      "fixture_id": "espn:football:uefa.champions:401915292",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401915292",
+      "league": "uefa.champions",
+      "minute": null
+    },
+    {
+      "ticket": "B",
+      "index": 1,
+      "home": "Sporting CP",
+      "away": "Manchester United",
+      "state": "scheduled",
+      "fixture_id": "espn:football:uefa.champions:401915373",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401915373",
       "league": "uefa.champions",
       "minute": null
     }
