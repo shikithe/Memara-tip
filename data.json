@@ -1,119 +1,17 @@
 {
-  "date": "2026-11-25",
-  "published": "25.11.2026. u 14:58 (Europe/Sarajevo)",
-  "publication_type": "independent_ai_espn_only_github_publisher",
-  "bank_before": 317.7,
-  "daily_stake": 27.0,
-  "bank_after": 290.7,
-  "bank_after_stakes": 290.7,
-  "provisional": true,
-  "settled": false,
+  "date": "2026-11-26",
+  "published": "Čeka validnu objavu: 12:00 Europe/Sarajevo",
+  "publication_type": "awaiting_daily_publication",
+  "bank_before": 356.49,
+  "daily_stake": 0,
+  "bank_after": 356.49,
+  "bank_after_stakes": 356.49,
+  "provisional": false,
+  "settled": true,
   "odds_verified": false,
-  "tickets": [
-    {
-      "id": "A",
-      "combined_odds": 2.6019,
-      "analysis": "Nezavisno je pregledano svih deset današnjih TOP10 utakmica. Za tiket A izabrani su PSG – Roma GG i Sabah – Barcelona GG (zajednička kvota 2,6019), bez ponavljanja istog meča. Pregledani su posljednji rezultati, izostanci i očekivani sastavi po UEFA-i, FairXG prognoze, raspored i javno objavljene TipsterArea kvote. Procjene p_final dobijene su kao prosjek izvornog matematičkog Scauta i dostupnog FairXG procenta za isto tržište. Ulog je virtuelan; EV nije dokaz kalibrisane prednosti niti garancija. Za oba para novije javne kvote se razlikuju od ranijeg ListaSix snapshot-a, zbog čega su promjene transparentno dokumentovane. Za B nije pronađena druga 3+ utakmica koja prolazi postojeće stroge uslove pa B nije odobren.",
-      "matches": [
-        {
-          "fixture_id": "espn:football:uefa.champions:401915374",
-          "match": "Paris Saint-Germain - AS Roma",
-          "datetime": "2026-11-25T20:00:00Z",
-          "pick": "GG",
-          "odd": 1.47,
-          "source": "https://tipsterarea.com/match/paris-saint-germain-roma-champions-league-group-stage-956879",
-          "bookmaker": "1xBet (javno prikazana cijena na TipsterArea)",
-          "quote_checked_at_utc": "2026-11-25T13:57:00.464Z",
-          "quote_source_last_updated_local": "25.11.2026 12:03 (prema javnoj TipsterArea stranici; vremenska zona nije potvrđena)",
-          "odds_status": "published_aggregator_quote_not_verified_in_bookmaker_account",
-          "active_list_previous_odds": 1.43,
-          "math_probability_pct": 73.5,
-          "fairxg_probability_pct": 68,
-          "final_probability_pct": 70.75,
-          "final_ev_pct": 4,
-          "independent_model_source": "https://fairxg.com/sport/football/match/paris-sg-vs-roma",
-          "analysis": "PSG – Roma: izabrano GG zbog napadačke forme obje ekipe i FairXG prognoze golova 2,71–1,29. Matematička vjerovatnoća GG je 73,5%, FairXG 68%, a konačna procjena 70,75%. Na javno prikazanoj kvoti 1,47 iz 1xBet ponude na TipsterArea procijenjeni EV je +4,00%. PSG ima izostanke Douéa i Kvaratskhelije; Roma Pellegrinija, dok su Balerdi i Rensch upitni. Predviđeni sastavi nisu potvrđeni. Početna ListaSix kvota bila je 1,43; nova javna cijena 1,47 nije nezavisno potvrđena kod kladionice."
-        },
-        {
-          "fixture_id": "espn:football:uefa.champions:401915378",
-          "match": "Sabah FK - Barcelona",
-          "datetime": "2026-11-25T17:45:00Z",
-          "pick": "GG",
-          "odd": 1.77,
-          "source": "https://tipsterarea.com/match/sabah-baku-barcelona-champions-league-group-stage-956873",
-          "bookmaker": "1xBet (javno prikazana cijena na TipsterArea)",
-          "quote_checked_at_utc": "2026-11-25T13:57:00.464Z",
-          "quote_source_last_updated_local": "25.11.2026 12:03 (prema javnoj TipsterArea stranici; vremenska zona nije potvrđena)",
-          "odds_status": "published_aggregator_quote_not_verified_in_bookmaker_account",
-          "active_list_previous_odds": 1.59,
-          "math_probability_pct": 69.3,
-          "fairxg_probability_pct": 58,
-          "final_probability_pct": 63.65,
-          "final_ev_pct": 12.66,
-          "independent_model_source": "https://fairxg.com/sport/football/match/sabah-fk-vs-barcelona",
-          "analysis": "Sabah – Barcelona: izabrano GG uz visok rizik da domaćin ne postigne gol. Matematička vjerovatnoća GG je 69,3%, FairXG 58%, konačna procjena 63,65%. Na javno prikazanoj kvoti 1,77 iz 1xBet ponude na TipsterArea procijenjeni EV je +12,66%. Barcelona je veliki favorit, ali očekuje se rotacija i nedostaju Yamal, Rodri, Christensen i Espart; Sabah je bez suspendovanog McCarthyja. FairXG predviđa 0,89–3,86 gola. ListaSix je ranije imao 1,59, ali trenutna javno prikazana ponuda je 1,77, nije riječ o istoj cijeni.",
-          "result_status": "pogođen",
-          "final_score": "1:4"
-        }
-      ],
-      "stake": 19.5,
-      "status": "objavljen",
-      "payout": 0
-    },
-    {
-      "id": "B",
-      "combined_odds": 2.0064,
-      "analysis": "B po matematičkoj vjerovatnoći 3+ iz TOP10, bez preklapanja s već objavljenim A. Brugge–Liverpool (67,8%; kvota 1,32), Sporting–Manchester United (61,1%; kvota 1,52); ukupno 2,0064. Više rangirani par Brugge–Slavia ima ukupno 1,9404 i ne prolazi minimalnu kvotu 2. FairXG: 73% odnosno 67%; zbirne procjene 70,4% i 64,05%. NEGATIVAN EV na oba para: −7,07% i −2,64%. Izbor je na korisnikov zahtjev prema vjerovatnoći, ne pozitivnom EV-u. UEFA izostanci provjereni; kladioničarski račun i konačne postave nisu potvrđeni. Virtuelni tiket.",
-      "matches": [
-        {
-          "fixture_id": "espn:football:uefa.champions:401915292",
-          "match": "Club Brugge - Liverpool",
-          "datetime": "2026-11-25T20:00:00Z",
-          "pick": "3+",
-          "odd": 1.32,
-          "bookmaker": "1xBet (TipsterArea)",
-          "source": "https://tipsterarea.com/match/club-brugge-liverpool-champions-league-group-stage-956876",
-          "quote_checked_at_utc": "2026-11-25T16:18:54.606Z",
-          "math_probability_pct": 67.8,
-          "fairxg_probability_pct": 73,
-          "final_ev_pct": -7.07,
-          "analysis": "Brugge 9/10, Liverpool 7/10 posljednjih utakmica s 3+ prema FairXG-u. Matematički Scout 67,8%, FairXG 73%, EV −7,07% na kvoti 1,32. UEFA potvrđuje važne izostanke."
-        },
-        {
-          "fixture_id": "espn:football:uefa.champions:401915373",
-          "match": "Sporting CP - Manchester United",
-          "datetime": "2026-11-25T20:00:00Z",
-          "pick": "3+",
-          "odd": 1.52,
-          "bookmaker": "1xBet (TipsterArea)",
-          "source": "https://tipsterarea.com/match/sporting-cp-manchester-united-champions-league-group-stage-956881",
-          "quote_checked_at_utc": "2026-11-25T16:18:54.606Z",
-          "math_probability_pct": 61.1,
-          "fairxg_probability_pct": 67,
-          "final_ev_pct": -2.64,
-          "analysis": "Scout 61,1%, FairXG 67%, EV −2,64% na javnoj kvoti 1,52. United je primio 15 golova u zadnjih pet mečeva. UEFA navodi izostanke kod oba tima."
-        }
-      ],
-      "stake": 7.5,
-      "status": "objavljen",
-      "payout": 0
-    }
-  ],
-  "total_payout": 0.0,
-  "net_change": null,
+  "tickets": [],
+  "total_payout": 0,
+  "net_change": 0,
   "analysis_status": "Prethodni tiket je u arhivi. Današnji tiketi još nisu objavljeni.",
-  "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",
-  "published_at_utc": "2026-11-25T13:58:30.434129+00:00",
-  "daily_budget": 31.77,
-  "football_ab_budget": 27.0,
-  "reserved_nba_c_budget": 4.77,
-  "pending_ticket_statuses": {
-    "A": "objavljen",
-    "B": "objavljen"
-  },
-  "pending_ticket_reasons": {
-    "A": "",
-    "B": ""
-  },
-  "odds_verification_note": "AI-provided selections are reproduced verbatim; GitHub does not check ESPN, markets or quotes."
+  "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter"
 }
