@@ -1,65 +1,8 @@
 {
-  "date": "2026-11-25",
-  "updated_at_utc": "2026-11-26T02:12:38.545523+00:00",
+  "date": "2026-11-26",
+  "updated_at_utc": "2026-11-26T02:37:07.484665+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
-  "matches": [
-    {
-      "ticket": "A",
-      "index": 0,
-      "home": "Paris Saint-Germain",
-      "away": "AS Roma",
-      "state": "final",
-      "fixture_id": "espn:football:uefa.champions:401915374",
-      "score": "2:2",
-      "source": "espn-public-unofficial",
-      "event_id": "401915374",
-      "league": "uefa.champions",
-      "minute": null,
-      "result_status": "pogođen"
-    },
-    {
-      "ticket": "A",
-      "index": 1,
-      "home": "Sabah FK",
-      "away": "Barcelona",
-      "state": "final",
-      "fixture_id": "espn:football:uefa.champions:401915378",
-      "score": "1:4",
-      "source": "espn-public-unofficial",
-      "event_id": "401915378",
-      "league": "uefa.champions",
-      "minute": null,
-      "result_status": "pogođen"
-    },
-    {
-      "ticket": "B",
-      "index": 0,
-      "home": "Club Brugge",
-      "away": "Liverpool",
-      "state": "final",
-      "fixture_id": "espn:football:uefa.champions:401915292",
-      "score": "0:3",
-      "source": "espn-public-unofficial",
-      "event_id": "401915292",
-      "league": "uefa.champions",
-      "minute": null,
-      "result_status": "pogođen"
-    },
-    {
-      "ticket": "B",
-      "index": 1,
-      "home": "Sporting CP",
-      "away": "Manchester United",
-      "state": "final",
-      "fixture_id": "espn:football:uefa.champions:401915373",
-      "score": "2:2",
-      "source": "espn-public-unofficial",
-      "event_id": "401915373",
-      "league": "uefa.champions",
-      "minute": null,
-      "result_status": "pogođen"
-    }
-  ],
+  "matches": [],
   "bank_unchanged": true
 }
