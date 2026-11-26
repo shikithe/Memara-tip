@@ -98,7 +98,8 @@
             "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/",
             "https://starting11.com/europa-league"
           ],
-          "result_status": "čeka"
+          "result_status": "pogođen",
+          "final_score": "2:4"
         },
         {
           "fixture_id": "espn:football:uefa.europa:401915520",
@@ -123,15 +124,17 @@
             "https://www.uefa.com/uefaeuropaleague/news/02ab-221b7fac106f-ef047ae48cd4-1000--europa-league-matchday-5-briefing-bournemouth-and-olympiac/",
             "https://starting11.com/europa-league"
           ],
-          "result_status": "čeka"
+          "result_status": "promašen",
+          "final_score": "2:0"
         }
       ],
       "stake": 10.69,
-      "status": "objavljen",
-      "payout": 0
+      "status": "izgubljen",
+      "payout": 0.0,
+      "settled_at_utc": "2026-11-26T19:52:41.620985+00:00"
     }
   ],
-  "total_payout": 0,
+  "total_payout": 0.0,
   "net_change": null,
   "analysis_status": "A i B ručno objavljeni; svih 10 pregledano matematički i FairXG, djelimična nezavisna provjera forme i sastava. Bez stvarnog klađenja.",
   "selection_method": "Manual ChatGPT analysis: equal blend Scout and FairXG, B ranked by original 3+ probability",

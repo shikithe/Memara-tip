@@ -1,8 +1,63 @@
 {
   "date": "2026-11-26",
-  "updated_at_utc": "2026-11-26T12:40:46.152271+00:00",
+  "updated_at_utc": "2026-11-26T19:52:41.620985+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
-  "matches": [],
+  "matches": [
+    {
+      "ticket": "A",
+      "index": 0,
+      "home": "Sparta Prague",
+      "away": "AZ Alkmaar",
+      "state": "scheduled",
+      "fixture_id": "espn:football:uefa.europa:401915514",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401915514",
+      "league": "uefa.europa",
+      "minute": null
+    },
+    {
+      "ticket": "A",
+      "index": 1,
+      "home": "Torreense",
+      "away": "Celtic",
+      "state": "scheduled",
+      "fixture_id": "espn:football:uefa.europa:401915512",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401915512",
+      "league": "uefa.europa",
+      "minute": null
+    },
+    {
+      "ticket": "B",
+      "index": 0,
+      "home": "Olympiacos",
+      "away": "AC Milan",
+      "state": "final",
+      "fixture_id": "espn:football:uefa.europa:401915521",
+      "score": "2:4",
+      "source": "espn-public-unofficial",
+      "event_id": "401915521",
+      "league": "uefa.europa",
+      "minute": null,
+      "result_status": "pogođen"
+    },
+    {
+      "ticket": "B",
+      "index": 1,
+      "home": "RB Salzburg",
+      "away": "Ararat-Armenia",
+      "state": "final",
+      "fixture_id": "espn:football:uefa.europa:401915520",
+      "score": "2:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401915520",
+      "league": "uefa.europa",
+      "minute": null,
+      "result_status": "promašen"
+    }
+  ],
   "bank_unchanged": true
 }
