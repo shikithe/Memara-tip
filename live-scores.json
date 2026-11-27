@@ -1,8 +1,30 @@
 {
   "date": "2026-11-27",
-  "updated_at_utc": "2026-11-27T11:11:22.743589+00:00",
+  "updated_at_utc": "2026-11-27T11:31:21.069089+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
-  "matches": [],
+  "matches": [
+    {
+      "ticket": "B",
+      "index": 0,
+      "home": "Columbus Crew",
+      "away": "Inter Miami CF",
+      "state": "unverified",
+      "fixture_id": "espn:football:usa.1:401933727"
+    },
+    {
+      "ticket": "B",
+      "index": 1,
+      "home": "Nottingham Forest",
+      "away": "Chelsea",
+      "state": "scheduled",
+      "fixture_id": "espn:football:eng.1:401879225",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401879225",
+      "league": "eng.1",
+      "minute": null
+    }
+  ],
   "bank_unchanged": true
 }
