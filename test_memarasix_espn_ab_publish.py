@@ -106,6 +106,63 @@ class ESPNABTests(unittest.TestCase):
             self.assertEqual(after["bank_after"],180.0)
             self.assertEqual(publish(root,NOW,FEED)["status"],"no_update")
 
+    def test_publish_A_and_B_independently_on_two_approval_pushes(self):
+        # Ticket A is ready first; B is not a prerequisite. Later B is appended.
+        with tempfile.TemporaryDirectory() as td:
+            root=Path(td)
+            data={"date":DAY,"settled":True,"bank_before":200.0,
+                  "bank_after":200.0,"tickets":[]}
+            write(root/"data.json",data)
+            first=copy.deepcopy(APPROVAL)
+            first["tickets"]=[copy.deepcopy(A)]
+            first["tickets"][0]["matches"].append(
+                dict(first["tickets"][0]["matches"][0],
+                     fixture_id="espn:football:ger.1:99"))
+            write(root/"memarasix-football-ai-approved.json",first)
+            out_a=publish(root,NOW,FEED)
+            self.assertEqual(out_a["status"],"published")
+            self.assertEqual(out_a["tickets"],["A"])
+            after_a=read(root/"data.json")
+            self.assertEqual([t["id"] for t in after_a["tickets"]],["A"])
+            self.assertEqual(len(after_a["tickets"][0]["matches"]),2)
+            self.assertAlmostEqual(after_a["tickets"][0]["stake"],12.28)
+            a_saved=copy.deepcopy(after_a["tickets"][0])
+            first_published_at=after_a["published_at_utc"]
+            # The next approved file may contain only the new B ticket.
+            second=copy.deepcopy(APPROVAL)
+            second["approved_at_utc"]="2026-11-21T09:57:00+00:00"
+            second["tickets"]=[copy.deepcopy(B)]
+            second["tickets"][0]["matches"].append(
+                dict(second["tickets"][0]["matches"][0],
+                     fixture_id="espn:football:eng.1:99"))
+            write(root/"memarasix-football-ai-approved.json",second)
+            out_b=publish(root,NOW,FEED)
+            self.assertEqual(out_b["status"],"published")
+            self.assertEqual(out_b["tickets"],["B"])
+            after_b=read(root/"data.json")
+            self.assertEqual([t["id"] for t in after_b["tickets"]],["A","B"])
+            self.assertEqual(after_b["tickets"][0],a_saved)
+            self.assertEqual(after_b["published_at_utc"],first_published_at)
+            self.assertEqual(len(after_b["tickets"][1]["matches"]),2)
+            self.assertAlmostEqual(after_b["tickets"][1]["stake"],4.72)
+            self.assertAlmostEqual(after_b["daily_stake"],17.0)
+            self.assertAlmostEqual(after_b["reserved_nba_c_budget"],3.0)
+            self.assertEqual(publish(root,NOW,FEED)["status"],"no_update")
+
+    def test_stale_approval_does_not_publish_or_rewrite_today_data(self):
+        with tempfile.TemporaryDirectory() as td:
+            root=Path(td)
+            current={"date":DAY,"settled":True,"bank_before":200.0,
+                     "bank_after":200.0,"tickets":[]}
+            stale=copy.deepcopy(APPROVAL)
+            stale["date"]="2026-11-20"
+            stale["approved_at_utc"]="2026-11-20T09:56:00Z"
+            write(root/"data.json",current)
+            write(root/"memarasix-football-ai-approved.json",stale)
+            with self.assertRaisesRegex(ValueError,"not for today"):
+                publish(root,NOW,FEED)
+            self.assertEqual(read(root/"data.json"),current)
+
     def test_unsettled_previous_day_fails_without_changes(self):
         with tempfile.TemporaryDirectory() as td:
             root=Path(td)
