@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "updated_at_utc": "2026-11-27T19:55:47.225024+00:00",
+  "updated_at_utc": "2026-11-27T20:49:52.787677+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -17,13 +17,13 @@
       "index": 1,
       "home": "Nottingham Forest",
       "away": "Chelsea",
-      "state": "scheduled",
+      "state": "live",
       "fixture_id": "espn:football:eng.1:401879225",
-      "score": "0:0",
+      "score": "1:0",
       "source": "espn-public-unofficial",
       "event_id": "401879225",
       "league": "eng.1",
-      "minute": null
+      "minute": "45"
     },
     {
       "ticket": "A",
@@ -36,7 +36,7 @@
       "source": "espn-public-unofficial",
       "event_id": "401875536",
       "league": "ned.1",
-      "minute": "45"
+      "minute": "85"
     },
     {
       "ticket": "A",
@@ -45,11 +45,12 @@
       "away": "Borussia Mönchengladbach",
       "state": "live",
       "fixture_id": "espn:football:ger.1:401884720",
-      "score": "0:0",
+      "score": "1:2",
       "source": "espn-public-unofficial",
       "event_id": "401884720",
       "league": "ger.1",
-      "minute": "25"
+      "minute": "58",
+      "result_status": "pogođen"
     }
   ],
   "bank_unchanged": true
