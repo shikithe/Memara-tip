@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "updated_at_utc": "2026-11-26T20:26:53.495946+00:00",
+  "updated_at_utc": "2026-11-27T02:28:05.607703+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,26 +9,28 @@
       "index": 0,
       "home": "Sparta Prague",
       "away": "AZ Alkmaar",
-      "state": "live",
+      "state": "final",
       "fixture_id": "espn:football:uefa.europa:401915514",
-      "score": "1:0",
+      "score": "2:4",
       "source": "espn-public-unofficial",
       "event_id": "401915514",
       "league": "uefa.europa",
-      "minute": "26"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "A",
       "index": 1,
       "home": "Torreense",
       "away": "Celtic",
-      "state": "live",
+      "state": "final",
       "fixture_id": "espn:football:uefa.europa:401915512",
-      "score": "1:1",
+      "score": "1:2",
       "source": "espn-public-unofficial",
       "event_id": "401915512",
       "league": "uefa.europa",
-      "minute": "25"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "B",
