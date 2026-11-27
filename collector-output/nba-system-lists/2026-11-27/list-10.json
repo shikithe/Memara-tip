@@ -1,0 +1,643 @@
+{
+  "date": "2026-11-27",
+  "list_number": 10,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-27T17:39:53.979879+00:00",
+  "total_offers": 142,
+  "group_size": 14,
+  "original_positions": [
+    129,
+    142
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Zion Williamson",
+      "team": "NO",
+      "game": "NO @ LAC",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/zion-williamson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-new-orleans-pelicans-at-la-clippers#props",
+      "points_market": {
+        "DK": {
+          "line": 22.5,
+          "over_american": -111,
+          "under_american": -114,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 22.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 22.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 138,
+          "under_american": -186,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5376
+        }
+      },
+      "original_offer_position": 129
+    },
+    {
+      "player": "Aaron Nesmith",
+      "team": "IND",
+      "game": "PHI @ IND",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/aaron-nesmith",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-philadelphia-76ers-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -105,
+          "under_american": -121,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 163,
+          "under_american": -213,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4695
+        }
+      },
+      "original_offer_position": 130
+    },
+    {
+      "player": "Andrew Nembhard",
+      "team": "IND",
+      "game": "PHI @ IND",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/andrew-nembhard",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-philadelphia-76ers-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -119,
+          "under_american": -107,
+          "over_decimal": 1.8403,
+          "under_decimal": 1.9346
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -150,
+          "under_american": 104,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 131
+    },
+    {
+      "player": "Anfernee Simons",
+      "team": "PHI",
+      "game": "PHI @ IND",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/anfernee-simons",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-philadelphia-76ers-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -124,
+          "under_american": -102,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9804
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -122,
+          "under_american": -106,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 163,
+          "under_american": -213,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4695
+        }
+      },
+      "original_offer_position": 132
+    },
+    {
+      "player": "Dean Wade",
+      "team": "PHI",
+      "game": "PHI @ IND",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/dean-wade",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-philadelphia-76ers-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 5.5,
+          "over_american": 105,
+          "under_american": -135,
+          "over_decimal": 2.05,
+          "under_decimal": 1.7407
+        },
+        "FD": {
+          "line": 4.5,
+          "over_american": -128,
+          "under_american": 100,
+          "over_decimal": 1.7812,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 5.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -133,
+          "under_american": -108,
+          "over_decimal": 1.7519,
+          "under_decimal": 1.9259
+        }
+      },
+      "original_offer_position": 133
+    },
+    {
+      "player": "Ivica Zubac",
+      "team": "IND",
+      "game": "PHI @ IND",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/ivica-zubac",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-philadelphia-76ers-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": 105,
+          "under_american": -133,
+          "over_decimal": 2.05,
+          "under_decimal": 1.7519
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -137,
+          "under_american": 102,
+          "over_decimal": 1.7299,
+          "under_decimal": 2.02
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 163,
+          "under_american": -245,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4082
+        }
+      },
+      "original_offer_position": 134
+    },
+    {
+      "player": "Joel Embiid",
+      "team": "PHI",
+      "game": "PHI @ IND",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/joel-embiid",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-philadelphia-76ers-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 24.5,
+          "over_american": -104,
+          "under_american": -123,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.813
+        },
+        "FD": {
+          "line": 23.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 24.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 23.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -104,
+          "under_american": -127,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7874
+        }
+      },
+      "original_offer_position": 135
+    },
+    {
+      "player": "Kelly Oubre Jr.",
+      "team": "IND",
+      "game": "PHI @ IND",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/kelly-oubre",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-philadelphia-76ers-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": 101,
+          "under_american": -129,
+          "over_decimal": 2.01,
+          "under_decimal": 1.7752
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -127,
+          "under_american": -108,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -245,
+          "under_american": 144,
+          "over_decimal": 1.4082,
+          "under_decimal": 2.44
+        }
+      },
+      "original_offer_position": 136
+    },
+    {
+      "player": "Kentavious Caldwell-Pope",
+      "team": "PHI",
+      "game": "PHI @ IND",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/kentavious-caldwell-pope",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-philadelphia-76ers-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 6.5,
+          "over_american": -128,
+          "under_american": 101,
+          "over_decimal": 1.7812,
+          "under_decimal": 2.01
+        },
+        "FD": {
+          "line": 6.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -285,
+          "under_american": 178,
+          "over_decimal": 1.3509,
+          "under_decimal": 2.78
+        }
+      },
+      "original_offer_position": 137
+    },
+    {
+      "player": "LeBron James",
+      "team": "PHI",
+      "game": "PHI @ IND",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/lebron-james",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-philadelphia-76ers-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -121,
+          "under_american": -105,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 19.5,
+          "over_american": 110,
+          "under_american": -150,
+          "over_decimal": 2.1,
+          "under_decimal": 1.6667
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 113,
+          "under_american": -138,
+          "over_decimal": 2.13,
+          "under_decimal": 1.7246
+        }
+      },
+      "original_offer_position": 138
+    },
+    {
+      "player": "Obi Toppin",
+      "team": "IND",
+      "game": "PHI @ IND",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/obi-toppin",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-philadelphia-76ers-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -114,
+          "under_american": -112,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -213,
+          "under_american": 144,
+          "over_decimal": 1.4695,
+          "under_decimal": 2.44
+        }
+      },
+      "original_offer_position": 139
+    },
+    {
+      "player": "Pascal Siakam",
+      "team": "IND",
+      "game": "PHI @ IND",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/pascal-siakam",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-philadelphia-76ers-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 22.5,
+          "over_american": -115,
+          "under_american": -111,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 23.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 23.5,
+          "over_american": -111,
+          "under_american": -120,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 23.5,
+          "over_american": -113,
+          "under_american": -121,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 117,
+          "under_american": -150,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6667
+        }
+      },
+      "original_offer_position": 140
+    },
+    {
+      "player": "Tyrese Maxey",
+      "team": "PHI",
+      "game": "PHI @ IND",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/tyrese-maxey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-philadelphia-76ers-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 25.5,
+          "over_american": -112,
+          "under_american": -113,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 24.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 25.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 25.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -133,
+          "under_american": -108,
+          "over_decimal": 1.7519,
+          "under_decimal": 1.9259
+        }
+      },
+      "original_offer_position": 141
+    },
+    {
+      "player": "VJ Edgecombe",
+      "team": "PHI",
+      "game": "PHI @ IND",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/vj-edgecombe",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-philadelphia-76ers-at-indiana-pacers#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -123,
+          "under_american": -103,
+          "over_decimal": 1.813,
+          "under_decimal": 1.9709
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -105,
+          "under_american": -130,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.7692
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -124,
+          "under_american": -109,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9174
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -113,
+          "under_american": -117,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8547
+        }
+      },
+      "original_offer_position": 142
+    }
+  ]
+}

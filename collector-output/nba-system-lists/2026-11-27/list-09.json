@@ -1,0 +1,671 @@
+{
+  "date": "2026-11-27",
+  "list_number": 9,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-27T17:39:53.979879+00:00",
+  "total_offers": 142,
+  "group_size": 14,
+  "original_positions": [
+    115,
+    128
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Brandon Ingram",
+      "team": "LAC",
+      "game": "NO @ LAC",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/brandon-ingram",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-new-orleans-pelicans-at-la-clippers#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -124,
+          "under_american": -102,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9804
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 18.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 104,
+          "under_american": -156,
+          "over_decimal": 2.04,
+          "under_decimal": 1.641
+        }
+      },
+      "original_offer_position": 115
+    },
+    {
+      "player": "Brook Lopez",
+      "team": "LAC",
+      "game": "NO @ LAC",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/brook-lopez",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-new-orleans-pelicans-at-la-clippers#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -104,
+          "under_american": -122,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8197
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -125,
+          "under_american": -102,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -138,
+          "under_american": 100,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.0
+        }
+      },
+      "original_offer_position": 116
+    },
+    {
+      "player": "Darius Garland",
+      "team": "LAC",
+      "game": "NO @ LAC",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/darius-garland",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-new-orleans-pelicans-at-la-clippers#props",
+      "points_market": {
+        "DK": {
+          "line": 20.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 20.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 19.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 20.5,
+          "over_american": -107,
+          "under_american": -127,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -133,
+          "under_american": -108,
+          "over_decimal": 1.7519,
+          "under_decimal": 1.9259
+        }
+      },
+      "original_offer_position": 117
+    },
+    {
+      "player": "Derik Queen",
+      "team": "NO",
+      "game": "NO @ LAC",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/derik-queen",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-new-orleans-pelicans-at-la-clippers#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -112,
+          "under_american": -113,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -127,
+          "under_american": -108,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9259
+        }
+      },
+      "original_offer_position": 118
+    },
+    {
+      "player": "Derrick Jones Jr.",
+      "team": "LAC",
+      "game": "NO @ LAC",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/derrick-jones",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-new-orleans-pelicans-at-la-clippers#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -103,
+          "under_american": -124,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": 100,
+          "under_american": -135,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7407
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -104,
+          "under_american": -132,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7576
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 178,
+          "under_american": -245,
+          "over_decimal": 2.78,
+          "under_decimal": 1.4082
+        }
+      },
+      "original_offer_position": 119
+    },
+    {
+      "player": "Herbert Jones",
+      "team": "NO",
+      "game": "NO @ LAC",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/herbert-jones",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-new-orleans-pelicans-at-la-clippers#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -104,
+          "under_american": -122,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8197
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": 100,
+          "under_american": -136,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7353
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 186,
+          "under_american": -270,
+          "over_decimal": 2.86,
+          "under_decimal": 1.3704
+        }
+      },
+      "original_offer_position": 120
+    },
+    {
+      "player": "Jeremiah Fears",
+      "team": "NO",
+      "game": "NO @ LAC",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/jeremiah-fears",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-new-orleans-pelicans-at-la-clippers#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -102,
+          "under_american": -125,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -120,
+          "under_american": -113,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.885
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 133,
+          "under_american": -203,
+          "over_decimal": 2.33,
+          "under_decimal": 1.4926
+        }
+      },
+      "original_offer_position": 121
+    },
+    {
+      "player": "Jordan Poole",
+      "team": "NO",
+      "game": "NO @ LAC",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/jordan-poole",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-new-orleans-pelicans-at-la-clippers#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -213,
+          "under_american": 138,
+          "over_decimal": 1.4695,
+          "under_decimal": 2.38
+        }
+      },
+      "original_offer_position": 122
+    },
+    {
+      "player": "Kris Dunn",
+      "team": "LAC",
+      "game": "NO @ LAC",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/kris-dunn",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-new-orleans-pelicans-at-la-clippers#props",
+      "points_market": {
+        "DK": {
+          "line": 4.5,
+          "over_american": -128,
+          "under_american": 100,
+          "over_decimal": 1.7812,
+          "under_decimal": 2.0
+        },
+        "FD": {
+          "line": 4.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "BR": {
+          "line": 4.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -133,
+          "under_american": 104,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 123
+    },
+    {
+      "player": "Max Strus",
+      "team": "LAC",
+      "game": "NO @ LAC",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/max-strus",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-new-orleans-pelicans-at-la-clippers#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -133,
+          "under_american": 104,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.04
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -140,
+          "under_american": 105,
+          "over_decimal": 1.7143,
+          "under_decimal": 2.05
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -137,
+          "under_american": 100,
+          "over_decimal": 1.7299,
+          "under_decimal": 2.0
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 150,
+          "under_american": -194,
+          "over_decimal": 2.5,
+          "under_decimal": 1.5155
+        }
+      },
+      "original_offer_position": 124
+    },
+    {
+      "player": "Rui Hachimura",
+      "team": "LAC",
+      "game": "NO @ LAC",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/rui-hachimura",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-new-orleans-pelicans-at-la-clippers#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": 100,
+          "under_american": -128,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7812
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -122,
+          "under_american": -112,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 100,
+          "under_american": -138,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7246
+        }
+      },
+      "original_offer_position": 125
+    },
+    {
+      "player": "Saddiq Bey",
+      "team": "NO",
+      "game": "NO @ LAC",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/saddiq-bey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-new-orleans-pelicans-at-la-clippers#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -116,
+          "under_american": -108,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9259
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -138,
+          "under_american": 108,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 126
+    },
+    {
+      "player": "Trey Murphy III",
+      "team": "NO",
+      "game": "NO @ LAC",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/trey-murphy",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-new-orleans-pelicans-at-la-clippers#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -117,
+          "under_american": -109,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -105,
+          "under_american": -130,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.7692
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -150,
+          "under_american": 100,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.0
+        }
+      },
+      "original_offer_position": 127
+    },
+    {
+      "player": "Yves Missi",
+      "team": "NO",
+      "game": "NO @ LAC",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/yves-missi",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-new-orleans-pelicans-at-la-clippers#props",
+      "points_market": {
+        "DK": {
+          "line": 6.5,
+          "over_american": -101,
+          "under_american": -127,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7874
+        },
+        "FD": {
+          "line": 6.5,
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 6.5,
+          "over_american": 100,
+          "under_american": -135,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7407
+        },
+        "BR": {
+          "line": 6.5,
+          "over_american": -104,
+          "under_american": -130,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7692
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -233,
+          "under_american": 178,
+          "over_decimal": 1.4292,
+          "under_decimal": 2.78
+        }
+      },
+      "original_offer_position": 128
+    }
+  ]
+}

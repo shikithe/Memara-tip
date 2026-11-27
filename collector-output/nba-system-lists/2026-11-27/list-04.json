@@ -1,0 +1,622 @@
+{
+  "date": "2026-11-27",
+  "list_number": 4,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-27T17:39:53.979879+00:00",
+  "total_offers": 142,
+  "group_size": 14,
+  "original_positions": [
+    45,
+    58
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Brice Sensabaugh",
+      "team": "UTAH",
+      "game": "DEN @ UTAH",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/brice-sensabaugh",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-denver-nuggets-at-utah-jazz#props",
+      "points_market": {
+        "BR": {
+          "line": 11.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -213,
+          "under_american": 127,
+          "over_decimal": 1.4695,
+          "under_decimal": 2.27
+        }
+      },
+      "original_offer_position": 45
+    },
+    {
+      "player": "Cameron Johnson",
+      "team": "DEN",
+      "game": "DEN @ UTAH",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/cameron-johnson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-denver-nuggets-at-utah-jazz#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -120,
+          "under_american": -106,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 138,
+          "under_american": -203,
+          "over_decimal": 2.38,
+          "under_decimal": 1.4926
+        }
+      },
+      "original_offer_position": 46
+    },
+    {
+      "player": "Christian Braun",
+      "team": "DEN",
+      "game": "DEN @ UTAH",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/christian-braun",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-denver-nuggets-at-utah-jazz#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -129,
+          "under_american": -105,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9524
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 170,
+          "under_american": -233,
+          "over_decimal": 2.7,
+          "under_decimal": 1.4292
+        }
+      },
+      "original_offer_position": 47
+    },
+    {
+      "player": "Darryn Peterson",
+      "team": "UTAH",
+      "game": "DEN @ UTAH",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/darryn-peterson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-denver-nuggets-at-utah-jazz#props",
+      "points_market": {
+        "DK": {
+          "line": 16.5,
+          "over_american": -121,
+          "under_american": -105,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 16.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 16.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -194,
+          "under_american": 138,
+          "over_decimal": 1.5155,
+          "under_decimal": 2.38
+        }
+      },
+      "original_offer_position": 48
+    },
+    {
+      "player": "DeMar DeRozan",
+      "team": "DEN",
+      "game": "DEN @ UTAH",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/demar-derozan",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-denver-nuggets-at-utah-jazz#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -104,
+          "under_american": -117,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8547
+        }
+      },
+      "original_offer_position": 49
+    },
+    {
+      "player": "Jamal Murray",
+      "team": "DEN",
+      "game": "DEN @ UTAH",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/jamal-murray",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-denver-nuggets-at-utah-jazz#props",
+      "points_market": {
+        "DK": {
+          "line": 25.5,
+          "over_american": -116,
+          "under_american": -110,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 25.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 24.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 24.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -127,
+          "under_american": -104,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9615
+        }
+      },
+      "original_offer_position": 50
+    },
+    {
+      "player": "Jaxson Hayes",
+      "team": "UTAH",
+      "game": "DEN @ UTAH",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/jaxson-hayes",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-denver-nuggets-at-utah-jazz#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -123,
+          "under_american": -103,
+          "over_decimal": 1.813,
+          "under_decimal": 1.9709
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -130,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 113,
+          "under_american": -138,
+          "over_decimal": 2.13,
+          "under_decimal": 1.7246
+        }
+      },
+      "original_offer_position": 51
+    },
+    {
+      "player": "Josh Green",
+      "team": "UTAH",
+      "game": "DEN @ UTAH",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/josh-green",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-denver-nuggets-at-utah-jazz#props",
+      "points_market": {
+        "DK": {
+          "line": 5.5,
+          "over_american": -106,
+          "under_american": -119,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8403
+        },
+        "FD": {
+          "line": 5.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 5.5,
+          "over_american": 105,
+          "under_american": -140,
+          "over_decimal": 2.05,
+          "under_decimal": 1.7143
+        },
+        "BR": {
+          "line": 5.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -170,
+          "under_american": 133,
+          "over_decimal": 1.5882,
+          "under_decimal": 2.33
+        }
+      },
+      "original_offer_position": 52
+    },
+    {
+      "player": "Keyonte George",
+      "team": "UTAH",
+      "game": "DEN @ UTAH",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/keyonte-george",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-denver-nuggets-at-utah-jazz#props",
+      "points_market": {
+        "DK": {
+          "line": 21.5,
+          "over_american": -114,
+          "under_american": -112,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 21.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 21.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -150,
+          "under_american": 108,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 53
+    },
+    {
+      "player": "Nikola Jokić",
+      "team": "DEN",
+      "game": "DEN @ UTAH",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/nikola-jokic",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-denver-nuggets-at-utah-jazz#props",
+      "points_market": {
+        "DK": {
+          "line": 27.5,
+          "over_american": -104,
+          "under_american": -122,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8197
+        },
+        "FD": {
+          "line": 26.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 27.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 26.5,
+          "over_american": -127,
+          "under_american": -107,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9346
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -170,
+          "under_american": 117,
+          "over_decimal": 1.5882,
+          "under_decimal": 2.17
+        }
+      },
+      "original_offer_position": 54
+    },
+    {
+      "player": "Spencer Jones",
+      "team": "DEN",
+      "game": "DEN @ UTAH",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/spencer-jones",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-denver-nuggets-at-utah-jazz#props",
+      "points_market": {
+        "KAL": {
+          "line": 4.5,
+          "over_american": 100,
+          "under_american": -163,
+          "over_decimal": 2.0,
+          "under_decimal": 1.6135
+        }
+      },
+      "original_offer_position": 55
+    },
+    {
+      "player": "Brandin Podziemski",
+      "team": "GS",
+      "game": "GS @ POR",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/brandin-podziemski",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-golden-state-warriors-at-portland-trail-blazers#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -122,
+          "under_american": -105,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 16.5,
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -156,
+          "under_american": 113,
+          "over_decimal": 1.641,
+          "under_decimal": 2.13
+        }
+      },
+      "original_offer_position": 56
+    },
+    {
+      "player": "Charles Bassey",
+      "team": "GS",
+      "game": "GS @ POR",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/charles-bassey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-golden-state-warriors-at-portland-trail-blazers#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": 106,
+          "under_american": -135,
+          "over_decimal": 2.06,
+          "under_decimal": 1.7407
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        }
+      },
+      "original_offer_position": 57
+    },
+    {
+      "player": "Damian Lillard",
+      "team": "POR",
+      "game": "GS @ POR",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/damian-lillard",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-golden-state-warriors-at-portland-trail-blazers#props",
+      "points_market": {
+        "DK": {
+          "line": 21.5,
+          "over_american": -105,
+          "under_american": -122,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8197
+        },
+        "FD": {
+          "line": 21.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 21.5,
+          "over_american": -106,
+          "under_american": -127,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -163,
+          "under_american": 108,
+          "over_decimal": 1.6135,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 58
+    }
+  ]
+}

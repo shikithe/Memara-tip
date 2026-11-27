@@ -1,0 +1,664 @@
+{
+  "date": "2026-11-27",
+  "list_number": 8,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-27T17:39:53.979879+00:00",
+  "total_offers": 142,
+  "group_size": 14,
+  "original_positions": [
+    101,
+    114
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Mikal Bridges",
+      "team": "NY",
+      "game": "MIA @ NY",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/mikal-bridges",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-miami-heat-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -115,
+          "under_american": -109,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -122,
+          "under_american": -110,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9091
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 144,
+          "under_american": -213,
+          "over_decimal": 2.44,
+          "under_decimal": 1.4695
+        }
+      },
+      "original_offer_position": 101
+    },
+    {
+      "player": "Pelle Larsson",
+      "team": "MIA",
+      "game": "MIA @ NY",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:00PM",
+      "player_url": "https://betsharp.com/nba/player/pelle-larsson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-miami-heat-at-new-york-knicks#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -122,
+          "under_american": -104,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        }
+      },
+      "original_offer_position": 102
+    },
+    {
+      "player": "Ausar Thompson",
+      "team": "DET",
+      "game": "MIL @ DET",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/ausar-thompson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-milwaukee-bucks-at-detroit-pistons#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -103,
+          "under_american": -123,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.813
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": 100,
+          "under_american": -135,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7407
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -117,
+          "under_american": -115,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8696
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 186,
+          "under_american": -257,
+          "over_decimal": 2.86,
+          "under_decimal": 1.3891
+        }
+      },
+      "original_offer_position": 103
+    },
+    {
+      "player": "Brayden Burries",
+      "team": "MIL",
+      "game": "MIL @ DET",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/brayden-burries",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-milwaukee-bucks-at-detroit-pistons#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -125,
+          "under_american": -102,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9804
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -122,
+          "under_american": -113,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.885
+        }
+      },
+      "original_offer_position": 104
+    },
+    {
+      "player": "Daniss Jenkins",
+      "team": "DET",
+      "game": "MIL @ DET",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/daniss-jenkins",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-milwaukee-bucks-at-detroit-pistons#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -102,
+          "under_american": -125,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": 104,
+          "under_american": -138,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7246
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 133,
+          "under_american": -186,
+          "over_decimal": 2.33,
+          "under_decimal": 1.5376
+        }
+      },
+      "original_offer_position": 105
+    },
+    {
+      "player": "Isaiah Joe",
+      "team": "DET",
+      "game": "MIL @ DET",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/isaiah-joe",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-milwaukee-bucks-at-detroit-pistons#props",
+      "points_market": {
+        "DK": {
+          "line": 16.5,
+          "over_american": -103,
+          "under_american": -124,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 16.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 16.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -156,
+          "under_american": 117,
+          "over_decimal": 1.641,
+          "under_decimal": 2.17
+        }
+      },
+      "original_offer_position": 106
+    },
+    {
+      "player": "Jaime Jaquez Jr.",
+      "team": "MIL",
+      "game": "MIL @ DET",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/jaime-jaquez",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-milwaukee-bucks-at-detroit-pistons#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -121,
+          "under_american": -105,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -105,
+          "under_american": -129,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 144,
+          "under_american": -213,
+          "over_decimal": 2.44,
+          "under_decimal": 1.4695
+        }
+      },
+      "original_offer_position": 107
+    },
+    {
+      "player": "John Collins",
+      "team": "DET",
+      "game": "MIL @ DET",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/john-collins",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-milwaukee-bucks-at-detroit-pistons#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -119,
+          "under_american": -107,
+          "over_decimal": 1.8403,
+          "under_decimal": 1.9346
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -203,
+          "under_american": 138,
+          "over_decimal": 1.4926,
+          "under_decimal": 2.38
+        }
+      },
+      "original_offer_position": 108
+    },
+    {
+      "player": "Kevin Huerter",
+      "team": "DET",
+      "game": "MIL @ DET",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/kevin-huerter",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-milwaukee-bucks-at-detroit-pistons#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -124,
+          "under_american": -103,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9709
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -122,
+          "under_american": -110,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9091
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 117,
+          "under_american": -144,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 109
+    },
+    {
+      "player": "Kyle Kuzma",
+      "team": "MIL",
+      "game": "MIL @ DET",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/kyle-kuzma",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-milwaukee-bucks-at-detroit-pistons#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -102,
+          "under_american": -125,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -103,
+          "under_american": -132,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.7576
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 156,
+          "under_american": -223,
+          "over_decimal": 2.56,
+          "under_decimal": 1.4484
+        }
+      },
+      "original_offer_position": 110
+    },
+    {
+      "player": "Myles Turner",
+      "team": "MIL",
+      "game": "MIL @ DET",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/myles-turner",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-milwaukee-bucks-at-detroit-pistons#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": 101,
+          "under_american": -129,
+          "over_decimal": 2.01,
+          "under_decimal": 1.7752
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 133,
+          "under_american": -186,
+          "over_decimal": 2.33,
+          "under_decimal": 1.5376
+        }
+      },
+      "original_offer_position": 111
+    },
+    {
+      "player": "Paul Reed",
+      "team": "DET",
+      "game": "MIL @ DET",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/paul-reed",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-milwaukee-bucks-at-detroit-pistons#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -121,
+          "under_american": -106,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -120,
+          "under_american": -113,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.885
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 156,
+          "under_american": -213,
+          "over_decimal": 2.56,
+          "under_decimal": 1.4695
+        }
+      },
+      "original_offer_position": 112
+    },
+    {
+      "player": "Ryan Rollins",
+      "team": "MIL",
+      "game": "MIL @ DET",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/ryan-rollins",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-milwaukee-bucks-at-detroit-pistons#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -101,
+          "under_american": -126,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7937
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -133,
+          "under_american": -108,
+          "over_decimal": 1.7519,
+          "under_decimal": 1.9259
+        }
+      },
+      "original_offer_position": 113
+    },
+    {
+      "player": "Tyler Herro",
+      "team": "MIL",
+      "game": "MIL @ DET",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 7:30PM",
+      "player_url": "https://betsharp.com/nba/player/tyler-herro",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-milwaukee-bucks-at-detroit-pistons#props",
+      "points_market": {
+        "DK": {
+          "line": 20.5,
+          "over_american": -111,
+          "under_american": -114,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 20.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 20.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -144,
+          "under_american": 104,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 114
+    }
+  ]
+}

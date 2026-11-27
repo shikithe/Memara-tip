@@ -1,0 +1,657 @@
+{
+  "date": "2026-11-27",
+  "list_number": 6,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-27T17:39:53.979879+00:00",
+  "total_offers": 142,
+  "group_size": 14,
+  "original_positions": [
+    73,
+    86
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Julian Champagnie",
+      "team": "SA",
+      "game": "LAL @ SA",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/julian-champagnie",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-los-angeles-lakers-at-san-antonio-spurs#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -117,
+          "under_american": -109,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": 102,
+          "under_american": -137,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7299
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -163,
+          "under_american": 117,
+          "over_decimal": 1.6135,
+          "under_decimal": 2.17
+        }
+      },
+      "original_offer_position": 73
+    },
+    {
+      "player": "Luka Doncic",
+      "team": "LAL",
+      "game": "LAL @ SA",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/luka-doncic",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-los-angeles-lakers-at-san-antonio-spurs#props",
+      "points_market": {
+        "DK": {
+          "line": 34.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 33.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "MGM": {
+          "line": 33.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 33.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 34.5,
+          "over_american": -104,
+          "under_american": -122,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8197
+        }
+      },
+      "original_offer_position": 74
+    },
+    {
+      "player": "Matisse Thybulle",
+      "team": "LAL",
+      "game": "LAL @ SA",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/matisse-thybulle",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-los-angeles-lakers-at-san-antonio-spurs#props",
+      "points_market": {
+        "DK": {
+          "line": 6.5,
+          "over_american": -116,
+          "under_american": -109,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 6.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "BR": {
+          "line": 6.5,
+          "over_american": -122,
+          "under_american": -112,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -245,
+          "under_american": 163,
+          "over_decimal": 1.4082,
+          "under_decimal": 2.63
+        }
+      },
+      "original_offer_position": 75
+    },
+    {
+      "player": "Quentin Grimes",
+      "team": "LAL",
+      "game": "LAL @ SA",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/quentin-grimes",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-los-angeles-lakers-at-san-antonio-spurs#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -119,
+          "under_american": -107,
+          "over_decimal": 1.8403,
+          "under_decimal": 1.9346
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -117,
+          "under_american": -117,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -163,
+          "under_american": 117,
+          "over_decimal": 1.6135,
+          "under_decimal": 2.17
+        }
+      },
+      "original_offer_position": 76
+    },
+    {
+      "player": "Stephon Castle",
+      "team": "SA",
+      "game": "LAL @ SA",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/stephon-castle",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-los-angeles-lakers-at-san-antonio-spurs#props",
+      "points_market": {
+        "DK": {
+          "line": 16.5,
+          "over_american": -124,
+          "under_american": -103,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9709
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 16.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -107,
+          "under_american": -127,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -213,
+          "under_american": 127,
+          "over_decimal": 1.4695,
+          "under_decimal": 2.27
+        }
+      },
+      "original_offer_position": 77
+    },
+    {
+      "player": "Victor Wembanyama",
+      "team": "SA",
+      "game": "LAL @ SA",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/victor-wembanyama",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-los-angeles-lakers-at-san-antonio-spurs#props",
+      "points_market": {
+        "DK": {
+          "line": 30.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 30.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 31.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 30.5,
+          "over_american": -143,
+          "under_american": 107,
+          "over_decimal": 1.6993,
+          "under_decimal": 2.07
+        },
+        "KAL": {
+          "line": 29.5,
+          "over_american": -144,
+          "under_american": 100,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.0
+        }
+      },
+      "original_offer_position": 78
+    },
+    {
+      "player": "Walker Kessler",
+      "team": "LAL",
+      "game": "LAL @ SA",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 9:30PM",
+      "player_url": "https://betsharp.com/nba/player/walker-kessler",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-los-angeles-lakers-at-san-antonio-spurs#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -122,
+          "under_american": -105,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -160,
+          "under_american": 120,
+          "over_decimal": 1.625,
+          "under_decimal": 2.2
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": 100,
+          "under_american": -136,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7353
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 150,
+          "under_american": -233,
+          "over_decimal": 2.5,
+          "under_decimal": 1.4292
+        }
+      },
+      "original_offer_position": 79
+    },
+    {
+      "player": "Ayo Dosunmu",
+      "team": "MIN",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/ayo-dosunmu",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -123,
+          "under_american": -102,
+          "over_decimal": 1.813,
+          "under_decimal": 1.9804
+        },
+        "FD": {
+          "line": 19.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 19.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -121,
+          "under_american": -112,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -117,
+          "under_american": -113,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.885
+        }
+      },
+      "original_offer_position": 80
+    },
+    {
+      "player": "Cam Spencer",
+      "team": "MEM",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/cam-spencer",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -127,
+          "under_american": 100,
+          "over_decimal": 1.7874,
+          "under_decimal": 2.0
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -130,
+          "under_american": 102,
+          "over_decimal": 1.7692,
+          "under_decimal": 2.02
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -104,
+          "under_american": -130,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7692
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -133,
+          "under_american": 108,
+          "over_decimal": 1.7519,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 81
+    },
+    {
+      "player": "Cedric Coward",
+      "team": "MEM",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/cedric-coward",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 16.5,
+          "over_american": -106,
+          "under_american": -121,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 16.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -120,
+          "under_american": -111,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 16.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -163,
+          "under_american": 113,
+          "over_decimal": 1.6135,
+          "under_decimal": 2.13
+        }
+      },
+      "original_offer_position": 82
+    },
+    {
+      "player": "Jaden McDaniels",
+      "team": "MIN",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/jaden-mcdaniels",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 19.5,
+          "over_american": -104,
+          "under_american": -124,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8065
+        },
+        "FD": {
+          "line": 19.5,
+          "over_american": -120,
+          "under_american": -108,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 19.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 19.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        }
+      },
+      "original_offer_position": 83
+    },
+    {
+      "player": "Jaylen Wells",
+      "team": "MEM",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/jaylen-wells",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -104,
+          "under_american": -121,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -134,
+          "under_american": 100,
+          "over_decimal": 1.7463,
+          "under_decimal": 2.0
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -144,
+          "under_american": 100,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.0
+        }
+      },
+      "original_offer_position": 84
+    },
+    {
+      "player": "Jonathan Kuminga",
+      "team": "MIN",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/jonathan-kuminga",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -127,
+          "under_american": 100,
+          "over_decimal": 1.7874,
+          "under_decimal": 2.0
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -132,
+          "under_american": 102,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.02
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -115,
+          "under_american": -117,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8547
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -117,
+          "under_american": -113,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.885
+        }
+      },
+      "original_offer_position": 85
+    },
+    {
+      "player": "Kris Murray",
+      "team": "MEM",
+      "game": "MEM @ MIN",
+      "game_date_et": "2026-11-27",
+      "game_time_et": "Fri 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/kris-murray",
+      "game_url": "https://betsharp.com/nba/game/2026-11-27-memphis-grizzlies-at-minnesota-timberwolves#props",
+      "points_market": {
+        "DK": {
+          "line": 5.5,
+          "over_american": -135,
+          "under_american": 106,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.06
+        },
+        "FD": {
+          "line": 5.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 5.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 5.5,
+          "over_american": -137,
+          "under_american": 102,
+          "over_decimal": 1.7299,
+          "under_decimal": 2.02
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -186,
+          "under_american": 122,
+          "over_decimal": 1.5376,
+          "under_decimal": 2.22
+        }
+      },
+      "original_offer_position": 86
+    }
+  ]
+}
