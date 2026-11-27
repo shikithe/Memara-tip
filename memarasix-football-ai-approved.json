@@ -1,44 +1,44 @@
 {
-  "date": "2026-11-25",
+  "date": "2026-11-27",
   "approval_source": "chatgpt_ai_analyst",
   "publication_allowed": true,
-  "approved_at_utc": "2026-11-25T16:18:54.606Z",
-  "approval_mode": "manual_B_only_existing_A_preserved",
-  "source_fingerprint": "b5b3adef0240fcbfb37af9cad7b1e31cb99bf70edad7b24df33ed8229122ab15",
-  "review_url": "https://github.com/shikithe/Slavojka/blob/main/shared/agent/detailed-ai-b-review-2026-11-25.json",
+  "approved_at_utc": "2026-11-27T11:30:39Z",
+  "approval_mode": "simplified_B_first_from_verified_FairXG_TOP10",
+  "source_fingerprint": "5bfe79d6e3e112ff8019932c0bdacdc55f39eec3a129b12537ed91e49392586c",
+  "review_url": "https://github.com/shikithe/Slavojka/blob/main/shared/agent/fairxg-top10-2026-11-27.json",
   "tickets": [
     {
       "id": "B",
-      "combined_odds": 2.0064,
-      "analysis": "B po matematičkoj vjerovatnoći 3+ iz TOP10, bez preklapanja s već objavljenim A. Brugge–Liverpool (67,8%; kvota 1,32), Sporting–Manchester United (61,1%; kvota 1,52); ukupno 2,0064. Više rangirani par Brugge–Slavia ima ukupno 1,9404 i ne prolazi minimalnu kvotu 2. FairXG: 73% odnosno 67%; zbirne procjene 70,4% i 64,05%. NEGATIVAN EV na oba para: −7,07% i −2,64%. Izbor je na korisnikov zahtjev prema vjerovatnoći, ne pozitivnom EV-u. UEFA izostanci provjereni; kladioničarski račun i konačne postave nisu potvrđeni. Virtuelni tiket.",
+      "combined_odds": 2.5021,
+      "analysis": "Prema korisnikovom jednostavnom pravilu iz aktuelnog FairXG TOP10 prvo se bira B: dva najviša procenta za 3+ na različitim utakmicama, s ukupnom kvotom 2–3. Birani Columbus Crew - Inter Miami CF (79% @1.31) i Nottingham Forest - Chelsea (54% @1.91); ukupno 2.5021. Više rangirani partneri uz Columbus nisu ispunili uslov kombinovane kvote 2. Kvote preuzete iz današnje active-list/TipsterArea ponude, nisu direktno potvrđene kod kladionice; FairXG procjene nisu garantovani ishodi. Virtuelni tiket; čuva se rezerva za NBA C.",
       "matches": [
         {
-          "fixture_id": "espn:football:uefa.champions:401915292",
-          "match": "Club Brugge - Liverpool",
-          "datetime": "2026-11-25T20:00:00Z",
+          "fixture_id": "espn:football:usa.1:401933727",
+          "match": "Columbus Crew - Inter Miami CF",
+          "datetime": "2026-11-28T01:00:00Z",
           "pick": "3+",
-          "odd": 1.32,
-          "bookmaker": "1xBet (TipsterArea)",
-          "source": "https://tipsterarea.com/match/club-brugge-liverpool-champions-league-group-stage-956876",
-          "quote_checked_at_utc": "2026-11-25T16:18:54.606Z",
-          "math_probability_pct": 67.8,
-          "fairxg_probability_pct": 73,
-          "final_ev_pct": -7.07,
-          "analysis": "Brugge 9/10, Liverpool 7/10 posljednjih utakmica s 3+ prema FairXG-u. Matematički Scout 67,8%, FairXG 73%, EV −7,07% na kvoti 1,32. UEFA potvrđuje važne izostanke."
+          "odd": 1.31,
+          "bookmaker": "TipsterArea public bookmaker",
+          "source": "https://tipsterarea.com/match/columbus-crew-inter-miami-playoff-usa-957270",
+          "quote_checked_at_utc": "2026-11-27T11:30:39Z",
+          "fairxg_source": "https://fairxg.com/sport/football/match/columbus-crew-vs-inter-miami",
+          "fairxg_probability_pct": 79,
+          "final_ev_pct": 3.49,
+          "analysis": "FairXG navodi 79% za 3+; izvorna javna TipsterArea kvota 1,31. Prednost najveća procjena 3+ u TOP10; rizik je što je tržište golova neizvjesno i kvota niža."
         },
         {
-          "fixture_id": "espn:football:uefa.champions:401915373",
-          "match": "Sporting CP - Manchester United",
-          "datetime": "2026-11-25T20:00:00Z",
+          "fixture_id": "espn:football:eng.1:401879225",
+          "match": "Nottingham Forest - Chelsea",
+          "datetime": "2026-11-27T20:00:00Z",
           "pick": "3+",
-          "odd": 1.52,
-          "bookmaker": "1xBet (TipsterArea)",
-          "source": "https://tipsterarea.com/match/sporting-cp-manchester-united-champions-league-group-stage-956881",
-          "quote_checked_at_utc": "2026-11-25T16:18:54.606Z",
-          "math_probability_pct": 61.1,
-          "fairxg_probability_pct": 67,
-          "final_ev_pct": -2.64,
-          "analysis": "Scout 61,1%, FairXG 67%, EV −2,64% na javnoj kvoti 1,52. United je primio 15 golova u zadnjih pet mečeva. UEFA navodi izostanke kod oba tima."
+          "odd": 1.91,
+          "bookmaker": "TipsterArea public bookmaker",
+          "source": "https://tipsterarea.com/match/nottingham-chelsea-premier-league-england-957046",
+          "quote_checked_at_utc": "2026-11-27T11:30:39Z",
+          "fairxg_source": "https://fairxg.com/sport/football/match/nott-m-forest-vs-chelsea",
+          "fairxg_probability_pct": 54,
+          "final_ev_pct": 3.14,
+          "analysis": "FairXG navodi 54% za 3+; izvorna javna TipsterArea kvota 1,91. Uz Columbus je ovo najviši drugi 3+ procenat koji kombinaciju diže u 2–3; rizik je procjena bliska 50%."
         }
       ]
     }
