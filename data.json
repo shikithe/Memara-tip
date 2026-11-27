@@ -1,17 +1,67 @@
 {
   "date": "2026-11-27",
-  "published": "Čeka validnu objavu: 12:00 Europe/Sarajevo",
-  "publication_type": "awaiting_daily_publication",
+  "published": "27.11.2026. u 12:31 (Europe/Sarajevo)",
+  "publication_type": "independent_ai_espn_only_github_publisher",
   "bank_before": 382.85,
-  "daily_stake": 0,
-  "bank_after": 382.85,
-  "bank_after_stakes": 382.85,
+  "daily_stake": 9.04,
+  "bank_after": 373.81,
+  "bank_after_stakes": 373.81,
   "provisional": false,
-  "settled": true,
+  "settled": false,
   "odds_verified": false,
-  "tickets": [],
+  "tickets": [
+    {
+      "id": "B",
+      "combined_odds": 2.5021,
+      "analysis": "Prema korisnikovom jednostavnom pravilu iz aktuelnog FairXG TOP10 prvo se bira B: dva najviša procenta za 3+ na različitim utakmicama, s ukupnom kvotom 2–3. Birani Columbus Crew - Inter Miami CF (79% @1.31) i Nottingham Forest - Chelsea (54% @1.91); ukupno 2.5021. Više rangirani partneri uz Columbus nisu ispunili uslov kombinovane kvote 2. Kvote preuzete iz današnje active-list/TipsterArea ponude, nisu direktno potvrđene kod kladionice; FairXG procjene nisu garantovani ishodi. Virtuelni tiket; čuva se rezerva za NBA C.",
+      "matches": [
+        {
+          "fixture_id": "espn:football:usa.1:401933727",
+          "match": "Columbus Crew - Inter Miami CF",
+          "datetime": "2026-11-28T01:00:00Z",
+          "pick": "3+",
+          "odd": 1.31,
+          "bookmaker": "TipsterArea public bookmaker",
+          "source": "https://tipsterarea.com/match/columbus-crew-inter-miami-playoff-usa-957270",
+          "quote_checked_at_utc": "2026-11-27T11:30:39Z",
+          "fairxg_source": "https://fairxg.com/sport/football/match/columbus-crew-vs-inter-miami",
+          "fairxg_probability_pct": 79,
+          "final_ev_pct": 3.49,
+          "analysis": "FairXG navodi 79% za 3+; izvorna javna TipsterArea kvota 1,31. Prednost najveća procjena 3+ u TOP10; rizik je što je tržište golova neizvjesno i kvota niža."
+        },
+        {
+          "fixture_id": "espn:football:eng.1:401879225",
+          "match": "Nottingham Forest - Chelsea",
+          "datetime": "2026-11-27T20:00:00Z",
+          "pick": "3+",
+          "odd": 1.91,
+          "bookmaker": "TipsterArea public bookmaker",
+          "source": "https://tipsterarea.com/match/nottingham-chelsea-premier-league-england-957046",
+          "quote_checked_at_utc": "2026-11-27T11:30:39Z",
+          "fairxg_source": "https://fairxg.com/sport/football/match/nott-m-forest-vs-chelsea",
+          "fairxg_probability_pct": 54,
+          "final_ev_pct": 3.14,
+          "analysis": "FairXG navodi 54% za 3+; izvorna javna TipsterArea kvota 1,91. Uz Columbus je ovo najviši drugi 3+ procenat koji kombinaciju diže u 2–3; rizik je procjena bliska 50%."
+        }
+      ],
+      "stake": 9.04,
+      "status": "objavljen",
+      "payout": 0
+    }
+  ],
   "total_payout": 0,
   "net_change": 0,
   "analysis_status": "Prethodni tiket je u arhivi. Današnji tiketi još nisu objavljeni.",
-  "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter"
+  "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",
+  "published_at_utc": "2026-11-27T11:31:11.065718+00:00",
+  "daily_budget": 38.29,
+  "football_ab_budget": 32.54,
+  "reserved_nba_c_budget": 5.74,
+  "pending_ticket_statuses": {
+    "B": "objavljen"
+  },
+  "pending_ticket_reasons": {
+    "B": ""
+  },
+  "odds_verification_note": "AI-provided selections are reproduced verbatim; GitHub does not check ESPN, markets or quotes."
 }
