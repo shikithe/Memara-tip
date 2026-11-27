@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "updated_at_utc": "2026-11-27T12:27:46.163539+00:00",
+  "updated_at_utc": "2026-11-27T19:55:47.225024+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -30,26 +30,26 @@
       "index": 0,
       "home": "FC Groningen",
       "away": "Willem II",
-      "state": "scheduled",
+      "state": "live",
       "fixture_id": "espn:football:ned.1:401875536",
-      "score": "0:0",
+      "score": "0:1",
       "source": "espn-public-unofficial",
       "event_id": "401875536",
       "league": "ned.1",
-      "minute": null
+      "minute": "45"
     },
     {
       "ticket": "A",
       "index": 1,
       "home": "Werder Bremen",
       "away": "Borussia Mönchengladbach",
-      "state": "scheduled",
+      "state": "live",
       "fixture_id": "espn:football:ger.1:401884720",
       "score": "0:0",
       "source": "espn-public-unofficial",
       "event_id": "401884720",
       "league": "ger.1",
-      "minute": null
+      "minute": "25"
     }
   ],
   "bank_unchanged": true
