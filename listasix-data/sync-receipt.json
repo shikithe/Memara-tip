@@ -1,8 +1,8 @@
 {
-  "date": "2026-11-26",
-  "active_sha256": "6abaeb8638180e1a6cb09ed10ae7da1d4e23171f7e17e82d2702670a68d7ed70",
-  "history_sha256": "c607fd0469466794a6354a18599cb5aa528ebd0dcf69c1c47b7982c037dbf6b3",
-  "fixtures": 37,
+  "date": "2026-11-27",
+  "active_sha256": "bb0ebda0c254b8a9764ca9445b8003551f4c248cb43394eb2f3ed63986642c5c",
+  "history_sha256": "ec18f7526c7829ab09e5dcf6f333cc002f110de7dfaa975d8c2597ba87db2d7b",
+  "fixtures": 13,
   "source": "shikithe/Slavojka:shared/active-list.json",
-  "synced_at_utc": "2026-11-26T18:29:28.219979+00:00"
+  "synced_at_utc": "2026-11-27T18:16:14.911043+00:00"
 }
