@@ -1,0 +1,288 @@
+{
+  "date": "2026-11-28",
+  "list_number": 8,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-28T16:25:27.170798+00:00",
+  "total_offers": 60,
+  "group_size": 6,
+  "original_positions": [
+    43,
+    48
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Kyshawn George",
+      "team": "WSH",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/kyshawn-george",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 16.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 16.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -132,
+          "under_american": -103,
+          "over_decimal": 1.7576,
+          "under_decimal": 1.9709
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -170,
+          "under_american": 138,
+          "over_decimal": 1.5882,
+          "under_decimal": 2.38
+        }
+      },
+      "original_offer_position": 43
+    },
+    {
+      "player": "Trae Young",
+      "team": "WSH",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/trae-young",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -116,
+          "under_american": -110,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -104,
+          "under_american": -130,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7692
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -144,
+          "under_american": 117,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.17
+        }
+      },
+      "original_offer_position": 44
+    },
+    {
+      "player": "Tristan da Silva",
+      "team": "ORL",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/tristan-da-silva",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -102,
+          "under_american": -125,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 163,
+          "under_american": -213,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4695
+        }
+      },
+      "original_offer_position": 45
+    },
+    {
+      "player": "Wendell Carter Jr.",
+      "team": "ORL",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/wendell-carter",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -125,
+          "under_american": -102,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9804
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -120,
+          "under_american": -111,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -194,
+          "under_american": 144,
+          "over_decimal": 1.5155,
+          "under_decimal": 2.44
+        }
+      },
+      "original_offer_position": 46
+    },
+    {
+      "player": "Alperen Sengun",
+      "team": "HOU",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/alperen-sengun",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 20.5,
+          "over_american": -110,
+          "under_american": -116,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8621
+        },
+        "FD": {
+          "line": 20.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 20.5,
+          "over_american": -122,
+          "under_american": -110,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9091
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -138,
+          "under_american": 108,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 47
+    },
+    {
+      "player": "Amen Thompson",
+      "team": "HOU",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/amen-thompson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 16.5,
+          "over_american": -104,
+          "under_american": -125,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -136,
+          "under_american": 102,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.02
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -127,
+          "under_american": -107,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9346
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -178,
+          "under_american": 138,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.38
+        }
+      },
+      "original_offer_position": 48
+    }
+  ]
+}

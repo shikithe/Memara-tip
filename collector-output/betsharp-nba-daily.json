@@ -3,12 +3,2652 @@
   "source": "BetSharp",
   "source_url": "https://betsharp.com/nba/props?m=points",
   "market": "player_points",
-  "game_date_et": null,
-  "collected_at_utc": null,
-  "player_count": 0,
-  "offers": [],
-  "status": "awaiting_daily_refresh",
-  "clearance_date_et": "2026-11-28",
-  "cleared_at_utc": "2026-11-28T16:25:24.266673+00:00",
-  "note": "Active offer cleared; historical captures and tickets unchanged."
+  "game_date_et": "2026-11-28",
+  "collected_at_utc": "2026-11-28T16:25:27.170798+00:00",
+  "player_count": 60,
+  "status": "ok",
+  "note": "Market snapshot only; player participation and odds require re-verification.",
+  "offers": [
+    {
+      "player": "Brandon Miller",
+      "team": "CHA",
+      "game": "BKN @ CHA",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/brandon-miller",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-brooklyn-nets-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 21.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 21.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 21.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 21.5,
+          "over_american": -105,
+          "under_american": -129,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -186,
+          "under_american": 138,
+          "over_decimal": 1.5376,
+          "under_decimal": 2.38
+        }
+      }
+    },
+    {
+      "player": "Coby White",
+      "team": "CHA",
+      "game": "BKN @ CHA",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/coby-white",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-brooklyn-nets-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -107,
+          "under_american": -120,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 144,
+          "under_american": -194,
+          "over_decimal": 2.44,
+          "under_decimal": 1.5155
+        }
+      }
+    },
+    {
+      "player": "Danny Wolf",
+      "team": "BKN",
+      "game": "BKN @ CHA",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/danny-wolf",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-brooklyn-nets-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -111,
+          "under_american": -114,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 163,
+          "under_american": -203,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4926
+        }
+      }
+    },
+    {
+      "player": "Day'Ron Sharpe",
+      "team": "BKN",
+      "game": "BKN @ CHA",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/dayron-sharpe",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-brooklyn-nets-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -104,
+          "under_american": -126,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7937
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -136,
+          "under_american": 102,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.02
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 138,
+          "under_american": -170,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5882
+        }
+      }
+    },
+    {
+      "player": "Grayson Allen",
+      "team": "CHA",
+      "game": "BKN @ CHA",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/grayson-allen",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-brooklyn-nets-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 163,
+          "under_american": -203,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4926
+        }
+      }
+    },
+    {
+      "player": "Julius Randle",
+      "team": "BKN",
+      "game": "BKN @ CHA",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/julius-randle",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-brooklyn-nets-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 19.5,
+          "over_american": -120,
+          "under_american": -106,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 19.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 19.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -138,
+          "under_american": 108,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.08
+        }
+      }
+    },
+    {
+      "player": "Michael Porter Jr.",
+      "team": "BKN",
+      "game": "BKN @ CHA",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/michael-porter",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-brooklyn-nets-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -120,
+          "under_american": -107,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9346
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 18.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 117,
+          "under_american": -144,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6944
+        }
+      }
+    },
+    {
+      "player": "Moussa Diabate",
+      "team": "CHA",
+      "game": "BKN @ CHA",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/moussa-diabate",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-brooklyn-nets-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -117,
+          "under_american": -109,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": 110,
+          "under_american": -150,
+          "over_decimal": 2.1,
+          "under_decimal": 1.6667
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -107,
+          "under_american": -127,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        }
+      }
+    },
+    {
+      "player": "Naz Reid",
+      "team": "CHA",
+      "game": "BKN @ CHA",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/naz-reid",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-brooklyn-nets-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 19.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 19.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 19.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 108,
+          "under_american": -133,
+          "over_decimal": 2.08,
+          "under_decimal": 1.7519
+        }
+      }
+    },
+    {
+      "player": "Sion James",
+      "team": "CHA",
+      "game": "BKN @ CHA",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/sion-james",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-brooklyn-nets-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 5.5,
+          "over_american": -110,
+          "under_american": -116,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8621
+        },
+        "FD": {
+          "line": 5.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 5.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 5.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -178,
+          "under_american": 127,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.27
+        }
+      }
+    },
+    {
+      "player": "Aaron Nesmith",
+      "team": "IND",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/aaron-nesmith",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -126,
+          "under_american": -101,
+          "over_decimal": 1.7937,
+          "under_decimal": 1.9901
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 133,
+          "under_american": -186,
+          "over_decimal": 2.33,
+          "under_decimal": 1.5376
+        }
+      }
+    },
+    {
+      "player": "Andrew Nembhard",
+      "team": "IND",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/andrew-nembhard",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -105,
+          "under_american": -122,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8197
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -111,
+          "under_american": -120,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -118,
+          "under_american": -114,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8772
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -163,
+          "under_american": 122,
+          "over_decimal": 1.6135,
+          "under_decimal": 2.22
+        }
+      }
+    },
+    {
+      "player": "Buddy Hield",
+      "team": "CHI",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/buddy-hield",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -121,
+          "under_american": -105,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 113,
+          "under_american": -138,
+          "over_decimal": 2.13,
+          "under_decimal": 1.7246
+        }
+      }
+    },
+    {
+      "player": "Isaac Okoro",
+      "team": "CHI",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/isaac-okoro",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -126,
+          "under_american": -101,
+          "over_decimal": 1.7937,
+          "under_decimal": 1.9901
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -170,
+          "under_american": 127,
+          "over_decimal": 1.5882,
+          "under_decimal": 2.27
+        }
+      }
+    },
+    {
+      "player": "Ivica Zubac",
+      "team": "IND",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/ivica-zubac",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -122,
+          "under_american": -105,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -132,
+          "under_american": -103,
+          "over_decimal": 1.7576,
+          "under_decimal": 1.9709
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 122,
+          "under_american": -163,
+          "over_decimal": 2.22,
+          "under_decimal": 1.6135
+        }
+      }
+    },
+    {
+      "player": "Jalen Smith",
+      "team": "CHI",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jalen-smith",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -107,
+          "under_american": -119,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8403
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -108,
+          "under_american": -127,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -138,
+          "under_american": 108,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.08
+        }
+      }
+    },
+    {
+      "player": "Joshua Giddey",
+      "team": "CHI",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/joshua-giddey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -104,
+          "under_american": -123,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.813
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -136,
+          "under_american": 102,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.02
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -103,
+          "under_american": -132,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.7576
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 127,
+          "under_american": -163,
+          "over_decimal": 2.27,
+          "under_decimal": 1.6135
+        }
+      }
+    },
+    {
+      "player": "Kelly Oubre Jr.",
+      "team": "IND",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/kelly-oubre",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -107,
+          "under_american": -119,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8403
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -111,
+          "under_american": -120,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -108,
+          "under_american": -127,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 122,
+          "under_american": -163,
+          "over_decimal": 2.22,
+          "under_decimal": 1.6135
+        }
+      }
+    },
+    {
+      "player": "Matas Buzelis",
+      "team": "CHI",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/matas-buzelis",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -111,
+          "under_american": -115,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8696
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -108,
+          "under_american": -127,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 108,
+          "under_american": -144,
+          "over_decimal": 2.08,
+          "under_decimal": 1.6944
+        }
+      }
+    },
+    {
+      "player": "Nicolas Claxton",
+      "team": "CHI",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/nicolas-claxton",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -124,
+          "under_american": -103,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9709
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -111,
+          "under_american": -120,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -115,
+          "under_american": -118,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 113,
+          "under_american": -138,
+          "over_decimal": 2.13,
+          "under_decimal": 1.7246
+        }
+      }
+    },
+    {
+      "player": "Pascal Siakam",
+      "team": "IND",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/pascal-siakam",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 23.5,
+          "over_american": -107,
+          "under_american": -119,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8403
+        },
+        "FD": {
+          "line": 23.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 23.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 117,
+          "under_american": -150,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6667
+        }
+      }
+    },
+    {
+      "player": "Tre Jones",
+      "team": "CHI",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/tre-jones",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -124,
+          "under_american": -103,
+          "over_decimal": 1.8065,
+          "under_decimal": 1.9709
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": 100,
+          "under_american": -135,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7407
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -104,
+          "under_american": -130,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7692
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -223,
+          "under_american": 170,
+          "over_decimal": 1.4484,
+          "under_decimal": 2.7
+        }
+      }
+    },
+    {
+      "player": "Ajay Mitchell",
+      "team": "OKC",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/ajay-mitchell",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 18.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 18.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 18.5,
+          "over_american": -107,
+          "under_american": -127,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 113,
+          "under_american": -163,
+          "over_decimal": 2.13,
+          "under_decimal": 1.6135
+        }
+      }
+    },
+    {
+      "player": "Alex Caruso",
+      "team": "OKC",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/alex-caruso",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -120,
+          "under_american": -106,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -129,
+          "under_american": -106,
+          "over_decimal": 1.7752,
+          "under_decimal": 1.9434
+        }
+      }
+    },
+    {
+      "player": "Bennett Stirtz",
+      "team": "OKC",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/bennett-stirtz",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -121,
+          "under_american": -106,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 117,
+          "under_american": -150,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6667
+        }
+      }
+    },
+    {
+      "player": "Isaiah Hartenstein",
+      "team": "OKC",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/isaiah-hartenstein",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -117,
+          "under_american": -109,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -117,
+          "under_american": -115,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8696
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -127,
+          "under_american": -104,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9615
+        }
+      }
+    },
+    {
+      "player": "Jaime Jaquez Jr.",
+      "team": "MIL",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jaime-jaquez",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -116,
+          "under_american": -108,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9259
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -120,
+          "under_american": -111,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 117,
+          "under_american": -144,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6944
+        }
+      }
+    },
+    {
+      "player": "Jared McCain",
+      "team": "OKC",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jared-mccain",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -114,
+          "under_american": -111,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -130,
+          "under_american": 100,
+          "over_decimal": 1.7692,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -138,
+          "under_american": 100,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.0
+        }
+      }
+    },
+    {
+      "player": "Kenrich Williams",
+      "team": "OKC",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/kenrich-williams",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -130,
+          "under_american": 102,
+          "over_decimal": 1.7692,
+          "under_decimal": 2.02
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -127,
+          "under_american": -107,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9346
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -122,
+          "over_decimal": 2.0,
+          "under_decimal": 1.8197
+        }
+      }
+    },
+    {
+      "player": "Kyle Kuzma",
+      "team": "MIL",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/kyle-kuzma",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -105,
+          "under_american": -121,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -120,
+          "under_american": -111,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -104,
+          "under_american": -130,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7692
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 122,
+          "under_american": -156,
+          "over_decimal": 2.22,
+          "under_decimal": 1.641
+        }
+      }
+    },
+    {
+      "player": "Myles Turner",
+      "team": "MIL",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/myles-turner",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -122,
+          "under_american": -104,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -132,
+          "under_american": -103,
+          "over_decimal": 1.7576,
+          "under_decimal": 1.9709
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 104,
+          "under_american": -138,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7246
+        }
+      }
+    },
+    {
+      "player": "Ryan Rollins",
+      "team": "MIL",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/ryan-rollins",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -126,
+          "under_american": -102,
+          "over_decimal": 1.7937,
+          "under_decimal": 1.9804
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -127,
+          "under_american": -107,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9346
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -186,
+          "under_american": 133,
+          "over_decimal": 1.5376,
+          "under_decimal": 2.33
+        }
+      }
+    },
+    {
+      "player": "Shai Gilgeous-Alexander",
+      "team": "OKC",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/shai-gilgeous-alexander",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 32.5,
+          "over_american": -107,
+          "under_american": -119,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8403
+        },
+        "FD": {
+          "line": 32.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 31.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 33.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 34.5,
+          "over_american": 156,
+          "under_american": -194,
+          "over_decimal": 2.56,
+          "under_decimal": 1.5155
+        }
+      }
+    },
+    {
+      "player": "Tyler Herro",
+      "team": "MIL",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/tyler-herro",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 20.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 20.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 20.5,
+          "over_american": -125,
+          "under_american": -109,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9174
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -150,
+          "under_american": 104,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.04
+        }
+      }
+    },
+    {
+      "player": "AJ Dybantsa",
+      "team": "WSH",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/aj-dybantsa",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -101,
+          "under_american": -127,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7874
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -114,
+          "under_american": -120,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 133,
+          "under_american": -163,
+          "over_decimal": 2.33,
+          "under_decimal": 1.6135
+        }
+      }
+    },
+    {
+      "player": "Alexandre Sarr",
+      "team": "WSH",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/alexandre-sarr",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": 103,
+          "under_american": -131,
+          "over_decimal": 2.03,
+          "under_decimal": 1.7634
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": 104,
+          "under_american": -136,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -104,
+          "under_american": -117,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8547
+        }
+      }
+    },
+    {
+      "player": "Anthony Black",
+      "team": "ORL",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/anthony-black",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 14.5,
+          "over_american": -106,
+          "under_american": -121,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -113,
+          "under_american": -108,
+          "over_decimal": 1.885,
+          "under_decimal": 1.9259
+        }
+      }
+    },
+    {
+      "player": "Anthony Davis",
+      "team": "WSH",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/anthony-davis",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 23.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 23.5,
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 22.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 24.5,
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": 113,
+          "under_american": -144,
+          "over_decimal": 2.13,
+          "under_decimal": 1.6944
+        }
+      }
+    },
+    {
+      "player": "Bilal Coulibaly",
+      "team": "WSH",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/bilal-coulibaly",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 6.5,
+          "over_american": -128,
+          "under_american": 100,
+          "over_decimal": 1.7812,
+          "under_decimal": 2.0
+        },
+        "FD": {
+          "line": 6.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "BR": {
+          "line": 6.5,
+          "over_american": -127,
+          "under_american": -107,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9346
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -285,
+          "under_american": 212,
+          "over_decimal": 1.3509,
+          "under_decimal": 3.12
+        }
+      }
+    },
+    {
+      "player": "Desmond Bane",
+      "team": "ORL",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/desmond-bane",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 19.5,
+          "over_american": -102,
+          "under_american": -125,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8
+        },
+        "FD": {
+          "line": 19.5,
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 18.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 19.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 100,
+          "under_american": -122,
+          "over_decimal": 2.0,
+          "under_decimal": 1.8197
+        }
+      }
+    },
+    {
+      "player": "Franz Wagner",
+      "team": "ORL",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/franz-wagner",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 24.5,
+          "over_american": -116,
+          "under_american": -110,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 25.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 24.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 25.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 24.5,
+          "over_american": -122,
+          "under_american": 100,
+          "over_decimal": 1.8197,
+          "under_decimal": 2.0
+        }
+      }
+    },
+    {
+      "player": "Jalen Suggs",
+      "team": "ORL",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/jalen-suggs",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 11.5,
+          "over_american": -111,
+          "under_american": -114,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -213,
+          "under_american": 170,
+          "over_decimal": 1.4695,
+          "under_decimal": 2.7
+        }
+      }
+    },
+    {
+      "player": "Kyshawn George",
+      "team": "WSH",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/kyshawn-george",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 16.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 16.5,
+          "over_american": -118,
+          "under_american": -112,
+          "over_decimal": 1.8475,
+          "under_decimal": 1.8929
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -132,
+          "under_american": -103,
+          "over_decimal": 1.7576,
+          "under_decimal": 1.9709
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -170,
+          "under_american": 138,
+          "over_decimal": 1.5882,
+          "under_decimal": 2.38
+        }
+      }
+    },
+    {
+      "player": "Trae Young",
+      "team": "WSH",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/trae-young",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -116,
+          "under_american": -110,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9091
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -104,
+          "under_american": -130,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7692
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -144,
+          "under_american": 117,
+          "over_decimal": 1.6944,
+          "under_decimal": 2.17
+        }
+      }
+    },
+    {
+      "player": "Tristan da Silva",
+      "team": "ORL",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/tristan-da-silva",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -102,
+          "under_american": -125,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.8
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 163,
+          "under_american": -213,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4695
+        }
+      }
+    },
+    {
+      "player": "Wendell Carter Jr.",
+      "team": "ORL",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/wendell-carter",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -125,
+          "under_american": -102,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9804
+        },
+        "FD": {
+          "line": 11.5,
+          "over_american": -104,
+          "under_american": -128,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7812
+        },
+        "MGM": {
+          "line": 11.5,
+          "over_american": -120,
+          "under_american": -111,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 11.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -194,
+          "under_american": 144,
+          "over_decimal": 1.5155,
+          "under_decimal": 2.44
+        }
+      }
+    },
+    {
+      "player": "Alperen Sengun",
+      "team": "HOU",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/alperen-sengun",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 20.5,
+          "over_american": -110,
+          "under_american": -116,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8621
+        },
+        "FD": {
+          "line": 20.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 20.5,
+          "over_american": -122,
+          "under_american": -110,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9091
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -138,
+          "under_american": 108,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.08
+        }
+      }
+    },
+    {
+      "player": "Amen Thompson",
+      "team": "HOU",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/amen-thompson",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 16.5,
+          "over_american": -104,
+          "under_american": -125,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -136,
+          "under_american": 102,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.02
+        },
+        "MGM": {
+          "line": 15.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -127,
+          "under_american": -107,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9346
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -178,
+          "under_american": 138,
+          "over_decimal": 1.5618,
+          "under_decimal": 2.38
+        }
+      }
+    },
+    {
+      "player": "Anfernee Simons",
+      "team": "PHI",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/anfernee-simons",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -120,
+          "under_american": -106,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -150,
+          "under_american": 122,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.22
+        }
+      }
+    },
+    {
+      "player": "Dominick Barlow",
+      "team": "PHI",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/dominick-barlow",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "BR": {
+          "line": 7.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        }
+      }
+    },
+    {
+      "player": "Fred VanVleet",
+      "team": "HOU",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/fred-vanvleet",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -101,
+          "under_american": -127,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7874
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 133,
+          "under_american": -163,
+          "over_decimal": 2.33,
+          "under_decimal": 1.6135
+        }
+      }
+    },
+    {
+      "player": "Jabari Smith Jr.",
+      "team": "HOU",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/jabari-smith",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -110,
+          "under_american": -117,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 113,
+          "under_american": -144,
+          "over_decimal": 2.13,
+          "under_decimal": 1.6944
+        }
+      }
+    },
+    {
+      "player": "Jabari Walker",
+      "team": "PHI",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/jabari-walker",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -107,
+          "under_american": -119,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8403
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -130,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -103,
+          "under_american": -132,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.7576
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -104,
+          "under_american": -122,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8197
+        }
+      }
+    },
+    {
+      "player": "Kentavious Caldwell-Pope",
+      "team": "PHI",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/kentavious-caldwell-pope",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -121,
+          "under_american": -105,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -136,
+          "under_american": 102,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.02
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": 100,
+          "under_american": -135,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7407
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 150,
+          "under_american": -233,
+          "over_decimal": 2.5,
+          "under_decimal": 1.4292
+        }
+      }
+    },
+    {
+      "player": "Kevin Durant",
+      "team": "HOU",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/kevin-durant",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 20.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 20.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 20.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -150,
+          "under_american": 122,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.22
+        }
+      }
+    },
+    {
+      "player": "Marcus Smart",
+      "team": "HOU",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/marcus-smart",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 5.5,
+          "over_american": -117,
+          "under_american": -112,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 5.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 5.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -194,
+          "under_american": 133,
+          "over_decimal": 1.5155,
+          "under_decimal": 2.33
+        }
+      }
+    },
+    {
+      "player": "Reed Sheppard",
+      "team": "HOU",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/reed-sheppard",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -105,
+          "under_american": -121,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": 106,
+          "under_american": -140,
+          "over_decimal": 2.06,
+          "under_decimal": 1.7143
+        },
+        "BR": {
+          "line": 6.5,
+          "over_american": -122,
+          "under_american": -112,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 203,
+          "under_american": -257,
+          "over_decimal": 3.03,
+          "under_decimal": 1.3891
+        }
+      }
+    },
+    {
+      "player": "Tari Eason",
+      "team": "HOU",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/tari-eason",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -101,
+          "under_american": -126,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7937
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": 104,
+          "under_american": -138,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7246
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -138,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7246
+        }
+      }
+    },
+    {
+      "player": "Tyrese Maxey",
+      "team": "PHI",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/tyrese-maxey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 26.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 27.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 27.5,
+          "over_american": -111,
+          "under_american": -118,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8475
+        },
+        "BR": {
+          "line": 26.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 29.5,
+          "over_american": 144,
+          "under_american": -178,
+          "over_decimal": 2.44,
+          "under_decimal": 1.5618
+        }
+      }
+    },
+    {
+      "player": "VJ Edgecombe",
+      "team": "PHI",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/vj-edgecombe",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 16.5,
+          "over_american": -121,
+          "under_american": -106,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 16.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 16.5,
+          "over_american": -120,
+          "under_american": -113,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.885
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -213,
+          "under_american": 163,
+          "over_decimal": 1.4695,
+          "under_decimal": 2.63
+        }
+      }
+    }
+  ]
 }

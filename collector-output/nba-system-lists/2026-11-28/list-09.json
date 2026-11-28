@@ -1,0 +1,267 @@
+{
+  "date": "2026-11-28",
+  "list_number": 9,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-28T16:25:27.170798+00:00",
+  "total_offers": 60,
+  "group_size": 6,
+  "original_positions": [
+    49,
+    54
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Anfernee Simons",
+      "team": "PHI",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/anfernee-simons",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -120,
+          "under_american": -106,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -150,
+          "under_american": 122,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.22
+        }
+      },
+      "original_offer_position": 49
+    },
+    {
+      "player": "Dominick Barlow",
+      "team": "PHI",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/dominick-barlow",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "BR": {
+          "line": 7.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        }
+      },
+      "original_offer_position": 50
+    },
+    {
+      "player": "Fred VanVleet",
+      "team": "HOU",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/fred-vanvleet",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -101,
+          "under_american": -127,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7874
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -102,
+          "under_american": -130,
+          "over_decimal": 1.9804,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 133,
+          "under_american": -163,
+          "over_decimal": 2.33,
+          "under_decimal": 1.6135
+        }
+      },
+      "original_offer_position": 51
+    },
+    {
+      "player": "Jabari Smith Jr.",
+      "team": "HOU",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/jabari-smith",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -110,
+          "under_american": -117,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -122,
+          "under_american": -108,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9259
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -114,
+          "under_american": -118,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8475
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 113,
+          "under_american": -144,
+          "over_decimal": 2.13,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 52
+    },
+    {
+      "player": "Jabari Walker",
+      "team": "PHI",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/jabari-walker",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -107,
+          "under_american": -119,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8403
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -130,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7692
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -103,
+          "under_american": -132,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.7576
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -104,
+          "under_american": -122,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8197
+        }
+      },
+      "original_offer_position": 53
+    },
+    {
+      "player": "Kentavious Caldwell-Pope",
+      "team": "PHI",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/kentavious-caldwell-pope",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -121,
+          "under_american": -105,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -136,
+          "under_american": 102,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.02
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": 100,
+          "under_american": -135,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7407
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 150,
+          "under_american": -233,
+          "over_decimal": 2.5,
+          "under_decimal": 1.4292
+        }
+      },
+      "original_offer_position": 54
+    }
+  ]
+}

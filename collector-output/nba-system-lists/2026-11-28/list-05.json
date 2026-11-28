@@ -1,0 +1,295 @@
+{
+  "date": "2026-11-28",
+  "list_number": 5,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-28T16:25:27.170798+00:00",
+  "total_offers": 60,
+  "group_size": 6,
+  "original_positions": [
+    25,
+    30
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Bennett Stirtz",
+      "team": "OKC",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/bennett-stirtz",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -121,
+          "under_american": -106,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 117,
+          "under_american": -150,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6667
+        }
+      },
+      "original_offer_position": 25
+    },
+    {
+      "player": "Isaiah Hartenstein",
+      "team": "OKC",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/isaiah-hartenstein",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -117,
+          "under_american": -109,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.9174
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -130,
+          "under_american": -105,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -117,
+          "under_american": -115,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8696
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -127,
+          "under_american": -104,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9615
+        }
+      },
+      "original_offer_position": 26
+    },
+    {
+      "player": "Jaime Jaquez Jr.",
+      "team": "MIL",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jaime-jaquez",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -116,
+          "under_american": -108,
+          "over_decimal": 1.8621,
+          "under_decimal": 1.9259
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -120,
+          "under_american": -111,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 117,
+          "under_american": -144,
+          "over_decimal": 2.17,
+          "under_decimal": 1.6944
+        }
+      },
+      "original_offer_position": 27
+    },
+    {
+      "player": "Jared McCain",
+      "team": "OKC",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jared-mccain",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -114,
+          "under_american": -111,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.9009
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": -130,
+          "under_american": 100,
+          "over_decimal": 1.7692,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 14.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -138,
+          "under_american": 100,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.0
+        }
+      },
+      "original_offer_position": 28
+    },
+    {
+      "player": "Kenrich Williams",
+      "team": "OKC",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/kenrich-williams",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -130,
+          "under_american": 102,
+          "over_decimal": 1.7692,
+          "under_decimal": 2.02
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": 102,
+          "under_american": -136,
+          "over_decimal": 2.02,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 9.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -127,
+          "under_american": -107,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9346
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -122,
+          "over_decimal": 2.0,
+          "under_decimal": 1.8197
+        }
+      },
+      "original_offer_position": 29
+    },
+    {
+      "player": "Kyle Kuzma",
+      "team": "MIL",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/kyle-kuzma",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -105,
+          "under_american": -121,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -120,
+          "under_american": -111,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9009
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -104,
+          "under_american": -130,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7692
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 122,
+          "under_american": -156,
+          "over_decimal": 2.22,
+          "under_decimal": 1.641
+        }
+      },
+      "original_offer_position": 30
+    }
+  ]
+}

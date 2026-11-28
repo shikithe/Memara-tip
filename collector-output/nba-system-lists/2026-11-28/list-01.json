@@ -1,0 +1,295 @@
+{
+  "date": "2026-11-28",
+  "list_number": 1,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-28T16:25:27.170798+00:00",
+  "total_offers": 60,
+  "group_size": 6,
+  "original_positions": [
+    1,
+    6
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Brandon Miller",
+      "team": "CHA",
+      "game": "BKN @ CHA",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/brandon-miller",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-brooklyn-nets-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 21.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 21.5,
+          "over_american": -112,
+          "under_american": -118,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8475
+        },
+        "MGM": {
+          "line": 21.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 21.5,
+          "over_american": -105,
+          "under_american": -129,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -186,
+          "under_american": 138,
+          "over_decimal": 1.5376,
+          "under_decimal": 2.38
+        }
+      },
+      "original_offer_position": 1
+    },
+    {
+      "player": "Coby White",
+      "team": "CHA",
+      "game": "BKN @ CHA",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/coby-white",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-brooklyn-nets-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 17.5,
+          "over_american": -107,
+          "under_american": -120,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 144,
+          "under_american": -194,
+          "over_decimal": 2.44,
+          "under_decimal": 1.5155
+        }
+      },
+      "original_offer_position": 2
+    },
+    {
+      "player": "Danny Wolf",
+      "team": "BKN",
+      "game": "BKN @ CHA",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/danny-wolf",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-brooklyn-nets-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -111,
+          "under_american": -114,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8772
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -130,
+          "under_american": -102,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9804
+        },
+        "MGM": {
+          "line": 7.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 7.5,
+          "over_american": -110,
+          "under_american": -122,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8197
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 163,
+          "under_american": -203,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4926
+        }
+      },
+      "original_offer_position": 3
+    },
+    {
+      "player": "Day'Ron Sharpe",
+      "team": "BKN",
+      "game": "BKN @ CHA",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/dayron-sharpe",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-brooklyn-nets-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -104,
+          "under_american": -126,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.7937
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": -136,
+          "under_american": 102,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.02
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -106,
+          "under_american": -129,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.7752
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 138,
+          "under_american": -170,
+          "over_decimal": 2.38,
+          "under_decimal": 1.5882
+        }
+      },
+      "original_offer_position": 4
+    },
+    {
+      "player": "Grayson Allen",
+      "team": "CHA",
+      "game": "BKN @ CHA",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/grayson-allen",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-brooklyn-nets-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -109,
+          "under_american": -117,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8547
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 163,
+          "under_american": -203,
+          "over_decimal": 2.63,
+          "under_decimal": 1.4926
+        }
+      },
+      "original_offer_position": 5
+    },
+    {
+      "player": "Julius Randle",
+      "team": "BKN",
+      "game": "BKN @ CHA",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 6:00PM",
+      "player_url": "https://betsharp.com/nba/player/julius-randle",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-brooklyn-nets-at-charlotte-hornets#props",
+      "points_market": {
+        "DK": {
+          "line": 19.5,
+          "over_american": -120,
+          "under_american": -106,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 19.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 19.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -138,
+          "under_american": 108,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 6
+    }
+  ]
+}

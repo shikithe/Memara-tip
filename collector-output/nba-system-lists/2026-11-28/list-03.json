@@ -1,0 +1,302 @@
+{
+  "date": "2026-11-28",
+  "list_number": 3,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-28T16:25:27.170798+00:00",
+  "total_offers": 60,
+  "group_size": 6,
+  "original_positions": [
+    13,
+    18
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Buddy Hield",
+      "team": "CHI",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/buddy-hield",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -121,
+          "under_american": -105,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 14.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 113,
+          "under_american": -138,
+          "over_decimal": 2.13,
+          "under_decimal": 1.7246
+        }
+      },
+      "original_offer_position": 13
+    },
+    {
+      "player": "Isaac Okoro",
+      "team": "CHI",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/isaac-okoro",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -126,
+          "under_american": -101,
+          "over_decimal": 1.7937,
+          "under_decimal": 1.9901
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -170,
+          "under_american": 127,
+          "over_decimal": 1.5882,
+          "under_decimal": 2.27
+        }
+      },
+      "original_offer_position": 14
+    },
+    {
+      "player": "Ivica Zubac",
+      "team": "IND",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/ivica-zubac",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 12.5,
+          "over_american": -122,
+          "under_american": -105,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9524
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 12.5,
+          "over_american": -132,
+          "under_american": -103,
+          "over_decimal": 1.7576,
+          "under_decimal": 1.9709
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 122,
+          "under_american": -163,
+          "over_decimal": 2.22,
+          "under_decimal": 1.6135
+        }
+      },
+      "original_offer_position": 15
+    },
+    {
+      "player": "Jalen Smith",
+      "team": "CHI",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/jalen-smith",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 15.5,
+          "over_american": -107,
+          "under_american": -119,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8403
+        },
+        "FD": {
+          "line": 15.5,
+          "over_american": -108,
+          "under_american": -122,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8197
+        },
+        "MGM": {
+          "line": 14.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 15.5,
+          "over_american": -108,
+          "under_american": -127,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -138,
+          "under_american": 108,
+          "over_decimal": 1.7246,
+          "under_decimal": 2.08
+        }
+      },
+      "original_offer_position": 16
+    },
+    {
+      "player": "Joshua Giddey",
+      "team": "CHI",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/joshua-giddey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -104,
+          "under_american": -123,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.813
+        },
+        "FD": {
+          "line": 12.5,
+          "over_american": -136,
+          "under_american": 102,
+          "over_decimal": 1.7353,
+          "under_decimal": 2.02
+        },
+        "MGM": {
+          "line": 12.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -103,
+          "under_american": -132,
+          "over_decimal": 1.9709,
+          "under_decimal": 1.7576
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 127,
+          "under_american": -163,
+          "over_decimal": 2.27,
+          "under_decimal": 1.6135
+        }
+      },
+      "original_offer_position": 17
+    },
+    {
+      "player": "Kelly Oubre Jr.",
+      "team": "IND",
+      "game": "IND @ CHI",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/kelly-oubre",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-indiana-pacers-at-chicago-bulls#props",
+      "points_market": {
+        "DK": {
+          "line": 13.5,
+          "over_american": -107,
+          "under_american": -119,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8403
+        },
+        "FD": {
+          "line": 13.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 13.5,
+          "over_american": -111,
+          "under_american": -120,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8333
+        },
+        "BR": {
+          "line": 13.5,
+          "over_american": -108,
+          "under_american": -127,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.7874
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": 122,
+          "under_american": -163,
+          "over_decimal": 2.22,
+          "under_decimal": 1.6135
+        }
+      },
+      "original_offer_position": 18
+    }
+  ]
+}

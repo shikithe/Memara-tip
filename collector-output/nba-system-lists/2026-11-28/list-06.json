@@ -1,0 +1,295 @@
+{
+  "date": "2026-11-28",
+  "list_number": 6,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-28T16:25:27.170798+00:00",
+  "total_offers": 60,
+  "group_size": 6,
+  "original_positions": [
+    31,
+    36
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Myles Turner",
+      "team": "MIL",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/myles-turner",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 8.5,
+          "over_american": -122,
+          "under_american": -104,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.9615
+        },
+        "FD": {
+          "line": 8.5,
+          "over_american": -132,
+          "under_american": 100,
+          "over_decimal": 1.7576,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -132,
+          "under_american": -103,
+          "over_decimal": 1.7576,
+          "under_decimal": 1.9709
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 104,
+          "under_american": -138,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7246
+        }
+      },
+      "original_offer_position": 31
+    },
+    {
+      "player": "Ryan Rollins",
+      "team": "MIL",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/ryan-rollins",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 10.5,
+          "over_american": -126,
+          "under_american": -102,
+          "over_decimal": 1.7937,
+          "under_decimal": 1.9804
+        },
+        "FD": {
+          "line": 10.5,
+          "over_american": -128,
+          "under_american": -104,
+          "over_decimal": 1.7812,
+          "under_decimal": 1.9615
+        },
+        "MGM": {
+          "line": 10.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 10.5,
+          "over_american": -127,
+          "under_american": -107,
+          "over_decimal": 1.7874,
+          "under_decimal": 1.9346
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -186,
+          "under_american": 133,
+          "over_decimal": 1.5376,
+          "under_decimal": 2.33
+        }
+      },
+      "original_offer_position": 32
+    },
+    {
+      "player": "Shai Gilgeous-Alexander",
+      "team": "OKC",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/shai-gilgeous-alexander",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 32.5,
+          "over_american": -107,
+          "under_american": -119,
+          "over_decimal": 1.9346,
+          "under_decimal": 1.8403
+        },
+        "FD": {
+          "line": 32.5,
+          "over_american": -110,
+          "under_american": -120,
+          "over_decimal": 1.9091,
+          "under_decimal": 1.8333
+        },
+        "MGM": {
+          "line": 31.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 33.5,
+          "over_american": -112,
+          "under_american": -121,
+          "over_decimal": 1.8929,
+          "under_decimal": 1.8264
+        },
+        "KAL": {
+          "line": 34.5,
+          "over_american": 156,
+          "under_american": -194,
+          "over_decimal": 2.56,
+          "under_decimal": 1.5155
+        }
+      },
+      "original_offer_position": 33
+    },
+    {
+      "player": "Tyler Herro",
+      "team": "MIL",
+      "game": "OKC @ MIL",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:00PM",
+      "player_url": "https://betsharp.com/nba/player/tyler-herro",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-oklahoma-city-thunder-at-milwaukee-bucks#props",
+      "points_market": {
+        "DK": {
+          "line": 20.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 20.5,
+          "over_american": -125,
+          "under_american": -106,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9434
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 20.5,
+          "over_american": -125,
+          "under_american": -109,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9174
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -150,
+          "under_american": 104,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.04
+        }
+      },
+      "original_offer_position": 34
+    },
+    {
+      "player": "AJ Dybantsa",
+      "team": "WSH",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/aj-dybantsa",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 18.5,
+          "over_american": -101,
+          "under_american": -127,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7874
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 17.5,
+          "over_american": -115,
+          "under_american": -115,
+          "over_decimal": 1.8696,
+          "under_decimal": 1.8696
+        },
+        "BR": {
+          "line": 17.5,
+          "over_american": -114,
+          "under_american": -120,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": 133,
+          "under_american": -163,
+          "over_decimal": 2.33,
+          "under_decimal": 1.6135
+        }
+      },
+      "original_offer_position": 35
+    },
+    {
+      "player": "Alexandre Sarr",
+      "team": "WSH",
+      "game": "ORL @ WSH",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 5:00PM",
+      "player_url": "https://betsharp.com/nba/player/alexandre-sarr",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-orlando-magic-at-washington-wizards#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": 103,
+          "under_american": -131,
+          "over_decimal": 2.03,
+          "under_decimal": 1.7634
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": 104,
+          "under_american": -136,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7353
+        },
+        "MGM": {
+          "line": 8.5,
+          "over_american": -135,
+          "under_american": 100,
+          "over_decimal": 1.7407,
+          "under_decimal": 2.0
+        },
+        "BR": {
+          "line": 9.5,
+          "over_american": -109,
+          "under_american": -124,
+          "over_decimal": 1.9174,
+          "under_decimal": 1.8065
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": -104,
+          "under_american": -117,
+          "over_decimal": 1.9615,
+          "under_decimal": 1.8547
+        }
+      },
+      "original_offer_position": 36
+    }
+  ]
+}

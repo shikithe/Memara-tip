@@ -1,0 +1,281 @@
+{
+  "date": "2026-11-28",
+  "list_number": 10,
+  "total_lists": 10,
+  "source": "BetSharp",
+  "source_url": "https://betsharp.com/nba/props?m=points",
+  "source_snapshot": "collector-output/betsharp-nba-daily.json",
+  "captured_at_utc": "2026-11-28T16:25:27.170798+00:00",
+  "total_offers": 60,
+  "group_size": 6,
+  "original_positions": [
+    55,
+    60
+  ],
+  "status": "awaiting_scout",
+  "analysis_complete": false,
+  "publication_allowed": false,
+  "offers": [
+    {
+      "player": "Kevin Durant",
+      "team": "HOU",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/kevin-durant",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 20.5,
+          "over_american": -106,
+          "under_american": -120,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8333
+        },
+        "FD": {
+          "line": 20.5,
+          "over_american": -106,
+          "under_american": -125,
+          "over_decimal": 1.9434,
+          "under_decimal": 1.8
+        },
+        "MGM": {
+          "line": 20.5,
+          "over_american": -125,
+          "under_american": -105,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9524
+        },
+        "BR": {
+          "line": 20.5,
+          "over_american": -113,
+          "under_american": -120,
+          "over_decimal": 1.885,
+          "under_decimal": 1.8333
+        },
+        "KAL": {
+          "line": 19.5,
+          "over_american": -150,
+          "under_american": 122,
+          "over_decimal": 1.6667,
+          "under_decimal": 2.22
+        }
+      },
+      "original_offer_position": 55
+    },
+    {
+      "player": "Marcus Smart",
+      "team": "HOU",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/marcus-smart",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 5.5,
+          "over_american": -117,
+          "under_american": -112,
+          "over_decimal": 1.8547,
+          "under_decimal": 1.8929
+        },
+        "FD": {
+          "line": 5.5,
+          "over_american": -120,
+          "under_american": -110,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.9091
+        },
+        "BR": {
+          "line": 5.5,
+          "over_american": -108,
+          "under_american": -125,
+          "over_decimal": 1.9259,
+          "under_decimal": 1.8
+        },
+        "KAL": {
+          "line": 4.5,
+          "over_american": -194,
+          "under_american": 133,
+          "over_decimal": 1.5155,
+          "under_decimal": 2.33
+        }
+      },
+      "original_offer_position": 56
+    },
+    {
+      "player": "Reed Sheppard",
+      "team": "HOU",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/reed-sheppard",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 7.5,
+          "over_american": -105,
+          "under_american": -121,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8264
+        },
+        "FD": {
+          "line": 7.5,
+          "over_american": 106,
+          "under_american": -140,
+          "over_decimal": 2.06,
+          "under_decimal": 1.7143
+        },
+        "BR": {
+          "line": 6.5,
+          "over_american": -122,
+          "under_american": -112,
+          "over_decimal": 1.8197,
+          "under_decimal": 1.8929
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 203,
+          "under_american": -257,
+          "over_decimal": 3.03,
+          "under_decimal": 1.3891
+        }
+      },
+      "original_offer_position": 57
+    },
+    {
+      "player": "Tari Eason",
+      "team": "HOU",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/tari-eason",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 9.5,
+          "over_american": -101,
+          "under_american": -126,
+          "over_decimal": 1.9901,
+          "under_decimal": 1.7937
+        },
+        "FD": {
+          "line": 9.5,
+          "over_american": 104,
+          "under_american": -138,
+          "over_decimal": 2.04,
+          "under_decimal": 1.7246
+        },
+        "BR": {
+          "line": 8.5,
+          "over_american": -130,
+          "under_american": -104,
+          "over_decimal": 1.7692,
+          "under_decimal": 1.9615
+        },
+        "KAL": {
+          "line": 9.5,
+          "over_american": 100,
+          "under_american": -138,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7246
+        }
+      },
+      "original_offer_position": 58
+    },
+    {
+      "player": "Tyrese Maxey",
+      "team": "PHI",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/tyrese-maxey",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 26.5,
+          "over_american": -113,
+          "under_american": -113,
+          "over_decimal": 1.885,
+          "under_decimal": 1.885
+        },
+        "FD": {
+          "line": 27.5,
+          "over_american": -114,
+          "under_american": -114,
+          "over_decimal": 1.8772,
+          "under_decimal": 1.8772
+        },
+        "MGM": {
+          "line": 27.5,
+          "over_american": -111,
+          "under_american": -118,
+          "over_decimal": 1.9009,
+          "under_decimal": 1.8475
+        },
+        "BR": {
+          "line": 26.5,
+          "over_american": -125,
+          "under_american": -108,
+          "over_decimal": 1.8,
+          "under_decimal": 1.9259
+        },
+        "KAL": {
+          "line": 29.5,
+          "over_american": 144,
+          "under_american": -178,
+          "over_decimal": 2.44,
+          "under_decimal": 1.5618
+        }
+      },
+      "original_offer_position": 59
+    },
+    {
+      "player": "VJ Edgecombe",
+      "team": "PHI",
+      "game": "PHI @ HOU",
+      "game_date_et": "2026-11-28",
+      "game_time_et": "Sat 8:30PM",
+      "player_url": "https://betsharp.com/nba/player/vj-edgecombe",
+      "game_url": "https://betsharp.com/nba/game/2026-11-28-philadelphia-76ers-at-houston-rockets#props",
+      "points_market": {
+        "DK": {
+          "line": 16.5,
+          "over_american": -121,
+          "under_american": -106,
+          "over_decimal": 1.8264,
+          "under_decimal": 1.9434
+        },
+        "FD": {
+          "line": 17.5,
+          "over_american": 100,
+          "under_american": -132,
+          "over_decimal": 2.0,
+          "under_decimal": 1.7576
+        },
+        "MGM": {
+          "line": 16.5,
+          "over_american": -105,
+          "under_american": -125,
+          "over_decimal": 1.9524,
+          "under_decimal": 1.8
+        },
+        "BR": {
+          "line": 16.5,
+          "over_american": -120,
+          "under_american": -113,
+          "over_decimal": 1.8333,
+          "under_decimal": 1.885
+        },
+        "KAL": {
+          "line": 14.5,
+          "over_american": -213,
+          "under_american": 163,
+          "over_decimal": 1.4695,
+          "under_decimal": 2.63
+        }
+      },
+      "original_offer_position": 60
+    }
+  ]
+}
