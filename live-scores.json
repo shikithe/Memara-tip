@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "updated_at_utc": "2026-11-28T08:50:57.653104+00:00",
+  "updated_at_utc": "2026-11-28T08:55:16.163066+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -9,8 +9,14 @@
       "index": 0,
       "home": "Columbus Crew",
       "away": "Inter Miami CF",
-      "state": "unverified",
-      "fixture_id": "espn:football:usa.1:401933727"
+      "state": "final",
+      "fixture_id": "espn:football:usa.1:401933727",
+      "score": "1:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401933727",
+      "league": "usa.1",
+      "minute": null,
+      "result_status": "promašen"
     },
     {
       "ticket": "B",
