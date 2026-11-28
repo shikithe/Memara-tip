@@ -1,179 +1,192 @@
 {
-  "date": "2026-11-24",
+  "date": "2026-11-28",
   "approval_source": "chatgpt_ai_analyst",
-  "approved_at_utc": "2026-11-24T18:11:47Z",
+  "approved_at_utc": "2026-11-28T12:48:52Z",
   "publication_allowed": true,
   "state": "nba_c_ai_manual_approved_for_technical_publishing",
   "tickets": [
     {
       "id": "C",
-      "analysis": "Ručni oporavak: pregled 39 ponuđenih igrača, detaljna statistika odabranih kandidata, bez punog rankinga. Davis preko 21,5 i Jokić preko 25,5, oba 4/5 recentnih nastupa. DK kvote iz današnjeg BetSharp snapshot-a 18:03 UTC, bez nezavisne potvrde trenutne cijene. ESPN identifikatori utakmica potvrđeni kroz javne sekundarne rasporede; direktni ESPN nije dostupan.",
-      "matches": [
-        {
-          "player_id": "6583",
-          "player": "Anthony Davis",
-          "espn_event_id": "401909315",
-          "team": "Washington Wizards",
-          "opponent": "Boston Celtics",
-          "start_utc": "2026-11-25T01:00:00Z",
-          "market": "player_points",
-          "pick": "over",
-          "points_line": 21.5,
-          "odd": 1.9009,
-          "bookmaker": "DraftKings",
-          "source": "https://betsharp.com/nba/player/anthony-davis",
-          "quote_timestamp_verified": false
-        },
-        {
-          "player_id": "3112335",
-          "player": "Nikola Jokic",
-          "espn_event_id": "401909316",
-          "team": "Denver Nuggets",
-          "opponent": "Dallas Mavericks",
-          "start_utc": "2026-11-25T03:00:00Z",
-          "market": "player_points",
-          "pick": "over",
-          "points_line": 25.5,
-          "odd": 1.8264,
-          "bookmaker": "DraftKings",
-          "source": "https://betsharp.com/nba/player/nikola-jokic",
-          "quote_timestamp_verified": false
-        }
-      ],
+      "analysis": "Od 60 ponuđenih igrača u pet utakmica, svih 60 upareno je s ESPN zapisnicima. Da Silva je protiv Washingtona nedavno dao 18 poena, a Mitchell je ostao ispod 18,5 u četiri od pet posljednjih nastupa. Obje granice i cijene ponovo očitane direktno s BetSharpa u 12:48 UTC.",
       "scout_analysis": {
-        "date": "2026-11-24",
-        "intro": "Skraćeni Scout nakon oporavka kolektora: 39 ponuda, detaljna provjera dva odabrana igrača; bez punog rankinga.",
+        "date": "2026-11-28",
+        "intro": "BetSharp ponuda za naredna 24 sata i poređenje s ESPN zapisnicima za svih 60 ponuđenih igrača. Za finaliste provjeren jutarnji NBA izvještaj o povredama.",
         "players": [
           {
-            "id": "6583",
-            "name": "Anthony Davis",
-            "team": "Washington Wizards",
-            "opponent": "Boston Celtics",
+            "id": "4702382",
+            "name": "Tristan da Silva",
+            "team": "Orlando Magic",
+            "opponent": "Washington Wizards",
             "pick": "over",
-            "line": 21.5,
-            "odd": 1.9009,
+            "line": 11.5,
+            "odd": 1.8772,
             "games": [
               [
-                "22.11.",
-                22,
+                "24.11.",
+                16,
                 33
               ],
               [
+                "22.11.",
+                18,
+                27
+              ],
+              [
                 "20.11.",
-                36,
-                34
+                6,
+                24
               ],
               [
                 "18.11.",
-                25,
-                34
+                12,
+                27
               ],
               [
                 "16.11.",
-                23,
-                35
-              ],
-              [
-                "15.11.",
-                14,
+                13,
                 31
               ]
             ],
-            "h2h": [],
+            "h2h": [
+              [
+                "22.11.2026.",
+                18
+              ]
+            ],
             "last10": "8/10",
             "pros": [
-              "Četiri od posljednjih pet nastupa iznad 21,5.",
-              "Sezonski prosjek 25,1 poen.",
-              "Prosjek 33,9 minuta; nije prijavljen kao povrijeđen prema dostupnom jutarnjem izvještaju."
+              "Četiri od posljednjih pet nastupa iznad 11,5 poena.",
+              "Protiv Washingtona 18 poena u 27 minuta 22. novembra.",
+              "Banchero je van sastava, da Silva se ne nalazi na prijavi povreda Orlanda."
             ],
             "risks": [
-              "Boston je u posljednjih pet utakmica primao 99,8 poena u prosjeku prema dostupnom izvještaju.",
-              "U jednom od posljednjih pet nastupa samo 14 poena.",
-              "Direktni čuvar i konačni sastav nisu potvrđeni."
+              "Oslanja se na šut za tri poena. U posljednjih pet imao je i nastup sa šest poena.",
+              "Status Anthonyja Blacka je upitan i može uticati na rotaciju."
             ],
-            "assessment": "Granica ispod prosjeka, ali snažna odbrana Bostona smanjuje sigurnost.",
+            "assessment": "Granica 11,5 i potvrđena minutaža daju bolji slučaj od Banea, koji je svoju granicu prešao u tri od posljednjih pet nastupa.",
             "sources": [
               [
-                "Statz game log",
-                "https://nba.statz.ai/nba/players/anthony-davis/game-log"
+                "ESPN zapisnik protiv Washingtona",
+                "https://www.espn.com/nba/boxscore/_/gameId/401910031"
               ],
               [
-                "Status i protivnička odbrana",
-                "https://darimarket.us/learn/strategy/is-anthony-davis-playing-tonight-november-24-2026"
+                "ESPN game log",
+                "https://www.espn.com/nba/player/gamelog/_/id/4702382/tristan-da-silva"
               ],
               [
-                "ESPN identifikator preko rasporeda",
-                "https://www.raviolireviews.com/markets"
+                "NBA prijava povreda",
+                "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_07_30AM.pdf"
+              ],
+              [
+                "BetSharp ponuda",
+                "https://betsharp.com/nba/props?m=points"
               ]
             ]
           },
           {
-            "id": "3112335",
-            "name": "Nikola Jokic",
-            "team": "Denver Nuggets",
-            "opponent": "Dallas Mavericks",
-            "pick": "over",
-            "line": 25.5,
-            "odd": 1.8264,
+            "id": "4900671",
+            "name": "Ajay Mitchell",
+            "team": "Oklahoma City Thunder",
+            "opponent": "Milwaukee Bucks",
+            "pick": "under",
+            "line": 18.5,
+            "odd": 1.8696,
             "games": [
               [
+                "25.11.",
+                25,
+                31
+              ],
+              [
+                "23.11.",
+                12,
+                35
+              ],
+              [
                 "22.11.",
-                37,
-                42
+                17,
+                22
               ],
               [
                 "20.11.",
-                26,
-                38
+                8,
+                31
               ],
               [
                 "18.11.",
-                24,
-                39
-              ],
-              [
-                "16.11.",
-                28,
-                38
-              ],
-              [
-                "14.11.",
-                26,
-                37
+                13,
+                34
               ]
             ],
             "h2h": [],
-            "last10": "7/10",
+            "last10": "7/8 u posljednjih 10 utakmica ekipe",
             "pros": [
-              "Četiri od posljednjih pet nastupa iznad 25,5.",
-              "Prosjek posljednjih pet 28,2 poena.",
-              "U posljednjih pet igrao najmanje 37 minuta."
+              "Ispod 18,5 u četiri od posljednjih pet odigranih utakmica.",
+              "Ostao je ispod granice i uz 34 te 35 minuta u dva od tih mečeva.",
+              "Mitchell se ne nalazi na jutarnjoj prijavi povreda Oklahoma Cityja."
             ],
             "risks": [
-              "Sezonski prosjek 24,1 poen je ispod granice prema NBC Sports.",
-              "Posljednji meč produžetak i 42 minuta, moguć umor.",
-              "Direktni čuvar, konačni sastav i H2H nisu potvrđeni."
+              "Protiv Minnesote je dao 25 poena uz 19 šuteva.",
+              "Zbog izostanaka Jalen Williamsa i Cheta Holmgrena može imati više napadačkih prilika."
             ],
-            "assessment": "Recentna forma podržava over, ali sezonski prosjek i umor nalažu oprez.",
+            "assessment": "Učinak pri ponuđenoj granici kroz pregledani uzorak je jači od Shaijevog preko 32,5, uz rizik povećanog broja šuteva.",
             "sources": [
               [
-                "StatMuse game log",
-                "https://www.statmuse.com/nba/player/nikola-joki%C4%87-9226/game-log"
+                "ESPN zapisnik protiv Minnesote",
+                "https://www.espn.com/nba/boxscore/_/gameId/401909320"
               ],
               [
-                "NBC Sports preview",
-                "https://www.nbcsports.com/nba/news/how-to-watch-dallas-mavericks-vs-denver-nuggets-tv-live-stream-info-for-tonights-game"
+                "ESPN game log",
+                "https://www.espn.com/nba/player/gamelog/_/id/4900671/ajay-mitchell"
               ],
               [
-                "ESPN ID i termin",
-                "https://www.dvidr.com/events/nba-den-21718183"
+                "NBA prijava povreda",
+                "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_07_30AM.pdf"
+              ],
+              [
+                "BetSharp ponuda",
+                "https://betsharp.com/nba/props?m=points"
               ]
             ]
           }
         ],
-        "conclusion": "Ukupna referentna kvota 3.47. Rizici: odbrana Bostona i Jokićev umor.",
-        "caution": "Nisu potvrđeni H2H, direktni čuvari i konačni sastavi; kvote su snapshot, ne garantovana aktuelna cijena. ESPN ID preuzet iz sekundarnih rasporeda."
-      }
+        "conclusion": "Tristan da Silva više od 11,5 i Ajay Mitchell manje od 18,5 poena. Ukupna kvota 3,51.",
+        "caution": "Istorijski prolaz služi za poređenje. BetSharp cijene očitane u 12:48 UTC, vrijeme zadnjeg osvježenja kod kladionice nije dostupno."
+      },
+      "matches": [
+        {
+          "player_id": "4702382",
+          "player": "Tristan da Silva",
+          "espn_event_id": "401910046",
+          "team": "Orlando Magic",
+          "opponent": "Washington Wizards",
+          "start_utc": "2026-11-28T22:00:00Z",
+          "market": "player_points",
+          "pick": "over",
+          "points_line": 11.5,
+          "odd": 1.8772,
+          "bookmaker": "FanDuel",
+          "source": "https://betsharp.com/nba/props?m=points",
+          "quote_timestamp_verified": false,
+          "quote_checked_at_utc": "2026-11-28T12:48:21Z"
+        },
+        {
+          "player_id": "4900671",
+          "player": "Ajay Mitchell",
+          "espn_event_id": "401910049",
+          "team": "Oklahoma City Thunder",
+          "opponent": "Milwaukee Bucks",
+          "start_utc": "2026-11-29T01:00:00Z",
+          "market": "player_points",
+          "pick": "under",
+          "points_line": 18.5,
+          "odd": 1.8696,
+          "bookmaker": "BetMGM",
+          "source": "https://betsharp.com/nba/props?m=points",
+          "quote_timestamp_verified": false,
+          "quote_checked_at_utc": "2026-11-28T12:48:21Z"
+        }
+      ]
     }
   ]
 }
