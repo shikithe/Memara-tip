@@ -6,7 +6,7 @@
   "daily_stake": 8.27,
   "bank_after": 342.04,
   "bank_after_stakes": 342.04,
-  "provisional": false,
+  "provisional": true,
   "settled": false,
   "odds_verified": false,
   "tickets": [
@@ -66,8 +66,8 @@
       "payout": 0
     }
   ],
-  "total_payout": 0,
-  "net_change": 0,
+  "total_payout": 0.0,
+  "net_change": null,
   "analysis_status": "Prethodni tiket je u arhivi. Današnji tiketi još nisu objavljeni.",
   "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",
   "published_at_utc": "2026-11-28T09:44:17.830983+00:00",
