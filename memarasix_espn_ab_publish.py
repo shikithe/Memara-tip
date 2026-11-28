@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """AI approval transcription publisher for football A/B.
-No ESPN lookup, match identification, market selection or odds verification.
+Source agnostic: directly researched FairXG AI approvals, no fixture collection or odds verification.
 """
 import json
 import math
@@ -13,7 +13,6 @@ from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
 SAR = ZoneInfo("Europe/Sarajevo")
-FEED_URL = "https://raw.githubusercontent.com/shikithe/Slavojka/main/shared/collector-feed.json"
 APPROVAL = "memarasix-football-ai-approved.json"
 
 def utc(value):
@@ -116,7 +115,7 @@ def publish(root=Path("."), now=None, feed=None):
         "date": today,
         "published": current.get("published") if existing else now.astimezone(SAR).strftime("%d.%m.%Y. u %H:%M (Europe/Sarajevo)"),
         "published_at_utc": current.get("published_at_utc") if existing else now.isoformat(),
-        "publication_type": "independent_ai_espn_only_github_publisher",
+        "publication_type": "independent_ai_fairxg_direct_github_publisher",
         "bank_before": bank, "daily_budget": budget,
         "football_ab_budget": football_budget, "reserved_nba_c_budget": c_reserved,
         "daily_stake": round(spent+added, 2),
@@ -125,7 +124,7 @@ def publish(root=Path("."), now=None, feed=None):
         "tickets": existing + selections, "settled": False, "provisional": False,
         "pending_ticket_statuses": statuses, "pending_ticket_reasons": reasons,
         "odds_verified": False,
-        "odds_verification_note": "AI-provided selections are reproduced verbatim; GitHub does not check ESPN, markets or quotes."
+        "odds_verification_note": "AI-provided selections are reproduced verbatim; GitHub does not independently verify kickoff, FairXG probabilities or bookmaker prices."
     })
     write(root/"data.json", current)
     return {"status":"published", "tickets":[t["id"] for t in selections],
