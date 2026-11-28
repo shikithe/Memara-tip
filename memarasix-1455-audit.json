@@ -1,9 +1,9 @@
 {
   "status": "published",
   "tickets": [
-    "B"
+    "A"
   ],
-  "daily_stake_added": 8.27,
-  "bank_after_stakes": 342.04,
-  "timestamp_utc": "2026-11-28T09:44:17.831350+00:00"
+  "daily_stake_added": 21.5,
+  "bank_after_stakes": 320.54,
+  "timestamp_utc": "2026-11-28T09:45:06.194220+00:00"
 }

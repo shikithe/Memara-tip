@@ -3,10 +3,10 @@
   "published": "28.11.2026. u 10:44 (Europe/Sarajevo)",
   "publication_type": "independent_ai_espn_only_github_publisher",
   "bank_before": 350.31,
-  "daily_stake": 8.27,
-  "bank_after": 342.04,
-  "bank_after_stakes": 342.04,
-  "provisional": true,
+  "daily_stake": 29.77,
+  "bank_after": 320.54,
+  "bank_after_stakes": 320.54,
+  "provisional": false,
   "settled": false,
   "odds_verified": false,
   "tickets": [
@@ -64,6 +64,61 @@
       "stake": 8.27,
       "status": "objavljen",
       "payout": 0
+    },
+    {
+      "id": "A",
+      "model": "FairXG",
+      "source_fingerprint": "13589de5ef8701286012e7a0fc7e0e386c59cec40c8ff7b5171301438bdafd58",
+      "combined_odds": 2.0196,
+      "score": 5372,
+      "joint_probability_pct_if_independent": 53.72,
+      "odds_verified": false,
+      "analysis": "Poslije isključenja dva susreta s tiketa B, 202 od 1.008 kombinacija imaju kvotu u rasponu 2–3. Pobjede Leedsa (68%, 1,53, EV +4,04%) i Bayerna (79%, 1,32, EV +4,28%) daju najveći proizvod 68 × 79 = 5.372 i kvotu 2,0196. Uz nezavisnost ishoda procjena je 53,72%. Kombinacija Bayerna s Atléticom takođe postiže 5.372, s istim slabijim procentom od 68%. Stabilni redoslijed ESPN identifikatora daje prednost Leedsu. FairXG i javna ponuda TipsterArea za 28.11.2026. Ulozi su virtuelni.",
+      "matches": [
+        {
+          "fixture_id": "espn:football:eng.1:401879227",
+          "match": "Leeds United - Coventry City",
+          "home": "Leeds United",
+          "away": "Coventry City",
+          "league": "eng.1",
+          "datetime": "2026-11-28T15:00:00Z",
+          "start_utc": "2026-11-28T15:00:00Z",
+          "pick": "1",
+          "odd": 1.53,
+          "source": "https://tipsterarea.com/match/leeds-coventry-premier-league-england-957178",
+          "bookmaker": "TipsterArea (javna ponuda)",
+          "quote_checked_at_utc": "2026-11-28T09:44:53Z",
+          "fairxg_source": "https://fairxg.com/sport/football/match/leeds-vs-coventry",
+          "fairxg_probability_pct": 68,
+          "final_probability_pct": 68,
+          "final_ev_pct": 4.04,
+          "odds_verified": false,
+          "analysis": "Leeds mora pobijediti Coventry. Remi ili pobjeda gosta čine zajedno oko 32% prema procjeni za ovaj tip. FairXG 68% na kvoti 1,53. EV +4,04%."
+        },
+        {
+          "fixture_id": "espn:football:ger.1:401884722",
+          "match": "Hamburg SV - Bayern Munich",
+          "home": "Hamburg SV",
+          "away": "Bayern Munich",
+          "league": "ger.1",
+          "datetime": "2026-11-28T14:30:00Z",
+          "start_utc": "2026-11-28T14:30:00Z",
+          "pick": "2",
+          "odd": 1.32,
+          "source": "https://tipsterarea.com/match/hamburger-bayern-munchen-bundesliga-germany-957186",
+          "bookmaker": "TipsterArea (javna ponuda)",
+          "quote_checked_at_utc": "2026-11-28T09:44:53Z",
+          "fairxg_source": "https://fairxg.com/sport/football/match/hamburg-vs-bayern-munich",
+          "fairxg_probability_pct": 79,
+          "final_probability_pct": 79,
+          "final_ev_pct": 4.28,
+          "odds_verified": false,
+          "analysis": "Bayern mora pobijediti u Hamburgu. FairXG daje oko 21% za preostale ishode. Procenat za pobjedu uključuje tržišne podatke. FairXG 79% na kvoti 1,32. EV +4,28%."
+        }
+      ],
+      "stake": 21.5,
+      "status": "objavljen",
+      "payout": 0
     }
   ],
   "total_payout": 0.0,
@@ -75,10 +130,12 @@
   "football_ab_budget": 29.77,
   "reserved_nba_c_budget": 5.26,
   "pending_ticket_statuses": {
-    "B": "objavljen"
+    "B": "objavljen",
+    "A": "objavljen"
   },
   "pending_ticket_reasons": {
-    "B": ""
+    "B": "",
+    "A": ""
   },
   "odds_verification_note": "AI-provided selections are reproduced verbatim; GitHub does not check ESPN, markets or quotes."
 }
