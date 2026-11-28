@@ -1,9 +1,5 @@
 {
-  "status": "published",
-  "tickets": [
-    "A"
-  ],
-  "daily_stake_added": 23.5,
-  "bank_after_stakes": 350.31,
-  "timestamp_utc": "2026-11-27T11:32:32.085442+00:00"
+  "status": "blocked",
+  "reason": "prior bank not settled or future-dated",
+  "timestamp_utc": "2026-11-28T08:50:48.390762+00:00"
 }
