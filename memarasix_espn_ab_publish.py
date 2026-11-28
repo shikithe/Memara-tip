@@ -7,6 +7,7 @@ import math
 import os
 import urllib.request
 from datetime import datetime, timedelta, timezone
+from decimal import Decimal, ROUND_CEILING, ROUND_FLOOR
 from pathlib import Path
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
@@ -84,11 +85,13 @@ def publish(root=Path("."), now=None, feed=None):
         raise ValueError("invalid bank")
     # The user's bank rule reserves 1.5% of STARTING daily bank for NBA C.
     # A/B may spend at most 8.5% together; never absorb C's reserve.
-    budget = round(bank * .1, 2)
-    football_budget = round(bank * .085, 2)
-    c_reserved = round(bank * .015, 2)
-    # Guard against independent cent rounding accidentally exceeding 10%.
-    football_budget = min(football_budget, round(budget - c_reserved, 2))
+    opening_bank = Decimal(str(bank))
+    cent = Decimal("0.01")
+    daily_cap = (opening_bank * Decimal("0.10")).quantize(cent, rounding=ROUND_FLOOR)
+    nba_reserve = (opening_bank * Decimal("0.015")).quantize(cent, rounding=ROUND_CEILING)
+    budget = float(daily_cap)
+    c_reserved = float(nba_reserve)
+    football_budget = float(max(Decimal(0), daily_cap - nba_reserve))
     spent = round(sum(float(t.get("stake", 0)) for t in existing), 2)
     spent_ab = round(sum(float(t.get("stake", 0)) for t in existing
                          if t.get("id") in ("A", "B")), 2)
