@@ -1,6 +1,6 @@
 {
   "date": "2026-11-28",
-  "updated_at_utc": "2026-11-28T09:44:27.175766+00:00",
+  "updated_at_utc": "2026-11-28T09:45:25.797588+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -28,6 +28,32 @@
       "source": "espn-public-unofficial",
       "event_id": "401874977",
       "league": "ita.1",
+      "minute": null
+    },
+    {
+      "ticket": "A",
+      "index": 0,
+      "home": "Leeds United",
+      "away": "Coventry City",
+      "state": "scheduled",
+      "fixture_id": "espn:football:eng.1:401879227",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401879227",
+      "league": "eng.1",
+      "minute": null
+    },
+    {
+      "ticket": "A",
+      "index": 1,
+      "home": "Hamburg SV",
+      "away": "Bayern Munich",
+      "state": "scheduled",
+      "fixture_id": "espn:football:ger.1:401884722",
+      "score": "0:0",
+      "source": "espn-public-unofficial",
+      "event_id": "401884722",
+      "league": "ger.1",
       "minute": null
     }
   ],
