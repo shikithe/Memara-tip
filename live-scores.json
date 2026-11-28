@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "updated_at_utc": "2026-11-27T20:49:52.787677+00:00",
+  "updated_at_utc": "2026-11-28T02:24:51.481345+00:00",
   "source": "espn-public-unofficial",
   "errors_count": 0,
   "matches": [
@@ -17,39 +17,41 @@
       "index": 1,
       "home": "Nottingham Forest",
       "away": "Chelsea",
-      "state": "live",
+      "state": "final",
       "fixture_id": "espn:football:eng.1:401879225",
-      "score": "1:0",
+      "score": "3:2",
       "source": "espn-public-unofficial",
       "event_id": "401879225",
       "league": "eng.1",
-      "minute": "45"
+      "minute": null,
+      "result_status": "pogođen"
     },
     {
       "ticket": "A",
       "index": 0,
       "home": "FC Groningen",
       "away": "Willem II",
-      "state": "live",
+      "state": "final",
       "fixture_id": "espn:football:ned.1:401875536",
-      "score": "0:1",
+      "score": "1:1",
       "source": "espn-public-unofficial",
       "event_id": "401875536",
       "league": "ned.1",
-      "minute": "85"
+      "minute": null,
+      "result_status": "promašen"
     },
     {
       "ticket": "A",
       "index": 1,
       "home": "Werder Bremen",
       "away": "Borussia Mönchengladbach",
-      "state": "live",
+      "state": "final",
       "fixture_id": "espn:football:ger.1:401884720",
-      "score": "1:2",
+      "score": "3:3",
       "source": "espn-public-unofficial",
       "event_id": "401884720",
       "league": "ger.1",
-      "minute": "58",
+      "minute": null,
       "result_status": "pogođen"
     }
   ],

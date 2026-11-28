@@ -41,7 +41,9 @@
           "fairxg_source": "https://fairxg.com/sport/football/match/nott-m-forest-vs-chelsea",
           "fairxg_probability_pct": 54,
           "final_ev_pct": 3.14,
-          "analysis": "FairXG navodi 54% za 3+; izvorna javna TipsterArea kvota 1,91. Uz Columbus je ovo najviši drugi 3+ procenat koji kombinaciju diže u 2–3; rizik je procjena bliska 50%."
+          "analysis": "FairXG navodi 54% za 3+; izvorna javna TipsterArea kvota 1,91. Uz Columbus je ovo najviši drugi 3+ procenat koji kombinaciju diže u 2–3; rizik je procjena bliska 50%.",
+          "result_status": "pogođen",
+          "final_score": "3:2"
         }
       ],
       "stake": 9.04,
@@ -65,7 +67,9 @@
           "fairxg_source": "https://fairxg.com/sport/football/match/groningen-vs-willem-ii",
           "fairxg_probability_pct": 73,
           "final_ev_pct": 4.39,
-          "analysis": "Groningen pobjeda, FairXG 73% i kvota 1,43, EV +4,39%. Najveća preostala procentualna prognoza nakon izbora B. Rizik: 1X2 headline može biti zasnovan na tržištu i pobjeda nije sigurna."
+          "analysis": "Groningen pobjeda, FairXG 73% i kvota 1,43, EV +4,39%. Najveća preostala procentualna prognoza nakon izbora B. Rizik: 1X2 headline može biti zasnovan na tržištu i pobjeda nije sigurna.",
+          "result_status": "promašen",
+          "final_score": "1:1"
         },
         {
           "fixture_id": "espn:football:ger.1:401884720",
@@ -79,12 +83,15 @@
           "fairxg_source": "https://fairxg.com/sport/football/match/werder-bremen-vs-m-gladbach",
           "fairxg_probability_pct": 67,
           "final_ev_pct": -0.84,
-          "analysis": "Werder–Mönchengladbach 3+, FairXG 67% i kvota 1,48, EV −0,84%. Najjača naredna opcija na drugom susretu koja daje traženu ukupnu kvotu. Rizik: negativan EV i moguć manji broj golova."
+          "analysis": "Werder–Mönchengladbach 3+, FairXG 67% i kvota 1,48, EV −0,84%. Najjača naredna opcija na drugom susretu koja daje traženu ukupnu kvotu. Rizik: negativan EV i moguć manji broj golova.",
+          "result_status": "pogođen",
+          "final_score": "3:3"
         }
       ],
       "stake": 23.5,
-      "status": "objavljen",
-      "payout": 0
+      "status": "izgubljen",
+      "payout": 0.0,
+      "settled_at_utc": "2026-11-28T02:24:51.481345+00:00"
     }
   ],
   "total_payout": 0.0,
