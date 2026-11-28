@@ -6,7 +6,7 @@
   "daily_stake": 35.02,
   "bank_after": 315.29,
   "bank_after_stakes": 315.29,
-  "provisional": false,
+  "provisional": true,
   "settled": false,
   "odds_verified": false,
   "tickets": [
