@@ -1,9 +1,10 @@
 {
+  "timestamp_utc": "2026-11-28T12:49:07.314924+00:00",
   "status": "published",
   "tickets": [
-    "A"
+    "C"
   ],
-  "daily_stake_added": 21.5,
-  "bank_after_stakes": 320.54,
-  "timestamp_utc": "2026-11-28T09:45:06.194220+00:00"
+  "nba_player_count": 2,
+  "combined_odds": 3.51,
+  "daily_stake_added": 5.25
 }

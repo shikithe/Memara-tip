@@ -1,12 +1,12 @@
 {
   "date": "2026-11-28",
   "published": "28.11.2026. u 10:44 (Europe/Sarajevo)",
-  "publication_type": "independent_ai_espn_only_github_publisher",
+  "publication_type": "independent_ai_approved_github_nba_c",
   "bank_before": 350.31,
-  "daily_stake": 29.77,
-  "bank_after": 320.54,
-  "bank_after_stakes": 320.54,
-  "provisional": true,
+  "daily_stake": 35.02,
+  "bank_after": 315.29,
+  "bank_after_stakes": 315.29,
+  "provisional": false,
   "settled": false,
   "odds_verified": false,
   "tickets": [
@@ -119,11 +119,215 @@
       "stake": 21.5,
       "status": "objavljen",
       "payout": 0
+    },
+    {
+      "id": "C",
+      "label": "NBA · DVA IGRAČA",
+      "matches": [
+        {
+          "fixture_id": "espn:basketball:nba:401910046:4702382",
+          "event_id": "401910046",
+          "espn_event_id": "401910046",
+          "player_id": "4702382",
+          "player": "Tristan da Silva",
+          "home": "Orlando Magic",
+          "away": "Washington Wizards",
+          "team": "Orlando Magic",
+          "opponent": "Washington Wizards",
+          "league": "nba",
+          "sport": "basketball",
+          "datetime": "2026-11-28T22:00:00+00:00",
+          "start_utc": "2026-11-28T22:00:00+00:00",
+          "market": "player_points",
+          "points_line": 11.5,
+          "pick": "over",
+          "market_name": "Više od 11.5 poena",
+          "odd": 1.8772,
+          "bookmaker": "FanDuel",
+          "quote_source_url": "https://betsharp.com/nba/props?m=points",
+          "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+          "quote_timestamp_verified": false
+        },
+        {
+          "fixture_id": "espn:basketball:nba:401910049:4900671",
+          "event_id": "401910049",
+          "espn_event_id": "401910049",
+          "player_id": "4900671",
+          "player": "Ajay Mitchell",
+          "home": "Oklahoma City Thunder",
+          "away": "Milwaukee Bucks",
+          "team": "Oklahoma City Thunder",
+          "opponent": "Milwaukee Bucks",
+          "league": "nba",
+          "sport": "basketball",
+          "datetime": "2026-11-29T01:00:00+00:00",
+          "start_utc": "2026-11-29T01:00:00+00:00",
+          "market": "player_points",
+          "points_line": 18.5,
+          "pick": "under",
+          "market_name": "Manje od 18.5 poena",
+          "odd": 1.8696,
+          "bookmaker": "BetMGM",
+          "quote_source_url": "https://betsharp.com/nba/props?m=points",
+          "odds_status": "AI_checked_public_comparison_quote_not_live_bookmaker_confirmed",
+          "quote_timestamp_verified": false
+        }
+      ],
+      "odds": 3.51,
+      "stake": 5.25,
+      "status": "objavljen",
+      "payout": 0,
+      "analysis": "Od 60 ponuđenih igrača u pet utakmica, svih 60 upareno je s ESPN zapisnicima. Da Silva je protiv Washingtona nedavno dao 18 poena, a Mitchell je ostao ispod 18,5 u četiri od pet posljednjih nastupa. Obje granice i cijene ponovo očitane direktno s BetSharpa u 12:48 UTC.",
+      "scout_analysis": {
+        "date": "2026-11-28",
+        "intro": "BetSharp ponuda za naredna 24 sata i poređenje s ESPN zapisnicima za svih 60 ponuđenih igrača. Za finaliste provjeren jutarnji NBA izvještaj o povredama.",
+        "players": [
+          {
+            "id": "4702382",
+            "name": "Tristan da Silva",
+            "team": "Orlando Magic",
+            "opponent": "Washington Wizards",
+            "pick": "over",
+            "line": 11.5,
+            "odd": 1.8772,
+            "games": [
+              [
+                "24.11.",
+                16,
+                33
+              ],
+              [
+                "22.11.",
+                18,
+                27
+              ],
+              [
+                "20.11.",
+                6,
+                24
+              ],
+              [
+                "18.11.",
+                12,
+                27
+              ],
+              [
+                "16.11.",
+                13,
+                31
+              ]
+            ],
+            "h2h": [
+              [
+                "22.11.2026.",
+                18
+              ]
+            ],
+            "last10": "8/10",
+            "pros": [
+              "Četiri od posljednjih pet nastupa iznad 11,5 poena.",
+              "Protiv Washingtona 18 poena u 27 minuta 22. novembra.",
+              "Banchero je van sastava, da Silva se ne nalazi na prijavi povreda Orlanda."
+            ],
+            "risks": [
+              "Oslanja se na šut za tri poena. U posljednjih pet imao je i nastup sa šest poena.",
+              "Status Anthonyja Blacka je upitan i može uticati na rotaciju."
+            ],
+            "assessment": "Granica 11,5 i potvrđena minutaža daju bolji slučaj od Banea, koji je svoju granicu prešao u tri od posljednjih pet nastupa.",
+            "sources": [
+              [
+                "ESPN zapisnik protiv Washingtona",
+                "https://www.espn.com/nba/boxscore/_/gameId/401910031"
+              ],
+              [
+                "ESPN game log",
+                "https://www.espn.com/nba/player/gamelog/_/id/4702382/tristan-da-silva"
+              ],
+              [
+                "NBA prijava povreda",
+                "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_07_30AM.pdf"
+              ],
+              [
+                "BetSharp ponuda",
+                "https://betsharp.com/nba/props?m=points"
+              ]
+            ]
+          },
+          {
+            "id": "4900671",
+            "name": "Ajay Mitchell",
+            "team": "Oklahoma City Thunder",
+            "opponent": "Milwaukee Bucks",
+            "pick": "under",
+            "line": 18.5,
+            "odd": 1.8696,
+            "games": [
+              [
+                "25.11.",
+                25,
+                31
+              ],
+              [
+                "23.11.",
+                12,
+                35
+              ],
+              [
+                "22.11.",
+                17,
+                22
+              ],
+              [
+                "20.11.",
+                8,
+                31
+              ],
+              [
+                "18.11.",
+                13,
+                34
+              ]
+            ],
+            "h2h": [],
+            "last10": "7/8 u posljednjih 10 utakmica ekipe",
+            "pros": [
+              "Ispod 18,5 u četiri od posljednjih pet odigranih utakmica.",
+              "Ostao je ispod granice i uz 34 te 35 minuta u dva od tih mečeva.",
+              "Mitchell se ne nalazi na jutarnjoj prijavi povreda Oklahoma Cityja."
+            ],
+            "risks": [
+              "Protiv Minnesote je dao 25 poena uz 19 šuteva.",
+              "Zbog izostanaka Jalen Williamsa i Cheta Holmgrena može imati više napadačkih prilika."
+            ],
+            "assessment": "Učinak pri ponuđenoj granici kroz pregledani uzorak je jači od Shaijevog preko 32,5, uz rizik povećanog broja šuteva.",
+            "sources": [
+              [
+                "ESPN zapisnik protiv Minnesote",
+                "https://www.espn.com/nba/boxscore/_/gameId/401909320"
+              ],
+              [
+                "ESPN game log",
+                "https://www.espn.com/nba/player/gamelog/_/id/4900671/ajay-mitchell"
+              ],
+              [
+                "NBA prijava povreda",
+                "https://ak-static.cms.nba.com/referee/injury/Injury-Report_2026-11-28_07_30AM.pdf"
+              ],
+              [
+                "BetSharp ponuda",
+                "https://betsharp.com/nba/props?m=points"
+              ]
+            ]
+          }
+        ],
+        "conclusion": "Tristan da Silva više od 11,5 i Ajay Mitchell manje od 18,5 poena. Ukupna kvota 3,51.",
+        "caution": "Istorijski prolaz služi za poređenje. BetSharp cijene očitane u 12:48 UTC, vrijeme zadnjeg osvježenja kod kladionice nije dostupno."
+      }
     }
   ],
   "total_payout": 0.0,
   "net_change": null,
-  "analysis_status": "Prethodni tiket je u arhivi. Današnji tiketi još nisu objavljeni.",
+  "analysis_status": "Two AI-approved NBA player-point selections; quote validity is AI responsibility",
   "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",
   "published_at_utc": "2026-11-28T09:44:17.830983+00:00",
   "daily_budget": 35.03,
@@ -131,11 +335,12 @@
   "reserved_nba_c_budget": 5.26,
   "pending_ticket_statuses": {
     "B": "objavljen",
-    "A": "objavljen"
+    "A": "objavljen",
+    "C": "objavljen"
   },
   "pending_ticket_reasons": {
     "B": "",
     "A": ""
   },
-  "odds_verification_note": "AI-provided selections are reproduced verbatim; GitHub does not check ESPN, markets or quotes."
+  "odds_verification_note": "AI selected publicly displayed bookmaker comparison quotes; not independently refreshed by GitHub or confirmed in individual bookmaker accounts."
 }
