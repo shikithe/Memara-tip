@@ -111,6 +111,10 @@ def run(source="data.json",output="live-scores.json"):
                 leagues=leagues_by_day.setdefault(day,set())
                 if isinstance(league,str) and re.fullmatch(r"[a-z0-9.]+",league):
                     leagues.add(league)
+                    if league == "usa.1":
+                        # ESPN lists overnight MLS matches under the US Eastern date.
+                        provider_day = start.astimezone(ZoneInfo("America/New_York")).strftime("%Y%m%d")
+                        leagues_by_day.setdefault(provider_day, set()).add(league)
                 else:
                     leagues.update(LEAGUES)
         except (KeyError,ValueError,TypeError):
