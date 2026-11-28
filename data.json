@@ -1,17 +1,84 @@
 {
   "date": "2026-11-28",
-  "published": "Čeka validnu objavu: 12:00 Europe/Sarajevo",
-  "publication_type": "awaiting_daily_publication",
+  "published": "28.11.2026. u 10:44 (Europe/Sarajevo)",
+  "publication_type": "independent_ai_espn_only_github_publisher",
   "bank_before": 350.31,
-  "daily_stake": 0,
-  "bank_after": 350.31,
-  "bank_after_stakes": 350.31,
+  "daily_stake": 8.27,
+  "bank_after": 342.04,
+  "bank_after_stakes": 342.04,
   "provisional": false,
-  "settled": true,
+  "settled": false,
   "odds_verified": false,
-  "tickets": [],
+  "tickets": [
+    {
+      "id": "B",
+      "model": "FairXG",
+      "source_fingerprint": "13589de5ef8701286012e7a0fc7e0e386c59cec40c8ff7b5171301438bdafd58",
+      "combined_odds": 2.0735,
+      "score": 4402,
+      "joint_probability_pct_if_independent": 44.02,
+      "odds_verified": false,
+      "analysis": "Od 45 dvojki za 3+ njih 19 ima ukupnu kvotu od 2 do 3. PSG – Lorient (71%, 1,45, EV +2,95%) i Inter – Genoa (62%, 1,43, EV −11,34%) daju najveći proizvod 71 × 62 = 4.402 i kvotu 2,0735. Zajednička procjena je 44,02% uz pretpostavku nezavisnosti. Inter ima slabiju cijenu od modelskog praga rentabilnosti. FairXG i javna ponuda TipsterArea za 28.11.2026. Ulozi su virtuelni.",
+      "matches": [
+        {
+          "fixture_id": "espn:football:fra.1:401876387",
+          "match": "Paris Saint-Germain - Lorient",
+          "home": "Paris Saint-Germain",
+          "away": "Lorient",
+          "league": "fra.1",
+          "datetime": "2026-11-28T19:45:00Z",
+          "start_utc": "2026-11-28T19:45:00Z",
+          "pick": "3+",
+          "odd": 1.45,
+          "source": "https://tipsterarea.com/match/paris-saint-germain-lorient-ligue-1-france-957197",
+          "bookmaker": "TipsterArea (javna ponuda)",
+          "quote_checked_at_utc": "2026-11-28T09:44:10Z",
+          "fairxg_source": "https://fairxg.com/sport/football/match/paris-sg-vs-lorient",
+          "fairxg_probability_pct": 71,
+          "final_probability_pct": 71,
+          "final_ev_pct": 2.95,
+          "odds_verified": false,
+          "analysis": "PSG – Lorient traži najmanje tri gola. Rizik dva ili manje golova po modelu je 29%. FairXG 71% na kvoti 1,45. EV +2,95%."
+        },
+        {
+          "fixture_id": "espn:football:ita.1:401874977",
+          "match": "Internazionale - Genoa",
+          "home": "Internazionale",
+          "away": "Genoa",
+          "league": "ita.1",
+          "datetime": "2026-11-28T19:45:00Z",
+          "start_utc": "2026-11-28T19:45:00Z",
+          "pick": "3+",
+          "odd": 1.43,
+          "source": "https://tipsterarea.com/match/inter-genoa-serie-a-italy-957192",
+          "bookmaker": "TipsterArea (javna ponuda)",
+          "quote_checked_at_utc": "2026-11-28T09:44:10Z",
+          "fairxg_source": "https://fairxg.com/sport/football/match/inter-vs-genoa",
+          "fairxg_probability_pct": 62,
+          "final_probability_pct": 62,
+          "final_ev_pct": -11.34,
+          "odds_verified": false,
+          "analysis": "Inter – Genoa traži najmanje tri gola. Model daje 38% za dva ili manje, a cijena 1,43 nosi negativan EV. FairXG 62% na kvoti 1,43. EV -11,34%."
+        }
+      ],
+      "stake": 8.27,
+      "status": "objavljen",
+      "payout": 0
+    }
+  ],
   "total_payout": 0,
   "net_change": 0,
   "analysis_status": "Prethodni tiket je u arhivi. Današnji tiketi još nisu objavljeni.",
-  "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter"
+  "selection_method": "Manual ChatGPT analysis from collector; no Python selection filter",
+  "published_at_utc": "2026-11-28T09:44:17.830983+00:00",
+  "daily_budget": 35.03,
+  "football_ab_budget": 29.77,
+  "reserved_nba_c_budget": 5.26,
+  "pending_ticket_statuses": {
+    "B": "objavljen"
+  },
+  "pending_ticket_reasons": {
+    "B": ""
+  },
+  "odds_verification_note": "AI-provided selections are reproduced verbatim; GitHub does not check ESPN, markets or quotes."
 }
